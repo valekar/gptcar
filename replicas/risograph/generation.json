@@ -1,0 +1,201 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "slug": "risograph",
+  "title": "Sunday Ride",
+  "source_ready": true,
+  "status": "source-ready-for-independent-review",
+  "uses_upstream_scene_code": false,
+  "matched_brief_sha256": "244d35f904b88e4227abf015e386572e488413881a1e7179125c4285524b4618",
+  "delivery": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frame_count": 960,
+    "duration": 40
+  },
+  "duration": 40,
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "review_times": [
+    0.1,
+    0.5,
+    1,
+    1.125,
+    1.5,
+    2,
+    2.5,
+    3.5,
+    5.4,
+    5.416667,
+    6.5,
+    7.5,
+    8.05,
+    8.3,
+    8.333333,
+    8.5,
+    9.5,
+    10.5,
+    11.3,
+    11.333333,
+    11.7,
+    12,
+    12.5,
+    12.7,
+    13.5,
+    14.5,
+    15.5,
+    16.05,
+    16.3,
+    16.333333,
+    16.5,
+    17.5,
+    18.5,
+    19.5,
+    19.9,
+    20,
+    20.2,
+    20.4,
+    20.416667,
+    20.5,
+    21.5,
+    22.05,
+    22.083333,
+    22.5,
+    23.5,
+    24,
+    24.4,
+    24.9,
+    24.916667,
+    25.1,
+    25.4,
+    25.416667,
+    25.5,
+    26,
+    26.5,
+    27.5,
+    27.9,
+    28,
+    28.5,
+    29.5,
+    30.5,
+    30.6,
+    31.3,
+    31.7,
+    32,
+    32.5,
+    33,
+    33.5,
+    34,
+    34.5,
+    35,
+    35.5,
+    36,
+    36.5,
+    37.5,
+    38,
+    39.5
+  ],
+  "shared_components": [
+    {
+      "path": "styles/risograph/demo/riso.js",
+      "sha256": "33372178569914cbb0210e67901434e544db6b2fa32efcd3ac60275e9d62cbbd",
+      "purpose": "Shared WebGL2 three spot-density print engine: halftone, misregistration, pinholes, grain, feed sweep and per-plate reflections"
+    },
+    {
+      "path": "styles/risograph/demo/draw.js",
+      "sha256": "beb5029bc8086f83281c99620bf0912916e6804af717491f330a1a6b532618f5",
+      "purpose": "Shared density-canvas primitive/knockout/overprint/halo and IK helpers"
+    },
+    {
+      "path": "styles/risograph/demo/rider.js",
+      "sha256": "45585dab4bc6285e9ffa7673377a0aa20c45805c7ec4957fd9071fe190c262bd",
+      "purpose": "Shared complete generic cyclist/bicycle/scarf/glasses/pigeon/baguette character and rig models; all timed performances and scene assembly new"
+    },
+    {
+      "path": "core/lib.js",
+      "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+      "purpose": "Deterministic math/ease helpers"
+    },
+    {
+      "path": "styles/risograph/demo/lines.json",
+      "sha256": "2c8b01ce0fcd24b0882eb614d96f9c2a450894906aa75af5493674fa54df4049",
+      "purpose": "Published exact five narrator texts and start/voice direction data"
+    },
+    {
+      "path": "styles/risograph/demo/voices/dur.json",
+      "sha256": "e207b9e56b4d09b8a3c839016577b33f9f41d3f5596d0a775c4d1798dd45a1a7",
+      "purpose": "Published original speech duration data for caption windows"
+    },
+    {
+      "path": "styles/risograph/demo/film.js",
+      "sha256": "a2f2dccdda62906cb23015d163027c6c889b95b92610a4930a61bbea44d75bca",
+      "purpose": "Read-only calibration for published camera/model/timing data after independent review; never imported or executed, and original scene function assemblies not copied."
+    },
+    {
+      "path": "styles/risograph/demo/scenes.js",
+      "sha256": "03dba9c5e9e186dcb6c271f1a77a9cda4bd4a4b191b14bbcf594c10dee1bab99",
+      "purpose": "Read-only calibration for published camera/model/timing data after independent review; never imported or executed, and original scene function assemblies not copied."
+    },
+    {
+      "path": "styles/risograph/demo/scenes2.js",
+      "sha256": "ae33acfc6482575577cf6f36bc0684ce8bad4f3f640805a2aa74e3c22421d4f7",
+      "purpose": "Read-only calibration for published camera/model/timing data after independent review; never imported or executed, and original scene function assemblies not copied."
+    }
+  ],
+  "provenance": "New complete scene assembly/score; shared generic material/character geometry explicitly attributed. Published script preserved; original conversation prompt unavailable. Original frames/audio not reused.",
+  "deterministic_seek_check": {
+    "checked_times": [
+      0.5,
+      3.5,
+      8.3,
+      12,
+      20.2,
+      22.5,
+      25.5,
+      27.5,
+      30.5,
+      35.5
+    ],
+    "all_equal": true
+  },
+  "source_sha256": {
+    "CREDITS": "29a78eb2a8e8eadd34698386867f3118634aa068b957ec68ed03890e4098290b",
+    "FACTS.md": "a98a1c554a3ccaa05dda7bea666c24b99f8e4973d6a40869818fe547fca6e0d9",
+    "LICENSE": "14c9ff6f14bfb2391e74fedb01c256891d2a3bba1c2acf5789901bdf77e54e33",
+    "PROMPT.md": "27f010bea174ca5a2007cd8047ee8ab6369b65c1482b39e0c7bdc349098e92f5",
+    "REVIEW.md": "08b1fe450541b34727d4e129d8df8eafdd21a5e3c20993e68cbe4f36f07fbf9a",
+    "TREATMENT.md": "c5fea1300e837e348827cc99325a9a22ed74cc8e811c36cc99c798fabc493a9a",
+    "draw.js": "beb5029bc8086f83281c99620bf0912916e6804af717491f330a1a6b532618f5",
+    "film.js": "44769dd7f0e9ac2105135bb8a105626da509d341ce30b1a97e1fb49d2f582229",
+    "fonts/Bricolage.ttf": "413e7357809ddd12fd80a96a8a396de0e401638d4acd3cb3e37532f0472ac682",
+    "fonts/Jost.ttf": "6343b70971000b04c5d401c96ae08ce371086135e999d5e1e1413039c0213076",
+    "fonts/bricolagegrotesque-OFL.txt": "4b5a7d8f37f5602621c8a8d7358a6a2e71317e6c231c661e15aef0275d3e07ba",
+    "fonts/jost-OFL.txt": "1af3438a4d5f0ed2bdbc5751a5a67ebf6d537334161184b7fbb68503ef0ea0c5",
+    "index.html": "dbfc291913c16a6ad23f55d4a74e8a61386ea22cf694741a9ec8f1a1d7ab4fea",
+    "narration.json": "03c03dc324f52074156f930f616fa5e6eefff318525b0f353d1f82199401e708",
+    "places.js": "c5c7d853db66f500bc175ba5f70fa6ada67fcf6377294c03a3596a7dd9ffc798",
+    "rider.js": "45585dab4bc6285e9ffa7673377a0aa20c45805c7ec4957fd9071fe190c262bd",
+    "riso.js": "33372178569914cbb0210e67901434e544db6b2fa32efcd3ac60275e9d62cbbd",
+    "score.json": "3d28a50d833927bca602c4c70ac6c39259e510bd024b01176a647d38c0b5d589",
+    "shared-components.json": "11183f39ea608eaca2043cff687e806e508fcb69a9b7785d13b1decc10927b45"
+  },
+  "determinism": {
+    "times": [
+      0.5,
+      3.5,
+      8.3,
+      12,
+      20.2,
+      22.5,
+      25.5,
+      27.5,
+      30.5,
+      35.5
+    ],
+    "all_equal": true,
+    "method": "Ten final repaired WebGL canvas data URL pairs after scrambled seeks"
+  }
+}

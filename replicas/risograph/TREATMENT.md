@@ -1,0 +1,5 @@
+# Sunday Ride — authored full40s reconstruction
+
+New eleven-shot assembly: Blue bell ECU roller/first thumb flick; sleepy town tracking/title; Yellow bakery and precise no-slowdown baguette handoff; Pink park static wide; near pigeons burst; passenger recognition look; additive growing Pink disc becomes sun; stop by full-overprint river and held26–28 music pause with registration drift/snap28; break/sharebread; topdown with long shadows then real printer/stack reveal; triple-ink printed endcard and miniature cyclist. Preserve all5 exact short lines and physical sound cues.
+
+Three density channels printed through credited riso engine, fixed screen/registration per shot, actionkicks, stepped silhouettes and continuouscamera, paperknockouthalos. Detailed newly built balconies/shutters/awnings/trees/banks/printer; shared character/rig geometry explicitly disclosed. Fresh Dmajor120BPM nylon→percussion→upright/whistle→vibraphone layer arc, silencebus26–28, remove instruments throughpullback. No original scenes/film/main imported, noframes/masteraudio reused.

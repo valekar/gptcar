@@ -1,0 +1,51 @@
+{
+  "language": "en-us",
+  "voice": "am_adam",
+  "lines": [
+    {
+      "id": "l1",
+      "text": "Sunday morning. The whole city is still blue.",
+      "voice": "am_adam",
+      "speed": 0.95,
+      "start": 5.6,
+      "duration": 2.697,
+      "language": "en-us"
+    },
+    {
+      "id": "l2",
+      "text": "Then the bakery opens, and the day gets its first color.",
+      "voice": "am_adam",
+      "speed": 0.95,
+      "start": 9.0,
+      "duration": 3.179,
+      "language": "en-us"
+    },
+    {
+      "id": "l3",
+      "text": "The park adds pink. And, apparently, a passenger.",
+      "voice": "am_adam",
+      "speed": 0.95,
+      "start": 21.7,
+      "duration": 2.965,
+      "language": "en-us"
+    },
+    {
+      "id": "l4",
+      "text": "By the river, every color overlaps.",
+      "voice": "am_adam",
+      "speed": 0.95,
+      "start": 28.3,
+      "duration": 2.172,
+      "language": "en-us"
+    },
+    {
+      "id": "l5",
+      "text": "Same ride every Sunday. Never quite the same print.",
+      "voice": "am_adam",
+      "speed": 0.95,
+      "start": 32.8,
+      "duration": 3.106,
+      "language": "en-us"
+    }
+  ]
+}

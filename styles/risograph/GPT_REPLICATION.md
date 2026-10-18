@@ -1,0 +1,11 @@
+# Full reference reconstruction
+
+Preserve all40s and all11 scenes, including bell ECU, bakery no-slowdown exchange, flock/passenger, plate-growth sun, river pause/share and topdown→printer-stack reveal. Read complete STYLE/DEMO and whole original before assembling. Reuse/credit generic riso.js/draw.js and named character rig if appropriate, but generate new scene assemblies/camera/animation and disclose shared geometry.
+
+Every visible colour must come from three density channels; gate Blue→Yellow→Pink, fixed offsets per shot, accent kicks and intentional26–28 drift/snap28. A generic noise overlay or blank tinted canvas is not this style. Verify fresh rendered subject frames; no technical success substitutes for actual visibility.
+
+Stage exchange ahead of rider above basket, attach baguette to a reachable hand before lowering to basket, then put pigeon feet at its top. Inspect exact11.3/12.0/20.0/22.05/24–26/29.5/30.6 cues. Build first street beyond both camera edges, and clip wide-world builders to each small print aperture when reusing them inside the printer stack; otherwise buildings leak outside paper borders. Distinguish current topdown print from earlier Blue, bakery and park prints.
+
+Fresh D-major120BPM bossa layers nylon guitar→dry percussion→jazz bass/whistle→vibraphone; musical bus silence26–28 retains natural water/birds/church bell. Remove instruments during pullback. Exact original text and measured960frames remain fixed; parent decoded/movie/voice review required.
+
+Reference fidelity includes gestures and the scale of a camera: the opening bell dome is an ECU, the park wide takes3seconds to cross only the left portion, and the pigeon low shot approaches from offscreenleft. Place the passenger on the basket rim, not the baguette tip. Start the river scene below the growing/shrinking pink plate at24.6 rather than holding the park until25. The overhead bicycle must flatten to a horizontal strip with shaped shadows cast left; a diagonally squashed side bicycle remains a different camera. The printer is its own dimensional reveal: the current large page pulls back before the header enters, earlier proofs stay fixed on the table, and every image is clipped inside its own paper aperture. Inspect exact5.4167/8.3333/20.4167/22.0833/24.9167/33.5/34frames, not just rounded seconds.

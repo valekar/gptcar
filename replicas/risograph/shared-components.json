@@ -1,0 +1,47 @@
+[
+  {
+    "path": "styles/risograph/demo/riso.js",
+    "sha256": "33372178569914cbb0210e67901434e544db6b2fa32efcd3ac60275e9d62cbbd",
+    "purpose": "Shared WebGL2 three spot-density print engine: halftone, misregistration, pinholes, grain, feed sweep and per-plate reflections"
+  },
+  {
+    "path": "styles/risograph/demo/draw.js",
+    "sha256": "beb5029bc8086f83281c99620bf0912916e6804af717491f330a1a6b532618f5",
+    "purpose": "Shared density-canvas primitive/knockout/overprint/halo and IK helpers"
+  },
+  {
+    "path": "styles/risograph/demo/rider.js",
+    "sha256": "45585dab4bc6285e9ffa7673377a0aa20c45805c7ec4957fd9071fe190c262bd",
+    "purpose": "Shared complete generic cyclist/bicycle/scarf/glasses/pigeon/baguette character and rig models; all timed performances and scene assembly new"
+  },
+  {
+    "path": "core/lib.js",
+    "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+    "purpose": "Deterministic math/ease helpers"
+  },
+  {
+    "path": "styles/risograph/demo/lines.json",
+    "sha256": "2c8b01ce0fcd24b0882eb614d96f9c2a450894906aa75af5493674fa54df4049",
+    "purpose": "Published exact five narrator texts and start/voice direction data"
+  },
+  {
+    "path": "styles/risograph/demo/voices/dur.json",
+    "sha256": "e207b9e56b4d09b8a3c839016577b33f9f41d3f5596d0a775c4d1798dd45a1a7",
+    "purpose": "Published original speech duration data for caption windows"
+  },
+  {
+    "path": "styles/risograph/demo/film.js",
+    "sha256": "a2f2dccdda62906cb23015d163027c6c889b95b92610a4930a61bbea44d75bca",
+    "purpose": "Read-only calibration for published camera/model/timing data after independent review; never imported or executed, and original scene function assemblies not copied."
+  },
+  {
+    "path": "styles/risograph/demo/scenes.js",
+    "sha256": "03dba9c5e9e186dcb6c271f1a77a9cda4bd4a4b191b14bbcf594c10dee1bab99",
+    "purpose": "Read-only calibration for published camera/model/timing data after independent review; never imported or executed, and original scene function assemblies not copied."
+  },
+  {
+    "path": "styles/risograph/demo/scenes2.js",
+    "sha256": "ae33acfc6482575577cf6f36bc0684ce8bad4f3f640805a2aa74e3c22421d4f7",
+    "purpose": "Read-only calibration for published camera/model/timing data after independent review; never imported or executed, and original scene function assemblies not copied."
+  }
+]
