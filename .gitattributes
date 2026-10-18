@@ -7,3 +7,5 @@ replicas/watercolor/OFL-1.1.md -whitespace
 # Frozen source-derived prompts retain their recorded input formatting.
 replicas/**/PROMPT.md -whitespace
 replicas/**/TREATMENT.md whitespace=-blank-at-eof
+# Frozen credits include source notices with their original end spacing.
+replicas/**/CREDITS whitespace=-blank-at-eof
