@@ -61,7 +61,7 @@ Building roof rises 36.3, beans pour 36.6 into rotating black drum with front ro
 
 ### 40.80000–44.40000s · Seventy beans to cafe
 
-Bike courier between roaster and cafe. Cafe roof 41.1, hopper 41.4, repeated 70 beans grid label 1 CUP=70 beans. Grind 42.6, tamp 43.8, porta filter locks 44.2. B arista blue coat and clean beige counter.
+Bike courier between roaster and cafe. Cafe roof 41.1, hopper 41.4, repeated 70 beans grid label 1 CUP=70 beans. Grind 42.6, tamp 43.8, porta filter locks 44.2. Barista blue coat and clean beige counter.
 
 ### 44.40000–48.15000s · First drop
 
@@ -69,11 +69,11 @@ Push espresso head/porta filter/spout; true hush 45.3–45.9 then one brown drop
 
 ### 48.15000–51.90000s · From hands to yours
 
-B arista hands over cup, frame push 48.9 and same cupped hand match 49.65 with blue sleeve. Label 11,000 km. Final VO 49.9 exact. Steam loops, palm/fingers separate geometry.
+Barista hands over cup, frame push 48.9 and same cupped hand match 49.65 with blue sleeve. Label 11,000 km. Final VO 49.9 exact. Steam loops, palm/fingers separate geometry.
 
 ### 51.90000–58.79167s · Whole map quantified
 
-Pull 51.9–54.9 to full square board. Labels HARVEST 1600 m, DRY 21 days, TRUCK 400 km, SEA 18 DAYS 10500 km, TRUCK 100 km, ROAST 220°C, CUP 70 beans. Bottom right legend FROM BEAN TO CUP /Isometric Info graphic /TOTAL 11,000 km /NOTTOSCALE; unit road vs sea series. Original credits recorded; independent new authorship later.
+Pull 51.9–54.9 to full square board. Labels HARVEST 1600 m, DRY 21 days, TRUCK 400 km, SEA 18 DAYS 10500 km, TRUCK 100 km, ROAST 220°C, CUP 70 beans. Bottom right legend FROM BEAN TO CUP /Isometric Infographic /TOTAL 11,000 km /NOT TO SCALE; unit road vs sea series. Original credits recorded; independent new authorship later.
 
 ## Published narration — verbatim
 
@@ -86,7 +86,7 @@ Pull 51.9–54.9 to full square board. Labels HARVEST 1600 m, DRY 21 days, TRUCK
 
 ## New voice and score direction
 
-100 BPM D–A–Bm–G nylon guitar/ka limba/world percussion/bass. Three-note A 4 F#4 D 4 bean motif. Silence 30–33.6 and ship horn 10 dB louder at 33.6; cafe slows 70 then 80, hush 45.3–45.9 for first drop. bf_alice 6 exact lines. No original master reuse.
+100 BPM D–A–Bm–G nylon guitar/kalimba/world percussion/bass. Three-note A4–F#4–D4 bean motif. Silence 30–33.6 and ship horn 10 dB louder at 33.6; cafe slows 70 then 80, hush 45.3–45.9 for first drop. bf_alice 6 exact lines. No original master reuse.
 
 ## Shared assets, engine and licences
 
@@ -96,7 +96,7 @@ Original codeMIT; reuse only explicitly attributed general helpers/fonts/assets 
 
 ## Primary v1 failures
 
-V 1 removed seven-stage continuous board geography, process quantities, nested sack dive, bean motif and matching hands; changed journey scope.
+V1 removed seven-stage continuous board geography, process quantities, nested sack dive, bean motif and matching hands; changed journey scope.
 
 ## Original credits — verbatim
 

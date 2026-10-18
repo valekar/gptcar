@@ -34,7 +34,7 @@ def compose(score,voice_records,duration,out):
         elif name in P.PRESETS:
             signal=P.pluck(name,note.get('midi',60),float(note['duration']),vel=float(note.get('velocity',.65)),**{k:note[k] for k in ['bend','vib','glide','harmonic','trem'] if k in note})
             add(dst,signal,note['t'],note.get('gain',.1),note.get('pan',0))
-        elif name in ['saw','fm_glass','sub808','toy_piano','analog_saw_pad','analog_square_seq','lpg_plonk','fm_epiano','slap_bass','synth_brass','theremin','whistle']:add(dst,synth_note(name,note.get('midi',60),float(note['duration']),**{k:note[k] for k in ['value','fm_index','glide'] if k in note}),note['t'],note.get('gain',.1),note.get('pan',0))
+        elif name in ['saw','fm_glass','sub808','toy_piano','analog_saw_pad','analog_square_seq','lpg_plonk','fm_epiano','slap_bass','synth_brass','theremin','whistle','chip_pulse','chip_triangle','chip_wavetable']:add(dst,synth_note(name,note.get('midi',60),float(note['duration']),**{k:note[k] for k in ['value','fm_index','glide','duty','bits','sample_rate','wave','decay'] if k in note}),note['t'],note.get('gain',.1),note.get('pan',0))
         else:synth[channel].append(note)
     for hit in score.get('hits',[]):
         channel=hit.get('channel','music')

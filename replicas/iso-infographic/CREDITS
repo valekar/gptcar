@@ -1,0 +1,19 @@
+From Bean to Cup — GPTcar reference reconstruction
+
+Authorship and comparison disclosure
+GPT-6.1 Sol, high reasoning: the parent task authored the initial independent board, scene assembly, prompt, treatment, six-voice plan and fresh score. The cartoon/3D worker inspected all original sheets and all paired samples, then refined the independent scene geometry, camera interpolation, cargo choreography, process machines, overlays and transitions. This is a source-informed reconstruction, not a blind same-prompt benchmark. The original private conversation prompt is unavailable; the published film, guides and numeric timing/geometry inform the reconstructed prompt. No original movie frames or master soundtrack appear in the output.
+
+Shared code and licences
+LemoLab / lemomo-ai lemo-opuscar, MIT: local engine.js reuses the generic isometric projection, depth sorting, primitive materials, typography, diagram overlays and icon toolkit. Local hero.js reuses the generic articulated palm, picking fingers, coffee branch/cherry/cup and distance tag primitives. Local props.js isolates generic tree/shrub/farmhouse, ship/hull/deck/container/sack, crane, truck/bicycle and state-parameterized cut-building primitives from the published world toolkit. The full original scene assembly, camera, timeline and film renderer are not runtime imports. TOOLKIT_LICENSE.txt preserves MIT and TOOLKIT_CREDITS.txt preserves the actual original film asset record. New board.js, film.js and process-models.js assemble the complete performance; static model proportions are measured from the reference and attributed here.
+
+Typography
+Jost by Owen Earl / indestructible type*, SIL Open Font License 1.1. Local fonts/Jost.ttf and fonts/Jost-OFL.txt.
+
+Fresh narration
+Kokoro-82M by hexgrad, Apache-2.0, bf_alice voice. Six exact published English inputs with the original onsets and speech speeds, newly synthesized by the root renderer. No original speech recording reused.
+
+New sampled music and sound
+Fresh sampled acoustic score follows the published 100 BPM D–A–Bm–G / B-minor sea / 80 BPM closing direction and the three-note bean motif, with new performance data and newly synthesized material sounds. FreePats guitar_nylon, kalimba and world_perc: CC0. Versilian Community Sample Library shaker, cajon and conga: CC0. Karoryfer Sneakybass jazz_bass: CC0. Core sampler/effects tools and sample pack notices accompany the root project. No original master audio reused.
+
+Reference film
+From Bean to Cup — Isometric Infographic, Lemo-Opuscar / LemoLab × Claude Opus 5.5. Reference movie used privately for analytical comparison. Original historical credits are preserved in TOOLKIT_CREDITS.txt, while the new film honestly identifies GPTcar authorship.

@@ -1,0 +1,32 @@
+[
+  {
+    "path": "replicas/iso-infographic/engine.js",
+    "sha256": "0c2fd6fb834acda6bbe708caa3360e59e4c1573e34bf3d5edb6f624c9f2a3eae",
+    "origin": "styles/iso-infographic/demo/engine.js",
+    "license": "MIT"
+  },
+  {
+    "path": "replicas/iso-infographic/hero.js",
+    "sha256": "3865cd23a64f4c8a2498f48f9c84320f3892777eb4be8a173a06e560a0a01b0f",
+    "origin": "styles/iso-infographic/demo/hero.js",
+    "license": "MIT"
+  },
+  {
+    "path": "replicas/iso-infographic/props.js",
+    "sha256": "09fae606005c04cc96ab974aec2bf59078bae2a3740e297b12182402fdd0ad27",
+    "origin": "isolated factories from styles/iso-infographic/demo/world.js",
+    "license": "MIT"
+  },
+  {
+    "path": "replicas/iso-infographic/fonts/Jost.ttf",
+    "sha256": "6343b70971000b04c5d401c96ae08ce371086135e999d5e1e1413039c0213076",
+    "origin": "Jost / Owen Earl, published font asset",
+    "license": "SIL OFL 1.1"
+  },
+  {
+    "path": "replicas/iso-infographic/fonts/Jost-OFL.txt",
+    "sha256": "1af3438a4d5f0ed2bdbc5751a5a67ebf6d537334161184b7fbb68503ef0ea0c5",
+    "origin": "Jost licence",
+    "license": "SIL OFL 1.1"
+  }
+]

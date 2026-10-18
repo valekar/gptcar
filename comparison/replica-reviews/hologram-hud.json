@@ -100,5 +100,14 @@
   "method": "Root inspected all89 final-movie matched pairs across the complete39s scan, battery and motor cutaways, brake overview/loupe, exploded parts, card dock/whips, zero pause, ignition, full turntable, returned specs and erase/endcard. Entire MIT bicycle CAD geometry and generic holo/HUD tools are explicitly credited; scene/camera/cards and choreography independently assembled.",
   "audio_evidence": "All5 exact published inputs newly synthesized. Independent Whisper3/5 normalized literal, remaining c0 kilometres/kilometers and outro17.4/seventeen point four transcriptions preserve content as documented. New625-note score and174 effects, music-only7.5\u20138s rest and full23.5\u201324s zero. AAC -14.0 LUFS/-1.2 dBTP; no original master audio reused.",
   "comparison_notes": "Complete fictional product story, specification text, duration and technical detail retained. Shared complete bicycle CAD geometry is an input asset, not newly authored GPT artwork. Fine scan/erase phase, camera interpolation, loupe orbit, explode closure, glow, glyph scramble and card timing vary. Source-informed reconstruction with credited shared assets, not a blind benchmark.",
-  "reviewed_at": "2026-10-18T07:53:12.735886+00:00"
+  "reviewed_at": "2026-10-18T07:53:12.735886+00:00",
+  "pcm_silence_verification": {
+    "range": [
+      23.55,
+      23.95
+    ],
+    "sample_rate": 48000,
+    "sample_frames": 19200,
+    "absolute_peak": 0.0
+  }
 }

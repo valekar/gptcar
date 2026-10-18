@@ -3,11 +3,96 @@ import numpy as np
 from scipy.signal import butter,sosfilt
 SR=48000
 
+def chip_process(a,bits=None,sample_rate=None):
+ a=np.asarray(a,dtype=np.float32)
+ if sample_rate is not None:
+  rate=float(sample_rate)
+  if not np.isfinite(rate) or not 1000<=rate<=SR:raise ValueError('chip sample_rate must be1000..48000')
+  clock=np.arange(len(a));index=np.minimum((np.floor(clock*rate/SR)*SR/rate).astype(int),len(a)-1);a=a[index]
+ if bits is not None:
+  bits=int(bits)
+  if not 1<=bits<=24:raise ValueError('chip bits must be1..24')
+  peak=max(float(np.max(np.abs(a))),1e-9)
+  if bits==1:a=np.where(a>=0,peak,-peak)
+  else:
+   levels=2**(bits-1)-1;a=np.round(a/peak*levels)/levels*peak
+ return a
+
 def effect(kind,duration,seed=6103,**p):
+ # Explicit workshop cue names preserve their material family and seeded variation.
+ kind={'baren':'baren_rub','peel':'paper_peel','proof_peel':'paper_peel','paper_lay':'paper_land','paper_tap':'pen_tap','tissue_rustle':'paper_fold','beam_creak':'hull_creak','compass_click':'turret_click','compass_drop':'loupe_clack','cloth_grip':'handoff_rub','ink_dot':'water_plop','water_plip':'water_plop','wet_brush':'brush','pour':'coffee_pour','clunk':'stone_thunk','crack':'bean_crack','debris':'sugar_crunch','dust':'candle_puff','mould_smash':'impact','tongs_clank':'container_clang','burin_lift':'pen_tap','swarf_ping':'porcelain_clink','carve_title':'knife_run','rays_carve':'carve_fine'}.get(kind,kind)
  d=float(duration);t=np.arange(max(1,round(d*SR)))/SR;u=t/max(d,.001);rng=np.random.default_rng(seed);noise=rng.normal(size=len(t));env=np.sin(np.pi*np.clip(u,0,1))**2
  def bp(a,lo,hi):return sosfilt(butter(2,[lo,hi],btype='bandpass',fs=SR,output='sos'),a)
  def lp(a,hz):return sosfilt(butter(2,hz,fs=SR,output='sos'),a)
- if kind=='fluorescent_bed':
+ kind={'screen_clack':'wood_knock','screen_hinge':'door_hinge','paper_stamp':'rubber_stamp','trail_tick':'keyboard_click','paper_hiss':'tape_hiss','registration_clamp':'relay_click','lake_lap':'sea_swell','mountain_wind':'wind','drying_clip':'magnet_clack','far_wind':'wind','wind_muffled':'wind','amb_forge':'fire_roar'}.get(kind,kind)
+ if kind=='chip_noise':
+  rate=float(p.get('sample_rate',16000))
+  if not np.isfinite(rate) or not 1000<=rate<=SR:raise ValueError('chip sample_rate must be1000..48000')
+  count=max(1,int(np.ceil(d*rate))+1);seq=np.empty(count,np.float32);state=(int(seed)&32767) or 1
+  for i in range(count):
+   seq[i]=1 if state&1 else -1;feedback=(state^(state>>1))&1;state=(state>>1)|(feedback<<14)
+  a=seq[np.minimum((t*rate).astype(int),count-1)]*np.exp(-u*float(p.get('decay',6)))*np.minimum(t/.0005,1)
+ elif kind in ('gift_pot','gift_candle','gift_keys','gift_ring','gift_spoon','gift_bracelet'):
+  f={'gift_pot':185,'gift_candle':640,'gift_keys':3600,'gift_ring':5100,'gift_spoon':1750,'gift_bracelet':2400}[kind];a=np.zeros(len(t))
+  onsets=[0,.035,.075] if kind in ('gift_keys','gift_bracelet') else [0]
+  for onset in onsets:
+   q=t-onset;v=q>=0
+   for i,r in enumerate([1,2.76,4.98]):
+    if f*r<18000:a[v]+=(.5/(i+1))*np.sin(2*np.pi*f*r*q[v])*np.exp(-q[v]*(14+i*12))*np.minimum(q[v]/.0007,1)
+   a[v]+=bp(noise,700,6000)[v]*.15*np.exp(-q[v]*85)*np.minimum(q[v]/.001,1)
+  a*=np.minimum((d-t)/.025,1)
+ elif kind=='squeegee_mesh':
+  speed=np.clip(float(p.get('speed',1)),.1,5);grain=float(p.get('frequency',250));a=(bp(noise,500,min(15000,5000+speed*1200))*.65+lp(noise,900)*.2)*env*(.55+.45*np.sin(2*np.pi*grain*t))
+ elif kind=='ink_squelch':
+  f=170+95*np.sin(np.pi*u);ph=2*np.pi*np.cumsum(f)/SR;a=(np.sin(ph)*.3+bp(noise,300,2800)*.55)*env*(.5+.5*np.sin(2*np.pi*9*t)**2)
+ elif kind=='waterfall':
+  a=(bp(noise,300,9500)*.6+lp(noise,300)*.35)*env*(.85+.15*np.sin(2*np.pi*1.7*t))
+ elif kind=='visitor_murmur':
+  # Indistinct room texture only: no sampled speech or intelligible words.
+  a=bp(noise,220,1600)*.25
+  for i in range(4):
+   f=rng.uniform(115,220);ph=2*np.pi*np.cumsum(f*(1+.08*np.sin(2*np.pi*(.6+i*.2)*t)))/SR
+   a+=(np.sin(ph)+.18*np.sin(3*ph))*.06*(.5+.5*np.sin(2*np.pi*(1.2+i*.4)*t)**2)
+  a*=env
+ elif kind in ('knife_bite','knife_flick','stab'):
+  a=(bp(noise,900,7800)*.55+np.sin(2*np.pi*330*t)*.22)*np.exp(-u*(30 if kind=='knife_flick' else 17))*np.minimum(t/.001,1)
+ elif kind in ('knife_run','gouge_u','gouge_v','carve_fine','clay_rasp'):
+  lo,hi,rate={'knife_run':(700,6500,27),'gouge_u':(250,3300,18),'gouge_v':(1500,8700,37),'carve_fine':(2300,10500,54),'clay_rasp':(300,3900,16)}[kind]
+  a=(bp(noise,lo,hi)*.65+np.sin(2*np.pi*(230 if kind=='gouge_u' else 610)*t)*.06)*env*(.25+.75*np.maximum(np.sin(2*np.pi*rate*t),0)**2)
+ elif kind in ('burin_scrape','hatch_scratch','circular_scribe'):
+  density=max(.1,float(p.get('density',1)));rate=(31 if kind=='burin_scrape' else 75 if kind=='hatch_scratch' else 17)*density
+  chatter=.25+.75*np.maximum(np.sin(2*np.pi*rate*t+.15*np.sin(2*np.pi*7*t)),0)**2
+  a=(bp(noise,2600,9000)*chatter*.65+np.sin(2*np.pi*1780*t)*.035)*env
+ elif kind=='burnish_rub':
+  a=(bp(noise,450,4200)*.6+np.sin(2*np.pi*(820*t+80*t*t))* .07)*env*(.6+.4*np.sin(2*np.pi*4*t)**2)
+ elif kind in ('press_roller','brayer'):
+  a=(lp(noise,1200)*.45+bp(noise,1200,4200)*.18+np.sin(2*np.pi*68*t)*.12)*env*(.7+.3*np.sin(2*np.pi*9*t)**2)
+ elif kind=='press_thump':
+  a=(np.sin(2*np.pi*74*t)*.6+np.sin(2*np.pi*183*t)*.2+lp(noise,1800)*.45)*np.exp(-u*12)*np.minimum(t/.002,1)
+ elif kind=='workshop_clock':
+  a=np.zeros(len(t));step=float(p.get('interval',.5))
+  for i,onset in enumerate(np.arange(0,d,step)):
+   q=t-onset;valid=q>=0;f=1800 if i%2 else 1350
+   a[valid]+=(np.sin(2*np.pi*f*q[valid])*.35+bp(noise,1000,6000)[valid]*.4)*np.exp(-q[valid]*130)*np.minimum(q[valid]/.0005,1)
+ elif kind in ('bellows','fire_roar'):
+  a=(lp(noise,600)*.7+bp(noise,700,4000)*.3)*env
+  if kind=='bellows':a*=.25+.75*np.sin(np.pi*u)**2
+  else:a*=.7+.3*np.sin(2*np.pi*3.7*t)**2
+ elif kind=='sizzle':
+  a=bp(noise,1800,14500)*env*(.18+.82*(rng.random(len(t))<.065))
+ elif kind=='molten_bubble':
+  a=lp(noise,400)*env*.15
+  for onset in rng.uniform(0,d,max(2,int(d*9))):
+   q=t-onset;v=q>=0;f=rng.uniform(100,420)
+   a[v]+=.18*np.sin(2*np.pi*(f*q[v]-f*q[v]*q[v]*1.4))*np.exp(-q[v]*22)*np.minimum(q[v]/.002,1)
+  a*=np.minimum((d-t)/.03,1)
+ elif kind in ('anvil_modal','foundry_bell','foundry_echo'):
+  f=float(p.get('frequency',p.get('f0',146.8324)));ratios=p.get('ratios',[.5,1,1.2,1.5,2,2.5,3,4]);a=np.zeros(len(t))
+  for i,r in enumerate(ratios):a+=(.7/(1+i*.5))*np.sin(2*np.pi*f*float(r)*t)*np.exp(-t*(.55+i*.32))
+  a+=bp(noise,1200,7500)*np.exp(-t*90)*.15
+  if kind=='foundry_echo':a=lp(a,1800)
+  a*=np.minimum(t/.001,1)*np.minimum((d-t)/.07,1)
+ elif kind=='fluorescent_bed':
   a=(sum(np.sin(2*np.pi*120*k*t)*(.13/k) for k in range(1,6))+np.sin(2*np.pi*9000*t)*.013+lp(noise,500)*.02)*env
  elif kind=='ballast_arc':
   a=(bp(noise,2000,10000)*.6+np.sin(2*np.pi*120*t)*.25)*np.exp(-u*7)*(.3+.7*(rng.random(len(t))<.1))*np.minimum(t/.001,1)
@@ -476,7 +561,7 @@ def effect(kind,duration,seed=6103,**p):
   for onset in np.arange(0,d,float(p.get('interval',.5))):
    q=t-onset;valid=q>=0;a[valid]+=(bp(noise,180,2200)[valid]*.5+np.sin(2*np.pi*115*q[valid])*.3)*np.exp(-q[valid]*35)*np.minimum(q[valid]/.003,1)
  else:raise ValueError('Unsupported material cue: '+kind)
- return np.asarray(a,dtype=np.float32)
+ return chip_process(a,p.get('bits'),p.get('sample_rate'))
 
 def saw(midi,duration):
  t=np.arange(max(1,round(duration*SR)))/SR;f=440*2**((float(midi)-69)/12);a=sum(np.sin(2*np.pi*f*k*t)/k*np.exp(-k/7) for k in range(1,min(24,int(18000/f))+1));edge=np.minimum(t/.008,1)*np.minimum((duration-t)/.04,1);return np.asarray(a*edge*.6,dtype=np.float32)
@@ -485,7 +570,28 @@ def saw(midi,duration):
 def synth_note(kind,midi,duration,**p):
  if kind=='saw':return saw(midi,duration)
  t=np.arange(max(1,round(duration*SR)))/SR;f=440*2**((float(midi)-69)/12);edge=np.minimum(t/.003,1)*np.minimum((duration-t)/.025,1)
- if kind=='whistle':
+ if kind in ('chip_pulse','chip_triangle','chip_wavetable'):
+  rate=float(p.get('sample_rate',22050))
+  if not np.isfinite(rate) or not 1000<=rate<=SR:raise ValueError('chip sample_rate must be1000..48000')
+  clock=np.floor(t*rate)/rate;phase=(f*clock)%1
+  if kind=='chip_pulse':
+   duty=float(p.get('duty',.25))
+   if not 0<duty<1:raise ValueError('chip duty must be0..1 exclusive')
+   a=(np.where(phase<duty,1.,-1.)-(2*duty-1))*.5
+  elif kind=='chip_triangle':a=2/np.pi*np.arcsin(np.sin(2*np.pi*phase))
+  else:
+   wave=p.get('wave','bell')
+   if isinstance(wave,(list,tuple)):
+    table=np.asarray(wave,dtype=float)
+    if table.ndim!=1 or len(table)<2 or not np.isfinite(table).all():raise ValueError('Invalid chip wavetable')
+    a=table[np.minimum((phase*len(table)).astype(int),len(table)-1)]
+   elif wave=='triangle':a=2/np.pi*np.arcsin(np.sin(2*np.pi*phase))
+   elif wave=='saw':a=phase*2-1
+   elif wave=='sine':a=np.sin(2*np.pi*phase)
+   else:a=np.sin(2*np.pi*phase)+.32*np.sin(2*np.pi*phase*3)+.16*np.sin(2*np.pi*phase*7)
+   a/=max(float(np.max(np.abs(a))),1e-9)
+  a=chip_process(a,p.get('bits',4 if kind=='chip_triangle' else 8),rate)*np.exp(-t*float(p.get('decay',.2)))
+ elif kind=='whistle':
   ph=2*np.pi*np.cumsum(f*2**((.08*np.sin(2*np.pi*5*t)+float(p.get('glide',0))*np.exp(-t*12))/12))/SR
   breath=np.random.default_rng(6107).normal(size=len(t));breath=sosfilt(butter(2,[1500,6500],btype='bandpass',fs=SR,output='sos'),breath)
   a=(np.sin(ph)+.035*np.sin(2*ph)+.035*breath)*np.minimum(t/.035,1)*np.minimum((duration-t)/.07,1)

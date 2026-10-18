@@ -1,0 +1,38 @@
+[
+  {
+    "id": "L1",
+    "t0": 2.55,
+    "t1": 5.2,
+    "text": "How far did your coffee travel?"
+  },
+  {
+    "id": "L2",
+    "t0": 8.4,
+    "t1": 12.6,
+    "text": "It began as a cherry on a hillside, with two seeds inside."
+  },
+  {
+    "id": "L3",
+    "t0": 12.9,
+    "t1": 17.05,
+    "text": "Dried in the sun, then packed with four hundred thousand others."
+  },
+  {
+    "id": "L4",
+    "t0": 23.4,
+    "t1": 25.7,
+    "text": "Eighteen days at sea."
+  },
+  {
+    "id": "L5",
+    "t0": 30.9,
+    "t1": 33.55,
+    "text": "Somewhere in here is yours."
+  },
+  {
+    "id": "L6",
+    "t0": 49.9,
+    "t1": 54.4,
+    "text": "Eleven thousand kilometres, from one pair of hands to yours."
+  }
+]

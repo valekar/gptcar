@@ -110,5 +110,14 @@
   "method": "Root inspected all97 initial full-movie matched pairs across the complete continuous take, plus30 repaired decoded pairs at27\u201336.7s after replacing coherent VHS noise and correcting credits. Checked notice text, three flickers, figure/focus/wave, clock and battery jump, EXIT silence, door, rule-six notice and ending. Independent office/light-field/camera/media assembly; credited generic materials, figure and tape tools.",
   "audio_evidence": "All10 exact published voice inputs newly synthesized; independent Whisper recovered10/10 normalized exact, including late PA takes shifted -0.55 semitone without duration change. Newly performed216-note diegetic hold music and116 effects. Full46.75\u201347.75s silence; only faint tape hiss after56.65. AAC -14.0 LUFS/-1.2 dBTP; no original master reused.",
   "comparison_notes": "Complete continuous-take route, rules, dialogue, found-footage framing and timing preserved. Fine texture, tape grain/dropout phases, AO, silhouette motion and voice/music timbre differ. Shared generic textures/materials/figure/VHS/font helpers credited; independently assembled scene and choreography, source-informed recreation rather than a blind benchmark.",
-  "reviewed_at": "2026-10-18T07:50:27.147882+00:00"
+  "reviewed_at": "2026-10-18T07:50:27.147882+00:00",
+  "pcm_silence_verification": {
+    "range": [
+      46.8,
+      47.7
+    ],
+    "sample_rate": 48000,
+    "sample_frames": 43200,
+    "absolute_peak": 0.0
+  }
 }
