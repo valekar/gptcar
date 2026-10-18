@@ -1,0 +1,91 @@
+{
+  "slug": "hologram-hud",
+  "method": "Independent Whisper transcription of the actual newly synthesized/pitched/tempo-fitted voice takes. No expected-text initial prompt. Music and radio filtering are separately mixed.",
+  "narration_sha256": "ac75ddde45117278c7d5dcaff6d5503c6ef13b176c9ef3683725b8f24103b1db",
+  "timing_sha256": "477c1550b4a45792fd1e01fafe8aa99634ad2ac0eb64b234c01d1b1877fa12ea",
+  "checked_at": "2026-10-18T07:49:54.319826+00:00",
+  "line_count": 5,
+  "normalized_exact_count": 3,
+  "lines": [
+    {
+      "id": "intro",
+      "text": "This is Volt. A city e-bike, stripped to what matters.",
+      "transcript": "This is Volt, a city e-bike stripped to what matters.",
+      "normalized_exact": true,
+      "similarity": 1.0,
+      "language": "en",
+      "asr_model": "base.en",
+      "take_sha256": "8f7ce8b9a479b55d4b7ce828e81907032616afba6edb773603cb0ebc53272715",
+      "start": 3.0,
+      "duration": 3.0360416666666667,
+      "pitch_semitones": 0.0,
+      "tempo_factor": 1,
+      "filter": null
+    },
+    {
+      "id": "c0",
+      "text": "The battery hides inside the down tube. Eighty kilometres on one charge.",
+      "transcript": "The battery hides inside the down tube, 80 kilometers on one charge.",
+      "normalized_exact": false,
+      "similarity": 0.9166666666666666,
+      "language": "en",
+      "asr_model": "base.en",
+      "take_sha256": "779fe3764d89ddc8515ba64de491f569308780c9276d07b9b9e865e6200daccf",
+      "start": 9.0,
+      "duration": 4.362166666666667,
+      "pitch_semitones": 0.0,
+      "tempo_factor": 1,
+      "filter": null
+    },
+    {
+      "id": "c1",
+      "text": "A two hundred and fifty watt hub motor. Silent, and sealed.",
+      "transcript": "A 250-watt hub motor, silent and sealed.",
+      "normalized_exact": true,
+      "similarity": 1.0,
+      "language": "en",
+      "asr_model": "base.en",
+      "take_sha256": "a2f703c5e9f800d6fe46805ed80b2a7557cef72792e289b9cbe1181bbc52a1fc",
+      "start": 14.25,
+      "duration": 3.5727083333333334,
+      "pitch_semitones": 0.0,
+      "tempo_factor": 1,
+      "filter": null
+    },
+    {
+      "id": "c2",
+      "text": "Hydraulic disc brakes. Sure stops, even in the rain.",
+      "transcript": "Hydraulic disc brakes sure stops even in the rain.",
+      "normalized_exact": true,
+      "similarity": 1.0,
+      "language": "en",
+      "asr_model": "base.en",
+      "take_sha256": "874fc9901e1ec6373005d440d8fa8a0b0954e8b92d0c85dcee063355052f5e82",
+      "start": 18.25,
+      "duration": 3.3092916666666667,
+      "pitch_semitones": 0.0,
+      "tempo_factor": 1,
+      "filter": null
+    },
+    {
+      "id": "outro",
+      "text": "Seventeen point four kilos. Ready when you are.",
+      "transcript": "17.4 kilos ready when you are",
+      "normalized_exact": false,
+      "similarity": 0.7142857142857143,
+      "language": "en",
+      "asr_model": "base.en",
+      "take_sha256": "3a71f5748abbf816192fd2cbd5236418b1b38c49d006b1d7afd225445197810e",
+      "start": 29.0,
+      "duration": 2.823625,
+      "pitch_semitones": 0.0,
+      "tempo_factor": 1,
+      "filter": null
+    }
+  ],
+  "manual_text_review": {
+    "method": "Read independent transcripts and exact synthesis-input provenance; this is textual evidence, not an acoustic audition.",
+    "result": "All5 preserve spoken content. Three normalized literal matches; c0 differs only kilometres/kilometers spelling and numeric notation, outro uses17.4 instead of seventeen point four.",
+    "asr_literal_count_retained": true
+  }
+}

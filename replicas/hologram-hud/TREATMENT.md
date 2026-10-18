@@ -1,0 +1,5 @@
+# Volt · Spec Scan — full reference recreation
+
+Inspect all four complete decoded reference sheets and full published STYLE/DEMO before authoring. Preserve the exact fictional CE-01e-bike, full39seconds/936frames, five voice lines,540Wh/80km battery,250W/45Nm motor,160mm two-piston hydraulic brake,17.4kg/1,990EUR/ships spring2027sheet.
+
+Attribution-first reusable MIT CAD geometry and holo/HUD primitives preserve all connected wheel ribs, tubes, mounts, cables, fenders, saddle clamp, cell pack, motor cap/rotor/stator and caliper piston detail. Independently author scene assembly, orbit/target camera, scan growth/erase, target snapshots, local axial explode/return, leaders/count lock/card docking, counter-orbit loupe, true-zero ignition breath, turntable/crane, Fresnel/interlace/beam, final spec hold and honest endcard. No upstream film/main/runtime code or original master media. New120BPM D-minor/Dorian saw/pulse/bass/drums score follows all published mechanical/UI event cues with rising density, true silence, ignition drop and half-time reading hold.
