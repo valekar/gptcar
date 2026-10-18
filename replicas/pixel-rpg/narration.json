@@ -1,0 +1,52 @@
+{
+  "language": "en-gb",
+  "voice": "bm_george",
+  "lines": [
+    {
+      "id": "vo1",
+      "text": "The last save point. I thought it'd feel bigger.",
+      "voice": "bm_george",
+      "speed": 0.9,
+      "language": "en-gb",
+      "start": 5.0,
+      "duration": 3.692
+    },
+    {
+      "id": "vo2",
+      "text": "We left home with a wooden sword, and one long scarf.",
+      "voice": "bm_george",
+      "speed": 0.9,
+      "language": "en-gb",
+      "start": 11.5,
+      "duration": 4.439
+    },
+    {
+      "id": "vo4",
+      "text": "Some wounds... no inn will ever heal.",
+      "voice": "bm_george",
+      "speed": 0.9,
+      "language": "en-gb",
+      "start": 32.2,
+      "duration": 2.987,
+      "asr": "Some wounds, no in will ever heal."
+    },
+    {
+      "id": "vo5",
+      "text": "She'd hate it if I stopped here.",
+      "voice": "bm_george",
+      "speed": 0.9,
+      "language": "en-gb",
+      "start": 42.4,
+      "duration": 2.728
+    },
+    {
+      "id": "vo6",
+      "text": "Okay. Let's finish this.",
+      "voice": "bm_george",
+      "speed": 0.9,
+      "language": "en-gb",
+      "start": 46.1,
+      "duration": 2.386
+    }
+  ]
+}

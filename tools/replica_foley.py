@@ -18,14 +18,107 @@ def chip_process(a,bits=None,sample_rate=None):
    levels=2**(bits-1)-1;a=np.round(a/peak*levels)/levels*peak
  return a
 
+# Explicit equivalences for the microgame's named physical actions. These are
+# aliases of the same material/mechanism, not claims of separately sampled audio.
+MICROGAME_FOLEY_ALIASES = {
+ 'crown_click':'turret_click',       # small metal detent click
+ 'reel_whirr':'cassette_motor',     # tape/reel motor rotation
+ 'canopy_fwump':'umbrella_fwump',   # tensioned fabric canopy deployment
+ 'pencil':'pen_scratch',            # dry writing-tip friction on paper
+ 'pop':'print_pop',                 # short synthesized dry pop
+ 'switch':'light_switch',          # mechanical toggle click
+}
+
 def effect(kind,duration,seed=6103,**p):
+ kind=MICROGAME_FOLEY_ALIASES.get(kind,kind)
  # Explicit workshop cue names preserve their material family and seeded variation.
  kind={'baren':'baren_rub','peel':'paper_peel','proof_peel':'paper_peel','paper_lay':'paper_land','paper_tap':'pen_tap','tissue_rustle':'paper_fold','beam_creak':'hull_creak','compass_click':'turret_click','compass_drop':'loupe_clack','cloth_grip':'handoff_rub','ink_dot':'water_plop','water_plip':'water_plop','wet_brush':'brush','pour':'coffee_pour','clunk':'stone_thunk','crack':'bean_crack','debris':'sugar_crunch','dust':'candle_puff','mould_smash':'impact','tongs_clank':'container_clang','burin_lift':'pen_tap','swarf_ping':'porcelain_clink','carve_title':'knife_run','rays_carve':'carve_fine'}.get(kind,kind)
  d=float(duration);t=np.arange(max(1,round(d*SR)))/SR;u=t/max(d,.001);rng=np.random.default_rng(seed);noise=rng.normal(size=len(t));env=np.sin(np.pi*np.clip(u,0,1))**2
  def bp(a,lo,hi):return sosfilt(butter(2,[lo,hi],btype='bandpass',fs=SR,output='sos'),a)
  def lp(a,hz):return sosfilt(butter(2,hz,fs=SR,output='sos'),a)
- kind={'screen_clack':'wood_knock','screen_hinge':'door_hinge','paper_stamp':'rubber_stamp','trail_tick':'keyboard_click','paper_hiss':'tape_hiss','registration_clamp':'relay_click','lake_lap':'sea_swell','mountain_wind':'wind','drying_clip':'magnet_clack','far_wind':'wind','wind_muffled':'wind','amb_forge':'fire_roar'}.get(kind,kind)
- if kind=='chip_noise':
+ kind={'screen_clack':'wood_knock','screen_hinge':'door_hinge','paper_stamp':'rubber_stamp','trail_tick':'keyboard_click','paper_hiss':'tape_hiss','registration_clamp':'relay_click','lake_lap':'sea_swell','mountain_wind':'wind','drying_clip':'magnet_clack','far_wind':'wind','wind_muffled':'wind','amb_forge':'fire_roar','steam':'kettle_steam'}.get(kind,kind)
+ if kind=='life_glass_crack':
+  # One brittle pane fracture: short impulse, stressed-glass modes, sparse shards.
+  attack=np.minimum(t/.0005,1);a=bp(noise,2300,15000)*np.exp(-t*150)*.75
+  for f,g,k in [(1920,.28,38),(3260,.2,51),(5470,.13,67),(8270,.08,90)]:a+=g*np.sin(2*np.pi*f*t)*np.exp(-t*k)
+  for onset in [min(.012,d*.18),min(.031,d*.42)]:
+   q=t-onset;v=q>=0;a[v]+=bp(noise,3500,17000)[v]*np.exp(-q[v]*160)*.18
+  a*=attack*np.minimum((d-t)/min(.015,max(d*.2,.0001)),1)
+ elif kind=='reel_clunk':
+  # Reel stop/detent: low hub knock plus a delayed metal latch.
+  a=(.5*np.sin(2*np.pi*130*t)+.2*np.sin(2*np.pi*430*t)+bp(noise,400,4500)*.35)*np.exp(-t*55)*np.minimum(t/.001,1)
+  q=t-min(.025,d*.35);v=q>=0;a[v]+=(np.sin(2*np.pi*1720*q[v])*.2+bp(noise,1600,7500)[v]*.25)*np.exp(-q[v]*105)*np.minimum(q[v]/.0008,1)
+ elif kind=='wax_squeak':
+  # Soft wax drag: irregular stick-slip fundamental with damped upper friction.
+  speed=float(p.get('speed',1));f=470+170*np.sin(np.pi*u)+35*np.sin(2*np.pi*23*speed*t)
+  phase=2*np.pi*np.cumsum(f)/SR;a=(np.sin(phase)*.42+np.sin(phase*2.93)*.12+bp(noise,500,4100)*.22)*env*(.4+.6*np.sin(2*np.pi*17*speed*t)**2)
+ elif kind=='pump_air':
+  # Pump stroke: pressure-shaped hiss with rubber barrel/handle friction.
+  pressure=np.sin(np.pi*np.clip(u,0,1))**.7
+  a=(bp(noise,900,8800)*.6+lp(noise,350)*.2+np.sin(2*np.pi*np.cumsum(95+70*u)/SR)*.1)*pressure*(.72+.28*np.sin(2*np.pi*7*t)**2)
+ elif kind=='wet_ink_splat':
+  # Viscous impact and a few short bubble modes; no generic dry impact alias.
+  phase=2*np.pi*np.cumsum(240-145*np.minimum(u*4,1))/SR
+  a=(lp(noise,1700)*.6+bp(noise,1200,6500)*.25+np.sin(phase)*.4)*np.exp(-u*10)*np.minimum(t/.0015,1)
+  for onset in [d*.13,d*.27,d*.43]:
+   q=t-onset;v=q>=0;a[v]+=.13*np.sin(2*np.pi*(650*q[v]-420*q[v]**2/max(d,.01)))*np.exp(-q[v]*55)*np.minimum(q[v]/.002,1)
+ elif kind=='ink_drip':
+  f=360-240*np.minimum(u*4,1);phase=2*np.pi*np.cumsum(f)/SR
+  a=(np.sin(phase)*.6+lp(noise,1800)*.18)*np.exp(-u*10)*np.minimum(t/.002,1)
+ elif kind=='teletype':
+  # Repeated physical type bars, alternating detents; rate is characters/second.
+  rate=np.clip(float(p.get('rate',p.get('speed',18))),1,120);a=np.zeros(len(t));metal=bp(noise,1400,8500)
+  for i,onset in enumerate(np.arange(0,d,1/rate)):
+   q=t-onset;v=q>=0;f=1250+(i%3)*240
+   a[v]+=(metal[v]*.45+np.sin(2*np.pi*f*q[v])*.22+np.sin(2*np.pi*165*q[v])*.17)*np.exp(-q[v]*110)*np.minimum(q[v]/.0005,1)
+ elif kind in ('belt_ratchet','zip_ratchet'):
+  # Belt: low coarse teeth; zipper: denser, brighter interlocking metal teeth.
+  zipper=kind=='zip_ratchet';rate=np.clip(float(p.get('rate',65 if zipper else 25)),1,300)
+  phase=(t*rate)%1;tooth=np.exp(-phase*(24 if zipper else 32))*np.minimum(phase/.015,1)
+  a=(bp(noise,1300 if zipper else 650,10500 if zipper else 6200)*.7+np.sin(2*np.pi*(1800 if zipper else 650)*t)*.13)*tooth*env
+ elif kind=='buckle_click':
+  a=(bp(noise,900,8000)*.5+np.sin(2*np.pi*840*t)*.25+np.sin(2*np.pi*2370*t)*.16)*np.exp(-t*95)*np.minimum(t/.0007,1)
+  q=t-min(.018,d*.3);v=q>=0;a[v]+=np.sin(2*np.pi*430*q[v])*.2*np.exp(-q[v]*70)*np.minimum(q[v]/.001,1)
+ elif kind=='paper_crunch':
+  # Multiple brittle fiber folds rather than edible/metal crushing.
+  grain=bp(noise,650,12000);a=grain*.1*env
+  for i,onset in enumerate(np.linspace(0,d*.8,max(3,int(d*22)))):
+   q=t-onset;v=q>=0;a[v]+=grain[v]*rng.uniform(.2,.7)*np.exp(-q[v]*(90+i%4*35))*np.minimum(q[v]/.001,1)
+  a*=.6+.4*np.sin(2*np.pi*37*t)**2
+ elif kind in ('pixel_meteor','pixel_jump'):
+  # Held-clock console sweep. Meteor falls; jump rises and bends down at its apex.
+  jump=kind=='pixel_jump';clock=np.floor(t*11025)/11025
+  f=(180+1000*np.sin(np.pi*np.minimum(u/.8,1))**.7) if jump else (1800*2**(-4*u)+55)
+  phase=(np.cumsum(f)/SR)%1;pulse=np.where(phase<.25,1.,-1.)*.5
+  index=np.minimum((np.floor(t*11025)*SR/11025).astype(int),len(t)-1);a=pulse[index]*np.minimum(t/.001,1)*np.exp(-u*(2.5 if jump else 4))
+  if not jump:a+=bp(noise,1000,8500)*np.exp(-u*5)*.3
+  a=chip_process(a,8,11025)
+ elif kind=='hollow_bonk':
+  f=float(p.get('frequency',220));a=sum(g*np.sin(2*np.pi*f*r*t)*np.exp(-t*k) for r,g,k in [(1,.65,17),(2.63,.27,31),(4.91,.13,48)])
+  a=(a+bp(noise,350,3800)*np.exp(-t*120)*.2)*np.minimum(t/.001,1)*np.minimum((d-t)/min(.03,max(d*.2,.0001)),1)
+ elif kind=='replay_scratch':
+  # Vinyl-style backward scrub: accelerating grain and pitched friction chirps.
+  f=180+2300*(1-u)**2+110*np.sin(2*np.pi*11*t);phase=2*np.pi*np.cumsum(f)/SR
+  a=(bp(noise,650,9500)*.5+np.sin(phase)*.25+np.sin(phase*1.51)*.1)*env*(.2+.8*np.sin(2*np.pi*(9*t+31*t*t/max(d,.01)))**2)
+ elif kind=='reentry_roar':
+  # Airflow roar, low bow-shock rumble and irregular flutter.
+  a=(lp(noise,420)*.8+bp(noise,700,8200)*.35+np.sin(2*np.pi*(47*t+5*t*t/max(d,.01)))*.08)*env*(.65+.35*np.sin(2*np.pi*13*t+.5*np.sin(2*np.pi*2*t))**2)
+ elif kind=='lever_pull':
+  f=130+100*u+14*np.sin(2*np.pi*19*t);phase=2*np.pi*np.cumsum(f)/SR
+  a=(np.sin(phase)*.24+bp(noise,300,2600)*.35)*env
+  q=t-d*.78;v=q>=0;a[v]+=(np.sin(2*np.pi*430*q[v])*.35+bp(noise,1200,6000)[v]*.35)*np.exp(-q[v]*90)*np.minimum(q[v]/.0008,1)
+ elif kind=='buzzer':
+  f=float(p.get('frequency',180));phase=2*np.pi*f*t;a=sum(np.sin(phase*k)/k for k in range(1,min(31,int(14000/f))+1,2))
+  a*=env*(.65+.35*np.sin(2*np.pi*30*t)**2)
+ elif kind=='card_flip':
+  a=bp(noise,500,7500)*env*(.7+.3*np.sin(2*np.pi*31*t))
+  a+=(np.sin(2*np.pi*180*t)*.22+bp(noise,1800,9000)*.2)*np.exp(-u*20)*np.minimum(t/.001,1)
+ elif kind=='sneeze_burst':
+  # Inarticulate breath onset/burst only; no sampled or generated spoken word.
+  phase=2*np.pi*np.cumsum(210+100*np.sin(np.pi*u))/SR
+  voiced=bp(sum(np.sin(phase*k)/k for k in range(1,15)),450,3200)*.18
+  a=(bp(noise,700,11000)*.75+voiced)*np.exp(-((u-.3)/.2)**2)+lp(noise,1300)*.15*env
+ elif kind=='chip_noise':
   rate=float(p.get('sample_rate',16000))
   if not np.isfinite(rate) or not 1000<=rate<=SR:raise ValueError('chip sample_rate must be1000..48000')
   count=max(1,int(np.ceil(d*rate))+1);seq=np.empty(count,np.float32);state=(int(seed)&32767) or 1

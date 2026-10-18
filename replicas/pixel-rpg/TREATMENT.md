@@ -1,0 +1,5 @@
+# The Last Save Point — full reference recreation
+
+Preserve the complete54.5s/1308frames at24fps,1280×720delivery,320×180native indexed framebuffer and older160×90four-color memory. Before scene assembly, inspect all five original sheets and exact decoded beats. Lone red-scarf hero at the crystal recalls a four-shade departure,8-bit fire with Wren, full-color battle/ward/blast/KO, palette collapse/grief, untouched save memories and NEW FILE, immense paneled door/rose-window tilt, resolve/push/dither color flood and CONTINUE coda. Every portrait, typed dialogue/menu/status/message, era and pause remains.
+
+Explicitly credit reusable MIT indexed framebuffer/font/UI/sprite/portrait/crystal/door drawing modules. Independently rebuild environments, character/action staging, camera, UI states, transitions/palette timing and full scene assembly; never import original main/scenes/memscenes. Five exact bm_george .9 lines recreated fresh. New regional chip arrangements preserve motif continuity, eras, silence29.2–30.1/34.6–35.5, harmonic resolution and synchronized game/stone/fire/magic/menu/save/door effects. No original master media.
