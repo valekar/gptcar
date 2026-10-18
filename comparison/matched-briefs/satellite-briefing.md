@@ -12,7 +12,7 @@ The original conversation prompt is unavailable. This brief reconstructs the com
 
 ## Reference artwork and performance
 
-Start on the curved Blue Marble globe with a blue atmospheric rim, reticle and altitude readout. Dive through the historical blue Aral map into registered grey Landsat terrain. Time advances through six actual shoreline plates while prior outlines remain as rings. The camera pushes to Muynak, follows a white95km range line to surviving water, then whips north to the dam. Water there regains green colour, the+37% comparison resolves, and the label returns to the north sea during the orbital pullback. Keep bilingual captions, technical source footer, map labels and gold measurements. The actual movie’s46/25% readings conflict with current corrected40/21% source data and require explicit historical labelling.
+Start on the curved Blue Marble globe with a blue atmospheric rim, reticle and altitude readout. Dive through the historical blue Aral map into registered grey Landsat terrain. Time advances through six actual shoreline plates while prior outlines remain as rings. The camera pushes to Muynak, follows a white95km range line to surviving water, then whips north to the dam. Water there regains green colour, the+37% comparison resolves, and the label returns to the north sea during the orbital pullback. Keep bilingual captions, technical source footer, map labels and gold measurements. The percentage counter animates continuously to 40% (2000) and 21% (2009); match its timing and do not freeze intermediate 46%/25% frames as final values.
 
 ## Complete timed scene order
 
@@ -224,7 +224,7 @@ Mix (in `mix.py`): stem gains frozen (music 10 dB under the voice while it speak
 ## Asset requirements and unresolved gaps
 
 - The exact Landsat mosaics, raw band rasters, masks, Blue Marble and derived map/growth textures are not in the checkout. Rebuild the original named plates and validate against the archived scene metadata.
-- The actual published movie shows2000=46% and2009=25%; corrected current source data gives40% and21%. Label the historical discrepancy explicitly.
+- The original animated countdown passes through 46% and 25% before settling at 40% (2000) and 21% (2009). Preserve the continuous readout from exact measured areas and its original timing; intermediate animation frames are not historical data discrepancies.
 - The original conversation prompt is not published. Use the complete published specification and audited reconstruction; do not claim the recovered text is a verbatim original chat prompt.
 
 Landsat mosaics and detail plates for the exact archived Aral Sea scenes, plus NASA Blue Marble and Natural Earth historical map geometry.

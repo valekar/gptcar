@@ -1,0 +1,166 @@
+{
+  "assets/vectors.json": {
+    "bytes": 187358,
+    "sha256": "4a058a4b8a3dda1958ae5b736577f643eda448031cdcfddddfa7de9d12e2c9df"
+  },
+  "assets/plates/world.jpg": {
+    "bytes": 1176813,
+    "sha256": "e3ec19895df53da47f6694c48ca91f9d7db2b0a17e36297b84536ac4a3abd987"
+  },
+  "assets/plates/ko2009_w.png": {
+    "bytes": 61050,
+    "sha256": "18b454180c118395be11a23c074ad3cd67772b8ced15ae5bc0539cfce39b72f9"
+  },
+  "assets/plates/r2000.jpg": {
+    "bytes": 1996146,
+    "sha256": "80f53d852523126183bd11ca2d99675f7a79178f18acc47b621df35298d69577"
+  },
+  "assets/plates/r2014.jpg": {
+    "bytes": 2172019,
+    "sha256": "03e736fec9a5cee765eb461c6720c78e0b7d120632a2d6640f9889fe5806670e"
+  },
+  "assets/plates/r2025_w.png": {
+    "bytes": 41772,
+    "sha256": "867c687bed0786879e6c642e38a755af565f97cda57d92c241ee421c64df9cb1"
+  },
+  "assets/plates/r1989_w.png": {
+    "bytes": 91985,
+    "sha256": "9d22b587af4574017c325d60b08b1a3b004a163b8a628bab6818d5ad00b046f4"
+  },
+  "assets/plates/mapfield.png": {
+    "bytes": 563526,
+    "sha256": "9114ad51b16218c3c0912c0757a74ad8ed9396705aaad2b54b479bc937b2dfe2"
+  },
+  "assets/plates/ko2025.jpg": {
+    "bytes": 1485574,
+    "sha256": "36b46933562c7f14ec760eed50d04849f5a7b945f8f16a15b7fbd3b01079d6c2"
+  },
+  "assets/plates/r1977.jpg": {
+    "bytes": 2228068,
+    "sha256": "b4b41cbcbffb5d158bdd12126c80940cbbb8fc431033842140764e220a5ac9f3"
+  },
+  "assets/plates/ko2009.jpg": {
+    "bytes": 1606489,
+    "sha256": "1a05389cdb42839b4d8401bdd0c3ebad184249660eb82537208e9b3479d6ded9"
+  },
+  "assets/plates/r1989.jpg": {
+    "bytes": 2064140,
+    "sha256": "eccd8620d53a22e64987c3fd9f5450ed5fc6951547f4703638c8eb53b6dfcc34"
+  },
+  "assets/plates/r1977_w.png": {
+    "bytes": 107381,
+    "sha256": "50941915abbacf20533b6e1655c05fb57b12d21873aa97bde3d2dc1f59f3953c"
+  },
+  "assets/plates/r2000_w.png": {
+    "bytes": 93951,
+    "sha256": "960267fa0e0228038c8abda8beb1b4f018f24f7d8e9b1d80ba1ed5bd9c9e9f59"
+  },
+  "assets/plates/la2025_w.png": {
+    "bytes": 7464,
+    "sha256": "c82a539d64965500e167b0a93858a049153bd26ada5151bddd2c2bf4179d8c6b"
+  },
+  "assets/plates/mu2025.jpg": {
+    "bytes": 2238177,
+    "sha256": "81568758a8db616ff1f175baaeac3e78db8385cd53670ca1cb18fc5c512ef155"
+  },
+  "assets/plates/mu2025_w.png": {
+    "bytes": 24635,
+    "sha256": "97f622c0ff2038bf01d2cb240d594e9208a3d399e021bface774fbc24a66ce34"
+  },
+  "assets/plates/ko2001.jpg": {
+    "bytes": 1531741,
+    "sha256": "a481d22714ee99a7af06b44b36760e4ad534f078db1b7cd3a20001fcf43ca507"
+  },
+  "assets/plates/ko_grow.png": {
+    "bytes": 86566,
+    "sha256": "8054651d89e5b8956b2426ecf658387269515481d1af229c561c34113ac4245f"
+  },
+  "assets/plates/la2025.jpg": {
+    "bytes": 1297919,
+    "sha256": "8c0d655f13b4a26e48f7437da33de59506a8008d0ffb7581d8702fc09fd3a507"
+  },
+  "assets/plates/ko2001_w.png": {
+    "bytes": 48366,
+    "sha256": "b1ef962fced3dd5e8f330420d260c7706566f78311a1f3909ceea9537b0ec97a"
+  },
+  "assets/plates/r2009.jpg": {
+    "bytes": 2161488,
+    "sha256": "6deac98cf3d4ddbf41e389d1b7686648c5c4df4030b6b8e58f08f1296dbaa8b7"
+  },
+  "assets/plates/ko2025_w.png": {
+    "bytes": 56472,
+    "sha256": "7bd4ea857f9317ac91c49b934f87de6771addedc166a48345654814bc8290c77"
+  },
+  "assets/plates/r2014_w.png": {
+    "bytes": 50393,
+    "sha256": "47da7ab3233eb6723cebe1b50093f6c68b49fb7ee8db6e3ed27d85b5d6185008"
+  },
+  "assets/plates/ca.jpg": {
+    "bytes": 3580210,
+    "sha256": "5a8e0fddbfbbebe72ae415889106410255ce92b149a51e3cf401c52872a6b4ec"
+  },
+  "assets/plates/r2025.jpg": {
+    "bytes": 2177981,
+    "sha256": "18961304b3fc28ad21eb2770ecc53245a660dc09e875b919587cb5c9ecbe6982"
+  },
+  "assets/plates/r2009_w.png": {
+    "bytes": 79798,
+    "sha256": "8d0bcb23bcca403d9d808e4a8f3026a6aff4f6f2459b66f19c93e807fa54e561"
+  },
+  "assets/plates/plates.json": {
+    "bytes": 28962,
+    "sha256": "4d4b34f1d16e5ef5f8cdf748cc168771b19319219ae59952599d0d6cd98aac10"
+  },
+  "fonts/OFL-ibmplexmono.txt": {
+    "bytes": 4456,
+    "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+  },
+  "fonts/NotoSerifSC-600.woff2": {
+    "bytes": 28836,
+    "sha256": "e53eaef4153710ea62dd31321999fbced7f059503b7b936b5b44be254ed8e99b"
+  },
+  "fonts/OFL-notoserifsc.txt": {
+    "bytes": 4350,
+    "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
+  },
+  "fonts/OFL-notosanssc.txt": {
+    "bytes": 4388,
+    "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+  },
+  "fonts/NotoSansSC-400.woff2": {
+    "bytes": 21332,
+    "sha256": "bc3b3217da767dc020d3180a5319c296bd0b795e14f43252d2ce9b834d83f655"
+  },
+  "fonts/BarlowCondensed-Light.ttf": {
+    "bytes": 101996,
+    "sha256": "2c37e1e6b5feb71d38a42e6180d2e2f4ca1aad22cfecbd017430f3863deba67d"
+  },
+  "fonts/IBMPlexMono-Medium.ttf": {
+    "bytes": 136704,
+    "sha256": "a9b4c49bb299e05b5f6c481e7fb5e78943d2793249a0c8874ab574a2d1ea6755"
+  },
+  "fonts/BarlowCondensed-Medium.ttf": {
+    "bytes": 103360,
+    "sha256": "262bd143292ce479ee0cd09a42b47ab173fca8e9c6eb5ed0b5c8a845bc371d17"
+  },
+  "fonts/IBMPlexMono-Regular.ttf": {
+    "bytes": 135580,
+    "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+  },
+  "fonts/NotoSansSC-500.woff2": {
+    "bytes": 21400,
+    "sha256": "11fe3b313fe589d1a6dad995ee6b0907bc3b30afe1e396349d4dcaaa4a3d7622"
+  },
+  "fonts/BarlowCondensed-Regular.ttf": {
+    "bytes": 102480,
+    "sha256": "583cec5da3b84bc4dc7c9c72e2a565c94d34e431518b19d7e250b7830ad5f996"
+  },
+  "fonts/BarlowCondensed-SemiBold.ttf": {
+    "bytes": 109428,
+    "sha256": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9"
+  },
+  "fonts/OFL-barlow.txt": {
+    "bytes": 4377,
+    "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+  }
+}

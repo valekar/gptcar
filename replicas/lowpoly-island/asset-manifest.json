@@ -1,0 +1,18 @@
+{
+  "fonts/OFL-josefinsans.txt": {
+    "bytes": 4449,
+    "sha256": "aee5a4081e8a52f80428b30f178b719d115f18dad3e1fa15a986163e1078a85b"
+  },
+  "fonts/OFL-quicksand.txt": {
+    "bytes": 4445,
+    "sha256": "14d28541780d90f6577bb7abcc6f005bf6969614294e75c82abb8758a696ad46"
+  },
+  "fonts/josefinsans.ttf": {
+    "bytes": 118588,
+    "sha256": "9255abdb5f393bc51e101abbd07a716a977fd3e15472b1b84b260f426a342bfd"
+  },
+  "fonts/quicksand.ttf": {
+    "bytes": 124824,
+    "sha256": "39c9b64223561f56aaff6062a6f04063c4fc86809ad6768722c06614d977e1cc"
+  }
+}

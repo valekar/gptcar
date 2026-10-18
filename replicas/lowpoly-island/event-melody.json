@@ -1,0 +1,632 @@
+[
+  {
+    "t": 6.25,
+    "type": "rise",
+    "midi": 50,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 7.5,
+    "type": "rise",
+    "midi": 66,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 8.75,
+    "type": "rise",
+    "midi": 62,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 9.375,
+    "type": "rise",
+    "midi": 71,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 10,
+    "type": "rise",
+    "midi": 66,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 10.625,
+    "type": "rise",
+    "midi": 71,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 11.25,
+    "type": "rise",
+    "midi": 38,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 11.5625,
+    "type": "rise",
+    "midi": 62,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 11.875,
+    "type": "rise",
+    "midi": 67,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 12.1875,
+    "type": "rise",
+    "midi": 71,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 12.5,
+    "type": "rise",
+    "midi": 62,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 12.8125,
+    "type": "rise",
+    "midi": 71,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 13.125,
+    "type": "rise",
+    "midi": 67,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 13.4375,
+    "type": "rise",
+    "midi": 74,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 16.25,
+    "type": "floor",
+    "midi": 54,
+    "instrument": "woodblock",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 16.4063,
+    "type": "roof",
+    "midi": 83,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 16.5625,
+    "type": "floor",
+    "midi": 54,
+    "instrument": "woodblock",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 16.7188,
+    "type": "floor",
+    "midi": 54,
+    "instrument": "woodblock",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 16.875,
+    "type": "roof",
+    "midi": 74,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 17.0313,
+    "type": "floor",
+    "midi": 54,
+    "instrument": "woodblock",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 17.1875,
+    "type": "roof",
+    "midi": 76,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 17.3438,
+    "type": "floor",
+    "midi": 54,
+    "instrument": "woodblock",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 17.5,
+    "type": "roof",
+    "midi": 78,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 17.6563,
+    "type": "floor",
+    "midi": 54,
+    "instrument": "woodblock",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 17.8125,
+    "type": "floor",
+    "midi": 54,
+    "instrument": "woodblock",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 17.9688,
+    "type": "roof",
+    "midi": 74,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 18.125,
+    "type": "floor",
+    "midi": 54,
+    "instrument": "woodblock",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 18.2813,
+    "type": "roof",
+    "midi": 81,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 18.4375,
+    "type": "floor",
+    "midi": 54,
+    "instrument": "woodblock",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 18.5938,
+    "type": "floor",
+    "midi": 54,
+    "instrument": "woodblock",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 18.75,
+    "type": "roof",
+    "midi": 81,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 18.9063,
+    "type": "floor",
+    "midi": 54,
+    "instrument": "woodblock",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 19.0625,
+    "type": "floor",
+    "midi": 54,
+    "instrument": "woodblock",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 19.2188,
+    "type": "roof",
+    "midi": 78,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 13.75,
+    "type": "pop",
+    "midi": 69,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 14.0625,
+    "type": "pop",
+    "midi": 73,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 14.375,
+    "type": "pop",
+    "midi": 73,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 14.6875,
+    "type": "pop",
+    "midi": 76,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 15,
+    "type": "pop",
+    "midi": 81,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 15.3125,
+    "type": "pop",
+    "midi": 85,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 15.625,
+    "type": "pop",
+    "midi": 85,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 15.9375,
+    "type": "pop",
+    "midi": 88,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 19.375,
+    "type": "floor",
+    "midi": 55,
+    "instrument": "woodblock",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 19.5313,
+    "type": "roof",
+    "midi": 62,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 19.6875,
+    "type": "pop",
+    "midi": 66,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 19.8438,
+    "type": "plank",
+    "midi": 69,
+    "instrument": "woodblock",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 20,
+    "type": "plank",
+    "midi": 71,
+    "instrument": "woodblock",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 20.1563,
+    "type": "plank",
+    "midi": 74,
+    "instrument": "woodblock",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 20.3125,
+    "type": "plank",
+    "midi": 78,
+    "instrument": "woodblock",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 20.4688,
+    "type": "splash",
+    "midi": 81,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 20.625,
+    "type": "pop",
+    "midi": 78,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 20.7813,
+    "type": "sparkle",
+    "midi": 74,
+    "instrument": "glockenspiel",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 20.9375,
+    "type": "sparkle",
+    "midi": 69,
+    "instrument": "glockenspiel",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 21.25,
+    "type": "chord",
+    "midi": 62,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 33.75,
+    "type": "ring",
+    "midi": 69,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 34.375,
+    "type": "ring",
+    "midi": 71,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 35,
+    "type": "ring",
+    "midi": 74,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 35.625,
+    "type": "ring",
+    "midi": 78,
+    "instrument": "marimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 26.25,
+    "type": "window",
+    "midi": 74,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 26.5625,
+    "type": "window",
+    "midi": 78,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 26.875,
+    "type": "window",
+    "midi": 81,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 27.1875,
+    "type": "window",
+    "midi": 83,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 27.5,
+    "type": "window",
+    "midi": 81,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 27.8125,
+    "type": "window",
+    "midi": 78,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 28.125,
+    "type": "window",
+    "midi": 76,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 28.4375,
+    "type": "window",
+    "midi": 74,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 29.375,
+    "type": "window",
+    "midi": 69,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 30,
+    "type": "window",
+    "midi": 66,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 36.25,
+    "type": "beamhit",
+    "midi": 74,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 36.875,
+    "type": "beamhit",
+    "midi": 78,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 38.125,
+    "type": "beamhit",
+    "midi": 81,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 38.75,
+    "type": "beamhit",
+    "midi": 83,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 40,
+    "type": "beamhit",
+    "midi": 81,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 40.625,
+    "type": "beamhit",
+    "midi": 78,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 41.875,
+    "type": "beamhit",
+    "midi": 76,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 42.5,
+    "type": "beamhit",
+    "midi": 74,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 43.75,
+    "type": "beamhit",
+    "midi": 74,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 44.375,
+    "type": "beamhit",
+    "midi": 78,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 45.625,
+    "type": "beamhit",
+    "midi": 81,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 46.25,
+    "type": "beamhit",
+    "midi": 83,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 47.5,
+    "type": "beamhit",
+    "midi": 81,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 48.125,
+    "type": "beamhit",
+    "midi": 78,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 49.375,
+    "type": "beamhit",
+    "midi": 76,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 50,
+    "type": "beamhit",
+    "midi": 74,
+    "instrument": "kalimba",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 0.25,
+    "type": "bell",
+    "midi": 74,
+    "instrument": "tubular_bells",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 2.9,
+    "type": "bell",
+    "midi": 74,
+    "instrument": "tubular_bells",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 6.25,
+    "type": "bell",
+    "midi": 74,
+    "instrument": "tubular_bells",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 24.375,
+    "type": "boatbell",
+    "midi": 74,
+    "instrument": "tubular_bells",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 39.6875,
+    "type": "boatbell",
+    "midi": 81,
+    "instrument": "tubular_bells",
+    "source": "New scene events.json"
+  },
+  {
+    "t": 47.5,
+    "type": "bell",
+    "midi": 74,
+    "instrument": "tubular_bells",
+    "source": "New scene events.json"
+  }
+]

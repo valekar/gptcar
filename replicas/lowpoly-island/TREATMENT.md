@@ -1,0 +1,5 @@
+# Treatment before implementation
+
+Retain the original geometry/material dimensions and numerical story schedule, while independently assembling the world and its animation. Generic primitive prop factories may be adapted with attribution; generic faceted sea and orthographic GTAO/haze/tilt-shift pipeline may be shared. No original buildWorld, world update, main film or story module executes.
+
+0–6.25 lonely buoy and note/title; 6.25–10.625 first cells grow in a turntable; 10.625–12.5 central peak splash close-up; 12.5–13.75 full island; 13.75–16.25 trees; 16.25–18.75 stacked houses; 18.75–21.25 mill/dock/boat/details; 21.25–23.75 sun-sweep inhabited day; 23.75–26.25 departing boat tracked sideways; 26.25–31.25 dusk-to-night window sequence; 31.25–33.75 wide lost boat and missing note; 33.75–36.25 lighthouse-ring close-up; 36.25–41.25 ignition and spatial musical sweep; 41.25–48.75 return/scale reveal/distant buoy; 48.75–53 whole end card over the tiny luminous world. Match all sub-beat arrivals and preserve night music breath before ignition.

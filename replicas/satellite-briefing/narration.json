@@ -1,0 +1,98 @@
+{
+  "duration": 37.791666666666664,
+  "language": "en-gb",
+  "voice": "bf_emma",
+  "direction": "Calm British analyst; exact ten published lines and original speeds. Keep the final short line clean without an added syllable.",
+  "lines": [
+    {
+      "id": "l1",
+      "text": "On the map, this is still a sea.",
+      "start": 2.05,
+      "duration": 2.6160000000000005,
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "language": "en-gb"
+    },
+    {
+      "id": "l2",
+      "text": "In nineteen seventy-seven, it was.",
+      "start": 7.85,
+      "duration": 2.84,
+      "voice": "bf_emma",
+      "speed": 1,
+      "language": "en-gb"
+    },
+    {
+      "id": "l3",
+      "text": "Then its rivers went to the cotton fields.",
+      "start": 10.78,
+      "duration": 2.8100000000000005,
+      "voice": "bf_emma",
+      "speed": 1,
+      "language": "en-gb"
+    },
+    {
+      "id": "l4",
+      "text": "By twenty fourteen, the eastern basin had dried.",
+      "start": 13.68,
+      "duration": 3.1799999999999997,
+      "voice": "bf_emma",
+      "speed": 1,
+      "language": "en-gb"
+    },
+    {
+      "id": "l5",
+      "text": "This was a fishing port.",
+      "start": 16.95,
+      "duration": 2.080000000000002,
+      "voice": "bf_emma",
+      "speed": 1,
+      "language": "en-gb"
+    },
+    {
+      "id": "l6",
+      "text": "Today, the sea is ninety-five kilometres away.",
+      "start": 19.12,
+      "duration": 3.4659999999999975,
+      "voice": "bf_emma",
+      "speed": 1,
+      "language": "en-gb"
+    },
+    {
+      "id": "l7",
+      "text": "But up north, a dam went in.",
+      "start": 23.72,
+      "duration": 2.559000000000001,
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "language": "en-gb"
+    },
+    {
+      "id": "l8",
+      "text": "And the water came back.",
+      "start": 26.7,
+      "duration": 2.2950000000000017,
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "language": "en-gb"
+    },
+    {
+      "id": "l9",
+      "text": "The sea did not come back on its own.",
+      "start": 29.4,
+      "duration": 2.8100000000000023,
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "language": "en-gb"
+    },
+    {
+      "id": "l10",
+      "text": "Someone kept it.",
+      "start": 32.3,
+      "duration": 1.8500000000000014,
+      "voice": "bf_emma",
+      "speed": 0.9,
+      "language": "en-gb"
+    }
+  ]
+}

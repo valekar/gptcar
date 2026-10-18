@@ -1,0 +1,9 @@
+The Map Still Says Sea — independent GPT-6.1 Sol High recreation.
+
+New camera-key application, georeferenced image-state assembly, full mark/shoreline/range/north/title assembly and film runtime in motion.js, plates.js, marks.js and film.js. No original film.js or timeline.js executes. Original published numerical camera and scan timings are reference data, not a recovered private conversational prompt.
+
+Shared generic style components: engine.js spherical ray camera/projection and nested imagery/material shader; overlay.js drawing primitives/text metrics/readout/transcript; font acquisition helper. Adapted/copied from the corresponding styles/satellite-briefing/demo files, LemoLab MIT, TOOLKIT_LICENSE.txt. The upstream original scene runtime is not imported.
+
+Imagery: USGS/NASA Landsat exact original acquisitions; NASA Blue Marble; Natural Earth historic lake/rivers. Public-domain source credit is burned into every frame. Detailed scene IDs/order and author/license source URLs in assets/plates/plates.json and ORIGINAL_DATA_CREDITS.txt. Current preprocessing/mask variance disclosed in FACTS.md/RESTORATION.json. Exact six main areas retained; counters continuously interpolate those shares during each dated scan. No generated imagery, commercial basemap or original movie frames used as artwork.
+
+Fonts: Barlow Condensed, IBM Plex Mono, Noto Sans SC, Noto Serif SC, SIL OFL, texts in fonts. New Kokoro bf_emma ten-line narration; new 100 BPM score of 206 notes and 148 effects, parent-rendered from licensed sample packs and synthesis. No original master audio reused. Fresh rewind-like sweeps replace the original's backwards soundtrack device. Original historical data credits are preserved as documentary attribution, not new authorship claims.

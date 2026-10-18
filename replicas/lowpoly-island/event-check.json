@@ -1,0 +1,18 @@
+{
+  "cell_count": 33,
+  "house_count": 8,
+  "tree_count": 13,
+  "matched_event_count": 92,
+  "all_material_musical_event_times_and_pitches_match": true,
+  "comparison_fields": [
+    "t rounded to 0.0001 s",
+    "type",
+    "note"
+  ],
+  "source": "New runtime CHECK.events compared with published event data; no original runtime executed.",
+  "event_melody_notes": 90,
+  "beam_rotation_period_s": 7.5,
+  "boat_answer_s": 39.6875,
+  "explicit_floor_bounce_offset_s": 0.21,
+  "wood_knock_internal_bounce_gain": 0
+}

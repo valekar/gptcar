@@ -1,0 +1,7 @@
+# The Map Still Says Sea — reconstructed replication prompt
+
+Recreate the complete published 907-frame film at 1280 × 720, 24 fps, with 1920 × 1080 production detail. The private original conversation prompt is unavailable. This reconstruction uses all four complete reference sheets, published style and twelve-shot specification, exact narration/timing and restored original imagery.
+
+Keep the oblique true-colour Earth, searching reticle and lock, printed historic atlas sea, full accelerating dive, soft downward map tear revealing salt crust, silence, five rapid upward rewinds, six forward dated scans and accumulating shore rings, breathing 2025 stop, Muynak port lock and push, 1977 historic shoreline and 95 km chased range line, second silence and water J-cut, northward blurred whip, traced Kok-Aral dike, outward water growth 2001→2009 with true colour only in the returning water, +37% source claim, climb with 咸海 relabelled to the North Aral, and brackets opening into the full serif title over the rotating Earth. Preserve every important mark, number, camera and sound cue, and all ten exact bf_emma lines.
+
+Use the exact original acquisition IDs and source-data order. Readouts continuously interpolate the actual mask-area shares during scans; 46% and 25% in two regular reference frames are intermediate values, not alternate historical labels. Final 2000/2009 values are 40%/21%. Disclose four small regional mask variances. Freshly recreate the full 100 BPM D-minor-to-D-major score; no original master reuse. Identify actual GPT authorship.

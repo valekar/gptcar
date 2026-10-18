@@ -1,0 +1,53 @@
+{
+  "duration": 53,
+  "language": "en-us",
+  "voice": "af_sky",
+  "direction": "Clear gentle female, exact five published lines and original speeds; use ocean rather than sea.",
+  "lines": [
+    {
+      "id": "v1",
+      "text": "Once, the ocean knew only one note.",
+      "start": 3.7,
+      "duration": 3.0060000000000002,
+      "voice": "af_sky",
+      "speed": 0.9,
+      "language": "en-us"
+    },
+    {
+      "id": "v2",
+      "text": "Then, the ground began to sing.",
+      "start": 7,
+      "duration": 2.702,
+      "voice": "af_sky",
+      "speed": 0.92,
+      "language": "en-us"
+    },
+    {
+      "id": "v3",
+      "text": "By evening, every house knew its part.",
+      "start": 26.5,
+      "duration": 2.9879999999999995,
+      "voice": "af_sky",
+      "speed": 0.92,
+      "language": "en-us"
+    },
+    {
+      "id": "v4",
+      "text": "But one note was still missing.",
+      "start": 31.25,
+      "duration": 2.520000000000003,
+      "voice": "af_sky",
+      "speed": 0.86,
+      "language": "en-us"
+    },
+    {
+      "id": "v5",
+      "text": "Far away, another island hears its first note.",
+      "start": 44,
+      "duration": 3.6340000000000003,
+      "voice": "af_sky",
+      "speed": 0.88,
+      "language": "en-us"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "main_sequence_exact_areas": {
+    "1977": 54403.4,
+    "1989": 39859.8,
+    "2000": 26879.3,
+    "2009": 14366.3,
+    "2014": 7060.7,
+    "2025": 5079.1
+  },
+  "baseline_km2": 68000,
+  "range_km_unrounded": 94.5,
+  "range_label_km": "95",
+  "all_11_acquisition_id_orders_match": true,
+  "plates": {
+    "la2025": {
+      "acquisition_order_matches_original": true,
+      "source_scene_count": 3,
+      "original_water_km2": 0.0,
+      "restored_water_km2": 0.0
+    },
+    "mu2025": {
+      "acquisition_order_matches_original": true,
+      "source_scene_count": 5,
+      "original_water_km2": 397.2,
+      "restored_water_km2": 399.5
+    },
+    "ko2001": {
+      "acquisition_order_matches_original": true,
+      "source_scene_count": 3,
+      "original_water_km2": 1665.8,
+      "restored_water_km2": 1673.4
+    },
+    "ko2009": {
+      "acquisition_order_matches_original": true,
+      "source_scene_count": 3,
+      "original_water_km2": 1884.5,
+      "restored_water_km2": 1892.8
+    },
+    "ko2025": {
+      "acquisition_order_matches_original": true,
+      "source_scene_count": 3,
+      "original_water_km2": 1813.0,
+      "restored_water_km2": 1821.2
+    },
+    "r1977": {
+      "acquisition_order_matches_original": true,
+      "source_scene_count": 39,
+      "original_water_km2": 54403.4,
+      "restored_water_km2": 54403.4
+    },
+    "r1989": {
+      "acquisition_order_matches_original": true,
+      "source_scene_count": 31,
+      "original_water_km2": 39859.8,
+      "restored_water_km2": 39859.8
+    },
+    "r2000": {
+      "acquisition_order_matches_original": true,
+      "source_scene_count": 31,
+      "original_water_km2": 26879.3,
+      "restored_water_km2": 26879.3
+    },
+    "r2009": {
+      "acquisition_order_matches_original": true,
+      "source_scene_count": 33,
+      "original_water_km2": 14366.3,
+      "restored_water_km2": 14366.3
+    },
+    "r2014": {
+      "acquisition_order_matches_original": true,
+      "source_scene_count": 32,
+      "original_water_km2": 7060.7,
+      "restored_water_km2": 7060.7
+    },
+    "r2025": {
+      "acquisition_order_matches_original": true,
+      "source_scene_count": 32,
+      "original_water_km2": 5079.1,
+      "restored_water_km2": 5079.1
+    }
+  },
+  "continuous_counter": "Actual area / 68000 * 100, cubic ease-out over each original scan duration; settled 2000=40%, 2009=21%."
+}

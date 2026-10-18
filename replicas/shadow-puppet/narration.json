@@ -1,0 +1,62 @@
+{
+  "language": "en-us",
+  "voice": "am_michael",
+  "lines": [
+    {
+      "id": "L1",
+      "text": "Long ago, ten suns climbed the sky at once.",
+      "asr": "Long ago, 10 sons climbed the sky at once.",
+      "voice": "am_michael",
+      "speed": 0.88,
+      "start": 7.45,
+      "duration": 3.061,
+      "language": "en-us"
+    },
+    {
+      "id": "L2",
+      "text": "The rivers boiled. The fields cracked. The whole earth began to burn.",
+      "voice": "am_michael",
+      "speed": 0.88,
+      "start": 12.3,
+      "duration": 4.976,
+      "language": "en-us"
+    },
+    {
+      "id": "L3",
+      "text": "Then came Hou Yi, the archer.",
+      "asr": "Then came Hu Yi, the archer.",
+      "voice": "am_michael",
+      "speed": 0.86,
+      "start": 22.35,
+      "duration": 1.993,
+      "language": "en-us"
+    },
+    {
+      "id": "L4",
+      "text": "One arrow for every burning sun.",
+      "voice": "am_michael",
+      "speed": 0.88,
+      "start": 25.2,
+      "duration": 2.179,
+      "language": "en-us"
+    },
+    {
+      "id": "L5",
+      "text": "But the last one, he spared. So the world would have light, and not fire.",
+      "voice": "am_michael",
+      "speed": 0.88,
+      "start": 37.75,
+      "duration": 4.57,
+      "language": "en-us"
+    },
+    {
+      "id": "L6",
+      "text": "One light is enough. Even now, every shadow play burns just one.",
+      "voice": "am_michael",
+      "speed": 0.86,
+      "start": 45.2,
+      "duration": 4.833,
+      "language": "en-us"
+    }
+  ]
+}

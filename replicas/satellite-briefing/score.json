@@ -1,0 +1,2810 @@
+{
+  "duration": 37.791666666666664,
+  "bpm": 100,
+  "key": "D minor \u2192 D major at Kok-Aral",
+  "silence_music_ranges": [
+    [
+      4.95,
+      5.4
+    ],
+    [
+      5.9,
+      6.6
+    ],
+    [
+      12.96,
+      13.2
+    ],
+    [
+      21.9,
+      22.8
+    ],
+    [
+      24.38,
+      24.6
+    ]
+  ],
+  "direction": "Fresh telemetry/electronics/skin/metal score with wet glass and bowed vibraphone reserved for northern water. Hard stop loudest, dam second, map tear third. Both silences air only; fresh rewind-like sweeps, no original soundtrack reuse.",
+  "sections": [
+    {
+      "start": 0,
+      "end": 1.8,
+      "intent": "Orbit drone and FM lock/map pings"
+    },
+    {
+      "start": 1.8,
+      "end": 4.95,
+      "intent": "Dive subdivisions, riser and low percussion crescendo"
+    },
+    {
+      "start": 4.95,
+      "end": 6.6,
+      "intent": "Suck-out, D-minor map tear and wind-only aftermath"
+    },
+    {
+      "start": 6.6,
+      "end": 7.8,
+      "intent": "Rapid upward synthesized rewind scans"
+    },
+    {
+      "start": 7.8,
+      "end": 13.2,
+      "intent": "Accelerating dated rings, descending roots and skins/metal"
+    },
+    {
+      "start": 13.2,
+      "end": 15.3,
+      "intent": "Loudest hard stop, low aftermath and port lock"
+    },
+    {
+      "start": 15.3,
+      "end": 21.9,
+      "intent": "Dry Muynak horn, sand and measured range ratchet"
+    },
+    {
+      "start": 21.9,
+      "end": 22.8,
+      "intent": "Wind only"
+    },
+    {
+      "start": 22.8,
+      "end": 24.6,
+      "intent": "Water J-cut, northern whip and dam suck-out"
+    },
+    {
+      "start": 24.6,
+      "end": 28.8,
+      "intent": "Second-largest slam, D-major brass and returning water/glass"
+    },
+    {
+      "start": 28.8,
+      "end": 34.2,
+      "intent": "D-major climb, glass and telemetry together, label pin"
+    },
+    {
+      "start": 34.2,
+      "end": 37.791666666666664,
+      "intent": "Low ending, lock echo and final pass"
+    }
+  ],
+  "notes": [
+    {
+      "t": 0,
+      "midi": 50,
+      "duration": 4.9,
+      "gain": 0.025,
+      "instrument": "analog_saw_pad",
+      "pan": -0.3
+    },
+    {
+      "t": 0,
+      "midi": 57,
+      "duration": 4.9,
+      "gain": 0.025,
+      "instrument": "analog_saw_pad",
+      "pan": -0.09999999999999998
+    },
+    {
+      "t": 0,
+      "midi": 60,
+      "duration": 4.9,
+      "gain": 0.025,
+      "instrument": "analog_saw_pad",
+      "pan": 0.10000000000000003
+    },
+    {
+      "t": 0,
+      "midi": 65,
+      "duration": 4.9,
+      "gain": 0.025,
+      "instrument": "analog_saw_pad",
+      "pan": 0.3000000000000001
+    },
+    {
+      "t": 0,
+      "midi": 38,
+      "duration": 4.9,
+      "gain": 0.05,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 0.0,
+      "midi": 74,
+      "duration": 0.11,
+      "gain": 0.055,
+      "instrument": "fm_glass",
+      "pan": 0.0
+    },
+    {
+      "t": 0.3,
+      "midi": 81,
+      "duration": 0.11,
+      "gain": 0.055,
+      "instrument": "fm_glass",
+      "pan": 0.37866194316355345
+    },
+    {
+      "t": 0.6,
+      "midi": 77,
+      "duration": 0.11,
+      "gain": 0.055,
+      "instrument": "fm_glass",
+      "pan": 0.4091838420715568
+    },
+    {
+      "t": 0.6,
+      "midi": 86,
+      "duration": 0.6,
+      "gain": 0.1,
+      "instrument": "fm_glass",
+      "pan": 0
+    },
+    {
+      "t": 0.9,
+      "midi": 81,
+      "duration": 0.11,
+      "gain": 0.055,
+      "instrument": "fm_glass",
+      "pan": 0.06350400362694025
+    },
+    {
+      "t": 1.2,
+      "midi": 74,
+      "duration": 0.11,
+      "gain": 0.055,
+      "instrument": "fm_glass",
+      "pan": -0.34056112288856777
+    },
+    {
+      "t": 1.2,
+      "midi": 81,
+      "duration": 0.6,
+      "gain": 0.1,
+      "instrument": "fm_glass",
+      "pan": 0
+    },
+    {
+      "t": 1.5,
+      "midi": 77,
+      "duration": 0.11,
+      "gain": 0.055,
+      "instrument": "fm_glass",
+      "pan": -0.4315159235984123
+    },
+    {
+      "t": 1.8,
+      "midi": 74,
+      "duration": 0.09,
+      "gain": 0.055,
+      "instrument": "fm_glass",
+      "pan": 0.0
+    },
+    {
+      "t": 1.8,
+      "midi": 36,
+      "duration": 0.2,
+      "gain": 0.025,
+      "instrument": "gran_cassa",
+      "pan": 0
+    },
+    {
+      "t": 1.95,
+      "midi": 77,
+      "duration": 0.09,
+      "gain": 0.056,
+      "instrument": "fm_glass",
+      "pan": 0.29451484468276373
+    },
+    {
+      "t": 2.1,
+      "midi": 81,
+      "duration": 0.09,
+      "gain": 0.057,
+      "instrument": "fm_glass",
+      "pan": 0.3182540993889886
+    },
+    {
+      "t": 2.1,
+      "midi": 36,
+      "duration": 0.2,
+      "gain": 0.032,
+      "instrument": "gran_cassa",
+      "pan": 0
+    },
+    {
+      "t": 2.25,
+      "midi": 86,
+      "duration": 0.09,
+      "gain": 0.058,
+      "instrument": "fm_glass",
+      "pan": 0.049392002820953525
+    },
+    {
+      "t": 2.4,
+      "midi": 81,
+      "duration": 0.09,
+      "gain": 0.059,
+      "instrument": "fm_glass",
+      "pan": -0.2648808733577749
+    },
+    {
+      "t": 2.4,
+      "midi": 36,
+      "duration": 0.2,
+      "gain": 0.039,
+      "instrument": "gran_cassa",
+      "pan": 0
+    },
+    {
+      "t": 2.55,
+      "midi": 77,
+      "duration": 0.09,
+      "gain": 0.06,
+      "instrument": "fm_glass",
+      "pan": -0.33562349613209846
+    },
+    {
+      "t": 2.7,
+      "midi": 74,
+      "duration": 0.09,
+      "gain": 0.061,
+      "instrument": "fm_glass",
+      "pan": -0.09779542436962405
+    },
+    {
+      "t": 2.7,
+      "midi": 36,
+      "duration": 0.2,
+      "gain": 0.046,
+      "instrument": "gran_cassa",
+      "pan": 0
+    },
+    {
+      "t": 2.85,
+      "midi": 77,
+      "duration": 0.09,
+      "gain": 0.062,
+      "instrument": "fm_glass",
+      "pan": 0.22994530955157616
+    },
+    {
+      "t": 3.0,
+      "midi": 81,
+      "duration": 0.09,
+      "gain": 0.063,
+      "instrument": "fm_glass",
+      "pan": 0.3462753863181836
+    },
+    {
+      "t": 3.0,
+      "midi": 36,
+      "duration": 0.2,
+      "gain": 0.053000000000000005,
+      "instrument": "gran_cassa",
+      "pan": 0
+    },
+    {
+      "t": 3.15,
+      "midi": 86,
+      "duration": 0.09,
+      "gain": 0.064,
+      "instrument": "fm_glass",
+      "pan": 0.1442414698346148
+    },
+    {
+      "t": 3.3,
+      "midi": 81,
+      "duration": 0.09,
+      "gain": 0.065,
+      "instrument": "fm_glass",
+      "pan": -0.19040738881127942
+    },
+    {
+      "t": 3.3,
+      "midi": 36,
+      "duration": 0.2,
+      "gain": 0.060000000000000005,
+      "instrument": "gran_cassa",
+      "pan": 0
+    },
+    {
+      "t": 3.45,
+      "midi": 77,
+      "duration": 0.09,
+      "gain": 0.066,
+      "instrument": "fm_glass",
+      "pan": -0.3499965722927462
+    },
+    {
+      "t": 3.6,
+      "midi": 74,
+      "duration": 0.09,
+      "gain": 0.067,
+      "instrument": "fm_glass",
+      "pan": -0.1878005213001522
+    },
+    {
+      "t": 3.6,
+      "midi": 36,
+      "duration": 0.2,
+      "gain": 0.067,
+      "instrument": "gran_cassa",
+      "pan": 0
+    },
+    {
+      "t": 3.75,
+      "midi": 77,
+      "duration": 0.09,
+      "gain": 0.068,
+      "instrument": "fm_glass",
+      "pan": 0.1470584628893243
+    },
+    {
+      "t": 3.9,
+      "midi": 81,
+      "duration": 0.09,
+      "gain": 0.069,
+      "instrument": "fm_glass",
+      "pan": 0.3467125744932046
+    },
+    {
+      "t": 3.9,
+      "midi": 36,
+      "duration": 0.2,
+      "gain": 0.07400000000000001,
+      "instrument": "gran_cassa",
+      "pan": 0
+    },
+    {
+      "t": 4.05,
+      "midi": 86,
+      "duration": 0.09,
+      "gain": 0.07,
+      "instrument": "fm_glass",
+      "pan": 0.22760074405499087
+    },
+    {
+      "t": 4.2,
+      "midi": 81,
+      "duration": 0.09,
+      "gain": 0.07100000000000001,
+      "instrument": "fm_glass",
+      "pan": -0.10076616083277284
+    },
+    {
+      "t": 4.2,
+      "midi": 36,
+      "duration": 0.2,
+      "gain": 0.081,
+      "instrument": "gran_cassa",
+      "pan": 0
+    },
+    {
+      "t": 4.35,
+      "midi": 77,
+      "duration": 0.09,
+      "gain": 0.07200000000000001,
+      "instrument": "fm_glass",
+      "pan": -0.3364891221578449
+    },
+    {
+      "t": 4.5,
+      "midi": 74,
+      "duration": 0.09,
+      "gain": 0.07300000000000001,
+      "instrument": "fm_glass",
+      "pan": -0.2628455363700866
+    },
+    {
+      "t": 4.5,
+      "midi": 36,
+      "duration": 0.2,
+      "gain": 0.088,
+      "instrument": "gran_cassa",
+      "pan": 0
+    },
+    {
+      "t": 4.65,
+      "midi": 77,
+      "duration": 0.09,
+      "gain": 0.074,
+      "instrument": "fm_glass",
+      "pan": 0.05245702338203332
+    },
+    {
+      "t": 5.4,
+      "midi": 38,
+      "duration": 1.1,
+      "gain": 0.18,
+      "instrument": "timpani",
+      "pan": 0
+    },
+    {
+      "t": 5.4,
+      "midi": 36,
+      "duration": 1.1,
+      "gain": 0.18,
+      "instrument": "bass_drum",
+      "pan": 0
+    },
+    {
+      "t": 5.4,
+      "midi": 36,
+      "duration": 1.1,
+      "gain": 0.153,
+      "instrument": "gran_cassa",
+      "pan": 0
+    },
+    {
+      "t": 5.4,
+      "midi": 50,
+      "duration": 1.1,
+      "gain": 0.135,
+      "instrument": "trombone_stac",
+      "pan": 0
+    },
+    {
+      "t": 5.4,
+      "midi": 53,
+      "duration": 1.1,
+      "gain": 0.11699999999999999,
+      "instrument": "trombone_stac",
+      "pan": 0
+    },
+    {
+      "t": 5.4,
+      "midi": 26,
+      "duration": 1.1,
+      "gain": 0.135,
+      "instrument": "tuba_stac",
+      "pan": 0
+    },
+    {
+      "t": 5.4,
+      "midi": 62,
+      "duration": 1.1,
+      "gain": 0.099,
+      "instrument": "horn_stac",
+      "pan": 0
+    },
+    {
+      "t": 5.4,
+      "midi": 60,
+      "duration": 1,
+      "gain": 0.09,
+      "instrument": "sus_cymbal",
+      "pan": 0
+    },
+    {
+      "t": 6.6,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.05,
+      "instrument": "fm_glass",
+      "pan": 0
+    },
+    {
+      "t": 6.6,
+      "midi": 48,
+      "duration": 1.2,
+      "gain": 0.07,
+      "instrument": "gong",
+      "pan": 0
+    },
+    {
+      "t": 6.82,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.05,
+      "instrument": "fm_glass",
+      "pan": 0
+    },
+    {
+      "t": 7.02,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.05,
+      "instrument": "fm_glass",
+      "pan": 0
+    },
+    {
+      "t": 7.22,
+      "midi": 80,
+      "duration": 0.12,
+      "gain": 0.05,
+      "instrument": "fm_glass",
+      "pan": 0
+    },
+    {
+      "t": 7.44,
+      "midi": 82,
+      "duration": 0.12,
+      "gain": 0.05,
+      "instrument": "fm_glass",
+      "pan": 0
+    },
+    {
+      "t": 7.8,
+      "midi": 50,
+      "duration": 1.7999999999999998,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": -0.3
+    },
+    {
+      "t": 7.8,
+      "midi": 57,
+      "duration": 1.7999999999999998,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": -0.09999999999999998
+    },
+    {
+      "t": 7.8,
+      "midi": 60,
+      "duration": 1.7999999999999998,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": 0.10000000000000003
+    },
+    {
+      "t": 7.8,
+      "midi": 64,
+      "duration": 1.7999999999999998,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": 0.3000000000000001
+    },
+    {
+      "t": 7.8,
+      "midi": 38,
+      "duration": 1.7999999999999998,
+      "gain": 0.07,
+      "instrument": "tuba",
+      "pan": 0
+    },
+    {
+      "t": 7.8,
+      "midi": 57,
+      "duration": 1.7999999999999998,
+      "gain": 0.045,
+      "instrument": "trombone",
+      "pan": 0
+    },
+    {
+      "t": 7.8,
+      "midi": 38,
+      "duration": 0.17,
+      "gain": 0.06,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 7.8,
+      "midi": 38,
+      "duration": 0.7,
+      "gain": 0.13,
+      "instrument": "timpani",
+      "pan": 0
+    },
+    {
+      "t": 7.8,
+      "midi": 36,
+      "duration": 0.5,
+      "gain": 0.1,
+      "instrument": "bass_drum",
+      "pan": 0
+    },
+    {
+      "t": 8.4,
+      "midi": 38,
+      "duration": 0.17,
+      "gain": 0.06,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 9.0,
+      "midi": 38,
+      "duration": 0.17,
+      "gain": 0.06,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 9.6,
+      "midi": 48,
+      "duration": 1.200000000000001,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": -0.3
+    },
+    {
+      "t": 9.6,
+      "midi": 55,
+      "duration": 1.200000000000001,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": -0.09999999999999998
+    },
+    {
+      "t": 9.6,
+      "midi": 58,
+      "duration": 1.200000000000001,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": 0.10000000000000003
+    },
+    {
+      "t": 9.6,
+      "midi": 62,
+      "duration": 1.200000000000001,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": 0.3000000000000001
+    },
+    {
+      "t": 9.6,
+      "midi": 36,
+      "duration": 1.200000000000001,
+      "gain": 0.07,
+      "instrument": "tuba",
+      "pan": 0
+    },
+    {
+      "t": 9.6,
+      "midi": 55,
+      "duration": 1.200000000000001,
+      "gain": 0.045,
+      "instrument": "trombone",
+      "pan": 0
+    },
+    {
+      "t": 9.6,
+      "midi": 36,
+      "duration": 0.17,
+      "gain": 0.06,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 9.6,
+      "midi": 36,
+      "duration": 0.7,
+      "gain": 0.13,
+      "instrument": "timpani",
+      "pan": 0
+    },
+    {
+      "t": 9.6,
+      "midi": 36,
+      "duration": 0.5,
+      "gain": 0.1,
+      "instrument": "bass_drum",
+      "pan": 0
+    },
+    {
+      "t": 10.2,
+      "midi": 36,
+      "duration": 0.17,
+      "gain": 0.06,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 10.8,
+      "midi": 36,
+      "duration": 0.17,
+      "gain": 0.06,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 10.8,
+      "midi": 46,
+      "duration": 0.8999999999999986,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": -0.3
+    },
+    {
+      "t": 10.8,
+      "midi": 53,
+      "duration": 0.8999999999999986,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": -0.09999999999999998
+    },
+    {
+      "t": 10.8,
+      "midi": 56,
+      "duration": 0.8999999999999986,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": 0.10000000000000003
+    },
+    {
+      "t": 10.8,
+      "midi": 60,
+      "duration": 0.8999999999999986,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": 0.3000000000000001
+    },
+    {
+      "t": 10.8,
+      "midi": 34,
+      "duration": 0.8999999999999986,
+      "gain": 0.07,
+      "instrument": "tuba",
+      "pan": 0
+    },
+    {
+      "t": 10.8,
+      "midi": 53,
+      "duration": 0.8999999999999986,
+      "gain": 0.045,
+      "instrument": "trombone",
+      "pan": 0
+    },
+    {
+      "t": 10.8,
+      "midi": 34,
+      "duration": 0.17,
+      "gain": 0.06,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 10.8,
+      "midi": 34,
+      "duration": 0.7,
+      "gain": 0.13,
+      "instrument": "timpani",
+      "pan": 0
+    },
+    {
+      "t": 10.8,
+      "midi": 36,
+      "duration": 0.5,
+      "gain": 0.1,
+      "instrument": "bass_drum",
+      "pan": 0
+    },
+    {
+      "t": 11.1,
+      "midi": 34,
+      "duration": 0.17,
+      "gain": 0.06,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 11.4,
+      "midi": 34,
+      "duration": 0.17,
+      "gain": 0.06,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 11.7,
+      "midi": 45,
+      "duration": 0.6000000000000014,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": -0.3
+    },
+    {
+      "t": 11.7,
+      "midi": 52,
+      "duration": 0.6000000000000014,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": -0.09999999999999998
+    },
+    {
+      "t": 11.7,
+      "midi": 55,
+      "duration": 0.6000000000000014,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": 0.10000000000000003
+    },
+    {
+      "t": 11.7,
+      "midi": 59,
+      "duration": 0.6000000000000014,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": 0.3000000000000001
+    },
+    {
+      "t": 11.7,
+      "midi": 33,
+      "duration": 0.6000000000000014,
+      "gain": 0.07,
+      "instrument": "tuba",
+      "pan": 0
+    },
+    {
+      "t": 11.7,
+      "midi": 52,
+      "duration": 0.6000000000000014,
+      "gain": 0.045,
+      "instrument": "trombone",
+      "pan": 0
+    },
+    {
+      "t": 11.7,
+      "midi": 33,
+      "duration": 0.17,
+      "gain": 0.06,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 11.7,
+      "midi": 33,
+      "duration": 0.7,
+      "gain": 0.13,
+      "instrument": "timpani",
+      "pan": 0
+    },
+    {
+      "t": 11.7,
+      "midi": 36,
+      "duration": 0.5,
+      "gain": 0.1,
+      "instrument": "bass_drum",
+      "pan": 0
+    },
+    {
+      "t": 12.0,
+      "midi": 33,
+      "duration": 0.17,
+      "gain": 0.06,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 12.3,
+      "midi": 33,
+      "duration": 0.17,
+      "gain": 0.06,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 12.3,
+      "midi": 43,
+      "duration": 0.8999999999999986,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": -0.3
+    },
+    {
+      "t": 12.3,
+      "midi": 50,
+      "duration": 0.8999999999999986,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": -0.09999999999999998
+    },
+    {
+      "t": 12.3,
+      "midi": 53,
+      "duration": 0.8999999999999986,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": 0.10000000000000003
+    },
+    {
+      "t": 12.3,
+      "midi": 57,
+      "duration": 0.8999999999999986,
+      "gain": 0.027,
+      "instrument": "analog_saw_pad",
+      "pan": 0.3000000000000001
+    },
+    {
+      "t": 12.3,
+      "midi": 31,
+      "duration": 0.8999999999999986,
+      "gain": 0.07,
+      "instrument": "tuba",
+      "pan": 0
+    },
+    {
+      "t": 12.3,
+      "midi": 50,
+      "duration": 0.8999999999999986,
+      "gain": 0.045,
+      "instrument": "trombone",
+      "pan": 0
+    },
+    {
+      "t": 12.3,
+      "midi": 31,
+      "duration": 0.17,
+      "gain": 0.06,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 12.3,
+      "midi": 31,
+      "duration": 0.7,
+      "gain": 0.13,
+      "instrument": "timpani",
+      "pan": 0
+    },
+    {
+      "t": 12.3,
+      "midi": 36,
+      "duration": 0.5,
+      "gain": 0.1,
+      "instrument": "bass_drum",
+      "pan": 0
+    },
+    {
+      "t": 12.6,
+      "midi": 31,
+      "duration": 0.17,
+      "gain": 0.06,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 12.9,
+      "midi": 31,
+      "duration": 0.17,
+      "gain": 0.06,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 13.2,
+      "midi": 38,
+      "duration": 1.1,
+      "gain": 0.28,
+      "instrument": "timpani",
+      "pan": 0
+    },
+    {
+      "t": 13.2,
+      "midi": 36,
+      "duration": 1.1,
+      "gain": 0.28,
+      "instrument": "bass_drum",
+      "pan": 0
+    },
+    {
+      "t": 13.2,
+      "midi": 36,
+      "duration": 1.1,
+      "gain": 0.23800000000000002,
+      "instrument": "gran_cassa",
+      "pan": 0
+    },
+    {
+      "t": 13.2,
+      "midi": 50,
+      "duration": 1.1,
+      "gain": 0.21000000000000002,
+      "instrument": "trombone_stac",
+      "pan": 0
+    },
+    {
+      "t": 13.2,
+      "midi": 53,
+      "duration": 1.1,
+      "gain": 0.18200000000000002,
+      "instrument": "trombone_stac",
+      "pan": 0
+    },
+    {
+      "t": 13.2,
+      "midi": 26,
+      "duration": 1.1,
+      "gain": 0.21000000000000002,
+      "instrument": "tuba_stac",
+      "pan": 0
+    },
+    {
+      "t": 13.2,
+      "midi": 62,
+      "duration": 1.1,
+      "gain": 0.15400000000000003,
+      "instrument": "horn_stac",
+      "pan": 0
+    },
+    {
+      "t": 13.2,
+      "midi": 48,
+      "duration": 1.7,
+      "gain": 0.16,
+      "instrument": "gong",
+      "pan": 0
+    },
+    {
+      "t": 13.2,
+      "midi": 38,
+      "duration": 2.1,
+      "gain": 0.035,
+      "instrument": "analog_saw_pad",
+      "pan": 0
+    },
+    {
+      "t": 13.2,
+      "midi": 57,
+      "duration": 2.1,
+      "gain": 0.035,
+      "instrument": "analog_saw_pad",
+      "pan": 0
+    },
+    {
+      "t": 14.7,
+      "midi": 86,
+      "duration": 0.8,
+      "gain": 0.09,
+      "instrument": "fm_glass",
+      "pan": 0
+    },
+    {
+      "t": 15.3,
+      "midi": 38,
+      "duration": 6.6,
+      "gain": 0.025,
+      "instrument": "analog_saw_pad",
+      "pan": -0.3
+    },
+    {
+      "t": 15.3,
+      "midi": 45,
+      "duration": 6.6,
+      "gain": 0.025,
+      "instrument": "analog_saw_pad",
+      "pan": -0.09999999999999998
+    },
+    {
+      "t": 15.3,
+      "midi": 50,
+      "duration": 6.6,
+      "gain": 0.025,
+      "instrument": "analog_saw_pad",
+      "pan": 0.10000000000000003
+    },
+    {
+      "t": 15.3,
+      "midi": 57,
+      "duration": 6.6,
+      "gain": 0.025,
+      "instrument": "analog_saw_pad",
+      "pan": 0.3000000000000001
+    },
+    {
+      "t": 15.6,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.065,
+      "instrument": "timpani",
+      "pan": 0
+    },
+    {
+      "t": 16.8,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.065,
+      "instrument": "timpani",
+      "pan": 0
+    },
+    {
+      "t": 18,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.065,
+      "instrument": "timpani",
+      "pan": 0
+    },
+    {
+      "t": 19.2,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.065,
+      "instrument": "timpani",
+      "pan": 0
+    },
+    {
+      "t": 20.4,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.065,
+      "instrument": "timpani",
+      "pan": 0
+    },
+    {
+      "t": 20.4,
+      "midi": 81,
+      "duration": 0.8,
+      "gain": 0.1,
+      "instrument": "fm_glass",
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "midi": 38,
+      "duration": 1.1,
+      "gain": 0.25,
+      "instrument": "timpani",
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "midi": 36,
+      "duration": 1.1,
+      "gain": 0.25,
+      "instrument": "bass_drum",
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "midi": 36,
+      "duration": 1.1,
+      "gain": 0.2125,
+      "instrument": "gran_cassa",
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "midi": 50,
+      "duration": 1.1,
+      "gain": 0.1875,
+      "instrument": "trombone_stac",
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "midi": 53,
+      "duration": 1.1,
+      "gain": 0.1625,
+      "instrument": "trombone_stac",
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "midi": 26,
+      "duration": 1.1,
+      "gain": 0.1875,
+      "instrument": "tuba_stac",
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "midi": 62,
+      "duration": 1.1,
+      "gain": 0.1375,
+      "instrument": "horn_stac",
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "midi": 50,
+      "duration": 4.2,
+      "gain": 0.035,
+      "instrument": "analog_saw_pad",
+      "pan": -0.3
+    },
+    {
+      "t": 24.6,
+      "midi": 57,
+      "duration": 4.2,
+      "gain": 0.035,
+      "instrument": "analog_saw_pad",
+      "pan": -0.09999999999999998
+    },
+    {
+      "t": 24.6,
+      "midi": 62,
+      "duration": 4.2,
+      "gain": 0.035,
+      "instrument": "analog_saw_pad",
+      "pan": 0.10000000000000003
+    },
+    {
+      "t": 24.6,
+      "midi": 66,
+      "duration": 4.2,
+      "gain": 0.035,
+      "instrument": "analog_saw_pad",
+      "pan": 0.3000000000000001
+    },
+    {
+      "t": 24.6,
+      "midi": 38,
+      "duration": 2.5,
+      "gain": 0.07,
+      "instrument": "tuba",
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "midi": 50,
+      "duration": 2.5,
+      "gain": 0.07,
+      "instrument": "trombone",
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "midi": 57,
+      "duration": 2.5,
+      "gain": 0.07,
+      "instrument": "trombone",
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "midi": 66,
+      "duration": 2.5,
+      "gain": 0.07,
+      "instrument": "horn",
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "midi": 69,
+      "duration": 2.5,
+      "gain": 0.07,
+      "instrument": "horn",
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "midi": 69,
+      "duration": 3.7,
+      "gain": 0.05,
+      "instrument": "vibraphone_bowed",
+      "pan": -0.2
+    },
+    {
+      "t": 24.6,
+      "midi": 76,
+      "duration": 3.7,
+      "gain": 0.05,
+      "instrument": "vibraphone_bowed",
+      "pan": 0.2
+    },
+    {
+      "t": 26.4,
+      "midi": 62,
+      "duration": 0.9,
+      "gain": 0.12,
+      "instrument": "vibraphone",
+      "pan": 0
+    },
+    {
+      "t": 26.4,
+      "midi": 60,
+      "duration": 1.4,
+      "gain": 0.06,
+      "instrument": "sus_cymbal",
+      "pan": 0
+    },
+    {
+      "t": 26.4,
+      "midi": 74,
+      "duration": 1.1,
+      "gain": 0.07,
+      "instrument": "glass",
+      "pan": 0.0
+    },
+    {
+      "t": 26.4,
+      "midi": 62,
+      "duration": 0.45,
+      "gain": 0.05,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 26.7,
+      "midi": 69,
+      "duration": 1.1,
+      "gain": 0.07,
+      "instrument": "glass",
+      "pan": 0.25244129544236893
+    },
+    {
+      "t": 26.7,
+      "midi": 62,
+      "duration": 0.45,
+      "gain": 0.05,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 26.85,
+      "midi": 74,
+      "duration": 0.8,
+      "gain": 0.025,
+      "instrument": "glass",
+      "pan": -0.0
+    },
+    {
+      "t": 27.0,
+      "midi": 73,
+      "duration": 1.1,
+      "gain": 0.07,
+      "instrument": "glass",
+      "pan": 0.2727892280477045
+    },
+    {
+      "t": 27.0,
+      "midi": 62,
+      "duration": 0.45,
+      "gain": 0.05,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 27.15,
+      "midi": 69,
+      "duration": 0.8,
+      "gain": 0.025,
+      "instrument": "glass",
+      "pan": -0.25244129544236893
+    },
+    {
+      "t": 27.3,
+      "midi": 78,
+      "duration": 1.1,
+      "gain": 0.07,
+      "instrument": "glass",
+      "pan": 0.042336002417960164
+    },
+    {
+      "t": 27.3,
+      "midi": 62,
+      "duration": 0.45,
+      "gain": 0.05,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 27.45,
+      "midi": 73,
+      "duration": 0.8,
+      "gain": 0.025,
+      "instrument": "glass",
+      "pan": -0.2727892280477045
+    },
+    {
+      "t": 27.6,
+      "midi": 76,
+      "duration": 1.1,
+      "gain": 0.07,
+      "instrument": "glass",
+      "pan": -0.2270407485923785
+    },
+    {
+      "t": 27.6,
+      "midi": 62,
+      "duration": 0.45,
+      "gain": 0.05,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 27.75,
+      "midi": 78,
+      "duration": 0.8,
+      "gain": 0.025,
+      "instrument": "glass",
+      "pan": -0.042336002417960164
+    },
+    {
+      "t": 27.9,
+      "midi": 74,
+      "duration": 1.1,
+      "gain": 0.07,
+      "instrument": "glass",
+      "pan": -0.2876772823989415
+    },
+    {
+      "t": 27.9,
+      "midi": 62,
+      "duration": 0.45,
+      "gain": 0.05,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 28.05,
+      "midi": 76,
+      "duration": 0.8,
+      "gain": 0.025,
+      "instrument": "glass",
+      "pan": 0.2270407485923785
+    },
+    {
+      "t": 28.2,
+      "midi": 62,
+      "duration": 0.45,
+      "gain": 0.05,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 28.35,
+      "midi": 74,
+      "duration": 0.8,
+      "gain": 0.025,
+      "instrument": "glass",
+      "pan": 0.2876772823989415
+    },
+    {
+      "t": 28.8,
+      "midi": 50,
+      "duration": 5.4,
+      "gain": 0.03,
+      "instrument": "analog_saw_pad",
+      "pan": -0.3
+    },
+    {
+      "t": 28.8,
+      "midi": 57,
+      "duration": 5.4,
+      "gain": 0.03,
+      "instrument": "analog_saw_pad",
+      "pan": -0.09999999999999998
+    },
+    {
+      "t": 28.8,
+      "midi": 62,
+      "duration": 5.4,
+      "gain": 0.03,
+      "instrument": "analog_saw_pad",
+      "pan": 0.10000000000000003
+    },
+    {
+      "t": 28.8,
+      "midi": 66,
+      "duration": 5.4,
+      "gain": 0.03,
+      "instrument": "analog_saw_pad",
+      "pan": 0.3000000000000001
+    },
+    {
+      "t": 28.8,
+      "midi": 50,
+      "duration": 4,
+      "gain": 0.055,
+      "instrument": "horn",
+      "pan": 0
+    },
+    {
+      "t": 28.8,
+      "midi": 57,
+      "duration": 4,
+      "gain": 0.055,
+      "instrument": "horn",
+      "pan": 0
+    },
+    {
+      "t": 28.8,
+      "midi": 66,
+      "duration": 4,
+      "gain": 0.055,
+      "instrument": "horn",
+      "pan": 0
+    },
+    {
+      "t": 28.8,
+      "midi": 38,
+      "duration": 4,
+      "gain": 0.055,
+      "instrument": "tuba",
+      "pan": 0
+    },
+    {
+      "t": 28.8,
+      "midi": 69,
+      "duration": 4,
+      "gain": 0.055,
+      "instrument": "vibraphone_bowed",
+      "pan": 0
+    },
+    {
+      "t": 28.8,
+      "midi": 38,
+      "duration": 0.17,
+      "gain": 0.035,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 29.4,
+      "midi": 74,
+      "duration": 1.4,
+      "gain": 0.06,
+      "instrument": "glass",
+      "pan": 0.0
+    },
+    {
+      "t": 29.4,
+      "midi": 74,
+      "duration": 0.25,
+      "gain": 0.035,
+      "instrument": "fm_glass",
+      "pan": 0.0
+    },
+    {
+      "t": 29.4,
+      "midi": 38,
+      "duration": 0.17,
+      "gain": 0.035,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 30.0,
+      "midi": 69,
+      "duration": 1.4,
+      "gain": 0.06,
+      "instrument": "glass",
+      "pan": 0.25244129544236893
+    },
+    {
+      "t": 30.0,
+      "midi": 69,
+      "duration": 0.25,
+      "gain": 0.035,
+      "instrument": "fm_glass",
+      "pan": 0.25244129544236893
+    },
+    {
+      "t": 30.0,
+      "midi": 38,
+      "duration": 0.17,
+      "gain": 0.035,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 30.6,
+      "midi": 73,
+      "duration": 1.4,
+      "gain": 0.06,
+      "instrument": "glass",
+      "pan": 0.2727892280477045
+    },
+    {
+      "t": 30.6,
+      "midi": 73,
+      "duration": 0.25,
+      "gain": 0.035,
+      "instrument": "fm_glass",
+      "pan": 0.2727892280477045
+    },
+    {
+      "t": 30.6,
+      "midi": 38,
+      "duration": 0.17,
+      "gain": 0.035,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 31.2,
+      "midi": 78,
+      "duration": 1.4,
+      "gain": 0.06,
+      "instrument": "glass",
+      "pan": 0.042336002417960164
+    },
+    {
+      "t": 31.2,
+      "midi": 78,
+      "duration": 0.25,
+      "gain": 0.035,
+      "instrument": "fm_glass",
+      "pan": 0.042336002417960164
+    },
+    {
+      "t": 31.2,
+      "midi": 38,
+      "duration": 0.17,
+      "gain": 0.035,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 31.2,
+      "midi": 86,
+      "duration": 0.8,
+      "gain": 0.1,
+      "instrument": "fm_glass",
+      "pan": 0
+    },
+    {
+      "t": 31.8,
+      "midi": 76,
+      "duration": 1.4,
+      "gain": 0.06,
+      "instrument": "glass",
+      "pan": -0.2270407485923785
+    },
+    {
+      "t": 31.8,
+      "midi": 76,
+      "duration": 0.25,
+      "gain": 0.035,
+      "instrument": "fm_glass",
+      "pan": -0.2270407485923785
+    },
+    {
+      "t": 31.8,
+      "midi": 38,
+      "duration": 0.17,
+      "gain": 0.035,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 32.4,
+      "midi": 74,
+      "duration": 1.4,
+      "gain": 0.06,
+      "instrument": "glass",
+      "pan": -0.2876772823989415
+    },
+    {
+      "t": 32.4,
+      "midi": 74,
+      "duration": 0.25,
+      "gain": 0.035,
+      "instrument": "fm_glass",
+      "pan": -0.2876772823989415
+    },
+    {
+      "t": 32.4,
+      "midi": 38,
+      "duration": 0.17,
+      "gain": 0.035,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 33.0,
+      "midi": 38,
+      "duration": 0.17,
+      "gain": 0.035,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 34.2,
+      "midi": 38,
+      "duration": 1.5,
+      "gain": 0.1,
+      "instrument": "timpani",
+      "pan": 0
+    },
+    {
+      "t": 34.2,
+      "midi": 62,
+      "duration": 3.4,
+      "gain": 0.035,
+      "instrument": "analog_saw_pad",
+      "pan": 0
+    },
+    {
+      "t": 34.8,
+      "midi": 86,
+      "duration": 1.8,
+      "gain": 0.065,
+      "instrument": "fm_glass",
+      "pan": 0
+    },
+    {
+      "t": 35.4,
+      "midi": 81,
+      "duration": 1.6,
+      "gain": 0.04,
+      "instrument": "glass",
+      "pan": 0
+    }
+  ],
+  "hits": [],
+  "effects": [
+    {
+      "t": 0,
+      "kind": "wind",
+      "duration": 4.95,
+      "gain": 0.009,
+      "pan": 0
+    },
+    {
+      "t": 0.12,
+      "kind": "focus_servo",
+      "duration": 0.45,
+      "gain": 0.025,
+      "pan": 0,
+      "frequency": 650
+    },
+    {
+      "t": 0.6,
+      "kind": "click",
+      "duration": 0.06,
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 1.2,
+      "kind": "click",
+      "duration": 0.06,
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 1.8,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 1.8,
+      "kind": "sine_glide",
+      "duration": 3.15,
+      "gain": 0.035,
+      "pan": 0,
+      "freq_start": 180,
+      "freq_end": 2400
+    },
+    {
+      "t": 1.8,
+      "kind": "whoosh",
+      "duration": 3.15,
+      "gain": 0.065,
+      "pan": 0
+    },
+    {
+      "t": 1.95,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 2.1,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 2.25,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 2.4,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 2.55,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 2.7,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 2.85,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 3.0,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 3.15,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 3.3,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 3.45,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 3.6,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 3.75,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 3.9,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 4.05,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 4.2,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 4.35,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 4.5,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 4.65,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 5.4,
+      "kind": "thump",
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": 0
+    },
+    {
+      "t": 5.4,
+      "kind": "paper",
+      "duration": 0.5,
+      "gain": 0.13,
+      "pan": 0
+    },
+    {
+      "t": 5.4,
+      "kind": "scan_noise",
+      "duration": 0.34,
+      "gain": 0.06,
+      "pan": 0,
+      "rate": 15
+    },
+    {
+      "t": 5.9,
+      "kind": "wind",
+      "duration": 0.7,
+      "gain": 0.004,
+      "pan": 0
+    },
+    {
+      "t": 6.6,
+      "kind": "sine_glide",
+      "duration": 0.22,
+      "gain": 0.035,
+      "pan": 0,
+      "freq_start": 450,
+      "freq_end": 2400
+    },
+    {
+      "t": 6.6,
+      "kind": "scan_noise",
+      "duration": 0.22,
+      "gain": 0.035,
+      "pan": 0,
+      "rate": 13
+    },
+    {
+      "t": 6.82,
+      "kind": "sine_glide",
+      "duration": 0.2,
+      "gain": 0.038000000000000006,
+      "pan": 0,
+      "freq_start": 620,
+      "freq_end": 2650
+    },
+    {
+      "t": 6.82,
+      "kind": "scan_noise",
+      "duration": 0.2,
+      "gain": 0.035,
+      "pan": 0,
+      "rate": 16
+    },
+    {
+      "t": 7.02,
+      "kind": "sine_glide",
+      "duration": 0.2,
+      "gain": 0.041,
+      "pan": 0,
+      "freq_start": 790,
+      "freq_end": 2900
+    },
+    {
+      "t": 7.02,
+      "kind": "scan_noise",
+      "duration": 0.2,
+      "gain": 0.035,
+      "pan": 0,
+      "rate": 19
+    },
+    {
+      "t": 7.22,
+      "kind": "sine_glide",
+      "duration": 0.22,
+      "gain": 0.044000000000000004,
+      "pan": 0,
+      "freq_start": 960,
+      "freq_end": 3150
+    },
+    {
+      "t": 7.22,
+      "kind": "scan_noise",
+      "duration": 0.22,
+      "gain": 0.035,
+      "pan": 0,
+      "rate": 22
+    },
+    {
+      "t": 7.3,
+      "kind": "scan_noise",
+      "duration": 0.5,
+      "gain": 0.035,
+      "pan": 0,
+      "rate": 10
+    },
+    {
+      "t": 7.44,
+      "kind": "sine_glide",
+      "duration": 0.26,
+      "gain": 0.047,
+      "pan": 0,
+      "freq_start": 1130,
+      "freq_end": 3400
+    },
+    {
+      "t": 7.44,
+      "kind": "scan_noise",
+      "duration": 0.26,
+      "gain": 0.035,
+      "pan": 0,
+      "rate": 25
+    },
+    {
+      "t": 7.8,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 7.8,
+      "kind": "metal_tick",
+      "duration": 0.45,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 8.1,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 8.4,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 8.7,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 9.0,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 9.05,
+      "kind": "scan_noise",
+      "duration": 0.55,
+      "gain": 0.035,
+      "pan": 0,
+      "rate": 13
+    },
+    {
+      "t": 9.3,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 9.6,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 9.6,
+      "kind": "metal_tick",
+      "duration": 0.45,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 9.9,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 10.2,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 10.32,
+      "kind": "scan_noise",
+      "duration": 0.48,
+      "gain": 0.035,
+      "pan": 0,
+      "rate": 16
+    },
+    {
+      "t": 10.5,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 10.8,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 10.8,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 10.8,
+      "kind": "metal_tick",
+      "duration": 0.45,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 10.95,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 11.1,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 11.25,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 11.3,
+      "kind": "scan_noise",
+      "duration": 0.4,
+      "gain": 0.035,
+      "pan": 0,
+      "rate": 19
+    },
+    {
+      "t": 11.4,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 11.55,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 11.7,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 11.7,
+      "kind": "metal_tick",
+      "duration": 0.45,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 11.85,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 11.96,
+      "kind": "scan_noise",
+      "duration": 0.34,
+      "gain": 0.035,
+      "pan": 0,
+      "rate": 22
+    },
+    {
+      "t": 12.0,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 12.15,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 12.3,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 12.3,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 12.3,
+      "kind": "metal_tick",
+      "duration": 0.45,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 12.45,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 12.6,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 12.75,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 12.9,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 13.05,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 13.2,
+      "kind": "thump",
+      "duration": 0.4,
+      "gain": 0.14,
+      "pan": 0
+    },
+    {
+      "t": 13.2,
+      "kind": "metal_tick",
+      "duration": 0.6,
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 14.1,
+      "kind": "focus_servo",
+      "duration": 0.6,
+      "gain": 0.025,
+      "pan": 0,
+      "frequency": 500
+    },
+    {
+      "t": 14.7,
+      "kind": "click",
+      "duration": 0.06,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 15.3,
+      "kind": "wind",
+      "duration": 6.6,
+      "gain": 0.012,
+      "pan": 0
+    },
+    {
+      "t": 16.2,
+      "kind": "ship_horn",
+      "duration": 1.6,
+      "gain": 0.07,
+      "pan": 0,
+      "frequency": 73.416,
+      "far": true
+    },
+    {
+      "t": 16.2,
+      "kind": "eraser_felt",
+      "duration": 0.6,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 16.5,
+      "kind": "marker_squeak",
+      "duration": 0.6,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 18.6,
+      "kind": "sine_glide",
+      "duration": 1.8,
+      "gain": 0.03,
+      "pan": 0,
+      "freq_start": 250,
+      "freq_end": 1200
+    },
+    {
+      "t": 18.91365,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 18.99518,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.05237,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.0979,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.13634,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.045,
+      "pan": 0
+    },
+    {
+      "t": 19.16995,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.2,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.22731,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.25243,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.27575,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.045,
+      "pan": 0
+    },
+    {
+      "t": 19.29756,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.31809,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.33751,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.35595,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.37354,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.045,
+      "pan": 0
+    },
+    {
+      "t": 19.39036,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.40649,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.42201,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.43696,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.45139,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.045,
+      "pan": 0
+    },
+    {
+      "t": 19.46535,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.47887,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.49199,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.50479,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.51781,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.045,
+      "pan": 0
+    },
+    {
+      "t": 19.53123,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.54508,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.55939,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.5742,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.58957,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.045,
+      "pan": 0
+    },
+    {
+      "t": 19.60554,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.62219,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.63957,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.6578,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.67696,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.045,
+      "pan": 0
+    },
+    {
+      "t": 19.69719,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.71867,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.74159,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.76622,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.79294,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.045,
+      "pan": 0
+    },
+    {
+      "t": 19.82224,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.85486,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.89194,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.9354,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 19.989,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.045,
+      "pan": 0
+    },
+    {
+      "t": 20.06213,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 20.20241,
+      "kind": "click",
+      "duration": 0.025,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 20.4,
+      "kind": "acrylic_tok",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 21.9,
+      "kind": "wind",
+      "duration": 0.9,
+      "gain": 0.004,
+      "pan": 0
+    },
+    {
+      "t": 22.8,
+      "kind": "water",
+      "duration": 0.6,
+      "gain": 0.07,
+      "pan": 0
+    },
+    {
+      "t": 23.4,
+      "kind": "whoosh",
+      "duration": 0.6,
+      "gain": 0.09,
+      "pan": 0
+    },
+    {
+      "t": 23.4,
+      "kind": "paper",
+      "duration": 0.15,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "kind": "thump",
+      "duration": 0.4,
+      "gain": 0.125,
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "kind": "metal_tick",
+      "duration": 0.5,
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "kind": "board_tap",
+      "duration": 0.35,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "kind": "water",
+      "duration": 4.2,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 25.2,
+      "kind": "metal_tick",
+      "duration": 0.2,
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 25.85,
+      "kind": "scan_noise",
+      "duration": 0.55,
+      "gain": 0.03,
+      "pan": 0,
+      "rate": 9
+    },
+    {
+      "t": 28.8,
+      "kind": "water",
+      "duration": 2.7,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 31.2,
+      "kind": "magnet_clack",
+      "duration": 0.12,
+      "gain": 0.05,
+      "pan": 0
+    },
+    {
+      "t": 35.1,
+      "kind": "scan_noise",
+      "duration": 2.5,
+      "gain": 0.017,
+      "pan": 0,
+      "rate": 3
+    }
+  ]
+}

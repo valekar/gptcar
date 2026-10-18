@@ -94,6 +94,71 @@ def effect(kind,duration,seed=6103,**p):
   a=(lp(noise,1800)*.55+np.sin(2*np.pi*125*t)*.4+bp(noise,2100,6500)*.15)*np.exp(-u*17)*np.minimum(t/.001,1)
  elif kind=='room_hvac':
   a=(lp(noise,550)*.6+np.sin(2*np.pi*60*t)*.055+np.sin(2*np.pi*120*t)*.02)*np.minimum(t/.25,1)*np.minimum((d-t)/.3,1)
+ elif kind=='baren_rub':
+  a=bp(noise,180,2600)*env*(.45+.55*np.sin(2*np.pi*9*t)**2)
+ elif kind=='scroll_slide':
+  a=bp(noise,350,6500)*env*(.7+.3*np.sin(2*np.pi*31*t))+.08*np.sin(2*np.pi*180*t)*env
+ elif kind=='hollow_wood_step':
+  a=sum(g*np.sin(2*np.pi*f*t)*np.exp(-t*k) for f,g,k in [(270,.55,40),(710,.3,65),(1680,.15,90)])+bp(noise,800,5500)*np.exp(-t*100)*.2
+  a*=np.minimum(t/.001,1)
+ elif kind=='wind_chime':
+  a=sum(g*np.sin(2*np.pi*f*t)*np.exp(-t*k) for f,g,k in [(2360,.55,2),(5150,.3,3),(7980,.15,4)])*np.minimum(t/.001,1)*np.minimum((d-t)/.03,1)
+ elif kind=='field_trickle':
+  a=bp(noise,800,6500)*.3
+  for onset in rng.uniform(0,d,max(2,int(d*15))):
+   q=t-onset;valid=q>=0;f=rng.uniform(1100,2900);a[valid]+=.15*np.sin(2*np.pi*(f*q[valid]-f*q[valid]**2*.7))*np.exp(-q[valid]*45)
+  a*=np.minimum(t/.1,1)*np.minimum((d-t)/.15,1)
+ elif kind=='sea_swell':
+  swell=(.25+.75*np.sin(np.pi*u)**2);a=(lp(noise,650)*.65+bp(noise,900,7000)*.2)*swell*np.minimum(t/.25,1)*np.minimum((d-t)/.35,1)
+ elif kind=='goose':
+  f=350+40*np.sin(np.pi*u)+10*np.sin(2*np.pi*26*t);phase=2*np.pi*np.cumsum(f)/SR;v=sum(np.sin(phase*k)/k for k in range(1,13));a=(bp(v,450,2800)+bp(noise,800,2700)*.12)*env
+ elif kind=='kite_call':
+  f=2400-900*u+180*np.sin(2*np.pi*7*t);a=(np.sin(2*np.pi*np.cumsum(f)/SR)+.16*np.sin(2*np.pi*np.cumsum(f*2)/SR))*env*(.6+.4*np.sin(2*np.pi*7*t)**2)
+ elif kind=='bubble_splash':
+  f=640-460*np.minimum(u*3,1);a=np.sin(2*np.pi*np.cumsum(f)/SR)*np.exp(-u*8)*.45+bp(noise,300,6000)*np.exp(-u*11)*.35
+  for onset in rng.uniform(.02,max(.021,d*.65),5):
+   q=t-onset;valid=q>=0;a[valid]+=.1*np.sin(2*np.pi*rng.uniform(800,1900)*q[valid])*np.exp(-q[valid]*40)
+  a*=np.minimum(t/.003,1)
+ elif kind=='wood_knock':
+  a=np.zeros(len(t))
+  for onset,gain in [(0,1),(.21,float(p.get('bounce_gain',.3)))]:
+   q=t-onset;valid=q>=0;a[valid]+=gain*(.5*np.sin(2*np.pi*310*q[valid])+.25*np.sin(2*np.pi*890*q[valid])+.15*np.sin(2*np.pi*1730*q[valid])+bp(noise,600,4000)[valid]*.25)*np.exp(-q[valid]*45)
+ elif kind=='ceramic_clack':
+  a=sum(g*np.sin(2*np.pi*f*t)*np.exp(-t*k) for f,g,k in [(1620,.5,12),(3410,.3,18),(5370,.15,29)])+bp(noise,1700,11000)*np.exp(-t*130)*.3
+  a*=np.minimum(t/.001,1)
+ elif kind=='stone_thunk':
+  a=(np.sin(2*np.pi*95*t)*.5+np.sin(2*np.pi*247*t)*.2+lp(noise,1700)*.4)*np.exp(-t*28)*np.minimum(t/.002,1)
+ elif kind=='electric_hum':
+  f=float(p.get('frequency',60));a=(np.sin(2*np.pi*f*t)*.5+.2*np.sin(2*np.pi*f*2*t)+.08*np.sin(2*np.pi*f*4*t)+lp(noise,1100)*.1)*np.minimum(t/.08,1)*np.minimum((d-t)/.12,1)
+ elif kind=='scissor_snip':
+  a=(bp(noise,1500,10500)*.65+np.sin(2*np.pi*2700*t)*.1)*np.exp(-u*24)*np.minimum(t/.001,1)
+ elif kind=='paper_fold':
+  a=bp(noise,350,7000)*env*(.4+.6*np.sin(2*np.pi*36*t)**2)+bp(noise,1900,9000)*np.exp(-((u-.65)/.1)**2)*.25
+ elif kind=='unfold_snap':
+  a=bp(noise,400,8500)*(np.exp(-u*18)+.3*np.exp(-((u-.45)/.18)**2))+np.sin(2*np.pi*130*t)*np.exp(-u*12)*.2
+ elif kind=='cardboard_step':
+  a=(np.sin(2*np.pi*55*t)*.5+lp(noise,1300)*.5+bp(noise,1900,6000)*.12)*np.exp(-u*17)*np.minimum(t/.002,1)
+ elif kind=='candle_puff':
+  a=bp(noise,300,3500)*np.exp(-((u-.25)/.2)**2)+lp(noise,650)*np.exp(-u*5)*.2
+ elif kind=='candle_whoomp':
+  a=(lp(noise,850)*.65+np.sin(2*np.pi*(95*t-32*t*t/max(d,.01)))*.3+bp(noise,1300,5000)*.2)*np.exp(-((u-.28)/.23)**2)
+ elif kind=='firecracker':
+  a=bp(noise,700,18000)*np.exp(-t*140)+lp(noise,900)*np.exp(-t*32)*.5+np.sin(2*np.pi*105*t)*np.exp(-t*38)*.2
+  a*=np.minimum(t/.0004,1)
+ elif kind=='paper_peel':
+  a=bp(noise,550,7500)*env*(.45+.55*np.maximum(np.sin(2*np.pi*(13+20*u)*t),0)**2)
+ elif kind=='dazzled_whimper':
+  f=310-100*u+15*np.sin(2*np.pi*7*t);phase=2*np.pi*np.cumsum(f)/SR;v=sum(np.sin(phase*k)/k for k in range(1,15));a=(bp(v,400,2700)*.55+bp(noise,800,2300)*.08)*env
+ elif kind=='brush_sweep':
+  rate=float(p.get('rate',2.2));a=bp(noise,1100,10500)*(.35+.65*np.sin(2*np.pi*rate*t)**2)*np.minimum(t/.04,1)*np.minimum((d-t)/.06,1)
+ elif kind=='brush_tap':
+  a=(bp(noise,1100,11000)*.7+np.sin(2*np.pi*190*t)*.1)*np.exp(-t*28)*np.minimum(t/.003,1)
+ elif kind=='firework':
+  launch=min(.42,d*.35);f=650+1950*np.clip(t/max(launch,.01),0,1);a=np.sin(2*np.pi*np.cumsum(f)/SR)*np.sin(np.pi*np.clip(t/max(launch,.01),0,1))**2*.18
+  q=t-launch;valid=q>=0;a[valid]+=(lp(noise,1000)[valid]*.7+np.sin(2*np.pi*70*q[valid])*.4+bp(noise,1700,12000)[valid]*.35)*np.exp(-q[valid]*12)
+  for onset in launch+rng.uniform(.04,max(.05,d-launch-.02),18):
+   q=t-onset;valid=q>=0;a[valid]+=bp(noise,2000,14000)[valid]*np.exp(-q[valid]*100)*rng.uniform(.03,.12)
+  a*=np.minimum((d-t)/.03,1)
  elif kind=='sine_glide':
   f0=float(p.get('freq_start',440));f1=float(p.get('freq_end',880));f=f0*(f1/f0)**u;a=np.sin(2*np.pi*np.cumsum(f)/SR)*np.minimum(t/.01,1)*np.minimum((d-t)/.02,1)
  elif kind=='glass_shimmer':

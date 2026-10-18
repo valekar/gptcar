@@ -1,0 +1,22 @@
+{
+  "slug": "satellite-briefing",
+  "verdict": "accepted-for-gallery",
+  "reviewer": "root independent scene review",
+  "reviewed_source_sha256": "e3f6a3d268eec0929e89a4952262e9bb9e4557d5f242f5e9a4b2be22acade72f",
+  "reviewed_video_sha256": "5d2c62adad9aa82bbc11149c8c7dc0610ef52f95aee266e1795905ffb8135040",
+  "scene_review": "passed",
+  "audio_review": "passed",
+  "review_times": [
+    10.458333333333334,
+    10.5,
+    10.833333333333334,
+    11.458333333333334,
+    11.5,
+    11.708333333333334,
+    12.333333333333334
+  ],
+  "method": "All 62 full-film matched decoded pairs inspected across all 12 shots and fast scan/rewind/ring/range/dam/growth/end states. Seven final-movie counter repair targets inspected at consecutive and settled readout frames; exact 11 acquisition/fill orders and six main Aral areas verified.",
+  "audio_evidence": "All 10 exact fresh bf_emma inputs retained; independent ASR six normalized exact plus sea/C homophone and 1977/2014/95 kilometres formatting equivalents. New 206-note 100 BPM score and 148 material effects with original stop/dam/tear/breath timing. Final -14 LUFS / -1.2 dBTP.",
+  "comparison_notes": "Full 37.791667-second The Map Still Says Sea retains the same Landsat acquisitions, exact six main measured areas, Blue Marble/map, complete camera/scan story, 95 km range and attributed World Bank +37% claim. New camera/image-state/story/overlay use credited generic shader/mark primitives. Four close regional masks differ slightly after preprocessing; their acquisition order is exact and variance is documented. Counter motion matches original continuous countdown to 40%/21%; intermediate 46%/25% frames are animation, with no added factual footnote. Fresh voice/music/foley; original private conversation prompt was not published.",
+  "reviewed_at": "2026-10-18T06:16:18.261446+00:00"
+}

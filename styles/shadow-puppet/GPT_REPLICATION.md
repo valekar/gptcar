@@ -1,0 +1,9 @@
+# Replication findings
+
+Preserve every counted physical step: ten births, nine arrows with independent release/flight/impact/falling-crow/lamp-snuff events, and one nocked arrow refused. A mere reduction in drawn sun count loses the central material mechanism. Real lamp uniforms must drive transmission and exposure. The bow grip and nock belong on one aim line; retarget hand IK and hand rotation toward each distinct target before deriving the flying arrow origin.
+
+Use textured dyed-hide openwork, visible joints/rods and multiplied overlap, not black silhouettes. Carved hill strata must follow ridge curvature; drought swaps warm pieces and cracked ground, then river/canopy return. The final cut-letter plaque needs a clear cloth area: remove the hero and prevent scenery from obscuring its words. Backstage lamp cups must be positioned from the same mirrored sun coordinates as the surviving light, with real silhouetted hands/rods. Clamp close cameras to cloth bounds; a foreground pillar must cover the mirror cut. Review all nine rapid hits and the five-frame crash separately from one-second sheets.
+
+Generic carving/GL/frame/hand helpers and disclosed model/pose assets may be reused with hashes. Independently assemble scene/performance/lamps/cameras/score. Preserve the hard full-mix mercy silence34.8–36.9, then one tiny gong and the exact six published voice lines.
+
+A reverse-side reveal needs its own foreground assembly: remove front proscenium/audience, show large operator/head and hand silhouettes, long rods and ten hanging cups. Cover the mirror flip fully with a pillar and move its trailing edge beyond the frame before exposing the reverse shot. Calibrate close camera centers using helmet/sun anchors; one-second sheets miss the five-frame crash and final lamp lens flare. Fire must extinguish before the spoken negation.

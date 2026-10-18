@@ -1388,15 +1388,27 @@
     }
   },
   "restoration": "Original acquisition IDs and main/fill order pinned; published preprocessing tools rerun on those exact sources.",
-  "factual_label_discrepancy": {
+  "restoration_note": "All 11 recorded scene ID/order sequences match. All 6 regional Aral film counter areas match exactly. Four close regional masks differ slightly after current preprocessing; preserve the published historical measurements as attributed reference data and disclose regenerated-mask variance.",
+  "counter_animation_validation": {
+    "method": "Consecutive decoded original movie frames, same CFR timestamps as reconstruction review.",
     "2000": {
-      "reference_movie_label_percent": 46,
-      "source_masks_percent": 40
+      "intermediate": {
+        "10.458333": 46,
+        "10.5": 44
+      },
+      "settled": {
+        "10.833333": 40
+      }
     },
     "2009": {
-      "reference_movie_label_percent": 25,
-      "source_masks_percent": 21
-    }
-  },
-  "restoration_note": "All11 recorded scene ID/order sequences match. All6 regional Aral film counter areas match exactly. Four close regional masks differ slightly after current preprocessing; preserve the published historical measurements as attributed reference data and disclose regenerated-mask variance."
+      "intermediate": {
+        "11.458333": 25,
+        "11.5": 23
+      },
+      "settled": {
+        "11.708333": 21
+      }
+    },
+    "conclusion": "Animated counter agrees with restored mask areas. Prior discrepancy interpretation corrected; no historical-value footnote required."
+  }
 }

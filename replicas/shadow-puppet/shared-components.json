@@ -1,0 +1,51 @@
+[
+  {
+    "path": "styles/shadow-puppet/demo/carve.js",
+    "sha256": "a439554a32c75c8d65b7a8d7d25786abe274f565b28fbbb1d062c73b84097223",
+    "purpose": "Generic textured hide, openwork carving and motif toolbox"
+  },
+  {
+    "path": "styles/shadow-puppet/demo/gl.js",
+    "sha256": "e2ef60ce02e2eae389c3a8613980d67c2e4f786e9567d9dceb62eb97e4b5c6fa",
+    "purpose": "Generic cloth/lamp/transmission/bloom compositor"
+  },
+  {
+    "path": "styles/shadow-puppet/demo/houyi.js",
+    "sha256": "a96128da1092be69d0f3fffa94ddfcec8b6d09447e8aab24aaa8bdbf064bb920",
+    "purpose": "Shared fully carved eleven-piece Hou Yi model, joint rig, bow/arrow primitive and plumes; new performances and aim assembly in film.js"
+  },
+  {
+    "path": "styles/shadow-puppet/demo/poses.js",
+    "sha256": "2aa31a61881392f45c3de27ffab9cb1d8a5d9b66db89d37db70ba8c21d32092a",
+    "purpose": "Shared reusable key-pose data, independently timed/interpolated and retargeted in film.js"
+  },
+  {
+    "path": "styles/shadow-puppet/demo/suns.js",
+    "sha256": "84a20608eb8c1df34013de1850253ea01dfc68c33da4b7686aae960ce3c41bea",
+    "purpose": "Shared flame-rim sun/crow model primitives; independently assembled birth/kill/flight sequence"
+  },
+  {
+    "path": "styles/shadow-puppet/demo/backstage.js",
+    "sha256": "7abc7c0181eaa5bdf0aa545c527233b5057c525017463ebf696e60d56f62d719",
+    "purpose": "Generic silhouette/hand/lamp/flame/smoke primitives"
+  },
+  {
+    "path": "styles/shadow-puppet/demo/hud.js",
+    "sha256": "bb5877aeada67a1a4e189321568cf06832d92057c19a460ed684f04d59a525aa",
+    "purpose": "Generic storyteller subtitle placard"
+  },
+  {
+    "path": "styles/shadow-puppet/demo/stage.js",
+    "sha256": "38a8900684e4f19e0e5cb2c7c32d4961f514d6ea597ede7e7af1d7ca92e9827b",
+    "purpose": "Generic frame/audience/pillar/plaque material primitives; original buildStage assembly omitted; own card text/assembly"
+  },
+  {
+    "path": "core/lib.js",
+    "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+    "purpose": "Shared deterministic math"
+  },
+  {
+    "path": "replicas/shadow-puppet/fonts",
+    "purpose": "Fresh OFL Cormorant Garamond and Ma Shan Zheng with published license notices"
+  }
+]

@@ -1,0 +1,14 @@
+The Island That Grew — independent GPT-6.1 Sol High recreation.
+
+New files: world.js independently assembles the exact 33 axial tiles, 8 houses, 13 trees, windmill, dock, boat, lamps, flowers, smoke, gulls, lighthouse, beam and buoy objects; animate.js independently applies every growth/drop/pop/lighting/boat/beam/life state; camera.js independently applies published camera data; film.js independently assembles lights, rendering and sky; hud.js independently draws title/subtitles/end card. No original buildWorld, original world.update, main.js or story.js executes.
+
+Shared generic style/render primitives, LemoLab MIT:
+- props.js adapts generic flat-shaded material, hex prism, gabled house, tree, mill, boat, lighthouse, buoy and Gaussian beam-material factories extracted from styles/lowpoly-island/demo/world.js. No original layout, story schedule, scene assembly or update copied into that helper.
+- sea.js faceted water shader, wave function and shallow map from styles/lowpoly-island/demo/sea.js.
+- post.js orthographic GTAO, haze/stars, edge tilt blur, bloom and pastel grade from styles/lowpoly-island/demo/post.js.
+- core/lib.js generic deterministic interpolation/easing/hash functions.
+TOOLKIT_LICENSE.txt retained. Camera, palette, event/MIDI values and script are published reference data used to match the original. Published event reference is documentary data only; all new event values are independently generated and exported by the new runtime.
+
+Fonts: Josefin Sans and Quicksand, Google Fonts, SIL OFL; full local variable fonts and license texts in fonts. No photographic, generated-image or texture assets. All artwork is actual Three.js geometry and procedural materials.
+
+Voice: fresh Kokoro af_sky, five exact published lines and original speeds. New score: 268 notes, 60 sampled percussion hits and 158 effects at 96 BPM, with 90 event-driven melody notes from the new scene, including the boat answer and distant buoy. Licensed root sample packs and synthesized material effects; no original soundtrack reuse. The new credit identifies GPT rather than the original author's signature.

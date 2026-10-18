@@ -1,0 +1,261 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "slug": "shadow-puppet",
+  "title": "Hou Yi Shoots the Suns",
+  "source_ready": true,
+  "status": "source-ready-for-independent-review",
+  "uses_upstream_scene_code": false,
+  "matched_brief_sha256": "5545044de440266c9680bd810b0d6ad28c4d5225acbb9b67f1e8ed313cb11fd1",
+  "delivery": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frame_count": 1305,
+    "duration": 54.375
+  },
+  "duration": 54.375,
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "review_times": [
+    0.5,
+    1.083333,
+    1.25,
+    1.5,
+    2.4,
+    2.5,
+    3.5,
+    4.5,
+    5.5,
+    6.5,
+    6.6,
+    7.2,
+    7.5,
+    8.5,
+    9.5,
+    10.5,
+    11.5,
+    12.5,
+    13.5,
+    14.5,
+    15.5,
+    16.5,
+    17.5,
+    18.3,
+    18.5,
+    19.5,
+    20.5,
+    20.9,
+    21.5,
+    21.6,
+    21.7,
+    21.708333,
+    21.808333,
+    22.5,
+    23.5,
+    24.5,
+    25.5,
+    26.5,
+    27.5,
+    27.6,
+    27.900000000000002,
+    27.916667,
+    27.94166666666667,
+    27.958333,
+    28.5,
+    29.4,
+    29.5,
+    29.7,
+    29.741666666666667,
+    30.5,
+    30.6,
+    30.82,
+    30.861666666666668,
+    31.2,
+    31.419999999999998,
+    31.461666666666666,
+    31.5,
+    31.8,
+    32.0,
+    32.041666666666664,
+    32.1,
+    32.300000000000004,
+    32.34166666666667,
+    32.4,
+    32.5,
+    32.58,
+    32.62166666666666,
+    32.7,
+    32.88,
+    32.92166666666667,
+    33,
+    33.18,
+    33.221666666666664,
+    33.5,
+    34.5,
+    34.8,
+    35.5,
+    36.5,
+    36.9,
+    37.5,
+    38.5,
+    38.6,
+    38.625,
+    39.5,
+    39.6,
+    40.5,
+    41.5,
+    42.5,
+    43.5,
+    43.8,
+    43.833333,
+    44.1,
+    44.5,
+    45.5,
+    46.5,
+    47.5,
+    48.3,
+    48.5,
+    49.5,
+    50.5,
+    50.75,
+    50.8,
+    50.833333,
+    51.5,
+    52.5,
+    53.5,
+    54.3333
+  ],
+  "shared_components": [
+    {
+      "path": "styles/shadow-puppet/demo/carve.js",
+      "sha256": "a439554a32c75c8d65b7a8d7d25786abe274f565b28fbbb1d062c73b84097223",
+      "purpose": "Generic textured hide, openwork carving and motif toolbox"
+    },
+    {
+      "path": "styles/shadow-puppet/demo/gl.js",
+      "sha256": "e2ef60ce02e2eae389c3a8613980d67c2e4f786e9567d9dceb62eb97e4b5c6fa",
+      "purpose": "Generic cloth/lamp/transmission/bloom compositor"
+    },
+    {
+      "path": "styles/shadow-puppet/demo/houyi.js",
+      "sha256": "a96128da1092be69d0f3fffa94ddfcec8b6d09447e8aab24aaa8bdbf064bb920",
+      "purpose": "Shared fully carved eleven-piece Hou Yi model, joint rig, bow/arrow primitive and plumes; new performances and aim assembly in film.js"
+    },
+    {
+      "path": "styles/shadow-puppet/demo/poses.js",
+      "sha256": "2aa31a61881392f45c3de27ffab9cb1d8a5d9b66db89d37db70ba8c21d32092a",
+      "purpose": "Shared reusable key-pose data, independently timed/interpolated and retargeted in film.js"
+    },
+    {
+      "path": "styles/shadow-puppet/demo/suns.js",
+      "sha256": "84a20608eb8c1df34013de1850253ea01dfc68c33da4b7686aae960ce3c41bea",
+      "purpose": "Shared flame-rim sun/crow model primitives; independently assembled birth/kill/flight sequence"
+    },
+    {
+      "path": "styles/shadow-puppet/demo/backstage.js",
+      "sha256": "7abc7c0181eaa5bdf0aa545c527233b5057c525017463ebf696e60d56f62d719",
+      "purpose": "Generic silhouette/hand/lamp/flame/smoke primitives"
+    },
+    {
+      "path": "styles/shadow-puppet/demo/hud.js",
+      "sha256": "bb5877aeada67a1a4e189321568cf06832d92057c19a460ed684f04d59a525aa",
+      "purpose": "Generic storyteller subtitle placard"
+    },
+    {
+      "path": "styles/shadow-puppet/demo/stage.js",
+      "sha256": "38a8900684e4f19e0e5cb2c7c32d4961f514d6ea597ede7e7af1d7ca92e9827b",
+      "purpose": "Generic frame/audience/pillar/plaque material primitives; original buildStage assembly omitted; own card text/assembly"
+    },
+    {
+      "path": "core/lib.js",
+      "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+      "purpose": "Shared deterministic math"
+    },
+    {
+      "path": "replicas/shadow-puppet/fonts",
+      "purpose": "Fresh OFL Cormorant Garamond and Ma Shan Zheng with published license notices"
+    }
+  ],
+  "determinism": [
+    {
+      "t": 1.25,
+      "equal": true,
+      "sha256": "7091020870247f87ffdfdae6a9b9203e6ffe0d963667017d2e2092430359a2e0"
+    },
+    {
+      "t": 2.5,
+      "equal": true,
+      "sha256": "288a70f1eaf2908a2a00ff5620a42f6431ea2af79c4321843a63cc9f93961d18"
+    },
+    {
+      "t": 21.708333,
+      "equal": true,
+      "sha256": "9c60a36500bc4dd8091157b8ffd071ed4f9026b1c376914747d88a34ec9e5893"
+    },
+    {
+      "t": 27.916667,
+      "equal": true,
+      "sha256": "211d343a283949b3addeda3a8bf5767c74ef764d79f5ada780506264df60fea7"
+    },
+    {
+      "t": 35.5,
+      "equal": true,
+      "sha256": "816f7e6e537cc6b165f79904d93c054e573b57201ae748fc21ba57b48039e60f"
+    },
+    {
+      "t": 38.625,
+      "equal": true,
+      "sha256": "13eeb2f6d5ada8dec6fac2d53816ff15e4cf6d315e2a7d9f82e8cfcbc05472ff"
+    },
+    {
+      "t": 43.833333,
+      "equal": true,
+      "sha256": "f44b7de40a89a43a063084644091ff6fe1b4d8c092e3eaafda5ee9505df5ccf6"
+    },
+    {
+      "t": 44.5,
+      "equal": true,
+      "sha256": "0ceba76641a8110dea294856344492ce804d4cc64f36168435642171d7d8aaea"
+    },
+    {
+      "t": 50.833333,
+      "equal": true,
+      "sha256": "6beef8bce846f0f5bb74e8d7d821ed164c718e759ebe0761237b0eae98ae17c2"
+    },
+    {
+      "t": 51.5,
+      "equal": true,
+      "sha256": "7b655627f94cbf2e33385d45b3de5a2b609cd141f842498c8c4b305aa961ea01"
+    }
+  ],
+  "source_sha256": {
+    "CREDITS": "ed0e6b4fc25920b555fbdecaea7a32277df8d16bb5a0e411d19f902fe57eaa6e",
+    "FACTS.md": "2ce7a4caaa78a4faa86621a9b22e7905c408681a90a9658dc91b979ede45a018",
+    "LICENSE": "14c9ff6f14bfb2391e74fedb01c256891d2a3bba1c2acf5789901bdf77e54e33",
+    "PROMPT.md": "f95ea01a362adb69bb427c505638575448f5a02b80db3fb6a079299f95b7b437",
+    "REVIEW.md": "d60250215c6e03245cf0edeaff3f728415c548d7938abd8774b12a09717fc06b",
+    "TREATMENT.md": "1ebe76714de4197f5ec90182aa217cb64f8dd6c7e24f86b9557a67d4ae28c85a",
+    "backstage.js": "7abc7c0181eaa5bdf0aa545c527233b5057c525017463ebf696e60d56f62d719",
+    "carve.js": "a439554a32c75c8d65b7a8d7d25786abe274f565b28fbbb1d062c73b84097223",
+    "film.js": "62c1b27cc1eeefb1b75c7b3b0bffad98bc9bfbdfbab783d317cdb624270fc8a4",
+    "fonts/CormorantGaramond.ttf": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+    "fonts/MaShanZheng.ttf": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb",
+    "fonts/OFL-CormorantGaramond.txt": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+    "fonts/OFL-MaShanZheng.txt": "d7bdb1cee215b689e23c2f95672a6084c790542170648267a55114103d756a08",
+    "fonts/fonts.css": "dd655e9959a90fc6abfb042c8567aa334f6da5967b85eb0505fe0e9ee1d4c84f",
+    "gl.js": "e2ef60ce02e2eae389c3a8613980d67c2e4f786e9567d9dceb62eb97e4b5c6fa",
+    "houyi.js": "a96128da1092be69d0f3fffa94ddfcec8b6d09447e8aab24aaa8bdbf064bb920",
+    "hud.js": "bb5877aeada67a1a4e189321568cf06832d92057c19a460ed684f04d59a525aa",
+    "index.html": "d755d8b8e916de91a97148f4a43af62ba98f51e2671baea84d8c3a71289af10d",
+    "narration.json": "0cb1692377747269af5df73353d084a488cb459cd30067d99af082ff130485ab",
+    "poses.js": "2aa31a61881392f45c3de27ffab9cb1d8a5d9b66db89d37db70ba8c21d32092a",
+    "score.json": "aa9a8c1183b3a0b70d20785d186c4ba1886ac6775bf374664defd89ec62df1d9",
+    "sets.js": "8a96a3585f5df7e40b7dca07f6d110355d44aac0aff4492b2c7c43f343136630",
+    "shared-components.json": "ede0396746d55fa198804c45da4a93500951019178f2c8e9e763f4d3b3c5a676",
+    "stage.js": "60c17ead326f892f945723850193078270e37bba9ab340a795d94cdb96fe17ba",
+    "suns.js": "1c1ba57f7aac396078d9b866359e3c1736f63e3a12b10672ee9205754b79a77e"
+  }
+}

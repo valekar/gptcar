@@ -1,0 +1,7 @@
+# Treatment before implementation
+
+Build one continuous spherical-Earth shot through nested licensed raster plates, using the attributed generic plate shader/camera math and drawing primitives. Independently implement the camera-key application, image state, timing, full mark assembly and end card. No original film runtime or original timeline module is imported. Numeric camera and scan schedule values are published reference data.
+
+0–1.8 orbit/lock/map; 1.8–5.4 dive through the complete printed atlas; 5.36–6.6 map tear and salt hold; 6.6–7.8 rewind through five older plates; 7.8–13.2 six dated forward scans with accumulated outlines, losses, glints, year tags and measured-share readout; 13.2–15.3 stop and Muynak lock; 15.3–17.4 port push and original shore; 17.4–23.4 chased measured range line, destination, 95 km landing and full-distance hold; 23.4–24 north whip; 24–28.8 dike line, 2001 ring, outward 2009 water growth, returned colour and +37% reading; 28.8–34.2 climb, 2025 north plate and label relocation; 34.2–37.7916667 full bracket title and final scanning pass.
+
+All six main source-mask areas match exactly; four regional masks have documented current-preprocessing variance. Reproduce the continuous countdown from each previous share to the new actual share during its scan. The 46/25 regular-sheet readings are transient values en route to 40/21; no alternate label or footnote is needed. Preserve all historical context in FACTS. Review scan and short-transition frames, including the moving readout, as well as held evidence scenes.

@@ -1,0 +1,4151 @@
+{
+  "duration": 53,
+  "bpm": 96,
+  "key": "D major / B minor / G / A, pentatonic event melody",
+  "silence_music_ranges": [
+    [
+      36,
+      36.25
+    ]
+  ],
+  "direction": "Every growth/house/window/ring/beam melody onset and MIDI pitch comes from the independently assembled scene events, audited against published events. New backing and material sound design; no piano or strings. The night is sparse drone/waves/crickets; music bus is zero in final quarter-second before ignition. Boat answering bell fills the spatial melody rest.",
+  "sections": [
+    {
+      "start": 0,
+      "end": 6.25,
+      "intent": "Lone buoy D5 motif over faceted dawn sea and sparse pad"
+    },
+    {
+      "start": 6.25,
+      "end": 13.75,
+      "intent": "Island rises: event marimba grows from halves to eighths"
+    },
+    {
+      "start": 13.75,
+      "end": 16.25,
+      "intent": "Tree pops: kalimba event phrase"
+    },
+    {
+      "start": 16.25,
+      "end": 21.25,
+      "intent": "Floors/roofs/dock: woodblock/kalimba/marimba building tune"
+    },
+    {
+      "start": 21.25,
+      "end": 26.25,
+      "intent": "Lived-in day groove and boat departure bell"
+    },
+    {
+      "start": 26.25,
+      "end": 31.25,
+      "intent": "Dusk windows preview their house melody"
+    },
+    {
+      "start": 31.25,
+      "end": 33.75,
+      "intent": "Missing note: only low drone, waves and crickets"
+    },
+    {
+      "start": 33.75,
+      "end": 36.25,
+      "intent": "Lighthouse rings climb, glass room then true music-bus breath"
+    },
+    {
+      "start": 36.25,
+      "end": 41.25,
+      "intent": "Ignition and spatial house melody replay, boat answers in the rest"
+    },
+    {
+      "start": 41.25,
+      "end": 48.75,
+      "intent": "Home and scale reveal, melody recedes and distant buoy repeats D5"
+    },
+    {
+      "start": 48.75,
+      "end": 53,
+      "intent": "Soft title coda over the miniature light"
+    }
+  ],
+  "notes": [
+    {
+      "t": 0,
+      "midi": 50,
+      "duration": 5.8,
+      "gain": 0.012,
+      "instrument": "analog_saw_pad",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 0,
+      "midi": 57,
+      "duration": 5.8,
+      "gain": 0.012,
+      "instrument": "analog_saw_pad",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 0,
+      "midi": 66,
+      "duration": 5.8,
+      "gain": 0.012,
+      "instrument": "analog_saw_pad",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 0.25,
+      "midi": 74,
+      "duration": 1.1,
+      "gain": 0.117,
+      "instrument": "tubular_bells",
+      "pan": 0.3476502041380141,
+      "channel": "music"
+    },
+    {
+      "t": 2.9,
+      "midi": 74,
+      "duration": 1.1,
+      "gain": 0.078,
+      "instrument": "tubular_bells",
+      "pan": -0.084944042757133,
+      "channel": "music"
+    },
+    {
+      "t": 6.25,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.04146439915811259,
+      "instrument": "marimba",
+      "pan": 0.0,
+      "channel": "music"
+    },
+    {
+      "t": 6.25,
+      "midi": 74,
+      "duration": 1.1,
+      "gain": 0.065,
+      "instrument": "tubular_bells",
+      "pan": -0.3257610596730944,
+      "channel": "music"
+    },
+    {
+      "t": 6.25,
+      "midi": 57,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 6.25,
+      "midi": 62,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 6.25,
+      "midi": 66,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 6.25,
+      "midi": 38,
+      "duration": 1.5,
+      "gain": 0.025,
+      "instrument": "bass",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 7.5,
+      "midi": 66,
+      "duration": 0.5,
+      "gain": 0.04073972673468888,
+      "instrument": "marimba",
+      "pan": 0.347082683658364,
+      "channel": "music"
+    },
+    {
+      "t": 8.75,
+      "midi": 62,
+      "duration": 0.5,
+      "gain": 0.04545240562523892,
+      "instrument": "marimba",
+      "pan": -0.08943938570939092,
+      "channel": "music"
+    },
+    {
+      "t": 8.75,
+      "midi": 59,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 8.75,
+      "midi": 62,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 8.75,
+      "midi": 66,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 8.75,
+      "midi": 47,
+      "duration": 1.5,
+      "gain": 0.025,
+      "instrument": "bass",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 9.375,
+      "midi": 71,
+      "duration": 0.5,
+      "gain": 0.04963000000000001,
+      "instrument": "marimba",
+      "pan": -0.32403513881470636,
+      "channel": "music"
+    },
+    {
+      "t": 10,
+      "midi": 66,
+      "duration": 0.5,
+      "gain": 0.04763234109864953,
+      "instrument": "marimba",
+      "pan": 0.17293967289851284,
+      "channel": "music"
+    },
+    {
+      "t": 10.625,
+      "midi": 71,
+      "duration": 0.5,
+      "gain": 0.062125,
+      "instrument": "marimba",
+      "pan": 0.27947048941822156,
+      "channel": "music"
+    },
+    {
+      "t": 11.25,
+      "midi": 38,
+      "duration": 0.5,
+      "gain": 0.07,
+      "instrument": "marimba",
+      "pan": -0.2449561406577398,
+      "channel": "music"
+    },
+    {
+      "t": 11.25,
+      "midi": 59,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 11.25,
+      "midi": 62,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 11.25,
+      "midi": 67,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 11.25,
+      "midi": 43,
+      "duration": 1.5,
+      "gain": 0.025,
+      "instrument": "bass",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 11.5625,
+      "midi": 62,
+      "duration": 0.5,
+      "gain": 0.05861333333333334,
+      "instrument": "marimba",
+      "pan": -0.21634798928296164,
+      "channel": "music"
+    },
+    {
+      "t": 11.875,
+      "midi": 67,
+      "duration": 0.5,
+      "gain": 0.041562625954903544,
+      "instrument": "marimba",
+      "pan": 0.30070663519977353,
+      "channel": "music"
+    },
+    {
+      "t": 12.1875,
+      "midi": 71,
+      "duration": 0.5,
+      "gain": 0.05093666666666667,
+      "instrument": "marimba",
+      "pan": 0.13885920059571477,
+      "channel": "music"
+    },
+    {
+      "t": 12.5,
+      "midi": 62,
+      "duration": 0.5,
+      "gain": 0.052947439695412234,
+      "instrument": "marimba",
+      "pan": -0.3364891221578449,
+      "channel": "music"
+    },
+    {
+      "t": 12.8125,
+      "midi": 71,
+      "duration": 0.5,
+      "gain": 0.04995666666666667,
+      "instrument": "marimba",
+      "pan": -0.05214965903496958,
+      "channel": "music"
+    },
+    {
+      "t": 13.125,
+      "midi": 67,
+      "duration": 0.5,
+      "gain": 0.04560103223513771,
+      "instrument": "marimba",
+      "pan": 0.3499275150499342,
+      "channel": "music"
+    },
+    {
+      "t": 13.4375,
+      "midi": 74,
+      "duration": 0.5,
+      "gain": 0.041317342243160374,
+      "instrument": "marimba",
+      "pan": -0.03802280839842667,
+      "channel": "music"
+    },
+    {
+      "t": 13.75,
+      "midi": 69,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "kalimba",
+      "pan": 0.33229135124034537,
+      "channel": "music"
+    },
+    {
+      "t": 13.75,
+      "midi": 57,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 13.75,
+      "midi": 61,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 13.75,
+      "midi": 64,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 13.75,
+      "midi": 45,
+      "duration": 1.5,
+      "gain": 0.025,
+      "instrument": "bass",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 14.0625,
+      "midi": 73,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "kalimba",
+      "pan": 0.06619011712281203,
+      "channel": "music"
+    },
+    {
+      "t": 14.375,
+      "midi": 73,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "kalimba",
+      "pan": -0.3493478155764461,
+      "channel": "music"
+    },
+    {
+      "t": 14.6875,
+      "midi": 76,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "kalimba",
+      "pan": 0.023832968139574345,
+      "channel": "music"
+    },
+    {
+      "t": 15,
+      "midi": 81,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "kalimba",
+      "pan": 0.34320632212143687,
+      "channel": "music"
+    },
+    {
+      "t": 15.3125,
+      "midi": 85,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "kalimba",
+      "pan": -0.11227345816510076,
+      "channel": "music"
+    },
+    {
+      "t": 15.625,
+      "midi": 85,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "kalimba",
+      "pan": -0.31427468824125193,
+      "channel": "music"
+    },
+    {
+      "t": 15.9375,
+      "midi": 88,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "kalimba",
+      "pan": 0.1932585847177581,
+      "channel": "music"
+    },
+    {
+      "t": 16.25,
+      "midi": 54,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "woodblock",
+      "pan": -0.34012945601035216,
+      "channel": "music"
+    },
+    {
+      "t": 16.25,
+      "midi": 57,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 16.25,
+      "midi": 62,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 16.25,
+      "midi": 66,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 16.25,
+      "midi": 38,
+      "duration": 1.5,
+      "gain": 0.025,
+      "instrument": "bass",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 16.4063,
+      "midi": 83,
+      "duration": 0.5,
+      "gain": 0.05600000000000001,
+      "instrument": "kalimba",
+      "pan": 0.1256704239077589,
+      "channel": "music"
+    },
+    {
+      "t": 16.4063,
+      "midi": 71,
+      "duration": 0.65,
+      "gain": 0.032,
+      "instrument": "marimba",
+      "pan": -0.1256704239077589,
+      "channel": "music"
+    },
+    {
+      "t": 16.5625,
+      "midi": 54,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "woodblock",
+      "pan": 0.30774557157775345,
+      "channel": "music"
+    },
+    {
+      "t": 16.7188,
+      "midi": 54,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "woodblock",
+      "pan": -0.20497306899100415,
+      "channel": "music"
+    },
+    {
+      "t": 16.875,
+      "midi": 74,
+      "duration": 0.5,
+      "gain": 0.05600000000000001,
+      "instrument": "kalimba",
+      "pan": -0.25492626874105856,
+      "channel": "music"
+    },
+    {
+      "t": 16.875,
+      "midi": 62,
+      "duration": 0.65,
+      "gain": 0.032,
+      "instrument": "marimba",
+      "pan": 0.25492626874105856,
+      "channel": "music"
+    },
+    {
+      "t": 17.0313,
+      "midi": 54,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "woodblock",
+      "pan": 0.2706647613481772,
+      "channel": "music"
+    },
+    {
+      "t": 17.1875,
+      "midi": 76,
+      "duration": 0.5,
+      "gain": 0.05600000000000001,
+      "instrument": "kalimba",
+      "pan": 0.18517894014200834,
+      "channel": "music"
+    },
+    {
+      "t": 17.1875,
+      "midi": 64,
+      "duration": 0.65,
+      "gain": 0.032,
+      "instrument": "marimba",
+      "pan": -0.18517894014200834,
+      "channel": "music"
+    },
+    {
+      "t": 17.3438,
+      "midi": 54,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "woodblock",
+      "pan": -0.31838333514173384,
+      "channel": "music"
+    },
+    {
+      "t": 17.5,
+      "midi": 78,
+      "duration": 0.5,
+      "gain": 0.05600000000000001,
+      "instrument": "kalimba",
+      "pan": -0.10313506052509017,
+      "channel": "music"
+    },
+    {
+      "t": 17.5,
+      "midi": 66,
+      "duration": 0.65,
+      "gain": 0.032,
+      "instrument": "marimba",
+      "pan": 0.10313506052509017,
+      "channel": "music"
+    },
+    {
+      "t": 17.6563,
+      "midi": 54,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "woodblock",
+      "pan": 0.34496010457672155,
+      "channel": "music"
+    },
+    {
+      "t": 17.8125,
+      "midi": 54,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "woodblock",
+      "pan": 0.0142426400724527,
+      "channel": "music"
+    },
+    {
+      "t": 17.9688,
+      "midi": 74,
+      "duration": 0.5,
+      "gain": 0.05600000000000001,
+      "instrument": "kalimba",
+      "pan": -0.34863027609185787,
+      "channel": "music"
+    },
+    {
+      "t": 17.9688,
+      "midi": 62,
+      "duration": 0.65,
+      "gain": 0.032,
+      "instrument": "marimba",
+      "pan": 0.34863027609185787,
+      "channel": "music"
+    },
+    {
+      "t": 18.125,
+      "midi": 54,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "woodblock",
+      "pan": 0.075595543165876,
+      "channel": "music"
+    },
+    {
+      "t": 18.2813,
+      "midi": 81,
+      "duration": 0.5,
+      "gain": 0.05600000000000001,
+      "instrument": "kalimba",
+      "pan": 0.3291501370314521,
+      "channel": "music"
+    },
+    {
+      "t": 18.2813,
+      "midi": 69,
+      "duration": 0.65,
+      "gain": 0.032,
+      "instrument": "marimba",
+      "pan": -0.3291501370314521,
+      "channel": "music"
+    },
+    {
+      "t": 18.4375,
+      "midi": 54,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "woodblock",
+      "pan": -0.16041390907211805,
+      "channel": "music"
+    },
+    {
+      "t": 18.5938,
+      "midi": 54,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "woodblock",
+      "pan": -0.28781323904672196,
+      "channel": "music"
+    },
+    {
+      "t": 18.75,
+      "midi": 81,
+      "duration": 0.5,
+      "gain": 0.05600000000000001,
+      "instrument": "kalimba",
+      "pan": 0.23458021154518113,
+      "channel": "music"
+    },
+    {
+      "t": 18.75,
+      "midi": 69,
+      "duration": 0.65,
+      "gain": 0.032,
+      "instrument": "marimba",
+      "pan": -0.23458021154518113,
+      "channel": "music"
+    },
+    {
+      "t": 18.75,
+      "midi": 59,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 18.75,
+      "midi": 62,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 18.75,
+      "midi": 66,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 18.75,
+      "midi": 47,
+      "duration": 1.5,
+      "gain": 0.025,
+      "instrument": "bass",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 18.9063,
+      "midi": 54,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "woodblock",
+      "pan": 0.22736450159017038,
+      "channel": "music"
+    },
+    {
+      "t": 19.0625,
+      "midi": 54,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "woodblock",
+      "pan": -0.2931695400014596,
+      "channel": "music"
+    },
+    {
+      "t": 19.2188,
+      "midi": 78,
+      "duration": 0.5,
+      "gain": 0.05600000000000001,
+      "instrument": "kalimba",
+      "pan": -0.15181793934148938,
+      "channel": "music"
+    },
+    {
+      "t": 19.2188,
+      "midi": 66,
+      "duration": 0.65,
+      "gain": 0.032,
+      "instrument": "marimba",
+      "pan": 0.15181793934148938,
+      "channel": "music"
+    },
+    {
+      "t": 19.375,
+      "midi": 55,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "woodblock",
+      "pan": 0.2644740790087974,
+      "channel": "music"
+    },
+    {
+      "t": 19.5313,
+      "midi": 62,
+      "duration": 0.5,
+      "gain": 0.042,
+      "instrument": "kalimba",
+      "pan": -0.2614106426460817,
+      "channel": "music"
+    },
+    {
+      "t": 19.5313,
+      "midi": 50,
+      "duration": 0.65,
+      "gain": 0.024,
+      "instrument": "marimba",
+      "pan": 0.2614106426460817,
+      "channel": "music"
+    },
+    {
+      "t": 19.6875,
+      "midi": 66,
+      "duration": 0.5,
+      "gain": 0.035,
+      "instrument": "kalimba",
+      "pan": -0.1971114348983909,
+      "channel": "music"
+    },
+    {
+      "t": 19.8438,
+      "midi": 69,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "woodblock",
+      "pan": 0.31220408894477963,
+      "channel": "music"
+    },
+    {
+      "t": 20,
+      "midi": 71,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "woodblock",
+      "pan": 0.11665987898421881,
+      "channel": "music"
+    },
+    {
+      "t": 20.1563,
+      "midi": 74,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "woodblock",
+      "pan": -0.3422660551693768,
+      "channel": "music"
+    },
+    {
+      "t": 20.3125,
+      "midi": 78,
+      "duration": 0.5,
+      "gain": 0.049,
+      "instrument": "woodblock",
+      "pan": -0.02846168539857657,
+      "channel": "music"
+    },
+    {
+      "t": 20.4688,
+      "midi": 81,
+      "duration": 0.5,
+      "gain": 0.05600000000000001,
+      "instrument": "marimba",
+      "pan": 0.3496003180933328,
+      "channel": "music"
+    },
+    {
+      "t": 20.625,
+      "midi": 78,
+      "duration": 0.5,
+      "gain": 0.035,
+      "instrument": "kalimba",
+      "pan": -0.061626466982005475,
+      "channel": "music"
+    },
+    {
+      "t": 20.7813,
+      "midi": 74,
+      "duration": 0.5,
+      "gain": 0.028000000000000004,
+      "instrument": "glockenspiel",
+      "pan": -0.3337198561462998,
+      "channel": "music"
+    },
+    {
+      "t": 20.9375,
+      "midi": 69,
+      "duration": 0.5,
+      "gain": 0.028000000000000004,
+      "instrument": "glockenspiel",
+      "pan": 0.14762239918509332,
+      "channel": "music"
+    },
+    {
+      "t": 21.25,
+      "midi": 62,
+      "duration": 0.5,
+      "gain": 0.07,
+      "instrument": "marimba",
+      "pan": 0.29567918940690957,
+      "channel": "music"
+    },
+    {
+      "t": 21.25,
+      "midi": 59,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 21.25,
+      "midi": 62,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 21.25,
+      "midi": 67,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 21.25,
+      "midi": 43,
+      "duration": 1.5,
+      "gain": 0.025,
+      "instrument": "bass",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 21.25,
+      "midi": 71,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.0,
+      "channel": "music"
+    },
+    {
+      "t": 21.25,
+      "midi": 62,
+      "duration": 1.5,
+      "gain": 0.065,
+      "instrument": "vibraphone",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 21.25,
+      "midi": 66,
+      "duration": 1.5,
+      "gain": 0.065,
+      "instrument": "vibraphone",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 21.25,
+      "midi": 69,
+      "duration": 1.5,
+      "gain": 0.065,
+      "instrument": "vibraphone",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 21.5625,
+      "midi": 74,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.21036774620197413,
+      "channel": "music"
+    },
+    {
+      "t": 21.875,
+      "midi": 79,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.22732435670642043,
+      "channel": "music"
+    },
+    {
+      "t": 22.1875,
+      "midi": 71,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.0352800020149668,
+      "channel": "music"
+    },
+    {
+      "t": 22.5,
+      "midi": 74,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": -0.18920062382698208,
+      "channel": "music"
+    },
+    {
+      "t": 22.8125,
+      "midi": 79,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": -0.2397310686657846,
+      "channel": "music"
+    },
+    {
+      "t": 23.125,
+      "midi": 71,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": -0.06985387454973147,
+      "channel": "music"
+    },
+    {
+      "t": 23.4375,
+      "midi": 74,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.16424664967969727,
+      "channel": "music"
+    },
+    {
+      "t": 23.75,
+      "midi": 57,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 23.75,
+      "midi": 62,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 23.75,
+      "midi": 66,
+      "duration": 2.35,
+      "gain": 0.018,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 23.75,
+      "midi": 38,
+      "duration": 1.5,
+      "gain": 0.025,
+      "instrument": "bass",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 23.75,
+      "midi": 69,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.0,
+      "channel": "music"
+    },
+    {
+      "t": 24.0625,
+      "midi": 74,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.21036774620197413,
+      "channel": "music"
+    },
+    {
+      "t": 24.375,
+      "midi": 74,
+      "duration": 1.1,
+      "gain": 0.035,
+      "instrument": "tubular_bells",
+      "pan": 0.16888908074663384,
+      "channel": "music"
+    },
+    {
+      "t": 24.375,
+      "midi": 78,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.22732435670642043,
+      "channel": "music"
+    },
+    {
+      "t": 24.6875,
+      "midi": 69,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.0352800020149668,
+      "channel": "music"
+    },
+    {
+      "t": 25.0,
+      "midi": 74,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": -0.18920062382698208,
+      "channel": "music"
+    },
+    {
+      "t": 25.3125,
+      "midi": 78,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": -0.2397310686657846,
+      "channel": "music"
+    },
+    {
+      "t": 25.625,
+      "midi": 69,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": -0.06985387454973147,
+      "channel": "music"
+    },
+    {
+      "t": 25.9375,
+      "midi": 74,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.16424664967969727,
+      "channel": "music"
+    },
+    {
+      "t": 26.25,
+      "midi": 74,
+      "duration": 0.5,
+      "gain": 0.042,
+      "instrument": "kalimba",
+      "pan": 0.3481893769754422,
+      "channel": "music"
+    },
+    {
+      "t": 26.25,
+      "midi": 57,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 26.25,
+      "midi": 62,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 26.25,
+      "midi": 66,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 26.25,
+      "midi": 38,
+      "duration": 1.5,
+      "gain": 0.025,
+      "instrument": "bass",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 26.5625,
+      "midi": 78,
+      "duration": 0.5,
+      "gain": 0.042,
+      "instrument": "kalimba",
+      "pan": -0.00960364553512893,
+      "channel": "music"
+    },
+    {
+      "t": 26.875,
+      "midi": 81,
+      "duration": 0.5,
+      "gain": 0.042,
+      "instrument": "kalimba",
+      "pan": -0.3457146232707086,
+      "channel": "music"
+    },
+    {
+      "t": 27.1875,
+      "midi": 83,
+      "duration": 0.5,
+      "gain": 0.042,
+      "instrument": "kalimba",
+      "pan": 0.09869049714689046,
+      "channel": "music"
+    },
+    {
+      "t": 27.5,
+      "midi": 81,
+      "duration": 0.5,
+      "gain": 0.042,
+      "instrument": "kalimba",
+      "pan": 0.320283168877378,
+      "channel": "music"
+    },
+    {
+      "t": 27.8125,
+      "midi": 78,
+      "duration": 0.5,
+      "gain": 0.042,
+      "instrument": "kalimba",
+      "pan": -0.18122394299764008,
+      "channel": "music"
+    },
+    {
+      "t": 28.125,
+      "midi": 76,
+      "duration": 0.5,
+      "gain": 0.042,
+      "instrument": "kalimba",
+      "pan": -0.2735837542978331,
+      "channel": "music"
+    },
+    {
+      "t": 28.4375,
+      "midi": 74,
+      "duration": 0.5,
+      "gain": 0.042,
+      "instrument": "kalimba",
+      "pan": 0.25172346393758893,
+      "channel": "music"
+    },
+    {
+      "t": 28.75,
+      "midi": 59,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 28.75,
+      "midi": 62,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 28.75,
+      "midi": 66,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 28.75,
+      "midi": 47,
+      "duration": 1.5,
+      "gain": 0.025,
+      "instrument": "bass",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 29.375,
+      "midi": 69,
+      "duration": 0.5,
+      "gain": 0.028000000000000004,
+      "instrument": "kalimba",
+      "pan": 0.20871738947112203,
+      "channel": "music"
+    },
+    {
+      "t": 30,
+      "midi": 66,
+      "duration": 0.5,
+      "gain": 0.0245,
+      "instrument": "kalimba",
+      "pan": -0.3055076369317677,
+      "channel": "music"
+    },
+    {
+      "t": 31.25,
+      "midi": 45,
+      "duration": 2.4,
+      "gain": 0.014,
+      "instrument": "analog_saw_pad",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 31.25,
+      "midi": 57,
+      "duration": 2.4,
+      "gain": 0.014,
+      "instrument": "analog_saw_pad",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 33.75,
+      "midi": 69,
+      "duration": 0.5,
+      "gain": 0.05600000000000001,
+      "instrument": "marimba",
+      "pan": -0.22381567045078285,
+      "channel": "music"
+    },
+    {
+      "t": 33.75,
+      "midi": 45,
+      "duration": 2.4,
+      "gain": 0.014,
+      "instrument": "analog_saw_pad",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 33.75,
+      "midi": 57,
+      "duration": 2.4,
+      "gain": 0.014,
+      "instrument": "analog_saw_pad",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 34.375,
+      "midi": 71,
+      "duration": 0.5,
+      "gain": 0.05600000000000001,
+      "instrument": "marimba",
+      "pan": -0.23800435565761846,
+      "channel": "music"
+    },
+    {
+      "t": 35,
+      "midi": 74,
+      "duration": 0.5,
+      "gain": 0.05600000000000001,
+      "instrument": "marimba",
+      "pan": 0.2851467721404603,
+      "channel": "music"
+    },
+    {
+      "t": 35.625,
+      "midi": 78,
+      "duration": 0.5,
+      "gain": 0.05600000000000001,
+      "instrument": "marimba",
+      "pan": 0.16452517234474365,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 74,
+      "duration": 0.5,
+      "gain": 0.10400000000000001,
+      "instrument": "kalimba",
+      "pan": -0.12999143550333156,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 62,
+      "duration": 0.65,
+      "gain": 0.04000000000000001,
+      "instrument": "marimba",
+      "pan": 0.12999143550333156,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 86,
+      "duration": 1.1,
+      "gain": 0.020000000000000004,
+      "instrument": "glass",
+      "pan": -0.12999143550333156,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 57,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 62,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 66,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 38,
+      "duration": 1.5,
+      "gain": 0.025,
+      "instrument": "bass",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 69,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.0,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 50,
+      "duration": 2.6,
+      "gain": 0.065,
+      "instrument": "marimba",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 50,
+      "duration": 3.2,
+      "gain": 0.024,
+      "instrument": "vibraphone_bowed",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 62,
+      "duration": 2.6,
+      "gain": 0.065,
+      "instrument": "marimba",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 62,
+      "duration": 3.2,
+      "gain": 0.024,
+      "instrument": "vibraphone_bowed",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 66,
+      "duration": 2.6,
+      "gain": 0.065,
+      "instrument": "marimba",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 66,
+      "duration": 3.2,
+      "gain": 0.024,
+      "instrument": "vibraphone_bowed",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 69,
+      "duration": 2.6,
+      "gain": 0.065,
+      "instrument": "marimba",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 69,
+      "duration": 3.2,
+      "gain": 0.024,
+      "instrument": "vibraphone_bowed",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 74,
+      "duration": 2.6,
+      "gain": 0.085,
+      "instrument": "marimba",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 74,
+      "duration": 3.2,
+      "gain": 0.024,
+      "instrument": "vibraphone_bowed",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 38,
+      "duration": 0.8,
+      "gain": 0.15,
+      "instrument": "timpani",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 36,
+      "duration": 0.6,
+      "gain": 0.1,
+      "instrument": "bass_drum",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 36.25,
+      "midi": 86,
+      "duration": 2.4,
+      "gain": 0.07,
+      "instrument": "glass",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 36.5625,
+      "midi": 74,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.21036774620197413,
+      "channel": "music"
+    },
+    {
+      "t": 36.875,
+      "midi": 78,
+      "duration": 0.5,
+      "gain": 0.10400000000000001,
+      "instrument": "kalimba",
+      "pan": 0.33900499847212057,
+      "channel": "music"
+    },
+    {
+      "t": 36.875,
+      "midi": 66,
+      "duration": 0.65,
+      "gain": 0.04000000000000001,
+      "instrument": "marimba",
+      "pan": -0.33900499847212057,
+      "channel": "music"
+    },
+    {
+      "t": 36.875,
+      "midi": 90,
+      "duration": 1.1,
+      "gain": 0.020000000000000004,
+      "instrument": "glass",
+      "pan": 0.33900499847212057,
+      "channel": "music"
+    },
+    {
+      "t": 36.875,
+      "midi": 78,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.22732435670642043,
+      "channel": "music"
+    },
+    {
+      "t": 37.1875,
+      "midi": 69,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.0352800020149668,
+      "channel": "music"
+    },
+    {
+      "t": 37.5,
+      "midi": 74,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": -0.18920062382698208,
+      "channel": "music"
+    },
+    {
+      "t": 37.8125,
+      "midi": 78,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": -0.2397310686657846,
+      "channel": "music"
+    },
+    {
+      "t": 38.125,
+      "midi": 81,
+      "duration": 0.5,
+      "gain": 0.10400000000000001,
+      "instrument": "kalimba",
+      "pan": 0.04263358031974362,
+      "channel": "music"
+    },
+    {
+      "t": 38.125,
+      "midi": 69,
+      "duration": 0.65,
+      "gain": 0.04000000000000001,
+      "instrument": "marimba",
+      "pan": -0.04263358031974362,
+      "channel": "music"
+    },
+    {
+      "t": 38.125,
+      "midi": 93,
+      "duration": 1.1,
+      "gain": 0.020000000000000004,
+      "instrument": "glass",
+      "pan": 0.04263358031974362,
+      "channel": "music"
+    },
+    {
+      "t": 38.125,
+      "midi": 69,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": -0.06985387454973147,
+      "channel": "music"
+    },
+    {
+      "t": 38.4375,
+      "midi": 74,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.16424664967969727,
+      "channel": "music"
+    },
+    {
+      "t": 38.75,
+      "midi": 83,
+      "duration": 0.5,
+      "gain": 0.10400000000000001,
+      "instrument": "kalimba",
+      "pan": -0.34999120266472955,
+      "channel": "music"
+    },
+    {
+      "t": 38.75,
+      "midi": 71,
+      "duration": 0.65,
+      "gain": 0.04000000000000001,
+      "instrument": "marimba",
+      "pan": 0.34999120266472955,
+      "channel": "music"
+    },
+    {
+      "t": 38.75,
+      "midi": 95,
+      "duration": 1.1,
+      "gain": 0.020000000000000004,
+      "instrument": "glass",
+      "pan": -0.34999120266472955,
+      "channel": "music"
+    },
+    {
+      "t": 38.75,
+      "midi": 59,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 38.75,
+      "midi": 62,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 38.75,
+      "midi": 66,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 38.75,
+      "midi": 47,
+      "duration": 1.5,
+      "gain": 0.025,
+      "instrument": "bass",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 38.75,
+      "midi": 71,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.0,
+      "channel": "music"
+    },
+    {
+      "t": 39.0625,
+      "midi": 74,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.21036774620197413,
+      "channel": "music"
+    },
+    {
+      "t": 39.375,
+      "midi": 78,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.22732435670642043,
+      "channel": "music"
+    },
+    {
+      "t": 39.6875,
+      "midi": 81,
+      "duration": 1.1,
+      "gain": 0.05600000000000001,
+      "instrument": "tubular_bells",
+      "pan": 0.2822402032714202,
+      "channel": "music"
+    },
+    {
+      "t": 39.6875,
+      "midi": 71,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.0352800020149668,
+      "channel": "music"
+    },
+    {
+      "t": 40,
+      "midi": 81,
+      "duration": 0.5,
+      "gain": 0.10400000000000001,
+      "instrument": "kalimba",
+      "pan": 0.0475552987106975,
+      "channel": "music"
+    },
+    {
+      "t": 40,
+      "midi": 69,
+      "duration": 0.65,
+      "gain": 0.04000000000000001,
+      "instrument": "marimba",
+      "pan": -0.0475552987106975,
+      "channel": "music"
+    },
+    {
+      "t": 40,
+      "midi": 93,
+      "duration": 1.1,
+      "gain": 0.020000000000000004,
+      "instrument": "glass",
+      "pan": 0.0475552987106975,
+      "channel": "music"
+    },
+    {
+      "t": 40.0,
+      "midi": 74,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": -0.18920062382698208,
+      "channel": "music"
+    },
+    {
+      "t": 40.3125,
+      "midi": 78,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": -0.2397310686657846,
+      "channel": "music"
+    },
+    {
+      "t": 40.625,
+      "midi": 78,
+      "duration": 0.5,
+      "gain": 0.10400000000000001,
+      "instrument": "kalimba",
+      "pan": 0.33773672583782444,
+      "channel": "music"
+    },
+    {
+      "t": 40.625,
+      "midi": 66,
+      "duration": 0.65,
+      "gain": 0.04000000000000001,
+      "instrument": "marimba",
+      "pan": -0.33773672583782444,
+      "channel": "music"
+    },
+    {
+      "t": 40.625,
+      "midi": 90,
+      "duration": 1.1,
+      "gain": 0.020000000000000004,
+      "instrument": "glass",
+      "pan": 0.33773672583782444,
+      "channel": "music"
+    },
+    {
+      "t": 40.625,
+      "midi": 71,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": -0.06985387454973147,
+      "channel": "music"
+    },
+    {
+      "t": 40.9375,
+      "midi": 74,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.16424664967969727,
+      "channel": "music"
+    },
+    {
+      "t": 41.25,
+      "midi": 59,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 41.25,
+      "midi": 62,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 41.25,
+      "midi": 67,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 41.25,
+      "midi": 43,
+      "duration": 1.5,
+      "gain": 0.025,
+      "instrument": "bass",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 41.25,
+      "midi": 71,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.0,
+      "channel": "music"
+    },
+    {
+      "t": 41.5625,
+      "midi": 74,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.21036774620197413,
+      "channel": "music"
+    },
+    {
+      "t": 41.875,
+      "midi": 76,
+      "duration": 0.5,
+      "gain": 0.10400000000000001,
+      "instrument": "kalimba",
+      "pan": -0.13458633400189632,
+      "channel": "music"
+    },
+    {
+      "t": 41.875,
+      "midi": 64,
+      "duration": 0.65,
+      "gain": 0.04000000000000001,
+      "instrument": "marimba",
+      "pan": 0.13458633400189632,
+      "channel": "music"
+    },
+    {
+      "t": 41.875,
+      "midi": 88,
+      "duration": 1.1,
+      "gain": 0.020000000000000004,
+      "instrument": "glass",
+      "pan": -0.13458633400189632,
+      "channel": "music"
+    },
+    {
+      "t": 41.875,
+      "midi": 79,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.22732435670642043,
+      "channel": "music"
+    },
+    {
+      "t": 42.1875,
+      "midi": 71,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.0352800020149668,
+      "channel": "music"
+    },
+    {
+      "t": 42.5,
+      "midi": 74,
+      "duration": 0.5,
+      "gain": 0.10400000000000001,
+      "instrument": "kalimba",
+      "pan": -0.30305530955069665,
+      "channel": "music"
+    },
+    {
+      "t": 42.5,
+      "midi": 62,
+      "duration": 0.65,
+      "gain": 0.04000000000000001,
+      "instrument": "marimba",
+      "pan": 0.30305530955069665,
+      "channel": "music"
+    },
+    {
+      "t": 42.5,
+      "midi": 86,
+      "duration": 1.1,
+      "gain": 0.020000000000000004,
+      "instrument": "glass",
+      "pan": -0.30305530955069665,
+      "channel": "music"
+    },
+    {
+      "t": 42.5,
+      "midi": 74,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": -0.18920062382698208,
+      "channel": "music"
+    },
+    {
+      "t": 42.8125,
+      "midi": 79,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": -0.2397310686657846,
+      "channel": "music"
+    },
+    {
+      "t": 43.125,
+      "midi": 71,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": -0.06985387454973147,
+      "channel": "music"
+    },
+    {
+      "t": 43.4375,
+      "midi": 74,
+      "duration": 0.3,
+      "gain": 0.025,
+      "instrument": "marimba",
+      "pan": 0.16424664967969727,
+      "channel": "music"
+    },
+    {
+      "t": 43.75,
+      "midi": 74,
+      "duration": 0.5,
+      "gain": 0.10400000000000001,
+      "instrument": "kalimba",
+      "pan": 0.21268035020716508,
+      "channel": "music"
+    },
+    {
+      "t": 43.75,
+      "midi": 62,
+      "duration": 0.65,
+      "gain": 0.04000000000000001,
+      "instrument": "marimba",
+      "pan": -0.21268035020716508,
+      "channel": "music"
+    },
+    {
+      "t": 43.75,
+      "midi": 86,
+      "duration": 1.1,
+      "gain": 0.020000000000000004,
+      "instrument": "glass",
+      "pan": 0.21268035020716508,
+      "channel": "music"
+    },
+    {
+      "t": 43.75,
+      "midi": 57,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 43.75,
+      "midi": 62,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 43.75,
+      "midi": 66,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 43.75,
+      "midi": 38,
+      "duration": 1.5,
+      "gain": 0.025,
+      "instrument": "bass",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 43.75,
+      "midi": 62,
+      "duration": 1.8,
+      "gain": 0.028,
+      "instrument": "vibraphone",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 44.375,
+      "midi": 78,
+      "duration": 0.5,
+      "gain": 0.0585,
+      "instrument": "kalimba",
+      "pan": 0.2482499252126269,
+      "channel": "music"
+    },
+    {
+      "t": 44.375,
+      "midi": 66,
+      "duration": 0.65,
+      "gain": 0.022500000000000003,
+      "instrument": "marimba",
+      "pan": -0.2482499252126269,
+      "channel": "music"
+    },
+    {
+      "t": 44.375,
+      "midi": 90,
+      "duration": 1.1,
+      "gain": 0.011250000000000001,
+      "instrument": "glass",
+      "pan": 0.2482499252126269,
+      "channel": "music"
+    },
+    {
+      "t": 45,
+      "midi": 66,
+      "duration": 1.8,
+      "gain": 0.028,
+      "instrument": "vibraphone",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 45.625,
+      "midi": 81,
+      "duration": 0.5,
+      "gain": 0.0585,
+      "instrument": "kalimba",
+      "pan": -0.27665162235301105,
+      "channel": "music"
+    },
+    {
+      "t": 45.625,
+      "midi": 69,
+      "duration": 0.65,
+      "gain": 0.022500000000000003,
+      "instrument": "marimba",
+      "pan": 0.27665162235301105,
+      "channel": "music"
+    },
+    {
+      "t": 45.625,
+      "midi": 93,
+      "duration": 1.1,
+      "gain": 0.011250000000000001,
+      "instrument": "glass",
+      "pan": -0.27665162235301105,
+      "channel": "music"
+    },
+    {
+      "t": 46.25,
+      "midi": 83,
+      "duration": 0.5,
+      "gain": 0.0585,
+      "instrument": "kalimba",
+      "pan": -0.17695984845640578,
+      "channel": "music"
+    },
+    {
+      "t": 46.25,
+      "midi": 71,
+      "duration": 0.65,
+      "gain": 0.022500000000000003,
+      "instrument": "marimba",
+      "pan": 0.17695984845640578,
+      "channel": "music"
+    },
+    {
+      "t": 46.25,
+      "midi": 95,
+      "duration": 1.1,
+      "gain": 0.011250000000000001,
+      "instrument": "glass",
+      "pan": -0.17695984845640578,
+      "channel": "music"
+    },
+    {
+      "t": 46.25,
+      "midi": 57,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 46.25,
+      "midi": 62,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 46.25,
+      "midi": 66,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 46.25,
+      "midi": 38,
+      "duration": 1.5,
+      "gain": 0.025,
+      "instrument": "bass",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 46.25,
+      "midi": 69,
+      "duration": 1.8,
+      "gain": 0.028,
+      "instrument": "vibraphone",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 47.5,
+      "midi": 81,
+      "duration": 0.5,
+      "gain": 0.0585,
+      "instrument": "kalimba",
+      "pan": 0.3222522267229675,
+      "channel": "music"
+    },
+    {
+      "t": 47.5,
+      "midi": 69,
+      "duration": 0.65,
+      "gain": 0.022500000000000003,
+      "instrument": "marimba",
+      "pan": -0.3222522267229675,
+      "channel": "music"
+    },
+    {
+      "t": 47.5,
+      "midi": 93,
+      "duration": 1.1,
+      "gain": 0.011250000000000001,
+      "instrument": "glass",
+      "pan": 0.3222522267229675,
+      "channel": "music"
+    },
+    {
+      "t": 47.5,
+      "midi": 74,
+      "duration": 1.1,
+      "gain": 0.07150000000000001,
+      "instrument": "tubular_bells",
+      "pan": -0.2416192732673806,
+      "channel": "music"
+    },
+    {
+      "t": 48.125,
+      "midi": 78,
+      "duration": 0.5,
+      "gain": 0.0585,
+      "instrument": "kalimba",
+      "pan": 0.09391899808094945,
+      "channel": "music"
+    },
+    {
+      "t": 48.125,
+      "midi": 66,
+      "duration": 0.65,
+      "gain": 0.022500000000000003,
+      "instrument": "marimba",
+      "pan": -0.09391899808094945,
+      "channel": "music"
+    },
+    {
+      "t": 48.125,
+      "midi": 90,
+      "duration": 1.1,
+      "gain": 0.011250000000000001,
+      "instrument": "glass",
+      "pan": 0.09391899808094945,
+      "channel": "music"
+    },
+    {
+      "t": 48.75,
+      "midi": 57,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": -0.2,
+      "channel": "music"
+    },
+    {
+      "t": 48.75,
+      "midi": 62,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 48.75,
+      "midi": 66,
+      "duration": 2.35,
+      "gain": 0.022,
+      "instrument": "analog_saw_pad",
+      "pan": 0.2,
+      "channel": "music"
+    },
+    {
+      "t": 48.75,
+      "midi": 38,
+      "duration": 1.5,
+      "gain": 0.025,
+      "instrument": "bass",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 48.75,
+      "midi": 62,
+      "duration": 1.8,
+      "gain": 0.028,
+      "instrument": "vibraphone",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 48.75,
+      "midi": 50,
+      "duration": 4.1,
+      "gain": 0.012,
+      "instrument": "analog_saw_pad",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 48.75,
+      "midi": 57,
+      "duration": 4.1,
+      "gain": 0.012,
+      "instrument": "analog_saw_pad",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 48.75,
+      "midi": 62,
+      "duration": 4.1,
+      "gain": 0.012,
+      "instrument": "analog_saw_pad",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 48.75,
+      "midi": 66,
+      "duration": 4.1,
+      "gain": 0.012,
+      "instrument": "analog_saw_pad",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 49.375,
+      "midi": 76,
+      "duration": 0.5,
+      "gain": 0.0585,
+      "instrument": "kalimba",
+      "pan": -0.34645411834792994,
+      "channel": "music"
+    },
+    {
+      "t": 49.375,
+      "midi": 64,
+      "duration": 0.65,
+      "gain": 0.022500000000000003,
+      "instrument": "marimba",
+      "pan": 0.34645411834792994,
+      "channel": "music"
+    },
+    {
+      "t": 49.375,
+      "midi": 88,
+      "duration": 1.1,
+      "gain": 0.011250000000000001,
+      "instrument": "glass",
+      "pan": -0.34645411834792994,
+      "channel": "music"
+    },
+    {
+      "t": 50,
+      "midi": 74,
+      "duration": 0.5,
+      "gain": 0.0585,
+      "instrument": "kalimba",
+      "pan": -0.004641586730665505,
+      "channel": "music"
+    },
+    {
+      "t": 50,
+      "midi": 62,
+      "duration": 0.65,
+      "gain": 0.022500000000000003,
+      "instrument": "marimba",
+      "pan": 0.004641586730665505,
+      "channel": "music"
+    },
+    {
+      "t": 50,
+      "midi": 86,
+      "duration": 1.1,
+      "gain": 0.011250000000000001,
+      "instrument": "glass",
+      "pan": -0.004641586730665505,
+      "channel": "music"
+    },
+    {
+      "t": 50,
+      "midi": 66,
+      "duration": 1.8,
+      "gain": 0.028,
+      "instrument": "vibraphone",
+      "pan": 0,
+      "channel": "music"
+    },
+    {
+      "t": 51.25,
+      "midi": 69,
+      "duration": 1.75,
+      "gain": 0.028,
+      "instrument": "vibraphone",
+      "pan": 0,
+      "channel": "music"
+    }
+  ],
+  "hits": [
+    {
+      "t": 21.25,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 21.25,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 21.5625,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 21.875,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 21.875,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 22.1875,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 22.5,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 22.5,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 22.8125,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 23.125,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 23.125,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 23.4375,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 23.75,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 23.75,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 24.0625,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 24.375,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 24.375,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 24.6875,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 25.0,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 25.0,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 25.3125,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 25.625,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 25.625,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 25.9375,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 36.25,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 36.25,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 36.5625,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 36.875,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 36.875,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 37.1875,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 37.5,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 37.5,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 37.8125,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 38.125,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 38.125,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 38.4375,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 38.75,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 38.75,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 39.0625,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 39.375,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 39.375,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 39.6875,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 40.0,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 40.0,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 40.3125,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 40.625,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 40.625,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 40.9375,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 41.25,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 41.25,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 41.5625,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 41.875,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 41.875,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 42.1875,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 42.5,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 42.5,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 42.8125,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 43.125,
+      "instrument": "shaker",
+      "variant": "up",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    },
+    {
+      "t": 43.125,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "gain": 0.035,
+      "duration": 0.25,
+      "pan": 0
+    },
+    {
+      "t": 43.4375,
+      "instrument": "shaker",
+      "variant": "down",
+      "gain": 0.018,
+      "duration": 0.25,
+      "pan": 0.25
+    }
+  ],
+  "effects": [
+    {
+      "t": 0,
+      "kind": "water",
+      "duration": 53,
+      "gain": 0.017,
+      "pan": 0
+    },
+    {
+      "t": 6.13,
+      "kind": "bubble_splash",
+      "duration": 0.7,
+      "gain": 0.075,
+      "pan": 0.0,
+      "frequency": 150
+    },
+    {
+      "t": 6.15,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.14
+    },
+    {
+      "t": 6.215,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.07
+    },
+    {
+      "t": 6.28,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.0
+    },
+    {
+      "t": 6.345,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.07
+    },
+    {
+      "t": 6.41,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.14
+    },
+    {
+      "t": 7.38,
+      "kind": "bubble_splash",
+      "duration": 0.7,
+      "gain": 0.045,
+      "pan": 0.347082683658364,
+      "frequency": 280
+    },
+    {
+      "t": 7.4,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.20708268365836396
+    },
+    {
+      "t": 7.465,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.27708268365836397
+    },
+    {
+      "t": 7.53,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.347082683658364
+    },
+    {
+      "t": 7.595,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.417082683658364
+    },
+    {
+      "t": 7.66,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.487082683658364
+    },
+    {
+      "t": 8.63,
+      "kind": "bubble_splash",
+      "duration": 0.7,
+      "gain": 0.045,
+      "pan": -0.08943938570939092,
+      "frequency": 280
+    },
+    {
+      "t": 8.65,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.22943938570939093
+    },
+    {
+      "t": 8.715,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.15943938570939092
+    },
+    {
+      "t": 8.78,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.08943938570939092
+    },
+    {
+      "t": 8.845,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.01943938570939091
+    },
+    {
+      "t": 8.91,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.050560614290609096
+    },
+    {
+      "t": 9.255,
+      "kind": "bubble_splash",
+      "duration": 0.7,
+      "gain": 0.045,
+      "pan": -0.32403513881470636,
+      "frequency": 280
+    },
+    {
+      "t": 9.275,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.46403513881470637
+    },
+    {
+      "t": 9.34,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.39403513881470636
+    },
+    {
+      "t": 9.405,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.32403513881470636
+    },
+    {
+      "t": 9.47,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.25403513881470635
+    },
+    {
+      "t": 9.535,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.18403513881470634
+    },
+    {
+      "t": 9.88,
+      "kind": "bubble_splash",
+      "duration": 0.7,
+      "gain": 0.045,
+      "pan": 0.17293967289851284,
+      "frequency": 280
+    },
+    {
+      "t": 9.9,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.03293967289851282
+    },
+    {
+      "t": 9.965,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.10293967289851283
+    },
+    {
+      "t": 10.03,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.17293967289851284
+    },
+    {
+      "t": 10.095,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.24293967289851284
+    },
+    {
+      "t": 10.16,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.3129396728985129
+    },
+    {
+      "t": 10.505,
+      "kind": "bubble_splash",
+      "duration": 0.7,
+      "gain": 0.045,
+      "pan": 0.27947048941822156,
+      "frequency": 280
+    },
+    {
+      "t": 10.525,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.13947048941822154
+    },
+    {
+      "t": 10.59,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.20947048941822155
+    },
+    {
+      "t": 10.655,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.27947048941822156
+    },
+    {
+      "t": 10.72,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.34947048941822156
+    },
+    {
+      "t": 10.785,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.41947048941822157
+    },
+    {
+      "t": 11.13,
+      "kind": "bubble_splash",
+      "duration": 0.7,
+      "gain": 0.075,
+      "pan": -0.2449561406577398,
+      "frequency": 150
+    },
+    {
+      "t": 11.15,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.3849561406577398
+    },
+    {
+      "t": 11.215,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.3149561406577398
+    },
+    {
+      "t": 11.28,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.2449561406577398
+    },
+    {
+      "t": 11.345,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.1749561406577398
+    },
+    {
+      "t": 11.41,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.10495614065773978
+    },
+    {
+      "t": 11.4425,
+      "kind": "bubble_splash",
+      "duration": 0.7,
+      "gain": 0.045,
+      "pan": -0.21634798928296164,
+      "frequency": 280
+    },
+    {
+      "t": 11.4625,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.35634798928296163
+    },
+    {
+      "t": 11.5275,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.2863479892829617
+    },
+    {
+      "t": 11.5925,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.21634798928296164
+    },
+    {
+      "t": 11.6575,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.14634798928296164
+    },
+    {
+      "t": 11.7225,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.07634798928296163
+    },
+    {
+      "t": 11.755,
+      "kind": "bubble_splash",
+      "duration": 0.7,
+      "gain": 0.045,
+      "pan": 0.30070663519977353,
+      "frequency": 280
+    },
+    {
+      "t": 11.775,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.16070663519977352
+    },
+    {
+      "t": 11.84,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.23070663519977352
+    },
+    {
+      "t": 11.905,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.30070663519977353
+    },
+    {
+      "t": 11.97,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.37070663519977354
+    },
+    {
+      "t": 12.035,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.44070663519977354
+    },
+    {
+      "t": 12.0675,
+      "kind": "bubble_splash",
+      "duration": 0.7,
+      "gain": 0.045,
+      "pan": 0.13885920059571477,
+      "frequency": 280
+    },
+    {
+      "t": 12.0875,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.001140799404285242
+    },
+    {
+      "t": 12.1525,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.06885920059571476
+    },
+    {
+      "t": 12.2175,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.13885920059571477
+    },
+    {
+      "t": 12.2825,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.20885920059571478
+    },
+    {
+      "t": 12.3475,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.2788592005957148
+    },
+    {
+      "t": 12.38,
+      "kind": "bubble_splash",
+      "duration": 0.7,
+      "gain": 0.045,
+      "pan": -0.3364891221578449,
+      "frequency": 280
+    },
+    {
+      "t": 12.4,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.4764891221578449
+    },
+    {
+      "t": 12.465,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.4064891221578449
+    },
+    {
+      "t": 12.53,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.3364891221578449
+    },
+    {
+      "t": 12.595,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.26648912215784487
+    },
+    {
+      "t": 12.66,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.19648912215784486
+    },
+    {
+      "t": 12.6925,
+      "kind": "bubble_splash",
+      "duration": 0.7,
+      "gain": 0.045,
+      "pan": -0.05214965903496958,
+      "frequency": 280
+    },
+    {
+      "t": 12.7125,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.19214965903496958
+    },
+    {
+      "t": 12.7775,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.12214965903496958
+    },
+    {
+      "t": 12.8425,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.05214965903496958
+    },
+    {
+      "t": 12.9075,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.01785034096503043
+    },
+    {
+      "t": 12.9725,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.08785034096503044
+    },
+    {
+      "t": 13.005,
+      "kind": "bubble_splash",
+      "duration": 0.7,
+      "gain": 0.045,
+      "pan": 0.3499275150499342,
+      "frequency": 280
+    },
+    {
+      "t": 13.025,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.20992751504993418
+    },
+    {
+      "t": 13.09,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.2799275150499342
+    },
+    {
+      "t": 13.155,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.3499275150499342
+    },
+    {
+      "t": 13.22,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.4199275150499342
+    },
+    {
+      "t": 13.285,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.4899275150499342
+    },
+    {
+      "t": 13.3175,
+      "kind": "bubble_splash",
+      "duration": 0.7,
+      "gain": 0.045,
+      "pan": -0.03802280839842667,
+      "frequency": 280
+    },
+    {
+      "t": 13.3375,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.17802280839842669
+    },
+    {
+      "t": 13.4025,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.10802280839842668
+    },
+    {
+      "t": 13.4675,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": -0.03802280839842667
+    },
+    {
+      "t": 13.5325,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.031977191601573335
+    },
+    {
+      "t": 13.5975,
+      "kind": "drip",
+      "duration": 0.12,
+      "gain": 0.018,
+      "pan": 0.10197719160157334
+    },
+    {
+      "t": 16.25,
+      "kind": "wood_knock",
+      "duration": 0.16,
+      "gain": 0.07,
+      "pan": -0.34012945601035216,
+      "frequency": 328,
+      "bounce_gain": 0
+    },
+    {
+      "t": 16.4063,
+      "kind": "ceramic_clack",
+      "duration": 0.15,
+      "gain": 0.065,
+      "pan": 0.1256704239077589
+    },
+    {
+      "t": 16.46,
+      "kind": "wood_knock",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": -0.34012945601035216,
+      "frequency": 308,
+      "bounce_gain": 0
+    },
+    {
+      "t": 16.5625,
+      "kind": "wood_knock",
+      "duration": 0.16,
+      "gain": 0.07,
+      "pan": 0.30774557157775345,
+      "frequency": 328,
+      "bounce_gain": 0
+    },
+    {
+      "t": 16.7188,
+      "kind": "wood_knock",
+      "duration": 0.16,
+      "gain": 0.07,
+      "pan": -0.20497306899100415,
+      "frequency": 328,
+      "bounce_gain": 0
+    },
+    {
+      "t": 16.7725,
+      "kind": "wood_knock",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0.30774557157775345,
+      "frequency": 308,
+      "bounce_gain": 0
+    },
+    {
+      "t": 16.875,
+      "kind": "ceramic_clack",
+      "duration": 0.15,
+      "gain": 0.065,
+      "pan": -0.25492626874105856
+    },
+    {
+      "t": 16.9288,
+      "kind": "wood_knock",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": -0.20497306899100415,
+      "frequency": 308,
+      "bounce_gain": 0
+    },
+    {
+      "t": 17.0313,
+      "kind": "wood_knock",
+      "duration": 0.16,
+      "gain": 0.07,
+      "pan": 0.2706647613481772,
+      "frequency": 328,
+      "bounce_gain": 0
+    },
+    {
+      "t": 17.1875,
+      "kind": "ceramic_clack",
+      "duration": 0.15,
+      "gain": 0.065,
+      "pan": 0.18517894014200834
+    },
+    {
+      "t": 17.2413,
+      "kind": "wood_knock",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0.2706647613481772,
+      "frequency": 308,
+      "bounce_gain": 0
+    },
+    {
+      "t": 17.3438,
+      "kind": "wood_knock",
+      "duration": 0.16,
+      "gain": 0.07,
+      "pan": -0.31838333514173384,
+      "frequency": 328,
+      "bounce_gain": 0
+    },
+    {
+      "t": 17.5,
+      "kind": "ceramic_clack",
+      "duration": 0.15,
+      "gain": 0.065,
+      "pan": -0.10313506052509017
+    },
+    {
+      "t": 17.5538,
+      "kind": "wood_knock",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": -0.31838333514173384,
+      "frequency": 308,
+      "bounce_gain": 0
+    },
+    {
+      "t": 17.6563,
+      "kind": "wood_knock",
+      "duration": 0.16,
+      "gain": 0.07,
+      "pan": 0.34496010457672155,
+      "frequency": 328,
+      "bounce_gain": 0
+    },
+    {
+      "t": 17.8125,
+      "kind": "wood_knock",
+      "duration": 0.16,
+      "gain": 0.07,
+      "pan": 0.0142426400724527,
+      "frequency": 328,
+      "bounce_gain": 0
+    },
+    {
+      "t": 17.8663,
+      "kind": "wood_knock",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0.34496010457672155,
+      "frequency": 308,
+      "bounce_gain": 0
+    },
+    {
+      "t": 17.9688,
+      "kind": "ceramic_clack",
+      "duration": 0.15,
+      "gain": 0.065,
+      "pan": -0.34863027609185787
+    },
+    {
+      "t": 18.0225,
+      "kind": "wood_knock",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0.0142426400724527,
+      "frequency": 308,
+      "bounce_gain": 0
+    },
+    {
+      "t": 18.125,
+      "kind": "wood_knock",
+      "duration": 0.16,
+      "gain": 0.07,
+      "pan": 0.075595543165876,
+      "frequency": 328,
+      "bounce_gain": 0
+    },
+    {
+      "t": 18.2813,
+      "kind": "ceramic_clack",
+      "duration": 0.15,
+      "gain": 0.065,
+      "pan": 0.3291501370314521
+    },
+    {
+      "t": 18.335,
+      "kind": "wood_knock",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0.075595543165876,
+      "frequency": 308,
+      "bounce_gain": 0
+    },
+    {
+      "t": 18.4375,
+      "kind": "wood_knock",
+      "duration": 0.16,
+      "gain": 0.07,
+      "pan": -0.16041390907211805,
+      "frequency": 328,
+      "bounce_gain": 0
+    },
+    {
+      "t": 18.5938,
+      "kind": "wood_knock",
+      "duration": 0.16,
+      "gain": 0.07,
+      "pan": -0.28781323904672196,
+      "frequency": 328,
+      "bounce_gain": 0
+    },
+    {
+      "t": 18.6475,
+      "kind": "wood_knock",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": -0.16041390907211805,
+      "frequency": 308,
+      "bounce_gain": 0
+    },
+    {
+      "t": 18.75,
+      "kind": "ceramic_clack",
+      "duration": 0.15,
+      "gain": 0.065,
+      "pan": 0.23458021154518113
+    },
+    {
+      "t": 18.8038,
+      "kind": "wood_knock",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": -0.28781323904672196,
+      "frequency": 308,
+      "bounce_gain": 0
+    },
+    {
+      "t": 18.9063,
+      "kind": "wood_knock",
+      "duration": 0.16,
+      "gain": 0.07,
+      "pan": 0.22736450159017038,
+      "frequency": 328,
+      "bounce_gain": 0
+    },
+    {
+      "t": 19.0625,
+      "kind": "wood_knock",
+      "duration": 0.16,
+      "gain": 0.07,
+      "pan": -0.2931695400014596,
+      "frequency": 328,
+      "bounce_gain": 0
+    },
+    {
+      "t": 19.1163,
+      "kind": "wood_knock",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0.22736450159017038,
+      "frequency": 308,
+      "bounce_gain": 0
+    },
+    {
+      "t": 19.2188,
+      "kind": "ceramic_clack",
+      "duration": 0.15,
+      "gain": 0.065,
+      "pan": -0.15181793934148938
+    },
+    {
+      "t": 19.2725,
+      "kind": "wood_knock",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": -0.2931695400014596,
+      "frequency": 308,
+      "bounce_gain": 0
+    },
+    {
+      "t": 19.375,
+      "kind": "wood_knock",
+      "duration": 0.16,
+      "gain": 0.07,
+      "pan": 0.2644740790087974,
+      "frequency": 330,
+      "bounce_gain": 0
+    },
+    {
+      "t": 19.5313,
+      "kind": "ceramic_clack",
+      "duration": 0.15,
+      "gain": 0.065,
+      "pan": -0.2614106426460817
+    },
+    {
+      "t": 19.585,
+      "kind": "wood_knock",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0.2644740790087974,
+      "frequency": 310,
+      "bounce_gain": 0
+    },
+    {
+      "t": 19.8438,
+      "kind": "wood_knock",
+      "duration": 0.16,
+      "gain": 0.055,
+      "pan": 0.31220408894477963,
+      "frequency": 340,
+      "bounce_gain": 0
+    },
+    {
+      "t": 20,
+      "kind": "wood_knock",
+      "duration": 0.16,
+      "gain": 0.055,
+      "pan": 0.11665987898421881,
+      "frequency": 340,
+      "bounce_gain": 0
+    },
+    {
+      "t": 20.1563,
+      "kind": "wood_knock",
+      "duration": 0.16,
+      "gain": 0.055,
+      "pan": -0.3422660551693768,
+      "frequency": 340,
+      "bounce_gain": 0
+    },
+    {
+      "t": 20.3125,
+      "kind": "wood_knock",
+      "duration": 0.16,
+      "gain": 0.055,
+      "pan": -0.02846168539857657,
+      "frequency": 340,
+      "bounce_gain": 0
+    },
+    {
+      "t": 20.3688,
+      "kind": "bubble_splash",
+      "duration": 0.6,
+      "gain": 0.065,
+      "pan": 0.3496003180933328
+    },
+    {
+      "t": 20.5,
+      "kind": "bird",
+      "duration": 0.45,
+      "gain": 0.018,
+      "pan": 0.5980978765672795
+    },
+    {
+      "t": 21.25,
+      "kind": "wood_knock",
+      "duration": 0.15,
+      "gain": 0.012,
+      "pan": 0,
+      "frequency": 130,
+      "bounce_gain": 0
+    },
+    {
+      "t": 22.1,
+      "kind": "eraser_felt",
+      "duration": 0.25,
+      "gain": 0.008,
+      "pan": 0
+    },
+    {
+      "t": 22.3,
+      "kind": "bird",
+      "duration": 0.45,
+      "gain": 0.018,
+      "pan": -0.18237876528662822
+    },
+    {
+      "t": 23.0,
+      "kind": "eraser_felt",
+      "duration": 0.25,
+      "gain": 0.008,
+      "pan": 0
+    },
+    {
+      "t": 23.9,
+      "kind": "eraser_felt",
+      "duration": 0.25,
+      "gain": 0.008,
+      "pan": 0
+    },
+    {
+      "t": 24.6,
+      "kind": "bird",
+      "duration": 0.45,
+      "gain": 0.018,
+      "pan": -0.3047379542343732
+    },
+    {
+      "t": 24.9,
+      "kind": "eraser_felt",
+      "duration": 0.25,
+      "gain": 0.008,
+      "pan": 0
+    },
+    {
+      "t": 26.0,
+      "kind": "eraser_felt",
+      "duration": 0.25,
+      "gain": 0.008,
+      "pan": 0
+    },
+    {
+      "t": 26.25,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.018,
+      "pan": 0.3481893769754422
+    },
+    {
+      "t": 26.5625,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.018,
+      "pan": -0.00960364553512893
+    },
+    {
+      "t": 26.875,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.018,
+      "pan": -0.3457146232707086
+    },
+    {
+      "t": 27.1,
+      "kind": "bird",
+      "duration": 0.45,
+      "gain": 0.018,
+      "pan": 0.5534596901538514
+    },
+    {
+      "t": 27.1875,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.018,
+      "pan": 0.09869049714689046
+    },
+    {
+      "t": 27.3,
+      "kind": "eraser_felt",
+      "duration": 0.25,
+      "gain": 0.008,
+      "pan": 0
+    },
+    {
+      "t": 27.5,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.018,
+      "pan": 0.320283168877378
+    },
+    {
+      "t": 27.8125,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.018,
+      "pan": -0.18122394299764008
+    },
+    {
+      "t": 28.125,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.018,
+      "pan": -0.2735837542978331
+    },
+    {
+      "t": 28.4375,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.018,
+      "pan": 0.25172346393758893
+    },
+    {
+      "t": 28.9,
+      "kind": "eraser_felt",
+      "duration": 0.25,
+      "gain": 0.008,
+      "pan": 0
+    },
+    {
+      "t": 29.375,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.018,
+      "pan": 0.20871738947112203
+    },
+    {
+      "t": 29.75,
+      "kind": "crickets",
+      "duration": 23.25,
+      "gain": 0.012,
+      "pan": 0
+    },
+    {
+      "t": 30,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.018,
+      "pan": -0.3055076369317677
+    },
+    {
+      "t": 30.4,
+      "kind": "eraser_felt",
+      "duration": 0.25,
+      "gain": 0.008,
+      "pan": 0
+    },
+    {
+      "t": 31.25,
+      "kind": "wind",
+      "duration": 5,
+      "gain": 0.006,
+      "pan": 0
+    },
+    {
+      "t": 33.75,
+      "kind": "stone_thunk",
+      "duration": 0.28,
+      "gain": 0.075,
+      "pan": 0
+    },
+    {
+      "t": 34.375,
+      "kind": "stone_thunk",
+      "duration": 0.28,
+      "gain": 0.075,
+      "pan": 0
+    },
+    {
+      "t": 35,
+      "kind": "stone_thunk",
+      "duration": 0.28,
+      "gain": 0.075,
+      "pan": 0
+    },
+    {
+      "t": 35.625,
+      "kind": "stone_thunk",
+      "duration": 0.28,
+      "gain": 0.075,
+      "pan": 0
+    },
+    {
+      "t": 35.9375,
+      "kind": "glass_shimmer",
+      "duration": 0.22,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 35.9375,
+      "kind": "wood_knock",
+      "duration": 0.12,
+      "gain": 0.03,
+      "pan": 0,
+      "frequency": 480,
+      "bounce_gain": 0
+    },
+    {
+      "t": 36.25,
+      "kind": "lamp_ignite",
+      "duration": 0.7,
+      "gain": 0.18,
+      "pan": 0
+    },
+    {
+      "t": 36.25,
+      "kind": "electric_hum",
+      "duration": 3,
+      "gain": 0.035,
+      "pan": 0
+    }
+  ]
+}
