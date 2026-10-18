@@ -19,6 +19,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.repository == 'lemomo-ai/lemo-opuscar'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7

@@ -1,13 +1,21 @@
 {
-  "name": "lemo-opuscar",
+  "name": "codexcar",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Film styles for coding agents: each style ships a prompt and a demo film made entirely in code, on a shared toolkit.",
-  "engines": { "node": ">=20" },
+  "description": "Codex-ready adaptation of Lemo-Opuscar: 51 code-rendered film styles and a shared production toolkit.",
+  "engines": {
+    "node": ">=20"
+  },
   "license": "MIT",
   "dependencies": {
     "playwright-core": "^1.63.0",
     "three": "^0.170.0"
+  },
+  "scripts": {
+    "check": "python3 tools/check_codexcar.py",
+    "test": "python3 -m unittest discover -s tests -v",
+    "setup": "sh tools/setup.sh deps",
+    "setup:check": "sh tools/setup.sh check"
   }
 }

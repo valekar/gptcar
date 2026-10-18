@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Codex Car renderer check</title>
+<style>html,body{margin:0;overflow:hidden;background:#122023}canvas{position:absolute;top:0}#flat{left:0}#gl{left:50%}</style>
+<canvas id="flat"></canvas><canvas id="gl"></canvas>
+<script type="module">
+import * as THREE from '/node_modules/three/build/three.module.js';
+import {mulberry} from '/core/lib.js';
+const flat=document.querySelector('#flat'), gl=document.querySelector('#gl');
+const w=innerWidth/2,h=innerHeight; flat.width=w;flat.height=h;
+const ctx=flat.getContext('2d');
+const renderer=new THREE.WebGLRenderer({canvas:gl,antialias:true});renderer.setSize(w,h);
+const scene=new THREE.Scene();scene.background=new THREE.Color('#122023');
+const camera=new THREE.PerspectiveCamera(40,w/h,0.1,100);camera.position.set(0,0,5);
+const mesh=new THREE.Mesh(new THREE.BoxGeometry(1.6,1.6,1.6),new THREE.MeshNormalMaterial());scene.add(mesh);
+window.DUR=4;window.EV=[{t:1,type:'check'}];
+window.TEXTS=()=>[{id:'label',text:'CODEX CAR',x0:24,y0:28,x1:285,y1:65}];
+window.render=t=>{
+ ctx.fillStyle='#efe5d1';ctx.fillRect(0,0,w,h);
+ const random=mulberry(42);
+ for(let i=0;i<28;i++){
+  ctx.fillStyle=`rgba(25,120,115,${0.08+random()*0.09})`;
+  ctx.beginPath();ctx.ellipse(w*.5+Math.sin(i+t)*28,h*.58+i*1.6,40+random()*70,22,random(),0,Math.PI*2);ctx.fill();
+ }
+ ctx.fillStyle='#122023';ctx.font='bold 25px sans-serif';ctx.fillText('CODEX CAR',24,55);
+ mesh.rotation.set(t*.3,t*.7,.15);renderer.render(scene,camera);
+};
+window.render(0);window.READY=true;
+</script></html>

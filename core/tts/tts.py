@@ -24,7 +24,7 @@ if wrong:
              f"  offline: add \"lang\": \"cmn\" and a zf_*/zm_* voice to those lines;  more natural (needs network): python core/tts/tts_zh.py {sys.argv[1]} {out}")
 model, voices = os.path.join(HERE, 'kokoro-v1.0.onnx'), os.path.join(HERE, 'voices-v1.0.bin')
 if not (os.path.exists(model) and os.path.exists(voices)):
-    sys.exit(f'tts.py: the Kokoro model is not in {HERE}.\n  install the voice tier: sh plugin/skills/lemo-opuscar/scripts/setup.sh deps voice   (from the library root; it also fetches the model, about 350 MB)')
+    sys.exit(f'tts.py: the Kokoro model is not in {HERE}.\n  install the voice tier: sh tools/setup.sh deps voice   (from the library root; it also fetches the model, about 350 MB)')
 ESPEAK_LIMIT = 160   # 实测：espeak-ng 数据目录的真实路径 ≤159 字节能用，≥160 字节找不到 phontab（软链先被解析，量的是真实路径）
 try:
     import espeakng_loader
@@ -35,10 +35,10 @@ if espeak_dir and len(espeak_dir.encode('utf-8')) >= ESPEAK_LIMIT:
     sys.exit(f"tts.py: this library sits under a folder path that is too long for the offline voice engine (espeak-ng).\n"
              f"  its data folder is {len(espeak_dir.encode('utf-8'))} bytes long (a Chinese character counts as 3), the limit is {ESPEAK_LIMIT - 1}:\n"
              f"    {espeak_dir}\n"
-             f"  Move the library to a shorter path (e.g. LEMO_OPUSCAR_HOME=~/lemo-opuscar, or a shorter folder for the clone) and run\n"
-             f"  `sh plugin/skills/lemo-opuscar/scripts/setup.sh deps` there (a moved .venv does not work). No need to move anything for tts_zh.py.")
+             f"  Move the library to a shorter path (e.g. CODEXCAR_HOME=/short/path/codexcar, or a shorter folder for the clone) and run\n"
+             f"  `sh tools/setup.sh deps` there (a moved .venv does not work). No need to move anything for tts_zh.py.")
 try: from kokoro_onnx import Kokoro
-except ImportError: sys.exit('tts.py: kokoro-onnx is missing: install the voice tier: sh plugin/skills/lemo-opuscar/scripts/setup.sh deps voice')
+except ImportError: sys.exit('tts.py: kokoro-onnx is missing: install the voice tier: sh tools/setup.sh deps voice')
 k = Kokoro(model, voices)
 avail = k.get_voices()
 for L in lines:

@@ -1,4 +1,6 @@
-# Lemo-Opuscar: instructions for agents
+# Codex Car: instructions for agents
+
+Codex Car is a Codex adaptation of the Lemo-Opuscar film-style library. Use `$codexcar` for this workflow. The original demos are by Lemomo/LemoLab using Claude Opus 5.5; do not relabel them as Codex work. See `NOTICE` and `docs/COMPATIBILITY.md`.
 
 This repository is a library of film styles. Each style has a `styles/<slug>/STYLE.md` (what the style is) and one demo film made entirely in code (`DEMO.md` and `demo/`). People pick a style and ask for a film about **their own** topic. Your job is to direct and produce that film.
 
@@ -47,14 +49,14 @@ All 51 styles · 全部风格:
 
 ## Workflow
 
-1. **Brief.** Make sure the style and the topic are clear, then ask the user once, in a single message (DIRECTOR.md §1):
+1. **Brief.** Make sure the style and the topic are clear, ask once only for missing information that materially changes the result (DIRECTOR.md §1):
    - anything about the topic you can't decide yourself (facts; names, logos or products that must appear);
    - whether they have material of their own: a voice recording or a preferred voice, music, photos, logos, fonts;
    - the film's language, if it isn't obvious (default: the language they write in, for voice and subtitles);
    - whether they want to review a storyboard first (default: no);
-   - anything missing on their machine: first run `sh plugin/skills/lemo-opuscar/scripts/setup.sh deps` from the library root (core only) and include what it reports. Add the voice and music tiers later, only if the film needs them (TECHNIQUE.md §1).
+   - anything missing on their machine: first run `sh tools/setup.sh deps` from the library root (core only) and include what it reports. Add the voice and music tiers later, only if the film needs them (TECHNIQUE.md §1).
 
-   Skip what their request already answers. Wait for the reply, fill every other gap with a sensible default, sum up the brief in a few lines and start. Don't come back with more questions.
+   Skip what their request already answers. When a required answer is missing, wait for it; otherwise fill routine gaps with sensible defaults, record the brief and start. Preserve the user's existing choices and authorization.
 2. **Treatment.** Write `TREATMENT.md` in the project folder (DIRECTOR.md §4), before you open the demo.
 3. **Look.** Render style frames or a model sheet with the real drawing code and check them against `STYLE.md` (DIRECTOR.md §5).
 4. **Storyboard, only if the user asked for it** (DIRECTOR.md §5). **Stop and wait for approval.** Otherwise don't stop.
@@ -69,3 +71,10 @@ Report progress in the user's language. If a step fails, read the error, fix the
 - Run `node core/…` and `sh tools/…` from the library root (`$LIB` in skill mode).
 - `core/` has ready-made tools (rendering, TTS, speech check, sampler, sfx, mux). Use them or your own stack, but don't edit `core/` or `styles/` for a user's film.
 - Never kill processes you didn't start. Don't leave background processes running.
+
+## Codex operation
+
+- No particular language model is hardcoded. Select GPT-6.1 Sol or another available model in Codex; visual quality requires evaluation on the actual film.
+- The renderer runs local code and needs a shell, a headless browser, ffmpeg and Python. A text-only chat cannot render a film by loading these prompts alone.
+- Use the renderer chosen by the user. If a host has an existing mandatory video workflow (such as HyperFrames), follow that host routing and use these STYLE.md files as art direction unless the user explicitly selects the Codex Car renderer. Do not promise automatic renderer interchangeability.
+- Publishing a user film requires a user request. Building a film does not authorize uploading it.
