@@ -1,0 +1,729 @@
+{
+  "readme_sha256": "622df972c64ec697c3fe2253be216e1913068acc594adb983140d4ce1f8591be",
+  "github_renderer": "Anonymous api.github.com/markdown in gfm context valekar/gptcar",
+  "styles": 51,
+  "native_video_players": 102,
+  "side_by_side_tables": 51,
+  "all_tables_have_two_players": true,
+  "anonymous_player_media": {
+    "method": "Only first32 MP4 bytes and Content-Range size inspected; expiring playback URLs not persisted in this report.",
+    "all_pass": true,
+    "checks": [
+      {
+        "key": "opus__satellite-briefing",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__satellite-briefing",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__briefing-board",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__briefing-board",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__lidar-survey",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__lidar-survey",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__white-model",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__white-model",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__data-physical",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__data-physical",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__teardown",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__teardown",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__microscope",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__microscope",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__archive-lighttable",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__archive-lighttable",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__crayon-book",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__crayon-book",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__watercolor",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__watercolor",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__ink-wash",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__ink-wash",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__impasto",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__impasto",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__one-line",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__one-line",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__whiteboard",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__whiteboard",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__urban-sketch",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__urban-sketch",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__shadow-puppet",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__shadow-puppet",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__ukiyoe",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__ukiyoe",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__papercut-red",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__papercut-red",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__paper-lantern",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__paper-lantern",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__risograph",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__risograph",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__halftone-dossier",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__halftone-dossier",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__woodcut",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__woodcut",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__engraving",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__engraving",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__silkscreen-poster",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__silkscreen-poster",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__swiss-motion",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__swiss-motion",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__spy-titles",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__spy-titles",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__art-deco",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__art-deco",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__blueprint",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__blueprint",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__stained-glass",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__stained-glass",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__pictogram-motion",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__pictogram-motion",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__ascii-crt",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__ascii-crt",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__dataviz",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__dataviz",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__iso-infographic",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__iso-infographic",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__dark-keynote",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__dark-keynote",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__living-screencast",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__living-screencast",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__hologram-hud",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__hologram-hud",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__rubber-hose",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__rubber-hose",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__cel-anime-80s",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__cel-anime-80s",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__scifi-toon",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__scifi-toon",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__midcentury-toon",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__midcentury-toon",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__pixel-rpg",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__pixel-rpg",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__hd-2d",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__hd-2d",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__microgame",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__microgame",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__game-show",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__game-show",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__silent-film",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__silent-film",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__backrooms",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__backrooms",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__brick-toy",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__brick-toy",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__paper-popup",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__paper-popup",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__tilt-shift",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__tilt-shift",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__lowpoly-island",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__lowpoly-island",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "opus__glass-product",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      },
+      {
+        "key": "gpt__glass-product",
+        "status": 206,
+        "mp4_signature": true,
+        "size_matches": true,
+        "passed": true
+      }
+    ]
+  },
+  "full_length_previews": true
+}

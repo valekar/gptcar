@@ -1,0 +1,617 @@
+{
+  "repository": "valekar/gptcar",
+  "attachments": {
+    "opus__watercolor": {
+      "url": "https://github.com/user-attachments/assets/4d063aef-fa29-41ef-b638-8a275a8739cf",
+      "filename": "opus__watercolor.mp4",
+      "sha256": "bfc3a724d056aebb61d35fea4dddf9c76f2cf6144baa13ada1d80981b755a191",
+      "source_sha256": "a222efe90cdbc0c2283d531757373f83c2b7dc0811212f4db4c032249884ead2"
+    },
+    "gpt__watercolor": {
+      "url": "https://github.com/user-attachments/assets/108ad164-c3fd-4010-a197-e37a6a52b085",
+      "filename": "gpt__watercolor.mp4",
+      "sha256": "223c5ab61a954673952211e848527c8c9e32510a7b0430329485388905e9cb59",
+      "source_sha256": "d0ff749d9acd551486b58d9c38bf24def73f80de450d6c4213c7894b7109edf4"
+    },
+    "opus__satellite-briefing": {
+      "url": "https://github.com/user-attachments/assets/f080e7de-b310-4709-9c2a-5815b0c0f28d",
+      "filename": "opus__satellite-briefing.mp4",
+      "sha256": "9108ddab0ce459f92d3beb48cbfac2d0836d7cb38294b348ea89593fc9f3e425",
+      "source_sha256": "b84ce6a3e42591d4f1428cc35769d4478b5bccc61f986f71f4ba7dcce49a8091"
+    },
+    "gpt__satellite-briefing": {
+      "url": "https://github.com/user-attachments/assets/500a697f-493f-4350-b952-cdebe7de6c3e",
+      "filename": "gpt__satellite-briefing.mp4",
+      "sha256": "4fd5db5dbd4fde91fa86db8c5b64a43fa484d5d65d8ab17b806e536986a41ea9",
+      "source_sha256": "5d2c62adad9aa82bbc11149c8c7dc0610ef52f95aee266e1795905ffb8135040"
+    },
+    "opus__briefing-board": {
+      "url": "https://github.com/user-attachments/assets/05ec97de-b86a-4584-a600-52cecb0579ca",
+      "filename": "opus__briefing-board.mp4",
+      "sha256": "25cec9f76dbaca63976a66774f420b32da77cefc53e4d86cde35324b9b1559a7",
+      "source_sha256": "1a0dafce471a6dea58645e7a21bb053325337abf97916fc43eb944576008b3f7"
+    },
+    "gpt__briefing-board": {
+      "url": "https://github.com/user-attachments/assets/0a16ac90-5b32-4021-a7e3-669340f59cb1",
+      "filename": "gpt__briefing-board.mp4",
+      "sha256": "44933266e09947b5e1b641d547d4fdc41d6a50b8e5009a362c37ac25a769a4e8",
+      "source_sha256": "fb4a7742c362de6356e0f9334f5af0d9d568eefeef499da79511b0ebd8aba91c"
+    },
+    "opus__lidar-survey": {
+      "url": "https://github.com/user-attachments/assets/63b9a12b-069d-45d8-9cdd-d36984171822",
+      "filename": "opus__lidar-survey.mp4",
+      "sha256": "a252ff12f3f5f2e0dc876f2994566d7f60d625a56893a8339b43642e3cdda32c",
+      "source_sha256": "078d2ca0065febc50a495cf1e078bfdc1508ca489fb7174bfda9cd236c582863"
+    },
+    "gpt__lidar-survey": {
+      "url": "https://github.com/user-attachments/assets/2bd97684-691a-4cee-9de4-9b3f87953a64",
+      "filename": "gpt__lidar-survey.mp4",
+      "sha256": "f5078b5f2811b6e500fcbb00ad9d13892b72aab08a42fdecb01fa31d174b94b3",
+      "source_sha256": "1e15f9668a3cc6dd1c9b5b5545a58e489419529e6987a2d6dd68464dbfd37eee"
+    },
+    "opus__white-model": {
+      "url": "https://github.com/user-attachments/assets/e3696666-174b-4e78-98c1-4170d5eb9123",
+      "filename": "opus__white-model.mp4",
+      "sha256": "fe98086a76b201984dbd3b6ac0740e34e3dada6bfeb49c5d63c4b2f0ecfd860e",
+      "source_sha256": "6c8453ed8be6bc16380af3f5599cf91b79d8f0ce7e5d3dffb4b8c9ec74eb93a0"
+    },
+    "gpt__white-model": {
+      "url": "https://github.com/user-attachments/assets/03e3780b-50ca-4ec6-b4a3-6e668c1ba407",
+      "filename": "gpt__white-model.mp4",
+      "sha256": "97086d3903fb6202562d30447e14361469df645700243be4a40ef3d5390c9dc0",
+      "source_sha256": "dd6be98bf3a04ac09b5900f2909e7855858ec2c01a0b1ff07f0e478671a11599"
+    },
+    "opus__data-physical": {
+      "url": "https://github.com/user-attachments/assets/2cdbf3f6-3f65-435d-8dcd-613d9ee9afef",
+      "filename": "opus__data-physical.mp4",
+      "sha256": "4b1a06017165fc3b5a874f1820b06737e7932c5f0358a2cde9e709387b6b00c1",
+      "source_sha256": "105cfdd6cbc140dffc71aae36c8f40c7fde324dfcdef362339e5b0a0d9e1dabd"
+    },
+    "gpt__data-physical": {
+      "url": "https://github.com/user-attachments/assets/e30e8643-912b-4cef-9f46-c85db90fa8f0",
+      "filename": "gpt__data-physical.mp4",
+      "sha256": "bd6416eade34942da1c407f68b4ac38a5c357ced4bdd1bd147fb9909a1259a09",
+      "source_sha256": "0c1556adb52c35532da9d1fa46b6207fc6a9eab62ca73c527f314d9b6d3d2e78"
+    },
+    "opus__teardown": {
+      "url": "https://github.com/user-attachments/assets/a64c6240-56e3-4b92-8cf9-3510449c02e5",
+      "filename": "opus__teardown.mp4",
+      "sha256": "9bc361ac3bc5981fa5d619ff64b8d6f65ece40adf255267ee02a671c3f148b2b",
+      "source_sha256": "a5e2a47c1ccf9233ed2c314edb999f5cb743352b9558bd7b8ea6830700c2b30c"
+    },
+    "gpt__teardown": {
+      "url": "https://github.com/user-attachments/assets/abd7e5d2-5c2c-4b0a-9985-3516241a49f0",
+      "filename": "gpt__teardown.mp4",
+      "sha256": "d9e7fd1179c78309f3243bbb233953523bbf29bf565b9addd1417e91371e5909",
+      "source_sha256": "457f2d7ab3501c2752eb6dd508d512215897644b46696ffe85d28d8b08ea888d"
+    },
+    "opus__microscope": {
+      "url": "https://github.com/user-attachments/assets/6865bc1e-9c45-43b5-8d65-055b375cea32",
+      "filename": "opus__microscope.mp4",
+      "sha256": "f24cd29afbe0e06b1f3d5ea587e4fd05959c1e536da721608d7570d4749a8df5",
+      "source_sha256": "7a68500b5753c0fa22e586474b931d5feacf5a0717a64600763306a4cdf62ab6"
+    },
+    "gpt__microscope": {
+      "url": "https://github.com/user-attachments/assets/b02fa65b-a950-46bf-8345-32a836a4a323",
+      "filename": "gpt__microscope.mp4",
+      "sha256": "72d66ebfc80d04eb3ed27549d42c29592e7db6772fc357d64fd8bd777c82d32b",
+      "source_sha256": "73f61e2846267bfbfe273b6d51fc3986de7324a0ef2ec42869ed09ca2e873596"
+    },
+    "opus__archive-lighttable": {
+      "url": "https://github.com/user-attachments/assets/54501cb0-a247-4c94-8595-3d00ba8dba39",
+      "filename": "opus__archive-lighttable.mp4",
+      "sha256": "3ab5c6ec603acfb53d9021624b6dd228d8ea3808731cbf47cfe653c0ec4618b4",
+      "source_sha256": "1551f544b61610c7d7be218cedca25def8ebcb0c4c532cdc78544321e65a22d1"
+    },
+    "gpt__archive-lighttable": {
+      "url": "https://github.com/user-attachments/assets/f8b1f56c-2da3-4691-8ae5-cca67b5c8dbd",
+      "filename": "gpt__archive-lighttable.mp4",
+      "sha256": "446be063a5173bcd498e29299920f01d68112efbda9fa36762eef8e3ce69c427",
+      "source_sha256": "e92bd654be8ad107554978455fd1689e0b57d652dc6eeeafd44fff655d6e768c"
+    },
+    "opus__crayon-book": {
+      "url": "https://github.com/user-attachments/assets/504566d8-cd18-4c92-b293-e1fe8084f659",
+      "filename": "opus__crayon-book.mp4",
+      "sha256": "95ae8e4a31ade520a22124efbc31240334a9644993dc53baff6bf89e6f52a536",
+      "source_sha256": "f3cb476defb89550447d4e781b141766050f7c88fc00a9fd0ce39ab2c05d71cc"
+    },
+    "gpt__crayon-book": {
+      "url": "https://github.com/user-attachments/assets/7f039c95-8ace-43b5-81e2-caa61b2923c2",
+      "filename": "gpt__crayon-book.mp4",
+      "sha256": "846d672237aaa03ec5a77bef4caf9e98a88b53cb1bc19dc1a9f041bbe720a9bc",
+      "source_sha256": "cdbc0f1d6006e091102d05d4b6fea0b8a20ee1e6982ca8f2c1a74f56618fa5ed"
+    },
+    "opus__ink-wash": {
+      "url": "https://github.com/user-attachments/assets/0563aab1-61fc-440c-97fc-7191aa85858c",
+      "filename": "opus__ink-wash.mp4",
+      "sha256": "b566256f2736a2b853b53fbde23ef03761e4cbaff63a0fc997dfa1e54044d459",
+      "source_sha256": "38c2d3681aa7d49a5d2199a319e4934a1b89d182ace9446c3575eccfa606533c"
+    },
+    "gpt__ink-wash": {
+      "url": "https://github.com/user-attachments/assets/8b9c5d2e-edaf-460f-ae38-7f615a9a080c",
+      "filename": "gpt__ink-wash.mp4",
+      "sha256": "7a70852f4d69d5883c5dfe7f4f4c64155526d85f126c46734f90f42eff3ebec6",
+      "source_sha256": "fa80bb3927d7da75da0f51a7a0ea89e3d10970aee9d3104ffe85c896a269ace9"
+    },
+    "opus__impasto": {
+      "url": "https://github.com/user-attachments/assets/67cc5b3f-ee59-4609-959c-da95d1ed3e70",
+      "filename": "opus__impasto.mp4",
+      "sha256": "85adcd06b75760d0518be037b656b651ae19d8e94900f7b615b15ad5885b9c01",
+      "source_sha256": "a03f8fcd7dd293233d3f71feb4832c3867b07a443dd030bca818352d21e654e2"
+    },
+    "gpt__impasto": {
+      "url": "https://github.com/user-attachments/assets/e00388f6-519a-4b3e-af21-50aebe9e5875",
+      "filename": "gpt__impasto.mp4",
+      "sha256": "a1a83d658bb0cbd63a259f9f06d05646bc5e2b44bdf824766224975a14068bee",
+      "source_sha256": "94ef1129a0ffe8851886d4afb0b6515e1faeb1271f695bb8df5e9f38dae24e41"
+    },
+    "opus__one-line": {
+      "url": "https://github.com/user-attachments/assets/84d23784-f171-4ebc-b63e-3f6ea451947e",
+      "filename": "opus__one-line.mp4",
+      "sha256": "4dd2e940cadb308d0c75346c1f886e409081c8b3dec2090ee73ec338be2d9eae",
+      "source_sha256": "2a084ae16953363dd8e7927495f0c17ca34f3f28ca1d8902523ac2ecf9db1d3c"
+    },
+    "gpt__one-line": {
+      "url": "https://github.com/user-attachments/assets/3ef08146-2a0c-44a0-bb30-248e599595ef",
+      "filename": "gpt__one-line.mp4",
+      "sha256": "2771081f26f0f4e7bc72901de62959959d46ddb6cd59960e7cb856244b1f7dac",
+      "source_sha256": "3f72fb7802f193ed6c89c786bcfb80c4d08d6a7a033e3d80590c51a57204cb08"
+    },
+    "opus__whiteboard": {
+      "url": "https://github.com/user-attachments/assets/e971ed50-efed-449d-bff6-971337192cd1",
+      "filename": "opus__whiteboard.mp4",
+      "sha256": "c9fb56cff6391b6084628fc350983f14bb5db8d9bd2d46cfabbf32988edf4688",
+      "source_sha256": "7c4963607644c4e3fcda80b06c59760ace2516e45b96b091d51736d668efa282"
+    },
+    "gpt__whiteboard": {
+      "url": "https://github.com/user-attachments/assets/56d0dbfb-fac2-457d-92b4-6e123f8cee24",
+      "filename": "gpt__whiteboard.mp4",
+      "sha256": "2f81471577eb82945fd59b52e33bcfdbc2847741c0e195644f6d7a1a6043bb3b",
+      "source_sha256": "a47b89a095090b8dbe7483b175ab6b359914915ec850eda8136dda314ba61793"
+    },
+    "opus__urban-sketch": {
+      "url": "https://github.com/user-attachments/assets/707763cc-63c3-4d94-b736-77666308993d",
+      "filename": "opus__urban-sketch.mp4",
+      "sha256": "b25d018c902e48c141eee638610ec9ac19cf4a59e67da20467bb92f4ae694306",
+      "source_sha256": "41c452cb880d7e69efbff99fa6d15da31ed00033e6a76a611e7fd14d015ada42"
+    },
+    "gpt__urban-sketch": {
+      "url": "https://github.com/user-attachments/assets/a3cb181e-65f9-451f-bc8b-6689e62e37a0",
+      "filename": "gpt__urban-sketch.mp4",
+      "sha256": "3f7d82a59aa2c55b561e294a3d0dc5c1e6f074a149c121c0656cdc369c0802da",
+      "source_sha256": "30564afed8d8eb24e39d3f4022cab43d4d80d08a694b3d62c79765447dd770de"
+    },
+    "opus__shadow-puppet": {
+      "url": "https://github.com/user-attachments/assets/c4d8ba36-6cc8-446d-967e-d85ca577a442",
+      "filename": "opus__shadow-puppet.mp4",
+      "sha256": "abd5a023bef3907e68a1520f6268ba77745eca0d9346df67f4d2e30a03814e2b",
+      "source_sha256": "b5c63168b11ed4468769326d057f3d8e9639cfeeb877f4b06d99b525ca7e7acd"
+    },
+    "gpt__shadow-puppet": {
+      "url": "https://github.com/user-attachments/assets/9ba53bf8-6fb7-4a38-966f-5bf57533a417",
+      "filename": "gpt__shadow-puppet.mp4",
+      "sha256": "b488b4b7a18251477497c0d1a1ed11e61859d9c8903abefc9805c4913d4bf1bf",
+      "source_sha256": "bed733ca804f9410d43e078769579adf09b4fd816fd60863d8a6f1e189814796"
+    },
+    "opus__ukiyoe": {
+      "url": "https://github.com/user-attachments/assets/d236f1f5-b982-401b-a082-d6726b9d8c7f",
+      "filename": "opus__ukiyoe.mp4",
+      "sha256": "c7247790caa42c6224491288210435d3e1ad25b8d51847752a75f924329ea7f2",
+      "source_sha256": "0e93cf2147dc9d21342d399e69862952c062cfad1cdd487cfed38f3bc8ae14c4"
+    },
+    "gpt__ukiyoe": {
+      "url": "https://github.com/user-attachments/assets/d21910cd-0014-402a-a3fe-f90f993a4503",
+      "filename": "gpt__ukiyoe.mp4",
+      "sha256": "1ece11178c9996391c681f190c9ff90ceb1526701f6bf0f9d0837877a311aae0",
+      "source_sha256": "be58b18179ce3cf4f47c039705addfb502603d028505c1fcb7522420674e59be"
+    },
+    "opus__papercut-red": {
+      "url": "https://github.com/user-attachments/assets/84e2eda8-a4de-47dc-b149-e6473cfe3b90",
+      "filename": "opus__papercut-red.mp4",
+      "sha256": "c0a5b2a86d0e5646ecfd15729c3b6f6ddc7ae4064a4ea1ffa355fd7d32b3b379",
+      "source_sha256": "2e6ce6b8fed550d584f54e5539646704102e9a6e6380b5571fee6be03cdea390"
+    },
+    "gpt__papercut-red": {
+      "url": "https://github.com/user-attachments/assets/8fc2c383-39c8-4e68-b19b-2ceb88850780",
+      "filename": "gpt__papercut-red.mp4",
+      "sha256": "edef1f48d615205c903ac6e6c895a1749bbbff5153d29f2fb98a50d90a0c034f",
+      "source_sha256": "d31d717212226fd65ba800e474d0bde1448cc7764473daf81e8f230781e65c2d"
+    },
+    "opus__paper-lantern": {
+      "url": "https://github.com/user-attachments/assets/6e81e829-6518-432a-b5ab-75846a29a98b",
+      "filename": "opus__paper-lantern.mp4",
+      "sha256": "eecbcb705e087498f0cc6e20ee223939b3005b55a6f4c8a819b1a05737b09efb",
+      "source_sha256": "bc276d3675f337e7f6fb8f3c214705d870003b25ede191ea91037515c1327674"
+    },
+    "gpt__paper-lantern": {
+      "url": "https://github.com/user-attachments/assets/a313dfe0-0e56-4a6c-a315-858f7c511fa6",
+      "filename": "gpt__paper-lantern.mp4",
+      "sha256": "9c9a850500a867350b366c15e53f44ff69f5edcaa3b74e27261b874b6f8a59da",
+      "source_sha256": "b4fbd6cfd803daa15974a44ac4e73faa5f93720057485862ee5eba5cd597eb23"
+    },
+    "opus__risograph": {
+      "url": "https://github.com/user-attachments/assets/4267ce21-5e40-4bbc-b3d2-c1e890b9c790",
+      "filename": "opus__risograph.mp4",
+      "sha256": "be98bc17f4d0a32bf4838360d082142bb76929ee069805a6995b5ccad8fa5267",
+      "source_sha256": "720b62ca3ed11662a7fadccf04743c32194cbef5c1e3d4ce5b57df0900f1f9fb"
+    },
+    "gpt__risograph": {
+      "url": "https://github.com/user-attachments/assets/069dd5b2-448f-4d6d-ac38-eb606dc0a5fe",
+      "filename": "gpt__risograph.mp4",
+      "sha256": "7d862a0f87e6a5c2317a8a89588117596cefbc2a9994331b2bb74e23f3ad1e66",
+      "source_sha256": "044a2a9f5580a7c78bf39e08fb3bea40ab680c668ffa719f36161e963ba88232"
+    },
+    "opus__halftone-dossier": {
+      "url": "https://github.com/user-attachments/assets/45289e9b-a813-4464-861b-516f4e1b58c7",
+      "filename": "opus__halftone-dossier.mp4",
+      "sha256": "73a8fed554b641a4a9a33e1a56c803ce19aa65d0ec0fcfe463d6b68ec06b6572",
+      "source_sha256": "ec0dac24d2f2c70df974b8d75ac81d4301afe9bef6b105edc2f49724c622a520"
+    },
+    "gpt__halftone-dossier": {
+      "url": "https://github.com/user-attachments/assets/08c7c399-a209-4991-9135-8912540b2a4d",
+      "filename": "gpt__halftone-dossier.mp4",
+      "sha256": "d1e8c9c31bd9aae02d6b2b95cc27d0cb4d322b268b00121b096ae38fc55cdd9c",
+      "source_sha256": "c863aaceae58fdb071a65c38f09aaf23233d49647925d6faac4aadfdc1463732"
+    },
+    "opus__woodcut": {
+      "url": "https://github.com/user-attachments/assets/843f4585-8564-4ae7-8a6e-78f1905ac6c2",
+      "filename": "opus__woodcut.mp4",
+      "sha256": "4f34cc02d52f55cb553fa987aa3687f7278addccd7335c33d70182b275c0c642",
+      "source_sha256": "a2b8682fa842dc317a2e98a16f44c5778963584cfa13bd311bc0641e55d06077"
+    },
+    "gpt__woodcut": {
+      "url": "https://github.com/user-attachments/assets/90a66d1f-57d0-4f8b-b98e-c873ee99f571",
+      "filename": "gpt__woodcut.mp4",
+      "sha256": "eebaa3df7e240bb8ca3f93513ed8ff8756643b3f6918eab4ae3ccb1fd8cf2767",
+      "source_sha256": "25e25c1997fdb89110cd5e467fe5a0fc65fee1ceb97b1c0810efaa791822cf33"
+    },
+    "opus__engraving": {
+      "url": "https://github.com/user-attachments/assets/f0e8e51d-6ff3-4bf9-ae47-f880039131c5",
+      "filename": "opus__engraving.mp4",
+      "sha256": "db217c0a265b401be88867cb6ed3dff2a90a55b5e4616b7ac1abd2a595c24af7",
+      "source_sha256": "591d61bb01229b5870f78c0853a24920a91c1429ef83b23c308bc27d355f05ce"
+    },
+    "gpt__engraving": {
+      "url": "https://github.com/user-attachments/assets/81e0f128-e634-47cd-9588-fe966f73863a",
+      "filename": "gpt__engraving.mp4",
+      "sha256": "24fb153ebbcec2bfbe6755d8122b36eb5569972b008585e82a5f6f0d0afc7b28",
+      "source_sha256": "2b95538adb45da0962339f34ffd498e5c98b7c977c30a51a2a6744e1e5ba5097"
+    },
+    "opus__silkscreen-poster": {
+      "url": "https://github.com/user-attachments/assets/e6cf12ef-88cc-4bba-9218-52a350e69d26",
+      "filename": "opus__silkscreen-poster.mp4",
+      "sha256": "7ba5dd625810e77ee422b161c4f318abae1527f79f1c72e14c22ca659117021a",
+      "source_sha256": "8ae1b2c07bd4585a3a24a1b38dad489440fb7e0f80faf6c02503416378b88d2c"
+    },
+    "gpt__silkscreen-poster": {
+      "url": "https://github.com/user-attachments/assets/66400202-0e2c-4450-a892-a1f59a228675",
+      "filename": "gpt__silkscreen-poster.mp4",
+      "sha256": "94d6e132bcb54f9ab2d37eff82ee87cae4ef711781df959b246b567382a78425",
+      "source_sha256": "0f9869cdf2885bce3520567126a4893b69657d7774b1ebb4e3ff83e9a19c7cd4"
+    },
+    "opus__swiss-motion": {
+      "url": "https://github.com/user-attachments/assets/34a10258-d068-4400-bbcc-e3ff93baae30",
+      "filename": "opus__swiss-motion.mp4",
+      "sha256": "53eeb2a6421c7fb259b7b3075b88b39f3eb1ec853162d26a2b19d0c51041aff7",
+      "source_sha256": "09639ce0cc856adceb177bacbe6d380d619fb25576b612402f0fcf1aa9a303ca"
+    },
+    "gpt__swiss-motion": {
+      "url": "https://github.com/user-attachments/assets/edf4bb98-c15e-4fac-abb5-22910a6c7554",
+      "filename": "gpt__swiss-motion.mp4",
+      "sha256": "d8469a257ba5daed32a2cf27bad60628b05baa7fed67a1560b8acdf2a2d37d44",
+      "source_sha256": "5af34e8526936dce27cd6829f5e9b5b9d98281c2b671182da1d0c878254eaa81"
+    },
+    "opus__spy-titles": {
+      "url": "https://github.com/user-attachments/assets/7b13e10c-794f-42a9-a531-26bf2513f2d7",
+      "filename": "opus__spy-titles.mp4",
+      "sha256": "9f8a41ace3085aea3c4d72095789fed39d4f8efbc6715071cb91b1ea47d6251f",
+      "source_sha256": "36e832d72232d331060889c89e24d5dfc29e22b34cc26d9ba3bbe796ddb23e9e"
+    },
+    "gpt__spy-titles": {
+      "url": "https://github.com/user-attachments/assets/e30ef85c-bb75-4e56-901d-ce12b82bb286",
+      "filename": "gpt__spy-titles.mp4",
+      "sha256": "6da48666a8962fadba5a059d82f859226c8f76d1eb2992dca9ab4240c4b38e7a",
+      "source_sha256": "15cdcd70865d399428c7cc4e65a88459df96aeb3b76c284912b9ec2f285db2d7"
+    },
+    "opus__art-deco": {
+      "url": "https://github.com/user-attachments/assets/16e5e4b9-1587-496f-b055-ac09be57d118",
+      "filename": "opus__art-deco.mp4",
+      "sha256": "91cc48d8d16876dbb0414f6db527d08465367ae71200e18586b1528134de311c",
+      "source_sha256": "7b55fe51616048dcda50e920ab1e4141c00e009f141015a24c09f25837ca8bc1"
+    },
+    "gpt__art-deco": {
+      "url": "https://github.com/user-attachments/assets/92d267fa-720e-4adf-a9e8-676bae73f2b9",
+      "filename": "gpt__art-deco.mp4",
+      "sha256": "92975e7c2d30869c60ecaa70bc6bfd64bc67b5545612389d80c4627eb3bef722",
+      "source_sha256": "916b258481ce9eab220aa0d293e894377cfa2a71ea08619ff72aae19c606e3d6"
+    },
+    "opus__blueprint": {
+      "url": "https://github.com/user-attachments/assets/2fce4154-9a92-42da-abc4-6414091b7725",
+      "filename": "opus__blueprint.mp4",
+      "sha256": "d586eb4f341d38a938fd9e645b6fa1fc1d95f587270ae33804a67793adc303ad",
+      "source_sha256": "9afd54ec308e8f8f7bb20c5652d0a95c3874d7dc92b64392c9dcb49d28256fa8"
+    },
+    "gpt__blueprint": {
+      "url": "https://github.com/user-attachments/assets/4e139ad1-d102-4b3d-b8b2-fe597f910bb4",
+      "filename": "gpt__blueprint.mp4",
+      "sha256": "1c06a4e37eb8d1c234782f89740c52dae62c3b82f7b268f03ee9330bac61df44",
+      "source_sha256": "83addba181b9a5d01913ebf768db74cc255412c1dead087eda33ed6e75e5d65b"
+    },
+    "opus__stained-glass": {
+      "url": "https://github.com/user-attachments/assets/c5a71569-31a4-4ec6-84e0-f722ca8e9328",
+      "filename": "opus__stained-glass.mp4",
+      "sha256": "01300bc63d732840501376f9edb6959ffad16c802903156ddced84088af3b4e8",
+      "source_sha256": "7e8883defaa09a4f632d31bb394b60bb738a9285930fb6239f2ae9527df55863"
+    },
+    "gpt__stained-glass": {
+      "url": "https://github.com/user-attachments/assets/923ccdca-07d1-49d4-aadb-853214854210",
+      "filename": "gpt__stained-glass.mp4",
+      "sha256": "b6b238f6d00701e380b747547a0c23b520ee0707814ff7e4c63bca33d9342d41",
+      "source_sha256": "e96a9b03ca7dcb99373f034f9b02a366d71f0e656a17bc2cd76182f57a99d8ed"
+    },
+    "opus__pictogram-motion": {
+      "url": "https://github.com/user-attachments/assets/cabcce09-7fec-4e44-b9db-e524a61f507f",
+      "filename": "opus__pictogram-motion.mp4",
+      "sha256": "b9cf4c95464216f54fab425dd8b9f2c4ce38e8097d6f988800174d33bd45cd8a",
+      "source_sha256": "5a5fd88c852bc8d408d1274c499cec0ffff73dac70177783dca26c15672cc1ac"
+    },
+    "gpt__pictogram-motion": {
+      "url": "https://github.com/user-attachments/assets/f6bcd58f-f75d-4091-a94d-477aeab6ba33",
+      "filename": "gpt__pictogram-motion.mp4",
+      "sha256": "ec762a638a8f95fbacf96a5591139ece3b4a7811bc180099d437ff2277ec6114",
+      "source_sha256": "b30646768f6e23d919d5667fd6996790153312a82f45baac6a5d7bcb8ddd9856"
+    },
+    "opus__ascii-crt": {
+      "url": "https://github.com/user-attachments/assets/2857be83-1901-4c5f-916b-3fd6a01e5d3f",
+      "filename": "opus__ascii-crt.mp4",
+      "sha256": "49407b0b30bc964631df35769b3a672d8038d4885b265abd8b988d53d75254da",
+      "source_sha256": "5adf09f5bc7cc3821e1da7404e8f9305425a9b00d5526f9a53d8e6933bb7b135"
+    },
+    "gpt__ascii-crt": {
+      "url": "https://github.com/user-attachments/assets/3a97dd66-0683-4146-bd12-515ac50fc827",
+      "filename": "gpt__ascii-crt.mp4",
+      "sha256": "d2a0d6d74f43ea99dd0ca9bc16bad2462a4c922fa776bbd41520dbd777dbbb8b",
+      "source_sha256": "a5a2fea0262fda3d79008b4b2845a453880f4ac19925db035a518ddb952ba090"
+    },
+    "opus__dataviz": {
+      "url": "https://github.com/user-attachments/assets/b92a6527-5363-4a98-8809-eb2cd466226d",
+      "filename": "opus__dataviz.mp4",
+      "sha256": "3df1a3962066e1f5753a6d0b1f1eff9bd7caff3209ea6fe7b48c8be69c131791",
+      "source_sha256": "12dfd80558e521116de9bccd9629ec836b01aab856bdccf63adeccff93bd3cf2"
+    },
+    "gpt__dataviz": {
+      "url": "https://github.com/user-attachments/assets/e913933f-b54c-492b-ae4f-dcbe0759fce7",
+      "filename": "gpt__dataviz.mp4",
+      "sha256": "a2fd81087c6b70f8c2e3f4b537a54647c49155796b44d90dffe9a4e9954d7946",
+      "source_sha256": "33298ce375c21511566f5f92b334e93e0a1024b2b026555e76c3949378b8b4ce"
+    },
+    "opus__iso-infographic": {
+      "url": "https://github.com/user-attachments/assets/6489ea74-062a-40fa-a690-5ab9ca78ae62",
+      "filename": "opus__iso-infographic.mp4",
+      "sha256": "45b2db8cb0ab26fc084c15695eb01e44ed5388a55c2e04a42b8fc0628ac70056",
+      "source_sha256": "657fd06ee331c1d803e61d1b1c1bb16a4f8fdbb33cbb27b4c0acc81ea75a19fb"
+    },
+    "gpt__iso-infographic": {
+      "url": "https://github.com/user-attachments/assets/4bb821e1-a178-419a-aa83-ed69a4c1b429",
+      "filename": "gpt__iso-infographic.mp4",
+      "sha256": "ce3f60d394a5b69ffa2f7c36faa0b0b344dbdf02a59446dc173bf8f11f4993be",
+      "source_sha256": "a86659bb310b2472cb78bac250a48de3d4663b10d32cbd4bafd006fc10b4bf9a"
+    },
+    "opus__dark-keynote": {
+      "url": "https://github.com/user-attachments/assets/e1508f13-b6fc-4dd7-8dea-1438e62c3789",
+      "filename": "opus__dark-keynote.mp4",
+      "sha256": "f319a2cd2f499e429a43cd3cf4b9eb13a0bc9e667f7ec5702d59335b21e08220",
+      "source_sha256": "1a441812461fe54e10572efde07b28b1e69c90679eb963958a896f9c9b04b9a4"
+    },
+    "gpt__dark-keynote": {
+      "url": "https://github.com/user-attachments/assets/9724a5a2-0f1b-4aff-ae57-9366ef0543c9",
+      "filename": "gpt__dark-keynote.mp4",
+      "sha256": "e293fab3a47ac5c93bc12048519fbff8afad4a07d420d9e09d16376edf890da0",
+      "source_sha256": "5bc02e06840e690f60b33736bf9c50183285388c0e831e63816e14fd96e22857"
+    },
+    "opus__living-screencast": {
+      "url": "https://github.com/user-attachments/assets/471dbc1e-66af-44f2-97f3-63543dbc7500",
+      "filename": "opus__living-screencast.mp4",
+      "sha256": "9aec855bc162cdd9d2a15eaff7823592c0abdd1cb4059f53d5a60c11d9a08b5d",
+      "source_sha256": "b94fb5f0e41f542848464dafb136df46da4abc1c9291f9e1b8b30e948075a08a"
+    },
+    "gpt__living-screencast": {
+      "url": "https://github.com/user-attachments/assets/0771288e-1e52-4536-a488-f85e75a92280",
+      "filename": "gpt__living-screencast.mp4",
+      "sha256": "733700f626815fe452301ec5498ee5352cd48ade168d2a4908cdadbead4909e9",
+      "source_sha256": "0d8c0abc76e6eeb7279ca456da7e735ee06a4a5a93510c1e75d2aebd611e659c"
+    },
+    "opus__hologram-hud": {
+      "url": "https://github.com/user-attachments/assets/41efffb5-28d4-4c2e-963e-220a18158c87",
+      "filename": "opus__hologram-hud.mp4",
+      "sha256": "9ee27657671e95af782e93cc2e827968fcb103626a57cd715e61d107f28abc5a",
+      "source_sha256": "3eeca104c6b45576284c13370b045eebf9dd712d9db85dc764f3dbec398baf7d"
+    },
+    "gpt__hologram-hud": {
+      "url": "https://github.com/user-attachments/assets/d50e097c-4c4d-4683-a1ac-a922b090ec17",
+      "filename": "gpt__hologram-hud.mp4",
+      "sha256": "f5af0a5ee92679363c1d64de571fc3f02c5221d861647b4afc5f8fe65d808319",
+      "source_sha256": "d505ccf3cac002cb099d5bd9b3c3515a57796d9be91d192f3c7c90990add6d38"
+    },
+    "opus__rubber-hose": {
+      "url": "https://github.com/user-attachments/assets/63106d1a-cdfd-4ccc-974e-fc1154852946",
+      "filename": "opus__rubber-hose.mp4",
+      "sha256": "f416a94c0c5306e70b8b9a9f2b50d9e1f9c4da75a8f1e1869e26e0123a579061",
+      "source_sha256": "e7d1d0a0ad1b88ef411b97787fbd83dfdbdb414ad92207a7718466b078a7eeb5"
+    },
+    "gpt__rubber-hose": {
+      "url": "https://github.com/user-attachments/assets/38ca1a80-de40-4cfd-a7b0-b2dd967ec615",
+      "filename": "gpt__rubber-hose.mp4",
+      "sha256": "16faae05ef8a036b0c20d8288a72c1d825e3c12bb35f41954c80dc6b656ce16d",
+      "source_sha256": "ae26dce47223372b627d721795638cd30f3ef20339ce05b208a1002923196937"
+    },
+    "opus__cel-anime-80s": {
+      "url": "https://github.com/user-attachments/assets/bcfeeb1e-1cc4-44da-b296-96eba647fa94",
+      "filename": "opus__cel-anime-80s.mp4",
+      "sha256": "575d5e693a8ecc9b4689b58dbd68eabc7e1378e837b204d90336d02ce779547c",
+      "source_sha256": "40657a5d85560e26e5768ff3580a21ba03ff5fcfc78b2d9ebbd064b67c002918"
+    },
+    "gpt__cel-anime-80s": {
+      "url": "https://github.com/user-attachments/assets/362467e3-29bc-43af-b380-6e301dbf20c0",
+      "filename": "gpt__cel-anime-80s.mp4",
+      "sha256": "4a98bc51aef94d49b085051610ae16089c96f52bd1e051996ad10f7396aa0f0e",
+      "source_sha256": "d01d78593b25f162ec89f347b48ac5bcfbb8bb7ff04b24e9b0bafc7ac5bed2ad"
+    },
+    "opus__scifi-toon": {
+      "url": "https://github.com/user-attachments/assets/5a6b7542-ddf0-40b4-b075-1f81fb6f895d",
+      "filename": "opus__scifi-toon.mp4",
+      "sha256": "a6d2e808dd6f90b43b4124d76019ab81faeaf185b388b89aa315539a8ea6d425",
+      "source_sha256": "c764fa632fdc3b95f4f3075f2fe8654360c68528d66303a1905eb9623fadfd96"
+    },
+    "gpt__scifi-toon": {
+      "url": "https://github.com/user-attachments/assets/2f0042fb-63bc-4c73-98df-bc63fde2eed3",
+      "filename": "gpt__scifi-toon.mp4",
+      "sha256": "4bd07d09a0a1700cbc1cb5f1c8fe672923d8a08d7dcbcf5ab27143748d259372",
+      "source_sha256": "56ec75255381a724c2a8154f24d5ad906771eba6cfecf49ccefd0599c86a8894"
+    },
+    "opus__midcentury-toon": {
+      "url": "https://github.com/user-attachments/assets/8269611a-5e07-4c28-a243-1d18457793d6",
+      "filename": "opus__midcentury-toon.mp4",
+      "sha256": "1cd6b3dc1be09296d2e18311989333cf06e8e16babe8d3903307d54f7e013c9b",
+      "source_sha256": "02212da5584e09cf29b0590f8d24fbed41e2a69687c1b4f6c5a80cb929943844"
+    },
+    "gpt__midcentury-toon": {
+      "url": "https://github.com/user-attachments/assets/e0cc15a0-a63c-4a6b-af95-15d1df1e4664",
+      "filename": "gpt__midcentury-toon.mp4",
+      "sha256": "68bcb030912d7007e9e069b83958cec5a0409b27b8c9c3bb623736aa467c277c",
+      "source_sha256": "e454d39ef4223c0fb84eda5d496bfbaef36ccad37ebabadadc3d35a74e61c427"
+    },
+    "opus__pixel-rpg": {
+      "url": "https://github.com/user-attachments/assets/7800f328-c5b9-4283-99bb-a3ff04759090",
+      "filename": "opus__pixel-rpg.mp4",
+      "sha256": "16171f169da97d873249d416aaa73c7cb3349e70993118e2dfd4909ad6dcd5b8",
+      "source_sha256": "52387a0b25d7ee2cdd1a760988498c027d10fb7d0f084e6633cb9f49d8047ffb"
+    },
+    "gpt__pixel-rpg": {
+      "url": "https://github.com/user-attachments/assets/bf017512-3d42-49ea-84ef-224bcaf92f2a",
+      "filename": "gpt__pixel-rpg.mp4",
+      "sha256": "d6c2b337db90de54f20f8cfdb323c5dd2783165681507b8bd679defc5f974aa2",
+      "source_sha256": "f6abceb9d159e660261eaedead25d98a589ea4f7b3a799fef6964148e602b1ed"
+    },
+    "opus__hd-2d": {
+      "url": "https://github.com/user-attachments/assets/65e29155-d9c0-46c1-ab27-873f7d475ad6",
+      "filename": "opus__hd-2d.mp4",
+      "sha256": "4ea8835df49a9faa36bedae0c6a364ab34c6ef493cf0af034b2b7f636ad9e528",
+      "source_sha256": "82a764c8b6172e7ce5d9fc99a421c2a19f6f59e15c56b83c02f3ee4ee6400027"
+    },
+    "gpt__hd-2d": {
+      "url": "https://github.com/user-attachments/assets/44e7bb86-ef44-44f4-a006-2e659d0817c4",
+      "filename": "gpt__hd-2d.mp4",
+      "sha256": "328d0a4d4acf359899718c1fd47459f38812d9c4a54a980ff014818dc4ff8369",
+      "source_sha256": "a709066215bff07c4f07ad3f773551748acdfda157ad6b1b70988fd35b9d3628"
+    },
+    "opus__microgame": {
+      "url": "https://github.com/user-attachments/assets/4a25ec4d-df9c-48db-9e82-e292f9b0bf41",
+      "filename": "opus__microgame.mp4",
+      "sha256": "d76e4d17da3becab7d2ffea514d9f5a6348f4355d99489e0c7ac1575244fb6dc",
+      "source_sha256": "b1a9753810097d8a691a75b070388d7139a842a0637f89007d337a57ff5a549a"
+    },
+    "gpt__microgame": {
+      "url": "https://github.com/user-attachments/assets/6ba94e7c-fe68-4577-acdd-b06859e6e1ca",
+      "filename": "gpt__microgame.mp4",
+      "sha256": "199aeabf1d5bc6c6d9634c7de69ff96a637c6c3d29bab4da8ea56bc02fd24a09",
+      "source_sha256": "47f8f42f4f3cff41e98f338e96153ee99c65fa00be29c985ca7c6bab464930a8"
+    },
+    "opus__game-show": {
+      "url": "https://github.com/user-attachments/assets/ad75bc7f-1a48-4980-b6d8-08242fb6290c",
+      "filename": "opus__game-show.mp4",
+      "sha256": "7a2376c1e0cc8879c0d216dd2b7957538606b07efefe670e36957293243f946b",
+      "source_sha256": "c8a18dbab9a0811e7f134382ba8b8d54413283cde50b6224dc9befa7ff4cd68a"
+    },
+    "gpt__game-show": {
+      "url": "https://github.com/user-attachments/assets/e7d0ce35-f6f6-4ee6-9f5e-0583475e2eea",
+      "filename": "gpt__game-show.mp4",
+      "sha256": "e863c84177e78e8c85f15c0a12556fe499a307541177242ffa25cff85cb0b2d0",
+      "source_sha256": "ef7d0215d56e21dbf0ca366441db4d9a0c265afc11504b4eb0e976211fd8d45f"
+    },
+    "opus__silent-film": {
+      "url": "https://github.com/user-attachments/assets/cbc61c48-957b-479a-ae83-7594abc23038",
+      "filename": "opus__silent-film.mp4",
+      "sha256": "174925639bf91d75cf0bbc872a6d04e0c7171c9493278bbd9a865766f61fc675",
+      "source_sha256": "57198d76bf4224c208b61b9e1609f4bea9474e932a00b7b8db82462b124d6323"
+    },
+    "gpt__silent-film": {
+      "url": "https://github.com/user-attachments/assets/e74c7872-42df-4da4-942a-a4a344014401",
+      "filename": "gpt__silent-film.mp4",
+      "sha256": "9d65b807e8c344ff71ebc87cdb8990a025a88b37821bd371d1553668a13d9cc9",
+      "source_sha256": "c1b59c71cd0cac08a2f0c880b9a76f9db0f6ec0d2acef573c6bf6733ea4cffa0"
+    },
+    "opus__backrooms": {
+      "url": "https://github.com/user-attachments/assets/8787a48c-f0d6-4977-b783-fed7da7bf639",
+      "filename": "opus__backrooms.mp4",
+      "sha256": "f33d8830965542b2b6bd00571824064b4c112007c605497eef2c3ad7945c4b3b",
+      "source_sha256": "3674549d1c13400b57517d04a02772f70d2136b26bc17194987b85c3865d4e65"
+    },
+    "gpt__backrooms": {
+      "url": "https://github.com/user-attachments/assets/76efe07e-9091-49e0-aa4a-707efd1e3f56",
+      "filename": "gpt__backrooms.mp4",
+      "sha256": "84daf0e83a3f7fc0d28d4c362a5ad78f9acbbd725448bb933aaf68ecdc465277",
+      "source_sha256": "a584a50a48b6f28277977366f1642c5030c78ac811b4834cecc1d1221f4022b0"
+    },
+    "opus__brick-toy": {
+      "url": "https://github.com/user-attachments/assets/adbbf0e4-dbe4-4290-88d5-42539255285c",
+      "filename": "opus__brick-toy.mp4",
+      "sha256": "b95958ff9dcfef9ca6b4203df900cc4fcc0ba7ff96a49c92e1d9988fcf014ac0",
+      "source_sha256": "1d74377276a890a3094601f939786b29a70bbde495ee40a75b43ddadd6337936"
+    },
+    "gpt__brick-toy": {
+      "url": "https://github.com/user-attachments/assets/f2d3f6d5-6fe7-4c08-99a8-23fe3ff3302e",
+      "filename": "gpt__brick-toy.mp4",
+      "sha256": "d5bc2de3f0d6a56904d3331f24c391a289f77f4aa7746961f5955a78b0b6f922",
+      "source_sha256": "4a78c8de58d72d9243d6658a9ea68362f3d71279ce489400030f0dcfa65dabc2"
+    },
+    "opus__paper-popup": {
+      "url": "https://github.com/user-attachments/assets/83c29a5a-afb6-4c7a-8e99-ca45c79060ca",
+      "filename": "opus__paper-popup.mp4",
+      "sha256": "d8d897f1a702443f01554583a127001a3c912aebf85d138a2dacc8c939c8484b",
+      "source_sha256": "15cb823cbf2ee1a877de52a477a0d2f4edde062d31ae30ca5c48e9ffa1caed0e"
+    },
+    "gpt__paper-popup": {
+      "url": "https://github.com/user-attachments/assets/15e2183e-0d98-4599-a05a-a632173d42a2",
+      "filename": "gpt__paper-popup.mp4",
+      "sha256": "62843b568613de78e61444a386f3826b9040ddee3f3a0d4f6e7b1b4fa14b5975",
+      "source_sha256": "8afe4b19d57c760c85ae2134143909a0d6d33d96e59ee83e8d5e002fa7edc69f"
+    },
+    "opus__tilt-shift": {
+      "url": "https://github.com/user-attachments/assets/3c651e83-6a69-4d3f-bef3-8a696b73a82e",
+      "filename": "opus__tilt-shift.mp4",
+      "sha256": "c972e853217e79f968b9ffd6b73d9b90dfc59edc4823e8b92364e5cf0048e675",
+      "source_sha256": "2396f4881e386bfcad7a9e3f79dbab0614255c25ba51bd5c24ea29ab8e743e01"
+    },
+    "gpt__tilt-shift": {
+      "url": "https://github.com/user-attachments/assets/35c0c770-de98-4d16-93ed-f3ebe290c8eb",
+      "filename": "gpt__tilt-shift.mp4",
+      "sha256": "6522bffdaaa863bf59c20b762c29a4edc19ab00c81c186ee6f6bd96101bae0a0",
+      "source_sha256": "9b1bf7bc9b743e13169e04fb5fa4ab1c66d65cdb28a43929a3edfef9814066ca"
+    },
+    "opus__lowpoly-island": {
+      "url": "https://github.com/user-attachments/assets/6bf69723-dc8e-4a50-be74-5c2c0876b3fb",
+      "filename": "opus__lowpoly-island.mp4",
+      "sha256": "4a58b12fdbe5722cd033c2698d1028fbff3413fbf0d37cece2f736ac41b29c2e",
+      "source_sha256": "d5f2da94f3d8718801ed1381fe1dd593e2fbc51e53995ada27d5c2bf580b9c5b"
+    },
+    "gpt__lowpoly-island": {
+      "url": "https://github.com/user-attachments/assets/6cf96eed-1552-4cd2-b7aa-acb355e34048",
+      "filename": "gpt__lowpoly-island.mp4",
+      "sha256": "4ac082774125b3d4cc781a23836505f83643c9d63086e7d21836bb2bc0b94278",
+      "source_sha256": "c375fd23f2a3b6821d289f0853073d00c52a024e26f9348d7f0b737aedbee9b1"
+    },
+    "opus__glass-product": {
+      "url": "https://github.com/user-attachments/assets/4d4ce737-54a2-402a-9a6a-aa5d2fddfba1",
+      "filename": "opus__glass-product.mp4",
+      "sha256": "9f5155f8c98f397f35d45cf65e8c3e00cf1fef917963ccaf7ef4e27bdcc7df11",
+      "source_sha256": "4d4d07073e2bc7abcb537afae06fa19562de6f69f67f754df6865b734c308f25"
+    },
+    "gpt__glass-product": {
+      "url": "https://github.com/user-attachments/assets/7ac58181-f822-4a36-b426-d40889c970d9",
+      "filename": "gpt__glass-product.mp4",
+      "sha256": "c710f396f615cee65bb82ec13c5b563926d6fa53db4e828fd38bf7889e4e6e7a",
+      "source_sha256": "ac7cf79fcfd5cbf17444f8b336f90593bc8d2d380b72428ad9d8498bb59006c8"
+    }
+  }
+}
