@@ -1,0 +1,5 @@
+# Treatment before code
+
+Independently author all 29 shot action/camera assemblies, world set assembly, timing records, typography composition and runtime dispatch. Reuse only attributed generic toon/character/prop/creature/portal factories. Extract generic isolated world props, not full lab/jelly/mug/teeth/pigeon/clone/normal world scene routines; never import original main/story.
+
+The mundane goal is coffee and the emotional contrast is Vask's refusal to react versus Gary's escalating panic. Keep every slow wrong answer, short wrong world, normal break, living-coffee/dead-air/decaf reversal and callback. Match every camera from the full reference, including inserts, reaction close-ups and the silent push. Use newly generated exact dialogue and measured fresh lip envelopes, preserving the long p1 input but cutting it at 2.9 seconds. Score/performance use 120 BPM cues with complete release gates on jelly insert and cold pause. Deliver 1380 frames at 1280×720/24fps, 1920×1080 production. Review all world and short acting frames before manifest.

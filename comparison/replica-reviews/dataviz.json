@@ -1,0 +1,28 @@
+{
+  "slug": "dataviz",
+  "verdict": "accepted-for-gallery",
+  "reviewer": "root independent scene review",
+  "reviewed_source_sha256": "14aac10d8b3eb03983f428c7262711def9aa67a73c977b6f56947cfc683b6d0e",
+  "reviewed_video_sha256": "33298ce375c21511566f5f92b334e93e0a1024b2b026555e76c3949378b8b4ce",
+  "scene_review": "passed",
+  "audio_review": "passed",
+  "review_times": [
+    11.5,
+    15.5,
+    18.5,
+    26.5,
+    32.0,
+    32.25,
+    32.5,
+    37.75,
+    38.25,
+    41.5,
+    46.125,
+    47.0,
+    48.5
+  ],
+  "method": "Root inspected all86 full-sequence matched final-movie pairs and13 final repair pairs across every annual phase, five notes, ceiling breaks, pencil flip, 2026 record and complete graph-to-stripes/endcard transitions. Final source/movie hashes bound to review.",
+  "audio_evidence": "All5 exact published af_alloy narration inputs freshly synthesized and independently Whisper-normalized exact (number words normalized). New355-note score and231 Foley/ambient events; full31\u201332 silence and narrative musical rests retained. Final AAC levels recorded in replica-results.",
+  "comparison_notes": "Full50-second source-informed reconstruction with unchanged archived NASA annual values and attributed generic drawing primitives. New scene assembly, camera fitted from decoded graph features, fresh voice/music/Foley. Fine pen travel/blur, lettering/leader placement, rescale clipping, stripe contour spacing and endcard layout differ. Archived preliminary2026 value and record wording are reproduced as story inputs with explicit FACTS caveat, not certified new climate findings.",
+  "reviewed_at": "2026-10-18T07:28:04.720101+00:00"
+}

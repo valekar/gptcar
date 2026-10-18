@@ -1,0 +1,11 @@
+Coffee Run — GPT reference recreation
+
+Independent scene assembly, cameras, set construction, acting, timed screen layout and score cue arrangement: GPT-6.1 Sol, high reasoning, in this task. The full published Coffee Run premise, screenplay, shot order, layout and timings are deliberately matched at the user's request. This is a source-informed reconstruction using attributed generic character, prop and title factories, not a blind same-prompt benchmark or a recovered unpublished conversation prompt.
+
+LemoLab GPTcar toolkit, MIT: local copies of styles/scifi-toon/demo/toon.js (generic vector/matrix/boil drawing engine) and chars.js (parametric character and coffee rigs). props.js extracts only isolated atomic prop/creature/portal factories from worlds.js, excluding every complete world/set function. title-art.js extracts only atomic title lettering/orbit/star drawing from main.js, excluding all original shot, camera, story, UI dispatch and ending assembly. The upstream MIT license and credit notice are preserved in TOOLKIT_LICENSE.txt and TOOLKIT_CREDITS.txt. All complete sets and story actions in this replica are independently authored. No original renderer, main, worlds or story module is imported at runtime.
+
+Fonts: Baloo 2, Titan One, Bungee and VT323, Google Fonts, SIL Open Font License. Full font licenses are in fonts/. Local font files are SHA-256 listed in asset-manifest.json.
+
+Fresh dialogue: local Kokoro voices am_onyx, am_eric and af_sky, Apache-2.0 model runtime. Full original text retained; Gary p1 is intentionally interrupted at 2.9 seconds, as published. Coffee voices receive a duration-preserving seven-semitone shift. lip-provenance.json records newly generated take hashes; no original dialogue, lip envelope, mix or music track is reused.
+
+Music: newly rendered explicit 120 BPM score, preserving published motifs and genre/cue arrangement: theremin and analog synths, sampled tuba, vibraphone, upright bass, nylon guitar and strings, retro percussion and newly synthesized cartoon material sounds. Parent root audio engine supplies sample-pack license records and final mix metadata. No original audio recording is used.

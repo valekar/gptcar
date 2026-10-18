@@ -1,0 +1,61 @@
+{
+  "shots": [
+    {
+      "id": "card",
+      "a": 0,
+      "b": 5.5
+    },
+    {
+      "id": "harborWide",
+      "a": 5.5,
+      "b": 15
+    },
+    {
+      "id": "pier",
+      "a": 15,
+      "b": 25.5
+    },
+    {
+      "id": "forest",
+      "a": 25.5,
+      "b": 35.5
+    },
+    {
+      "id": "cliff",
+      "a": 35.5,
+      "b": 49.5
+    },
+    {
+      "id": "lamp",
+      "a": 49.5,
+      "b": 58
+    },
+    {
+      "id": "harborEnd",
+      "a": 58,
+      "b": 67
+    },
+    {
+      "id": "title",
+      "a": 67,
+      "b": 76.5
+    }
+  ],
+  "events": {
+    "lhFlicker": 11.5,
+    "lhOut": 12.35,
+    "light": 16.2,
+    "dlgIn": 17.3,
+    "dlgOut": 24,
+    "wrenRun": 23.6,
+    "gust": 40.6,
+    "dim": 41.3,
+    "dark": 42,
+    "relight": 45.6,
+    "stand": 47.6,
+    "pour": 52.6,
+    "ignite": 53.5,
+    "beam": 54.4,
+    "ships": 59.2
+  }
+}

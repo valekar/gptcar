@@ -1,0 +1,32 @@
+[
+  {
+    "path": "replicas/hd-2d/fonts/Cinzel.ttf",
+    "sha256": "f4d83d34d1f6c741193e4acf4b3dff9531e5a67b6aa65228d00a7db72a4e0f34",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/hd-2d/fonts/CormorantGaramond-Italic.ttf",
+    "sha256": "0f48ea6abb2084537854f7174c470991a463b13036309e3b50a81511611c530d",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/hd-2d/fonts/CormorantGaramond.ttf",
+    "sha256": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/hd-2d/fonts/OFL-Cinzel.txt",
+    "sha256": "f2b3029aba64c378bf0963b62945eee15e564fe4330b934c8f2eb058282b5e83",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/hd-2d/fonts/OFL-CormorantGaramond.txt",
+    "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/hd-2d/fonts/fonts.css",
+    "sha256": "3883b2a7ec03a26b79474d3dfc9141b213190266edac108d27f05a2d17bcc6ef",
+    "license": "Font declaration"
+  }
+]

@@ -2,371 +2,81 @@
 
 Reconstruction from complete published STYLE/DEMO, exact narration/timing data and complete decoded-film contact sheets; not a recovered original chat prompt.
 
-Delivery: **76.501s ·1280×720 ·60/1fps ·4590frames**. Original production canvas separately1920×1080; preserve internal medium detail.
+Delivery: 4590 frames at 60 fps, 1280×720, 76.5 seconds of picture. Reference container metadata reports 76.501 seconds. Production canvas:1920×1080, SSAA2.
 
-STYLE path: `styles/hd-2d/STYLE.md`
-SHA-256: `23c027f48b5342bb8ac5dcd3ea6e5baab901628d89f4ef6dd857764ce78c9c92`
+Original STYLE SHA-256: 23c027f48b5342bb8ac5dcd3ea6e5baab901628d89f4ef6dd857764ce78c9c92
 
-Complete visual coverage: all7 sheets, 77 regular decoded samples. Exact subsecond acceptance must use decoded absolute timestamps, not approximate sheet labels.
+All seven original movie sheets and 77 regular samples were inspected. Scene-level prompts below preserve full action, materials, cameras, text, sound and transitions.
 
-## Materials, characters, typography
+## 0.00000–5.50000 s · Chapter I
 
-True 3 D miniature with 24 texel s/m textures and 34×50 px sprites at 1.67 m, nearest alpha-tested pixels/sel out, dithered material ramps. Wren red hood/cape, brown hair, little brass lantern; OldKeeper dark cap/coat grey hair. Harbor pitched-roof houses warm windows/wood pier/rails/barrels, physically rippling dark sea with quantized reflection columns. Lush fern forest billboards/trunks/moon shafts, storm cliff real stone winding steps, detailed tower Fresnel lens and metal balcony. Physical 96 tap signed Co C tilt-depth blur+SSAA 2+bloom+ACES.
+Dark navy radial chapter card. Fade in widely tracked gold CHAPTER  I, a thin ornament line with central diamond and paired dots, then the italic parchment title Wren, the Lampbearer. A single small pixel ember drifts diagonally across the card. The transition to the harbor passes through black at 5.5 seconds.
 
-## Full scene-level reconstructed prompt
+## 5.50000–11.50000 s · Greywater light
 
-### 0.00000–5.50000s · ChapterI
+High three-quarter view of a fully three-dimensional harbor miniature. Warm emissive windows in pitched-roof timber houses occupy the lower left; stone quay, planked pier, rails, barrels, crates, brazier and a moored sailboat extend toward the sea. Quantized pixel ripples and warm reflection columns lead toward a distant rocky headland and red-white lighthouse. Two opposed cream beam cards rotate. Camera pushes from [-17,15,38] toward [-13,12,31], looking down on the scene. A fixed tilt band centers at .34. Narration begins at 6.8 seconds.
 
-Dark blue quiet center card CHAPTER I /Wren, the Lamp bearer, small single war member, thin serif rule. No brand-first montage.
+## 11.50000–15.00000 s · It goes dark
 
-### 5.50000–11.50000s · Greywater light
+The same harbor camera continues without a cut. The lighthouse flickers from 11.5 seconds, briefly recovers, then dies at 12.35. Its halo, window emissive and beams all follow the same state, leaving the silhouette against blue fog. The houses and pier practicals remain warm. The score breathes at 11.6–12.4. Narration: Tonight, it did.
 
-Very wide high diorama harbor: foreground houses warm windows left, wood pier extends right, lighthouse across sea on promontory; sweeping practical beam double cones reflect in water. Narrator 6.8 exact 100 year line. Slow slide push.
+## 15.00000–17.80000 s · Last flame handover
 
-### 11.50000–15.00000s · It goes dark
+After a short black transition, cut to a medium-high three-quarter view of the pier. Wren wears a red hood and cape, brown hair and gold scarf; the Old Keeper wears a dark cap and coat with gray beard. They remain pixel billboards receiving actual light and casting shadows onto the planks. The keeper extends a burning taper; Wren raises an empty lantern. At 16.2 the lantern lights, blooms briefly and throws changing shadows. A brazier with three slender legs burns behind them, with water and the sailboat farther back.
 
-Same view beam flickers 11.5 and dies 12.35, distant tower only silhouette, horizon clouds moon gloom. Exact Tonight, itdid 12.6. Contrast warm homes against lost navigation.
+## 17.80000–25.50000 s · Keep it close
 
-### 15.00000–17.80000s · Last flame handover
+The lantern-lit pier scene continues. A 1180×210 navy translucent dialogue box enters from 17.3, with double gold borders, diamond corners and an overlapping Old Keeper nameplate. Type the complete quote Take the last flame, little Wren. Keep it close. Don’t let the wind have it. over 92 percent of the published 5.398-second take. A gold caret blinks after completion. Keep the full text through the box exit at 24.0. Wren turns and walks left from 23.6; the keeper looks and then waves.
 
-Cut high medium to lantern lit wood pier; Keeper right and Wren left, practical torch behind. One glowing flame passes between actual sprite hands 16.2 and Wren holds brass lantern. Railing/rope/pier wood depth and soft water surface behind.
+## 25.50000–35.50000 s · Whisperwood
 
-### 17.80000–25.50000s · Keep it close
+Lateral tracking through the Whisperwood. Wren walks left to right with a warm lantern pool, stepped four-frame walk cycle at 9 fps, actual moving point light and shadow. Tall irregular textured trunks, spreading roots, layered pixel canopies, a fallen log, rocks, grass, ferns, bushes, six cyan mushroom clusters and a distant treeline surround the winding path. Three diagonal moon shafts and ground pools cut through blue haze. Fireflies and dust move smoothly. Large foreground ferns blur; the near trunk at x4.75 occludes Wren near the exit. Camera remains high, leads the walker, and tracks focus and the tilt band to her projected height.
 
-Framed translucent Old Keeper dialog box gold corner points, text types full spoken quote slowly. Wren listens red hood, Keeper gestures, lantern lights both faces. Wren leaves 23.6 down pier as Keeper watches. Full quote must not truncate.
+## 35.50000–40.60000 s · Gale Steps
 
-### 25.50000–35.50000s · Whisperwood
+Wide storm establishing view reveals a very small red-caped Wren climbing a winding two-flight stone stair carved into a huge rocky cliff. A dark striped lighthouse stands on the summit, sea and white foam far below. Rain slants across real depth; clouds drift. Lightning strikes at 36.8 and 39.9, with delayed thunder. From 37–39 the camera eases into a closer follow view of Wren, textured mossy steps, retaining wall and bending grass. Narration starts at 36.3.
 
-Black brief transition then sideways tracking forest path. Dense foreground ferns, layered trunks and branches, tiny blue fireflies/moths/mushrooms, real angled moonlight cones. Wren walks with lantern clustered warm pool, nearby ferns occlude her legs; camera never abandons miniature tilt band. Exact VO 27.
+## 40.60000–45.60000 s · The storm almost wins
 
-### 35.50000–40.60000s · Gale Steps
+A strong gust begins at 40.6. The lantern dims from 41.3, Wren kneels and hugs it with closed eyes, and the world falls almost black at 42.0. Dive to a close, lower three-quarter camera while retaining the miniature viewpoint. Only a tiny ember and faint red face/cape remain visible through the long hold. Rain, ambient light, sky, fill, vignette and lantern all respond to the same darkening arc. The music stops into a short tail, followed by a barely audible D pedal and two heartbeats. Narration starts at 44.3: But a flame held by careful hands does not go out.
 
-Storm very wide cliff, far distant lighthouse at top, diagonal rain and foam sea below, tiny red cape climbing winding stone flight. Push down into kneeling hero 38–40, cape and wind strong. Exact VO 36.3.
+## 45.60000–49.50000 s · Flame revives
 
-### 40.60000–45.60000s · The storm almost wins
+At 45.6 the protected flame recovers. Wren opens her eyes while kneeling; warm light spreads back onto nearby stone. She stands at 47.6, pauses briefly, then continues uphill from 47.9. The camera pulls back and rises, with focus still following the sprite. Preserve the remaining storm and gradual environmental recovery rather than an immediate bright cut.
 
-Gust 40.6, lantern red dims 41.3, environment virtually black 42. Wren kneels cups flame in both hands, only faint face light. Hold character and real hush, VO 44.3 But aflame held by careful hands does not go out. No generic cutaway.
+## 49.50000–53.50000 s · Inside the lens
 
-### 45.60000–49.50000s · Flame revives
+Cut through black to the iron-and-glass lantern room. Wren rises from a floor hatch at 49.5–50.9 and walks toward the dark teal, horizontally banded Fresnel lens. Model a real circular balcony, two rings of iron rail, twelve window mullions, partial rear glass, conical red roof and finial, lens pedestal, brass fire inlet, hatch and lid. Beyond the tower are pixel clouds, moon, deep sea and lower rocky headland. Wren raises the lantern at 52.6, pours flame from 53.0, and sparks travel into the inlet. The lens begins to glow before the main ignition.
 
-Lantern recovers 45.6, real warm practical light restores stone steps, Wren stands 47.6. Camera rises with her, red cape visible again; cut at 49.5.
+## 53.50000–58.00000 s · Ignition
 
-### 49.50000–53.50000s · Inside the lens
+Exactly at 53.5, ignite the Fresnel lens and place the new score’s D-to-G-flat full-ensemble downbeat. The banded lens changes to bright gold, a short exposure/bloom burst washes the room, and Wren becomes a silhouette in the light. Two opposed cream beams accelerate from 54.4. Rise and pull back from the close room to a complete balcony and red-white tower, with moonlit clouds and pixel sea below. Hand focus from Wren to the lens. End the shot at 58.0.
 
-Medium tower lamp glass balcony, thin black iron handrails occlude front, silver/gold Fresnel ring stack at center. Wren pours last flame 52.6 into lamp. Camera quiet close enough to read gesture, no mechanical part text labels.
+## 58.00000–67.00000 s · Ships find home
 
-### 53.50000–58.00000s · Ignition
+Return to the original harbor set, higher and wider than the opening. Lighthouse and sweeping beams are now bright. Six distant pixel sailboats receive warm lamps at 59.2, 59.9, 60.6, 61.3, 62.0 and 62.7 seconds, each with a bell; after lighting they slowly sail toward the harbor. Their light columns join the lighthouse reflection on the sea. The keeper watches and waves on the pier. Narration begins at 59.5: And far out at sea, every lost ship found its way home.
 
-Huge lens gold strips flare 53.5, beam 54.4. Wren steps back silhouette, camera crane and pullback rises past balcony roof and white/red tower, two opposed cream beams cut storm. Match musical key/lumi nance apotheosis.
+## 67.00000–76.50000 s · The Lampbearer
 
-### 58.00000–67.00000s · Ships find home
+Continue the same rising harbor camera under the title treatment. Fade a half-strength dark plate from 67.4, then widely tracked gold-gradient THE LAMPBEARER in 118px Cinzel with warm glow, ornament and full italic tagline Every path begins with a single light. The final narration starts at 69.3. Fade in a GPT authorship line at 70.6–71.6 in the original credit slot and accurate fresh-score/voice credits at 71.5–72.5. Keep the living lighthouse, ships and water behind the type, then fade fully to black by 76.5.
 
-Return wide harbor framing mirroring opening, now many small ship mast lights enter sea 59.2 then.7 s intervals. Real moving hulls/wake reflections, narrator 59.5 exact. Windows and beam dominate warm celebration, slow pull.
+## Exact published narration inputs
 
-### 67.00000–76.50000s · The Lampbearer
+- n1 · 6.8 s · af_heart · speed 0.88: For a hundred years, the lighthouse of Greywater never once went dark.
+- n2 · 12.6 s · af_heart · speed 0.82: Tonight, it did.
+- k1 · 17.8 s · bm_george · speed 0.84: Take the last flame, little Wren. Keep it close. Don't let the wind have it.
+- n3 · 27 s · af_heart · speed 0.88: Through the Whisperwood, where even the moon loses its way,
+- n4 · 36.3 s · af_heart · speed 0.9: up the Gale Steps, where the storm tried to take it from her.
+- n5 · 44.3 s · af_heart · speed 0.84: But a flame held by careful hands does not go out.
+- n6 · 59.5 s · af_heart · speed 0.86: And far out at sea, every lost ship found its way home.
+- n7 · 69.3 s · af_heart · speed 0.84: Every path begins with a single light.
 
-Same harbor softly recedes, gold serif THE LAMPBEARER title 68, thin rule and Every path begins with a single light 69.3. Original provenance 71 and music credit 72, truthful new credit later. Hold to 75.5 and final fade by 76.5; actual delivery 60 fps 4590 frames.
+## Audio recreation
 
-## Published narration — verbatim
+Fresh orchestral performance recreates the published Precipice cue form and harmonic contour. D pedal, G/D/B-flat expansion, forest flow and storm crescendo; 11.6–12.4 breath, 42.0 hard stop to tail and quiet D pedal; 44.3–53.5 dominant rebuild; exact G-flat ensemble downbeat at 53.5, then G-flat/B-flat minor/E-flat/F minor/D-flat progression; E-flat final arrival at 66.948667 and decay. The Scott Buckley recording is credited as reference and not reused. Seven fresh af_heart narrator lines at published speeds and the complete bm_george Old Keeper quote with 7kHz lowpass. Material Foley and all voice onsets follow the source.
 
-- `n1` at 6.8s, voice `af_heart` speed0.88: For a hundred years, the lighthouse of Greywater never once went dark.
-- `n2` at 12.6s, voice `af_heart` speed0.82: Tonight, it did.
-- `k1` at 17.8s, voice `bm_george` speed0.84: Take the last flame, little Wren. Keep it close. Don't let the wind have it.
-- `n3` at 27s, voice `af_heart` speed0.88: Through the Whisperwood, where even the moon loses its way,
-- `n4` at 36.3s, voice `af_heart` speed0.9: up the Gale Steps, where the storm tried to take it from her.
-- `n5` at 44.3s, voice `af_heart` speed0.84: But a flame held by careful hands does not go out.
-- `n6` at 59.5s, voice `af_heart` speed0.86: And far out at sea, every lost ship found its way home.
-- `n7` at 69.3s, voice `af_heart` speed0.84: Every path begins with a single light.
+## Provenance and engines
 
-## New voice and score direction
+Independent source-informed reconstruction using attributed generic pixel, sprite, prop, environment and postprocessing factories. This is not a blind same-prompt benchmark.
 
-Narrative orchestral recreation following original Precipice cue-form: low D minor piano/string opening, forest flute/strings, storm pulse/gust and near black hush 42–45.6, G-flat radiant ignition 53.5 and full rescue coda. Original Scott Buckley master CC BY 4 acknowledged as reference but NOT reused.7 af_heart .82–.9 narrator lines plus Old Keeper bm_george .84 low pass. No original master reuse.
-
-## Shared assets, engine and licences
-
-Generic hd render er/camera/material texture/sprite draw/DOF/bloom engine allowed; independently assemble harbor/forest/cliff/tower and actor performance. No original scene render imports.
-
-Original music Precipice by Scott Buckley is CC BY4.0; user explicitly requests recreated music, so new soundtrack must follow its cue-form without reusing original master. Preserve original attribution as reference history, credit new composition honestly.
-
-## Primary v1 failures
-
-V 1 simplified 76.5 s actual 3 D miniature and eight shots into a 20 s flat journey, lost Keeper handover, near-extinguished flame, detailed forest/cliff/tower, and ships rescue.
-
-## Original credits — verbatim
-
-```text
-The Lampbearer — HD-2D (Lemo-Opuscar demo)
-LemoLab × Claude Opus 5.5
-
-All imagery is generated by code in this folder: three.js scenes built from primitives, pixel textures and
-pixel characters drawn procedurally per pixel (px.js, kit.js, chars.js, forest_art.js, cliff.js, harbor.js),
-custom shaders for sky, sea, beams and post-processing. No photos, no 3D asset packs, no AI-generated images.
-Story, characters (Wren, the Old Keeper), place names (Greywater, the Whisperwood, the Gale Steps) and all
-UI artwork are original.
-
-Music
-- "Precipice" by Scott Buckley — https://www.scottbuckley.com.au/library/precipice/
-  License: Creative Commons Attribution 4.0 International (CC BY 4.0) — https://creativecommons.org/licenses/by/4.0/
-  Source file: music/src/sb_precipice.mp3 (direct link:
-  https://www.scottbuckley.com.au/library/wp-content/uploads/2021/01/sb_precipice.mp3)
-  Changes: cut, re-timed and level-automated for this film by music/edit.py (edit list in music/CUES.md).
-  Attribution is shown on screen in the title card and in music/CREDITS.txt.
-
-Fonts (SIL Open Font License 1.1; woff2 latin subsets from Google Fonts, license texts in fonts/)
-- Cinzel — The Cinzel Project Authors (Natanael Gama), fonts/h0.woff2 (500), fonts/h1.woff2 (700), fonts/OFL-Cinzel.txt
-- Cormorant Garamond — The Cormorant Project Authors (Christian Thalmann), fonts/h2–h4.woff2 (italic 500, 500, 600),
-  fonts/OFL-CormorantGaramond.txt
-
-Voices
-- Kokoro-82M (Apache-2.0) via kokoro-onnx; model files in core/tts/ (kokoro-v1.0.onnx, voices-v1.0.bin).
-  Voices: af_heart (narrator), bm_george (the Old Keeper).
-- Speech check: faster-whisper base.en (MIT).
-
-Sound effects and ambience
-- Synthesized in mix.py with core/audio/sfx.py (noise, filters, envelopes). No recorded samples.
-
-Code dependencies
-- three.js r170 (MIT), playwright-core (Apache-2.0), numpy / scipy / soundfile / librosa (BSD/ISC), ffmpeg (LGPL/GPL build).
-
-Reference (grammar only, nothing copied): the HD-2D look of Octopath Traveler (Square Enix × Acquire).
-
-```
-
-## Published full demo specification — verbatim reference
-
-# HD-2D — our demo
-
-One example among many. Don't reuse its story, arc, shots, props or timings.
-
-Demo: *The Lampbearer* (76.5 s, 1920×1080, 60 fps) · `hd-2d.mp4` (the **tilt-shift cut**) · source in [`demo/`](demo/) (local only) · engine: three.js r170 scenes + procedural pixel textures + custom physical DOF / tilt-shift post (`demo/post_ts.js`) + Canvas2D overlay UI, rendered frame-by-frame with `core/render/video.mjs`.
-
-
-## Story & structure
-
-A harbour town's lighthouse goes out; the old keeper hands the last flame to his granddaughter Wren, who carries her lantern through a night forest and up a storm-beaten cliff stair to relight the lighthouse, so the ships at sea can find their way home. Tagline: *Every path begins with a single light.*
-
-How the demo spent the style's native powers:
-
-| Native power | Story use |
-|---|---|
-| **A light the hero carries** | The lantern is both key light and plot: Wren carries one small light that must reach the lighthouse. Its brightness is the emotional meter: bright → guttering → almost out → relit. |
-| **Tabletop world** | Places read as *maps*: a harbour town, a forest path, a cliff stair, a tower top. One location per chapter, each with its own light key. The opening set returns at the end to show the change (harbour: lighthouse dark → lit, ships' lamps appear). |
-| **RPG grammar** | "Chapter I" card, a named NPC who hands over the quest in a dialogue box, a journey through two biomes, a climax at a landmark, a title card. |
-| **Sprite shadows** | The first lighting (brazier taper → lantern) happens on screen, next to two characters, so both shadows jump onto the planks. |
-| **Tilt-shift** | Extra-wide establishing shots with the focus band on a single tiny subject (the lighthouse, a boat). |
-
-**Our story shape:** cold chapter card → wide establishing shot where the landmark light **fails** → quest handed over in a dialogue box (the light is passed) → travel through a darker biome (forest) → the ordeal (storm; the light almost dies; the music drops out) → the light survives → the landmark is relit (climax on a music downbeat) → the opening set, transformed → title and tagline.
-
-We kept it to 6 shots, one set per 1–2 shots, 7 narrated lines + 1 dialogue line. The "one small light" was a lantern; in another film it could be a first commit, a seed, a letter, a signal — or no carried light at all.
-
-## Shots
-
-| Shot | Camera |
-|---|---|
-| Establishing (harbour wide, 5.5–15) | Very high and far (`[-17,15,38] → [-13,12,31]`, fov 36), slow push. Focus 44 m, aperture 520; tilt band fixed at 34 % screen height (no character to track). |
-| Dialogue (pier, 15–25.5) | Medium-high 3/4 (≈5 m up, 8–10 m away, fov 30), almost static drift. Focus on the hero every frame, aperture 300. |
-| Travel (forest, 25.5–35.5) | **Lateral tracking**, camera leads the walker slightly (`monotone` look-ahead), fov 30, 6.3 m up; near ferns in front of the lens blur into dark shapes; she walks behind a foreground trunk at the end. Aperture 380. |
-| Ordeal (storm stairs, 35.5–49.5) | Starts as a huge establishing view of the cliff, eases into a follow cam (37–39 s), then **dives low and close** as she kneels (camera to ~2.2 m up, 6 m away), and pulls back as she climbs on. Aperture 140–170 (closer = less blur). |
-| Climax (lamp room, 49.5–58) | Medium on the hero at the lens; after ignition, a rising pull-back to a wide of the tower (fov 30 → 40, aperture 150 → 320), focus switches from hero to lens. |
-| Resolution (harbour end + title, 58–76.5) | Mirror of the opening but wider and higher (`[-22,26,44] → [-27,33,55]`, fov 42), focus 70, aperture 380, tilt band at 36 %. |
-
-Rules: always look *down* on the world (never eye level); every camera path is a `track()` of 2–7 keys (monotone cubic, no overshoot); focus distance is recomputed each frame from camera to the hero (`post.dof.focus = cam.position.distanceTo(hero + (0,.7,0))`); in the tilt cut the sharp band follows the hero's projected screen height (`tiltCenter`, clamped .2–.8).
-
-## Score structure
-
-- **Voices (Kokoro via `core/tts/tts.py`)**: narrator `af_heart`, speed .82–.90 (slow, storybook); the quest-giver `bm_george`, speed .84, low-passed at 7 kHz in the mix so he sits "in the world". 7 narrated lines + 1 dialogue line, each 1–5.4 s. Check with `core/tts/asr_check.py`; put invented names in the `asr` field (`Graywater`, `Ren`, `whisper would`), otherwise whisper flags them.
-- **Music**: one licensed track, edited to picture: Scott Buckley, *Precipice* (CC BY 4.0), cut by `music/edit.py` into five sections (intro pad → **0.8 s breath when the lighthouse dies** → continuous build through forest and storm → **hard stop into a reverb tail at 42.0 when the flame nearly dies**, only the intro pad under it → the composer's own build → **its D→G♭ key-change downbeat placed at 53.500 s = ignition**, located automatically by the steepest < 250 Hz onset (error < 5 ms) → jump to the final E♭ arrival for the title). All cut points are in `music/CUES.md`. Pick one piece whose own arc matches the story; cut inside it rather than stitching tracks.
-- **Ambience & foley (`mix.py`, synthesized with `core/audio/sfx.py`)**: per-set beds with crossfaded gain curves (harbour waves + rope creaks, brazier crackle, forest crickets + leaves, storm rain + wind with a gust swell), and events: lamp-out "fwoomp" 12.3, match strike 16.15, UI chime on the dialogue box 17.3, footsteps from `sfx_events.json` (wood / dirt / stone), thunder 0.25 s after each flash, wind whoosh at the gust, two heartbeats in the silence, the ignition boom (42 Hz drop + air + high shimmer) at 53.5, six small bells as the ships light up.
-- **Mix**: each voice line compressed and RMS-matched; buses levelled to voice −17, music −21, ambience −30, foley −27 dB RMS; music ducks ~2.2 dB under voice, then a **per-line auto-duck** pulls music + ambience to ≈10 dB under each line (only down, never up; the script prints the achieved gap per line, 7–14 dB in the demo); `tanh` soft-clip; final loudness by `core/render/mux.sh` (two-pass loudnorm −14 LUFS, TP −1.2).
-
-## Palette & props
-
-The demo is a night film: cold blue against warm amber fire, strong bloom, heavy vignette.
-
-**Resolution & pixels.** Scene textures are drawn per pixel on small canvases (`PX` class, `px.js`) and uploaded with `NearestFilter`; world-space UVs (`worldUV`, `kit.js`) keep **24 px/m** on every surface. Characters are 34×50 px frames at `SPX = 1/30` m per pixel (≈1.67 m tall). Colour comes from **ramps** (3–6 swatches) chosen by brightness with a 4×4 Bayer dither; the dither band `dz` must be narrow: **.22 for characters, .45 for textures** (wider = checkerboard noise everywhere). Sprites get an automatic 1 px **selout** outline (`PX.outline(.3)`: transparent pixels next to the sprite become the neighbour colour darkened toward `#16 0e 1e`).
-
-**Palette (night).** Sky `#050818 → #101d3e → #2c4262` (horizon), fog `#16223a` (harbour) / `#152a48` (forest) / `#1c2334` (storm), moon light `#8fa8e0`, hemisphere `#3a4c7a / #0a0a12`. Fire and windows `#ff9d4a`, `#ffae55`, `#ff8c3a`, lantern `#ffb050`, lighthouse `#fff0c8`. Cool character fill `#9fb2e8`. Hero cloak ramp `#2e0b14 … #c9503f` (crimson), scarf gold `#b08424`; keeper coat navy `#10131f … #5a6c98`, beard greys. Ink `#1a1016`.
-
-**Materials.** Boxes and cylinders only: houses with plaster + timber beams (`plaster`), shingle roofs (`shingles`), planks with nail dots (`woodPlanks`), Worley cobbles (`cobbles`), layered rock (`rock`), bark/canopy/fern/grass/mushroom sprites (`forest_art.js`). Foliage, grass, ferns, mushrooms, distant ships and ridges are **billboards** (instanced where many). Windows are emissive pixel panes (`windowMat`, emissive 2.2). Fire is a 6-frame pixel atlas billboard at 10 fps (`fire`). Sea is a custom shader: quantized pixel ripples, crest bands, light reflection columns stretched toward the camera, sparkle glints.
-
-**Light rig per set.** One dim shadow-casting moon (DirectionalLight 1.1–1.2, 2048 map) + hemisphere fill + **practical point lights** (windows 8, street lamps 12–14, brazier 16 with shadows, lantern 2.6–14 with shadows) + a **cool front fill** (`#9fb2e8`/`#8fa6e0`, 1.2–1.8, range 6–8 m) placed ~2 m in front of the hero. Additive `glow` sprites sit on every light source so bloom has something to grab.
-
-**Post chain** (`post_ts.js`, `makePost(renderer, scene, camera, 1920, 1080, { ssaa: 2 })`): render at 2× (3840×2160 internal) with MSAA → physical DOF (CoC = `aper × (1/focus − 1/z)` px, 96-tap spiral gather, far samples cannot bleed over a sharp foreground) **+ tilt-shift** → UnrealBloom (strength .55, radius .75, threshold .85) → vignette/grade (amt .62, warm .1, contrast .2, sat 1.05) → ACES filmic, exposure 1.15. Tilt-shift cut adds: `tiltAmt 17`, band half-width `tiltW .075`, feather `tiltF .3` (fractions of screen height), `maxCoc ≥ 24`, saturation ×1.16, contrast .28.
-
-**Type.** Cinzel 500/700 (chapter label, title), Cormorant Garamond italic 500 (subtitles, tagline), Cormorant 500/600 (dialogue text, name plate). Gold `#d8c28e / #e2c989 / #c9a863`, parchment white `#f3ead6 / #f6f0e2`.
-
-Motion as built:
-
-- **Sprites step, everything else glides.** Walk cycles use 4 frames at 6–10 fps (`['w0','w1','w2','w3'][Math.floor(t*9)%4]`), idles alternate two frames at ~1.4 Hz, blinks every few seconds, poses swap instantly (`upE → up → idle`). Camera, lights, particles, beams and focus update every frame at 60 fps.
-- **Poses are data**: a frame is a parameter object (`{ step, arm:'low'|'fwd'|'up'|'hug'|'pour', kneel, lit, bob, hem, scarf, blink, closed, look }`) drawn by `drawWren` / `drawKeeper`. Add a pose by adding a table entry (or pass `extra` to `makeChar`).
-- **The light breathes**: `flick(t, seed)` (three summed sines, ±20 %) on every flame; the lantern's `lit` value (0–1) redraws the flame size in the sprite *and* drives the point light (`intensity ∝ lit^1.3`), glow opacity and scale.
-- **Events are timestamps** in `story.js` `T` (lighthouse flicker 11.5 → out 12.35, taper 16.2, gust 40.6, dim 41.3, dark 42.0, relight 45.6, stand 47.6, pour 52.6, ignite 53.5, beams 54.4, ships 59.2). Scenes blend with `ss(seg(t,a,b))`.
-- **Signature beats:** lighthouse flickers twice and dies; brazier taper lights the lantern and both sprites' shadows jump onto the planks; the gust shrinks the flame to an ember (sprite `lit .27`), world goes almost black, then the flame re-grows; the lens ignites with an exposure burst (`exp(-(t-53.5)/.22)`) and two beam cards start sweeping; ships' lamps pop on one every 0.7 s and drift toward the harbour.
-- **Weather is procedural**: rain = wind-slanted line segments (`rain`), lightning = a scripted flash curve (`flash(t)`: 150 ms strike, dip, 60 ms re-strike, exp decay) that boosts hemisphere, a "bolt" light, sky, clouds, sea and exposure together.
-
-## End card
-
-- **Narration subtitles**: Cormorant Garamond italic 500, 50 px, `#f6f0e2`, centred at y = H − 88, on a soft horizontal dark band (gradient, max .38 alpha), drop shadow 10 px. Fade in .35 s before the voice, out 0.45–0.8 s after it ends. One line per voice clip.
-- **Dialogue box** (for a character who speaks on screen, instead of a subtitle): 1180×210 px, bottom-centred, navy gradient `rgba(14,18,34,.86) → rgba(6,8,18,.9)`, 2 px gold border `rgba(214,190,130,.9)` + inner 1 px line, gold diamond corners; name plate (Cormorant 600 34 px) overlapping the top-left edge; body Cormorant 500 44 px, **typed out over 92 % of the voice duration**; blinking gold ▼ caret when done; slides up 14 px on entry. A soft chime marks it.
-- **Chapter card** (0–5.5 s): radial navy background `#11172a → #020308`, `CHAPTER  I` (Cinzel 500 34 px, 10 px tracking, `#d8c28e`) over a gold ornament line with diamond, then the chapter name in Cormorant italic 78 px with a warm glow; one pixel ember drifts across.
-- **Title** (67.4–76.4 s): screen dimmed 50 %, `THE LAMPBEARER` in Cinzel 700 118 px, 14 px tracking, vertical gold gradient `#fff3cf → #e2c27c → #a8803e` with glow; ornament; tagline in Cormorant italic 50 px; music/voice credit at the bottom (24 px, 75 % alpha).
-- **End credit line (library rule)**: every film ends with **"LemoLab × Claude Opus 5.5"**. In the demo it is part of the title card (`ui.js` `title()`, on by default): Cinzel 500 30 px, `#d8c28e` at 85 % alpha, 4 px tracking, centred at y = 668, fading in 70.6–71.6 s, between the tagline and the music credit, which it does not replace. `?nocredit=1` hides it (reproduces the pre-sign-off `hd-2d_v1.mp4`). Draw it the same way in a new film.
-- **End credit line (this library's demo only)**: our demo ends with **"LemoLab × Claude Opus 5.5"**. It is part of the title card (`ui.js` `title()`, on by default): Cinzel 500 30 px, `#d8c28e` at 85 % alpha, 4 px tracking, centred at y = 668, fading in 70.6–71.6 s, between the tagline and the music credit, which it does not replace. `?nocredit=1` hides it (reproduces the pre-sign-off `hd-2d_v1.mp4`). This sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card — when you adapt `ui.js`, delete the credit line.
-- Export the `.srt` from the same data (`tools/srt.py`: story.js `VO` + `voices/dur.json`, +0.5 s hold, dialogue prefixed `OLD KEEPER:`).
-
-
-## Build notes
-
-```
-styles/hd-2d/demo/
-  index.html  main.js     page, renderer (ACES, PCF soft shadows), shot → set routing, tilt-shift driver (?tilt=1)
-  story.js                DUR, SHOTS, event times T, VO lines (single source of truth)
-  px.js                   PX pixel canvas, ramps + Bayer, surface textures, billboard / glow / blob
-  kit.js                  worldUV, mat/mesh/box, cached materials, house, crate, barrel, pixel fire, windows, ridges
-  fx.js                   sky, stars, pixel sea shader, particles, rain, shaft, beamCard, flick
-  chars.js                procedural pixel characters (Wren, Old Keeper), pose tables, atlas, makeChar
-  harbor.js forest.js(+forest_art.js) cliff.js   the three sets; each exports build*() → { scene, update }
-  ui.js                   Canvas2D overlay: chapter card, dialogue box, subtitles, title, fades, credits
-  post_ts.js              makePost: DOF + tilt-shift + bloom + grade (local copy of core/three/post.js)
-  lines.json vo_times.json sfx_events.json   TTS lines, voice start times, foley timestamps
-  music/edit.py src/      score edit of "Precipice" → music/score.wav, CUES.md, measure.json
-  mix.py                  ambience + foley + voices + ducking → mix.wav
-  tools/srt.py  tools/render_range.mjs  tools/sheet/index.html   srt export, partial re-render, sprite sheet page
-```
-
-All commands from the repo root. `.venv` is the shared Python env (kokoro-onnx, faster-whisper, librosa).
-
-```sh
-PY=.venv/bin/python; D=styles/hd-2d/demo
-
-# 0. fresh clone: voices/*.wav, music/score.wav and mix.wav are git-ignored (rebuilt below); if music/src/ is empty, fetch the source
-curl -L -o $D/music/src/sb_precipice.mp3 https://www.scottbuckley.com.au/library/wp-content/uploads/2021/01/sb_precipice.mp3
-
-# 1. voices (Kokoro) + whisper check → voices/*.wav, dur.json, words.json
-$PY core/tts/tts.py $D/lines.json $D/voices
-$PY core/tts/asr_check.py $D/lines.json $D/voices      # demo: 1 expected DIFF (n1 "Graywater" → "gray water")
-
-# 2. score edit → music/score.wav (+ CUES.md, measure.json); set OUT_DIR=... to write elsewhere
-(cd $D/music && ../../../../.venv/bin/python edit.py)
-
-# 3. mix → demo/mix.wav (optional arg: another output path)
-$PY $D/mix.py
-
-# 4. subtitles → styles/hd-2d/hd-2d.srt
-$PY $D/tools/srt.py
-
-# 5. review stills of the tilt-shift cut (≈0.1–0.2 s per frame)
-node core/render/still.mjs $D 8 16.9 30.5 42.8 53.8 62 71 --q tilt=1 --out $D/out/review
-
-# 6. render the TILT-SHIFT CUT (the version in the library): 4590 frames at 60 fps
-#    measured 26–37 fps with 2 workers (≈2.5 min); the shipped file used 6 workers
-node core/render/video.mjs $D --fps 60 --workers 2 --q tilt=1 --out $D/out/video_tilt.mp4
-
-# 7. mux: loudnorm −14 LUFS, grain 0 (pixel art: no film grain)
-sh core/render/mux.sh $D/out/video_tilt.mp4 $D/mix.wav styles/hd-2d/hd-2d.mp4 60 0
-```
-
-`?tilt=1` is what makes the tilt-shift cut: it is a **render-time post effect** inside `post_ts.js` (not a second pass over a finished video). Without it you get the plain DOF version. Other page switches: `ss=1` (no supersampling, faster previews), `only=harbor|forest|cliff` (build one set), `nobloom`, `nodof`, `noglow`, `nocredit=1` (hide the end credit line).
-
-**Partial re-render** (e.g. after changing the title card; this is how the end credit was added to the shipped film): render only the tail and splice it onto the existing `out/video_tilt.mp4` (frames 0–4019 are untouched by title-card changes), then mux again. Back up the current film first (`hd-2d_v1.mp4`). Audio is untouched (same `mix.wav` → bit-identical decoded audio).
-```sh
-node $D/tools/render_range.mjs 67 76.5 --workers 2 --q tilt=1 --out $D/out/tail.mp4          # 570 frames ≈ 15 s
-ffmpeg -y -i $D/out/video_tilt.mp4 -i $D/out/tail.mp4 -filter_complex \
-  "[0:v]trim=end_frame=4020,setpts=PTS-STARTPTS[a];[1:v]setpts=PTS-STARTPTS[b];[a][b]concat=n=2:v=1:a=0[v]" \
-  -map "[v]" -c:v libx264 -preset medium -crf 14 -pix_fmt yuv420p $D/out/video_tilt_new.mp4   # 25–150 s (CPU-bound, slower when other renders run)
-sh core/render/mux.sh $D/out/video_tilt_new.mp4 $D/mix.wav styles/hd-2d/hd-2d.mp4 60 0          # 35–245 s, same caveat
-```
-
-When you change the story: edit `story.js` first, then copy the voice start times into `vo_times.json` (mix.py reads that file, not story.js), keep `sfx_events.json` footsteps in step with the sets' walk frames, and move the cue constants at the top of `music/edit.py` (`T_CAESURA`, `T_SILENCE`, `T_HIT`, `NARRATION`).
-
-Pitfalls as we hit them, with the demo's props and numbers:
-
-- **Checkerboard everywhere**: a wide dither band on ramps. Keep `dz` ≈ .22 on sprites, ≈ .45 on textures.
-- **The lantern blows out the sprite**: a point light sitting on the billboard plane saturates it. Put the light **0.42–0.45 m from the lantern toward the camera** (`lp + toCam * .45`), and in the forest cap sprite lighting in the shader (`outgoingLight = min(outgoingLight, diffuseColor.rgb * 1.35 + emissive)` via `onBeforeCompile`).
-- **Lights behind a billboard don't light it** (it only has a front normal). Always add a cool front fill light ~2 m in front of the hero.
-- **Cylinder light beams facing the camera produced NaN**; bloom spread them into large black blocks. Use `beamCard` (an axis-aligned billboard strip that fades as it turns toward the camera) and let the glow sprite take over (`face` factor enlarges the lighthouse glow).
-- **Sea reflection column division by zero**: clamp the width with `max(.35, …)`.
-- **Storm too dark to read** in the first pass. Add a "readability" fill outside the story-dark beat: hemisphere +1.0, sun +1.3, sky +.35 (the `ext` term in `cliff.js`), i.e. roughly ×2–2.5 on environment mid-tones, and let it drop to nothing only during the flame-almost-out beat.
-- **Distant ship glows hidden by fog/geometry**: `depthTest = false` + `renderOrder 5` on those glow sprites.
-- **Tilt-shift on shots with no character**: the tracker has nothing to follow; use fixed band heights per shot (`TILT_C`).
-- **Tilt-shift and occlusion**: the tilt blur is folded into the same signed CoC as depth DOF (above the band = far, below = near) so the gather keeps the "far can't bleed over sharp near" rule; don't add it as a separate blur pass.
-- **Near-identical frames diverge around a flash**: the ignition burst decays with a 0.22 s time constant, so a still at 53.8 s differs visibly from the neighbouring 60 fps frame. That is expected, not a bug.
-- **Node render scripts may not exit** after `done` because the static server keeps connections alive (`demo/tools/render_range.mjs` ends with `process.exit(0)` for that reason). The output file is complete once `done` is printed.
-
-## Engine reference
-
-### Page contract (`main.js`)
-`window.render(t)` picks the shot (`shotAt(t)`), maps it to a set (`SET_OF`), points the DOF pass at that set's scene, resets post defaults (bloom .55/.85, exposure 1.15, warm .1, sat 1.05, vignette .62), calls `set.update(t, shot, camera, post, renderer)`, applies tilt-shift if `?tilt`, renders the composer, then draws the overlay (`drawOverlay(t, shot)`). One `PerspectiveCamera(32, 16/9, .3, 2000)` is shared by all sets; each set sets fov/position/lookAt every frame.
-
-### Modules and key functions
-| Module | Function | What / key params |
-|---|---|---|
-| `px.js` | `new PX(w,h)` | `.set/.get/.rect/.fill(f)/.ellipse/.poly/.line/.outline(k,tint)/.done()` → canvas |
-| | `ramp(cols, dz=.45)` | `(v,x,y) → rgb` with Bayer dither; `dz` = dither band width |
-| | `texOf(canvas, {repeat, mip, linear})` | NearestFilter texture |
-| | `woodPlanks / cobbles / rock / plaster / shingles / ground(w,h,o)` | procedural surface canvases (`seed`, `cols`, `pw`, `len`, `cell`, `beams`, `snow`) |
-| | `billboard(tex, wM, hM, {ax, ay, em, emCol, emI, shadow, receive})` | upright lit sprite plane (Lambert + alphaTest .5) with custom depth/distance materials so it casts cut-out shadows |
-| | `glow(col, size, i)` · `blob(r, a)` · `radialTex` | additive halo sprite · ground contact shadow |
-| `kit.js` | `worldUV(geo, tile)` · `mat(canvas, o)` · `mesh(geo, m)` · `box(w,h,d,m)` | planar UVs by normal so texel density is constant (`tile = canvas.width / 24` m) |
-| | `mats()` | cached `plank, plankDark, beam, wall, wall2, wall3, roof, roof2, roof3` |
-| | `house({x,z,w,d,h,wall,roof,door,windows,upper,side,chimney,ry})` | timber house with emissive windows (`g.userData.windows`) |
-| | `crate(s)` · `barrel(r,h)` · `fire(size,{seed,i})` · `windowQuad` · `ridge(wM,hM,col,seed)` | props; `fire.userData.update(t, cam, scale)` |
-| `fx.js` | `sky({top,mid,hor,moonDir,moonCol})` → `{mesh,u}` | gradient dome + moon halo; `u.k` = brightness |
-| | `stars(n, seed)` · `sea(size,{ppm,deep,shallow,crest})` → `{mesh,u,setLights([{p,c,i}])}` | per frame set `u.t`, `u.camPos`, fog uniforms, `u.bright`, `u.calm` |
-| | `particles(n, fn(i,t,o), {soft, blend})` | deterministic CPU particles; `fn` fills `o.x,y,z,a,s,r,g,b`; call `.userData.update(t)` |
-| | `rain(n, box, {speed,len,opacity})` · `.userData.update(t, [windX,0])` | slanted streaks |
-| | `beamCard(len, w0, w1, col, {k, fall})` · `.userData.aim(origin, dir, cam)` → side factor | light beam that never shows its edge |
-| | `flick(t, seed)` | flame flicker multiplier ≈ 1 ± .2 |
-| `chars.js` | `makeChar('wren'|'keeper', extraPoses)` → `{root, mesh, frame(name), face(cam, flip), lanternPos(name, flip)}` | 34×50 px atlas + emissive atlas (lantern glass); `root.userData.char` is what the tilt tracker looks for |
-| `post_ts.js` | `makePost(renderer, scene, cam, w, h, {ssaa, ao})` → `{composer, dof, bloom, vig}` | `dof.focus` (m), `dof.aper` (px·m), `dof.maxCoc` (px), `dof.tiltAmt/tiltC/tiltW/tiltF`; `vig.uniforms.amt/warm/sat/contrast/fade` |
-| `ui.js` | `drawOverlay(t, shot)` · `overlayReady()` | reads `story.js` `VO` and `voices/dur.json` |
-| `/core/lib.js` | `track(keys)` · `monotone` · `seg` · `ss` · `eio` · `eo` · `lerp` · `clamp` | camera paths and easing |
-
-### Minimal new set
-```js
-// myset.js — a lantern-lit alley; register in main.js: sets.alley = buildAlley(); SET_OF.alley = 'alley'; add { id:'alley', a, b } to story.js SHOTS
-import * as THREE from 'three';
-import { cobbles, glow } from './px.js';
-import { mat, mesh, house } from './kit.js';
-import { sky, particles, flick } from './fx.js';
-import { makeChar } from './chars.js';
-import { track, seg, ss } from '/core/lib.js';
-
-export function buildAlley() {
-  const scene = new THREE.Scene(); scene.fog = new THREE.FogExp2('#16223a', .03);
-  const SK = sky(); scene.add(SK.mesh);
-  const moon = new THREE.DirectionalLight('#8fa8e0', 1.1); moon.position.set(-20, 30, -20); moon.castShadow = true; moon.shadow.mapSize.set(2048, 2048);
-  scene.add(moon, new THREE.HemisphereLight('#3a4c7a', '#0a0a12', .9));
-  scene.add(mesh(new THREE.BoxGeometry(30, .4, 12).translate(0, -.2, 0), mat(cobbles(96, 96))));
-  scene.add(house({ x: -4, z: -5, w: 6, d: 5, h: 4.5, door: 1.2 }), house({ x: 4, z: -5, w: 5, d: 5, h: 5, wall: 'wall3', roof: 'roof2' }));
-  const hero = makeChar('wren'); scene.add(hero.root);
-  const lamp = new THREE.PointLight('#ffb050', 3, 10, 2); lamp.castShadow = true; lamp.shadow.bias = -.004; scene.add(lamp);
-  const halo = glow('#ffc070', 1.1, 1.2); scene.add(halo);
-  const fill = new THREE.PointLight('#9fb2e8', 1.5, 7, 2); scene.add(fill);                 // cool front fill: never skip
-  const dust = particles(80, (i, t, o) => { o.x = (i * 7.3 % 20) - 10 + t * .1; o.y = (i * 3.1 % 4); o.z = (i * 5.7 % 6) - 3; o.a = .3; o.s = .05; o.r = .7; o.g = .8; o.b = 1; }, { soft: 1 });
-  scene.add(dust);
-  const camP = track([[0, [-2, 5.5, 10]], [8, [2, 5, 9]]]), camL = track([[0, [-1, .8, 0]], [8, [2, .8, 0]]]);
-
-  function update(t, shot, cam, post) {
-    const lt = t - shot.a;
-    cam.position.set(...camP(lt)); cam.fov = 30; cam.updateProjectionMatrix(); cam.lookAt(...camL(lt));
-    const x = -3 + ss(seg(lt, .5, 7.5)) * 6, walking = lt > .5 && lt < 7.5;
-    hero.root.position.set(x, 0, 0); hero.frame(walking ? ['w0', 'w1', 'w2', 'w3'][Math.floor(t * 9) % 4] : 'idle0'); hero.face(cam);
-    const lp = hero.lanternPos('w0'), toCam = cam.position.clone().sub(lp).setY(0).normalize();
-    lamp.position.copy(lp).addScaledVector(toCam, .45); lamp.intensity = 2.6 * flick(t, 3); halo.position.copy(lp);   // light 0.45 m toward the lens
-    fill.position.set(x + .4, 1.6, 2.2);
-    dust.userData.update(t);
-    post.dof.focus = cam.position.distanceTo(hero.root.position.clone().setY(.7)); post.dof.aper = 350; post.dof.maxCoc = 22;
-  }
-  return { scene, update };
-}
-```
-Then check it with `node core/render/still.mjs styles/hd-2d/demo <t> --q 'tilt=1&only=alley'` (add `alley` to the `ONLY` switch in `main.js`).
-
-
-## Original local assets
-
-- `styles/hd-2d/demo/fonts/g.css` ·SHA-256 `f8e7c8245b5ffa055e047978bcb9d68fceb16d1e51190936854704e0f1a6fe88`
-- `styles/hd-2d/demo/fonts/OFL-Cinzel.txt` ·SHA-256 `f2b3029aba64c378bf0963b62945eee15e564fe4330b934c8f2eb058282b5e83`
-- `styles/hd-2d/demo/fonts/OFL-CormorantGaramond.txt` ·SHA-256 `60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956`
-- `styles/hd-2d/demo/fonts/fonts.css` ·SHA-256 `784773317570cd487293c3a373fa09a7cb41c5a2bcd5234178ee0e084708d965`
+Published STYLE and DEMO remain verbatim in the paired JSON, with their hashes, the exact narration table, original asset/license notes and published timing references. Original conversation prompt is unavailable. No original master audio, film frames or original full scene code may be used as the generated movie.

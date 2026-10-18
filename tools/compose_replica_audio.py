@@ -80,6 +80,13 @@ def compose(score,voice_records,duration,out):
             band=[260,4600] if line['filter']=='radio1930' else [380,2800]
             a=sosfilt(butter(4,band,btype='bandpass',fs=SR,output='sos'),a)
             a=np.tanh(a*3)/3
+        elif line.get('filter')=='pa':
+            a=sosfilt(butter(4,[330,3450],btype='bandpass',fs=SR,output='sos'),a)
+            cone=sosfilt(butter(2,[950,1750],btype='bandpass',fs=SR,output='sos'),a)
+            a=np.tanh((a+.2*cone)*1.5)/1.5
+        elif line.get('filter')=='quiet_operator':
+            bass=sosfilt(butter(2,240,btype='lowpass',fs=SR,output='sos'),a)
+            a=sosfilt(butter(2,7200,btype='lowpass',fs=SR,output='sos'),a+.22*bass)
         elif line.get('filter')=='lowpass7k':
             a=sosfilt(butter(4,7000,btype='lowpass',fs=SR,output='sos'),a)
         elif line.get('filter') in ('vask','gary'):

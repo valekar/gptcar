@@ -7,7 +7,24 @@ def effect(kind,duration,seed=6103,**p):
  d=float(duration);t=np.arange(max(1,round(d*SR)))/SR;u=t/max(d,.001);rng=np.random.default_rng(seed);noise=rng.normal(size=len(t));env=np.sin(np.pi*np.clip(u,0,1))**2
  def bp(a,lo,hi):return sosfilt(butter(2,[lo,hi],btype='bandpass',fs=SR,output='sos'),a)
  def lp(a,hz):return sosfilt(butter(2,hz,fs=SR,output='sos'),a)
- if kind=='stem_snap':
+ if kind=='fluorescent_bed':
+  a=(sum(np.sin(2*np.pi*120*k*t)*(.13/k) for k in range(1,6))+np.sin(2*np.pi*9000*t)*.013+lp(noise,500)*.02)*env
+ elif kind=='ballast_arc':
+  a=(bp(noise,2000,10000)*.6+np.sin(2*np.pi*120*t)*.25)*np.exp(-u*7)*(.3+.7*(rng.random(len(t))<.1))*np.minimum(t/.001,1)
+ elif kind in ('camcorder_motor','zoom_servo','af_motor'):
+  f={'camcorder_motor':180,'zoom_servo':550,'af_motor':950}[kind];ph=2*np.pi*np.cumsum(f*(1+.3*np.sin(np.pi*u)))/SR
+  a=(np.sin(ph)*.3+lp(noise,1600)*.15)*env
+ elif kind=='overhead_drag':
+  a=(bp(noise,180,2700)*.5+np.sin(2*np.pi*(82*t+10*t*t))* .17)*env*(.7+.3*np.sin(2*np.pi*11*t))
+ elif kind=='door_latch':
+  a=(np.sin(2*np.pi*730*t)*.4+bp(noise,400,6000)*.4)*np.exp(-u*24)*np.minimum(t/.001,1)
+ elif kind=='door_hinge':
+  f=230+110*np.sin(np.pi*u)+12*np.sin(2*np.pi*22*t);a=(np.sin(2*np.pi*np.cumsum(f)/SR)*.5+bp(noise,450,2200)*.12)*env
+ elif kind=='tape_hiss':
+  a=bp(noise,2000,14000)*env*.3
+ elif kind=='low_drone':
+  a=(np.sin(2*np.pi*42*t)*.5+np.sin(2*np.pi*63.1*t)*.2+lp(noise,150)*.3)*env
+ elif kind=='stem_snap':
   a=(bp(noise,1800,9000)*.6+np.sin(2*np.pi*970*t)*.2)*np.exp(-u*35)*np.minimum(t/.001,1)
  elif kind in ('fruit_thud','fruit_cut'):
   a=(np.sin(2*np.pi*(130*t-40*t*t/max(d,.01)))*.5+bp(noise,300,3000)*.45)*np.exp(-u*(14 if kind=='fruit_thud' else 6))*np.minimum(t/.002,1)

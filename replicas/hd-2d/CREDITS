@@ -1,0 +1,15 @@
+The Lampbearer — GPT recreation
+
+This is a source-informed reconstruction of the complete published film, using attributed generic pixel, character, prop, environment and postprocessing factories. It is not a blind same-prompt benchmark. The full scene-level prompt was reconstructed from published STYLE/DEMO, narrative/timing data and complete original movie coverage; the original private conversation prompt is unavailable.
+
+Independent complete set geometry assembly, lighting, story actions, cameras, renderer routing, chapter/dialogue/caption/title layout and new score arrangement: GPT-6.1 Sol, high reasoning, in this task. The original published plot, cast design, script, composition and timings are deliberately matched at the user's request.
+
+LemoLab GPTcar toolkit, MIT: local px.js (generic pixel textures, ramps, sprite materials, glow), kit.js (world UV/material and isolated house/prop factories), fx.js (generic sky/stars/pixel sea/particles/rain/light-beam factories), chars.js (parametric Wren/keeper pixel rigs and pose atlas), forest_art.js (generic procedural bark/canopy/fern/grass/mushroom/ground artwork), post_ts.js (generic signed physical depth of field with tilt band, SSAA, bloom and grade). surfaces.js extracts only isolated generic material-texture functions from demo/cliff.js: masonry, rockBig, foamCanvas, lensCanvas, grassCanvas, cloudCanvas and towerCanvas; it excludes all original complete scene construction and animation. Original main.js, story.js, harbor.js, forest.js, cliff.js and ui.js are not imported at runtime. All complete scenes and performance in this replica are independently assembled. TOOLKIT_LICENSE.txt and TOOLKIT_CREDITS.txt preserve the MIT notice.
+
+Fonts: Cinzel and Cormorant Garamond, Google Fonts, SIL Open Font License. Local files and licenses are listed with SHA-256 in asset-manifest.json.
+
+Voices: newly generated local Kokoro af_heart and bm_george takes at original script onsets and speeds, Apache-2.0. No original dialogue or audio mix is reused.
+
+Music: a new sampled orchestral performance following the published harmonic contour and cue structure of Scott Buckley's Precipice. The source reference recording, CC BY4.0, is not reused. Reference: https://www.scottbuckley.com.au/library/precipice/ . The new score uses licensed sampled strings, flute, harp, horn, bass and timpani through the root sampler, with material-specific synthesized sound. Root audio metadata records sample-pack licenses, fresh voice timing and final mix. The original music-master recording is absent from this replica.
+
+No generative image, video, texture or model service was used. All art is code-rendered procedural geometry, pixel texture and sprite artwork.

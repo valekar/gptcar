@@ -1,0 +1,92 @@
+{
+  "duration": 76.5,
+  "language": "en-us",
+  "voice": "af_heart",
+  "direction": "Exact storybook narrator and Old Keeper cast, fresh local takes. Full quote retained.",
+  "lines": [
+    {
+      "id": "n1",
+      "text": "For a hundred years, the lighthouse of Greywater never once went dark.",
+      "voice": "af_heart",
+      "speed": 0.88,
+      "asr": "For a hundred years, the lighthouse of Graywater never once went dark.",
+      "sub": "For a hundred years, the lighthouse of Greywater never once went dark.",
+      "start": 6.8,
+      "duration": 4.183,
+      "language": "en-us",
+      "filter": null
+    },
+    {
+      "id": "n2",
+      "text": "Tonight, it did.",
+      "voice": "af_heart",
+      "speed": 0.82,
+      "start": 12.6,
+      "duration": 1.077,
+      "language": "en-us",
+      "filter": null
+    },
+    {
+      "id": "k1",
+      "text": "Take the last flame, little Wren. Keep it close. Don't let the wind have it.",
+      "voice": "bm_george",
+      "speed": 0.84,
+      "asr": "Take the last flame, little Ren. Keep it close. Don't let the wind have it.",
+      "start": 17.8,
+      "duration": 5.398,
+      "language": "en-gb",
+      "filter": "lowpass7k"
+    },
+    {
+      "id": "n3",
+      "text": "Through the Whisperwood, where even the moon loses its way,",
+      "voice": "af_heart",
+      "speed": 0.88,
+      "asr": "Through the whisper would, where even the moon loses its way,",
+      "start": 27,
+      "duration": 3.135,
+      "language": "en-us",
+      "filter": null
+    },
+    {
+      "id": "n4",
+      "text": "up the Gale Steps, where the storm tried to take it from her.",
+      "voice": "af_heart",
+      "speed": 0.9,
+      "start": 36.3,
+      "duration": 3.186,
+      "language": "en-us",
+      "filter": null
+    },
+    {
+      "id": "n5",
+      "text": "But a flame held by careful hands does not go out.",
+      "voice": "af_heart",
+      "speed": 0.84,
+      "start": 44.3,
+      "duration": 3.399,
+      "language": "en-us",
+      "filter": null
+    },
+    {
+      "id": "n6",
+      "text": "And far out at sea, every lost ship found its way home.",
+      "voice": "af_heart",
+      "speed": 0.86,
+      "start": 59.5,
+      "duration": 3.446,
+      "language": "en-us",
+      "filter": null
+    },
+    {
+      "id": "n7",
+      "text": "Every path begins with a single light.",
+      "voice": "af_heart",
+      "speed": 0.84,
+      "start": 69.3,
+      "duration": 2.291,
+      "language": "en-us",
+      "filter": null
+    }
+  ]
+}

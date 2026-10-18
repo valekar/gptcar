@@ -80,13 +80,13 @@
       "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/hd-2d/sheets/sheet-06.jpg",
       "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/hd-2d/sheets/sheet-07.jpg"
     ],
-    "sampling": "All1fps decoded samples reviewed across whole film, plus published source timing for short transitions. Exact shot-boundary decoding required before film timing acceptance; approximate sheet labels are not frame-accurate.",
+    "sampling": "All 77 regular decoded samples across seven sheets inspected by this worker, supplemented by six matching-time original movie decodes and 74 scene/event replica stills before final freeze. Exact boundaries must be reviewed using both decoded CFR movies. No claim to have inspected every encoded frame.",
     "every_encoded_frame_claimed": false
   },
-  "materials_characters_typography": "True 3 D miniature with 24 texel s/m textures and 34×50 px sprites at 1.67 m, nearest alpha-tested pixels/sel out, dithered material ramps. Wren red hood/cape, brown hair, little brass lantern; OldKeeper dark cap/coat grey hair. Harbor pitched-roof houses warm windows/wood pier/rails/barrels, physically rippling dark sea with quantized reflection columns. Lush fern forest billboards/trunks/moon shafts, storm cliff real stone winding steps, detailed tower Fresnel lens and metal balcony. Physical 96 tap signed Co C tilt-depth blur+SSAA 2+bloom+ACES.",
+  "materials_characters_typography": "Real Three.js miniature sets, constant 24 pixels per meter, 34×50 pixel Wren and keeper sprites at 1.67 meters, nearest-filtered alpha-tested billboards, narrow Bayer ramps and selout. Wren has red cape/hood, brown hair, gold scarf and brass lantern. The keeper has a navy cap/coat and gray beard. Harbor wood, stone, warm windows and actual reflective pixel sea; dense fern forest with real trunks and layered billboards; mossy winding stone stairs, huge cliff and detailed glass/iron Fresnel lantern room. All cameras look down through a tracked signed tilt-shift/physical DOF band, SSAA2, bloom, vignette and ACES. Cinzel500/700; Cormorant Garamond500/600 and italic500; gold and parchment type.",
   "audio_recreation": {
     "original_master_audio_reused": false,
-    "direction": "Narrative orchestral recreation following original Precipice cue-form: low D minor piano/string opening, forest flute/strings, storm pulse/gust and near black hush 42–45.6, G-flat radiant ignition 53.5 and full rescue coda. Original Scott Buckley master CC BY 4 acknowledged as reference but NOT reused.7 af_heart .82–.9 narrator lines plus Old Keeper bm_george .84 low pass.",
+    "direction": "Fresh orchestral performance recreates the published Precipice cue form and harmonic contour. D pedal, G/D/B-flat expansion, forest flow and storm crescendo; 11.6–12.4 breath, 42.0 hard stop to tail and quiet D pedal; 44.3–53.5 dominant rebuild; exact G-flat ensemble downbeat at 53.5, then G-flat/B-flat minor/E-flat/F minor/D-flat progression; E-flat final arrival at 66.948667 and decay. The Scott Buckley recording is credited as reference and not reused. Seven fresh af_heart narrator lines at published speeds and the complete bm_george Old Keeper quote with 7kHz lowpass. Material Foley and all voice onsets follow the source.",
     "narration_published_verbatim": [
       {
         "id": "n1",
@@ -162,80 +162,80 @@
     {
       "start": 0,
       "end": 5.5,
-      "title": "ChapterI",
-      "prompt": "Dark blue quiet center card CHAPTER I /Wren, the Lamp bearer, small single war member, thin serif rule. No brand-first montage."
+      "title": "Chapter I",
+      "prompt": "Dark navy radial chapter card. Fade in widely tracked gold CHAPTER  I, a thin ornament line with central diamond and paired dots, then the italic parchment title Wren, the Lampbearer. A single small pixel ember drifts diagonally across the card. The transition to the harbor passes through black at 5.5 seconds."
     },
     {
       "start": 5.5,
       "end": 11.5,
       "title": "Greywater light",
-      "prompt": "Very wide high diorama harbor: foreground houses warm windows left, wood pier extends right, lighthouse across sea on promontory; sweeping practical beam double cones reflect in water. Narrator 6.8 exact 100 year line. Slow slide push."
+      "prompt": "High three-quarter view of a fully three-dimensional harbor miniature. Warm emissive windows in pitched-roof timber houses occupy the lower left; stone quay, planked pier, rails, barrels, crates, brazier and a moored sailboat extend toward the sea. Quantized pixel ripples and warm reflection columns lead toward a distant rocky headland and red-white lighthouse. Two opposed cream beam cards rotate. Camera pushes from [-17,15,38] toward [-13,12,31], looking down on the scene. A fixed tilt band centers at .34. Narration begins at 6.8 seconds."
     },
     {
       "start": 11.5,
       "end": 15,
       "title": "It goes dark",
-      "prompt": "Same view beam flickers 11.5 and dies 12.35, distant tower only silhouette, horizon clouds moon gloom. Exact Tonight, itdid 12.6. Contrast warm homes against lost navigation."
+      "prompt": "The same harbor camera continues without a cut. The lighthouse flickers from 11.5 seconds, briefly recovers, then dies at 12.35. Its halo, window emissive and beams all follow the same state, leaving the silhouette against blue fog. The houses and pier practicals remain warm. The score breathes at 11.6–12.4. Narration: Tonight, it did."
     },
     {
       "start": 15,
       "end": 17.8,
       "title": "Last flame handover",
-      "prompt": "Cut high medium to lantern lit wood pier; Keeper right and Wren left, practical torch behind. One glowing flame passes between actual sprite hands 16.2 and Wren holds brass lantern. Railing/rope/pier wood depth and soft water surface behind."
+      "prompt": "After a short black transition, cut to a medium-high three-quarter view of the pier. Wren wears a red hood and cape, brown hair and gold scarf; the Old Keeper wears a dark cap and coat with gray beard. They remain pixel billboards receiving actual light and casting shadows onto the planks. The keeper extends a burning taper; Wren raises an empty lantern. At 16.2 the lantern lights, blooms briefly and throws changing shadows. A brazier with three slender legs burns behind them, with water and the sailboat farther back."
     },
     {
       "start": 17.8,
       "end": 25.5,
       "title": "Keep it close",
-      "prompt": "Framed translucent Old Keeper dialog box gold corner points, text types full spoken quote slowly. Wren listens red hood, Keeper gestures, lantern lights both faces. Wren leaves 23.6 down pier as Keeper watches. Full quote must not truncate."
+      "prompt": "The lantern-lit pier scene continues. A 1180×210 navy translucent dialogue box enters from 17.3, with double gold borders, diamond corners and an overlapping Old Keeper nameplate. Type the complete quote Take the last flame, little Wren. Keep it close. Don’t let the wind have it. over 92 percent of the published 5.398-second take. A gold caret blinks after completion. Keep the full text through the box exit at 24.0. Wren turns and walks left from 23.6; the keeper looks and then waves."
     },
     {
       "start": 25.5,
       "end": 35.5,
       "title": "Whisperwood",
-      "prompt": "Black brief transition then sideways tracking forest path. Dense foreground ferns, layered trunks and branches, tiny blue fireflies/moths/mushrooms, real angled moonlight cones. Wren walks with lantern clustered warm pool, nearby ferns occlude her legs; camera never abandons miniature tilt band. Exact VO 27."
+      "prompt": "Lateral tracking through the Whisperwood. Wren walks left to right with a warm lantern pool, stepped four-frame walk cycle at 9 fps, actual moving point light and shadow. Tall irregular textured trunks, spreading roots, layered pixel canopies, a fallen log, rocks, grass, ferns, bushes, six cyan mushroom clusters and a distant treeline surround the winding path. Three diagonal moon shafts and ground pools cut through blue haze. Fireflies and dust move smoothly. Large foreground ferns blur; the near trunk at x4.75 occludes Wren near the exit. Camera remains high, leads the walker, and tracks focus and the tilt band to her projected height."
     },
     {
       "start": 35.5,
       "end": 40.6,
       "title": "Gale Steps",
-      "prompt": "Storm very wide cliff, far distant lighthouse at top, diagonal rain and foam sea below, tiny red cape climbing winding stone flight. Push down into kneeling hero 38–40, cape and wind strong. Exact VO 36.3."
+      "prompt": "Wide storm establishing view reveals a very small red-caped Wren climbing a winding two-flight stone stair carved into a huge rocky cliff. A dark striped lighthouse stands on the summit, sea and white foam far below. Rain slants across real depth; clouds drift. Lightning strikes at 36.8 and 39.9, with delayed thunder. From 37–39 the camera eases into a closer follow view of Wren, textured mossy steps, retaining wall and bending grass. Narration starts at 36.3."
     },
     {
       "start": 40.6,
       "end": 45.6,
       "title": "The storm almost wins",
-      "prompt": "Gust 40.6, lantern red dims 41.3, environment virtually black 42. Wren kneels cups flame in both hands, only faint face light. Hold character and real hush, VO 44.3 But aflame held by careful hands does not go out. No generic cutaway."
+      "prompt": "A strong gust begins at 40.6. The lantern dims from 41.3, Wren kneels and hugs it with closed eyes, and the world falls almost black at 42.0. Dive to a close, lower three-quarter camera while retaining the miniature viewpoint. Only a tiny ember and faint red face/cape remain visible through the long hold. Rain, ambient light, sky, fill, vignette and lantern all respond to the same darkening arc. The music stops into a short tail, followed by a barely audible D pedal and two heartbeats. Narration starts at 44.3: But a flame held by careful hands does not go out."
     },
     {
       "start": 45.6,
       "end": 49.5,
       "title": "Flame revives",
-      "prompt": "Lantern recovers 45.6, real warm practical light restores stone steps, Wren stands 47.6. Camera rises with her, red cape visible again; cut at 49.5."
+      "prompt": "At 45.6 the protected flame recovers. Wren opens her eyes while kneeling; warm light spreads back onto nearby stone. She stands at 47.6, pauses briefly, then continues uphill from 47.9. The camera pulls back and rises, with focus still following the sprite. Preserve the remaining storm and gradual environmental recovery rather than an immediate bright cut."
     },
     {
       "start": 49.5,
       "end": 53.5,
       "title": "Inside the lens",
-      "prompt": "Medium tower lamp glass balcony, thin black iron handrails occlude front, silver/gold Fresnel ring stack at center. Wren pours last flame 52.6 into lamp. Camera quiet close enough to read gesture, no mechanical part text labels."
+      "prompt": "Cut through black to the iron-and-glass lantern room. Wren rises from a floor hatch at 49.5–50.9 and walks toward the dark teal, horizontally banded Fresnel lens. Model a real circular balcony, two rings of iron rail, twelve window mullions, partial rear glass, conical red roof and finial, lens pedestal, brass fire inlet, hatch and lid. Beyond the tower are pixel clouds, moon, deep sea and lower rocky headland. Wren raises the lantern at 52.6, pours flame from 53.0, and sparks travel into the inlet. The lens begins to glow before the main ignition."
     },
     {
       "start": 53.5,
       "end": 58,
       "title": "Ignition",
-      "prompt": "Huge lens gold strips flare 53.5, beam 54.4. Wren steps back silhouette, camera crane and pullback rises past balcony roof and white/red tower, two opposed cream beams cut storm. Match musical key/lumi nance apotheosis."
+      "prompt": "Exactly at 53.5, ignite the Fresnel lens and place the new score’s D-to-G-flat full-ensemble downbeat. The banded lens changes to bright gold, a short exposure/bloom burst washes the room, and Wren becomes a silhouette in the light. Two opposed cream beams accelerate from 54.4. Rise and pull back from the close room to a complete balcony and red-white tower, with moonlit clouds and pixel sea below. Hand focus from Wren to the lens. End the shot at 58.0."
     },
     {
       "start": 58,
       "end": 67,
       "title": "Ships find home",
-      "prompt": "Return wide harbor framing mirroring opening, now many small ship mast lights enter sea 59.2 then.7 s intervals. Real moving hulls/wake reflections, narrator 59.5 exact. Windows and beam dominate warm celebration, slow pull."
+      "prompt": "Return to the original harbor set, higher and wider than the opening. Lighthouse and sweeping beams are now bright. Six distant pixel sailboats receive warm lamps at 59.2, 59.9, 60.6, 61.3, 62.0 and 62.7 seconds, each with a bell; after lighting they slowly sail toward the harbor. Their light columns join the lighthouse reflection on the sea. The keeper watches and waves on the pier. Narration begins at 59.5: And far out at sea, every lost ship found its way home."
     },
     {
       "start": 67,
       "end": 76.5,
       "title": "The Lampbearer",
-      "prompt": "Same harbor softly recedes, gold serif THE LAMPBEARER title 68, thin rule and Every path begins with a single light 69.3. Original provenance 71 and music credit 72, truthful new credit later. Hold to 75.5 and final fade by 76.5; actual delivery 60 fps 4590 frames."
+      "prompt": "Continue the same rising harbor camera under the title treatment. Fade a half-strength dark plate from 67.4, then widely tracked gold-gradient THE LAMPBEARER in 118px Cinzel with warm glow, ornament and full italic tagline Every path begins with a single light. The final narration starts at 69.3. Fade in a GPT authorship line at 70.6–71.6 in the original credit slot and accurate fresh-score/voice credits at 71.5–72.5. Keep the living lighthouse, ships and water behind the type, then fade fully to black by 76.5."
     }
   ],
   "published_timing_tables": {
@@ -354,7 +354,7 @@
   "engine_reuse_recommendation": "Generic hd render er/camera/material texture/sprite draw/DOF/bloom engine allowed; independently assemble harbor/forest/cliff/tower and actor performance. No original scene render imports.",
   "rights_or_evidence_notes": "Original music Precipice by Scott Buckley is CC BY4.0; user explicitly requests recreated music, so new soundtrack must follow its cue-form without reusing original master. Preserve original attribution as reference history, credit new composition honestly.",
   "v1_quality_deficits": "V 1 simplified 76.5 s actual 3 D miniature and eight shots into a 20 s flat journey, lost Keeper handover, near-extinguished flame, detailed forest/cliff/tower, and ships rescue.",
-  "recreation_status": "brief-audited; newfilmnotyetgenerated",
+  "recreation_status": "Independent source-informed reconstruction using attributed generic pixel, sprite, prop, environment and postprocessing factories. This is not a blind same-prompt benchmark.",
   "published_asset_manifest": [
     {
       "path": "styles/hd-2d/demo/fonts/g.css",

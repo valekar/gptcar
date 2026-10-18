@@ -1,0 +1,167 @@
+{
+  "method": "24Hz 50ms RMS/centroid envelopes from fresh character-filtered replica takes. No original audio/envelope reused.",
+  "takes": [
+    {
+      "id": "p1",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "ce7517c808b7fc7f3bbd7ab254e928b892c63a552090a6f96767dc1a10972a6f",
+      "audio_sha256": "638e6ded9356a478a6c169ae05f66bef51c0550a9462c1f85494443d729621ab",
+      "duration": 2.9,
+      "intentional_cut_seconds": 2.9,
+      "pitch_mode": "varispeed"
+    },
+    {
+      "id": "v1",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "f336fdd56d3b5dc297a25ba5c6fe1ca83a73424a89e4d47e965a38502f10c5da",
+      "audio_sha256": "e6db815f82c0aa1b37ae09d4c63ea7a802a3b216e6734c3d6ded66a82f870a39",
+      "duration": 0.715583,
+      "intentional_cut_seconds": null,
+      "pitch_mode": "varispeed"
+    },
+    {
+      "id": "v2",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "aa64648eb911996bd8987d78a82d06335e6f2e0334e9a505b21284b6e84b6579",
+      "audio_sha256": "59ab529ed625069294da875a273fd139251e3065d6d7b720482495125f2f7682",
+      "duration": 1.224167,
+      "intentional_cut_seconds": null,
+      "pitch_mode": "varispeed"
+    },
+    {
+      "id": "v3",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "9cfddbbd1b145f0c61da63fc37b97bc609f1b25b4890d5ec556c740d223593d3",
+      "audio_sha256": "ece7eae8d6cb4f95a1fdb42a9eec55b322ba91b71aa46bced7c81b4cd7b11dde",
+      "duration": 1.797833,
+      "intentional_cut_seconds": null,
+      "pitch_mode": "varispeed"
+    },
+    {
+      "id": "v4",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "7bf0b3d60c4f8bd022d1845519888635d232e374c0081f10ce4eae6395c7763e",
+      "audio_sha256": "7d972cd99c5a005db1ee258070742565054b2f574d9d6de2ba9867c836b6d20e",
+      "duration": 0.724583,
+      "intentional_cut_seconds": null,
+      "pitch_mode": "varispeed"
+    },
+    {
+      "id": "p2",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "e7fcc3130f15fd03b6e94d8eece8c386aa07d7bde54aa3592a770cc3bc9aacaf",
+      "audio_sha256": "30ac07339c74445dba60e6ed93ce5ca07d72333c06156382b8cedef19eab1a9f",
+      "duration": 0.645167,
+      "intentional_cut_seconds": null,
+      "pitch_mode": "varispeed"
+    },
+    {
+      "id": "p3",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "21fe49cd577bbfd71507ad1fdbcfe6ae5b9f92c85baadd3f720a5d77c7d61989",
+      "audio_sha256": "092a70e56777b9fad7e382e22da74f56022a9c1f8f1594efc8cecfd274b10230",
+      "duration": 2.738667,
+      "intentional_cut_seconds": null,
+      "pitch_mode": "varispeed"
+    },
+    {
+      "id": "v5",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "13b2fbbbb46f5589145246a7ac4467fde3d4235b7f374c4673797914dcc9f4b9",
+      "audio_sha256": "a56ca73288055c39497df51b3a5bf484f2fcd965b2a9103655c4275e0e4e0c0b",
+      "duration": 0.678875,
+      "intentional_cut_seconds": null,
+      "pitch_mode": "varispeed"
+    },
+    {
+      "id": "v6a",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "e4a45ca1f0cb5f1e31385046e8ab97a0a9904cf4ca6c94032b26b3199f8664d1",
+      "audio_sha256": "71806ba8e9cc0c0d415bb00ff1e2fd292170ec9ec799e557f1b23c35055dae34",
+      "duration": 0.626375,
+      "intentional_cut_seconds": null,
+      "pitch_mode": "varispeed"
+    },
+    {
+      "id": "v6b",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "4f7bac68a1dd825a9f99cfe7b7e210183fdb8c77de53d69d01391087d2067a8f",
+      "audio_sha256": "80a150f97814f6064a712616e97b08432cc0be079747e5946d56d2a121e57406",
+      "duration": 0.678917,
+      "intentional_cut_seconds": null,
+      "pitch_mode": "varispeed"
+    },
+    {
+      "id": "v6c",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "406ae0ebe591ce7d2185416cf3ef17d6b029642ec492738b225f7db7a2b82991",
+      "audio_sha256": "d7bed449a2437fd43b971fd552959909d1903f46ad788c495dc209ecdb39ef92",
+      "duration": 0.650667,
+      "intentional_cut_seconds": null,
+      "pitch_mode": "varispeed"
+    },
+    {
+      "id": "p4",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "2286b25683b0712287ab19232d5621aca8d276de7cb451bd486776f6ec925a13",
+      "audio_sha256": "aba63fe79c7588173877d13abff06ee2be39b6b7cf691e0362311780be966f45",
+      "duration": 1.742458,
+      "intentional_cut_seconds": null,
+      "pitch_mode": "varispeed"
+    },
+    {
+      "id": "v7",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "09e3538a35734cb3451e30b85f62c450290ce4a6b7d11a9d2f36db62308c33d3",
+      "audio_sha256": "d369284c1e27e07072e81ae5b41617e4b4ded77d96035f44809de5e508302b43",
+      "duration": 1.965458,
+      "intentional_cut_seconds": null,
+      "pitch_mode": "varispeed"
+    },
+    {
+      "id": "c1",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "c08d19d744ff619a6d1f93cfea13b465c1a5a1ca11f8e5d97ad79f1dcdf319aa",
+      "audio_sha256": "1f0a6667e683127e180424c749ce0895b421b6e0fa14142c657b10acbba5eeb9",
+      "duration": 0.645042,
+      "intentional_cut_seconds": null,
+      "pitch_mode": "preserve_duration"
+    },
+    {
+      "id": "p5",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "85f93c0a8865ce4f7bc36632b489b797fa5b5322eefbe5927a7e875c7c0f22ab",
+      "audio_sha256": "1e1b4311e03c271f6668f92fffa07751e2ab59000e53b4e4e5bc9ecc9a719ce7",
+      "duration": 1.448208,
+      "intentional_cut_seconds": null,
+      "pitch_mode": "varispeed"
+    },
+    {
+      "id": "v8",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "a986375fa87568863c423e78dc6dbd65cc46709c4aad90d7aaa8054bd222ed1a",
+      "audio_sha256": "5ea889c5d16e963a0e29bf689d031a3b5af1736026263669827921d030262271",
+      "duration": 1.468542,
+      "intentional_cut_seconds": null,
+      "pitch_mode": "varispeed"
+    },
+    {
+      "id": "c2",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "d60f10048c84a6a5b96b14e2721f3162d2757df79c2df764d52f5d75fd3a3956",
+      "audio_sha256": "a2cdc1289f8e7c509777662d98874a716d3e46ab7633c15e726e130be30e3a8a",
+      "duration": 0.680208,
+      "intentional_cut_seconds": null,
+      "pitch_mode": "preserve_duration"
+    },
+    {
+      "id": "v9",
+      "source": "Fresh locally synthesized replica take",
+      "input_sha256": "379476a3560ca1dc716c3ec9145597ebc7c45ac26f8644655decd365044fd83c",
+      "audio_sha256": "cf553031718857a6cf6429c5e461a1bb3cd53129a64b57cdaf29b6f64380087b",
+      "duration": 1.696958,
+      "intentional_cut_seconds": null,
+      "pitch_mode": "varispeed"
+    }
+  ]
+}
