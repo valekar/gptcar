@@ -1,0 +1,434 @@
+{
+  "voice": "am_fenrir",
+  "language": "en-us",
+  "allow_overlap": true,
+  "lines": [
+    {
+      "id": "c_pump",
+      "text": "Pump, now!",
+      "start": 0.12,
+      "duration": 0.211,
+      "voice": "am_fenrir",
+      "speed": 1.05,
+      "language": "en-us",
+      "who": "tick",
+      "command": true,
+      "performance_fx": false,
+      "trim_word": "Pump",
+      "spoken_text": "Pump!",
+      "intentional_trim_reason": "Published first-word command; full synthesis phrase retained for natural pronunciation.",
+      "published_cue": 0.02,
+      "gain": 1.7,
+      "pan": -0.05,
+      "filter": "micro_host",
+      "voice_room": {
+        "rt": 0.4,
+        "wet": 0.1
+      }
+    },
+    {
+      "id": "l1",
+      "text": "Welcome to Five-Second Camp!",
+      "start": 5.0,
+      "duration": 1.545,
+      "voice": "am_fenrir",
+      "speed": 1.05,
+      "language": "en-us",
+      "who": "tick",
+      "command": false,
+      "performance_fx": false,
+      "gain": 1.0,
+      "pan": -0.05,
+      "filter": "micro_host",
+      "voice_room": {
+        "rt": 0.4,
+        "wet": 0.14
+      }
+    },
+    {
+      "id": "c_sneeze",
+      "text": "Don't sneeze!",
+      "start": 8.12,
+      "duration": 0.767,
+      "voice": "am_fenrir",
+      "speed": 1.1,
+      "language": "en-us",
+      "who": "tick",
+      "command": true,
+      "performance_fx": false,
+      "published_cue": 8.02,
+      "gain": 1.7,
+      "pan": -0.05,
+      "filter": "micro_host",
+      "voice_room": {
+        "rt": 0.4,
+        "wet": 0.1
+      }
+    },
+    {
+      "id": "d_ah",
+      "text": "Ah... ah...",
+      "start": 9.45,
+      "duration": 1.161,
+      "voice": "af_bella",
+      "speed": 0.9,
+      "language": "en-us",
+      "who": "dot",
+      "command": false,
+      "performance_fx": true,
+      "pitch_semitones": 2.5,
+      "pitch_mode": "preserve_duration",
+      "gain": 0.75,
+      "pan": 0.1,
+      "voice_room": {
+        "rt": 0.25,
+        "wet": 0.08
+      }
+    },
+    {
+      "id": "fx_choo1",
+      "text": "Choo!",
+      "start": 10.5,
+      "duration": 0.487,
+      "voice": "af_bella",
+      "speed": 1.1,
+      "language": "en-us",
+      "who": "dot",
+      "command": false,
+      "performance_fx": true,
+      "pitch_semitones": 2.5,
+      "pitch_mode": "preserve_duration",
+      "gain": 1.0,
+      "pan": 0.1,
+      "voice_room": {
+        "rt": 0.25,
+        "wet": 0.08
+      }
+    },
+    {
+      "id": "l2",
+      "text": "Bless you. Next!",
+      "start": 12.35,
+      "duration": 0.937,
+      "voice": "am_fenrir",
+      "speed": 1.08,
+      "language": "en-us",
+      "who": "tick",
+      "command": false,
+      "performance_fx": false,
+      "gain": 1.0,
+      "pan": -0.05,
+      "filter": "micro_host",
+      "voice_room": {
+        "rt": 0.4,
+        "wet": 0.14
+      }
+    },
+    {
+      "id": "c_strap",
+      "text": "Strap in!",
+      "start": 14.12,
+      "duration": 0.699,
+      "voice": "am_fenrir",
+      "speed": 1.08,
+      "language": "en-us",
+      "who": "tick",
+      "command": true,
+      "performance_fx": false,
+      "published_cue": 14.02,
+      "gain": 1.7,
+      "pan": -0.05,
+      "filter": "micro_host",
+      "voice_room": {
+        "rt": 0.4,
+        "wet": 0.1
+      }
+    },
+    {
+      "id": "c_catch",
+      "text": "Catch, now!",
+      "start": 20.12,
+      "duration": 0.203,
+      "voice": "am_fenrir",
+      "speed": 1.05,
+      "language": "en-us",
+      "who": "tick",
+      "command": true,
+      "performance_fx": false,
+      "trim_word": "Catch",
+      "spoken_text": "Catch!",
+      "intentional_trim_reason": "Published first-word command; full synthesis phrase retained for natural pronunciation.",
+      "published_cue": 20.02,
+      "gain": 1.7,
+      "pan": -0.05,
+      "filter": "micro_host",
+      "voice_room": {
+        "rt": 0.4,
+        "wet": 0.1
+      }
+    },
+    {
+      "id": "l3",
+      "text": "Too easy?",
+      "start": 24.2,
+      "duration": 0.759,
+      "voice": "am_fenrir",
+      "speed": 0.95,
+      "language": "en-us",
+      "who": "tick",
+      "command": false,
+      "performance_fx": false,
+      "gain": 1.0,
+      "pan": -0.05,
+      "filter": "micro_host",
+      "voice_room": {
+        "rt": 0.4,
+        "wet": 0.14
+      }
+    },
+    {
+      "id": "l4",
+      "text": "Speed up!",
+      "start": 26.59,
+      "duration": 0.641,
+      "voice": "am_fenrir",
+      "speed": 1.1,
+      "language": "en-us",
+      "who": "tick",
+      "command": true,
+      "performance_fx": false,
+      "published_cue": 26.49,
+      "gain": 1.7,
+      "pan": -0.05,
+      "filter": "micro_host",
+      "voice_room": {
+        "rt": 0.4,
+        "wet": 0.1
+      }
+    },
+    {
+      "id": "c_dodge",
+      "text": "Dodge.",
+      "start": 27.97,
+      "duration": 0.607,
+      "voice": "am_fenrir",
+      "speed": 1.0,
+      "language": "en-us",
+      "who": "tick",
+      "command": true,
+      "performance_fx": false,
+      "published_cue": 27.87,
+      "gain": 1.7,
+      "pan": -0.05,
+      "filter": "micro_host",
+      "voice_room": {
+        "rt": 0.4,
+        "wet": 0.1
+      }
+    },
+    {
+      "id": "c_zip",
+      "text": "Zip, now!",
+      "start": 31.4,
+      "duration": 0.2,
+      "voice": "am_fenrir",
+      "speed": 1.05,
+      "language": "en-us",
+      "who": "tick",
+      "command": true,
+      "performance_fx": false,
+      "trim_word": "Zip",
+      "spoken_text": "Zip!",
+      "intentional_trim_reason": "Published first-word command; full synthesis phrase retained for natural pronunciation.",
+      "published_cue": 31.3,
+      "gain": 1.7,
+      "pan": -0.05,
+      "filter": "micro_host",
+      "voice_room": {
+        "rt": 0.4,
+        "wet": 0.1
+      }
+    },
+    {
+      "id": "c_salute",
+      "text": "Salute!",
+      "start": 34.83,
+      "duration": 0.533,
+      "voice": "am_fenrir",
+      "speed": 1.15,
+      "language": "en-us",
+      "who": "tick",
+      "command": true,
+      "performance_fx": false,
+      "published_cue": 34.73,
+      "gain": 1.7,
+      "pan": -0.05,
+      "filter": "micro_host",
+      "voice_room": {
+        "rt": 0.4,
+        "wet": 0.1
+      }
+    },
+    {
+      "id": "l5",
+      "text": "One life left, cadet.",
+      "start": 38.43,
+      "duration": 1.335,
+      "voice": "am_fenrir",
+      "speed": 0.95,
+      "language": "en-us",
+      "who": "tick",
+      "command": false,
+      "performance_fx": false,
+      "gain": 1.0,
+      "pan": -0.05,
+      "filter": "micro_host",
+      "voice_room": {
+        "rt": 0.4,
+        "wet": 0.14
+      }
+    },
+    {
+      "id": "l6",
+      "text": "Boss stage!",
+      "start": 40.6,
+      "duration": 0.773,
+      "voice": "am_fenrir",
+      "speed": 1.1,
+      "language": "en-us",
+      "who": "tick",
+      "command": true,
+      "performance_fx": false,
+      "published_cue": 40.5,
+      "gain": 1.7,
+      "pan": -0.05,
+      "filter": "micro_host",
+      "voice_room": {
+        "rt": 0.4,
+        "wet": 0.1
+      }
+    },
+    {
+      "id": "c_land",
+      "text": "Land it!",
+      "start": 41.57,
+      "duration": 0.591,
+      "voice": "am_fenrir",
+      "speed": 1.15,
+      "language": "en-us",
+      "who": "tick",
+      "command": true,
+      "performance_fx": false,
+      "published_cue": 41.47,
+      "gain": 1.7,
+      "pan": -0.05,
+      "filter": "micro_host",
+      "voice_room": {
+        "rt": 0.4,
+        "wet": 0.1
+      }
+    },
+    {
+      "id": "c_pull",
+      "text": "Pull, now!",
+      "start": 44.57,
+      "duration": 0.25,
+      "voice": "am_fenrir",
+      "speed": 1.05,
+      "language": "en-us",
+      "who": "tick",
+      "command": true,
+      "performance_fx": false,
+      "trim_word": "Pull",
+      "spoken_text": "Pull!",
+      "intentional_trim_reason": "Published first-word command; full synthesis phrase retained for natural pronunciation.",
+      "published_cue": 44.47,
+      "gain": 1.7,
+      "pan": -0.05,
+      "filter": "micro_host",
+      "voice_room": {
+        "rt": 0.4,
+        "wet": 0.1
+      }
+    },
+    {
+      "id": "d_ohno",
+      "text": "Oh no.",
+      "start": 45.62,
+      "duration": 0.595,
+      "voice": "af_bella",
+      "speed": 1.0,
+      "language": "en-us",
+      "who": "dot",
+      "command": false,
+      "performance_fx": false,
+      "pitch_semitones": 2.5,
+      "pitch_mode": "preserve_duration",
+      "gain": 0.9,
+      "pan": 0.1,
+      "voice_room": {
+        "rt": 0.25,
+        "wet": 0.08
+      }
+    },
+    {
+      "id": "d_ah2",
+      "text": "Ah... ah...",
+      "start": 46.62,
+      "duration": 1.024,
+      "voice": "af_bella",
+      "speed": 1.0,
+      "language": "en-us",
+      "who": "dot",
+      "command": false,
+      "performance_fx": true,
+      "pitch_semitones": 2.5,
+      "pitch_mode": "preserve_duration",
+      "gain": 0.75,
+      "pan": 0.1,
+      "voice_room": {
+        "rt": 0.25,
+        "wet": 0.08
+      }
+    },
+    {
+      "id": "fx_choo2",
+      "text": "Choo!",
+      "start": 47.452,
+      "duration": 0.525,
+      "voice": "af_bella",
+      "speed": 1.0,
+      "language": "en-us",
+      "who": "dot",
+      "command": false,
+      "performance_fx": true,
+      "pitch_semitones": 2.5,
+      "pitch_mode": "preserve_duration",
+      "gain": 1.25,
+      "pan": 0.1,
+      "voice_room": {
+        "rt": 0.25,
+        "wet": 0.08
+      }
+    },
+    {
+      "id": "l7",
+      "text": "You made it, cadet. Salute!",
+      "start": 53.85,
+      "duration": 1.381,
+      "voice": "am_fenrir",
+      "speed": 1.05,
+      "language": "en-us",
+      "who": "tick",
+      "command": false,
+      "performance_fx": false,
+      "gain": 1.3,
+      "pan": -0.05,
+      "filter": "micro_host",
+      "voice_room": {
+        "rt": 0.4,
+        "wet": 0.14
+      }
+    }
+  ]
+}

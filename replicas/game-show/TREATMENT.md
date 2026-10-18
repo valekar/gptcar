@@ -1,0 +1,3 @@
+# Full timed treatment
+
+0–6.4: cast drops/title/count-in. Cards at6.4/20.8/35.2/49.6/64/78.4/92.8, each1.6s, then12.8s bespoke play: chess→Go1997–2016; quiz2011; attention factory2017–2020; art studio2021–2024; chat chorus2022–2023; thinking/price war2024–2025; agent pipeline2025. Remix card107.2, seven two-bar mini-scenes108.8–131.2 plus finale131.2–134.4: physical AI, robots, tokens, Gemini, Sonnet, march, V4/liftoff. Ending134.4–148.8: NEXT egg/cracks/hatch, Hi, report card three typed lines/Superb stamp, truthful credit at144 and final0.8s navy fade. All stage holds, exact prop text and movement will follow the full scene audit, no abbreviated dates catalogue.

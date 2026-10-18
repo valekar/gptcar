@@ -37,8 +37,9 @@ The publication builder refuses a missing movie or poster, stale source hash, wr
 
 Seven automated tests pass, including setup/installer integration and incomplete-publication rejection. `npm run check` confirms all 51 upstream style-prompt hashes. JavaScript/Python syntax and whitespace checks pass. Desktop and narrow-screen browser checks cover layout, search, same-page jumps and paired playback. See [validation details](../docs/VALIDATION.md).
 
-## Reproduce
+## Historical reproduction
 
-See [comparisons/README.md](../comparisons/README.md) to render a source film. Download release MP4 files into `.release/comparison/` and JPG files into its `posters/` subfolder, then run `npm run gallery:build`. The strict builder emits `_site/index.html`, one shared catalogue and media; it creates no separate style pages.
+See [comparisons/README.md](../comparisons/README.md) to render a source film. Download release MP4 files into `.release/comparison/` and JPG files into its `posters/` subfolder, then run `# Historical v1 command; the current gallery:build command builds reviewed v2 reconstructions.
+# Use the v1 source revision to reproduce this historical run.`. The strict builder emits `_site/index.html`, one shared catalogue and media; it creates no separate style pages.
 
 Local rendering was tested on Apple silicon macOS. Optional narration engines and every other platform/model remain outside this run. The left films are served by the upstream gallery, so their continued availability depends on that host. Third-party asset licences and original MIT attribution remain intact.

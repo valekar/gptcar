@@ -1,0 +1,183 @@
+{
+  "description": "Local source/model/engine and actual font digests. Complete original scene/renderers are excluded.",
+  "local_files": [
+    {
+      "path": "CREDITS",
+      "sha256": "58dd67bc19e83a23a9d4de97dbd66f045a6d275e03df644d63a7c4f718e756e6"
+    },
+    {
+      "path": "PROMPT.md",
+      "sha256": "39df3eedcf1cbc3cc78320a744eb2f8e729d519d425e50e496227db335de3bc6"
+    },
+    {
+      "path": "REVIEW.md",
+      "sha256": "4503405fb70b3db7bf17235794f49540484e76376027f4772fb72213d9c4e7df"
+    },
+    {
+      "path": "TOOLKIT_CREDITS.txt",
+      "sha256": "904fc77a3acc57140dc50a71df5df4cdf223b6e6f3da06fc1c642b3cf85bbfe0"
+    },
+    {
+      "path": "TOOLKIT_LICENSE.txt",
+      "sha256": "14c9ff6f14bfb2391e74fedb01c256891d2a3bba1c2acf5789901bdf77e54e33"
+    },
+    {
+      "path": "TREATMENT.md",
+      "sha256": "39df3eedcf1cbc3cc78320a744eb2f8e729d519d425e50e496227db335de3bc6"
+    },
+    {
+      "path": "chars.js",
+      "sha256": "ae5a2bac67c78e7ce18fa5974677b00e823ffb1a294909b4cd8404f08b2531eb"
+    },
+    {
+      "path": "cue-data.json",
+      "sha256": "761cef1fd6e6e2bad27aa9a505db7a6246a0ed327b543aec93bf101e260595ba"
+    },
+    {
+      "path": "film.js",
+      "sha256": "4f17195a982a16a2d6099faf34c4ff5ba461b3f8853e3891278dd6ad493b1ed7"
+    },
+    {
+      "path": "fonts/ArchitectsDaughter.ttf",
+      "sha256": "6159718a08898e34bc1cb7354086141a5f9a70b73e54dbec27ead0d59a697359"
+    },
+    {
+      "path": "fonts/GochiHand.ttf",
+      "sha256": "c46b029ab4846b2935e301af0b2cf85a1d74d2858e6a33636a3e64cf3cc4696b"
+    },
+    {
+      "path": "fonts/Inter.ttf",
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031"
+    },
+    {
+      "path": "fonts/LilitaOne.ttf",
+      "sha256": "f5b641c45c69d772ee4eda687bc9fda411d5cad6b0b45371491da4580cbc8d59"
+    },
+    {
+      "path": "fonts/OFL-architectsdaughter.txt",
+      "sha256": "0e441ae9f18ad0c294cc5b6ae3974c2db1614cab220598578b1b58c4cc334485"
+    },
+    {
+      "path": "fonts/OFL-gochihand.txt",
+      "sha256": "b36cb03d6ddc163452d9935ce6f325741434272d3889acf42cc23584f31a85bf"
+    },
+    {
+      "path": "fonts/OFL-inter.txt",
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
+    {
+      "path": "fonts/OFL-lilitaone.txt",
+      "sha256": "255d5debbb80eb2ea762644311f266a279e8778f00156655a516e2b7781a63e1"
+    },
+    {
+      "path": "fonts/OFL-silkscreen.txt",
+      "sha256": "86c5e9c9382cdcc5948704fdfe60f2aa164a719746931219a42736ecd9cefbd3"
+    },
+    {
+      "path": "fonts/OFL-titanone.txt",
+      "sha256": "61be7c29f4835e2be7243db12213d75d53ff028f29f4b493212a1688b1d3a1ba"
+    },
+    {
+      "path": "fonts/OFL-vt323.txt",
+      "sha256": "27d9af34210253e7ca1251fbace86c6f65b40031d6ce1a75493a1b2093631298"
+    },
+    {
+      "path": "fonts/Silkscreen.ttf",
+      "sha256": "c845473330b94c2079ce9af01c51ac8ba2d99c24f4d14c039843bbb8e642ebd8"
+    },
+    {
+      "path": "fonts/TitanOne.ttf",
+      "sha256": "563ff6de179bbd44bcd7d2a6c448d6dc3bf935834237cf1250e506e65cd86ff1"
+    },
+    {
+      "path": "fonts/VT323.ttf",
+      "sha256": "cf4de751ada78ceac033dbe16a687742939995b77bc2a052ae17a4957958594d"
+    },
+    {
+      "path": "fonts/fonts.css",
+      "sha256": "f1f425e17f879cf7f3258b8f3a6f1ec86f2559fc5da4bb7677a2721b4cb50580"
+    },
+    {
+      "path": "games.js",
+      "sha256": "b5a77b58988c67c091695c3cd7705657f7a10532225bb4f96666f0c65a9a156c"
+    },
+    {
+      "path": "glpass.js",
+      "sha256": "0f2707c0be70529da5d3513d81954a7a7b3c3e9972641257cb9834d101362f81"
+    },
+    {
+      "path": "home.js",
+      "sha256": "4bd295183311f05091a2e4fba6b9f456c1ab3b3585f9588f5b9a2eeaac56fd0a"
+    },
+    {
+      "path": "hud.js",
+      "sha256": "e7ac9380a9af8fada57169cc76912d07c20c8b76462419af3f41a39aff76a7a5"
+    },
+    {
+      "path": "index.html",
+      "sha256": "4c3a0b9648d37085f5d39d5f123270e67250635e02801151a30baab947eb3085"
+    },
+    {
+      "path": "landing-props.js",
+      "sha256": "812104e9298304565f7aa64963b9f98ce1c37edf42922a4d481522dd6c407d5b"
+    },
+    {
+      "path": "landing.js",
+      "sha256": "c1fa4a9599fed39961951e9dae8b7b8b5448aea62155900286d5ab7340017cc9"
+    },
+    {
+      "path": "m_ascii.js",
+      "sha256": "e0c88126df92e5698b30b888ae83ae6a31202ef2bd1d1274107ad6edfbf7655e"
+    },
+    {
+      "path": "m_blue.js",
+      "sha256": "e2d421051b27a2aee7d41b11f05d59dce56262a789b662c98f37c5e4a7721e1e"
+    },
+    {
+      "path": "m_crayon.js",
+      "sha256": "7ad5b178081fae43c81bdb79816c1205454b8479eacbce8bbe2db46214727473"
+    },
+    {
+      "path": "m_ink.js",
+      "sha256": "08104df0da463b59fcf9a89775327e977023a9aa68a0d7936dd6e7b4c2b050bb"
+    },
+    {
+      "path": "m_pixel.js",
+      "sha256": "1651e39b9f5b30e9ea5083169f44fabe12a611bd52f621f526937c4fcc3c2766"
+    },
+    {
+      "path": "m_riso.js",
+      "sha256": "9706dfc26ca1592dec25ae1d4133f7386ce00555576321b2491912cc1cdfab2c"
+    },
+    {
+      "path": "m_swiss.js",
+      "sha256": "2068769d6cf3052eb265847f3ba6a64c65f5aeba19f67cd4f025062b52fbe1d5"
+    },
+    {
+      "path": "narration.json",
+      "sha256": "feac2fa4a605f22b043bf81be6c03a1dcbd74cf671e7a662e95b071f5000f205"
+    },
+    {
+      "path": "sandwich.js",
+      "sha256": "0c1e58847caa22094f04f67e6a25e9c10bcf9bfca950a670c7fdd344aeb6f06b"
+    },
+    {
+      "path": "score.json",
+      "sha256": "8cca28457a35b4800a7f6bb982b4adfb811b2e1512275145328c49b1550f9241"
+    },
+    {
+      "path": "timing-data.json",
+      "sha256": "4f57013d404489db75bbbcee349d403900434ff9b1ed39da03dcbe33edf16216"
+    },
+    {
+      "path": "toon.js",
+      "sha256": "2e17643b85165f50c28673583ca14f7b63aa02b9f8b746f969f4a1db5ec0ce5f"
+    }
+  ],
+  "shared_assets": [
+    {
+      "path": "core/lib.js",
+      "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907"
+    }
+  ]
+}

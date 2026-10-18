@@ -6,7 +6,7 @@ Reviewed 18 October 2026 at upstream commit `ded40b25679fe5d5dcfc07a282a25da1cee
 
 The style instructions and code toolkit are reusable with GPT-6.1 Sol in Codex. A separate creative rewrite is not required. The repository already has `AGENTS.md` and tells other agents to copy the main skill into their skill folder. GPTcar provides a convenient Codex entry point, setup and documentation around that reusable content. It is an adaptation, not a newly invented set of styles.
 
-This is a compatibility assessment, not a claim that every model reproduces the upstream demos. The upstream author explicitly warns that the prompts were tuned for Opus 5.5. No controlled comparison of complete films across models has been performed here. See [VALIDATION.md](VALIDATION.md) and the [51-style run report](../comparison/REPORT.md) for what was actually executed. The published gallery adds independent 20-second GPT-6.1 Sol High studies; it does not establish parity with the full Opus productions.
+This is a compatibility assessment, not a claim that every model reproduces the upstream demos. The upstream author explicitly warns that the prompts were tuned for Opus 5.5. No controlled comparison of complete films across models has been performed here. See [VALIDATION.md](VALIDATION.md) and the [full reconstruction run report](../comparison/REPLICATION_REPORT.md) for what was actually executed. The initial20-second studies were rejected. The replacement run uses full-length, source-informed GPT-6.1 Sol High reconstructions with fresh speech and music, scene review, and explicit shared-asset disclosures. This does not establish controlled model parity.
 
 ## What was reviewed
 
@@ -41,7 +41,7 @@ The 8 Evidence Films styles need genuine source material, metadata and measured/
 3. Codex-first README files, package naming and setup/error guidance. Original toolkit environment variables such as `LEMO_ANGLE` and `LEMO_COLOR` are preserved to avoid breaking the existing runtime.
 4. Original gallery/Claude publishing artifacts remain attributed; automatic gallery deployment is restricted to the original repository. Codex-specific checks run separately.
 5. Upstream commit and exact style hashes, a complete inventory and setup regression checks. All creative STYLE.md files and demo sources are unchanged.
-6. Independent GPT-6.1 Sol High sample sources in `comparisons/`, a single-page Opus/GPT gallery, checksum-verified media in a GitHub Release, and a publication gate requiring every film and visual review.
+6. Full-length GPT-6.1 Sol High reconstruction sources in `replicas/`, a single-page Opus/GPT gallery, checksum-verified media in a GitHub Release, and a publication gate requiring every film and visual review.
 
 The local skill can coexist with HyperFrames. Its original render contract is different from HyperFrames' timed HTML contract: take the style as art direction in an established HyperFrames workflow, or explicitly choose the GPTcar renderer. Rewriting all 51 demos into HyperFrames is a separate project.
 
@@ -53,7 +53,7 @@ The new project is **GPTcar**, repository slug **gptcar**, as requested. The new
 
 ## Complete style inventory
 
-Every row below is **instruction-compatible by static review**. “Requirements” describes the technical dependency or quality challenge, not a model restriction. The later gallery run adds a 20-second GPT-6.1 Sol High study for every style; these compact studies have not been rated as equivalent to the original full films.
+Every row below is **instruction-compatible by static review**. “Requirements” describes the technical dependency or quality challenge, not a model restriction. The replacement gallery run recreates the complete original stories and delivery formats. Every pair exposes its reconstructed prompt, attributed shared components and remaining differences; acceptance does not mean pixel identity.
 
 | Style | Category | Requirements / review focus |
 | --- | --- | --- |

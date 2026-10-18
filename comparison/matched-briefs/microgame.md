@@ -1,111 +1,108 @@
 # Five-Second Astronaut — canonical reference-matched brief
 
-Reconstruction from complete published STYLE/DEMO, exact narration/timing data and complete decoded-film contact sheets; not a recovered original chat prompt.
+Source-informed reconstruction from the complete published movie, guides, script and timing evidence. The private original conversation prompt is unavailable.
 
-Delivery: **59.833333s ·1280×720 ·24/1fps ·1436frames**. Original production canvas separately1920×1080; preserve internal medium detail.
+Delivery: 1,436 frames at 24 fps, 1280 × 720, 59.833333 seconds. Production artwork: 1920 × 1080.
 
-STYLE path: `styles/microgame/STYLE.md`
-SHA-256: `ce209dde1270d032436e02569857bed373cee86e45870bf853d4d8797dc719fb`
+STYLE SHA-256: `ce209dde1270d032436e02569857bed373cee86e45870bf853d4d8797dc719fb`. All five original sheets and 123 exact original/new time pairs were inspected.
 
-Complete visual coverage: all5 sheets, 60 regular decoded samples. Exact subsecond acceptance must use decoded absolute timestamps, not approximate sheet labels.
+## Materials, characters and typography
 
-## Materials, characters, typography
-
-Cadet Dot has round helmet, small antenna orange ball and 05 badge conserved across seven mediums; Coach Tick is stopwatch head/crown button, expressive eyebrows, magenta blazer/white gloves/cyan tie. Home purple flat cartoon stage, gold TV 768×432,3 helmet lives, physical red speed button pedestal 5, braided fuse with beat knots. Games material genuinely changes: crayon, ink wash, amber ASCII, riso, pixel, blueprint, Swiss. Finale mixes all without random style loss.
+Cadet Dot keeps a round helmet, small orange antenna ball and 05 badge across seven distinct media. Coach Tick has a stopwatch head and crown button, expressive eyebrows, magenta blazer, white gloves and cyan tie. The home stage has a purple sunburst, 768 × 432 gold TV, three helmet lives, a red button on a podium marked 5, and a braided fuse with beat knots. Game materials are crayon, ink wash, amber ASCII CRT, risograph, indexed pixel, blueprint and Swiss type. The finale connects their real material layers in one focal chain.
 
 ## Full scene-level reconstructed prompt
 
-### 0.00000–4.00000s · PUMP in crayon
+### 0.000000–4.000000 seconds · PUMP in crayon
 
-Crayon paper white, yellow hand drawn sun, blue clouds, grass hatching, Dot left pump bellows with both hands, growing pencil rocket right. PUMP!comics burst then upper left instruction; fuse burns. Success 3 sYay and launch rocket.
+Cold open inside the crayon game. Cream paper carries a quarter sun at upper left, two blue clouds and green zigzag grass. Dot stands left of a green pump, both hands on its brown handle; a white pencil-shaped rocket with red fins, blue window and yellow star stands right. Four presses at 1.0, 1.5, 2.0 and 2.5 seconds inflate it. At 3.0 Dot raises both hands and the rocket floats with vibration strokes. PUMP! slams on a gold burst, then becomes a small upper-left tag. Keep the braided fuse and small firecracker rocket along the bottom. Wax deposits through actual pressure/alpha and paper tooth; outlines boil at 12 fps, acting steps at 8 fps.
 
-### 4.00000–8.00000s · Coach welcomes
+### 4.000000–8.000000 seconds · Coach welcomes
 
-Pull to TV show purple home stage. Coach Tick left gestures at TV frozen win, OK!green bubble, three helmet lives right, speed button 5. FIVE-SECOND ASTRONAUT marquee. Welcome to Five-Second Camp!subtitle. Crown button point sets next game.
+Pull the finished crayon picture into the fixed gold TV on a purple rotating sunburst stage. Coach Tick stands left in a magenta jacket, cyan lapels and white gloves; his head is a gold stopwatch with a red hand/nose and crown button. The TV has a purple foot, speaker slots, red/cyan knobs and glass reflection. Three helmet lives sit right above a purple podium with red button and yellow 5. A yellow STAGE 02 plaque sits upper left. Light FIVE-SECOND ASTRONAUT letter by letter in the pink marquee. A green OK! stamp pops over the TV. Show the exact welcome subtitle on a gold card. Coach slaps his own crown at 7.5, then push into the next TV picture.
 
-### 8.00000–12.00000s · DON’T SNEEZE ink
+### 8.000000–12.000000 seconds · DON’T SNEEZE ink
 
-Extreme helmet portrait ink wash on paper, tiny feather near Dot nose, antenna/05 badge. Ink face breathes/squints, ACHOO 10.8 erupts giant black splatter covering face except 2 eyes, glyph stamped. Big fail without changing identity.
+Change completely to wet/dry ink on warm paper. Dot fills the frame: a pale brush-ring helmet, black hair, expressive brows, nose and mouth, vermilion antenna ball and 05 seal. DON’T SNEEZE! slams then tags. A feathery black dust mote drifts from upper right to the nose. Dot inhales twice and squints. At 10.5 the sneeze expands wet black ink across the visor, with splatter outside, dripping trails and slanted ACHOO! lettering. Two white eyes emerge and blink. Keep the ink pooling, broken dry strokes and native paper material.
 
-### 12.00000–14.00000s · Bless you next
+### 12.000000–14.000000 seconds · Bless you next
 
-Back TV with red X/life lost, Coach covers face with glove, first helmet icon cracks disappears; exact Bless you.Next!and stage 03. Life consequence visible.
+Return to STAGE 03. The TV holds the inked face with a red X stamp. The third helmet icon cracks, tumbles and vanishes, leaving two lives. Coach facepalms, then raises his glove to his crown. Show Bless you. Next! on the exact gold subtitle card. Preserve the visible life consequence and quick TV push.
 
-### 14.00000–18.00000s · STRAP IN ASCII
+### 14.000000–18.000000 seconds · STRAP IN ASCII
 
-Amber monochrome CRT full body Dot built from text glyphs. STRAP_IN.EXE /SEAT...OK /BELT...LOCKED /BUCKLE...CLICK /CADET 05...SECURE /STRAP TENSION bar. Belt buckles physically across ASCII waist; SECURED stamp. Not just terminal text overlay.
+Enter an amber CRT terminal with barrel curvature, phosphor glow and scanlines. Render Dot as hand-authored structural ASCII: round helmet, eyes, inverse @ antenna and 05 body. The top bar reads FIVE-SECOND CAMP // TRAINING TERMINAL v0.5. Type STRAP_IN.EXE, SEAT ......... OK, BELT ........ LOCKED, BUCKLE ...... CLICK and CADET 05 .... SECURED. A belt of equals glyphs advances across the waist in four steps and locks in a bracket buckle. Fill the STRAP TENSION bar and flash SECURED. STRAP IN! becomes the upper-left tag; the fuse remains visible.
 
-### 18.00000–20.00000s · Stage04
+### 18.000000–20.000000 seconds · Stage04
 
-Home TV amber win OK!, two helmet lives. Coach arms wide and crown cue. No missing stage after cut.
+Return briefly to STAGE 04 with the secured amber figure frozen in the TV, green OK!, two helmet lives and the same stage furniture. Coach cheers with both arms, then slaps his crown at 19.5 before the next push.
 
-### 20.00000–24.00000s · CATCH risograph
+### 20.000000–24.000000 seconds · CATCH risograph
 
-Cyan/magenta/yellow grain print spacecraft wall/windows, Dot floating, cheese sandwich triangle approaches, catching/open mouth CHOMP. Registered half tone/mis registration constant, braided fuse bottom. Material flip is complete.
+Change to cyan/yellow/pink risograph plate density, fixed halftone and misregistration. Pan across the riveted white spacecraft wall and round windows containing colored planets. Dot floats in a white knockout halo, preserving helmet, orange antenna and 05. A layered triangle sandwich rotates ahead; Dot reaches, catches it at 22.5 and bites at 23.0. Add crumbs, a plate kick and large pink CHOMP! above the raised food. Keep CATCH! as a small tag and the live fuse along the bottom.
 
-### 24.00000–26.00000s · Too easy button
+### 24.000000–26.000000 seconds · Too easy button
 
-Home TV frozen CHOMP/OK. Coach Too easy?then push into physical red pedestal button, glove approaches. Camera close rather than title card.
+Return to STAGE 05, holding CHOMP! with green OK! and two lives. Coach gives a sly point under Too easy? on the gold subtitle card. At 25.25 cut into an extreme red-button/purple-podium insert; the glove descends on the downbeat at 25.5. Add radial gold speed lines, a capped white impact and SMASH! lettering. Preserve the physical trigger rather than replacing it with a card.
 
-### 26.00000–27.84962s · SPEED UP
+### 26.000000–27.849578 seconds · SPEED UP
 
-Three vertical slice quick recap of previous games, then yellow/pink/cyan ray panels SPEED /UP /!. Music ramps 120→140 and all following durations shrink.
+Split the stage into three vertical slot reels carrying earlier game strips with offset motion smear. Each reel stops on the tempo-grid beat, revealing gold SPEED, pink UP and cyan ! ray panels. Keep black/gold dividers and curved top/bottom shading. The original final card can appear centered before the reel stop; match actual decoded picture rather than assuming every card scrolls identically. The music accelerates from 120 to 140 BPM and the next games shorten.
 
-### 27.84962–30.42105s · DODGE pixel
+### 27.849578–30.421007 seconds · DODGE pixel
 
-16 bit moon surface, star field purple planet right. Dot sprites jumps meteor trails and craters, orange helmet 05 same identity. Dodge!fuse fast. Pixel integer poses and chunky cliffs.
+Enter the actual 240 × 135 indexed pixel world, enlarged nearest-neighbor. Purple space, layered stars, dithered lavender planet, gray lunar ground and scrolling craters frame the small Dot sprite. Three orange-tailed meteors pass from right to left. Dot jumps each hit, with the third grazing the antenna and a few sparks. DODGE! tags; motion steps at 12 fps while the fuse and transitions stay smooth.
 
-### 30.42105–31.27820s · Stage06 insert
+### 30.421007–31.278149 seconds · Stage06 insert
 
-TV view only quick pull success, host cue one downbeat, no extra unplanned gap.
+Pull the pixel success into the TV for a very short STAGE 06 return. Two lives remain and Coach performs the crown cue. Preserve this subsecond bridge and the immediate push into the next engineering drawing.
 
-### 31.27820–33.84962s · ZIP blueprint
+### 31.278149–33.849578 seconds · ZIP blueprint
 
-Indigo technical SUIT FRONT—DETAILA, wire frame 05 spacesuit torso zipper open V; zipper tab climbs and teeth interlock, dimensions and helmet in set bottom left. Close before launch. Vermilion OK stamp at end.
+Change to blue technical paper with four line weights, hidden/center dashes, hand lettering and fine dimensions. Frame the suit torso: helmet lower rim, collar ellipses, rounded body, 05 pocket, two buttons and hidden backpack. The open V zipper closes from bottom to top in six ratchet steps; draw individual teeth and the raised pull tab. Label SUIT FRONT — DETAIL A, CLOSE BEFORE LAUNCH, ZIP PULL (1), ZIP TRAVEL 6 STEPS, DWG ZIP-05 and SCALE 1:4 · SHEET 6/7. Retain a small full-body Dot engineering inset and A detail circle at lower left. Finish with one vermilion OK stamp.
 
-### 33.84962–34.70677s · Stage07
+### 33.849578–34.706721 seconds · Stage07
 
-Home host crown cue, blueprint win TV and two helmets. Keep exact sub second staging timing.
+Return to STAGE 07 with the blueprint success in the TV, green OK! and two helmet lives. Coach slaps his crown. The stage dwell stays only two beats at 140 BPM.
 
-### 34.70677–36.42000s · SALUTE Swiss
+### 34.706721–36.421007 seconds · SALUTE Swiss
 
-Off white 12 column grid, huge black salute., rule 7—armto 90°, hand to brow. Flat black Dot eye/05 block body/red antenna circle. Arm wrong 120° knocks red ball off antenna; red angle mark.
+Change to Swiss typography: off-white twelve-column grid, enormous left-aligned salute., small rule 7 — arm to 90°, hand to brow., black round helmet/rectangular body with 05 and one red antenna ball. Dot stands on the right baseline. The arm rotates upward, extends beyond its module length and visibly strikes the red ball at the original hit. It is an acted failure, not a merely raised arm. Preserve the red 212° correction and directional gaze.
 
-### 36.42000–38.13534s · Instant replay failure
+### 36.421007–38.135292 seconds · Instant replay failure
 
-Blacktop/bottom letterbox, instant replay red REC and 0.5×rewind counter; demonstrably same incorrect gesture half-speed, then red off grid failure. Do not represent with verbal claim alone.
+At the fourth game beat, insert a three-frame freeze followed by half-speed instant replay with a 1.4× push into the head and ball. Black letterbox bars carry instant replay, a flashing red recording dot and 0.5× ◀◀ 00:00:01.29 in Swiss type. Replay the arm/ball contact, then resume live time at the sixth beat. The red ball bounces twice and rolls off the left grid; show the red off-grid annotation. The fuse freezes during replay and returns on resumption.
 
-### 38.13534–39.84962s · One life left
+### 38.135292–39.849578 seconds · One life left
 
-Dim home purple, Coach stop smiling and lower hands. XonTV, helmet count falls one. Exact One life left, cadet. Silence weight before scale.
+Return to STAGE 08 with red X, one cracking helmet and the last life blinking. Cut the stage to a dark purple ground and one top spotlight. Coach goes completely still, hands lowered, stopwatch hand stopped, expression serious. Show One life left, cadet. Keep the interval’s heartbeat/low tone and refrain from a normal groove.
 
-### 39.84962–41.45184s · Boss stage
+### 39.849578–41.451805 seconds · Boss stage
 
-BOSSSTAGE!comic burst over seven miniature medium tiles, tempo 140→160. No equivalent new topic.
+Flip eight rectangular tiles in on eighth-note cues: the seven past game endings plus a BOSS panel. Each tile later flips to a matching crop of the mixed-media boss picture. BOSS STAGE! slams on a red burst and flies out without leaving another corner tag. Accelerate to 160 BPM.
 
-### 41.45184–44.45000s · LAND IT re-entry
+### 41.451805–44.451805 seconds · LAND IT re-entry
 
-Ri so print atmosphere bands, earth curve below, blueprint outlined capsule with Dot face in round port. Land it!and altitude counter ALT 119065 m decreasing, flame yellow/orange wedges, braided fuse. Camera tracks real descent.
+LAND IT! enters over a single connected mixed-media descent. Layer risograph re-entry bands and passing clouds behind a blueprint blue capsule with hatch, heat-shield ribs and round porthole containing home-style Dot. Crayon Earth curves below with continents and spiral clouds; flames lick up around the shield and dry ink streaks rush past. Keep a small amber ASCII ALT meter at upper right, not over the focal chain. The capsule tracks its original central route while the background scrolls.
 
-### 44.45000–47.45200s · PULL and problem
+### 44.451805–47.451805 seconds · PULL and problem
 
-PULL!large comic burst, rip cord tab flies 47?but capsule keeps falling; close Dot wide eyes Ohno, feather returns at nose, earlier failure becomes needed solution. Original precise hit times in embedded timeline.
+At the original three-second boss cue, PULL! appears as a temporary burst. A tiny red/white pixel parachute pops, becomes ERR and shatters; Dot panics. Push rapidly into the porthole at the 4.5-second boss cue. Returning ink dust approaches the nose; Dot says Oh no., looks at it, recognizes a possibility, inhales twice and squeezes the eyes shut. Hide the fuse during the close-up. The normal groove stops from 45.952 to 47.452, leaving heartbeat and returning guqin gestures.
 
-### 47.45200–49.40000s · Sneeze opens canopy
+### 47.451805–48.951805 seconds · Sneeze opens canopy
 
-Acted ACHOO powers inkjet black 9 gore parachute unfold above blue capsule. Ink rope/canopy has continuous structure, ri so atmosphere stays behind. Dot exhales relief. Different materials must connect causally.
+At the exact boss sneeze, snap back wide within one beat. An ink jet rises from the capsule hatch, becomes a short round drop, then fans into nine recognizable parachute gores. Use dark-to-light gradients, alternating tone, paper-white seams, scalloped hem, crown brush arc, dry hem and fine cords connected to the hatch. The background becomes pink/yellow risograph sunset; Dot relaxes and smiles. This transforms the earlier failed medium into the solution.
 
-### 49.40000–53.45184s · Touchdown
+### 48.951805–53.451805 seconds · Touchdown
 
-Capsule falls under real full ink canopy to Swiss red circle target on ocean which is crayon hatched water, blueprint fine dimension ticks. Target diameter 97 m, impact 52?attitude upright; canopy sags and splashes, altitude 00000. CLEAR!green burst.
+Raise the crayon ocean beneath the descending canopy/capsule. A Swiss signal-red target circle with crosshairs moves into position; its annotation recalls the red circle from rule 7. Keep the capsule dimension Ø 3.9 m and the native line system. Follow the complete gentle descent, final fall, white/blue splash, settling capsule and canopy collapse into water. The ASCII altitude reaches zero and stays there. CLEAR! pops on a green burst, then hold the connected landing result.
 
-### 53.45184–57.20184s · Correct salute
+### 53.451805–57.201805 seconds · Correct salute
 
-Back home full stage confetti, coach You made it, cadet.Salute!Dot now outside the TV right and correctly salutes 90°. Last life intact. Marquee FIVE-SECOND ASTRONAUT, host warm grin.
+Shrink the successful landing into the home TV, add green OK!, one remaining helmet life and falling multicolor confetti. Coach cheers. Dot enters the actual stage from the right for the first time and stands beside the TV. Show You made it, cadet. Salute! on its gold card. Dot now performs the correct salute; Coach presents with a warm grin. Then push into the TV for the final card.
 
-### 57.20184–59.83333s · End duo
+### 57.201805–59.833333 seconds · End duo
 
-Purple burst field, comic FIVE-SECOND/ASTRONAUT, Micro game Frenzy cyan, original model credit recorded. Dot and Coach held full body either bottom corner. No additional VO.
+End on the purple sunburst with two large outlined lines FIVE-SECOND / ASTRONAUT, cyan Microgame Frenzy, Dot saluting lower left and Coach lower right. Preserve the full original card dwell and animation. Record the historical original model credit in provenance, replacing its on-screen sign-off with honest GPTcar / GPT-6.1 Sol authorship.
 
 ## Published narration — verbatim
 
@@ -133,17 +130,17 @@ Purple burst field, comic FIVE-SECOND/ASTRONAUT, Micro game Frenzy cyan, origina
 
 ## New voice and score direction
 
-Original funk kit/slap bass/brass/electric piano +medium specific color instruments,120→140→160 BPM and whole-step key raises.21 published short commands/host/reactions synthesized fresh; am_fenrir host, af_bella Dot+2.5 semitones and real acted ACHOO. Record scratch/replay half-speed, splashes and zipper ink physical FX. No original master reuse.
+Fresh funk kit, synthesized slap bass, stacked sampled brass and vibes/piano keys, with one color instrument per medium. Preserve the 120 → 140 → 160 BPM ladder and whole-step key increases. Recreate all 21 published short command/host/reaction inputs with am_fenrir as Coach and af_bella raised 2.5 semitones as Dot. Host commands begin 0.1 seconds after the published cue. Four full phrase inputs intentionally render only their first command word, measured from fresh word timestamps; retain both exact synthesis input and audible-text provenance. Preserve the record scratch/half-speed replay and heartbeat/guqin pauses. No original master audio reuse. No original master reuse.
 
 ## Shared assets, engine and licences
 
-gl pass medium shade rs, toon/rig/UI primitives generic reuse allowed, new seven micro game actions, stage/camera/mixed boss assembly required.
+Attributed generic shaders, drawing channels, toon primitives, articulated hero/host models, media-specific hero translations, UI widgets and isolated capsule/canopy/sandwich factories may be shared. Independently author all seven game actions, stage assembly, performance, TV/reel/tile transitions, boss world/camera/descent and final story renderer. Never import upstream full game, film or stage renderers.
 
-Original codeMIT; reuse only explicitly attributed general helpers/fonts/assets with supplied licences. New scene staging and animation must be authored independently. Original model end credits recorded as historical reference, replaced honestly in recreation.
+Original code is MIT. Reused helpers, fonts and licensed sample assets must be named with their actual licenses. This is a source-informed reconstruction, not a blind same-prompt benchmark. The original model end credit is recorded as historical reference and replaced honestly in the recreation.
 
 ## Primary v1 failures
 
-V 1 omitted most 7 mediums, host/Dot acting, two failed games, life consequences, instant replay, acceleration and 12 second landing climax.
+Version 1 omitted most of the seven media, host/Dot acting, two failed games, life consequences, instant replay, acceleration and the full twelve-second landing climax.
 
 ## Original credits — verbatim
 

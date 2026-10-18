@@ -76,7 +76,11 @@ def compose(score,voice_records,duration,out):
         a,sr=sf.read(line['file'],dtype='float32');a=a.mean(axis=1) if a.ndim==2 else a
         if sr!=SR:
             ratio=Fraction(SR,sr);a=resample_poly(a,ratio.numerator,ratio.denominator)
-        if line.get('filter') in ('radio','radio1930'):
+        if line.get('filter')=='micro_host':
+            a=sosfilt(butter(3,90,btype='highpass',fs=SR,output='sos'),a)
+            presence=sosfilt(butter(3,[2500,5000],btype='bandpass',fs=SR,output='sos'),a)
+            a+=presence*.25
+        elif line.get('filter') in ('radio','radio1930'):
             band=[260,4600] if line['filter']=='radio1930' else [380,2800]
             a=sosfilt(butter(4,band,btype='bandpass',fs=SR,output='sos'),a)
             a=np.tanh(a*3)/3
@@ -108,6 +112,13 @@ def compose(score,voice_records,duration,out):
         if not len(active):raise RuntimeError(line['id']+' is silent')
         # Bound Kokoro transient peaks before matching speech level.
         a=np.tanh(a/(rms(active)*4))*rms(active)*4;a*=10**(-18/20)/max(rms(a[np.abs(a)>.003]),1e-8)
+        if line.get('voice_room'):
+            room_spec=line['voice_room'];rt=float(room_spec['rt']);wet=float(room_spec['wet'])
+            if not np.isfinite([rt,wet]).all() or not 0<rt<=2 or not 0<=wet<=1:raise ValueError('Invalid voice room')
+            clock=np.arange(round(rt*SR))/SR;rng=np.random.default_rng(6105)
+            ir=rng.normal(size=len(clock))*np.exp(-clock*6.9/rt)
+            ir=sosfilt(butter(2,5000,btype='lowpass',fs=SR,output='sos'),ir);ir/=np.sqrt(np.sum(ir*ir)+1e-9)
+            a=a+fftconvolve(a,ir,mode='full')[:len(a)]*wet
         add(speech,a,line['start'],line.get('gain',1),np.clip(line.get('pan',0),-1,1));i=max(0,round((line['start']-.15)*SR));j=min(len(duck),round((line['start']+len(a)/SR+.2)*SR));duck[i:j]=np.minimum(duck[i:j],.62)
     duck=uniform_filter1d(duck,size=int(.25*SR),mode='nearest');mix=(music+foley)*duck[:,None]+speech
     if score.get('master_filter')=='optical':

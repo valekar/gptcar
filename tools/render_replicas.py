@@ -47,7 +47,7 @@ def render(slug,stills_only=False):
  run([VOICE_PY,'tools/compose_replica_audio.py',folder/'score.json',voice_dir/'timing.json',work/'mix.wav','--duration',ref['video_duration']],log,1800)
  run(['node','core/render/video.mjs',folder,'--fps',ref['fps_number'],'--workers',2,'--size',f"{ref['width']}x{ref['height']}",'--out',work/'picture.mp4'],log,7200)
  final=work/'final.mp4';run(['sh','core/render/mux.sh',work/'picture.mp4',work/'mix.wav',final,ref['fps_number'],0],log)
- audio_levels=enforce_audio(final)
+ audio_levels=enforce_audio(final, work/'mix.wav')
  probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(final)]));v=next(x for x in probe['streams'] if x['codec_type']=='video');a=next(x for x in probe['streams'] if x['codec_type']=='audio')
  if int(v['nb_frames'])!=int(ref['frame_count']) or float(Fraction(v['r_frame_rate']))!=ref['fps_number'] or (v['width'],v['height'])!=(ref['width'],ref['height']):raise RuntimeError('Published reference format/framecount mismatch')
  run(['ffmpeg','-hide_banner','-i',final,'-af','ebur128=peak=true','-vf','blackdetect=d=0.15:pix_th=0.025','-f','null','-'],work/'analysis.log')

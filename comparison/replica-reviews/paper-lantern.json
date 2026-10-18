@@ -1,0 +1,25 @@
+{
+  "slug": "paper-lantern",
+  "verdict": "accepted-for-gallery",
+  "reviewer": "root independent scene review",
+  "reviewed_source_sha256": "426b791d9921daa12a87a454858cc8c46055cf6545e7df912bb839ab1c2f1750",
+  "reviewed_video_sha256": "b4fbd6cfd803daa15974a44ac4e73faa5f93720057485862ee5eba5cd597eb23",
+  "scene_review": "passed",
+  "audio_review": "passed",
+  "review_times": [
+    77.5,
+    78.7,
+    82.93333333333334,
+    85.5,
+    91.4,
+    99.5,
+    103.5,
+    107.5,
+    112.0,
+    116.5
+  ],
+  "method": "Root inspected 96 initial decoded pairs, all 108 first-repair pairs, 60 focused second-repair pairs and 110 subsequent complete-film pairs. The final current-source movie was independently decoded again at ten targets spanning the repaired apartment skyline, cake bite, grandmother room, poet and reunion ending; both source and movie hashes match. The last provenance-only update added every referenced CC0 tea-model binary and texture without changing movie pixels. Original 19-shot story and exact on-screen language checked.",
+  "audio_evidence": "25 exact fresh zh-CN-XiaoxiaoNeural Mandarin inputs with original rate, pitch and cue/subtitle separation, no original recording. Base ASR 14/25 literal normalized matches; medium ASR 15/25, with numeric notation, homophones, pronouns and poetic name/word ambiguities documented. These are not a 25/25 intelligibility or human listening claim. Fresh 264-note score and 37 effects; score contains no designated music-rest ranges. Final AAC -14.0 LUFS / -1.2 dBTP.",
+  "comparison_notes": "Full mooncake story, grandmother and granddaughter rooms, goddess, moon train, poet, two homes and final framed greeting follow the original film. Reconstructed scene prompts and shared source art/models are explicitly credited. Fine paper lighting, bloom, skyline/window geometry, silhouettes, embossing, handwriting and camera phase differ. New voice and music retain the published text/cue specification; Mandarin ASR uncertainties are documented. Source-informed recreation, not a blind model benchmark.",
+  "reviewed_at": "2026-10-18T09:13:13.817669+00:00"
+}

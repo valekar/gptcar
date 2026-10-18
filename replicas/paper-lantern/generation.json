@@ -1,0 +1,399 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "slug": "paper-lantern",
+  "title": "一个月饼的相思 · A Mooncake’s Longing",
+  "uses_upstream_scene_code": false,
+  "source_ready": true,
+  "status": "source-ready-for-independent-review",
+  "matched_brief_sha256": "3eaf7a218d29d6ef32c83beb5dcb0d0aab1ef42e525c359b6932bd4dcfdf4980",
+  "delivery": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "frame_count": 3653,
+    "duration": 121.766667
+  },
+  "duration": 121.766667,
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "review_times": [
+    0.5,
+    1.5,
+    3.5,
+    5.5,
+    8.5,
+    10.4,
+    11.5,
+    12.5,
+    13.039,
+    13.5,
+    14.5,
+    16.5,
+    17.173,
+    17.5,
+    18.5,
+    19.7,
+    20.433333,
+    20.466667,
+    20.5,
+    21.166667,
+    21.2,
+    21.5,
+    21.8,
+    23.066667,
+    23.1,
+    24.5,
+    25.5,
+    26.5,
+    28.5,
+    29.5,
+    30.5,
+    32.5,
+    34.5,
+    36.5,
+    38.5,
+    39.3,
+    40,
+    40.5,
+    41.5,
+    43.3,
+    44.5,
+    45.5,
+    47.5,
+    49.5,
+    50.5,
+    52.5,
+    54.5,
+    55.5,
+    57.5,
+    58.5,
+    60.5,
+    62.5,
+    62.928,
+    62.93,
+    63.5,
+    64.5,
+    65.5,
+    67.5,
+    68.997,
+    70.5,
+    72.5,
+    74.5,
+    74.961,
+    75.5,
+    77.5,
+    78.648,
+    78.667,
+    78.67,
+    79.5,
+    80.5,
+    81.3,
+    81.808,
+    82.93,
+    82.933333,
+    83.1,
+    84.5,
+    85.5,
+    86.5,
+    88.5,
+    90.5,
+    91.351,
+    91.367,
+    92.5,
+    94.5,
+    96.5,
+    97.5,
+    97.903,
+    99.5,
+    100.3,
+    100.5,
+    101.5,
+    102.1,
+    102.187,
+    103.5,
+    104.5,
+    105.5,
+    107.066667,
+    108.4,
+    108.5,
+    109.5,
+    110.5,
+    111.166,
+    112,
+    112.5,
+    114.5,
+    116.5,
+    117.5,
+    118.5,
+    120.5,
+    121.5
+  ],
+  "shared_components": [
+    {
+      "path": "styles/paper-lantern/demo/src/paper.js",
+      "sha256": "d63f0efdefe46604046bf202a86f8483928536c877af4687f441d8b8f637e17e",
+      "purpose": "Generic physical paper/texture/transmission, soft cast shadow, rim/underedge and emission engine"
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/stage.js",
+      "sha256": "910de43bc81125fcc0ab0b01581286842ce7429af2c033bff748e6263a88346e",
+      "purpose": "Generic lightbox scene/camera/light setup and deterministic micro-handheld aiming"
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/post.js",
+      "sha256": "7970de0db4f2a50e6d26cd5654bd26484945a87a4e7595f474d1270a8144b0a3",
+      "purpose": "Generic depth/bokeh, bloom and colour/compositing renderer; 1920×1080 production canvas, MSAA4 and default1x post resolution"
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/room.js",
+      "sha256": "7ad7c6f50c78b5b18667b80fbe51b542a178e72886544110ce7890586b389abc",
+      "purpose": "Shared physical walnut lightbox/table walls, Poly Haven tea-set assembly and procedural external pastry props; local dependency patched to independently generated cakeFace instead of upstream shot"
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/art.js",
+      "sha256": "7637a97ad5e534e93e5bfc08c24090de00dd222c9e484734a847f9eccc14e9c4",
+      "purpose": "Shared generic cultural karst, cloud, osmanthus, willow, lantern, building and paper motif builders"
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/people.js",
+      "sha256": "77a65cad225c8b55d5627c724e93d37b27516c9612e0ea9084c4844a4335ef39",
+      "purpose": "Shared generic grandmother/ponytail-granddaughter/Chang’e/rabbit/SuShi cut silhouette models and arm drawing; newly assembled shots and performances"
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/props.js",
+      "sha256": "d93f7b6eb2ebaa0c2bc29f0932232078cf6b1f1db483b1afc5e04f4d10f524fe",
+      "purpose": "Shared generic table/chair/steamer/stove/calendar/box/window/letter prop builders"
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/lib.js",
+      "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+      "purpose": "Shared deterministic math/noise utilities"
+    },
+    {
+      "path": "styles/paper-lantern/demo/vo/words.json",
+      "sha256": "eacbf21c528fd1b90df17e0ae28d8f7b982733282e9a882fb0475a0c8d96f91e",
+      "purpose": "Published word timing data: wood mould 啪20.473, 圆23.077, 互100.343; read as timing data only"
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_diff.jpg",
+      "sha256": "278ed3382b3a28a95861a84ccf4f3b591abf96a203698152064d65fcc6425271",
+      "purpose": "Poly Haven CC0 american_walnut_veneer diffuse"
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_nor.jpg",
+      "sha256": "1a78784fc40a10f72582cd91dadce3ba2dbe9ab08f8622c909d1c0647162a130",
+      "purpose": "Poly Haven CC0 walnut normal map"
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_rough.jpg",
+      "sha256": "9a4df282cf8ea10e005c2c28abc77ee5287793738c1e1db619b600c9e9caa4f8",
+      "purpose": "Poly Haven CC0 walnut roughness map"
+    },
+    {
+      "path": "core/assets/polyhaven/tea_set_01/tea_set_01.gltf",
+      "sha256": "479b93c5e5f121994a5582b329132c70c2076b2990673f9169721541e5c389a2",
+      "purpose": "Poly Haven CC0 tea_set_01 geometry and local dependent textures, shared asset"
+    },
+    {
+      "path": "core/assets/polyhaven/SOURCES.md",
+      "sha256": "407fee33eaf70cbec52dd165830d22b5b8a52d71f0d1067720a60c0d4f529609",
+      "purpose": "Shared asset source/license ledger"
+    },
+    {
+      "path": "node_modules/three/package.json",
+      "sha256": "2caf5d31ca4368c7e39e7e598dd95774fe1bdaae7cfbc5b073c8dcb5ec7e25da",
+      "purpose": "MIT three.js renderer and addons dependency identity"
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s01_night.js",
+      "sha256": "2ec907f7d4c708faff58eedaaec5bc20f3a30301423ff9d9340d2c11c35326c2",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s02_kitchen.js",
+      "sha256": "f12e91afcd72b39c8b9dca7a6a991272b838875b3ec75976ff04b093342ebd8a",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s03_press.js",
+      "sha256": "2c3e5656e4646154b9c16f31ad44e4b8b6dc1cdac650b6005219eac5eb92e767",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s04_scroll.js",
+      "sha256": "274f8ff8459c37f3066782926c410ea06cb546c1bb65f5e00857eb81907a7c0e",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s05_table.js",
+      "sha256": "05be0d7749d50c5cd3e086cc61b1369eb42f96f3f0a2ebda77e89ef0c72dc751",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s06_pack.js",
+      "sha256": "ccc0643f2360ed03a61822fe27d4706825164e7bb9026f532d07216cd4840237",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s07_journey.js",
+      "sha256": "ac15e5636e191a43968b1c0c7a44abb3b895eca8e30faeba24bdb7e4f5008bd6",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s08_window.js",
+      "sha256": "2c9add8caebe248da35c6d17337d9af9aefe9b7b2ea6162599619f2f27544c31",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s09_change.js",
+      "sha256": "153b744c3ce74ea4f1ad52dc4cd59954d3841f51a0f91d3503be689b1307be6f",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s10_pass.js",
+      "sha256": "e3128defe16a64b09fef3197afb245db4184f6f2bcc4fe6c058b220e306fb2bf",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s11_city.js",
+      "sha256": "f52479a040c3f6fb5a62084b083d9952685a0d0e818de91506efbb7f2d1b5dfb",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s12_apartment.js",
+      "sha256": "41a86b456cd26f18e0bdcee1b97e25e3b42eaa2c3a4facafbfc03d70bc506e3c",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s13_note.js",
+      "sha256": "e9ab58569404ac059927d52c4166c3e84cd0ae84209a615c00e4d49961b82d65",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s14_bite.js",
+      "sha256": "3f22da7a715047f3b9433859ddb7120db7157d4dff3526543a0071ac91ae5166",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s15_gran_open.js",
+      "sha256": "849060ee4a2c3c8b3c3028a9e799a17e98f746b1337fb2a0043914643a9a3638",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s16_mutual.js",
+      "sha256": "aac2a50f4490fb9bf92676c932b7d4d88adb5412219dba98d422c82eeaee4662",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s17_sushi.js",
+      "sha256": "67d400996994582c2616afffafbf951ea7735a923efc7dad17f1594ab13654d7",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/s18_finale.js",
+      "sha256": "e90b5be8178f69eb2617107aa5add42096bfd8caac41117bc71cfd8c0ef11505",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "styles/paper-lantern/demo/src/shots/sheet.js",
+      "sha256": "d31bd37b3cf947bb57cf83d3c22cf3db20747f83dd63456af379765367718a8f",
+      "purpose": "Read-only reference calibration of published numeric camera/model dimensions, exact lettering and event phase; no scene source imported, copied as a scene function or executed."
+    },
+    {
+      "path": "core/assets/polyhaven/tea_set_01/tea_set_01.bin",
+      "sha256": "5ddd90f031a71832842f9030c2f7f0aa07b2c96f3d3cc4aa5cfaa5dbb14aa7b0",
+      "purpose": "Poly Haven tea_set_01 external glTF binary geometry buffer; shared licensed model input, CC0 1.0 Universal. Attribution: Poly Haven, https://polyhaven.com/a/tea_set_01; https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "path": "core/assets/polyhaven/tea_set_01/textures/tea_set_01_arm_1k.jpg",
+      "sha256": "160661eccada2ab02a78d4957ca804921d31633489433517f20f34f0db7ef502",
+      "purpose": "Poly Haven tea_set_01 external material texture tea_set_01_arm_1k.jpg; shared licensed model input, CC0 1.0 Universal. Attribution: Poly Haven, https://polyhaven.com/a/tea_set_01; https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "path": "core/assets/polyhaven/tea_set_01/textures/tea_set_01_diff_1k.jpg",
+      "sha256": "110eb0aa11b6f532792e8b161cbe8e7a9a2b94694f217b4d9745fe32f3945ed8",
+      "purpose": "Poly Haven tea_set_01 external material texture tea_set_01_diff_1k.jpg; shared licensed model input, CC0 1.0 Universal. Attribution: Poly Haven, https://polyhaven.com/a/tea_set_01; https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "path": "core/assets/polyhaven/tea_set_01/textures/tea_set_01_nor_gl_1k.jpg",
+      "sha256": "0b3d5998d1d60a46a9807ccdbc8245464de4ba479bbca3eda6257575dc25b342",
+      "purpose": "Poly Haven tea_set_01 external material texture tea_set_01_nor_gl_1k.jpg; shared licensed model input, CC0 1.0 Universal. Attribution: Poly Haven, https://polyhaven.com/a/tea_set_01; https://creativecommons.org/publicdomain/zero/1.0/."
+    }
+  ],
+  "provenance": "Published script/style and complete reference-informed reconstruction; no original conversation prompt is available. Generic engine/model/CC0 assets are attributed, all nineteen scene assemblies and score new. Fresh25-line Mandarin voice and score rendered/mixed by parent.",
+  "deterministic_seek_check": {
+    "checked_times": [
+      1.5,
+      14.5,
+      20.466667,
+      28.5,
+      41.5,
+      58.5,
+      65.5,
+      80.5,
+      85.5,
+      100.5,
+      109.5,
+      118.5
+    ],
+    "all_equal": true
+  },
+  "source_sha256": {
+    "CREDITS": "f62b9db8b47a4ac93bf6a4bad05feda308dd363d8c21ebb3ca2c5986e618da33",
+    "FACTS.md": "b7e45381417eb75abfb08ea664c9ca2092a9b0b7e37d892530f61c3277087c9a",
+    "LICENSE": "14c9ff6f14bfb2391e74fedb01c256891d2a3bba1c2acf5789901bdf77e54e33",
+    "PROMPT.md": "bb7f95ecc4ff2af579ff304f257264789a61987f2610dd2027dc13188372bcb2",
+    "REVIEW.md": "a6814e9235ae7b2a9edb91c4b352595300e2ff799e9fbcf8b92e39fb35f28894",
+    "TREATMENT.md": "896cb2ff2b849fb58c45fea9aa65806d79a99dc7fd1295bf1aec48eade981e4b",
+    "fonts/LongCang-Regular.ttf": "e5bf2c3f24ef2327c6f136d8f73e2f9dfdf44896fdbeb35a9515f44777bb91bc",
+    "fonts/MaShanZheng.ttf": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb",
+    "fonts/NotoSerifSC[wght].ttf": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9",
+    "fonts/OFL-MaShanZheng.txt": "d7bdb1cee215b689e23c2f95672a6084c790542170648267a55114103d756a08",
+    "fonts/ZhiMangXing-Regular.ttf": "644e0cae9b40f0b10ab729a01bd32032e3973bac22be3dccae01bf6ae7fde969",
+    "fonts/longcang-OFL.txt": "603546b7219a94bb59bf8294458194a5010119486354092b66a09a3fd61aeacc",
+    "fonts/notoserifsc-OFL.txt": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6",
+    "fonts/zhimangxing-OFL.txt": "10947328199e369a3e6b4a67e8e5507ed99d5bbb264a1f156415aa9b665e4d15",
+    "index.html": "475b9924e876bebdcdf34a5f9915d521a21aa57e7cab1e73290f3b6e122e53d1",
+    "narration.json": "409207d225e3687414c717b9cd61bef7fb06a04dd5423c048b6d55ab863d03cd",
+    "score.json": "0999b8edbd2ed251ce689ab40e4d21d10ad1299a0cdead865fa38403bdfe1666",
+    "shared-components.json": "132f58b9b79ab06aab0797b79403f0a8c73dd577860a408b83f3614cbe87fe27",
+    "src/art.js": "7637a97ad5e534e93e5bfc08c24090de00dd222c9e484734a847f9eccc14e9c4",
+    "src/cake.js": "2ac937ba112906f18c2eee69709621efbf873fee69b8a65f372a0327e4b44ae4",
+    "src/common.js": "74e2d920ea1c0e48eccc4bde81fb976ba57384352cb3c0646d0508b8613d7b36",
+    "src/film.js": "685570129807a337198e4b551c0afa9b3fff6cef98247bef64c52cc4eea3dd8f",
+    "src/lib.js": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+    "src/paper.js": "d63f0efdefe46604046bf202a86f8483928536c877af4687f441d8b8f637e17e",
+    "src/people.js": "77a65cad225c8b55d5627c724e93d37b27516c9612e0ea9084c4844a4335ef39",
+    "src/post.js": "7970de0db4f2a50e6d26cd5654bd26484945a87a4e7595f474d1270a8144b0a3",
+    "src/props.js": "d93f7b6eb2ebaa0c2bc29f0932232078cf6b1f1db483b1afc5e04f4d10f524fe",
+    "src/room.js": "1aaeba35d4b9660c35ccc9bb9bc5df7825476bdb56ca9ffccdbef1d7cb3fa7dc",
+    "src/scenes.js": "cf51ba59955467c1328ea6285f1a5273bbf0ccb432b232258df38c80193833d5",
+    "src/stage.js": "910de43bc81125fcc0ab0b01581286842ce7429af2c033bff748e6263a88346e"
+  },
+  "determinism": {
+    "times": [
+      1.5,
+      14.5,
+      20.466667,
+      28.5,
+      41.5,
+      58.5,
+      65.5,
+      80.5,
+      85.5,
+      100.5,
+      109.5,
+      118.5
+    ],
+    "all_equal": true,
+    "method": "WebGL canvas data URL equality after out-of-order seeks, final repaired source"
+  },
+  "final_focused_refinement": "Final decoded-movie-led pass: opening landscape backed off and moon/title lowered/re-timed; cream-to-gold pastry face with bump relief and brighter lit notes/read crops; pale translucent lunar vignette and smaller higher goddess, village lowered; larger foreground train windows and lower opposing train; dense luminous purple city planes and shop bands; apartment depth leak fixed by keeping every city layer behind the wall, warm purple room, smaller bite profile; horizontal chest-level poet arm and body depth corrected; dense local city windows bounded inside the final lightbox. Exact 25 narration takes and score remain unchanged.",
+  "final_three_framing_repairs": "Final three decoded-review framing repairs: non-bite apartment now left window/single smaller moon, warm right wall and center-right box; bite retains its separate right window. Moon tableau is fifteen percent smaller and raised at57.5, with independent far-plane parallax calibrated to the final62.93 circle-bottom position. Lunar pavilion/tree are now faint pigment embedded INSIDE the moon disk, never a foreground solid overlay. Poet retains body scale but has a shorter bent elbow and hand/cup at face/upper-chest height.",
+  "last_density_exit_repair": "Decoded reference/candidate001888 moon edges165/229pixels measured at1280width; final far-plane endpoint raised64pixels while57.5 remains identical. Room city now independent dense=True four-plane skyline with three-times narrower varied buildings, tiny warm/cyan/pink windows, silhouettes reaching actual aperture height. Non-bite LEFT and bite RIGHT layouts retained; all city planes remain behind opaque wall. Original25takes/score unchanged.",
+  "final_apartment_skyline_placement": "Apartment-only dense skyline vertically compressed to47percent around the bottom sill anchor; horizontal building widths/density retained, moon now clear above the roof line. Dense-city emissive texture resolution lowered toquarter art-map resolution for slightly softer luminous window points. Ordinary city tableaux, moon/goddess exit, poet, all25fresh voices and score unchanged. Inspected freshly rendered77.5/78.666667/82.933333 after this narrow fix.",
+  "shared_input_completion": "Tea set external .bin and all3textures explicitly SHA256-bound and CC0-attributed; provenance-only change, renderer source and media untouched."
+}

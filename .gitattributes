@@ -9,3 +9,9 @@ replicas/**/PROMPT.md -whitespace
 replicas/**/TREATMENT.md whitespace=-blank-at-eof
 # Frozen credits include source notices with their original end spacing.
 replicas/**/CREDITS whitespace=-blank-at-eof
+# Frozen extracted drawing engines retain their attributed source formatting.
+replicas/microgame/m_blue.js whitespace=-blank-at-eof
+replicas/microgame/m_crayon.js whitespace=-blank-at-eof
+replicas/microgame/m_pixel.js whitespace=-blank-at-eof
+replicas/microgame/m_riso.js whitespace=-blank-at-eof
+replicas/microgame/m_swiss.js whitespace=-blank-at-eof

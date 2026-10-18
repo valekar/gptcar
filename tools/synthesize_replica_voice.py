@@ -98,6 +98,10 @@ def synthesize(spec,out):
             fitted=out/(ident+'-timed.wav');subprocess.run(['ffmpeg','-y','-v','error','-i',str(path),'-af',f'atempo={factor:.8f}',str(fitted)],check=True)
         record=dict(id=ident,text=text,voice=voice,language=language,start=start,planned_duration=window,synthesized_duration=synthesized_duration,raw_duration=actual,pitch_semitones=pitch,file=str(fitted.resolve()),tempo_factor=max(1,factor),filter=line.get('filter'))
         if native:record.update(engine='macos-say',rate=rate)
+        if line.get('voice_room'):
+            room=line['voice_room'];rt=float(room['rt']);wet=float(room['wet'])
+            if not np.isfinite([rt,wet]).all() or not 0<rt<=2 or not 0<=wet<=1:raise ValueError(ident+': invalid voice room')
+            record['voice_room']=dict(rt=rt,wet=wet)
         if trim_evidence:record.update(spoken_text=line['spoken_text'],trim_word=trim_word,trim_evidence=trim_evidence)
         for field,default in [('gain',1),('pan',0)]:
             if field in line:

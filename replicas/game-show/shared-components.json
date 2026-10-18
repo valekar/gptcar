@@ -1,0 +1,52 @@
+[
+  {
+    "path": "styles/game-show/demo/frame_head.html",
+    "sha256": "d85162b4daf05130a660c7907a056fc4a62f20f7649a2db376982f103c944642",
+    "purpose": "MIT generic SVG el/txt/transform/opacity/easing/random/text-measure/character-pop/bg/heart helpers only. No original DOM stage, filters, canvas or scene timeline."
+  },
+  {
+    "path": "styles/game-show/demo/main_v1.js",
+    "sha256": "de8d7ed5526596a148aecb0b0e4b254744d848ebd7e62d6d897401360ae2993f",
+    "purpose": "MIT generic palette/beat math/gtext/stripe-dot-ray/star/burst/judge/banner helpers; generic DeepBlue/AlphaGo/Transformer era robot models and arm/chess quad/pawn primitives. No original scene/main renderer. Reused only named helper definitions into kit/primitives.js;150BPM duration constants match brief."
+  },
+  {
+    "path": "styles/game-show/demo/main_b.js",
+    "sha256": "ce04f5590ab067131bc502e8df634290c618eeb40b778cfc9a6246db0e17a10e",
+    "purpose": "MIT generic bean/pose/twins/CAST/human/Watson/podium/drop helpers (lines1–149), task/avocado/castle/cat prop constructors(lines191–241), generic humanoid/hpose constructors(lines857–877). None of buildAll, original scene/card assembly, item choreography or render is imported/copied/executed. Remaining published scene text/camera/event numeric relationships read only as calibration data."
+  },
+  {
+    "path": "styles/game-show/demo/events.json",
+    "sha256": "08015f776b6fba497ffb60b3f19ab9a0767199ede0e87ae051a0ea603d3d4179",
+    "purpose": "MIT exact published474 event timing records, including79 voice events and395 nonvoice events, used as soundtrack cue DATA. Every audio waveform newly synthesized; visual scene updates independently authored."
+  },
+  {
+    "path": "styles/game-show/demo/voices/lines.txt",
+    "sha256": "5512adfe8e66171ed14c63af057f037df095c6a278292bc9ce85522269106fd2",
+    "purpose": "Published exact shout text/native macOS voice/WPM/pitch direction; fresh native speech, no original recording."
+  },
+  {
+    "path": "styles/game-show/demo/voices/lines2.txt",
+    "sha256": "52f361c7d17118541350809732b3d6b64a2a1f711221f5f32d2a9bf4880dfaf2",
+    "purpose": "Published exact additional shout/native voice direction data."
+  },
+  {
+    "path": "styles/game-show/demo/voices/lines3.txt",
+    "sha256": "fbc9b4306d5dc03ad1ad5e19b9bfe412d97a501e39a12b097aca07da7f26e72c",
+    "purpose": "Published exact remix shout/native voice direction data."
+  },
+  {
+    "path": "styles/game-show/demo/music.py",
+    "sha256": "9bec6fa21e48713701dcd3974e7cb5214c44260e083c1f63ffb4a246edc681b7",
+    "purpose": "Read-only source calibration for150BPM93bar section/harmonic direction and original shout mix offsets/gain/pan. Not imported/executed/copied as new score; new motifs/voicings and fresh explicit JSON note/cue realization."
+  },
+  {
+    "path": "replicas/halftone-dossier/fonts/NotoSansSC.ttf",
+    "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+    "purpose": "Google Fonts Noto Sans SC variable font, OFL; same licensed source asset locally copied, not generated imagery."
+  },
+  {
+    "path": "replicas/halftone-dossier/fonts/ZCOOLKuaiLe.ttf",
+    "sha256": "812a6fc1fe54b6d73a419245c32dfeba8aa33104d5be90d1cf6af082007cb71d",
+    "purpose": "Google Fonts ZCOOL KuaiLe, OFL; same licensed source asset locally copied."
+  }
+]

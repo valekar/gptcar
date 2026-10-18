@@ -5,7 +5,7 @@ Executed locally on 18 October 2026, on Apple silicon macOS, with Node v22.20.0,
 | Check | Result |
 | --- | --- |
 | `npm run check` | All 51 style prompts match the reviewed upstream SHA-256 hashes; inventory, original copyright, Codex files and package names pass. |
-| `npm test` | Seven tests pass, including strict gallery inventory/publication-gate checks and setup/installer integration: discovery outside the repo; refusal to overwrite user folders; invalid command/tier handling; standalone skill cloning and preservation of local edits; idempotent symlink installation and conflict refusal. Temporary paths contain spaces. |
+| `npm test` | Fifteen tests pass, including strict source/movie/audio/format/inventory publication gates and setup/installer integration: discovery outside the repo; refusal to overwrite user folders; invalid command/tier handling; standalone skill cloning and preservation of local edits; idempotent symlink installation and conflict refusal. Temporary paths contain spaces. |
 | Skill Creator `quick_validate.py` | Skill frontmatter and naming pass. This is structural validation, not a film quality evaluation. |
 | Shell syntax and `git diff --check` | Pass for the new setup entry points; no whitespace errors in the patch. |
 | Core dependency setup | `sh tools/setup.sh deps` completed; npm lockfile install, headless Chromium and core Python packages installed. |
@@ -35,8 +35,8 @@ Use an unused output path. These commands exercise the actual toolkit and the co
 
 ## Limits
 
-- The original technical smoke test above remains a renderer fixture. The subsequent 51-style GPT comparison run is documented separately in [comparison/REPORT.md](../comparison/REPORT.md), with per-film render records and Evidence Films sources. It is a qualitative set of 20-second studies, not a controlled Opus-versus-GPT model benchmark.
-- Optional Kokoro/edge-tts/Whisper narration, sample packs, plucked-string tier and style-specific importers were not installed or tested. They remain separate prerequisites when a film needs them.
+- The original technical smoke test above remains a renderer fixture. The rejected initial20-second studies remain historical in [comparison/REPORT.md](../comparison/REPORT.md). Full-length replacements, matched-scene reviews, fresh audio and per-film technical records are documented in [comparison/REPLICATION_REPORT.md](../comparison/REPLICATION_REPORT.md). This is a source-informed qualitative comparison, not a controlled model benchmark.
+- The initial smoke fixture did not exercise optional audio tiers. The subsequent reconstruction run installed and exercised Kokoro, edge-tts, Whisper, sampled instruments, physical plucks and project-specific data/asset importers; Game Show freshly uses the installed macOS system voices. Per-film narration reports disclose ASR ambiguity and are not claims of human auditory audition. These tools/assets remain separate setup prerequisites on a new machine.
 - Nine inherited demos do not have `demo/build.sh`: paper-popup, halftone-dossier, paper-lantern, brick-toy, game-show, hd-2d, pictogram-motion, watercolor and cel-anime-80s. Their sources use other entry points documented in the demos. The adapter preserves them rather than claiming every inherited demo is a fresh one-command build. New user films should include their own build script.
 - Platform testing was local macOS only. CI checks the adapter on Linux; rendering on Linux/WSL still needs browser/GPU and system dependencies.
 - The original gallery and demo videos are upstream-authored material. Successful technical checks do not turn them into Codex output.

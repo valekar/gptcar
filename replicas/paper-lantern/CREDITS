@@ -1,0 +1,34 @@
+一个月饼的相思 · A Mooncake’s Longing — full reference-matched GPTcar recreation
+New nineteen-shot assemblies, camera/timing scheduler, paper layers/prop staging/performance, independently drawn embossed pastry face, original new sampled score and captions: GPT-6.1 Sol, high reasoning. PROMPT.md is a reconstruction from the published STYLE/DEMO and complete reference sequence; no original conversation prompt is available.
+Generic toolkit and shared model components from LemoLab/GPTcar under MIT: paper/stage/post/room/art/people/props/lib. Hashes and precise roles in shared-components.json. Shared people/motifs/room model geometry is not claimed as independently redesigned geometry. No upstream shots/, main, timing scheduler or scene assembly imported/executed. room.js originally referenced cakeFace in upstream shot s03_press; that dependency is replaced with our separately authored src/cake.js. Full three.js renderer/addons MIT; original MIT notice in LICENSE.
+External physical assets: Poly Haven tea_set_01 https://polyhaven.com/a/tea_set_01 and american_walnut_veneer https://polyhaven.com/a/american_walnut_veneer , CC0. Shared unchanged local asset files and their source ledger are credited. No original image/video frames are used as generated artwork. No image/video generation models used.
+Fonts freshly obtained from Google Fonts: Ma Shan Zheng, Zhi Mang Xing, Long Cang, Noto Serif SC. All SIL OFL1.1; original notices in fonts/. Actual new assets from raw github.com/google/fonts/main/ofl/{mashanzheng,zhimangxing,longcang,notoserifsc}.
+Exact25 published Mandarin lines recreated freshly using Microsoft Edge zh-CN-XiaoxiaoNeural, original rate and -2Hz pitch directions retained, phonetic say override for 相/香 documented in narration.json. edge-tts client LGPL3; voice service terms apply. No original voice files/master used.
+New264-note lyrical C pentatonic score, intimate sampled dan_tranh zither then sampled flute/cellos/violas, glockenspiel accents; direction informed by original guzheng→dizi/strings handover and poem swell. Original Kevin MacLeod Ripples/Nu Flute recordings are not reused. Sample packs VSCO2CE/VCSL CC0 as core/audio sampler ledger.37 newly synthesized physical Foley cues including switch, mould, rustle, box lids, rail, bite and writing. Root synthesizes/mixes/normalizes fresh soundtrack.
+Text: 苏轼《水调歌头·明月几时有》and 田汝成《西湖游览志余》public-domain excerpts as published in original. Chang’e/jade rabbit are a narrated folk tale. Original family characters and journey are fictional.
+
+Independent review refinement: original shot source read only for exact camera/model dimensions, timing and labels. Our new layers/cameras/physics/performances reconstructed those relationships without importing upstream scene functions. New four-plane city and shared two-home/window set, own hinged-flap packing assembly, corrected source-sized kneading body/depth, filled dough/press/dust phases, readable physical notes and anatomical bite rig. Reply pastry stamp is 外婆 per published source; 莲蓉 is the narrated filling, not the stamp.
+
+Complete tea_set_01 dependent model inputs — provenance-only completion, no visual changes. Poly Haven https://polyhaven.com/a/tea_set_01, CC0 1.0 Universal https://creativecommons.org/publicdomain/zero/1.0/.
+[
+  {
+    "path": "core/assets/polyhaven/tea_set_01/tea_set_01.bin",
+    "sha256": "5ddd90f031a71832842f9030c2f7f0aa07b2c96f3d3cc4aa5cfaa5dbb14aa7b0",
+    "purpose": "Poly Haven tea_set_01 external glTF binary geometry buffer; shared licensed model input, CC0 1.0 Universal. Attribution: Poly Haven, https://polyhaven.com/a/tea_set_01; https://creativecommons.org/publicdomain/zero/1.0/."
+  },
+  {
+    "path": "core/assets/polyhaven/tea_set_01/textures/tea_set_01_arm_1k.jpg",
+    "sha256": "160661eccada2ab02a78d4957ca804921d31633489433517f20f34f0db7ef502",
+    "purpose": "Poly Haven tea_set_01 external material texture tea_set_01_arm_1k.jpg; shared licensed model input, CC0 1.0 Universal. Attribution: Poly Haven, https://polyhaven.com/a/tea_set_01; https://creativecommons.org/publicdomain/zero/1.0/."
+  },
+  {
+    "path": "core/assets/polyhaven/tea_set_01/textures/tea_set_01_diff_1k.jpg",
+    "sha256": "110eb0aa11b6f532792e8b161cbe8e7a9a2b94694f217b4d9745fe32f3945ed8",
+    "purpose": "Poly Haven tea_set_01 external material texture tea_set_01_diff_1k.jpg; shared licensed model input, CC0 1.0 Universal. Attribution: Poly Haven, https://polyhaven.com/a/tea_set_01; https://creativecommons.org/publicdomain/zero/1.0/."
+  },
+  {
+    "path": "core/assets/polyhaven/tea_set_01/textures/tea_set_01_nor_gl_1k.jpg",
+    "sha256": "0b3d5998d1d60a46a9807ccdbc8245464de4ba479bbca3eda6257575dc25b342",
+    "purpose": "Poly Haven tea_set_01 external material texture tea_set_01_nor_gl_1k.jpg; shared licensed model input, CC0 1.0 Universal. Attribution: Poly Haven, https://polyhaven.com/a/tea_set_01; https://creativecommons.org/publicdomain/zero/1.0/."
+  }
+]
