@@ -1,0 +1,4755 @@
+{
+  "duration": 30,
+  "bpm": 120,
+  "sections": [
+    {
+      "start": 0,
+      "end": 12,
+      "intent": "C major energetic print-pop, square eighth bass, light triangle support and marimba plucks; glyphs and exhibit hits lead"
+    },
+    {
+      "start": 12,
+      "end": 16,
+      "intent": "Reduced sneaking pizzicato and dry snaps, three fast parkour crossings"
+    },
+    {
+      "start": 16,
+      "end": 20,
+      "intent": "Full typing groove, short comic ostinato"
+    },
+    {
+      "start": 20,
+      "end": 22,
+      "intent": "Snare acceleration and ascending tones build tension"
+    },
+    {
+      "start": 22,
+      "end": 23,
+      "intent": "Empty musical half-bar; verdict lands alone"
+    },
+    {
+      "start": 23,
+      "end": 26,
+      "intent": "Celebratory release into cute music-box tenderness"
+    },
+    {
+      "start": 26,
+      "end": 30,
+      "intent": "Warm sleeping-cat bell arpeggio, thinning to final chord and fade"
+    }
+  ],
+  "notes": [
+    {
+      "t": 0.0,
+      "midi": 36,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 0.0,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 0.25,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 0.25,
+      "midi": 76,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 0.5,
+      "midi": 36,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 0.5,
+      "midi": 79,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 0.75,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 0.75,
+      "midi": 76,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 1.0,
+      "midi": 36,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 1.0,
+      "midi": 74,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 1.25,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 1.25,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 1.5,
+      "midi": 36,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 1.5,
+      "midi": 71,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 1.75,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 1.75,
+      "midi": 67,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 0,
+      "midi": 60,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 0,
+      "midi": 64,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 0,
+      "midi": 67,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 0,
+      "midi": 71,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 2.0,
+      "midi": 33,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 2.0,
+      "midi": 74,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 2.25,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 2.25,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 2.5,
+      "midi": 33,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 2.5,
+      "midi": 71,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 2.75,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 2.75,
+      "midi": 67,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 3.0,
+      "midi": 33,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 3.0,
+      "midi": 69,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 3.25,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 3.25,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 3.5,
+      "midi": 33,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 3.5,
+      "midi": 76,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 3.75,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 3.75,
+      "midi": 74,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 2,
+      "midi": 57,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 2,
+      "midi": 60,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 2,
+      "midi": 64,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 2,
+      "midi": 67,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 4.0,
+      "midi": 29,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 4.0,
+      "midi": 69,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 4.25,
+      "midi": 41,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 4.25,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 4.5,
+      "midi": 29,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 4.5,
+      "midi": 76,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 4.75,
+      "midi": 41,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 4.75,
+      "midi": 74,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 5.0,
+      "midi": 29,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 5.0,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 5.25,
+      "midi": 41,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 5.25,
+      "midi": 67,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 5.5,
+      "midi": 29,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 5.5,
+      "midi": 64,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 5.75,
+      "midi": 41,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 5.75,
+      "midi": 67,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 4,
+      "midi": 53,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 4,
+      "midi": 57,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 4,
+      "midi": 60,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 4,
+      "midi": 64,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 6.0,
+      "midi": 31,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 6.0,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 6.25,
+      "midi": 43,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 6.25,
+      "midi": 67,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 6.5,
+      "midi": 31,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 6.5,
+      "midi": 64,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 6.75,
+      "midi": 43,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 6.75,
+      "midi": 67,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 7.0,
+      "midi": 31,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 7.0,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 7.25,
+      "midi": 43,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 7.25,
+      "midi": 76,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 7.5,
+      "midi": 31,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 7.5,
+      "midi": 79,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 7.75,
+      "midi": 43,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 7.75,
+      "midi": 76,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 6,
+      "midi": 55,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 6,
+      "midi": 59,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 6,
+      "midi": 62,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 6,
+      "midi": 65,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 8.0,
+      "midi": 36,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 8.0,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 8.25,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 8.25,
+      "midi": 76,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 8.5,
+      "midi": 36,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 8.5,
+      "midi": 79,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 8.75,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 8.75,
+      "midi": 76,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 9.0,
+      "midi": 36,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 9.0,
+      "midi": 74,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 9.25,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 9.25,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 9.5,
+      "midi": 36,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 9.5,
+      "midi": 71,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 9.75,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 9.75,
+      "midi": 67,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 8,
+      "midi": 60,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 8,
+      "midi": 64,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 8,
+      "midi": 67,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 8,
+      "midi": 71,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 10.0,
+      "midi": 33,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 10.0,
+      "midi": 74,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 10.25,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 10.25,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 10.5,
+      "midi": 33,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 10.5,
+      "midi": 71,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 10.75,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 10.75,
+      "midi": 67,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 11.0,
+      "midi": 33,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 11.0,
+      "midi": 69,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 11.25,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 11.25,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 11.5,
+      "midi": 33,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 11.5,
+      "midi": 76,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 11.75,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 11.75,
+      "midi": 74,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 10,
+      "midi": 57,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 10,
+      "midi": 60,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 10,
+      "midi": 64,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 10,
+      "midi": 67,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 12.0,
+      "midi": 29,
+      "duration": 0.18,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "jazz_bass"
+    },
+    {
+      "t": 12.0,
+      "midi": 53,
+      "duration": 0.14,
+      "gain": 0.07,
+      "pan": 0.12,
+      "instrument": "cellos_pizz"
+    },
+    {
+      "t": 12.25,
+      "midi": 41,
+      "duration": 0.18,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "jazz_bass"
+    },
+    {
+      "t": 12.5,
+      "midi": 29,
+      "duration": 0.18,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "jazz_bass"
+    },
+    {
+      "t": 12.5,
+      "midi": 57,
+      "duration": 0.14,
+      "gain": 0.07,
+      "pan": 0.12,
+      "instrument": "cellos_pizz"
+    },
+    {
+      "t": 12.75,
+      "midi": 41,
+      "duration": 0.18,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "jazz_bass"
+    },
+    {
+      "t": 13.0,
+      "midi": 29,
+      "duration": 0.18,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "jazz_bass"
+    },
+    {
+      "t": 13.0,
+      "midi": 60,
+      "duration": 0.14,
+      "gain": 0.07,
+      "pan": 0.12,
+      "instrument": "cellos_pizz"
+    },
+    {
+      "t": 13.25,
+      "midi": 41,
+      "duration": 0.18,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "jazz_bass"
+    },
+    {
+      "t": 13.5,
+      "midi": 29,
+      "duration": 0.18,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "jazz_bass"
+    },
+    {
+      "t": 13.5,
+      "midi": 64,
+      "duration": 0.14,
+      "gain": 0.07,
+      "pan": 0.12,
+      "instrument": "cellos_pizz"
+    },
+    {
+      "t": 13.75,
+      "midi": 41,
+      "duration": 0.18,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "jazz_bass"
+    },
+    {
+      "t": 14.0,
+      "midi": 31,
+      "duration": 0.18,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "jazz_bass"
+    },
+    {
+      "t": 14.0,
+      "midi": 55,
+      "duration": 0.14,
+      "gain": 0.07,
+      "pan": 0.12,
+      "instrument": "cellos_pizz"
+    },
+    {
+      "t": 14.25,
+      "midi": 43,
+      "duration": 0.18,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "jazz_bass"
+    },
+    {
+      "t": 14.5,
+      "midi": 31,
+      "duration": 0.18,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "jazz_bass"
+    },
+    {
+      "t": 14.5,
+      "midi": 59,
+      "duration": 0.14,
+      "gain": 0.07,
+      "pan": 0.12,
+      "instrument": "cellos_pizz"
+    },
+    {
+      "t": 14.75,
+      "midi": 43,
+      "duration": 0.18,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "jazz_bass"
+    },
+    {
+      "t": 15.0,
+      "midi": 31,
+      "duration": 0.18,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "jazz_bass"
+    },
+    {
+      "t": 15.0,
+      "midi": 62,
+      "duration": 0.14,
+      "gain": 0.07,
+      "pan": 0.12,
+      "instrument": "cellos_pizz"
+    },
+    {
+      "t": 15.25,
+      "midi": 43,
+      "duration": 0.18,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "jazz_bass"
+    },
+    {
+      "t": 15.5,
+      "midi": 31,
+      "duration": 0.18,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "jazz_bass"
+    },
+    {
+      "t": 15.5,
+      "midi": 65,
+      "duration": 0.14,
+      "gain": 0.07,
+      "pan": 0.12,
+      "instrument": "cellos_pizz"
+    },
+    {
+      "t": 15.75,
+      "midi": 43,
+      "duration": 0.18,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "jazz_bass"
+    },
+    {
+      "t": 16.0,
+      "midi": 36,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 16.0,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 16.25,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 16.25,
+      "midi": 76,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 16.5,
+      "midi": 36,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 16.5,
+      "midi": 79,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 16.75,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 16.75,
+      "midi": 76,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 17.0,
+      "midi": 36,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 17.0,
+      "midi": 74,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 17.25,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 17.25,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 17.5,
+      "midi": 36,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 17.5,
+      "midi": 71,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 17.75,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 17.75,
+      "midi": 67,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 16,
+      "midi": 60,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 16,
+      "midi": 64,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 16,
+      "midi": 67,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 16,
+      "midi": 71,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 18.0,
+      "midi": 33,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 18.0,
+      "midi": 74,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 18.25,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 18.25,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 18.5,
+      "midi": 33,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 18.5,
+      "midi": 71,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 18.75,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 18.75,
+      "midi": 67,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 19.0,
+      "midi": 33,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 19.0,
+      "midi": 69,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 19.25,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 19.25,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 19.5,
+      "midi": 33,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 19.5,
+      "midi": 76,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 19.75,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 19.75,
+      "midi": 74,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 18,
+      "midi": 57,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 18,
+      "midi": 60,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 18,
+      "midi": 64,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 18,
+      "midi": 67,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 20.0,
+      "midi": 29,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 20.0,
+      "midi": 69,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 20.25,
+      "midi": 41,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 20.25,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 20.5,
+      "midi": 29,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 20.5,
+      "midi": 76,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 20.75,
+      "midi": 41,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 20.75,
+      "midi": 74,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 21.0,
+      "midi": 29,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 21.0,
+      "midi": 72,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 21.25,
+      "midi": 41,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 21.25,
+      "midi": 67,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 21.5,
+      "midi": 29,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 21.5,
+      "midi": 64,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 21.75,
+      "midi": 41,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 21.75,
+      "midi": 67,
+      "duration": 0.16,
+      "gain": 0.065,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 20,
+      "midi": 53,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 20,
+      "midi": 57,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 20,
+      "midi": 60,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 20,
+      "midi": 64,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 20.0,
+      "midi": 60,
+      "duration": 0.15,
+      "gain": 0.04,
+      "pan": 0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 20.25,
+      "midi": 62,
+      "duration": 0.15,
+      "gain": 0.04,
+      "pan": 0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 20.5,
+      "midi": 64,
+      "duration": 0.15,
+      "gain": 0.04,
+      "pan": 0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 20.75,
+      "midi": 66,
+      "duration": 0.15,
+      "gain": 0.04,
+      "pan": 0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 21.0,
+      "midi": 68,
+      "duration": 0.15,
+      "gain": 0.04,
+      "pan": 0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 21.25,
+      "midi": 70,
+      "duration": 0.15,
+      "gain": 0.04,
+      "pan": 0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 21.5,
+      "midi": 72,
+      "duration": 0.15,
+      "gain": 0.04,
+      "pan": 0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 21.75,
+      "midi": 74,
+      "duration": 0.15,
+      "gain": 0.04,
+      "pan": 0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 24.0,
+      "midi": 36,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 24.0,
+      "midi": 72,
+      "duration": 0.9,
+      "gain": 0.065,
+      "pan": 0.3,
+      "instrument": "music_box"
+    },
+    {
+      "t": 24.25,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 24.5,
+      "midi": 36,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 24.5,
+      "midi": 76,
+      "duration": 0.9,
+      "gain": 0.065,
+      "pan": -0.3,
+      "instrument": "music_box"
+    },
+    {
+      "t": 24.75,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 25.0,
+      "midi": 36,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 25.0,
+      "midi": 79,
+      "duration": 0.9,
+      "gain": 0.065,
+      "pan": 0.3,
+      "instrument": "music_box"
+    },
+    {
+      "t": 25.25,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 25.5,
+      "midi": 36,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 25.5,
+      "midi": 83,
+      "duration": 0.9,
+      "gain": 0.065,
+      "pan": -0.3,
+      "instrument": "music_box"
+    },
+    {
+      "t": 25.75,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 24,
+      "midi": 60,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 24,
+      "midi": 64,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 24,
+      "midi": 67,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 24,
+      "midi": 71,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 26.0,
+      "midi": 33,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 26.0,
+      "midi": 69,
+      "duration": 0.9,
+      "gain": 0.065,
+      "pan": 0.3,
+      "instrument": "music_box"
+    },
+    {
+      "t": 26.25,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 26.5,
+      "midi": 33,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 26.5,
+      "midi": 72,
+      "duration": 0.9,
+      "gain": 0.065,
+      "pan": -0.3,
+      "instrument": "music_box"
+    },
+    {
+      "t": 26.75,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 27.0,
+      "midi": 33,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 27.0,
+      "midi": 76,
+      "duration": 0.9,
+      "gain": 0.065,
+      "pan": 0.3,
+      "instrument": "music_box"
+    },
+    {
+      "t": 27.25,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 27.5,
+      "midi": 33,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 27.5,
+      "midi": 79,
+      "duration": 0.9,
+      "gain": 0.065,
+      "pan": -0.3,
+      "instrument": "music_box"
+    },
+    {
+      "t": 27.75,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 26,
+      "midi": 57,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 26,
+      "midi": 60,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 26,
+      "midi": 64,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 26,
+      "midi": 67,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 28.0,
+      "midi": 29,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 28.0,
+      "midi": 65,
+      "duration": 0.9,
+      "gain": 0.065,
+      "pan": 0.3,
+      "instrument": "music_box"
+    },
+    {
+      "t": 28.25,
+      "midi": 41,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 28.5,
+      "midi": 29,
+      "duration": 0.18,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "analog_square_seq"
+    },
+    {
+      "t": 28.5,
+      "midi": 69,
+      "duration": 0.9,
+      "gain": 0.065,
+      "pan": -0.3,
+      "instrument": "music_box"
+    },
+    {
+      "t": 28,
+      "midi": 53,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 28,
+      "midi": 57,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 28,
+      "midi": 60,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 28,
+      "midi": 64,
+      "duration": 1.8,
+      "gain": 0.025,
+      "pan": -0.1,
+      "instrument": "pad"
+    },
+    {
+      "t": 28,
+      "midi": 48,
+      "duration": 1.6,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "piano"
+    },
+    {
+      "t": 28,
+      "midi": 52,
+      "duration": 1.6,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "piano"
+    },
+    {
+      "t": 28,
+      "midi": 55,
+      "duration": 1.6,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "piano"
+    },
+    {
+      "t": 28,
+      "midi": 59,
+      "duration": 1.6,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "piano"
+    },
+    {
+      "t": 28,
+      "midi": 62,
+      "duration": 1.6,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "music_box"
+    },
+    {
+      "t": 28,
+      "midi": 76,
+      "duration": 1.6,
+      "gain": 0.045,
+      "pan": 0,
+      "instrument": "music_box"
+    }
+  ],
+  "hits": [
+    {
+      "t": 0.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 0.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 0.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 0.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 1.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 1.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 1.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 1.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 0.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 0.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 0.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 1.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 1.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 1.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 2.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 2.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 2.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 2.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 3.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 3.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 3.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 3.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 2.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 2.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 2.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 3.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 3.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 3.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 4.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 4.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 4.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 4.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 5.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 5.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 5.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 5.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 4.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 4.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 4.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 5.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 5.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 5.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 6.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 6.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 6.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 6.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 7.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 7.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 7.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 7.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 6.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 6.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 6.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 7.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 7.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 7.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 8.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 8.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 8.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 8.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 9.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 9.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 9.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 9.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 8.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 8.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 8.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 9.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 9.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 9.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 10.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 10.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 10.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 10.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 11.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 11.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 11.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 11.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 10.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 10.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 10.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 11.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 11.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 11.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 12.0,
+      "instrument": "shaker",
+      "gain": 0.025,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 12.25,
+      "instrument": "shaker",
+      "gain": 0.025,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 12.5,
+      "instrument": "shaker",
+      "gain": 0.025,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 12.75,
+      "instrument": "shaker",
+      "gain": 0.025,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 13.0,
+      "instrument": "shaker",
+      "gain": 0.025,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 13.25,
+      "instrument": "shaker",
+      "gain": 0.025,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 13.5,
+      "instrument": "shaker",
+      "gain": 0.025,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 13.75,
+      "instrument": "shaker",
+      "gain": 0.025,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 12.0,
+      "instrument": "frame_drum",
+      "gain": 0.045,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 12.5,
+      "instrument": "frame_drum",
+      "gain": 0.045,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 12.5,
+      "instrument": "woodblock",
+      "gain": 0.045,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 13.0,
+      "instrument": "frame_drum",
+      "gain": 0.045,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 13.5,
+      "instrument": "frame_drum",
+      "gain": 0.045,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 13.5,
+      "instrument": "woodblock",
+      "gain": 0.045,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 14.0,
+      "instrument": "shaker",
+      "gain": 0.025,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 14.25,
+      "instrument": "shaker",
+      "gain": 0.025,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 14.5,
+      "instrument": "shaker",
+      "gain": 0.025,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 14.75,
+      "instrument": "shaker",
+      "gain": 0.025,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 15.0,
+      "instrument": "shaker",
+      "gain": 0.025,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 15.25,
+      "instrument": "shaker",
+      "gain": 0.025,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 15.5,
+      "instrument": "shaker",
+      "gain": 0.025,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 15.75,
+      "instrument": "shaker",
+      "gain": 0.025,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 14.0,
+      "instrument": "frame_drum",
+      "gain": 0.045,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 14.5,
+      "instrument": "frame_drum",
+      "gain": 0.045,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 14.5,
+      "instrument": "woodblock",
+      "gain": 0.045,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 15.0,
+      "instrument": "frame_drum",
+      "gain": 0.045,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 15.5,
+      "instrument": "frame_drum",
+      "gain": 0.045,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 15.5,
+      "instrument": "woodblock",
+      "gain": 0.045,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 16.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 16.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 16.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 16.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 17.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 17.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 17.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 17.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 16.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 16.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 16.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 17.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 17.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 17.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 18.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 18.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 18.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 18.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 19.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 19.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 19.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 19.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 18.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 18.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 18.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 19.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 19.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 19.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 20.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 20.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 20.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 20.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 21.0,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 21.25,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 21.5,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "down"
+    },
+    {
+      "t": 21.75,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.25,
+      "variant": "up"
+    },
+    {
+      "t": 20.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 20.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 20.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 21.0,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 21.5,
+      "instrument": "frame_drum",
+      "gain": 0.07,
+      "duration": 0.15,
+      "pan": -0.15,
+      "variant": "small"
+    },
+    {
+      "t": 21.5,
+      "instrument": "woodblock",
+      "gain": 0.075,
+      "duration": 0.1,
+      "pan": 0.1,
+      "variant": "b"
+    },
+    {
+      "t": 20.0,
+      "instrument": "shaker",
+      "gain": 0.025,
+      "duration": 0.08,
+      "pan": 0.15,
+      "variant": "slap"
+    },
+    {
+      "t": 20.125,
+      "instrument": "shaker",
+      "gain": 0.028,
+      "duration": 0.08,
+      "pan": 0.15,
+      "variant": "slap"
+    },
+    {
+      "t": 20.25,
+      "instrument": "shaker",
+      "gain": 0.031,
+      "duration": 0.08,
+      "pan": 0.15,
+      "variant": "slap"
+    },
+    {
+      "t": 20.375,
+      "instrument": "shaker",
+      "gain": 0.034,
+      "duration": 0.08,
+      "pan": 0.15,
+      "variant": "slap"
+    },
+    {
+      "t": 20.5,
+      "instrument": "shaker",
+      "gain": 0.037000000000000005,
+      "duration": 0.08,
+      "pan": 0.15,
+      "variant": "slap"
+    },
+    {
+      "t": 20.625,
+      "instrument": "shaker",
+      "gain": 0.04,
+      "duration": 0.08,
+      "pan": 0.15,
+      "variant": "slap"
+    },
+    {
+      "t": 20.75,
+      "instrument": "shaker",
+      "gain": 0.043000000000000003,
+      "duration": 0.08,
+      "pan": 0.15,
+      "variant": "slap"
+    },
+    {
+      "t": 20.875,
+      "instrument": "shaker",
+      "gain": 0.046,
+      "duration": 0.08,
+      "pan": 0.15,
+      "variant": "slap"
+    },
+    {
+      "t": 21.0,
+      "instrument": "shaker",
+      "gain": 0.049,
+      "duration": 0.08,
+      "pan": 0.15,
+      "variant": "slap"
+    },
+    {
+      "t": 21.125,
+      "instrument": "shaker",
+      "gain": 0.052000000000000005,
+      "duration": 0.08,
+      "pan": 0.15,
+      "variant": "slap"
+    },
+    {
+      "t": 21.25,
+      "instrument": "shaker",
+      "gain": 0.055,
+      "duration": 0.08,
+      "pan": 0.15,
+      "variant": "slap"
+    },
+    {
+      "t": 21.375,
+      "instrument": "shaker",
+      "gain": 0.058,
+      "duration": 0.08,
+      "pan": 0.15,
+      "variant": "slap"
+    },
+    {
+      "t": 21.5,
+      "instrument": "shaker",
+      "gain": 0.061000000000000006,
+      "duration": 0.08,
+      "pan": 0.15,
+      "variant": "slap"
+    },
+    {
+      "t": 21.625,
+      "instrument": "shaker",
+      "gain": 0.064,
+      "duration": 0.08,
+      "pan": 0.15,
+      "variant": "slap"
+    },
+    {
+      "t": 21.75,
+      "instrument": "shaker",
+      "gain": 0.067,
+      "duration": 0.08,
+      "pan": 0.15,
+      "variant": "slap"
+    },
+    {
+      "t": 21.875,
+      "instrument": "shaker",
+      "gain": 0.07,
+      "duration": 0.08,
+      "pan": 0.15,
+      "variant": "slap"
+    }
+  ],
+  "effects": [
+    {
+      "t": 0.02,
+      "kind": "print_pop",
+      "duration": 0.09,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 0.27,
+      "kind": "print_pop",
+      "duration": 0.09,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 0.52,
+      "kind": "print_pop",
+      "duration": 0.09,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 0.77,
+      "kind": "print_pop",
+      "duration": 0.09,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 1.02,
+      "kind": "print_pop",
+      "duration": 0.09,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 1.27,
+      "kind": "print_pop",
+      "duration": 0.09,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 2.0,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 2.05,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 2.1,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 2.2,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 2.27,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 2.34,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 2.41,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 2.5,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 2.55,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 8.05,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 8.11,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 8.17,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 8.23,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 12.05,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 12.1,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 12.15,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 12.2,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 12.25,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 12.3,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 16.05,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 16.11,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 16.17,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 16.23,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 20.0,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 20.05,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 20.1,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 20.15,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 21.0,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 21.07,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 21.14,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 21.21,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 21.28,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 22.3,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 22.5,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 22.7,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 24.45,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 24.53,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 24.61,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 24.69,
+      "kind": "print_pop",
+      "duration": 0.075,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 1.45,
+      "kind": "cartoon_boing",
+      "duration": 0.35,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 4,
+      "kind": "cartoon_boing",
+      "duration": 0.35,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 8.15,
+      "kind": "cartoon_boing",
+      "duration": 0.35,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 12.25,
+      "kind": "cartoon_boing",
+      "duration": 0.35,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 17.45,
+      "kind": "cartoon_boing",
+      "duration": 0.35,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 24,
+      "kind": "cartoon_boing",
+      "duration": 0.35,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 26.6,
+      "kind": "cartoon_boing",
+      "duration": 0.35,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 1.82,
+      "kind": "whoosh",
+      "duration": 0.4,
+      "gain": 0.07,
+      "pan": 0
+    },
+    {
+      "t": 3.82,
+      "kind": "whoosh",
+      "duration": 0.4,
+      "gain": 0.07,
+      "pan": 0
+    },
+    {
+      "t": 7.82,
+      "kind": "whoosh",
+      "duration": 0.4,
+      "gain": 0.07,
+      "pan": 0
+    },
+    {
+      "t": 11.82,
+      "kind": "whoosh",
+      "duration": 0.4,
+      "gain": 0.07,
+      "pan": 0
+    },
+    {
+      "t": 15.82,
+      "kind": "whoosh",
+      "duration": 0.4,
+      "gain": 0.07,
+      "pan": 0
+    },
+    {
+      "t": 19.82,
+      "kind": "whoosh",
+      "duration": 0.4,
+      "gain": 0.07,
+      "pan": 0
+    },
+    {
+      "t": 25.82,
+      "kind": "whoosh",
+      "duration": 0.4,
+      "gain": 0.07,
+      "pan": 0
+    },
+    {
+      "t": 3,
+      "kind": "stamp",
+      "duration": 0.5,
+      "gain": 0.16,
+      "pan": 0
+    },
+    {
+      "t": 23,
+      "kind": "stamp",
+      "duration": 0.5,
+      "gain": 0.24,
+      "pan": 0
+    },
+    {
+      "t": 26.8,
+      "kind": "stamp",
+      "duration": 0.5,
+      "gain": 0.16,
+      "pan": 0
+    },
+    {
+      "t": 5,
+      "kind": "camera_shutter",
+      "duration": 0.23,
+      "gain": 0.16,
+      "pan": 0
+    },
+    {
+      "t": 6,
+      "kind": "camera_shutter",
+      "duration": 0.23,
+      "gain": 0.16,
+      "pan": 0
+    },
+    {
+      "t": 7,
+      "kind": "cat_meow",
+      "duration": 0.47,
+      "gain": 0.13,
+      "pan": 0
+    },
+    {
+      "t": 29,
+      "kind": "cat_meow",
+      "duration": 0.36,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 9,
+      "kind": "ceramic_clink",
+      "duration": 0.17,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 9.5,
+      "kind": "ceramic_clink",
+      "duration": 0.17,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 10.5,
+      "kind": "ceramic_clink",
+      "duration": 0.16,
+      "gain": 0.13,
+      "pan": 0
+    },
+    {
+      "t": 10.62,
+      "kind": "whoosh",
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.35
+    },
+    {
+      "t": 11,
+      "kind": "glass_shatter",
+      "duration": 0.7,
+      "gain": 0.23,
+      "pan": -0.5
+    },
+    {
+      "t": 13.05,
+      "kind": "whoosh",
+      "duration": 0.6,
+      "gain": 0.13,
+      "pan": -0.6
+    },
+    {
+      "t": 14.05,
+      "kind": "whoosh",
+      "duration": 0.6,
+      "gain": 0.13,
+      "pan": 0.6
+    },
+    {
+      "t": 15.05,
+      "kind": "whoosh",
+      "duration": 0.6,
+      "gain": 0.13,
+      "pan": -0.5
+    },
+    {
+      "t": 15.5,
+      "kind": "cartoon_boing",
+      "duration": 0.25,
+      "gain": 0.13,
+      "pan": 0.45
+    },
+    {
+      "t": 17.6,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 17.6238,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 17.6476,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 17.6714,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 17.6952,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 17.719,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 17.7429,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 17.7667,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 17.7905,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 17.8143,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 17.8381,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 17.8619,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 17.8857,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 17.9095,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 17.9333,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 17.9571,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 17.981,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 18.0048,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 18.0286,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 18.0524,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 18.0762,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 18.1,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 18.1238,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 18.1476,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 18.1714,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 18.1952,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 18.219,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 18.2429,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 18.2667,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 18.2905,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 18.3143,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 18.3381,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 18.3619,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 18.3857,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 18.4095,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 18.4333,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 18.4571,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 18.481,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 18.5048,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 18.5286,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 18.5524,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 18.5762,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 18.6,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 18.6238,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 18.6476,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 18.6714,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 18.6952,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 18.719,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 18.7429,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 18.7667,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 18.7905,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 18.8143,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 18.8381,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 18.8619,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 18.8857,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 18.9095,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 18.9333,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 18.9571,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 18.981,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 19.0048,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 19.0286,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 19.0524,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 19.0762,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 19.1,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 19.1238,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 19.1476,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 19.1714,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 19.1952,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 19.219,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 19.2429,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 19.2667,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 19.2905,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 19.3143,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 19.3381,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 19.3619,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 19.3857,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 19.4095,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 19.4333,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 19.4571,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 19.481,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 19.5048,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 19.5286,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 19.5524,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 19.5762,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 19.6,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 19.6238,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 19.6476,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 19.6714,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 19.6952,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 19.719,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 19.7429,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 19.7667,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 19.7905,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 19.8143,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0.2
+    },
+    {
+      "t": 19.8381,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.034,
+      "pan": 0.2
+    },
+    {
+      "t": 19.8619,
+      "kind": "keyboard_click",
+      "duration": 0.04,
+      "gain": 0.043,
+      "pan": 0.2
+    },
+    {
+      "t": 18,
+      "kind": "cat_purr",
+      "duration": 2,
+      "gain": 0.075,
+      "pan": 0.25
+    },
+    {
+      "t": 26.7,
+      "kind": "cat_purr",
+      "duration": 2.7,
+      "gain": 0.06,
+      "pan": -0.1
+    },
+    {
+      "t": 20.25,
+      "kind": "paper",
+      "duration": 0.32,
+      "gain": 0.11,
+      "pan": 0
+    },
+    {
+      "t": 20.5,
+      "kind": "paper",
+      "duration": 0.32,
+      "gain": 0.11,
+      "pan": 0
+    },
+    {
+      "t": 20.75,
+      "kind": "paper",
+      "duration": 0.32,
+      "gain": 0.11,
+      "pan": 0
+    },
+    {
+      "t": 26,
+      "kind": "paper",
+      "duration": 0.32,
+      "gain": 0.11,
+      "pan": 0
+    },
+    {
+      "t": 24.5,
+      "kind": "print_pop",
+      "duration": 0.18,
+      "gain": 0.09,
+      "pan": 0
+    },
+    {
+      "t": 24.8,
+      "kind": "print_pop",
+      "duration": 0.18,
+      "gain": 0.09,
+      "pan": 0
+    },
+    {
+      "t": 25.2,
+      "kind": "print_pop",
+      "duration": 0.18,
+      "gain": 0.09,
+      "pan": 0
+    },
+    {
+      "t": 27.3,
+      "kind": "print_pop",
+      "duration": 0.18,
+      "gain": 0.09,
+      "pan": 0
+    }
+  ],
+  "silence_music_ranges": [
+    [
+      22,
+      23
+    ]
+  ],
+  "music_rms_db": -25,
+  "duck_db": 0,
+  "room": 0.05
+}

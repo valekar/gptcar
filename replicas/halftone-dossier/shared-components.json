@@ -1,0 +1,17 @@
+[
+  {
+    "path": "styles/halftone-dossier/demo/index.html",
+    "sha256": "756f873cfd70569c01650bff77e08702eeb56498b040ad98ec344e8f3f67609c",
+    "purpose": "MIT generic SVG helpers/type/halftone/caption/stamp and tabby head/sit/run/loaf/curl rigs only (lines55–337), SVG material filter definitions(lines16–38), reusable paper/grain algorithms(lines995–1032). Original buildAll/scene assembly/HUD/story render not copied or executed; those sections inspected read-only for exact published text/timing/geometry."
+  },
+  {
+    "path": "styles/halftone-dossier/STYLE.md",
+    "sha256": "afe98514f065c9f924dda0a483388617122f38df99462025542d2f23d9eb7e3b",
+    "purpose": "Published complete material and typography grammar"
+  },
+  {
+    "path": "styles/halftone-dossier/DEMO.md",
+    "sha256": "55b28d98ae84bad9081f37eea7e1e09bce77ab4446fc8274a2b9d74c1581cdeb",
+    "purpose": "Published ten-card story, measured cue and music direction"
+  }
+]

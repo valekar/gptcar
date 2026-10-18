@@ -27,3 +27,7 @@ For final acceptance, decode both completed movies at the same frame timestamps 
 For the GPTcar comparison project, canonical briefs live in `comparison/matched-briefs/`; style-specific improvements are in `styles/<slug>/GPT_REPLICATION.md` when present. The run contract is `comparison/REPLICATION.md`. The gallery stays one page with original and generated films side by side.
 
 For long paper-theatre narratives, verify every camera crop and object action against decoded reference frames: an empty chair needs the observed pan, a package needs a genuinely open box and inserted contents, and a bite must bring the cake to the mouth. Match scene boundary timing before replacing detailed scenes with new arrangements. Preserve a recurring landscape silhouette, legible letter scale and lighting direction through repeated settings.
+
+For UI films, match each menu hold, row count, progressive activity list, exact typed/comment text and reveal phase. A correct final UI state does not compensate for arriving early. Inspect partially expanded circular theme reveals and transitional camera crops at exact frame times, and preserve the original hold before a chapter wipe.
+
+For paper-cut theatre, match exposure and translucency as part of the artwork: dark opaque scenery cannot substitute for a faint silhouette inside an illuminated moon. Measure repeated moon, character, train-window and handwritten-note scale against reference frames. Build city detail on real layered paper planes, with the observed window density and warm light spill.

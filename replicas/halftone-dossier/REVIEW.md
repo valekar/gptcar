@@ -1,0 +1,7 @@
+# Source review
+
+Original all3 one-second sheets inspected for the whole30s work, with full STYLE/DEMO and scene source read-only for precise words/timing/layout. Own28 initial full-resolution anchors and68 regular/exact stills inspected across all ten cards: every second plus stamp/camera flash/cup nudge/fall/crash, parkour pass/jump, keyboard landing, verdict pre-impact/impact/after and folder/ending boundaries. Private work/gptcar/halftone-v2/initial and full-review contacts. Whole96 captures are coverage, not a claim to inspect900encoded frames.
+
+All Chinese scene titles, evidence labels, profile, report filename, interjections, captions and closing joke preserved; old author/signature truthfully changed toGPT. Matched generic tabby model and print tools attributed. New paper composition/props/shard and confetti positions may vary, as do small glyph shadow spacing and halftone fields. Full story/card timing and case typography/materials retained. Camera flashes intentionally reproduce published95%short shutter exposure; verdict flash capped50%.
+
+Twelve scrambled visible-frame checks: eight bit-identical PNG pairs; four differ only at7–69color-channel samples (of2,764,800), mean absolute channel difference ≤0.000323/255. This is SVG filter/edge rasterization rounding, with no visible temporal state difference. Scene state and seeded grain are deterministic. Exact byte identity is not claimed for SVG filtered raster output. Root independent decoded full-movie review/mix/verification pending.
