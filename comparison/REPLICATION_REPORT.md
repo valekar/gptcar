@@ -1,6 +1,6 @@
 # GPTcar: 51 reference-matched recreations
 
-All **51 of 51** full-length recreations have passed independent scene/audio review, with a complete source-informed reconstruction brief, a new film source bundle and a render record tied to the accepted source/movie. This replaces the rejected first pass of abbreviated 20-second studies. The single-page gallery is ready for publication at [valekar.github.io/gptcar](https://valekar.github.io/gptcar/). This report does not announce a verified live deployment: the final strict release build, packaging and deployment verification remain release requirements.
+All **51 of 51** full-length recreations have passed independent scene/audio review, with a complete source-informed reconstruction brief, a new film source bundle and a render record tied to the accepted source/movie. This replaces the rejected first pass of abbreviated 20-second studies. The single-page gallery is [published at valekar.github.io/gptcar](https://valekar.github.io/gptcar/). The clean-checkout strict build, 154-asset remote checksum verification, GitHub Pages deployment and live browser/media checks passed. See the [publication record](PUBLICATION.json) and [release](https://github.com/valekar/gptcar/releases/tag/comparison-v2).
 
 ## What this run compares
 
@@ -46,7 +46,7 @@ The evidence has distinct roles:
 
 All **51 current films** now have accepted source-bound reviews, and the final strict release build passed. The [final audio audit](final-audio-audit.json) measures all 51 actual release MP4s against −15.2 to −12.8 LUFS and at most −1 dBTP; all pass. Watercolor received an audio-only 0.5 dB export correction, with its complete video stream unchanged. The strict builder rejects a missing/changed movie or poster, stale source or brief, wrong model/effort, incorrect original delivery format or incomplete/mismatched review. Only a successful final gate establishes the release inventory; a source-ready flag or this documentation does not substitute for it. The initial rejected studies and their [historical report](REPORT.md) remain separate from the accepted v2 selection.
 
-The publication layout is one page, with every original on the left and its GPT recreation on the right. Search, category filters and style hash links operate within that page. Pages serves the page and posters; full-quality MP4s are distributed through the repository's `comparison-v2` GitHub Release. Media and poster URLs carry content versions, and release files are verified against the recorded SHA-256 values. Final live-URL verification is performed by the publisher after deployment.
+The publication layout is one page, with every original on the left and its GPT recreation on the right. Search, category filters and style hash links operate within that page. Pages serves the page and posters; full-quality MP4s are distributed through the repository's `comparison-v2` GitHub Release. Media and poster URLs carry content versions, and release files are verified against the recorded SHA-256 values. Live verification confirmed all 51 reviewed rows, 102 players, correct left/right ordering, search and category filters, style hash navigation and synchronized Watercolor playback. Anonymous byte-range checks reached all 102 original/recreated MP4s.
 
 ## Per-style audit trail
 

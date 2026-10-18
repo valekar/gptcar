@@ -1,0 +1,38 @@
+{
+  "verified_at_utc": "2026-10-18T09:22:25.288671+00:00",
+  "gallery_url": "https://valekar.github.io/gptcar/",
+  "repository_url": "https://github.com/valekar/gptcar",
+  "release_url": "https://github.com/valekar/gptcar/releases/tag/comparison-v2",
+  "release_source_commit": "336334ab146ffb29fcc2362b29ba19f8d360d171",
+  "workflow_url": "https://github.com/valekar/gptcar/actions/runs/39114835762",
+  "workflow_conclusion": "success",
+  "clean_tracked_checkout_strict_build": "passed",
+  "remote_assets": {
+    "count": 154,
+    "all_sha256_and_sizes_match": true
+  },
+  "anonymous_media": {
+    "count": 102,
+    "all_pass": true,
+    "method": "Anonymous HTTP byte-range requests; inspect only the first 32 MP4 bytes, no media downloaded for display."
+  },
+  "live_browser": {
+    "reviewed_rows": 51,
+    "players": 102,
+    "all_opus_left_gpt_right": true,
+    "search_watercolor": "1 of 51 styles",
+    "category_games": "4 of 51 styles",
+    "watercolor_hash_navigation_restores_all_51": true,
+    "paired_playback": {
+      "style": "watercolor",
+      "both_ready_state": 4,
+      "both_playing": true,
+      "both_muted": true,
+      "original_time": 19.126565,
+      "gpt_time": 19.126874,
+      "both_duration": 113.6,
+      "media_errors": null
+    }
+  },
+  "limits": "Scene-informed qualitative recreations with credited shared assets and uncertain ASR cases, not a blind benchmark, pixel-identity guarantee or human listening certification."
+}
