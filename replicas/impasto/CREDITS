@@ -1,0 +1,15 @@
+The Colour of Rain — GPT-6.1 Sol High reference-matched recreation
+
+New GPT work: painted-art.js (plaza, cello macro, girl, cobbles and cards); film.js (independent scene assembly, cameras, acting, reveals, umbrella event and overhead choreography); fresh score.json, treatment and prompt. No original scene/main/film renderer or finished frame/master audio is imported.
+
+Shared library components, copied with attribution under the repository MIT license:
+styles/impasto/demo/engine/impasto.js — generic WebGL2 palette-knife height-field renderer.
+styles/impasto/demo/engine/plate.js — generic value-planned Ref illustration to confined strokes conversion.
+styles/impasto/demo/scenes/common.js — path/gradient/math drawing utilities.
+styles/impasto/demo/scenes/cellist.js — shared detailed cellist/cello/case model, bow IK and face strokes. This character's geometry is reused, not claimed as new GPT modeling.
+styles/impasto/demo/scenes/figures.js — generic walking figure, umbrella side/top models, rain/splash/ribbon primitives.
+core/lib.js — shared deterministic interpolation/hash helpers.
+styles/impasto/demo/fonts/ — Cormorant Garamond / Cormorant SC, Copyright 2015 The Cormorant Project Authors, SIL Open Font License 1.1 (fonts/OFL.txt).
+
+New score uses the library's sample playback instruments: VS Chamber Orchestra: Community Edition, Versilian Community Sample Library (Versilian Studios), FreePats — CC0. Foley is recreated by the comparison mix pipeline. No generated bitmap/video assets or original master track. Original video is private analytical reference only.
+Original narrative title and published timing/musical direction are reproduced at the user's explicit request. Original input conversation prompt is unavailable; PROMPT.md is a source-informed reconstruction. Original demo credit is replaced with truthful GPT recreation credit.

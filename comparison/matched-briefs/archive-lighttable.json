@@ -937,5 +937,10 @@
       "Use a dusty white light table containing the actual brown telegram, newspaper clipping and three damaged glass negatives. A physical glass loupe magnifies the telegram’s date, success statement and57 seconds, then the newspaper repeats that number. Develop the first-flight negative inside the loupe and enter the positive photo with restrained Flyer/Wilbur parallax and12s/120ft/10:35 labels. Move to the fourth-flight photograph and schematic852ft/59s ruler. Hold57 and59 side by side before striking57 and revealing 差2秒. Pull back to all five source artifacts, the complete archive index and title; preserve original paper and emulsion textures."
     ],
     "note": "All regular reference sheets were inspected across the complete film. Named supplementary frames cover important short actions and transitions. This is scene coverage, not a claim that every encoded frame was inspected."
+  },
+  "asset_restoration": {
+    "status": "complete",
+    "same_original_five_items": true,
+    "details": "Parent restored five original full masters and rebuilt texture, emulsion-mask and parallax layers. Replica asset-manifest.json freezes derivative bytes."
   }
 }

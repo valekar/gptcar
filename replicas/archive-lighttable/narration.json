@@ -1,0 +1,71 @@
+{
+  "duration": 40,
+  "voice": "bm_george",
+  "language": "en-gb",
+  "direction": "Calm British male, exact original lines and published speed directions.",
+  "lines": [
+    {
+      "id": "L1",
+      "text": "December seventeenth, nineteen oh three.",
+      "start": 0.42,
+      "duration": 2.889,
+      "voice": "bm_george",
+      "speed": 0.95,
+      "language": "en-gb"
+    },
+    {
+      "id": "L2",
+      "text": "Orville wired home: success, four flights.",
+      "start": 3.55,
+      "duration": 3.244,
+      "voice": "bm_george",
+      "speed": 0.95,
+      "language": "en-gb"
+    },
+    {
+      "id": "L3",
+      "text": "The longest, fifty-seven seconds.",
+      "start": 6.95,
+      "duration": 2.601,
+      "voice": "bm_george",
+      "speed": 0.92,
+      "language": "en-gb"
+    },
+    {
+      "id": "L4",
+      "text": "Next day, the paper printed the same number.",
+      "start": 10.85,
+      "duration": 2.796,
+      "voice": "bm_george",
+      "speed": 0.98,
+      "language": "en-gb"
+    },
+    {
+      "id": "L5",
+      "text": "The first flight lasted twelve seconds. One hundred and twenty feet.",
+      "start": 18.35,
+      "duration": 4.678,
+      "voice": "bm_george",
+      "speed": 0.98,
+      "language": "en-gb"
+    },
+    {
+      "id": "L7",
+      "text": "The fourth flight: eight hundred and fifty-two feet, in fifty-nine seconds.",
+      "start": 25.55,
+      "duration": 4.812,
+      "voice": "bm_george",
+      "speed": 1,
+      "language": "en-gb"
+    },
+    {
+      "id": "L8",
+      "text": "The telegram was two seconds short.",
+      "start": 33.6,
+      "duration": 2.718,
+      "voice": "bm_george",
+      "speed": 0.92,
+      "language": "en-gb"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "slug": "one-line",
+  "title": "The Line That Never Lifted",
+  "source_ready": true,
+  "status": "source-ready-for-independent-review",
+  "uses_upstream_scene_code": false,
+  "matched_brief_sha256": "a813d41eb2a6199fbad1f313200b0806929bda2a0b0ab1a44919a6f4ed5165a2",
+  "delivery": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frame_count": 1140,
+    "duration": 47.5
+  },
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "duration": 47.5,
+  "review_times": [
+    0.5,
+    1.5,
+    2.5,
+    3.5,
+    4.5,
+    5.5,
+    6.5,
+    7.5,
+    8.5,
+    9.5,
+    10.5,
+    11.5,
+    12.5,
+    13.5,
+    14.5,
+    15.5,
+    16.5,
+    17.5,
+    18.5,
+    19.5,
+    20.5,
+    21.5,
+    22.5,
+    23.5,
+    23.8,
+    24.5,
+    25.3,
+    26.5,
+    27.5,
+    28.5,
+    29.5,
+    30.5,
+    31.5,
+    32.5,
+    33.5,
+    34.5,
+    35.5,
+    36.5,
+    37.5,
+    38.5,
+    39.5,
+    40.5,
+    41.2,
+    41.75,
+    42.5,
+    43.5,
+    44.5,
+    45.5,
+    46.5,
+    47.4
+  ],
+  "shared_components": [
+    {
+      "path": "styles/one-line/demo/geom.js",
+      "sha256": "2ce3a4d03ac83f099d6bae0b579d7dc65153f3dbabf1e098b7e6f3fb0dae9ab2",
+      "purpose": "Generic arc-length path builder and curvature/hold timing"
+    },
+    {
+      "path": "styles/one-line/demo/ink.js",
+      "sha256": "98ebd25fb1f45a209876511349552435dd4cf5b22aae30124b5e5851f73d1743",
+      "purpose": "Generic pressure/bleed/dryness polygon ink and blot"
+    },
+    {
+      "path": "styles/one-line/demo/paper.js",
+      "sha256": "d9a218459f779643d6c75964a89256635799ed005706816190e15449bb600254",
+      "purpose": "Generic seeded paper/fibre/tooth renderer"
+    },
+    {
+      "path": "styles/one-line/demo/cam.js",
+      "sha256": "ae15d60fae21ea0ccc7ba875d6c10d5d66af515daedc5601d58be8068779fdbf",
+      "purpose": "Generic composition interpolation and nib follow"
+    },
+    {
+      "path": "styles/one-line/demo/hands.js",
+      "sha256": "f18c60e5913368733e93d306699936ed96879b625228355e89ad7f376e82c080",
+      "purpose": "Generic pen and hand shadow primitives"
+    },
+    {
+      "path": "core/lib.js",
+      "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+      "purpose": "Shared deterministic math helpers"
+    },
+    {
+      "path": "replicas/one-line/fonts",
+      "purpose": "Fresh OFL font files and license notices; source URLs recorded in CREDITS"
+    }
+  ],
+  "determinism": [
+    {
+      "t": 3.5,
+      "equal": true,
+      "sha256": "6b60c660efef70a5beee3ebac40ac5bb32c68306f915c141b813cb3d0046abfb"
+    },
+    {
+      "t": 6.5,
+      "equal": true,
+      "sha256": "363f7e12a5f52550c32e3a72dacfabf332fb4e3a5cea6c520f20b9237a9e500e"
+    },
+    {
+      "t": 25.3,
+      "equal": true,
+      "sha256": "74c730696a07552703e3e53fdfe49231a372c24638ea186cef1fb521d1bd994f"
+    },
+    {
+      "t": 29.5,
+      "equal": true,
+      "sha256": "cc1259eeca5723e0d31ee067598a0f7a730b3d037fd7f3044b5c7c48ef49665c"
+    },
+    {
+      "t": 36.5,
+      "equal": true,
+      "sha256": "aac7892194aafe128b86f925fd025902417880e100f7f05bc795a776fb664f6a"
+    },
+    {
+      "t": 46.5,
+      "equal": true,
+      "sha256": "7159d73eb986026235d10beed815310b3d50891b2c91056f0f1b06e2ab0bf4be"
+    }
+  ],
+  "source_sha256": {
+    "CREDITS": "4afaeb2a9f9e483409bd0a4d07afbc8f17fd3950ee4c3e61dc38d0504f6f8f90",
+    "FACTS.md": "51f4a14fb92d301100ce1b3c967587f534381483b9d6b54b5a752fb2e5c06f0f",
+    "LICENSE": "14c9ff6f14bfb2391e74fedb01c256891d2a3bba1c2acf5789901bdf77e54e33",
+    "PROMPT.md": "4cc67ce95e0387f75f2e5342aba439eb75f6f2e2013d9c8e2804cea6c01b3c37",
+    "REVIEW.md": "d2d8940192b6e806d818ea20fe7e85199cfea56ed1827dcac4d0153a086f62e2",
+    "TREATMENT.md": "6df60ccdbb7868e7520b1aa95a6ade4c71aeac01856600ec0414f5939ea7141c",
+    "cam.js": "ae15d60fae21ea0ccc7ba875d6c10d5d66af515daedc5601d58be8068779fdbf",
+    "drawing.js": "ab95bb065b802328a320ac43cb47b7b08daf620d2f5baf65030aa24b1a3aff95",
+    "film.js": "b35a77f55fe42f73fac60d322a22a5e97fc2665d65f3ff03e503c81193ea3890",
+    "fonts/Caveat.ttf": "0bdb6b660482d31531b3945849fba5916b3ef8695da7024a9e6b9ee3c4157988",
+    "fonts/OFL-Caveat.txt": "1f9d81d094273d82f3898a1ee8b598a717d050ecbf5ff7bede105b704880157b",
+    "fonts/OFL-Sacramento.txt": "2e2cb5a98da665f2ab82a9fd01fb18c2337f845761b0c163f690ed65f3b94677",
+    "fonts/Sacramento.ttf": "9341fda10adbfeb7efc94302b34507a3e227d7e7f5c432df3f5ac8753ff73d24",
+    "geom.js": "2ce3a4d03ac83f099d6bae0b579d7dc65153f3dbabf1e098b7e6f3fb0dae9ab2",
+    "hands.js": "f18c60e5913368733e93d306699936ed96879b625228355e89ad7f376e82c080",
+    "index.html": "ba193b587829945c22a4328dde9d83c5b826aa8aa83a75e12a9486789a312cc8",
+    "ink.js": "98ebd25fb1f45a209876511349552435dd4cf5b22aae30124b5e5851f73d1743",
+    "narration.json": "58637437257103aec56b8c2329dd816c9c1e9a6408fb9cacf3d2f4db9a88354e",
+    "paper.js": "d9a218459f779643d6c75964a89256635799ed005706816190e15449bb600254",
+    "score.json": "4546a97cc44a3a10ffd1ff1297c12837269f1f54aeacab98ee83eac714ffd627",
+    "shared-components.json": "d0d36bfdeffbdcf87bcfa5ba4a441d02d5cf8f5e86fb8e22eadf6682a832cd35"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "duration": 39.5,
+  "language": "en-us",
+  "voice": "af_heart",
+  "direction": "Calm exact female narrator; retain all original words and measured number pronunciation.",
+  "lines": [
+    {
+      "id": "v1",
+      "text": "One glass slide. One slice of human liver.",
+      "start": 0.6,
+      "duration": 3.533,
+      "voice": "af_heart",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "v2",
+      "text": "Four point eight millimeters across. The stain turns collagen blue.",
+      "start": 5.67,
+      "duration": 4.997,
+      "voice": "af_heart",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "v3",
+      "text": "In this one millimeter circle, blue covers thirteen point five percent.",
+      "start": 11,
+      "duration": 4.994999999999999,
+      "voice": "af_heart",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "v4",
+      "text": "One point four millimeters away: thirty two point six.",
+      "start": 16.9,
+      "duration": 4.063000000000002,
+      "voice": "af_heart",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "v5",
+      "text": "Same slice, same stain. Two point four times the blue.",
+      "start": 22.75,
+      "duration": 4.402000000000001,
+      "voice": "af_heart",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "v6",
+      "text": "One nucleus, eight point five microns across.",
+      "start": 29.4,
+      "duration": 3.6099999999999994,
+      "voice": "af_heart",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "v7",
+      "text": "Every number here was measured from the scan itself.",
+      "start": 33.1,
+      "duration": 3.5559999999999974,
+      "voice": "af_heart",
+      "speed": 0.95,
+      "language": "en-us"
+    }
+  ]
+}

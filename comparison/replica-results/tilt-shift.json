@@ -1,0 +1,97 @@
+{
+  "slug": "tilt-shift",
+  "status": "rendered",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "title": "Toy Town Rush Hour",
+  "source_sha256": "fe369ba8b6b0918ac7d5fc22bf636106536e47d3dbd3a984064a530f19d5a627",
+  "matched_brief_sha256": "625a741f748d058ac66e0fb8dbd4e9d760592ae9293543b9a5ab73c5b4f85687",
+  "reference_video_sha256": "2396f4881e386bfcad7a9e3f79dbab0614255c25ba51bd5c24ea29ab8e743e01",
+  "video_sha256": "9b1bf7bc9b743e13169e04fb5fa4ab1c66d65cdb28a43929a3edfef9814066ca",
+  "poster_sha256": "bb74ece138a7c47cd2f4fb28797ee628dd7c592f90f9e5146775738c080d4bf4",
+  "reference_poster_sha256": "7ce13f8607dcb5b47bf7b83ce93e0efefdfcc0b86ddb8230a9c11f2471f5eb0e",
+  "poster_time": 24.8,
+  "bytes": 18965663,
+  "width": 1280,
+  "height": 720,
+  "fps": 24.0,
+  "frames": 912,
+  "duration": 38.0,
+  "audio_codec": "aac",
+  "audio_levels": {
+    "integrated_lufs": -13.9,
+    "true_peak_dbtp": -1.2,
+    "peak_gain_adjustment_db": 0
+  },
+  "review_times": [
+    0.5,
+    1.5,
+    3.5,
+    4.5,
+    5.5,
+    6.8,
+    8.5,
+    10.5,
+    12.5,
+    14.5,
+    16.5,
+    17.1,
+    19.5,
+    20.5,
+    22.7,
+    23.5,
+    24.0,
+    24.5,
+    24.8,
+    25.6,
+    25.8,
+    26.5,
+    27.2,
+    27.8,
+    28.0,
+    28.2,
+    28.4,
+    29.4,
+    29.6,
+    30.0,
+    30.5,
+    31.5,
+    32.5,
+    33.5,
+    35.5,
+    36.5
+  ],
+  "shared_components": [
+    {
+      "path": "styles/tilt-shift/demo/geo.js",
+      "purpose": "Generic merged geometry primitives."
+    },
+    {
+      "path": "styles/tilt-shift/demo/city.js",
+      "purpose": "buildingMaterial facade shader and shared uniforms only; buildCity is not called."
+    },
+    {
+      "path": "styles/tilt-shift/demo/traffic.js",
+      "purpose": "Generic makeFleet/makeTrails rendering only; no original traffic scene/simulation is called."
+    },
+    {
+      "path": "styles/tilt-shift/demo/sky.js",
+      "purpose": "Generic clock-to-sky, sun, environment map and shadow fitting."
+    },
+    {
+      "path": "styles/tilt-shift/demo/post.js",
+      "purpose": "Generic supersampled GTAO, physical and tilted band DOF, bloom and grade."
+    },
+    {
+      "path": "core/lib.js",
+      "purpose": "Generic deterministic math."
+    }
+  ],
+  "qa": {
+    "technical_render": "passed",
+    "scene_fidelity": "passed",
+    "audio_review": "passed",
+    "black_intervals_detected": false
+  },
+  "updated_at": "2026-10-18T05:10:23Z"
+}

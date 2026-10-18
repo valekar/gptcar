@@ -45,8 +45,8 @@
     49.5,
     51.5
   ],
-  "method": "All37 original/replica scene pairs inspected; physical-book tail materially revised, followed by six matched final-movie decoded-frame pairs. Complete narration take alignment and ASR, full-format/frame-count validation and deterministic seek checks. Close reconstruction, not pixel identity.",
-  "audio_evidence": "All7 exact fresh narration lines independently transcribed with no normalized word mismatches. New163-note score and65 narrative foley cues. {'integrated_lufs': -14.2, 'true_peak_dbtp': -1.1, 'peak_gain_adjustment_db': 0}",
-  "comparison_notes": "The full52-second moon/sheep/roof/song/quilt/book story preserves all7 narration lines and scene timing. Shared generic crayon/character/material helpers are credited; new scene, acting, camera and physical-book assembly. Book-tail wood, wrapped crayons, layered paper and curl were refined. Physical-book geometry, lighting and crayon placement differ; no pixel-identity claim. Fresh voice/music/foley; original conversation prompt was not published.",
+  "method": "All 37 original/replica scene pairs inspected; physical-book tail materially revised, followed by six matched final-movie decoded-frame pairs. Complete narration take alignment and ASR, full-format/frame-count validation and deterministic seek checks. Close reconstruction, not pixel identity.",
+  "audio_evidence": "All 7 exact fresh narration lines independently transcribed with no normalized word mismatches. New 163-note score and 65 narrative foley cues. {'integrated_lufs': -14.2, 'true_peak_dbtp': -1.1, 'peak_gain_adjustment_db': 0}",
+  "comparison_notes": "The full 52-second moon/sheep/roof/song/quilt/book story preserves all 7 narration lines and scene timing. Shared generic crayon/character/material helpers are credited; new scene, acting, camera and physical-book assembly. Book-tail wood, wrapped crayons, layered paper and curl were refined. Physical-book geometry, lighting and crayon placement differ; no pixel-identity claim. Fresh voice/music/foley; original conversation prompt was not published.",
   "reviewed_at": "2026-10-18T04:51:00.042397+00:00"
 }

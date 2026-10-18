@@ -1,0 +1,9 @@
+# Source review
+
+Inspected all four original one-second sheets and exact 23.8/25.3/41.2/41.75 s pause/handoff supplements. Generated and inspected all 48 one-second frames, plus initial twelve chapter views and refined lovers/house/final portrait frames. Exact final pause/handoff/card samples supplement that coverage. This is all-scene coverage, not every encoded frame.
+
+Whole-face reverse topology checked first, then each scene: first touch/fist grip; connected head/kite/retrace; bicycle wheels becoming spectacle lenses; closed red lovers circuit; house nose with space above lips; right eyelid and sagging blot during real hold; mirrored child fist/ear; dry old jaw and last eye while camera pulls out; adult/child hand shadows; child line and second kite with original final title.
+
+Repairs: removed lines crossing spectacle interiors, reordered lovers circuit so the first central profile arrives before its upper head contour, separated nose and red upper lip, measured title to keep it inside paper, extended child's shadow through the new line and reset Canvas2D state per render. Six arbitrary-time repeated seeks now pass. Music and pen effects are newly authored; root owns final mix, paired movie review and acceptance.
+
+Parent all-50-movie-frame review refinement: narrowed the literal continuous portrait by 12% and increased vertical scale by 5%; camera centres follow the same transform. Added a fourth upright finger loop in both fist motifs and pinned the returning fist completion by 29.4 s. First title begins at 5.9 s and reads The Line That… by 6.5 s. Held-eye composition moves upward so red lips are cropped through 23.83–26.5 s. Reviewed all nine new parent-fix stills; regenerated nib-derived audio after the path transform and timing repair. Six updated arbitrary seeks pass.

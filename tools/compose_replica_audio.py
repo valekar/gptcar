@@ -34,7 +34,7 @@ def compose(score,voice_records,duration,out):
         elif name in P.PRESETS:
             signal=P.pluck(name,note.get('midi',60),float(note['duration']),vel=float(note.get('velocity',.65)),**{k:note[k] for k in ['bend','vib','glide','harmonic','trem'] if k in note})
             add(dst,signal,note['t'],note.get('gain',.1),note.get('pan',0))
-        elif name in ['saw','fm_glass','sub808','toy_piano']:add(dst,synth_note(name,note.get('midi',60),float(note['duration'])),note['t'],note.get('gain',.1),note.get('pan',0))
+        elif name in ['saw','fm_glass','sub808','toy_piano','analog_saw_pad','analog_square_seq']:add(dst,synth_note(name,note.get('midi',60),float(note['duration'])),note['t'],note.get('gain',.1),note.get('pan',0))
         else:synth[channel].append(note)
     for hit in score.get('hits',[]):
         channel=hit.get('channel','music')
@@ -67,6 +67,13 @@ def compose(score,voice_records,duration,out):
         if line.get('filter')=='radio':
             a=sosfilt(butter(4,[380,2800],btype='bandpass',fs=SR,output='sos'),a)
             a=np.tanh(a*3)/3
+        elif line.get('filter')=='machine':
+            clock=np.arange(len(a))/SR
+            a=a*(.84+.16*np.sin(2*np.pi*52*clock))
+            delayed=np.zeros_like(a);delay=round(.006*SR)
+            if len(a)>delay:delayed[delay:]=a[:-delay]
+            a=sosfilt(butter(4,[140,7000],btype='bandpass',fs=SR,output='sos'),a+.22*delayed)
+            a=np.tanh(a*1.6)/1.6
         elif line.get('filter'):
             raise RuntimeError('Unsupported narration filter: '+str(line['filter']))
         active=a[np.abs(a)>max(.005,np.max(np.abs(a))*.02)]

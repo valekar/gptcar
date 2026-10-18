@@ -1,0 +1,16 @@
+The Line That Never Lifted — GPT-6.1 Sol High reference-matched recreation
+New drawing.js: independent SVG motifs and continuous topology; new film.js: chapter assembly, marks, camera keys, red-accent mapping, written titles/subtitles and handoff choreography; new score/nib sound track. Original face.js, story.js, subs.js and main.js are not imported or replayed. No original frames or master audio in render path.
+
+Shared MIT generic library engines copied with attribution:
+styles/one-line/demo/geom.js — SVG arc-length sampling, tangent connectors and curvature/hold timing.
+styles/one-line/demo/ink.js — polygon pressure ink, bleed, age dryness and tear blot.
+styles/one-line/demo/paper.js — seeded warm paper, fibres, tooth and vignette.
+styles/one-line/demo/cam.js — composition interpolation and lagged nib-follow camera.
+styles/one-line/demo/hands.js — generic pen wedge and flat-composited soft hand shadows.
+core/lib.js — deterministic math/hash helpers.
+The original drawing/scene code is excluded. Generic ink style constants and known material behavior are shared; accent position is independently remapped to the new path.
+
+Fonts: Caveat, Copyright Impallari Type; Sacramento, Copyright Astigmatic — SIL Open Font License 1.1, notices in fonts/. Fresh local font copies from google/fonts main/ofl/caveat/Caveat[wght].ttf and main/ofl/sacramento/Sacramento-Regular.ttf; no generated bitmap assets.
+Fresh voice: Kokoro am_liam, 0.84, original published six-line script, rendered by parent mix pipeline.
+Fresh music: newly composed solo cello/pizzicato and one hand_chimes note, CC0 Versilian VSCO/VCSL samples; recreated speed-driven pen foley. No original recording or melody copied.
+Original title and narrative are reproduced under the user's explicit matching instruction. Original chat prompt is unavailable; PROMPT.md is a source-informed reconstruction. Authorship credit truthfully identifies GPT recreation.

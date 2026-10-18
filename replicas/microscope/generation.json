@@ -1,0 +1,72 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_ready": true,
+  "status": "source-ready-for-independent-review",
+  "title": "Measured Blue",
+  "duration": 39.5,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frame_count": 948,
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "matched_brief_sha256": "0832d3fe66771df83ada5ab9f289a5603e903646a4d2a69a52dfde31c3d38b9c",
+  "original_reference_sha256": "7a68500b5753c0fa22e586474b931d5feacf5a0717a64600763306a4cdf62ab6",
+  "uses_upstream_scene_code": false,
+  "shared_components": [
+    {
+      "path": "core/lib.js",
+      "purpose": "Generic deterministic interpolation math only."
+    }
+  ],
+  "licensed_assets": "asset-manifest.json lists frozen same-scan data-only derivatives; FACTS.md gives source and exact measurements.",
+  "independent_scene_files": [
+    "camera.js",
+    "film.js"
+  ],
+  "review_times": [
+    0.5,
+    1.5,
+    3.5,
+    4.04,
+    4.1,
+    4.5,
+    4.56,
+    6.5,
+    8.5,
+    10.5,
+    11.5,
+    11.8,
+    12.7,
+    14.5,
+    15.9,
+    17.3,
+    17.5,
+    18.5,
+    20.5,
+    21.7,
+    22.2,
+    23.5,
+    26.5,
+    27.8,
+    28.5,
+    29.3,
+    29.5,
+    29.8,
+    30.5,
+    32.5,
+    33.5,
+    33.73,
+    34.1,
+    34.23,
+    34.5,
+    35.5,
+    37.5
+  ],
+  "review_status": "Worker full-sequence and event still review complete; parent decoded-movie/audio comparison pending.",
+  "review_notes": "REVIEW.md",
+  "audio": "Fresh seven exact narration inputs, new 280-note 90 BPM score, 88 effects including fourteen actual objective changes and original silence windows."
+}

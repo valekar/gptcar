@@ -1,0 +1,36 @@
+[
+  {
+    "path": "styles/impasto/demo/engine/impasto.js",
+    "sha256": "d7e2d33cbecd21c905615260a65cd7dc9fdf5f9dffaf9d9eeae933d30b7eae1e",
+    "purpose": "Generic WebGL2 knife height-field renderer"
+  },
+  {
+    "path": "styles/impasto/demo/engine/plate.js",
+    "sha256": "7120f53f1827481c97ea7204f4ef269c46339c0b87181c7f56603d0150964567",
+    "purpose": "Generic Ref to confined knife strokes converter"
+  },
+  {
+    "path": "styles/impasto/demo/scenes/common.js",
+    "sha256": "a13d791f53313ae87a8c6c4448378d7b91612c40a1433426b1831c849ece8c75",
+    "purpose": "Reusable path, gradient and math helpers"
+  },
+  {
+    "path": "styles/impasto/demo/scenes/cellist.js",
+    "sha256": "a5552f3cd44f1c520d0eb738f03519a8a62e39dae78632bdadbc546844253bbd",
+    "purpose": "Shared expressive cellist/cello/case model and bow/face rig"
+  },
+  {
+    "path": "styles/impasto/demo/scenes/figures.js",
+    "sha256": "7527fc5ecfa489ba6298fa632eeb720ea15c143b75ebe1da3f86afde7a9700c8",
+    "purpose": "Shared generic walking figures, umbrellas, rain, splash and ribbon primitives"
+  },
+  {
+    "path": "core/lib.js",
+    "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+    "purpose": "Shared deterministic interpolation and hash helpers"
+  },
+  {
+    "path": "styles/impasto/demo/fonts",
+    "purpose": "Shared OFL Cormorant fonts; copied font files and OFL notice included"
+  }
+]

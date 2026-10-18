@@ -1,0 +1,163 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "slug": "impasto",
+  "title": "The Colour of Rain",
+  "source_ready": true,
+  "status": "source-ready-for-independent-review",
+  "uses_upstream_scene_code": false,
+  "matched_brief_sha256": "f2bf9ee3c625c7b529e7e64171ef22fce2b61aabc92726162ae83a2d347585a3",
+  "delivery": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frame_count": 952,
+    "duration": 39.666666666666664
+  },
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080,
+    "supersampling": 2
+  },
+  "duration": 39.666666666666664,
+  "review_times": [
+    0.5,
+    1.5,
+    2.5,
+    3.5,
+    4.5,
+    6.5,
+    7.5,
+    8.5,
+    9.5,
+    10.15,
+    10.5,
+    11.15,
+    11.5,
+    12.18,
+    12.45,
+    13.5,
+    14.5,
+    15.3,
+    15.4,
+    16.5,
+    16.75,
+    17.5,
+    18.03,
+    18.5,
+    19.5,
+    20.5,
+    21.5,
+    22.5,
+    23.03,
+    23.5,
+    24.5,
+    26.5,
+    28.5,
+    30.5,
+    31.25,
+    31.4,
+    31.68,
+    32.5,
+    33.5,
+    34.5,
+    35.5,
+    36.5,
+    37.5,
+    39.5
+  ],
+  "shared_components": [
+    {
+      "path": "styles/impasto/demo/engine/impasto.js",
+      "sha256": "d7e2d33cbecd21c905615260a65cd7dc9fdf5f9dffaf9d9eeae933d30b7eae1e",
+      "purpose": "Generic WebGL2 knife height-field renderer"
+    },
+    {
+      "path": "styles/impasto/demo/engine/plate.js",
+      "sha256": "7120f53f1827481c97ea7204f4ef269c46339c0b87181c7f56603d0150964567",
+      "purpose": "Generic Ref to confined knife strokes converter"
+    },
+    {
+      "path": "styles/impasto/demo/scenes/common.js",
+      "sha256": "a13d791f53313ae87a8c6c4448378d7b91612c40a1433426b1831c849ece8c75",
+      "purpose": "Reusable path, gradient and math helpers"
+    },
+    {
+      "path": "styles/impasto/demo/scenes/cellist.js",
+      "sha256": "a5552f3cd44f1c520d0eb738f03519a8a62e39dae78632bdadbc546844253bbd",
+      "purpose": "Shared expressive cellist/cello/case model and bow/face rig"
+    },
+    {
+      "path": "styles/impasto/demo/scenes/figures.js",
+      "sha256": "7527fc5ecfa489ba6298fa632eeb720ea15c143b75ebe1da3f86afde7a9700c8",
+      "purpose": "Shared generic walking figures, umbrellas, rain, splash and ribbon primitives"
+    },
+    {
+      "path": "core/lib.js",
+      "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+      "purpose": "Shared deterministic interpolation and hash helpers"
+    },
+    {
+      "path": "styles/impasto/demo/fonts",
+      "purpose": "Shared OFL Cormorant fonts; copied font files and OFL notice included"
+    }
+  ],
+  "determinism": [
+    {
+      "t": 0.5,
+      "equal": true,
+      "sha256": "af4957dfd51d4a46e15346dc0f358c70909d5ebbaa63ee21b3100e69f8a2217b"
+    },
+    {
+      "t": 12.458333,
+      "equal": true,
+      "sha256": "0cb7a044930191723d0ae58307a7f095d533a1b1cce2284ba6d6f869738bbdfc"
+    },
+    {
+      "t": 15.333333,
+      "equal": true,
+      "sha256": "3834617b90a270e6e418ccc05c5006fd76e44b9d098c92185f6b7a5053663eca"
+    },
+    {
+      "t": 19.5,
+      "equal": true,
+      "sha256": "9c1ade6621fdcc4a94646f590c0fa2004b71218b9fc1ab1c08657c30befb5a34"
+    },
+    {
+      "t": 23.5,
+      "equal": true,
+      "sha256": "f5ff6e6612544aabdc8093ca05ed30754101351b6fb21c38685fe0f2a2dc8472"
+    },
+    {
+      "t": 31.25,
+      "equal": true,
+      "sha256": "9e03e0bc2d01877eb75982a2614d1233b9ccf71e25fcc2b3b04afbb75b843118"
+    },
+    {
+      "pause_frozen": true
+    }
+  ],
+  "source_sha256": {
+    "CREDITS": "56f44e7a81908aee7152d2111c0ac663ed269d40e4ca5fe4ca5014fece304495",
+    "FACTS.md": "45ed12da56c27fdcf33a1ef7f6eefff15401bcd7ceae3d9326441e1fdf7f2a80",
+    "LICENSE": "14c9ff6f14bfb2391e74fedb01c256891d2a3bba1c2acf5789901bdf77e54e33",
+    "PROMPT.md": "8385eb8b8ce86c09002a6860aed3d1c34562b708fc02d7f66aa9a52924cae0d1",
+    "REVIEW.md": "5372a022f9ef528179a0cb9d3e05f58afd6fe548e34aa66ab27da1ac4ff99b58",
+    "TREATMENT.md": "ee62aefa4a44ac016ccc0840bdf6cafcdaa2162bc63fe83f3d72b8f397263af2",
+    "engine/impasto.js": "d7e2d33cbecd21c905615260a65cd7dc9fdf5f9dffaf9d9eeae933d30b7eae1e",
+    "engine/plate.js": "7120f53f1827481c97ea7204f4ef269c46339c0b87181c7f56603d0150964567",
+    "film.js": "5bafe9fdfc812cca08a81de2aa5aff74aa01faeab34d82f8220c1ac0cfb0cfbc",
+    "fonts/Cormorant-Italic.ttf": "0f48ea6abb2084537854f7174c470991a463b13036309e3b50a81511611c530d",
+    "fonts/CormorantSC.ttf": "648cd1c932871e4e8e1d147b593315409e8ea82282f88e9397e2cceae83d065b",
+    "fonts/OFL.txt": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+    "fonts/fonts.css": "2e445ed077d95a51d100a62d0005c8020c5b07ae3e8a4f1751f0819558e7ec34",
+    "index.html": "ac4bb49706376a7665eccae5ab15ce8c72948369712c034bc788b1b6a4ddb558",
+    "models/cellist.js": "a5552f3cd44f1c520d0eb738f03519a8a62e39dae78632bdadbc546844253bbd",
+    "models/common.js": "a13d791f53313ae87a8c6c4448378d7b91612c40a1433426b1831c849ece8c75",
+    "models/figures.js": "7527fc5ecfa489ba6298fa632eeb720ea15c143b75ebe1da3f86afde7a9700c8",
+    "narration.json": "5512e1f3abeda9607fa5d857108c4f126affb169a71ab94a5ce5cc762a0307e9",
+    "painted-art.js": "71caf036e77bdbd34075fe5bfde60cd9f1a79c6020ce831cfdebf3321986fdff",
+    "score.json": "9bd7f55d0873af2ee40969fb3efd4292190ef1d6614ed0f3f3e668281e135554",
+    "shared-components.json": "859be8813b6217ca21173c3dfb7dd85a45172941d613696100649b10c08cf507"
+  }
+}

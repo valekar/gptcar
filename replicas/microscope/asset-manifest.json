@@ -1,0 +1,60 @@
+{
+  "origin": "Root data-only rebuild of hash-verified PathAI Ventana-1.bif, same config and original measurements.",
+  "assets": [
+    {
+      "path": "assets/plates/a2.png",
+      "sha256": "16d978fc302f4190b871dd1b30a7f8e2ad29e754a8d81404f337fa6d10d02c92",
+      "bytes": 10419280
+    },
+    {
+      "path": "assets/plates/a4.png",
+      "sha256": "bb5f87bd3a0101669cc50c04cc93d4fbf759c6f4e52c0c53368a440f20762cc5",
+      "bytes": 2669440
+    },
+    {
+      "path": "assets/plates/a8.png",
+      "sha256": "b15e880936c99be9716bc6f38aab1ad35efdbfd69b73823673c29cb39883efe9",
+      "bytes": 674499
+    },
+    {
+      "path": "assets/plates/c025.jpg",
+      "sha256": "d875fc1ac86f004fe30a943f021f5d093d01145ba2c4e98033c4db9dbf8fbf13",
+      "bytes": 9780352
+    },
+    {
+      "path": "assets/plates/c05.jpg",
+      "sha256": "0c4db333508c7d345cd655a52ea1d83dac851b474e32c0351eae17dea9ccdc79",
+      "bytes": 13146292
+    },
+    {
+      "path": "assets/plates/c1.jpg",
+      "sha256": "d724a7b523072529c829ff5c6e996a58c9e39ee05be9bf8a828d5cdbe8bf0343",
+      "bytes": 9589038
+    },
+    {
+      "path": "assets/plates/nucleus.json",
+      "sha256": "397faa11ebd5af9bbdf94c169990a44918d2c6603ad46e57cfe8c617a94c4433",
+      "bytes": 153
+    },
+    {
+      "path": "assets/plates/plates.json",
+      "sha256": "f2eb328e0ecbadc224ee4933334af8f61c72f8879b6f6dac5ca110fcf948954a",
+      "bytes": 7736
+    },
+    {
+      "path": "assets/plates/roiA.png",
+      "sha256": "9d9fff972e5bc3a59a7996cb86144c102aee126bc28165443731621f83774659",
+      "bytes": 70704
+    },
+    {
+      "path": "assets/plates/roiB.png",
+      "sha256": "daae7b7b420023f5455646ba782b7a16619aaf81bd2f878697971cbac8b5a13a",
+      "bytes": 116365
+    },
+    {
+      "path": "assets/plates/slide.png",
+      "sha256": "740b9f4d5fec5676ee1cbe81ae573fc1640a41f1e829c27cfa2ffae7e98ec49c",
+      "bytes": 5351839
+    }
+  ]
+}

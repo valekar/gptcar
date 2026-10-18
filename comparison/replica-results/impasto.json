@@ -1,0 +1,115 @@
+{
+  "slug": "impasto",
+  "status": "rendered",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "title": "The Colour of Rain",
+  "source_sha256": "309ca380dbf12000df3f82289ee71b02de598ff83813a31223106d26bdddd03a",
+  "matched_brief_sha256": "f2bf9ee3c625c7b529e7e64171ef22fce2b61aabc92726162ae83a2d347585a3",
+  "reference_video_sha256": "a03f8fcd7dd293233d3f71feb4832c3867b07a443dd030bca818352d21e654e2",
+  "video_sha256": "94ef1129a0ffe8851886d4afb0b6515e1faeb1271f695bb8df5e9f38dae24e41",
+  "poster_sha256": "3d4d9d7691137270c0d83018a0688a6e9d24b3c45010283802aed9374181371a",
+  "reference_poster_sha256": "b65305b37d483574f81d657ee86866af63296e28f357f92cfd73a3c009e421a1",
+  "poster_time": 18.03,
+  "bytes": 29922742,
+  "width": 1280,
+  "height": 720,
+  "fps": 24.0,
+  "frames": 952,
+  "duration": 39.666666666666664,
+  "audio_codec": "aac",
+  "audio_levels": {
+    "integrated_lufs": -14.0,
+    "true_peak_dbtp": -1.2,
+    "peak_gain_adjustment_db": 0
+  },
+  "review_times": [
+    0.5,
+    1.5,
+    2.5,
+    3.5,
+    4.5,
+    6.5,
+    7.5,
+    8.5,
+    9.5,
+    10.15,
+    10.5,
+    11.15,
+    11.5,
+    12.18,
+    12.45,
+    13.5,
+    14.5,
+    15.3,
+    15.4,
+    16.5,
+    16.75,
+    17.5,
+    18.03,
+    18.5,
+    19.5,
+    20.5,
+    21.5,
+    22.5,
+    23.03,
+    23.5,
+    24.5,
+    26.5,
+    28.5,
+    30.5,
+    31.25,
+    31.4,
+    31.68,
+    32.5,
+    33.5,
+    34.5,
+    35.5,
+    36.5,
+    37.5,
+    39.5
+  ],
+  "shared_components": [
+    {
+      "path": "styles/impasto/demo/engine/impasto.js",
+      "sha256": "d7e2d33cbecd21c905615260a65cd7dc9fdf5f9dffaf9d9eeae933d30b7eae1e",
+      "purpose": "Generic WebGL2 knife height-field renderer"
+    },
+    {
+      "path": "styles/impasto/demo/engine/plate.js",
+      "sha256": "7120f53f1827481c97ea7204f4ef269c46339c0b87181c7f56603d0150964567",
+      "purpose": "Generic Ref to confined knife strokes converter"
+    },
+    {
+      "path": "styles/impasto/demo/scenes/common.js",
+      "sha256": "a13d791f53313ae87a8c6c4448378d7b91612c40a1433426b1831c849ece8c75",
+      "purpose": "Reusable path, gradient and math helpers"
+    },
+    {
+      "path": "styles/impasto/demo/scenes/cellist.js",
+      "sha256": "a5552f3cd44f1c520d0eb738f03519a8a62e39dae78632bdadbc546844253bbd",
+      "purpose": "Shared expressive cellist/cello/case model and bow/face rig"
+    },
+    {
+      "path": "styles/impasto/demo/scenes/figures.js",
+      "sha256": "7527fc5ecfa489ba6298fa632eeb720ea15c143b75ebe1da3f86afde7a9700c8",
+      "purpose": "Shared generic walking figures, umbrellas, rain, splash and ribbon primitives"
+    },
+    {
+      "path": "core/lib.js",
+      "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+      "purpose": "Shared deterministic interpolation and hash helpers"
+    },
+    {
+      "path": "styles/impasto/demo/fonts",
+      "purpose": "Shared OFL Cormorant fonts; copied font files and OFL notice included"
+    }
+  ],
+  "qa": {
+    "technical_render": "passed",
+    "scene_fidelity": "passed",
+    "audio_review": "passed",
+    "black_intervals_detected": false
+  },
+  "updated_at": "2026-10-18T05:13:51Z"
+}

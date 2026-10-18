@@ -1,0 +1,1 @@
+Fictional patent and inventor. The technical machine is whimsical and not asserted to function in reality. Preserve original exact13part names/materials/quantity,1891date and drawing fields as fictional story data. No new factual claims. Published original chat prompt unavailable; PROMPT is reconstructed from published guides and whole original-film audit.

@@ -1,0 +1,20 @@
+Toy Town Rush Hour — independently assembled GPT recreation.
+Authored with GPT-6.1 Sol, high reasoning effort.
+Original reference: Lemomo / LemoLab, lemo-opuscar (MIT), https://lemomo-ai.github.io/lemo-opuscar/films/tilt-shift.mp4
+
+Attributed generic style/render components (MIT):
+styles/tilt-shift/demo/geo.js — generic merged boxes, faces, cylinders, disks and rings.
+styles/tilt-shift/demo/city.js — buildingMaterial() facade shader and its shared sky/light uniforms only. buildCity() is never called.
+styles/tilt-shift/demo/traffic.js — makeFleet() vehicle mesh instancer and makeTrails() light-ribbon renderer only. Original simulation, lanes, signal/crowd scene choreography are not called.
+styles/tilt-shift/demo/sky.js — generic clock-to-daylight/environment system.
+styles/tilt-shift/demo/post.js — generic supersampled tilt-band/physical DOF, GTAO, bloom and grade.
+core/lib.js — generic deterministic math.
+Original main.js, story.js, ducks.js and train.js are not runtime dependencies. All town assembly, train/duck geometry, acting, traffic choreography, camera application, UI and score are newly authored in this directory. Published road/camera dimensions and cue times are reference measurements, preserved to match the original staging.
+
+Overpass and Overpass Mono: Delve Withrington, Dave Bailey, Thomas Jockin / Red Hat, SIL OFL 1.1. Fresh local font downloads from Google Fonts:
+https://github.com/google/fonts/blob/main/ofl/overpass/Overpass%5Bwght%5D.ttf
+https://github.com/google/fonts/blob/main/ofl/overpassmono/OverpassMono%5Bwght%5D.ttf
+License text copied in assets/fonts/OFL-Overpass.txt.
+
+New sampled score: VSCO 2 Community Edition / Versilian Community Sample Library — CC0 (marimba, glockenspiel, kalimba, contrabass pizzicato, trumpet staccato). Registry and full sample-pack attributions: core/audio/INSTRUMENTS.md. Foley synthesized afresh with the explicit root material/nature sound engine. New voice: Kokoro am_adam. No original film soundtrack or frames reused as production assets.
+Three.js — MIT.

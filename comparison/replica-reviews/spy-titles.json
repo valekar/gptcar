@@ -98,8 +98,8 @@
     42.5,
     43.5
   ],
-  "method": "All78 complete-film scene pairs inspected, followed by12 targeted revised pairs and three latest matching decoded-movie pairs. Four rounds corrected intro credit arrival, pickup, cast-credit slit, rooftop gap, diagonal strips, hero visibility, title zoom and final wide timing. Full frame delivery and seeking checked.",
-  "audio_evidence": "All6 exact newly synthesized voice lines independently transcribed with no normalized word mismatches. New spy score and material cues; no original master reuse. {'integrated_lufs': -14.0, 'true_peak_dbtp': -1.2, 'peak_gain_adjustment_db': 0}",
-  "comparison_notes": "Complete44.083-second Velvet Cipher story retains exact narration, cast/title copy, original scene order and running time. Independent scene/camera/acting/transition assembly uses credited generic cut-paper and character helpers. Key pickup, rooftop gap, diagonal transition, S keyhole, title push and click were refined from matched original frames. Fine letter contours, skyline shapes, actor poses and strip placement still vary. Fresh voice/music/foley; original private conversation prompt was not published.",
+  "method": "All 78 complete-film scene pairs inspected, followed by 12 targeted revised pairs and three latest matching decoded-movie pairs. Four rounds corrected intro credit arrival, pickup, cast-credit slit, rooftop gap, diagonal strips, hero visibility, title zoom and final wide timing. Full frame delivery and seeking checked.",
+  "audio_evidence": "All 6 exact newly synthesized voice lines independently transcribed with no normalized word mismatches. New spy score and material cues; no original master reuse. {'integrated_lufs': -14.0, 'true_peak_dbtp': -1.2, 'peak_gain_adjustment_db': 0}",
+  "comparison_notes": "Complete 44.083-second Velvet Cipher story retains exact narration, cast/title copy, original scene order and running time. Independent scene/camera/acting/transition assembly uses credited generic cut-paper and character helpers. Key pickup, rooftop gap, diagonal transition, S keyhole, title push and click were refined from matched original frames. Fine letter contours, skyline shapes, actor poses and strip placement still vary. Fresh voice/music/foley; original private conversation prompt was not published.",
   "reviewed_at": "2026-10-18T05:10:14.108343+00:00"
 }

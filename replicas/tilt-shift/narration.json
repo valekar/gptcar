@@ -1,0 +1,62 @@
+{
+  "duration": 38,
+  "voice": "am_adam",
+  "language": "en-us",
+  "direction": "Relaxed American male, short unhurried observations. All six original cue onsets and words.",
+  "lines": [
+    {
+      "id": "v1",
+      "text": "Six a.m. One car. One note.",
+      "start": 0.9,
+      "duration": 2.269,
+      "voice": "am_adam",
+      "speed": 0.93,
+      "language": "en-us"
+    },
+    {
+      "id": "v2",
+      "text": "Every green light adds a beat.",
+      "start": 9.6,
+      "duration": 1.747,
+      "voice": "am_adam",
+      "speed": 0.93,
+      "language": "en-us"
+    },
+    {
+      "id": "v3",
+      "text": "The seven-forty brings the bass.",
+      "start": 14.3,
+      "duration": 1.856,
+      "voice": "am_adam",
+      "speed": 0.93,
+      "language": "en-us"
+    },
+    {
+      "id": "v4",
+      "text": "By eight, the whole town is playing.",
+      "start": 19.4,
+      "duration": 1.907,
+      "voice": "am_adam",
+      "speed": 0.93,
+      "language": "en-us"
+    },
+    {
+      "id": "v5",
+      "text": "Every song needs a rest.",
+      "start": 25.9,
+      "duration": 1.567,
+      "voice": "am_adam",
+      "speed": 0.93,
+      "language": "en-us"
+    },
+    {
+      "id": "v6",
+      "text": "Then... take it from the top.",
+      "start": 30.6,
+      "duration": 1.545,
+      "voice": "am_adam",
+      "speed": 0.93,
+      "language": "en-us"
+    }
+  ]
+}

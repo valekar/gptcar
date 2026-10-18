@@ -121,6 +121,41 @@ def effect(kind,duration,seed=6103,**p):
   a=bp(noise,1100,6800)*env*(.4+.6*np.sin(2*np.pi*float(p.get('rate',7))*t)**2)
  elif kind=='lab_room':
   a=(lp(noise,800)*.5+np.sin(2*np.pi*60*t)*.08+np.sin(2*np.pi*120*t)*.03)*np.minimum(t/.2,1)*np.minimum((d-t)/.2,1)
+ elif kind=='glass_shatter':
+  a=bp(noise,1700,15000)*np.exp(-t*65)*.7
+  for onset in np.r_[0,rng.uniform(.015,max(.016,d*.65),18)]:
+   q=t-onset;valid=q>=0;f=rng.uniform(1800,8700)
+   a[valid]+=rng.uniform(.03,.13)*np.sin(2*np.pi*f*q[valid])*np.exp(-q[valid]*rng.uniform(8,24))
+ elif kind=='lead_creak':
+  f=160+65*np.sin(np.pi*u)+12*np.sin(2*np.pi*19*t);phase=2*np.pi*np.cumsum(f)/SR
+  a=(sum(np.sin(phase*k)/k for k in range(1,9))*.25+bp(noise,450,2500)*.2)*env*(.55+.45*np.sin(2*np.pi*11*t)**2)
+ elif kind=='wing_flutter':
+  pulse=np.maximum(np.sin(2*np.pi*float(p.get('rate',9))*t),0)**2
+  a=(bp(noise,400,5000)*.6+lp(noise,600)*.3)*pulse*env
+ elif kind=='ballast_hum':
+  a=(np.sin(2*np.pi*100*t)+.16*np.sin(2*np.pi*200*t)+.05*np.sin(2*np.pi*300*t)+lp(noise,450)*.12)*np.minimum(t/.15,1)*np.minimum((d-t)/.15,1)
+ elif kind=='loupe_clack':
+  a=(bp(noise,900,6500)*.4+np.sin(2*np.pi*1120*t)*.3)*np.exp(-t*80)+np.sin(2*np.pi*3270*t)*np.exp(-t*17)*.12
+  a*=np.minimum(t/.001,1)
+ elif kind=='marker_stroke':
+  speed=np.clip(float(p.get('speed',1)),.05,4);a=(bp(noise,450,min(12000,3000+speed*1300))*.7+np.sin(2*np.pi*170*t)*.08)*env*(.7+.3*np.sin(2*np.pi*(13+speed*9)*t))
+  if p.get('squeak'):a+=np.sin(2*np.pi*np.cumsum(1300+230*np.sin(2*np.pi*6*t))/SR)*env*.12
+ elif kind=='magnet_board':
+  a=(np.sin(2*np.pi*210*t)*.5+bp(noise,500,5000)*.3)*np.exp(-u*18)*np.minimum(t/.001,1)
+ elif kind=='felt_erase':
+  a=bp(noise,180,2800)*env*(.6+.4*np.sin(2*np.pi*5*t)**2)
+ elif kind=='marker_cap':
+  a=(bp(noise,1700,9000)*.6+np.sin(2*np.pi*2050*t)*.18)*np.exp(-u*30)*np.minimum(t/.001,1)
+ elif kind=='marker_tray':
+  a=(bp(noise,350,5000)*.35+np.sin(2*np.pi*730*t)*.25+np.sin(2*np.pi*1390*t)*.15)*np.exp(-u*15)*np.minimum(t/.001,1)
+ elif kind=='projector_fan':
+  a=(lp(noise,1200)*.65+np.sin(2*np.pi*145*t)*.08+np.sin(2*np.pi*290*t)*.03)*np.minimum(t/.25,1)*np.minimum((d-t)/.25,1)
+ elif kind=='lamp_strike':
+  a=bp(noise,1600,11500)*np.exp(-t*65)*.4+(np.sin(2*np.pi*100*t)*.13+bp(noise,800,2500)*.15)*np.minimum(t/.008,1)*np.exp(-u*3)
+ elif kind=='relay_click':
+  a=(bp(noise,1400,8500)*.6+np.sin(2*np.pi*2400*t)*.2)*np.exp(-u*32)*np.minimum(t/.0007,1)
+ elif kind=='light_wash':
+  a=(bp(noise,1200,7500)*.35+np.sin(2*np.pi*np.cumsum(900+850*u)/SR)*.08)*env
  else:raise ValueError('Unsupported material cue: '+kind)
  return np.asarray(a,dtype=np.float32)
 
@@ -137,5 +172,18 @@ def synth_note(kind,midi,duration):
   phase=2*np.pi*np.cumsum(f*(1+.75*np.exp(-t*45)))/SR;a=np.tanh(1.4*(np.sin(phase)+.08*np.sin(2*phase)))*np.exp(-t*2.2/max(duration,.1))
  elif kind=='toy_piano':
   a=sum(g*np.sin(2*np.pi*f*r*t)*np.exp(-t*k/max(duration,.2)) for r,g,k in [(1,1,3),(2.018,.35,5),(3.87,.2,7),(5.43,.09,11)])
+ elif kind in ('analog_saw_pad','analog_square_seq'):
+  # Band-limited detuned oscillators with moving low-pass harmonic weights.
+  # Wow is a slow three-cent excursion; square sequencing stays analog/smooth.
+  pad=kind=='analog_saw_pad';wow=3*np.sin(2*np.pi*.31*t)
+  cutoff=(850+1700*np.sin(np.pi*np.clip(t/max(duration,.01),0,1))**2) if pad else (700+3100*np.exp(-t*7))
+  a=np.zeros(len(t));harmonics=range(1,min(40,int(18000/f))+1,1 if pad else 2)
+  for detune,gain in [(-6,.28),(0,.44),(6,.28)]:
+   phase=2*np.pi*np.cumsum(f*2**((wow+detune)/1200))/SR
+   for k in harmonics:
+    weight=1/np.sqrt(1+(k*f/cutoff)**6)
+    a+=gain*np.sin(phase*k)*weight/k
+  attack=min(.25 if pad else .012,duration*.2);release=min(.8 if pad else .12,duration*.3)
+  a*=np.minimum(t/max(attack,.001),1)*np.minimum((duration-t)/max(release,.001),1)
  else:raise ValueError('Unsupported synth voice '+kind)
  return np.asarray(a*edge,dtype=np.float32)

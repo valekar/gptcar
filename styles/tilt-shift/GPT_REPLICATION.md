@@ -1,0 +1,11 @@
+# Reference-matched miniature guidance
+
+Inspect every original scene and the speed/clock readout. Preserve the full rush-hour story, including the single dawn trail, letter-by-letter roof sign, signal accents, six-car commuter train, rotating overhead jam, continuous dive, five ducks, each curb hop and the final duckling's failed attempt before success. Keep all six spoken lines and the 38-second published 912-frame delivery.
+
+A city needs facade window systems, reveals and grime, mixed building heights, roof clutter, street markings, manholes, trees, station equipment and small actors. Attributed generic facade/geometry/vehicle/sky/focus engines may be reused; independently author scene layout, train/duck forms, state and acting. Do not invoke the original scene builder, main timeline or original character controller.
+
+Place a rooftop sign in front of its supporting facade and inspect the whole title reveal. For the dive, inspect intermediate frames, not just the close endpoint. Keep the hood below the eye-line and exclude unrelated traffic from the camera's sightline. A nearby van can fill the entire frame even when it is tiny in the preceding overhead shot. Move actors before focusing, and follow their changing world position and screen band as they climb the curb; a fixed focus point blurs the final successful hop.
+
+Quantize fast actors on the 120 BPM eighth/sixteenth grid while keeping the camera smooth. A real-time rest must cut musical releases while retaining natural ambience and single hop notes. Route those action pitches through the foley channel. Match score density to dawn, signals, train, gridlock, varispeed stop and release; use new sampled tuned percussion rather than a generic continuous music bed. Itemize exact shared component paths and local licensed fonts.
+
+For a long-exposure single-car shot, retain a measured distance of trail history. A brief time window can collapse to no visible streak during a hold or a slow part of the route. Review the actual decoded movie, including the pause. Keep rooftop text emissive enough to survive sunrise exposure and colour grading, while the physical board stays dark. Populate a close station platform with a modest number of colourful tiny commuters; generic road-side walkers do not cover it.

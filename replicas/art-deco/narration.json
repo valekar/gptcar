@@ -1,0 +1,96 @@
+{
+  "language": "en-gb",
+  "voice": "bm_fable",
+  "lines": [
+    {
+      "id": "L1",
+      "text": "Good evening, America! Live from the Starlight Hotel, it's five minutes to midnight.",
+      "start": 6.546896551724139,
+      "duration": 6,
+      "voice": "bm_fable",
+      "speed": 1.0,
+      "language": "en-gb",
+      "subtitle": "Good evening, America! Live from the Starlight Hotel, it's five minutes to midnight.",
+      "speaker": "radio",
+      "space": "street",
+      "filter": "radio"
+    },
+    {
+      "id": "L2",
+      "text": "The band is ready, folks. All they need now is the song.",
+      "start": 12.87103448275862,
+      "duration": 3.4,
+      "voice": "bm_fable",
+      "speed": 1.0,
+      "language": "en-gb",
+      "subtitle": "The band is ready, folks. All they need now is the song.",
+      "speaker": "radio",
+      "space": "radio",
+      "filter": "radio"
+    },
+    {
+      "id": "B1",
+      "text": "Out... of order?",
+      "start": 16.611724137931034,
+      "duration": 2,
+      "voice": "am_puck",
+      "speed": 0.86,
+      "language": "en-us",
+      "subtitle": "Out of order?!",
+      "speaker": "boy",
+      "space": "dry",
+      "pitch_semitones": 4
+    },
+    {
+      "id": "L3",
+      "text": "Word is, the elevator's out. Somebody's taking the stairs!",
+      "start": 18.920689655172417,
+      "duration": 4,
+      "voice": "bm_fable",
+      "speed": 1.02,
+      "language": "en-gb",
+      "subtitle": "Word is, the elevator's out. Somebody's taking the stairs!",
+      "speaker": "radio",
+      "space": "hall",
+      "filter": "radio"
+    },
+    {
+      "id": "L4",
+      "text": "Thirty seconds to midnight!",
+      "start": 24.924429818748735,
+      "duration": 2.2,
+      "voice": "bm_fable",
+      "speed": 1.0,
+      "language": "en-gb",
+      "subtitle": "Thirty seconds to midnight!",
+      "speaker": "radio",
+      "space": "radio",
+      "filter": "radio"
+    },
+    {
+      "id": "B2",
+      "text": "Special delivery!",
+      "start": 33.43517981501015,
+      "duration": 1.4,
+      "voice": "am_puck",
+      "speed": 0.86,
+      "language": "en-us",
+      "subtitle": "Special delivery!",
+      "speaker": "boy",
+      "space": "wind",
+      "pitch_semitones": 4
+    },
+    {
+      "id": "L5",
+      "text": "Right on time. Happy New Year, from the Starlight Hotel.",
+      "start": 48.57379310344828,
+      "duration": 4.9,
+      "voice": "bm_fable",
+      "speed": 0.96,
+      "language": "en-gb",
+      "subtitle": "Right on time. Happy New Year, from the Starlight Hotel.",
+      "speaker": "radio",
+      "space": "live"
+    }
+  ]
+}

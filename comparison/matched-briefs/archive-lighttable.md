@@ -1,6 +1,6 @@
 # Two Seconds Short — matched recreation brief
 
-Status: original scene sequence audited. Exact original evidence assets still require restoration.
+Status: original scene sequence audited. All five original masters and evidence derivatives are restored.
 
 Measured delivery: **1280×720, 24fps, 960frames, 40s**. Production canvas:1920×1080.
 
@@ -233,7 +233,7 @@ Mix (in `mix.py`): music about 11 dB under the voice before ducking, ducked a fu
 
 ## Asset requirements and unresolved gaps
 
-- The exact full-resolution telegram/newspaper/three negative masters and derived parallax/emulsion layers are absent. The three v1 service JPEGs omit the documentary argument and cannot substitute.
+- Restoration complete: the original full-resolution telegram, clipping and three negative masters, plus derived parallax and emulsion layers, are available. The recreation uses all five original objects.
 - The original conversation prompt is not published. Use the complete published specification and audited reconstruction; do not claim the recovered text is a verbatim original chat prompt.
 
 Five original LOC items: telegrammcc.061/cph3b12982, newspapercph3b18080, and negativesppprs00626/00629/00610.

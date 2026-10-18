@@ -1,0 +1,25 @@
+Two Seconds Short — independent GPT-6.1 Sol High recreation
+
+ARCHIVE IMAGERY
+Library of Congress, public-domain historical items; same five original masters restored by the parent task. Official source records in sources/, source claims in FACTS.md, actual derivative hashes in asset-manifest.json. Wright Brothers Negatives are listed by LOC as having no known restrictions; the original items date from 1903. The user explicitly requested reconstruction with these original archival assets.
+- First flight, LC-DIG-ppprs-00626: https://hdl.loc.gov/loc.pnp/ppprs.00626 ; master https://tile.loc.gov/storage-services/master/pnp/ppprs/00600/00626u.tif
+- Fourth flight, LC-DIG-ppprs-00629: https://hdl.loc.gov/loc.pnp/ppprs.00629 ; master https://tile.loc.gov/storage-services/master/pnp/ppprs/00600/00629u.tif
+- Damaged trial machine, LC-DIG-ppprs-00610: https://hdl.loc.gov/loc.pnp/ppprs.00610 ; master https://tile.loc.gov/storage-services/master/pnp/ppprs/00600/00610u.tif
+- Dayton Herald clipping, LC-USZ62-70686: https://hdl.loc.gov/loc.pnp/cph.3b18080 ; master https://tile.loc.gov/storage-services/master/pnp/cph/3b10000/3b18000/3b18000/3b18080u.tif
+- Telegram, LC-USZ62-65459 / mcc.061: https://hdl.loc.gov/loc.pnp/cph.3b12982 ; colour scan https://commons.wikimedia.org/wiki/File:Telegram_Orville_Wright_17_dec_1903.jpg from https://www.loc.gov/resource/mcc.061/
+Shared data-only preparation trims the telegram mat, builds emulsion masks and levels, separates the actual Flyer and Wilbur pixels, and fills the background. No generated archive imagery, reference-movie frames or original soundtrack are used.
+
+COMPOSITION
+New optics.js, motion.js, layout.js, hud.js and film.js implement the optical rendering and full narrative. The published physical material formulas, measured camera/layout data and exact script guide the recreation. No original archive scene or render module is imported. Generic core/lib.js supplies interpolation and easing only.
+
+FONTS
+IBM Plex Mono and IBM Plex Sans (IBM); Noto Sans SC and Noto Serif SC (Google/Adobe). SIL Open Font License 1.1, local fonts and four licence files supplied. Acquisition: fetch_fonts.py from Google Fonts.
+
+VOICE
+Fresh Kokoro-82M bm_george, exact seven original lines at the original per-line speed directions. Root owns synthesis and ASR. Kokoro Apache-2.0; kokoro-onnx MIT.
+
+MUSIC AND SOUND
+New 90 BPM piano/chamber/glass score following the original full musical direction, with three explicit rest ranges. Piano: Salamander Grand Piano V3 by Alexander Holm, CC BY 3.0 https://creativecommons.org/licenses/by/3.0/ . Strings, contrabass, glass, timpani, suspended cymbal and bowed vibraphone: VSCO-2 CE, VCSL and FreePats CC0 via core/audio/sampler.py. New deterministic ballast hum, loupe contact, paper sweeps, pen, ticks, wind and surf via root foley renderer.
+
+SOFTWARE
+WebGL2 and Canvas 2D; shared headless Chromium render tooling; FFmpeg/x264.

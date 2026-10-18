@@ -1,0 +1,60 @@
+{
+  "language": "en-gb",
+  "voice": "bm_daniel",
+  "lines": [
+    {
+      "id": "v1",
+      "text": "Figure one. An apparatus for catching clouds.",
+      "voice": "bm_daniel",
+      "speed": 0.9,
+      "language": "en-gb",
+      "start": 5.2,
+      "duration": 3.8069999999999995
+    },
+    {
+      "id": "v2",
+      "text": "Figure two. Thirteen parts, one bellows, and a rather optimistic net.",
+      "voice": "bm_daniel",
+      "speed": 0.9,
+      "language": "en-gb",
+      "start": 12.2,
+      "duration": 5.261000000000003
+    },
+    {
+      "id": "v3",
+      "text": "It works beautifully. Except, there are no clouds on this sheet.",
+      "voice": "bm_daniel",
+      "speed": 0.9,
+      "language": "en-gb",
+      "start": 21.9,
+      "duration": 4.100000000000001
+    },
+    {
+      "id": "v4",
+      "text": "So, I issued a revision.",
+      "voice": "bm_daniel",
+      "speed": 0.9,
+      "language": "en-gb",
+      "start": 26.1,
+      "duration": 2.6888888888888864
+    },
+    {
+      "id": "v5",
+      "text": "It rained on the drawing. I'm told drawings don't do that.",
+      "voice": "bm_daniel",
+      "speed": 0.9,
+      "language": "en-gb",
+      "start": 35,
+      "duration": 3.950000000000003
+    },
+    {
+      "id": "v6",
+      "text": "Status: works. Slightly damp.",
+      "voice": "bm_daniel",
+      "speed": 0.9,
+      "language": "en-gb",
+      "start": 40.7,
+      "duration": 2.8130000000000024
+    }
+  ]
+}

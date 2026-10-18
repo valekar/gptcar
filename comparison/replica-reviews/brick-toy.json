@@ -40,7 +40,7 @@
     52.5
   ],
   "method": "Independent full-reference/scene inspection plus timestamp-matched pairs and targeted repaired-event frames. Full-format/frame-count validation, exact narration input/take timing, ASR and mix level analysis. Close reconstruction; no pixel-identity claim.",
-  "audio_evidence": "All8 exact script lines freshly synthesized and independently transcribed with no normalized word mismatches. Countdown radio bandpass and musical tail cuts recreated; original music masters not reused.",
-  "comparison_notes": "All21 shots and54seconds preserve the build, collapse, recovery, countdown, launch, landing and scale reveal. New scene/robot/rocket/physics assembly; attributed generic brick geometry, studio assets and postprocessing reused. Individual scatter, flight particles and small pose differences remain; the reaction orientation was corrected. Fresh speech/music replaces the original soundtrack.",
+  "audio_evidence": "All 8 exact script lines freshly synthesized and independently transcribed with no normalized word mismatches. Countdown radio bandpass and musical tail cuts recreated; original music masters not reused.",
+  "comparison_notes": "All 21 shots and 54 seconds preserve the build, collapse, recovery, countdown, launch, landing and scale reveal. New scene/robot/rocket/physics assembly; attributed generic brick geometry, studio assets and postprocessing reused. Individual scatter, flight particles and small pose differences remain; the reaction orientation was corrected. Fresh speech/music replaces the original soundtrack.",
   "reviewed_at": "2026-10-18T04:32:53.950104+00:00"
 }

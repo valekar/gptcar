@@ -1,0 +1,60 @@
+{
+  "language": "en-us",
+  "voice": "am_liam",
+  "lines": [
+    {
+      "id": "L1",
+      "text": "Everyone begins by holding on.",
+      "voice": "am_liam",
+      "speed": 0.84,
+      "start": 2.44,
+      "duration": 2.377,
+      "language": "en-us"
+    },
+    {
+      "id": "L2",
+      "text": "Then someone teaches you to let go.",
+      "voice": "am_liam",
+      "speed": 0.84,
+      "start": 10.8,
+      "duration": 2.334,
+      "language": "en-us"
+    },
+    {
+      "id": "L3",
+      "text": "For a while, one line was enough for two.",
+      "voice": "am_liam",
+      "speed": 0.84,
+      "start": 16.3,
+      "duration": 2.638,
+      "language": "en-us"
+    },
+    {
+      "id": "L4a",
+      "text": "Sometimes the line stops.",
+      "voice": "am_liam",
+      "speed": 0.84,
+      "start": 24.05,
+      "duration": 2.005,
+      "language": "en-us"
+    },
+    {
+      "id": "L4b",
+      "text": "And then it goes on.",
+      "voice": "am_liam",
+      "speed": 0.84,
+      "start": 26.37,
+      "duration": 1.584,
+      "language": "en-us"
+    },
+    {
+      "id": "L5",
+      "text": "Your turn now.",
+      "voice": "am_liam",
+      "speed": 0.84,
+      "start": 40.35,
+      "duration": 1.386,
+      "language": "en-us"
+    }
+  ]
+}

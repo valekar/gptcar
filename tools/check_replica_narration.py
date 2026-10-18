@@ -22,7 +22,10 @@ def check(slugs,voice_root,out,model_name='base.en'):
             if line['text']!=wanted[line['id']]:raise RuntimeError(slug+': synthesized text differs from frozen narration')
             path=Path(line['file']);y,sr=sf.read(path,dtype='float32');y=y.mean(axis=1) if y.ndim>1 else y
             duration=len(y)/sr
-            if abs(duration-line['synthesized_duration'])>.01:raise RuntimeError(slug+': timed voice duration changed')
+            # synthesized_duration is the pre-pitch take. raw_duration is after
+            # varispeed, before optional atempo fitting (which adds tiny padding).
+            expected_duration=line['raw_duration']/line.get('tempo_factor',1)
+            if abs(duration-expected_duration)>.05:raise RuntimeError(slug+': timed voice duration changed')
             language=detect_lang([line['text']]);name=model_name if language=='en' else model_name.removesuffix('.en')
             if name not in models:models[name]=load_model(name)
             y=soxr.resample(y,sr,16000,quality='HQ');pad=np.zeros(9600,np.float32)

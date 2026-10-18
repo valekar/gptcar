@@ -38,7 +38,7 @@
     31.95
   ],
   "method": "Independent inspection of complete reference sheets plus timestamp-matched side-by-side pairs, exact transition checks, delivery probes, script/take alignment, ASR and audio-level analysis. Acceptance means close reference reconstruction, not pixel identity.",
-  "audio_evidence": "All4 exact script lines recreated and independently transcribed successfully. Mix−14.1LUFS, peak−1.1dBFS. Initial0–0.375-second black reveal matches the reference; no unexplained black intervals.",
-  "comparison_notes": "The full32-second reveal, exploded10-layer view, PCB, caustics and final product follow the reference scene structure. New product/scene code, narration and score; shared generic studio/postprocessing utilities are credited. Internal routing/profile and pulse phase differ slightly. Original conversation prompt was not published.",
+  "audio_evidence": "All 4 exact script lines recreated and independently transcribed successfully. Mix\u221214.1 LUFS, peak\u22121.1 dBFS. Initial 0\u20130.375-second black reveal matches the reference; no unexplained black intervals.",
+  "comparison_notes": "The full 32-second reveal, exploded 10-layer view, PCB, caustics and final product follow the reference scene structure. New product/scene code, narration and score; shared generic studio/postprocessing utilities are credited. Internal routing/profile and pulse phase differ slightly. Original conversation prompt was not published.",
   "reviewed_at": "2026-10-18T04:22:10.555250+00:00"
 }

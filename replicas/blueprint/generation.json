@@ -1,0 +1,135 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "title": "Patent Pending: The Cloud Catcher",
+  "status": "source-ready-for-independent-review",
+  "source_ready": true,
+  "uses_upstream_scene_code": false,
+  "matched_brief_sha256": "3e525c75349b6fa3815c98884b9bd5545651bf17cf19e355cb1e2c3cef0b9e2b",
+  "delivery": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frame_count": 1120,
+    "duration": 46.666666666666664
+  },
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080,
+    "sheet": [
+      3200,
+      2200
+    ]
+  },
+  "review_times": [
+    0.5,
+    1.5,
+    2.2,
+    2.5,
+    3.5,
+    4.444,
+    4.5,
+    5.2,
+    5.208333,
+    5.5,
+    6.5,
+    7.5,
+    8.5,
+    9.5,
+    10.5,
+    11.111,
+    11.5,
+    12.2,
+    12.5,
+    13.5,
+    13.6,
+    14.5,
+    15.5,
+    16.3,
+    16.5,
+    17.5,
+    17.778,
+    17.791667,
+    18.5,
+    19,
+    19.5,
+    20,
+    20.5,
+    21.5,
+    21.9,
+    22.222,
+    22.5,
+    23.5,
+    24.5,
+    25.5,
+    25.7,
+    26.1,
+    26.5,
+    27.5,
+    28.5,
+    29.5,
+    30,
+    30.5,
+    31.111,
+    31.5,
+    32.5,
+    33.5,
+    34.35,
+    34.5,
+    35,
+    35.5,
+    36.5,
+    37.5,
+    38.5,
+    38.9,
+    39.5,
+    39.85,
+    39.875,
+    40.5,
+    40.7,
+    40.708333,
+    41.5,
+    42.5,
+    43.5,
+    44,
+    44.5,
+    45,
+    45.5,
+    46.25,
+    46.5
+  ],
+  "shared_components": [
+    {
+      "path": "styles/blueprint/demo/draw.js",
+      "purpose": "Generic technical-line, oblique projection, solid/hatch/dimension/balloon/draw-on/camera/shadow/wetness toolkit."
+    },
+    {
+      "path": "styles/blueprint/demo/paper.js",
+      "purpose": "Generic procedural cyanotype paper/ink/shadow/wet/stamp WebGL compositor."
+    }
+  ],
+  "original_master_audio_reused": false,
+  "font_assets": [
+    {
+      "path": "fonts/Allura-Regular.ttf",
+      "sha256": "9c142b2e515832c0dfc4ff8b8ea18f40314943bf937b72e2b23c4661bac14cc6"
+    },
+    {
+      "path": "fonts/ArchitectsDaughter-Regular.ttf",
+      "sha256": "6159718a08898e34bc1cb7354086141a5f9a70b73e54dbec27ead0d59a697359"
+    },
+    {
+      "path": "fonts/B612-Bold.ttf",
+      "sha256": "91749541ac7b2c328b58832b7e2c4df809d7e2ba38d62a3a5aa3f8e38b271814"
+    },
+    {
+      "path": "fonts/B612-Regular.ttf",
+      "sha256": "139dce659100a83bf95b48474696e448bee95631ef84fd3d0437ced2bf33cf73"
+    },
+    {
+      "path": "fonts/B612Mono-Regular.ttf",
+      "sha256": "b98cb96cc8a6206dae08c063d60902df7e6d40f86139ebdb97256704253c9c69"
+    }
+  ],
+  "revision": "independent-movie-review-2"
+}

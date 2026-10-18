@@ -1,0 +1,13 @@
+Measured Blue — independent GPT-6.1 Sol High recreation
+
+Imagery: PathAI, Ventana-1.bif, CC0-1.0, hosted by OpenSlide/Carnegie Mellon. Source and metadata URLs in FACTS.md. Same restored original scan, registered slide photograph, pyramid crops and threshold masks. Data-only preprocessing derived from the published microscope plates/nucleus tools; parent restored and verified the full original BIF. Local assets are frozen in asset-manifest.json. No reference-film frames or master audio are used in production.
+
+Composition: new camera application, plate selection, focus compositing, screen instruments, annotations, mask reveal, subtitles and end card in camera.js and film.js. Published camera compositions and exact script are reference data. No original film.js, timeline.js or scene renderer is imported at runtime. Generic core/lib.js supplies deterministic interpolation only.
+
+Fonts: Barlow Condensed (Barlow Project Authors), IBM Plex Mono (IBM), Noto Sans SC and Noto Serif SC (Google/Adobe), SIL Open Font License 1.1. Local fonts and licence texts supplied. fetch_fonts.py records acquisition from Google Fonts.
+
+Voice: freshly synthesized Kokoro-82M af_heart at 0.95 speed, root-managed. All seven original published lines are preserved. Kokoro weights Apache-2.0; kokoro-onnx MIT.
+
+Music: new 90 BPM composition with bowed/soft/hard vibraphone, marimba, glockenspiel, water glasses, pulse bass, timpani, gran cassa and suspended cymbal. VCSL, VSCO-2 CE and FreePats CC0 sample packs via core/audio/sampler.py. Deterministic new turret, servo, pen, scan and laboratory sounds via root foley renderer. Original musical direction and timing are matched; no original soundtrack reused.
+
+Rendering: independently authored Canvas 2D composition, shared headless Chromium render tooling, FFmpeg/x264.

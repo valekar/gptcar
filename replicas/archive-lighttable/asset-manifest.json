@@ -1,0 +1,65 @@
+{
+  "origin": "Root restoration of the same five original LOC masters and data-only texture preparation.",
+  "assets": [
+    {
+      "path": "assets/tex/layers.json",
+      "sha256": "f3fb17a1e6d6680da55a5d5b976fa8b697a0af02b08f0c183e03ac6b5c6d363f",
+      "bytes": 83
+    },
+    {
+      "path": "assets/tex/news.jpg",
+      "sha256": "8d6372f6d8ca29d194646c2bbc740f55d4f0628f2b9536f73f78135aa3221c93",
+      "bytes": 410911
+    },
+    {
+      "path": "assets/tex/p1.jpg",
+      "sha256": "f7738d9e87eb3cc2d67fa4a5ef74b087d99212250324aaa3c5324df153ea753c",
+      "bytes": 5300115
+    },
+    {
+      "path": "assets/tex/p1_bg.jpg",
+      "sha256": "0513f3ad725ef986068b48a9129ee2a91af43cfe4ac25aeecc28cb7069b1c307",
+      "bytes": 4963290
+    },
+    {
+      "path": "assets/tex/p1_fly.png",
+      "sha256": "4c1473a29fa4b16ed5489eefd9187aa67755d2e5c866aa20a9daeb9a4781ac41",
+      "bytes": 1689356
+    },
+    {
+      "path": "assets/tex/p1_mask.png",
+      "sha256": "2bb1874f95a418dfbe3597a37e8d540f42a0f70c3d71e5687a7afc70ca5f2dee",
+      "bytes": 7315
+    },
+    {
+      "path": "assets/tex/p1_wil.png",
+      "sha256": "94c155af66f579b20555dd53c9ea882587c0e9562cc0316875b96037b8849187",
+      "bytes": 52311
+    },
+    {
+      "path": "assets/tex/p2.jpg",
+      "sha256": "8d90fccef2287593f068f3328c5a606f280da3e0491555d719444d0d3b81d92d",
+      "bytes": 6313025
+    },
+    {
+      "path": "assets/tex/p2_mask.png",
+      "sha256": "eab4b896ebdc0a0525f7ff801a2698b603f0e761328f11e915ae53f5d907fa0f",
+      "bytes": 4775
+    },
+    {
+      "path": "assets/tex/p3.jpg",
+      "sha256": "24be7b4721dce8d046b27cf64044bb245580790b8626938b7a7166ab4efa6a86",
+      "bytes": 777897
+    },
+    {
+      "path": "assets/tex/p3_mask.png",
+      "sha256": "fe23f37861a08b182db5795c5361fdd1bc0f95a8418ee0c811eaba1d7a5c9207",
+      "bytes": 15188
+    },
+    {
+      "path": "assets/tex/tg.jpg",
+      "sha256": "c55705b66e0cfe7a1b952086295a1f8a2325611c62e02595353c9318907f557a",
+      "bytes": 991576
+    }
+  ]
+}

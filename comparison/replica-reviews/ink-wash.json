@@ -52,8 +52,8 @@
     45.5,
     47.5
   ],
-  "method": "Complete40 scene/frame pairs inspected, then five matched final-movie frames verifying the revised opening drop/bloom and final mounted-scroll cloth. Original water/glyph/cut/hero contacts and full story reviewed. Five fresh narration takes independently transcribed. Full format and deterministic seeking checked.",
-  "audio_evidence": "All5 exact narration lines transcribed with no normalized word mismatches. New guqin/pipa score and material water/sword/paper foley; source master not reused. {'integrated_lufs': -14.0, 'true_peak_dbtp': -1.1, 'peak_gain_adjustment_db': 0}",
-  "comparison_notes": "Complete48-second swordsman/river/wave/calligraphy/cut/mounted-scroll narrative, exact published narration and cue times. Shared generic brush, paper, landscape, articulated hero and glyph models are credited; scene/camera/animation assembly recreated. Mountain topology, fine brush placement, initial bloom shape and mounted-cloth weave differ. Fresh voice/music/foley; original conversation prompt was not published.",
+  "method": "Complete 40 scene/frame pairs inspected, then five matched final-movie frames verifying the revised opening drop/bloom and final mounted-scroll cloth. Original water/glyph/cut/hero contacts and full story reviewed. Five fresh narration takes independently transcribed. Full format and deterministic seeking checked.",
+  "audio_evidence": "All 5 exact narration lines transcribed with no normalized word mismatches. New guqin/pipa score and material water/sword/paper foley; source master not reused. {'integrated_lufs': -14.0, 'true_peak_dbtp': -1.1, 'peak_gain_adjustment_db': 0}",
+  "comparison_notes": "Complete 48-second swordsman/river/wave/calligraphy/cut/mounted-scroll narrative, exact published narration and cue times. Shared generic brush, paper, landscape, articulated hero and glyph models are credited; scene/camera/animation assembly recreated. Mountain topology, fine brush placement, initial bloom shape and mounted-cloth weave differ. Fresh voice/music/foley; original conversation prompt was not published.",
   "reviewed_at": "2026-10-18T05:08:26.593240+00:00"
 }

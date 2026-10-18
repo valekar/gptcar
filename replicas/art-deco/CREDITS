@@ -1,0 +1,7 @@
+Midnight at the Starlight Hotel — GPT reference recreation
+Independent scene assembly/cameras/performances in replica.js by GPT-6.1 Sol, high reasoning. Reference story, published script and cues: LemoLab, lemo-opuscar, MIT, commit ded40b25679fe5d5dcfc07a282a25da1ceee3be1.
+Attributed reusable general helpers: styles/art-deco/demo/engine/deco.js (engraved gold/material/motifs), type.js (general typography/dial/clock), bulbs.js (any-text bulb sign), chars.js (generic faceted FK cast, dancers and props). No original shots_*.js, scenes/*, film.js or original rendered imagery/audio imported.
+Original exact numeric tempo/beat table retained as timing.json for faithful sync. Original chat prompt unavailable; PROMPT is a published-spec/reference reconstruction.
+Fonts: Limelight — Eben Sorkin; Poiret One — Denis Masharov; Josefin Sans and Italiana — Santiago Orozco. SIL Open Font License1.1, local Google Fonts binaries and licence texts in fonts/.
+Fresh voice: Kokoro bm_fable (announcer), am_puck (bellboy); no original tracks. Newly composed foxtrot/Charleston/D-flat song and effects, root-managed sampled performance. Piano Salamander Grand Piano V3 by Alexander Holm CC BY3.0; VSCO2 CE/VCSL and Karoryfer/Sneakybass CC0; MuldjordKit Lars Muldjord CC BY4.0. Full sample provenance in core/audio/INSTRUMENTS.md and per-pack licences.
+Historical original model credit replaced by truthful authored reference-study credit in the end plaque.

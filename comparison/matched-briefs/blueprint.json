@@ -237,5 +237,97 @@
       "sha256": "ea7079bdc69ef0b17c62b59663f0085e9a864421a3b8d7e7baee07120547f117",
       "bytes": 489
     }
+  ],
+  "exact_screen_tables": [
+    {
+      "title": "PARTS LIST",
+      "columns": [
+        "NO.",
+        "DESCRIPTION",
+        "MATERIAL",
+        "QTY"
+      ],
+      "rows": [
+        [
+          "1",
+          "BASE PLATE",
+          "CAST IRON",
+          "1"
+        ],
+        [
+          "2",
+          "GEAR HOUSING",
+          "CAST IRON",
+          "1"
+        ],
+        [
+          "3",
+          "CRANK & GEAR TRAIN",
+          "BRASS",
+          "4"
+        ],
+        [
+          "4",
+          "CLOUD GAUGE",
+          "BRASS, GLASS",
+          "1"
+        ],
+        [
+          "5",
+          "BELLOWS",
+          "LEATHER",
+          "1"
+        ],
+        [
+          "6",
+          "MAST",
+          "STEEL",
+          "1"
+        ],
+        [
+          "7",
+          "DRIVE CHAIN",
+          "STEEL",
+          "1"
+        ],
+        [
+          "8",
+          "HEAD",
+          "CAST IRON",
+          "1"
+        ],
+        [
+          "9",
+          "BOOM",
+          "STEEL",
+          "1"
+        ],
+        [
+          "10",
+          "COUNTERWEIGHT (GRANDMOTHER'S IRON)",
+          "IRON",
+          "1"
+        ],
+        [
+          "11",
+          "NET HOOP & NET",
+          "CANE, SILK",
+          "1"
+        ],
+        [
+          "12",
+          "WEATHER VANE",
+          "TIN",
+          "1"
+        ],
+        [
+          "13",
+          "GARDEN",
+          "SOIL",
+          "1"
+        ]
+      ],
+      "source": "Full-resolution decoded original frame41.5seconds, read directly during replication QA; published on-screen text."
+    }
   ]
 }

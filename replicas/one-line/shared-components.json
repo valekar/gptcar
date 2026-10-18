@@ -1,0 +1,36 @@
+[
+  {
+    "path": "styles/one-line/demo/geom.js",
+    "sha256": "2ce3a4d03ac83f099d6bae0b579d7dc65153f3dbabf1e098b7e6f3fb0dae9ab2",
+    "purpose": "Generic arc-length path builder and curvature/hold timing"
+  },
+  {
+    "path": "styles/one-line/demo/ink.js",
+    "sha256": "98ebd25fb1f45a209876511349552435dd4cf5b22aae30124b5e5851f73d1743",
+    "purpose": "Generic pressure/bleed/dryness polygon ink and blot"
+  },
+  {
+    "path": "styles/one-line/demo/paper.js",
+    "sha256": "d9a218459f779643d6c75964a89256635799ed005706816190e15449bb600254",
+    "purpose": "Generic seeded paper/fibre/tooth renderer"
+  },
+  {
+    "path": "styles/one-line/demo/cam.js",
+    "sha256": "ae15d60fae21ea0ccc7ba875d6c10d5d66af515daedc5601d58be8068779fdbf",
+    "purpose": "Generic composition interpolation and nib follow"
+  },
+  {
+    "path": "styles/one-line/demo/hands.js",
+    "sha256": "f18c60e5913368733e93d306699936ed96879b625228355e89ad7f376e82c080",
+    "purpose": "Generic pen and hand shadow primitives"
+  },
+  {
+    "path": "core/lib.js",
+    "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+    "purpose": "Shared deterministic math helpers"
+  },
+  {
+    "path": "replicas/one-line/fonts",
+    "purpose": "Fresh OFL font files and license notices; source URLs recorded in CREDITS"
+  }
+]

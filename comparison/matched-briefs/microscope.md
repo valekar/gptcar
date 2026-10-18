@@ -1,6 +1,6 @@
 # Measured Blue — matched recreation brief
 
-Status: original scene sequence audited. Exact original evidence assets still require restoration.
+Status: original scene sequence audited. The exact original BIF and evidence derivatives are restored.
 
 Measured delivery: **1280×720, 24fps, 948frames, 39.5s**. Production canvas:1920×1080.
 
@@ -196,7 +196,7 @@ Mix (in `mix.py`): stems set against the voice by active RMS (music −11 dB, pu
 
 ## Asset requirements and unresolved gaps
 
-- The full hash-verified BIF and exact original plates/masks/nucleus-fit output are absent. Rebuild with the preserved config. The v1 small circles and different crop centers are not the original measurement.
+- Restoration completed: the full hash-verified original BIF and its registered plates, original A/B masks, cumulative counts and nucleus fit are available. The recreation uses those exact original regions.
 - The original conversation prompt is not published. Use the complete published specification and audited reconstruction; do not claim the recovered text is a verbatim original chat prompt.
 
 PathAI CC0 Ventana-1.bif, SHA2562eb05cd8f628c36408c3fde09beeeebaaae90181c4f840d5475ec7594bdcbbb6.

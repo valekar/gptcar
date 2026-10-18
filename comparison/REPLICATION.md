@@ -41,3 +41,7 @@ Independent scene-by-scene review against the original. Log scene coverage, rema
 Prefer real sample instruments from `core/audio/sampler.py` (e.g. piano, upright, violins, cellos, flute, clarinet, oboe, harp, glockenspiel, marimba, kalimba, acoustic_guitar—check registry for exact keys). The root is installing all sample packs. The v1 synthesizer names remain available as explicit synth voices. Score a complete narrative arc with appropriate rests and dynamics rather than a generic ostinato for every film. Add story-specific SFX; root can extend the sound generator for a named need.
 
 `narration.json`: `{ "language":"en-us", "voice":"af_heart", "lines":[{"id":"v01","text":"exact original narration", "start":3.0,"duration":7.4,"voice":"af_heart","speed":0.93,"language":"en-us"}] }`. Times follow the original script; duration is a delivery window, not a claim about freshly synthesized audio. No line may be dropped or silently truncated. For non-narrated originals use an empty lines array. Root prepares fresh speech, timing verification and mix.
+
+## Publication media
+
+The single GitHub Pages page streams the full-quality MP4s from this repository’s public `comparison-v2` GitHub Release. Posters remain on Pages. The builder still verifies every movie, source, reference format and independent review locally before producing the public catalog; external media hosting does not bypass acceptance. Preview URLs identify the movie and poster content hashes to prevent stale first-pass media from appearing under a new status.

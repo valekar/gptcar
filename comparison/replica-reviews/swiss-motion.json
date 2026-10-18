@@ -78,8 +78,8 @@
     43.5
   ],
   "method": "Independent inspection of complete reference sheets plus timestamp-matched side-by-side pairs, exact transition checks, delivery probes, script/take alignment, ASR and audio-level analysis. Acceptance means close reference reconstruction, not pixel identity.",
-  "audio_evidence": "All8 input lines match the published script. Fresh takes checked by duration and ASR;7 exact normalized matches and one harmless typeface/type face segmentation variant. Mix−13.9LUFS, peak−1.2dBFS.",
-  "comparison_notes": "The full44-second poster, typeface gag, circle HUD, score sequence and closing card follow the original script and timing. New scene code, narration and musical arrangement; shared generic drawing utilities/fonts are credited. Minor glyph/layout differences and a truthful GPT reconstruction credit remain. Original conversation prompt was not published.",
+  "audio_evidence": "All 8 input lines match the published script. Fresh takes checked by duration and ASR;7 exact normalized matches and one harmless typeface/type face segmentation variant. Mix\u221213.9 LUFS, peak\u22121.2 dBFS.",
+  "comparison_notes": "The full 44-second poster, typeface gag, circle HUD, score sequence and closing card follow the original script and timing. New scene code, narration and musical arrangement; shared generic drawing utilities/fonts are credited. Minor glyph/layout differences and a truthful GPT reconstruction credit remain. Original conversation prompt was not published.",
   "reviewed_at": "2026-10-18T04:22:10.551621+00:00",
   "post_review_note": "Re-rendered after removing terminal blank lines in PROMPT.md; scene/audio inputs and scene implementation unchanged."
 }

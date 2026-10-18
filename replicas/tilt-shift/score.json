@@ -1,0 +1,3748 @@
+{
+  "duration": 38,
+  "bpm": 120,
+  "direction": "New minimalist event-shaped marimba ensemble. Phased upper marimba, glockenspiel crowd notes, carriage bass and tuned brass horns. The 22.5\u201324 varispeed descent leads to a full music rest; new natural foley and isolated kalimba hop pitches remain. Release and upper-note final chord return.",
+  "sections": [
+    {
+      "start": 0,
+      "end": 5,
+      "intent": "Sparse dawn, first note equals final top note"
+    },
+    {
+      "start": 5,
+      "end": 9,
+      "intent": "One title letter per eighth note, sparse seed phrase"
+    },
+    {
+      "start": 9,
+      "end": 14,
+      "intent": "Signals add layers"
+    },
+    {
+      "start": 14,
+      "end": 19,
+      "intent": "Train gates bass"
+    },
+    {
+      "start": 19,
+      "end": 22.5,
+      "intent": "Full phase ensemble and horn chords"
+    },
+    {
+      "start": 22.5,
+      "end": 24,
+      "intent": "Tape-stop descent and voices shedding"
+    },
+    {
+      "start": 24,
+      "end": 30,
+      "intent": "Music silence, natural world and isolated hop notes"
+    },
+    {
+      "start": 30,
+      "end": 34,
+      "intent": "Release and accumulating height"
+    },
+    {
+      "start": 34,
+      "end": 38,
+      "intent": "Full resolving chord decay"
+    }
+  ],
+  "silence_music_ranges": [
+    [
+      24,
+      30
+    ]
+  ],
+  "music_rms_db": -24,
+  "room": 0.1,
+  "notes": [
+    {
+      "t": 3,
+      "midi": 84,
+      "duration": 0.8,
+      "instrument": "marimba",
+      "gain": 0.13,
+      "pan": -0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 4.5,
+      "midi": 76,
+      "duration": 0.75,
+      "instrument": "marimba",
+      "gain": 0.13,
+      "pan": 0.25,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 5.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 5.5,
+      "midi": 69,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 5.875,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 6.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 6.125,
+      "midi": 64,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 6.25,
+      "midi": 71,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 6.5,
+      "midi": 76,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 6.875,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 7.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 7.125,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 7.5,
+      "midi": 69,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 7.75,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 8.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 8.25,
+      "midi": 71,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 8.5,
+      "midi": 76,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 8.75,
+      "midi": 69,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 9.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 9.035,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 9.25,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 9.285,
+      "midi": 88,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 9.25,
+      "midi": 88,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 9.375,
+      "midi": 64,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 9.5,
+      "midi": 69,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 9.535,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 9.625,
+      "midi": 100,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 9.75,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 9.785,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 10.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 10.035,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 10.125,
+      "midi": 64,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 10.25,
+      "midi": 71,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 10.285,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 10.25,
+      "midi": 91,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 10.375,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 10.5,
+      "midi": 76,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 10.535,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 10.625,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 10.625,
+      "midi": 93,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 10.785,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 11.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 11.035,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 11.25,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 11.285,
+      "midi": 88,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 11.25,
+      "midi": 88,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 11.5,
+      "midi": 69,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 11.535,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 11.625,
+      "midi": 100,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 11.75,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 11.785,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 11.875,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 12.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 12.035,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 12.25,
+      "midi": 71,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 12.285,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 12.25,
+      "midi": 91,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 12.5,
+      "midi": 76,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 12.535,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 12.625,
+      "midi": 93,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 12.785,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 12.875,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 13.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 13.035,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 13.25,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 13.285,
+      "midi": 88,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 13.25,
+      "midi": 88,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 13.5,
+      "midi": 69,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 13.535,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 13.625,
+      "midi": 100,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 13.75,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 13.785,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 14.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 14.035,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 14.0,
+      "midi": 36,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 14.25,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 14.285,
+      "midi": 88,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 14.25,
+      "midi": 88,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 14.375,
+      "midi": 64,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 14.5,
+      "midi": 69,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 14.535,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 14.5,
+      "midi": 36,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 14.625,
+      "midi": 100,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 14.75,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 14.785,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 15.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 15.035,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 15.0,
+      "midi": 43,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 15.125,
+      "midi": 64,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 15.25,
+      "midi": 71,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 15.285,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 15.25,
+      "midi": 91,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 15.5,
+      "midi": 76,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 15.535,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 15.5,
+      "midi": 43,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 15.625,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 15.625,
+      "midi": 93,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 15.75,
+      "midi": 69,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 15.785,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 15.875,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 16.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 16.035,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 16.0,
+      "midi": 40,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 16.285,
+      "midi": 88,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 16.25,
+      "midi": 88,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 16.375,
+      "midi": 64,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 16.5,
+      "midi": 69,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 16.535,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 16.5,
+      "midi": 40,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 16.625,
+      "midi": 100,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 16.785,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 16.875,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 17.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 17.035,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 17.0,
+      "midi": 41,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 17.125,
+      "midi": 64,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 17.25,
+      "midi": 71,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 17.285,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 17.25,
+      "midi": 91,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 17.375,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 17.5,
+      "midi": 76,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 17.535,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 17.5,
+      "midi": 41,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 17.625,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 17.625,
+      "midi": 93,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 17.75,
+      "midi": 69,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 17.785,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 17.875,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 18.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 18.035,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 18.0,
+      "midi": 36,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 18.285,
+      "midi": 88,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 18.25,
+      "midi": 88,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 18.375,
+      "midi": 64,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 18.5,
+      "midi": 69,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 18.535,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 18.5,
+      "midi": 36,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 18.625,
+      "midi": 100,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 18.75,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 18.785,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 19.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 19.035,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 19.0,
+      "midi": 36,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 19.125,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 19.25,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 19.285,
+      "midi": 88,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 19.25,
+      "midi": 88,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 19.375,
+      "midi": 64,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 19.5,
+      "midi": 69,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 19.535,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 19.5,
+      "midi": 36,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 19.625,
+      "midi": 76,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 19.625,
+      "midi": 100,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 19.75,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 19.785,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 19.875,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.035,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.0,
+      "midi": 43,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.125,
+      "midi": 64,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.25,
+      "midi": 71,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.285,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.25,
+      "midi": 91,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.375,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.5,
+      "midi": 76,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.535,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.5,
+      "midi": 43,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.625,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.625,
+      "midi": 93,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.75,
+      "midi": 69,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.785,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.875,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 21.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 21.035,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 21.0,
+      "midi": 40,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 21.125,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 21.25,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 21.285,
+      "midi": 88,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 21.25,
+      "midi": 88,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 21.375,
+      "midi": 64,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 21.5,
+      "midi": 69,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 21.535,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 21.5,
+      "midi": 40,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 21.625,
+      "midi": 76,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 21.625,
+      "midi": 100,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 21.75,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 21.785,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 21.875,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.0,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.035,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.0,
+      "midi": 41,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.125,
+      "midi": 64,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.25,
+      "midi": 71,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.285,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.25,
+      "midi": 91,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.375,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 30.6,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 30.635,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 30.6,
+      "midi": 36,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 30.85,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 30.885,
+      "midi": 88,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 30.85,
+      "midi": 88,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 30.975,
+      "midi": 64,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 31.1,
+      "midi": 69,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 31.135,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 31.1,
+      "midi": 36,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 31.225,
+      "midi": 100,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 31.35,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 31.385,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 31.475,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 31.6,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 31.635,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 31.6,
+      "midi": 43,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 31.725,
+      "midi": 64,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 31.85,
+      "midi": 71,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 31.885,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 31.85,
+      "midi": 91,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 31.975,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 32.1,
+      "midi": 76,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 32.135,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 32.1,
+      "midi": 43,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 32.225,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 32.225,
+      "midi": 93,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 32.35,
+      "midi": 69,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 32.385,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 32.475,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 32.6,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 32.635,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 32.6,
+      "midi": 40,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 32.725,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 32.885,
+      "midi": 88,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 32.85,
+      "midi": 88,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 32.975,
+      "midi": 64,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 33.1,
+      "midi": 69,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 33.135,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 33.1,
+      "midi": 40,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 33.225,
+      "midi": 76,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 33.225,
+      "midi": 100,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 33.35,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 33.385,
+      "midi": 76,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 33.475,
+      "midi": 72,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 33.6,
+      "midi": 60,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 33.635,
+      "midi": 79,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 33.6,
+      "midi": 41,
+      "duration": 0.45,
+      "instrument": "contrabass_pizz",
+      "gain": 0.1,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 33.725,
+      "midi": 64,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 33.85,
+      "midi": 71,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 33.885,
+      "midi": 84,
+      "duration": 0.44,
+      "instrument": "marimba",
+      "gain": 0.065,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 33.85,
+      "midi": 91,
+      "duration": 0.6,
+      "instrument": "glockenspiel",
+      "gain": 0.055,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 33.975,
+      "midi": 67,
+      "duration": 0.37,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.35,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 10.0,
+      "midi": 72,
+      "duration": 0.35,
+      "instrument": "marimba",
+      "gain": 0.16,
+      "pan": -0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 10.25,
+      "midi": 76,
+      "duration": 0.35,
+      "instrument": "marimba",
+      "gain": 0.16,
+      "pan": 0.0,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 10.5,
+      "midi": 80,
+      "duration": 0.35,
+      "instrument": "marimba",
+      "gain": 0.16,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 12.0,
+      "midi": 72,
+      "duration": 0.35,
+      "instrument": "marimba",
+      "gain": 0.16,
+      "pan": -0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 12.25,
+      "midi": 76,
+      "duration": 0.35,
+      "instrument": "marimba",
+      "gain": 0.16,
+      "pan": 0.0,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 12.5,
+      "midi": 80,
+      "duration": 0.35,
+      "instrument": "marimba",
+      "gain": 0.16,
+      "pan": 0.4,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 14.5,
+      "midi": 36,
+      "duration": 0.45,
+      "instrument": "marimba",
+      "gain": 0.16,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 14.75,
+      "midi": 36,
+      "duration": 0.45,
+      "instrument": "marimba",
+      "gain": 0.16,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 15,
+      "midi": 36,
+      "duration": 0.45,
+      "instrument": "marimba",
+      "gain": 0.16,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 15.5,
+      "midi": 36,
+      "duration": 0.45,
+      "instrument": "marimba",
+      "gain": 0.16,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 16,
+      "midi": 36,
+      "duration": 0.45,
+      "instrument": "marimba",
+      "gain": 0.16,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 17,
+      "midi": 36,
+      "duration": 0.45,
+      "instrument": "marimba",
+      "gain": 0.16,
+      "pan": 0.1,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20,
+      "midi": 60,
+      "duration": 0.18,
+      "instrument": "trumpet_stac",
+      "gain": 0.07,
+      "pan": -0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.25,
+      "midi": 60,
+      "duration": 0.18,
+      "instrument": "trumpet_stac",
+      "gain": 0.05,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20,
+      "midi": 64,
+      "duration": 0.18,
+      "instrument": "trumpet_stac",
+      "gain": 0.07,
+      "pan": -0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.25,
+      "midi": 64,
+      "duration": 0.18,
+      "instrument": "trumpet_stac",
+      "gain": 0.05,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20,
+      "midi": 67,
+      "duration": 0.18,
+      "instrument": "trumpet_stac",
+      "gain": 0.07,
+      "pan": -0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 20.25,
+      "midi": 67,
+      "duration": 0.18,
+      "instrument": "trumpet_stac",
+      "gain": 0.05,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22,
+      "midi": 60,
+      "duration": 0.18,
+      "instrument": "trumpet_stac",
+      "gain": 0.07,
+      "pan": -0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.25,
+      "midi": 60,
+      "duration": 0.18,
+      "instrument": "trumpet_stac",
+      "gain": 0.05,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22,
+      "midi": 64,
+      "duration": 0.18,
+      "instrument": "trumpet_stac",
+      "gain": 0.07,
+      "pan": -0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.25,
+      "midi": 64,
+      "duration": 0.18,
+      "instrument": "trumpet_stac",
+      "gain": 0.05,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22,
+      "midi": 67,
+      "duration": 0.18,
+      "instrument": "trumpet_stac",
+      "gain": 0.07,
+      "pan": -0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.25,
+      "midi": 67,
+      "duration": 0.18,
+      "instrument": "trumpet_stac",
+      "gain": 0.05,
+      "pan": 0.2,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.5,
+      "midi": 60.0,
+      "duration": 0.22,
+      "instrument": "marimba",
+      "gain": 0.12,
+      "pan": -0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.5,
+      "midi": 72.0,
+      "duration": 0.3,
+      "instrument": "glockenspiel",
+      "gain": 0.05,
+      "pan": 0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.61,
+      "midi": 65.727,
+      "duration": 0.2381818181818182,
+      "instrument": "marimba",
+      "gain": 0.1129090909090909,
+      "pan": -0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.61,
+      "midi": 77.727,
+      "duration": 0.3,
+      "instrument": "glockenspiel",
+      "gain": 0.045454545454545456,
+      "pan": 0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.72,
+      "midi": 69.352,
+      "duration": 0.25636363636363635,
+      "instrument": "marimba",
+      "gain": 0.10581818181818181,
+      "pan": -0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.72,
+      "midi": 81.352,
+      "duration": 0.3,
+      "instrument": "glockenspiel",
+      "gain": 0.04090909090909091,
+      "pan": 0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.83,
+      "midi": 59.859,
+      "duration": 0.27454545454545454,
+      "instrument": "marimba",
+      "gain": 0.09872727272727273,
+      "pan": -0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.83,
+      "midi": 71.859,
+      "duration": 0.3,
+      "instrument": "glockenspiel",
+      "gain": 0.03636363636363637,
+      "pan": 0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.94,
+      "midi": 63.225,
+      "duration": 0.2927272727272727,
+      "instrument": "marimba",
+      "gain": 0.09163636363636364,
+      "pan": -0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 22.94,
+      "midi": 75.225,
+      "duration": 0.3,
+      "instrument": "glockenspiel",
+      "gain": 0.03181818181818182,
+      "pan": 0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 23.05,
+      "midi": 68.421,
+      "duration": 0.3109090909090909,
+      "instrument": "marimba",
+      "gain": 0.08454545454545455,
+      "pan": -0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 23.05,
+      "midi": 80.421,
+      "duration": 0.3,
+      "instrument": "glockenspiel",
+      "gain": 0.02727272727272727,
+      "pan": 0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 23.16,
+      "midi": 57.406,
+      "duration": 0.3290909090909091,
+      "instrument": "marimba",
+      "gain": 0.07745454545454546,
+      "pan": -0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 23.16,
+      "midi": 69.406,
+      "duration": 0.3,
+      "instrument": "glockenspiel",
+      "gain": 0.02272727272727273,
+      "pan": 0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 23.27,
+      "midi": 60.125,
+      "duration": 0.3472727272727273,
+      "instrument": "marimba",
+      "gain": 0.07036363636363636,
+      "pan": -0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 23.27,
+      "midi": 72.125,
+      "duration": 0.3,
+      "instrument": "glockenspiel",
+      "gain": 0.018181818181818184,
+      "pan": 0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 23.38,
+      "midi": 45.498,
+      "duration": 0.3654545454545455,
+      "instrument": "marimba",
+      "gain": 0.06327272727272726,
+      "pan": -0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 23.38,
+      "midi": 57.498,
+      "duration": 0.3,
+      "instrument": "glockenspiel",
+      "gain": 0.013636363636363636,
+      "pan": 0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 23.49,
+      "midi": 46.4,
+      "duration": 0.38363636363636366,
+      "instrument": "marimba",
+      "gain": 0.05618181818181817,
+      "pan": -0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 23.49,
+      "midi": 58.4,
+      "duration": 0.3,
+      "instrument": "glockenspiel",
+      "gain": 0.009090909090909089,
+      "pan": 0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 23.6,
+      "midi": 49.624,
+      "duration": 0.40181818181818185,
+      "instrument": "marimba",
+      "gain": 0.04909090909090909,
+      "pan": -0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 23.6,
+      "midi": 61.624,
+      "duration": 0.3,
+      "instrument": "glockenspiel",
+      "gain": 0.004545454545454547,
+      "pan": 0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 23.71,
+      "midi": 40.787,
+      "duration": 0.42000000000000004,
+      "instrument": "marimba",
+      "gain": 0.041999999999999996,
+      "pan": -0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 23.71,
+      "midi": 52.787,
+      "duration": 0.3,
+      "instrument": "glockenspiel",
+      "gain": 0.0,
+      "pan": 0.3,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 24.8,
+      "midi": 72,
+      "duration": 0.28,
+      "instrument": "kalimba",
+      "gain": 0.08,
+      "pan": -0.4,
+      "channel": "foley",
+      "velocity": 0.66
+    },
+    {
+      "t": 25.6,
+      "midi": 74,
+      "duration": 0.28,
+      "instrument": "kalimba",
+      "gain": 0.08,
+      "pan": -0.25,
+      "channel": "foley",
+      "velocity": 0.66
+    },
+    {
+      "t": 26.4,
+      "midi": 76,
+      "duration": 0.28,
+      "instrument": "kalimba",
+      "gain": 0.08,
+      "pan": -0.10000000000000003,
+      "channel": "foley",
+      "velocity": 0.66
+    },
+    {
+      "t": 27.1,
+      "midi": 79,
+      "duration": 0.28,
+      "instrument": "kalimba",
+      "gain": 0.08,
+      "pan": 0.04999999999999993,
+      "channel": "foley",
+      "velocity": 0.66
+    },
+    {
+      "t": 27.8,
+      "midi": 70,
+      "duration": 0.28,
+      "instrument": "kalimba",
+      "gain": 0.08,
+      "pan": 0.19999999999999996,
+      "channel": "foley",
+      "velocity": 0.66
+    },
+    {
+      "t": 29.4,
+      "midi": 84,
+      "duration": 0.28,
+      "instrument": "kalimba",
+      "gain": 0.08,
+      "pan": 0.35,
+      "channel": "foley",
+      "velocity": 0.66
+    },
+    {
+      "t": 34,
+      "midi": 48,
+      "duration": 3.5,
+      "instrument": "marimba",
+      "gain": 0.1,
+      "pan": 0,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 34,
+      "midi": 55,
+      "duration": 3.5,
+      "instrument": "marimba",
+      "gain": 0.1,
+      "pan": 0,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 34,
+      "midi": 60,
+      "duration": 3.5,
+      "instrument": "marimba",
+      "gain": 0.1,
+      "pan": 0,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 34,
+      "midi": 64,
+      "duration": 3.5,
+      "instrument": "marimba",
+      "gain": 0.1,
+      "pan": 0,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 34,
+      "midi": 67,
+      "duration": 3.5,
+      "instrument": "marimba",
+      "gain": 0.1,
+      "pan": 0,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 34,
+      "midi": 72,
+      "duration": 3.5,
+      "instrument": "marimba",
+      "gain": 0.1,
+      "pan": 0,
+      "channel": "music",
+      "velocity": 0.66
+    },
+    {
+      "t": 34,
+      "midi": 84,
+      "duration": 3.5,
+      "instrument": "marimba",
+      "gain": 0.1,
+      "pan": 0,
+      "channel": "music",
+      "velocity": 0.66
+    }
+  ],
+  "effects": [
+    {
+      "t": 5.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 5.5,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 6.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 6.5,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 7.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 7.5,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 8.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 8.5,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 9.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 9.5,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 10.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 10.5,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 11.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 11.5,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 12.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 12.5,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 13.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 13.5,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 14.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 14.5,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 15.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 15.5,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 16.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 16.5,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 17.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 17.5,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 18.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 18.5,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 19.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 19.5,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 20.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 20.5,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 21.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 21.5,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 22.0,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 30.6,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 31.1,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 31.6,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 32.1,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 32.6,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 33.1,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": 0.45
+    },
+    {
+      "t": 33.6,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.022,
+      "pan": -0.45
+    },
+    {
+      "t": 0,
+      "kind": "wind",
+      "duration": 5,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 5,
+      "kind": "wind",
+      "duration": 4,
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 9,
+      "kind": "wind",
+      "duration": 5,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 14,
+      "kind": "rail_clack",
+      "duration": 5,
+      "gain": 0.065,
+      "pan": -0.3,
+      "interval": 0.25
+    },
+    {
+      "t": 22.5,
+      "kind": "sine_glide",
+      "duration": 1.45,
+      "gain": 0.06,
+      "pan": 0,
+      "freq_start": 650,
+      "freq_end": 143
+    },
+    {
+      "t": 24,
+      "kind": "engine_idle",
+      "duration": 6.8,
+      "gain": 0.055,
+      "pan": 0.6
+    },
+    {
+      "t": 24.35,
+      "kind": "bird",
+      "duration": 0.35,
+      "gain": 0.04,
+      "pan": -0.5
+    },
+    {
+      "t": 26.7,
+      "kind": "bird",
+      "duration": 0.35,
+      "gain": 0.04,
+      "pan": -0.5
+    },
+    {
+      "t": 28.5,
+      "kind": "bird",
+      "duration": 0.35,
+      "gain": 0.04,
+      "pan": -0.5
+    },
+    {
+      "t": 24.8,
+      "kind": "paper",
+      "duration": 0.09,
+      "gain": 0.025,
+      "pan": -0.4
+    },
+    {
+      "t": 24.95,
+      "kind": "thump",
+      "duration": 0.09,
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 25.1,
+      "kind": "duck_quack",
+      "duration": 0.2,
+      "gain": 0.04,
+      "pan": -0.4,
+      "frequency": 550
+    },
+    {
+      "t": 25.6,
+      "kind": "paper",
+      "duration": 0.09,
+      "gain": 0.025,
+      "pan": -0.25
+    },
+    {
+      "t": 25.75,
+      "kind": "thump",
+      "duration": 0.09,
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 25.900000000000002,
+      "kind": "duck_quack",
+      "duration": 0.2,
+      "gain": 0.04,
+      "pan": -0.25,
+      "frequency": 1220
+    },
+    {
+      "t": 26.4,
+      "kind": "paper",
+      "duration": 0.09,
+      "gain": 0.025,
+      "pan": -0.10000000000000003
+    },
+    {
+      "t": 26.549999999999997,
+      "kind": "thump",
+      "duration": 0.09,
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 26.7,
+      "kind": "duck_quack",
+      "duration": 0.2,
+      "gain": 0.04,
+      "pan": -0.10000000000000003,
+      "frequency": 1340
+    },
+    {
+      "t": 27.1,
+      "kind": "paper",
+      "duration": 0.09,
+      "gain": 0.025,
+      "pan": 0.04999999999999993
+    },
+    {
+      "t": 27.25,
+      "kind": "thump",
+      "duration": 0.09,
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 27.400000000000002,
+      "kind": "duck_quack",
+      "duration": 0.2,
+      "gain": 0.04,
+      "pan": 0.04999999999999993,
+      "frequency": 1460
+    },
+    {
+      "t": 27.8,
+      "kind": "paper",
+      "duration": 0.09,
+      "gain": 0.025,
+      "pan": 0.19999999999999996
+    },
+    {
+      "t": 27.95,
+      "kind": "thump",
+      "duration": 0.09,
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 28.1,
+      "kind": "duck_quack",
+      "duration": 0.2,
+      "gain": 0.04,
+      "pan": 0.19999999999999996,
+      "frequency": 1580
+    },
+    {
+      "t": 29.4,
+      "kind": "paper",
+      "duration": 0.09,
+      "gain": 0.025,
+      "pan": 0.35
+    },
+    {
+      "t": 29.549999999999997,
+      "kind": "thump",
+      "duration": 0.09,
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 29.7,
+      "kind": "duck_quack",
+      "duration": 0.2,
+      "gain": 0.04,
+      "pan": 0.35,
+      "frequency": 1700
+    },
+    {
+      "t": 28.15,
+      "kind": "thump",
+      "duration": 0.1,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 28.28,
+      "kind": "duck_quack",
+      "duration": 0.18,
+      "gain": 0.05,
+      "pan": 0.35,
+      "frequency": 1540
+    },
+    {
+      "t": 24.2,
+      "kind": "duck_quack",
+      "duration": 0.13,
+      "gain": 0.023,
+      "pan": 0,
+      "frequency": 1200
+    },
+    {
+      "t": 25.1,
+      "kind": "duck_quack",
+      "duration": 0.13,
+      "gain": 0.023,
+      "pan": 0,
+      "frequency": 1200
+    },
+    {
+      "t": 26.0,
+      "kind": "duck_quack",
+      "duration": 0.13,
+      "gain": 0.023,
+      "pan": 0,
+      "frequency": 1200
+    },
+    {
+      "t": 26.8,
+      "kind": "duck_quack",
+      "duration": 0.13,
+      "gain": 0.023,
+      "pan": 0,
+      "frequency": 1200
+    },
+    {
+      "t": 27.7,
+      "kind": "duck_quack",
+      "duration": 0.13,
+      "gain": 0.023,
+      "pan": 0,
+      "frequency": 1200
+    },
+    {
+      "t": 28.7,
+      "kind": "duck_quack",
+      "duration": 0.13,
+      "gain": 0.023,
+      "pan": 0,
+      "frequency": 1200
+    },
+    {
+      "t": 29.8,
+      "kind": "duck_quack",
+      "duration": 0.13,
+      "gain": 0.023,
+      "pan": 0,
+      "frequency": 1200
+    },
+    {
+      "t": 30,
+      "kind": "engine_rev",
+      "duration": 1.7,
+      "gain": 0.09,
+      "pan": 0.4
+    },
+    {
+      "t": 30,
+      "kind": "wind",
+      "duration": 4,
+      "gain": 0.065,
+      "pan": 0
+    },
+    {
+      "t": 34,
+      "kind": "wind",
+      "duration": 4,
+      "gain": 0.035,
+      "pan": 0
+    }
+  ]
+}

@@ -33,7 +33,7 @@ jobs:
               *) mv "$f" ".release/replicas/posters/$name" ;;
             esac
           done
-      - run: python3 tools/build_replication.py
+      - run: python3 tools/build_replication.py --media-base https://github.com/valekar/gptcar/releases/download/comparison-v2
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:

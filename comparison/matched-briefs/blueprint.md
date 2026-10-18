@@ -11,7 +11,7 @@ Complete visual coverage: all4 sheets, 47 regular decoded samples. Exact subseco
 
 ## Materials, characters, typography
 
-3200×2200 world sheet, cyano type indigo mottled paper, white variable technical strokes and hatches. Thirteen detailed gears/crank bellows/braced mast/boom/net/planter with labeled call out s, arrows, dimension extension lines. One restrained vermilion WORKS stamp only; 3 D cloud exception has white volume, cast shadow and wet ink diffusion. B 612/Architects Daughter/All ura.
+3200×2200 world sheet, cyanotype indigo mottled paper, white variable technical strokes and hatches. Thirteen detailed gears/crank bellows/braced mast/boom/net/planter with labeled callouts, arrows, dimension extension lines. One restrained vermilion WORKS stamp only; 3 D cloud exception has white volume, cast shadow and wet ink diffusion. B612/Architects Daughter/Allura.
 
 ## Full scene-level reconstructed prompt
 
@@ -21,15 +21,15 @@ Oblique sheet rollout fills frame, worn white border/dashed fold lines emerge; t
 
 ### 4.44444–11.11111s · Figure1 draws itself
 
-Track across page as fine center lines→outlines→hatch assemble wheeled base/No.1 gear housing/bellows/mast brace/diagonal crank boom with optimistic net. White dimensions 450 base and call out s 1–13; planter right tiny flowers. VO NOTE 1 in rectangular drafting label. Zoom out completed technical machine.
+Track across page as fine center lines→outlines→hatch assemble wheeled base/No.1 gear housing/bellows/mast brace/diagonal crank boom with optimistic net. White dimensions 450 base and callouts 1–13; planter right tiny flowers. VO NOTE 1 in rectangular drafting label. Zoom out completed technical machine.
 
 ### 11.11111–13.60000s · Figure2 exploded view
 
-Parts move out along exploded axes with phantom guide paths; 13 circular call out s, parts list table right, FIG.2 / EXPLODED VIEW. Camera oblique orthographic; keep precisely matched geometry, teeth and net web.
+Parts move out along exploded axes with phantom guide paths; 13 circular callouts, parts list table right, FIG.2 / EXPLODED VIEW. Camera oblique orthographic; keep precisely matched geometry, teeth and net web.
 
 ### 13.60000–17.77778s · Housing section and reassembly
 
-Section A—A removes housing face, exposes inter meshed gear teeth/crank/piston shaft, hatch angled 45. All 13 parts rejoin 16.3–17.778, clean machinery not floating abstract rectangles.
+Section A—A removes housing face, exposes intermeshed gear teeth/crank/piston shaft, hatch angled 45. All 13 parts rejoin 16.3–17.778, clean machinery not floating abstract rectangles.
 
 ### 17.77778–22.22222s · Follow mechanical operation
 
@@ -74,7 +74,7 @@ Push lower-right drafted title block and parts list. Exact inventor Cornelius Wr
 
 ## New voice and score direction
 
-108 BPM G major baroque invention: harpsichord, bassoon, sp icca to during operation. Rita rdan do/air/silence on failed sky; Dsus 4 revision miracle, G major catch and harp rain. Dry ruling/winding/stamp/water distinct. bm_daniel.9 British understated. No original master reuse.
+108 BPM G major baroque invention: harpsichord, bassoon, spiccato during operation. Ritardando/air/silence on failed sky; Dsus4 revision miracle, G major catch and harp rain. Dry ruling/winding/stamp/water distinct. bm_daniel at0.9 speed British understated. No original master reuse.
 
 ## Shared assets, engine and licences
 
@@ -265,3 +265,22 @@ styles/blueprint/demo/
 
 - `styles/blueprint/demo/fonts/OFL.txt` ·SHA-256 `0e441ae9f18ad0c294cc5b6ae3974c2db1614cab220598578b1b58c4cc334485`
 - `styles/blueprint/demo/fonts/fonts.css` ·SHA-256 `ea7079bdc69ef0b17c62b59663f0085e9a864421a3b8d7e7baee07120547f117`
+
+
+## Exact parts list read from decoded original41.5seconds
+
+| NO. | DESCRIPTION | MATERIAL | QTY |
+|---|---|---|---|
+| 1 | BASE PLATE | CAST IRON | 1 |
+| 2 | GEAR HOUSING | CAST IRON | 1 |
+| 3 | CRANK & GEAR TRAIN | BRASS | 4 |
+| 4 | CLOUD GAUGE | BRASS, GLASS | 1 |
+| 5 | BELLOWS | LEATHER | 1 |
+| 6 | MAST | STEEL | 1 |
+| 7 | DRIVE CHAIN | STEEL | 1 |
+| 8 | HEAD | CAST IRON | 1 |
+| 9 | BOOM | STEEL | 1 |
+| 10 | COUNTERWEIGHT (GRANDMOTHER'S IRON) | IRON | 1 |
+| 11 | NET HOOP & NET | CANE, SILK | 1 |
+| 12 | WEATHER VANE | TIN | 1 |
+| 13 | GARDEN | SOIL | 1 |

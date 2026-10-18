@@ -1,7 +1,7 @@
 {
   "schema_version": "matched-original-brief-v2-audit-1",
   "slug": "microscope",
-  "status": "reference-audited-asset-rebuild-required",
+  "status": "reference-audited-original-assets-restored",
   "original_title": "Measured Blue",
   "original_title_aliases_from_demo": [
     "Demo: *Measured Blue* 《量出来的蓝》 (39.5 s) · `microscope.mp4` · source in [`demo/`](demo/)",
@@ -858,7 +858,6 @@
     ]
   },
   "matching_blockers": [
-    "The full hash-verified BIF and exact original plates/masks/nucleus-fit output are absent. Rebuild with the preserved config. The v1 small circles and different crop centers are not the original measurement.",
     "The original conversation prompt is not published. Use the complete published specification and audited reconstruction; do not claim the recovered text is a verbatim original chat prompt."
   ],
   "visual_audit": {
@@ -887,5 +886,11 @@
       "Begin with the actual full glass-slide scan, including its barcode label and tiny tissue, then roll and zoom continuously through the registered pyramid. The true trichrome liver section has red parenchyma and blue connective bands; its4.80mm bracket and scale HUD stay calibrated. Exact1mm circles atA/B reveal13.5% and32.6% blue shares, then both remain in view for the1.41mm separation and2.4× comparison. A further zoom reaches the real measured nucleus and8.5µm fit. Pull back through the same scan to the glass-slide ending. All pixels, masks and coordinates must come from the exact BIF, not generated cells or different crops."
     ],
     "note": "All regular reference sheets were inspected across the complete film. Named supplementary frames cover important short actions and transitions. This is scene coverage, not a claim that every encoded frame was inspected."
+  },
+  "asset_restoration": {
+    "status": "complete",
+    "source_bif_sha256": "2eb05cd8f628c36408c3fde09beeeebaaae90181c4f840d5475ec7594bdcbbb6",
+    "same_original_regions_and_measurements": true,
+    "details": "Root restored full original BIF and rebuilt slide photograph, registered pyramid, original A/B masks, cumulative curves and nucleus fit. Replica asset manifest records actual derivative bytes."
   }
 }
