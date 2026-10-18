@@ -1,0 +1,29 @@
+{
+  "slug": "lowpoly-island",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "5df0928e3f964294ef8864e9113e4a8ae97087999d19020232b7a63662ef6fee",
+  "video_sha256": "a94976ca8eb85127b42988a3817c83c6c00488ec191a11e11bdc30bc310ce241",
+  "bytes": 3438963,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Notes from the Sea",
+  "comparison_notes": "Independent twenty-second Three.js film of original premise. Material, geometry and camera rendering; original instrumental score. Qualitative comparison, durations differ.",
+  "updated_at": "2026-10-18T03:00:00Z"
+}

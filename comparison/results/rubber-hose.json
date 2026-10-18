@@ -1,0 +1,29 @@
+{
+  "slug": "rubber-hose",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "1183614dbdb682d587348eb08f7dc96a01675bf2c49d896ba7b891017f0a6198",
+  "video_sha256": "f49d45ec8f6d9019c9a1ae7f1ea202c641f343672e678dfa3c25b14cd55f84b5",
+  "bytes": 4122520,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Sugar Takes the Stage",
+  "comparison_notes": "Independent twenty-second code study of the original style premise. Original procedural score, no narration. Qualitative style comparison; durations differ.",
+  "updated_at": "2026-10-18T02:54:18Z"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "key": "beam",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kiiminkiriver_Bridge_20100705.JPG?width=1600",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Kiiminkiriver_Bridge_20100705.JPG/1920px-Kiiminkiriver_Bridge_20100705.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+    "bytes": 397342
+  },
+  {
+    "key": "arch",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fort_Henry_Bridge%29_Wheeling%2C_West_Virginia_LCCN2015632042.tif?width=1600",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Fort_Henry_Bridge%29_Wheeling%2C_West_Virginia_LCCN2015632042.tif/lossy-page1-1920px-Fort_Henry_Bridge%29_Wheeling%2C_West_Virginia_LCCN2015632042.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+    "bytes": 487593
+  },
+  {
+    "key": "cable",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/East_Huntington_bridge%2C_Huntington%2C_West_Virginia_LCCN2015631874.tif?width=1600",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/East_Huntington_bridge%2C_Huntington%2C_West_Virginia_LCCN2015631874.tif/lossy-page1-1920px-East_Huntington_bridge%2C_Huntington%2C_West_Virginia_LCCN2015631874.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+    "bytes": 395933
+  },
+  {
+    "key": "ship",
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ship_Harrison_%281%29.jpg?width=1600",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Ship_Harrison_%281%29.jpg/1920px-Ship_Harrison_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+    "bytes": 756300
+  }
+]

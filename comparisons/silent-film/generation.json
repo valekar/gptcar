@@ -1,0 +1,24 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "The Runaway Loaf / A Share",
+  "premise": "A baker's boy chases a runaway loaf downhill, then breaks it in half for a hungry girl.",
+  "duration": 20,
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Original engraved-style street, human rigs and intertitle; only original cinema-piano events, no speech or action foley.",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    {
+      "type": "font",
+      "name": "Playfair Display SC",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/playfairdisplaysc"
+    },
+    {
+      "type": "font",
+      "name": "IM Fell English",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/imfellenglish"
+    }
+  ]
+}

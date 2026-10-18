@@ -1,0 +1,29 @@
+{
+  "slug": "ukiyoe",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "84342491ce70f17a3d26157f57bd1a36a720dc610b6dcb3e2ba04c6b59ac4efa",
+  "video_sha256": "9151194830b6bef3102d154f35e995db1a390bf195cd2c756050c248f2bd5dce",
+  "bytes": 2195347,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "The Mountain Changes Its Frame",
+  "comparison_notes": "Independent 20-second procedural visual study matching the library premise. Original full-length upstream film differs in duration and production scope; this is a qualitative style comparison. No narration.",
+  "updated_at": "2026-10-18T03:07:06Z"
+}

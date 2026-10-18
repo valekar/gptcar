@@ -1,0 +1,29 @@
+{
+  "slug": "white-model",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "4680fc7e550a161562403f47a79587bf2850538ca78b8224f4a9d8ad36c21d39",
+  "video_sha256": "f208643305f6db069b9b9573737c2c4a1c809345e4d815bbd804264a3c9c4681",
+  "bytes": 2843880,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Rotterdam / Light by Year",
+  "comparison_notes": "Actual216-feature Rotterdam subset at1:1000; original construction-year attribute and roof-minus-terrain heights projected onto fixed white geometry. No citywide war-damage or solar-shadow claim.",
+  "updated_at": "2026-10-18T03:13:13Z"
+}

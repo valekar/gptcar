@@ -1,0 +1,23 @@
+{
+  "project": "GPTcar",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "parallel_workers_authorized": true,
+  "generation_workers": [
+    "paint_print_traditions",
+    "graphics_games",
+    "cartoon_3d"
+  ],
+  "style_count": 51,
+  "gpt_sample_seconds": 20,
+  "fps": 24,
+  "resolution": [
+    1280,
+    720
+  ],
+  "narration": false,
+  "renderer": "Deterministic code-rendered window.render(t) toolkit",
+  "comparison": "Qualitative, not a controlled model ranking; Opus originals keep full production/duration/audio.",
+  "upstream_commit": "ded40b25679fe5d5dcfc07a282a25da1ceee3be1",
+  "recorded_at_utc": "2026-10-18T03:02:34.962920+00:00"
+}

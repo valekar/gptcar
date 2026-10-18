@@ -1,0 +1,29 @@
+{
+  "slug": "hd-2d",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "d413553061dbdafeec3d99cdc96064ad269c144dd57222ec643c971c8ac414ef",
+  "video_sha256": "2c09bb0600eddae706e61d0e90743ac7a004fa9d41394cf263e80948018dc7e6",
+  "bytes": 9069032,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "The Lampbearer / Last Flame",
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Original real 3D diorama with procedural pixel textures, lit/shadow-casting original pixel sprite, practical lights, fog, rain and tilt-shift/bloom post. No upstream demo geometry or textures. Three.js MIT: https://github.com/mrdoob/three.js .",
+  "updated_at": "2026-10-18T03:11:27Z"
+}

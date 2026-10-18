@@ -1,0 +1,29 @@
+{
+  "slug": "briefing-board",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "c679920da3b0cf97fb2242ef717fd76688227b166c32d2f0561c99635e710cde",
+  "video_sha256": "efd69bdca651f752e082eca1b082fbf43ac67257d2dbf77c53d5eb6d583d77b8",
+  "bytes": 8738522,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "The Clearance Question",
+  "comparison_notes": "Three real bridge photographs and one real ship print form a qualitative type briefing. No project dimensions or clearance verdicts are invented; establish the navigation envelope first.",
+  "updated_at": "2026-10-18T03:13:42Z"
+}

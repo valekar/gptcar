@@ -1,0 +1,7 @@
+# Source geometry and approximation
+
+foostan / Corne source revision `63366fb7f51cf2a796462fdd90527e99dd126055`, `pcbs/corne-cherry/hotswap/corne-cherry.kicad_pcb`, https://github.com/foostan/crkbd/tree/63366fb7f51cf2a796462fdd90527e99dd126055 . CC BY4 / MIT, original license files retained.
+
+The 21 left switch footprint centres and rotations are taken unchanged from assets/pcb-layout.json. X span is max(source switch x)−min(source switch x), computed by film.js, not an enclosure dimension. The source's panel outline and breakaway geometry are retained. All gr_line/gr_arc/gr_curve Edge.Cuts geometry is rasterised at20px/mm; curves sampled12 segments; bounded flood-fill over the full two-half source panel (including lines crossing x=0) produces an actual source outline mask; only after filling is the left texture region cropped. Source F.Cu segments are drawn from the original board source; no schematic connection path is invented. Derived textures and exact texture frame are retained.
+
+This is a layout-derived technical model: cap, switch and socket bodies are simplified package envelopes rather than sourced mechanical STEP geometry; switch drill illustrations are schematic. No package envelope dimension, board thickness, mechanical clearance, case fit, chip identity or electrical performance is asserted. The film explicitly labels simplification. It differs from the original complete product teardown by limiting claims to supplied source layout evidence.

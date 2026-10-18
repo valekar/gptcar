@@ -1,0 +1,29 @@
+{
+  "slug": "crayon-book",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "01cdd1273a22af89f7ceb26fc03022ef9305b5411b2dfb0f6aabcaed546305a5",
+  "video_sha256": "91a4b6b79b50e1d34250dd59b96d62c4858aa6e06ceec4e50e2fc900d31ca563",
+  "bytes": 3898837,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "A Stairway of Song",
+  "comparison_notes": "Independent 20-second procedural visual study matching the library premise. Original full-length upstream film differs in duration and production scope; this is a qualitative style comparison. No narration.",
+  "updated_at": "2026-10-18T03:04:09Z"
+}

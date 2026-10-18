@@ -1,0 +1,18 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "The Velvet Cipher / Key Exchange",
+  "premise": "Opening titles for an imaginary 1964 spy film: a chase for a stolen key until the shapes lock into the title.",
+  "duration": 20,
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. ",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    {
+      "type": "font",
+      "name": "League Gothic",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/leaguegothic"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "One Cut, Many Windows",
+  "premise": "On New Year's Eve the beast Nian comes to town, and one girl's giant paper-cut lights up the village to scare it off.",
+  "duration": 20,
+  "comparison_notes": "Independent 20-second procedural visual study matching the library premise. Original full-length upstream film differs in duration and production scope; this is a qualitative style comparison. No narration.",
+  "uses_upstream_demo_code": false,
+  "assets": []
+}

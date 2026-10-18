@@ -1,0 +1,24 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Pip Moves In / Coding Walkthrough",
+  "premise": "Clawd, the Claude Code pixel mascot, hops out of the terminal into the Claude app and acts out plan mode, diff comments and self-checks in a one-take screencast.",
+  "duration": 20,
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Premise adaptation: original fictional Pip Studio app and original pixel mascot replace the upstream Claude-branded walkthrough. Actual DOM renders coherent plan/diff/check states; UI anchors are measured each frame. No claim about a real product feature or interface.",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    {
+      "type": "font",
+      "name": "Inter",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/inter"
+    },
+    {
+      "type": "font",
+      "name": "JetBrains Mono",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/jetbrainsmono"
+    }
+  ]
+}

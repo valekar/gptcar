@@ -1,0 +1,29 @@
+{
+  "slug": "data-physical",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "62daca7a1d3e8593e593572fe5b99994a53fd5ca39014a63c8adb7270df94b2d",
+  "video_sha256": "d3d7fb5fc858cfe211a7900b3d336231ae6fe91b137c5adab97444fa74de6de3",
+  "bytes": 3197366,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Capacity, Placed",
+  "comparison_notes": "Actual2014\u20132025 IRENA/OWID World rows. One plate=50GW, nearest whole plate, exact source readings separately retained. Original material installation and score.",
+  "updated_at": "2026-10-18T03:12:18Z"
+}

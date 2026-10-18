@@ -1,0 +1,18 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "From Bean to Cup / Route",
+  "premise": "A coffee's journey from the plantation to your hands, across one isometric world.",
+  "duration": 20,
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Schematic three-stage coffee route; no numerical supply-chain claims. Three stations represent the drawn process steps only.",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    {
+      "type": "font",
+      "name": "Jost",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/jost"
+    }
+  ]
+}

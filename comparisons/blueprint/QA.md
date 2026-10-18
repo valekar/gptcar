@@ -1,0 +1,1 @@
+Rendered stills at 2, 10, 17 seconds with core/render/still.mjs at 1280x720. Renderer exited 0. Inspected a combined contact sheet; three distinct beats are readable. Full video/audio QA remains parent-owned.

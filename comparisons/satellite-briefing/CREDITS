@@ -1,0 +1,21 @@
+The Eastern Lobe / 2000–2014
+Independent scene code and score by GPT-6.1 Sol, high reasoning. Style contract Lemomo / LemoLab, MIT: https://github.com/lemomo-ai/lemo-opuscar
+No upstream demo scene code used. Three.js and core rendering utilities, MIT.
+Actual evidence assets and licenses:
+# Prepared evidence assets
+
+{
+  "slug": "satellite-briefing",
+  "source": "https://earthobservatory.nasa.gov/images/84437/the-aral-sea-loses-its-eastern-lobe",
+  "links": [
+    "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/84000/84437/aralsea_tmo_2014231.jpg",
+    "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/84000/84437/aralsea_tmo_2014231.jpg",
+    "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/84000/84437/aralsea_tmo_2000238.jpg",
+    "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/84000/84437/aralsea_tmo_2000238.jpg",
+    "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/84000/84437/aralsea_tmo_2014231_lrg.jpg",
+    "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/84000/84437/aralsea_tmo_2014231_lrg.jpg",
+    "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/84000/84437/aralsea_tmo_2000238_lrg.jpg",
+    "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/imagerecords/84000/84437/aralsea_tmo_2000238_lrg.jpg"
+  ],
+  "license": "NASA imagery/public domain, credit NASA Earth Observatory/Jesse Allen; dates and MODIS data as caption."
+}

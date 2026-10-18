@@ -1,0 +1,29 @@
+{
+  "slug": "art-deco",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "8e0ffc3b78d226dcabf85bf9eecebff4ad7119024b3ea271136214b1ea15440a",
+  "video_sha256": "e8b8522f0352df1105fe832a8f6178f95b2bc4635831896b8fbfcc6a60a027aa",
+  "bytes": 2043099,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Midnight Delivery",
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. ",
+  "updated_at": "2026-10-18T03:08:02Z"
+}

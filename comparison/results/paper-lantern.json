@@ -1,0 +1,29 @@
+{
+  "slug": "paper-lantern",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "4f976e2a995566394a771b9ec4b7b8b4856626b7fa6633c1d667db9494548840",
+  "video_sha256": "026e6045acc0667a13fa571821f9ee4f762e9270a3d2a8397d97f0ee3e0cc11a",
+  "bytes": 2993917,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Two Windows and One Mooncake",
+  "comparison_notes": "Independent 20-second procedural visual study matching the library premise. Original full-length upstream film differs in duration and production scope; this is a qualitative style comparison. No narration.",
+  "updated_at": "2026-10-18T03:06:19Z"
+}

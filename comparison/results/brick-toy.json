@@ -1,0 +1,29 @@
+{
+  "slug": "brick-toy",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "c20e834d32478d01470e9144c73f0dfacc4071762f7b4d72932c66cfcd7c825f",
+  "video_sha256": "c50bc482bb8eb734bda74c7b6d490d95d829e6fc9b50e93c0a301ceeeec04ada",
+  "bytes": 5317915,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "One Spare Stud",
+  "comparison_notes": "Independent twenty-second Three.js film from the original premise; original procedural geometry, materials and instrumental score. Qualitative comparison; durations differ.",
+  "updated_at": "2026-10-18T02:57:02Z"
+}

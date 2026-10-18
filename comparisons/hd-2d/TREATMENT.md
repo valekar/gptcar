@@ -1,0 +1,22 @@
+# The Lampbearer / Last Flame
+
+Three candidate structures:
+1. A girl crosses forest, climbs cliff and relights lighthouse.
+2. One diorama day cycle.
+3. Light passes between three people.
+
+Choose three connected diorama views with one carried light and a final spreading beam.
+
+Benchmark: use the references named in STYLE.md for grammar (material, projection, timing), never their compositions, characters, logos, or melodies. No upstream DEMO.md or demo source was opened.
+
+Arc: A girl crosses forest, climbs cliff and relights lighthouse.
+
+Shot / beat / sound map:
+- 00–06s: High forest tracking: small pixel girl carries a warm lamp through trees. Sound: flute, harp-like pluck and wind.
+- 06–12s: Crane along storm cliff path; flame gutters, sprites step. Sound: pad and rain.
+- 12–16s: Dive closer to lighthouse door; lamp rises toward lens. Sound: near silence then bell.
+- 16–20s: Rising pullback as beacon ignites and shadows swing. Sound: warm organ and bells.
+
+Timing: output 24 fps, 20 seconds. Actions are time functions, with anticipation before each contact and a reading hold after. Two score breaths at 5.5–6.0 and 11.5–12.0 unless the style’s native silence requires a longer interval. Visual subdivisions at integer output frames. No voice. Titles and labels are part of the native medium; no generic subtitle strip. Original procedural score/effects in audio.json follow the shot boundaries.
+
+QA plan: render 2, 10, 17 seconds with the real source, inspect the contact sheet and repair rendering failures. Full movie/audio QA and publishing are parent-owned.

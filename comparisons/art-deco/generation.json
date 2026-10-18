@@ -1,0 +1,24 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Midnight Delivery",
+  "premise": "A grand hotel, 1930: a bellboy races lifts and revolving doors to deliver one letter before midnight.",
+  "duration": 20,
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. ",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    {
+      "type": "font",
+      "name": "Limelight",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/limelight"
+    },
+    {
+      "type": "font",
+      "name": "Cinzel",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/cinzel"
+    }
+  ]
+}

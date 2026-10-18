@@ -1,0 +1,29 @@
+{
+  "slug": "satellite-briefing",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "82065fff3b9402687c62b2dd4f2a2172a895ed20227f9168d96eccd099c6f8a7",
+  "video_sha256": "2a0b5574a90aab901ace1750b4d8d6e4e686487fd69ddc4ce08cc2d16e026d17",
+  "bytes": 6603201,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "The Eastern Lobe / 2000\u20132014",
+  "comparison_notes": "Actual NASA MODIS plates from 2000 and2014; qualitative eastern-lobe comparison, no invented area or recovery measurement. Two dates replace the original longer Landsat history.",
+  "updated_at": "2026-10-18T03:12:49Z"
+}

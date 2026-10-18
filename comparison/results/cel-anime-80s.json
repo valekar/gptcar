@@ -1,0 +1,29 @@
+{
+  "slug": "cel-anime-80s",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "eeb4444d3bc96949d9566140ced4b90dfec6f953f612db3f05ec9045a005e010",
+  "video_sha256": "a448bf31c720e60612843d9c1a6d5ad46511499e9b4f631d9ed591f1c2dd39ea",
+  "bytes": 4963395,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Before the First Light",
+  "comparison_notes": "Independent twenty-second code study of the original style premise. Original procedural score, no narration. Qualitative style comparison; durations differ.",
+  "updated_at": "2026-10-18T02:53:25Z"
+}

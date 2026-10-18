@@ -1,0 +1,18 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Tranquility.log / Reply",
+  "premise": "A moon-base AI wakes after forty years to a signal from Earth, and replies by drawing \u201chome\u201d in characters.",
+  "duration": 20,
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Fictional moon-base AI story; forty-year sleep is fictional.",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    {
+      "type": "font",
+      "name": "VT323",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/vt323"
+    }
+  ]
+}

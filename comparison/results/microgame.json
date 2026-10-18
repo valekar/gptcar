@@ -1,0 +1,29 @@
+{
+  "slug": "microgame",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "d035eef2ce98fe379ba6a8e48827da26a368d2ef2ff2151dd5b6d06810de3914",
+  "video_sha256": "09ad60d8dcfbc1bb7249f82150fc915744df0739bf9d3fbeb95e793858036b95",
+  "bytes": 1090914,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Five-Second Astronaut / Homeward",
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Four original astronaut tasks redrawn in blueprint, pixel, Swiss and flat media. One visible failed aim reduces lives; game sections shorten before landing boss. No game-brand assets.",
+  "updated_at": "2026-10-18T03:09:59Z"
+}

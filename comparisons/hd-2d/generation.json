@@ -1,0 +1,30 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "The Lampbearer / Last Flame",
+  "premise": "The lighthouse goes dark; a girl carries the last flame through a night forest and up the storm cliffs.",
+  "duration": 20,
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Original real 3D diorama with procedural pixel textures, lit/shadow-casting original pixel sprite, practical lights, fog, rain and tilt-shift/bloom post. No upstream demo geometry or textures. Three.js MIT: https://github.com/mrdoob/three.js .",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    {
+      "type": "font",
+      "name": "Cinzel",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/cinzel"
+    },
+    {
+      "type": "font",
+      "name": "IM Fell English",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/imfellenglish"
+    },
+    {
+      "type": "library",
+      "name": "Three.js",
+      "license": "MIT",
+      "source": "https://github.com/mrdoob/three.js"
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "bpm": 114,
+  "notes": [
+    {
+      "t": 0,
+      "duration": 0.55,
+      "midi": 49,
+      "gain": 0.082,
+      "pan": -0.22,
+      "instrument": "bass"
+    },
+    {
+      "t": 0.65,
+      "duration": 0.55,
+      "midi": 45,
+      "gain": 0.094,
+      "pan": 0.0,
+      "instrument": "bass"
+    },
+    {
+      "t": 1.6,
+      "duration": 0.55,
+      "midi": 52,
+      "gain": 0.10600000000000001,
+      "pan": 0.22,
+      "instrument": "bass"
+    },
+    {
+      "t": 2.55,
+      "duration": 0.55,
+      "midi": 47,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "bass"
+    },
+    {
+      "t": 3.7,
+      "duration": 0.55,
+      "midi": 42,
+      "gain": 0.082,
+      "pan": 0.0,
+      "instrument": "bell"
+    },
+    {
+      "t": 4.35,
+      "duration": 0.55,
+      "midi": 49,
+      "gain": 0.094,
+      "pan": 0.22,
+      "instrument": "bass"
+    },
+    {
+      "t": 5.4,
+      "duration": 0.55,
+      "midi": 45,
+      "gain": 0.10600000000000001,
+      "pan": -0.22,
+      "instrument": "bass"
+    },
+    {
+      "t": 6.1,
+      "duration": 0.55,
+      "midi": 52,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "bass"
+    },
+    {
+      "t": 6.8,
+      "duration": 0.55,
+      "midi": 47,
+      "gain": 0.082,
+      "pan": 0.22,
+      "instrument": "bass"
+    },
+    {
+      "t": 7.9,
+      "duration": 0.55,
+      "midi": 42,
+      "gain": 0.094,
+      "pan": -0.22,
+      "instrument": "bass"
+    },
+    {
+      "t": 8.55,
+      "duration": 0.55,
+      "midi": 49,
+      "gain": 0.10600000000000001,
+      "pan": 0.0,
+      "instrument": "bell"
+    },
+    {
+      "t": 9.4,
+      "duration": 0.55,
+      "midi": 45,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "bass"
+    },
+    {
+      "t": 11.6,
+      "duration": 0.48,
+      "midi": 52,
+      "gain": 0.082,
+      "pan": -0.22,
+      "instrument": "bass"
+    },
+    {
+      "t": 12,
+      "duration": 0.48,
+      "midi": 47,
+      "gain": 0.094,
+      "pan": 0.0,
+      "instrument": "bass"
+    },
+    {
+      "t": 12.45,
+      "duration": 0.48,
+      "midi": 42,
+      "gain": 0.10600000000000001,
+      "pan": 0.22,
+      "instrument": "bass"
+    },
+    {
+      "t": 13.05,
+      "duration": 0.48,
+      "midi": 49,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "bell"
+    },
+    {
+      "t": 13.7,
+      "duration": 0.48,
+      "midi": 45,
+      "gain": 0.082,
+      "pan": 0.0,
+      "instrument": "bass"
+    },
+    {
+      "t": 14,
+      "duration": 1.9,
+      "midi": 48,
+      "gain": 0.16,
+      "pan": 0,
+      "instrument": "bell"
+    },
+    {
+      "t": 14.6,
+      "duration": 0.48,
+      "midi": 52,
+      "gain": 0.094,
+      "pan": 0.22,
+      "instrument": "bass"
+    },
+    {
+      "t": 15.45,
+      "duration": 0.48,
+      "midi": 59,
+      "gain": 0.10600000000000001,
+      "pan": -0.22,
+      "instrument": "bass"
+    },
+    {
+      "t": 16.1,
+      "duration": 0.48,
+      "midi": 54,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "bass"
+    },
+    {
+      "t": 17.65,
+      "duration": 0.48,
+      "midi": 61,
+      "gain": 0.082,
+      "pan": 0.22,
+      "instrument": "bell"
+    },
+    {
+      "t": 18.3,
+      "duration": 0.48,
+      "midi": 57,
+      "gain": 0.094,
+      "pan": -0.22,
+      "instrument": "bass"
+    },
+    {
+      "t": 19.1,
+      "duration": 0.48,
+      "midi": 64,
+      "gain": 0.10600000000000001,
+      "pan": 0.0,
+      "instrument": "bell"
+    }
+  ],
+  "effects": [
+    {
+      "t": 0,
+      "kind": "scratch",
+      "duration": 1,
+      "gain": 0.07,
+      "pan": -0.3
+    },
+    {
+      "t": 3.7,
+      "kind": "scratch",
+      "duration": 0.4,
+      "gain": 0.06,
+      "pan": 0.21
+    },
+    {
+      "t": 5,
+      "kind": "paper",
+      "duration": 0.3,
+      "gain": 0.1,
+      "pan": 0.0
+    },
+    {
+      "t": 6,
+      "kind": "scratch",
+      "duration": 0.7,
+      "gain": 0.075,
+      "pan": -0.3
+    },
+    {
+      "t": 7,
+      "kind": "rain",
+      "duration": 1.9,
+      "gain": 0.05,
+      "pan": 0.0
+    },
+    {
+      "t": 9.4,
+      "kind": "click",
+      "duration": 0.1,
+      "gain": 0.05,
+      "pan": 0.12
+    },
+    {
+      "t": 10,
+      "kind": "paper",
+      "duration": 0.3,
+      "gain": 0.09,
+      "pan": -0.3
+    },
+    {
+      "t": 12,
+      "kind": "scratch",
+      "duration": 0.5,
+      "gain": 0.06,
+      "pan": -0.3
+    },
+    {
+      "t": 14,
+      "kind": "hit",
+      "duration": 0.3,
+      "gain": 0.16,
+      "pan": -0.3
+    },
+    {
+      "t": 14,
+      "kind": "chime",
+      "duration": 1.8,
+      "gain": 0.16,
+      "pan": -0.3
+    },
+    {
+      "t": 18.3,
+      "kind": "wind",
+      "duration": 1.1,
+      "gain": 0.025,
+      "pan": -0.21
+    }
+  ]
+}

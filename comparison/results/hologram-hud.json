@@ -1,0 +1,29 @@
+{
+  "slug": "hologram-hud",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "22f5567200266055c942fcc0dedaeb8b2b05a4115d1e752081ee67443e29d6e4",
+  "video_sha256": "a43d7addd8d67fcabf525b0e0073f4a499a290addb5e705219a43273e3ebb748",
+  "bytes": 4224165,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Volt / Concept Spec Scan",
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Original fictional Volt e-bike, stylized procedural wireframe; 360 Wh, 250 W and 180 mm are explicitly labelled CONCEPT design targets, not measured production specs. FACTS.md discloses this.",
+  "updated_at": "2026-10-18T03:09:33Z"
+}

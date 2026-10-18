@@ -1,0 +1,29 @@
+{
+  "slug": "engraving",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "75e8f7d0fdab8abd22f02a0101b8c44e28dd429e7051770ced9c2473c6d6cd9d",
+  "video_sha256": "3f23bde12d05acd72e6b82715c476936c087f35dfd51e175c6c2a6776e5eeedb",
+  "bytes": 9566148,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "A Bee Earns Its Colour",
+  "comparison_notes": "Independent 20-second procedural visual study matching the library premise. Original full-length upstream film differs in duration and production scope; this is a qualitative style comparison. No narration.",
+  "updated_at": "2026-10-18T03:04:32Z"
+}

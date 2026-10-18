@@ -1,0 +1,16 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "The Eastern Lobe / 2000\u20132014",
+  "premise": "A continuous dive into the actual Aral Sea MODIS plates compares the eastern lobe in 2000 and 2014.",
+  "duration": 20,
+  "comparison_notes": "Actual NASA MODIS plates from 2000 and2014; qualitative eastern-lobe comparison, no invented area or recovery measurement. Two dates replace the original longer Landsat history.",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    "assets/aralsea_tmo_2014231_lrg.jpg",
+    "assets/aralsea_tmo_2000238.jpg",
+    "assets/aralsea_tmo_2000238_lrg.jpg",
+    "assets/aralsea_tmo_2014231.jpg"
+  ]
+}

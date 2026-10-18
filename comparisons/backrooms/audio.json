@@ -1,0 +1,83 @@
+{
+  "bpm": 100,
+  "notes": [
+    {
+      "t": 1.2,
+      "duration": 0.13,
+      "midi": 77,
+      "gain": 0.023,
+      "pan": -0.25,
+      "instrument": "bell"
+    },
+    {
+      "t": 1.43,
+      "duration": 0.18,
+      "midi": 72,
+      "gain": 0.018,
+      "pan": 0.25,
+      "instrument": "bell"
+    }
+  ],
+  "effects": [
+    {
+      "t": 0,
+      "kind": "wind",
+      "duration": 5.5,
+      "gain": 0.025
+    },
+    {
+      "t": 6,
+      "kind": "wind",
+      "duration": 5,
+      "gain": 0.025
+    },
+    {
+      "t": 15,
+      "kind": "wind",
+      "duration": 4.8,
+      "gain": 0.025
+    },
+    {
+      "t": 2,
+      "kind": "click",
+      "duration": 0.13,
+      "gain": 0.025
+    },
+    {
+      "t": 3.6,
+      "kind": "click",
+      "duration": 0.13,
+      "gain": 0.025
+    },
+    {
+      "t": 6,
+      "kind": "click",
+      "duration": 0.13,
+      "gain": 0.025
+    },
+    {
+      "t": 8,
+      "kind": "click",
+      "duration": 0.13,
+      "gain": 0.025
+    },
+    {
+      "t": 11,
+      "kind": "click",
+      "duration": 0.13,
+      "gain": 0.025
+    },
+    {
+      "t": 15,
+      "kind": "click",
+      "duration": 0.13,
+      "gain": 0.025
+    },
+    {
+      "t": 17,
+      "kind": "click",
+      "duration": 0.13,
+      "gain": 0.025
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "name": "codexcar",
-  "version": "0.1.0",
+  "name": "gptcar",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "description": "Codex-ready adaptation of Lemo-Opuscar: 51 code-rendered film styles and a shared production toolkit.",
@@ -13,9 +13,11 @@
     "three": "^0.170.0"
   },
   "scripts": {
-    "check": "python3 tools/check_codexcar.py",
+    "check": "python3 tools/check_gptcar.py",
     "test": "python3 -m unittest discover -s tests -v",
     "setup": "sh tools/setup.sh deps",
-    "setup:check": "sh tools/setup.sh check"
+    "setup:check": "sh tools/setup.sh check",
+    "gallery:build": "python3 tools/build_comparison.py",
+    "gallery:preview": "python3 tools/build_comparison.py --preview"
   }
 }

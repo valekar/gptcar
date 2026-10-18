@@ -1,0 +1,29 @@
+{
+  "slug": "paper-popup",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "55f42f87427d11bab6a28e41f73ea765bed4def8e9beb76913c27d744db2edc6",
+  "video_sha256": "c78ad3605284376d8121add2a4e344e8bdf1bf58a5a3f9cca0e4d5bd52a33d8f",
+  "bytes": 5138111,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Pip Beyond the Page",
+  "comparison_notes": "Independent twenty-second Three.js film from the original premise; original procedural geometry, materials and instrumental score. Qualitative comparison; durations differ.",
+  "updated_at": "2026-10-18T02:57:15Z"
+}

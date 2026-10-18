@@ -1,0 +1,29 @@
+{
+  "slug": "risograph",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "2dd2ea3f5024ffd082886d13b75676452e128ad7026772c5d98634d4969868fa",
+  "video_sha256": "4ed3d53bc9f8b85d0c740953e67d867805a3c8edcf73e77918051a00ef64c2d5",
+  "bytes": 17856082,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "The Sunday Loop",
+  "comparison_notes": "Independent 20-second procedural visual study matching the library premise. Original full-length upstream film differs in duration and production scope; this is a qualitative style comparison. No narration.",
+  "updated_at": "2026-10-18T03:11:29Z"
+}

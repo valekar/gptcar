@@ -1,0 +1,29 @@
+{
+  "slug": "pixel-rpg",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "7e4665b30200a6f34b7c9b962849c5fcb683159ccd980b8d1edbbf6fa8f31cb6",
+  "video_sha256": "e4905cd0f55791c5821e0e50589b606ee79fca017f3024e2f8fdff8dc5ef6d96",
+  "bytes": 717575,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "The Last Save Point / Remember",
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Native 320\u00d7180 indexed framebuffer, original 32-colour palette and hand-authored pixel font/sprites. Three save-memory locations; protected scarf red survives palette reduction.",
+  "updated_at": "2026-10-18T03:10:13Z"
+}

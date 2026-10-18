@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "The Last Save Point / Remember",
+  "premise": "At the final boss door a hero saves the game, and the save screen replays the whole journey.",
+  "duration": 20,
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Native 320\u00d7180 indexed framebuffer, original 32-colour palette and hand-authored pixel font/sprites. Three save-memory locations; protected scarf red survives palette reduction.",
+  "uses_upstream_demo_code": false,
+  "assets": []
+}

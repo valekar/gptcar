@@ -1,0 +1,29 @@
+{
+  "slug": "halftone-dossier",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "b2df978af127bbd61986e4eacbfb2cc741232bce0daad10ca0879a651bb19198",
+  "video_sha256": "cdc9b6c5b1d6725125a2ea156ee4ec1510c6e753faea85f4cd787f3ac110cae9",
+  "bytes": 6084320,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Gravity, Exhibit A",
+  "comparison_notes": "Independent 20-second procedural visual study matching the library premise. Original full-length upstream film differs in duration and production scope; this is a qualitative style comparison. No narration.",
+  "updated_at": "2026-10-18T03:04:57Z"
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "pictogram-motion",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "d5a6488f5080311f2335b2e2c20708256c5877e89a0bfa24adf584b9b6d47129",
+  "video_sha256": "d00641276ee8d2eb19f76f88a8e4d7b667127da4b82c6fa45a9cfba61687a546",
+  "bytes": 2228253,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Motion / Selected Sports",
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. 20-second selected-sports study (running, archery and swimming), not all 43 sports; original generic sport pictograms and identity. No real event brand or emblem.",
+  "updated_at": "2026-10-18T03:10:13Z"
+}

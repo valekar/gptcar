@@ -1,4 +1,4 @@
-Codex Car is an independent adaptation of Lemo-Opuscar by Lemomo / LemoLab.
+GPTcar is an independent adaptation of Lemo-Opuscar by Lemomo / LemoLab.
 Upstream: https://github.com/lemomo-ai/lemo-opuscar
 Baseline: ded40b25679fe5d5dcfc07a282a25da1ceee3be1 (reviewed 2026-10-18).
 
@@ -6,11 +6,11 @@ The original 51 style prompts, production guides, toolkit, gallery and demo
 films were created by the upstream contributors. The demos were authored with
 Claude Opus 5.5; they are not evidence of Codex-generated output.
 
-The Codex Car adaptation adds Codex skill discovery, setup and installation,
+The GPTcar adaptation adds Codex skill discovery, setup and installation,
 compatibility documentation and validation. Original copyright notices and
 the MIT license are retained in LICENSE. Third-party assets retain their own
 licenses; consult each demo's CREDITS and the asset source notices.
 
-Codex Car is not an official OpenAI, Anthropic or LemoLab product.
+GPTcar is not an official OpenAI, Anthropic or LemoLab product.
 Historical Claude plugin files and gallery pages remain upstream artifacts;
-the Codex entry point is .agents/skills/codexcar/SKILL.md.
+the Codex entry point is .agents/skills/gptcar/SKILL.md.

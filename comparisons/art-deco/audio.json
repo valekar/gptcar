@@ -1,0 +1,433 @@
+{
+  "bpm": 120,
+  "notes": [
+    {
+      "t": 0.0,
+      "duration": 0.7,
+      "midi": 60,
+      "gain": 0.095,
+      "pan": -0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 0.0,
+      "duration": 0.85,
+      "midi": 48,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "bass"
+    },
+    {
+      "t": 0.5,
+      "duration": 0.325,
+      "midi": 64,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "felt"
+    },
+    {
+      "t": 1.0,
+      "duration": 0.325,
+      "midi": 67,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 1.5,
+      "duration": 0.325,
+      "midi": 69,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 2.0,
+      "duration": 0.7,
+      "midi": 67,
+      "gain": 0.095,
+      "pan": 0.0,
+      "instrument": "felt"
+    },
+    {
+      "t": 2.0,
+      "duration": 0.85,
+      "midi": 52,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "bass"
+    },
+    {
+      "t": 2.5,
+      "duration": 0.325,
+      "midi": 64,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 3.0,
+      "duration": 0.325,
+      "midi": 60,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 3.5,
+      "duration": 0.325,
+      "midi": 64,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "felt"
+    },
+    {
+      "t": 4.0,
+      "duration": 0.7,
+      "midi": 69,
+      "gain": 0.095,
+      "pan": 0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 4.0,
+      "duration": 0.85,
+      "midi": 55,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "bass"
+    },
+    {
+      "t": 4.5,
+      "duration": 0.325,
+      "midi": 67,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 5.0,
+      "duration": 0.325,
+      "midi": 64,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "felt"
+    },
+    {
+      "t": 6.0,
+      "duration": 0.7,
+      "midi": 64,
+      "gain": 0.095,
+      "pan": -0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 6.0,
+      "duration": 0.85,
+      "midi": 57,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "bass"
+    },
+    {
+      "t": 6.5,
+      "duration": 0.325,
+      "midi": 67,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "felt"
+    },
+    {
+      "t": 7.0,
+      "duration": 0.325,
+      "midi": 69,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 7.5,
+      "duration": 0.325,
+      "midi": 67,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 8.0,
+      "duration": 0.7,
+      "midi": 60,
+      "gain": 0.095,
+      "pan": 0.0,
+      "instrument": "felt"
+    },
+    {
+      "t": 8.0,
+      "duration": 0.85,
+      "midi": 55,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "bass"
+    },
+    {
+      "t": 8.5,
+      "duration": 0.325,
+      "midi": 64,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 9.0,
+      "duration": 0.325,
+      "midi": 67,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 9.5,
+      "duration": 0.325,
+      "midi": 69,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "felt"
+    },
+    {
+      "t": 10.0,
+      "duration": 0.7,
+      "midi": 67,
+      "gain": 0.095,
+      "pan": 0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 10.0,
+      "duration": 0.85,
+      "midi": 52,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "bass"
+    },
+    {
+      "t": 10.5,
+      "duration": 0.325,
+      "midi": 64,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 11.0,
+      "duration": 0.325,
+      "midi": 60,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "felt"
+    },
+    {
+      "t": 12.0,
+      "duration": 0.7,
+      "midi": 69,
+      "gain": 0.095,
+      "pan": -0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 12.0,
+      "duration": 0.85,
+      "midi": 48,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "bass"
+    },
+    {
+      "t": 12.5,
+      "duration": 0.325,
+      "midi": 67,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "felt"
+    },
+    {
+      "t": 13.0,
+      "duration": 0.325,
+      "midi": 64,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 13.5,
+      "duration": 0.325,
+      "midi": 60,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 14.0,
+      "duration": 0.7,
+      "midi": 64,
+      "gain": 0.095,
+      "pan": 0.0,
+      "instrument": "felt"
+    },
+    {
+      "t": 14.0,
+      "duration": 0.85,
+      "midi": 52,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "bass"
+    },
+    {
+      "t": 14.5,
+      "duration": 0.325,
+      "midi": 67,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 15.0,
+      "duration": 0.325,
+      "midi": 69,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 15.5,
+      "duration": 0.325,
+      "midi": 67,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "felt"
+    },
+    {
+      "t": 16.0,
+      "duration": 0.7,
+      "midi": 60,
+      "gain": 0.095,
+      "pan": 0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 16.0,
+      "duration": 0.85,
+      "midi": 55,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "bass"
+    },
+    {
+      "t": 16.5,
+      "duration": 0.325,
+      "midi": 64,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 17.0,
+      "duration": 0.325,
+      "midi": 67,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "felt"
+    },
+    {
+      "t": 17.5,
+      "duration": 0.325,
+      "midi": 69,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 18.0,
+      "duration": 0.7,
+      "midi": 67,
+      "gain": 0.095,
+      "pan": -0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 18.0,
+      "duration": 0.85,
+      "midi": 57,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "bass"
+    },
+    {
+      "t": 18.5,
+      "duration": 0.325,
+      "midi": 64,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "felt"
+    },
+    {
+      "t": 19.0,
+      "duration": 0.325,
+      "midi": 60,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "felt"
+    },
+    {
+      "t": 19.5,
+      "duration": 0.325,
+      "midi": 64,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "felt"
+    }
+  ],
+  "effects": [
+    {
+      "t": 0,
+      "kind": "click",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 6,
+      "kind": "click",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 8,
+      "kind": "click",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 10,
+      "kind": "click",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 12,
+      "kind": "click",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 16,
+      "kind": "click",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 18,
+      "kind": "click",
+      "duration": 0.22,
+      "gain": 0.1
+    }
+  ]
+}

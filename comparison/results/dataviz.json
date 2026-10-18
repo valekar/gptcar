@@ -1,0 +1,29 @@
+{
+  "slug": "dataviz",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "3a9821abc86f0fa8f7e477915e11e030ab2d8e331d215ca95158c8eeb01a37fc",
+  "video_sha256": "0c0fcd79ecff3bf025aa0bdfa7fbe65c15f688fe56bb5b34d6ee90344f3a4b3e",
+  "bytes": 1298174,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "A Hundred Summers / Global June\u2013August",
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Global June\u2013August anomalies for 1925\u20132024 from NASA GISS/GISTEMP v4; all 100 published JJA values preserved, baseline 1951\u20131980. NASA data public domain with attribution; FACTS.md and frozen CSV included.",
+  "updated_at": "2026-10-18T03:08:52Z"
+}

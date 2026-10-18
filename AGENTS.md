@@ -1,6 +1,6 @@
-# Codex Car: instructions for agents
+# GPTcar: instructions for agents
 
-Codex Car is a Codex adaptation of the Lemo-Opuscar film-style library. Use `$codexcar` for this workflow. The original demos are by Lemomo/LemoLab using Claude Opus 5.5; do not relabel them as Codex work. See `NOTICE` and `docs/COMPATIBILITY.md`.
+GPTcar is a Codex adaptation of the Lemo-Opuscar film-style library. Use `$gptcar` for this workflow. The original demos are by Lemomo/LemoLab using Claude Opus 5.5; do not relabel them as Codex work. See `NOTICE` and `docs/COMPATIBILITY.md`.
 
 This repository is a library of film styles. Each style has a `styles/<slug>/STYLE.md` (what the style is) and one demo film made entirely in code (`DEMO.md` and `demo/`). People pick a style and ask for a film about **their own** topic. Your job is to direct and produce that film.
 
@@ -76,5 +76,5 @@ Report progress in the user's language. If a step fails, read the error, fix the
 
 - No particular language model is hardcoded. Select GPT-6.1 Sol or another available model in Codex; visual quality requires evaluation on the actual film.
 - The renderer runs local code and needs a shell, a headless browser, ffmpeg and Python. A text-only chat cannot render a film by loading these prompts alone.
-- Use the renderer chosen by the user. If a host has an existing mandatory video workflow (such as HyperFrames), follow that host routing and use these STYLE.md files as art direction unless the user explicitly selects the Codex Car renderer. Do not promise automatic renderer interchangeability.
+- Use the renderer chosen by the user. If a host has an existing mandatory video workflow (such as HyperFrames), follow that host routing and use these STYLE.md files as art direction unless the user explicitly selects the GPTcar renderer. Do not promise automatic renderer interchangeability.
 - Publishing a user film requires a user request. Building a film does not authorize uploading it.

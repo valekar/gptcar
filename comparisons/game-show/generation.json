@@ -1,0 +1,18 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Rhythm of AI / Three Milestones",
+  "premise": "The history of AI as a rhythm game: models take the stage on the beat, and a report card closes the show.",
+  "duration": 20,
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Selective history: 1997 chess match, 2016 Go match and 2022 ChatGPT introduction. FACTS.md links IBM, Google DeepMind and OpenAI primary sources. Original toy stand-ins; no logos or claims of a complete 1997\u20132026 chronology.",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    {
+      "type": "font",
+      "name": "Fredoka",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/fredoka"
+    }
+  ]
+}

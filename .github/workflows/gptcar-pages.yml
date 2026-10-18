@@ -1,0 +1,40 @@
+name: GPTcar comparison gallery
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: gptcar-pages
+  cancel-in-progress: true
+jobs:
+  build:
+    if: github.repository == 'valekar/gptcar'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download verified GPT films and posters
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p .release/comparison/posters
+          gh release download comparison-v1 --repo "$GITHUB_REPOSITORY" --pattern '*.mp4' --dir .release/comparison
+          gh release download comparison-v1 --repo "$GITHUB_REPOSITORY" --pattern '*.jpg' --dir .release/comparison/posters
+      - run: python3 tools/build_comparison.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

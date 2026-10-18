@@ -1,0 +1,5 @@
+Original code, composition and sound-event design: GPT-6.1 Sol, high reasoning effort.
+Independent 20-second GPTcar comparison study. No upstream demo source used.
+Style direction: Lemomo / LemoLab, Lemo-Opuscar, MIT; https://github.com/lemomo-ai/lemo-opuscar (see repository NOTICE/LICENSE for original attribution).
+All illustration, sprites, geometry and music events are original procedural code.
+No external images, bitmap artwork or video. Native 320×180 indexed framebuffer, original 32-colour palette and hand-authored pixel font/sprites. Three save-memory locations; protected scarf red survives palette reduction.

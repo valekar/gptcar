@@ -1,4 +1,0 @@
-interface:
-  display_name: "Codex Car"
-  short_description: "Make code-rendered films in 51 visual styles"
-  default_prompt: "Use $codexcar to help me choose a film style and produce a short film about my topic."

@@ -1,0 +1,675 @@
+{
+  "bpm": 144,
+  "notes": [
+    {
+      "t": 0.0,
+      "duration": 0.583,
+      "midi": 60,
+      "gain": 0.095,
+      "pan": -0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 0.0,
+      "duration": 0.7083333333333334,
+      "midi": 48,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "pluck"
+    },
+    {
+      "t": 0.4167,
+      "duration": 0.271,
+      "midi": 64,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "pluck"
+    },
+    {
+      "t": 0.8333,
+      "duration": 0.271,
+      "midi": 67,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 1.25,
+      "duration": 0.271,
+      "midi": 72,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 1.6667,
+      "duration": 0.583,
+      "midi": 74,
+      "gain": 0.095,
+      "pan": 0.0,
+      "instrument": "pluck"
+    },
+    {
+      "t": 1.6667,
+      "duration": 0.7083333333333334,
+      "midi": 52,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "pluck"
+    },
+    {
+      "t": 2.0833,
+      "duration": 0.271,
+      "midi": 76,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 2.5,
+      "duration": 0.271,
+      "midi": 60,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 2.9167,
+      "duration": 0.271,
+      "midi": 64,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "pluck"
+    },
+    {
+      "t": 3.3333,
+      "duration": 0.583,
+      "midi": 72,
+      "gain": 0.095,
+      "pan": 0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 3.3333,
+      "duration": 0.7083333333333334,
+      "midi": 55,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "pluck"
+    },
+    {
+      "t": 3.75,
+      "duration": 0.271,
+      "midi": 74,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 4.1667,
+      "duration": 0.271,
+      "midi": 76,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "pluck"
+    },
+    {
+      "t": 4.5833,
+      "duration": 0.271,
+      "midi": 60,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 5.0,
+      "duration": 0.583,
+      "midi": 64,
+      "gain": 0.07600000000000001,
+      "pan": -0.22,
+      "instrument": "chip"
+    },
+    {
+      "t": 5.0,
+      "duration": 0.7083333333333334,
+      "midi": 60,
+      "gain": 0.05600000000000001,
+      "pan": 0,
+      "instrument": "chip"
+    },
+    {
+      "t": 5.4167,
+      "duration": 0.271,
+      "midi": 67,
+      "gain": 0.05600000000000001,
+      "pan": 0.0,
+      "instrument": "chip"
+    },
+    {
+      "t": 6.25,
+      "duration": 0.271,
+      "midi": 74,
+      "gain": 0.05600000000000001,
+      "pan": -0.22,
+      "instrument": "chip"
+    },
+    {
+      "t": 6.6667,
+      "duration": 0.583,
+      "midi": 60,
+      "gain": 0.07600000000000001,
+      "pan": 0.0,
+      "instrument": "chip"
+    },
+    {
+      "t": 6.6667,
+      "duration": 0.7083333333333334,
+      "midi": 62,
+      "gain": 0.05600000000000001,
+      "pan": 0,
+      "instrument": "chip"
+    },
+    {
+      "t": 7.0833,
+      "duration": 0.271,
+      "midi": 64,
+      "gain": 0.05600000000000001,
+      "pan": 0.22,
+      "instrument": "chip"
+    },
+    {
+      "t": 7.5,
+      "duration": 0.271,
+      "midi": 67,
+      "gain": 0.05600000000000001,
+      "pan": -0.22,
+      "instrument": "chip"
+    },
+    {
+      "t": 7.9167,
+      "duration": 0.271,
+      "midi": 72,
+      "gain": 0.05600000000000001,
+      "pan": 0.0,
+      "instrument": "chip"
+    },
+    {
+      "t": 8.3333,
+      "duration": 0.583,
+      "midi": 74,
+      "gain": 0.07600000000000001,
+      "pan": 0.22,
+      "instrument": "chip"
+    },
+    {
+      "t": 8.3333,
+      "duration": 0.7083333333333334,
+      "midi": 64,
+      "gain": 0.05600000000000001,
+      "pan": 0,
+      "instrument": "chip"
+    },
+    {
+      "t": 8.75,
+      "duration": 0.271,
+      "midi": 76,
+      "gain": 0.05600000000000001,
+      "pan": -0.22,
+      "instrument": "chip"
+    },
+    {
+      "t": 9.1667,
+      "duration": 0.271,
+      "midi": 60,
+      "gain": 0.05600000000000001,
+      "pan": 0.0,
+      "instrument": "chip"
+    },
+    {
+      "t": 9.5833,
+      "duration": 0.271,
+      "midi": 64,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 9.7916,
+      "duration": 0.13,
+      "midi": 64,
+      "gain": 0.049,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 10.0,
+      "duration": 0.583,
+      "midi": 72,
+      "gain": 0.095,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 10.0,
+      "duration": 0.7083333333333334,
+      "midi": 48,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 10.4167,
+      "duration": 0.271,
+      "midi": 74,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 10.625,
+      "duration": 0.13,
+      "midi": 74,
+      "gain": 0.049,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 10.8333,
+      "duration": 0.271,
+      "midi": 76,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 11.0416,
+      "duration": 0.13,
+      "midi": 76,
+      "gain": 0.049,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 11.25,
+      "duration": 0.271,
+      "midi": 60,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 11.4583,
+      "duration": 0.13,
+      "midi": 60,
+      "gain": 0.049,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 12.0833,
+      "duration": 0.271,
+      "midi": 67,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 12.2916,
+      "duration": 0.13,
+      "midi": 67,
+      "gain": 0.049,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 12.5,
+      "duration": 0.271,
+      "midi": 72,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 12.7083,
+      "duration": 0.13,
+      "midi": 72,
+      "gain": 0.049,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 12.9167,
+      "duration": 0.271,
+      "midi": 74,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 13.125,
+      "duration": 0.13,
+      "midi": 74,
+      "gain": 0.049,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 13.3333,
+      "duration": 0.583,
+      "midi": 60,
+      "gain": 0.095,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 13.3333,
+      "duration": 0.7083333333333334,
+      "midi": 55,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 13.75,
+      "duration": 0.271,
+      "midi": 64,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "brass"
+    },
+    {
+      "t": 13.9583,
+      "duration": 0.13,
+      "midi": 64,
+      "gain": 0.049,
+      "pan": -0.22,
+      "instrument": "brass"
+    },
+    {
+      "t": 14.1667,
+      "duration": 0.271,
+      "midi": 67,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "brass"
+    },
+    {
+      "t": 14.375,
+      "duration": 0.13,
+      "midi": 67,
+      "gain": 0.049,
+      "pan": 0.0,
+      "instrument": "brass"
+    },
+    {
+      "t": 14.5833,
+      "duration": 0.271,
+      "midi": 72,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "brass"
+    },
+    {
+      "t": 14.7916,
+      "duration": 0.13,
+      "midi": 72,
+      "gain": 0.049,
+      "pan": 0.22,
+      "instrument": "brass"
+    },
+    {
+      "t": 15.0,
+      "duration": 0.583,
+      "midi": 74,
+      "gain": 0.095,
+      "pan": -0.22,
+      "instrument": "brass"
+    },
+    {
+      "t": 15.0,
+      "duration": 0.7083333333333334,
+      "midi": 60,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "brass"
+    },
+    {
+      "t": 15.4167,
+      "duration": 0.271,
+      "midi": 76,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "brass"
+    },
+    {
+      "t": 15.625,
+      "duration": 0.13,
+      "midi": 76,
+      "gain": 0.049,
+      "pan": 0.0,
+      "instrument": "brass"
+    },
+    {
+      "t": 15.8333,
+      "duration": 0.271,
+      "midi": 60,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "brass"
+    },
+    {
+      "t": 16.0416,
+      "duration": 0.13,
+      "midi": 60,
+      "gain": 0.049,
+      "pan": 0.22,
+      "instrument": "brass"
+    },
+    {
+      "t": 16.25,
+      "duration": 0.271,
+      "midi": 64,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "brass"
+    },
+    {
+      "t": 16.4583,
+      "duration": 0.13,
+      "midi": 64,
+      "gain": 0.049,
+      "pan": -0.22,
+      "instrument": "brass"
+    },
+    {
+      "t": 16.6667,
+      "duration": 0.583,
+      "midi": 72,
+      "gain": 0.095,
+      "pan": 0.0,
+      "instrument": "brass"
+    },
+    {
+      "t": 16.6667,
+      "duration": 0.7083333333333334,
+      "midi": 62,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "brass"
+    },
+    {
+      "t": 17.0833,
+      "duration": 0.271,
+      "midi": 74,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "brass"
+    },
+    {
+      "t": 17.2916,
+      "duration": 0.13,
+      "midi": 74,
+      "gain": 0.049,
+      "pan": 0.22,
+      "instrument": "brass"
+    },
+    {
+      "t": 17.5,
+      "duration": 0.271,
+      "midi": 76,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "brass"
+    },
+    {
+      "t": 17.7083,
+      "duration": 0.13,
+      "midi": 76,
+      "gain": 0.049,
+      "pan": -0.22,
+      "instrument": "brass"
+    },
+    {
+      "t": 17.9167,
+      "duration": 0.271,
+      "midi": 60,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "brass"
+    },
+    {
+      "t": 18.125,
+      "duration": 0.13,
+      "midi": 60,
+      "gain": 0.049,
+      "pan": 0.0,
+      "instrument": "brass"
+    },
+    {
+      "t": 18.3333,
+      "duration": 0.583,
+      "midi": 64,
+      "gain": 0.095,
+      "pan": 0.22,
+      "instrument": "brass"
+    },
+    {
+      "t": 18.3333,
+      "duration": 0.7083333333333334,
+      "midi": 64,
+      "gain": 0.07,
+      "pan": 0,
+      "instrument": "brass"
+    },
+    {
+      "t": 18.75,
+      "duration": 0.271,
+      "midi": 67,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "brass"
+    },
+    {
+      "t": 19.1667,
+      "duration": 0.271,
+      "midi": 72,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "brass"
+    },
+    {
+      "t": 19.5833,
+      "duration": 0.271,
+      "midi": 74,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "brass"
+    }
+  ],
+  "effects": [
+    {
+      "t": 0,
+      "kind": "hit",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 0.55,
+      "kind": "hit",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 3.5,
+      "kind": "hit",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 5,
+      "kind": "hit",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 5.55,
+      "kind": "hit",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 8.2,
+      "kind": "hit",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 9.5,
+      "kind": "hit",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 10.05,
+      "kind": "hit",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 12.3,
+      "kind": "hit",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 13.5,
+      "kind": "hit",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 14.05,
+      "kind": "hit",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 17.8,
+      "kind": "hit",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 18.5,
+      "kind": "hit",
+      "duration": 0.22,
+      "gain": 0.1
+    },
+    {
+      "t": 8.2,
+      "kind": "click",
+      "duration": 0.3,
+      "gain": 0.15
+    }
+  ]
+}

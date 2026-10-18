@@ -1,0 +1,30 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "A Hundred Summers / Global June\u2013August",
+  "premise": "A hundred years of summer temperatures, where the chart itself tells the story.",
+  "duration": 20,
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Global June\u2013August anomalies for 1925\u20132024 from NASA GISS/GISTEMP v4; all 100 published JJA values preserved, baseline 1951\u20131980. NASA data public domain with attribution; FACTS.md and frozen CSV included.",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    {
+      "type": "font",
+      "name": "Newsreader",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/newsreader"
+    },
+    {
+      "type": "font",
+      "name": "JetBrains Mono",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/jetbrainsmono"
+    },
+    {
+      "type": "data",
+      "name": "NASA GISTEMP v4 JJA 1925\u20132024",
+      "license": "US government public domain",
+      "source": "https://data.giss.nasa.gov/gistemp/tabledata_v4/GLB.Ts+dSST.csv"
+    }
+  ]
+}

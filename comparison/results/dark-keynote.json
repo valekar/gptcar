@@ -1,0 +1,29 @@
+{
+  "slug": "dark-keynote",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "d11d2b714d3c763f341921d206f4a4b285cdca8f72efe633098e5e97c00ee706",
+  "video_sha256": "83d13086e808ea8f3d04e17085a2e38c7806174d4d9b025526780ded1582e7e7",
+  "bytes": 3604111,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Tidy / Room to Think",
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Fictional Tidy software. 160/160 counts exactly 160 procedurally drawn UI windows; final 1 denotes one workspace, not a performance claim.",
+  "updated_at": "2026-10-18T03:09:22Z"
+}

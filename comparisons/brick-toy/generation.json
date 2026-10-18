@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "One Spare Stud",
+  "premise": "A brick astronaut assembles a rocket from desk scraps and lands beside a brick moon.",
+  "duration": 20,
+  "comparison_notes": "Independent twenty-second Three.js film from the original premise; original procedural geometry, materials and instrumental score. Qualitative comparison; durations differ.",
+  "uses_upstream_demo_code": false,
+  "assets": []
+}

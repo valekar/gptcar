@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "A Very Long Coffee Run",
+  "premise": "A tired inventor and nervous assistant jump through strange universes for coffee, finally receiving a cup too large to carry.",
+  "duration": 20,
+  "comparison_notes": "Independent twenty-second code study of the original premise. No spoken dialogue; original instrumental score and picture actions. Qualitative comparison, durations differ.",
+  "uses_upstream_demo_code": false,
+  "assets": []
+}

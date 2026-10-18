@@ -1,0 +1,29 @@
+{
+  "slug": "silkscreen-poster",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "e770c9c91f0e2ab2f4d073055acaca3fa319647f99cb62b0c82fe3059e4baf0b",
+  "video_sha256": "caa87d8e5d221d33b8ce12acaa7bf564d1d165a6ab97656b767e19934061fc72",
+  "bytes": 2220624,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Three Trails, Three Pulls",
+  "comparison_notes": "Independent 20-second procedural visual study matching the library premise. Original full-length upstream film differs in duration and production scope; this is a qualitative style comparison. No narration.",
+  "updated_at": "2026-10-18T03:06:56Z"
+}

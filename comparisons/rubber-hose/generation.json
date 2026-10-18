@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Sugar Takes the Stage",
+  "premise": "A coffee cup pursues a sugar cube through the kitchen; the cube turns the chase into a dance.",
+  "duration": 20,
+  "comparison_notes": "Independent twenty-second code study of the original style premise. Original procedural score, no narration. Qualitative style comparison; durations differ.",
+  "uses_upstream_demo_code": false,
+  "assets": []
+}

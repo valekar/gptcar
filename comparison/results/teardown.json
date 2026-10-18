@@ -1,0 +1,29 @@
+{
+  "slug": "teardown",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "84cd8b6f96d1d0818fb77ac1f8f85349a2e7e0d0563bf1e2714d4c03b54ce2d2",
+  "video_sha256": "3790ed524cbcf49716fe4ac46eed7764791ccbef63833e34b78259faa0ffc740",
+  "bytes": 3536182,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Twenty-one Positions",
+  "comparison_notes": "Actual21 Corne switch centres, rotations, source copper segments and full-panel Edge.Cuts raster. Source left panel retained; cap/switch/socket envelopes simplified and disclosed. No case-fit or invented package dimensions claimed.",
+  "updated_at": "2026-10-18T03:13:20Z"
+}

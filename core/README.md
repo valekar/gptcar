@@ -6,7 +6,7 @@ Command reference for `core/` and `tools/`. How the pieces fit together is in [`
 
 | Command | What it does |
 |---|---|
-| `sh tools/setup.sh` | find or clone the Codex Car library; prints `LIB=<path>`; `update` explicitly fast-forwards a clean clone |
+| `sh tools/setup.sh` | find or clone the GPTcar library; prints `LIB=<path>`; `update` explicitly fast-forwards a clean clone |
 | `… setup.sh deps` | core tier: npm packages, headless browser, `.venv` from `requirements.txt` |
 | `… setup.sh deps voice` | adds `requirements-voice.txt` (kokoro-onnx, edge-tts, faster-whisper) and the Kokoro model |
 | `… setup.sh deps music` | adds `requirements-music.txt` (numba, for `pluck.py`; `sampler.py` needs only the core) |
@@ -69,8 +69,8 @@ All four page tools take `--size WxH` (default `1920x1080`, even numbers) and `-
 
 | Variable | Meaning |
 |---|---|
-| `CODEXCAR_HOME` | library location; default: this clone, otherwise `${XDG_DATA_HOME:-$HOME/.local/share}/codexcar` |
-| `CODEXCAR_REPO` | clone URL override; default `https://github.com/valekar/codexcar.git` |
+| `GPTCAR_HOME` | library location; default: this clone, otherwise `${XDG_DATA_HOME:-$HOME/.local/share}/gptcar` |
+| `GPTCAR_REPO` | clone URL override; default `https://github.com/valekar/gptcar.git` |
 | `PLAYWRIGHT_CHROME` | a Chrome / headless-shell executable instead of Playwright's |
 | `LEMO_ANGLE` | WebGL backend (default `metal` on macOS; `default` passes none) |
 | `RENDER_SLOTS` | optional; limits concurrent full renders across processes |

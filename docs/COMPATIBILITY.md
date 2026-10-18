@@ -1,19 +1,19 @@
-# Compatibility review: Lemo-Opuscar → Codex Car
+# Compatibility review: Lemo-Opuscar → GPTcar
 
 Reviewed 18 October 2026 at upstream commit `ded40b25679fe5d5dcfc07a282a25da1ceee3be1`.
 
 ## Decision
 
-The style instructions and code toolkit are reusable with GPT-6.1 Sol in Codex. A separate creative rewrite is not required. The repository already has `AGENTS.md` and tells other agents to copy the main skill into their skill folder. Codex Car provides a convenient Codex entry point, setup and documentation around that reusable content. It is an adaptation, not a newly invented set of styles.
+The style instructions and code toolkit are reusable with GPT-6.1 Sol in Codex. A separate creative rewrite is not required. The repository already has `AGENTS.md` and tells other agents to copy the main skill into their skill folder. GPTcar provides a convenient Codex entry point, setup and documentation around that reusable content. It is an adaptation, not a newly invented set of styles.
 
-This is a compatibility assessment, not a claim that every model reproduces the upstream demos. The upstream author explicitly warns that the prompts were tuned for Opus 5.5. No controlled comparison of complete films across models has been performed here. See [VALIDATION.md](VALIDATION.md) for what was actually executed.
+This is a compatibility assessment, not a claim that every model reproduces the upstream demos. The upstream author explicitly warns that the prompts were tuned for Opus 5.5. No controlled comparison of complete films across models has been performed here. See [VALIDATION.md](VALIDATION.md) and the [51-style run report](../comparison/REPORT.md) for what was actually executed. The published gallery adds independent 20-second GPT-6.1 Sol High studies; it does not establish parity with the full Opus productions.
 
 ## What was reviewed
 
 - `plugin/skills/lemo-opuscar/SKILL.md`: the main skill; its bootstrap downloads the upstream library.
 - `tools/directory/SKILL.md`: an alternate packaging of the same skill, not another creative capability. It ships a bundled library and has extra online narration consent guidance.
 - `AGENTS.md`, `CLAUDE.md`, `DIRECTOR.md`, `TECHNIQUE.md`, core tool documentation, setup scripts, package requirements, asset downloader and gallery workflow.
-- All 51 non-template `styles/*/STYLE.md` files and their metadata. Each full style file was scanned for model/vendor requirements, rendering dependencies and extra package notes; SHA-256 hashes are in `codexcar.json`.
+- All 51 non-template `styles/*/STYLE.md` files and their metadata. Each full style file was scanned for model/vendor requirements, rendering dependencies and extra package notes; SHA-256 hashes are in `gptcar.json`.
 - `styles/_template/` is a maintainer scaffold, excluded from the count. The OPUSCAR 98 JSON contains 98 showcase style breakdowns; these are not 98 standalone installed skills or 98 additional fully packaged production workflows.
 
 ## Model versus agent host
@@ -26,7 +26,7 @@ This is a compatibility assessment, not a claim that every model reproduces the 
 | Plain ChatGPT conversation or a bare model API call | Can reason about the prompts or generate source; cannot run this local pipeline by merely loading a Markdown file. |
 | Another tool-capable coding agent | The creative specs and runtime code are portable; installation, discovery, tool names and permissions need host-specific wiring. |
 
-Official sources: [Codex / ChatGPT skills](https://developers.openai.com/codex/skills), [GPT-6.1 Sol](https://developers.openai.com/api/docs/models/gpt-6.1-sol), [API Skills](https://developers.openai.com/api/docs/guides/tools-skills). These document skills and model/tool capabilities; they do not certify this library's visual quality. A Responses API integration would also need its own shell execution wiring; Codex Car does not implement an OpenAI API client.
+Official sources: [Codex / ChatGPT skills](https://developers.openai.com/codex/skills), [GPT-6.1 Sol](https://developers.openai.com/api/docs/models/gpt-6.1-sol), [API Skills](https://developers.openai.com/api/docs/guides/tools-skills). These document skills and model/tool capabilities; they do not certify this library's visual quality. A Responses API integration would also need its own shell execution wiring; GPTcar does not implement an OpenAI API client.
 
 ## What transfers unchanged
 
@@ -36,23 +36,24 @@ The 8 Evidence Films styles need genuine source material, metadata and measured/
 
 ## Changes in this adaptation
 
-1. A discoverable `.agents/skills/codexcar/SKILL.md`, UI metadata and a no-overwrite symlink installer.
-2. Codex setup that works from the repo, a linked skill or a standalone copied skill. `CODEXCAR_HOME` and `CODEXCAR_REPO` select the library/source. No silent updates, remote changes or hard resets; explicit updates fast-forward a clean matching clone only.
+1. A discoverable `.agents/skills/gptcar/SKILL.md`, UI metadata and a no-overwrite symlink installer.
+2. Codex setup that works from the repo, a linked skill or a standalone copied skill. `GPTCAR_HOME` and `GPTCAR_REPO` select the library/source. No silent updates, remote changes or hard resets; explicit updates fast-forward a clean matching clone only.
 3. Codex-first README files, package naming and setup/error guidance. Original toolkit environment variables such as `LEMO_ANGLE` and `LEMO_COLOR` are preserved to avoid breaking the existing runtime.
 4. Original gallery/Claude publishing artifacts remain attributed; automatic gallery deployment is restricted to the original repository. Codex-specific checks run separately.
 5. Upstream commit and exact style hashes, a complete inventory and setup regression checks. All creative STYLE.md files and demo sources are unchanged.
+6. Independent GPT-6.1 Sol High sample sources in `comparisons/`, a single-page Opus/GPT gallery, checksum-verified media in a GitHub Release, and a publication gate requiring every film and visual review.
 
-The local skill can coexist with HyperFrames. Its original render contract is different from HyperFrames' timed HTML contract: take the style as art direction in an established HyperFrames workflow, or explicitly choose the Codex Car renderer. Rewriting all 51 demos into HyperFrames is a separate project.
+The local skill can coexist with HyperFrames. Its original render contract is different from HyperFrames' timed HTML contract: take the style as art direction in an established HyperFrames workflow, or explicitly choose the GPTcar renderer. Rewriting all 51 demos into HyperFrames is a separate project.
 
 ## Why the original name?
 
 The README identifies the creator as **Lemomo**, GitHub owner `lemomo-ai`, and credits **LemoLab × Claude Opus 5.5**. Thus “Lemo” is the creator/brand prefix. “Opuscar” appears to combine **Opus** with **Oscar**, reinforced by the OPUSCAR 98 showcase of 98 Best Picture winners. That wordplay is an inference; no explicit etymology was found in the reviewed README or guides. “Car” is not documented as a standalone acronym or a software core.
 
-The new project is **Codex Car**, repository slug **codexcar**, as requested. The new name does not erase the MIT copyright or third-party asset credits. The original demos keep their authorship; newly created user films do not need an upstream watermark.
+The new project is **GPTcar**, repository slug **gptcar**, as requested. The new name does not erase the MIT copyright or third-party asset credits. The original demos keep their authorship; newly created user films do not need an upstream watermark.
 
 ## Complete style inventory
 
-Every row below is **instruction-compatible by static review**. “Requirements” describes the technical dependency or quality challenge, not a model restriction. A full film in each style has not been rendered or rated with GPT-6.1 Sol.
+Every row below is **instruction-compatible by static review**. “Requirements” describes the technical dependency or quality challenge, not a model restriction. The later gallery run adds a 20-second GPT-6.1 Sol High study for every style; these compact studies have not been rated as equivalent to the original full films.
 
 | Style | Category | Requirements / review focus |
 | --- | --- | --- |

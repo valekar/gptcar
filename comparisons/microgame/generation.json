@@ -1,0 +1,30 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Five-Second Astronaut / Homeward",
+  "premise": "A clumsy cadet survives a five-second boot camp, faster and faster, until the boss: landing home.",
+  "duration": 20,
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Four original astronaut tasks redrawn in blueprint, pixel, Swiss and flat media. One visible failed aim reduces lives; game sections shorten before landing boss. No game-brand assets.",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    {
+      "type": "font",
+      "name": "Lilita One",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/lilitaone"
+    },
+    {
+      "type": "font",
+      "name": "Inter",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/inter"
+    },
+    {
+      "type": "font",
+      "name": "JetBrains Mono",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/jetbrainsmono"
+    }
+  ]
+}

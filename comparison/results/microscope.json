@@ -1,0 +1,29 @@
+{
+  "slug": "microscope",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "3ef6aa3ba24cf991cee17da3a5f6c55ce223ab858d28317df229e9b6fbbb5630",
+  "video_sha256": "4677a85bdc839535df31e89cbe060d22bd1b0c37431ead29665482ec7442871c",
+  "bytes": 22050572,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Blue, Counted",
+  "comparison_notes": "Same real calibrated PathAI Ventana tissue pyramid with two75\u00b5m-radius ROI measurements:37.34% and49.68% blue-dominant pixels. Different regions/measurement from the upstream film; no clinical inference.",
+  "updated_at": "2026-10-18T03:12:54Z"
+}

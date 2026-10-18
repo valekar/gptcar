@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Notes from the Sea",
+  "premise": "A sea sprouts hexagonal land and a small village on musical notes, then its windows illuminate under stars.",
+  "duration": 20,
+  "comparison_notes": "Independent twenty-second Three.js film of original premise. Material, geometry and camera rendering; original instrumental score. Qualitative comparison, durations differ.",
+  "uses_upstream_demo_code": false,
+  "assets": []
+}

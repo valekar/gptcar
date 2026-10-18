@@ -1,0 +1,17 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "The Clearance Question",
+  "premise": "Real bridge photographs and a ship pinned to a physical briefing wall explain that a navigation envelope must be established before selecting a bridge type.",
+  "duration": 20,
+  "comparison_notes": "Three real bridge photographs and one real ship print form a qualitative type briefing. No project dimensions or clearance verdicts are invented; establish the navigation envelope first.",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    "assets/sources.json",
+    "assets/ship.jpg",
+    "assets/beam.jpg",
+    "assets/cable.jpg",
+    "assets/arch.jpg"
+  ]
+}

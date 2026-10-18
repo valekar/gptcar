@@ -1,0 +1,29 @@
+{
+  "slug": "game-show",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "1830de7521af9824e55c6d7cc23b782240cff8d878afe1f26d4c93a90c88526f",
+  "video_sha256": "bc6cd340fa326beb14551ccb7ff1468db9af6bf0d3ffce3358b0a79391be8375",
+  "bytes": 3027165,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Rhythm of AI / Three Milestones",
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Selective history: 1997 chess match, 2016 Go match and 2022 ChatGPT introduction. FACTS.md links IBM, Google DeepMind and OpenAI primary sources. Original toy stand-ins; no logos or claims of a complete 1997\u20132026 chronology.",
+  "updated_at": "2026-10-18T03:09:11Z"
+}

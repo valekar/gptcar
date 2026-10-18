@@ -1,0 +1,29 @@
+{
+  "slug": "glass-product",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "1b16f359a35f79a2da7eb0c186d0703dd964926e032d9c03505e497a9139ec5b",
+  "video_sha256": "c38e4e3979b5c3026e77aa85217046feda2cc95730c33dd0cfcb0281f259e67d",
+  "bytes": 3831291,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Aura / Light Within",
+  "comparison_notes": "Independent twenty-second Three.js film of original premise. Material, geometry and camera rendering; original instrumental score. Qualitative comparison, durations differ.",
+  "updated_at": "2026-10-18T03:02:14Z"
+}

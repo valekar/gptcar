@@ -1,0 +1,7 @@
+Original code, composition and sound-event design: GPT-6.1 Sol, high reasoning effort.
+Independent 20-second GPTcar comparison study. No upstream demo source used.
+Style direction: Lemomo / LemoLab, Lemo-Opuscar, MIT; https://github.com/lemomo-ai/lemo-opuscar (see repository NOTICE/LICENSE for original attribution).
+All illustration, sprites, geometry and music events are original procedural code.
+Font: VT323; Google Fonts; SIL Open Font License 1.1; https://github.com/google/fonts/tree/main/ofl/vt323
+No external images, bitmap artwork or video. Original 3D office and fictional management rules, VHS pass and camcorder OSD; one continuous route interrupted by tracking damage. No non-diegetic score: audio.json notes are the two-note in-world PA chime only.
+3D engine: Three.js, MIT, https://github.com/mrdoob/three.js . Original procedural texture maps.

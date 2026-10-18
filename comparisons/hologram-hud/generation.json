@@ -1,0 +1,24 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Volt / Concept Spec Scan",
+  "premise": "An e-bike is scanned into a hologram; target boxes lock onto the battery, motor and brakes, and each spec rolls into place.",
+  "duration": 20,
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Original fictional Volt e-bike, stylized procedural wireframe; 360 Wh, 250 W and 180 mm are explicitly labelled CONCEPT design targets, not measured production specs. FACTS.md discloses this.",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    {
+      "type": "font",
+      "name": "Rajdhani",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/rajdhani"
+    },
+    {
+      "type": "font",
+      "name": "Share Tech Mono",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/sharetechmono"
+    }
+  ]
+}

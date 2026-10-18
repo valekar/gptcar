@@ -1,0 +1,29 @@
+{
+  "slug": "tilt-shift",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "125382a345051f0b0408a3555b6e4340de533003eaa85dc3d36a808ce9f6e3d8",
+  "video_sha256": "d93aa10ceeecbbb54bbfc4985c758a9e4b0aea96d4dc37fdc40c07881cfa0517",
+  "bytes": 4154628,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "The Little Rush",
+  "comparison_notes": "Independent twenty-second Three.js film of original premise. Material, geometry and camera rendering; original instrumental score. Qualitative comparison, durations differ.",
+  "updated_at": "2026-10-18T03:00:18Z"
+}

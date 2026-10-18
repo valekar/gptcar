@@ -1,0 +1,29 @@
+{
+  "slug": "papercut-red",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "2a6e79276cff7cd97c9c9addfe00343f5ae3699430689a9f2a66c357597e2202",
+  "video_sha256": "e0bb70b4661af9f23a5376b2c1dc56fb77c70b11294d42288dfd4744e0fbe033",
+  "bytes": 1961311,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "One Cut, Many Windows",
+  "comparison_notes": "Independent 20-second procedural visual study matching the library premise. Original full-length upstream film differs in duration and production scope; this is a qualitative style comparison. No narration.",
+  "updated_at": "2026-10-18T03:06:34Z"
+}

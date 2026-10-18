@@ -1,0 +1,17 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Twenty-one Positions",
+  "premise": "Actual Corne switch centres and parsed PCB outline become a technical model, wave apart and close into one half keyboard.",
+  "duration": 20,
+  "comparison_notes": "Actual21 Corne switch centres, rotations, source copper segments and full-panel Edge.Cuts raster. Source left panel retained; cap/switch/socket envelopes simplified and disclosed. No case-fit or invented package dimensions claimed.",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    "assets/board-front.png",
+    "assets/pcb-layout.json",
+    "assets/board-mask.png",
+    "assets/texture-frame.json",
+    "assets/outline.json"
+  ]
+}

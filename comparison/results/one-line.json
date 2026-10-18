@@ -1,0 +1,29 @@
+{
+  "slug": "one-line",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "bee113db424c6b78565e30286f1fc7397c91ffffab8b174b1f941246fc126212",
+  "video_sha256": "0263d778e8bb580c9679bb19e21c44ec95410b56486d8f393465fa38f5b3d5a7",
+  "bytes": 2486313,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Passed Forward",
+  "comparison_notes": "Independent 20-second procedural visual study matching the library premise. Original full-length upstream film differs in duration and production scope; this is a qualitative style comparison. No narration.",
+  "updated_at": "2026-10-18T03:06:11Z"
+}

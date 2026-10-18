@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "The Little Rush",
+  "premise": "Morning cars, a commuter train and tiny people move through a bright town; time drops to real speed for one missed crossing.",
+  "duration": 20,
+  "comparison_notes": "Independent twenty-second Three.js film of original premise. Material, geometry and camera rendering; original instrumental score. Qualitative comparison, durations differ.",
+  "uses_upstream_demo_code": false,
+  "assets": []
+}

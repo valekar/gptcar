@@ -1,0 +1,29 @@
+{
+  "slug": "ascii-crt",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "570a0b41f455226f1ed11489ac117e9f36296c3e24948925d80581434cfc3e5c",
+  "video_sha256": "0ab7ef9ab23bcdacb4e06166e713f5b6e0f67f5529b2ae2cb7717074d6218d16",
+  "bytes": 1059293,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Tranquility.log / Reply",
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Fictional moon-base AI story; forty-year sleep is fictional.",
+  "updated_at": "2026-10-18T03:08:18Z"
+}

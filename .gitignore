@@ -100,3 +100,10 @@ styles/*/demo/**/*.tif
 styles/*/demo/**/*.tiff
 styles/*/demo/**/*.npz
 styles/*/demo/assets/raw/
+
+# GPTcar comparison intermediates
+/work/
+/comparisons/*/stills/
+/comparisons/*/out/
+/comparisons/*/*.mp4
+/comparisons/*/*.wav

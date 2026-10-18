@@ -1,0 +1,91 @@
+[
+  {
+    "page": 0,
+    "shape": [
+      3685,
+      1251,
+      3
+    ],
+    "description": "Label_Image"
+  },
+  {
+    "page": 1,
+    "shape": [
+      3685,
+      1251
+    ],
+    "description": "Probability_Image"
+  },
+  {
+    "page": 2,
+    "shape": [
+      21504,
+      24576,
+      3
+    ],
+    "description": "level=0 mag=40 quality=95"
+  },
+  {
+    "page": 3,
+    "shape": [
+      10752,
+      12288,
+      3
+    ],
+    "description": "level=1 mag=20 quality=95"
+  },
+  {
+    "page": 4,
+    "shape": [
+      5376,
+      6144,
+      3
+    ],
+    "description": "level=2 mag=10 quality=95"
+  },
+  {
+    "page": 5,
+    "shape": [
+      2688,
+      3072,
+      3
+    ],
+    "description": "level=3 mag=5 quality=95"
+  },
+  {
+    "page": 6,
+    "shape": [
+      1344,
+      1536,
+      3
+    ],
+    "description": "level=4 mag=2.5 quality=95"
+  },
+  {
+    "page": 7,
+    "shape": [
+      672,
+      768,
+      3
+    ],
+    "description": "level=5 mag=1.25 quality=95"
+  },
+  {
+    "page": 8,
+    "shape": [
+      336,
+      384,
+      3
+    ],
+    "description": "level=6 mag=0.625 quality=95"
+  },
+  {
+    "page": 9,
+    "shape": [
+      168,
+      192,
+      3
+    ],
+    "description": "level=7 mag=0.3125 quality=95"
+  }
+]

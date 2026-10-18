@@ -1,0 +1,29 @@
+{
+  "slug": "lidar-survey",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "ba239697bc59bf7f7abec1d16964696fea224e5befb72de8d7ce4405f1401d92",
+  "video_sha256": "2de440ac7f1e668374174c18fb1713b2b8f7d79c88621eb8b03565e04cf67d71",
+  "bytes": 18359567,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Below the Returns",
+  "comparison_notes": "Actual 51,560 USGS 3DEP returns in an Ashford-area coarse LOD window. Provider class2 and nearest-sample ground surface replace the original wall-tracing narrative; no archaeological wall measurement claimed.",
+  "updated_at": "2026-10-18T03:14:57Z"
+}

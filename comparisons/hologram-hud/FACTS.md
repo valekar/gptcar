@@ -1,0 +1,1 @@
+VOLT is an original fictional e-bike concept. 360 Wh battery, 250 W hub motor and 180 mm brake rotor are declared concept design targets, not measurements, product claims or real CAD. This is a stylized original wireframe study with no real product attribution.

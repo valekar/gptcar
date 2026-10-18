@@ -1,0 +1,262 @@
+{
+  "bpm": 96,
+  "notes": [
+    {
+      "t": 0,
+      "duration": 0.55,
+      "midi": 60,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 0.65,
+      "duration": 0.55,
+      "midi": 67,
+      "gain": 0.082,
+      "pan": 0.0,
+      "instrument": "pluck"
+    },
+    {
+      "t": 1.6,
+      "duration": 0.55,
+      "midi": 63,
+      "gain": 0.094,
+      "pan": 0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 2.55,
+      "duration": 0.55,
+      "midi": 70,
+      "gain": 0.10600000000000001,
+      "pan": -0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 3.7,
+      "duration": 0.55,
+      "midi": 65,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "bell"
+    },
+    {
+      "t": 4.35,
+      "duration": 0.55,
+      "midi": 60,
+      "gain": 0.082,
+      "pan": 0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 5.4,
+      "duration": 0.55,
+      "midi": 67,
+      "gain": 0.094,
+      "pan": -0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 6.1,
+      "duration": 0.55,
+      "midi": 63,
+      "gain": 0.10600000000000001,
+      "pan": 0.0,
+      "instrument": "pluck"
+    },
+    {
+      "t": 6.8,
+      "duration": 0.55,
+      "midi": 70,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 7.9,
+      "duration": 0.55,
+      "midi": 65,
+      "gain": 0.082,
+      "pan": -0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 8.55,
+      "duration": 0.55,
+      "midi": 60,
+      "gain": 0.094,
+      "pan": 0.0,
+      "instrument": "bell"
+    },
+    {
+      "t": 9.4,
+      "duration": 0.55,
+      "midi": 67,
+      "gain": 0.10600000000000001,
+      "pan": 0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 11.6,
+      "duration": 0.48,
+      "midi": 63,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 12,
+      "duration": 0.48,
+      "midi": 70,
+      "gain": 0.082,
+      "pan": 0.0,
+      "instrument": "pluck"
+    },
+    {
+      "t": 12.45,
+      "duration": 0.48,
+      "midi": 65,
+      "gain": 0.094,
+      "pan": 0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 13.05,
+      "duration": 0.48,
+      "midi": 60,
+      "gain": 0.10600000000000001,
+      "pan": -0.22,
+      "instrument": "bell"
+    },
+    {
+      "t": 13.7,
+      "duration": 0.48,
+      "midi": 67,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "pluck"
+    },
+    {
+      "t": 14,
+      "duration": 0.38,
+      "midi": 72,
+      "gain": 0.085,
+      "pan": 0.1,
+      "instrument": "pluck"
+    },
+    {
+      "t": 14.6,
+      "duration": 0.48,
+      "midi": 63,
+      "gain": 0.082,
+      "pan": 0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 15.45,
+      "duration": 0.48,
+      "midi": 82,
+      "gain": 0.094,
+      "pan": -0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 16.1,
+      "duration": 0.48,
+      "midi": 77,
+      "gain": 0.10600000000000001,
+      "pan": 0.0,
+      "instrument": "pluck"
+    },
+    {
+      "t": 17.65,
+      "duration": 0.48,
+      "midi": 72,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "bell"
+    },
+    {
+      "t": 18.3,
+      "duration": 0.48,
+      "midi": 79,
+      "gain": 0.082,
+      "pan": -0.22,
+      "instrument": "pluck"
+    },
+    {
+      "t": 19.1,
+      "duration": 0.48,
+      "midi": 75,
+      "gain": 0.094,
+      "pan": 0.0,
+      "instrument": "bell"
+    }
+  ],
+  "effects": [
+    {
+      "t": 0,
+      "kind": "scratch",
+      "duration": 0.8,
+      "gain": 0.08,
+      "pan": -0.3
+    },
+    {
+      "t": 4,
+      "kind": "paper",
+      "duration": 0.3,
+      "gain": 0.07,
+      "pan": -0.3
+    },
+    {
+      "t": 5,
+      "kind": "scratch",
+      "duration": 0.8,
+      "gain": 0.09,
+      "pan": 0.0
+    },
+    {
+      "t": 7,
+      "kind": "click",
+      "duration": 0.15,
+      "gain": 0.06,
+      "pan": 0.0
+    },
+    {
+      "t": 9,
+      "kind": "paper",
+      "duration": 0.2,
+      "gain": 0.05,
+      "pan": 0.0
+    },
+    {
+      "t": 11.6,
+      "kind": "scratch",
+      "duration": 0.3,
+      "gain": 0.06,
+      "pan": 0.18
+    },
+    {
+      "t": 12,
+      "kind": "rain",
+      "duration": 3,
+      "gain": 0.04,
+      "pan": -0.3
+    },
+    {
+      "t": 14,
+      "kind": "chime",
+      "duration": 0.3,
+      "gain": 0.08,
+      "pan": -0.3
+    },
+    {
+      "t": 16,
+      "kind": "chime",
+      "duration": 0.2,
+      "gain": 0.04,
+      "pan": -0.3
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Before the First Light",
+  "premise": "A courier carries a cassette across a rain-wet neon city and slots it into a rooftop launch transmitter before dawn.",
+  "duration": 20,
+  "comparison_notes": "Independent twenty-second code study of the original style premise. Original procedural score, no narration. Qualitative style comparison; durations differ.",
+  "uses_upstream_demo_code": false,
+  "assets": []
+}

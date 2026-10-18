@@ -1,0 +1,29 @@
+{
+  "slug": "watercolor",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "f6ad4c83118aa400c5d2dc5c911c45bda8cf9a0795405fddb7f7546a2918e468",
+  "video_sha256": "84ef9a14e1f4971af48c6babd7f94207d89505a0918a8d88152db3c7e64728e5",
+  "bytes": 6335241,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Rain Writes a Country",
+  "comparison_notes": "Independent 20-second procedural visual study matching the library premise. Original full-length upstream film differs in duration and production scope; this is a qualitative style comparison. No narration.",
+  "updated_at": "2026-10-18T03:07:41Z"
+}

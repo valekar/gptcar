@@ -1,0 +1,11 @@
+Below the Returns
+Independent scene code and score by GPT-6.1 Sol, high reasoning. Style contract Lemomo / LemoLab, MIT: https://github.com/lemomo-ai/lemo-opuscar
+No upstream demo scene code used. Three.js and core rendering utilities, MIT.
+Actual evidence assets and licenses:
+# Prepared evidence assets
+
+{
+  "slug": "lidar-survey",
+  "source": "https://s3-us-west-2.amazonaws.com/usgs-lidar-public/USGS_LPC_CT_Statewide_B8_2016/ept.json",
+  "license": "USGS3DEP public domain. Root EPT node is actual coarse survey returns over a large area, not necessarily the exact demo site. Crop coordinates and state coarse preview; do not claim measured archaeological walls."
+}

@@ -1,8 +1,8 @@
-# Maintaining Codex Car
+# Maintaining GPTcar
 
 Run `npm run check` and `npm test` for changes to the Codex adapter. The gallery, historical demos and Claude plugin below are inherited upstream tooling; they retain the original identity and are not the Codex installation path. The gallery deployment job is restricted to the original repository. Keep `LICENSE`, `NOTICE`, `CREDITS`, asset sources and demo authorship intact.
 
-Upstream style prompts are pinned by SHA-256 in `codexcar.json`. When deliberately updating one, review the diff and update that manifest and the compatibility inventory. For upstream updates, fetch `upstream`, review changes, then merge deliberately; setup never hard-resets this checkout.
+Upstream style prompts are pinned by SHA-256 in `gptcar.json`. When deliberately updating one, review the diff and update that manifest and the compatibility inventory. For upstream updates, fetch `upstream`, review changes, then merge deliberately; setup never hard-resets this checkout.
 
 ---
 

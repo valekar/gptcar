@@ -1,0 +1,24 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Tidy / Room to Think",
+  "premise": "Launch film for Tidy, a fictional app: one buried cursor snaps hundreds of windows back into place.",
+  "duration": 20,
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Fictional Tidy software. 160/160 counts exactly 160 procedurally drawn UI windows; final 1 denotes one workspace, not a performance claim.",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    {
+      "type": "font",
+      "name": "Inter",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/inter"
+    },
+    {
+      "type": "font",
+      "name": "JetBrains Mono",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/jetbrainsmono"
+    }
+  ]
+}

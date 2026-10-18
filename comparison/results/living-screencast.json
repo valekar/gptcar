@@ -1,0 +1,29 @@
+{
+  "slug": "living-screencast",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "a73492cd3506ea4d0b38fcd7bc00edbb606932f55ba0754de67ea6eeac77942e",
+  "video_sha256": "ee03fc7904b2c1b12cb080ae0b183f45e48cf604886cbf50a60bee386455cced",
+  "bytes": 731373,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Pip Moves In / Coding Walkthrough",
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Premise adaptation: original fictional Pip Studio app and original pixel mascot replace the upstream Claude-branded walkthrough. Actual DOM renders coherent plan/diff/check states; UI anchors are measured each frame. No claim about a real product feature or interface.",
+  "updated_at": "2026-10-18T03:09:53Z"
+}

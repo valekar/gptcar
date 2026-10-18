@@ -1,0 +1,276 @@
+{
+  "bpm": 102,
+  "notes": [
+    {
+      "t": 0,
+      "duration": 0.55,
+      "midi": 63,
+      "gain": 0.10600000000000001,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 0.65,
+      "duration": 0.55,
+      "midi": 70,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 1.6,
+      "duration": 0.55,
+      "midi": 65,
+      "gain": 0.082,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 2.55,
+      "duration": 0.55,
+      "midi": 60,
+      "gain": 0.094,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 3.7,
+      "duration": 0.55,
+      "midi": 67,
+      "gain": 0.10600000000000001,
+      "pan": 0.0,
+      "instrument": "bass"
+    },
+    {
+      "t": 4.35,
+      "duration": 0.55,
+      "midi": 63,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 5.4,
+      "duration": 0.55,
+      "midi": 70,
+      "gain": 0.082,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 6.1,
+      "duration": 0.55,
+      "midi": 65,
+      "gain": 0.094,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 6.8,
+      "duration": 0.55,
+      "midi": 60,
+      "gain": 0.10600000000000001,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 7.9,
+      "duration": 0.55,
+      "midi": 67,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 8.55,
+      "duration": 0.55,
+      "midi": 63,
+      "gain": 0.082,
+      "pan": 0.0,
+      "instrument": "bass"
+    },
+    {
+      "t": 9.4,
+      "duration": 0.55,
+      "midi": 70,
+      "gain": 0.094,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 11.4,
+      "duration": 0.38,
+      "midi": 72,
+      "gain": 0.085,
+      "pan": 0.1,
+      "instrument": "pluck"
+    },
+    {
+      "t": 11.6,
+      "duration": 0.48,
+      "midi": 65,
+      "gain": 0.10600000000000001,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 12,
+      "duration": 0.48,
+      "midi": 60,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 12.45,
+      "duration": 0.48,
+      "midi": 67,
+      "gain": 0.082,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 13.05,
+      "duration": 0.48,
+      "midi": 63,
+      "gain": 0.094,
+      "pan": -0.22,
+      "instrument": "bass"
+    },
+    {
+      "t": 13.7,
+      "duration": 0.48,
+      "midi": 70,
+      "gain": 0.10600000000000001,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 14.6,
+      "duration": 0.48,
+      "midi": 65,
+      "gain": 0.07,
+      "pan": 0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 15.45,
+      "duration": 0.48,
+      "midi": 72,
+      "gain": 0.082,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 16.1,
+      "duration": 0.48,
+      "midi": 79,
+      "gain": 0.094,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 17.65,
+      "duration": 0.48,
+      "midi": 75,
+      "gain": 0.10600000000000001,
+      "pan": 0.22,
+      "instrument": "bass"
+    },
+    {
+      "t": 18.3,
+      "duration": 0.48,
+      "midi": 82,
+      "gain": 0.07,
+      "pan": -0.22,
+      "instrument": "marimba"
+    },
+    {
+      "t": 19.1,
+      "duration": 0.48,
+      "midi": 77,
+      "gain": 0.082,
+      "pan": 0.0,
+      "instrument": "bass"
+    }
+  ],
+  "effects": [
+    {
+      "t": 0,
+      "kind": "paper",
+      "duration": 0.35,
+      "gain": 0.1,
+      "pan": -0.3
+    },
+    {
+      "t": 1.6,
+      "kind": "click",
+      "duration": 0.08,
+      "gain": 0.04,
+      "pan": 0.18
+    },
+    {
+      "t": 3.7,
+      "kind": "click",
+      "duration": 0.08,
+      "gain": 0.04,
+      "pan": 0.21
+    },
+    {
+      "t": 6,
+      "kind": "paper",
+      "duration": 0.35,
+      "gain": 0.12,
+      "pan": -0.3
+    },
+    {
+      "t": 7.9,
+      "kind": "click",
+      "duration": 0.08,
+      "gain": 0.04,
+      "pan": 0.27
+    },
+    {
+      "t": 9.4,
+      "kind": "click",
+      "duration": 0.08,
+      "gain": 0.04,
+      "pan": 0.12
+    },
+    {
+      "t": 11.4,
+      "kind": "paper",
+      "duration": 0.35,
+      "gain": 0.12,
+      "pan": 0.12
+    },
+    {
+      "t": 12,
+      "kind": "wind",
+      "duration": 1.5,
+      "gain": 0.025,
+      "pan": -0.3
+    },
+    {
+      "t": 14,
+      "kind": "click",
+      "duration": 0.08,
+      "gain": 0.04,
+      "pan": -0.3
+    },
+    {
+      "t": 16,
+      "kind": "paper",
+      "duration": 0.3,
+      "gain": 0.06,
+      "pan": -0.3
+    },
+    {
+      "t": 18.3,
+      "kind": "paper",
+      "duration": 0.4,
+      "gain": 0.04,
+      "pan": -0.21
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "stained-glass",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "b62e02cb041723548b9f43e317af890d7657e7e4606f78d6cc1c73ef851316f3",
+  "video_sha256": "7644e261e0ab9979e84b07fc8914d4a5337842f5642d4c87a1e66dafe22b79ff",
+  "bytes": 4415455,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "The East Window / A Pact",
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. ",
+  "updated_at": "2026-10-18T03:10:56Z"
+}

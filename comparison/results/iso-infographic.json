@@ -1,0 +1,29 @@
+{
+  "slug": "iso-infographic",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "0d5c387d9cb6c8355c3e4329a2f4674955b7b10a4f48b7dfd6ae54576fb10b3f",
+  "video_sha256": "46fec9b64404bff3aae8b138d6d80ce8119cf7d8549fd18315cf052dd2c2fde8",
+  "bytes": 1270231,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "From Bean to Cup / Route",
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Schematic three-stage coffee route; no numerical supply-chain claims. Three stations represent the drawn process steps only.",
+  "updated_at": "2026-10-18T03:09:42Z"
+}

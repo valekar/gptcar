@@ -1,0 +1,1 @@
+The subject is an original schematic honeybee illustration, not a measured scientific specimen. No dimensions, experimental data or taxonomic claims are presented. The plate number is a fictional design device matching the requested premise.

@@ -1,0 +1,29 @@
+{
+  "slug": "impasto",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "7fc483a18b8d839c9bfc0c704c94b085498b208b99b7ecffb831aa460b6c9a62",
+  "video_sha256": "36dbdc13cc5217ab87888f3ef63fffaec14e2332f8a9a79d11166b440c679e98",
+  "bytes": 7402480,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "A Plaza Learns to Dance",
+  "comparison_notes": "Independent 20-second procedural visual study matching the library premise. Original full-length upstream film differs in duration and production scope; this is a qualitative style comparison. No narration.",
+  "updated_at": "2026-10-18T03:05:22Z"
+}

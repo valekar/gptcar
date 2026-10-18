@@ -1,0 +1,1570 @@
+{
+  "source": "https://github.com/foostan/crkbd/tree/63366fb7f51cf2a796462fdd90527e99dd126055",
+  "license": "CC BY4.0 / MIT foostan",
+  "units": "mm",
+  "footprints": [
+    {
+      "name": "kbd_local:Breakaway_Tabs",
+      "reference": "BT3",
+      "x": -128.5875,
+      "y": 41.18125,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:corne-logo-horizontal",
+      "reference": "G***",
+      "x": 90.4875,
+      "y": 38.98125,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:Breakaway_Tabs",
+      "reference": "BT2",
+      "x": -52.3875,
+      "y": -22.13125,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:Breakaway_Tabs",
+      "reference": "rBT2",
+      "x": 52.387502,
+      "y": -22.13125,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:OLED",
+      "reference": "rJ3",
+      "x": 14.2875,
+      "y": 28.84625,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:Breakaway_Tabs",
+      "reference": "BT4",
+      "x": -109.5375,
+      "y": 41.18125,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:Breakaway_Tabs",
+      "reference": "rBT1",
+      "x": 90.4875,
+      "y": -22.13125,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:Breakaway_Tabs",
+      "reference": "rBT3",
+      "x": 128.5875,
+      "y": 41.18125,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:corne-logo-horizontal",
+      "reference": "G***",
+      "x": -90.4875,
+      "y": 38.98125,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:Breakaway_Tabs",
+      "reference": "rBT4",
+      "x": 109.5375,
+      "y": 41.18125,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:Breakaway_Tabs",
+      "reference": "BT1",
+      "x": -90.4875,
+      "y": -22.13125,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:OLED",
+      "reference": "J3",
+      "x": -14.2875,
+      "y": 28.84625,
+      "rotation": 0.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "C1",
+      "x": -72.5775,
+      "y": 49.24495,
+      "rotation": 180.0
+    },
+    {
+      "name": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+      "reference": "J4",
+      "x": -116.237498,
+      "y": 33.74125,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "rC1",
+      "x": 74.662502,
+      "y": 49.285,
+      "rotation": 180.0
+    },
+    {
+      "name": "Diode_SMD:D_SOD-523",
+      "reference": "ZD1",
+      "x": -20.967492,
+      "y": -14.55125,
+      "rotation": -90.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW4",
+      "x": -33.3375,
+      "y": -9.525,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:keyswitch_cherrymx_hotswap_1u_rotary_encoder_ec12",
+      "reference": "EXSW2",
+      "x": -14.2875,
+      "y": 19.05,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "rC7",
+      "x": 71.132502,
+      "y": 43.965,
+      "rotation": -90.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED16",
+      "x": -109.5375,
+      "y": 35.71875,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW17",
+      "x": 109.537502,
+      "y": 11.90625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED16",
+      "x": 109.537502,
+      "y": 35.71875,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED3",
+      "x": -33.3375,
+      "y": 14.2875,
+      "rotation": 180.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "rR3",
+      "x": 74.207502,
+      "y": 43.30625,
+      "rotation": 0.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "C16",
+      "x": -59.4475,
+      "y": 36.67495,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "rC9",
+      "x": 84.512508,
+      "y": 37.27875,
+      "rotation": 90.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "rC14",
+      "x": 79.877502,
+      "y": 34.31625,
+      "rotation": 90.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW15",
+      "x": 90.487502,
+      "y": 26.19375,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:PJ-398A-5A_PJ-399B-6A",
+      "reference": "rJ2",
+      "x": 4.2675,
+      "y": 34.64625,
+      "rotation": -90.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "R7",
+      "x": -85.717498,
+      "y": 37.545,
+      "rotation": -90.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "rC3",
+      "x": 70.052502,
+      "y": 43.965,
+      "rotation": -90.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW9",
+      "x": 61.912502,
+      "y": 47.625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:keyswitch_cherrymx_hotswap_1u_rotary_encoder_ec12",
+      "reference": "rEXSW2",
+      "x": 14.287502,
+      "y": 19.05,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "rC8",
+      "x": 69.342502,
+      "y": 31.545,
+      "rotation": 90.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW9",
+      "x": -61.9125,
+      "y": 47.625,
+      "rotation": 180.0
+    },
+    {
+      "name": "Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm",
+      "reference": "rU1",
+      "x": 74.6075,
+      "y": 37.63995,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW5",
+      "x": -52.3875,
+      "y": -11.90625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW10",
+      "x": 71.437502,
+      "y": 23.8125,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED4",
+      "x": 33.3375,
+      "y": -4.7625,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "C4",
+      "x": -74.642498,
+      "y": 31.51625,
+      "rotation": 90.0
+    },
+    {
+      "name": "kbd_local:TS-1088R-02026",
+      "reference": "SMDSW2",
+      "x": -89.077498,
+      "y": 35.725,
+      "rotation": -90.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED17",
+      "x": -109.5375,
+      "y": 16.66875,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "C10",
+      "x": -84.607498,
+      "y": 37.53495,
+      "rotation": 90.0
+    },
+    {
+      "name": "kbd_local:TYPE-C-31-M-13C",
+      "reference": "rJ1",
+      "x": 12.2875,
+      "y": -15.96375,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED6",
+      "x": 52.387502,
+      "y": 11.90625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED5",
+      "x": -52.3875,
+      "y": -7.14375,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "C5",
+      "x": -78.8575,
+      "y": 31.50625,
+      "rotation": 90.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "C15",
+      "x": -75.6675,
+      "y": 31.51625,
+      "rotation": 90.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW11",
+      "x": 71.437502,
+      "y": 4.7625,
+      "rotation": 180.0
+    },
+    {
+      "name": "Package_SON:USON-10_2.5x1.0mm_P0.5mm",
+      "reference": "U3",
+      "x": -22.6525,
+      "y": -11.51005,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED2",
+      "x": 33.3375,
+      "y": 33.3375,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED8",
+      "x": -42.083274,
+      "y": 54.461139,
+      "rotation": 168.06
+    },
+    {
+      "name": "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
+      "reference": "U2",
+      "x": -49.8475,
+      "y": 38.47995,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW16",
+      "x": 109.537502,
+      "y": 30.95625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW13",
+      "x": -90.4875,
+      "y": -11.90625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW11",
+      "x": -71.4375,
+      "y": 4.7625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED10",
+      "x": -71.4375,
+      "y": 28.575,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW14",
+      "x": -90.4875,
+      "y": 7.14375,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW18",
+      "x": 109.537502,
+      "y": -7.14375,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "C11",
+      "x": -54.8575,
+      "y": 37.99495,
+      "rotation": 90.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW19",
+      "x": 128.587502,
+      "y": -7.14375,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW8",
+      "x": -41.097974,
+      "y": 49.801677,
+      "rotation": 168.06
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED20",
+      "x": 128.587502,
+      "y": 16.66875,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED12",
+      "x": -71.4375,
+      "y": -9.525,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED15",
+      "x": 90.487502,
+      "y": 30.95625,
+      "rotation": 180.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "rR2",
+      "x": 19.422502,
+      "y": -15.295,
+      "rotation": -90.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW4",
+      "x": 33.337502,
+      "y": -9.525,
+      "rotation": 180.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "R1",
+      "x": -19.4175,
+      "y": -15.31375,
+      "rotation": -90.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW12",
+      "x": -71.4375,
+      "y": -14.2875,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED20",
+      "x": -128.5875,
+      "y": 16.66875,
+      "rotation": 180.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "R3",
+      "x": -75.1375,
+      "y": 43.74495,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rEXLED1",
+      "x": 14.2875,
+      "y": 4.7625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW6",
+      "x": 52.387502,
+      "y": 7.14375,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:TS-1088R-02026",
+      "reference": "rSMDSW2",
+      "x": 93.992502,
+      "y": 35.725,
+      "rotation": -90.0
+    },
+    {
+      "name": "Diode_SMD:D_SOD-523",
+      "reference": "rD1",
+      "x": 28.052508,
+      "y": -6.78125,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED17",
+      "x": 109.537502,
+      "y": 16.66875,
+      "rotation": 180.0
+    },
+    {
+      "name": "Package_SON:USON-10_2.5x1.0mm_P0.5mm",
+      "reference": "rU3",
+      "x": 22.6525,
+      "y": -11.51005,
+      "rotation": 180.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "R5",
+      "x": -77.7975,
+      "y": 31.52625,
+      "rotation": 90.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED19",
+      "x": 128.587502,
+      "y": -2.38125,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW17",
+      "x": -109.5375,
+      "y": 11.90625,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "rC11",
+      "x": 56.702502,
+      "y": 37.455,
+      "rotation": -90.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED15",
+      "x": -90.4875,
+      "y": 30.95625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED1",
+      "x": -14.901328,
+      "y": 53.81068,
+      "rotation": -113.88
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "C9",
+      "x": -67.0475,
+      "y": 40.17495,
+      "rotation": 0.0
+    },
+    {
+      "name": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+      "reference": "rY1",
+      "x": 74.302502,
+      "y": 46.265,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED5",
+      "x": 52.387502,
+      "y": -7.14375,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW21",
+      "x": -128.5875,
+      "y": 30.95625,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "rC15",
+      "x": 73.572502,
+      "y": 31.545,
+      "rotation": 90.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW3",
+      "x": 33.337502,
+      "y": 9.525,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1.5u",
+      "reference": "rSW1",
+      "x": 19.256137,
+      "y": 51.882713,
+      "rotation": 113.88
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED8",
+      "x": 42.083274,
+      "y": 54.461139,
+      "rotation": -168.06
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED13",
+      "x": 90.487502,
+      "y": -7.14375,
+      "rotation": 180.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "R9",
+      "x": -22.857498,
+      "y": -15.32875,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:keyswitch_cherrymx_hotswap_1u_rotary_encoder_ec12",
+      "reference": "EXSW1",
+      "x": -14.2875,
+      "y": 0.0,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW7",
+      "x": -52.3875,
+      "y": 26.19375,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "rC5",
+      "x": 70.382502,
+      "y": 31.545,
+      "rotation": 90.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "rC4",
+      "x": 74.592502,
+      "y": 31.545,
+      "rotation": 90.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED13",
+      "x": -90.4875,
+      "y": -7.14375,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:TS-1088R-02026",
+      "reference": "SMDSW1",
+      "x": -93.087498,
+      "y": 35.725,
+      "rotation": -90.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED21",
+      "x": -128.5875,
+      "y": 35.71875,
+      "rotation": 180.0
+    },
+    {
+      "name": "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm",
+      "reference": "U4",
+      "x": -62.6675,
+      "y": 33.21495,
+      "rotation": 0.0
+    },
+    {
+      "name": "Diode_SMD:D_SOD-523",
+      "reference": "D1",
+      "x": -27.1175,
+      "y": -6.7775,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED19",
+      "x": -128.5875,
+      "y": -2.38125,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW13",
+      "x": 90.487502,
+      "y": -11.90625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED7",
+      "x": -52.3875,
+      "y": 30.95625,
+      "rotation": 180.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "rR7",
+      "x": 85.632508,
+      "y": 37.28875,
+      "rotation": -90.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "C8",
+      "x": -79.8975,
+      "y": 31.50625,
+      "rotation": 90.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "C13",
+      "x": -80.357498,
+      "y": 33.105,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "C2",
+      "x": -74.7375,
+      "y": 49.28495,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED14",
+      "x": 90.487502,
+      "y": 11.90625,
+      "rotation": 180.0
+    },
+    {
+      "name": "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm",
+      "reference": "JP1",
+      "x": -115.7575,
+      "y": -2.28505,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED9",
+      "x": 61.912502,
+      "y": 52.3875,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "EXLED2",
+      "x": -14.2875,
+      "y": 23.8125,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "rC10",
+      "x": 66.482508,
+      "y": 38.37875,
+      "rotation": 180.0
+    },
+    {
+      "name": "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+      "reference": "Y1",
+      "x": -73.9375,
+      "y": 46.25495,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED9",
+      "x": -61.9125,
+      "y": 52.3875,
+      "rotation": 180.0
+    },
+    {
+      "name": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+      "reference": "rJ4",
+      "x": 116.237498,
+      "y": 33.74125,
+      "rotation": 180.0
+    },
+    {
+      "name": "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm",
+      "reference": "rU4",
+      "x": 81.872502,
+      "y": 30.135,
+      "rotation": 0.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "rR6",
+      "x": 86.792508,
+      "y": 37.31875,
+      "rotation": -90.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW2",
+      "x": 33.337502,
+      "y": 28.575,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "rC16",
+      "x": 85.672502,
+      "y": 33.775,
+      "rotation": 180.0
+    },
+    {
+      "name": "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm",
+      "reference": "rJP1",
+      "x": 115.7575,
+      "y": -2.28505,
+      "rotation": 0.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "rR9",
+      "x": 22.832502,
+      "y": -15.49875,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "EXLED1",
+      "x": -14.2875,
+      "y": 4.7625,
+      "rotation": 180.0
+    },
+    {
+      "name": "Diode_SMD:D_SOD-523",
+      "reference": "rZD1",
+      "x": 20.942508,
+      "y": -14.70125,
+      "rotation": -90.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED6",
+      "x": -52.3875,
+      "y": 11.90625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW8",
+      "x": 41.097976,
+      "y": 49.801677,
+      "rotation": -168.06
+    },
+    {
+      "name": "kbd_local:TS-1088R-02026",
+      "reference": "rSMDSW1",
+      "x": 89.862502,
+      "y": 35.725,
+      "rotation": -90.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "rR8",
+      "x": 22.862502,
+      "y": -13.89875,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW10",
+      "x": -71.4375,
+      "y": 23.8125,
+      "rotation": 180.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "rR5",
+      "x": 71.442502,
+      "y": 31.545,
+      "rotation": 90.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED10",
+      "x": 71.437502,
+      "y": 28.575,
+      "rotation": 180.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "R4",
+      "x": -76.732498,
+      "y": 31.52625,
+      "rotation": -90.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED12",
+      "x": 71.437502,
+      "y": -9.525,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "C3",
+      "x": -78.112498,
+      "y": 43.45625,
+      "rotation": -90.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW21",
+      "x": 128.587502,
+      "y": 30.95625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED11",
+      "x": 71.437502,
+      "y": 9.525,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW15",
+      "x": -90.4875,
+      "y": 26.19375,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW19",
+      "x": -128.5875,
+      "y": -7.14375,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW12",
+      "x": 71.437502,
+      "y": -14.2875,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED21",
+      "x": 128.587502,
+      "y": 35.71875,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW20",
+      "x": -128.5875,
+      "y": 11.90625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW18",
+      "x": -109.5375,
+      "y": -7.14375,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "rC13",
+      "x": 68.882502,
+      "y": 33.105,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED3",
+      "x": 33.3375,
+      "y": 14.2875,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED11",
+      "x": -71.4375,
+      "y": 9.525,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rEXLED2",
+      "x": 14.2875,
+      "y": 23.8125,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "C14",
+      "x": -69.2875,
+      "y": 34.37995,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW20",
+      "x": 128.587502,
+      "y": 11.90625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:TYPE-C-31-M-13C",
+      "reference": "J1",
+      "x": -12.2875,
+      "y": -15.96375,
+      "rotation": 0.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "C6",
+      "x": -39.9175,
+      "y": 40.75495,
+      "rotation": 90.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW14",
+      "x": 90.487502,
+      "y": 7.14375,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW16",
+      "x": -109.5375,
+      "y": 30.95625,
+      "rotation": 180.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "R8",
+      "x": -22.837498,
+      "y": -13.77875,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "C12",
+      "x": -80.357498,
+      "y": 34.175,
+      "rotation": 180.0
+    },
+    {
+      "name": "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
+      "reference": "rU2",
+      "x": 51.412502,
+      "y": 36.995,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1.5u",
+      "reference": "SW1",
+      "x": -19.256135,
+      "y": 51.882713,
+      "rotation": -113.88
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW5",
+      "x": 52.387502,
+      "y": -11.90625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW2",
+      "x": -33.3375,
+      "y": 28.575,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "rC6",
+      "x": 46.132502,
+      "y": 35.155,
+      "rotation": -90.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW6",
+      "x": -52.3875,
+      "y": 7.14375,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED2",
+      "x": -33.3375,
+      "y": 33.3375,
+      "rotation": 180.0
+    },
+    {
+      "name": "Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm",
+      "reference": "U1",
+      "x": -74.6075,
+      "y": 37.63995,
+      "rotation": 180.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "R2",
+      "x": -5.1275,
+      "y": -15.27375,
+      "rotation": -90.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED14",
+      "x": -90.4875,
+      "y": 11.90625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW3",
+      "x": -33.3375,
+      "y": 9.525,
+      "rotation": 180.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "rR4",
+      "x": 72.512502,
+      "y": 31.545,
+      "rotation": -90.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "rC2",
+      "x": 72.502502,
+      "y": 49.325,
+      "rotation": 0.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED1",
+      "x": 14.901328,
+      "y": 53.81068,
+      "rotation": 113.88
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED18",
+      "x": -109.5375,
+      "y": -2.38125,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "LED4",
+      "x": -33.3375,
+      "y": -4.7625,
+      "rotation": 180.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "C7",
+      "x": -76.962498,
+      "y": 43.45625,
+      "rotation": -90.0
+    },
+    {
+      "name": "Capacitor_SMD:C_0402_1005Metric",
+      "reference": "rC12",
+      "x": 68.882502,
+      "y": 34.205,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED7",
+      "x": 52.387502,
+      "y": 30.95625,
+      "rotation": 180.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "rR1",
+      "x": 5.122502,
+      "y": -15.275,
+      "rotation": -90.0
+    },
+    {
+      "name": "kbd_local:keyswitch_cherrymx_hotswap_1u_rotary_encoder_ec12",
+      "reference": "rEXSW1",
+      "x": 14.287502,
+      "y": 0.0,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd_local:YS-SK6812MINI-E",
+      "reference": "rLED18",
+      "x": 109.537502,
+      "y": -2.38125,
+      "rotation": 180.0
+    },
+    {
+      "name": "Resistor_SMD:R_0402_1005Metric",
+      "reference": "R6",
+      "x": -86.817498,
+      "y": 37.545,
+      "rotation": -90.0
+    },
+    {
+      "name": "kbd_local:PJ-398A-5A_PJ-399B-6A",
+      "reference": "J2",
+      "x": -4.2675,
+      "y": 34.64625,
+      "rotation": 90.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "rSW7",
+      "x": 52.387502,
+      "y": 26.19375,
+      "rotation": 180.0
+    }
+  ],
+  "switches": [
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW4",
+      "x": -33.3375,
+      "y": -9.525,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW9",
+      "x": -61.9125,
+      "y": 47.625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW5",
+      "x": -52.3875,
+      "y": -11.90625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW13",
+      "x": -90.4875,
+      "y": -11.90625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW11",
+      "x": -71.4375,
+      "y": 4.7625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW14",
+      "x": -90.4875,
+      "y": 7.14375,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW8",
+      "x": -41.097974,
+      "y": 49.801677,
+      "rotation": 168.06
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW12",
+      "x": -71.4375,
+      "y": -14.2875,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW17",
+      "x": -109.5375,
+      "y": 11.90625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW21",
+      "x": -128.5875,
+      "y": 30.95625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW7",
+      "x": -52.3875,
+      "y": 26.19375,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW10",
+      "x": -71.4375,
+      "y": 23.8125,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW15",
+      "x": -90.4875,
+      "y": 26.19375,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW19",
+      "x": -128.5875,
+      "y": -7.14375,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW20",
+      "x": -128.5875,
+      "y": 11.90625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW18",
+      "x": -109.5375,
+      "y": -7.14375,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW16",
+      "x": -109.5375,
+      "y": 30.95625,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1.5u",
+      "reference": "SW1",
+      "x": -19.256135,
+      "y": 51.882713,
+      "rotation": -113.88
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW2",
+      "x": -33.3375,
+      "y": 28.575,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW6",
+      "x": -52.3875,
+      "y": 7.14375,
+      "rotation": 180.0
+    },
+    {
+      "name": "kbd:keyswitch_cherrymx_hotswap_1u",
+      "reference": "SW3",
+      "x": -33.3375,
+      "y": 9.525,
+      "rotation": 180.0
+    }
+  ],
+  "edge_cuts_sexpr": [
+    "(gr_line (start -119.4625 25.43125) (end -119.462501 31.481255)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 000d4562-8578-4d92-b78f-2460b88ecda3))",
+    "(gr_line (start -7.6675 -17.16875) (end -7.6675 -11.36625)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 0083233a-08e4-4f35-b09d-033b278254ba))",
+    "(gr_line (start -138.612502 -30.3125) (end -138.612502 -27.3125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 025df03d-2547-455b-81d1-f72bdf9d4b54))",
+    "(gr_line (start -107.1625 42.981286) (end -84.252663 42.98125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 02eff09f-5627-482d-987f-d377cba94c10))",
+    "(gr_line (start 92.8625 -21.93125) (end 92.8625 -26.3125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 05f8338e-1a5b-4be9-83a6-2802a7215cb2))",
+    "(gr_line (start 118.662503 -15.668755) (end 118.662502 -9.61875)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 076fb992-1c15-4d31-8ff2-521b44a7f7f6))",
+    "(gr_line (start 61.412504 -21.93125) (end 61.412504 -23.3125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 07c93529-2157-4d04-ac53-e0805a8e0d13))",
+    "(gr_line (start -82.252663 71.179851) (end 81.252663 71.179851)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 080b8c0c-a017-4106-ba58-541ee4eb3dd5))",
+    "(gr_line (start 118.662502 -7.61875) (end 118.662502 -1.61875)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 09ac780d-5433-4022-bcf4-f247aea4d7f7))",
+    "(gr_line (start 119.462499 33.481255) (end 119.4625 39.48125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 0a5c7660-7bb9-4a21-a396-45c6100afe00))",
+    "(gr_line (start 100.512504 -17.168751) (end 137.612502 -17.168758)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 0affda7c-1af8-4237-8099-e5f6131ae500))",
+    "(gr_line (start -4.262502 42.568678) (end -4.262502 37.8)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 0dab6123-709f-4792-add4-e5cce97ca39d))",
+    "(gr_line (start 130.9625 40.98125) (end 130.9625 42.981286)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 0f37bb01-1251-4399-b3f3-d92aa0e35593))",
+    "(gr_line (start -107.1625 40.98125) (end -107.1625 42.981286)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 10e28be6-b750-42f6-8156-8562f5429829))",
+    "(gr_line (start 82.252663 43.98125) (end 82.252663 70.179851)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 13c70674-2dc4-4072-b9e2-080bc73ff4af))",
+    "(gr_line (start 119.462502 6.38125) (end 119.462502 17.43125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 15c9d328-92f5-404a-aa79-de1b45fa81da))",
+    "(gr_line (start -118.662498 -7.61875) (end -118.662498 -1.61875)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 17b9d3cf-f293-4ab8-ae99-916d3bfeb924))",
+    "(gr_line (start -118.6625 25.43125) (end -118.662501 31.481255)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 17c9b9c8-ad7f-4d51-a246-d2eb8ab3457b))",
+    "(gr_line (start -119.462498 6.38125) (end -119.462498 17.43125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 18639b69-da4e-48d7-97f0-0068e0c96ebf))",
+    "(gr_line (start 24.312504 -19.55) (end 42.362504 -19.55)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 18dbd602-625d-4a38-8823-240a47bf23d2))",
+    "(gr_line (start -118.662498 6.38125) (end -118.662498 17.43125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 1bd19fef-14d6-46fb-b443-8f9087d8cf3b))",
+    "(gr_line (start -54.7625 -21.93125) (end -61.412502 -21.93125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 1f506835-c606-4a0d-b4cf-57aa1af91ccd))",
+    "(gr_line (start 137.612502 -31.3125) (end -137.612502 -31.3125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 28b1af51-2846-4b22-9b64-c69b57a2923b))",
+    "(gr_line (start 81.462504 -23.3125) (end 81.462504 -21.93125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 28d5b953-6b6d-4c4c-abc0-e1149223ec66))",
+    "(gr_line (start 7.667502 -17.16875) (end 7.667502 -11.36625)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 2a437564-4cd6-44d8-9fac-08413083dc0b))",
+    "(gr_line (start 42.362504 -19.55) (end 42.362504 -20.93125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 2b525827-8431-4d3c-a495-5d53690c33f1))",
+    "(gr_line (start 54.762502 -26.3125) (end 88.1125 -26.3125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 2be4a505-ff22-4678-9a87-91a6cc964ca4))",
+    "(gr_line (start -119.462498 -7.61875) (end -119.462498 -1.61875)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 2e686e58-b705-469a-967b-131ecefef70a))",
+    "(gr_line (start 138.612505 43.981249) (end 138.612504 75.179851)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 3a13fad7-de3d-4038-9041-3582a24aa2c6))",
+    "(gr_line (start 4.262504 42.568678) (end 4.262504 37.8)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 3a4afcd4-cbe2-40d5-91d5-0527e5f86650))",
+    "(gr_line (start -119.462497 -15.668755) (end -119.462498 -9.61875)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 3e221ffd-a5ab-4ae7-b51a-0d2db93f8df7))",
+    "(gr_line (start 100.512504 -20.93125) (end 100.512504 -17.168751)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 3eb57d06-781b-44bf-a675-2532af7f47cf))",
+    "(gr_line (start 71.234566 57.673949) (end 33.880023 61.580296)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 43a237f7-f1c4-41bf-a93b-5399eec2b8a2))",
+    "(gr_line (start -88.112504 -21.93125) (end -88.112504 -26.3125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 454ec307-024d-4acb-b571-650f81290644))",
+    "(gr_line (start -92.8625 -21.93125) (end -92.8625 -26.3125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 45660558-3f91-472b-a4f2-7f1f88209afa))",
+    "(gr_line (start -118.662497 -15.668755) (end -118.662498 -9.61875)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 458468b5-d640-4e79-ad41-2eb6f421b6bc))",
+    "(gr_line (start 17.2675 37.8) (end 17.2675 31.5)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 47fe58ac-46e8-49d7-96b2-692ee41f4da9))",
+    "(gr_line (start -137.612502 40.98125) (end -130.9625 40.98125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 49e3164d-1dca-483c-ad80-3d934a8c2009))",
+    "(gr_line (start 81.252665 40.98125) (end 71.998802 57.175511)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 4ab7ed7f-a257-4841-b35f-c86099fea11e))",
+    "(gr_line (start -71.234564 57.673949) (end -33.880021 61.580296)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 4c683a63-2054-4127-a24c-7a09267a5eae))",
+    "(gr_line (start -7.6675 -11.36625) (end -16.9075 -11.36625)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 4d311552-82ed-4eda-bc62-4f13e4c5b6df))",
+    "(gr_line (start 4.262504 -7) (end 4.262504 -16.16875)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 512c4bb6-3fef-4337-9062-5ad09cbe5ff7))",
+    "(gr_line (start -92.8625 -26.3125) (end -137.612502 -26.3125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 53a232dc-1b35-4d5b-a597-c2cc112a7ea0))",
+    "(gr_line (start 126.2125 40.98125) (end 126.2125 42.981286)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 5403889f-c516-4a73-ac02-d62b50aad80e))",
+    "(gr_line (start 118.662502 6.38125) (end 118.662502 17.43125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 55c2bdb7-9eb9-4607-bf6a-d219665a26fd))",
+    "(gr_line (start 54.762506 -21.93125) (end 61.412504 -21.93125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 5d332c27-3a83-42e2-b93c-af4080a9bc7c))",
+    "(gr_line (start -126.2125 42.981286) (end -111.9125 42.981286)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 6617d151-1463-47e6-9138-8a5b467964eb))",
+    "(gr_line (start -17.2675 31.5) (end -4.262502 31.5)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 682f71fe-43c2-4bad-a0e2-30b68a4eb76d))",
+    "(gr_line (start -17.2675 37.8) (end -17.2675 31.5)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 6a6dc3b8-222d-451b-ab9e-b544d50ee87a))",
+    "(gr_line (start 4.262504 37.8) (end 17.2675 37.8)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 6b995c96-1182-4510-848b-52b56eeb2d55))",
+    "(gr_line (start -83.252663 70.179851) (end -83.252663 43.98125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 6c5a3299-23d0-483b-bba1-4fc7cbdcfc1f))",
+    "(gr_line (start 119.462503 -15.668755) (end 119.462502 -9.61875)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 6ca1a3ae-fe29-4b02-b206-eb323c8ca373))",
+    "(gr_line (start -50.0125 -26.3125) (end 50.012502 -26.3125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 6daa91fb-8d62-4277-98f8-0899b6200110))",
+    "(gr_line (start -61.412502 -21.93125) (end -61.412502 -23.3125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 6dddec22-b03a-4067-a424-8efb9a85095a))",
+    "(gr_line (start 111.9125 40.98125) (end 111.9125 42.981286)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 6e291f31-296f-43ca-8ad5-04b01703b4c1))",
+    "(gr_line (start 50.012502 -21.93125) (end 50.012502 -26.3125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 6eb3f105-a531-4883-b137-ebf7c5c2668d))",
+    "(gr_line (start 16.907502 -17.16875) (end 23.312504 -17.16875)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 7049a73f-7a2a-45ee-b7da-fe7c64607d3a))",
+    "(gr_line (start -137.612498 42.981286) (end -130.9625 42.981286)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 742a6381-a906-475a-ad37-7c2672fba148))",
+    "(gr_line (start 119.4625 25.43125) (end 119.462499 31.481255)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 75c44681-04de-45c8-a217-d285763ac9d9))",
+    "(gr_line (start 17.2675 31.5) (end 4.262504 31.5)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 77dda225-5c47-4ec2-9ff4-f709d280181e))",
+    "(gr_line (start 54.762502 -21.93125) (end 54.762502 -26.3125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 791f3e2e-5456-40a2-97fe-3af2dc81da46))",
+    "(gr_line (start -16.9075 -11.36625) (end -16.9075 -17.16875)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 7bf2cb4f-a427-4474-96d4-a39cda5cb491))",
+    "(gr_line (start 92.862508 -21.93125) (end 99.512504 -21.93125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 7c22d1f9-b697-4eb5-b295-4395f3115ae2))",
+    "(gr_line (start -100.512502 -20.93125) (end -100.512502 -17.168751)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 7c4859a3-640e-417e-99eb-f11ee45f5dc0))",
+    "(gr_line (start 83.252663 42.98125) (end 107.1625 42.981286)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 80235bf4-8261-4fc2-899b-79872d96ab90))",
+    "(gr_line (start -4.262502 37.8) (end -17.2675 37.8)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 867cd51d-e691-4ccd-8f22-92815299ac57))",
+    "(gr_line (start 107.1625 40.98125) (end 81.252665 40.98125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 8acbf0b0-208f-42e5-bfc5-95e44f041f8d))",
+    "(gr_line (start 92.8625 -26.3125) (end 137.612502 -26.3125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 8ee9b13c-3b05-4960-98f8-0dfa6a0766d3))",
+    "(gr_line (start -92.8625 -21.93125) (end -99.512502 -21.93125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 90fbc3ad-73ce-43fe-9f84-bceccdc31a62))",
+    "(gr_line (start -23.312502 -17.16875) (end -23.312502 -18.55)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 91402f72-1411-4f53-a832-c6746270c376))",
+    "(gr_line (start -4.262502 26.55) (end -4.262502 31.5)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 94553cf2-9994-4b8b-8c2e-9c27ee77cece))",
+    "(gr_line (start 43.362504 -21.93125) (end 50.012502 -21.93125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 95bbe335-bbad-423c-a9fb-bdf215b4ba06))",
+    "(gr_line (start -138.612502 75.179851) (end -138.612502 43.981249)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 95c296c7-6b35-4bf6-8567-23acb030bd9d))",
+    "(gr_line (start -54.7625 -21.93125) (end -54.7625 -26.3125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 95d83902-2e02-4cf5-9331-08482928571d))",
+    "(gr_line (start 138.612502 -16.168758) (end 138.612504 39.98125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 95f01210-cb86-435f-98c7-4ac25f48f93e))",
+    "(gr_line (start 23.312504 -17.16875) (end 23.312504 -18.55)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp 9f299e6d-31b5-41c4-8131-b78c4dbdee53))",
+    "(gr_line (start 138.612502 -27.3125) (end 138.612502 -30.3125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 9f5c49a0-b51d-4fde-9019-9d368608f817))",
+    "(gr_line (start -81.462502 -21.93125) (end -88.112504 -21.93125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp a2b4527c-d82f-45d5-a852-7d8594e927ff))",
+    "(gr_line (start 111.9125 42.981286) (end 126.2125 42.981286)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp a6498bbd-8778-4813-8f74-0f7865141365))",
+    "(gr_line (start -4.262502 -7) (end -4.262502 -16.16875)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp ac9de651-9eab-4105-bcb2-a3f28d2381bb))",
+    "(gr_line (start 33.880023 61.580296) (end 16.990084 69.057964)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp ae6fc4d9-ac84-41d7-9102-9373eb474957))",
+    "(gr_line (start -33.880021 61.580296) (end -16.990082 69.057964)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp af4d3c9e-0283-46cc-9def-cd1032f9d6bb))",
+    "(gr_line (start 130.9625 42.981286) (end 137.612505 42.981249)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp b14d1efe-e8ed-4db7-8185-c4a67f4ebf2d))",
+    "(gr_line (start -4.262502 -7) (end -4.262502 26.55)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp bc113583-2e7a-425b-8e3c-3a42652b3825))",
+    "(gr_line (start 16.907502 -11.36625) (end 16.907502 -17.16875)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp bd5d76bd-ca93-44a8-b60a-cda983655a0b))",
+    "(gr_line (start -24.312502 -19.55) (end -42.362502 -19.55)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp c42d9cf2-1d3c-41c8-a639-d17e7710aea4))",
+    "(gr_line (start -50.0125 -21.93125) (end -50.0125 -26.3125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp c4f22797-1467-450a-9cf8-9434bc84593b))",
+    "(gr_line (start -126.2125 40.98125) (end -126.2125 42.981286)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp c5feead5-936d-41f1-9f19-aceb57e6810c))",
+    "(gr_line (start -42.362502 -19.55) (end -42.362502 -20.93125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp c85a251a-3c82-466a-9f62-d84e6d1c23c1))",
+    "(gr_line (start -137.612537 76.179851) (end 137.612504 76.179851)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp ce1a6ff8-c3ee-469a-9193-9295f27c31b1))",
+    "(gr_line (start -5.262502 -17.16875) (end -7.6675 -17.16875)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp d0c9debf-bbe9-45a8-ba66-45e95b03e0ba))",
+    "(gr_line (start -81.462502 -23.3125) (end -81.462502 -21.93125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp d425080b-8184-4b29-8dc7-f7104519332b))",
+    "(gr_line (start 4.262504 26.55) (end 4.262504 31.5)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp d4288f3c-73de-4edd-97cc-c4cae14a07c2))",
+    "(gr_line (start 7.667502 -11.36625) (end 16.907502 -11.36625)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp d5bdb29d-09cc-4ab4-984f-037f42b833e7))",
+    "(gr_line (start 119.462502 -7.61875) (end 119.462502 -1.61875)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp d7a1f3d9-603b-4f66-afd0-379c728ab607))",
+    "(gr_line (start -43.362502 -21.93125) (end -50.012504 -21.93125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp dc350546-e1a9-479e-b82e-cf1357e72adf))",
+    "(gr_line (start -81.252663 40.98125) (end -71.9988 57.175511)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp deb345db-85c1-49e9-bff6-2ea74625d9cb))",
+    "(gr_line (start -107.1625 40.98125) (end -81.252663 40.98125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp df68f48c-bbb1-485f-a6fc-b1a8d040b5b0))",
+    "(gr_line (start 118.6625 25.43125) (end 118.662499 31.481255)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp e1278c59-bea9-495c-8fb2-60939f87c4c4))",
+    "(gr_line (start -119.462501 33.481255) (end -119.4625 39.48125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp e1ae1316-3fc9-4282-941f-24a64a2fd250))",
+    "(gr_line (start 118.662499 33.481255) (end 118.6625 39.48125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp e2b74909-5423-451f-9765-211b8fcb0c1a))",
+    "(gr_line (start -16.9075 -17.16875) (end -23.312502 -17.16875)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp e3a5bc86-c635-47fb-8a3d-08169b410378))",
+    "(gr_line (start -62.412502 -24.3125) (end -80.462502 -24.3125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp e6f88c87-6259-4e81-8027-403956913c04))",
+    "(gr_line (start -100.512502 -17.168751) (end -137.6125 -17.168758)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp ed20019d-25c9-487b-9614-163ab8b6197e))",
+    "(gr_line (start 111.9125 40.98125) (end 126.2125 40.98125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp ed8fdb03-4015-46bd-876e-51dd2d798861))",
+    "(gr_line (start 107.1625 40.98125) (end 107.1625 42.981286)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp ef862fb4-59bb-43ee-a921-57715ec2c0fc))",
+    "(gr_line (start 62.412504 -24.3125) (end 80.462504 -24.3125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp f0d288b8-8ed0-493e-9203-4b09b979c6ef))",
+    "(gr_line (start 81.462504 -21.93125) (end 88.1125 -21.93125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp f0d4b8e0-e128-4d06-bc75-1b1b9e301bb3))",
+    "(gr_line (start -54.7625 -26.3125) (end -88.112504 -26.3125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp f3a114c6-f06c-4936-b6e7-04323f1b0aec))",
+    "(gr_line (start 88.1125 -21.93125) (end 88.1125 -26.3125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp f3f25512-f75c-441d-b92b-2db0cf0e9bb4))",
+    "(gr_line (start -138.6125 -16.168758) (end -138.612502 39.98125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp f445258f-6f8e-4b1c-878b-6ae6123bbee7))",
+    "(gr_line (start -130.9625 40.98125) (end -130.9625 42.981286)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp f5a2494a-ac79-4de2-a40e-65ab9077d65f))",
+    "(gr_line (start 15.670863 68.5484) (end 4.348111 42.973506)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp f70da5ef-db8b-4645-8568-693b42925917))",
+    "(gr_line (start 4.262504 -7) (end 4.262504 26.55)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp f9ef5976-b543-413f-a5f5-df52b3e4f692))",
+    "(gr_line (start -111.9125 40.98125) (end -111.9125 42.981286)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp fa95ae9f-a494-4723-832a-9373e1033de1))",
+    "(gr_line (start -126.2125 40.98125) (end -111.9125 40.98125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp fb1f6459-5ec5-42c3-a25c-e038744ef11f))",
+    "(gr_line (start 5.262504 -17.16875) (end 7.667502 -17.16875)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp fbaf7791-4709-4697-b15e-3b694c77310a))",
+    "(gr_line (start -15.670861 68.5484) (end -4.348109 42.973506)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp fd357642-0deb-4ffa-9e9c-ea723ed05ade))",
+    "(gr_line (start -118.662501 33.481255) (end -118.6625 39.48125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp fd805fb0-2ae6-4826-b4fa-5d898d84a379))",
+    "(gr_line (start 130.9625 40.98125) (end 137.612504 40.98125)\n    (stroke (width 0.1) (type solid)) (layer \"Edge.Cuts\") (tstamp ff0c20d2-7c08-4ff6-a868-ec0a4b21ef2f))",
+    "(gr_arc (start 118.662502 -7.61875) (mid 119.062502 -8.01875) (end 119.462502 -7.61875)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 129d73a2-ea3c-47b2-8141-0e1c72487e50))",
+    "(gr_arc (start -137.612502 76.179851) (mid -138.31963 75.886969) (end -138.612502 75.179851)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 176d3902-d095-48cf-9faa-c5b65b701c59))",
+    "(gr_arc (start 119.462502 17.43125) (mid 119.062502 17.83125) (end 118.662502 17.43125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 184f880b-0a6d-4dde-9b98-06cfd53074b1))",
+    "(gr_arc (start -119.462498 -7.61875) (mid -119.062498 -8.01875) (end -118.662498 -7.61875)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 20081e3d-c568-409f-84cf-2c638c75fad2))",
+    "(gr_arc (start 82.252663 70.179851) (mid 81.959769 70.886957) (end 81.252663 71.179851)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 2ad9142b-9117-43d4-bd0a-410ff833ac4f))",
+    "(gr_arc (start -84.252663 42.98125) (mid -83.545539 43.274134) (end -83.252663 43.98125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 31f3dde5-ffc7-44fe-bac1-bceaf2120ed0))",
+    "(gr_arc (start -118.662498 -9.61875) (mid -119.062498 -9.21875) (end -119.462498 -9.61875)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 32697432-4c53-4918-a1e4-02520cdf44aa))",
+    "(gr_arc (start 138.612502 -27.3125) (mid 138.319608 -26.605394) (end 137.612502 -26.3125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 358407cb-3b7a-47ba-b721-08c88a47b161))",
+    "(gr_arc (start -138.612502 -30.3125) (mid -138.319609 -31.019606) (end -137.612502 -31.3125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 4641d34e-f7d3-49c0-8c4f-aba8bd8fe7b9))",
+    "(gr_arc (start -118.662501 31.481255) (mid -119.062501 31.881255) (end -119.462501 31.481255)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 48aa21fd-f814-4de1-9f19-3ddaf92a3321))",
+    "(gr_arc (start 118.662499 33.481255) (mid 119.062499 33.081255) (end 119.462499 33.481255)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 4a4ffae1-c845-4688-b7eb-4b43f1742407))",
+    "(gr_arc (start -118.662498 17.43125) (mid -119.062498 17.83125) (end -119.462498 17.43125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 4b1c7aaa-69a5-410a-b32a-ad86761150e8))",
+    "(gr_arc (start 137.612505 42.981249) (mid 138.319611 43.274143) (end 138.612505 43.981249)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 4c6326e4-3cdb-4faa-bee7-09997aff74ab))",
+    "(gr_arc (start -137.612502 -26.3125) (mid -138.319608 -26.605394) (end -138.612502 -27.3125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 4f6ab644-8d97-44c5-81c0-283a7f9133ad))",
+    "(gr_arc (start 118.6625 25.43125) (mid 119.0625 25.03125) (end 119.4625 25.43125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 54af2038-69c1-486e-91ad-89e6a2b0ae12))",
+    "(gr_arc (start 137.612503 -31.3125) (mid 138.319609 -31.019606) (end 138.612503 -30.3125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 58a28111-db15-4051-9b4b-a902f71a0db1))",
+    "(gr_arc (start -119.4625 25.43125) (mid -119.0625 25.03125) (end -118.6625 25.43125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 590861cf-881b-4145-bfaf-cd2537f8cd6d))",
+    "(gr_arc (start -119.462497 -15.668755) (mid -119.062497 -16.068755) (end -118.662497 -15.668755)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 59923c97-c043-4066-b961-411087d0fa50))",
+    "(gr_arc (start 119.462502 -9.61875) (mid 119.062502 -9.21875) (end 118.662502 -9.61875)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 5a77548c-28a8-4fca-95fc-a919f6bb66bd))",
+    "(gr_arc (start 138.612504 75.179851) (mid 138.31961 75.886957) (end 137.612504 76.179851)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 69de0eb1-a17e-48c9-a116-ee0aacc870c3))",
+    "(gr_arc (start -119.462501 33.481255) (mid -119.062501 33.081255) (end -118.662501 33.481255)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 77ddd0e3-146e-4caa-a442-acb3095f3634))",
+    "(gr_arc (start -119.462498 6.38125) (mid -119.062498 5.98125) (end -118.662498 6.38125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 883dfa2c-1741-4c4e-939e-3961bfeba32e))",
+    "(gr_arc (start 82.252663 43.98125) (mid 82.545557 43.274144) (end 83.252663 42.98125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 8f333def-7cf1-4320-b417-02a196c7a3d7))",
+    "(gr_arc (start 118.662502 6.38125) (mid 119.062502 5.98125) (end 119.462502 6.38125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp 9efa3021-5928-4718-a9a2-0d49451dcda3))",
+    "(gr_arc (start -118.662498 -1.61875) (mid -119.062498 -1.21875) (end -119.462498 -1.61875)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp a09fd90b-0218-46c9-9bf8-0df4a6c21300))",
+    "(gr_arc (start -82.252663 71.179851) (mid -82.959753 70.886949) (end -83.252663 70.179851)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp b03d4814-3632-4c74-994f-230ba6a6701d))",
+    "(gr_arc (start -118.6625 39.48125) (mid -119.0625 39.88125) (end -119.4625 39.48125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp c17eff79-a405-40d6-ac04-e18ef0a23c1f))",
+    "(gr_arc (start 118.662503 -15.668755) (mid 119.062503 -16.068755) (end 119.462503 -15.668755)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp d527d88c-eeea-41df-9f1a-cac97df4dc7c))",
+    "(gr_arc (start 119.4625 39.48125) (mid 119.0625 39.88125) (end 118.6625 39.48125)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp e2a602da-e646-45cb-b8c6-99df5d152612))",
+    "(gr_arc (start 119.462502 -1.61875) (mid 119.062502 -1.21875) (end 118.662502 -1.61875)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp e501f27c-bf11-47b1-8542-252dbb1aa7c6))",
+    "(gr_arc (start 119.462499 31.481255) (mid 119.062499 31.881255) (end 118.662499 31.481255)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp ecc4d287-baf1-4512-a986-fe4f91014769))",
+    "(gr_arc (start -138.612502 43.981249) (mid -138.319605 43.274154) (end -137.612498 42.981286)\n    (stroke (width 0.1) (type default)) (layer \"Edge.Cuts\") (tstamp f6c3b49a-c05a-47ad-b319-46f7d6804458))"
+  ]
+}

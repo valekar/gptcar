@@ -1,0 +1,29 @@
+{
+  "slug": "blueprint",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "439704ca958060eb24706f7a820fc4e0834fcc8a358a468d2d2bd95c7e268b85",
+  "video_sha256": "c143fba49e19453b5d6be56b5358c939e9e92ddea73c4ce502adcac32ffcf596",
+  "bytes": 1809741,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "Cloud Catcher / Revision C",
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. ",
+  "updated_at": "2026-10-18T03:08:36Z"
+}

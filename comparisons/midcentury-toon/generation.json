@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Pip, Ready to Go",
+  "premise": "A geometric presenter sets a turquoise robot vacuum up in three clear steps: dock, connect, start.",
+  "duration": 20,
+  "comparison_notes": "Independent twenty-second code study of the original premise. No spoken dialogue; original instrumental score and picture actions. Qualitative comparison, durations differ.",
+  "uses_upstream_demo_code": false,
+  "assets": []
+}

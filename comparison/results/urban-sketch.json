@@ -1,0 +1,29 @@
+{
+  "slug": "urban-sketch",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "1e11f4b79c8f4f31094a80f125e148af287ed13ba087b5f5b92aea6a8eb5df5d",
+  "video_sha256": "9fdd363befa4714ad77398cd5e6975d6963cdb758ebc5d9821dc7033653bd323",
+  "bytes": 4904247,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "The Hat Colours the Park",
+  "comparison_notes": "Independent 20-second procedural visual study matching the library premise. Original full-length upstream film differs in duration and production scope; this is a qualitative style comparison. No narration.",
+  "updated_at": "2026-10-18T03:07:20Z"
+}

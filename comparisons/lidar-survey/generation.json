@@ -1,0 +1,15 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Below the Returns",
+  "premise": "A real USGS Connecticut point subset is viewed in 3D, separated by provider class, then its ground returns form a measured surface.",
+  "duration": 20,
+  "comparison_notes": "Actual 51,560 USGS 3DEP returns in an Ashford-area coarse LOD window. Provider class2 and nearest-sample ground surface replace the original wall-tracing narrative; no archaeological wall measurement claimed.",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    "assets/ground-grid.json",
+    "assets/points.json",
+    "assets/ept.json"
+  ]
+}

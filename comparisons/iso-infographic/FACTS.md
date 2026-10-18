@@ -1,0 +1,1 @@
+Conceptual coffee process illustration: grow → roast → brew. No quantitative supply-chain, yield, distance, time or environmental claims. Route and equipment are schematic and not to scale. The three station labels count the drawn stations only.

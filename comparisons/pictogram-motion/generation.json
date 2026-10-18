@@ -1,0 +1,24 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Motion / Selected Sports",
+  "premise": "All 43 sports of the 2026 Asian Games as beat-locked geometric pictograms.",
+  "duration": 20,
+  "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. 20-second selected-sports study (running, archery and swimming), not all 43 sports; original generic sport pictograms and identity. No real event brand or emblem.",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    {
+      "type": "font",
+      "name": "Inter",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/inter"
+    },
+    {
+      "type": "font",
+      "name": "JetBrains Mono",
+      "license": "SIL OFL 1.1",
+      "source": "https://github.com/google/fonts/tree/main/ofl/jetbrainsmono"
+    }
+  ]
+}

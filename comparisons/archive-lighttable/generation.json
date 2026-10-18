@@ -1,0 +1,15 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "A Flight in the Archive",
+  "premise": "Three actual Wright archival scans become evidence objects on a cool light table, revealed by a negative-to-positive loupe.",
+  "duration": 20,
+  "comparison_notes": "Actual LOC Wright photographs and verified first/fourth-flight catalogue figures12s/59s. Original loupe implementation. Supplied photograph evidence replaces the upstream57s telegram/newspaper comparison.",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    "assets/wright-00610.jpg",
+    "assets/wright-00629.jpg",
+    "assets/wright-00626.jpg"
+  ]
+}

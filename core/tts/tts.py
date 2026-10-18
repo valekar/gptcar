@@ -35,7 +35,7 @@ if espeak_dir and len(espeak_dir.encode('utf-8')) >= ESPEAK_LIMIT:
     sys.exit(f"tts.py: this library sits under a folder path that is too long for the offline voice engine (espeak-ng).\n"
              f"  its data folder is {len(espeak_dir.encode('utf-8'))} bytes long (a Chinese character counts as 3), the limit is {ESPEAK_LIMIT - 1}:\n"
              f"    {espeak_dir}\n"
-             f"  Move the library to a shorter path (e.g. CODEXCAR_HOME=/short/path/codexcar, or a shorter folder for the clone) and run\n"
+             f"  Move the library to a shorter path (e.g. GPTCAR_HOME=/short/path/gptcar, or a shorter folder for the clone) and run\n"
              f"  `sh tools/setup.sh deps` there (a moved .venv does not work). No need to move anything for tts_zh.py.")
 try: from kokoro_onnx import Kokoro
 except ImportError: sys.exit('tts.py: kokoro-onnx is missing: install the voice tier: sh tools/setup.sh deps voice')

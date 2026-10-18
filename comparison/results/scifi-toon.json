@@ -1,0 +1,29 @@
+{
+  "slug": "scifi-toon",
+  "status": "verified",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_sha256": "9419f8a28db03785f54c18818a16d2c5f77006f75512e651753a6230f2aa61da",
+  "video_sha256": "9fd2fdd266ad01bc616b7909bc35c8bf3e0eb9bd14e29e1a01da4292da2e4ea5",
+  "bytes": 2348348,
+  "duration": 20,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frames": 480,
+  "audio_codec": "aac",
+  "qa": {
+    "render_errors": false,
+    "black_intervals": false,
+    "visual_review": "passed",
+    "review_times_seconds": [
+      2,
+      10,
+      17
+    ],
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+  },
+  "title": "A Very Long Coffee Run",
+  "comparison_notes": "Independent twenty-second code study of the original premise. No spoken dialogue; original instrumental score and picture actions. Qualitative comparison, durations differ.",
+  "updated_at": "2026-10-18T02:55:39Z"
+}

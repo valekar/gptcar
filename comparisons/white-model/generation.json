@@ -1,0 +1,11 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Rotterdam / Light by Year",
+  "premise": "Actual Rotterdam building footprints and roof heights form a fixed white scale model; projected construction dates and heights reveal the subset.",
+  "duration": 20,
+  "comparison_notes": "Actual216-feature Rotterdam subset at1:1000; original construction-year attribute and roof-minus-terrain heights projected onto fixed white geometry. No citywide war-damage or solar-shadow claim.",
+  "uses_upstream_demo_code": false,
+  "assets": []
+}

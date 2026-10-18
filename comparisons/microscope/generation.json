@@ -1,0 +1,17 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Blue, Counted",
+  "premise": "One calibrated real tissue pyramid is explored; two 75-micrometre circles have their blue-dominant pixel shares counted without clinical inference.",
+  "duration": 20,
+  "comparison_notes": "Same real calibrated PathAI Ventana tissue pyramid with two75\u00b5m-radius ROI measurements:37.34% and49.68% blue-dominant pixels. Different regions/measurement from the upstream film; no clinical inference.",
+  "uses_upstream_demo_code": false,
+  "assets": [
+    "assets/tissue-detail.jpg",
+    "assets/calibration.json",
+    "assets/page-metadata.json",
+    "assets/pyramid-5.jpg",
+    "assets/pyramid-6.jpg"
+  ]
+}
