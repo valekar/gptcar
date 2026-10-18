@@ -1,6 +1,6 @@
 # GPTcar
 
-> **Comparison status:** all 51 full-length, source-informed recreations have passed independent scene/audio review and are ready for publication, replacing the rejected abbreviated first pass. Final release-build and live deployment verification remain pending. The gallery link below is the publication target; this is not a confirmed-live announcement.
+> **Comparison status:** all 51 full-length, source-informed recreations have passed independent scene/audio review and are ready for publication, replacing the rejected abbreviated first pass. The final strict release build passed; live deployment verification remains pending. The gallery link below is the publication target; this is not a confirmed-live announcement.
 
 **[Open the Opus ↔ GPT comparison gallery](https://valekar.github.io/gptcar/)** — one page, all 51 styles side by side. Original Opus films on the left; independently coded GPT-6.1 Sol High reconstructions on the right. [Production conditions](comparison/REPLICATION.md) · [Full run report and per-style evidence](comparison/REPLICATION_REPORT.md).
 

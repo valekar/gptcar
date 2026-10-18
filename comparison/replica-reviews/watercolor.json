@@ -3,7 +3,7 @@
   "verdict": "accepted-for-gallery",
   "reviewer": "root independent scene review",
   "reviewed_source_sha256": "ab2bd59e12de408843162438c2f01590842bcdc5dd9f8fdf969b71d02e4f4623",
-  "reviewed_video_sha256": "a1b278da39030ddddacb343d023dcab9626f1945c1e3163da9aa224fc33e1681",
+  "reviewed_video_sha256": "d0ff749d9acd551486b58d9c38bf24def73f80de450d6c4213c7894b7109edf4",
   "scene_review": "passed",
   "audio_review": "passed",
   "review_times": [
@@ -53,8 +53,8 @@
     111.5,
     113.4
   ],
-  "method": "Independent full-reference/scene inspection plus timestamp-matched pairs and targeted repaired-event frames. Full-format/frame-count validation, exact narration input/take timing, ASR and mix level analysis. Close reconstruction; no pixel-identity claim.",
-  "audio_evidence": "All 13 exact narration inputs recreated at original cue onsets; take durations verified. ASR variants are British/American spelling, rainforest word segmentation/plural recognition and percent formatting; the source script was not changed. Mix\u221214.0 LUFS, peak\u22121.1 dBFS. Original music master not reused.",
+  "method": "Independent full-reference/scene inspection plus timestamp-matched pairs and targeted repaired-event frames. Full-format/frame-count validation, exact narration input/take timing, ASR and mix level analysis. Close reconstruction; no pixel-identity claim. Final audio-only AAC peak correction verified identical complete compressed video-stream SHA-256 before/after; all previously reviewed video frames are unchanged.",
+  "audio_evidence": "All 13 exact narration inputs recreated at original cue onsets; take durations verified. ASR variants are British/American spelling, rainforest word segmentation/plural recognition and percent formatting; the source script was not changed. Mix\u221214.0 LUFS, peak\u22121.1 dBFS. Original music master not reused. Final independent release audit measured -14.2 LUFS / -0.9 dBTP; corrected AAC export measures -14.7 LUFS / -1.2 dBTP, with unchanged complete video stream.",
   "comparison_notes": "The full 113.6-second walk and deep-time map preserve all 13 narration lines, vegetation stages, bilingual text, brush transitions and closing sequence. New scene/map/camera code with credited generic botanical/brush engines and coastline/rainfall data. Individual specimen layouts, pigment pooling, sun details and fire positions differ; map flame events and opening/closing timings were corrected. Fresh voice and score.",
   "reviewed_at": "2026-10-18T04:32:53.968093+00:00"
 }

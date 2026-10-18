@@ -7,11 +7,11 @@
   "source_sha256": "ab2bd59e12de408843162438c2f01590842bcdc5dd9f8fdf969b71d02e4f4623",
   "matched_brief_sha256": "fdfad78503a9721fdf98cce200793c53b55c7a450461d60e758b95c4953bc5ac",
   "reference_video_sha256": "a222efe90cdbc0c2283d531757373f83c2b7dc0811212f4db4c032249884ead2",
-  "video_sha256": "a1b278da39030ddddacb343d023dcab9626f1945c1e3163da9aa224fc33e1681",
+  "video_sha256": "d0ff749d9acd551486b58d9c38bf24def73f80de450d6c4213c7894b7109edf4",
   "poster_sha256": "845c0dd11a016fb157aedf8af7f178e21172731d7d10f5acd34776d8087c619b",
   "reference_poster_sha256": "9f13666ee00244d8627ead587ad12d275caaa02204c67874a09a8c26211a8178",
   "poster_time": 57.5,
-  "bytes": 39119886,
+  "bytes": 39123845,
   "width": 1280,
   "height": 720,
   "fps": 60.0,
@@ -113,5 +113,10 @@
     "audio_review": "passed",
     "black_intervals_detected": false
   },
-  "updated_at": "2026-10-18T04:32:32Z"
+  "updated_at": "2026-10-18T04:32:32Z",
+  "audio_levels": {
+    "integrated_lufs": -14.7,
+    "true_peak_dbtp": -1.2,
+    "peak_gain_adjustment_db": -0.5
+  }
 }

@@ -1,0 +1,19 @@
+{
+  "asset": "replication-inputs.tar.gz",
+  "sha256": "97b461527c9674ea07f834de28005ddfc9b50ed93f99a7fe715b8a4aae9522a8",
+  "bytes": 10376151,
+  "files": {
+    "core/assets/polyhaven/lythwood_lounge_2k.hdr": {
+      "sha256": "04cce69276d91353c41804c3a6b2d65bfef0119372aac5707ab73790933e60b7",
+      "bytes": 6090881
+    },
+    "core/assets/polyhaven/photo_studio_loft_hall_2k.hdr": {
+      "sha256": "2eadabfce70a1f27d958aa18b2572d75883f9964f4656c10e706a44cafe129d0",
+      "bytes": 6432146
+    },
+    "node_modules/three/package.json": {
+      "sha256": "2caf5d31ca4368c7e39e7e598dd95774fe1bdaae7cfbc5b073c8dcb5ec7e25da",
+      "bytes": 4373
+    }
+  }
+}
