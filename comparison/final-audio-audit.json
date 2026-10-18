@@ -689,13 +689,10 @@
     }
   },
   "measured_count": 51,
-  "flagged_slugs": [
-    "watercolor"
-  ],
+  "flagged_slugs": [],
   "completed_at_utc": "2026-10-18T09:15:53.854784+00:00",
-  "all_pass": false,
+  "all_pass": true,
   "pass_count": 51,
   "flag_count": 0,
-  "flags": [],
-  "all_passed": true
+  "flags": []
 }
