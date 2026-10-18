@@ -1,0 +1,265 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "slug": "papercut-red",
+  "title": "Nian Comes to Town",
+  "source_ready": true,
+  "status": "source-ready-for-independent-review",
+  "uses_upstream_scene_code": false,
+  "matched_brief_sha256": "a2e03ed84b8a6005db6b75539c6201990aa9fc62bd9802cfcbaa7e9a63e40c41",
+  "delivery": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frame_count": 1176,
+    "duration": 49
+  },
+  "duration": 49,
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "review_times": [
+    0.25,
+    0.5,
+    1,
+    1.5,
+    1.75,
+    2.4,
+    2.5,
+    3.5,
+    4.5,
+    5.5,
+    6.5,
+    6.75,
+    7.5,
+    8.5,
+    9.5,
+    10.5,
+    11.5,
+    12,
+    12.5,
+    13.5,
+    14.5,
+    15.5,
+    16.5,
+    17.5,
+    18.291667,
+    18.333333,
+    18.5,
+    19.458333,
+    19.5,
+    20.5,
+    21.5,
+    22.5,
+    23.25,
+    23.5,
+    24.25,
+    24.5,
+    25.25,
+    25.5,
+    26.25,
+    26.5,
+    26.75,
+    27.5,
+    28.5,
+    29.5,
+    29.958333,
+    30.125,
+    30.375,
+    30.5,
+    30.625,
+    30.875,
+    31,
+    31.25,
+    31.5,
+    31.8,
+    32,
+    32.25,
+    32.5,
+    32.75,
+    33,
+    33.25,
+    33.5,
+    33.75,
+    33.875,
+    34.25,
+    34.5,
+    34.75,
+    35.125,
+    35.3,
+    35.5,
+    36.5,
+    37.5,
+    38.5,
+    39.5,
+    40.5,
+    41.5,
+    42.5,
+    42.916667,
+    43.5,
+    44.5,
+    45.5,
+    46.5,
+    47.5,
+    48.5,
+    48.958333
+  ],
+  "shared_components": [
+    {
+      "path": "styles/papercut-red/demo/paper.js",
+      "sha256": "ef897323cf3043c96091c1d4b8d83d59be772ac99afb5d3c3973af66827fe837",
+      "purpose": "Generic paper grain, opaque cut-piece building, inset slits, cut edge, thickness/shadow and transmission toolkit"
+    },
+    {
+      "path": "styles/papercut-red/demo/motifs.js",
+      "sha256": "5da5a086d562ea5344caf2a893a97ae6d3e584efbe7be69da88a122c0b5f99b6",
+      "purpose": "Generic procedural sawtooth, crescent, swirl, plum, coin, rosette motif vocabulary"
+    },
+    {
+      "path": "styles/papercut-red/demo/rig.js",
+      "sha256": "da6901a0e4efb008b561b07de6556dd405c78b676a65edbd8c630c6170d6948b",
+      "purpose": "Generic affine paper-joint rig and piece placement"
+    },
+    {
+      "path": "styles/papercut-red/demo/girl.js",
+      "sha256": "7af555627064099ef81097cb32032fe42c296f9499171737bb6e3d130e97c60a",
+      "purpose": "Shared original library girl character/clothing/face/scissors model and joint rig; new performances and staging"
+    },
+    {
+      "path": "styles/papercut-red/demo/nian.js",
+      "sha256": "dcfbf5614220b8f02171e3fcd8ba363a5c403238e707bdab93ff7affbcf15afb",
+      "purpose": "Shared original library Nian cut-piece/face/pose model and joint rig; new positions, timed performances and projected-light scene"
+    },
+    {
+      "path": "styles/papercut-red/demo/tuanhua.js",
+      "sha256": "5446bfdb03d2e37356ba73580b13dead404c97e7846f39d4eb3dd88f8ec39184",
+      "purpose": "Shared eightfold lantern/ruyi rosette and wedge motif model; own progressive cut mask, folds, unfold assembly and new eight-light scene"
+    },
+    {
+      "path": "styles/papercut-red/demo/village.js",
+      "sha256": "41161fa15f7cf0289c21f9b1862b044624a360b6e99e341bce3d491b9af720a5",
+      "purpose": "Generic reusable house, ridge, tree, snow and lantern model builders; no original world layout reused"
+    },
+    {
+      "path": "styles/papercut-red/demo/light.js",
+      "sha256": "1bc654f3d227e3a8ef26291e4d145d76daa4d09b71a239f1cd9691cfe8d0a837",
+      "purpose": "Generic window transmission, light-mask, bloom and projection toolkit"
+    },
+    {
+      "path": "styles/papercut-red/demo/hud.js",
+      "sha256": "eee1672fc6be17f117923a33bf43ac3d5389effc70e65b469dd7a6f4ebd623d8",
+      "purpose": "Generic cut-letter and paper subtitle strip rendering, driven by exact new narration cue table"
+    },
+    {
+      "path": "core/lib.js",
+      "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+      "purpose": "Shared deterministic math"
+    },
+    {
+      "path": "replicas/papercut-red/fonts",
+      "purpose": "Fresh OFL Fraunces and Ma Shan Zheng, with license notices"
+    },
+    {
+      "path": "styles/papercut-red/demo/main.js",
+      "sha256": "aadf901f13725dc9b79b707a2721457767c4fadf83f84999c5d6e2fb6de84955",
+      "purpose": "Read-only published camera coordinates, scale-reveal dimensions and event timing reference; not imported, copied as a renderer or executed"
+    },
+    {
+      "path": "styles/papercut-red/demo/world.js",
+      "sha256": "73c5549df92716f9d3a166c5d7e70f4a9af731818740e79fe501d89dac10bea9",
+      "purpose": "Published reference house locations/scales/window dimensions and layer depths, reconstructed using credited generic builders; original scene renderer not executed"
+    },
+    {
+      "path": "styles/papercut-red/demo/fold.js",
+      "sha256": "de1d65271bb7bf5286a1cf957599466e663a494d9c57f1a4c79a046da71be9f1",
+      "purpose": "Read-only fold/cut camera and event reference; new raised-sheet triangulated texture projection and cut/unfold implementation"
+    },
+    {
+      "path": "styles/papercut-red/demo/story.js",
+      "sha256": "6cba930ac07c97940fb9b5a5287161ffef72c2274df8fdf6d784950296332839",
+      "purpose": "Published timing and exact narration data used to calibrate original beats"
+    }
+  ],
+  "determinism": [
+    {
+      "t": 0.5,
+      "equal": true,
+      "sha256": "b02c6cc2f53faa2c054a88673999f0328bd3e1bee903ddce0c152fe04736b5ae"
+    },
+    {
+      "t": 7.5,
+      "equal": true,
+      "sha256": "5937960082996bf1a4717b7e6c015ff0c419bbd93126a9178a9087837bd92edd"
+    },
+    {
+      "t": 13.5,
+      "equal": true,
+      "sha256": "7a006d5009d69691890958b07eb8b41b719a877db4a81ebf814eabebd46fc090"
+    },
+    {
+      "t": 18.3,
+      "equal": true,
+      "sha256": "91e2186b0681ea56427f4e381eee652ba543775deff04e3881541a1e110b4b71"
+    },
+    {
+      "t": 24.25,
+      "equal": true,
+      "sha256": "ae8c28232fa8bb45ba29738e6f71baff35d6fc8dfe90d17dd5dc70301a10b382"
+    },
+    {
+      "t": 28.5,
+      "equal": true,
+      "sha256": "a513c098b76419a7458c6eee8a342196b1424972afb6923d1ba02d555deee0be"
+    },
+    {
+      "t": 30.625,
+      "equal": true,
+      "sha256": "9e63c67d180eed11ad44211885826964720f0ac0da7c3e6fc03b13cdad606a81"
+    },
+    {
+      "t": 33.875,
+      "equal": true,
+      "sha256": "f48a7cda054e089da881055527950205b84ddfbc57672fdbd8324a79a97540c1"
+    },
+    {
+      "t": 38.5,
+      "equal": true,
+      "sha256": "336546656d5cb87d5d1da121e18298b72385b01d4dff293a91f64c373576a435"
+    },
+    {
+      "t": 47.5,
+      "equal": true,
+      "sha256": "4e75c62df7d2c1feea369a63a38f22aa08cc2b8ee3839c009e2d0e4b76f0d27d"
+    }
+  ],
+  "source_sha256": {
+    "CREDITS": "c565171c97d5249160ddb9084f1674b873d2460d56cde8fe8697464746906426",
+    "FACTS.md": "312a372bc9c4a3534f9d1e8855361490730c51f6837f11f548e0c1d5167072d1",
+    "LICENSE": "14c9ff6f14bfb2391e74fedb01c256891d2a3bba1c2acf5789901bdf77e54e33",
+    "PROMPT.md": "daff84812f59b9638513d35192ac76bc468249f7a957b0514763cbc7f6ec55d1",
+    "REVIEW.md": "fe62b39a4108e400219c204d1fe97f2c646ed175b99e402a56efa6d16c82fb54",
+    "TREATMENT.md": "1a673a2d96e36c077f6ca975bbf95052e69d94f5fa79997ccc750dfa3fa97d1a",
+    "craft.js": "bbd5cbdf17de4feaf0acd797dc70f291888804339ba7be714a6f26a6c75f2ecc",
+    "film.js": "aaf8ab2fe9b51046fe0730bff525596c8eb93bd53974eba4b082666f718c689e",
+    "fonts/Fraunces.ttf": "177ff6c0f14e5550a3c624247cd1189611d4eb65d000b14944c63d967958abbb",
+    "fonts/MaShanZheng-Regular.ttf": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb",
+    "fonts/OFL-Fraunces.txt": "bdf4c22802eaf804f998195871c6b8938aac2ac14b2d78a8bd66a6f1eced833b",
+    "fonts/OFL-MaShanZheng.txt": "d7bdb1cee215b689e23c2f95672a6084c790542170648267a55114103d756a08",
+    "fonts/fonts.css": "c7e59923db62c5ae6fd5df9582f69b1fb775885736c0615079de59cdbf21c942",
+    "girl.js": "7af555627064099ef81097cb32032fe42c296f9499171737bb6e3d130e97c60a",
+    "hud.js": "eee1672fc6be17f117923a33bf43ac3d5389effc70e65b469dd7a6f4ebd623d8",
+    "index.html": "87f191a598f2252a038071bc138e7b5164b478383cd87c7c067050439e3e5089",
+    "light.js": "1bc654f3d227e3a8ef26291e4d145d76daa4d09b71a239f1cd9691cfe8d0a837",
+    "motifs.js": "5da5a086d562ea5344caf2a893a97ae6d3e584efbe7be69da88a122c0b5f99b6",
+    "narration.json": "e32edb09d736708f1b8e558f914193e647cc7d897af627b2efdf867b6e376447",
+    "nian.js": "dcfbf5614220b8f02171e3fcd8ba363a5c403238e707bdab93ff7affbcf15afb",
+    "paper.js": "ef897323cf3043c96091c1d4b8d83d59be772ac99afb5d3c3973af66827fe837",
+    "rig.js": "da6901a0e4efb008b561b07de6556dd405c78b676a65edbd8c630c6170d6948b",
+    "score.json": "2dd1c4bc6272904e397e1ed567b922056e8131cb510492d91b5a217334014670",
+    "sets.js": "9ddcfa63d872a3bd57061c99d34ea1d2f13c656d20fe2cbe9eaccd81fddba596",
+    "shared-components.json": "34165d2c19daa41253eb8d1e80572d3c44accea24638da1739c960574f815f22",
+    "tuanhua.js": "5446bfdb03d2e37356ba73580b13dead404c97e7846f39d4eb3dd88f8ec39184",
+    "village.js": "41161fa15f7cf0289c21f9b1862b044624a360b6e99e341bce3d491b9af720a5"
+  }
+}

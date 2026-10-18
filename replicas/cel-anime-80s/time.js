@@ -1,0 +1,2 @@
+// Audited reference timing values; independent runtime, no upstream story import.
+export const B=60/116,BAR=B*4,bar=n=>n*BAR,q12=t=>Math.floor(t*12+1e-6)/12,q8=t=>Math.floor(t*8+1e-6)/8,F=t=>Math.floor(t*12+1e-6);export const K={eyes:7.75,rev:[bar(4)+B,bar(4)+2.5*B],throttle:bar(14)+B,cut:bar(15)+3*B,jump:bar(16),land:bar(18),handoff:bar(20)+B,play:bar(21)+B*.5,lift:bar(22),smile:bar(25)+B,end:bar(26)};

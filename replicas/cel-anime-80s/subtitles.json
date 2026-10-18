@@ -1,0 +1,58 @@
+[
+  {
+    "id": "d1",
+    "text": "Nightbird, come in. The launch is at dawn.",
+    "who": "D",
+    "a": 0.85,
+    "b": 4.2490000000000006
+  },
+  {
+    "id": "d2",
+    "text": "The pilot won't fly without his tape.",
+    "who": "D",
+    "a": 4.3,
+    "b": 7.141
+  },
+  {
+    "id": "g1",
+    "text": "Copy. I'll beat the sun.",
+    "who": "G",
+    "a": 8.0,
+    "b": 10.173
+  },
+  {
+    "id": "d3",
+    "text": "The drawbridge is going up! Turn back!",
+    "who": "D",
+    "a": 27.09655172413793,
+    "b": 29.743103448275864
+  },
+  {
+    "id": "g2",
+    "text": "No time to go around.",
+    "who": "G",
+    "a": 29.743103448275864,
+    "b": 31.693103448275863
+  },
+  {
+    "id": "g3",
+    "text": "Special delivery.",
+    "who": "G",
+    "a": 42.31206896551725,
+    "b": 44.018965517241384
+  },
+  {
+    "id": "d4",
+    "text": "Tape's aboard. He's playing it now.",
+    "who": "D",
+    "a": 44.018965517241384,
+    "b": 46.83496551724138
+  },
+  {
+    "id": "g4",
+    "text": "Told you I'd beat the sun.",
+    "who": "G",
+    "a": 50.743103448275875,
+    "b": 52.761103448275875
+  }
+]

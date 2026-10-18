@@ -34,7 +34,7 @@ def compose(score,voice_records,duration,out):
         elif name in P.PRESETS:
             signal=P.pluck(name,note.get('midi',60),float(note['duration']),vel=float(note.get('velocity',.65)),**{k:note[k] for k in ['bend','vib','glide','harmonic','trem'] if k in note})
             add(dst,signal,note['t'],note.get('gain',.1),note.get('pan',0))
-        elif name in ['saw','fm_glass','sub808','toy_piano','analog_saw_pad','analog_square_seq','lpg_plonk','fm_epiano','slap_bass','synth_brass']:add(dst,synth_note(name,note.get('midi',60),float(note['duration']),**{k:note[k] for k in ['value','fm_index'] if k in note}),note['t'],note.get('gain',.1),note.get('pan',0))
+        elif name in ['saw','fm_glass','sub808','toy_piano','analog_saw_pad','analog_square_seq','lpg_plonk','fm_epiano','slap_bass','synth_brass','theremin','whistle']:add(dst,synth_note(name,note.get('midi',60),float(note['duration']),**{k:note[k] for k in ['value','fm_index','glide'] if k in note}),note['t'],note.get('gain',.1),note.get('pan',0))
         else:synth[channel].append(note)
     for hit in score.get('hits',[]):
         channel=hit.get('channel','music')
@@ -46,7 +46,7 @@ def compose(score,voice_records,duration,out):
     for i,cue in enumerate(score.get('effects',[])):
         params={k:v for k,v in cue.items() if k not in ['kind','duration','t','gain','pan']}
         add(foley,make_effect(cue['kind'],cue.get('duration',.25),seed=6103+i,**params),cue['t'],cue.get('gain',.1),cue.get('pan',0))
-    if not score.get('silence_music_ranges'):
+    if not score.get('silence_music_ranges') and not score.get('music_gain_points'):
         music+=foley;foley.fill(0)
     room=float(score.get('room',.12))
     if room:
@@ -54,6 +54,10 @@ def compose(score,voice_records,duration,out):
         for ch in range(2):music[:,ch]+=fftconvolve(music[:,ch],ir,mode='full')[:len(music)]*room
     def rms(a):return np.sqrt(np.mean(a*a)+1e-12)
     if np.max(np.abs(music))>1e-6:music*=10**(float(score.get('music_rms_db',-23))/20)/rms(music)
+    if score.get('music_gain_points'):
+        points=np.asarray(score['music_gain_points'],dtype=float)
+        if points.ndim!=2 or points.shape[1]!=2 or not np.isfinite(points).all() or np.any(points[:,1]<0) or np.any(np.diff(points[:,0])<=0):raise ValueError('music_gain_points must be increasing [time, nonnegative linear gain] pairs')
+        music*=np.interp(np.arange(len(music))/SR,points[:,0],points[:,1])[:,None]
     for region in score.get('music_filter_ranges',[]):
         i=max(0,round(float(region['start'])*SR));j=min(len(music),round(float(region['end'])*SR))
         if j<=i:raise ValueError('Empty music filter range')
@@ -76,6 +80,14 @@ def compose(score,voice_records,duration,out):
             band=[260,4600] if line['filter']=='radio1930' else [380,2800]
             a=sosfilt(butter(4,band,btype='bandpass',fs=SR,output='sos'),a)
             a=np.tanh(a*3)/3
+        elif line.get('filter')=='lowpass7k':
+            a=sosfilt(butter(4,7000,btype='lowpass',fs=SR,output='sos'),a)
+        elif line.get('filter') in ('vask','gary'):
+            center=180 if line['filter']=='vask' else 3200
+            boost=10**((2.5 if line['filter']=='vask' else 2)/20)-1
+            band=sosfilt(butter(2,[center/1.7,min(11000,center*1.7)],btype='bandpass',fs=SR,output='sos'),a)
+            a=a+boost*band
+            if line['filter']=='vask':a=np.tanh(a*1.35)/1.35
         elif line.get('filter')=='machine':
             clock=np.arange(len(a))/SR
             a=a*(.84+.16*np.sin(2*np.pi*52*clock))

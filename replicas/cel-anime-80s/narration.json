@@ -1,0 +1,84 @@
+{
+  "duration": 59,
+  "language": "en-us",
+  "voice": "af_bella",
+  "direction": "Fresh English-dub heroine plus radio dispatcher; preserve exact voice ids, speeds, text and starts.",
+  "lines": [
+    {
+      "id": "d1",
+      "text": "Nightbird, come in. The launch is at dawn.",
+      "voice": "am_michael",
+      "speed": 1.0,
+      "start": 0.9,
+      "duration": 2.749,
+      "language": "en-us",
+      "filter": "radio"
+    },
+    {
+      "id": "d2",
+      "text": "The pilot won't fly without his tape.",
+      "voice": "am_michael",
+      "speed": 1.0,
+      "start": 4.35,
+      "duration": 2.191,
+      "language": "en-us",
+      "filter": "radio"
+    },
+    {
+      "id": "g1",
+      "text": "Copy. I'll beat the sun.",
+      "voice": "af_bella",
+      "speed": 1.0,
+      "start": 8.05,
+      "duration": 1.523,
+      "language": "en-us"
+    },
+    {
+      "id": "d3",
+      "text": "The drawbridge is going up! Turn back!",
+      "voice": "am_michael",
+      "speed": 1.12,
+      "start": 27.146551724137932,
+      "duration": 2.124,
+      "language": "en-us",
+      "filter": "radio"
+    },
+    {
+      "id": "g2",
+      "text": "No time to go around.",
+      "voice": "af_bella",
+      "speed": 1.05,
+      "start": 29.793103448275865,
+      "duration": 1.28,
+      "language": "en-us"
+    },
+    {
+      "id": "g3",
+      "text": "Special delivery.",
+      "voice": "af_bella",
+      "speed": 0.95,
+      "start": 42.362068965517246,
+      "duration": 1.005,
+      "language": "en-us"
+    },
+    {
+      "id": "d4",
+      "text": "Tape's aboard. He's playing it now.",
+      "voice": "am_michael",
+      "speed": 1.0,
+      "start": 44.06896551724138,
+      "duration": 2.166,
+      "language": "en-us",
+      "filter": "radio"
+    },
+    {
+      "id": "g4",
+      "text": "Told you I'd beat the sun.",
+      "voice": "af_bella",
+      "speed": 0.92,
+      "start": 50.79310344827587,
+      "duration": 1.368,
+      "language": "en-us"
+    }
+  ]
+}

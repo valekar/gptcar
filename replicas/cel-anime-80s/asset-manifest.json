@@ -1,0 +1,57 @@
+[
+  {
+    "path": "replicas/cel-anime-80s/fonts/BarlowSemiCondensed-Bold.ttf",
+    "sha256": "5bd6757e459a110da81b44532f0f43058e2dab2401688abca84f2fdbde193cbb",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/cel-anime-80s/fonts/BarlowSemiCondensed-Medium.ttf",
+    "sha256": "4998b693a190b76f2b11315844345a8546c1e2e6a320905507a9eed04edf8b48",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/cel-anime-80s/fonts/BarlowSemiCondensed-SemiBold.ttf",
+    "sha256": "bd299f4bc5b44d30be8d42e9bad3a5df7d66af1cd55d0ed72a8b8916360a1424",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/cel-anime-80s/fonts/DelaGothicOne-Regular.ttf",
+    "sha256": "4ff87a0965f1b0505e5a2c58424bc6ad3cff27e56a82f21c2fc9d6b0e3857ee2",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/cel-anime-80s/fonts/Kanit-BlackItalic.ttf",
+    "sha256": "7fe3f1d87e33e165eae2d664e42a31faf542d24e431a2e7da36f4e4eee5f8529",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/cel-anime-80s/fonts/Kanit-ExtraBoldItalic.ttf",
+    "sha256": "e874a96de66b5340174ddf9c621593280a21e9adb8e07bb1587112de274acad5",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/cel-anime-80s/fonts/Kanit-SemiBoldItalic.ttf",
+    "sha256": "df1f635f3022306a7f61ed03cdc1a90364f31e19454bd287cffe45f98ca805d0",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/cel-anime-80s/fonts/OFL-Barlow.txt",
+    "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/cel-anime-80s/fonts/OFL-DelaGothicOne.txt",
+    "sha256": "c0014792d4f4abc0508c295b277f2b17ae44465c8dc88d12af9cea48279b5fda",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/cel-anime-80s/fonts/OFL-Kanit.txt",
+    "sha256": "eb998cc5a685b240cdb46a0b5747e70334c8c57bbd7b1f6b044d75719358df67",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/cel-anime-80s/fonts/fonts.css",
+    "sha256": "f998be76a90f8933d1a0de6885b8172743a84c0e8030e8c6563e5a43b98015e9",
+    "license": "SIL OFL"
+  }
+]

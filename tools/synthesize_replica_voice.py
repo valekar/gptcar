@@ -42,18 +42,36 @@ def synthesize(spec,out):
                 sf.write(path,a,sr,subtype='PCM_24')
             cache.write_text(json.dumps(dict(input_sha256=digest,text=text,voice=voice,speed=speed,language=language),ensure_ascii=False,indent=2)+'\n')
         audio,sr=sf.read(path);synthesized_duration=len(audio)/sr;pitch=float(line.get('pitch_semitones',0 if neural else line.get('pitch',0)))
+        pitch_mode=line.get('pitch_mode','varispeed')
+        if pitch_mode not in ('varispeed','preserve_duration'):raise ValueError('Unsupported pitch mode '+pitch_mode)
         if pitch:
             # Match the original character direction: varispeed pitch-up also shortens the take.
             import soxr
-            audio=soxr.resample(audio,sr*2**(pitch/12),sr);path=out/(ident+'-pitched.wav');sf.write(path,audio,sr,subtype='PCM_24')
-        actual=len(audio)/sr;start=float(line['start']);window=float(line.get('duration',actual));next_start=float(lines[n+1]['start']) if n+1<len(lines) else float(spec.get('duration',start+window+.5));available=min(window+.4,next_start-start-.1)
+            if pitch_mode=='preserve_duration':
+                import librosa
+                audio=librosa.effects.pitch_shift(audio,sr=sr,n_steps=pitch)
+            else:audio=soxr.resample(audio,sr*2**(pitch/12),sr)
+            path=out/(ident+'-pitched.wav');sf.write(path,audio,sr,subtype='PCM_24')
+        uncut_duration=len(audio)/sr
+        cut=line.get('cut')
+        if cut is not None:
+            cut=float(cut)
+            if cut<=0 or cut>=uncut_duration:raise ValueError(ident+': intentional cut must fall inside the generated take')
+            audio=audio[:round(cut*sr)].copy();fade=min(round(float(line.get('cut_fade',.04))*sr),len(audio))
+            if fade:audio[-fade:]*=np.linspace(1,0,fade)
+            path=out/(ident+'-cut.wav');sf.write(path,audio,sr,subtype='PCM_24')
+        actual=len(audio)/sr;start=float(line['start']);window=float(line.get('duration',actual));next_start=float(lines[n+1]['start']) if n+1<len(lines) else float(spec.get('duration',start+window+.5));available=window+.4 if line.get('allow_overlap') else min(window+.4,next_start-start-.1)
         # Fresh takes may vary slightly; preserve all words and cue onset with a bounded pitch-preserving fit.
         fitted=path
         factor=actual/max(available,.1)
         if factor>1.001:
             if factor>1.25:raise RuntimeError(f'{ident}: {actual:.3f}s speech will not fit {available:.3f}s; adjust delivery speed without changing text')
             fitted=out/(ident+'-timed.wav');subprocess.run(['ffmpeg','-y','-v','error','-i',str(path),'-af',f'atempo={factor:.8f}',str(fitted)],check=True)
-        records.append(dict(id=ident,text=text,voice=voice,language=language,start=start,planned_duration=window,synthesized_duration=synthesized_duration,raw_duration=actual,pitch_semitones=pitch,file=str(fitted.resolve()),tempo_factor=max(1,factor),filter=line.get('filter')))
+        record=dict(id=ident,text=text,voice=voice,language=language,start=start,planned_duration=window,synthesized_duration=synthesized_duration,raw_duration=actual,pitch_semitones=pitch,file=str(fitted.resolve()),tempo_factor=max(1,factor),filter=line.get('filter'))
+        if pitch_mode!='varispeed':record['pitch_mode']=pitch_mode
+        if cut is not None:record.update(intentional_cut_seconds=cut,uncut_duration=uncut_duration,cut_fade=float(line.get('cut_fade',.04)))
+        if line.get('allow_overlap'):record['allow_overlap']=True
+        records.append(record)
         print(ident,round(actual,3),voice,flush=True)
     (out/'timing.json').write_text(json.dumps(records,ensure_ascii=False,indent=2)+'\n');return records
 if __name__=='__main__':

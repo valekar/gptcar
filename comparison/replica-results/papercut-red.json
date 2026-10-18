@@ -1,0 +1,195 @@
+{
+  "slug": "papercut-red",
+  "status": "rendered",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "title": "Nian Comes to Town",
+  "source_sha256": "d30502bf77937854fcbdeb33307af9b8efc01188028c95e108915e12e5acb4cd",
+  "matched_brief_sha256": "a2e03ed84b8a6005db6b75539c6201990aa9fc62bd9802cfcbaa7e9a63e40c41",
+  "reference_video_sha256": "2e6ce6b8fed550d584f54e5539646704102e9a6e6380b5571fee6be03cdea390",
+  "video_sha256": "d31d717212226fd65ba800e474d0bde1448cc7764473daf81e8f230781e65c2d",
+  "poster_sha256": "bf6b0490717029f7c4c3b629f0e2a6a2dec0e321e06283d53f15387ee9e926a1",
+  "reference_poster_sha256": "9e006b7d554f2337f65b262255b2298600cd0a9f55ba74718c639ce03c2894dd",
+  "poster_time": 28.5,
+  "bytes": 17067054,
+  "width": 1280,
+  "height": 720,
+  "fps": 24.0,
+  "frames": 1176,
+  "duration": 49.0,
+  "audio_codec": "aac",
+  "audio_levels": {
+    "integrated_lufs": -14.0,
+    "true_peak_dbtp": -1.0,
+    "peak_gain_adjustment_db": 0
+  },
+  "review_times": [
+    0.25,
+    0.5,
+    1.0,
+    1.5,
+    1.75,
+    2.4,
+    2.5,
+    3.5,
+    4.5,
+    5.5,
+    6.5,
+    6.75,
+    7.5,
+    8.5,
+    9.5,
+    10.5,
+    11.5,
+    12.0,
+    12.5,
+    13.5,
+    14.5,
+    15.5,
+    16.5,
+    17.5,
+    18.291667,
+    18.333333,
+    18.5,
+    19.458333,
+    19.5,
+    20.5,
+    21.5,
+    22.5,
+    23.25,
+    23.5,
+    24.25,
+    24.5,
+    25.25,
+    25.5,
+    26.25,
+    26.5,
+    26.75,
+    27.5,
+    28.5,
+    29.5,
+    29.958333,
+    30.125,
+    30.375,
+    30.5,
+    30.625,
+    30.875,
+    31.0,
+    31.25,
+    31.5,
+    31.8,
+    32.0,
+    32.25,
+    32.5,
+    32.75,
+    33.0,
+    33.25,
+    33.5,
+    33.75,
+    33.875,
+    34.25,
+    34.5,
+    34.75,
+    35.125,
+    35.3,
+    35.5,
+    36.5,
+    37.5,
+    38.5,
+    39.5,
+    40.5,
+    41.5,
+    42.5,
+    42.916667,
+    43.5,
+    44.5,
+    45.5,
+    46.5,
+    47.5,
+    48.5,
+    48.958333
+  ],
+  "shared_components": [
+    {
+      "path": "styles/papercut-red/demo/paper.js",
+      "sha256": "ef897323cf3043c96091c1d4b8d83d59be772ac99afb5d3c3973af66827fe837",
+      "purpose": "Generic paper grain, opaque cut-piece building, inset slits, cut edge, thickness/shadow and transmission toolkit"
+    },
+    {
+      "path": "styles/papercut-red/demo/motifs.js",
+      "sha256": "5da5a086d562ea5344caf2a893a97ae6d3e584efbe7be69da88a122c0b5f99b6",
+      "purpose": "Generic procedural sawtooth, crescent, swirl, plum, coin, rosette motif vocabulary"
+    },
+    {
+      "path": "styles/papercut-red/demo/rig.js",
+      "sha256": "da6901a0e4efb008b561b07de6556dd405c78b676a65edbd8c630c6170d6948b",
+      "purpose": "Generic affine paper-joint rig and piece placement"
+    },
+    {
+      "path": "styles/papercut-red/demo/girl.js",
+      "sha256": "7af555627064099ef81097cb32032fe42c296f9499171737bb6e3d130e97c60a",
+      "purpose": "Shared original library girl character/clothing/face/scissors model and joint rig; new performances and staging"
+    },
+    {
+      "path": "styles/papercut-red/demo/nian.js",
+      "sha256": "dcfbf5614220b8f02171e3fcd8ba363a5c403238e707bdab93ff7affbcf15afb",
+      "purpose": "Shared original library Nian cut-piece/face/pose model and joint rig; new positions, timed performances and projected-light scene"
+    },
+    {
+      "path": "styles/papercut-red/demo/tuanhua.js",
+      "sha256": "5446bfdb03d2e37356ba73580b13dead404c97e7846f39d4eb3dd88f8ec39184",
+      "purpose": "Shared eightfold lantern/ruyi rosette and wedge motif model; own progressive cut mask, folds, unfold assembly and new eight-light scene"
+    },
+    {
+      "path": "styles/papercut-red/demo/village.js",
+      "sha256": "41161fa15f7cf0289c21f9b1862b044624a360b6e99e341bce3d491b9af720a5",
+      "purpose": "Generic reusable house, ridge, tree, snow and lantern model builders; no original world layout reused"
+    },
+    {
+      "path": "styles/papercut-red/demo/light.js",
+      "sha256": "1bc654f3d227e3a8ef26291e4d145d76daa4d09b71a239f1cd9691cfe8d0a837",
+      "purpose": "Generic window transmission, light-mask, bloom and projection toolkit"
+    },
+    {
+      "path": "styles/papercut-red/demo/hud.js",
+      "sha256": "eee1672fc6be17f117923a33bf43ac3d5389effc70e65b469dd7a6f4ebd623d8",
+      "purpose": "Generic cut-letter and paper subtitle strip rendering, driven by exact new narration cue table"
+    },
+    {
+      "path": "core/lib.js",
+      "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+      "purpose": "Shared deterministic math"
+    },
+    {
+      "path": "replicas/papercut-red/fonts",
+      "purpose": "Fresh OFL Fraunces and Ma Shan Zheng, with license notices"
+    },
+    {
+      "path": "styles/papercut-red/demo/main.js",
+      "sha256": "aadf901f13725dc9b79b707a2721457767c4fadf83f84999c5d6e2fb6de84955",
+      "purpose": "Read-only published camera coordinates, scale-reveal dimensions and event timing reference; not imported, copied as a renderer or executed"
+    },
+    {
+      "path": "styles/papercut-red/demo/world.js",
+      "sha256": "73c5549df92716f9d3a166c5d7e70f4a9af731818740e79fe501d89dac10bea9",
+      "purpose": "Published reference house locations/scales/window dimensions and layer depths, reconstructed using credited generic builders; original scene renderer not executed"
+    },
+    {
+      "path": "styles/papercut-red/demo/fold.js",
+      "sha256": "de1d65271bb7bf5286a1cf957599466e663a494d9c57f1a4c79a046da71be9f1",
+      "purpose": "Read-only fold/cut camera and event reference; new raised-sheet triangulated texture projection and cut/unfold implementation"
+    },
+    {
+      "path": "styles/papercut-red/demo/story.js",
+      "sha256": "6cba930ac07c97940fb9b5a5287161ffef72c2274df8fdf6d784950296332839",
+      "purpose": "Published timing and exact narration data used to calibrate original beats"
+    }
+  ],
+  "qa": {
+    "technical_render": "passed",
+    "scene_fidelity": "passed",
+    "audio_review": "passed",
+    "black_intervals_detected": true
+  },
+  "updated_at": "2026-10-18T07:08:01Z"
+}

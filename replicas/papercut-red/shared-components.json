@@ -1,0 +1,76 @@
+[
+  {
+    "path": "styles/papercut-red/demo/paper.js",
+    "sha256": "ef897323cf3043c96091c1d4b8d83d59be772ac99afb5d3c3973af66827fe837",
+    "purpose": "Generic paper grain, opaque cut-piece building, inset slits, cut edge, thickness/shadow and transmission toolkit"
+  },
+  {
+    "path": "styles/papercut-red/demo/motifs.js",
+    "sha256": "5da5a086d562ea5344caf2a893a97ae6d3e584efbe7be69da88a122c0b5f99b6",
+    "purpose": "Generic procedural sawtooth, crescent, swirl, plum, coin, rosette motif vocabulary"
+  },
+  {
+    "path": "styles/papercut-red/demo/rig.js",
+    "sha256": "da6901a0e4efb008b561b07de6556dd405c78b676a65edbd8c630c6170d6948b",
+    "purpose": "Generic affine paper-joint rig and piece placement"
+  },
+  {
+    "path": "styles/papercut-red/demo/girl.js",
+    "sha256": "7af555627064099ef81097cb32032fe42c296f9499171737bb6e3d130e97c60a",
+    "purpose": "Shared original library girl character/clothing/face/scissors model and joint rig; new performances and staging"
+  },
+  {
+    "path": "styles/papercut-red/demo/nian.js",
+    "sha256": "dcfbf5614220b8f02171e3fcd8ba363a5c403238e707bdab93ff7affbcf15afb",
+    "purpose": "Shared original library Nian cut-piece/face/pose model and joint rig; new positions, timed performances and projected-light scene"
+  },
+  {
+    "path": "styles/papercut-red/demo/tuanhua.js",
+    "sha256": "5446bfdb03d2e37356ba73580b13dead404c97e7846f39d4eb3dd88f8ec39184",
+    "purpose": "Shared eightfold lantern/ruyi rosette and wedge motif model; own progressive cut mask, folds, unfold assembly and new eight-light scene"
+  },
+  {
+    "path": "styles/papercut-red/demo/village.js",
+    "sha256": "41161fa15f7cf0289c21f9b1862b044624a360b6e99e341bce3d491b9af720a5",
+    "purpose": "Generic reusable house, ridge, tree, snow and lantern model builders; no original world layout reused"
+  },
+  {
+    "path": "styles/papercut-red/demo/light.js",
+    "sha256": "1bc654f3d227e3a8ef26291e4d145d76daa4d09b71a239f1cd9691cfe8d0a837",
+    "purpose": "Generic window transmission, light-mask, bloom and projection toolkit"
+  },
+  {
+    "path": "styles/papercut-red/demo/hud.js",
+    "sha256": "eee1672fc6be17f117923a33bf43ac3d5389effc70e65b469dd7a6f4ebd623d8",
+    "purpose": "Generic cut-letter and paper subtitle strip rendering, driven by exact new narration cue table"
+  },
+  {
+    "path": "core/lib.js",
+    "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+    "purpose": "Shared deterministic math"
+  },
+  {
+    "path": "replicas/papercut-red/fonts",
+    "purpose": "Fresh OFL Fraunces and Ma Shan Zheng, with license notices"
+  },
+  {
+    "path": "styles/papercut-red/demo/main.js",
+    "sha256": "aadf901f13725dc9b79b707a2721457767c4fadf83f84999c5d6e2fb6de84955",
+    "purpose": "Read-only published camera coordinates, scale-reveal dimensions and event timing reference; not imported, copied as a renderer or executed"
+  },
+  {
+    "path": "styles/papercut-red/demo/world.js",
+    "sha256": "73c5549df92716f9d3a166c5d7e70f4a9af731818740e79fe501d89dac10bea9",
+    "purpose": "Published reference house locations/scales/window dimensions and layer depths, reconstructed using credited generic builders; original scene renderer not executed"
+  },
+  {
+    "path": "styles/papercut-red/demo/fold.js",
+    "sha256": "de1d65271bb7bf5286a1cf957599466e663a494d9c57f1a4c79a046da71be9f1",
+    "purpose": "Read-only fold/cut camera and event reference; new raised-sheet triangulated texture projection and cut/unfold implementation"
+  },
+  {
+    "path": "styles/papercut-red/demo/story.js",
+    "sha256": "6cba930ac07c97940fb9b5a5287161ffef72c2274df8fdf6d784950296332839",
+    "purpose": "Published timing and exact narration data used to calibrate original beats"
+  }
+]

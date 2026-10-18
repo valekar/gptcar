@@ -1,0 +1,2665 @@
+{
+  "duration": 49,
+  "bpm": 120,
+  "room": 0.1,
+  "music_rms_db": -23,
+  "silence_music_ranges": [
+    [
+      0,
+      2.5
+    ],
+    [
+      17,
+      19.5
+    ]
+  ],
+  "silence_ranges": [
+    [
+      29.5,
+      30
+    ]
+  ],
+  "notes": [
+    {
+      "t": 2.5,
+      "midi": 57,
+      "duration": 0.6,
+      "gain": 0.05,
+      "instrument": "pipa",
+      "pan": -0.2,
+      "bend": [
+        [
+          0,
+          -3
+        ],
+        [
+          0.45,
+          0
+        ]
+      ]
+    },
+    {
+      "t": 3,
+      "midi": 62,
+      "duration": 0.45,
+      "gain": 0.07,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 3,
+      "midi": 74,
+      "duration": 0.45,
+      "gain": 0.03150000000000001,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 3,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 3.5,
+      "midi": 66,
+      "duration": 0.225,
+      "gain": 0.07,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 3.5,
+      "midi": 78,
+      "duration": 0.225,
+      "gain": 0.03150000000000001,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 3.5,
+      "midi": 50,
+      "duration": 0.25,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 3.75,
+      "midi": 69,
+      "duration": 0.225,
+      "gain": 0.07,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 3.75,
+      "midi": 81,
+      "duration": 0.225,
+      "gain": 0.03150000000000001,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 3.75,
+      "midi": 57,
+      "duration": 0.25,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 4.0,
+      "midi": 71,
+      "duration": 0.45,
+      "gain": 0.07,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 4.0,
+      "midi": 83,
+      "duration": 0.45,
+      "gain": 0.03150000000000001,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 4.0,
+      "midi": 57,
+      "duration": 0.5,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 4.5,
+      "midi": 69,
+      "duration": 0.45,
+      "gain": 0.07,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 4.5,
+      "midi": 81,
+      "duration": 0.45,
+      "gain": 0.03150000000000001,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 4.5,
+      "midi": 57,
+      "duration": 0.5,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 5.0,
+      "midi": 66,
+      "duration": 0.45,
+      "gain": 0.07,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 5.0,
+      "midi": 78,
+      "duration": 0.45,
+      "gain": 0.03150000000000001,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 5.0,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 5.5,
+      "midi": 64,
+      "duration": 0.45,
+      "gain": 0.07,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 5.5,
+      "midi": 76,
+      "duration": 0.45,
+      "gain": 0.03150000000000001,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 5.5,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 6.0,
+      "midi": 62,
+      "duration": 0.9,
+      "gain": 0.07,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 6.0,
+      "midi": 74,
+      "duration": 0.9,
+      "gain": 0.03150000000000001,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 6.0,
+      "midi": 50,
+      "duration": 1,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 7,
+      "midi": 62,
+      "duration": 0.45,
+      "gain": 0.045,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 7,
+      "midi": 74,
+      "duration": 0.45,
+      "gain": 0.02025,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 7,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 7.0,
+      "midi": 50,
+      "duration": 0.7,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.3
+    },
+    {
+      "t": 7.5,
+      "midi": 66,
+      "duration": 0.225,
+      "gain": 0.045,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 7.5,
+      "midi": 78,
+      "duration": 0.225,
+      "gain": 0.02025,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 7.5,
+      "midi": 50,
+      "duration": 0.25,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 7.5,
+      "midi": 57,
+      "duration": 0.7,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.3
+    },
+    {
+      "t": 7.75,
+      "midi": 69,
+      "duration": 0.225,
+      "gain": 0.045,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 7.75,
+      "midi": 81,
+      "duration": 0.225,
+      "gain": 0.02025,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 7.75,
+      "midi": 57,
+      "duration": 0.25,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 8.0,
+      "midi": 71,
+      "duration": 0.45,
+      "gain": 0.045,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 8.0,
+      "midi": 83,
+      "duration": 0.45,
+      "gain": 0.02025,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 8.0,
+      "midi": 57,
+      "duration": 0.5,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 8.0,
+      "midi": 62,
+      "duration": 0.7,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.3
+    },
+    {
+      "t": 8.5,
+      "midi": 69,
+      "duration": 0.45,
+      "gain": 0.045,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 8.5,
+      "midi": 81,
+      "duration": 0.45,
+      "gain": 0.02025,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 8.5,
+      "midi": 57,
+      "duration": 0.5,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 8.5,
+      "midi": 66,
+      "duration": 0.7,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.3
+    },
+    {
+      "t": 9.0,
+      "midi": 66,
+      "duration": 0.45,
+      "gain": 0.045,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 9.0,
+      "midi": 78,
+      "duration": 0.45,
+      "gain": 0.02025,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 9.0,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 9.0,
+      "midi": 69,
+      "duration": 0.7,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.3
+    },
+    {
+      "t": 9.5,
+      "midi": 64,
+      "duration": 0.45,
+      "gain": 0.045,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 9.5,
+      "midi": 76,
+      "duration": 0.45,
+      "gain": 0.02025,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 9.5,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 9.5,
+      "midi": 50,
+      "duration": 0.7,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.3
+    },
+    {
+      "t": 10.0,
+      "midi": 62,
+      "duration": 0.9,
+      "gain": 0.045,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 10.0,
+      "midi": 74,
+      "duration": 0.9,
+      "gain": 0.02025,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 10.0,
+      "midi": 50,
+      "duration": 1,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 10.0,
+      "midi": 57,
+      "duration": 0.7,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.3
+    },
+    {
+      "t": 10.5,
+      "midi": 62,
+      "duration": 0.7,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.3
+    },
+    {
+      "t": 11.0,
+      "midi": 66,
+      "duration": 0.7,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.3
+    },
+    {
+      "t": 11.5,
+      "midi": 69,
+      "duration": 0.7,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.3
+    },
+    {
+      "t": 12.0,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 12.2,
+      "midi": 62,
+      "duration": 1.4,
+      "gain": 0.06,
+      "instrument": "erhu",
+      "pan": -0.15
+    },
+    {
+      "t": 12.5,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 13.0,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 13.4,
+      "midi": 60,
+      "duration": 1.4,
+      "gain": 0.06,
+      "instrument": "erhu",
+      "pan": -0.15
+    },
+    {
+      "t": 13.5,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 14.0,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 14.5,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 14.6,
+      "midi": 57,
+      "duration": 1.4,
+      "gain": 0.06,
+      "instrument": "erhu",
+      "pan": -0.15
+    },
+    {
+      "t": 15.0,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 15.5,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 15.8,
+      "midi": 55,
+      "duration": 1.4,
+      "gain": 0.06,
+      "instrument": "erhu",
+      "pan": -0.15
+    },
+    {
+      "t": 16.0,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 16.5,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 19.5,
+      "midi": 62,
+      "duration": 4.4,
+      "gain": 0.025,
+      "instrument": "dan_tranh_trem",
+      "pan": 0.25
+    },
+    {
+      "t": 19.6,
+      "midi": 62,
+      "duration": 1.7,
+      "gain": 0.035,
+      "instrument": "erhu",
+      "pan": 0
+    },
+    {
+      "t": 20.75,
+      "midi": 62,
+      "duration": 0.5,
+      "gain": 0.06,
+      "instrument": "pipa",
+      "pan": -0.15
+    },
+    {
+      "t": 21.5,
+      "midi": 66,
+      "duration": 1.6,
+      "gain": 0.04,
+      "instrument": "erhu",
+      "pan": 0
+    },
+    {
+      "t": 21.65,
+      "midi": 66,
+      "duration": 0.5,
+      "gain": 0.06,
+      "instrument": "pipa",
+      "pan": -0.15
+    },
+    {
+      "t": 22.75,
+      "midi": 69,
+      "duration": 0.5,
+      "gain": 0.06,
+      "instrument": "pipa",
+      "pan": -0.15
+    },
+    {
+      "t": 23.5,
+      "midi": 74,
+      "duration": 0.5,
+      "gain": 0.06,
+      "instrument": "pipa",
+      "pan": -0.15
+    },
+    {
+      "t": 24.0,
+      "midi": 62,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 24,
+      "midi": 62,
+      "duration": 1.8,
+      "gain": 0.05,
+      "instrument": "pipa",
+      "pan": -0.2,
+      "trem": 14
+    },
+    {
+      "t": 24.25,
+      "midi": 66,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 24.5,
+      "midi": 69,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 24.75,
+      "midi": 74,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 25.0,
+      "midi": 66,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 25.25,
+      "midi": 69,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 25.5,
+      "midi": 71,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 25.75,
+      "midi": 78,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 26.0,
+      "midi": 64,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 26,
+      "midi": 66,
+      "duration": 1.6,
+      "gain": 0.06,
+      "instrument": "pipa",
+      "pan": -0.2,
+      "trem": 16
+    },
+    {
+      "t": 26.25,
+      "midi": 68,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 26.5,
+      "midi": 71,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 26.75,
+      "midi": 76,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 27.0,
+      "midi": 68,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 27.25,
+      "midi": 71,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 27.5,
+      "midi": 73,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 27.7,
+      "midi": 69,
+      "duration": 1.8,
+      "gain": 0.07,
+      "instrument": "pipa",
+      "pan": -0.2,
+      "trem": 18
+    },
+    {
+      "t": 27.75,
+      "midi": 80,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 28.0,
+      "midi": 66,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 28.25,
+      "midi": 70,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 28.5,
+      "midi": 73,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 28.75,
+      "midi": 78,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 29.0,
+      "midi": 70,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 29.25,
+      "midi": 73,
+      "duration": 0.35,
+      "gain": 0.05,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 30.0,
+      "midi": 50,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": -0.3
+    },
+    {
+      "t": 30.018,
+      "midi": 54,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": -0.21999999999999997
+    },
+    {
+      "t": 30.036,
+      "midi": 57,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": -0.13999999999999999
+    },
+    {
+      "t": 30.054,
+      "midi": 59,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": -0.06
+    },
+    {
+      "t": 30.072,
+      "midi": 62,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": 0.020000000000000018
+    },
+    {
+      "t": 30.09,
+      "midi": 66,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": 0.10000000000000003
+    },
+    {
+      "t": 30.108,
+      "midi": 69,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": 0.18
+    },
+    {
+      "t": 30.126,
+      "midi": 71,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": 0.26000000000000006
+    },
+    {
+      "t": 30.25,
+      "midi": 50,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": -0.3
+    },
+    {
+      "t": 30.268,
+      "midi": 54,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": -0.21999999999999997
+    },
+    {
+      "t": 30.286,
+      "midi": 57,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": -0.13999999999999999
+    },
+    {
+      "t": 30.304,
+      "midi": 59,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": -0.06
+    },
+    {
+      "t": 30.322,
+      "midi": 62,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": 0.020000000000000018
+    },
+    {
+      "t": 30.34,
+      "midi": 66,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": 0.10000000000000003
+    },
+    {
+      "t": 30.358,
+      "midi": 69,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": 0.18
+    },
+    {
+      "t": 30.376,
+      "midi": 71,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": 0.26000000000000006
+    },
+    {
+      "t": 30.5,
+      "midi": 50,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": -0.3
+    },
+    {
+      "t": 30.518,
+      "midi": 54,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": -0.21999999999999997
+    },
+    {
+      "t": 30.536,
+      "midi": 57,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": -0.13999999999999999
+    },
+    {
+      "t": 30.554,
+      "midi": 59,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": -0.06
+    },
+    {
+      "t": 30.572,
+      "midi": 62,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": 0.020000000000000018
+    },
+    {
+      "t": 30.59,
+      "midi": 66,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": 0.10000000000000003
+    },
+    {
+      "t": 30.608,
+      "midi": 69,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": 0.18
+    },
+    {
+      "t": 30.626,
+      "midi": 71,
+      "duration": 0.6,
+      "gain": 0.045,
+      "instrument": "dan_tranh",
+      "pan": 0.26000000000000006
+    },
+    {
+      "t": 31,
+      "midi": 62,
+      "duration": 0.45,
+      "gain": 0.075,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 31,
+      "midi": 74,
+      "duration": 0.45,
+      "gain": 0.03375,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 31,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 31.5,
+      "midi": 66,
+      "duration": 0.225,
+      "gain": 0.075,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 31.5,
+      "midi": 78,
+      "duration": 0.225,
+      "gain": 0.03375,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 31.5,
+      "midi": 50,
+      "duration": 0.25,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 31.75,
+      "midi": 69,
+      "duration": 0.225,
+      "gain": 0.075,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 31.75,
+      "midi": 81,
+      "duration": 0.225,
+      "gain": 0.03375,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 31.75,
+      "midi": 57,
+      "duration": 0.25,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 32.0,
+      "midi": 71,
+      "duration": 0.45,
+      "gain": 0.075,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 32.0,
+      "midi": 83,
+      "duration": 0.45,
+      "gain": 0.03375,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 32.0,
+      "midi": 57,
+      "duration": 0.5,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 32.0,
+      "midi": 62,
+      "duration": 0.6,
+      "gain": 0.065,
+      "instrument": "dan_tranh",
+      "pan": -0.4
+    },
+    {
+      "t": 32.25,
+      "midi": 64,
+      "duration": 0.6,
+      "gain": 0.065,
+      "instrument": "dan_tranh",
+      "pan": -0.30000000000000004
+    },
+    {
+      "t": 32.5,
+      "midi": 69,
+      "duration": 0.45,
+      "gain": 0.075,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 32.5,
+      "midi": 81,
+      "duration": 0.45,
+      "gain": 0.03375,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 32.5,
+      "midi": 57,
+      "duration": 0.5,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 32.5,
+      "midi": 66,
+      "duration": 0.6,
+      "gain": 0.065,
+      "instrument": "dan_tranh",
+      "pan": -0.2
+    },
+    {
+      "t": 32.75,
+      "midi": 69,
+      "duration": 0.6,
+      "gain": 0.065,
+      "instrument": "dan_tranh",
+      "pan": -0.09999999999999998
+    },
+    {
+      "t": 33.0,
+      "midi": 66,
+      "duration": 0.45,
+      "gain": 0.075,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 33.0,
+      "midi": 78,
+      "duration": 0.45,
+      "gain": 0.03375,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 33.0,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 33.0,
+      "midi": 71,
+      "duration": 0.6,
+      "gain": 0.065,
+      "instrument": "dan_tranh",
+      "pan": 0.0
+    },
+    {
+      "t": 33.25,
+      "midi": 74,
+      "duration": 0.6,
+      "gain": 0.065,
+      "instrument": "dan_tranh",
+      "pan": 0.09999999999999998
+    },
+    {
+      "t": 33.5,
+      "midi": 64,
+      "duration": 0.45,
+      "gain": 0.075,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 33.5,
+      "midi": 76,
+      "duration": 0.45,
+      "gain": 0.03375,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 33.5,
+      "midi": 50,
+      "duration": 0.5,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 33.5,
+      "midi": 76,
+      "duration": 0.6,
+      "gain": 0.065,
+      "instrument": "dan_tranh",
+      "pan": 0.20000000000000007
+    },
+    {
+      "t": 33.75,
+      "midi": 78,
+      "duration": 0.6,
+      "gain": 0.065,
+      "instrument": "dan_tranh",
+      "pan": 0.30000000000000004
+    },
+    {
+      "t": 34.0,
+      "midi": 62,
+      "duration": 0.9,
+      "gain": 0.075,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 34.0,
+      "midi": 74,
+      "duration": 0.9,
+      "gain": 0.03375,
+      "instrument": "flute",
+      "pan": 0.2
+    },
+    {
+      "t": 34.0,
+      "midi": 50,
+      "duration": 1,
+      "gain": 0.035,
+      "instrument": "dan_tranh",
+      "pan": 0.25
+    },
+    {
+      "t": 35.0,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.055,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 35.25,
+      "midi": 71,
+      "duration": 0.22,
+      "gain": 0.055,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 35.5,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.055,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 35.75,
+      "midi": 66,
+      "duration": 0.22,
+      "gain": 0.055,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 36.0,
+      "midi": 64,
+      "duration": 0.22,
+      "gain": 0.055,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 36.25,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.055,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 36.5,
+      "midi": 71,
+      "duration": 0.22,
+      "gain": 0.055,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 36.75,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.055,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 37.0,
+      "midi": 66,
+      "duration": 0.22,
+      "gain": 0.055,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 37.25,
+      "midi": 64,
+      "duration": 0.22,
+      "gain": 0.055,
+      "instrument": "pipa",
+      "pan": -0.2
+    },
+    {
+      "t": 38.2,
+      "midi": 74,
+      "duration": 1.1,
+      "gain": 0.045,
+      "instrument": "flute",
+      "pan": 0.15
+    },
+    {
+      "t": 38.2,
+      "midi": 62,
+      "duration": 1.1,
+      "gain": 0.024,
+      "instrument": "erhu",
+      "pan": -0.15
+    },
+    {
+      "t": 38.2,
+      "midi": 74,
+      "duration": 1.1,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.3
+    },
+    {
+      "t": 39.5,
+      "midi": 71,
+      "duration": 1.2,
+      "gain": 0.045,
+      "instrument": "flute",
+      "pan": 0.15
+    },
+    {
+      "t": 39.5,
+      "midi": 59,
+      "duration": 1.2,
+      "gain": 0.024,
+      "instrument": "erhu",
+      "pan": -0.15
+    },
+    {
+      "t": 39.5,
+      "midi": 71,
+      "duration": 1.2,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.3
+    },
+    {
+      "t": 40.9,
+      "midi": 69,
+      "duration": 1.2,
+      "gain": 0.045,
+      "instrument": "flute",
+      "pan": 0.15
+    },
+    {
+      "t": 40.9,
+      "midi": 57,
+      "duration": 1.2,
+      "gain": 0.024,
+      "instrument": "erhu",
+      "pan": -0.15
+    },
+    {
+      "t": 40.9,
+      "midi": 69,
+      "duration": 1.2,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.3
+    },
+    {
+      "t": 42.4,
+      "midi": 66,
+      "duration": 1,
+      "gain": 0.045,
+      "instrument": "flute",
+      "pan": 0.15
+    },
+    {
+      "t": 42.4,
+      "midi": 54,
+      "duration": 1,
+      "gain": 0.024,
+      "instrument": "erhu",
+      "pan": -0.15
+    },
+    {
+      "t": 42.4,
+      "midi": 66,
+      "duration": 1,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.3
+    },
+    {
+      "t": 43.5,
+      "midi": 64,
+      "duration": 0.5,
+      "gain": 0.045,
+      "instrument": "flute",
+      "pan": 0.15
+    },
+    {
+      "t": 43.5,
+      "midi": 52,
+      "duration": 0.5,
+      "gain": 0.024,
+      "instrument": "erhu",
+      "pan": -0.15
+    },
+    {
+      "t": 43.5,
+      "midi": 64,
+      "duration": 0.5,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.3
+    },
+    {
+      "t": 44,
+      "midi": 62,
+      "duration": 2,
+      "gain": 0.045,
+      "instrument": "flute",
+      "pan": 0.15
+    },
+    {
+      "t": 44,
+      "midi": 50,
+      "duration": 2,
+      "gain": 0.024,
+      "instrument": "erhu",
+      "pan": -0.15
+    },
+    {
+      "t": 44,
+      "midi": 62,
+      "duration": 2,
+      "gain": 0.03,
+      "instrument": "dan_tranh",
+      "pan": 0.3
+    }
+  ],
+  "hits": [
+    {
+      "t": 3.0,
+      "instrument": "woodblock",
+      "duration": 0.12,
+      "gain": 0.035,
+      "pan": 0,
+      "variant": "a"
+    },
+    {
+      "t": 3,
+      "instrument": "gong2",
+      "duration": 1.5,
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "small"
+    },
+    {
+      "t": 3.5,
+      "instrument": "woodblock",
+      "duration": 0.12,
+      "gain": 0.035,
+      "pan": 0,
+      "variant": "a"
+    },
+    {
+      "t": 4.0,
+      "instrument": "woodblock",
+      "duration": 0.12,
+      "gain": 0.035,
+      "pan": 0,
+      "variant": "a"
+    },
+    {
+      "t": 4.5,
+      "instrument": "woodblock",
+      "duration": 0.12,
+      "gain": 0.035,
+      "pan": 0,
+      "variant": "a"
+    },
+    {
+      "t": 5.0,
+      "instrument": "woodblock",
+      "duration": 0.12,
+      "gain": 0.035,
+      "pan": 0,
+      "variant": "a"
+    },
+    {
+      "t": 5.5,
+      "instrument": "woodblock",
+      "duration": 0.12,
+      "gain": 0.035,
+      "pan": 0,
+      "variant": "a"
+    },
+    {
+      "t": 6.0,
+      "instrument": "woodblock",
+      "duration": 0.12,
+      "gain": 0.035,
+      "pan": 0,
+      "variant": "a"
+    },
+    {
+      "t": 6.5,
+      "instrument": "woodblock",
+      "duration": 0.12,
+      "gain": 0.035,
+      "pan": 0,
+      "variant": "a"
+    },
+    {
+      "t": 7.25,
+      "instrument": "woodblock",
+      "duration": 0.12,
+      "gain": 0.025,
+      "pan": 0,
+      "variant": "b"
+    },
+    {
+      "t": 7.75,
+      "instrument": "woodblock",
+      "duration": 0.12,
+      "gain": 0.025,
+      "pan": 0,
+      "variant": "b"
+    },
+    {
+      "t": 8.25,
+      "instrument": "woodblock",
+      "duration": 0.12,
+      "gain": 0.025,
+      "pan": 0,
+      "variant": "b"
+    },
+    {
+      "t": 8.75,
+      "instrument": "woodblock",
+      "duration": 0.12,
+      "gain": 0.025,
+      "pan": 0,
+      "variant": "b"
+    },
+    {
+      "t": 9.25,
+      "instrument": "woodblock",
+      "duration": 0.12,
+      "gain": 0.025,
+      "pan": 0,
+      "variant": "b"
+    },
+    {
+      "t": 9.75,
+      "instrument": "woodblock",
+      "duration": 0.12,
+      "gain": 0.025,
+      "pan": 0,
+      "variant": "b"
+    },
+    {
+      "t": 10.25,
+      "instrument": "woodblock",
+      "duration": 0.12,
+      "gain": 0.025,
+      "pan": 0,
+      "variant": "b"
+    },
+    {
+      "t": 10.75,
+      "instrument": "woodblock",
+      "duration": 0.12,
+      "gain": 0.025,
+      "pan": 0,
+      "variant": "b"
+    },
+    {
+      "t": 12.0,
+      "instrument": "frame_drum",
+      "duration": 0.4,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "large_muted"
+    },
+    {
+      "t": 12.5,
+      "instrument": "frame_drum",
+      "duration": 0.4,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "large_muted"
+    },
+    {
+      "t": 13.0,
+      "instrument": "frame_drum",
+      "duration": 0.4,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "large_muted"
+    },
+    {
+      "t": 13.5,
+      "instrument": "frame_drum",
+      "duration": 0.4,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "large_muted"
+    },
+    {
+      "t": 14.0,
+      "instrument": "frame_drum",
+      "duration": 0.4,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "large_muted"
+    },
+    {
+      "t": 14.5,
+      "instrument": "frame_drum",
+      "duration": 0.4,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "large_muted"
+    },
+    {
+      "t": 15.0,
+      "instrument": "frame_drum",
+      "duration": 0.4,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "large_muted"
+    },
+    {
+      "t": 15.5,
+      "instrument": "frame_drum",
+      "duration": 0.4,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "large_muted"
+    },
+    {
+      "t": 16.0,
+      "instrument": "frame_drum",
+      "duration": 0.4,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "large_muted"
+    },
+    {
+      "t": 16.5,
+      "instrument": "frame_drum",
+      "duration": 0.4,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "large_muted"
+    },
+    {
+      "t": 18.3,
+      "instrument": "woodblock",
+      "duration": 0.1,
+      "gain": 0.012,
+      "pan": 0,
+      "variant": "c"
+    },
+    {
+      "t": 24,
+      "instrument": "woodblock",
+      "duration": 0.2,
+      "gain": 0.075,
+      "pan": 0,
+      "variant": "b"
+    },
+    {
+      "t": 25,
+      "instrument": "woodblock",
+      "duration": 0.2,
+      "gain": 0.075,
+      "pan": 0,
+      "variant": "b"
+    },
+    {
+      "t": 26,
+      "instrument": "woodblock",
+      "duration": 0.2,
+      "gain": 0.075,
+      "pan": 0,
+      "variant": "b"
+    },
+    {
+      "t": 31,
+      "instrument": "gong2",
+      "duration": 3,
+      "gain": 0.13,
+      "pan": 0,
+      "variant": "big"
+    },
+    {
+      "t": 31,
+      "instrument": "frame_drum",
+      "duration": 0.5,
+      "gain": 0.08,
+      "pan": 0,
+      "variant": "large"
+    },
+    {
+      "t": 31.0,
+      "instrument": "frame_drum",
+      "duration": 0.25,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "large"
+    },
+    {
+      "t": 31.5,
+      "instrument": "frame_drum",
+      "duration": 0.25,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "small"
+    },
+    {
+      "t": 32.0,
+      "instrument": "frame_drum",
+      "duration": 0.25,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "large"
+    },
+    {
+      "t": 32.5,
+      "instrument": "frame_drum",
+      "duration": 0.25,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "small"
+    },
+    {
+      "t": 33.0,
+      "instrument": "frame_drum",
+      "duration": 0.25,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "large"
+    },
+    {
+      "t": 33.5,
+      "instrument": "frame_drum",
+      "duration": 0.25,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "small"
+    },
+    {
+      "t": 34.0,
+      "instrument": "frame_drum",
+      "duration": 0.25,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "large"
+    },
+    {
+      "t": 34.5,
+      "instrument": "frame_drum",
+      "duration": 0.25,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "small"
+    },
+    {
+      "t": 35.0,
+      "instrument": "frame_drum",
+      "duration": 0.25,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "large"
+    },
+    {
+      "t": 35.5,
+      "instrument": "frame_drum",
+      "duration": 0.25,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "small"
+    },
+    {
+      "t": 36.0,
+      "instrument": "frame_drum",
+      "duration": 0.25,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "large"
+    },
+    {
+      "t": 36.5,
+      "instrument": "frame_drum",
+      "duration": 0.25,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "small"
+    },
+    {
+      "t": 37.0,
+      "instrument": "frame_drum",
+      "duration": 0.25,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "large"
+    },
+    {
+      "t": 37.5,
+      "instrument": "frame_drum",
+      "duration": 0.25,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "small"
+    },
+    {
+      "t": 37.5,
+      "instrument": "gong2",
+      "duration": 1.5,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "small"
+    },
+    {
+      "t": 44,
+      "instrument": "gong2",
+      "duration": 3,
+      "gain": 0.055,
+      "pan": 0,
+      "variant": "small"
+    },
+    {
+      "t": 46.5,
+      "instrument": "woodblock",
+      "duration": 0.2,
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "a"
+    },
+    {
+      "t": 47,
+      "instrument": "woodblock",
+      "duration": 0.2,
+      "gain": 0.04,
+      "pan": 0,
+      "variant": "b"
+    }
+  ],
+  "effects": [
+    {
+      "t": 0.25,
+      "kind": "scissor_snip",
+      "duration": 0.18,
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 1,
+      "kind": "scissor_snip",
+      "duration": 0.18,
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 1.75,
+      "kind": "scissor_snip",
+      "duration": 0.18,
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 2.4,
+      "kind": "paper_fold",
+      "duration": 0.55,
+      "gain": 0.07,
+      "pan": 0
+    },
+    {
+      "t": 6.5,
+      "kind": "paper_fold",
+      "duration": 0.55,
+      "gain": 0.07,
+      "pan": 0
+    },
+    {
+      "t": 7,
+      "kind": "wind",
+      "duration": 10,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 12,
+      "kind": "cardboard_step",
+      "duration": 0.45,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 12.75,
+      "kind": "cardboard_step",
+      "duration": 0.45,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 13.0,
+      "kind": "candle_puff",
+      "duration": 0.24,
+      "gain": 0.065,
+      "pan": 0.4
+    },
+    {
+      "t": 13.5,
+      "kind": "candle_puff",
+      "duration": 0.24,
+      "gain": 0.065,
+      "pan": 0.30000000000000004
+    },
+    {
+      "t": 13.5,
+      "kind": "cardboard_step",
+      "duration": 0.45,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 14.0,
+      "kind": "candle_puff",
+      "duration": 0.24,
+      "gain": 0.065,
+      "pan": 0.2
+    },
+    {
+      "t": 14.25,
+      "kind": "cardboard_step",
+      "duration": 0.45,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 14.5,
+      "kind": "candle_puff",
+      "duration": 0.24,
+      "gain": 0.065,
+      "pan": 0.09999999999999998
+    },
+    {
+      "t": 15.0,
+      "kind": "candle_puff",
+      "duration": 0.24,
+      "gain": 0.065,
+      "pan": 0.0
+    },
+    {
+      "t": 15,
+      "kind": "cardboard_step",
+      "duration": 0.45,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 15.5,
+      "kind": "candle_puff",
+      "duration": 0.24,
+      "gain": 0.065,
+      "pan": -0.09999999999999998
+    },
+    {
+      "t": 15.75,
+      "kind": "cardboard_step",
+      "duration": 0.45,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 16.0,
+      "kind": "candle_puff",
+      "duration": 0.24,
+      "gain": 0.065,
+      "pan": -0.20000000000000007
+    },
+    {
+      "t": 16.5,
+      "kind": "candle_puff",
+      "duration": 0.24,
+      "gain": 0.065,
+      "pan": -0.30000000000000004
+    },
+    {
+      "t": 16.5,
+      "kind": "cardboard_step",
+      "duration": 0.45,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 17,
+      "kind": "wind",
+      "duration": 2.5,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 17.15,
+      "kind": "breath",
+      "duration": 1,
+      "gain": 0.055,
+      "pan": 0
+    },
+    {
+      "t": 18.4,
+      "kind": "breath",
+      "duration": 1,
+      "gain": 0.045,
+      "pan": 0
+    },
+    {
+      "t": 23.05,
+      "kind": "match_strike",
+      "duration": 0.22,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 23.22,
+      "kind": "candle_whoomp",
+      "duration": 0.5,
+      "gain": 0.05,
+      "pan": 0
+    },
+    {
+      "t": 24,
+      "kind": "paper_fold",
+      "duration": 0.55,
+      "gain": 0.09,
+      "pan": 0
+    },
+    {
+      "t": 25,
+      "kind": "paper_fold",
+      "duration": 0.55,
+      "gain": 0.09,
+      "pan": 0
+    },
+    {
+      "t": 26,
+      "kind": "paper_fold",
+      "duration": 0.55,
+      "gain": 0.09,
+      "pan": 0
+    },
+    {
+      "t": 26.5,
+      "kind": "scissor_snip",
+      "duration": 0.18,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 26.75,
+      "kind": "scissor_snip",
+      "duration": 0.18,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 26.8,
+      "kind": "paper",
+      "duration": 0.4,
+      "gain": 0.025,
+      "pan": 0.3
+    },
+    {
+      "t": 27.0,
+      "kind": "scissor_snip",
+      "duration": 0.18,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 27.1,
+      "kind": "paper",
+      "duration": 0.4,
+      "gain": 0.025,
+      "pan": 0.3
+    },
+    {
+      "t": 27.25,
+      "kind": "scissor_snip",
+      "duration": 0.18,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 27.4,
+      "kind": "paper",
+      "duration": 0.4,
+      "gain": 0.025,
+      "pan": 0.3
+    },
+    {
+      "t": 27.5,
+      "kind": "scissor_snip",
+      "duration": 0.18,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 27.7,
+      "kind": "paper",
+      "duration": 0.4,
+      "gain": 0.025,
+      "pan": 0.3
+    },
+    {
+      "t": 27.75,
+      "kind": "scissor_snip",
+      "duration": 0.18,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 28.0,
+      "kind": "scissor_snip",
+      "duration": 0.18,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 28.0,
+      "kind": "paper",
+      "duration": 0.4,
+      "gain": 0.025,
+      "pan": 0.3
+    },
+    {
+      "t": 28.25,
+      "kind": "scissor_snip",
+      "duration": 0.18,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 28.3,
+      "kind": "paper",
+      "duration": 0.4,
+      "gain": 0.025,
+      "pan": 0.3
+    },
+    {
+      "t": 28.5,
+      "kind": "scissor_snip",
+      "duration": 0.18,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 28.6,
+      "kind": "paper",
+      "duration": 0.4,
+      "gain": 0.025,
+      "pan": 0.3
+    },
+    {
+      "t": 28.75,
+      "kind": "scissor_snip",
+      "duration": 0.18,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 28.9,
+      "kind": "paper",
+      "duration": 0.4,
+      "gain": 0.025,
+      "pan": 0.3
+    },
+    {
+      "t": 29.0,
+      "kind": "scissor_snip",
+      "duration": 0.18,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 29.2,
+      "kind": "paper",
+      "duration": 0.4,
+      "gain": 0.025,
+      "pan": 0.3
+    },
+    {
+      "t": 29.25,
+      "kind": "scissor_snip",
+      "duration": 0.18,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 29.5,
+      "kind": "scissor_snip",
+      "duration": 0.18,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 30,
+      "kind": "unfold_snap",
+      "duration": 0.2,
+      "gain": 0.09,
+      "pan": 0
+    },
+    {
+      "t": 30.25,
+      "kind": "unfold_snap",
+      "duration": 0.2,
+      "gain": 0.09,
+      "pan": 0
+    },
+    {
+      "t": 30.5,
+      "kind": "unfold_snap",
+      "duration": 0.2,
+      "gain": 0.09,
+      "pan": 0
+    },
+    {
+      "t": 31.75,
+      "kind": "match_strike",
+      "duration": 0.2,
+      "gain": 0.09,
+      "pan": 0
+    },
+    {
+      "t": 31.9,
+      "kind": "candle_whoomp",
+      "duration": 0.5,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 32.0,
+      "kind": "candle_whoomp",
+      "duration": 0.25,
+      "gain": 0.05,
+      "pan": 0.5
+    },
+    {
+      "t": 32.25,
+      "kind": "candle_whoomp",
+      "duration": 0.25,
+      "gain": 0.05,
+      "pan": 0.38
+    },
+    {
+      "t": 32.5,
+      "kind": "candle_whoomp",
+      "duration": 0.25,
+      "gain": 0.05,
+      "pan": 0.26
+    },
+    {
+      "t": 32.75,
+      "kind": "candle_whoomp",
+      "duration": 0.25,
+      "gain": 0.05,
+      "pan": 0.14
+    },
+    {
+      "t": 33.0,
+      "kind": "candle_whoomp",
+      "duration": 0.25,
+      "gain": 0.05,
+      "pan": 0.020000000000000018
+    },
+    {
+      "t": 33.25,
+      "kind": "candle_whoomp",
+      "duration": 0.25,
+      "gain": 0.05,
+      "pan": -0.09999999999999998
+    },
+    {
+      "t": 33.5,
+      "kind": "candle_whoomp",
+      "duration": 0.25,
+      "gain": 0.05,
+      "pan": -0.21999999999999997
+    },
+    {
+      "t": 33.75,
+      "kind": "candle_whoomp",
+      "duration": 0.25,
+      "gain": 0.05,
+      "pan": -0.33999999999999997
+    },
+    {
+      "t": 34.2,
+      "kind": "dazzled_whimper",
+      "duration": 0.9,
+      "gain": 0.065,
+      "pan": 0
+    },
+    {
+      "t": 34.8,
+      "kind": "firework",
+      "duration": 1.3,
+      "gain": 0.07,
+      "pan": -0.4
+    },
+    {
+      "t": 34.9,
+      "kind": "firecracker",
+      "duration": 0.18,
+      "gain": 0.06,
+      "pan": -0.1772679875728157
+    },
+    {
+      "t": 35.08,
+      "kind": "firecracker",
+      "duration": 0.18,
+      "gain": 0.075,
+      "pan": 0.23916150464397756
+    },
+    {
+      "t": 35.26,
+      "kind": "firecracker",
+      "duration": 0.18,
+      "gain": 0.09,
+      "pan": -0.12100304795621225
+    },
+    {
+      "t": 35.3,
+      "kind": "cardboard_step",
+      "duration": 0.3,
+      "gain": 0.075,
+      "pan": -0.4
+    },
+    {
+      "t": 35.44,
+      "kind": "firecracker",
+      "duration": 0.18,
+      "gain": 0.06,
+      "pan": -0.1337342459302655
+    },
+    {
+      "t": 35.45,
+      "kind": "firework",
+      "duration": 1.3,
+      "gain": 0.07,
+      "pan": -0.15000000000000002
+    },
+    {
+      "t": 35.6,
+      "kind": "cardboard_step",
+      "duration": 0.3,
+      "gain": 0.075,
+      "pan": -0.4
+    },
+    {
+      "t": 35.62,
+      "kind": "firecracker",
+      "duration": 0.18,
+      "gain": 0.075,
+      "pan": 0.16523644414763794
+    },
+    {
+      "t": 35.8,
+      "kind": "firecracker",
+      "duration": 0.18,
+      "gain": 0.09,
+      "pan": -0.15287534266876143
+    },
+    {
+      "t": 35.9,
+      "kind": "cardboard_step",
+      "duration": 0.3,
+      "gain": 0.075,
+      "pan": -0.4
+    },
+    {
+      "t": 35.98,
+      "kind": "firecracker",
+      "duration": 0.18,
+      "gain": 0.06,
+      "pan": 0.24434551307181562
+    },
+    {
+      "t": 36.1,
+      "kind": "firework",
+      "duration": 1.3,
+      "gain": 0.07,
+      "pan": 0.09999999999999998
+    },
+    {
+      "t": 36.16,
+      "kind": "firecracker",
+      "duration": 0.18,
+      "gain": 0.075,
+      "pan": 0.35689914880674956
+    },
+    {
+      "t": 36.2,
+      "kind": "cardboard_step",
+      "duration": 0.3,
+      "gain": 0.075,
+      "pan": -0.4
+    },
+    {
+      "t": 36.34,
+      "kind": "firecracker",
+      "duration": 0.18,
+      "gain": 0.09,
+      "pan": -0.12588170335560162
+    },
+    {
+      "t": 36.5,
+      "kind": "cardboard_step",
+      "duration": 0.3,
+      "gain": 0.075,
+      "pan": -0.4
+    },
+    {
+      "t": 36.52,
+      "kind": "firecracker",
+      "duration": 0.18,
+      "gain": 0.06,
+      "pan": 0.21970384098792795
+    },
+    {
+      "t": 36.7,
+      "kind": "firecracker",
+      "duration": 0.18,
+      "gain": 0.075,
+      "pan": 0.197504679277004
+    },
+    {
+      "t": 36.75,
+      "kind": "firework",
+      "duration": 1.3,
+      "gain": 0.07,
+      "pan": 0.35
+    },
+    {
+      "t": 36.88,
+      "kind": "firecracker",
+      "duration": 0.18,
+      "gain": 0.09,
+      "pan": 0.12598463044738728
+    },
+    {
+      "t": 38,
+      "kind": "paper_peel",
+      "duration": 1.2,
+      "gain": 0.085,
+      "pan": 0
+    },
+    {
+      "t": 39.3,
+      "kind": "bird",
+      "duration": 0.5,
+      "gain": 0.035,
+      "pan": -0.4
+    },
+    {
+      "t": 40.4,
+      "kind": "bird",
+      "duration": 0.6,
+      "gain": 0.03,
+      "pan": 0.2
+    },
+    {
+      "t": 42.9,
+      "kind": "paper",
+      "duration": 1.5,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 46,
+      "kind": "paper",
+      "duration": 0.6,
+      "gain": 0.04,
+      "pan": 0
+    }
+  ],
+  "sections": [
+    {
+      "start": 0,
+      "end": 3,
+      "intent": "Scissor cold open, then pipa slide"
+    },
+    {
+      "start": 3,
+      "end": 7,
+      "intent": "Bright Dgong theme on pipa/zheng/dizi, small gong and woodblocks"
+    },
+    {
+      "start": 7,
+      "end": 12,
+      "intent": "Soft theme across night village"
+    },
+    {
+      "start": 12,
+      "end": 17,
+      "intent": "Half-time frame drum heartbeat and descending erhu"
+    },
+    {
+      "start": 17,
+      "end": 19.5,
+      "intent": "No music: wind and monster breath"
+    },
+    {
+      "start": 19.5,
+      "end": 24,
+      "intent": "Zheng tremolo, exact three prop accents and rising resolve"
+    },
+    {
+      "start": 24,
+      "end": 29.5,
+      "intent": "Three fold woodblocks, climbing eighth zheng and pipa tremolo/snips"
+    },
+    {
+      "start": 29.5,
+      "end": 30,
+      "intent": "Hard full-mix stopped-scissors silence"
+    },
+    {
+      "start": 30,
+      "end": 31,
+      "intent": "Three snap/glissandi unfold"
+    },
+    {
+      "start": 31,
+      "end": 38,
+      "intent": "Single big gong and full theme; eight rising zheng/window cues, firecrackers and retreat"
+    },
+    {
+      "start": 38,
+      "end": 42.5,
+      "intent": "Slow90BPM dizi/zheng dawn"
+    },
+    {
+      "start": 42.5,
+      "end": 46,
+      "intent": "Unison last phrase and small gong cadence"
+    },
+    {
+      "start": 46,
+      "end": 49,
+      "intent": "Tail and two wooden taps"
+    }
+  ]
+}

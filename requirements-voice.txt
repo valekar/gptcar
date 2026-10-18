@@ -3,3 +3,4 @@
 kokoro-onnx
 edge-tts
 faster-whisper
+librosa>=0.11,<0.12

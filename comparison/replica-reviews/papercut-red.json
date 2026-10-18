@@ -1,0 +1,18 @@
+{
+  "slug": "papercut-red",
+  "verdict": "accepted-for-gallery",
+  "reviewer": "root independent scene review",
+  "reviewed_source_sha256": "d30502bf77937854fcbdeb33307af9b8efc01188028c95e108915e12e5acb4cd",
+  "reviewed_video_sha256": "d31d717212226fd65ba800e474d0bde1448cc7764473daf81e8f230781e65c2d",
+  "scene_review": "passed",
+  "audio_review": "passed",
+  "review_times": [
+    32.0,
+    32.25,
+    32.5
+  ],
+  "method": "Root reviewed the complete film at 84 decoded matched frame pairs, 36 first-repair targets, six fold/eye/light targets and three final transmission targets. Final targets use both completed movies at identical quantized frames; source/movie SHA binding verified.",
+  "audio_evidence": "All 5 published af_sarah narration inputs freshly synthesized at original speeds/onsets. Independent ASR: 2 normalized exact, 3 preserve all words with Nian transcribed as Nion/Nyan proper-name variants; full source and take hashes checked. Fresh 189-note score, 51 hits, 91 Foley effects, music-only rest17\u201319.5 and full digital-zero29.5\u201330. AAC -14 LUFS/-1.0 dBTP.",
+  "comparison_notes": "Full49-second source-informed reconstruction, with shared credited paper toolkit and character/rosette model geometry. New scene assembly, fold/cut/unfold, light projection, voice, score and Foley. Fine village perspective, scissors path, paper edge, fold geometry, monster stance and projection shape still vary; source author/model credits replaced honestly.",
+  "reviewed_at": "2026-10-18T07:17:07.087628+00:00"
+}

@@ -1,0 +1,5 @@
+# Treatment before implementation
+
+Four layers: cached procedural painted color/emissive plates, flat hard-shadow cels, backlit light, restrained tape/CRT. Use the attributed generic cel/head/hand/bike/palette/effects/post helpers. Independently author the twenty shot assemblies, action states, numerical timing records, story dispatch and special set paintings. Never import original shots/scenes1–4/story/main. Extract only generic isolated cassette/title lettering, front/rear bike rig and smoke/rocket prop factories into a documented kit.
+
+Match the coral scarf, blue striped jacket, long purple ponytail, goggles/headset, almond eyes, white/cyan/magenta bike, labelled tape, bridge construction, cockpit hardware and striped rocket. Preserve original 116 BPM grid, shot-specific cameras, 12fps cels/8fps acting and 24fps camera/light. Deliver 1416 frames at 1280×720/24fps from 1920×1080 production. New English-dub voices and new city-pop score/foley, including radio filter, one-beat silence and cassette playback modulation. Inspect all five original sheets, every reconstructed shot and supplemental eye/impact/throttle/PLAY frames before freezing.

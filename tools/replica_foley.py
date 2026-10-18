@@ -7,7 +7,71 @@ def effect(kind,duration,seed=6103,**p):
  d=float(duration);t=np.arange(max(1,round(d*SR)))/SR;u=t/max(d,.001);rng=np.random.default_rng(seed);noise=rng.normal(size=len(t));env=np.sin(np.pi*np.clip(u,0,1))**2
  def bp(a,lo,hi):return sosfilt(butter(2,[lo,hi],btype='bandpass',fs=SR,output='sos'),a)
  def lp(a,hz):return sosfilt(butter(2,hz,fs=SR,output='sos'),a)
- if kind=='projector_clatter':
+ if kind=='stem_snap':
+  a=(bp(noise,1800,9000)*.6+np.sin(2*np.pi*970*t)*.2)*np.exp(-u*35)*np.minimum(t/.001,1)
+ elif kind in ('fruit_thud','fruit_cut'):
+  a=(np.sin(2*np.pi*(130*t-40*t*t/max(d,.01)))*.5+bp(noise,300,3000)*.45)*np.exp(-u*(14 if kind=='fruit_thud' else 6))*np.minimum(t/.002,1)
+ elif kind in ('grain_pour','grain_rake'):
+  clicks=rng.random(len(t))<.014;a=(bp(noise,700,7000)*clicks*2+bp(noise,200,2000)*.2)*env
+ elif kind=='container_clang':
+  a=sum(g*np.sin(2*np.pi*f*t)*np.exp(-t*k) for f,g,k in [(135,.7,4),(380,.35,6),(717,.2,8),(1220,.13,12)])*np.minimum(t/.001,1)+bp(noise,300,5000)*np.exp(-u*30)*.25
+ elif kind=='crane_motor':
+  a=(np.sin(2*np.pi*115*t)*.35+np.sin(2*np.pi*232*t)*.1+lp(noise,1700)*.3)*env
+ elif kind=='burlap_tear':
+  a=bp(noise,450,6500)*env*(.35+.65*np.maximum(np.sin(2*np.pi*48*t),0))
+ elif kind in ('hull_creak','roaster_drum'):
+  a=(lp(noise,350)*.4+np.sin(2*np.pi*(55 if kind=='hull_creak' else 82)*t)*.3)*env*(.7+.3*np.sin(2*np.pi*3*t))
+ elif kind=='bean_crack':
+  a=bp(noise,1500,9500)*np.exp(-u*35)*np.minimum(t/.0005,1)
+ elif kind=='grinder':
+  f=850+160*np.sin(np.pi*u);a=(np.sin(2*np.pi*np.cumsum(f)/SR)*.2+bp(noise,900,7000)*.5)*env
+ elif kind=='tamp':
+  a=(np.sin(2*np.pi*155*t)*.5+lp(noise,2200)*.5)*np.exp(-u*18)*np.minimum(t/.001,1)
+ elif kind=='coffee_pour':
+  a=(bp(noise,700,6500)*.35+np.sin(2*np.pi*(1800*t+300*t*t/max(d,.01)))*.1)*env
+ elif kind=='thunder':
+  a=(lp(noise,260)*.85+bp(noise,300,1600)*.18)*np.minimum(t/.05,1)*np.exp(-u*3)*(.65+.35*np.sin(2*np.pi*3*t)**2)
+ elif kind=='heartbeat':
+  a=np.zeros(len(t))
+  for offset,vol in [(0,1),(.16,.65)]:
+   q=np.maximum(t-offset,0);a+=vol*(np.sin(2*np.pi*65*q)+lp(noise,150)*.3)*np.exp(-q*28)*np.minimum(q/.008,1)*(t>=offset)
+ elif kind=='rope_creak':
+  f=130+80*np.sin(np.pi*u)+14*np.sin(2*np.pi*21*t);a=(np.sin(2*np.pi*np.cumsum(f)/SR)*.6+bp(noise,400,2600)*.25)*env
+ elif kind in ('wood_step','dirt_step','stone_step'):
+  f,lo,hi={'wood_step':(165,160,2500),'dirt_step':(90,450,5500),'stone_step':(480,650,6500)}[kind]
+  a=(np.sin(2*np.pi*f*t)*.35+bp(noise,lo,hi)*.6)*np.exp(-u*17)*np.minimum(t/.002,1)
+ elif kind=='lighthouse_ignite':
+  a=(np.sin(2*np.pi*42*t)*np.exp(-t*2)*.7+bp(noise,300,2000)*env*.4+(np.sin(2*np.pi*2200*t)+.35*np.sin(2*np.pi*3370*t))*env*.08)*np.minimum(t/.03,1)
+ elif kind=='camera_shutter':
+  a=(bp(noise,500,6500)*.6+np.sin(2*np.pi*850*t)*.2)*np.exp(-u*30)*np.minimum(t/.0005,1)
+ elif kind=='cat_meow':
+  f=480+220*np.sin(np.pi*u)-140*u;ph=2*np.pi*np.cumsum(f)/SR
+  a=(np.sin(ph)+.35*np.sin(2*ph)+.15*np.sin(3*ph))*env*(.85+.15*np.sin(2*np.pi*20*t))
+ elif kind=='cat_purr':
+  a=(lp(noise,550)*.5+np.sin(2*np.pi*80*t)*.2)*(.1+.9*np.maximum(np.sin(2*np.pi*26*t),0)**2)*env
+ elif kind in ('ceramic_clink','print_pop','keyboard_click'):
+  f,decay={'ceramic_clink':(2200,12),'print_pop':(430,25),'keyboard_click':(1400,35)}[kind]
+  a=(np.sin(2*np.pi*f*t)*.5+bp(noise,800,7000)*.3)*np.exp(-u*decay)*np.minimum(t/.001,1)
+ elif kind=='cartoon_boing':
+  f=180+320*np.exp(-t*7)*np.cos(2*np.pi*7*t);a=np.sin(2*np.pi*np.cumsum(f)/SR)*np.exp(-u*4)*np.minimum(t/.004,1)
+ elif kind=='riso_feed':
+  a=(bp(noise,450,5800)*.45+np.sin(2*np.pi*120*t)*.12)*env*(.65+.35*np.sin(2*np.pi*29*t))
+ elif kind=='riso_drum':
+  pulse=np.maximum(np.sin(2*np.pi*float(p.get('rate',7))*t),0)**12
+  a=(lp(noise,700)*.4+bp(noise,1200,5000)*pulse*.4+np.sin(2*np.pi*73*t)*.13)*env
+ elif kind=='freewheel':
+  pulse=np.maximum(np.sin(2*np.pi*float(p.get('rate',35))*t),0)**22
+  a=bp(noise,1800,9000)*pulse*env
+ elif kind=='brake_squeal':
+  f=1300+240*np.sin(np.pi*u)+24*np.sin(2*np.pi*37*t);ph=2*np.pi*np.cumsum(f)/SR
+  a=(np.sin(ph)*.4+bp(noise,2200,9000)*.2)*env
+ elif kind=='bread_crunch':
+  a=bp(noise,650,7800)*np.exp(-u*5)*(.25+.75*(rng.random(len(t))<.065))*np.minimum(t/.003,1)
+ elif kind=='church_bell':
+  f=float(p.get('frequency',330));a=sum(g*np.sin(2*np.pi*f*r*t)*np.exp(-t*k) for r,g,k in [(1,.75,.9),(2.02,.4,1.6),(2.77,.22,2.4),(4.07,.12,3.8)])*np.minimum(t/.002,1)*np.minimum((d-t)/.08,1)
+ elif kind=='paper_land':
+  a=(bp(noise,400,6000)*.6+lp(noise,250)*.3)*np.exp(-u*12)*np.minimum(t/.002,1)
+ elif kind=='projector_clatter':
   rate=float(p.get('rate',24));pulse=np.maximum(np.sin(2*np.pi*rate*t),0)**20
   a=(bp(noise,500,6200)*(.08+.65*pulse)+np.sin(2*np.pi*96*t)*.035)*np.minimum(t/.2,1)*np.minimum((d-t)/.2,1)
  elif kind=='porcelain_clink':
@@ -22,6 +86,22 @@ def effect(kind,duration,seed=6103,**p):
   a=(np.sin(ph)*.5+bp(noise,250,2200)*.35)*env*(.4+.6*np.maximum(np.sin(2*np.pi*11*t),0))
  elif kind=='alarm_ring':
   a=(np.sin(2*np.pi*1800*t)+.4*np.sin(2*np.pi*2930*t))*(.25+.75*np.maximum(np.sin(2*np.pi*18*t),0))*np.minimum(t/.003,1)*np.minimum((d-t)/.05,1)
+ elif kind in ('portal_open','portal_close','portal_suck','portal_whoosh'):
+  rising=kind in ('portal_open','portal_whoosh');f=(80+900*u*u) if rising else (980-900*u*u)
+  ph=2*np.pi*np.cumsum(f)/SR;a=(np.sin(ph)*.3+bp(noise,200,4000)*.6)*env*(.8+.2*np.sin(2*np.pi*23*t))
+ elif kind=='portal_hum':
+  a=(np.sin(2*np.pi*73*t)+.3*np.sin(2*np.pi*147.4*t)+lp(noise,500)*.15)*env*(.8+.2*np.sin(2*np.pi*4*t))
+ elif kind in ('jelly_glorp','jelly_slide','jelly_squish','cartoon_gulp','cartoon_slurp'):
+  f=150+190*np.sin(np.pi*u)+50*np.sin(2*np.pi*13*t);ph=2*np.pi*np.cumsum(f)/SR
+  a=(np.sin(ph)*.6+bp(noise,350,2400)*.45)*env*(.4+.6*np.maximum(np.sin(2*np.pi*(5 if kind=='jelly_slide' else 9)*t),0))
+ elif kind=='wet_blink':
+  a=(bp(noise,600,3400)*.45+np.sin(2*np.pi*(500*t-180*t*t/max(d,.01)))*.2)*np.exp(-u*14)*np.minimum(t/.001,1)
+ elif kind=='pigeon_coo':
+  ph=2*np.pi*np.cumsum(330+50*np.sin(2*np.pi*2.4*t))/SR;a=(np.sin(ph)+.24*np.sin(2*ph))*env*np.maximum(np.sin(2*np.pi*2.4*t),0)**.5
+ elif kind=='cartoon_chomp':
+  a=(bp(noise,700,6500)*.6+np.sin(2*np.pi*160*t)*.3)*np.exp(-u*9)*np.minimum(t/.001,1)
+ elif kind=='cartoon_wheee':
+  f=650+800*np.sin(np.pi*u);ph=2*np.pi*np.cumsum(f)/SR;a=(np.sin(ph)+.15*np.sin(2*ph))*env
  elif kind=='crt_power_on':
   f=280+1000*np.exp(-t*8);a=(np.sin(2*np.pi*np.cumsum(f)/SR)*.25+bp(noise,1500,9000)*.3)*np.exp(-u*6)+np.sin(2*np.pi*15625*t)*.025*env
  elif kind=='radio_squelch':
@@ -388,7 +468,14 @@ def saw(midi,duration):
 def synth_note(kind,midi,duration,**p):
  if kind=='saw':return saw(midi,duration)
  t=np.arange(max(1,round(duration*SR)))/SR;f=440*2**((float(midi)-69)/12);edge=np.minimum(t/.003,1)*np.minimum((duration-t)/.025,1)
- if kind=='fm_epiano':
+ if kind=='whistle':
+  ph=2*np.pi*np.cumsum(f*2**((.08*np.sin(2*np.pi*5*t)+float(p.get('glide',0))*np.exp(-t*12))/12))/SR
+  breath=np.random.default_rng(6107).normal(size=len(t));breath=sosfilt(butter(2,[1500,6500],btype='bandpass',fs=SR,output='sos'),breath)
+  a=(np.sin(ph)+.035*np.sin(2*ph)+.035*breath)*np.minimum(t/.035,1)*np.minimum((duration-t)/.07,1)
+ elif kind=='theremin':
+  vibrato=6*np.sin(2*np.pi*5.3*t);glide=float(p.get('glide',0))*np.exp(-t*5)
+  ph=2*np.pi*np.cumsum(f*2**((vibrato/100+glide)/12))/SR;a=(np.sin(ph)+.07*np.sin(2*ph))*np.minimum(t/.07,1)*np.minimum((duration-t)/.12,1)
+ elif kind=='fm_epiano':
   a=(np.sin(2*np.pi*f*t+1.6*np.sin(2*np.pi*f*2*t)*np.exp(-t*5))+.12*np.sin(2*np.pi*f*7*t)*np.exp(-t*15))*np.exp(-t*2.6/max(duration,.3))
  elif kind=='slap_bass':
   a=(np.sin(2*np.pi*f*t)+.4*np.sin(2*np.pi*f*2*t)*np.exp(-t*7)+.23*np.sin(2*np.pi*f*8*t)*np.exp(-t*35))*np.exp(-t*5/max(duration,.3))

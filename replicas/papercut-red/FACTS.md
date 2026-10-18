@@ -1,0 +1,3 @@
+# Folklore and physical count
+
+Nian is a fictional folklore character. The story explains a traditional motif through a tale, rather than asserting a historical origin. Three folds and a progressive wedge cut unfold to one eight-lantern rosette; eight independently timed lantern flights relight eight non-hero house windows32–33.75 nearestfirst. The hero candle/roundwindow is separate. Measured delivery1176frames/24fps=49s at1280×720; production1920×1080. The original conversation prompt is not published. Shared library girl/Nian/rosette/generic scenery assets are explicitly attributed, with independently authored scene layout, cameras and performances.
