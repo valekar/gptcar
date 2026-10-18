@@ -37,6 +37,27 @@ Keep the checkout in place. Restart Codex if the skill does not appear. The inst
 
 For the comparison run, select **GPT-6.1 Sol** with **High** reasoning. In Codex CLI: `codex -m gpt-6.1-sol -c model_reasoning_effort='"high"'`. Other available models can use the same style instructions. There is no model ID or Anthropic API call in the production toolkit. Skill availability depends on the agent host; a text-only chat cannot execute the renderer. Results and instruction-following vary by model. [Official skill documentation](https://developers.openai.com/codex/skills) · [GPT-6.1 Sol](https://developers.openai.com/api/docs/models/gpt-6.1-sol).
 
+## Use the lessons from the second pass
+
+The [production method](.agents/skills/gptcar/references/production.md) captures
+what failed in the first pass and what improved the full recreations. Every one
+of the [51 production profiles](styles/production-profiles.json) specifies assets,
+material detail, motion, review targets and weak substitutes to avoid. Keep the
+user's own story for a new film; use the complete reference contract for a remake.
+
+```sh
+python3 tools/style_recipe.py watercolor
+python3 tools/style_recipe.py --validate
+python3 examples/reference-recreation/reproduce.py watercolor
+```
+
+The [worked example](examples/reference-recreation/README.md) links the actual
+saved scene scripts, prompts, treatments, code, narration, score and asset credits,
+with executable commands for all 51 styles. It includes a reusable reconstruction
+prompt and a separate new-topic prompt. The renderer and guidance are model
+independent; the historical run's model labels are preserved as provenance.
+Specific model output quality still needs inspection and iteration.
+
 ## Production requirements
 
 Install Node 20+, ffmpeg and Python 3.11+ (or uv). The upstream toolkit was developed on Apple silicon macOS; Linux needs suitable browser/GPU support; use WSL on Windows. Then:

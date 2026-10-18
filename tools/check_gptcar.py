@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import re
 import sys
+from style_recipe import validate as validate_production_profiles
 
 
 def check(root):
@@ -48,6 +49,10 @@ def check(root):
         errors.append('Package / lockfile names disagree')
     if 'Copyright (c) 2026 LemoLab' not in (root / 'LICENSE').read_text():
         errors.append('Original copyright notice missing')
+    try:
+        validate_production_profiles(root)
+    except (ValueError, KeyError, FileNotFoundError) as error:
+        errors.append('Production profile/example inventory: ' + str(error))
     return errors
 
 

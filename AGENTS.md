@@ -12,8 +12,14 @@ This repository is a library of film styles. Each style has a `styles/<slug>/STY
 | Building: install, pages, voice, music, mix | [`TECHNIQUE.md`](TECHNIQUE.md) |
 | Tool commands and flags | [`core/README.md`](core/README.md) |
 | Adding a style to the library (owner only) | [`MAINTAINING.md`](MAINTAINING.md) |
+| Recreating an existing film / same-script comparison | [Replication mode](.agents/skills/gptcar/references/replication.md), then `styles/<slug>/GPT_REPLICATION.md` |
+| Second-pass production properties and asset depth | [Production findings](.agents/skills/gptcar/references/production.md), then `python3 tools/style_recipe.py <slug>` |
+| Recorded prompts, scripts, scores and commands | [Worked recreation example](examples/reference-recreation/README.md) |
 
-**Films outside `styles/` are the user's: no LemoLab credit, no watermark.**
+**Original user films need no library watermark or blanket LemoLab story credit.**
+Credit any licensed source assets/engines actually reused. Explicit recreations
+retain original film/story attribution and follow replication mode before the
+fresh-story instructions below.
 
 ## Style and story
 
@@ -59,6 +65,10 @@ All 51 styles · 全部风格:
    Skip what their request already answers. When a required answer is missing, wait for it; otherwise fill routine gaps with sensible defaults, record the brief and start. Preserve the user's existing choices and authorization.
 2. **Treatment.** Write `TREATMENT.md` in the project folder (DIRECTOR.md §4), before you open the demo.
 3. **Look.** Render style frames or a model sheet with the real drawing code and check them against `STYLE.md` (DIRECTOR.md §5).
+   Apply the [production findings](.agents/skills/gptcar/references/production.md)
+   and selected style profile. Keep an asset ledger and timed scene ledger.
+   Inspect difficult assets at their largest crop before assembling the film;
+   do not substitute generic primitives for the style’s observed artwork depth.
 4. **Storyboard, only if the user asked for it** (DIRECTOR.md §5). **Stop and wait for approval.** Otherwise don't stop.
 5. **Produce.** Voice → check → score (can run in parallel) → animation → mix → render (TECHNIQUE.md).
 6. **Self-check and deliver** (DIRECTOR.md §11).

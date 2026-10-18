@@ -2,6 +2,12 @@
 
 Use this mode when the user asks to replicate an existing film or compare models on the same script. It overrides the ordinary instruction to invent a fresh story before reading the demo: the reference film is the brief.
 
+Apply [production quality](production.md) for the asset ledger, material/action
+properties, audio checks and review gates learned from the redo. The executable
+example is `$LIB/examples/reference-recreation/reproduce.py`; a style slug prints
+its saved prompt, source/asset inventory and stage commands. Its default is
+inspection, not generation, acceptance or publishing.
+
 Read the published style guide, complete demo guide and original narration/card script. Inspect reference frames across the entire film, plus every distinct shot, screen/card, important action and transition. A few representative stills are insufficient. Use exact transition/beat times from source to inspect fast shots that a regular contact-sheet interval misses. Record the actual reference format and frame count separately from its production-canvas settings.
 
 Write a scene-by-scene reconstruction prompt before generating the film. For each screen/shot include timing, composition, character/prop geometry, material and brush/shader detail, colours, exact text, typography, camera, action, entry/exit transition and sound. Preserve the original narration, language, story beats, scene order, duration and production scope unless the user requests a change. Do not replace a hard scene with a title card or shorten the film to make a batch easier.

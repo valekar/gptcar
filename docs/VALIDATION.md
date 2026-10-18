@@ -5,7 +5,7 @@ Executed locally on 18 October 2026, on Apple silicon macOS, with Node v22.20.0,
 | Check | Result |
 | --- | --- |
 | `npm run check` | All 51 style prompts match the reviewed upstream SHA-256 hashes; inventory, original copyright, Codex files and package names pass. |
-| `npm test` | Fifteen tests pass, including strict source/movie/audio/format/inventory publication gates and setup/installer integration: discovery outside the repo; refusal to overwrite user folders; invalid command/tier handling; standalone skill cloning and preservation of local edits; idempotent symlink installation and conflict refusal. Temporary paths contain spaces. |
+| `npm test` | Twenty tests pass, including strict source/movie/audio/format/inventory publication gates and setup/installer integration: discovery outside the repo; refusal to overwrite user folders; invalid command/tier handling; standalone skill cloning and preservation of local edits; idempotent symlink installation and conflict refusal. Temporary paths contain spaces. |
 | Skill Creator `quick_validate.py` | Skill frontmatter and naming pass. This is structural validation, not a film quality evaluation. |
 | Shell syntax and `git diff --check` | Pass for the new setup entry points; no whitespace errors in the patch. |
 | Core dependency setup | `sh tools/setup.sh deps` completed; npm lockfile install, headless Chromium and core Python packages installed. |
@@ -40,3 +40,22 @@ Use an unused output path. These commands exercise the actual toolkit and the co
 - Nine inherited demos do not have `demo/build.sh`: paper-popup, halftone-dossier, paper-lantern, brick-toy, game-show, hd-2d, pictogram-motion, watercolor and cel-anime-80s. Their sources use other entry points documented in the demos. The adapter preserves them rather than claiming every inherited demo is a fresh one-command build. New user films should include their own build script.
 - Platform testing was local macOS only. CI checks the adapter on Linux; rendering on Linux/WSL still needs browser/GPU and system dependencies.
 - The original gallery and demo videos are upstream-authored material. Successful technical checks do not turn them into Codex output.
+
+
+## Production recipe and relocation checks
+
+The skill entry point routes new films through the shared production findings
+and one of 51 specific asset/material/motion/review profiles. `python3
+tools/style_recipe.py --validate` checks the complete inventory and that every
+recorded prompt, treatment, scene, narration, score, credits and review path exists.
+The example helper defaults to inspection; render, fetch and compare are explicit.
+Tests cover unknown style/path rejection, portable workspace resolution (including
+spaces and an explicit override), and SHA-verified asset installation that keeps
+an existing file intact on a bad response. `GPTCAR_WORK_DIR` defaults to
+`work/replication/` under the actual checkout, independent of its parent folder.
+
+After moving the checkout, setup discovery and source/dependency checks passed
+for Watercolor and LiDAR; three real Watercolor frames were rendered at the new
+location. The strict full-gallery build verifies all 51 original accepted
+source/movie bindings after the guidance and tooling updates. These checks do
+not constitute a new 51-film generation run or an artistic parity certification.

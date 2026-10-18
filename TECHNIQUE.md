@@ -12,6 +12,16 @@ timeline (single source of truth)
 mix (duck, compress, balance) ──► mux with ffmpeg, two-pass loudnorm −14 LUFS ──► film.mp4
 ```
 
+## Reproducing the recorded second pass
+
+See [the worked example](examples/reference-recreation/README.md) for saved
+prompts, scene scripts, code, fresh voice/score files, asset provenance and
+executable stage commands for every style. Run `python3 tools/style_recipe.py
+<slug>` for specific production properties. Comparison tools use
+`work/replication/` inside this checkout; set `GPTCAR_WORK_DIR` to choose another
+private workspace, and `GPTCAR_VOICE_PYTHON` to choose the audio Python runtime.
+These paths do not depend on a Codex-generated parent folder.
+
 ## 1. Requirements and install
 
 System tools, which the user installs: **Node 20+**, **ffmpeg**, and **Python 3.11+** or [uv](https://docs.astral.sh/uv/). Developed on macOS (Apple silicon); Linux should work; on Windows use WSL. 3D and shader-heavy styles want a GPU.

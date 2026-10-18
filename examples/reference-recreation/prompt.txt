@@ -1,0 +1,34 @@
+Reusable reconstruction handoff — selected style: watercolor
+This handoff is a new example pointing to the actual saved second-pass inputs.
+
+Use $gptcar with the GPTcar renderer. Read AGENTS.md, the production quality
+reference and replication mode. Read styles/watercolor/STYLE.md and
+styles/watercolor/GPT_REPLICATION.md. Run tools/style_recipe.py watercolor.
+
+Reconstruct Follow the Rain from comparison/matched-briefs/watercolor.md and
+the adjacent JSON. The recorded generation brief is replicas/watercolor/PROMPT.md;
+the actual saved treatment, scene scripts, narration.json, score.json and CREDITS
+are adjacent. Inspect the complete original and every short action/transition.
+Original private Opus conversation prompts are unavailable; do not claim this
+is an identical recovered chat prompt or a blind benchmark.
+
+Before implementation, specify each scene's purpose, exact text and speech,
+duration, subject geometry/detail, transparent pigment and fine botanical strokes,
+camera crop/scale, layered depth, action/contact and transition, score and Foley.
+Retain the full 113.6-second 6816-frame 60-fps story and original measured format.
+Include every biome and demonstration, the complete deep-time map and ending.
+Do not impose a 20-second cap or substitute generic trees and title cards.
+
+Author the new run in its own project folder. Identify and credit every reused
+engine, drawing, rig, font, geographic input and sample library; include transitive
+dependencies. Do not reuse the original complete scene renderer, exported movie
+frames or master soundtrack as new output. Recreate voice, score and effects from
+the published script/cue and musical direction. Record the actual model used.
+
+Inspect the difficult assets and every scene before the full render. Then compare
+both completed movies at common decoded CFR timestamps, inspect action/camera/text
+and material differences, and repair them. Check exact synthesis inputs separately
+from ASR output, timing, silence spans and encoded AAC loudness/peaks. Report only
+checks actually run and unresolved differences. Save prompts, treatment, source,
+assets/credits, speech/score files, build commands and source/movie-bound review.
+Do not auto-publish or overwrite accepted historical evidence for a different run.

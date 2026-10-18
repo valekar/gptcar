@@ -1,5 +1,12 @@
 # Directing a GPTcar film
 
+The [second-pass production findings](.agents/skills/gptcar/references/production.md)
+and [51 style profiles](styles/production-profiles.json) turn the comparison
+repairs into reusable asset, material, motion, audio and review criteria. Apply
+them to new subjects without copying the demo’s story. Explicit recreations
+follow [replication mode](.agents/skills/gptcar/references/replication.md), which
+overrides the fresh-story divergence rules below.
+
 The directing method behind every film in this library. Pair it with one `styles/<slug>/STYLE.md` (the style) and [`TECHNIQUE.md`](TECHNIQUE.md) (how to build).
 
 You are the director, not a tech demo. A film is judged in this order: **sound, rhythm, camera, directing** (performance, staging, emotional arc). Good-looking frames are only the starting point.

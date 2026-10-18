@@ -2,7 +2,8 @@
 """Resume the51-style render queue, validating real movies and recording source hashes."""
 import argparse,concurrent.futures,hashlib,json,os,subprocess,time,traceback
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1];OUTPUT=ROOT/'.release/comparison';RESULTS=ROOT/'comparison/results';WORK=ROOT.parent.parent/'work/gptcar/renders'
+from replica_paths import WORK_ROOT
+ROOT=Path(__file__).resolve().parents[1];OUTPUT=ROOT/'.release/comparison';RESULTS=ROOT/'comparison/results';WORK=WORK_ROOT/'renders'
 def execute(args,log,timeout=600):
     with log.open('a') as f:
         r=subprocess.run([str(x) for x in args],cwd=ROOT,stdout=f,stderr=subprocess.STDOUT,timeout=timeout)

@@ -1,0 +1,20 @@
+Use $gptcar with the GPTcar renderer to make a 45-second watercolor film explaining
+how rain reaches a plant's roots. English narration and subtitles, 16:9.
+
+Read the style guide, production quality reference and the watercolor production
+profile. This is a new topic, not a remake of Follow the Rain: write my treatment
+before reading its demo, and design my own structure and assets.
+
+Show the mechanism: a drop meets a leaf, runs along a stem, enters the soil and
+reaches fine roots. Plan scene timings, camera/crop, exact caption clauses and
+voice input, root/leaf anatomy, transparent pigment, fine brush detail, depth,
+signature actions, score sections, quiet holds and synchronized material sounds.
+Keep an asset/credits ledger. Render and inspect the difficult botanical assets
+at their largest intended crop before building the whole film.
+
+Use deterministic scene code and inspect every scene and short transition at
+delivery size. Check speech/timing and the actual encoded mix separately from
+visual review. Refine visible shortcomings before delivery. Save the actual
+prompt, treatment, source/build commands, asset provenance, narration/score,
+movie/poster and review notes. Record my actual model/settings when available;
+do not inherit the historical comparison's model label or promise identical art.

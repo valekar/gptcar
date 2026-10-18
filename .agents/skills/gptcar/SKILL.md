@@ -14,6 +14,10 @@ model or model API is required by the renderer.
    Read `$LIB/AGENTS.md`, then the matching `$LIB/styles/<slug>/STYLE.md`.
    For style browsing only, read `$LIB/styles/README.md`; no dependencies needed.
 2. For film production, read `$LIB/DIRECTOR.md` and `$LIB/TECHNIQUE.md`.
+   Read [production quality](references/production.md), then run
+   `python3 "$LIB/tools/style_recipe.py" <slug>` for the chosen style’s asset,
+   material, motion and review properties. They apply to new topics too;
+   they do not prescribe the historical demo’s story.
    Run `sh "<skill base directory>/scripts/setup.sh" deps` to install local
    packages. Add `deps voice` or `deps music` only when needed. Report missing
    system tools. The script never installs Node or ffmpeg system-wide.
@@ -33,6 +37,12 @@ model or model API is required by the renderer.
    when applicable, and `FACTS.md` for factual films. Report checks actually run
    and any limits. A successful render does not establish visual parity with
    the upstream Opus demos.
+
+The worked example at `$LIB/examples/reference-recreation/README.md` links the
+saved second-pass prompts, scripts, scores, assets and build commands for all
+51 styles. Reproduce the historical run or learn a technique; do not label a
+different model’s work as that recorded run. A model with the necessary tools
+can read this workflow, but quality requires inspection and iteration.
 
 In a library checkout, films go in `films/<name>/`. When invoked from another
 folder, create `<name>/` there. Run core tools from `$LIB` with the film's absolute

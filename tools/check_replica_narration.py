@@ -6,6 +6,7 @@ import numpy as np
 import soundfile as sf
 import soxr
 ROOT=Path(__file__).resolve().parents[1]
+from replica_paths import WORK_ROOT
 sys.path.insert(0,str(ROOT))
 from core.tts.asr_check import load_model, compare, detect_lang, norm_zh
 
@@ -43,4 +44,4 @@ def check(slugs,voice_root,out,model_name='base.en'):
         report=dict(slug=slug,method='Independent Whisper transcription of the actual newly synthesized/pitched/tempo-fitted voice takes. No expected-text initial prompt. Music and radio filtering are separately mixed.',narration_sha256=sha(narration),timing_sha256=sha(timing),checked_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),line_count=len(evidence),normalized_exact_count=sum(x['normalized_exact'] for x in evidence),lines=evidence)
         (out/(slug+'.json')).write_text(json.dumps(report,indent=2,ensure_ascii=False)+'\n')
 if __name__=='__main__':
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('slugs',nargs='+');p.add_argument('--voice-root',type=Path,default=ROOT.parent.parent/'work/gptcar/voices');p.add_argument('--out',type=Path,default=ROOT/'comparison/replica-narration-checks');p.add_argument('--model',default='base.en');a=p.parse_args();check(a.slugs,a.voice_root,a.out,a.model)
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('slugs',nargs='+');p.add_argument('--voice-root',type=Path,default=WORK_ROOT/'voices');p.add_argument('--out',type=Path,default=ROOT/'comparison/replica-narration-checks');p.add_argument('--model',default='base.en');a=p.parse_args();check(a.slugs,a.voice_root,a.out,a.model)

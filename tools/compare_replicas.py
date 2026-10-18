@@ -4,16 +4,17 @@ import argparse,concurrent.futures,json,math,subprocess
 from pathlib import Path
 from PIL import Image,ImageDraw
 from render_replicas import ROOT,source_hash,sha,reference
+from replica_paths import WORK_ROOT
 
 def compare(slug,times=None):
  folder=ROOT/'replicas'/slug;g=json.loads((folder/'generation.json').read_text());r=json.loads((ROOT/'comparison/replica-results'/(slug+'.json')).read_text());ref=reference(slug);movie=ROOT/'.release/replicas'/(slug+'.mp4')
  if r['source_sha256']!=source_hash(folder,g) or r['video_sha256']!=sha(movie):raise SystemExit('Render current frozen source before comparing final movies')
- out=ROOT.parent.parent/'work/gptcar/movie-review'/slug;out.mkdir(parents=True,exist_ok=True);frames=[]
+ out=WORK_ROOT/'movie-review'/slug;out.mkdir(parents=True,exist_ok=True);frames=[]
  for requested in times or g['review_times']:
   index=min(int(ref['frame_count'])-1,math.ceil(float(requested)*ref['fps_number']-1e-7));t=index/ref['fps_number'];frames.append((requested,index,t))
  def decode(item):
   requested,index,t=item;paths=[]
-  for label,src in [('opus',ROOT.parent.parent/'work/gptcar/reference/films'/(slug+'.mp4')),('gpt',movie)]:
+  for label,src in [('opus',WORK_ROOT/'reference/films'/(slug+'.mp4')),('gpt',movie)]:
    dst=out/f'{label}-{index:06d}.jpg';subprocess.run(['ffmpeg','-y','-v','error','-ss',f'{t:.9f}','-i',str(src),'-frames:v','1','-q:v','2',str(dst)],check=True);paths.append(dst)
   return requested,index,t,paths
  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:decoded=list(pool.map(decode,frames))

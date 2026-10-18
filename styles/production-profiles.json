@@ -1,0 +1,465 @@
+{
+  "version": 1,
+  "scope": "Reusable production criteria for new topics in all 51 styles; reference-specific values remain in canonical briefs. Quality requires visible review, not profile completion.",
+  "styles": {
+    "satellite-briefing": {
+      "name": "Satellite Briefing",
+      "category": "Evidence Films",
+      "asset_contract": "Registered satellite acquisitions, coastline, geographic masks, dated measurements",
+      "material_properties": "Continuous calibrated imagery; restrained scan optics; precise scale and acquisition labels",
+      "motion_properties": "World-registered map/scan camera; measured changes settle on their real values",
+      "review_targets": "Image registration and no-data boundaries; settled area/percent values; acquisition order",
+      "avoid": "A decorative map or different geographic/date window cannot support the original evidence"
+    },
+    "briefing-board": {
+      "name": "Engineering Briefing Board",
+      "category": "Evidence Films",
+      "asset_contract": "Source photographs, correctly isolated subjects, structure geometry, dimension anchors",
+      "material_properties": "Paper/ink board texture; photographic cutout edges; legible bilingual annotations",
+      "motion_properties": "Camera and dimensions follow the same world coordinates; inspect technical details before verdict",
+      "review_targets": "Cutout contacts; bridge/subject spans; dimension endpoints; label arrival and final argument",
+      "avoid": "Generic shapes cannot substitute for the actual photographed structure"
+    },
+    "lidar-survey": {
+      "name": "LiDAR Survey",
+      "category": "Evidence Films",
+      "asset_contract": "Exact point-cloud selection, classes, registered imagery, measured section samples",
+      "material_properties": "World-unit point sizes; low oblique depth; restrained bloom; real ground/vegetation separation",
+      "motion_properties": "Registered scan seams; stepped canopy removal; brief ground hold; additive regrowth ghost",
+      "review_targets": "Point counts and survey denominator; low vegetation; wall traces; section widths/heights and exaggeration",
+      "avoid": "Do not invent a similar cloud or replace a measured section with an illustrative curve"
+    },
+    "white-model": {
+      "name": "Projection on White Model",
+      "category": "Evidence Films",
+      "asset_contract": "Building/roof cohorts, terrain/water masks, physical city model, projector geometry",
+      "material_properties": "White material with readable roof relief and contact shadows; projected information stays registered",
+      "motion_properties": "Light/sun and camera move through a genuine model; staged cohort reveals",
+      "review_targets": "Roof counts; real building heights; projected shadow lengths; water edge registration",
+      "avoid": "A flat city diagram cannot deliver a physical projection reveal"
+    },
+    "data-physical": {
+      "name": "Data Physicalization",
+      "category": "Evidence Films",
+      "asset_contract": "Exact data table, instanced physical units, ruler and cohort definitions",
+      "material_properties": "Physical plate edges, contact shadows and reflections; distinguish unit and accumulated total",
+      "motion_properties": "Every unit enters from data; camera exposes count, scale and crossover",
+      "review_targets": "Unit denominator; count-up settling; stack intersections; readable comparison camera",
+      "avoid": "Do not approximate data with arbitrary decorative stacks"
+    },
+    "teardown": {
+      "name": "Exploded Teardown",
+      "category": "Evidence Films",
+      "asset_contract": "Accurate product CAD/PCB, package internals, connector geometry, licensed studio assets",
+      "material_properties": "Layer thickness, bevels, materials and board routing must survive close inspection",
+      "motion_properties": "Physical exploded order, connectors and disassembly axes; clear camera targets",
+      "review_targets": "Component totals/dimensions; occlusion; exploded-layer spacing; assembly closure",
+      "avoid": "A few floating boxes cannot stand in for detailed product internals"
+    },
+    "microscope": {
+      "name": "Microscope Story",
+      "category": "Evidence Films",
+      "asset_contract": "Actual scan pyramid/crops, registered slide view, segmentation and measurement data",
+      "material_properties": "Continuous microscopic image registration; optical loupe edges; objective/focus response",
+      "motion_properties": "Focus/zoom connects overview, tissue and measured detail without invented specimen changes",
+      "review_targets": "ROI geometry; units; objective transitions; nucleus/region anchors",
+      "avoid": "Do not substitute unrelated microscopy or synthetic blobs for a measured specimen"
+    },
+    "archive-lighttable": {
+      "name": "Archive Light Table",
+      "category": "Evidence Films",
+      "asset_contract": "Original archive objects and dates, restored masks, metadata and factual context",
+      "material_properties": "Readable paper/photo surfaces; contact shadows; subtle optical light-table treatment",
+      "motion_properties": "Camera/loupe examines actual marks; dimensional cutouts remain tied to archival evidence",
+      "review_targets": "Small text; counters; cutout lift/placement; final interpretation of the evidence",
+      "avoid": "Do not replace document inspection with generic vintage title cards"
+    },
+    "crayon-book": {
+      "name": "Crayon Picture Book",
+      "category": "Hand-drawn & Painting",
+      "asset_contract": "Expressive articulated characters, varied childlike props, layered paper and physical book",
+      "material_properties": "Broken wax strokes, irregular fill, paper fibres, warm depth and handmade edges",
+      "motion_properties": "Pose and eye-line act through the complete story; book reveal has thickness, curl and shadow",
+      "review_targets": "Hands/feet contact; expressive close-ups; material changes; complete ending",
+      "avoid": "A stock character on a flat coloured background misses both acting and crayon detail"
+    },
+    "watercolor": {
+      "name": "Watercolor Brush",
+      "category": "Hand-drawn & Painting",
+      "asset_contract": "Botanical/subject anatomy, varied specimen generators, continuous landscape layers, accurate map inputs when needed",
+      "material_properties": "Transparent pigment pooling, dry edges, fine stems/leaves, coherent cotton fibre and atmospheric depth",
+      "motion_properties": "Paint trunk then branches then leaves; continuous world camera; subject-specific ecological demonstrations",
+      "review_targets": "Leaf/stem silhouette and density; reveal edges; crop/scale; labels/gauges; coherent wash without raster seams",
+      "avoid": "Generic trees, opaque fills, repeated hills and abbreviated panoramas lose the observed naturalist detail"
+    },
+    "ink-wash": {
+      "name": "Chinese Ink Wash",
+      "category": "Hand-drawn & Painting",
+      "asset_contract": "Articulated silhouettes, landscape forms, brush glyphs, appropriate paper/scroll structure",
+      "material_properties": "Wet/dry ink gradients, diffusion, broken bristles and layered mountain depth",
+      "motion_properties": "Brush motion, hero poses and mounted-scroll/reverse-face transitions follow physical intent",
+      "review_targets": "Calligraphy order; silhouettes; bloom; wave/action cues; scroll cloth and final reveal",
+      "avoid": "A monochrome vector scene is insufficient without brush structure and observed physical action"
+    },
+    "impasto": {
+      "name": "Impasto Oil Painting",
+      "category": "Hand-drawn & Painting",
+      "asset_contract": "Detailed palette-knife figures, expressive hands/instrument, street props and colour-story assets",
+      "material_properties": "Thick paint ridges, directional knife strokes, local reflected colour and selective colour spread",
+      "motion_properties": "Act through physical gestures; camera crops key actions; colour changes happen on narrative cues",
+      "review_targets": "Close-up anatomy; puddle/reflection; warm light; paint depth; grand pause",
+      "avoid": "Smooth vector gradients and interchangeable figures do not reproduce impasto material or acting"
+    },
+    "one-line": {
+      "name": "One-line Drawing",
+      "category": "Hand-drawn & Painting",
+      "asset_contract": "Continuous path topology, chapter/shape inventory, pen/contact anchors and exact labels",
+      "material_properties": "Readable variable-width line, minimal paper and controlled negative space",
+      "motion_properties": "Topology and drawing order make the transformation; pen remains attached to its current point",
+      "review_targets": "Unbroken path; completion order; intersections; label timing; final composition",
+      "avoid": "Do not hide broken topology behind unrelated crossfades or disconnected icons"
+    },
+    "whiteboard": {
+      "name": "Whiteboard Explainer",
+      "category": "Hand-drawn & Painting",
+      "asset_contract": "Semantic diagram elements, real handwriting paths, hand/pen model and caption clauses",
+      "material_properties": "Marker stroke rhythm, readable hierarchy, eraser traces and convincing board surface",
+      "motion_properties": "Writing/drawing order follows explanation; hand and tip share the drawing transform",
+      "review_targets": "Tip contact; visible words; diagram causality; erase timing and final summary",
+      "avoid": "Do not animate finished slides under a floating hand"
+    },
+    "urban-sketch": {
+      "name": "Urban Sketch · Pen & Wash",
+      "category": "Hand-drawn & Painting",
+      "asset_contract": "Observed architectural structure, varied street figures/props and anchored handwritten notes",
+      "material_properties": "Loose but deliberate pen contour, transparent wash, paper continuity and local line density",
+      "motion_properties": "Sketch builds structural lines before wash; camera reveals the subject through useful viewpoints",
+      "review_targets": "Perspective; window/prop detail; watercolour exposure; pen-note attachment and crop",
+      "avoid": "Repeated stock buildings and a single uniform wash miss the location and drawing character"
+    },
+    "shadow-puppet": {
+      "name": "Shadow Puppetry",
+      "category": "East Asian Traditions",
+      "asset_contract": "Articulated puppet pieces, rods/joints, translucent screen, lamps and rear-stage operator assets",
+      "material_properties": "Layered shadow density, perforated leather detail, warm screen diffusion and physical light falloff",
+      "motion_properties": "Joint-limited acting and rod contact; reverse-stage reveal genuinely changes viewpoint",
+      "review_targets": "Silhouette articulation; limb/rod contacts; rear lamps/operator; screen occlusion",
+      "avoid": "A front-view silhouette plus added hands is not a reverse-stage mechanism"
+    },
+    "ukiyoe": {
+      "name": "Ukiyo-e",
+      "category": "East Asian Traditions",
+      "asset_contract": "Specific landscape/character forms, carved linework, print registration and edition objects",
+      "material_properties": "Flat carved colour planes, keyblock contours, paper grain, water/smoke pattern language",
+      "motion_properties": "Layered depth and patterned motion; print/physical reveal respects front/back ink orientation",
+      "review_targets": "Wave/hair contour detail; line registration; object scale; final print handling",
+      "avoid": "A flat poster with a Japanese motif misses the woodblock line and process"
+    },
+    "papercut-red": {
+      "name": "Red Paper-cut",
+      "category": "East Asian Traditions",
+      "asset_contract": "Connected cut-paper topology, articulate cut figures, pattern apertures and physical paper props",
+      "material_properties": "Fine cut edges, connected bridges, red paper layers and transmitted light",
+      "motion_properties": "Fold/cut/unfold changes real geometry; action and colour/lighting reveals occur at their cues",
+      "review_targets": "Topology; negative spaces; reverse faces; cast shadows; reveal exposure",
+      "avoid": "Do not replace cut-paper structure with red filled silhouettes"
+    },
+    "paper-lantern": {
+      "name": "Paper-cut Lightbox",
+      "category": "East Asian Traditions",
+      "asset_contract": "Layered theatre sets, articulated silhouettes, legible handwritten notes, dimensional parcels/cakes",
+      "material_properties": "Translucent illuminated paper, dense layered city windows, controlled bloom and soft depth",
+      "motion_properties": "Camera pans/crops express story; props genuinely open, move and touch; repeated settings remain coherent",
+      "review_targets": "Moon/character/window scale; city height and lighting direction; hand/cake contact; poem/greeting phases",
+      "avoid": "Opaque scenery, toy skylines or rearranged room layouts lose the paper-theatre composition"
+    },
+    "risograph": {
+      "name": "Risograph Print",
+      "category": "Print & Printmaking",
+      "asset_contract": "Separated print layers, worn spot-colour subjects, print-table tools and physical pages",
+      "material_properties": "Coherent grain, ink density, halftone coverage, register offsets and paper overlap",
+      "motion_properties": "Layer printing, page handling and wet/dry graphic transitions follow process",
+      "review_targets": "Ink overlap; paper edges; subject detail; print order; physical ending",
+      "avoid": "A noise overlay on flat vector art cannot replace separated ink/material behaviour"
+    },
+    "halftone-dossier": {
+      "name": "Halftone Dossier",
+      "category": "Print & Printmaking",
+      "asset_contract": "Evidence pages, portrait/diagram artwork, stamps and readable dossier labels",
+      "material_properties": "Screen-angle halftones, restrained duotone, ruled paper and credible document wear",
+      "motion_properties": "Camera/loupe investigates details; process marks appear in the correct order",
+      "review_targets": "Halftone screen scale; type hierarchy; document placement; holds and final evidence board",
+      "avoid": "Do not let stamps/noise obscure the actual evidence or substitute generic newspaper texture"
+    },
+    "woodcut": {
+      "name": "Woodcut Print",
+      "category": "Print & Printmaking",
+      "asset_contract": "Carved subject forms, hatching systems, detailed hands/tools and print/foundry props",
+      "material_properties": "Directional cuts, carved light, black/ink density and fibrous paper; graphic rays remain legible",
+      "motion_properties": "Carving/rolling/baren/peel are physical actions; narrative sacrifice and sound return need real pauses",
+      "review_targets": "Mirror-proof orientation; tool contact; peeled-paper face; foundry actions; bell cue and snow",
+      "avoid": "A black silhouette with random scratches cannot replace carved form or print mechanics"
+    },
+    "engraving": {
+      "name": "Copperplate Engraving",
+      "category": "Print & Printmaking",
+      "asset_contract": "High-detail specimen/anatomy drawings, tool/swarf, leaders and restrained wash layers",
+      "material_properties": "Copperplate hatching follows form; fine engraved contour; plate/paper and proof edges",
+      "motion_properties": "Tool passes carve real detail; proof peel and scientific close-ups maintain scale",
+      "review_targets": "Specimen anatomy; hatch density; eye/wing/pollen crop; leaders; natural-size reading",
+      "avoid": "A simplified insect/icon or uniform hatch fill loses the specimen's observed precision"
+    },
+    "silkscreen-poster": {
+      "name": "Silkscreen Travel Poster",
+      "category": "Print & Printmaking",
+      "asset_contract": "Separated landscape planes, travel typography, squeegee/screen/paper and display setting",
+      "material_properties": "Opaque spot inks, registration, subtle edge wear and directional print transfer",
+      "motion_properties": "Squeegee reveals ink as it passes; camera/bench/wall transitions preserve the poster",
+      "review_targets": "Plane silhouette; registration; squeegee phase; trail/stat labels; wall placement",
+      "avoid": "A finished poster fading in under a tool is not a printing demonstration"
+    },
+    "swiss-motion": {
+      "name": "Swiss Motion Graphics",
+      "category": "Graphic & Type",
+      "asset_contract": "Typographic hierarchy, exact numerical/chart content and a designed grid",
+      "material_properties": "Deliberate font weights, spacing, negative space and restricted palette",
+      "motion_properties": "Movement establishes hierarchy; aligned transformations land on a common rhythm",
+      "review_targets": "Optical alignment; typographic scale; reading holds; number/unit consistency",
+      "avoid": "Generic kinetic words without grid or editorial hierarchy lack the style's precision"
+    },
+    "spy-titles": {
+      "name": "60s Spy Title Sequence",
+      "category": "Graphic & Type",
+      "asset_contract": "Designed silhouette cast, masks, symbolic props and layered title compositions",
+      "material_properties": "Limited saturated palette, crisp cutouts, controlled grain and strong figure/ground",
+      "motion_properties": "Motifs transform into the next shot; camera and masks build suspense",
+      "review_targets": "Silhouette specificity; motif continuity; title safe areas; graphic transition topology",
+      "avoid": "Random spy icons and text slides miss the continuous visual metaphor"
+    },
+    "art-deco": {
+      "name": "Art Deco",
+      "category": "Graphic & Type",
+      "asset_contract": "Symmetric architectural/ornamental geometry, title hierarchy and stage materials",
+      "material_properties": "Stepped geometry, gold/ink contrast, radial details and restrained shine",
+      "motion_properties": "Geometric reveals and camera moves keep symmetry and depth legible",
+      "review_targets": "Ornament density; alignment; reflective highlights; character/prop staging",
+      "avoid": "Gold text and a generic border do not establish a detailed Art Deco world"
+    },
+    "blueprint": {
+      "name": "Blueprint",
+      "category": "Graphic & Type",
+      "asset_contract": "Mechanically meaningful parts, real connections, dimension and unit anchors",
+      "material_properties": "Precise technical strokes, cyan/ink hierarchy, restrained paper/grid and section hatching",
+      "motion_properties": "Draw order exposes construction; dimensions follow actual geometry through camera changes",
+      "review_targets": "Joint alignment; dimension endpoints; section details; readable annotation holds",
+      "avoid": "A decorative grid behind disconnected diagrams is not an engineering drawing"
+    },
+    "stained-glass": {
+      "name": "Stained Glass",
+      "category": "Graphic & Type",
+      "asset_contract": "Connected leaded cell topology, subject-specific panes, frame and light geometry",
+      "material_properties": "Coloured transmission, lead thickness, mottled glass and cast-light structure",
+      "motion_properties": "Reveal panes and light changes consistently; physical framing has thickness",
+      "review_targets": "Lead continuity; pane colour; light direction; silhouette and physical ending",
+      "avoid": "Coloured polygons without lead joins or light transmission miss the material"
+    },
+    "pictogram-motion": {
+      "name": "Pictogram Motion",
+      "category": "Graphic & Type",
+      "asset_contract": "Accurate articulated pictograms, real sport/activity geometry, official identities only when licensed",
+      "material_properties": "Consistent line weight, clear negative space and disciplined palette",
+      "motion_properties": "Joint motion demonstrates the actual action; match cuts use shared body/shape geometry",
+      "review_targets": "Limbs/joints; contact mechanics; identity text; readable numeric claims",
+      "avoid": "Interchangeable icons with generic bounces cannot explain a specific movement"
+    },
+    "ascii-crt": {
+      "name": "ASCII / CRT Terminal",
+      "category": "Graphic & Type",
+      "asset_contract": "Designed character-cell glyph subjects, terminal UI, charts and honest text content",
+      "material_properties": "Native character grid, limited phosphor palette, scanline/bloom discipline",
+      "motion_properties": "Cell-level redraw and cursor/type timing; quantized subjects with intentional camera treatment",
+      "review_targets": "Grid alignment; glyph legibility; display resolution; command/result sequence",
+      "avoid": "Do not blur a raster picture into ASCII or confuse scanline effects with content"
+    },
+    "dataviz": {
+      "name": "Data Storytelling",
+      "category": "Information & Keynote",
+      "asset_contract": "Verified full data series, axis/units, explanatory annotations and uncertainty",
+      "material_properties": "Honest scale, legible marks and labels; consistent category/colour mapping",
+      "motion_properties": "Animate from real values; reveal comparisons causally and let numbers settle",
+      "review_targets": "Data completeness; axis baseline; totals/denominators; intermediate versus settled counters",
+      "avoid": "Decorative charts or invented interpolation values cannot support factual conclusions"
+    },
+    "iso-infographic": {
+      "name": "Isometric Infographic",
+      "category": "Information & Keynote",
+      "asset_contract": "Complete mechanism/process geometry, nested internal components and part labels",
+      "material_properties": "Consistent isometric projection, material separation, occlusion and readable dimensions",
+      "motion_properties": "Sections open in physical order; camera/labels track the same coordinate system",
+      "review_targets": "Nested opening sequence; plumbing/connection continuity; part counts; reset/close",
+      "avoid": "A static isometric icon cannot explain a detailed functioning mechanism"
+    },
+    "dark-keynote": {
+      "name": "Dark Tech Keynote",
+      "category": "Information & Keynote",
+      "asset_contract": "Accurate product/model assets, readable spec hierarchy and meaningful reveal scenes",
+      "material_properties": "Controlled dark studio light, silhouette separation, believable materials and typography",
+      "motion_properties": "Camera reveals what the narration discusses; spec/cutaway reveals preserve product scale",
+      "review_targets": "Shadow detail; internals; text dwell; diagrams and final hero framing",
+      "avoid": "Black backgrounds and glowing type cannot replace product detail or argument"
+    },
+    "living-screencast": {
+      "name": "Living Screencast",
+      "category": "Information & Keynote",
+      "asset_contract": "Complete UI fixtures, exact typed strings/menus/lists and expressive mascot rig",
+      "material_properties": "Native interface spacing, readable code/diffs, coherent UI state and scene lighting",
+      "motion_properties": "UI progression, cursor and mascot acting share one timeline; preserve holds before transitions",
+      "review_targets": "Each menu state; row counts; comment text; reveal masks; cursor/actor contact",
+      "avoid": "A correct final screen cannot compensate for missing intermediate interaction states"
+    },
+    "hologram-hud": {
+      "name": "Sci-fi Hologram HUD",
+      "category": "Information & Keynote",
+      "asset_contract": "Detailed product CAD, accurate spec cards, semantic scan/loupe/explode elements",
+      "material_properties": "Fine technical geometry, controlled cyan bloom, depth and legible overlays",
+      "motion_properties": "Scan reveals real internals; loupe/camera/explode transforms refer to the same model",
+      "review_targets": "CAD detail; scan/erase phase; explode closure; leader registration; glyph readability",
+      "avoid": "A wireframe placeholder with floating panels misses product complexity"
+    },
+    "rubber-hose": {
+      "name": "1930s Rubber Hose Cartoon",
+      "category": "Cartoon & Anime",
+      "asset_contract": "Expressive rubber-limb cast, face/eye variants, period props and articulated hands",
+      "material_properties": "Clear black/white masses, consistent elastic strokes and restrained print damage",
+      "motion_properties": "Anticipation, follow-through, contact and eye-line motivate every gag and emotional turn",
+      "review_targets": "Hand/prop contact; gaze; reaction close-ups; ensemble rhythm; final wink/credits",
+      "avoid": "Generic bouncing characters cannot replace the full acted comedy"
+    },
+    "cel-anime-80s": {
+      "name": "80s Cel Anime",
+      "category": "Cartoon & Anime",
+      "asset_contract": "Detailed model sheets, painted environments, instrument/vehicle internals and expressive poses",
+      "material_properties": "Limited cel shading, line boil, rain/reflection, atmosphere and painted depth",
+      "motion_properties": "Animate characters on intentional twos with smooth camera/light; stage action before effects",
+      "review_targets": "Face/hand anatomy; suspension/spray; gauge recoil; rain depth; complete ending",
+      "avoid": "A flat character plus speed lines cannot replace cinematic backgrounds and mechanical detail"
+    },
+    "scifi-toon": {
+      "name": "Sci-Fi Sitcom Toon",
+      "category": "Cartoon & Anime",
+      "asset_contract": "Articulated cast and mouths, distinctive sets/props, title and impact assets",
+      "material_properties": "Expressive silhouettes, coherent flat shading, contour boil and readable layered depth",
+      "motion_properties": "Fresh speech drives mouths; pauses/interruption and reactions land before transitions",
+      "review_targets": "Facial/hand performance; prop contacts; ripple/spark phases; subtitle versus speech timing",
+      "avoid": "Do not replace dialogue acting with unchanging figures and explanatory title cards"
+    },
+    "midcentury-toon": {
+      "name": "Mid-century Cartoon",
+      "category": "Cartoon & Anime",
+      "asset_contract": "Distinct UPA-style cast, domestic/product geometry and semantic setup steps",
+      "material_properties": "Designed asymmetry, warm flat colour, sparse texture and clear shape language",
+      "motion_properties": "Stylized acting demonstrates each real action; stage clearance/hold/button steps visibly",
+      "review_targets": "Arm curves; exact setup quantities; furniture detail; action order and contact",
+      "avoid": "A generic mascot bouncing beside a checklist does not demonstrate the process"
+    },
+    "pixel-rpg": {
+      "name": "16-bit Pixel RPG",
+      "category": "Games",
+      "asset_contract": "Native-resolution environments, expressive sprite poses, real memory locations, combat/HUD states",
+      "material_properties": "Pixel-aligned silhouettes, limited palette, deliberate dithers and readable game text",
+      "motion_properties": "Discrete sprite steps with coherent camera; complete combat, palette drain and ending",
+      "review_targets": "HP/FILES progression; native grid; protected colour; walking/blinks; door/flood transitions",
+      "avoid": "Scaling down a vector scene is not pixel art; missing game states break the story"
+    },
+    "hd-2d": {
+      "name": "HD-2D",
+      "category": "Games",
+      "asset_contract": "Purposeful pixel characters in fully built 3D sets, props and layered atmosphere",
+      "material_properties": "Correct sprite filtering, pixel scale, physical shadows/reflections and selective focus",
+      "motion_properties": "Real spatial camera, sprite anchoring and terrain contacts; staged lighting and weather",
+      "review_targets": "Sprite/world contact; depth order; UV scale; rain/embers; dimension and reveal timing",
+      "avoid": "A flat pixel panorama with blur cannot replace a detailed spatial set"
+    },
+    "microgame": {
+      "name": "Microgame Frenzy",
+      "category": "Games",
+      "asset_contract": "Distinct style-specific drawing engines/props/actors, persistent host/life HUD and a complete boss set",
+      "material_properties": "Each game has its own material language; keep command type and host stage coherent",
+      "motion_properties": "Commands lead physical actions; preserve failure/replay/life states and full boss recovery",
+      "review_targets": "Every command/action/result; style changes; boss reentry/chute/landing; nonverbal voice cues",
+      "avoid": "Seven title cards or unrelated short loops cannot substitute for playable-looking microgame sequences"
+    },
+    "game-show": {
+      "name": "Game Show Flat",
+      "category": "Games",
+      "asset_contract": "Expressive model-character cast, semantic game apparatus, UI/cards and frozen remix miniatures",
+      "material_properties": "Clean flat outlines, specific stage palettes, dense but legible labels and distinct icons",
+      "motion_properties": "Rhythm drives real game actions, crowd layers and remix events; complete victory/credits arc",
+      "review_targets": "Factory counts; choir growth; remix stack topology; archival fact notices; exact shout events",
+      "avoid": "A generic game-show template misses the changing game mechanics and specific cast"
+    },
+    "silent-film": {
+      "name": "1920s Silent Film",
+      "category": "Cinema & Eras",
+      "asset_contract": "Expressive period cast, physical food/prop interactions, town/set and exact intertitles",
+      "material_properties": "Silent-era contrast, vignette, film wear and consistently readable title cards",
+      "motion_properties": "Full-body acting, bread/prop physics, reaction holds and piano punctuation tell the story",
+      "review_targets": "Release/split/contact poses; hunger/kindness turn; readable cards; final wink",
+      "avoid": "Film scratches do not turn generic animated text into a silent comedy"
+    },
+    "backrooms": {
+      "name": "Liminal Found Footage",
+      "category": "Cinema & Eras",
+      "asset_contract": "Continuous navigable set, true door/corridor layout, practical lights and silhouette actor",
+      "material_properties": "VHS chroma/luma wear, visible low-light texture, believable room depth and fluorescent exposure",
+      "motion_properties": "A deterministic continuous camera route, spatial sound and timed silhouette reveal",
+      "review_targets": "Route continuity; rule text; wall/ceiling detail; tape damage; intentional silence",
+      "avoid": "A dark blank room with a noise overlay loses both spatial tension and found-footage detail"
+    },
+    "brick-toy": {
+      "name": "Brick Toy",
+      "category": "Materials & 3D",
+      "asset_contract": "Real stud/tube brick geometry, articulated builder, complete rocket/robot internals and studio props",
+      "material_properties": "Plastic bevels, seams, scale and contact shadows; stepped assembly has weight",
+      "motion_properties": "Build/collapse/recovery/launch are physical events; smooth camera reveals toy scale",
+      "review_targets": "Stud connections; scatter/recovery; hand orientation; launch/landing; final scale reveal",
+      "avoid": "Simple coloured cuboids cannot replace detailed toy geometry and assembly mechanics"
+    },
+    "paper-popup": {
+      "name": "Paper Pop-up Book",
+      "category": "Materials & 3D",
+      "asset_contract": "Hinged layered book mechanisms, varied character/creature cutouts and dimensional room assets",
+      "material_properties": "Paper thickness, back faces, fold creases, contact/cast shadows and printed edges",
+      "motion_properties": "Page turns mechanically raise/lower scenery; narrative acting remains attached to paper",
+      "review_targets": "Hinge topology; reverse-face text; wave/stomp deformation; typography; room reveal",
+      "avoid": "A flat illustration crossfade cannot substitute for a functioning pop-up mechanism"
+    },
+    "tilt-shift": {
+      "name": "Tilt-Shift Miniature",
+      "category": "Materials & 3D",
+      "asset_contract": "Complete miniature town, varied buildings/vehicles/platform crowd, train and ducks",
+      "material_properties": "Miniature material detail, contact shadows, selective focus and day/night exposure",
+      "motion_properties": "Traffic/train signals share causal timing; smooth camera rises reveal toy scale",
+      "review_targets": "Traffic phases; light trails; crowd scale; duck hops/rest; focal plane",
+      "avoid": "Blur on a simple low-detail town cannot establish a convincing miniature"
+    },
+    "lowpoly-island": {
+      "name": "Low-poly Isometric Island",
+      "category": "Materials & 3D",
+      "asset_contract": "Purposeful terrain cells, house/tree variants, boat/lighthouse and physical water",
+      "material_properties": "Deliberate faceted silhouettes, controlled flat normals, warm light and readable depth",
+      "motion_properties": "Island build/count progression, spatial melody and lighthouse rescue form a full arc",
+      "review_targets": "Cell/asset counts when factual; shoreline; smoke/splash; dusk and lost-boat staging",
+      "avoid": "Random low-poly primitives cannot replace designed geography and a complete story"
+    },
+    "glass-product": {
+      "name": "Glass Product Render",
+      "category": "Materials & 3D",
+      "asset_contract": "Detailed optical product model, internal layers/PCB, studio geometry and lighting rig",
+      "material_properties": "Transmission/refraction, caustics, bevels and controlled product reflections",
+      "motion_properties": "Camera/exploded layers reveal actual construction; highlights describe surface geometry",
+      "review_targets": "Internal routing; optical thickness; 10-layer order when specified; caustics; final hero",
+      "avoid": "A translucent primitive with a glow cannot stand in for a detailed optical product"
+    }
+  }
+}
