@@ -1,0 +1,3 @@
+# Preserve upstream asset and font licences verbatim; lint authored source normally.
+comparisons/**/fonts/* -whitespace
+comparisons/teardown/assets/LICENSE* -whitespace

@@ -1,0 +1,13 @@
+{
+  "slug": "shadow-puppet",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/shadow-puppet.mp4",
+  "sha256": "b5c63168b11ed4468769326d057f3d8e9639cfeeb877f4b06d99b525ca7e7acd",
+  "duration": 54.4,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1305",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 54,
+  "sheets": 5
+}

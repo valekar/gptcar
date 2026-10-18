@@ -21,7 +21,9 @@
       10,
       17
     ],
-    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review.",
+    "reference_fidelity": "rejected_by_user",
+    "matched_script_comparison": false
   },
   "title": "Rotterdam / Light by Year",
   "comparison_notes": "Actual216-feature Rotterdam subset at1:1000; original construction-year attribute and roof-minus-terrain heights projected onto fixed white geometry. No citywide war-damage or solar-shadow claim.",

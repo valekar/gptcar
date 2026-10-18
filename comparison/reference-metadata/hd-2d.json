@@ -1,0 +1,13 @@
+{
+  "slug": "hd-2d",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/hd-2d.mp4",
+  "sha256": "82a764c8b6172e7ce5d9fc99a421c2a19f6f59e15c56b83c02f3ee4ee6400027",
+  "duration": 76.501,
+  "width": 1280,
+  "height": 720,
+  "fps": "60/1",
+  "frame_count": "4590",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 77,
+  "sheets": 7
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "iso-infographic",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/iso-infographic.mp4",
+  "sha256": "657fd06ee331c1d803e61d1b1c1bb16a4f8fdbb33cbb27b4c0acc81ea75a19fb",
+  "duration": 58.791667,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1411",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 59,
+  "sheets": 5
+}

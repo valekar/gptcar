@@ -1,0 +1,13 @@
+{
+  "slug": "swiss-motion",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/swiss-motion.mp4",
+  "sha256": "09639ce0cc856adceb177bacbe6d380d619fb25576b612402f0fcf1aa9a303ca",
+  "duration": 44.0,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1056",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 44,
+  "sheets": 4
+}

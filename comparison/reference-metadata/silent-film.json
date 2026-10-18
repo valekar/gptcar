@@ -1,0 +1,13 @@
+{
+  "slug": "silent-film",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/silent-film.mp4",
+  "sha256": "57198d76bf4224c208b61b9e1609f4bea9474e932a00b7b8db82462b124d6323",
+  "duration": 54.208333,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1301",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 54,
+  "sheets": 5
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "cel-anime-80s",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/cel-anime-80s.mp4",
+  "sha256": "40657a5d85560e26e5768ff3580a21ba03ff5fcfc78b2d9ebbd064b67c002918",
+  "duration": 59.008,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1416",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 59,
+  "sheets": 5
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "spy-titles",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/spy-titles.mp4",
+  "sha256": "36e832d72232d331060889c89e24d5dfc29e22b34cc26d9ba3bbe796ddb23e9e",
+  "duration": 44.083333,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1058",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 44,
+  "sheets": 4
+}

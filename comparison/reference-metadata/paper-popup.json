@@ -1,0 +1,13 @@
+{
+  "slug": "paper-popup",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/paper-popup.mp4",
+  "sha256": "15cb823cbf2ee1a877de52a477a0d2f4edde062d31ae30ca5c48e9ffa1caed0e",
+  "duration": 133.013,
+  "width": 1280,
+  "height": 720,
+  "fps": "60/1",
+  "frame_count": "7980",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 133,
+  "sheets": 12
+}

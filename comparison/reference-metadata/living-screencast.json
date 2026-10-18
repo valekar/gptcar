@@ -1,0 +1,13 @@
+{
+  "slug": "living-screencast",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/living-screencast.mp4",
+  "sha256": "b94fb5f0e41f542848464dafb136df46da4abc1c9291f9e1b8b30e948075a08a",
+  "duration": 59.4,
+  "width": 1280,
+  "height": 720,
+  "fps": "30/1",
+  "frame_count": "1782",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 59,
+  "sheets": 5
+}

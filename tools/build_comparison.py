@@ -14,6 +14,7 @@ def build(output,preview=False):
         if result.exists():
             d=json.loads(result.read_text())
             if d.get('status')!='verified':errors.append(slug+': render status is not verified')
+            if d.get('qa',{}).get('reference_fidelity')=='rejected_by_user':errors.append(slug+': first-pass fidelity rejected; publish the matched regeneration instead')
             if d.get('model')!='gpt-6.1-sol' or d.get('reasoning_effort')!='high':errors.append(slug+': requested model settings mismatch')
             if not (media/'posters'/(slug+'.jpg')).is_file():errors.append(slug+': poster missing')
             s.update(status=d['status'],gpt_duration=d['duration'],gpt_title=d['title'],comparison_notes=d['comparison_notes'],model=d['model'],reasoning_effort=d['reasoning_effort'],video_sha256=d['video_sha256'])

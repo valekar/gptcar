@@ -1,0 +1,13 @@
+{
+  "slug": "hologram-hud",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/hologram-hud.mp4",
+  "sha256": "3eeca104c6b45576284c13370b045eebf9dd712d9db85dc764f3dbec398baf7d",
+  "duration": 39.018,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "936",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 39,
+  "sheets": 4
+}

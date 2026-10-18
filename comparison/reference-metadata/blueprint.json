@@ -1,0 +1,13 @@
+{
+  "slug": "blueprint",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/blueprint.mp4",
+  "sha256": "9afd54ec308e8f8f7bb20c5652d0a95c3874d7dc92b64392c9dcb49d28256fa8",
+  "duration": 46.666667,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1120",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 47,
+  "sheets": 4
+}

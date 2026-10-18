@@ -21,7 +21,9 @@
       10,
       17
     ],
-    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review.",
+    "reference_fidelity": "rejected_by_user",
+    "matched_script_comparison": false
   },
   "title": "Before the First Light",
   "comparison_notes": "Independent twenty-second code study of the original style premise. Original procedural score, no narration. Qualitative style comparison; durations differ.",

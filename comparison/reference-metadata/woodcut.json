@@ -1,0 +1,13 @@
+{
+  "slug": "woodcut",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/woodcut.mp4",
+  "sha256": "a2b8682fa842dc317a2e98a16f44c5778963584cfa13bd311bc0641e55d06077",
+  "duration": 58.517,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1404",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 59,
+  "sheets": 5
+}

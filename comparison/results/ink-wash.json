@@ -21,7 +21,9 @@
       10,
       17
     ],
-    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review.",
+    "reference_fidelity": "rejected_by_user",
+    "matched_script_comparison": false
   },
   "title": "The Unpainted Crossing",
   "comparison_notes": "Independent 20-second procedural visual study matching the library premise. Original full-length upstream film differs in duration and production scope; this is a qualitative style comparison. No narration.",

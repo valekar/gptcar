@@ -1,0 +1,13 @@
+{
+  "slug": "data-physical",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/data-physical.mp4",
+  "sha256": "105cfdd6cbc140dffc71aae36c8f40c7fde324dfcdef362339e5b0a0d9e1dabd",
+  "duration": 39.381,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "945",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 39,
+  "sheets": 4
+}

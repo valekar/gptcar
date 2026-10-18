@@ -21,7 +21,11 @@ model or model API is required by the renderer.
    workflow, use its routing and take the library's style as art direction,
    unless the user explicitly requests the GPTcar renderer. That renderer
    uses deterministic `window.render(t)`, not HyperFrames timing attributes.
-4. Write the treatment before opening `DEMO.md` or demo sources. Render and
+4. For an explicit recreation or same-script comparison, first read
+   [replication mode](references/replication.md) and the style’s
+   `GPT_REPLICATION.md` if present. Preserve the reference’s full scope; follow
+   its scene audit and fidelity review instead of inventing a new story.
+   For a fresh film, write the treatment before opening `DEMO.md` or demo sources. Render and
    inspect real style frames before production; the historical demos are
    technique references, not templates for the user's story. Work in the film
    folder and keep the library's style guides and core tools unchanged.

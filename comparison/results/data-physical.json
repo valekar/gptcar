@@ -21,7 +21,9 @@
       10,
       17
     ],
-    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review.",
+    "reference_fidelity": "rejected_by_user",
+    "matched_script_comparison": false
   },
   "title": "Capacity, Placed",
   "comparison_notes": "Actual2014\u20132025 IRENA/OWID World rows. One plate=50GW, nearest whole plate, exact source readings separately retained. Original material installation and score.",

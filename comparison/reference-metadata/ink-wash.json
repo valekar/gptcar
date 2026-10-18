@@ -1,0 +1,13 @@
+{
+  "slug": "ink-wash",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/ink-wash.mp4",
+  "sha256": "38c2d3681aa7d49a5d2199a319e4934a1b89d182ace9446c3575eccfa606533c",
+  "duration": 48.0,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1152",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 48,
+  "sheets": 4
+}

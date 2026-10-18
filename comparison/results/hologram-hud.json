@@ -21,7 +21,9 @@
       10,
       17
     ],
-    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review.",
+    "reference_fidelity": "rejected_by_user",
+    "matched_script_comparison": false
   },
   "title": "Volt / Concept Spec Scan",
   "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Original fictional Volt e-bike, stylized procedural wireframe; 360 Wh, 250 W and 180 mm are explicitly labelled CONCEPT design targets, not measured production specs. FACTS.md discloses this.",

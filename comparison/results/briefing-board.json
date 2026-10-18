@@ -21,7 +21,9 @@
       10,
       17
     ],
-    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review.",
+    "reference_fidelity": "rejected_by_user",
+    "matched_script_comparison": false
   },
   "title": "The Clearance Question",
   "comparison_notes": "Three real bridge photographs and one real ship print form a qualitative type briefing. No project dimensions or clearance verdicts are invented; establish the navigation envelope first.",

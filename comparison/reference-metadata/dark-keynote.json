@@ -1,0 +1,13 @@
+{
+  "slug": "dark-keynote",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/dark-keynote.mp4",
+  "sha256": "1a441812461fe54e10572efde07b28b1e69c90679eb963958a896f9c9b04b9a4",
+  "duration": 42.005,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1008",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 42,
+  "sheets": 4
+}

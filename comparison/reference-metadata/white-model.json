@@ -1,0 +1,13 @@
+{
+  "slug": "white-model",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/white-model.mp4",
+  "sha256": "6c8453ed8be6bc16380af3f5599cf91b79d8f0ce7e5d3dffb4b8c9ec74eb93a0",
+  "duration": 40.0,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "960",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 40,
+  "sheets": 4
+}

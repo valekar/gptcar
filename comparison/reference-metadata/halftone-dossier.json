@@ -1,0 +1,13 @@
+{
+  "slug": "halftone-dossier",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/halftone-dossier.mp4",
+  "sha256": "ec0dac24d2f2c70df974b8d75ac81d4301afe9bef6b105edc2f49724c622a520",
+  "duration": 30.016,
+  "width": 1280,
+  "height": 720,
+  "fps": "30/1",
+  "frame_count": "900",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 30,
+  "sheets": 3
+}

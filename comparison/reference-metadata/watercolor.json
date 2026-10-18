@@ -1,0 +1,13 @@
+{
+  "slug": "watercolor",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/watercolor.mp4",
+  "sha256": "a222efe90cdbc0c2283d531757373f83c2b7dc0811212f4db4c032249884ead2",
+  "duration": 113.6,
+  "width": 1280,
+  "height": 720,
+  "fps": "60/1",
+  "frame_count": "6816",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 114,
+  "sheets": 10
+}

@@ -21,7 +21,9 @@
       10,
       17
     ],
-    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review.",
+    "reference_fidelity": "rejected_by_user",
+    "matched_script_comparison": false
   },
   "title": "Blue, Counted",
   "comparison_notes": "Same real calibrated PathAI Ventana tissue pyramid with two75\u00b5m-radius ROI measurements:37.34% and49.68% blue-dominant pixels. Different regions/measurement from the upstream film; no clinical inference.",

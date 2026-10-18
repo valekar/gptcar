@@ -1,0 +1,13 @@
+{
+  "slug": "lowpoly-island",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/lowpoly-island.mp4",
+  "sha256": "d5f2da94f3d8718801ed1381fe1dd593e2fbc51e53995ada27d5c2bf580b9c5b",
+  "duration": 53.013,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1272",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 53,
+  "sheets": 5
+}

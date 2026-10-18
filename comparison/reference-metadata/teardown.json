@@ -1,0 +1,13 @@
+{
+  "slug": "teardown",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/teardown.mp4",
+  "sha256": "a5e2a47c1ccf9233ed2c314edb999f5cb743352b9558bd7b8ea6830700c2b30c",
+  "duration": 38.75,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "930",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 39,
+  "sheets": 4
+}

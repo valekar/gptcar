@@ -1,4 +1,6 @@
-# GPTcar: 51-style comparison run
+# GPTcar: first-pass 51-style run (rejected in review)
+
+**Status:** all51 first-pass studies rendered, but the user rejected their fidelity: scripts/durations changed and artwork was simplified. This report describes that initial attempt, not an accepted matched comparison. The public Pages site has not been deployed. See [the replacement run contract](REPLICATION.md).
 
 [Open the single-page gallery](https://valekar.github.io/gptcar/). All 51 pairs live on that page, with original Opus films on the left and independent GPT films on the right. Search, categories and style hash links navigate the same page. Both README files link to the gallery.
 

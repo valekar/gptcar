@@ -1,0 +1,13 @@
+{
+  "slug": "risograph",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/risograph.mp4",
+  "sha256": "720b62ca3ed11662a7fadccf04743c32194cbef5c1e3d4ce5b57df0900f1f9fb",
+  "duration": 40.0,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "960",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 40,
+  "sheets": 4
+}

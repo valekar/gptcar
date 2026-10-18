@@ -3,7 +3,7 @@
   "status": "verified",
   "model": "gpt-6.1-sol",
   "reasoning_effort": "high",
-  "source_sha256": "dd55b485c6b5595baf3009f3326efbb73f092a2cc6263dba0fb588859d86ae76",
+  "source_sha256": "4e244321c9f204e71f42693112c62d5c89bc601058748aacf5d8ec11edcb2b23",
   "video_sha256": "d0681858f5c98919ef968821a12188d498112d59e283bea266719a896c8e5ae4",
   "bytes": 1705495,
   "duration": 20,
@@ -15,15 +15,11 @@
   "qa": {
     "render_errors": false,
     "black_intervals": false,
-    "visual_review": "passed",
-    "review_times_seconds": [
-      2,
-      10,
-      17
-    ],
-    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+    "visual_review": "pending",
+    "reference_fidelity": "rejected_by_user",
+    "matched_script_comparison": false
   },
   "title": "The Velvet Cipher / Key Exchange",
   "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. ",
-  "updated_at": "2026-10-18T03:10:33Z"
+  "updated_at": "2026-10-18T03:16:44Z"
 }

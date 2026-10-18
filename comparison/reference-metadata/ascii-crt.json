@@ -1,0 +1,13 @@
+{
+  "slug": "ascii-crt",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/ascii-crt.mp4",
+  "sha256": "5adf09f5bc7cc3821e1da7404e8f9305425a9b00d5526f9a53d8e6933bb7b135",
+  "duration": 59.791667,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1435",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 60,
+  "sheets": 5
+}

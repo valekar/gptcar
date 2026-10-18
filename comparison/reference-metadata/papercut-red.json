@@ -1,0 +1,13 @@
+{
+  "slug": "papercut-red",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/papercut-red.mp4",
+  "sha256": "2e6ce6b8fed550d584f54e5539646704102e9a6e6380b5571fee6be03cdea390",
+  "duration": 49.002,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1176",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 49,
+  "sheets": 5
+}

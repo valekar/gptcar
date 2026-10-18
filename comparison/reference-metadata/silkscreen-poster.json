@@ -1,0 +1,13 @@
+{
+  "slug": "silkscreen-poster",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/silkscreen-poster.mp4",
+  "sha256": "8ae1b2c07bd4585a3a24a1b38dad489440fb7e0f80faf6c02503416378b88d2c",
+  "duration": 38.416667,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "922",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 38,
+  "sheets": 4
+}

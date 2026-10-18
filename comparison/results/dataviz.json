@@ -21,7 +21,9 @@
       10,
       17
     ],
-    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review.",
+    "reference_fidelity": "rejected_by_user",
+    "matched_script_comparison": false
   },
   "title": "A Hundred Summers / Global June\u2013August",
   "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Global June\u2013August anomalies for 1925\u20132024 from NASA GISS/GISTEMP v4; all 100 published JJA values preserved, baseline 1951\u20131980. NASA data public domain with attribution; FACTS.md and frozen CSV included.",

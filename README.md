@@ -1,5 +1,7 @@
 # GPTcar
 
+> **Comparison status:** the first 51 short studies were rejected in review because they changed the original scripts and simplified the artwork. A full scene-by-scene regeneration is in progress. The Pages gallery has not been deployed yet.
+
 **[Open the Opus ↔ GPT comparison gallery](https://valekar.github.io/gptcar/)** — one page, all 51 styles side by side. Original Opus films on the left; independently coded GPT-6.1 Sol High studies on the right. [Production conditions](comparison/PROTOCOL.md) · [Run report](comparison/REPORT.md).
 
 **51 film styles for GPT coding agents.** Pick a style, bring your own topic, and use a coding agent to draw, animate, score and render a short film in code.

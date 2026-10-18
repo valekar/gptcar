@@ -21,7 +21,9 @@
       10,
       17
     ],
-    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review.",
+    "reference_fidelity": "rejected_by_user",
+    "matched_script_comparison": false
   },
   "title": "Pip Beyond the Page",
   "comparison_notes": "Independent twenty-second Three.js film from the original premise; original procedural geometry, materials and instrumental score. Qualitative comparison; durations differ.",

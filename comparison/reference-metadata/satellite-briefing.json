@@ -1,0 +1,13 @@
+{
+  "slug": "satellite-briefing",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/satellite-briefing.mp4",
+  "sha256": "b84ce6a3e42591d4f1428cc35769d4478b5bccc61f986f71f4ba7dcce49a8091",
+  "duration": 37.791667,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "907",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 38,
+  "sheets": 4
+}

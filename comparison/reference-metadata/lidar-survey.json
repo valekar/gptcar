@@ -1,0 +1,13 @@
+{
+  "slug": "lidar-survey",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/lidar-survey.mp4",
+  "sha256": "078d2ca0065febc50a495cf1e078bfdc1508ca489fb7174bfda9cd236c582863",
+  "duration": 40.0,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "960",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 40,
+  "sheets": 4
+}

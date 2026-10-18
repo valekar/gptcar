@@ -3,7 +3,7 @@
   "status": "verified",
   "model": "gpt-6.1-sol",
   "reasoning_effort": "high",
-  "source_sha256": "2fea62ecb021c9658ddcbc1e0558979ffe38632ef70b83216fb69e231e82dad3",
+  "source_sha256": "73869d93661a70c805b2d69bf554fd655b36dcb85a4cda758cee80fc1a1d98f9",
   "video_sha256": "d708e359aa4b466978fbac5a0f2459a0133f6a3adda1daa7b945b788195b1dbd",
   "bytes": 1011927,
   "duration": 20,
@@ -15,15 +15,11 @@
   "qa": {
     "render_errors": false,
     "black_intervals": false,
-    "visual_review": "passed",
-    "review_times_seconds": [
-      2,
-      10,
-      17
-    ],
-    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+    "visual_review": "pending",
+    "reference_fidelity": "rejected_by_user",
+    "matched_script_comparison": false
   },
   "title": "Five Rules / One Exception",
   "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. ",
-  "updated_at": "2026-10-18T03:10:57Z"
+  "updated_at": "2026-10-18T03:16:58Z"
 }

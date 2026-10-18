@@ -1,0 +1,13 @@
+{
+  "slug": "archive-lighttable",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/archive-lighttable.mp4",
+  "sha256": "1551f544b61610c7d7be218cedca25def8ebcb0c4c532cdc78544321e65a22d1",
+  "duration": 40.0,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "960",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 40,
+  "sheets": 4
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "pictogram-motion",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/pictogram-motion.mp4",
+  "sha256": "5a5fd88c852bc8d408d1274c499cec0ffff73dac70177783dca26c15672cc1ac",
+  "duration": 163.605,
+  "width": 1280,
+  "height": 720,
+  "fps": "60/1",
+  "frame_count": "9816",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 164,
+  "sheets": 14
+}

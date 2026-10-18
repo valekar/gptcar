@@ -21,7 +21,9 @@
       10,
       17
     ],
-    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review.",
+    "reference_fidelity": "rejected_by_user",
+    "matched_script_comparison": false
   },
   "title": "A Flight in the Archive",
   "comparison_notes": "Actual LOC Wright photographs and verified first/fourth-flight catalogue figures12s/59s. Original loupe implementation. Supplied photograph evidence replaces the upstream57s telegram/newspaper comparison.",

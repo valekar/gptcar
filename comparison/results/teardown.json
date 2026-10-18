@@ -21,7 +21,9 @@
       10,
       17
     ],
-    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review.",
+    "reference_fidelity": "rejected_by_user",
+    "matched_script_comparison": false
   },
   "title": "Twenty-one Positions",
   "comparison_notes": "Actual21 Corne switch centres, rotations, source copper segments and full-panel Edge.Cuts raster. Source left panel retained; cap/switch/socket envelopes simplified and disclosed. No case-fit or invented package dimensions claimed.",

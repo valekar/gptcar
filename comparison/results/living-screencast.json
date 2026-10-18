@@ -21,7 +21,9 @@
       10,
       17
     ],
-    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review.",
+    "reference_fidelity": "rejected_by_user",
+    "matched_script_comparison": false
   },
   "title": "Pip Moves In / Coding Walkthrough",
   "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. Premise adaptation: original fictional Pip Studio app and original pixel mascot replace the upstream Claude-branded walkthrough. Actual DOM renders coherent plan/diff/check states; UI anchors are measured each frame. No claim about a real product feature or interface.",

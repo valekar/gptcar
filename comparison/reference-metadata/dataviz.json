@@ -1,0 +1,13 @@
+{
+  "slug": "dataviz",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/dataviz.mp4",
+  "sha256": "12dfd80558e521116de9bccd9629ec836b01aab856bdccf63adeccff93bd3cf2",
+  "duration": 50.005,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1200",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 50,
+  "sheets": 5
+}

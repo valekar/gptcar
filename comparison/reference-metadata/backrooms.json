@@ -1,0 +1,13 @@
+{
+  "slug": "backrooms",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/backrooms.mp4",
+  "sha256": "3674549d1c13400b57517d04a02772f70d2136b26bc17194987b85c3865d4e65",
+  "duration": 59.712,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1432",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 60,
+  "sheets": 5
+}

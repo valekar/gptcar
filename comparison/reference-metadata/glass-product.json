@@ -1,0 +1,13 @@
+{
+  "slug": "glass-product",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/glass-product.mp4",
+  "sha256": "4d4d07073e2bc7abcb537afae06fa19562de6f69f67f754df6865b734c308f25",
+  "duration": 32.0,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "768",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 32,
+  "sheets": 3
+}

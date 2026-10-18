@@ -1,0 +1,13 @@
+{
+  "slug": "paper-lantern",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/paper-lantern.mp4",
+  "sha256": "bc276d3675f337e7f6fb8f3c214705d870003b25ede191ea91037515c1327674",
+  "duration": 121.766667,
+  "width": 1280,
+  "height": 720,
+  "fps": "30/1",
+  "frame_count": "3653",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 122,
+  "sheets": 11
+}

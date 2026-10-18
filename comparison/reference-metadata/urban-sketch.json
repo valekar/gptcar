@@ -1,0 +1,13 @@
+{
+  "slug": "urban-sketch",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/urban-sketch.mp4",
+  "sha256": "41c452cb880d7e69efbff99fa6d15da31ed00033e6a76a611e7fd14d015ada42",
+  "duration": 32.405,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "777",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 32,
+  "sheets": 3
+}

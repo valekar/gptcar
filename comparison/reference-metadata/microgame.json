@@ -1,0 +1,13 @@
+{
+  "slug": "microgame",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/microgame.mp4",
+  "sha256": "b1a9753810097d8a691a75b070388d7139a842a0637f89007d337a57ff5a549a",
+  "duration": 59.833333,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1436",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 60,
+  "sheets": 5
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "game-show",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/game-show.mp4",
+  "sha256": "c8a18dbab9a0811e7f134382ba8b8d54413283cde50b6224dc9befa7ff4cd68a",
+  "duration": 148.8,
+  "width": 1280,
+  "height": 720,
+  "fps": "30/1",
+  "frame_count": "4464",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 149,
+  "sheets": 13
+}

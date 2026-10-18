@@ -1,0 +1,13 @@
+{
+  "slug": "whiteboard",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/whiteboard.mp4",
+  "sha256": "7c4963607644c4e3fcda80b06c59760ace2516e45b96b091d51736d668efa282",
+  "duration": 111.018,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "2664",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 111,
+  "sheets": 10
+}

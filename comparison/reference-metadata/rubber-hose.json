@@ -1,0 +1,13 @@
+{
+  "slug": "rubber-hose",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/rubber-hose.mp4",
+  "sha256": "e7d1d0a0ad1b88ef411b97787fbd83dfdbdb414ad92207a7718466b078a7eeb5",
+  "duration": 50.005,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1200",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 50,
+  "sheets": 5
+}

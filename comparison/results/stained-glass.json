@@ -3,7 +3,7 @@
   "status": "verified",
   "model": "gpt-6.1-sol",
   "reasoning_effort": "high",
-  "source_sha256": "b62e02cb041723548b9f43e317af890d7657e7e4606f78d6cc1c73ef851316f3",
+  "source_sha256": "68de17c6e971256dffd4a9a6a7bd4399e85c27c813f2ab5cb719d77c5eb4c6b4",
   "video_sha256": "7644e261e0ab9979e84b07fc8914d4a5337842f5642d4c87a1e66dafe22b79ff",
   "bytes": 4415455,
   "duration": 20,
@@ -15,15 +15,11 @@
   "qa": {
     "render_errors": false,
     "black_intervals": false,
-    "visual_review": "passed",
-    "review_times_seconds": [
-      2,
-      10,
-      17
-    ],
-    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+    "visual_review": "pending",
+    "reference_fidelity": "rejected_by_user",
+    "matched_script_comparison": false
   },
   "title": "The East Window / A Pact",
   "comparison_notes": "Original procedural 20-second study, 1280x720 at 24 fps; qualitative comparison to a longer upstream production. ",
-  "updated_at": "2026-10-18T03:10:56Z"
+  "updated_at": "2026-10-18T03:16:49Z"
 }

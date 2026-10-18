@@ -1,0 +1,13 @@
+{
+  "slug": "stained-glass",
+  "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/stained-glass.mp4",
+  "sha256": "7e8883defaa09a4f632d31bb394b60bb738a9285930fb6239f2ae9527df55863",
+  "duration": 56.512,
+  "width": 1280,
+  "height": 720,
+  "fps": "24/1",
+  "frame_count": "1356",
+  "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+  "frames": 57,
+  "sheets": 5
+}

@@ -21,7 +21,9 @@
       10,
       17
     ],
-    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review."
+    "review_method": "Parent agent sampled-frame inspection; targeted additional frames for repairs. Not a human full-film review.",
+    "reference_fidelity": "rejected_by_user",
+    "matched_script_comparison": false
   },
   "title": "The Eastern Lobe / 2000\u20132014",
   "comparison_notes": "Actual NASA MODIS plates from 2000 and2014; qualitative eastern-lobe comparison, no invented area or recovery measurement. Two dates replace the original longer Landsat history.",
