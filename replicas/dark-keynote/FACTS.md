@@ -1,0 +1,1 @@
+Tidy is a fictional app, not a real benchmark.12,408files/0.8seconds and264visible UIobjects are published fictional original narrative data, preserved for reference matching. Source: styles/dark-keynote/DEMO.md and canonical comparison/matched-briefs/dark-keynote.json with source hashes. No new measured performance claim.

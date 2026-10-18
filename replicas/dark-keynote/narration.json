@@ -1,0 +1,60 @@
+{
+  "language": "en-us",
+  "voice": "af_kore",
+  "lines": [
+    {
+      "id": "l1",
+      "text": "Your desktop.",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "start": 4.25,
+      "duration": 1.4,
+      "language": "en-us"
+    },
+    {
+      "id": "l2",
+      "text": "Your photos.",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "start": 6.25,
+      "duration": 1.4,
+      "language": "en-us"
+    },
+    {
+      "id": "l3",
+      "text": "Your inbox.",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "start": 8.25,
+      "duration": 1.4,
+      "language": "en-us"
+    },
+    {
+      "id": "l4",
+      "text": "Meet Tidy.",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "start": 20.5,
+      "duration": 1.4,
+      "language": "en-us"
+    },
+    {
+      "id": "l5",
+      "text": "One press, and everything finds its place.",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "start": 23,
+      "duration": 2.6519999999999997,
+      "language": "en-us"
+    },
+    {
+      "id": "l6",
+      "text": "Room to think.",
+      "voice": "af_kore",
+      "speed": 0.95,
+      "start": 34.55,
+      "duration": 1.4,
+      "language": "en-us"
+    }
+  ]
+}

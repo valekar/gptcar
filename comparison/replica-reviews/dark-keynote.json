@@ -1,0 +1,21 @@
+{
+  "slug": "dark-keynote",
+  "verdict": "accepted-for-gallery",
+  "reviewer": "root independent scene review",
+  "reviewed_source_sha256": "b292d492dcce2f6a6b490b7011613e5674c9558cf5d3ae394f3da5906bcff8de",
+  "reviewed_video_sha256": "5bc02e06840e690f60b33736bf9c50183285388c0e831e63816e14fd96e22857",
+  "scene_review": "passed",
+  "audio_review": "passed",
+  "review_times": [
+    12.5,
+    12.916666666666666,
+    12.958333333333334,
+    13.0,
+    13.041666666666666,
+    19.0
+  ],
+  "method": "Inspected all102 paired decoded frames across full42-second launch film; then17+8+6 targeted repair pairs covering complete tab/storage inserts, press glow, panel-bound clustering/settling, status dive, vector text, final credits and exact frame311-to312 insert boundary.",
+  "audio_evidence": "Six fresh af_kore narration takes normalized exact in independent ASR. Fresh120BPM phase/mallet score has610 notes and371 effects; full-mix15\u201316 pause verified digital zero. Final -13.8LUFS / -1.5dBTP.",
+  "comparison_notes": "Full clutter buildup, continuously animated999+ inbox/tab/storage counters,264 objects, press/sorting/app reveal,12,408 files and0.8-second claim, status dive and quiet ending follow the original. Generic engine is credited. Scatter layouts, depth, cluster trajectories, camera paths and fine icon textures remain distinct.",
+  "reviewed_at": "2026-10-18T06:54:55.160971+00:00"
+}

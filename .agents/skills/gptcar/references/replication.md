@@ -18,6 +18,8 @@ Review original and generated frames at matching times for every scene. Check st
 
 Match the shot's visible crop and subject scale as well as its event. A full-stage view does not reproduce a close-up of a bow, a sun impact or a held decision. For a physical reveal, reconstruct the changed viewpoint and mechanism: a reverse-side puppet stage needs its operator, rods, lamps and rear screen, rather than the original front frame with hands added. Check final credit boards for foreground occlusion and verify that narrated physical changes, such as extinguishing a fire, have happened at the spoken cue.
 
+Check reverse faces and shadows in physical fold transitions: a back-facing title card may become blank, and a raised paper leaf needs a cast shadow. Keep illumination and facial reaction cues at their observed times instead of revealing them early.
+
 For animated measurements, inspect consecutive frames and the settled value. A count-up or countdown can display intermediate numbers that differ from the data without any factual discrepancy. Reconstruct the motion from the actual values and timing; do not freeze an intermediate number or add a correction based on one sampled frame.
 
 For final acceptance, decode both completed movies at the same frame timestamps (for example `tools/compare_replicas.py <slug>`). A decoder may select the next frame after a fractional timestamp, while a source `render(t)` still evaluates the preceding shot. Do not retime a correct cut because that mixed sampling method creates a one-frame mismatch. Use matching timestamps for preview posters too. Material and staging differences that persist between cuts still require repair.

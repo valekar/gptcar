@@ -1,0 +1,3123 @@
+{
+  "title": "The Runaway Loaf \u2014 freshly composed photoplay cue sheet",
+  "notes": [
+    {
+      "t": 1.5625,
+      "midi": 41,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 1.5625,
+      "midi": 72,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 2.1875,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 2.1875,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 2.1875,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 2.1875,
+      "midi": 69,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 2.8125,
+      "midi": 45,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 2.8125,
+      "midi": 65,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 3.4375,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 3.4375,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 3.4375,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 3.4375,
+      "midi": 67,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 4.0625,
+      "midi": 48,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 4.0625,
+      "midi": 69,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 4.6875,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 4.6875,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 4.6875,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 4.6875,
+      "midi": 72,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 5.3125,
+      "midi": 41,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 5.3125,
+      "midi": 72,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 5.9375,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 5.9375,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 5.9375,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 5.9375,
+      "midi": 69,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 5.9375,
+      "midi": 77,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 6.5625,
+      "midi": 45,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 6.5625,
+      "midi": 65,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 7.1875,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 7.1875,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 7.1875,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 7.1875,
+      "midi": 67,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 7.8125,
+      "midi": 48,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 7.8125,
+      "midi": 69,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 8.4375,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 8.4375,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 8.4375,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 8.4375,
+      "midi": 72,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 8.4375,
+      "midi": 65,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 9.0625,
+      "midi": 41,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 9.0625,
+      "midi": 74,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 9.0625,
+      "midi": 72,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 9.68,
+      "midi": 60,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 9.6875,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 9.6875,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 9.6875,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 9.6875,
+      "midi": 72,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 9.6875,
+      "midi": 61,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 9.735,
+      "midi": 61,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 9.79,
+      "midi": 60,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 9.845,
+      "midi": 61,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 9.9,
+      "midi": 60,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 9.955,
+      "midi": 61,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 10.01,
+      "midi": 60,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 10.065,
+      "midi": 61,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 10.12,
+      "midi": 60,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 10.3125,
+      "midi": 45,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 10.3125,
+      "midi": 69,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 10.3125,
+      "midi": 48,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 10.625,
+      "midi": 60,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 10.9375,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 10.9375,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 10.9375,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 10.9375,
+      "midi": 67,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 10.9375,
+      "midi": 83,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 11.5625,
+      "midi": 33,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 11.5625,
+      "midi": 72,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 12.1875,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 12.1875,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 12.1875,
+      "midi": 52,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 12.1875,
+      "midi": 69,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 12.8125,
+      "midi": 36,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 12.8125,
+      "midi": 65,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 13.4375,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 13.4375,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 13.4375,
+      "midi": 52,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 13.4375,
+      "midi": 67,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 14.0625,
+      "midi": 40,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 14.0625,
+      "midi": 69,
+      "duration": 0.5,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 14.375,
+      "midi": 33,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 14.375,
+      "midi": 69,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 14.5833333,
+      "midi": 71,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 14.7916667,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 14.7916667,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 14.7916667,
+      "midi": 52,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 14.7916667,
+      "midi": 72,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 15.0,
+      "midi": 74,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 15.2083333,
+      "midi": 36,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 15.2083333,
+      "midi": 76,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 15.4166667,
+      "midi": 77,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 15.625,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 15.625,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 15.625,
+      "midi": 52,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 15.625,
+      "midi": 80,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 15.8333333,
+      "midi": 81,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 16.0416667,
+      "midi": 40,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 16.0416667,
+      "midi": 69,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 16.25,
+      "midi": 71,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 16.4583333,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 16.4583333,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 16.4583333,
+      "midi": 52,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 16.4583333,
+      "midi": 72,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 16.6666667,
+      "midi": 74,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 16.875,
+      "midi": 33,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 16.875,
+      "midi": 76,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 16.875,
+      "midi": 84,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 17.0833333,
+      "midi": 77,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 17.2916667,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 17.2916667,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 17.2916667,
+      "midi": 52,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 17.2916667,
+      "midi": 80,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 17.2916667,
+      "midi": 60,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 17.5,
+      "midi": 81,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 17.7083333,
+      "midi": 36,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 17.7083333,
+      "midi": 69,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 17.9166667,
+      "midi": 71,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 18.125,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 18.125,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 18.125,
+      "midi": 52,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 18.125,
+      "midi": 72,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 18.3333333,
+      "midi": 74,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 18.5416667,
+      "midi": 40,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 18.5416667,
+      "midi": 76,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 18.75,
+      "midi": 77,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 18.9583333,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 18.9583333,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 18.9583333,
+      "midi": 52,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 18.9583333,
+      "midi": 80,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 19.1666667,
+      "midi": 81,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 19.375,
+      "midi": 33,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 19.375,
+      "midi": 69,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 19.5833333,
+      "midi": 71,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 19.7916667,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 19.7916667,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 19.7916667,
+      "midi": 52,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 19.7916667,
+      "midi": 72,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 20.0,
+      "midi": 74,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 20.2083333,
+      "midi": 36,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 20.2083333,
+      "midi": 76,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 20.4166667,
+      "midi": 77,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 20.625,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 20.625,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 20.625,
+      "midi": 52,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 20.625,
+      "midi": 80,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 20.8333333,
+      "midi": 81,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.0416667,
+      "midi": 40,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.0416667,
+      "midi": 69,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.25,
+      "midi": 71,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.4583333,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.4583333,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.4583333,
+      "midi": 52,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.4583333,
+      "midi": 86,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.46,
+      "midi": 72,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.488,
+      "midi": 73,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.516,
+      "midi": 74,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.544,
+      "midi": 75,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.572,
+      "midi": 76,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.6,
+      "midi": 77,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.628,
+      "midi": 78,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.656,
+      "midi": 79,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.684,
+      "midi": 80,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.712,
+      "midi": 81,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.74,
+      "midi": 82,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.768,
+      "midi": 83,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.796,
+      "midi": 84,
+      "duration": 0.07,
+      "gain": 0.08,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 21.875,
+      "midi": 33,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 22.2916667,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 22.2916667,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 22.2916667,
+      "midi": 52,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 22.7083333,
+      "midi": 36,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 22.7083333,
+      "midi": 45,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 23.125,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 23.125,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 23.125,
+      "midi": 52,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 23.5416667,
+      "midi": 40,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 23.5416667,
+      "midi": 49,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 23.9583333,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 23.9583333,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 23.9583333,
+      "midi": 52,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.15,
+      "midi": 84,
+      "duration": 0.08,
+      "gain": 0.1,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.175,
+      "midi": 81,
+      "duration": 0.08,
+      "gain": 0.1,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.2,
+      "midi": 78,
+      "duration": 0.08,
+      "gain": 0.1,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.225,
+      "midi": 75,
+      "duration": 0.08,
+      "gain": 0.1,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.25,
+      "midi": 72,
+      "duration": 0.08,
+      "gain": 0.1,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.275,
+      "midi": 69,
+      "duration": 0.08,
+      "gain": 0.1,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.3,
+      "midi": 66,
+      "duration": 0.08,
+      "gain": 0.1,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.325,
+      "midi": 63,
+      "duration": 0.08,
+      "gain": 0.1,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.35,
+      "midi": 60,
+      "duration": 0.08,
+      "gain": 0.1,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.375,
+      "midi": 33,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.375,
+      "midi": 69,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.375,
+      "midi": 35,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.375,
+      "midi": 36,
+      "duration": 0.6,
+      "gain": 0.13,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.375,
+      "midi": 37,
+      "duration": 0.6,
+      "gain": 0.13,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.375,
+      "midi": 42,
+      "duration": 0.6,
+      "gain": 0.13,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.375,
+      "midi": 47,
+      "duration": 0.6,
+      "gain": 0.13,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.375,
+      "midi": 57,
+      "duration": 0.08,
+      "gain": 0.1,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.5833333,
+      "midi": 71,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.7916667,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.7916667,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.7916667,
+      "midi": 52,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 24.7916667,
+      "midi": 72,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 25.0,
+      "midi": 74,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 25.2083333,
+      "midi": 36,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 25.2083333,
+      "midi": 76,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 25.4166667,
+      "midi": 77,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 25.625,
+      "midi": 45,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 25.625,
+      "midi": 48,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 25.625,
+      "midi": 52,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 25.625,
+      "midi": 80,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 25.8333333,
+      "midi": 81,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 26.0416667,
+      "midi": 35,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 26.0416667,
+      "midi": 69,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 26.25,
+      "midi": 71,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 26.4583333,
+      "midi": 47,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 26.4583333,
+      "midi": 50,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 26.4583333,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 26.4583333,
+      "midi": 72,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 26.6666667,
+      "midi": 74,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 26.875,
+      "midi": 38,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 26.875,
+      "midi": 76,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 27.0833333,
+      "midi": 77,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 27.2916667,
+      "midi": 47,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 27.2916667,
+      "midi": 50,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 27.2916667,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 27.2916667,
+      "midi": 80,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 27.5,
+      "midi": 81,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 27.7083333,
+      "midi": 41,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 27.7083333,
+      "midi": 69,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 27.9166667,
+      "midi": 71,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 28.125,
+      "midi": 47,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 28.125,
+      "midi": 50,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 28.125,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 28.125,
+      "midi": 72,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 28.3333333,
+      "midi": 74,
+      "duration": 0.1416666666666667,
+      "gain": 0.11,
+      "instrument": "piano",
+      "pan": 0.15,
+      "velocity": 0.65
+    },
+    {
+      "t": 28.5416667,
+      "midi": 41,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 28.5416667,
+      "midi": 72,
+      "duration": 0.3,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 29.2234848,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 29.2234848,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 29.2234848,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 29.2234848,
+      "midi": 71,
+      "duration": 0.33999999999999997,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 29.905303,
+      "midi": 45,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 29.905303,
+      "midi": 70,
+      "duration": 0.38,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 30.5871212,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 30.5871212,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 30.5871212,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 30.5871212,
+      "midi": 69,
+      "duration": 0.42,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 31.2689394,
+      "midi": 48,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 31.2689394,
+      "midi": 68,
+      "duration": 0.45999999999999996,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 31.9507576,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 31.9507576,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 31.9507576,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 31.9507576,
+      "midi": 67,
+      "duration": 0.5,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 31.9507576,
+      "midi": 65,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 34.6325758,
+      "midi": 65,
+      "duration": 1.1,
+      "gain": 0.045,
+      "instrument": "accordion",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 34.6325758,
+      "midi": 69,
+      "duration": 1.1,
+      "gain": 0.045,
+      "instrument": "accordion",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 34.6325758,
+      "midi": 72,
+      "duration": 1.1,
+      "gain": 0.045,
+      "instrument": "accordion",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 35.4659091,
+      "midi": 65,
+      "duration": 1.1,
+      "gain": 0.045,
+      "instrument": "accordion",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 35.4659091,
+      "midi": 69,
+      "duration": 1.1,
+      "gain": 0.045,
+      "instrument": "accordion",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 35.4659091,
+      "midi": 72,
+      "duration": 1.1,
+      "gain": 0.045,
+      "instrument": "accordion",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 36.2992424,
+      "midi": 65,
+      "duration": 1.1,
+      "gain": 0.045,
+      "instrument": "accordion",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 36.2992424,
+      "midi": 69,
+      "duration": 1.1,
+      "gain": 0.045,
+      "instrument": "accordion",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 36.2992424,
+      "midi": 72,
+      "duration": 1.1,
+      "gain": 0.045,
+      "instrument": "accordion",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 37.1325758,
+      "midi": 65,
+      "duration": 0.4166666666000012,
+      "gain": 0.045,
+      "instrument": "accordion",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 37.1325758,
+      "midi": 69,
+      "duration": 0.4166666666000012,
+      "gain": 0.045,
+      "instrument": "accordion",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 37.1325758,
+      "midi": 72,
+      "duration": 0.4166666666000012,
+      "gain": 0.045,
+      "instrument": "accordion",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 37.5492424,
+      "midi": 41,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 37.5492424,
+      "midi": 72,
+      "duration": 0.6666666666666667,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 38.3825758,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 38.3825758,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 38.3825758,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 38.3825758,
+      "midi": 69,
+      "duration": 0.6666666666666667,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 39.2159091,
+      "midi": 45,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 39.2159091,
+      "midi": 65,
+      "duration": 0.6666666666666667,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 40.0492424,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 40.0492424,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 40.0492424,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 40.0492424,
+      "midi": 67,
+      "duration": 0.6666666666666667,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 40.0492424,
+      "midi": 60,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 40.8825758,
+      "midi": 48,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 40.8825758,
+      "midi": 69,
+      "duration": 0.6666666666666667,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 41.7159091,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 41.7159091,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 41.7159091,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 41.7159091,
+      "midi": 72,
+      "duration": 0.6666666666666667,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 41.7159091,
+      "midi": 72,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 42.5492424,
+      "midi": 41,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 42.5492424,
+      "midi": 74,
+      "duration": 0.6666666666666667,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 42.5492424,
+      "midi": 69,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 43.3825758,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 43.3825758,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 43.3825758,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 43.3825758,
+      "midi": 72,
+      "duration": 0.6666666666666667,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 43.3825758,
+      "midi": 77,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 44.2159091,
+      "midi": 45,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 44.2159091,
+      "midi": 69,
+      "duration": 0.6666666666666667,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 44.2159091,
+      "midi": 79,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 45.0492424,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 45.0492424,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 45.0492424,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 45.0492424,
+      "midi": 67,
+      "duration": 0.6666666666666667,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 45.8825758,
+      "midi": 48,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 45.8825758,
+      "midi": 65,
+      "duration": 0.6666666666666667,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 46.7159091,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 46.7159091,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 46.7159091,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 46.7159091,
+      "midi": 64,
+      "duration": 0.6666666666666667,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 47.5492424,
+      "midi": 41,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 47.5492424,
+      "midi": 65,
+      "duration": 0.6666666666666667,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 47.9659091,
+      "midi": 84,
+      "duration": 0.25,
+      "gain": 0.18,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 48.3825758,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 48.3825758,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 48.3825758,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 48.3825758,
+      "midi": 69,
+      "duration": 0.6666666666666667,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 49.2159091,
+      "midi": 41,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 49.2159091,
+      "midi": 72,
+      "duration": 0.6666666666666667,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 49.2159091,
+      "midi": 65,
+      "duration": 0.7,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 49.2159091,
+      "midi": 69,
+      "duration": 0.7,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 49.2159091,
+      "midi": 72,
+      "duration": 0.7,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 50.0492424,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 50.0492424,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 50.0492424,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 50.0492424,
+      "midi": 69,
+      "duration": 0.6666666666666667,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 50.8825758,
+      "midi": 45,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 50.8825758,
+      "midi": 65,
+      "duration": 0.6666666666666667,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 50.8825758,
+      "midi": 65,
+      "duration": 0.7,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 50.8825758,
+      "midi": 69,
+      "duration": 0.7,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 50.8825758,
+      "midi": 72,
+      "duration": 0.7,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 51.7159091,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 51.7159091,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 51.7159091,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 51.7159091,
+      "midi": 67,
+      "duration": 0.6666666666666667,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 52.1,
+      "midi": 41,
+      "duration": 1.2,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 52.1,
+      "midi": 53,
+      "duration": 1.2,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 52.1,
+      "midi": 57,
+      "duration": 1.2,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 52.1,
+      "midi": 60,
+      "duration": 1.2,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 52.1,
+      "midi": 65,
+      "duration": 1.2,
+      "gain": 0.09,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 52.5492424,
+      "midi": 48,
+      "duration": 0.32,
+      "gain": 0.14,
+      "instrument": "piano",
+      "pan": -0.18,
+      "velocity": 0.65
+    },
+    {
+      "t": 52.5492424,
+      "midi": 69,
+      "duration": 0.6666666666666667,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    },
+    {
+      "t": 52.5492424,
+      "midi": 65,
+      "duration": 0.7,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 52.5492424,
+      "midi": 69,
+      "duration": 0.7,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 52.5492424,
+      "midi": 72,
+      "duration": 0.7,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": 0,
+      "velocity": 0.65
+    },
+    {
+      "t": 53.3825758,
+      "midi": 53,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 53.3825758,
+      "midi": 57,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 53.3825758,
+      "midi": 60,
+      "duration": 0.18,
+      "gain": 0.07,
+      "instrument": "piano",
+      "pan": -0.1,
+      "velocity": 0.65
+    },
+    {
+      "t": 53.3825758,
+      "midi": 72,
+      "duration": 0.6666666666666667,
+      "gain": 0.12,
+      "instrument": "piano",
+      "pan": 0.12,
+      "velocity": 0.65
+    }
+  ],
+  "hits": [],
+  "effects": [
+    {
+      "kind": "projector_clatter",
+      "t": 0,
+      "duration": 54.208333333333336,
+      "gain": 0.026,
+      "rate": 24
+    }
+  ],
+  "silence_music_ranges": [
+    [
+      0,
+      1.5625
+    ],
+    [
+      32.6325757576,
+      34.6325757576
+    ]
+  ],
+  "room": 0.1,
+  "music_rms_db": -22
+}

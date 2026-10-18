@@ -1,0 +1,6 @@
+The Runaway Loaf — GPTcar recreation
+New scene assembly, staging, performance, camera and score: GPT-6.1 Sol High.
+Reference film/story/style and reused generic MIT drawing code: Lemomo/LemoLab, Lemo-Opuscar.
+Attributed shared tools: engine/ ink, redraw, film, cards, figure, heads; chars.js reusable licensed character and bread geometry; poses.js generic pose/hand-prop factories; sets.js generic building, cobble, cart, lamp and fruit factories. No original shots.js, film.js, timeline.js or main.js executed.
+Fonts: Playfair Display/SC and Old Standard TT, OFL notices in fonts/.
+New music uses VSCO 2 CE upright piano and FreePats accordion/reed-organ CC0 samples. New deterministic projector synthesis. Original master audio and movie frames are not reused.
