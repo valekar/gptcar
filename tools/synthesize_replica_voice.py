@@ -27,7 +27,7 @@ def synthesize(spec,out):
         if factor>1.001:
             if factor>1.25:raise RuntimeError(f'{ident}: {actual:.3f}s speech will not fit {available:.3f}s; adjust delivery speed without changing text')
             fitted=out/(ident+'-timed.wav');subprocess.run(['ffmpeg','-y','-v','error','-i',str(path),'-af',f'atempo={factor:.8f}',str(fitted)],check=True)
-        records.append(dict(id=ident,text=text,voice=voice,language=language,start=start,planned_duration=window,raw_duration=actual,file=str(fitted.resolve()),tempo_factor=max(1,factor)))
+        records.append(dict(id=ident,text=text,voice=voice,language=language,start=start,planned_duration=window,raw_duration=actual,file=str(fitted.resolve()),tempo_factor=max(1,factor),filter=line.get('filter')))
         print(ident,round(actual,3),voice,flush=True)
     (out/'timing.json').write_text(json.dumps(records,ensure_ascii=False,indent=2)+'\n');return records
 if __name__=='__main__':

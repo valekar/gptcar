@@ -1,0 +1,1208 @@
+{
+  "slug": "woodcut",
+  "original_title": "The Bell Founder",
+  "premise": "A village spends a whole winter casting one bell; the first time it rings, the snow stops.",
+  "published_delivery": {
+    "slug": "woodcut",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/woodcut.mp4",
+    "sha256": "a2b8682fa842dc317a2e98a16f44c5778963584cfa13bd311bc0641e55d06077",
+    "duration": 58.517,
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": "1404",
+    "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+    "frames": 59,
+    "sheets": 5
+  },
+  "production_format_source": "Full verbatim DEMO header below; measured published delivery above governs v2.",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "explanation": "No initial conversation/inputprompt transcript is published in inspected repository. STYLE.md is a verbatim published styleprompt; DEMO.md is published retrospective productiondocumentation. Shot prompts are source-informed reconstruction of finishedmovie, never a claimed identical originalchatprompt."
+  },
+  "published_style": {
+    "path": "outputs/gptcar/styles/woodcut/STYLE.md",
+    "sha256": "b96fda6eeac038137310cc0766d979c8d8a5f3ff6acd87bada5aa50d5136a6a0",
+    "verbatim": "# Woodcut Print — Style Prompt\n\n> A relief print that carves itself: every frame is a black wood block, and light only exists where a knife has cut it away. One colour at most, and only for the thing that burns.\n> References (grammar only): Frans Masereel *Passionate Journey* (1919) and Lynd Ward *Gods' Man* (1929), wordless woodcut novels told as a sequence of self-contained plates; Käthe Kollwitz's woodcuts, where emotion lives in the direction of the gouge; Gustave Doré's engraving, where line spacing and direction build light and volume. Never copy their plates, figures, borders or titles.\n\n## 1. Essence, and what it is not\n\nEach shot is **one printed plate**: black ink on laid paper, framed by a paper margin. It follows three rules of real relief printing:\n\n1. **Black is the wood, white is what the knife removed.** Light is *carved*: a bright area is many wide cuts, a dark area untouched wood.\n2. **Pictures appear by being carved.** Nothing fades in: cuts grow stroke by stroke along the form, coarse gouges first, fine lines after.\n3. **The block is a mirror.** Letters read backwards until the paper is pulled; that reversal is the style's own transition.\n\nNot copperplate engraving (no swelling burin lines on white, no crosshatch built up from white ground), not linocut poster art (no flat colour areas), not a black-and-white photo run through a threshold filter (the cuts must follow the form).\n\n## 2. Materials & rendering\n\n- **Print frame**: the printed image area sits inside a paper margin; the wider bottom margin holds captions. The image edge is the block edge: ragged ink, never a clean rectangle.\n- **Knife classes** (widths in 1080p pixels at 1× camera):\n\n| Tool | Width | Use |\n|---|---|---|\n| Knife `k` | 1.2–2 | contours, the white outline that separates a black figure from a black ground |\n| V-gouge `v` | 2–8 | hatching, hair, beard, fine light |\n| U-gouge `u` | 10–22 | rays, sky sweeps, the first rough-out |\n| Stab `stab` | r 3–8 | snow, sparks, flecks of loam, wood chips |\n\n- **Hatching (Doré grammar in wood)**: line **direction follows form** (a round object is wrapped in arcs, slopes follow the fall line, fire and light radiate, cloth follows its folds). **Width follows tone**: bright = wide cuts almost merging into white, mid-tone = thin cuts, dark = no cuts. Far = dense and fine, near = sparse and coarse. Every line is a separate cut (30–160 px, blunt entry, tapered exit, chipped edge), never a continuous machine line.\n- **Figures**: black silhouette + white knife halo + grazing-light hatching on the lit edge only (light z ≈ 0.2, so flat areas stay black). **Skin carved white, features left black** (the wordless-novel rule).\n- **Close-ups (hands, objects)**: sculpt a small height field (capsules, blobs, planks, creases), light it and run it through `woodcutFilter` (§10), so cuts follow the isophotes like an engraver's.\n- **Printing**: the mask (white = cut) goes through a WebGL2 compositor: knife burr on edges, ±6 % ink unevenness, wood-grain streaks, specks where ink didn't take, a mottled colour plate with a small fixed misregistration. Block mode: glossy inked wood with grain sheen, pale wood in the grooves.\n\n## 3. Colour logic\n\n- Two values carry everything: near-black ink and warm laid-paper white. The raw wood colour appears only in shots that show the block itself.\n- **At most one colour plate**, printed only where white has been carved, so it glows out of the cuts and never sits on the black. A colour plate over ink is nearly invisible, so plan it on carved white.\n- The colour is reserved for the one thing that matters (a flame, molten metal, a heart, a signal lamp). It can spread at a peak and shrink to a single highlight afterwards; it is never decoration.\n- Examples of a plate: a burnt copper-orange for heat; a cold Prussian blue for water or night; a deep oxblood for a wound or a seal. Choose it from the topic.\n\n## 4. Type & subtitles\n\n- **Captions are letterpress in the paper margin**, below the plate, like a plate caption in a woodcut novel. They never cover the image. A letterpress old-style face (IM Fell English, OFL) around 40–44 px, in ink, pushed through the same print shader. The ink comes up in 0.1 s with no slide and fades over 0.15 s. Hold ≥ max(1.8 s, speech + 0.6 s).\n- **Titles are carved, not typed**: cut into the block (IM Fell English SC), mirrored if the block is shown before the print is pulled.\n- Any closing text is a fresh print: letterpress in the margin or carved out of a black panel.\n\n## 5. Motion quality\n\n- **Characters on twos (12 fps)**; camera, particles, fire and light on ones (24 fps). Hatching lives in each body part's local space, so cuts move with the limb and don't boil; only fire and liquids re-cut every 2 frames, as deliberate boil.\n- **Anticipation / action / follow-through** on every key action: a few frames back → a 2-frame strike → settle + a short shake.\n- **Carve reveal**: each stroke has its own start time and speed (0.08–0.35 s). Reveal keys: `light` (bright areas first, coarse to fine), `radial` (from a point: rays, a pour), `down`, or any function.\n- **Hard cut = a new impression**: two frames of misregistration (a few pixels, then back).\n- **Paper transition** (the one transition grammar): brayer rolls ink (a wet highlight sweeps) → paper lays down → baren spirals, the image soaks through → the sheet peels on a cylinder toward camera, heavy then fast, its back showing the mirrored show-through.\n- What never moves: the paper margin.\n\n## 6. Camera grammar\n\nThe camera moves over the paper; the margin stays fixed. The knife tip, or the brightest cut, is the focus.\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Track with the knife tip | Making; the line is the story | a first mark; a route drawn on a map; a signature |\n| Continuous pull-back as cuts spread | A line becomes a world; scale | a city from one street; a family tree; a reach of sound or news |\n| Locked plate | A page of a wordless novel; reading time | a decision; a portrait; the aftermath |\n| Slow macro push on a sculpted close-up | Patience, touch, labour | hands at work; a tool; a letter being read |\n| Snap zoom and hold | Shock; the detail that breaks | a crack; a wrong number; a face turning |\n| Frame in a frame (door, window, arch) | Distance, exclusion, waiting | a crowd outside; a sickroom; a border |\n| Hard cuts on the beat, each a new impression | Accumulation, a series of prints | offerings; days passing; a list of names |\n| Crane up from a detail to the whole | Consequence | a flood reaching a village; a light reaching faces |\n| Rack between two plates via the peel | One state printed over another | before/after; a promise kept; generations |\n\nOpening and ending come from the topic. Framing: black masses on carved white or white on uncut black, never grey on grey; text only in the margin. Transitions: hard cut (new impression) or the peel; never a dissolve.\n\n## 7. Sound palette\n\n- **Instruments**: low strings (contrabass, cellos; spiccato, pizzicato), wood and skin (log drum, woodblock, frame drum), gran cassa, timpani, one tam-tam, synthesised struck metal (modal: 3–5 inharmonic partials + hammer transient); a bowed saw or hurdy-gurdy drone for a folk colour.\n- **Options**: withhold the timbre of the story's object until it appears; a metric modulation instead of a tempo jump; a modal shift inside a long decay; one drone under a locked plate.\n- **Foley follows the material**, all synthesisable: knife into wood (transient + band-passed fibre tearing tied to knife speed), chips, brayer tack, paper air, baren rasp, the wet peel; metals by size (large = low, small = high and pure); resonant objects as modal models plus echoes for distance.\n- **Silence is a tool**: near-silence with one faint ambience, or true digital silence before the loudest moment; the first sound after it is chosen.\n- **J/L cuts** carry sound across plates and peels.\n- **Mix**: music ducks ~8 dB under voice and a little under key foley; **foley ducks too** under voice. Pan hard transients off centre. −14 LUFS.\n- **Voice**: few lines, low and plain, like captions spoken; the plates tell the rest.\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **Light is carved.** A burst of radial cuts from a point. *Fits content like:* a power grid switched on; a scientific insight; a lighthouse restored.\n- **Carving = time.** Patient work on screen, cut by cut. *Fits content like:* a year of training; a building rising; a craft apprenticeship.\n- **Mirrored block → true print.** A backwards word reads true when the sheet is pulled. *Fits content like:* a vote result; a name cleared; a misunderstanding put right.\n- **Stab cuts as texture.** White dots can freeze mid-air or be inked back in until the black is clean. *Fits content like:* stars going out over a city; rain stopping; a disease receding on a map.\n- **The one colour plate spreads and withdraws.** *Fits content like:* a blood donation; a sunrise over a harvest; a single lit window in a blackout.\n- **Filter a sculpt or a frame** into form-following cuts. *Fits content like:* a portrait of a real person drawn from a photo; a machine part; an archive image re-cut.\n- **Wordless-novel sequencing.** Self-contained plates, few or no lines; a gap can be silent. *Fits content like:* a migration; a strike; a life in seven plates.\n\n## 9. Pitfalls of the medium\n\n- **White marks on white areas are invisible** → stab cuts need dark masses behind them.\n- **Hatching every surface looks like fur or rain** → grazing light; 3–6 cuts on the lit edge only.\n- **Black faces with white cuts don't read small** → skin white, features black, a black keep-line around white parts.\n- **Hand-drawn close-up props look like mittens and blobs** → height field + `woodcutFilter`.\n- **Short hatch segments with a tonal wobble turn into zig-zag chevrons** → long cuts (14–50 × spacing), one broad highlight band, a thin rim light, a stronger halo.\n- **Steam or smoke on top of the subject reads as flames** → draw it behind, so only wisps escape.\n- **Lazily cached strokes shared between shots** make frames depend on the render worker → every cache builds itself on first use.\n- **Fine hatching + ink noise + grain inflate the file** → a higher CRF with `-tune grain`; check a 1:1 crop. `woodcutFilter` NaN in flat areas → clamp before `sqrt`.\n\n## 10. Engine\n\n`demo/engine/index.js` (imports only `/core/lib.js`) carves and prints **any path or shape**, on two canvases: a **mask** (black = uncut, white = cut) and an optional **colour plate**. Main functions: `shape` (carved solid with halo and form-following hatching), `cutAlong` (a path as hand-cut strokes), `hatch` (streamline hatching of a region), `flecks` (stab cuts), `rays` (carved light), `drawStrokes`, `plate`, `woodcutFilter` (image or frame → cuts), `makePrinter(W,H).render` (print / block compositor). Reusable demo pieces: `demo/trans.js` (paper peel), `demo/hands.js` (height-field sculpts). Option table, a minimal example and the filter recipe: [DEMO.md](DEMO.md#engine-reference).\n\n## 11. Variation space\n\nYou decide the story, characters (or none), plates, opening, ending, camera path, pacing and what the one colour is for. All far from our demo:\n\n- Structures: **a book of hours** (seven locked plates, one per hour, no moves inside a plate); **the same block recut** (carved deeper each scene, the image changing as wood goes); **two blocks printed in turn** (two places alternate impressions until one sheet carries both).\n- Openings: **the finished print on a wall** (then back into the block to see it cut); **white paper** (an inked block pressed onto it: the first image arrives whole); **wood grain** that becomes water or a field as the first cuts follow it.\n- Endings: **the block cleaned** (ink washed off, pale carved wood remains); **a stack of prints** (rising over many sheets of one plate); **an uncarved corner** (holding on black wood the knife never reached).\n\n---\n\nHow our demo was made (story, shots, score, end card, build, engine reference): [DEMO.md](DEMO.md). Read it after your treatment exists.\n"
+  },
+  "published_demo": {
+    "path": "outputs/gptcar/styles/woodcut/DEMO.md",
+    "sha256": "ecd90142eee7624f8c7b49328658ed4a623d35f779825c066a75970b73738526",
+    "verbatim": "# Woodcut Print — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *The Bell Founder* (58.5 s) · `woodcut.mp4` · source in [`demo/`](demo/)\n\n\nBrief the demo was made to: a 40–60 second film in the Woodcut Print style.\n\n## Story & structure\n\nA village with an empty belfry; a founder casts its first bell, fails, sacrifices something of his own, and succeeds. How the native powers were used in this story:\n\n| Native power | Story use |\n|---|---|\n| **Light is carved** | Stories about fire, dawn, discovery, a lamp being lit: the moment of light can literally *be* a burst of radial cuts. |\n| **Carving = time** | The picture growing cut by cut is patient work on screen. It suits craft, labour, perseverance, and first times. |\n| **The mirrored block → the true print** | A reveal or a change of heart: the audience reads a backwards word, the sheet is pulled, and it reads true. |\n| **Snow = stab cuts** | White dots are wounds in the wood. They can freeze mid-air, or be \"inked back in\" until the sky is clean. That makes an ending no other medium has. |\n| **One colour plate** | Save it for the one thing that matters (molten metal, a heart, a flame). Let it spread at the climax and shrink to a single highlight afterwards. |\n| **Wordless-novel sequencing** | Four or five spoken lines at most. Plates carry the story; the gap after a failure can be completely silent. |\n\n**Story shape of this film:** first knife stroke in the dark (the horizon) → the world carved → the first print pulled (mirror → true) → a long close-up of hands → a quick montage of small offerings → a first attempt that **fails in close-up** → a silent plate → a personal sacrifice → a second attempt where the colour plate floods the frame → the longest silence → the payoff sound → the colour withdraws to one highlight → the white marks are inked back in → the last cut is the horizon again.\n\nHow we adapted the topic: find the one thing that should *glow* (the colour plate: molten copper), the one thing that is *made by hand* (the long close-up: the founder's hands), and the one thing that should *disappear* at the end (the stab-cut texture: snow). That was one reading of this story; other topics find other answers or none.\n\n## Shots\n\n\"The knife is the camera\": the knife tip, or later the brightest cut, was always the focus.\n\n| Beat | Camera |\n|---|---|\n| Hook (0–3 s) | Extreme close-up on a black block; tracking with the knife as it cuts one white line (the horizon). |\n| World | Pull back 3.5× → 1× as mountains, roofs and the empty tower are carved: a line becomes a world. |\n| First print | Locked off for the ink / paper / baren / peel; then tilt down and push in to the empty belfry. |\n| Breath | 4 s near-static macro on the founder's hands (slow push 1.0 → 1.13). |\n| Montage | Hard cuts on every beat, speeding up (1 / 1 / 1 / .5 / .5 / .25 / .25 s), each landing with a jolt. |\n| First colour | Push in on the crucible as the copper turns orange, so the first colour lands in close-up. |\n| Failure | Snap zoom (0.2 s) to the bell wall and hold 1.3 s while the crack climbs. |\n| Silence | Frame in a frame: the workshop door, villagers outside, the founder's back, the hammer slowly lowering. Nothing moves but snow. |\n| Climax | Start on the stream only (z 2.4), radial cuts burst from the mould, then crane up and out to show both faces lit. |\n| Signature | 8× → 1× continuous pull-back from the bell wall to the whole valley as the bell rings: the sound travels as far as the camera does. |\n\nWhy this route, for this story: the knife-drawn horizon was both the first and the last cut, so the film closed a circle; the ringing bell and the pull-back had to travel the same distance. Each of these is one choice from STYLE.md §6, not the style's default opening or ending.\n\nDemo action timings: hammer lean-back 4 frames → strike 2 frames → settle + 3-frame camera shake; bellows push with the whole body; the throw is clutch → release → hand holding in the air. Impression jolt: [5,−3] then [−2,1] px.\n\n## Score structure\n\n- **Grid first**: 60 BPM, switching to 90 BPM through a 3:2 metric modulation (60's triplet eighth = 90's eighth) for the forge. `timeline.json` is the single source of truth. `tools/cuecheck.py` checks score cues against picture events and both silences (demo: 25 cues, max offset 0 ms).\n- **Score**: low strings only (contrabass, cellos, spiccato, pizz; violas only after the bell) + wood and skin (log drum, woodblock, frame drum) + gran cassa / timpani + one tam-tam + a **synthesised anvil** (modal numpy: 3–5 inharmonic partials + hammer transient). **No bell timbre anywhere before the bell rings**: the village \"has no voice\", so the first bell is the climax. D minor, turning to D major in the bell's decay.\n- **Foley of this film**, all synthesised: knife into wood, chips, brayer tack, paper air, baren rasp, the wet peel; brass by size (pot = low, wide; keys and ring = high, pure); clay scrape and smash; bellows leather + air; molten bubbles, pour roar, hiss into the mould; the bell as a modal model (hum 0.5, prime 1, tierce 1.2, quint 1.5, nominal 2, 2.5, 3, 4 with their own decays and beating) + two valley echoes.\n- **Two real silences**: 29.7–32.3 s (−40 dB distant wind only; the first sound after it is the compass lid's *click*) and 44.3–47.3 s (**digital silence**, measured −91 dB; the first sound after it is the bell, the loudest moment of the film).\n- **J/L cuts**: fire crackle enters before the hands shot; outdoor wind carries into the workshop muffled; wind leads the peel into the belfry; the bell's tail runs under the end card.\n- **Mix**: music ducks ~8 dB under voice (6 dB after the bell) and 4 dB under key foley. **Foley ducks too** (−5 dB, −9 dB under a line that shares its beats with metal hits). Narrator: Kokoro `am_onyx` at 0.88, 4 lines.\n\n## Palette & props\n\n- **Palette**: ink `#111111` · paper `#EFE8D8` · the wood block itself `#D8C29C` (only in shots that show the block) · one colour plate \"copper\" `#C8502A`.\n- **Print frame**: 1920×1080, printed image area `36, 36, 1848×912`. The bottom paper margin (132 px) holds captions. Fixed 3 px colour-plate misregistration.\n- **Props and cast**: the founder and his apprentice (parts rig, poses, expressions), the valley (mountains, village, empty tower, snow), the workshop, crucible, pour, sparks and mould, the bell, bellows, the villagers' brass gifts, the compass, sound rings. The demo's hands, the compass and the filter still were made with height-field sculpts + `woodcutFilter`.\n- Captions: IM Fell English 42 px, ink `#111`.\n\n## End card\n\nTitle carved *mirrored* into the block (IM Fell English SC), readable only once the first print is pulled. End card: a fresh print: title carved out of a black panel, a small bell keeping the film's last copper highlight, then *A Woodcut Print*, Lemo-Opuscar, LemoLab × Claude Opus 5.5 and credits in letterpress. The final knife cut under the title echoes the first sound of the film. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Build notes\n\n```\nstyles/woodcut/demo/\n  engine/        index.js (shape, cutAlong, flecks, rays, plate…), knife.js (strokes), hatch.js (regions, streamline hatching),\n                 print.js (WebGL2 print/block compositor), filter.js (image → woodcut)\n  stage.js       print frame, camera, caption          world.js   the valley (mountains, village, tower, snow)\n  chars.js rig.js views.js   founder & apprentice (parts rig, poses, expressions)   hands.js   height-field sculpts → filter\n  interior.js fx.js          workshop, crucible, pour, sparks, mould; bell, bellows, gifts, villagers, sound rings\n  trans.js       paper curl / peel        shots.js shots2.js   the 17 shots        film.js main.js   assembly, captions, events\n  timeline.json  tempo grid + every cue   music/score.py   original score   mix.py   foley + ambience + voice + ducking + bell\n  tools/         cuecheck.py subs.py final_asr.py mux.sh      test.js   ?test=char|hands|pour|village|sheetA|sheetB|filter|spark\n```\n1. Write `timeline.json` (grid + cue keys) and the cue table first; hand them to a music sub-agent; draw in parallel.\n2. Build the engine and one style frame before any story. Get the carve + print look right on a still.\n3. `sh demo/build.sh` rebuilds everything: TTS → whisper → score → events → cue check → mix → srt → render (4 workers ≈ 45 s for 1404 frames) → mux (−14 LUFS, grain 6, CRF 28) → whisper on the film → styleframe / poster / engine example.\n4. Review twice with 1–2 fps contact sheets from the film itself, plus full-size frames of every key action (peel, smash, crack, rays, bell pull-back, end card).\n\nPitfalls tied to this demo's props:\n\n- **Snow on white snow is invisible.** Add black snowbanks and wind-carved ground; flakes read on the sky and on dark masses.\n- **The first bell** turned into zig-zag chevrons from short hatch segments with a tonal sine wobble; fixed with long cuts and one broad highlight band.\n- **Steam from the mould** drawn on top read as flames; moved behind the subject.\n- **Lazily cached strokes** (`X.coatFolds || []`) broke determinism across render workers.\n- **Metal gift hits masked the narrator** (whisper heard \"is had\" for \"it had\"). Foley has to duck under voice too. Pan the offending hit away from centre.\n- **File size**: fine hatching + per-impression ink noise + grain 6 made a 58 s film 326 MB at CRF 19. Re-encode at CRF 28 with `-tune grain`: 93 MB, and no visible difference at a 1:1 crop.\n- The structure tensor NaN came from the box blur leaving tiny negative sums in flat areas.\n- `still.mjs` can fail when many renders run at once. Retry up to 3 times.\n\n## Engine reference\n\n\n`demo/engine/index.js` is self-contained (it only imports `/core/lib.js`). It draws **any path or shape** as a carved relief and prints it. You always work on two canvases: a **mask** (fill black = uncut block; draw white = cut away) and an optional **colour plate** (alpha = plate density), then call the printer.\n\n| Function | What it does | Key options |\n|---|---|---|\n| `canvas(w=1920, h=1080)` | → `[canvas, ctx]` | |\n| `shape(polys, o)` | A carved solid: black silhouette + white halo + form-following hatching lit by `light`. Returns `{ draw(g, t), strokes, halo, reg, tone }`. | `light` (`light(x,y,z)`), `sp` spacing, `wmax`, `lo/hi` tone range, `dir` (`'contour'` / angle / `dirRing(cx,cy,sy)` / `dirRadial(cx,cy)` / fn), `halo` px, `white` (white part with black cuts), `tone(reg)→(x,y)=>0..1` override, `seg`, `gap`, `reveal:{t0,t1,key,speed}` |\n| `cutAlong(path, o)` | Breaks a path into hand-cut knife strokes (outlines, rules, rope, cracks). | `w` (number or `(u,pt)=>w`), `kind` `'k'|'v'|'u'`, `closed`, `seg:[a,b]`, `gap:[a,b]`, `reveal:{t0,t1,speed}` |\n| `hatch(region, o)` | Streamline hatching of any `Region` (evenly spaced, direction and width fields). | `dir(x,y)`, `tone(x,y)`, `sp`, `wmax`, `seg`, `gap`, `kind`, `reveal` |\n| `flecks(pts, o)` | Stab cuts (snow, sparks, chips). `pts = [[x,y,r],…]` | `angle`, `seed` |\n| `rays(cx, cy, o)` | A burst of carved light. | `n`, `r0`, `r1:[a,b]`, `w`, `jit`, `bend`, `a0/a1`, `reveal:{t0,t1,jit}` |\n| `drawStrokes(g, strokes, {t, color})` | Draws strokes onto the mask at time `t` (a reveal-timed stroke is carved progressively, knife tip and all). `color:'#000'` re-inks. | |\n| `plate(c, polys, a)` | Paints the **one colour** plate. It shows only where the mask is cut white. | |\n| `woodcutFilter(img, o)` | **Image / video frame → woodcut.** Luminance sets cut width, the structure tensor sets cut direction; returns strokes with reveal times. | `rect:[x,y,w,h]`, `sp`, `black/white/gamma` levels, `res`, `region`, `reveal:{t0,t1,mode:'light'|'radial'|'down'|fn,speed}` |\n| `makePrinter(W,H).render(mask, plate, o)` | WebGL2 compositor → canvas. | `mode:'print'|'block'`, `seed` (paper), `inkSeed` (per impression), `plate:'#hex'` (the one colour), `ink`, `paper`, `reg:[dx,dy]` misregistration, `edge` burr, `sheen`, `wetX` |\n| `light(x,y,z)`, `Region(polys | drawFn, {res,bbox})`, `mkStroke`, `spline`, `offsetPoly`, `ellipse`, `rect` | helpers | |\n\nDemo-level, reusable: `demo/trans.js` `curl(g, front, back, xf, r)` + `peelState(u)` (the paper peel); `demo/hands.js` `Sculpt` (capsule / blob / plank / creases → `shade(light)`) for close-ups.\n\n**Minimal example**: a warm orange `#D97757` four-point spark with a cursor tail, carved in and kept in its own colour. It is exactly `?test=spark` in `demo/test.js`; the result is `demo/stills/engine_example.jpg`.\n\n```js\nimport * as WC from './engine/index.js';\nconst [mask, m] = WC.canvas(), [plate, c] = WC.canvas(), P = WC.makePrinter();\nconst star = []; for (let i = 0; i < 8; i++) { const a = i / 8 * Math.PI * 2 - Math.PI / 2, r = i % 2 ? 70 : 260; star.push([960 + Math.cos(a) * r, 500 + Math.sin(a) * r]); }\nconst spark = WC.shape([star], { light: WC.light(.5, -.6, .6), sp: 9, halo: 8,\n  reveal: { t0: 0, t1: .8, key: (x, y) => Math.hypot(x - 960, y - 500) / 300 } });        // carved from the centre out\nconst tail = WC.cutAlong([[1030, 590], [1090, 680], [1110, 770]], { w: 24, kind: 'u', seg: [300, 400], reveal: { t0: .8, t1: 1.1, speed: 900 } });\n\nfunction frame(g, t) {\n  m.fillStyle = '#000'; m.fillRect(0, 0, 1920, 1080);                                       // the uncut block\n  c.clearRect(0, 0, 1920, 1080);\n  WC.drawStrokes(m, WC.rays(960, 500, { n: 36, r0: 300, r1: [420, 640], w: 10, seed: 2, reveal: { t0: .5, t1: 1.0 } }), { t });\n  spark.draw(m, t);\n  WC.drawStrokes(m, tail, { t });\n  WC.plate(c, [star], t > .8 ? 1 : 0);                                                      // the one colour\n  g.drawImage(P.render(mask, plate, { seed: 4, plate: '#D97757' }), 0, 0);\n}\n```\n\n**Filter on a photo or film frame** (for re-drawing footage): `const F = WC.woodcutFilter(video, { rect: [36, 36, 1848, 912], sp: 5, reveal: { t0, t1, mode: 'light' } }); m.fillStyle = '#000'; m.fillRect(…); WC.drawStrokes(m, F.strokes, { t });` then print. About 1,900 cuts and 140 ms for a 1080p frame. See `demo/stills/filter_v1.jpg` and `?test=filter&img=…`. For a moving shot, re-run it on twos (12 fps) with the same `seed` so the cuts stay stable where the image does.\n"
+  },
+  "narration": [
+    {
+      "id": "L1",
+      "text": "That winter, the snow closed every road, and the tower had no bell.",
+      "voice": "am_onyx",
+      "speed": 0.88,
+      "start": 11.1,
+      "duration": 3.817
+    },
+    {
+      "id": "L2",
+      "text": "So every house gave what metal it had.",
+      "voice": "am_onyx",
+      "speed": 0.88,
+      "start": 19.2,
+      "duration": 2.431
+    },
+    {
+      "id": "L3",
+      "text": "The boy gave his compass, the one thing that always guided him home.",
+      "voice": "am_onyx",
+      "speed": 0.88,
+      "start": 32.6,
+      "duration": 3.975
+    },
+    {
+      "id": "L4",
+      "text": "When it rang, the snow stopped to listen.",
+      "voice": "am_onyx",
+      "speed": 0.88,
+      "start": 51.8,
+      "duration": 2.361
+    }
+  ],
+  "verbatim_published_script_files": {
+    "lines.json": [
+      {
+        "id": "L1",
+        "text": "That winter, the snow closed every road, and the tower had no bell.",
+        "voice": "am_onyx",
+        "speed": 0.88
+      },
+      {
+        "id": "L2",
+        "text": "So every house gave what metal it had.",
+        "voice": "am_onyx",
+        "speed": 0.88
+      },
+      {
+        "id": "L3",
+        "text": "The boy gave his compass, the one thing that always guided him home.",
+        "voice": "am_onyx",
+        "speed": 0.88
+      },
+      {
+        "id": "L4",
+        "text": "When it rang, the snow stopped to listen.",
+        "voice": "am_onyx",
+        "speed": 0.88
+      }
+    ],
+    "timeline.json": {
+      "dur": 58.5,
+      "grid": [
+        {
+          "id": "A",
+          "t0": 0,
+          "t1": 3.0,
+          "bpm": null,
+          "note": "free, no music"
+        },
+        {
+          "id": "B",
+          "t0": 3.0,
+          "t1": 23.0,
+          "bpm": 60
+        },
+        {
+          "id": "C",
+          "t0": 23.0,
+          "t1": 32.3333,
+          "bpm": 90,
+          "note": "music cuts dead at 28.3333; silence to 32.3333"
+        },
+        {
+          "id": "D",
+          "t0": 32.3333,
+          "t1": 36.3333,
+          "bpm": 60
+        },
+        {
+          "id": "E",
+          "t0": 36.3333,
+          "t1": 44.3333,
+          "bpm": 90,
+          "note": "fade out 43.0-44.3333"
+        },
+        {
+          "id": "F",
+          "t0": 44.3333,
+          "t1": 47.3333,
+          "bpm": null,
+          "note": "DIGITAL SILENCE"
+        },
+        {
+          "id": "G",
+          "t0": 47.3333,
+          "t1": 48.3333,
+          "bpm": null,
+          "note": "bell alone (foley)"
+        },
+        {
+          "id": "H",
+          "t0": 48.3333,
+          "t1": 58.5,
+          "bpm": 60,
+          "note": "strings in the bell decay, D major"
+        }
+      ],
+      "keys": {
+        "knife_first": 1.0,
+        "line_end": 2.8,
+        "carve_ridge": 3.0,
+        "carve_village": 4.0,
+        "carve_fine": 5.0,
+        "carve_title": 6.0,
+        "ink_roll": 7.0,
+        "paper_lay": 7.6667,
+        "rub": 8.0,
+        "peel": 8.5,
+        "print_land": 9.0,
+        "L1": 11.1,
+        "fire_jcut": 14.5,
+        "cut_hands": 15.0,
+        "rasp1": 15.6,
+        "rasp2": 17.6,
+        "gift_pot": 19.0,
+        "L2": 19.2,
+        "gift_candle": 20.0,
+        "gift_keys": 21.0,
+        "gift_ring": 21.5,
+        "gift_spoon": 22.0,
+        "gift_bracelet": 22.25,
+        "clutch": 22.5,
+        "furnace": 23.0,
+        "glow": 24.3333,
+        "tongs": 25.0,
+        "pour1": 25.6667,
+        "smash": 27.0,
+        "reveal1": 27.6667,
+        "clunk": 28.3333,
+        "crack_end": 29.6,
+        "silence1": 29.6667,
+        "click": 32.3333,
+        "L3": 32.6,
+        "compass_drop": 35.5,
+        "bellows2": 36.3333,
+        "lift": 37.6667,
+        "pour2": 39.0,
+        "rays2": 39.3333,
+        "reveal2": 41.6667,
+        "pull2": 43.0,
+        "silence2": 44.3333,
+        "bell": 47.3333,
+        "echo1": 48.0,
+        "echo2": 48.9,
+        "strings": 48.3333,
+        "L4": 51.8,
+        "vanish": 52.5,
+        "endcard": 55.0,
+        "end": 58.5
+      }
+    }
+  },
+  "timed_shot_prompts": [
+    {
+      "start": 0,
+      "end": 3,
+      "name": "One knife cut",
+      "visual_prompt": "Black close woodgrain; blade bites1.0 and carves pale horizon until2.8, rough curled chip at tip. No valley visible before carving.",
+      "onscreen_text": "",
+      "camera_motion": "4.2× macro follows moving cut and pulls to1.9×.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Carving itself reveals light.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 3,
+      "end": 7,
+      "name": "A valley is carved",
+      "visual_prompt": "Gouges reveal mountain slopes, village roofs, empty belfry and little trees through directional white cuts. Title carved backward on block6–6.85; snow flecks stabbed into sky.",
+      "onscreen_text": "THE BELL FOUNDER (mirrored on block)",
+      "camera_motion": "Pull to entire block.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Actual mirrored preprint image, no already-finished illustration.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 7,
+      "end": 9,
+      "name": "Make the impression",
+      "visual_prompt": "Brayer rolls ink7; cream sheet lays7.6667; round baren rub8; sheet peels8.5 to reveal correctly oriented woodcut. Walnut table below and block bevel/shadow visible.",
+      "onscreen_text": "",
+      "camera_motion": "Overhead whole block/sheet.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Curling sheet reveals positive impression.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 9,
+      "end": 15,
+      "name": "The tower has no bell",
+      "visual_prompt": "Full black/cream snowbound valley; founder and boy walk tiny across foreground, many houses and surrounding mountains. Push into empty black belfry arch.",
+      "onscreen_text": "THE BELL FOUNDER",
+      "camera_motion": "Gradual wide→belfry push; falling carved snow.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Fire J-cut14.5 under final belfry image.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 15,
+      "end": 19,
+      "name": "Hands at work",
+      "visual_prompt": "Extreme close sculpted hands rasp/shape clay form on rough bench. Curved hatch follows knuckles and finger tendons, white carved light over black wood grain; rasp strokes15.6 and17.6.",
+      "onscreen_text": "",
+      "camera_motion": "Locked tactile macro, slight working movement.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Hard impression cut with two-frame registration jolt.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 19,
+      "end": 20,
+      "name": "A pot offered",
+      "visual_prompt": "White carved pot drops into dark communal crucible/bowl; rim ellipse clear.",
+      "onscreen_text": "",
+      "camera_motion": "Object insert, immediate material weight.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Montage starts on narrated generosity.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 20,
+      "end": 21,
+      "name": "A candlestick offered",
+      "visual_prompt": "Tall candlestick clanks into growing metal pile inside rim, distinct from pot.",
+      "onscreen_text": "",
+      "camera_motion": "Matching insert stage, rhythmic cut.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Not a generic pile-only shot.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 21,
+      "end": 21.5,
+      "name": "Keys offered",
+      "visual_prompt": "Cluster of rings/keys enters and settles on pile.",
+      "onscreen_text": "",
+      "camera_motion": "Closer graphic cut.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Half-second source beat preserved.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 21.5,
+      "end": 22,
+      "name": "A ring offered",
+      "visual_prompt": "Round ring tumbles into crucible; curved white carving and black centre readable.",
+      "onscreen_text": "",
+      "camera_motion": "Macro object insert.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Half-second beat.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 22,
+      "end": 22.25,
+      "name": "A spoon offered",
+      "visual_prompt": "Long spoon joins pile; changing scale from ring makes gesture legible.",
+      "onscreen_text": "",
+      "camera_motion": "Fast insert.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Quarter-second beat, inspect exact frame.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 22.25,
+      "end": 22.5,
+      "name": "A bracelet offered",
+      "visual_prompt": "Bracelet rim drops; pile now mixed household forms, all carved light.",
+      "onscreen_text": "",
+      "camera_motion": "Fast matching insert.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Quarter-second beat.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 22.5,
+      "end": 23,
+      "name": "Hands clutch the metal",
+      "visual_prompt": "Hands take hold of collection, preparing forge action.",
+      "onscreen_text": "",
+      "camera_motion": "Close grip.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Cut to furnace on tempo change23.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 23,
+      "end": 25,
+      "name": "First furnace",
+      "visual_prompt": "Boy works bellows and founder leans to furnace, flame copper/orange begins24.3333 in carved areas. Both faces readable by white cut light, not outlines.",
+      "onscreen_text": "",
+      "camera_motion": "Medium forge side view.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "First copper pigment appears only through cuts.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 25,
+      "end": 26.8,
+      "name": "First pour",
+      "visual_prompt": "Founder and boy carry tongs/ladle; liquid copper pours25.6667 into mould, few short rays. Contact line and mould throat clearly visible.",
+      "onscreen_text": "",
+      "camera_motion": "Medium transfer to mould.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Hot glow follows copper plate constraints.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 26.8,
+      "end": 28.3333,
+      "name": "First bell revealed",
+      "visual_prompt": "Founder smashes clay27.0, dust/chunks expose bell27.6667. Bell initially seems complete.",
+      "onscreen_text": "",
+      "camera_motion": "Medium founder/bell, boy right.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Impact jolt; no premature ringing.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 28.3333,
+      "end": 29.6667,
+      "name": "Failure",
+      "visual_prompt": "Extreme close bell wall; clunk28.3333 and jagged white crack branches to29.6. The bell must visibly fail, not simply turn dark.",
+      "onscreen_text": "",
+      "camera_motion": "Tight bell wall.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Music stops dead on clunk.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 29.6667,
+      "end": 31.9167,
+      "name": "A silent doorway",
+      "visual_prompt": "Founder seen from behind at left of dark workshop doorway; villagers wait outside in snow, shoulders lowered. Still picture holds failure without explaining text.",
+      "onscreen_text": "",
+      "camera_motion": "Locked wide doorway/figures.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Let silence carry weight.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 31.9167,
+      "end": 33,
+      "name": "The boy’s compass",
+      "visual_prompt": "Close finely carved hand holds round compass; lid opens, needle/rose/rim catch white light, small chain attached. Click32.3333.",
+      "onscreen_text": "",
+      "camera_motion": "Close insert, slight1.04→1.12push.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Insert begins inside silence before speech32.6.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 33,
+      "end": 34.5,
+      "name": "The decision",
+      "visual_prompt": "Boy knit cap and expressive profile close-up; he looks at compass, hesitates, then resolves. Needle motif implied by hand below.",
+      "onscreen_text": "",
+      "camera_motion": "Close boy face.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Hard cut, hold long enough to read decision.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 34.5,
+      "end": 35.3,
+      "name": "He lets it go",
+      "visual_prompt": "Boy’s hand moves and releases the compass. Show fingers opening rather than a jumping object.",
+      "onscreen_text": "",
+      "camera_motion": "Hand/torso close.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Continuous gesture into falling insert.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 35.3,
+      "end": 36.3333,
+      "name": "Compass into the crucible",
+      "visual_prompt": "Round compass drops35.5 onto household metal collection, smaller relative to crucible but recognisable by lid/chain.",
+      "onscreen_text": "",
+      "camera_motion": "Overhead crucible insert.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "No new dialogue; let sacrifice finish.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 36.3333,
+      "end": 37.6667,
+      "name": "Bellows again",
+      "visual_prompt": "Boy/founder at furnace repeat work with increased conviction; copper flame stronger, body poses lean into effort.",
+      "onscreen_text": "",
+      "camera_motion": "Medium forge echo of first attempt.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Renewed90BPM pulse.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 37.6667,
+      "end": 39,
+      "name": "Lift",
+      "visual_prompt": "Founder lifts hot ladle above shoulder with articulated hands and tongs, boy braces opposite.",
+      "onscreen_text": "",
+      "camera_motion": "Low close/medium to raised ladle.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Prepare second pour, no reset to title.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 39,
+      "end": 41.6667,
+      "name": "Second pour / radial light",
+      "visual_prompt": "Copper stream enters mould39.0;60rough carved rays burst39.3333 from molten centre and fill shot. Founder/boy remain visible flanking the glowing mould.",
+      "onscreen_text": "",
+      "camera_motion": "Slight crane/widen through rays.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Copper ink only inhabits carved white.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 41.6667,
+      "end": 43,
+      "name": "The second bell",
+      "visual_prompt": "Clay breaks again, bell emerges intact with warm edge, founder’s hand finishes reveal while boy watches.",
+      "onscreen_text": "",
+      "camera_motion": "Medium, echo first reveal but distinct result.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "No bell timbre yet.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 43,
+      "end": 44.3333,
+      "name": "To the tower",
+      "visual_prompt": "Rope pull in workshop, then paper peel/turn carries picture to snowy valley and newly installed bell tower.",
+      "onscreen_text": "",
+      "camera_motion": "Split material transition, no dissolve.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Page/print transition resolves to tower.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 44.3333,
+      "end": 45.3333,
+      "name": "Hold the tower",
+      "visual_prompt": "New bell visible in dark arch; snow still falls, village silent.",
+      "onscreen_text": "",
+      "camera_motion": "Medium tower.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Digital silence begins44.3333.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 45.3333,
+      "end": 46.3333,
+      "name": "Hands grip the rope",
+      "visual_prompt": "Two carved hands grasp thick vertical rope; knuckles/finger joints readable, tension in pull.",
+      "onscreen_text": "",
+      "camera_motion": "Macro hand/rope.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "No speech/music or bell.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 46.3333,
+      "end": 47.3333,
+      "name": "Before the strike",
+      "visual_prompt": "Close bell interior/wall and clapper poised for contact. Almost no motion until release.",
+      "onscreen_text": "",
+      "camera_motion": "5.2× bell close-up.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Full third second of absolute silence.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 47.3333,
+      "end": 54.4,
+      "name": "The bell rings through the valley",
+      "visual_prompt": "First strike47.3333; copper pulse illuminates bell/tower then expands as carved sound arcs across snow village. Pull8×→whole valley. Snow freezes/stops52.5 during closing line.",
+      "onscreen_text": "",
+      "camera_motion": "Long matched pull from bell to original valley composition.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Echoes48.0/48.9; strings enter48.3333, avoid early bell samples.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    },
+    {
+      "start": 54.4,
+      "end": 58.5,
+      "name": "A final carved line",
+      "visual_prompt": "Cream page, small bell atop black titleblock, white oldstyle serif title and thin carved horizon underline. Style and small attribution/voice/sample credits below.",
+      "onscreen_text": "THE BELL FOUNDER\nA Woodcut Print",
+      "camera_motion": "Locked print plate.",
+      "sound_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+      "transition": "Title rule carves55–55.55; honest new credit.",
+      "material_requirements": "Black inked woodblock; white is carved-away light, not white pen outlining. U/V-gouge cuts with chipped edges, directional grain and curved hatching describing volume; cream laid paper, two-frame misregistration on cuts. One copper plate only where carved white permits it. Founder old bearded man, boy knit pompom hat; detailed sculpted hands rendered to woodcut. Forge, crucible, bell mould, rope, compass and full snowbound valley."
+    }
+  ],
+  "published_text_source_inventory": {
+    "note": "Verbatim literals from text/annotation/caption sourcecalls. This supplemental audit index may include formatting/style strings; shot narrativecards and scripts above are authoritative. Source path/line retained to resolve exacttext.",
+    "entries": [
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/chars.js",
+        "line": 8,
+        "published_source_literals": [
+          "canvas"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/engine/hatch.js",
+        "line": 27,
+        "published_source_literals": [
+          "canvas"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/engine/index.js",
+        "line": 18,
+        "published_source_literals": [
+          "canvas"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/engine/print.js",
+        "line": 70,
+        "published_source_literals": [
+          "webgl2"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/index.html",
+        "line": 2,
+        "published_source_literals": [
+          "utf-8"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/main.js",
+        "line": 3,
+        "published_source_literals": [
+          "), g = cv.getContext("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/sheet.js",
+        "line": 10,
+        "published_source_literals": [
+          "italic ",
+          "}400 ${size}px ",
+          "`; m.textAlign = align; m.textBaseline = "
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/shots.js",
+        "line": 7,
+        "published_source_literals": [
+          "./film.js"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/shots.js",
+        "line": 77,
+        "published_source_literals": [
+          "center",
+          "middle"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/shots.js",
+        "line": 88,
+        "published_source_literals": [
+          "center",
+          "middle",
+          "#fff"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/shots.js",
+        "line": 114,
+        "published_source_literals": [
+          "carve_fine",
+          "carve_title"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/shots.js",
+        "line": 115,
+        "published_source_literals": [
+          "stab"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/shots2.js",
+        "line": 452,
+        "published_source_literals": [
+          "400 84px ",
+          "; m.textAlign = ",
+          "; m.textBaseline = ",
+          "; m.fillStyle = ",
+          "; m.fillText("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/shots2.js",
+        "line": 458,
+        "published_source_literals": [
+          "italic 400 46px ",
+          "; m.fillStyle = `rgba(0,0,0,${a})`; m.fillText("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/shots2.js",
+        "line": 459,
+        "published_source_literals": [
+          "400 38px ",
+          "; m.fillText("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/shots2.js",
+        "line": 460,
+        "published_source_literals": [
+          "400 34px ",
+          "; m.fillText("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/shots2.js",
+        "line": 462,
+        "published_source_literals": [
+          "Voice: Kokoro (am_onyx) · Samples: VS Chamber Orchestra CE & VCSL, CC0 (Versilian Studios)"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/shots2.js",
+        "line": 463,
+        "published_source_literals": [
+          "Type: IM Fell English, SIL OFL (Igino Marini) · Walnut table: Poly Haven, CC0 · everything else carved in code"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/woodcut/demo/test.js",
+        "line": 24,
+        "published_source_literals": [
+          "That winter, the snow closed every road, and the tower had no bell."
+        ]
+      }
+    ]
+  },
+  "published_cue_events": [
+    {
+      "t": 1,
+      "type": "knife_bite"
+    },
+    {
+      "t": 1,
+      "type": "knife_run",
+      "dur": 1.8
+    },
+    {
+      "t": 2.8,
+      "type": "knife_flick"
+    },
+    {
+      "t": 3,
+      "type": "gouge_u"
+    },
+    {
+      "t": 3.25,
+      "type": "gouge_u"
+    },
+    {
+      "t": 3.5,
+      "type": "gouge_u"
+    },
+    {
+      "t": 3.75,
+      "type": "gouge_u"
+    },
+    {
+      "t": 4,
+      "type": "gouge_v"
+    },
+    {
+      "t": 4.2,
+      "type": "gouge_v"
+    },
+    {
+      "t": 4.4,
+      "type": "gouge_v"
+    },
+    {
+      "t": 4.6,
+      "type": "gouge_v"
+    },
+    {
+      "t": 4.8,
+      "type": "gouge_v"
+    },
+    {
+      "t": 5,
+      "type": "carve_fine",
+      "dur": 1
+    },
+    {
+      "t": 6,
+      "type": "carve_title",
+      "dur": 0.9
+    },
+    {
+      "t": 6,
+      "type": "stab"
+    },
+    {
+      "t": 6.25,
+      "type": "stab"
+    },
+    {
+      "t": 6.5,
+      "type": "stab"
+    },
+    {
+      "t": 6.75,
+      "type": "stab"
+    },
+    {
+      "t": 7,
+      "type": "brayer",
+      "dur": 0.6
+    },
+    {
+      "t": 7.6667,
+      "type": "paper_lay"
+    },
+    {
+      "t": 8,
+      "type": "baren",
+      "dur": 0.5
+    },
+    {
+      "t": 8.5,
+      "type": "peel",
+      "dur": 0.5
+    },
+    {
+      "t": 9,
+      "type": "paper_land"
+    },
+    {
+      "t": 9,
+      "type": "amb_wind",
+      "dur": 6
+    },
+    {
+      "t": 11.1,
+      "type": "vo",
+      "id": "L1"
+    },
+    {
+      "t": 12.6,
+      "type": "beam_creak"
+    },
+    {
+      "t": 14.5,
+      "type": "amb_forge",
+      "dur": 8.5
+    },
+    {
+      "t": 15,
+      "type": "wind_muffled",
+      "dur": 4
+    },
+    {
+      "t": 15,
+      "type": "carve_fine",
+      "dur": 0.7,
+      "gain": 0.5
+    },
+    {
+      "t": 15.299999999999999,
+      "type": "clay_rasp",
+      "dur": 0.8
+    },
+    {
+      "t": 17.3,
+      "type": "clay_rasp",
+      "dur": 0.8
+    },
+    {
+      "t": 19,
+      "type": "gift_pot"
+    },
+    {
+      "t": 19.2,
+      "type": "vo",
+      "id": "L2"
+    },
+    {
+      "t": 20,
+      "type": "gift_candle"
+    },
+    {
+      "t": 21,
+      "type": "gift_keys"
+    },
+    {
+      "t": 21.5,
+      "type": "gift_ring"
+    },
+    {
+      "t": 22,
+      "type": "gift_spoon"
+    },
+    {
+      "t": 22.25,
+      "type": "gift_bracelet"
+    },
+    {
+      "t": 22.5,
+      "type": "cloth_grip"
+    },
+    {
+      "t": 23,
+      "type": "bellows"
+    },
+    {
+      "t": 23,
+      "type": "fire_roar",
+      "dur": 5.3
+    },
+    {
+      "t": 23.6667,
+      "type": "bellows"
+    },
+    {
+      "t": 24.3333,
+      "type": "molten_bubble",
+      "dur": 2.5
+    },
+    {
+      "t": 24.3334,
+      "type": "bellows"
+    },
+    {
+      "t": 25,
+      "type": "tongs_clank"
+    },
+    {
+      "t": 25.6667,
+      "type": "pour",
+      "dur": 1.2
+    },
+    {
+      "t": 25.7167,
+      "type": "sizzle",
+      "dur": 1
+    },
+    {
+      "t": 26.82,
+      "type": "whoosh"
+    },
+    {
+      "t": 27,
+      "type": "mould_smash"
+    },
+    {
+      "t": 27.15,
+      "type": "debris",
+      "dur": 0.9
+    },
+    {
+      "t": 27.6667,
+      "type": "dust",
+      "dur": 0.6
+    },
+    {
+      "t": 28.3333,
+      "type": "clunk"
+    },
+    {
+      "t": 28.4033,
+      "type": "crack",
+      "dur": 1.2
+    },
+    {
+      "t": 29.6667,
+      "type": "far_wind",
+      "dur": 2.6
+    },
+    {
+      "t": 32.3333,
+      "type": "compass_click"
+    },
+    {
+      "t": 32.6,
+      "type": "vo",
+      "id": "L3"
+    },
+    {
+      "t": 34.95,
+      "type": "throw_whoosh"
+    },
+    {
+      "t": 35.5,
+      "type": "compass_drop"
+    },
+    {
+      "t": 36.3333,
+      "type": "bellows",
+      "gain": 0.8
+    },
+    {
+      "t": 36.3333,
+      "type": "fire_roar",
+      "dur": 5.4,
+      "gain": 1.4
+    },
+    {
+      "t": 36.6666,
+      "type": "bellows",
+      "gain": 0.8
+    },
+    {
+      "t": 36.999900000000004,
+      "type": "bellows",
+      "gain": 0.8
+    },
+    {
+      "t": 37.3332,
+      "type": "bellows",
+      "gain": 0.8
+    },
+    {
+      "t": 37.6667,
+      "type": "tongs_clank"
+    },
+    {
+      "t": 37.6667,
+      "type": "molten_bubble",
+      "dur": 1.3,
+      "gain": 1.3
+    },
+    {
+      "t": 39,
+      "type": "pour",
+      "dur": 2.6,
+      "gain": 1.5
+    },
+    {
+      "t": 39,
+      "type": "sparks",
+      "dur": 2.5
+    },
+    {
+      "t": 39.05,
+      "type": "sizzle",
+      "dur": 2.4,
+      "gain": 1.3
+    },
+    {
+      "t": 39.3333,
+      "type": "rays_carve"
+    },
+    {
+      "t": 41.6667,
+      "type": "steam",
+      "dur": 1.6
+    },
+    {
+      "t": 41.8167,
+      "type": "debris",
+      "dur": 1,
+      "gain": 0.6
+    },
+    {
+      "t": 43,
+      "type": "peel",
+      "dur": 1.2
+    },
+    {
+      "t": 43.1,
+      "type": "wind_ext",
+      "dur": 1.2
+    },
+    {
+      "t": 47.3333,
+      "type": "bell"
+    },
+    {
+      "t": 48,
+      "type": "echo",
+      "gain": 0.5
+    },
+    {
+      "t": 48.9,
+      "type": "echo",
+      "gain": 0.3
+    },
+    {
+      "t": 51.8,
+      "type": "vo",
+      "id": "L4"
+    },
+    {
+      "t": 52.6,
+      "type": "ink_dot",
+      "gain": 0.5
+    },
+    {
+      "t": 52.75,
+      "type": "ink_dot",
+      "gain": 0.475
+    },
+    {
+      "t": 52.900000000000006,
+      "type": "ink_dot",
+      "gain": 0.45
+    },
+    {
+      "t": 52.96,
+      "type": "ink_dot",
+      "gain": 0.425
+    },
+    {
+      "t": 53.11,
+      "type": "ink_dot",
+      "gain": 0.4
+    },
+    {
+      "t": 53.260000000000005,
+      "type": "ink_dot",
+      "gain": 0.375
+    },
+    {
+      "t": 53.32,
+      "type": "ink_dot",
+      "gain": 0.35
+    },
+    {
+      "t": 53.470000000000006,
+      "type": "ink_dot",
+      "gain": 0.32499999999999996
+    },
+    {
+      "t": 53.620000000000005,
+      "type": "ink_dot",
+      "gain": 0.3
+    },
+    {
+      "t": 53.68,
+      "type": "ink_dot",
+      "gain": 0.275
+    },
+    {
+      "t": 53.830000000000005,
+      "type": "ink_dot",
+      "gain": 0.25
+    },
+    {
+      "t": 53.980000000000004,
+      "type": "ink_dot",
+      "gain": 0.22499999999999998
+    },
+    {
+      "t": 54.04,
+      "type": "ink_dot",
+      "gain": 0.19999999999999996
+    },
+    {
+      "t": 54.190000000000005,
+      "type": "ink_dot",
+      "gain": 0.175
+    },
+    {
+      "t": 54.4,
+      "type": "peel",
+      "dur": 0.6
+    },
+    {
+      "t": 55,
+      "type": "knife_bite"
+    },
+    {
+      "t": 55,
+      "type": "knife_run",
+      "dur": 0.55
+    }
+  ],
+  "published_source_hashes": {
+    "outputs/gptcar/styles/woodcut/demo/chars.js": "5f9486c9f95c4c1210776c56bb8a38e2dfed587e5efa7d72f8839f140abb463f",
+    "outputs/gptcar/styles/woodcut/demo/engine/filter.js": "c2761bad11f3163ffbe4ed19ab9b02c9da96e9089602c764da986bb12392b807",
+    "outputs/gptcar/styles/woodcut/demo/engine/hatch.js": "4327d8b90fa799edd92961f7764bf47790aa2d346b1995e5fbf6a6d1a935e862",
+    "outputs/gptcar/styles/woodcut/demo/engine/index.js": "c153e7c96c79d920b360242d6eccc8b64046066389e2c90a29030d2f22114b97",
+    "outputs/gptcar/styles/woodcut/demo/engine/knife.js": "4e5a29c14cf564625d5d3cad29966c289eee0aad4701cdc3f5728a960d91b431",
+    "outputs/gptcar/styles/woodcut/demo/engine/print.js": "7a1314ee1de99b330c463e543b0eb7b1b9dcd59d232fabe184d49ff9c4ee26e3",
+    "outputs/gptcar/styles/woodcut/demo/events.json": "3ea0e41c21f218fb4727e22f9a93729cab34051c4207b31dbf5b77b67db23e76",
+    "outputs/gptcar/styles/woodcut/demo/film.js": "86cd62a830ad3f1c7cb0001388e7874dddcb6693a21ab605c70d6731c3b26025",
+    "outputs/gptcar/styles/woodcut/demo/fx.js": "85097955c303babb24ee9ae5f256c543bc2eb89dc6cd51d5edf0aab34524e7ed",
+    "outputs/gptcar/styles/woodcut/demo/hands.js": "e6197af8732ee0be907ba3dfaa0e01189a037d61e824197aea82ae9e63dad689",
+    "outputs/gptcar/styles/woodcut/demo/index.html": "dd168bbd5cec7ca6df23ccfe45c147bf049fd8f86757b438c161e12e7187a6a9",
+    "outputs/gptcar/styles/woodcut/demo/interior.js": "7734e627f5fc3902b1aff6ffff32975341745c0349ec0ce2aa67f2e791be8415",
+    "outputs/gptcar/styles/woodcut/demo/lines.json": "e67428431e9328158574780bd75638dc4c02ce8f73180ae8e63716a6aa12e532",
+    "outputs/gptcar/styles/woodcut/demo/main.js": "6805a243b844f39fb7168a7b23354e3ab363ad67f987ed0203a982fdde482d3e",
+    "outputs/gptcar/styles/woodcut/demo/mix.py": "8b1b422562fb7756cff9253e0e266c85d7708b06aab1b12e1d32a915507fe426",
+    "outputs/gptcar/styles/woodcut/demo/music/score.json": "7ef84a5a2cc3578723989aa5cd4550fddf2936606a8df42e37a823b8bcd1d259",
+    "outputs/gptcar/styles/woodcut/demo/music/score.py": "63963742750b91ba9c9f81d2ed632997bb35a4606259a809cc331657063f031c",
+    "outputs/gptcar/styles/woodcut/demo/rig.js": "cfa120eef688ea7ff893a7a3a8891e539a1139fbe4af822cd7dcdd91be397874",
+    "outputs/gptcar/styles/woodcut/demo/sheet.js": "d97e7e34ee734f2cc903f95643380bf670e0db674669b36485612b59dafde07e",
+    "outputs/gptcar/styles/woodcut/demo/shots.js": "f8d044573d631b0ede3c4df44e59401d7d10fbdf75731ce2a8df0b58928974c7",
+    "outputs/gptcar/styles/woodcut/demo/shots2.js": "9e8819d84af0a15a0a89cbcd3a73bc5747380eeec4b4932b13b90dfe0ecbcefc",
+    "outputs/gptcar/styles/woodcut/demo/stage.js": "8ec8372f55bbc07a1d00fea8974c635542bb7b7a19104f2b2ac85bfffb08047b",
+    "outputs/gptcar/styles/woodcut/demo/test.js": "a88abc5060aa1f0d813430ad1224f2811b4644fe5072f18866721fb3100a8b0e",
+    "outputs/gptcar/styles/woodcut/demo/timeline.json": "6e88cb0e4b7e666686209703f88cba157ad8a4ca963e25aba0af6e7228bccef0",
+    "outputs/gptcar/styles/woodcut/demo/tools/cuecheck.py": "5571718059365a7fb59e3e3814615d450f21158520e288b89adda4589c5ebfc6",
+    "outputs/gptcar/styles/woodcut/demo/tools/final_asr.py": "69b96c987c055bb24516281556df3974c5092a6c5b76cd331abde74982a16e68",
+    "outputs/gptcar/styles/woodcut/demo/tools/subs.py": "16d494400db19e7bd05d9380910f44d8b55097931e93c4c3b836df9a4f3bbb82",
+    "outputs/gptcar/styles/woodcut/demo/trans.js": "549ab76f129cd0b71a1ed40e67a29f6a9c568de677355e7060cbbf876ced9346",
+    "outputs/gptcar/styles/woodcut/demo/views.js": "4a5c551ae6ed77e2d9677ec495fb8f7f35244ecdabba58f33ea19eb707cb6563",
+    "outputs/gptcar/styles/woodcut/demo/voices/dur.json": "838804160c9c63ea57dd9dbfe0f4647294340ca8485f4dac553cf95e18f97c1b",
+    "outputs/gptcar/styles/woodcut/demo/voices/words.json": "aa2b8acebecfc97621b007967e163792881c69fe388ab8e14cee3ed4aa2c0ce5",
+    "outputs/gptcar/styles/woodcut/demo/world.js": "66296c05d6c4ba49f8ada7c48d2c7c6ef39b3386d629639f2acaf9c3f077268e"
+  },
+  "original_assets_and_licenses": [
+    {
+      "path": "outputs/gptcar/styles/woodcut/demo/CREDITS",
+      "sha256": "5c8c0c437af4fd5a73ee4664fae3b88a25a7cd7c81e6ec38aa92c7e881b20382",
+      "verbatim": "The Bell Founder — a Woodcut Print demo (Lemo-Opuscar · LemoLab × Claude Opus 5.5)\n\nEverything in the picture is drawn in code (engine/, *.js): no generated images, no traced artwork.\n\nVoice\n  Kokoro-82M TTS, voice am_onyx (speed 0.88) — Apache-2.0 (hexgrad/Kokoro-82M)\n\nMusic (original score, music/score.py)\n  VS Chamber Orchestra: Community Edition — Versilian Studios, CC0\n  Versilian Community Sample Library (VCSL) — Versilian Studios, CC0\n  Anvil: original numpy modal synthesis (no samples)\n\nSound effects (mix.py)\n  All foley and the bell synthesised in numpy/scipy (wood, paper, brass, clay, fire, molten metal, modal bell)\n\nType\n  IM Fell English / IM Fell English SC / IM Fell English Italic — Igino Marini, SIL Open Font License 1.1 (fonts/OFL-IMFell.txt)\n\nImages\n  core/assets/polyhaven/walnut_diff.jpg — \"American Walnut Veneer\", Poly Haven, CC0 (the table under the block, 7–9 s)\n  assets/bearded_man_cc0.jpg — CC0 photo by ThuyHaBich (Pixabay, via Wikimedia Commons); used only for the filter test\n    still demo/stills/filter_v1.jpg, not in the film\n"
+    }
+  ],
+  "engine_reuse_recommendation": "Reuse attributed generic drawing/material/rig/math engines described by STYLE/DEMO; share fonts and named licensed data/assets with hashes. Independently generate scene assembly, animation, shot/camera staging and freshaudio. Never import original film renderer, mastervideo,originalframes or mastertrack as newGPTwork. Preserve exactscript/cardlanguage and measuredoriginalframecount. Full originals are analytical references only.",
+  "audio_recreation_direction": "Fresh am_onyx0.88 four-line story. New60BPM modal low strings/wood skins,90BPM forge/anvil, melancholy compass at60, renewed90BPM pour; music cuts28.3333 then room silence29.6667–32.3333, absolute zero44.3333–47.3333. First bell timbre only47.3333 with two valley echoes48/48.9; D-major strings from48.3333.",
+  "v1_primary_deficits": [
+    "V1 skipped failed first casting, doorway silence and compass sacrifice, reducing58.5s emotional narrative to20s",
+    "Line-art approximation lacked gouged negative light, sculpted hands, print/peel mechanics and first-bell silence"
+  ],
+  "visual_audit": {
+    "status": "complete",
+    "method": "Complete original 1 fps contact-sheet sequence and published source cue boundaries inspected, plus listed exact short-action/transition frames. Does not claim every encoded frame.",
+    "sheets": [
+      "work/gptcar/reference/woodcut/sheets/sheet-01.jpg",
+      "work/gptcar/reference/woodcut/sheets/sheet-02.jpg",
+      "work/gptcar/reference/woodcut/sheets/sheet-03.jpg",
+      "work/gptcar/reference/woodcut/sheets/sheet-04.jpg",
+      "work/gptcar/reference/woodcut/sheets/sheet-05.jpg"
+    ],
+    "exact_time_supplement": [
+      "work/gptcar/reference/woodcut/exact/t-21.25.jpg",
+      "work/gptcar/reference/woodcut/exact/t-21.75.jpg",
+      "work/gptcar/reference/woodcut/exact/t-22.125.jpg",
+      "work/gptcar/reference/woodcut/exact/t-22.375.jpg",
+      "work/gptcar/reference/woodcut/exact/t-31.95.jpg",
+      "work/gptcar/reference/woodcut/exact/t-32.35.jpg",
+      "work/gptcar/reference/woodcut/exact/t-35.6.jpg",
+      "work/gptcar/reference/woodcut/exact/t-47.4.jpg"
+    ]
+  }
+}

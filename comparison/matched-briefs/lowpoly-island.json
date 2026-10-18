@@ -1,0 +1,758 @@
+{
+  "schema_version": "matched-original-brief-v2-audit-1",
+  "slug": "lowpoly-island",
+  "status": "reference-audited-ready-for-reconstruction",
+  "original_title": "The Island That Grew",
+  "original_title_aliases_from_demo": [
+    "Demo: *The Island That Grew* (53 s) · `lowpoly-island.mp4` · source in [`demo/`](demo/)",
+    "",
+    ""
+  ],
+  "published_premise_verbatim": "An island and its village grow tile by tile from an empty sea, each tile a note, into a starry night.",
+  "published_premise_zh_verbatim": "空海里一格格长出小岛和村庄，每放一块响一个音符，直到星空。",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "verbatim_original_conversation_prompt": null,
+    "published_brief_statement": null,
+    "reconstructed_replication_instruction": "Recreate the full published The Island That Grew scene order, story, exact narration and screen text at original timing/resolution/fps, including all specified subjects, performance, mechanisms, lens/light/material treatment, transitions and sonic hits. This is a reconstruction from published sources, not a quoted original conversational prompt.",
+    "reconstruction_basis": [
+      "Complete published STYLE.md and DEMO.md",
+      "Published narration, cards and timing source",
+      "Original movie: all regular contact sheets and named key-event frames"
+    ]
+  },
+  "original_format": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24.0,
+    "duration_s_exact_timeline": 53,
+    "duration_s_gallery_rounded": 53.0,
+    "duration_s_published_demo_text": "53",
+    "video_stream_metadata_verified": true,
+    "note": "Encoded target is frame_count/fps, not rounded catalogue or container audio duration.",
+    "frame_count": 1272,
+    "duration_s": 53.0,
+    "container_duration_s": 53.013,
+    "production_canvas_width": 1920,
+    "production_canvas_height": 1080
+  },
+  "source_authorship": "Historical original by Lemomo/LemoLab using Claude Opus5.5. New output must identify actual GPT authorship and attribute any reused generic components.",
+  "source_hashes": [
+    {
+      "path": "styles/lowpoly-island/STYLE.md",
+      "sha256": "d87e56fd3677841e19f273352ea3481328a237403012ffa7ccb6089c97401702"
+    },
+    {
+      "path": "styles/lowpoly-island/DEMO.md",
+      "sha256": "8a2d0e875ffd6cae3c23a054ae2cdc02a3386b61b1ccb64858c396d92e8773ae"
+    },
+    {
+      "path": "styles/lowpoly-island/style.json",
+      "sha256": "7ab82e432e2e725a361ef54b1df252ba19416aead6f87897bc0bc79a48c8177a"
+    },
+    {
+      "path": "styles/lowpoly-island/demo/story.js",
+      "sha256": "d72ff541ea94f2b80fd51c4412527e094493f337f75f1656ce445308414a2b63"
+    },
+    {
+      "path": "styles/lowpoly-island/demo/lines.json",
+      "sha256": "d473758c41e705f2ee0a28f43b4fa36dca2bb5ef7241629948afd1498561fd3e"
+    }
+  ],
+  "style_guide_sha256": "d87e56fd3677841e19f273352ea3481328a237403012ffa7ccb6089c97401702",
+  "style_guide_verbatim": "# Low-poly Isometric Island — Style Prompt\n\n> A tiny faceted world seen through an orthographic isometric lens: everything is a geometric block, and everything that appears arrives with a bounce and a note.\n> References (grammar only): *Townscaper* (building is the performance; every piece lands with a springy bounce and a sound; pieces sprout small details by themselves); *Monument Valley* (isometric geometry, soft pastel palettes, gradient skies, calm pacing, lots of empty space). Never copy their grids, buildings, characters, UI or typography, and never name them on screen.\n\n## 1. Essence, and what it is not\n\nA miniature world built from **flat-shaded low-poly geometry** (hexagonal tile columns, box buildings with prism roofs, cone and icosahedron trees) floating in a faceted sea or void, watched by an **orthographic camera** at an isometric angle. No perspective and no horizon: distance dissolves into a **screen-space sky gradient**, so the world looks like a model suspended in colour. **Light, not texture, tells time**: every facet changes colour as the sun moves; in the dark only emissive blocks keep their colour.\n\nNot a voxel game (no cubes-of-cubes, no pixel texture), not a tilt-shift photograph of a real place (no perspective, no photo detail), not a smooth-shaded 3D cartoon (no rounded normals, no subsurface).\n\n## 2. Materials & rendering\n\n- **Geometry** (world unit = one hex tile's circumradius): pointy-top hexagonal columns (`CylinderGeometry(r, r, h, 6)`), axial → world `x = √3(q + r/2)`, `z = 1.5 r`. Terrain height encodes material (sand low, grass, hills, rock highest). A thin separate top cap sits over a darker side colour; **sink the side column's top below the cap** or it z-fights. Leave a small gap between tiles so AO draws the seams.\n- **Props** are primitive assemblies: boxes, prisms, low-segment cylinders and cones, icosahedra at detail 0, pinched boxes. Emissive parts (windows, lamps) get their own material per object so they can light individually.\n- **Materials**: `MeshStandardMaterial({ flatShading: true, roughness ≈ .9 })`, **no textures**. Jitter each tile's lightness a few percent so the ground isn't a spreadsheet.\n- **Water** (if any): a dense non-indexed plane displaced by summed sines in the shader, flat-shaded so each triangle glints on its own (not too low a roughness or facets flash white); a coarse plane below for zoom-outs; a **shallow map** redrawn per frame where land exists, mixing deep → shallow colour with a faint foam rim; a thin transparent ring at each tile's water line for surf.\n- **Sky without a horizon**: in post, linearise the orthographic depth and blend distant pixels into a vertical screen gradient; set haze start/end as fractions of frustum height × cot(elevation) so the horizon band stays in the top third at any zoom. Stars (hash grid, twinkle) only where haze is thick.\n- **Post**: MSAA + depth → **GTAO** (mandatory: it draws the seams between tiles and under roofs) → sky/haze composite → a very light tilt-shift at the frame edges → bloom (stronger at night) → pastel grade → Neutral tone mapping. Supersample 2×.\n- **Light beams** (searchlight, projector, torch): a camera-facing ribbon with a Gaussian profile, bright at the root and fading with distance, plus a wider faint halo copy; light the surface under it in its own shader.\n\n## 3. Colour logic\n\n- **Pastel, low contrast, a handful of hues**: one ground family (sand/grass/earth or its equivalent), one neutral rock, and a small set of wall and roof colours repeated across buildings.\n- **Time of day is a keyframed set of colours** (zenith, horizon, deep, shallow, sun colour, intensity, elevation, azimuth), interpolated. Day is airy and cool; dusk warms the horizon; night desaturates everything toward blue-violet.\n- **At night, warm emissives are the only bright things** (windows, lamps, a beam). Keep the sun sideways to the camera in key shots (low sun behind the target turns faceted water into glare); water receives no shadows.\n- No outlines, no black; shadows and AO are the only darks.\n\nExamples of world palettes: sand, grass and coral roofs under a pale-blue day; snow tiles, pine greens and red cabins under a lilac sky; terracotta mesas, sage scrub and turquoise pools under an apricot dusk.\n\n## 4. Type & subtitles\n\n- Geometric OFL sans faces: a rounded one for subtitles (e.g. Quicksand 600), a geometric caps face with wide tracking for titles (e.g. Josefin Sans).\n- **Subtitles**: no box; warm white with a soft dark-blue drop shadow, centred low; a small flat-shaded tile icon beside them whose top colour follows the time of day. Hold ≥ max(1.8 s, speech + 0.6 s), never overlapping the next line or a title.\n- **Titles behave like tiles**: letters rise one by one from under a water line, overshoot and settle.\n- A text card over the world leaves a gap where the world stays visible.\n\n## 5. Motion quality\n\n- On ones (24 fps), smooth. The charm is in the **arrival curves**, not stepping.\n- **Rise from below**: a short cubic ease up, then a damped-sine overshoot; a splash ring and spray the moment it breaks the surface. The event time is when it settles.\n- **Drop and stack** (floors, roofs, rings): a fast ease-in fall, a damped bounce, and volume-preserving squash-and-stretch on landing.\n- **Pop** (trees, lamps, details): scale `1 − e^(−k s)·cos(ω s)`, about 25 % overshoot.\n- **Life**: mills turn, smoke puffs, birds circle, boats bob with the same wave function as the water (evaluated on the CPU).\n- **Schedule growth on the music grid**: at most one piece per smallest slot, so every event keeps its own note; accelerate by density (halves → quarters → eighths), not by tempo.\n- Never moves: the projection (no perspective, no fov change).\n\n## 6. Camera grammar\n\n`THREE.OrthographicCamera`. **Frustum height is the zoom** (a few units for a close-up, the whole world at a dozen or more, hundreds for a scale reveal); place the camera ≥ 3 × frustum height away or the bottom of the frame looks under the sea. A vocabulary, not a route. Opening and ending come from the topic.\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Turntable (azimuth sweep) | the thing seen from every side | building; inspecting; a product assembled |\n| Pure orthographic zoom (frustum change) | scale without perspective | a detail in context; smallness; a world among worlds |\n| Elevation change | low (≈20–25°) widens the sky band; high (≈50°) reads as a map | night and stars; a sweep across the whole world; a plan |\n| Locked 3/4 wide | the world lives on its own | lights coming on; time-lapse; waiting |\n| Tight close-up on one arrival | the bounce and the splash | a key piece; a milestone; a gag |\n| Side angle trailing a mover | travel across the frame, never at the lens | a delivery; a departure; a route |\n| Lateral truck along a row of tiles | a list, a sequence | steps of a process; a timeline |\n| Time-lapse sun sweep, camera still | light is the time machine | a day; a season; history |\n\nIntercut wide and close on beats: wide shows the shape growing, close sells the bounce. Transitions: hard cuts on the beat, a time-of-day change, a zoom through the sky; no dissolves, no perspective whip-pans.\n\n## 7. Sound palette\n\n- **Music can be event-driven**: growth events carry a note, and the score synthesizes each one at its exact time, so the picture writes the tune. Pitched percussion suits the facets: marimba, kalimba, woodblock, bells, vibraphone, celesta, steel drum; underneath, a soft pad, a gentle ostinato, light shaker or soft kick. Pentatonic or modal material keeps any order of notes consonant. **No piano, no strings.**\n- **A single note can be a motif**: one sound owned by the world (a bell, a chime, a horn) that returns changed.\n- **Foley follows material**, all synthesizable: bubble sweep + splash with droplet ticks for rising tiles (bigger = lower); wooden knock plus a quieter bounce knock for floors; ceramic clack for roofs; hollow plank knock; heavy stone thunk; glass tink; a low whump with electric hum for anything switching on.\n- **Beds**: low-passed brown-noise water with swells, birds as downward-gliding FM chirps, creaking wood, crickets or wind at night.\n- **Silence**: drop to a low drone and a bed; a moment of digital zero on the music bus before a big downbeat. Options: thin the ostinato to one voice instead of stopping it; let the world's own events carry the rhythm for a passage.\n- **Voice**: clear and gentle, few short lines; avoid words that collide with the film's subject (a film about notes: \"sea\" heard as \"C\").\n- **Mix**: voice compressed and well above the music, music ducked under it, −14 LUFS; **grain 0** (flat colour shimmers with grain).\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **Building is composing**: every piece that lands plays a note; a later sweep can replay them in spatial order as a finished melody. *Fits content like:* a skyline whose floors are notes; a team assembling a product; a garden whose flowers form a chord.\n- **Procedural growth**: tiles rise, floors stack, trees pop. *Fits content like:* a startup's first year; a coral reef recovering; a neighbourhood being planned.\n- **Scale by pure zoom**: one object fills the frame, then the world becomes a speck (or the reverse). *Fits content like:* one user among millions; a village on a continent; a data centre inside a network.\n- **Turntable**: a continuous rotation around the thing being made. *Fits content like:* a machine being assembled; a museum object; a house renovation.\n- **Light as clock**: shadows sweep and facets re-colour. *Fits content like:* a day of a shop; a year of a farm; a shift at a hospital.\n- **Emissive blocks in the dark**: lights coming on one by one, a beam sweeping like a clock hand. *Fits content like:* a network going live; a town at nightfall; volunteers joining a cause.\n\n## 9. Pitfalls of the medium\n\n- `perspectiveDepthToViewZ` in shared post code is wrong for an orthographic camera → `orthographicDepthToViewZ`.\n- GTAO renders sprites and transparent objects as solid quads → hide them during the AO pass; set `visible = false` at zero opacity.\n- Side column and top cap sharing one plane → z-fighting → sink the column.\n- A double-sided additive cone reads as two white lines → a camera-facing Gaussian ribbon + halo.\n- Camera too close for its frustum → the frame bottom shows below the sea → distance ≥ 3 × frustum height.\n- Two pieces landing in one grid slot muddy the melody → one piece per slot.\n- `half` is a reserved word in GLSL.\n\n## 10. Engine\n\nIn `demo/` (three.js): `world.js` (hex layout, primitive props, growth schedule → events with notes, arrival curves), `sea.js` (faceted wave shader, shallow map, beam-lit water), `post.js` (ortho post: GTAO → sky/haze + stars → tilt-shift → bloom → grade), `story.js` (beat grid, time-of-day keyframes, shots), `main.js` (renderer, lights, per-shot cameras, HUD, event export), `music/score.py` (event-driven score; `music/check.py` compares audio onsets and pitches with the events), `mix.py` (foley, beds, ducking). File map and build steps: DEMO.md.\n\n## 11. Variation space\n\nYou decide the world (island, town, orchard, factory floor, planet), what grows or changes, the palette within the colour logic, the opening, the ending, the camera path and the pacing. All far from our demo:\n\n- Structures: **erosion** (a finished world loses pieces one by one, each removal a falling note, until only the essential piece remains); **two worlds** side by side trading pieces across a gap until they join; **a year in four seasons** on one fixed world, the palette keyframes carrying the story.\n- Openings: **mid-construction** (a busy half-built world, many pieces already dropping); **from above** (a top-down map that tilts down into isometric); **the full world first**, then a push into one tile where the story lives.\n- Endings: **a close-up on one final piece** landing, no pull-back; **the world packed away** (pieces fly up and stack into a box); **daylight** (dawn floods the world and the music resolves on the first sunlit facet).\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n",
+  "published_demo_verbatim": "# Low-poly Isometric Island — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *The Island That Grew* (53 s) · `lowpoly-island.mp4` · source in [`demo/`](demo/)\n\n\n## Story & structure\n\nAn empty sea with only a buoy that knows one note; tiles, trees and houses rise from the sea one by one, each landing with a note, so the island and its song are written together — until at night the boat that went out cannot find its way home, and the last \"note\" is a lighthouse.\n\nWe read the brief as: **a small world that grows, lives through a day, and meets one problem that the final piece solves** — one subject (an island), one goal (to become a home), one turn (night falls, the boat is lost). In the old guide this was offered as the way to adapt any topic; it is only this film's shape.\n\nEmotional arc (53 s): emptiness → first note → accelerating joy of building → a lived-in day → dusk warmth → silent night with one thing missing → the final piece ignites (climax) → pull back to scale, with an echo of the opening.\n\nNative powers spent: procedural growth (the whole first act), the orthographic gaze (the final ×25 zoom), turntable (the growth shot), flat shading × light (the day time-lapse), emissive blocks (windows at dusk, the beam at night).\n\n**\"Building is composing\", as the demo paid it off:** every growth event is exported from the page with a MIDI note, and the score's melody voice is synthesized from those events. The lighthouse beam turns once every 12 beats and passes one ring cell per beat; the eight houses standing on those cells light up and chime as it passes, so the notes laid down in a shuffled build order are replayed in **spatial order** as the complete theme. The second ring around the centre cell has 12 cells at exactly 30° steps, which made this beat-synced sweep possible.\n\n## Shots\n\n| Beat | Camera | Why |\n|---|---|---|\n| Opening | Close ortho (frustum 7.5) on one lonely object, empty faceted sea, sky band at the top | Give the viewer nothing to look at; the first tile then becomes an event |\n| Growth | Turntable (azimuth +45° over ~5 s) with a slow zoom-out, **intercut** on beats with close-ups: a peak rising with a splash (elevation 23°, frustum 5.2), floors stacking (26°, 6), dock planks and the boat drop (27°, 6.6) | Wide shots show the shape growing; close-ups sell the bounce and the splash |\n| Day | Medium on the village, sun sweeping 100° in 2.5 s (time-lapse shadows) | Light is the time machine |\n| Departure | Side angle computed from the dock direction, camera trails the boat | The boat must move across the frame, not toward the lens |\n| Dusk | Fixed 3/4 wide, slow push, windows light one per eighth note | Let the lights be the only motion |\n| Night | Very wide, elevation 21°, island lower left, one tiny light far out in the dark | Negative space = danger |\n| Climax | High angle (50°) turning at 0.22× the beam speed, then easing down to 25° so the starry sky \"rises\" | You must see the beam sweep over every house; then the sky opens up |\n| Ending | Pure orthographic zoom ×25; an echo object far away in the lower right | Scale reveal and echo |\n\nCamera settings used: azimuth 45° by default, elevation **30°** (build), **33–35°** (day detail), **20–25°** (night — a lower angle widens the sky band so stars show), **50°** (top-down-ish when the beam sweeps). Frustum height 5–7 for close-ups, 12–16 for the whole island, up to 420 for the final scale reveal.\n\n## Score structure\n\n- **Event-driven**: page `EV` entries carry `note`; `music/score.py` synthesizes every one at its exact time (rise → marimba, pop → kalimba, floor → woodblock, roof → kalimba+marimba = the melody, window → soft kalimba, ring → rising marimba, beamhit → kalimba lead + marimba octave + bell shimmer). Underneath: ambient pad, a gentle marimba ostinato and shaker/soft kick only in the day and climax sections. **96 BPM, D major pentatonic feel.** No piano, no strings.\n- **One note as a motif**: a buoy bell on D5 opens the film (\"the only note the sea knows\") and a distant bell plays the same note at the end.\n- **Silence**: the night section drops to a low pad drone, waves and crickets; the music bus is digital zero for the last half-beat before the climax downbeat.\n- Growth scheduled on the 16th grid: tiles on halves → quarters → eighths.\n- The boat's answering bell sits in a rest of the melody, filling the gap when the beam finds it.\n- **Foley** (`mix.py`): as in STYLE.md §7, plus gulls by day (downward-gliding FM chirps), windmill creak, crickets from dusk; the dock plank knock and lighthouse-ring stone thunk, glass tink for the lamp room, whump + hum on ignition. Floors: second knock 0.21 s after the first.\n- **Voice**: Kokoro `af_sky` (clear, gentle female), speed 0.86–0.92, 5 short lines. \"Sea\" was heard as \"C\" in a film about notes, so the narration says \"ocean\".\n- **Mix**: voice compressed, ~10 dB over the music; music ducked −8 dB under the voice; −14 LUFS; grain 0.\n\n## Palette & props\n\n- **Terrain heights**: sand 0.36–0.42, grass 0.74–0.9, hills 1.1–1.4, rock peak 1.95; top cap 0.16 thick, side column sunk 0.1 below it; 1.5 % gap between tiles; lightness jitter ±4 %; roughness .88.\n- **Props**: box houses 0.92 wide, 0.62 per floor, gable roof prism (overhang 0.08) with wall-coloured gable ends; windows = small quads with their own emissive material per house; cone pines (6 sides), icosahedron (detail 0) broadleaf trees, 3-sided-cone palm fronds; windmill (6-sided tapered tower, 4 blades); dock planks on posts; a boat from a pinched box hull + triangle sail; lighthouse = 4 tapered 8-sided rings alternating white/red + dark gallery + emissive glass + red cone cap. Three gulls circle; chimney smoke; the windmill spins up on the \"island complete\" chord.\n- **Palette (sRGB)**: sand top `#f3dfab` / side `#e2c68e`; grass `#93c96c`, `#7fbd62`; earth side `#c99c6e`; rock `#b4b8bd` / `#8f949c`; walls `#fbf3e6 #f5c2b0 #b5dccb #a9cbe8 #f7df8f #e9c9e6`; roofs `#d9644a #4f7fb8 #e0874f #6a5a8e #3f8f86`; pines `#3f8a5a #4f9c63`; leaves `#7fc36a #9ad06f`; warm windows `#ffc676`; lighthouse `#f6f2ea` / `#d9544a`.\n- **Day/night keyframes** (zenith / horizon / deep sea / shallow / sun): dawn `#9fb6cf / #f3d2c4 / #4f8ea3 / #8fc9c4`; day `#88c8e8 / #eaf5f2 / #38a5bc / #86e2d4` sun 2.7; dusk `#6f6fa8 / #ffa888 / #5a6a9e / #b08aa6` sun `#ff9a68` elevation 8°; night `#12163a / #4a4478 / #23264a / #363a66`, moon `#a9b0e8` 0.9. Night sea darker near the camera and brightening toward the sky band.\n- **Sea**: 220×220 plane, 200×200 segments, four summed sines (amplitude ≈ 0.2), roughness 0.55; coarse 5000-unit plane 0.55 below; lagoon map a 512² canvas of soft blobs where tiles have risen; surf ring 0.99–1.12 r, opacity ≈ 0.32.\n- **Arrival numbers**: rise 0.5 s cubic ease, overshoot `sin(13 s)·e^(−7 s)·0.18`, hex splash ring + 14 droplets 0.12 s before it settles. Drop: 2.4 units in 0.22 s (ease-in), bounce `|sin(15 s)|·e^(−9 s)·0.22`, squash `1 − 0.16·e^(−12 s)·cos(26 s)` on Y, volume preserved. Pop: `1 − e^(−9 s)·cos(17 s)`.\n- **Post**: GTAO radius 0.7, scale 1.5; tilt-shift max radius 3 px at the frame edges; bloom threshold 0.95, strength 0.22 day / 0.5 night; grade sat 1.04–1.1, soft contrast, small blue lift at night; render 3840×2160.\n- **Lighthouse beam**: camera-facing ribbon, halo 2.4× wider at 0.32 strength, tilted 7° down so it meets the sea far away; water lit by an angular band around the beam direction plus per-facet sparkles. Beam: one turn every 12 beats.\n- **Subtitles as built**: Quicksand 600, 44 px, `#fffdf8`, navy drop shadow (blur 14), centred 118 px above the bottom; the hex icon (top + two side faces) is dawn pink, day grass, dusk orange, night window-yellow. Shown from 0.05 s before the line.\n- **Title**: Josefin Sans 600, all caps, 78 px, 16 px tracking; letters rise 55 ms apart from under a thin water line; 300-weight lowercase sub-line (\"a low-poly island film\").\n\n## End card\n\nThe night scale-reveal frame, darkened; the same title block (static), hex icon, `LOW-POLY ISLAND · LEMO-OPUSCAR`, `LemoLab × Claude Opus 5.5`, credits, laid out so the tiny lit island stays visible in a gap between the text blocks. The \"LemoLab × Claude Opus 5.5\" sign-off (and the LEMO-OPUSCAR line) belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Build notes\n\n```\nstyles/lowpoly-island/demo/\n  story.js   timeline (96 BPM grid), VO, chords, day/night keyframes, shots\n  world.js   hex layout, all props, growth schedule → EV (with notes), per-frame animation\n  sea.js     faceted wave shader, shallow-lagoon map, beam-lit water\n  post.js    ortho post: GTAO → sky/haze + stars → tilt-shift → bloom → grade\n  main.js    renderer, lights, cameras per shot, HUD (title, subtitles, end card), EV export\n  music/score.py   event-driven score (+ check.py: librosa onset/pitch check vs events)\n  mix.py     foley + ambience + voice + ducking     subs.py  subtitle cues\n  build.sh   one-command rebuild\n```\n\n1. `node core/render/still.mjs styles/lowpoly-island/demo --range 0.5:52.5:1` + `core/render/sheet.py` — overview sheets, iterate.\n2. `core/tts/tts.py lines.json voices` → `core/tts/asr_check.py` until all OK.\n3. `node core/render/events.mjs styles/lowpoly-island/demo` → `music/score.py` → `music/check.py` → `mix.py`.\n4. `node core/render/video.mjs styles/lowpoly-island/demo --fps 24 --workers 3` (1272 frames, 2× SSAA + GTAO).\n5. `sh core/render/mux.sh out/video24.mp4 mix.wav lowpoly-island.mp4 24 0`. Or just `sh demo/build.sh`.\n\nPitfalls tied to this demo's props:\n\n- An invisible glow sprite became a black parallelogram floating on the sea in the GTAO pass.\n- The boat was 21 units out — off-screen when the beam found it. We derived the boat's position from the beam's angular speed so the beam finds it on a chosen beat (a rest in the melody, so the boat's answering bell fills the gap).\n- Shadows on the sea at low sun made a long dark stain; the sea receives no shadows.\n",
+  "canonical_scene_order": [
+    {
+      "id": "grow",
+      "t0": 0,
+      "t1": 10.625,
+      "world": null,
+      "visual_prompt_source_description": "Lonely buoy in empty faceted sea; one D5 bell, then tiles rise from6.25s with splash and notes; ortho turntable slow pullout.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "v1",
+        "v2"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lowpoly-island/frames/f-0006.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Lonely buoy in empty faceted sea; one D5 bell, then tiles rise from6.25s with splash and notes; ortho turntable slow pullout."
+    },
+    {
+      "id": "rock",
+      "t0": 10.625,
+      "t1": 12.5,
+      "world": null,
+      "visual_prompt_source_description": "Low-elevation tight close-up of central rock peak breaching sea with splash.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lowpoly-island/frames/f-0012.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Low-elevation tight close-up of central rock peak breaching sea with splash."
+    },
+    {
+      "id": "grow2",
+      "t0": 12.5,
+      "t1": 13.75,
+      "world": null,
+      "visual_prompt_source_description": "Return to whole island turntable, growing tile footprint.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lowpoly-island/frames/f-0014.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Return to whole island turntable, growing tile footprint."
+    },
+    {
+      "id": "trees",
+      "t0": 13.75,
+      "t1": 16.25,
+      "world": null,
+      "visual_prompt_source_description": "Medium trees pop at exact musical events, cone andicosahedron foliage.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lowpoly-island/frames/f-0016.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Medium trees pop at exact musical events, cone andicosahedron foliage."
+    },
+    {
+      "id": "houses",
+      "t0": 16.25,
+      "t1": 18.75,
+      "world": null,
+      "visual_prompt_source_description": "Near view floors and prism roofs drop, bounce and settle, each note building melody.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lowpoly-island/frames/f-0018.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Near view floors and prism roofs drop, bounce and settle, each note building melody."
+    },
+    {
+      "id": "details",
+      "t0": 18.75,
+      "t1": 21.25,
+      "world": null,
+      "visual_prompt_source_description": "Windmill, dock planks, boat dropped into water; close views sell construction.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lowpoly-island/frames/f-0020.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Windmill, dock planks, boat dropped into water; close views sell construction."
+    },
+    {
+      "id": "square",
+      "t0": 21.25,
+      "t1": 23.75,
+      "world": null,
+      "visual_prompt_source_description": "Village in day; actual directional sun sweeps100degrees in2.5s, shadow time-lapse.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lowpoly-island/frames/f-0023.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Village in day; actual directional sun sweeps100degrees in2.5s, shadow time-lapse."
+    },
+    {
+      "id": "dock",
+      "t0": 23.75,
+      "t1": 26.25,
+      "world": null,
+      "visual_prompt_source_description": "Side camera trails boat departing across frame from dock.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lowpoly-island/frames/f-0026.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Side camera trails boat departing across frame from dock."
+    },
+    {
+      "id": "dusk",
+      "t0": 26.25,
+      "t1": 31.25,
+      "world": null,
+      "visual_prompt_source_description": "Fixed3/4 wide with slow push; warm windows light on eighths as sky warms.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "v3"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lowpoly-island/frames/f-0029.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Fixed3/4 wide with slow push; warm windows light on eighths as sky warms."
+    },
+    {
+      "id": "lost",
+      "t0": 31.25,
+      "t1": 33.75,
+      "world": null,
+      "visual_prompt_source_description": "Very wide low-elevation night; tiny boat light far away, island lower left, negative space and missing note.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "v4"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lowpoly-island/frames/f-0033.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Very wide low-elevation night; tiny boat light far away, island lower left, negative space and missing note."
+    },
+    {
+      "id": "tower",
+      "t0": 33.75,
+      "t1": 36.25,
+      "world": null,
+      "visual_prompt_source_description": "Final lighthouse rings rise at33.75s, lamp-room glass and cone.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lowpoly-island/frames/f-0036.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Final lighthouse rings rise at33.75s, lamp-room glass and cone."
+    },
+    {
+      "id": "beam",
+      "t0": 36.25,
+      "t1": 53,
+      "world": null,
+      "visual_prompt_source_description": "Ignite36.25s; high camera sees beam replay houses in spatial order, boat answering bell at39.375; home/docked41.25/42.5; pure25× zoom to tiny island with distant buoy echo, end card48.75.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "v5"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lowpoly-island/frames/f-0045.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Ignite36.25s; high camera sees beam replay houses in spatial order, boat answering bell at39.375; home/docked41.25/42.5; pure25× zoom to tiny island with distant buoy echo, end card48.75."
+    }
+  ],
+  "narration": [
+    {
+      "id": "v1",
+      "t0": 3.7,
+      "duration_s_original_voice": 2.406,
+      "tts_text_verbatim": "Once, the ocean knew only one note.",
+      "speaker": null,
+      "voice": "af_sky",
+      "tts_speed": 0.9,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v1",
+        "text": "Once, the ocean knew only one note.",
+        "voice": "af_sky",
+        "speed": 0.9
+      }
+    },
+    {
+      "id": "v2",
+      "t0": 7,
+      "duration_s_original_voice": 2.102,
+      "tts_text_verbatim": "Then, the ground began to sing.",
+      "speaker": null,
+      "voice": "af_sky",
+      "tts_speed": 0.92,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v2",
+        "text": "Then, the ground began to sing.",
+        "voice": "af_sky",
+        "speed": 0.92
+      }
+    },
+    {
+      "id": "v3",
+      "t0": 26.5,
+      "duration_s_original_voice": 2.388,
+      "tts_text_verbatim": "By evening, every house knew its part.",
+      "speaker": null,
+      "voice": "af_sky",
+      "tts_speed": 0.92,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v3",
+        "text": "By evening, every house knew its part.",
+        "voice": "af_sky",
+        "speed": 0.92
+      }
+    },
+    {
+      "id": "v4",
+      "t0": 31.25,
+      "duration_s_original_voice": 1.92,
+      "tts_text_verbatim": "But one note was still missing.",
+      "speaker": null,
+      "voice": "af_sky",
+      "tts_speed": 0.86,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v4",
+        "text": "But one note was still missing.",
+        "voice": "af_sky",
+        "speed": 0.86
+      }
+    },
+    {
+      "id": "v5",
+      "t0": 44,
+      "duration_s_original_voice": 3.034,
+      "tts_text_verbatim": "Far away, another island hears its first note.",
+      "speaker": null,
+      "voice": "af_sky",
+      "tts_speed": 0.88,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v5",
+        "text": "Far away, another island hears its first note.",
+        "voice": "af_sky",
+        "speed": 0.88
+      }
+    }
+  ],
+  "narration_source_path": "styles/lowpoly-island/demo/lines.json",
+  "published_timeline_extracted": {
+    "DUR": 53,
+    "BPM": 96,
+    "BEAT": 0.625,
+    "BAR": 2.5,
+    "SHOTS": [
+      [
+        0,
+        10.625,
+        "grow"
+      ],
+      [
+        10.625,
+        12.5,
+        "rock"
+      ],
+      [
+        12.5,
+        13.75,
+        "grow2"
+      ],
+      [
+        13.75,
+        16.25,
+        "trees"
+      ],
+      [
+        16.25,
+        18.75,
+        "houses"
+      ],
+      [
+        18.75,
+        21.25,
+        "details"
+      ],
+      [
+        21.25,
+        23.75,
+        "square"
+      ],
+      [
+        23.75,
+        26.25,
+        "dock"
+      ],
+      [
+        26.25,
+        31.25,
+        "dusk"
+      ],
+      [
+        31.25,
+        33.75,
+        "lost"
+      ],
+      [
+        33.75,
+        36.25,
+        "tower"
+      ],
+      [
+        36.25,
+        53,
+        "beam"
+      ]
+    ],
+    "VO": [
+      {
+        "id": "v1",
+        "t": 3.7,
+        "text": "Once, the ocean knew only one note."
+      },
+      {
+        "id": "v2",
+        "t": 7,
+        "text": "Then, the ground began to sing."
+      },
+      {
+        "id": "v3",
+        "t": 26.5,
+        "text": "By evening, every house knew its part."
+      },
+      {
+        "id": "v4",
+        "t": 31.25,
+        "text": "But one note was still missing."
+      },
+      {
+        "id": "v5",
+        "t": 44,
+        "text": "Far away, another island hears its first note."
+      }
+    ],
+    "T": {
+      "bell1": 0.25,
+      "bell2": 2.9,
+      "title": [
+        0.6,
+        3.6
+      ],
+      "first": 6.25,
+      "tiles": 8.75,
+      "trees": 13.75,
+      "houses": 16.25,
+      "details": 18.75,
+      "day": 21.25,
+      "dock": 23.75,
+      "dusk": 26.25,
+      "night0": 28.75,
+      "night": 31.25,
+      "rise": 33.75,
+      "ignite": 36.25,
+      "found": 39.375,
+      "home": 41.25,
+      "docked": 42.5,
+      "far": 43.75,
+      "bellFar": 47.5,
+      "end": 48.75
+    },
+    "SKY": [
+      [
+        0,
+        "#9fb6cf",
+        "#f3d2c4",
+        "#4f8ea3",
+        "#8fc9c4",
+        "#ffd9bf",
+        1.3,
+        "#dfe6f2",
+        "#b89a8a",
+        1.05,
+        12,
+        200,
+        0
+      ],
+      [
+        6,
+        "#a9c4dc",
+        "#f6dccd",
+        "#4f93a8",
+        "#93d0c8",
+        "#ffe2c8",
+        1.7,
+        "#e3ecf6",
+        "#bfa590",
+        1.1,
+        22,
+        190,
+        0
+      ],
+      [
+        14,
+        "#8fcbe6",
+        "#e9f3f0",
+        "#3aa3b8",
+        "#86e0d2",
+        "#fff4e2",
+        2.5,
+        "#eef6fb",
+        "#c2b59a",
+        1.15,
+        48,
+        150,
+        0
+      ],
+      [
+        21.25,
+        "#88c8e8",
+        "#eaf5f2",
+        "#38a5bc",
+        "#86e2d4",
+        "#fff6e8",
+        2.7,
+        "#eef6fb",
+        "#c6b89c",
+        1.15,
+        52,
+        175,
+        0
+      ],
+      [
+        23.75,
+        "#8cc4e4",
+        "#f0f2e6",
+        "#3aa0ba",
+        "#8aded0",
+        "#fff0d8",
+        2.6,
+        "#eff3f4",
+        "#c6b89c",
+        1.12,
+        40,
+        95,
+        0
+      ],
+      [
+        26,
+        "#9ab8d8",
+        "#ffd9b0",
+        "#4f8fb0",
+        "#9ed6c8",
+        "#ffc98e",
+        2.2,
+        "#f3e2d4",
+        "#c89a80",
+        1,
+        22,
+        120,
+        0
+      ],
+      [
+        28,
+        "#6f6fa8",
+        "#ffa888",
+        "#5a6a9e",
+        "#b08aa6",
+        "#ff9a68",
+        1.5,
+        "#d8b8c8",
+        "#a07a80",
+        0.8,
+        8,
+        105,
+        0.15
+      ],
+      [
+        30,
+        "#2a2e5e",
+        "#8a6a9c",
+        "#2e3160",
+        "#474a80",
+        "#ff8a70",
+        0.35,
+        "#7a80b8",
+        "#5a5070",
+        0.55,
+        1,
+        100,
+        0.6
+      ],
+      [
+        31.25,
+        "#12163a",
+        "#4a4478",
+        "#23264a",
+        "#363a66",
+        "#a9b0e8",
+        0.9,
+        "#5c5ea8",
+        "#2a2640",
+        0.55,
+        30,
+        300,
+        1
+      ],
+      [
+        53,
+        "#11153a",
+        "#4a4478",
+        "#22254a",
+        "#353965",
+        "#a9b0e8",
+        0.9,
+        "#5c5ea8",
+        "#2a2640",
+        0.55,
+        30,
+        300,
+        1
+      ]
+    ]
+  },
+  "on_screen_text_inventory": {
+    "published_subtitle_file_verbatim": "1\n00:00:03,650 --> 00:00:06,706\nOnce, the ocean knew only one note.\n\n2\n00:00:06,950 --> 00:00:09,702\nThen, the ground began to sing.\n\n3\n00:00:26,450 --> 00:00:29,488\nBy evening, every house knew its part.\n\n4\n00:00:31,200 --> 00:00:33,770\nBut one note was still missing.\n\n5\n00:00:43,950 --> 00:00:47,634\nFar away, another island hears its first note.\n",
+    "cues_original_json": [],
+    "timeline_text_fields": {},
+    "titles_subtitles_palette_verbatim": "",
+    "palette_props_verbatim": "- **Terrain heights**: sand 0.36–0.42, grass 0.74–0.9, hills 1.1–1.4, rock peak 1.95; top cap 0.16 thick, side column sunk 0.1 below it; 1.5 % gap between tiles; lightness jitter ±4 %; roughness .88.\n- **Props**: box houses 0.92 wide, 0.62 per floor, gable roof prism (overhang 0.08) with wall-coloured gable ends; windows = small quads with their own emissive material per house; cone pines (6 sides), icosahedron (detail 0) broadleaf trees, 3-sided-cone palm fronds; windmill (6-sided tapered tower, 4 blades); dock planks on posts; a boat from a pinched box hull + triangle sail; lighthouse = 4 tapered 8-sided rings alternating white/red + dark gallery + emissive glass + red cone cap. Three gulls circle; chimney smoke; the windmill spins up on the \"island complete\" chord.\n- **Palette (sRGB)**: sand top `#f3dfab` / side `#e2c68e`; grass `#93c96c`, `#7fbd62`; earth side `#c99c6e`; rock `#b4b8bd` / `#8f949c`; walls `#fbf3e6 #f5c2b0 #b5dccb #a9cbe8 #f7df8f #e9c9e6`; roofs `#d9644a #4f7fb8 #e0874f #6a5a8e #3f8f86`; pines `#3f8a5a #4f9c63`; leaves `#7fc36a #9ad06f`; warm windows `#ffc676`; lighthouse `#f6f2ea` / `#d9544a`.\n- **Day/night keyframes** (zenith / horizon / deep sea / shallow / sun): dawn `#9fb6cf / #f3d2c4 / #4f8ea3 / #8fc9c4`; day `#88c8e8 / #eaf5f2 / #38a5bc / #86e2d4` sun 2.7; dusk `#6f6fa8 / #ffa888 / #5a6a9e / #b08aa6` sun `#ff9a68` elevation 8°; night `#12163a / #4a4478 / #23264a / #363a66`, moon `#a9b0e8` 0.9. Night sea darker near the camera and brightening toward the sky band.\n- **Sea**: 220×220 plane, 200×200 segments, four summed sines (amplitude ≈ 0.2), roughness 0.55; coarse 5000-unit plane 0.55 below; lagoon map a 512² canvas of soft blobs where tiles have risen; surf ring 0.99–1.12 r, opacity ≈ 0.32.\n- **Arrival numbers**: rise 0.5 s cubic ease, overshoot `sin(13 s)·e^(−7 s)·0.18`, hex splash ring + 14 droplets 0.12 s before it settles. Drop: 2.4 units in 0.22 s (ease-in), bounce `|sin(15 s)|·e^(−9 s)·0.22`, squash `1 − 0.16·e^(−12 s)·cos(26 s)` on Y, volume preserved. Pop: `1 − e^(−9 s)·cos(17 s)`.\n- **Post**: GTAO radius 0.7, scale 1.5; tilt-shift max radius 3 px at the frame edges; bloom threshold 0.95, strength 0.22 day / 0.5 night; grade sat 1.04–1.1, soft contrast, small blue lift at night; render 3840×2160.\n- **Lighthouse beam**: camera-facing ribbon, halo 2.4× wider at 0.32 strength, tilted 7° down so it meets the sea far away; water lit by an angular band around the beam direction plus per-facet sparkles. Beam: one turn every 12 beats.\n- **Subtitles as built**: Quicksand 600, 44 px, `#fffdf8`, navy drop shadow (blur 14), centred 118 px above the bottom; the hex icon (top + two side faces) is dawn pink, day grass, dusk orange, night window-yellow. Shown from 0.05 s before the line.\n- **Title**: Josefin Sans 600, all caps, 78 px, 16 px tracking; letters rise 55 ms apart from under a thin water line; 300-weight lowercase sub-line (\"a low-poly island film\").",
+    "end_card_verbatim": "The night scale-reveal frame, darkened; the same title block (static), hex icon, `LOW-POLY ISLAND · LEMO-OPUSCAR`, `LemoLab × Claude Opus 5.5`, credits, laid out so the tiny lit island stays visible in a gap between the text blocks. The \"LemoLab × Claude Opus 5.5\" sign-off (and the LEMO-OPUSCAR line) belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.",
+    "completion_note": "Exact visible typography/content must be checked in original video; this inventory preserves all published cue/title/prop specifications. Model authorship credit is a reference fact, never new-output attribution.",
+    "original_annotation_literal_sources": []
+  },
+  "sound_recreation": {
+    "instruction": "Generate new voice and music; original mix/track reuse is not permitted by latest user instruction. Preserve full words, cadence windows, BPM, musical form, silence and picture-synchronous hits.",
+    "published_score_sound_spec_verbatim": "- **Event-driven**: page `EV` entries carry `note`; `music/score.py` synthesizes every one at its exact time (rise → marimba, pop → kalimba, floor → woodblock, roof → kalimba+marimba = the melody, window → soft kalimba, ring → rising marimba, beamhit → kalimba lead + marimba octave + bell shimmer). Underneath: ambient pad, a gentle marimba ostinato and shaker/soft kick only in the day and climax sections. **96 BPM, D major pentatonic feel.** No piano, no strings.\n- **One note as a motif**: a buoy bell on D5 opens the film (\"the only note the sea knows\") and a distant bell plays the same note at the end.\n- **Silence**: the night section drops to a low pad drone, waves and crickets; the music bus is digital zero for the last half-beat before the climax downbeat.\n- Growth scheduled on the 16th grid: tiles on halves → quarters → eighths.\n- The boat's answering bell sits in a rest of the melody, filling the gap when the beam finds it.\n- **Foley** (`mix.py`): as in STYLE.md §7, plus gulls by day (downward-gliding FM chirps), windmill creak, crickets from dusk; the dock plank knock and lighthouse-ring stone thunk, glass tink for the lamp room, whump + hum on ignition. Floors: second knock 0.21 s after the first.\n- **Voice**: Kokoro `af_sky` (clear, gentle female), speed 0.86–0.92, 5 short lines. \"Sea\" was heard as \"C\" in a film about notes, so the narration says \"ocean\".\n- **Mix**: voice compressed, ~10 dB over the music; music ducked −8 dB under the voice; −14 LUFS; grain 0.",
+    "original_voice_records": [
+      {
+        "id": "v1",
+        "text": "Once, the ocean knew only one note.",
+        "voice": "af_sky",
+        "speed": 0.9
+      },
+      {
+        "id": "v2",
+        "text": "Then, the ground began to sing.",
+        "voice": "af_sky",
+        "speed": 0.92
+      },
+      {
+        "id": "v3",
+        "text": "By evening, every house knew its part.",
+        "voice": "af_sky",
+        "speed": 0.92
+      },
+      {
+        "id": "v4",
+        "text": "But one note was still missing.",
+        "voice": "af_sky",
+        "speed": 0.86
+      },
+      {
+        "id": "v5",
+        "text": "Far away, another island hears its first note.",
+        "voice": "af_sky",
+        "speed": 0.88
+      }
+    ],
+    "original_voice_durations_s": {
+      "v1": 2.406,
+      "v2": 2.102,
+      "v3": 2.388,
+      "v4": 1.92,
+      "v5": 3.034
+    }
+  },
+  "engine_and_build": {
+    "required_engine_spec_verbatim": "In `demo/` (three.js): `world.js` (hex layout, primitive props, growth schedule → events with notes, arrival curves), `sea.js` (faceted wave shader, shallow map, beam-lit water), `post.js` (ortho post: GTAO → sky/haze + stars → tilt-shift → bloom → grade), `story.js` (beat grid, time-of-day keyframes, shots), `main.js` (renderer, lights, per-shot cameras, HUD, event export), `music/score.py` (event-driven score; `music/check.py` compares audio onsets and pitches with the events), `mix.py` (foley, beds, ducking). File map and build steps: DEMO.md.",
+    "published_build_notes_verbatim": "```\nstyles/lowpoly-island/demo/\n  story.js   timeline (96 BPM grid), VO, chords, day/night keyframes, shots\n  world.js   hex layout, all props, growth schedule → EV (with notes), per-frame animation\n  sea.js     faceted wave shader, shallow-lagoon map, beam-lit water\n  post.js    ortho post: GTAO → sky/haze + stars → tilt-shift → bloom → grade\n  main.js    renderer, lights, cameras per shot, HUD (title, subtitles, end card), EV export\n  music/score.py   event-driven score (+ check.py: librosa onset/pitch check vs events)\n  mix.py     foley + ambience + voice + ducking     subs.py  subtitle cues\n  build.sh   one-command rebuild\n```\n\n1. `node core/render/still.mjs styles/lowpoly-island/demo --range 0.5:52.5:1` + `core/render/sheet.py` — overview sheets, iterate.\n2. `core/tts/tts.py lines.json voices` → `core/tts/asr_check.py` until all OK.\n3. `node core/render/events.mjs styles/lowpoly-island/demo` → `music/score.py` → `music/check.py` → `mix.py`.\n4. `node core/render/video.mjs styles/lowpoly-island/demo --fps 24 --workers 3` (1272 frames, 2× SSAA + GTAO).\n5. `sh core/render/mux.sh out/video24.mp4 mix.wav lowpoly-island.mp4 24 0`. Or just `sh demo/build.sh`.\n\nPitfalls tied to this demo's props:\n\n- An invisible glow sprite became a black parallelogram floating on the sea in the GTAO pass.\n- The boat was 21 units out — off-screen when the beam found it. We derived the boat's position from the beam's angular speed so the beam finds it on a chosen beat (a rest in the melody, so the boat's answering bell fills the gap).\n- Shadows on the sea at low sun made a long dark stain; the sea receives no shadows.",
+    "fetch_build_specs": [
+      {
+        "path": "styles/lowpoly-island/demo/build.sh",
+        "sha256": "7123dac5ef08e1dc316b5cb2294e9de41609ccd790fca469f2092b29998a7487",
+        "text_verbatim": "#!/bin/sh\n# 从零重现成片：sh styles/lowpoly-island/demo/build.sh（任意目录运行均可）\nset -e\ncd \"$(dirname \"$0\")/../../..\"\nPY=.venv/bin/python; D=styles/lowpoly-island/demo; S=styles/lowpoly-island\n$PY core/tts/tts.py $D/lines.json $D/voices                 # 1. Kokoro 配音（af_sky）\n$PY core/tts/asr_check.py $D/lines.json $D/voices           # 2. whisper 逐句校对\nnode core/render/events.mjs $D                              # 3. 时间线 → events.json（生长事件带音高 = 旋律声部）\n$PY $D/music/score.py                                       # 4. 原创配乐：旋律由生长事件逐个合成\n$PY $D/music/check.py                                       #    librosa 核对：关键音起音 / 音高 vs 画面事件、真静音、频段能量\n$PY $D/mix.py                                               # 5. 材质拟音 + 环境床 + 旁白 + 配乐闪避 → mix.wav\n$PY $D/subs.py && $PY core/render/srt.py $D/out/cues.json $S/lowpoly-island.srt   # 6. 字幕\nnode core/render/video.mjs $D --fps 24 --workers 3 --out $D/out/video24.mp4        # 7. 逐帧渲染（2× 超采样 + GTAO）\nsh core/render/mux.sh $D/out/video24.mp4 $D/mix.wav $S/lowpoly-island.mp4 24 0     # 8. 合成 + −14 LUFS，无颗粒\n"
+      }
+    ],
+    "local_original_asset_snapshot_inventory": [
+      {
+        "path": "styles/lowpoly-island/demo/events.json",
+        "sha256": "23dcc9e4ab5a38ffd942186b3e31440896d88141358241b01568743e15af2fcc",
+        "bytes": 5887
+      },
+      {
+        "path": "styles/lowpoly-island/demo/lines.json",
+        "sha256": "d473758c41e705f2ee0a28f43b4fa36dca2bb5ef7241629948afd1498561fd3e",
+        "bytes": 488
+      },
+      {
+        "path": "styles/lowpoly-island/demo/music/score.json",
+        "sha256": "34ffebe2cd2af8e739184c4ca2d806a592ebc95807e1ff75df313312b8f65622",
+        "bytes": 41586
+      },
+      {
+        "path": "styles/lowpoly-island/demo/music/check.json",
+        "sha256": "020dc1d35c7b1a825faf3199268660402ae2bc69d7338249e74a437b6c458439",
+        "bytes": 7068
+      }
+    ]
+  },
+  "evidence": {
+    "original_credits_verbatim": "The Island That Grew — Low-poly Isometric Island (Lemo-Opuscar)\n\n3D scene, animation, post-processing: original code (three.js, MIT) — no textures, no models, no images.\nMusic: original, synthesized in code (demo/music/score.py); melody generated from the film's own build events.\n  See demo/music/CREDITS_music.txt for details.\nSound effects & ambience: original, synthesized in code (demo/mix.py, core/audio/sfx.py).\nVoice: Kokoro TTS v1.0 (Apache-2.0), voice af_sky.\nFonts: Josefin Sans (Santiago Orozco) — SIL Open Font License 1.1; Quicksand (Andrew Paglinawan) — SIL Open Font License 1.1. Downloaded from Google Fonts into demo/fonts/.\nStyle references (studied for grammar only, nothing copied): Townscaper (Oskar Stålberg), Monument Valley (ustwo games).\n",
+    "source_urls": []
+  },
+  "matching_blockers": [
+    "The original conversation prompt is not published. The complete published style, script, timing and reference movie support the reconstruction."
+  ],
+  "visual_audit": {
+    "state": "complete-scene-and-key-event-coverage",
+    "reference_video_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/films/lowpoly-island.mp4",
+    "reference_video_sha256": "d5f2da94f3d8718801ed1381fe1dd593e2fbc51e53995ada27d5c2bf580b9c5b",
+    "coverage": [
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lowpoly-island/sheets/sheet-01.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lowpoly-island/sheets/sheet-02.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lowpoly-island/sheets/sheet-03.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lowpoly-island/sheets/sheet-04.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lowpoly-island/sheets/sheet-05.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "times": [
+          36.25,
+          39.375,
+          41.25,
+          42.5,
+          47.5
+        ],
+        "sheet": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/work/gptcar/matched-audit/event-frames/lowpoly-island/sheet.jpg"
+      }
+    ],
+    "reference_verified_visual_observations": [
+      "Begin with a lonely red/white buoy on a faceted sea; the first hexagonal tile rises at6.25s. Build sand/soil/grass tiers, central rock, many trees, multistorey houses with coloured roofs, palms, windmill, dock and boat through the original sequence of close views and turntable returns. Use true directional shadows, soft coast glow, flat facets and rising tiles with polygonal splashes. The boat departs before dusk; windows illuminate in musical order and the lost boat becomes a tiny distant light. Only then assemble the lighthouse and ignite its rotating volumetric beam, which replays the village melody and guides the boat home. Keep the25× pullback, distant new buoy and complete ending."
+    ],
+    "note": "All regular reference sheets were inspected across the complete film. Named supplementary frames cover important short actions and transitions. This is scene coverage, not a claim that every encoded frame was inspected."
+  }
+}

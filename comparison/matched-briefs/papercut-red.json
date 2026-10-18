@@ -1,0 +1,850 @@
+{
+  "slug": "papercut-red",
+  "original_title": "Nian Comes to Town",
+  "premise": "On New Year's Eve the beast Nian comes to town, and one girl's giant paper-cut lights up the village to scare it off.",
+  "published_delivery": {
+    "slug": "papercut-red",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/papercut-red.mp4",
+    "sha256": "2e6ce6b8fed550d584f54e5539646704102e9a6e6380b5571fee6be03cdea390",
+    "duration": 49.002,
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": "1176",
+    "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+    "frames": 49,
+    "sheets": 5
+  },
+  "production_format_source": "Full verbatim DEMO header below; measured published delivery above governs v2.",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "explanation": "No initial conversation/inputprompt transcript is published in inspected repository. STYLE.md is a verbatim published styleprompt; DEMO.md is published retrospective productiondocumentation. Shot prompts are source-informed reconstruction of finishedmovie, never a claimed identical originalchatprompt."
+  },
+  "published_style": {
+    "path": "outputs/gptcar/styles/papercut-red/STYLE.md",
+    "sha256": "65e317d83335e0cb34696b643e31ad9e46fb0bb93fd748c2e21d74358aea61ec",
+    "verbatim": "# Red Paper-cut — Style Prompt\n\n> Chinese window-flower paper-cuts brought to life: jointed red cut-outs on paper grounds, where the cut *is* the drawing and the holes are where the light gets in.\n> References (grammar only): folk window flowers of Shaanxi and Yuxian (sawtooth, crescent, cloud and swirl cuts, fold-symmetric rosettes, *yin* and *yang* cutting); the 1958–59 Shanghai Animation Film Studio cut-paper shorts (jointed figures, profile acting, paper layers in parallax). Copy no studio character, no named artist's work and no real motif sheet: generate every pattern from code, and never name the references in the film.\n\n## 1. Essence, and what it is not\n\nEvery visible thing is **a piece of paper that was cut with scissors** and laid flat on another sheet. There is no painting, no gradient shading, no outline stroke: detail, volume and expression come only from **what was cut away**. Red paper is the hero material; grounds are paper too (a light paper by day, a deep dyed paper by night). Characters are **jointed cut-outs** (head, torso, upper and lower limbs pinned at rivets) animated in hard 12 fps steps.\n\nNot shadow puppetry: no light behind a screen, no translucent dyed hide, no rods. Here the paper is **front-lit and opaque**; backlight is a special event you save for the moment that needs it. Not flat vector art (no strokes, no gradients), not a silhouette film (every shape's interior is cut).\n\n## 2. Materials & rendering\n\n- **Paper grain:** a neutral-grey texture in `soft-light` inside each piece (dye mottling, fibres, specks), then the piece's alpha restored with `destination-in`, so holes stay holes.\n- **Cut edge:** every silhouette is a polyline with a slight low-frequency wobble (hand-cut), a 1 px light rim upper-left and a dark rim lower-right (the cut face). Architecture and machines use straight segments + wobble, never smoothing.\n- **Paper thickness:** each piece casts a tight soft shadow on the layer below; stacked folded paper shows 2–6 offset darker edges.\n- **Figures: red block + yin lines.** Every figure piece gets an **inset contour** (a thin slit a few units inside the outline): the classic double outline, which also separates red-on-red overlaps (an arm over a coat).\n- **Folk cutting vocabulary** (`demo/motifs.js`): sawtooth rows (fur, grass, tiles, fringe), serrated edges, crescents (scales, quilting), swirls (joints), clouds, rosettes, plum, coin, tapered slits.\n- **No floating islands.** A closed ring cut would drop its centre out of real paper. Eyes are two crescents (upper and lower lid) that leave bridges, plus a pupil *hole*.\n- Faces never morph: expressions are **swappable face pieces** (smile, surprise, fear, determined, asleep).\n- **The rosette (团花)** is designed as one 45° wedge and mirrored 8× (D4); other folds give 2×, 4× or 6×. Alternate rings of *yang* cut (band cut away, red lines left) and *yin* cut (lines cut out of a red field). Fold seams leave faint crease lines: keep them, they are true to the craft.\n- **Light:** front-lit scenes use the paper as is. Night: `frame × lightmap` + warm pools, then **emissive** backlit pieces (light × paper transmission via `multiply`; holes at full light), a two-level bloom and optional rays. Keep bloom low enough that the pattern stays legible at the centre.\n- **Projected pattern:** a piece's hole mask, squashed onto the ground and added with `lighter`; on a character, masked by its layer alpha over a solid warm spot, so cut features still read as holes.\n\n## 3. Colour logic\n\n- **China red** (around `#d2201f`, range `#c8102e`–`#d7261e`) is the hero material. Depth and role are shown by **paper tones one step apart**, not by shading: near pieces one step brighter, far pieces one step darker, an antagonist or a heavy object one step deeper.\n- **Ground and hero must be different paper families.** If background and hero are both red, the silhouettes stop popping. At night, all background layers are one dark dyed family and only the pieces that matter to the story are red; by day, a light paper ground with red and pale-red layers.\n- **Gold foil** is an accent kept for one late moment (a sun, a title, a coin); never a second main colour.\n- Examples of ground families: indigo night papers (far layers lighter blue, near darker); a warm rice-paper day with pale-red far hills; a jade-green or black paper for a story that isn't festive. Choose from the topic.\n\n## 4. Type & subtitles\n\n- **Subtitles are a paper strip in the world**, e.g. a red banner (横批) darker than the picture's reds so cream text holds, serrated edges, swallow-tail ends; a sturdy OFL serif (e.g. Fraunces SemiBold) around 44 px, low, with a paper shadow. It drops in on two 12 fps steps, like a couplet being pasted. Hold ≥ max(1.8 s, speech + 0.7 s); never overlap.\n- **Titles** are cut-out letters (*yang*-cut, counters are real holes) popping in letter by letter on 12 fps steps, with sawtooth border strips and a seal cut by code.\n- Small credits may be printed ink on paper.\n\n## 5. Motion quality\n\n- **Characters step at 12 fps** (pose sampled at `floor(t·12)/12`); **camera, light, weather, flames and flying pieces move on ones** at 24 fps.\n- Rigs pin pieces at rivets (neck, shoulders, elbows, hips, knees, jaws, tails). Hard poses, tiny eases, 1-frame overshoots (\"pop\" = 1.15× for one step). Weight comes from **size and camera shake**.\n- In profile, a raised near arm crosses the face: keep hands forward of the face or let a prop cover them.\n- **Folding:** the flap is split into ~16 strips; each is compressed by cosθ and enlarged along the fold by `1 + 0.28·height` (fake perspective), darkened as it stands up, in a lighter back colour past 90°, with a growing shadow and a crease after. About half a second per fold, each on a hit.\n- **Cutting:** the pattern is revealed through a mask of circles along the scissor path; the offcut drops once the outer edge is passed; blades open and close on a subdivision of the beat; scraps flutter out and land.\n- **Unfolding:** successive unfolds a fraction of a second apart, each flap swinging from folded to flat with ease-out (the \"pa!\" snap), then a scale bump and warm flash on the accent.\n\n## 6. Camera grammar\n\nA vocabulary, not a route. Opening and ending come from the topic.\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Extreme close-up tracking the scissor tip | making; attention to craft | a beginning of work; a precise act; a signature |\n| Flat front view, locked | the cut-out as an emblem | a title; a statement; a family portrait |\n| Slow pan across paper layers (parallax) | a world laid out | a village, a route, a timeline |\n| Low wide, a shape standing up from the ground layer | scale, threat | a storm; a rival; a deadline arriving |\n| Top-down tabletop | the craft as plot | folding, cutting, assembling, sorting |\n| Push toward a lit piece, pull back to many | one act spreading | influence; a network lighting up |\n| Page turn / sheet peel | time or place changing | day to night; before and after; chapters |\n| Pull back to an object in a room | the film was a thing someone made | memory; a gift; a tradition |\n| Rotation around a rosette's centre | order, repetition | a cycle; a team |\n\nFraming: layers stay parallel to the screen; depth comes from parallax and paper tones, never from perspective. Transitions are paper actions (fold, page turn, peel, a sheet flying off, a cut through the frame); no dissolves.\n\n## 7. Sound palette\n\n- **Foley follows the material:** scissors = metallic shear sweep (2.5–9 kHz) + a short ring + a fibre crack; folds = swish + crease tap; unfold = sharp snap; heavy steps = *cardboard* thud, not flesh; paper peel; pasting = a palm pat; match strike, puff; firecrackers = dense clicks 20–60 ms apart with low booms.\n- **Instruments:** a bright Chinese chamber ensemble, not piano and strings and not the opera percussion of shadow puppetry: pipa (tremolo on long notes), zheng (`dan_tranh`: broken chords, glissandi, tremolo), erhu (glides), dizi (flute), sheng or yangqin colours, woodblock, small and big gong, frame drum. Pentatonic modes.\n- Options: one snip = one beat subdivision; a rising zheng run, one note per thing that appears; a frame-drum heartbeat for weight; one big gong saved for one accent; total silence for a held breath.\n- **Voice:** warm storyteller, few lines. Duck music ≈ 9 dB and foley ≈ 3 dB under the voice; keep impacts out of voice windows. Folk names may need an `asr` alias in `lines.json`.\n- Mix to −14 LUFS, **no film grain** (the paper fibres are the texture).\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **Fold – cut – unfold.** Fold a sheet 2/4/8 times; one cut becomes many. Put the unfold on a strong beat. *Fits content like:* one teacher, many students; a single design mass-produced; one seed becoming a field.\n- **Holes are light.** A cut-out lit from behind glows deep red, every hole glows, and the pattern is projected onto the world. *Fits content like:* an idea shining through a person; a lighthouse; a window at night in a story about home.\n- **Symmetry replicates.** A mirrored motif peels off and multiplies (rosette → window flowers → fireworks). *Fits content like:* a franchise; cell division; a song spreading through a crowd.\n- **Scraps have a future.** The bits that fall while cutting come back later (as snow, confetti, stars). *Fits content like:* recycling; leftover time; small failures that add up.\n- **Everything is one flat sheet.** Things share the same cuts, so a ridge can stand up and be a creature, or a wave become a road. *Fits content like:* a landscape that becomes a map; a factory that turns out to be one machine; a zoom out to the made object.\n- **Mirrored pair.** Two figures cut from one folded sheet. *Fits content like:* twins; a partnership; before/after of the same person.\n\n## 9. Pitfalls of the medium\n\n- **Red on red** reads as one blob → different ground family, near/far paper tones, inset contours for overlaps.\n- **Darkening a layer through the light map** also darkens what covers it → tint the layer itself (multiply + restore alpha).\n- **A flat cos-squashed flap reads as a sliding card**, not a fold → strips with fake perspective, darken as it stands up, show the back colour.\n- **Cut reveal shows the uncut stack through the holes** → stack thickness inside the \"uncut\" mask only; the cut part gets its own offset copies.\n- Scissors pointing backwards → the blade axis follows the direction of travel, the rivet a little behind the cutting point.\n- Blank frames between shots → overlap outgoing and incoming paper actions.\n- Engine traps (`put()` transforms, piece boxes, test pages) are in DEMO.md build notes.\n\n## 10. Engine\n\nIn `demo/`: `paper.js` (paper textures, piece builder: fill, cut, inset, edge, grain, shadows, transmission), `motifs.js` (folk pattern library), `rig.js` (2D affine rig helpers), `tuanhua.js` (8-fold rosette from one wedge × D4), `light.js` (night lightmap, backlit pieces, bloom, rays, masked projected light), `fold.js` (fold – cut – unfold sequence), `hud.js` (subtitle banner, cut-letter text); `?test=` pages draw model sheets from the real engine. A first test not in the demo: a bicycle from `paper.js` pieces (`sawRow` spokes), wheels riveted in `rig.js`, rolling on 12 fps steps.\n\n## 11. Variation space\n\nYou decide the structure, the cast (or none), the sets, the paper families, the opening, the ending, the camera path, the pacing and which native moves carry the story. All far from our demo:\n\n- Structures: **a year of twelve cuts** (a zodiac or calendar wheel, one wedge per month, rotating); **an assembly line** (a product built piece by piece from cut parts, each part a pattern); **a letter** (a folded message unfolds panel by panel, each panel a scene).\n- Openings: **a finished pattern** (a full rosette, then one piece falls out and walks away); **an empty ground** (a blank sheet, one fold crease appears); **a crowd of cut figures** already dancing, parallax full.\n- Endings: **refold** (the world folds back into a small square that is handed to someone); **scraps settle** (every offcut drifts down into a new pattern); **backlit only** (the lights go off except behind one cut piece, which projects the last image on the wall).\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n"
+  },
+  "published_demo": {
+    "path": "outputs/gptcar/styles/papercut-red/DEMO.md",
+    "sha256": "ab4cad26edebaafcd24ebcd47668bc58f0c89536a340e007dbc2b5179e8473ee",
+    "verbatim": "# Red Paper-cut — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *Nian Comes to Town* (49 s) · `papercut-red.mp4` · source in [`demo/`](demo/)\n\n\n## Story & structure\n\nNew Year's Eve: the monster Nian comes into the village and every house puts out its lights. A little girl folds a sheet of red paper three times and makes one cut; the unfolded rosette goes on her window, a candle is lit, eight cut lanterns fly to eight dark windows and the whole village lights up again; the scraps she cut off become firecrackers, and Nian runs from the red light and the noise. At dawn the camera pulls back: the whole film was one window flower pasted on a real window.\n\nThe brief this film was written to (and the rule it followed for itself): choose a story where **the craft of cutting paper is the plot**, use several native moves, and make one of them the *cause* of the ending, not decoration. Here the fold – cut – unfold is the cause: one lantern cut in the wedge = eight lanterns in the rosette = eight houses lit.\n\nHow the demo framed \"adapting any topic\": find the **one thing that gets cut** and make its *unfolded* form the answer (a product's silhouette folded into a wedge that unfolds into all its uses; two lovers cut from one folded sheet; one house cut in a folded strip that unfolds into a street). Treat these as examples of the fold move, not as a required structure.\n\nArc (40–55 s as planned, 49 s delivered): cold open on the scissors (0–3 s) → title → peaceful world → threat (the world goes dark and silent) → a quiet decision → **fold–cut–unfold** on the downbeat → the pattern becomes light and fixes the world → dawn → scale reveal.\n\nNative moves spent: fold – cut – unfold (the climax), holes are light (the backlit rosette on the window, its pattern projected across the snow onto Nian's face), symmetry replicates (the rosette's lanterns fly off; small rosettes unfold as fireworks), scraps have a future (the offcuts come back as firecrackers), everything is one flat sheet (the sawtooth ridge of the far hills stands up and is Nian's back; the final pull-back to the window).\n\n## Shots\n\n120 BPM, 2/4: one beat = 0.5 s, one bar = 1.0 s.\n\n| # | Time (s) | Picture | Camera | Sound |\n|---|---|---|---|---|\n| S1 | 0.0–3.0 | Black 0.25 s → scissor blades bite red paper; two scraps fall; at 2.4 the cut sheet flies away, revealing rice paper | Extreme close-up tracking the tip | snips at 0.25 / 1.0 / 1.75; pipa slide-in at 2.5 |\n| S2 | 3.0–7.0 | Title *NIAN COMES TO TOWN* in cut letters, sawtooth banner border, a 年 seal; paper snow; at 6.5 the title sheet folds over along its middle | Flat front view; exit by page turn | theme A tutti, small gong at 3.0 |\n| S3 | 7.0–12.0 | Night village: indigo paper, punched snow; far hills / houses / bare branches in three layers; warm window flowers; stops on the girl cutting paper at her window | Slow pan in parallax, push to her lit window | theme A soft; L1 |\n| S4 | 12.0–17.0 | The far ridge shivers and **stands up**: its sawtooth is Nian's back; he turns his head, huge, each step a shake; windows go out one per beat, last at 16.5 | Low wide, Nian towering behind the far hills | frame-drum hit, heartbeat + erhu glide; a muffled drum per window; L2 |\n| S5 | 17.0–19.5 | From the dark room: Nian's eye slides into the lattice, fills the window, blinks; the girl ducks below the sill | Locked, inside the room (the film's memorable shot) | **music stops**: wind, snow, heavy breathing |\n| S6 | 19.5–24.0 | The girl from fear to resolve; three inserts on \"red / light / noise\": red paper, a candle, a string of firecrackers; she swaps to the determined face and nods | Medium close-up, props pop on the three words | zheng tremolo bed, one pipa note per word; L3 |\n| S7 | 24.0–30.0 | Fold (24.0 / 25.0 / 26.0, a woodblock each) → cut (26.5–29.5): sawtooth edge, crescents, a lantern; scraps pile on the table; 29.5 the scissors stop | Top-down tabletop; fixed for folds, following the scissors for the cut | pipa tremolo + zheng eighth-note ostinato climbing; a snip per cut; 29.5–30.0 silence |\n| S8 | 30.0–31.0 | Unfolds at 30.0 / 30.25 / 30.5; at 31.0 the rosette blooms and fills the frame | Pull out | three zheng glissandi → tutti + big gong at 31.0 |\n| S9 | 31.0–38.0 | Rosette on the window, candle lit: **backlit**, the pattern sweeps the snow and lands on Nian's face; eight lantern motifs fly out, eight windows light (32.0–33.75, one per eighth note, nearest house first); scraps become firecrackers, small rosettes burst as fireworks; Nian squints, covers his eyes, tucks his tail and flees | Push on the glowing window, pull back to the whole village; CU Nian dazzled | theme A tutti + synthetic firecrackers; eight rising zheng notes; L5 |\n| S10 | 38.0–42.5 | Dawn: the night sheet **peels off** from the top-right corner to reveal the day sheet; a gold-foil sun rises; the girl asleep at the window, scissors in hand | Medium close-up | dizi solo (slow) + zheng harmonics; L6 |\n| S11 | 42.5–46.0 | Scale reveal: the whole picture is a round window flower on the paper of a wooden lattice window, sunlit from behind; scissors and red scraps on the sill (rhyming with the opening) | Slow pull-back | last phrase, cadence + small gong at 44.0 |\n| S12 | 46.0–49.0 | End card (below) | Locked | small gong tail + two woodblocks |\n\n## Score structure\n\nOriginal score (`demo/music/score.py`), D gong pentatonic (D E F# A B), 2/4 at 120 BPM, a 4-bar original theme. Instruments: `pluck:pipa` (melody + tremolo), `dan_tranh` / `dan_tranh_trem` (as zheng / yangqin: broken chords, glissandi, tremolo), `erhu` (counter-melody, glides), `flute` as dizi, `woodblock` (beats, folds), `gong2:small` (phrase heads and tails), `gong2:big` (only once, at 31.0), `frame_drum`. No piano, no string section, no opera gongs-and-drums or suona (to keep clear of shadow-puppet and ink-wash).\n\n| Cue | Time | Tempo | Content | Hits |\n|---|---|---|---|---|\n| C0 cut | 0–3 | free | scissors only; pipa slide-in | snips 0.25 / 1.0 / 1.75; 2.5 |\n| C1 title | 3–7 | 120 | theme A: pipa, zheng, dizi octave up, woodblock on each beat | 3.0 small gong; 6.5 fold (zheng upward sweep) |\n| C2 night village | 7–12 | 120 | theme A soft, woodblock off-beats | ducks under voice |\n| C3 Nian | 12–17 | 60 feel | frame-drum heartbeat, erhu slow glide D4→A3, low zheng | 12.0 hit; one drum per window |\n| C4 silence | 17–19.5 | — | **no music** (wind, breath) | 18.3 blink (a very soft woodblock) |\n| C5 resolve | 19.5–24 | 120 | zheng tremolo, pipa ×3, erhu rising | 23.5 pipa cadence |\n| C6 fold & cut | 24–30 | 120 | woodblocks on folds; pipa tremolo + zheng ostinato, up a step each bar | a snip per cut; 29.5 all stop |\n| C7 unfold | 30–31 | 120 | three zheng glissandi | **31.0 tutti + big gong** |\n| C8 village alight | 31–38 | 120 | theme A tutti + frame drum + small gong + firecrackers; eight zheng notes | 32.0–33.75 windows; 35.0 Nian turns; 37.5 small gong |\n| C9 dawn | 38–42.5 | 90 | dizi solo, zheng harmonics, erhu long notes | |\n| C10 reveal | 42.5–46 | 90 | last phrase in unison, cadence on D | 44.0 chord + small gong |\n| C11 end | 46–49 | — | gong tail + two woodblocks | 46.5 / 47.0 |\n\nMusic ducks ~8–9 dB under the voice; downbeats avoid the first word of a line.\n\nFoley specific to this film: Nian's cardboard steps (55 Hz + low noise, each with a ~6 px frame shake), his breathing (low-passed noise), a dazzled whimper (an erhu sample pitched down and low-passed); candles out (\"puff\") and lit (match + whoomp); fireworks = rising whistle + boom + crackle + falling scraps; a long paper peel at dawn; two bird chirps.\n\nVoice: a warm grandmother telling the story on New Year's Eve, Kokoro `af_sarah`, speed 0.9, five lines:\n\n| id | Start | Text |\n|---|---|---|\n| L1 | 7.6 | Every New Year's Eve, the monster Nian came down from the mountains. |\n| L2 | 13.6 | One by one, the village put out its lights. |\n| L3 | 19.8 | But Nian fears three things: the color red, bright light, and loud noise. |\n| L5 | 35.2 | Crackle, bang! And away ran Nian. |\n| L6 | 38.6 | That is why, every New Year, we still paste red paper on our windows. |\n\nWhisper hears \"Nian\" as \"Nyan\"/\"Nion\", the correct pronunciation of nián, so it is registered as an `asr` alias in `lines.json`.\n\n## Palette & props\n\n- Heroes and window flowers `#d2201f`; Nian one step deeper `#b00f26`; near limbs one step brighter `#c4162c`, far limbs darker (`#8a0c20`, girl `#b8191b`); fold back colour `#de3b30`.\n- Rice paper `#f2e8d0`, night paper indigo `#1c2446`, ink sky `#0f142a`, gold foil `#d9a93f` only at the end (sun, title flecks).\n- Night: far hills `#1f2a55`, near hills `#29356e`, houses `#35457f`, trees `#28346c`, snow `#7a88ba`, all indigo papers; only window flowers, lanterns, the girl and Nian are red (at gate 1 the background was red too and the silhouettes stopped popping). Day: rice-paper sky, red houses, far hills `#e0877f`, mid hills `#cf4f4a`.\n- Paper shadow: offset 2.6/3.6 px, blur 5 px × zoom, `rgba(52,6,10,.38)`. Inset contour: a 1.5-unit slit 3.5 units inside the outline. Night ambient ~`rgb(214,214,236)`; bloom 10 px / 40 px at strength ≈ 0.55.\n- Backlit window flower: radial light `#fff6d6 → #ffc46e → #ec782e`, rice-paper fibres multiplied at 50 %, the rosette's transmission sprite in `#b51d18`. Projected pattern squashed onto the ground with `[1.25,0,-0.9,0.3]`.\n- The rosette: middle ring *yang* cut (lanterns, ruyi scrolls on the fold lines, sawtooth on the ring edges), inner and outer rings *yin* cut.\n- The girl: head, coat, 2 × (upper arm, forearm + hand), 2 × (thigh, shin + shoe), scissors (2 blades on a rivet); face pieces smile ∩, surprise, scared, determined almond eye, asleep ∪; cheek rosettes.\n- Nian: body, head (big, ×1.32), hinged jaw, mane, tail, 4 × (upper leg, lower leg + paw); sturdy legs with four curved claw tips and swirl knee joints (the first version's crescent-striped shins were dropped). When the light hits him, pattern + solid warm spot are added inside his layer, so the squint and big tears are holes that read on the lit face (the gag); unlit parts darken to silhouette.\n- Cutting: reveal circles r ≈ 62 units; blades open/close every 0.25 s (each snip = one eighth note); the camera holds the tip at ~32 %. Each fold ≈ 0.55 s on a woodblock; three unfolds 0.25 s apart.\n\n## End card\n\nCouplet strips slide in beside the window, a red banner with cream cut letters \"RED PAPER-CUT\" drops in above, gold-foil flecks, and the credit line \"LemoLab × Claude Opus 5.5\" below in ink. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\nTitle and subtitles as built: cut letters in Fraunces 800 on rice paper with sawtooth border strips, a red seal with the character 年 cut as a hole, an italic subline. Subtitle banner `#a8111f`, gold flecks, Fraunces SemiBold 44 px in cream `#fff1d6`, centred 70 px from the bottom, hold ≥ voice + 0.7 s and ≥ 1.8 s.\n\n## Build notes\n\n```\nstyles/papercut-red/demo/\n  paper.js    paper textures, piece builder (fill, cut, inset, edge, grain), shadows, transmission\n  motifs.js   folk pattern library          rig.js      2D affine rig helpers\n  girl.js     jointed girl + face pieces     nian.js     jointed monster + eye pieces + poses\n  tuanhua.js  8-fold rosette (one wedge × D4) village.js  houses, hills, plum tree, snow, lanterns\n  light.js    night lightmap, backlit windows, bloom, rays, masked projected light\n  world.js    village layout (night/day palettes) + lighting pass\n  fold.js     fold – cut – unfold sequence   hud.js      subtitle banner, cut-letter text\n  story.js    timeline (single source of truth, 120 BPM)   main.js  shots, cameras, events\n  sheet.js / climax.js / test.js   model sheets and gate-1 style frame (?test=sheet_girl | sheet_nian | frame)\n  lines.json  voice script   music/score.py  original score   mix.py  foley + voice + music   subs.py  srt\n```\n\n1. `node core/render/still.mjs styles/papercut-red/demo <t…> [--q nosub=1]`: review stills; `?test=sheet_girl` etc. for model sheets.\n2. `.venv/bin/python core/tts/tts.py lines.json voices` → `core/tts/asr_check.py` until all OK.\n3. `node core/render/events.mjs` → `music/score.py` → `mix.py` → `subs.py`.\n4. `node core/render/video.mjs styles/papercut-red/demo --fps 24 --workers 3` (1176 frames, ~30 s).\n5. `sh core/render/mux.sh out/video24.mp4 mix.wav papercut-red.mp4 24 0`, then `check_final.py` (per-line whisper on the final mix + blackdetect).\nOr simply `sh styles/papercut-red/demo/build.sh`.\n\nEngine traps: `put()` uses `setTransform`, so it ignores an enclosing `translate`: pass absolute matrices. Test-mode pages must not throw to stop the module (the render harness exits on any page error): guard the `window.render` assignment instead. Engine numbers as used: paper grain mottling ±7 % at ~130 px; edge wobble ≈ 0.35 units; `sawRow`, `sawEdge`, `crescent` / `crescentRows`, `swirl` / `doubleSwirl`, `cloudCut`, `rosette`, `plum`, `coin` in `motifs.js`; half-res bloom blurs; smoothing turned the houses into bread loaves.\n\nPitfalls tied to this demo's props:\n- Storing the wall height in a house piece's `p.h` stretched the house (`x0,y0,w,h` is the drawing box).\n- Darkening the snow layer through the light map made ghost legs visible through the snow.\n- The folding scissors first pointed backwards.\n- The projected pattern centred on Nian's eye hid the eye; it was centred on the snout with a solid warm spot so the squint and tears read.\n- The cold open's flying sheet overlaps the title card to avoid blank frames.\n"
+  },
+  "narration": [
+    {
+      "id": "L1",
+      "text": "Every New Year's Eve, the monster Nian came down from the mountains.",
+      "asr": "Every New Year's Eve, the monster Nion came down from the mountains.",
+      "voice": "af_sarah",
+      "speed": 0.9,
+      "start": 7.6,
+      "duration": 3.849
+    },
+    {
+      "id": "L2",
+      "text": "One by one, the village put out its lights.",
+      "voice": "af_sarah",
+      "speed": 0.9,
+      "start": 13.6,
+      "duration": 2.55
+    },
+    {
+      "id": "L3",
+      "text": "But Nian fears three things: the color red, bright light, and loud noise.",
+      "asr": "But Nyan fears three things, the color red, bright light, and loud noise.",
+      "voice": "af_sarah",
+      "speed": 0.9,
+      "start": 19.6,
+      "duration": 4.449
+    },
+    {
+      "id": "L4",
+      "text": "Crackle, bang! And away ran Nian.",
+      "asr": "crackle bang, and away ran Nyan.",
+      "voice": "af_sarah",
+      "speed": 0.9,
+      "start": 35.2,
+      "duration": 2.234
+    },
+    {
+      "id": "L5",
+      "text": "That is why, every New Year, we still paste red paper on our windows.",
+      "voice": "af_sarah",
+      "speed": 0.9,
+      "start": 38.6,
+      "duration": 4.346
+    }
+  ],
+  "verbatim_published_script_files": {
+    "lines.json": [
+      {
+        "id": "L1",
+        "text": "Every New Year's Eve, the monster Nian came down from the mountains.",
+        "asr": "Every New Year's Eve, the monster Nion came down from the mountains.",
+        "voice": "af_sarah",
+        "speed": 0.9
+      },
+      {
+        "id": "L2",
+        "text": "One by one, the village put out its lights.",
+        "voice": "af_sarah",
+        "speed": 0.9
+      },
+      {
+        "id": "L3",
+        "text": "But Nian fears three things: the color red, bright light, and loud noise.",
+        "asr": "But Nyan fears three things, the color red, bright light, and loud noise.",
+        "voice": "af_sarah",
+        "speed": 0.9
+      },
+      {
+        "id": "L4",
+        "text": "Crackle, bang! And away ran Nian.",
+        "asr": "crackle bang, and away ran Nyan.",
+        "voice": "af_sarah",
+        "speed": 0.9
+      },
+      {
+        "id": "L5",
+        "text": "That is why, every New Year, we still paste red paper on our windows.",
+        "voice": "af_sarah",
+        "speed": 0.9
+      }
+    ]
+  },
+  "timed_shot_prompts": [
+    {
+      "start": 0,
+      "end": 2.9,
+      "name": "Scissors open the tale",
+      "visual_prompt": "Macro red sheet on cream; maroon scissors physically open/close and follow curved cut path. Three snips0.25/1/1.75, offcuts detach and cast shadows.",
+      "onscreen_text": "",
+      "camera_motion": "Macro cutting follow, paper fills most frame.",
+      "sound_direction": "Fresh af_sarah0.9 exact five-line script. New120BPM2/4 D/E/F-sharp/A/B pipa/zheng/erhu/dizi/woodblock/gong; silence17–19.5 and29.5–30, one large gong31. Snips, folded paper, paste, firecracker rattles/booms; recreate music/voice.",
+      "transition": "Sheet/cut lifts2.62.",
+      "material_requirements": "Opaque red fibrous paper with visible cut edges/hinges and shallow contact shadows. Indigo night paper scenery then red-on-cream dawn; gold foil reserved finale sun. Ornately cut girl profile with bun/flower sleeves and jointed hands; Nian huge head, round belly, curled mane, horn, four short legs, hinged jaw and tail. True connected eightfold cut rosette, lantern/firecracker motifs."
+    },
+    {
+      "start": 2.9,
+      "end": 7.1,
+      "name": "Red-paper title",
+      "visual_prompt": "Cream page with red cut-paper title, ornamental horizontal borders, matching rosettes at sides, small 年 seal.",
+      "onscreen_text": "NIAN\nCOMES TO TOWN\na red paper-cut tale for New Year’s Eve\n年",
+      "camera_motion": "Locked title; decorative pieces land separately.",
+      "sound_direction": "Fresh af_sarah0.9 exact five-line script. New120BPM2/4 D/E/F-sharp/A/B pipa/zheng/erhu/dizi/woodblock/gong; silence17–19.5 and29.5–30, one large gong31. Snips, folded paper, paste, firecracker rattles/booms; recreate music/voice.",
+      "transition": "Paper folds away6.5 to night village.",
+      "material_requirements": "Opaque red fibrous paper with visible cut edges/hinges and shallow contact shadows. Indigo night paper scenery then red-on-cream dawn; gold foil reserved finale sun. Ornately cut girl profile with bun/flower sleeves and jointed hands; Nian huge head, round belly, curled mane, horn, four short legs, hinged jaw and tail. True connected eightfold cut rosette, lantern/firecracker motifs."
+    },
+    {
+      "start": 7,
+      "end": 12,
+      "name": "The village waits",
+      "visual_prompt": "Indigo layered village spans width; many tiled roofs/eaves/windows, red lanterns and gold light. Nian’s red mane/horn just peeks behind mountain ridge; girl silhouette visible in hero round window.",
+      "onscreen_text": "",
+      "camera_motion": "Travel along village toward hero window; tiny stars/snow.",
+      "sound_direction": "Fresh af_sarah0.9 exact five-line script. New120BPM2/4 D/E/F-sharp/A/B pipa/zheng/erhu/dizi/woodblock/gong; silence17–19.5 and29.5–30, one large gong31. Snips, folded paper, paste, firecracker rattles/booms; recreate music/voice.",
+      "transition": "Mountain ridge becomes monster’s back.",
+      "material_requirements": "Opaque red fibrous paper with visible cut edges/hinges and shallow contact shadows. Indigo night paper scenery then red-on-cream dawn; gold foil reserved finale sun. Ornately cut girl profile with bun/flower sleeves and jointed hands; Nian huge head, round belly, curled mane, horn, four short legs, hinged jaw and tail. True connected eightfold cut rosette, lantern/firecracker motifs."
+    },
+    {
+      "start": 12,
+      "end": 17,
+      "name": "The monster rises",
+      "visual_prompt": "Huge Nian rises behind roofs, separate legs/jaw/mane/tail patterned with cut holes. Golden windows extinguish one by one14/14.5/15/15.5/16/16.5 until girl’s house remains.",
+      "onscreen_text": "",
+      "camera_motion": "Pull/wide to scale Nian against village.",
+      "sound_direction": "Fresh af_sarah0.9 exact five-line script. New120BPM2/4 D/E/F-sharp/A/B pipa/zheng/erhu/dizi/woodblock/gong; silence17–19.5 and29.5–30, one large gong31. Snips, folded paper, paste, firecracker rattles/booms; recreate music/voice.",
+      "transition": "Heavy cutout puppet motion, not elastic blob.",
+      "material_requirements": "Opaque red fibrous paper with visible cut edges/hinges and shallow contact shadows. Indigo night paper scenery then red-on-cream dawn; gold foil reserved finale sun. Ornately cut girl profile with bun/flower sleeves and jointed hands; Nian huge head, round belly, curled mane, horn, four short legs, hinged jaw and tail. True connected eightfold cut rosette, lantern/firecracker motifs."
+    },
+    {
+      "start": 17,
+      "end": 19.5,
+      "name": "The eye outside",
+      "visual_prompt": "Through dark square lattice window, enormous red Nian eye and brow move past; girl ducks at bottom. Blink18.3.",
+      "onscreen_text": "",
+      "camera_motion": "Interior close-up on window bars/eye.",
+      "sound_direction": "Silence, breath and paper movement only.",
+      "transition": "Hold fearful negative space.",
+      "material_requirements": "Opaque red fibrous paper with visible cut edges/hinges and shallow contact shadows. Indigo night paper scenery then red-on-cream dawn; gold foil reserved finale sun. Ornately cut girl profile with bun/flower sleeves and jointed hands; Nian huge head, round belly, curled mane, horn, four short legs, hinged jaw and tail. True connected eightfold cut rosette, lantern/firecracker motifs."
+    },
+    {
+      "start": 19.5,
+      "end": 24,
+      "name": "Three things it fears",
+      "visual_prompt": "Girl at workbench thinks then presents red sheet, candle, firecracker strip. Red21.76, flame22.5, noise rattle23.28, determined nod23.6; face cutouts swap cleanly.",
+      "onscreen_text": "",
+      "camera_motion": "Medium girl/table against indigo.",
+      "sound_direction": "Fresh af_sarah0.9 exact five-line script. New120BPM2/4 D/E/F-sharp/A/B pipa/zheng/erhu/dizi/woodblock/gong; silence17–19.5 and29.5–30, one large gong31. Snips, folded paper, paste, firecracker rattles/booms; recreate music/voice.",
+      "transition": "Cause is visible in three actual props, not abstract labels.",
+      "material_requirements": "Opaque red fibrous paper with visible cut edges/hinges and shallow contact shadows. Indigo night paper scenery then red-on-cream dawn; gold foil reserved finale sun. Ornately cut girl profile with bun/flower sleeves and jointed hands; Nian huge head, round belly, curled mane, horn, four short legs, hinged jaw and tail. True connected eightfold cut rosette, lantern/firecracker motifs."
+    },
+    {
+      "start": 24,
+      "end": 26.5,
+      "name": "Fold the sheet",
+      "visual_prompt": "Cream macro: square red paper folds in half24, again25, diagonal26, becoming an eight-layer triangular wedge. Layer thickness and cast shadows are visible.",
+      "onscreen_text": "",
+      "camera_motion": "Overhead paper, slight dimensional rotation.",
+      "sound_direction": "Fresh af_sarah0.9 exact five-line script. New120BPM2/4 D/E/F-sharp/A/B pipa/zheng/erhu/dizi/woodblock/gong; silence17–19.5 and29.5–30, one large gong31. Snips, folded paper, paste, firecracker rattles/booms; recreate music/voice.",
+      "transition": "Actual fold topology, no sudden rosette replacement.",
+      "material_requirements": "Opaque red fibrous paper with visible cut edges/hinges and shallow contact shadows. Indigo night paper scenery then red-on-cream dawn; gold foil reserved finale sun. Ornately cut girl profile with bun/flower sleeves and jointed hands; Nian huge head, round belly, curled mane, horn, four short legs, hinged jaw and tail. True connected eightfold cut rosette, lantern/firecracker motifs."
+    },
+    {
+      "start": 26.5,
+      "end": 29.5,
+      "name": "Cut a world of motifs",
+      "visual_prompt": "Scissors carve scallops, triangular teeth, petal holes, lantern shapes and hearts through folded wedge. Falling red offcuts accumulate; continuous connected bridges remain.",
+      "onscreen_text": "",
+      "camera_motion": "Macro scissors follow perimeter and internal cuts.",
+      "sound_direction": "Fresh af_sarah0.9 exact five-line script. New120BPM2/4 D/E/F-sharp/A/B pipa/zheng/erhu/dizi/woodblock/gong; silence17–19.5 and29.5–30, one large gong31. Snips, folded paper, paste, firecracker rattles/booms; recreate music/voice.",
+      "transition": "Each snip removes material and changes silhouette.",
+      "material_requirements": "Opaque red fibrous paper with visible cut edges/hinges and shallow contact shadows. Indigo night paper scenery then red-on-cream dawn; gold foil reserved finale sun. Ornately cut girl profile with bun/flower sleeves and jointed hands; Nian huge head, round belly, curled mane, horn, four short legs, hinged jaw and tail. True connected eightfold cut rosette, lantern/firecracker motifs."
+    },
+    {
+      "start": 29.5,
+      "end": 31.25,
+      "name": "Unfold the window flower",
+      "visual_prompt": "Brief pause29.5–30. Three successive unfolds30/30.25/30.5 bloom to giant symmetrical eightfold rosette31; all repeated motifs emerge from wedge cuts.",
+      "onscreen_text": "",
+      "camera_motion": "Overhead widening.",
+      "sound_direction": "Silence then single big gong31.",
+      "transition": "One full rosette shown before transfer.",
+      "material_requirements": "Opaque red fibrous paper with visible cut edges/hinges and shallow contact shadows. Indigo night paper scenery then red-on-cream dawn; gold foil reserved finale sun. Ornately cut girl profile with bun/flower sleeves and jointed hands; Nian huge head, round belly, curled mane, horn, four short legs, hinged jaw and tail. True connected eightfold cut rosette, lantern/firecracker motifs."
+    },
+    {
+      "start": 31.25,
+      "end": 32,
+      "name": "Paste it in the window",
+      "visual_prompt": "Girl lifts rosette to round window31.55, hands contact its edge; candle below begins backlighting holes.",
+      "onscreen_text": "",
+      "camera_motion": "Medium side view of girl/window.",
+      "sound_direction": "Fresh af_sarah0.9 exact five-line script. New120BPM2/4 D/E/F-sharp/A/B pipa/zheng/erhu/dizi/woodblock/gong; silence17–19.5 and29.5–30, one large gong31. Snips, folded paper, paste, firecracker rattles/booms; recreate music/voice.",
+      "transition": "Physical paste contact; rosette stays connected.",
+      "material_requirements": "Opaque red fibrous paper with visible cut edges/hinges and shallow contact shadows. Indigo night paper scenery then red-on-cream dawn; gold foil reserved finale sun. Ornately cut girl profile with bun/flower sleeves and jointed hands; Nian huge head, round belly, curled mane, horn, four short legs, hinged jaw and tail. True connected eightfold cut rosette, lantern/firecracker motifs."
+    },
+    {
+      "start": 32,
+      "end": 34,
+      "name": "Light spreads through town",
+      "visual_prompt": "Eight lanterns light32+0.25i, ornate rosette glows and projects lace pattern on snow. Nian leans toward bright hero window.",
+      "onscreen_text": "",
+      "camera_motion": "Wide village with red luminous motif.",
+      "sound_direction": "Fresh af_sarah0.9 exact five-line script. New120BPM2/4 D/E/F-sharp/A/B pipa/zheng/erhu/dizi/woodblock/gong; silence17–19.5 and29.5–30, one large gong31. Snips, folded paper, paste, firecracker rattles/booms; recreate music/voice.",
+      "transition": "Light is caused by paper/candle, not arbitrary screen bloom.",
+      "material_requirements": "Opaque red fibrous paper with visible cut edges/hinges and shallow contact shadows. Indigo night paper scenery then red-on-cream dawn; gold foil reserved finale sun. Ornately cut girl profile with bun/flower sleeves and jointed hands; Nian huge head, round belly, curled mane, horn, four short legs, hinged jaw and tail. True connected eightfold cut rosette, lantern/firecracker motifs."
+    },
+    {
+      "start": 34,
+      "end": 35.3,
+      "name": "Nian flinches",
+      "visual_prompt": "Close-up huge Nian face dazzled by lace light; eyes squint, head and jaw recoil34.25, paper mane and whiskers follow.",
+      "onscreen_text": "",
+      "camera_motion": "Punch to face with projected rosette pattern.",
+      "sound_direction": "Fresh af_sarah0.9 exact five-line script. New120BPM2/4 D/E/F-sharp/A/B pipa/zheng/erhu/dizi/woodblock/gong; silence17–19.5 and29.5–30, one large gong31. Snips, folded paper, paste, firecracker rattles/booms; recreate music/voice.",
+      "transition": "Flinch transfers into fleeing pose.",
+      "material_requirements": "Opaque red fibrous paper with visible cut edges/hinges and shallow contact shadows. Indigo night paper scenery then red-on-cream dawn; gold foil reserved finale sun. Ornately cut girl profile with bun/flower sleeves and jointed hands; Nian huge head, round belly, curled mane, horn, four short legs, hinged jaw and tail. True connected eightfold cut rosette, lantern/firecracker motifs."
+    },
+    {
+      "start": 35.3,
+      "end": 38,
+      "name": "Crackle bang and escape",
+      "visual_prompt": "Monster turns/runs toward hills; firecracker offcuts and three firework bursts35.5/36.25/37.0 frame girl’s triumphant pose. Receding Nian leg cycles/tail remain hinged.",
+      "onscreen_text": "",
+      "camera_motion": "Wide action track.",
+      "sound_direction": "VO Crackle,bang at35.2; distinct bangs.",
+      "transition": "Nian exits; village lights remain.",
+      "material_requirements": "Opaque red fibrous paper with visible cut edges/hinges and shallow contact shadows. Indigo night paper scenery then red-on-cream dawn; gold foil reserved finale sun. Ornately cut girl profile with bun/flower sleeves and jointed hands; Nian huge head, round belly, curled mane, horn, four short legs, hinged jaw and tail. True connected eightfold cut rosette, lantern/firecracker motifs."
+    },
+    {
+      "start": 38,
+      "end": 40.8,
+      "name": "Daybreak",
+      "visual_prompt": "Night paper peels back to cream/red daylight village. Gold foil sun39.0; Nian gone, window flower still protects home.",
+      "onscreen_text": "",
+      "camera_motion": "Wide dawn composition.",
+      "sound_direction": "Fresh af_sarah0.9 exact five-line script. New120BPM2/4 D/E/F-sharp/A/B pipa/zheng/erhu/dizi/woodblock/gong; silence17–19.5 and29.5–30, one large gong31. Snips, folded paper, paste, firecracker rattles/booms; recreate music/voice.",
+      "transition": "Paper-peel change in illumination/material.",
+      "material_requirements": "Opaque red fibrous paper with visible cut edges/hinges and shallow contact shadows. Indigo night paper scenery then red-on-cream dawn; gold foil reserved finale sun. Ornately cut girl profile with bun/flower sleeves and jointed hands; Nian huge head, round belly, curled mane, horn, four short legs, hinged jaw and tail. True connected eightfold cut rosette, lantern/firecracker motifs."
+    },
+    {
+      "start": 40.8,
+      "end": 42.5,
+      "name": "The girl sleeps",
+      "visual_prompt": "Girl rests head on table below glowing circular paper flower, eyes closed, arm folded. Ornamental hair/sleeve detail retained.",
+      "onscreen_text": "",
+      "camera_motion": "Intimate medium profile.",
+      "sound_direction": "Fresh af_sarah0.9 exact five-line script. New120BPM2/4 D/E/F-sharp/A/B pipa/zheng/erhu/dizi/woodblock/gong; silence17–19.5 and29.5–30, one large gong31. Snips, folded paper, paste, firecracker rattles/booms; recreate music/voice.",
+      "transition": "Quiet pause before final reveal.",
+      "material_requirements": "Opaque red fibrous paper with visible cut edges/hinges and shallow contact shadows. Indigo night paper scenery then red-on-cream dawn; gold foil reserved finale sun. Ornately cut girl profile with bun/flower sleeves and jointed hands; Nian huge head, round belly, curled mane, horn, four short legs, hinged jaw and tail. True connected eightfold cut rosette, lantern/firecracker motifs."
+    },
+    {
+      "start": 42.5,
+      "end": 49,
+      "name": "It was a window flower",
+      "visual_prompt": "Pull through rosette aperture and back to a real wooden lattice window on cream wall: entire village/sun is cut inside one red paper decoration. Scissors/offcuts on sill. Red banners land46.5/47.",
+      "onscreen_text": "RED PAPER-CUT",
+      "camera_motion": "Pull to full window, hold finalcard46–49.",
+      "sound_direction": "Fresh af_sarah0.9 exact five-line script. New120BPM2/4 D/E/F-sharp/A/B pipa/zheng/erhu/dizi/woodblock/gong; silence17–19.5 and29.5–30, one large gong31. Snips, folded paper, paste, firecracker rattles/booms; recreate music/voice.",
+      "transition": "Honest new GPTcredit in original sign-off position.",
+      "material_requirements": "Opaque red fibrous paper with visible cut edges/hinges and shallow contact shadows. Indigo night paper scenery then red-on-cream dawn; gold foil reserved finale sun. Ornately cut girl profile with bun/flower sleeves and jointed hands; Nian huge head, round belly, curled mane, horn, four short legs, hinged jaw and tail. True connected eightfold cut rosette, lantern/firecracker motifs."
+    }
+  ],
+  "published_text_source_inventory": {
+    "note": "Verbatim literals from text/annotation/caption sourcecalls. This supplemental audit index may include formatting/style strings; shot narrativecards and scripts above are authoritative. Source path/line retained to resolve exacttext.",
+    "entries": [
+      {
+        "file": "outputs/gptcar/styles/papercut-red/demo/hud.js",
+        "line": 13,
+        "published_source_literals": [
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/papercut-red/demo/index.html",
+        "line": 2,
+        "published_source_literals": [
+          "utf-8"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/papercut-red/demo/main.js",
+        "line": 16,
+        "published_source_literals": [
+          "), g = cv.getContext("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/papercut-red/demo/main.js",
+        "line": 105,
+        "published_source_literals": [
+          "destination-out",
+          "400 86px ",
+          "; q.textAlign = ",
+          "; q.fillText("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/papercut-red/demo/main.js",
+        "line": 125,
+        "published_source_literals": [
+          "italic 500 36px ",
+          "; g.fillStyle = ",
+          "; g.textAlign = ",
+          "; g.fillText("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/papercut-red/demo/main.js",
+        "line": 435,
+        "published_source_literals": [
+          "RED PAPER-CUT",
+          "#fff1d6",
+          "Fraunces"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/papercut-red/demo/main.js",
+        "line": 503,
+        "published_source_literals": [
+          "600 38px ",
+          "; g.fillStyle = ",
+          "; g.textAlign = ",
+          "; g.fillText("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/papercut-red/demo/main.js",
+        "line": 520,
+        "published_source_literals": [
+          "italic 500 30px ",
+          "; g.fillStyle = ",
+          "; g.textAlign = ",
+          "; g.shadowColor = ",
+          "; g.shadowBlur = 8; g.fillText("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/papercut-red/demo/main.js",
+        "line": 527,
+        "published_source_literals": [
+          "place",
+          "stamp"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/papercut-red/demo/main.js",
+        "line": 528,
+        "published_source_literals": [
+          "pageturn"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/papercut-red/demo/paper.js",
+        "line": 16,
+        "published_source_literals": [
+          "canvas"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/papercut-red/demo/sheet.js",
+        "line": 11,
+        "published_source_literals": [
+          "italic ",
+          "}${wt} ${size}px ",
+          "`; g.fillStyle = col; g.textAlign = align; g.textBaseline = "
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/papercut-red/demo/sheet.js",
+        "line": 22,
+        "published_source_literals": [
+          "#8e0f1c",
+          "left"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/papercut-red/demo/sheet.js",
+        "line": 23,
+        "published_source_literals": [
+          "left"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/papercut-red/demo/sheet.js",
+        "line": 34,
+        "published_source_literals": [
+          "#fff1d6",
+          "left"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/papercut-red/demo/sheet.js",
+        "line": 38,
+        "published_source_literals": [
+          "400 30px ",
+          "; g.fillStyle = ",
+          "; g.textAlign = ",
+          "; g.fillText("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/papercut-red/demo/story.js",
+        "line": 24,
+        "published_source_literals": [
+          "macro",
+          "title",
+          "village",
+          "rise",
+          "eye"
+        ]
+      }
+    ]
+  },
+  "published_cue_events": [
+    {
+      "t": 0.25,
+      "type": "snip",
+      "big": 1
+    },
+    {
+      "t": 1,
+      "type": "snip",
+      "big": 1
+    },
+    {
+      "t": 1.75,
+      "type": "snip",
+      "big": 1
+    },
+    {
+      "t": 2.62,
+      "type": "paperwhoosh"
+    },
+    {
+      "t": 3,
+      "type": "place"
+    },
+    {
+      "t": 3.95,
+      "type": "stamp"
+    },
+    {
+      "t": 6.5,
+      "type": "pageturn"
+    },
+    {
+      "t": 7,
+      "type": "windbed",
+      "dur": 10
+    },
+    {
+      "t": 12,
+      "type": "thud"
+    },
+    {
+      "t": 13.2,
+      "type": "thud"
+    },
+    {
+      "t": 14,
+      "type": "thud"
+    },
+    {
+      "t": 15,
+      "type": "thud"
+    },
+    {
+      "t": 16,
+      "type": "thud"
+    },
+    {
+      "t": 13.3,
+      "type": "growl"
+    },
+    {
+      "t": 14,
+      "type": "puff"
+    },
+    {
+      "t": 14.5,
+      "type": "puff"
+    },
+    {
+      "t": 14.5,
+      "type": "puff"
+    },
+    {
+      "t": 15,
+      "type": "puff"
+    },
+    {
+      "t": 15.5,
+      "type": "puff"
+    },
+    {
+      "t": 15.5,
+      "type": "puff"
+    },
+    {
+      "t": 16,
+      "type": "puff"
+    },
+    {
+      "t": 16,
+      "type": "puff"
+    },
+    {
+      "t": 16.5,
+      "type": "puff"
+    },
+    {
+      "t": 17,
+      "type": "windbed",
+      "dur": 2.5,
+      "gain": 0.7
+    },
+    {
+      "t": 17.2,
+      "type": "breath"
+    },
+    {
+      "t": 18.3,
+      "type": "blink"
+    },
+    {
+      "t": 18.8,
+      "type": "breath"
+    },
+    {
+      "t": 21.76,
+      "type": "paperpop"
+    },
+    {
+      "t": 22.42,
+      "type": "match"
+    },
+    {
+      "t": 23.28,
+      "type": "rattle"
+    },
+    {
+      "t": 24,
+      "type": "fold"
+    },
+    {
+      "t": 25,
+      "type": "fold"
+    },
+    {
+      "t": 26,
+      "type": "fold"
+    },
+    {
+      "t": 26.75,
+      "type": "snip"
+    },
+    {
+      "t": 27,
+      "type": "snip"
+    },
+    {
+      "t": 27.25,
+      "type": "snip"
+    },
+    {
+      "t": 27.5,
+      "type": "snip"
+    },
+    {
+      "t": 27.75,
+      "type": "snip"
+    },
+    {
+      "t": 28,
+      "type": "snip"
+    },
+    {
+      "t": 28.25,
+      "type": "snip"
+    },
+    {
+      "t": 28.5,
+      "type": "snip"
+    },
+    {
+      "t": 28.75,
+      "type": "snip"
+    },
+    {
+      "t": 29,
+      "type": "snip"
+    },
+    {
+      "t": 29.25,
+      "type": "snip"
+    },
+    {
+      "t": 30,
+      "type": "unfold"
+    },
+    {
+      "t": 30.25,
+      "type": "unfold"
+    },
+    {
+      "t": 30.5,
+      "type": "unfold"
+    },
+    {
+      "t": 31,
+      "type": "bloom"
+    },
+    {
+      "t": 31.55,
+      "type": "pat"
+    },
+    {
+      "t": 32,
+      "type": "glowon"
+    },
+    {
+      "t": 32,
+      "type": "lanternarrive"
+    },
+    {
+      "t": 32.25,
+      "type": "lanternarrive"
+    },
+    {
+      "t": 32.5,
+      "type": "lanternarrive"
+    },
+    {
+      "t": 32.75,
+      "type": "lanternarrive"
+    },
+    {
+      "t": 33,
+      "type": "lanternarrive"
+    },
+    {
+      "t": 33.25,
+      "type": "lanternarrive"
+    },
+    {
+      "t": 33.5,
+      "type": "lanternarrive"
+    },
+    {
+      "t": 33.75,
+      "type": "lanternarrive"
+    },
+    {
+      "t": 33.4,
+      "type": "crackers",
+      "dur": 1.2
+    },
+    {
+      "t": 34.1,
+      "type": "crackers",
+      "dur": 1.4
+    },
+    {
+      "t": 34.6,
+      "type": "crackers",
+      "dur": 1
+    },
+    {
+      "t": 35.4,
+      "type": "crackers",
+      "dur": 1.4
+    },
+    {
+      "t": 34.25,
+      "type": "yelp"
+    },
+    {
+      "t": 35.5,
+      "type": "firework"
+    },
+    {
+      "t": 36.25,
+      "type": "firework"
+    },
+    {
+      "t": 37,
+      "type": "firework"
+    },
+    {
+      "t": 37.45,
+      "type": "firework"
+    },
+    {
+      "t": 35.5,
+      "type": "thud",
+      "gain": 0.4
+    },
+    {
+      "t": 36.1,
+      "type": "thud",
+      "gain": 0.4
+    },
+    {
+      "t": 36.7,
+      "type": "thud",
+      "gain": 0.4
+    },
+    {
+      "t": 37.3,
+      "type": "thud",
+      "gain": 0.4
+    },
+    {
+      "t": 38.1,
+      "type": "peel"
+    },
+    {
+      "t": 39.2,
+      "type": "bird"
+    },
+    {
+      "t": 40.3,
+      "type": "bird"
+    },
+    {
+      "t": 42.5,
+      "type": "roomtone",
+      "dur": 6.5
+    },
+    {
+      "t": 46,
+      "type": "place"
+    },
+    {
+      "t": 7.6,
+      "type": "vo",
+      "id": "L1"
+    },
+    {
+      "t": 13.6,
+      "type": "vo",
+      "id": "L2"
+    },
+    {
+      "t": 19.6,
+      "type": "vo",
+      "id": "L3"
+    },
+    {
+      "t": 35.2,
+      "type": "vo",
+      "id": "L4"
+    },
+    {
+      "t": 38.6,
+      "type": "vo",
+      "id": "L5"
+    }
+  ],
+  "published_source_hashes": {
+    "outputs/gptcar/styles/papercut-red/demo/check_final.py": "6487541f92e3ef1ab332319311698781814041ed522667743484a0b715afd2f7",
+    "outputs/gptcar/styles/papercut-red/demo/climax.js": "d92752fdd05dac49273fdd4f3ea4218e6e435e61b9514d899a55e9cec5dcc46e",
+    "outputs/gptcar/styles/papercut-red/demo/events.json": "208d22ad494179ced22aa6f6ede069efe31a48b176cf40a6c363ae834d53137d",
+    "outputs/gptcar/styles/papercut-red/demo/fold.js": "de1d65271bb7bf5286a1cf957599466e663a494d9c57f1a4c79a046da71be9f1",
+    "outputs/gptcar/styles/papercut-red/demo/girl.js": "7af555627064099ef81097cb32032fe42c296f9499171737bb6e3d130e97c60a",
+    "outputs/gptcar/styles/papercut-red/demo/hud.js": "eee1672fc6be17f117923a33bf43ac3d5389effc70e65b469dd7a6f4ebd623d8",
+    "outputs/gptcar/styles/papercut-red/demo/index.html": "d3997587391cd3ba2078721031745830be2007c50590411241a6aba03b0e8191",
+    "outputs/gptcar/styles/papercut-red/demo/light.js": "1bc654f3d227e3a8ef26291e4d145d76daa4d09b71a239f1cd9691cfe8d0a837",
+    "outputs/gptcar/styles/papercut-red/demo/lines.json": "bb409a5aa547e74a4b00e57e5a279242a5e866f3bfefcd325300812e29cff8c8",
+    "outputs/gptcar/styles/papercut-red/demo/main.js": "aadf901f13725dc9b79b707a2721457767c4fadf83f84999c5d6e2fb6de84955",
+    "outputs/gptcar/styles/papercut-red/demo/mix.py": "b4d3eb00dca5402a0423de0194adde660df26f0c945cfdcf1808879cfedd2780",
+    "outputs/gptcar/styles/papercut-red/demo/motifs.js": "5da5a086d562ea5344caf2a893a97ae6d3e584efbe7be69da88a122c0b5f99b6",
+    "outputs/gptcar/styles/papercut-red/demo/music/score.json": "1acbbebd0c0fca7985440a1a036b62afd5f5f99be6f0094bad0c500b9b8971f5",
+    "outputs/gptcar/styles/papercut-red/demo/music/score.py": "80f339aa57795a86376363889ae828ca888b2c06de2425a26beae8e7281b292f",
+    "outputs/gptcar/styles/papercut-red/demo/nian.js": "dcfbf5614220b8f02171e3fcd8ba363a5c403238e707bdab93ff7affbcf15afb",
+    "outputs/gptcar/styles/papercut-red/demo/paper.js": "ef897323cf3043c96091c1d4b8d83d59be772ac99afb5d3c3973af66827fe837",
+    "outputs/gptcar/styles/papercut-red/demo/rig.js": "da6901a0e4efb008b561b07de6556dd405c78b676a65edbd8c630c6170d6948b",
+    "outputs/gptcar/styles/papercut-red/demo/sheet.js": "9ab9db11b48578eea5b7d8385be5653289df53af9eb7ad28ae54743fa4f5f343",
+    "outputs/gptcar/styles/papercut-red/demo/story.js": "6cba930ac07c97940fb9b5a5287161ffef72c2274df8fdf6d784950296332839",
+    "outputs/gptcar/styles/papercut-red/demo/subs.py": "25e1d7fda375dbd979822de3dc8e57ba6eb2bfb7e13e1f32c3bcc2d205a96ec4",
+    "outputs/gptcar/styles/papercut-red/demo/test.js": "0620cc5833ac84557a5e91395eb261ca43372b3143879a16cfc4fdafdd4bb48f",
+    "outputs/gptcar/styles/papercut-red/demo/tuanhua.js": "5446bfdb03d2e37356ba73580b13dead404c97e7846f39d4eb3dd88f8ec39184",
+    "outputs/gptcar/styles/papercut-red/demo/village.js": "41161fa15f7cf0289c21f9b1862b044624a360b6e99e341bce3d491b9af720a5",
+    "outputs/gptcar/styles/papercut-red/demo/voices/dur.json": "8fa5bd34511931e8da0890329466e328e78c656373f36c49ef30c59421ee6735",
+    "outputs/gptcar/styles/papercut-red/demo/voices/words.json": "75e7cd98cc7a58e12600f4cf33109413cceceb9175f484dd7df04273549e3d19",
+    "outputs/gptcar/styles/papercut-red/demo/world.js": "73c5549df92716f9d3a166c5d7e70f4a9af731818740e79fe501d89dac10bea9"
+  },
+  "original_assets_and_licenses": [
+    {
+      "path": "outputs/gptcar/styles/papercut-red/demo/CREDITS",
+      "sha256": "fb6a1d5ea893ca6f6b8319c3bba535105d27c715db803d9afcc3991d719f61a7",
+      "verbatim": "Nian Comes to Town — Red Paper-cut (Lemo-Opuscar demo)\nAll visuals are procedurally generated in code (Canvas2D): paper textures, cut patterns, characters, village, lighting. No images or footage used.\n\nFonts\n- Fraunces by Undercase Type (Phaedra Charles, Flavia Zimbardi) — SIL Open Font License 1.1 (fonts/OFL-Fraunces.txt)\n- Ma Shan Zheng by Ma Shan Zheng — SIL Open Font License 1.1 (fonts/OFL-MaShanZheng.txt)\n\nVoice\n- Kokoro-82M (hexgrad), voice af_sarah — Apache License 2.0, via kokoro-onnx (MIT)\n\nMusic (original composition, music/score.py)\n- Samples (CC0 1.0): VS Chamber Orchestra: Community Edition and Versilian Community Sample Library (Versilian Studios / Sam Gossner) — flute, dan tranh, woodblock, gong, frame drum\n- Erhu: Karoryfer Samples \"aliexpress-erhu\" (CC0 1.0)\n- Pipa: physical-model plucked string (core/audio/pluck.py), original synthesis\n\nSound effects\n- All synthesized in mix.py (numpy / scipy), original.\n\nSpeech check: faster-whisper (MIT), OpenAI Whisper base.en weights (MIT)\n"
+    }
+  ],
+  "engine_reuse_recommendation": "Reuse attributed generic drawing/material/rig/math engines described by STYLE/DEMO; share fonts and named licensed data/assets with hashes. Independently generate scene assembly, animation, shot/camera staging and freshaudio. Never import original film renderer, mastervideo,originalframes or mastertrack as newGPTwork. Preserve exactscript/cardlanguage and measuredoriginalframecount. Full originals are analytical references only.",
+  "audio_recreation_direction": "Fresh af_sarah0.9 exact five-line script. New120BPM2/4 D/E/F-sharp/A/B pipa/zheng/erhu/dizi/woodblock/gong; silence17–19.5 and29.5–30, one large gong31. Snips, folded paper, paste, firecracker rattles/booms; recreate music/voice.",
+  "v1_primary_deficits": [
+    "V1 shortened49s and omitted the girl/Nian causal narrative, eightfold cutting topology and true window reveal",
+    "Simple symmetric rosette lacked detailed motifs, jointed character carving, lantern sequence and lace-light projection"
+  ],
+  "visual_audit": {
+    "status": "complete",
+    "method": "Complete original 1 fps contact-sheet sequence and published source cue boundaries inspected, plus listed exact short-action/transition frames. Does not claim every encoded frame.",
+    "sheets": [
+      "work/gptcar/reference/papercut-red/sheets/sheet-01.jpg",
+      "work/gptcar/reference/papercut-red/sheets/sheet-02.jpg",
+      "work/gptcar/reference/papercut-red/sheets/sheet-03.jpg",
+      "work/gptcar/reference/papercut-red/sheets/sheet-04.jpg",
+      "work/gptcar/reference/papercut-red/sheets/sheet-05.jpg"
+    ],
+    "exact_time_supplement": [
+      "work/gptcar/reference/papercut-red/exact/t-1.6.jpg",
+      "work/gptcar/reference/papercut-red/exact/t-24.7.jpg",
+      "work/gptcar/reference/papercut-red/exact/t-27.4.jpg",
+      "work/gptcar/reference/papercut-red/exact/t-30.25.jpg",
+      "work/gptcar/reference/papercut-red/exact/t-31.5.jpg",
+      "work/gptcar/reference/papercut-red/exact/t-35.75.jpg"
+    ]
+  }
+}

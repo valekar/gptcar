@@ -1,0 +1,279 @@
+{
+  "slug": "stained-glass",
+  "title": "The Dragon of the East Window",
+  "premise": "Sunlight crosses a cathedral window from dawn to dusk, waking each pane of a knight-and-dragon tale.",
+  "provenance": {
+    "original_chat_prompt_available": false,
+    "published_style_prompt_path": "styles/stained-glass/STYLE.md",
+    "published_demo_guide_is_verbatim": true,
+    "scene_prompt_status": "Reconstruction from complete published STYLE/DEMO, exact narration/timing data and complete decoded-film contact sheets; not a recovered original chat prompt.",
+    "user_override": "User expressly requests original story/script/arc; STYLE/DEMO usual nonreuse admonition is overridden for reference-matched work."
+  },
+  "sources": [
+    {
+      "path": "styles/stained-glass/STYLE.md",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/stained-glass/STYLE.md",
+      "sha256": "0f6551bd109a4127404068aa1e75f18f16b58c80b486c23480b3d193e597b060"
+    },
+    {
+      "path": "styles/stained-glass/DEMO.md",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/stained-glass/DEMO.md",
+      "sha256": "85c01813ea91c0cc331665c2dc9346e4f950a6459aa935752ce9b14d426b7cd5"
+    },
+    {
+      "path": "styles/stained-glass/style.json",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/stained-glass/style.json",
+      "sha256": "f65be17f876377c074be18f641e9e003b5b1d8e3567bac59294318611e4c9b23"
+    },
+    {
+      "path": "styles/stained-glass/demo/CREDITS",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/stained-glass/demo/CREDITS",
+      "sha256": "5d6db2cb482de6c2cd69c815b7b33bc485f3c0894913cf4271c10d7eccee3c82"
+    },
+    {
+      "path": "styles/stained-glass/demo/lines.json",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/stained-glass/demo/lines.json",
+      "sha256": "03d538b5e370da35835094a44542022a8661ebab25c884a3efeb7c15cb0678ab"
+    },
+    {
+      "path": "styles/stained-glass/stained-glass.srt",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/stained-glass/stained-glass.srt",
+      "sha256": "a6bf5312f5a8ce3a2c5b9e14446ae89df1c7b20c1c3b224aa3d48b2ed6c849be"
+    }
+  ],
+  "delivery": {
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": 1356,
+    "duration": 56.512
+  },
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "See published DEMO; delivery fps above overrides rounded catalogue values.",
+    "internal_raster": "See style prompt material requirements for native pixel/CRT/internal compositor resolutions."
+  },
+  "reference": {
+    "slug": "stained-glass",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/stained-glass.mp4",
+    "sha256": "7e8883defaa09a4f632d31bb394b60bb738a9285930fb6239f2ae9527df55863",
+    "duration": 56.512,
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": "1356",
+    "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+    "frames": 57,
+    "sheets": 5
+  },
+  "inspection": {
+    "all_contact_sheets_inspected": true,
+    "sheet_count": 5,
+    "regular_frame_count": 57,
+    "sheet_paths": [
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/stained-glass/sheets/sheet-01.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/stained-glass/sheets/sheet-02.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/stained-glass/sheets/sheet-03.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/stained-glass/sheets/sheet-04.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/stained-glass/sheets/sheet-05.jpg"
+    ],
+    "sampling": "All1fps decoded samples reviewed across whole film, plus published source timing for short transitions. Exact shot-boundary decoding required before film timing acceptance; approximate sheet labels are not frame-accurate.",
+    "every_encoded_frame_claimed": false
+  },
+  "materials_characters_typography": "Four pointed lancets beneath round rose window in Gothic grey stonewall. Jewel cobalt/ruby/emerald/amber glass cellular pieces with thick dark flange d lead, mottled transmitted bubbles/scratches/painted gris a ille. Knight red sur coat, silver helmet, blue/yellow shield and long sword; green spined dragon guards small warm orb. Freeze un lit glass; lit figures 8 fps cut out articulated soldered pieces, moving light 24 fps; stone floor gets blurred mirrored glass projection.",
+  "audio_recreation": {
+    "original_master_audio_reused": false,
+    "direction": "80 BPM D dorian recorder, organ, harp, glass chime, timpani; medieval chamber progression morning→dusk. Three clashes 24.75/26.25/27.75. Score break 31.8 and glass crack, hush reveal, solder weld pings and bell 44.6. bf_alice .88, gentle parable.",
+    "narration_published_verbatim": [
+      {
+        "id": "L1",
+        "text": "This window only tells its story where the sun falls.",
+        "voice": "bf_alice",
+        "speed": 0.88,
+        "start": 1,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "L2",
+        "text": "At dawn, a knight was sent to slay the dragon that ate the sun.",
+        "voice": "bf_alice",
+        "speed": 0.88,
+        "asr": "At dawn, a night was sent to slay the dragon that ate the sun.",
+        "start": 10,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "L3",
+        "text": "He crossed the hills and rivers in the white noon light.",
+        "voice": "bf_alice",
+        "speed": 0.88,
+        "start": 17.8,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "L4",
+        "text": "All afternoon they fought, and the shadows grew longer.",
+        "voice": "bf_alice",
+        "speed": 0.88,
+        "start": 24.4,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "L5",
+        "text": "Then, in the red of evening, he saw what the dragon was guarding.",
+        "voice": "bf_alice",
+        "speed": 0.88,
+        "start": 33.8,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "L6",
+        "text": "The last ember of the sun, kept warm until morning.",
+        "voice": "bf_alice",
+        "speed": 0.88,
+        "start": 38.3,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "L7",
+        "text": "So the knight laid down his sword.",
+        "voice": "bf_alice",
+        "speed": 0.86,
+        "asr": "So the night laid down his sword.",
+        "start": 45,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "L8",
+        "text": "And every night since, one pane of glass keeps its own light.",
+        "voice": "bf_alice",
+        "speed": 0.88,
+        "start": 49.2,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "end": 4.8,
+      "title": "Knife of dawn",
+      "prompt": "Blackstone, thin blue knife ray opens first lancet. Low close knight head 2.6; transmitting pane only lights where beam falls. Cream ribbon subtitle exact line 1 at 1."
+    },
+    {
+      "start": 4.8,
+      "end": 9.6,
+      "title": "Reveal east window",
+      "prompt": "Pull wide four lancets and rose; first blue pane illuminated, others almost black. Title THE DRAGON OF THE EAST WINDOW gilds stone below 5.4. Dust beams and floor reflection, gothic stone frame."
+    },
+    {
+      "start": 9.6,
+      "end": 15.6,
+      "title": "PaneI charge",
+      "prompt": "Push first lancet castle base with knight red garments. Sword lifts 11.1 in flat jointed glass pieces. Exact legend narration dawn knight sent to slay dragon that ate the sun, no change of premise."
+    },
+    {
+      "start": 15.6,
+      "end": 17.2,
+      "title": "Light trucks into noon",
+      "prompt": "Camera and light pass dark divider to second pane; first knight freezes when un lit, same hero already drawn next frame."
+    },
+    {
+      "start": 17.2,
+      "end": 22.6,
+      "title": "PaneII journey",
+      "prompt": "Knight walks across green hills and winding turquoise river, high medallion yellow white sun. White Noon light; dove 20.4 small piece flutter. Cream ribbon line 3."
+    },
+    {
+      "start": 22.6,
+      "end": 24,
+      "title": "Tilt to floor",
+      "prompt": "Light now illuminates third lancet but swing camera top-down on to slate floor projected image. Actual source window does not need walk around."
+    },
+    {
+      "start": 24,
+      "end": 30,
+      "title": "Floor duel",
+      "prompt": "Elongated glowing projection diagonal across cracked stone, green winged dragon above knight. Duel three crossings clashes 24.75/26.25/27.75; multi coloured soft warped shadows lengthen. This is floor projection not merely another pane close up."
+    },
+    {
+      "start": 30,
+      "end": 31.8,
+      "title": "Dusk swordblow",
+      "prompt": "Tilt back upright pane IV, rich red amber light shaft. Knight strike 31.8; white crack forks from sword contact in.28 s, flash.45,2 frame shake."
+    },
+    {
+      "start": 31.8,
+      "end": 33.8,
+      "title": "Hush andwings",
+      "prompt": "Hold silence and crack, moving dragon wings slide 33 reveals gold orb held at belly. Knight not victorious; now startled."
+    },
+    {
+      "start": 33.8,
+      "end": 41.3,
+      "title": "Last ember",
+      "prompt": "Push face and dragon orb, glass inclusion detail, eyes widen. Glow gently pulse sorb. Line 5 start 33.8, line 6 actual 38.3(source override of DEMO 37.9). Crack connects top of window to sword tip but does not shatter all glass."
+    },
+    {
+      "start": 41.3,
+      "end": 44.6,
+      "title": "Relead thegesture",
+      "prompt": "One after another sword/legs/body/arms un solder/reform along new lead seams, little weld sparks. Knight kneels and lays sword flat, palm open. Dragon stays protective around ember."
+    },
+    {
+      "start": 44.6,
+      "end": 47.2,
+      "title": "Bell of truce",
+      "prompt": "Bell and line 7 at 45. Hold kneeling shared light, no fight resolution title alone."
+    },
+    {
+      "start": 47.2,
+      "end": 52.9,
+      "title": "Window keeps ownlight",
+      "prompt": "Slow pull wide: all four panes now dark blue with scenes frozen except pane IV self lit gold. Last line 49.2 explains nightly light; rose window dark, contrasting warm one stone patch."
+    },
+    {
+      "start": 52.9,
+      "end": 56.5,
+      "title": "Stone end and newdawn",
+      "prompt": "STAINED GLASS engraved stone under window with original credit recorded; dawn ray 55.2 catches first pane again while last still warm, loop of guarded light. End fade by 56.5."
+    }
+  ],
+  "published_timing_tables": {},
+  "published_style_prompt_verbatim": "# Stained Glass — Style Prompt\n\n> A medieval stained-glass window seen from inside a dark stone hall, alive only where the sun touches it: light is the clock, the camera and the story.\n> References (grammar only): the window prologue of *Beauty and the Beast* (1991) (chapters pane by pane, a storyteller's pace); the glass knight of *Young Sherlock Holmes* (1985) (glass that cracks and recombines piece by piece); 12th–13th-century Chartres glass (colour logic, grisaille, leading). Copy none of their characters, compositions, subjects or music.\n\n## 1. Essence, and what it is not\n\n- **Cut pieces of coloured glass in dark lead cames**, faces and folds **painted in brown grisaille**.\n- Glass has no light of its own: it **glows only when the sun is behind it** and throws a soft coloured copy onto the stone floor; unlit, it is dark and milky.\n- Figures move **piece by piece**, rigid and stepped.\n- The room is always there: stone, a splayed embrasure, iron saddle bars, a floor that catches light.\n- **Secular**: no crosses, saints, halos or other religious imagery; borrow the craft, not the subjects.\n\nNot vector art with black outlines, not a kaleidoscope or Voronoi filter, not Tiffany Art Nouveau, not mosaic (mosaic reflects; glass transmits).\n\n## 2. Materials & rendering\n\nOne formula for everything (a WebGL compositor), so every element sits in the same light:\n\n```\nglass   = tonemap( backlight(x,y,time) × transmittance × glass texture ) + weathering haze × room light\nsurface = albedo × (room ambient + glow spilled from lit panes + point lights)          // stone, lead, iron\nfloor   = flagstones × (ambient + projected colour-patch map, blurred + halo)            // perspective or top-down\n+ additive light shafts with dust · bloom (bright glass eats into the lead: the \"irradiation\" effect)\n```\n\n- **Hue-preserving tone mapping**: per-channel `1-exp(-x)` turns cobalt pastel; blend to per-channel only at the very top so a sun disc burns white while blue stays jewel blue.\n- **Unlit panes**: weak sky light + room-lit weathering haze, figures ghostly but readable. **Lit panes**: backlight ~2–3×, a soft, slightly skewed moving band edge.\n- **Pieces**: smooth Catmull-Rom cuts (no deep concave corners). **Every piece is textured** (`multiply` in its clip): streaks at a per-piece angle, hue drift (±10 %), darker aged edges by the lead, ±9 % thickness variation. The shader adds seed bubbles, scratches and thickness clouds in world space; fade small features below ~0.6× zoom or they sparkle.\n- **Lead**: near-black, one planar network, thinner on small pieces, round joins, faint grey flange, solder blobs; only where colours meet (one colour = one piece).\n- **Grisaille**: tapered trace lines in translucent dark brown; **matting** (stippled wash, graded shade, soft band inside the lead); **scraped highlights** (a thin stroke beside each fold in the piece's own colour: the only highlight transmitted light allows). Patterns (mail, scales, plates) are grisaille arcs and bands.\n- **Faces**: almond eyes, heavy upper lid, big pupils, brow flowing into the nose. **Expression lives in brows and mouth**; change it by swapping the face piece, never morphing.\n- **Backgrounds**: hand-cut **lozenge quarries** (jittered lattice, shared vertices, a painted motif each); borders of a coloured band with pearls and a white fillet with a running vine.\n- **Room**: warm grey ashlar, a lighter embrasure, mullions; floor of **large irregular flagstones**, never the wall's running bond.\n- **Floor projection**: blurred, ~20 % desaturated, modulated by the stone, haloed, mirrored (the window's top lands farthest into the room). **Shafts**: additive with dust, near 0 at the window, peaking ~40 % down.\n\n## 3. Colour logic\n\n- Two hues **carry the picture** (one deep, one hot); three or four more only as **small touches**. Example (Chartres logic): cobalt ground, ruby, touches of gold, green, murrey.\n- Greenish white glass sparingly (faces, fillets, sky). **Flesh darker than you think**, or backlit faces burn white.\n- A story light (candle, lamp, screen) may take a colour no glass uses, so it reads as a source.\n- **The sun's colour is the clock**: blue-white dawn, near-white brightest noon, gold afternoon, deep orange dusk (raise intensity rather than redness), weak blue moonlight. Patch length follows sun height.\n- Stone and lead take colour only from spilled or projected light.\n\n## 4. Type & subtitles\n\n- **Subtitles**: a parchment **banderole** near the bottom (curled ends, gentle sag, thin rule), IM Fell English ~44 px in dark ink. It unfurls from the centre; text fades in only once it is ≥ 75 % open; pad the ribbon well past the text. Hold ≥ max(1.8 s, speech + 0.6 s).\n- **Titles**: incised Roman capitals (Cinzel 600) in the stone, dark cut, light lower lip, gilding, revealed by a moving band of light; small lines ≥ 30 px on screen. In the glass, text only as grisaille on a white-glass scroll.\n\n## 5. Motion quality\n\n- **Figures step at 8 fps**; light, camera, shafts and dust move on ones (24 fps): stepped light reads as flicker.\n- Rigid pieces on 2D FK (`setTransform(base · T(part))`, free draw order); long bodies are spine chains of banded pieces.\n- **Freeze rule**: a pane's figures use `min(t, t_lightLeft)`. Actions land on the beat.\n- **Crack**: jagged lines race from the impact in ~¼ s, bright with light, a short white flash and a 2-frame shake.\n- **Re-leading**: piece groups slide one beat each with a small outward bump along the lead, each ending in a weld spark; cracks become mending leads.\n- Glass never bends or morphs; things appear by being lit, not faded in.\n\n## 6. Camera grammar\n\nA vocabulary, not a route. Opening and ending come from the topic.\n\n| Move | Expresses | Can serve |\n|---|---|---|\n| Truck sideways with the band of light | Time passing, the story moving on | a sequence of steps; a day; chapters |\n| Locked close-up on one pane | This panel is \"now\" | a line being read; a character's decision; a detail |\n| Pull back to the whole window | The rule, or the whole story at once | learning the system; a summary; aftermath |\n| Tilt down the shafts to the floor, then top-down | The picture leaves the glass and becomes light | an event too big for its frame; a dream; a memory |\n| Hold through a crack, no cut | The event is the medium breaking | a turning point; a loss; a revelation |\n| Slow push toward a small light | Attention narrowing to one source | a discovery; a secret; hope |\n| Tilt up to a rose or tracery | Something above the panels governs them | a clock; a cycle; an overview |\n| Rack between two panes, one lit, one dark | Past and present side by side | before/after; two lives; cause and effect |\n| Low angle along the embrasure, glass raking | The window as architecture, scale | awe; an institution; a long history |\n| Return to an earlier framing under new light | The rhyme shows what changed | growth; nightfall; repair |\n\nFraming: subjects big (close-ups ~1.3–2.3× a lancet width); in a narrow lancet stack figures diagonally; a revealed thing near centre, ≥ ~1/8 frame width with glow. Transitions: moving light, shafts, a crack, darkness; never a dissolve, wipe or flip.\n\n## 7. Sound palette\n\n- **Instruments**: organ (pedal drone, soft stops, full), harp, hand chimes, tubular bells, recorder or a chant-like voice, water-glass notes, timpani; also hurdy-gurdy drone, psaltery, portative organ. No generic piano or strings.\n- **Mode families**: church modes (Dorian, Mixolydian, Aeolian, Lydian), open fifths, drones, parallel organum.\n- **Options**: free unmetred chant for darkness; one note meaning \"the light\" each time a pane wakes; an organ pedal that holds and then cuts out; a rising scale, one step per lit piece.\n- **Foley, material first** (synthesizable): struck glass = inharmonic partials ~1 : 2.32 : 4.25 : 6.63 : 9.38; crack = snap + pane thump + rain of tinkles; lead = stick-slip creak; glass sliding in a came = gritty band noise + faint squeal; solder = hiss + tick; air on light moves; stone-hall ambience; birds in the vault; iron ticking as it cools.\n- **Silence**: a hard stop, reverb tails included, only the glass's own ring or creak inside; a single long-reverb bell can close it.\n- **Mix**: big and reverberant; heavy hits avoid word onsets; music ducked ~9 dB under voice; −14 LUFS. **Voice**: a gentle, even storyteller, few short lines.\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **Light is time, and the camera.** Only the lit pane is alive; figures freeze when the light leaves. *Fits content like:* the steps of a recipe; a factory's shifts; four seasons of one farm.\n- **Glass projects onto stone.** A key scene plays in the floor patch, which stretches as the sun sinks. *Fits content like:* a memory seen larger than life; a sports play replayed as shadows; a data trend drawn by lengthening light.\n- **Glass cracks, lead mends.** Pieces slide along the leads into a new picture, leaving scars. *Fits content like:* a company's reinvention; an injury and recovery; an old building restored.\n- **A window holds its own light.** At night one pane glows from a source inside the story. *Fits content like:* a lighthouse keeper; a night-shift nurse; a server that never sleeps.\n- **The window as a diagram.** Lancets as columns, a rose as a wheel or dial, the border as a timeline. *Fits content like:* a product lineup; the parts of a cycle; a family tree.\n\n## 9. Pitfalls of the medium\n\n- Hidden leads show through front pieces → erase the surface under each piece before stroking its lead.\n- Pastel glass → hue-preserving tone mapping; darker flesh. Red dusk × blue glass = mud → keep blue alive, raise intensity.\n- Voronoi reads as a filter; flat fills read as clip-art → hand-cut lozenges, texture on every piece, heavy grisaille.\n- A sharp floor patch looks like a decal → blur, desaturate, stone-modulate, halo. Shafts at full strength at the window wash out the pane.\n- Top-down projection is flipped → put the wall at the frame bottom so figures stand upright (mirrored, correct).\n- Patch-map canvas size mismatched with the code draws into a corner of the texture → one constant size.\n- Carved text in a dark wide is unreadable → push in, park a light on it.\n\n## 10. Engine\n\nIn `demo/`: `glass.js` (pieces, textures, lead, grisaille, lozenges), `comp.js` (WebGL2 compositor), `window.js` (lancets, rose, borders, wall, carving), `scene.js` (camera, floor projection, shafts, dust), `subs.js` (banderole), `test.js` / `frames.js` (model sheets and style frames from the real engine), `music/score.py`, `mix.py` (glass/lead foley). `knight.js` / `dragon.js` show the rigid-piece FK rig pattern; build your own subjects with it.\n\n## 11. Variation space\n\nYou decide the window (lancets, a rose, a medallion, a clerestory), the subjects, the order of light, opening, ending, camera path and pacing. All far from our demo:\n\n- Structures: **a rose window as a dial** (petals lit in turn like hours, the centre the answer); **one tall lancet read bottom to top** (a tilt up a life or a process, medallion by medallion); **two windows facing each other** (the sun lights one side in the morning, the other in the evening; the floor between them holds their meeting).\n- Openings: **the floor first** (only a coloured patch on stone; tilt up to find its source); **a lit window from outside at night** (a figure passes a glowing pane, then we are inside); **the glazier's bench** (a single piece cut and leaded, becoming the first piece of the picture).\n- Endings: **clouds cover the sun** (every pane fades to grey at once; one line lingers); **a new pane leaded in** (an empty lancet filled with the last scene); **the camera leaves through the door** (the window small behind, its patch still on the floor).\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n",
+  "published_demo_guide_verbatim": "# Stained Glass — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *The Dragon of the East Window* (56.5 s) · `stained-glass.mp4` · source in [`demo/`](demo/)\n\n\n## Story & structure\n\nAn east window in a stone hall shows a knight sent to slay \"the dragon that ate the sun\". Wherever the sun falls, that pane's story moves. At dusk, in the last pane, the knight strikes and the glass cracks: he sees that the dragon was guarding the sun's last ember, kept warm until morning. The pieces slide back along the leads and are re-welded into a kneeling knight with his sword laid flat. At night only that pane still glows. The title's \"East\" is the answer: because the dragon keeps the ember all night, the sun can rise in the east again.\n\nThe window: four lancets side by side plus a rose above, in a thick splayed wall, the title carved on the string course below. Left to right = one day:\n\n| Pane | Time | Light | Scene |\n|---|---|---|---|\n| I | dawn | cool blue-white, low | the charge: knight on the battlements, sword raised; a roundel in the canopy shows \"the sun-eating dragon\" (the folk misunderstanding) |\n| II | noon | white-gold, brightest, short patch | the journey: hills, trees, a river, a dove passes |\n| III | afternoon | gold, patch lengthening | the fight, played out in the floor patch |\n| IV | dusk | deep red-orange | the ember: strike → crack → wings slide open → re-leaded kneeling knight |\n| Rose | all day | follows the sun | a sun wheel (gold centre, red and blue petals); its brightness is a clock, dark at night |\n\nStructure used: one scene per lancet, each lit in turn (dawn → noon → afternoon → dusk), the rose as the sun clock, opening in darkness with a knife-thin ray, one hard crack at the emotional peak, then silence, a slow reveal, re-leading on the beat, a single bell, night. Native moves spent: light is time (throughout), glass projects onto stone (the duel, 24–30 s), cracks and mending leads (31.8–44.6 s), a window that holds its own light (47–53 s). Rhymes: the dawn ray at 0.5 s and a thin blue dawn ray on the end card at 55.2 s play the same glass note; the new lead lines remain as a scar where the story changed.\n\nHow the old guide suggested adapting topics (our demo's reading of the style, kept for reference): a sequence of stations the light visits in order; a product launch as stages of making with the product as the pane that glows at night; a biography in four panes with the one choice as the crack; history as eras across the day.\n\n## Shots\n\n80 BPM: one beat 0.75 s, one bar 3.0 s; times set from measured voice lengths.\n\n| # | Time (s) | Shot | Camera | Sound |\n|---|---|---|---|---|\n| S1 | 0.0–4.8 | Black, faint dust. 0.5 a knife-thin dawn ray lights pane I top to bottom (`bandW` 18 → 310, skew .45 → .06, ~1 s); 2.6 the knight lifts his head | low close-up, pane ≈ 85 % of frame height | glass tink + air; recorder chant over organ pedal D; L1 at 1.0 |\n| S2 | 4.8–9.6 | Pull back to the whole window; only pane I lit, a blue floor patch, dust in shafts; 5.4 a light sweep gilds the carved title | wide: the audience learns the rule in one frame | water glass + hand chime |\n| S3 | 9.6–15.6 | Push into pane I; 11.1 sword raised (three stepped poses, on the beat); the canopy roundel lights | medium | harp Dm–G, recorder, chimes; L2 at 10.0 |\n| S4 | 15.6–17.2 | The light slides right; pane I dims, knight frozen mid-step | truck with the band to pane II | water-glass glide, wind |\n| S5 | 17.2–22.6 | Noon: knight steps piece by piece on the beat, background pieces shift back; 20.4 a dove | medium, very slow follow | harp, chimes, tubular bell on 17.2; L3 at 17.8 |\n| S6 | 22.6–24.0 | Light reaches pane III, gold; dragon rears, red wings open | tilt down the shafts to the floor | full organ enters, timpani hit |\n| S7 | 24.0–30.0 | **The floor duel**: stretched coloured patch with lead lines on flagstones; three clashes (charge / shield / wing sweep) on beats; the patch keeps lengthening | top-down on the flagstones; the subject is light | organ ostinato, timpani per clash; L4 at 24.4 |\n| S8 | 30.0–31.8 | Back up to the window, red light on pane IV: knight raises sword, dragon curled, wings over its chest | low medium, charge | timpani roll |\n| S9 | 31.8 | The blow (two stepped frames) → the pane cracks: 9 white lines in 0.28 s, flash 0.45 s, 2-frame shake | same framing, no cut | all music hard-cut, glass shatter + long reverb |\n| S10 | 31.8–33.8 | Stillness; dust falls in red light; 33.0 wing pieces slide along the leads to reveal an amber ember | slow push to the ember | silence: reverb tail, lead creak, glass friction |\n| S11 | 33.8–41.3 | The ember breathes; knight's face swaps from stern to astonished (one face piece) | close: face + ember in one frame | soft organ, sparse chimes; L5 33.8, L6 37.9 |\n| S12 | 41.3–44.6 | **Re-leading**: groups (sword → legs → torso → arms) slide to kneeling, sword flat before the ember; a weld spark per beat | locked medium | one rising Dorian note per weld |\n| S13 | 44.6–47.2 | Last weld = one bell; mending leads remain | still frame | tubular bell D, long reverb; L7 at 45.0 |\n| S14 | 47.2–52.9 | Night: red → violet → moonlight; all panes grey-blue except pane IV, glowing warm from inside | slow pull back to the S2 wide | recorder reprise, harp harmonics; L8 at 49.2 |\n| S15 | 52.9–56.5 | End card carved in the stone band; 55.2 a thin blue dawn ray touches pane I | push in on the string course | ends on a D–A open fifth; 55.2 the same glass tink as 0.5 |\n\nWhy this route, for this story: the knife-thin ray gave the spectacle in the first second; the pull-back taught the light rule; trucking with the light made time visible; the floor was the only place the duel could be bigger than its lancet; holding through the crack let the medium break instead of the edit; the return to the S2 wide showed the light had moved from outside the window to inside it. Each is one choice from STYLE.md §6, not the style's default opening or ending.\n\nStaging in pane IV: close-ups at 1.3–2.3× on a 300-unit lancet; knight lower-left, dragon upper-right. The reveal was re-staged at the final zoom: both figures shrunk, the ember moved to frame centre at ≥ ~1/8 of the frame width with its glow, the knight on the left third looking at it, the dragon whole inside the pane, then a pull-back to both.\n\n## Score structure\n\nOriginal score (`demo/music/score.py`), medieval / plainchant feel, **D Dorian** (the raised 6th, B♮, gives the colour), 80 BPM for the metred cues. Instruments: `recorder`, `organ_soft` / `organ` / `organ_pedal`, `harp`, `hand_chimes`, `tubular_bells`, `timpani`, `glass` (water glass, \"the light\"), `glockenspiel` (dust glints, rare). All CC0 (VSCO 2 CE / VCSL / FreePats). Bus reverb `room(size=.8, mix≈.3)`; the bell alone at `size≈.95`.\n\n| Cue | Time | Tempo | Orchestration | Sync |\n|---|---|---|---|---|\n| C1 Incipit | 0.5–9.6 | free | solo recorder chant over organ pedal D2 / soft D3–A3 drone | 0.5 ray (water glass D6); 5.4 title (glass + chime) |\n| C2 Dawn | 9.6–15.6 | 80 | harp arpeggios Dm–G (Dorian i–IV), recorder, chimes on downbeats | 11.1 sword raise |\n| T1 Light moves | 15.6–17.2 | — | rising water-glass glide | 17.2 arrival |\n| C3 Noon | 17.2–22.6 | 80 | harp, chimes, tubular bells, recorder up an octave, soft organ | a step per beat |\n| C4 Battle | 22.6–31.8 | 80 | full organ eighth-note ostinato (Dm–C–B♭–C), pedal, timpani | clashes 24.75 / 26.25 / 27.75; roll 30.0–31.8 |\n| — Crack | 31.8–33.8 | — | **everything hard-cut, reverb tails included**; only the shatter's own reverb | 31.8 |\n| C5 Ember | 33.8–44.6 | 60 (free) | warm soft-organ chords, sparse chimes, harp harmonics | from 41.3 one weld note per beat up the mode |\n| C6 Bell | 44.6–47.2 | — | a single tubular bell D, very long reverb | the sword laid down |\n| C7 Nocturne | 47.2–56.5 | free | recorder reprise (softer), soft organ D, harp harmonics | ends on a D–A open fifth |\n\nFoley specific to this film: the ember's quiet crackle, far pigeons in the vault, the dove's wings, sword and shield clashes. Music ducked ~9 dB under the voice; timpani and heavy glass hits avoid word onsets.\n\nVoice: Kokoro `bf_alice`, speed .86–.88, \"like a nun telling an old story\", 8 short lines (`demo/lines.json`). Whisper heard \"knight\" as \"night\": the expected transcription goes in the line's `asr` field.\n\n## Palette & props\n\n- Transmittance colours: cobalt `#1d3a9c` (dominant) · deep blue `#142a70` · ruby `#a8101c` · gold `#dc9a22` · emerald `#2f7f36` · olive `#6b7a22` · murrey `#632a63` · flesh `#d2a288` · white `#cfdac6` · mail `#a9b7b2` · sky `#7fa2cf` · umber `#7a4e24` · ember amber `#ff9a2a` (the story light).\n- Sun colour × intensity: dawn `(.70,.83,1.0)` × 2.2, low, long patches · noon `(1,.97,.9)` × 2.7, short patches · afternoon `(1,.84,.6)` × 2.35 · dusk `(1,.6,.34)` × 2.6 · night moon `(.55,.66,1.0)` × 0.5 through every pane, plus the ember.\n- Lit pane backlight 2.2–2.8, band edge `bandW` ≈ lancet width + 10, soft 24, slight diagonal skew.\n- Lead `#1d1f23`, 6 units (4.2 quarries, 3–4 small details). Aged piece edges: two soft strokes, rgb 206 / 168.\n- Grisaille trace `rgba(44,26,12,.88)`: brows 3.8, eyes 3.0, folds 2.3–2.6 units; matting `wash .35–.45`; scraped highlights use the piece's own colour `g.__col`.\n- Borders: ruby band with gold pearls + white fillet with a running vine; quarries carry a small vine curl each.\n- Room: ashlar courses 86 units; the title in Cinzel on the string course with a moving strip of light.\n- The knight (`knight.js`): elongated ~7.5-head proportions, big hands, mail as staggered arcs, a sun device on the shield, swappable face pieces (stern / astonished). The dragon (`dragon.js`): a wyvern built as a spine chain cut into banded dorsal and belly pieces, scales as arcs along the spine, transverse belly plates, open and folded wings, the ember at its chest.\n\n## End card\n\nThe carved inscription on the stone string course changes from *THE DRAGON OF THE EAST WINDOW* to *STAINED GLASS* and *LEMOLAB × CLAUDE OPUS 5.5* (Cinzel 600, incised and gilded, revealed by the sweep light); the camera pushes in so the credit line is ≥ 30 px, and a thin blue dawn ray touches pane I. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Rights\n\nOriginal story, characters, window design and score. References (see STYLE.md header) were studied for grammar only; no Chartres window subject or religious imagery is reproduced. Samples are CC0; fonts are OFL (see `demo/CREDITS`).\n\n## Build notes\n\n```\nstyles/stained-glass/demo/\n  glass.js    pieces, textures, lead, grisaille brushes, lozenges    comp.js   WebGL2 compositor (glass/stone/floor/shafts/bloom)\n  knight.js   glass knight rig + poses + faces                       dragon.js wyvern rig (spine bands, head, folded/open wings, ember)\n  window.js   lancets, rose, borders, scenes, stone wall, carving    scene.js  camera, floor projection, shafts, dust -> compositor\n  story.js    timeline: light, camera, lancet states, crack, re-lead, events, subtitles\n  subs.js     banderole subtitles     test.js  model sheet / test pages (?test=sheet|knight|dragon)   frames.js  style frames (?frame=...)\n  lines.json  narration   music/score.py  original score   mix.py  foley + mix   subs_export.py  -> .srt   build.sh  one-shot rebuild\n```\n\n1. `node core/render/still.mjs styles/stained-glass/demo 36 --q nosub=1`: review stills. `?test=sheet` for the model sheet.\n2. `core/tts/tts.py lines.json voices` → `asr_check.py`.\n3. `node core/render/events.mjs` → `music/score.py` → `mix.py` → `subs_export.py`.\n4. `node core/render/video.mjs styles/stained-glass/demo --fps 24 --workers 3` (1356 frames, about 3–4 min with 3 workers; Canvas2D vector glass plus the WebGL compositor).\n5. `CRF=22 sh demo/tools/mux.sh out/video24.mp4 mix.wav stained-glass.mp4 24 4` (grain 4). Or simply `sh styles/stained-glass/demo/build.sh`.\n\nPitfalls tied to this demo's props:\n- A folded wing built from the open-wing rig looked like a pile of sticks → a dedicated folded silhouette (knuckle up, pleated blade sweeping back), far wing hidden.\n- The turning-point reveal was unreadable in v1: the knight filled the frame and the dragon was cut by the lancet edge → re-staged at the final zoom (see Shots).\n- The carved end card at night was unreadable in the wide shot → push in and park the sweep light on the text.\n- Duration grew from the planned 45 s to 56.5 s: L6 moved to 38.3 s so it wouldn't collide with L5's reading time, and the end card got its push-in so the credit stays legible.\n",
+  "published_srt_verbatim": "1\n00:00:01,000 --> 00:00:05,081\nThis window only tells its story where the sun falls.\n\n2\n00:00:10,000 --> 00:00:14,390\nAt dawn, a knight was sent to slay the dragon that ate the sun.\n\n3\n00:00:17,800 --> 00:00:21,747\nHe crossed the hills and rivers in the white noon light.\n\n4\n00:00:24,400 --> 00:00:28,185\nAll afternoon they fought, and the shadows grew longer.\n\n5\n00:00:33,800 --> 00:00:38,000\nThen, in the red of evening, he saw what the dragon was guarding.\n\n6\n00:00:38,300 --> 00:00:42,266\nThe last ember of the sun, kept warm until morning.\n\n7\n00:00:45,000 --> 00:00:47,817\nSo the knight laid down his sword.\n\n8\n00:00:49,200 --> 00:00:53,493\nAnd every night since, one pane of glass keeps its own light.\n",
+  "original_assets_and_licenses_verbatim": "The Dragon of the East Window — a Stained Glass film (Lemo-Opuscar · LemoLab × Claude Opus 5.5)\n\nAll images, characters, glass, lead, stone and light are drawn procedurally in code (no image assets).\nStory, melody and characters are original.\n\nNarration: Kokoro TTS (kokoro-onnx, voice bf_alice), Apache-2.0.\nMusic: original score written in code with the repo sampler (core/audio/sampler.py).\nSamples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition (Versilian Studios), Versilian Community Sample Library (Versilian Studios).\nFoley: synthesized in mix.py (glass modes, crack, lead creak, air, stone hall), no recordings.\n\nFonts (SIL Open Font License 1.1):\n- Cinzel — Natanael Gama (carved title and end card)\n- IM Fell English — Igino Marini (subtitle banderole)\n- Cormorant Garamond, Uncial Antiqua (downloaded, used only on test pages)\nLicences in demo/fonts/OFL-*.txt.\n",
+  "engine_reuse_recommendation": "glass.js/compositor general transmitted glass/lead and rig primitives; new four panel geometry, lighting route and story.",
+  "rights_or_evidence_notes": "Original codeMIT; reuse only explicitly attributed general helpers/fonts/assets with supplied licences. New scene staging and animation must be authored independently. Original model end credits recorded as historical reference, replaced honestly in recreation.",
+  "v1_quality_deficits": "V 1 lacked four pane architecture, floor projection duel, false slayer premise, crack/ember reversal and re leaded kneeling gesture.",
+  "recreation_status": "brief-audited; newfilmnotyetgenerated",
+  "published_asset_manifest": [
+    {
+      "path": "styles/stained-glass/demo/fonts/OFL-Cinzel.txt",
+      "sha256": "f2b3029aba64c378bf0963b62945eee15e564fe4330b934c8f2eb058282b5e83",
+      "bytes": 4383
+    },
+    {
+      "path": "styles/stained-glass/demo/fonts/OFL-CormorantGaramond.txt",
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "bytes": 4387
+    },
+    {
+      "path": "styles/stained-glass/demo/fonts/fonts.css",
+      "sha256": "acac76ba38c218aac3dd28b60db9677064cc67c43e9ae45a5d9c94ff0debc8f3",
+      "bytes": 368
+    },
+    {
+      "path": "styles/stained-glass/demo/fonts/OFL-IMFellEnglish.txt",
+      "sha256": "2a3ca501fc4d5efcad9798531e3e06962b1e20c60e464f6cbd6c17630112c773",
+      "bytes": 4452
+    },
+    {
+      "path": "styles/stained-glass/demo/fonts/OFL-UncialAntiqua.txt",
+      "sha256": "244ca4ef7b106d8c660e9a00cecf5d581b6a222f447d7d59a8f61711b2ad3400",
+      "bytes": 4437
+    }
+  ]
+}

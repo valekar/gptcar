@@ -1,0 +1,906 @@
+{
+  "schema_version": "matched-original-brief-v2-audit-1",
+  "slug": "white-model",
+  "status": "reference-audited-asset-rebuild-required",
+  "original_title": "How a Flattened City Grew Back",
+  "original_title_aliases_from_demo": [
+    "Demo: *How a Flattened City Grew Back* 《被炸平的城市怎样长回来》 (40.0 s) · `white-model.mp4` · source in [`demo/`](demo/)",
+    "",
+    "Rotterdam's centre as a 1:1000 white model (2.3 × 2.6 km: 3,887 buildings, 8,860 roof parts, 108 bridge decks). Chinese on screen, English narration, bilingual subtitles (Chinese line above, English line below)."
+  ],
+  "published_premise_verbatim": "A projector lights Rotterdam's white model layer by layer: what stood before 1940, the decades that filled the hole, the towers, and the winter shadow the tallest one casts on the pre-war roofs.",
+  "published_premise_zh_verbatim": "投影机把数据一层层刷上鹿特丹白模：1940 年前留下的楼、填满空洞的几十年、长起来的塔楼，以及最高那栋在冬至正午投向战前屋顶的影子。",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "verbatim_original_conversation_prompt": null,
+    "published_brief_statement": null,
+    "reconstructed_replication_instruction": "Recreate the full published How a Flattened City Grew Back scene order, story, exact narration and screen text at original timing/resolution/fps, including all specified subjects, performance, mechanisms, lens/light/material treatment, transitions and sonic hits. This is a reconstruction from published sources, not a quoted original conversational prompt.",
+    "reconstruction_basis": [
+      "Complete published STYLE.md and DEMO.md",
+      "Published narration, cards and timing source",
+      "Original movie: all regular contact sheets and named key-event frames"
+    ]
+  },
+  "original_format": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24.0,
+    "duration_s_exact_timeline": 40,
+    "duration_s_gallery_rounded": 40.0,
+    "duration_s_published_demo_text": "40.0",
+    "video_stream_metadata_verified": true,
+    "note": "Encoded target is frame_count/fps, not rounded catalogue or container audio duration.",
+    "frame_count": 960,
+    "duration_s": 40.0,
+    "container_duration_s": 40.0,
+    "production_canvas_width": 1920,
+    "production_canvas_height": 1080
+  },
+  "source_authorship": "Historical original by Lemomo/LemoLab using Claude Opus5.5. New output must identify actual GPT authorship and attribute any reused generic components.",
+  "source_hashes": [
+    {
+      "path": "styles/white-model/STYLE.md",
+      "sha256": "02b6423a69ac5a30322997ec9523bd6b6f776b7c8cf14f249eeb996b9d21e2c2"
+    },
+    {
+      "path": "styles/white-model/DEMO.md",
+      "sha256": "81f08bf241c091701aecba4770981989c871fa0919c5e269e0900283767dce96"
+    },
+    {
+      "path": "styles/white-model/style.json",
+      "sha256": "6a23bc924f9caabfb0b6455b0109b17c5bfb69d1c7b0092b5fca5e51537c8ac9"
+    },
+    {
+      "path": "styles/white-model/demo/timeline.js",
+      "sha256": "4bf02676b2394c852a8b3ab41f9842c859a8d0d2ced506ac5476de03c20f048b"
+    },
+    {
+      "path": "styles/white-model/demo/voice/lines.json",
+      "sha256": "2e459eb1d879b7d3a0d3d3042aa0393b63f5c7df3f2a5f39ee723fd660c39a10"
+    },
+    {
+      "path": "styles/white-model/demo/cues.json",
+      "sha256": "24a0e6b47a6f817742cde3f5188e5d49099544fe29f560909a7806dcaa1837c2"
+    }
+  ],
+  "style_guide_sha256": "02b6423a69ac5a30322997ec9523bd6b6f776b7c8cf14f249eeb996b9d21e2c2",
+  "style_guide_verbatim": "# Projection on White Model — Style Prompt\n\n> A pure white massing model of a real place stands on a plinth in a dark room, and a projector paints data onto it as light: one layer at a time, falling on the surfaces that face it, spilling a little past the plate. The model never changes; only the light on it does.\n> References (grammar only): projection-mapped planning models in city galleries (the dark room, the soft throw, colour only on white surfaces); macro model photography (shallow focus at rooftop height); editorial data graphics (one figure, one label, one source per layer). Copy none of their layouts, typefaces, colours or music, and never name them in the film.\n\n## 1. Essence, and what it is not\n\n- **The model is real geometry of a real place**: building footprints and heights from open data (§2), extruded at a stated scale (1:1000, 1:2000…). Nothing on the model is invented or \"representative\", and no generated image ever stands in for the place.\n- **The model is white; data is light.** Colour is never painted into the material: it is projected, so it brightens surfaces that face the projector, fades on walls turned away, stops at the edge of the throw and reaches a little onto the plinth.\n- **Layers arrive one at a time**, each with its own gesture of light (a wash, a pop-on, a rising level, a moving sun), and each answers the question the last one raised.\n- **A physical room**: house lights, a projector that strikes and switches, a plinth, darkness around it. Lights out is where the data starts; lights up is where it ends.\n- **Every number on screen is computed from the same buildings** that are on the table.\n\nNot Isometric Infographic (no diorama or icons), not Low-poly Island (no invented terrain), not Sci-fi Hologram HUD (no wireframes; light lands on matter), not Satellite Briefing (no imagery), not a laser-scan or point-cloud film (no scan lines; light is projected, not measured).\n\n## 2. Materials & rendering\n\n- **Model**: matte white (≈ #F3F3F1, roughness ≈ 0.9), crisp edges; water a darker satin inlay in the base plate; bridges low white slabs; a thin base plate on a dark satin plinth.\n- **Light model**: house light = one soft key + a neutral studio environment + AO on close shots. Projection = a term added to the lit surface in the shader: `colour × (0.42 + 0.58 · max(N·toProjector, 0)) × throw mask`, scaled by albedo, reduced on water. Never a texture on the mesh.\n- **Building data is the material.** First look for the place's own open 3D or footprint-with-height data: 3DBAG (Netherlands, CC BY 4.0), PLATEAU (Japan, CC BY 4.0-compatible), city open-data portals (footprints with heights or floors, zoning, plans). Fine: CC0, public domain, CC BY (credited in CREDITS and on screen). OpenStreetMap and Overture (ODbL), CC BY-SA and \"no known restrictions\" are not CC0: name the terms to the user and ask first. For their own site, ask the user for their data (plan, city model, survey heights).\n- **Layers depend on what exists.** Construction years per building are a Dutch luxury (BAG); elsewhere they are often missing. Substitute what the data does hold and the medium can still project: heights or floor counts, footprint area, zoning or plan status, a boundary, sun and shadow (always computable). Never invent a year layer.\n- **A layer is state, not a picture**: per-building attributes (year, height, rank, flags) live in vertex data; the shader decides each frame what colour the projector gives them.\n- **The sun is a real directional light** with shadow maps, computed from the place's latitude and a real date and time (NOAA/Meeus solar position). The projector can trace what the sun does (a shadow footprint) but never fakes a shadow.\n- **Post**: physical depth of field (stronger on close shots), bloom only above the projection highlights, vignette, light grain in ffmpeg. GTAO only on close shots: on wide grazing views it bands.\n- **Screen space only for the 2D layer**: readouts, pins, measured lines and subtitles go through the camera's world → screen function so they stay pinned to the model.\n- **Keep a FACTS.md in the project folder** (claim, source URL, quoted wording, or the measurement method) and deliver it with the film; every number on screen is computed by a script from the same data as the model.\n\n## 3. Colour logic\n\n- Neutral ground: white model, dark room (near black), dark plinth. Projector black level is a cool near-black on the plate.\n- **One hue family per layer**, chosen for the data: a single categorical accent for \"the old/the exception\" (e.g. warm amber), a sequential ramp for continuous data (blue → cyan → white for time, violet → magenta → peach for height).\n- **A colour may return** only with the same meaning (the \"before\" colour reused later marks the same set of buildings).\n- The sun is warm, its shade is a projected deep blue; data colours are put away when the sun arrives.\n- Never colour the model in the house light; never use more than two layer palettes on screen at once.\n\n## 4. Type & subtitles\n\n- **Roles**: a light grotesk for the figure (Inter Tight 200, 120–140 px), a sans for labels in the film's language (Noto Sans SC 300/500, 20–36 px), a monospace for instruments, years and coordinates (IBM Plex Mono, 18–22 px). OFL, self-hosted, CJK subset.\n- **Readout in the left third**, one per layer: index + layer name, one figure, one label, one source line, a legend bar.\n- **Pins**: a hairline from a roof or a ground point up to a tag on a dark plate (title 26 px + one sub line 20 px).\n- **Identity label** top-left, quiet: place, scale, data sources.\n- **Subtitles** centred at the bottom on a soft dark gradient, no box, measured with the real fonts; if the film is bilingual, the film's language on top, each language on a single line, split into two cues rather than wrap.\n- Nothing below 18 px at 1080p. Hold subtitles ≥ max(1.8 s, speech + 0.6 s); labels ≥ characters ÷ 4.5 + 1.5 s (CJK), letters ÷ 15 + 1.5 s (Latin).\n\n## 5. Motion quality\n\n- The camera moves continuously and slowly; it changes speed with the layers, never stops dead.\n- **Light is the actor.** Each layer arrives by a soft-edged gesture of light: a wash spreading from the projector axis, buildings switching on one by one with a short flash, a level climbing every facade, the sun's clock running. No hard line sweeping the table.\n- House lights cut fast (a relay, 0.25 s) and return slowly (1 s); the projector strikes with a brief flicker.\n- Counters roll while the light moves and land when it lands; measured lines grow from A to B with ticks.\n- What never moves: the model, the plinth, the pins' anchors on the model.\n\n## 6. Camera grammar\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Macro glide at rooftop height, shallow focus | the model is a real object | an opening; a detail that matters |\n| Crane up and back | the whole pattern only seen from above | revealing a hole, a cluster, an edge |\n| Slow orbit with a rise | the city as a whole, layers accumulating | growth over time; comparisons across the model |\n| Boom down to a low angle against black | height, skyline | tall buildings, heights, a single tower |\n| Side-on track along a line | a measured distance on the model | a shadow, a corridor, a route, a view line |\n| Pull back as the house lights return | the data stops; the object remains | an ending; a reset between topics |\n\nAt key moments the subject fills a third of the frame height; readouts left third, subtitles bottom centre, pins never over the readout. Transitions are light changes on one take (lights out, a layer replacing another, the projector going dark), not cuts, fades or wipes.\n\n## 7. Sound palette\n\n- **The room**: room tone, the projector fan (hum + filtered air) rising when the lamp strikes, relays for the house lights, a lamp strike (zap + thump), the air of a light wash (sliding band-passed noise).\n- **Light as sound**: mallets and glass for things switching on, bowed vibraphone for held light, a rising mallet line and air riser for a climbing level, one glass note per highlighted building.\n- **Weight**: timpani, gran cassa, gong, low brass for a heavy fact; warm low brass for a turn.\n- **Floor**: contrabass and cellos only as a floor under the chords; no generic piano and strings melody.\n- **Silence**: the projector goes dark and everything stops but a thin fan hum before the turn; a short suck-out before the heaviest hit. The first sound after the silence is the turn.\n- **Mix**: voice about 10 dB over the music; the two designed impacts are the loudest moments; −14 LUFS, true peak ≤ −1.2 dB. Voice: calm, short declarative lines, numbers spoken plainly.\n\n## 8. Native moves\n\n- **Lights out, lamp on.** House light, a relay, darkness, the lamp strikes, the first layer arrives. *Fits content like:* a site before and after; a district before a plan is shown; any \"now look closer\".\n- **The hole.** Light only the set that answers a question (built before a date, owned by one party, inside a zone) and let the absence draw the shape. *Fits content like:* a war-damaged centre; a flood plain with no housing; land a company owns; a protected zone.\n- **Layers by time.** Buildings switch on in the decade they were built, each layer faster than the last, a year counter rolling. *Fits content like:* a new town's growth; a campus master plan by phase; a port's expansion; a developer's portfolio by year.\n- **The rising level.** A soft level of light climbs every facade at once; low buildings finish first, the tallest last, the reading rides up with it. *Fits content like:* building heights; sea-level or flood depth; floor counts; a height limit being tested.\n- **The sun clock.** A real sun at a real date sweeps the shadows; the projector then traces one shadow and measures it. *Fits content like:* a new tower's shadow on a park; winter light in a courtyard; solar panels' best roofs; a street's daylight hours.\n- **The pick-out.** One building or set lights alone while the rest stay dark, with a pin. *Fits content like:* a listed building; the plot for sale; the hospital in an evacuation plan.\n- **Lights up.** The data stops, the white model comes back. An ending or a reset.\n\n## 9. Pitfalls of the medium\n\n- **Wall normals** wound the wrong way show inside faces (walls look hollow): derive the outward normal from ring orientation. **Shared walls** between parts z-fight: skip the overlap below the lower neighbour.\n- **Warm HDRIs turn the white model beige**: use a neutral studio environment.\n- **GTAO on wide grazing views** produces wedge-shaped dark bands; keep it on close shots only.\n- **A low sun lights facades, not roofs**: shoot from the sunlit side or side-on. **Narrow shadows vanish** among all the others: trace the one that matters (fill + edge) and measure it.\n- **Hairline scan lines read as laser scanning**: give every projection front a wide soft edge or switch buildings individually.\n- **Floating labels**: anchor pins on the tallest part of a building, not on its footprint centroid.\n- **Numbers from mixed sources** (official height vs measured roof): say which on screen (\"roof\", \"measured\").\n\n## 10. Engine\n\n- `demo/studio.js` — `makeStudio(W, H, model)`: renderer, post, room, the projection material (`projMaterial(kind)` injects `projLight()` / `roofGlow()` into MeshStandardMaterial), the city mesh (`buildCity`: outward normals, shared walls removed), plate, plinth, house light (index 0) and sun (index 1). Uniforms `U` drive every layer.\n- `demo/tools/prep.py` — **3DBAG + BGT only**: it reads 3DBAG fields (`b3_h_70p`, `b3_h_maaiveld`, `oorspronkelijkbouwjaar`) and Dutch RD coordinates (`tools/rd.py`). Another source needs its own adapter that writes the same `model.json`: `{size:[w,d] model metres, b:[[year|0, height_m], …] per building, p:[[building_index, height_model_m, [[[x,z],…] outer ring, …holes]], …] per roof part, decks:[[[x,z],…]]}`, with x east, z south, 1 unit = 1 model metre; plus `water.png` (plate-sized mask) and a `stats.json` with every on-screen number. `tools/sun.py` (solar position, any place and date) and the heightfield shadow are source-independent.\n- `demo/overlay.js` — readout, pin, measured range line, subtitle strip, title card; registers texts for readcheck.\n- **Extra packages and packs**: none beyond `setup.sh deps` (+ `voice`, `music` for narration and score); downloads are plain `curl` from the data portal. Reprojecting another country's data may need pyproj or shapely: the agent installs them itself into a private venv in the project folder, not into `$LIB/.venv`.\n- Minimal example, not in the demo: set `U.uPreC` to a station and `U.uPreR` growing to light everything within walking distance; or put a flood height in `U.uHgtF` with `U.uHgtBand` held at 1 and leave it still.\n\n## 11. Variation space\n\nDecide per film: place and scale, which layers in what order, their colours, the opening, the camera path, the ending, the pace.\n\n- **Structures**: a question answered layer by layer; a plan versus today (the plan's buildings switching on in a second colour); one building's story told by its neighbours.\n- **Openings**: a macro glide over white roofs; darkness and a single pick-out; the plinth from across the room as the house lights fall.\n- **Endings**: lights up on the white model; one last layer left on alone; the camera rising until the model is an object on a table in a dark room.\n\n---\n\nHow our demo was made (story, shots, score, title card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n",
+  "published_demo_verbatim": "# Projection on White Model — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *How a Flattened City Grew Back* 《被炸平的城市怎样长回来》 (40.0 s) · `white-model.mp4` · source in [`demo/`](demo/)\n\nRotterdam's centre as a 1:1000 white model (2.3 × 2.6 km: 3,887 buildings, 8,860 roof parts, 108 bridge decks). Chinese on screen, English narration, bilingual subtitles (Chinese line above, English line below).\n\n## Story & structure\n\nLogline: light picks out everything on the model built before 1940 and finds a hole in the middle; decade by decade the hole fills and the city climbs; then the tallest new tower's midwinter-noon shadow runs 777 m across sixteen roofs, nine of them pre-war.\n\nArc: the white model under gallery light → lights out, the lamp strikes, the pre-war layer (23 % of the footprint) and the hole → 14 May 1940, 13:27; the city hall that came through almost undamaged → four post-war layers pop on, faster each time, a year counter rolling 1940 → 2025; the city crosses the river (Kop van Zuid) → a level of light climbs every facade and tops out on Zalmhaven I (roof 203 m); 24 of the 25 buildings over 100 m are post-1990 → the projector goes dark (silence) → the winter sun at solar noon (14.6°), the tower's shadow traced and measured (777 m), the sixteen roofs inside it light up, the nine pre-war ones in the first layer's amber → house lights up, white model, end card.\n\nNative moves spent: *lights out, lamp on* at 1.8–2.4 s; *the hole* for 1940; *layers by time* for the growth; *the rising level* for heights; *the sun clock* plus a projected shadow trace and a range line as the signature; *the pick-out* for the roofs; *lights up* as the bookend.\n\nEvery number on screen is computed by `demo/tools/prep.py` into `demo/data/stats.json`; every claim and its source is in [`demo/FACTS.md`](demo/FACTS.md).\n\n## Shots\n\nOne continuous take. Camera = target, azimuth (0 = south of the target looking north, 90 = east), elevation, distance in model metres.\n\n| # | Time | Shot | Camera | Native move / note |\n|---|---|---|---|---|\n| 1 | 0.0–1.8 | white roofs at rooftop height, shallow focus, gallery light, AO | macro glide from the north-east (az 152 → 142, el 7 → 11, d 0.55 → 0.72) | the model as an object |\n| 2 | 1.8–2.4 | house lights cut (0.25 s), darkness | glide continues | relay; silence of the room |\n| 3 | 2.4–6.0 | the lamp strikes with a flicker; an amber wash spreads from the projector axis over every pre-1940 building | crane up and back (el 11 → 36, d 0.72 → 1.85) | the hole appears as the camera rises; readout 23 % |\n| 4 | 6.0–11.6 | 14 May 1940 stamp in the hole (6.0), the city hall pinned (7.8) | slow push and orbit (az 128 → 104, d 1.85 → 1.62) | short suck-out before the date hit |\n| 5 | 11.6–17.1 | four post-war layers switch on building by building (1.0 / 0.9 / 0.9 / 0.75 s spreads), year counter, legend rows; Kop van Zuid pinned at 14.6 | orbit to the south-east with a rise (az 104 → 52, d 1.62 → 2.75) | acceleration by spread, not by tempo |\n| 6 | 18.0–21.6 | a soft level of light climbs every facade (heights ramp, 25 m rings), the reading rides up Zalmhaven I to 203 m | boom down to a low angle (el 36 → 17, d 1.95) | towers against black |\n| 7 | 21.6–22.8 | projector dark | drift | silence |\n| 8 | 22.8–27.0 | winter sun at the real azimuth, clock 10:55 → 12:40 (solar noon), data put away, shade projected blue | rise and turn (az 34 → 28, el 24) | first sound after the silence: brass in A♭ |\n| 9 | 27.0–35.4 | the tower's noon shadow traced (fill + edge) as a range line grows 0 → 777 m with 100 m ticks; 16 roofs ping on (29.4–31.2), 9 amber | side-on from the south-east, closing in (az 40 → 32, d 1.6 → 1.16) | **signature**: poster at 30.4 s |\n| 10 | 35.4–40.0 | house lights up, data off, end card | pull back and rise (d 1.3 → 2.85, el 35 → 44) | bookend |\n\n## Score structure\n\n100 BPM, 4/4; every layer onset, the date, the top of the climb, the sun, the line landing, the roofs and the lights sit on a beat (`demo/tools/cuecheck.py`: 0 ms on 19 cues).\n\n| Section | Time | Palette | Notes |\n|---|---|---|---|\n| White | 0–1.8 | bowed vibraphone G4/C5, room tone, idle projector fan | |\n| Lamp | 1.8–6.0 | relay, lamp strike, wash air swell; contrabass C2 + cellos G2, bowed vibraphone E♭5, a quiet marimba pulse in 8ths | suck-out 5.55–6.0 |\n| Date | 6.0 | timpani C3, gran cassa, gong, bass drum, low brass stab in C minor (tuba, trombones, horns) + a 60–120 Hz punch | loudest moment of the film |\n| Aftermath | 6.0–12.0 | contrabass C2, cellos E♭3, bowed vibraphone A♭4 → G4, sparse vibraphone; glass tick on the city-hall pin | |\n| Growth | 12.0–18.0 | E♭ major; bass climbs E♭–F–G–A♭ one step per layer; marimba 8ths → 16ths → 16th-note triplets, pizzicato violins from layer 2, hand-chime chord per layer, horns swell from the river crossing; a soft tick per building switching on | |\n| Height | 18.0–21.6 | A♭: contrabass A♭1, bowed vibraphone C5/E♭5, glockenspiel + vibraphone line climbing with the level, air riser; tubular bell E♭5 + cymbal on the top | |\n| Silence | 21.6–22.8 | thin fan hum only | |\n| Sun | 22.8–27.0 | horns A♭3/C4/E♭4, trombones A♭2/E♭3, tuba A♭1, timpani, gran cassa, bowed cymbal; organ (soft) and bowed vibraphone hold | second-loudest moment |\n| Shadow | 27.0–31.2 | F minor floor (contrabass, cellos, soft organ), timpani heartbeat every two beats, a click per 100 m, timpani + bell when the line lands; one glass note per roof (G5 pre-war, C6 newer) | |\n| Coda / lights | 31.2–40.0 | D♭ → E♭ held; at the lights a C major chord (horns, bowed vibraphone), relays, fan settling; tubular bell C5 and two glass notes on the end card | |\n\nMix (`demo/mix.py`): music balanced to sit 10 dB under the voice while it speaks and ducked 40 %; hits ducked 20 %, uncompressed; bus compression on music, foley and beds only; a 38 Hz high-pass (46 Hz, 4th order on hits) and a −5 dB shelf below 62 Hz on everything but the voice; master at −14.4 LUFS with a true-peak limiter at −4.6 dBTP; `mux.sh` measures the film at −13.8 LUFS, LRA 6.1 LU. `demo/tools/impactcheck.py`: the date is the loudest momentary moment, the sun −0.7 dB under it; each follows a dip of −20 and −28 dB; the silence sits 16 dB under the median program.\n\n## Palette & props\n\n- Model #F3F3F1 (roughness 0.88), plate water inlay (0.10, 0.13, 0.17) satin, plinth #17181A; room background a dark radial gradient.\n- Layers: pre-1940 #FFA13D; 1940–64 #2A46FF; 1965–89 #2F98FF; 1990–2009 #6FDCFF; 2010–25 #E6FBFF; height ramp #1A1440 → #5A35D6 → #E2509A → #FFE7C4; projected shade #1C2C66; sun #FFD9AD; shadow trace fill (0.10, 0.22, 0.65) with a pale edge; newer shaded roofs #BFF3FF.\n- Props: the model (3DBAG LOD1.3, BAG construction years), BGT water and bridge decks, the 2 m heightfield noon shadow of Zalmhaven I, the sun table for 21 Dec 2025 at 51.914° N, 4.484° E.\n- Narrator: Kokoro `bm_george`, speeds 0.95–1.08.\n- Real places and buildings appear as data; this is not an official film of the City of Rotterdam or of any building's owner.\n\n## End card\n\nOver the white model as the house lights return, a left block: 被炸平的城市怎样长回来 (Noto Sans SC 500, 64 px), *How a Flattened City Grew Back* (Inter Tight 200), an amber rule, `白模投影 · PROJECTION ON WHITE MODEL`, `3DBAG · BAG · BGT · 鹿特丹市档案馆`, `LemoLab × Claude Opus 5.5`. 35.7–40.0 s. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Build notes\n\n```\ndemo/\n  build.sh       one command: data (if missing) → voice → speech check → cues → events → video → mix → master → .srt → checks → poster\n  index.html     WebGL canvas + 2D overlay canvas, fonts\n  main.js        render(t): camera keys, projection state per layer, overlay, window.EV, SUBCHECK\n  studio.js      renderer, post, room, projection material (projLight / roofGlow), model mesh, plate, plinth, lights\n  overlay.js     readouts, pins, range line, subtitle strip, end card, text registry for readcheck\n  timeline.js    beats, layers, sun clock, narration (single source; tools/export.mjs → timeline.json, voice/lines.json, cues.json)\n  mix.py         score, foley, beds, voice, mix → out/mix.wav + out/stems/\n  tools/         prep.py (data → model, masks, stats), rd.py (RD ↔ WGS84), sun.py (solar position), fonts.py (CJK subset);\n                 export.mjs (voice/cues); cuecheck.py, subcheck.mjs, motioncheck.py, impactcheck.py, finalasr.py (checks)\n  data/          model.json, water.png, zshadow.png, stats.json (generated)\n  assets/raw/    3DBAG and BGT downloads (gitignored)\n  FACTS.md, CREDITS, TREATMENT.md, PRODUCTION_LOG.md, stills/styleframe.jpg\n```\n\n- `sh demo/build.sh` takes about 4 minutes on Apple silicon (picture ~60 s with 4 workers; TTS and the Whisper check most of the rest). `FETCH=1` re-downloads the data (~55 MB).\n- Checks it runs: `asr_check.py` with `small.en` (British spellings \"centre\", \"metres\" set in the `asr` fields), cue grid, single-line subtitle widths with the real fonts (widest 618 px against 1500 px), `readcheck.mjs`, motion per second (no flat stretch; the jumps at 2.0, 2.6 and 35.6 s are the lights and the lamp), the impact ranking. `tools/finalasr.py` checks every narration line on the final mix.\n- Demo-specific pitfalls: the 3DBAG WFS returns all LOD1.3 parts in one request at `count=20000` for this box (13,345 features); parts are kept only when fully inside the crop, which leaves a clean street margin at the plate edge. The heightfield shadow counts a roof as shaded when its tallest part's centroid cell is under the tower's shadow height (2 m grid); the 16 roofs are listed in `stats.json` with distances 262–734 m. Zalmhaven's 3DBAG roof (203.0 m above ground, 70th percentile of the highest part) matches the published roof height; the 12 m mast is not in the model. GTAO is faded out after the lamp strikes because it bands on the wide grazing views.\n",
+  "canonical_scene_order": [
+    {
+      "id": "1",
+      "t0": 0.0,
+      "t1": 1.8,
+      "published_time_range": "0.0–1.8",
+      "visual_prompt_source_description": "white roofs at rooftop height, shallow focus, gallery light, AO",
+      "camera": "macro glide from the north-east (az 152 → 142, el 7 → 11, d 0.55 → 0.72)",
+      "motion_transition_sound_notes": "the model as an object",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/white-model/frames/f-0001.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "2",
+      "t0": 1.8,
+      "t1": 2.4,
+      "published_time_range": "1.8–2.4",
+      "visual_prompt_source_description": "house lights cut (0.25 s), darkness",
+      "camera": "glide continues",
+      "motion_transition_sound_notes": "relay; silence of the room",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/white-model/frames/f-0003.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "3",
+      "t0": 2.4,
+      "t1": 6.0,
+      "published_time_range": "2.4–6.0",
+      "visual_prompt_source_description": "the lamp strikes with a flicker; an amber wash spreads from the projector axis over every pre-1940 building",
+      "camera": "crane up and back (el 11 → 36, d 0.72 → 1.85)",
+      "motion_transition_sound_notes": "the hole appears as the camera rises; readout 23 %",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l1",
+          "t0": 2.45,
+          "t1": 6.06,
+          "zh": "点亮 1940 年以前建成的一切。",
+          "en": "Light everything built before 1940."
+        }
+      ],
+      "voice_line_ids": [
+        "l1"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/white-model/frames/f-0005.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "4",
+      "t0": 6.0,
+      "t1": 11.6,
+      "published_time_range": "6.0–11.6",
+      "visual_prompt_source_description": "14 May 1940 stamp in the hole (6.0), the city hall pinned (7.8)",
+      "camera": "slow push and orbit (az 128 → 104, d 1.85 → 1.62)",
+      "motion_transition_sound_notes": "short suck-out before the date hit",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l1",
+          "t0": 2.45,
+          "t1": 6.06,
+          "zh": "点亮 1940 年以前建成的一切。",
+          "en": "Light everything built before 1940."
+        },
+        {
+          "id": "l2",
+          "t0": 6.1,
+          "t1": 9.11,
+          "zh": "1940 年 5 月 14 日。",
+          "en": "14 May 1940."
+        },
+        {
+          "id": "l3",
+          "t0": 9.15,
+          "t1": 12.36,
+          "zh": "炸弹和大火吞掉了大片市中心。",
+          "en": "Bombs and fire took much of the centre."
+        }
+      ],
+      "voice_line_ids": [
+        "l2",
+        "l3"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/white-model/frames/f-0009.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "5",
+      "t0": 11.6,
+      "t1": 17.1,
+      "published_time_range": "11.6–17.1",
+      "visual_prompt_source_description": "four post-war layers switch on building by building (1.0 / 0.9 / 0.9 / 0.75 s spreads), year counter, legend rows; Kop van Zuid pinned at 14.6",
+      "camera": "orbit to the south-east with a rise (az 104 → 52, d 1.62 → 2.75)",
+      "motion_transition_sound_notes": "acceleration by spread, not by tempo",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l3",
+          "t0": 9.15,
+          "t1": 12.36,
+          "zh": "炸弹和大火吞掉了大片市中心。",
+          "en": "Bombs and fire took much of the centre."
+        },
+        {
+          "id": "l4",
+          "t0": 12.4,
+          "t1": 15.41,
+          "zh": "后来，它一层一层长了回来。",
+          "en": "Then, layer by layer, it grew back."
+        },
+        {
+          "id": "l5",
+          "t0": 15.45,
+          "t1": 19.487,
+          "zh": "1990 年后，它跨过了河，往上长。",
+          "en": "After 1990, it crossed the river, and climbed."
+        }
+      ],
+      "voice_line_ids": [
+        "l4",
+        "l5"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/white-model/frames/f-0015.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "6",
+      "t0": 18.0,
+      "t1": 21.6,
+      "published_time_range": "18.0–21.6",
+      "visual_prompt_source_description": "a soft level of light climbs every facade (heights ramp, 25 m rings), the reading rides up Zalmhaven I to 203 m",
+      "camera": "boom down to a low angle (el 36 → 17, d 1.95)",
+      "motion_transition_sound_notes": "towers against black",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l5",
+          "t0": 15.45,
+          "t1": 19.487,
+          "zh": "1990 年后，它跨过了河，往上长。",
+          "en": "After 1990, it crossed the river, and climbed."
+        }
+      ],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/white-model/frames/f-0020.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "7",
+      "t0": 21.6,
+      "t1": 22.8,
+      "published_time_range": "21.6–22.8",
+      "visual_prompt_source_description": "projector dark",
+      "camera": "drift",
+      "motion_transition_sound_notes": "silence",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/white-model/frames/f-0023.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "8",
+      "t0": 22.8,
+      "t1": 27.0,
+      "published_time_range": "22.8–27.0",
+      "visual_prompt_source_description": "winter sun at the real azimuth, clock 10:55 → 12:40 (solar noon), data put away, shade projected blue",
+      "camera": "rise and turn (az 34 → 28, el 24)",
+      "motion_transition_sound_notes": "first sound after the silence: brass in A♭",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l7",
+          "t0": 22.93,
+          "t1": 27.24,
+          "zh": "冬至正午，太阳高度不到 15°。",
+          "en": "At midwinter noon, the sun stays below 15°."
+        }
+      ],
+      "voice_line_ids": [
+        "l7"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/white-model/frames/f-0025.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "9",
+      "t0": 27.0,
+      "t1": 35.4,
+      "published_time_range": "27.0–35.4",
+      "visual_prompt_source_description": "the tower's noon shadow traced (fill + edge) as a range line grows 0 → 777 m with 100 m ticks; 16 roofs ping on (29.4–31.2), 9 amber",
+      "camera": "side-on from the south-east, closing in (az 40 → 32, d 1.6 → 1.16)",
+      "motion_transition_sound_notes": "**signature**: poster at 30.4 s",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l7",
+          "t0": 22.93,
+          "t1": 27.24,
+          "zh": "冬至正午，太阳高度不到 15°。",
+          "en": "At midwinter noon, the sun stays below 15°."
+        },
+        {
+          "id": "l8",
+          "t0": 27.28,
+          "t1": 31.61,
+          "zh": "最高那栋楼的影子，拖出将近 800 米，",
+          "en": "The tallest tower's shadow runs nearly 800 m,"
+        },
+        {
+          "id": "l9",
+          "t0": 31.65,
+          "t1": 35.66,
+          "zh": "盖住 16 个屋顶，其中 9 栋战前就在。",
+          "en": "across 16 roofs. Nine were there before the war."
+        }
+      ],
+      "voice_line_ids": [
+        "l8",
+        "l9"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/white-model/frames/f-0032.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "10",
+      "t0": 35.4,
+      "t1": 40.0,
+      "published_time_range": "35.4–40.0",
+      "visual_prompt_source_description": "house lights up, data off, end card",
+      "camera": "pull back and rise (d 1.3 → 2.85, el 35 → 44)",
+      "motion_transition_sound_notes": "bookend",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l9",
+          "t0": 31.65,
+          "t1": 35.66,
+          "zh": "盖住 16 个屋顶，其中 9 栋战前就在。",
+          "en": "across 16 roofs. Nine were there before the war."
+        }
+      ],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/white-model/frames/f-0038.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    }
+  ],
+  "narration": [
+    {
+      "id": "l1",
+      "t0": 2.5,
+      "duration_s_original_voice": 2.882,
+      "tts_text_verbatim": "Light everything built before nineteen forty.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1.08,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l1",
+        "text": "Light everything built before nineteen forty.",
+        "voice": "bm_george",
+        "speed": 1.08,
+        "lang": "en-gb",
+        "asr": "Light everything built before 1940."
+      }
+    },
+    {
+      "id": "l2",
+      "t0": 6.15,
+      "duration_s_original_voice": 2.378,
+      "tts_text_verbatim": "May fourteenth, nineteen forty.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l2",
+        "text": "May fourteenth, nineteen forty.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb",
+        "asr": "May 14th, 1940."
+      }
+    },
+    {
+      "id": "l3",
+      "t0": 9.2,
+      "duration_s_original_voice": 2.581,
+      "tts_text_verbatim": "Bombs and fire took much of the centre.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1.05,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l3",
+        "text": "Bombs and fire took much of the centre.",
+        "voice": "bm_george",
+        "speed": 1.05,
+        "lang": "en-gb",
+        "asr": "Bombs and fire took much of the centre."
+      }
+    },
+    {
+      "id": "l4",
+      "t0": 12.45,
+      "duration_s_original_voice": 2.355,
+      "tts_text_verbatim": "Then, layer by layer, it grew back.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1.08,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l4",
+        "text": "Then, layer by layer, it grew back.",
+        "voice": "bm_george",
+        "speed": 1.08,
+        "lang": "en-gb"
+      }
+    },
+    {
+      "id": "l5",
+      "t0": 15.5,
+      "duration_s_original_voice": 3.237,
+      "tts_text_verbatim": "After nineteen ninety, it crossed the river, and climbed.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1.08,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l5",
+        "text": "After nineteen ninety, it crossed the river, and climbed.",
+        "voice": "bm_george",
+        "speed": 1.08,
+        "lang": "en-gb",
+        "asr": "After 1990, it crossed the river, and climbed."
+      }
+    },
+    {
+      "id": "l7",
+      "t0": 22.98,
+      "duration_s_original_voice": 3.646,
+      "tts_text_verbatim": "At midwinter noon, the sun stays below fifteen degrees.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1.08,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l7",
+        "text": "At midwinter noon, the sun stays below fifteen degrees.",
+        "voice": "bm_george",
+        "speed": 1.08,
+        "lang": "en-gb",
+        "asr": "At midwinter noon, the sun stays below 15 degrees."
+      }
+    },
+    {
+      "id": "l8",
+      "t0": 27.33,
+      "duration_s_original_voice": 3.666,
+      "tts_text_verbatim": "The tallest tower's shadow runs nearly eight hundred metres,",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1.08,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l8",
+        "text": "The tallest tower's shadow runs nearly eight hundred metres,",
+        "voice": "bm_george",
+        "speed": 1.08,
+        "lang": "en-gb",
+        "asr": "The tallest tower's shadow runs nearly 800 metres,"
+      }
+    },
+    {
+      "id": "l9",
+      "t0": 31.7,
+      "duration_s_original_voice": 3.385,
+      "tts_text_verbatim": "across sixteen roofs. Nine were there before the war.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l9",
+        "text": "across sixteen roofs. Nine were there before the war.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb",
+        "asr": "across 16 roofs. Nine were there before the war."
+      }
+    }
+  ],
+  "narration_source_path": "styles/white-model/demo/voice/lines.json",
+  "published_timeline_extracted": {
+    "bpm": 100,
+    "T": {
+      "lightsOut": 1.8,
+      "lamp": 2.4,
+      "washEnd": 4.8,
+      "date": 6,
+      "stadhuis": 7.8,
+      "g1": 12,
+      "g2": 13.2,
+      "g3": 14.4,
+      "g4": 15.6,
+      "gEnd": 16.5,
+      "hgt0": 18,
+      "hgtTop": 21,
+      "dark": 21.6,
+      "sun": 22.8,
+      "noon": 25.8,
+      "line0": 27,
+      "lineEnd": 28.8,
+      "roofs0": 29.4,
+      "roofs1": 31.2,
+      "lights": 35.4,
+      "end": 35.7,
+      "dur": 40
+    },
+    "GROW": [
+      {
+        "band": 1,
+        "t": 12,
+        "spread": 1
+      },
+      {
+        "band": 2,
+        "t": 13.2,
+        "spread": 0.9
+      },
+      {
+        "band": 3,
+        "t": 14.4,
+        "spread": 0.9
+      },
+      {
+        "band": 4,
+        "t": 15.6,
+        "spread": 0.75
+      }
+    ],
+    "CLOCK": {
+      "t0": 22.8,
+      "t1": 25.8,
+      "m0": 655,
+      "m1": 760
+    },
+    "VO": [
+      {
+        "id": "l1",
+        "t": 2.5
+      },
+      {
+        "id": "l2",
+        "t": 6.15
+      },
+      {
+        "id": "l3",
+        "t": 9.2
+      },
+      {
+        "id": "l4",
+        "t": 12.45
+      },
+      {
+        "id": "l5",
+        "t": 15.5
+      },
+      {
+        "id": "l7",
+        "t": 22.98
+      },
+      {
+        "id": "l8",
+        "t": 27.33
+      },
+      {
+        "id": "l9",
+        "t": 31.7
+      }
+    ]
+  },
+  "on_screen_text_inventory": {
+    "published_subtitle_file_verbatim": "1\n00:00:02,450 --> 00:00:06,060\n点亮 1940 年以前建成的一切。\nLight everything built before 1940.\n\n2\n00:00:06,100 --> 00:00:09,110\n1940 年 5 月 14 日。\n14 May 1940.\n\n3\n00:00:09,150 --> 00:00:12,360\n炸弹和大火吞掉了大片市中心。\nBombs and fire took much of the centre.\n\n4\n00:00:12,400 --> 00:00:15,410\n后来，它一层一层长了回来。\nThen, layer by layer, it grew back.\n\n5\n00:00:15,450 --> 00:00:19,487\n1990 年后，它跨过了河，往上长。\nAfter 1990, it crossed the river, and climbed.\n\n6\n00:00:22,930 --> 00:00:27,240\n冬至正午，太阳高度不到 15°。\nAt midwinter noon, the sun stays below 15°.\n\n7\n00:00:27,280 --> 00:00:31,610\n最高那栋楼的影子，拖出将近 800 米，\nThe tallest tower's shadow runs nearly 800 m,\n\n8\n00:00:31,650 --> 00:00:35,660\n盖住 16 个屋顶，其中 9 栋战前就在。\nacross 16 roofs. Nine were there before the war.\n",
+    "cues_original_json": [
+      {
+        "id": "l1",
+        "t0": 2.45,
+        "t1": 6.06,
+        "zh": "点亮 1940 年以前建成的一切。",
+        "en": "Light everything built before 1940."
+      },
+      {
+        "id": "l2",
+        "t0": 6.1,
+        "t1": 9.11,
+        "zh": "1940 年 5 月 14 日。",
+        "en": "14 May 1940."
+      },
+      {
+        "id": "l3",
+        "t0": 9.15,
+        "t1": 12.36,
+        "zh": "炸弹和大火吞掉了大片市中心。",
+        "en": "Bombs and fire took much of the centre."
+      },
+      {
+        "id": "l4",
+        "t0": 12.4,
+        "t1": 15.41,
+        "zh": "后来，它一层一层长了回来。",
+        "en": "Then, layer by layer, it grew back."
+      },
+      {
+        "id": "l5",
+        "t0": 15.45,
+        "t1": 19.487,
+        "zh": "1990 年后，它跨过了河，往上长。",
+        "en": "After 1990, it crossed the river, and climbed."
+      },
+      {
+        "id": "l7",
+        "t0": 22.93,
+        "t1": 27.24,
+        "zh": "冬至正午，太阳高度不到 15°。",
+        "en": "At midwinter noon, the sun stays below 15°."
+      },
+      {
+        "id": "l8",
+        "t0": 27.28,
+        "t1": 31.61,
+        "zh": "最高那栋楼的影子，拖出将近 800 米，",
+        "en": "The tallest tower's shadow runs nearly 800 m,"
+      },
+      {
+        "id": "l9",
+        "t0": 31.65,
+        "t1": 35.66,
+        "zh": "盖住 16 个屋顶，其中 9 栋战前就在。",
+        "en": "across 16 roofs. Nine were there before the war."
+      }
+    ],
+    "timeline_text_fields": {},
+    "titles_subtitles_palette_verbatim": "",
+    "palette_props_verbatim": "- Model #F3F3F1 (roughness 0.88), plate water inlay (0.10, 0.13, 0.17) satin, plinth #17181A; room background a dark radial gradient.\n- Layers: pre-1940 #FFA13D; 1940–64 #2A46FF; 1965–89 #2F98FF; 1990–2009 #6FDCFF; 2010–25 #E6FBFF; height ramp #1A1440 → #5A35D6 → #E2509A → #FFE7C4; projected shade #1C2C66; sun #FFD9AD; shadow trace fill (0.10, 0.22, 0.65) with a pale edge; newer shaded roofs #BFF3FF.\n- Props: the model (3DBAG LOD1.3, BAG construction years), BGT water and bridge decks, the 2 m heightfield noon shadow of Zalmhaven I, the sun table for 21 Dec 2025 at 51.914° N, 4.484° E.\n- Narrator: Kokoro `bm_george`, speeds 0.95–1.08.\n- Real places and buildings appear as data; this is not an official film of the City of Rotterdam or of any building's owner.",
+    "end_card_verbatim": "Over the white model as the house lights return, a left block: 被炸平的城市怎样长回来 (Noto Sans SC 500, 64 px), *How a Flattened City Grew Back* (Inter Tight 200), an amber rule, `白模投影 · PROJECTION ON WHITE MODEL`, `3DBAG · BAG · BGT · 鹿特丹市档案馆`, `LemoLab × Claude Opus 5.5`. 35.7–40.0 s. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.",
+    "completion_note": "Exact visible typography/content must be checked in original video; this inventory preserves all published cue/title/prop specifications. Model authorship credit is a reference fact, never new-output attribution.",
+    "original_annotation_literal_sources": [
+      {
+        "path": "styles/white-model/demo/overlay.js",
+        "sha256": "38d3b34f526a11465002996eb7e30da3d90351e589af4c69b8a14bfed4022eec",
+        "original_literal_inventory": [
+          "被炸平的城市怎样长回来",
+          "How a Flattened City Grew Back",
+          "白模投影 · PROJECTION ON WHITE MODEL",
+          "3DBAG · BAG · BGT · 鹿特丹市档案馆",
+          "LemoLab × Claude Opus 5.5"
+        ]
+      },
+      {
+        "path": "styles/white-model/demo/timeline.js",
+        "sha256": "4bf02676b2394c852a8b3ab41f9842c859a8d0d2ced506ac5476de03c20f048b",
+        "original_literal_inventory": [
+          "Light everything built before nineteen forty.",
+          "点亮 1940 年以前建成的一切。",
+          "Light everything built before 1940.",
+          "May fourteenth, nineteen forty.",
+          "1940 年 5 月 14 日。",
+          "14 May 1940.",
+          "May 14th, 1940.",
+          "Bombs and fire took much of the centre.",
+          "炸弹和大火吞掉了大片市中心。",
+          "Then, layer by layer, it grew back.",
+          "后来，它一层一层长了回来。",
+          "After nineteen ninety, it crossed the river, and climbed.",
+          "1990 年后，它跨过了河，往上长。",
+          "After 1990, it crossed the river, and climbed.",
+          "At midwinter noon, the sun stays below fifteen degrees.",
+          "冬至正午，太阳高度不到 15°。",
+          "At midwinter noon, the sun stays below 15°.",
+          "At midwinter noon, the sun stays below 15 degrees.",
+          "The tallest tower's shadow runs nearly eight hundred metres,",
+          "最高那栋楼的影子，拖出将近 800 米，",
+          "The tallest tower's shadow runs nearly 800 m,",
+          "The tallest tower's shadow runs nearly 800 metres,",
+          "across sixteen roofs. Nine were there before the war.",
+          "盖住 16 个屋顶，其中 9 栋战前就在。",
+          "across 16 roofs. Nine were there before the war."
+        ]
+      }
+    ]
+  },
+  "sound_recreation": {
+    "instruction": "Generate new voice and music; original mix/track reuse is not permitted by latest user instruction. Preserve full words, cadence windows, BPM, musical form, silence and picture-synchronous hits.",
+    "published_score_sound_spec_verbatim": "100 BPM, 4/4; every layer onset, the date, the top of the climb, the sun, the line landing, the roofs and the lights sit on a beat (`demo/tools/cuecheck.py`: 0 ms on 19 cues).\n\n| Section | Time | Palette | Notes |\n|---|---|---|---|\n| White | 0–1.8 | bowed vibraphone G4/C5, room tone, idle projector fan | |\n| Lamp | 1.8–6.0 | relay, lamp strike, wash air swell; contrabass C2 + cellos G2, bowed vibraphone E♭5, a quiet marimba pulse in 8ths | suck-out 5.55–6.0 |\n| Date | 6.0 | timpani C3, gran cassa, gong, bass drum, low brass stab in C minor (tuba, trombones, horns) + a 60–120 Hz punch | loudest moment of the film |\n| Aftermath | 6.0–12.0 | contrabass C2, cellos E♭3, bowed vibraphone A♭4 → G4, sparse vibraphone; glass tick on the city-hall pin | |\n| Growth | 12.0–18.0 | E♭ major; bass climbs E♭–F–G–A♭ one step per layer; marimba 8ths → 16ths → 16th-note triplets, pizzicato violins from layer 2, hand-chime chord per layer, horns swell from the river crossing; a soft tick per building switching on | |\n| Height | 18.0–21.6 | A♭: contrabass A♭1, bowed vibraphone C5/E♭5, glockenspiel + vibraphone line climbing with the level, air riser; tubular bell E♭5 + cymbal on the top | |\n| Silence | 21.6–22.8 | thin fan hum only | |\n| Sun | 22.8–27.0 | horns A♭3/C4/E♭4, trombones A♭2/E♭3, tuba A♭1, timpani, gran cassa, bowed cymbal; organ (soft) and bowed vibraphone hold | second-loudest moment |\n| Shadow | 27.0–31.2 | F minor floor (contrabass, cellos, soft organ), timpani heartbeat every two beats, a click per 100 m, timpani + bell when the line lands; one glass note per roof (G5 pre-war, C6 newer) | |\n| Coda / lights | 31.2–40.0 | D♭ → E♭ held; at the lights a C major chord (horns, bowed vibraphone), relays, fan settling; tubular bell C5 and two glass notes on the end card | |\n\nMix (`demo/mix.py`): music balanced to sit 10 dB under the voice while it speaks and ducked 40 %; hits ducked 20 %, uncompressed; bus compression on music, foley and beds only; a 38 Hz high-pass (46 Hz, 4th order on hits) and a −5 dB shelf below 62 Hz on everything but the voice; master at −14.4 LUFS with a true-peak limiter at −4.6 dBTP; `mux.sh` measures the film at −13.8 LUFS, LRA 6.1 LU. `demo/tools/impactcheck.py`: the date is the loudest momentary moment, the sun −0.7 dB under it; each follows a dip of −20 and −28 dB; the silence sits 16 dB under the median program.",
+    "original_voice_records": [
+      {
+        "id": "l1",
+        "text": "Light everything built before nineteen forty.",
+        "voice": "bm_george",
+        "speed": 1.08,
+        "lang": "en-gb",
+        "asr": "Light everything built before 1940."
+      },
+      {
+        "id": "l2",
+        "text": "May fourteenth, nineteen forty.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb",
+        "asr": "May 14th, 1940."
+      },
+      {
+        "id": "l3",
+        "text": "Bombs and fire took much of the centre.",
+        "voice": "bm_george",
+        "speed": 1.05,
+        "lang": "en-gb",
+        "asr": "Bombs and fire took much of the centre."
+      },
+      {
+        "id": "l4",
+        "text": "Then, layer by layer, it grew back.",
+        "voice": "bm_george",
+        "speed": 1.08,
+        "lang": "en-gb"
+      },
+      {
+        "id": "l5",
+        "text": "After nineteen ninety, it crossed the river, and climbed.",
+        "voice": "bm_george",
+        "speed": 1.08,
+        "lang": "en-gb",
+        "asr": "After 1990, it crossed the river, and climbed."
+      },
+      {
+        "id": "l7",
+        "text": "At midwinter noon, the sun stays below fifteen degrees.",
+        "voice": "bm_george",
+        "speed": 1.08,
+        "lang": "en-gb",
+        "asr": "At midwinter noon, the sun stays below 15 degrees."
+      },
+      {
+        "id": "l8",
+        "text": "The tallest tower's shadow runs nearly eight hundred metres,",
+        "voice": "bm_george",
+        "speed": 1.08,
+        "lang": "en-gb",
+        "asr": "The tallest tower's shadow runs nearly 800 metres,"
+      },
+      {
+        "id": "l9",
+        "text": "across sixteen roofs. Nine were there before the war.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb",
+        "asr": "across 16 roofs. Nine were there before the war."
+      }
+    ],
+    "original_voice_durations_s": {
+      "l1": 2.882,
+      "l2": 2.378,
+      "l3": 2.581,
+      "l4": 2.355,
+      "l5": 3.237,
+      "l7": 3.646,
+      "l8": 3.666,
+      "l9": 3.385
+    }
+  },
+  "engine_and_build": {
+    "required_engine_spec_verbatim": "- `demo/studio.js` — `makeStudio(W, H, model)`: renderer, post, room, the projection material (`projMaterial(kind)` injects `projLight()` / `roofGlow()` into MeshStandardMaterial), the city mesh (`buildCity`: outward normals, shared walls removed), plate, plinth, house light (index 0) and sun (index 1). Uniforms `U` drive every layer.\n- `demo/tools/prep.py` — **3DBAG + BGT only**: it reads 3DBAG fields (`b3_h_70p`, `b3_h_maaiveld`, `oorspronkelijkbouwjaar`) and Dutch RD coordinates (`tools/rd.py`). Another source needs its own adapter that writes the same `model.json`: `{size:[w,d] model metres, b:[[year|0, height_m], …] per building, p:[[building_index, height_model_m, [[[x,z],…] outer ring, …holes]], …] per roof part, decks:[[[x,z],…]]}`, with x east, z south, 1 unit = 1 model metre; plus `water.png` (plate-sized mask) and a `stats.json` with every on-screen number. `tools/sun.py` (solar position, any place and date) and the heightfield shadow are source-independent.\n- `demo/overlay.js` — readout, pin, measured range line, subtitle strip, title card; registers texts for readcheck.\n- **Extra packages and packs**: none beyond `setup.sh deps` (+ `voice`, `music` for narration and score); downloads are plain `curl` from the data portal. Reprojecting another country's data may need pyproj or shapely: the agent installs them itself into a private venv in the project folder, not into `$LIB/.venv`.\n- Minimal example, not in the demo: set `U.uPreC` to a station and `U.uPreR` growing to light everything within walking distance; or put a flood height in `U.uHgtF` with `U.uHgtBand` held at 1 and leave it still.",
+    "published_build_notes_verbatim": "```\ndemo/\n  build.sh       one command: data (if missing) → voice → speech check → cues → events → video → mix → master → .srt → checks → poster\n  index.html     WebGL canvas + 2D overlay canvas, fonts\n  main.js        render(t): camera keys, projection state per layer, overlay, window.EV, SUBCHECK\n  studio.js      renderer, post, room, projection material (projLight / roofGlow), model mesh, plate, plinth, lights\n  overlay.js     readouts, pins, range line, subtitle strip, end card, text registry for readcheck\n  timeline.js    beats, layers, sun clock, narration (single source; tools/export.mjs → timeline.json, voice/lines.json, cues.json)\n  mix.py         score, foley, beds, voice, mix → out/mix.wav + out/stems/\n  tools/         prep.py (data → model, masks, stats), rd.py (RD ↔ WGS84), sun.py (solar position), fonts.py (CJK subset);\n                 export.mjs (voice/cues); cuecheck.py, subcheck.mjs, motioncheck.py, impactcheck.py, finalasr.py (checks)\n  data/          model.json, water.png, zshadow.png, stats.json (generated)\n  assets/raw/    3DBAG and BGT downloads (gitignored)\n  FACTS.md, CREDITS, TREATMENT.md, PRODUCTION_LOG.md, stills/styleframe.jpg\n```\n\n- `sh demo/build.sh` takes about 4 minutes on Apple silicon (picture ~60 s with 4 workers; TTS and the Whisper check most of the rest). `FETCH=1` re-downloads the data (~55 MB).\n- Checks it runs: `asr_check.py` with `small.en` (British spellings \"centre\", \"metres\" set in the `asr` fields), cue grid, single-line subtitle widths with the real fonts (widest 618 px against 1500 px), `readcheck.mjs`, motion per second (no flat stretch; the jumps at 2.0, 2.6 and 35.6 s are the lights and the lamp), the impact ranking. `tools/finalasr.py` checks every narration line on the final mix.\n- Demo-specific pitfalls: the 3DBAG WFS returns all LOD1.3 parts in one request at `count=20000` for this box (13,345 features); parts are kept only when fully inside the crop, which leaves a clean street margin at the plate edge. The heightfield shadow counts a roof as shaded when its tallest part's centroid cell is under the tower's shadow height (2 m grid); the 16 roofs are listed in `stats.json` with distances 262–734 m. Zalmhaven's 3DBAG roof (203.0 m above ground, 70th percentile of the highest part) matches the published roof height; the 12 m mast is not in the model. GTAO is faded out after the lamp strikes because it bands on the wide grazing views.",
+    "fetch_build_specs": [
+      {
+        "path": "styles/white-model/demo/build.sh",
+        "sha256": "dcdd7f36cb148f0212d58e797381646b79685934ccf8679671cb0240d7d76b0c",
+        "text_verbatim": "#!/bin/sh\n# One command: 《被炸平的城市怎样长回来》 How a Flattened City Grew Back (Projection on White Model demo)\n#   sh demo/build.sh            data (if missing) -> voice -> checks -> events -> picture -> score + mix -> master -> .srt -> checks -> poster\n#   FETCH=1 sh demo/build.sh    first re-download 3DBAG LOD1.3 + BGT water and bridge decks (~55 MB into assets/raw/)\nset -e\nHERE=$(cd \"$(dirname \"$0\")\" && pwd)                 # .../<slug>/demo\nFILM=$(cd \"$HERE/..\" && pwd)                         # .../<slug>\nLIB=${LIB:-$(cd \"$HERE/../../..\" && pwd)}            # films/<slug>/demo or styles/<slug>/demo -> library root\nexport LIB\n[ -f \"$LIB/core/render/video.mjs\" ] || { echo \"set LIB to the library folder\"; exit 1; }\nPY=\"$LIB/.venv/bin/python\"\nNAME=white-model\nBBOX=91500,435200,94300,438000                       # RD New (EPSG:28992), wider than the model crop\ncd \"$LIB\"\n\nif [ \"${FETCH:-0}\" = \"1\" ] || [ ! -f \"$HERE/assets/raw/l13_0.json\" ]; then\n  mkdir -p \"$HERE/assets/raw\"\n  curl -sf -m 600 -o \"$HERE/assets/raw/l13_0.json\" \"https://data.3dbag.nl/api/BAG3D/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=BAG3D:lod13&count=20000&startIndex=0&outputFormat=application/json&bbox=$BBOX,EPSG:28992&sortBy=fid\"\n  for c in waterdeel overbruggingsdeel; do\n    curl -sf -m 300 -o \"$HERE/assets/raw/$c.json\" \"https://api.pdok.nl/lv/bgt/ogc/v1/collections/$c/items?bbox=$BBOX&bbox-crs=http://www.opengis.net/def/crs/EPSG/0/28992&crs=http://www.opengis.net/def/crs/EPSG/0/28992&limit=1000&f=json\"\n  done\nfi\nmkdir -p \"$HERE/data\" \"$HERE/out\"\n\"$PY\" -I \"$HERE/tools/prep.py\" \"$HERE\" > \"$HERE/out/prep.log\"      # model.json, water.png, zshadow.png, stats.json (every number on screen)\n# fonts (gitignored .woff2, subset from Google Fonts): fetch when any is missing\nfor f in NotoSansSC-300 NotoSansSC-500 InterTight-200 InterTight-400 IBMPlexMono-400; do\n  [ -f \"$HERE/fonts/$f.woff2\" ] || { \"$PY\" -I \"$HERE/tools/fonts.py\" \"$HERE\"; break; }\ndone\n\n# voice: Kokoro (bm_george), speech-to-text check with the small English model, cues from the real durations\nnode \"$HERE/tools/export.mjs\" \"$HERE\" > /dev/null || true\n\"$PY\" core/tts/tts.py \"$HERE/voice/lines.json\" \"$HERE/voice/out\"\nWHISPER_MODEL=small.en \"$PY\" core/tts/asr_check.py \"$HERE/voice/lines.json\" \"$HERE/voice/out\" --lang en\nnode \"$HERE/tools/export.mjs\" \"$HERE\"                # cues.json; fails on overlap\n\n# picture, events, score + mix, master, subtitles\nnode core/render/events.mjs \"$HERE\"\nnode core/render/video.mjs \"$HERE\" --fps 24 --workers 4 --out \"$HERE/out/video.mp4\"\n\"$PY\" \"$HERE/mix.py\"\nsh core/render/mux.sh \"$HERE/out/video.mp4\" \"$HERE/out/mix.wav\" \"$FILM/$NAME.mp4\" 24 1\n\"$PY\" core/render/srt.py \"$HERE/out/cues_srt.json\" \"$FILM/$NAME.srt\"\n\n# checks\n\"$PY\" -I \"$HERE/tools/cuecheck.py\" \"$HERE\" | tail -1\nnode \"$HERE/tools/subcheck.mjs\" \"$HERE\" | tail -1\nnode core/render/readcheck.mjs \"$HERE\" > \"$HERE/out/readcheck.txt\" && echo \"readcheck ok\"\n\"$PY\" -I \"$HERE/tools/motioncheck.py\" \"$FILM/$NAME.mp4\" | tail -2\n\"$PY\" -I \"$HERE/tools/impactcheck.py\" \"$HERE\" | tail -4\n\n# poster (the signature shot) and the gallery style frame\nmkdir -p \"$HERE/stills\"\nffmpeg -v error -y -ss 30.4 -i \"$FILM/$NAME.mp4\" -frames:v 1 -q:v 2 \"$FILM/poster.jpg\"\ncp \"$FILM/poster.jpg\" \"$HERE/stills/styleframe.jpg\"\necho \"done: $FILM/$NAME.mp4\"\n"
+      },
+      {
+        "path": "styles/white-model/demo/tools/prep.py",
+        "sha256": "c9af570000253e563bd7cce8de16227d95f229fb6166defc7bb030eb5bcccbe1",
+        "text_verbatim": "\"\"\"Raw 3DBAG (LOD1.3 parts) + BGT water and bridge decks -> data/model.json, data/water.png, data/stats.json\nusage: python -I tools/prep.py <demo_dir>\nModel frame: 1:1000 table model, 1 unit = 1 m of model = 1 km of city. x = east, z = south, y = up.\nEvery number the film shows is computed here and written to data/stats.json (the page only reads it).\"\"\"\nimport json, sys, os, glob, math\nimport numpy as np\nfrom PIL import Image, ImageDraw, ImageFilter\nsys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))\nfrom rd import to_rd, to_wgs\nfrom sun import solar\n\nD = sys.argv[1]\nR = os.path.join(D, 'assets/raw')\nX0, X1, Y0, Y1 = 91700, 94000, 435300, 437900          # RD crop (m): 2.3 x 2.6 km\nCX, CY = (X0 + X1) / 2, (Y0 + Y1) / 2\nS = 1 / 1000\nBANDS = [(0, 1940), (1940, 1965), (1965, 1990), (1990, 2010), (2010, 2100)]   # pre-war + four post-war layers\n\nfeats = json.load(open(os.path.join(R, 'l13_0.json')))['features']\ninside = lambda ring: all(X0 <= x <= X1 and Y0 <= y <= Y1 for x, y, *_ in ring)\ndef area(r): return abs(sum(r[i][0] * r[i + 1][1] - r[i + 1][0] * r[i][1] for i in range(len(r) - 1)) / 2)\ndef ring_c(r): n = len(r) - 1; return (sum(q[0] for q in r[:-1]) / n, sum(q[1] for q in r[:-1]) / n)\nloc = lambda x, y: [round((x - CX) * S, 5), round(-(y - CY) * S, 5)]\n\nB, parts, skipped = {}, [], 0\nfor f in feats:\n    p, g = f['properties'], f['geometry']\n    if p.get('b3_h_70p') is None or p.get('b3_h_maaiveld') is None: skipped += 1; continue\n    h = p['b3_h_70p'] - p['b3_h_maaiveld']\n    if h < 1.5 or h > 260: skipped += 1; continue\n    for poly in ([g['coordinates']] if g['type'] == 'Polygon' else g['coordinates']):\n        if not inside(poly[0]): continue\n        bid = p['identificatie']\n        b = B.setdefault(bid, {'id': bid, 'year': p.get('oorspronkelijkbouwjaar') or 0, 'h': 0, 'a': 0, 'polys': []})\n        if h > b['h']: b['top'] = ring_c(poly[0])\n        b['h'] = max(b['h'], h); b['a'] += area(poly[0]); b['polys'].append((h, poly))\n        parts.append((bid, h, poly))\n\nblist = sorted(B.values(), key=lambda b: b['id'])\nidx = {b['id']: i for i, b in enumerate(blist)}\n\n# bridge decks (BGT overbruggingsdeel), clipped to the crop: low white slabs across the water\ndef clip(poly):\n    def cl(pts, inside_, inter):\n        out = []\n        for i in range(len(pts)):\n            a, b = pts[i - 1], pts[i]\n            if inside_(b):\n                if not inside_(a): out.append(inter(a, b))\n                out.append(b)\n            elif inside_(a): out.append(inter(a, b))\n        return out\n    pts = [tuple(q[:2]) for q in poly[:-1]]\n    for axis, lim, keep_ge in ((0, X0, True), (0, X1, False), (1, Y0, True), (1, Y1, False)):\n        if not pts: break\n        ins = (lambda q, a=axis, l=lim, g=keep_ge: q[a] >= l if g else q[a] <= l)\n        def inter(a, b, ax=axis, l=lim):\n            t = (l - a[ax]) / (b[ax] - a[ax]); return (a[0] + t * (b[0] - a[0]), a[1] + t * (b[1] - a[1]))\n        pts = cl(pts, ins, inter)\n    return pts\ndecks = []\nfor f in json.load(open(os.path.join(R, 'overbruggingsdeel.json')))['features']:\n    if f['properties'].get('eind_registratie') is not None: continue\n    g = f['geometry']\n    for poly in ([g['coordinates']] if g['type'] == 'Polygon' else g['coordinates']):\n        c = clip(poly[0])\n        if len(c) >= 3 and area(c + [c[0]]) > 20: decks.append([loc(x, y) for x, y in c])\n\nout = {'scale': S, 'crop': [X0, X1, Y0, Y1], 'size': [(X1 - X0) * S, (Y1 - Y0) * S], 'bands': BANDS,\n       'b': [[b['year'], round(b['h'], 1)] for b in blist],\n       'p': [[idx[bid], round(h * S, 5), [[loc(x, y) for x, y, *_ in r[:-1]] for r in poly]] for bid, h, poly in parts],\n       'decks': decks}\njson.dump(out, open(os.path.join(D, 'data/model.json'), 'w'), separators=(',', ':'))\n\n# ------------------------------------------------------------------ water mask (BGT waterdeel, current records)\nMW = 4096; MH = round(MW * (Y1 - Y0) / (X1 - X0))\nim = Image.new('L', (MW, MH), 0); d = ImageDraw.Draw(im)\nP = lambda r: [((x - X0) / (X1 - X0) * MW, (Y1 - y) / (Y1 - Y0) * MH) for x, y, *_ in r]\nfor w in json.load(open(os.path.join(R, 'waterdeel.json')))['features']:\n    if w['properties']['eind_registratie'] is not None: continue\n    g = w['geometry']\n    for poly in ([g['coordinates']] if g['type'] == 'Polygon' else g['coordinates']):\n        d.polygon(P(poly[0]), fill=255)\n        for hole in poly[1:]: d.polygon(P(hole), fill=0)\nim.filter(ImageFilter.GaussianBlur(1.2)).save(os.path.join(D, 'data/water.png'))\n\n# ------------------------------------------------------------------ stats\ndef pos(b): return loc(*b['top']) + [round(b['h'] * S, 5)]\nyrs = [b for b in blist if b['year'] > 1200]\ntot_a = sum(b['a'] for b in yrs)\nbands = []\nfor lo, hi in BANDS:\n    m = [b for b in yrs if lo <= b['year'] < hi]\n    bands.append({'lo': lo, 'hi': hi, 'n': len(m), 'area_share': round(sum(b['a'] for b in m) / tot_a, 4),\n                  'mean_h': round(sum(b['h'] for b in m) / max(len(m), 1), 1), 'over100': sum(1 for b in m if b['h'] > 100)})\ntall = sorted(blist, key=lambda b: -b['h'])\ndef near_rd(x, y, r=60):\n    c = [b for b in blist if (b['top'][0] - x) ** 2 + (b['top'][1] - y) ** 2 < r * r]\n    return max(c, key=lambda b: b['a']) if c else None\nmarks = {}\nfor name, (x, y) in {'laurens': (92970, 437394), 'stadhuis': to_rd(4.4796, 51.9227), 'zalmhaven': tall[0]['top']}.items():   # Zalmhaven I = the tallest roof (NL.IMBAG.Pand.0599100100020122)\n    b = tall[0] if name == 'zalmhaven' else near_rd(x, y); marks[name] = {'id': b['id'], 'year': b['year'], 'h': round(b['h'], 1), 'pos': pos(b), 'bi': idx[b['id']]}\n\n# ------------------------------------------------------------------ winter-solstice noon shadow on a 2 m height grid\nlon_c, lat_c = to_wgs(CX, CY)\nsun = []\nfor m in range(8 * 60 + 30, 16 * 60 + 31, 5):\n    alt, az = solar(2025, 12, 21, (m - 60) / 60, lat_c, lon_c); sun.append([m, round(alt, 3), round(az, 3)])\nnoon = max(sun, key=lambda s: s[1])\nG = 2.0; GW, GH = int((X1 - X0) / G), int((Y1 - Y0) / G)\ndef hmap(polys):\n    img = Image.new('F', (GW, GH), 0.); dr = ImageDraw.Draw(img)\n    for h, poly in sorted(polys, key=lambda q: q[0]):\n        dr.polygon([((x - X0) / G, (Y1 - y) / G) for x, y, *_ in poly[0]], fill=float(h))\n    return np.array(img)\nHall = hmap([(h, poly) for _, h, poly in parts])\nzb = B[marks['zalmhaven']['id']]\nHz = hmap(zb['polys'])\nalt, az = math.radians(noon[1]), math.radians(noon[2])\ndx, dy = math.sin(az), -math.cos(az)          # toward the sun in grid (col, row): east = +col, north = -row\ndef shadow_by(src, maxlen=1200):\n    sh = np.zeros_like(Hall, bool); tan = math.tan(alt)\n    for k in range(1, int(maxlen / G)):\n        ox, oy = int(round(k * dx)), int(round(k * dy))\n        s = np.zeros_like(src)\n        ys0, ys1 = max(0, -oy), min(GH, GH - oy); xs0, xs1 = max(0, -ox), min(GW, GW - ox)\n        s[ys0:ys1, xs0:xs1] = src[ys0 + oy:ys1 + oy, xs0 + ox:xs1 + ox]\n        sh |= s - k * G * tan > Hall + .5\n    return sh\nSz = shadow_by(Hz)\nImage.fromarray(((Sz & ~(Hz > 0)) * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(1.5)).save(os.path.join(D, 'data/zshadow.png'))   # the tower's noon shadow, 2 m grid\nmine = Hz > 0\nshaded = []\nfor b in blist:\n    if b['id'] == zb['id']: continue\n    cx, cy = b['top']; c, r = int((cx - X0) / G), int((Y1 - cy) / G)\n    if 0 <= r < GH and 0 <= c < GW and Sz[r, c] and not mine[r, c]: shaded.append(b)\nys, xs = np.nonzero(Sz & ~mine)\nreach = float(np.max(np.hypot((xs * G + X0) - zb['top'][0], (Y1 - ys * G) - zb['top'][1]))) if len(xs) else 0\nstats = {\n    'buildings': len(blist), 'parts': len(parts), 'decks': len(decks), 'skipped_parts': skipped, 'year_unknown': len(blist) - len(yrs),\n    'bands': bands, 'pre1940_area_share': bands[0]['area_share'],\n    'over100': sum(1 for b in blist if b['h'] > 100),\n    'tallest': [{'id': b['id'], 'h': round(b['h'], 1), 'year': b['year'], 'pos': pos(b)} for b in tall[:8]],\n    'marks': marks, 'centre_wgs': [round(lon_c, 5), round(lat_c, 5)],\n    'sun': sun, 'sun_noon': {'min': noon[0], 'alt': noon[1], 'az': noon[2]},\n    'zalm_shadow': {'theory_m': round(zb['h'] / math.tan(alt), 1), 'reach_m': round(reach, 1), 'shaded_roofs': len(shaded),\n                    'shaded_pre1940': sum(1 for b in shaded if 0 < b['year'] < 1940),\n                    'shaded': sorted([{'bi': idx[b['id']], 'year': b['year'], 'h': round(b['h'], 1), 'pos': pos(b),\n                                       'd': round(math.hypot(b['top'][0] - zb['top'][0], b['top'][1] - zb['top'][1]), 1)} for b in shaded], key=lambda q: q['d'])},\n}\njson.dump(stats, open(os.path.join(D, 'data/stats.json'), 'w'), indent=1, ensure_ascii=False)\nprint(json.dumps({k: v for k, v in stats.items() if k not in ('sun', 'tallest', 'zalm_shadow')} | {'tallest': [(t['h'], t['year']) for t in stats['tallest']]}, ensure_ascii=False, indent=0)[:3000])\n"
+      }
+    ],
+    "local_original_asset_snapshot_inventory": [
+      {
+        "path": "styles/white-model/demo/events.json",
+        "sha256": "8f8964030399b2663af231e0b1711fd6e4b17f3b9f6704b37f6e3a15ae5dea41",
+        "bytes": 4643
+      },
+      {
+        "path": "styles/white-model/demo/timeline.json",
+        "sha256": "e70654ef3ce65b3203df688357925ddb492f1311e8a9d94936c3cbbc29639003",
+        "bytes": 979
+      },
+      {
+        "path": "styles/white-model/demo/cues.json",
+        "sha256": "24a0e6b47a6f817742cde3f5188e5d49099544fe29f560909a7806dcaa1837c2",
+        "bytes": 1220
+      },
+      {
+        "path": "styles/white-model/demo/data/model.json",
+        "sha256": "d79bfa7649c7a9b70caac08a4034a3aaf3c5d72781ddc472c2d293eb89de3d67",
+        "bytes": 2318411
+      },
+      {
+        "path": "styles/white-model/demo/data/stats.json",
+        "sha256": "eea18c8be111c7f788a9e188a786e2a1b6e4ca4d203be629d369aede30aa5afc",
+        "bytes": 8522
+      }
+    ]
+  },
+  "evidence": {
+    "dataset": "The preserved original3DBAG/BGT Rotterdam model and statistical snapshot.",
+    "required_measurements": [
+      "3887 buildings,8860 roof parts,108 bridge decks.",
+      "22.76% footprint pre1940 displayed23%;1606 prewar buildings.",
+      "24 of25 buildings over100m built after1990; ZalmhavenI203m.",
+      "Winter solar altitude14.647°; shadow776.6m displayed777m;16 roofs,9 prewar."
+    ],
+    "window": "Model RDcropx91700–94000,y435300–437900; raw fetch bbox91500,435200,94300,438000.",
+    "needed": [
+      "data/water.png",
+      "data/zshadow.png",
+      "assets/raw/l13_0.json",
+      "assets/raw/waterdeel.json",
+      "assets/raw/overbruggingsdeel.json"
+    ],
+    "recipe": "Follow the isolated data-only preparation described in ASSET_GAPS.md and the exact original build/fetch scripts retained in engine_and_build.fetch_build_specs.",
+    "specific_blockers": [
+      "Preserve the complete original model.json and stats.json. Water/shadow masks are absent; restore them against this snapshot. A live WFS refetch may alter the model and must not silently replace it."
+    ],
+    "asset_status": [
+      {
+        "path": "styles/white-model/demo/data/water.png",
+        "present": false
+      },
+      {
+        "path": "styles/white-model/demo/data/zshadow.png",
+        "present": false
+      },
+      {
+        "path": "styles/white-model/demo/assets/raw/l13_0.json",
+        "present": false
+      },
+      {
+        "path": "styles/white-model/demo/assets/raw/waterdeel.json",
+        "present": false
+      },
+      {
+        "path": "styles/white-model/demo/assets/raw/overbruggingsdeel.json",
+        "present": false
+      }
+    ],
+    "original_facts_verbatim": "# 事实表：《被炸平的城市怎样长回来》\n\n片中每一个数字、年份和事实性说法都在下表里：说法 → 出处（URL）→ 原文引用。核对日期：2026-10-16。\n\n两类数字要分开看：\n\n- **官方 / 公开来源的说法**（下表 A）：鹿特丹市档案馆（Stadsarchief Rotterdam，市政府机构）的原文；Zalmhaven 的屋面高度另以维基百科条目为参照，并与本片的实测值互相印证。\n- **数据实测**（下表 B）：本片用公开数据自己算的（建成年代占比、各年代栋数、百米高楼数、屋面高度、太阳高度、影长、影中屋顶数）。算法全部在 `tools/prep.py`，结果写在 `data/stats.json`，页面只读这个文件。画面上标了\"按建筑占地面积 · BAG 建成年份\"\"3DBAG 激光实测\"\"太阳位置按天文算法\"。\n\n## A. 史实与公开来源\n\n| # | 片中说法（画面 / 旁白） | 出处 | 原文 |\n|---|---|---|---|\n| A1 | 钉标\"1940.5.14  13:27\"；旁白 \"May fourteenth, nineteen forty.\"；字幕\"1940 年 5 月 14 日。\" | 鹿特丹市档案馆《Rotterdam in oorlog》 https://stadsarchief.rotterdam.nl/rotterdam-oorlog | \"Daarom bombarderen Duitse Heinkels op 14 mei 1940 om 13.27 uur de binnenstad van Rotterdam.\" |\n| A2 | 旁白 \"Bombs and fire took much of the centre.\"；字幕\"炸弹和大火吞掉了大片市中心。\" | 同 A1 | \"Binnen een kwartier zijn grote delen van de binnenstad verwoest.\" / \"De bommen en de branden daarna verwoesten 25.000 woningen en 11.000 andere panden.\" |\n| A3 | 钉标副行\"258 公顷城区成为废墟\" | 同 A1 | \"Een oppervlakte van 258 hectare stad ligt in puin.\" |\n| A4 | 钉标\"市政厅 · 1920 / 轰炸中几乎完好\" | 鹿特丹市档案馆《Het stadhuis tijdens het bombardement》 https://stadsarchief.rotterdam.nl/het-stadhuis-tijdens-het-bombardement ；年份 1920 见 B3 | \"Maar hoe kan het dat zo'n groot gebouw de verwoesting van 14 mei 1940 vrijwel ongeschonden heeft doorstaan?\" / \"Het vuur krijgt geen vat op het vrijstaande stadhuis.\" |\n| A5 | 钉标\"Kop van Zuid / 马斯河南岸\"（钉在 Wilhelminapier） | Wikipedia《Kop van Zuid》 https://en.wikipedia.org/wiki/Kop_van_Zuid | \"…located on the south bank of the Nieuwe Maas opposite the center of town.\" / 该区 \"includes the Wilhelmina Pier\" |\n| A6 | 钉标\"Zalmhaven I / 屋面 203 m\"（口径：屋面，不含桅杆） | Wikipedia《De Zalmhaven》 https://en.wikipedia.org/wiki/De_Zalmhaven ；与 B5 的实测值一致 | \"The main tower of the complex, Zalmhaven I, reaches 215 metres (705 ft) in height,\" / \"The roof height is 203 metres (666 ft), while the mast takes up the last 12 metres (39 ft) of height.\" |\n| A7 | 钉标\"Zalmhaven I / 2022 年建成\" | BAG 原始建成年份 2022（B5）；Wikipedia 同上 | \"…the entire project was completed in April 2022.\" |\n\n说明：样片里曾用\"圣劳伦斯教堂 · 15 世纪\"作标签，但 BAG 登记的原始建成年份是 1640（塔楼加高年代），教堂官网只写 \"The Laurenskerk is the only remaining late Gothic building from the medieval Rotterdam.\"（https://laurenskerk.nl/en/visit/），没有给出建造年份；为免两种口径打架，正式片不再给教堂标年份，改用市档案馆有原文的市政厅。\n\n## B. 数据实测（本片自己算的）\n\n数据：3DBAG（LOD1.3 屋面分块，AHN 激光点云重建，CC BY 4.0）+ 其中带的 BAG 字段 `oorspronkelijkbouwjaar`（原始建成年份，CC0）；BGT 水面与桥面（CC0）。模型范围：RD 坐标 x 91700–94000、y 435300–437900（2.3 × 2.6 km，中心 51.914°N、4.484°E）。只保留完全落在范围内的屋面分块：3,887 栋楼、8,860 个分块。楼高 = 该分块屋面 70 分位高度 − 地面高度（`b3_h_70p − b3_h_maaiveld`），一栋楼取最高分块。\n\n| # | 片中说法 | 方法 | 结果 |\n|---|---|---|---|\n| B1 | 读数\"23% · 1940 年以前建成 · 按建筑占地面积\"；\"1,606 栋\" | BAG 原始建成年份 < 1940 的楼，占地面积（分块面积之和）÷ 全部楼占地面积 | 0.2276 → 23%；1,606 栋 |\n| B2 | 年代图例\"1940–1964 · 1,113 栋 / 1965–1989 · 522 栋 / 1990–2009 · 413 栋 / 2010–2025 · 233 栋\"；滚动年份 1940 → 2025 | 按原始建成年份分档计数 | 1,113 / 522 / 413 / 233 |\n| B3 | 市政厅\"1920\" | BAG 原始建成年份（NL.IMBAG.Pand.0599100000701897） | 1920 |\n| B4 | 读数\"24/25 · 百米高楼，1990 后建\"；旁白 \"Twenty-four of its twenty-five tallest…\"（字幕：\"最高的 25 栋里，24 栋建于 1990 年后\"） | 楼高 > 100 m 的楼按年代分档 | 共 25 栋：1965–89 有 1 栋，1990–2009 有 13 栋，2010–25 有 11 栋 → 24/25。高于 100 m 的正好是最高的 25 栋 |\n| B5 | \"Zalmhaven I · 屋面 203 m · 2022 年建成\"；高度图例上限 203 m；\"最高那栋楼\" | NL.IMBAG.Pand.0599100100020122，模型中屋面最高的楼 | 203.0 m，BAG 年份 2022 |\n| B6 | \"14.6° · 冬至正午太阳高度\"；旁白 \"below fifteen degrees\"；时钟落在 12:40 | NOAA/Meeus 太阳位置算法（`tools/sun.py`），2025-12-21，CET（UTC+1），模型中心经纬度；逐 5 分钟取高度最大值 | 12:40 CET，高度 14.647°，方位 179.94° |\n| B7 | \"777 m · 冬至正午的影长\"；旁白 \"nearly eight hundred metres\" | 影长 = 屋面高度 ÷ tan(太阳高度) = 203.0 ÷ tan 14.647°；另在 2 m 网格上做高度场光线步进，影子实际末端距塔顶分块中心 784 m | 776.6 m → 777 m |\n| B8 | \"16 个屋顶落在它的影里 · 其中 9 栋建于 1940 年以前\"；旁白 \"across sixteen roofs. Nine were there before the war.\" | 2 m 网格高度场：对每个格子沿太阳方向步进，若 Zalmhaven I 的高度减去 距离 × tan(高度角) 仍高于该格屋面 0.5 m 以上，则该格在它的影中；一栋楼的最高分块中心格在影中即计入 | 16 栋（距塔 262–734 m），其中 BAG 年份 < 1940 的 9 栋（1928–1939） |\n\n\"战前就在\"（Nine were there before the war）指 BAG 原始建成年份早于 1940、今天仍在的楼。\n",
+    "original_credits_verbatim": "How a Flattened City Grew Back (被炸平的城市怎样长回来) — Projection on White Model (Lemo-Opuscar) · LemoLab × Claude Opus 5.5\n\nNo AI-generated images, no stock footage, no photographs. The model is extruded from open building data in code; every\nlight, colour, shadow, label and line is drawn by the page (three.js + 2D canvas). Download URLs are in build.sh\n(accessed 2026-10-16); the raw files are cached in assets/raw/.\n\nDATA (credited on screen top-left \"3DBAG / BAG / BGT\" and on the end card)\n- 3DBAG, LOD1.3 building parts with roof heights reconstructed from AHN LiDAR, by 3DGI and the 3D geoinformation\n  research group, TU Delft. https://3dbag.nl — licence CC BY 4.0. Fetched via the 3DBAG WFS (layer BAG3D:lod13).\n  Used: footprints, roof heights (b3_h_70p − b3_h_maaiveld), building identifiers.\n- BAG (Basisregistratie Adressen en Gebouwen), Kadaster: original construction year (oorspronkelijkbouwjaar),\n  delivered inside the 3DBAG attributes. Licence CC0 1.0.\n- BGT (Basisregistratie Grootschalige Topografie), collections \"waterdeel\" (water) and \"overbruggingsdeel\" (bridge\n  decks), via the PDOK OGC API https://api.pdok.nl/lv/bgt/ogc/v1 — licence CC0 1.0 (stated in the API metadata).\n- Modifications: cropped to RD x 91700–94000, y 435300–437900; extruded at 1:1000; shared walls removed; water\n  rasterised to a mask; a 2 m heightfield and noon shadow derived (tools/prep.py). The credits above still apply.\n- Sun positions computed (NOAA / Meeus solar position algorithm, tools/sun.py); RD ↔ WGS84 by the published\n  approximation formulas (tools/rd.py). No external data.\n\nFACTS\n- See FACTS.md: Stadsarchief Rotterdam (Rotterdam in oorlog; Het stadhuis tijdens het bombardement), Wikipedia\n  (De Zalmhaven; Kop van Zuid), and the measured values above.\n\nFONTS (SIL Open Font License 1.1, licence texts in fonts/; subset with the Google Fonts API &text=)\n- Noto Sans SC — Google / Adobe (labels, readouts, Chinese subtitle line, end card)\n- Inter Tight — The Inter Project Authors (figures, English subtitle line, end card)\n- IBM Plex Mono — IBM (instruments, years, coordinates)\n\nVOICE\n- Kokoro-82M (hexgrad), voice bm_george, Apache License 2.0; run locally via kokoro-onnx (MIT) through the library's\n  core/tts/tts.py. Speech check: faster-whisper small.en (MIT; OpenAI Whisper weights, MIT).\n\nMUSIC & SOUND\n- Original score and sound design, written for this film in mix.py: synthesis in numpy (projector fan hum, room tone,\n  relays, lamp strike, light-wash air swells, risers, ticks, punch) plus sampled instruments played through the\n  library's core/audio/sampler.py: bowed vibraphone, vibraphone, marimba, glockenspiel, hand chimes, glass harp,\n  tubular bells, contrabass, cellos, violins pizzicato, French horn, trombone, tuba, soft organ, timpani,\n  gran cassa, concert bass drum, gong, suspended cymbal.\n- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition (Versilian\n  Studios), Versilian Community Sample Library (Versilian Studios).\n  Thanks to Versilian Studios / Sam Gossner; the organ samples in VSCO 2 CE are by Ivy Audio / Simon Dalzell.\n- Procedural helpers (click, clack, thump, compress) from the library's core/audio/sfx.py.\n\nCODE\n- three.js r170 (MIT), including RoomEnvironment (a procedural studio environment, no image).\n- Lemo-Opuscar core: render tools, core/three/post.js (depth of field, GTAO, bloom, grade), core/lib.js.\n",
+    "source_urls": [
+      "https://3dbag.nl",
+      "https://api.pdok.nl/lv/bgt/ogc/v1",
+      "https://api.pdok.nl/lv/bgt/ogc/v1/collections/$c/items?bbox=$BBOX&bbox-crs=http://www.opengis.net/def/crs/EPSG/0/28992&crs=http://www.opengis.net/def/crs/EPSG/0/28992&limit=1000&f=json",
+      "https://data.3dbag.nl/api/BAG3D/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=BAG3D:lod13&count=20000&startIndex=0&outputFormat=application/json&bbox=$BBOX,EPSG:28992&sortBy=fid",
+      "https://en.wikipedia.org/wiki/De_Zalmhaven",
+      "https://en.wikipedia.org/wiki/Kop_van_Zuid",
+      "https://laurenskerk.nl/en/visit/），没有给出建造年份；为免两种口径打架，正式片不再给教堂标年份，改用市档案馆有原文的市政厅。",
+      "https://stadsarchief.rotterdam.nl/het-stadhuis-tijdens-het-bombardement",
+      "https://stadsarchief.rotterdam.nl/rotterdam-oorlog"
+    ]
+  },
+  "matching_blockers": [
+    "Preserve the complete original model.json and stats.json. Water/shadow masks are absent; restore them against this snapshot. A live WFS refetch may alter the model and must not silently replace it.",
+    "The original conversation prompt is not published. Use the complete published specification and audited reconstruction; do not claim the recovered text is a verbatim original chat prompt."
+  ],
+  "visual_audit": {
+    "state": "complete-regular-sheet-coverage",
+    "reference_video_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/films/white-model.mp4",
+    "reference_video_sha256": "6c8453ed8be6bc16380af3f5599cf91b79d8f0ce7e5d3dffb4b8c9ec74eb93a0",
+    "coverage": [
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/white-model/sheets/sheet-01.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/white-model/sheets/sheet-02.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/white-model/sheets/sheet-03.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/white-model/sheets/sheet-04.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      }
+    ],
+    "reference_verified_visual_observations": [
+      "Begin at eye level among dense matte-white Rotterdam roof shapes, then dim the room and project amber only onto buildings dating before1940. The23% statistic, city-hall label and bombing date refer to the exact model. Later cohorts illuminate violet/blue/cyan as years advance; development crosses the river and the tall buildings receive a height gradient. Return to neutral plastic under the low winter sun: show14.6°, the actual Zalmhaven shadow with777m leader, and16 affected roofs including9 prewar. Final pullback reveals the full maquette and title. Keep thousands of real roof parts, river banks and bridges; generic block skylines omit the evidence."
+    ],
+    "note": "All regular reference sheets were inspected across the complete film. Named supplementary frames cover important short actions and transitions. This is scene coverage, not a claim that every encoded frame was inspected."
+  }
+}

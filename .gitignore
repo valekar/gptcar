@@ -107,3 +107,7 @@ styles/*/demo/assets/raw/
 /comparisons/*/out/
 /comparisons/*/*.mp4
 /comparisons/*/*.wav
+/replicas/*/stills/
+/replicas/*/out/
+/replicas/*/*.mp4
+/replicas/*/*.wav

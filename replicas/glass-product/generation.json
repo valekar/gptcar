@@ -1,0 +1,71 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Aura \u2014 Hear the Light",
+  "duration": 32,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frame_count": 768,
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080,
+    "supersampling": 2
+  },
+  "matched_brief_sha256": "2b0d5d922e70ebb63e240dbe6c995bb9dfad7f467829b9b7e6f6287b19d5bc05",
+  "uses_upstream_scene_code": false,
+  "shared_components": [
+    {
+      "path": "styles/glass-product/demo/studio.js",
+      "purpose": "Reusable strip studio PMREM, blurred reflector floor and procedural caustic/ripple engine; no scene/model assembly."
+    },
+    {
+      "path": "core/three/post.js",
+      "purpose": "Generic depth-of-field, bloom and output."
+    },
+    {
+      "path": "core/lib.js",
+      "purpose": "Generic deterministic math utilities."
+    }
+  ],
+  "review_times": [
+    0.5,
+    1.5,
+    2.5,
+    3.5,
+    4.5,
+    6.5,
+    7.9,
+    8.05,
+    9.5,
+    11.5,
+    12.5,
+    14.5,
+    15.75,
+    15.9583,
+    16,
+    16.5,
+    17.5,
+    19.5,
+    20.05,
+    21.5,
+    23.5,
+    24.5,
+    25.5,
+    26.5,
+    27.72,
+    27.84,
+    28.5,
+    30.5,
+    31.95
+  ],
+  "independent_scene_files": [
+    "film.js",
+    "objects.js"
+  ],
+  "review_status": "worker still review completed; root independent comparison pending",
+  "review_notes": "REVIEW.md",
+  "original_reference_sha256": "4d4d07073e2bc7abcb537afae06fa19562de6f69f67f754df6865b734c308f25",
+  "audio": "Fresh four-line Kokoro direction and newly scored120BPM minor electronic music, no original audio reused."
+}

@@ -1,0 +1,891 @@
+{
+  "schema_version": "matched-original-brief-v2-audit-1",
+  "slug": "microscope",
+  "status": "reference-audited-asset-rebuild-required",
+  "original_title": "Measured Blue",
+  "original_title_aliases_from_demo": [
+    "Demo: *Measured Blue* 《量出来的蓝》 (39.5 s) · `microscope.mp4` · source in [`demo/`](demo/)",
+    "",
+    "One continuous camera takes a stained slice of human liver from the glass slide in the hand down to a single nucleus and back. On the way it counts the blue (collagen) inside two 1 mm circles 1.4 mm apart: 13.5 % and 32.6 %. Chinese on screen, English narration, bilingual subtitles (Chinese line above, English line below). One public whole-slide scan (Ventana-1.bif, PathAI, CC0); every number is measured from the file and listed with its method in [`demo/FACTS.md`](demo/FACTS.md). The film describes measurements only; it makes no diagnosis."
+  ],
+  "published_premise_verbatim": "One continuous camera takes a liver slide from the eye down to a single nucleus; two circles 1.4 mm apart are counted pixel by pixel, and one holds 2.4 times the blue.",
+  "published_premise_zh_verbatim": "一镜从肉眼看到的肝组织玻片推到单个细胞核；相隔 1.4 毫米的两个圆被逐像素计数，其中一个的蓝色是另一个的 2.4 倍。",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "verbatim_original_conversation_prompt": null,
+    "published_brief_statement": null,
+    "reconstructed_replication_instruction": "Recreate the full published Measured Blue scene order, story, exact narration and screen text at original timing/resolution/fps, including all specified subjects, performance, mechanisms, lens/light/material treatment, transitions and sonic hits. This is a reconstruction from published sources, not a quoted original conversational prompt.",
+    "reconstruction_basis": [
+      "Complete published STYLE.md and DEMO.md",
+      "Published narration, cards and timing source",
+      "Original movie: all regular contact sheets and named key-event frames"
+    ]
+  },
+  "original_format": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24.0,
+    "duration_s_exact_timeline": 39.5,
+    "duration_s_gallery_rounded": 39.5,
+    "duration_s_published_demo_text": "39.5",
+    "video_stream_metadata_verified": true,
+    "note": "Encoded target is frame_count/fps, not rounded catalogue or container audio duration.",
+    "frame_count": 948,
+    "duration_s": 39.5,
+    "container_duration_s": 39.509,
+    "production_canvas_width": 1920,
+    "production_canvas_height": 1080
+  },
+  "source_authorship": "Historical original by Lemomo/LemoLab using Claude Opus5.5. New output must identify actual GPT authorship and attribute any reused generic components.",
+  "source_hashes": [
+    {
+      "path": "styles/microscope/STYLE.md",
+      "sha256": "63040631bdc28a3c7f8cf05e2e8523969becd0267741e00dd3e171c22be16e92"
+    },
+    {
+      "path": "styles/microscope/DEMO.md",
+      "sha256": "676c76750e6414692861694d682b62f7c7fdbef8a02892e50fefc8e78905da2b"
+    },
+    {
+      "path": "styles/microscope/style.json",
+      "sha256": "262542b3fb6724687c79573425b3fcb14ccde5492920885e15c8a07de72b3ab7"
+    },
+    {
+      "path": "styles/microscope/demo/timeline.js",
+      "sha256": "68aba1005c0497ba47458cd0c32f240cda82c2fcce01eae6ff9d8c1a749e2402"
+    },
+    {
+      "path": "styles/microscope/demo/voice/lines.json",
+      "sha256": "fdc473b230e3c400f866d639eb1419e2eb681f14a21b08bf426ea1fecc339946"
+    },
+    {
+      "path": "styles/microscope/demo/cues.json",
+      "sha256": "775d14b9453bddbea9435b6d6f73ef94148e6ef36cf1c017578c38092b58cc1a"
+    }
+  ],
+  "style_guide_sha256": "63040631bdc28a3c7f8cf05e2e8523969becd0267741e00dd3e171c22be16e92",
+  "style_guide_verbatim": "# Microscope Story — Style Prompt\n\n> Real, licence-clean microscopy of a real specimen, seen as it is, and one continuous change of scale that carries the viewer from the glass slide in the hand to a single cell. Focus breathes when the magnification changes, a focal plane sweeps when the camera lands, and every scale bar, field of view and reading comes from the image's own metadata.\n> References (grammar only): Charles and Ray Eames' *Powers of Ten* (one continuous change of scale with a readout riding along); premium microscope launch films (dark bench, glass catching light, restrained marks, clean instrument sound); digital-pathology viewers' instruments (scale bar, field of view, magnification). Copy none of their layouts, interfaces, typefaces or music; never name them in the film.\n\n## 1. Essence, and what it is not\n\n- **The specimen is a photograph**: a real micrograph or whole-slide scan of the actual sample, CC0, public domain or CC BY. Nothing on the specimen is drawn, retouched or generated. A whole-slide image (WSI) is the ideal source: one sample, one registered pyramid from millimetres to microns, with the pixel size in its metadata.\n- **Scale is the camera**: one log-space dive (and, when the story wants it, the climb back) through nested plates of the same sample. The scale bar shortens and jumps in a 1-2-5 sequence, the field-of-view readout rolls, the magnification steps.\n- **Focus has a grammar**: a rack-in from soft at the start, a short breath (blur + a hint of field change) each time the magnification changes, a focal-plane sweep across the frame when the camera lands.\n- **Readings are measured**: every number is computed from the file (pixel size × pixels) and the screen says how it was measured. Describe what was measured; never diagnose. Keep a `FACTS.md` in the project folder (claim, source URL, quoted wording, or the measurement method) and deliver it with the film.\n- **One reading per screen**, in the single accent colour.\n\nNot Satellite Briefing (no grey grade; the stain keeps its colour), not Sci-fi HUD (no glowing wireframes or crosshairs), not Data Storytelling (no chart paper), not a keynote (no slides or header bars).\n\n## 2. Materials & rendering\n\n- **Plates**: the WSI pyramid levels as plates in one world frame (level-0 pixels), the coarse levels whole and alpha-feathered at the scan edge, the fine levels as crops around where the camera lands. Each frame draws the finest plate that is downsampled no more than ~1.45×, and blends the next level in between 2.2× and 1.45×: no seams and no visible upsampling, because every level is the same sample, already registered.\n- **The naked-eye plate**: the scanner's own photo of the whole slide (many WSI files carry one), registered through the scan's area-of-interest metadata and checked against the tissue's centroid. Cut the glass out of the scanner tray, remove the line-sensor streaks, and fill any manufacturer's printed logo with the surrounding frosted glass. Below ~30 mm of field the photo would be upsampled: let the cover glass become clean glass (its dust leaves the focal plane).\n- **One grade for every plate**: glass normalised to a warm white, a little density and chroma in the stain, nothing else. No false colour, no film emulation.\n- **The bench**: graphite under a slow pool of light; a soft shadow under the slide.\n- **Focus**: screen-space Gaussian blur on a frame rendered with a margin (so edges never go dark); the focal sweep is a tilted sharp front crossing a softened frame. A light illumination vignette, nothing more.\n- **Marks** in screen space but anchored to the specimen through one world → screen function: hairlines 1.5–2.5 px with a dark or light halo, circles drawn on as arcs with cardinal ticks, dimension lines with end ticks, leader lines with one elbow. Counted pixels are shown as a mask revealed behind a scan front, then kept as a faint trace.\n- **Frosted panels** (dark translucent glass over a blurred copy of the frame) for readings, instruments, subtitles and the credit: white type reads on glass and stain alike, nothing switches colour mid-shot.\n\n## 3. Colour logic\n\n- Glass: warm paper white. Bench: graphite. The stain is evidence and keeps its true colour (e.g. trichrome red and blue, H&E pink and purple).\n- One accent, cool and away from the stain's hues (mint against red and blue; amber against a green or purple stain), only for the measured reading and the counted pixels.\n- Ink on glass is near-black; type on stain sits on a frosted panel in warm white.\n\nExample (our demo): glass #F4F1EC, bench #0B0D0F → #2A3036, ink #181B1F, panel rgba(12,14,17,0.74), accent mint rgb(120,240,205) (on stain) / rgb(0,122,99) (on glass).\n\n## 4. Type & subtitles\n\n- **Roles**: a light condensed grotesk for readings and the scale bar (40–72 px, e.g. Barlow Condensed); a monospace for instruments and pixel counts (20 px, e.g. IBM Plex Mono); a sans in the film's language for labels (20–34 px, e.g. Noto Sans SC); a serif only for the title. OFL, self-hosted, CJK subset.\n- **Instruments** live in one frosted panel in a corner: scale bar with its value, field of view, magnification with a small nosepiece glyph that turns a quarter on every change. The source credit in a small panel in the opposite corner.\n- **Readings** sit in a frosted panel beside what they measure, joined by a leader: a small label above (\"collagen share of tissue area\"), the number large in the accent, the method or the raw counts below.\n- **Subtitles**: a frosted strip at the bottom; if the film is bilingual, one line per language with the film's language on top, never wrapped. Measure each line with the real font and split long lines into two cues.\n- Nothing below 20 px at 1080p. Hold labels ≥ characters ÷ 4.5 + 1.5 s (CJK); a reading that rolls is reported by its landing value.\n\n## 5. Motion quality\n\n- The camera is a similarity transform (zoom, roll, position) interpolated as a log spiral between keys (M^u about the fixed point of the two frames), so every push is a true dive towards one point and the roll is part of it. Ease the moves, creep 2–5 % during holds; never a frozen frame longer than a second.\n- Magnification changes happen where the plates actually change, each with a breath of focus, a turret click and the new magnification said once, large.\n- Marks arrive by being made: a dimension line grows from its centre, a circle is drawn as an arc, a scan front counts pixels while the reading rolls, the reading lands with a small spring.\n- Never moves: the specimen under its marks, the instrument positions.\n\n## 6. Camera grammar\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| The dive (log zoom with roll) | going to look for yourself | an opening; from the slide to the cell |\n| Locked frame, slow creep | evidence, a measurement | a reading; a comparison |\n| Truck at one magnification | a second sample of the same thing | the counter-example; \"meanwhile, nearby\" |\n| Pull back to frame two marks | comparison | the verdict |\n| Focal-plane sweep | arriving; depth | a landing; a reveal inside one frame |\n| The climb (reverse dive, scale bar jumping back) | consequence, scale | an ending; a return to the eye's scale |\n\nAt key moments the measured structure fills a third of the frame height or more; instruments in a corner, subtitles bottom centre, readings beside their marks. Transitions are scale changes, trucks and focus, never cuts or crossfades between samples.\n\n## 7. Sound palette\n\n- **Instrument foley**: the objective turret (a click, a detent, a small metal ring), a focus servo, pen on glass for each line drawn, a band-passed scan travelling left to right with counter ticks that speed up, a soft filtered sweep for the focal plane.\n- **Music**: hard-mallet vibraphone in 8ths and 16ths, marimba ticks, bowed vibraphone and water glasses for pads and the motif, glockenspiel for each reading that lands, a pulse bass with 2nd/3rd harmonics, timpani and bass drum under the landings. Harmony stays open and light; the score is the user's to shape.\n- **Beds**: a quiet lab room (fan, a little mains hum).\n- **Silence** before the verdict and before the climb; the first sound after it is the reading or the turn.\n- **Mix**: voice ~10 dB over music, music ducked under it; −14 LUFS. Voice: a calm, exact narrator; numbers spelled out for the TTS, digits on screen.\n\n## 8. Native moves\n\n- **The dive.** From the slide in the hand to a cell in one camera, the turret clicking at each real change of level. *Fits content like:* a biopsy to its cells; a coated surface to its crystals; a hair or skin section to its layers.\n- **Counting the colour.** Draw a circle, let a scan front cross it, light up every counted pixel and roll the share up to its landing value; show the raw counts underneath. *Fits content like:* collagen in tissue; porosity in a ceramic; coverage of a coating; pigment in a sample.\n- **Two circles, one verdict.** Measure one place, truck to another at the same scale, then frame both and say what differs. *Fits content like:* treated against untreated; edge against centre; before against after.\n- **The focal sweep and the ring.** Land, sweep the focal plane across the frame, ring one structure and give its size. *Fits content like:* a nucleus; a grain; a fibre's diameter.\n- **The climb back.** Pull out to the eye's scale with the scale bar jumping backwards; a title card written on the glass.\n\n## 9. Pitfalls of the medium\n\n- **Licences**: most microscopy on the web is CC BY-NC or all rights reserved. Usable: CC0 whole-slide scans (e.g. the OpenSlide test data: check each file's licence line), public-domain government micrographs (NIH, CDC PHIL, NASA, USGS), CC BY collections (Cell Image Library, Wellcome Collection), with every file listed in `CREDITS`. Not usable: CC BY-SA without agreement, NC images, journal figures, AI images.\n- **Finding material for a new topic**: search by organ, stain or material plus \"whole slide\" in the OpenSlide test data, NCI Imaging Data Commons (TCGA/CPTAC slides, licence per collection), the Cell Image Library, Wellcome Collection, Wikimedia Commons (filter by licence) and NIH/CDC galleries; prefer a file whose metadata carries its pixel size. CC BY-SA, ODbL or \"no known restrictions\" are not CC0: name the terms to the user and ask before using them. For a product, a lab or a brand, ask the user for their own scans (SVS/NDPI/MRXS, SEM TIFFs with a scale) first. Never stand in a generated image for a real specimen.\n- **Different samples never zoom into each other**: two micrographs of \"the same thing\" at two scales are two specimens. Use one pyramid; if you must join sources, cut on a focus breath and say so.\n- **Pixel size**: read it from the file (XMP `ScanRes`, TIFF resolution, OME `PhysicalSizeX`); a slide-photo's resolution tag can be trusted only after checking against the scan.\n- **Upsampling** shows as mush beyond ~1.6×: end the dive at the scan's real resolution.\n- **Tile seams**: some scanners overlap tiles; check the joint info, frame out visible seams.\n- **Labels and logos** on the slide: barcodes and IDs are part of the object; manufacturer logos are not — fill or crop them.\n- **Claims**: a stain's colour means what the stain protocol says, nothing more; measured shares are of the drawn region and the stated threshold, never a clinical score.\n\n## 10. Engine\n\n- `demo/film.js`: log-spiral camera (`camAt`), plate selection by downsampling ratio and coverage, objective events from real level changes, focus, frosted `panel()`, marks, readings, `TEXTS` / `SUBCHECK` / `EV`.\n- `demo/tools/plates.py`: slide-photo registration and cleaning, graded plates, collagen mask and the scan's cumulative curve, the tissue axis. `nucleus.py`: membrane edge on 72 rays, least-squares circle.\n- **Extra packages and packs** (beyond `setup.sh deps voice`): `tifffile` + `imagecodecs` read TIFF-based slides (Ventana BIF, Aperio SVS, Hamamatsu NDPI, generic pyramidal TIFF; `demo/tools/plates.py` is written for BIF: its label page, XMP and AOI); MRXS, SCN, VMS and others need `openslide-python` with the OpenSlide library (`brew install openslide`), or an adapter of your own. Install them yourself into a private venv in the project folder, not into `$LIB/.venv`.\n- Minimal example, not in the demo: a coated steel sample: one SEM pyramid, a dive to one crack, a circle counting coverage, a ring around one grain.\n\n## 11. Variation space\n\nThe agent decides the specimen, the stain or modality, what is counted, the camera path, the accent, the ending.\n\n- **Structures**: a single dive ending in one measurement; a comparison of two regions or two samples at one scale; a climb that starts on a cell and reveals the object.\n- **Openings**: the slide on the bench under moving light; a cell already in focus, the climb revealing what it belongs to; a blurred field racking into focus.\n- **Endings**: the title written on the glass; a last reading held in silence; the slide lifted out of frame.\n\n---\n\nHow our demo was made (story, shots, score, title card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n",
+  "published_demo_verbatim": "# Microscope Story — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *Measured Blue* 《量出来的蓝》 (39.5 s) · `microscope.mp4` · source in [`demo/`](demo/)\n\nOne continuous camera takes a stained slice of human liver from the glass slide in the hand down to a single nucleus and back. On the way it counts the blue (collagen) inside two 1 mm circles 1.4 mm apart: 13.5 % and 32.6 %. Chinese on screen, English narration, bilingual subtitles (Chinese line above, English line below). One public whole-slide scan (Ventana-1.bif, PathAI, CC0); every number is measured from the file and listed with its method in [`demo/FACTS.md`](demo/FACTS.md). The film describes measurements only; it makes no diagnosis.\n\n## Story & structure\n\nLogline: one stained slice the size of a fingernail; the same stain, two circles 1.4 mm apart, 13.5 % blue against 32.6 %, every number counted from the scan itself.\n\nArc: the object (the slide on a graphite bench, its label, a fleck of tissue: *one glass slide, one slice of human liver*) → the size (a dive to the tissue, a dimension line, 4.80 mm) → the first count (circle A inside a large nodule, a scan front lights every counted pixel, 13.5 %) → the second count (a truck 1.4 mm to circle B, a small nodule walled by thick septa, 32.6 %) → the turn (silence, then both circles framed and held: *2.4 times the blue*) → the smallest scale (a dive to one hepatocyte nucleus, a focal sweep, a ring, 8.5 µm) → the climb back to the glass, the title written on it.\n\nNative moves spent: *the dive* as the signature shot (twice: slide → tissue → nodule, and nodule → nucleus), *counting the colour* for both circles, *two circles, one verdict* at the turn, *the focal sweep and the ring* at the nucleus, *the climb back* into the end card.\n\n## Shots\n\nOne continuous take; the camera is a similarity transform interpolated as a log spiral between keys. Times in seconds; magnification changes happen where the pyramid level on screen actually changes (4.04, 4.56, 9.94, 10.42, 21.02, 27.52, 27.94, 28.22 going in; six between 33.53 and 34.46 coming out).\n\n| # | Time | Shot | Camera | Native move / note |\n|---|---|---|---|---|\n| 1 | 0.0–2.67 | the whole slide across a graphite bench, label end on the right; a fleck of tissue labelled 一片人肝组织 / 三色染色 | rack focus in 0–0.95, light pool drifting; 68 → 63.5 mm field, roll 90° | the scanner's own photo of the slide, cleaned, logo filled |\n| 2 | 2.67–5.33 | slide → tissue | dive ×7, roll 90° → 25° (the tissue's long axis comes level); turret clicks at 1.25× and 2.5× | the cover glass turns to clean glass below 30 mm |\n| 3 | 5.33–9.33 | the tissue, a dimension line grows from its centre: 4.80 mm, 人肝组织 · 三色染色 | creep 9.2 → 8.55 mm | first reading |\n| 4 | 9.33–10.67 | tissue → nodule A | dive ×3.2 to 2.7 mm, roll to 18.5° (A–B line level); clicks 5×, 10× | |\n| 5 | 10.67–15.33 | circle A drawn as an arc with ticks (A · 直径 1 mm); 11.0–12.47 a mint scan front crosses it, every counted collagen pixel lights behind it, the reading rolls to 13.5 % and springs at 12.67; raw counts below | locked, creep | counting the colour |\n| 6 | 15.33–16.67 | the septa slide past | truck 1.41 mm at 10× | |\n| 7 | 16.67–20.67 | circle B, the same count: 32.6 %, lands 18.0 | locked, creep | |\n| 8 | 20.67–26.67 | both circles and both readings in frame from 21.67; silence 21.8–22.67; the verdict panel: B 的蓝色占比是 A 的 2.4 倍 / 相隔 1.41 mm · 同一切片 · 同一染色 | pull back to 3.95 mm (click back to 5×), creep | each reading held ≥ 2.5 s before the verdict |\n| 9 | 26.67–29.33 | nodule B → one nucleus | dive ×11, roll to 34°; clicks 10×, 20×, 40× | the counted pixels fade on the way down |\n| 10 | 29.33–32.67 | the frame softens, a focal plane sweeps left → right; a mint ring is drawn round one nucleus with caliper ticks, panel 肝细胞核 · 8.5 µm · 核膜外缘拟合 | creep 345 → 318 µm | the focal sweep and the ring |\n| 11 | 32.67–35.33 | silence 32.3–32.67, then the climb: the scale bar jumps back 20 µm → 5 mm, six quick clicks | pull ×145, roll 34° → 96° | the climb back |\n| 12 | 35.33–39.5 | the glass fills the frame, the slide's edge and a dark sliver of bench at the bottom; title written on the glass | slow drift | end card |\n\n## Score structure\n\n90 BPM, 4/4, one chord per bar: Dsus2 – Bm7 – Gmaj7 – Asus4 (twice), Bm under the verdict, Gmaj7, Em9 for the dive, D major when the nucleus lands, Gmaj7 for the climb, Dsus2 – D for the card. Every designed hit sits on the grid (`demo/tools/cuecheck.py`: 0 ms); turret clicks are foley on the picture's level changes.\n\n| Section | Time | Palette | Notes |\n|---|---|---|---|\n| Open | 0–2.67 | bowed vibraphone pad, soft vibraphone arpeggio, long pulse bass, a high glass shimmer under the moving light, soft timpani | |\n| Push | 2.67–5.33 | hard-mallet vibraphone in 16ths, pulse bass in 8ths, riser | turret click + servo at each level |\n| Tissue | 5.33–9.33 | pad, quarter-note pulse | pen on glass for the dimension line |\n| Measure | 9.33–20.67 | vibraphone in 8ths, marimba off-beat ticks, quarter pulse | per circle: pen for the arc, a band-passed scan moving left → right with counter ticks that speed up; glockenspiel + timpani when the reading lands (A 12.67, B 18.0); whoosh for the truck |\n| Silence 1 | 21.8–22.67 | room tone only | |\n| Verdict | 22.67 | timpani + gran cassa + glockenspiel B5 + low B in the bass | first sound after the silence |\n| Dive | 26.67–29.33 | 16ths again, riser, three clicks | |\n| Land | 29.33–32.3 | water-glass motif D5–A4–F♯5–E5–D5 with echoes, D major pad, filtered sweep across the stereo field with the focal plane, glockenspiel F♯6 when the reading lands | the only resolution in the film |\n| Silence 2 | 32.3–32.67 | room tone | |\n| Climb | 32.67–35.33 | a long whoosh, six lighter clicks | |\n| Card | 35.33–39.5 | reversed swell into a soft bass drum and bowed cymbal, the glass motif once more, slower; low D | |\n\nMix (in `mix.py`): stems set against the voice by active RMS (music −11 dB, pulse −14, foley −12, hits −6, room −30), music ducked ~4 dB under speech, gentle bus compression on music, pulse, foley and room only; a 38 Hz high-pass and a −4 dB shelf below 62 Hz on everything but the voice. The film measures −14.0 LUFS, LRA 5.8 LU, peak −1.8 dBFS.\n\n## Palette & props\n\n- Glass #F4F1EC (both the slide photo and the scan normalised to it), bench graphite #0B0D0F → #2A3036, ink #181B1F, frosted panels rgba(12,14,17,0.74) with a 1 px light rim, accent mint rgb(120,240,205) on stain and rgb(0,122,99) on glass.\n- The stain keeps its colour: trichrome red (hepatocyte cytoplasm) and blue (collagen).\n- Props: the slide photo (label and barcode as photographed, the maker's logo filled), the dimension line, two 1 mm circles with their counted-pixel masks, the verdict panel, the nucleus ring, the instrument panel (scale bar, field of view, magnification with a turning nosepiece glyph and a large flash of each new magnification), the source panel.\n- Narrator: Kokoro `af_heart`, speed 0.95.\n\n## End card\n\nThe camera climbs back until the glass fills the frame; on its empty cover glass, in ink: 量出来的蓝 (Noto Serif SC 600), *Measured Blue*, a rule drawn left to right, `MICROSCOPE STORY · 显微叙事`, `LemoLab × Claude Opus 5.5`, `数据：Ventana-1 · PathAI · CC0`; the tissue fleck sits to the right. 4.2 s. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Build notes\n\n```\ndemo/\n  build.sh          one command: (plates if missing) -> voice -> speech check -> cues -> events -> video -> mix -> master -> .srt -> checks -> poster\n  index.html        one canvas, fonts\n  film.js           render(t): similarity camera keys + log-spiral interpolation, plate selection, objective events,\n                    focus, frosted panels, every mark and reading, subtitles, end card, TEXTS, SUBCHECK, EV\n  timeline.js       90 BPM grid, key moments, narration with zh/en lines and the numbers it states (checked)\n  mix.py            score, foley, room, voice, mix -> out/mix.wav + out/stems/\n  config.json       circle centres, nucleus guess, the roll the scan direction is computed for\n  tools/            plates.py (registration, cleaning, plates, collagen masks and counts, tissue axis), nucleus.py,\n                    fonts.py (all fonts), export.mjs (voice lines, cues, number check), subcheck.mjs, cuecheck.py, finalasr.py\n  assets/           raw/Ventana-1.bif (227 MB, gitignored), plates/ (plates, ROI overlays, plates.json, nucleus.json)\n  FACTS.md, CREDITS, TREATMENT.md, PRODUCTION_LOG.md, stills/styleframe.jpg\n```\n\n- `sh demo/build.sh` takes about 5 minutes on Apple silicon (the picture renders in ~20–90 s with 4 workers; the final speech check is the slowest step). In a fresh clone it first downloads the slide (227 MB), rebuilds the plates and measurements (about a minute) and fetches the fonts (Barlow Condensed and IBM Plex Mono from github.com/google/fonts, Noto Sans SC / Noto Serif SC subsets from the Google Fonts API); `FETCH=1` forces all of that again. The slide reader runs in its own `demo/.venv` (tifffile, imagecodecs).\n- Checks it runs: `asr_check.py` with `small.en` (decimals are written as Whisper writes them in each line's `asr`), the script's numbers against the measurements (`export.mjs` fails on a mismatch), the cue grid, single-line subtitle widths with the real fonts (widest 642 px against 960), `readcheck.mjs`, speech-to-text on the final mix, black frames.\n- Plates: slide photo 1251 × 3685 (21.2 µm/px), scan levels 5/4/3 whole with a 0.3 mm feather, level 2 whole (6144 × 5376, 1 µm/px), levels 1 and 0 as 5120 × 3584 crops around the nucleus. About 400 MB of decoded images per render worker.\n- Demo-specific pitfalls: the scanner tray's clips at the slide's far end could only be filled roughly, so that end stays out of frame in every shot; the slide photo's resolution tag was trusted only after the tissue's centroid matched the scan through AOI0 (19 µm); with fields between 2.6 and 2.8 mm the level-2 plate flips in and out, so the circles are held at 2.6–2.7 mm to keep the turret quiet during a reading; the scan direction of the counting mask is computed for the roll in `config.json` and must follow the camera if the roll changes.\n",
+  "canonical_scene_order": [
+    {
+      "id": "1",
+      "t0": 0.0,
+      "t1": 2.67,
+      "published_time_range": "0.0–2.67",
+      "visual_prompt_source_description": "the whole slide across a graphite bench, label end on the right; a fleck of tissue labelled 一片人肝组织 / 三色染色",
+      "camera": "rack focus in 0–0.95, light pool drifting; 68 → 63.5 mm field, roll 90°",
+      "motion_transition_sound_notes": "the scanner's own photo of the slide, cleaned, logo filled",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v1",
+          "t0": 0.55,
+          "t1": 4.133,
+          "zh": "一张玻片，一片人肝组织。",
+          "en": "One glass slide. One slice of human liver."
+        }
+      ],
+      "voice_line_ids": [
+        "v1"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/microscope/frames/f-0002.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "2",
+      "t0": 2.67,
+      "t1": 5.33,
+      "published_time_range": "2.67–5.33",
+      "visual_prompt_source_description": "slide → tissue",
+      "camera": "dive ×7, roll 90° → 25° (the tissue's long axis comes level); turret clicks at 1.25× and 2.5×",
+      "motion_transition_sound_notes": "the cover glass turns to clean glass below 30 mm",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v1",
+          "t0": 0.55,
+          "t1": 4.133,
+          "zh": "一张玻片，一片人肝组织。",
+          "en": "One glass slide. One slice of human liver."
+        }
+      ],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/microscope/frames/f-0004.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "3",
+      "t0": 5.33,
+      "t1": 9.33,
+      "published_time_range": "5.33–9.33",
+      "visual_prompt_source_description": "the tissue, a dimension line grows from its centre: 4.80 mm, 人肝组织 · 三色染色",
+      "camera": "creep 9.2 → 8.55 mm",
+      "motion_transition_sound_notes": "first reading",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v2",
+          "t0": 5.62,
+          "t1": 10.667,
+          "zh": "宽 4.8 毫米。染色让胶原呈蓝色。",
+          "en": "4.8 mm across. The stain turns collagen blue."
+        }
+      ],
+      "voice_line_ids": [
+        "v2"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/microscope/frames/f-0008.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "4",
+      "t0": 9.33,
+      "t1": 10.67,
+      "published_time_range": "9.33–10.67",
+      "visual_prompt_source_description": "tissue → nodule A",
+      "camera": "dive ×3.2 to 2.7 mm, roll to 18.5° (A–B line level); clicks 5×, 10×",
+      "motion_transition_sound_notes": "",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v2",
+          "t0": 5.62,
+          "t1": 10.667,
+          "zh": "宽 4.8 毫米。染色让胶原呈蓝色。",
+          "en": "4.8 mm across. The stain turns collagen blue."
+        }
+      ],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/microscope/frames/f-0010.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "5",
+      "t0": 10.67,
+      "t1": 15.33,
+      "published_time_range": "10.67–15.33",
+      "visual_prompt_source_description": "circle A drawn as an arc with ticks (A · 直径 1 mm); 11.0–12.47 a mint scan front crosses it, every counted collagen pixel lights behind it, the reading rolls to 13.5 % and springs at 12.67; raw counts below",
+      "camera": "locked, creep",
+      "motion_transition_sound_notes": "counting the colour",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v3",
+          "t0": 10.95,
+          "t1": 15.995,
+          "zh": "这个直径 1 毫米的圆里，蓝色占 13.5%。",
+          "en": "In this 1 mm circle, blue covers 13.5%."
+        }
+      ],
+      "voice_line_ids": [
+        "v3"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/microscope/frames/f-0014.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "6",
+      "t0": 15.33,
+      "t1": 16.67,
+      "published_time_range": "15.33–16.67",
+      "visual_prompt_source_description": "the septa slide past",
+      "camera": "truck 1.41 mm at 10×",
+      "motion_transition_sound_notes": "",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v3",
+          "t0": 10.95,
+          "t1": 15.995,
+          "zh": "这个直径 1 毫米的圆里，蓝色占 13.5%。",
+          "en": "In this 1 mm circle, blue covers 13.5%."
+        }
+      ],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/microscope/frames/f-0016.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "7",
+      "t0": 16.67,
+      "t1": 20.67,
+      "published_time_range": "16.67–20.67",
+      "visual_prompt_source_description": "circle B, the same count: 32.6 %, lands 18.0",
+      "camera": "locked, creep",
+      "motion_transition_sound_notes": "",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v4",
+          "t0": 16.85,
+          "t1": 20.963,
+          "zh": "相隔 1.4 毫米：32.6%。",
+          "en": "1.4 mm away: 32.6%."
+        }
+      ],
+      "voice_line_ids": [
+        "v4"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/microscope/frames/f-0019.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "8",
+      "t0": 20.67,
+      "t1": 26.67,
+      "published_time_range": "20.67–26.67",
+      "visual_prompt_source_description": "both circles and both readings in frame from 21.67; silence 21.8–22.67; the verdict panel: B 的蓝色占比是 A 的 2.4 倍 / 相隔 1.41 mm · 同一切片 · 同一染色",
+      "camera": "pull back to 3.95 mm (click back to 5×), creep",
+      "motion_transition_sound_notes": "each reading held ≥ 2.5 s before the verdict",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v4",
+          "t0": 16.85,
+          "t1": 20.963,
+          "zh": "相隔 1.4 毫米：32.6%。",
+          "en": "1.4 mm away: 32.6%."
+        },
+        {
+          "id": "v5",
+          "t0": 22.7,
+          "t1": 27.152,
+          "zh": "同一片组织，同一种染色，蓝色是 2.4 倍。",
+          "en": "Same slice, same stain: 2.4 times the blue."
+        }
+      ],
+      "voice_line_ids": [
+        "v5"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/microscope/frames/f-0024.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "9",
+      "t0": 26.67,
+      "t1": 29.33,
+      "published_time_range": "26.67–29.33",
+      "visual_prompt_source_description": "nodule B → one nucleus",
+      "camera": "dive ×11, roll to 34°; clicks 10×, 20×, 40×",
+      "motion_transition_sound_notes": "the counted pixels fade on the way down",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v5",
+          "t0": 22.7,
+          "t1": 27.152,
+          "zh": "同一片组织，同一种染色，蓝色是 2.4 倍。",
+          "en": "Same slice, same stain: 2.4 times the blue."
+        }
+      ],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/microscope/frames/f-0028.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "10",
+      "t0": 29.33,
+      "t1": 32.67,
+      "published_time_range": "29.33–32.67",
+      "visual_prompt_source_description": "the frame softens, a focal plane sweeps left → right; a mint ring is drawn round one nucleus with caliper ticks, panel 肝细胞核 · 8.5 µm · 核膜外缘拟合",
+      "camera": "creep 345 → 318 µm",
+      "motion_transition_sound_notes": "the focal sweep and the ring",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v6",
+          "t0": 29.35,
+          "t1": 33.01,
+          "zh": "一个细胞核，直径 8.5 微米。",
+          "en": "One nucleus, 8.5 microns across."
+        }
+      ],
+      "voice_line_ids": [
+        "v6"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/microscope/frames/f-0032.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "11",
+      "t0": 32.67,
+      "t1": 35.33,
+      "published_time_range": "32.67–35.33",
+      "visual_prompt_source_description": "silence 32.3–32.67, then the climb: the scale bar jumps back 20 µm → 5 mm, six quick clicks",
+      "camera": "pull ×145, roll 34° → 96°",
+      "motion_transition_sound_notes": "the climb back",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v6",
+          "t0": 29.35,
+          "t1": 33.01,
+          "zh": "一个细胞核，直径 8.5 微米。",
+          "en": "One nucleus, 8.5 microns across."
+        },
+        {
+          "id": "v7",
+          "t0": 33.05,
+          "t1": 36.656,
+          "zh": "每个数字，都量自这张扫描本身。",
+          "en": "Every number here was measured from the scan itself."
+        }
+      ],
+      "voice_line_ids": [
+        "v7"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/microscope/frames/f-0034.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "12",
+      "t0": 35.33,
+      "t1": 39.5,
+      "published_time_range": "35.33–39.5",
+      "visual_prompt_source_description": "the glass fills the frame, the slide's edge and a dark sliver of bench at the bottom; title written on the glass",
+      "camera": "slow drift",
+      "motion_transition_sound_notes": "end card",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v7",
+          "t0": 33.05,
+          "t1": 36.656,
+          "zh": "每个数字，都量自这张扫描本身。",
+          "en": "Every number here was measured from the scan itself."
+        }
+      ],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/microscope/frames/f-0038.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    }
+  ],
+  "narration": [
+    {
+      "id": "v1",
+      "t0": 0.6,
+      "duration_s_original_voice": 2.733,
+      "tts_text_verbatim": "One glass slide. One slice of human liver.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v1",
+        "text": "One glass slide. One slice of human liver.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    },
+    {
+      "id": "v2",
+      "t0": 5.67,
+      "duration_s_original_voice": 4.197,
+      "tts_text_verbatim": "Four point eight millimeters across. The stain turns collagen blue.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v2",
+        "text": "Four point eight millimeters across. The stain turns collagen blue.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us",
+        "asr": "4.8 millimeters across, the stain turns collagen blue."
+      }
+    },
+    {
+      "id": "v3",
+      "t0": 11,
+      "duration_s_original_voice": 4.195,
+      "tts_text_verbatim": "In this one millimeter circle, blue covers thirteen point five percent.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v3",
+        "text": "In this one millimeter circle, blue covers thirteen point five percent.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us",
+        "asr": "In this one millimeter circle, blue covers 13.5%."
+      }
+    },
+    {
+      "id": "v4",
+      "t0": 16.9,
+      "duration_s_original_voice": 3.263,
+      "tts_text_verbatim": "One point four millimeters away: thirty two point six.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v4",
+        "text": "One point four millimeters away: thirty two point six.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us",
+        "asr": "1.4 millimeters away, 32.6."
+      }
+    },
+    {
+      "id": "v5",
+      "t0": 22.75,
+      "duration_s_original_voice": 3.602,
+      "tts_text_verbatim": "Same slice, same stain. Two point four times the blue.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v5",
+        "text": "Same slice, same stain. Two point four times the blue.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us",
+        "asr": "Same slice same stain 2.4 times the blue"
+      }
+    },
+    {
+      "id": "v6",
+      "t0": 29.4,
+      "duration_s_original_voice": 2.964,
+      "tts_text_verbatim": "One nucleus, eight point five microns across.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v6",
+        "text": "One nucleus, eight point five microns across.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us",
+        "asr": "One nucleus, 8.5 microns across."
+      }
+    },
+    {
+      "id": "v7",
+      "t0": 33.1,
+      "duration_s_original_voice": 2.756,
+      "tts_text_verbatim": "Every number here was measured from the scan itself.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v7",
+        "text": "Every number here was measured from the scan itself.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    }
+  ],
+  "narration_source_path": "styles/microscope/demo/voice/lines.json",
+  "published_timeline_extracted": {
+    "bpm": 90,
+    "dur": 39.5,
+    "T": {
+      "open": 0,
+      "push": 2.6667,
+      "tissue": 5.3333,
+      "toA": 9.3333,
+      "circA": 10.6667,
+      "scanA": 11,
+      "landA": 12.6667,
+      "truck": 15.3333,
+      "circB": 16.6667,
+      "scanB": 17,
+      "landB": 18,
+      "both": 20.6667,
+      "hush1": 21.8,
+      "verdict": 22.6667,
+      "dive": 26.6667,
+      "land": 29.3333,
+      "ring": 29.6667,
+      "landN": 30,
+      "hush2": 32.3,
+      "pull": 32.6667,
+      "card": 35.3333,
+      "end": 39.5
+    },
+    "VO": [
+      {
+        "id": "v1",
+        "t": 0.6
+      },
+      {
+        "id": "v2",
+        "t": 5.67
+      },
+      {
+        "id": "v3",
+        "t": 11
+      },
+      {
+        "id": "v4",
+        "t": 16.9
+      },
+      {
+        "id": "v5",
+        "t": 22.75
+      },
+      {
+        "id": "v6",
+        "t": 29.4
+      },
+      {
+        "id": "v7",
+        "t": 33.1
+      }
+    ]
+  },
+  "on_screen_text_inventory": {
+    "published_subtitle_file_verbatim": "1\n00:00:00,550 --> 00:00:04,133\n一张玻片，一片人肝组织。\nOne glass slide. One slice of human liver.\n\n2\n00:00:05,620 --> 00:00:10,667\n宽 4.8 毫米。染色让胶原呈蓝色。\n4.8 mm across. The stain turns collagen blue.\n\n3\n00:00:10,950 --> 00:00:15,995\n这个直径 1 毫米的圆里，蓝色占 13.5%。\nIn this 1 mm circle, blue covers 13.5%.\n\n4\n00:00:16,850 --> 00:00:20,963\n相隔 1.4 毫米：32.6%。\n1.4 mm away: 32.6%.\n\n5\n00:00:22,700 --> 00:00:27,152\n同一片组织，同一种染色，蓝色是 2.4 倍。\nSame slice, same stain: 2.4 times the blue.\n\n6\n00:00:29,350 --> 00:00:33,010\n一个细胞核，直径 8.5 微米。\nOne nucleus, 8.5 microns across.\n\n7\n00:00:33,050 --> 00:00:36,656\n每个数字，都量自这张扫描本身。\nEvery number here was measured from the scan itself.\n",
+    "cues_original_json": [
+      {
+        "id": "v1",
+        "t0": 0.55,
+        "t1": 4.133,
+        "zh": "一张玻片，一片人肝组织。",
+        "en": "One glass slide. One slice of human liver."
+      },
+      {
+        "id": "v2",
+        "t0": 5.62,
+        "t1": 10.667,
+        "zh": "宽 4.8 毫米。染色让胶原呈蓝色。",
+        "en": "4.8 mm across. The stain turns collagen blue."
+      },
+      {
+        "id": "v3",
+        "t0": 10.95,
+        "t1": 15.995,
+        "zh": "这个直径 1 毫米的圆里，蓝色占 13.5%。",
+        "en": "In this 1 mm circle, blue covers 13.5%."
+      },
+      {
+        "id": "v4",
+        "t0": 16.85,
+        "t1": 20.963,
+        "zh": "相隔 1.4 毫米：32.6%。",
+        "en": "1.4 mm away: 32.6%."
+      },
+      {
+        "id": "v5",
+        "t0": 22.7,
+        "t1": 27.152,
+        "zh": "同一片组织，同一种染色，蓝色是 2.4 倍。",
+        "en": "Same slice, same stain: 2.4 times the blue."
+      },
+      {
+        "id": "v6",
+        "t0": 29.35,
+        "t1": 33.01,
+        "zh": "一个细胞核，直径 8.5 微米。",
+        "en": "One nucleus, 8.5 microns across."
+      },
+      {
+        "id": "v7",
+        "t0": 33.05,
+        "t1": 36.656,
+        "zh": "每个数字，都量自这张扫描本身。",
+        "en": "Every number here was measured from the scan itself."
+      }
+    ],
+    "timeline_text_fields": {},
+    "titles_subtitles_palette_verbatim": "",
+    "palette_props_verbatim": "- Glass #F4F1EC (both the slide photo and the scan normalised to it), bench graphite #0B0D0F → #2A3036, ink #181B1F, frosted panels rgba(12,14,17,0.74) with a 1 px light rim, accent mint rgb(120,240,205) on stain and rgb(0,122,99) on glass.\n- The stain keeps its colour: trichrome red (hepatocyte cytoplasm) and blue (collagen).\n- Props: the slide photo (label and barcode as photographed, the maker's logo filled), the dimension line, two 1 mm circles with their counted-pixel masks, the verdict panel, the nucleus ring, the instrument panel (scale bar, field of view, magnification with a turning nosepiece glyph and a large flash of each new magnification), the source panel.\n- Narrator: Kokoro `af_heart`, speed 0.95.",
+    "end_card_verbatim": "The camera climbs back until the glass fills the frame; on its empty cover glass, in ink: 量出来的蓝 (Noto Serif SC 600), *Measured Blue*, a rule drawn left to right, `MICROSCOPE STORY · 显微叙事`, `LemoLab × Claude Opus 5.5`, `数据：Ventana-1 · PathAI · CC0`; the tissue fleck sits to the right. 4.2 s. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.",
+    "completion_note": "Exact visible typography/content must be checked in original video; this inventory preserves all published cue/title/prop specifications. Model authorship credit is a reference fact, never new-output attribution.",
+    "original_annotation_literal_sources": [
+      {
+        "path": "styles/microscope/demo/film.js",
+        "sha256": "d58ab02d89b5273cb3bda301d1e23ce17a504ddd45a4f2b79052f71d27ed6508",
+        "original_literal_inventory": [
+          "missing ",
+          "量视野0µm×",
+          "视野",
+          "玻片照片",
+          "全切片扫描 Ventana DP 200 · PathAI · CC0",
+          "一片人肝组织",
+          "三色染色",
+          "人肝组织 · 三色染色",
+          "胶原（蓝）占组织面积",
+          "肝细胞核",
+          "核膜外缘拟合",
+          "量出来的蓝",
+          "Measured Blue",
+          "MICROSCOPE STORY · 显微叙事",
+          "LemoLab × Claude Opus 5.5",
+          "数据：Ventana-1 · PathAI · CC0"
+        ]
+      },
+      {
+        "path": "styles/microscope/demo/timeline.js",
+        "sha256": "68aba1005c0497ba47458cd0c32f240cda82c2fcce01eae6ff9d8c1a749e2402",
+        "original_literal_inventory": [
+          "One glass slide. One slice of human liver.",
+          "一张玻片，一片人肝组织。",
+          "Four point eight millimeters across. The stain turns collagen blue.",
+          "4.8 millimeters across, the stain turns collagen blue.",
+          "宽 4.8 毫米。染色让胶原呈蓝色。",
+          "4.8 mm across. The stain turns collagen blue.",
+          "In this one millimeter circle, blue covers thirteen point five percent.",
+          "In this one millimeter circle, blue covers 13.5%.",
+          "这个直径 1 毫米的圆里，蓝色占 13.5%。",
+          "In this 1 mm circle, blue covers 13.5%.",
+          "One point four millimeters away: thirty two point six.",
+          "1.4 millimeters away, 32.6.",
+          "相隔 1.4 毫米：32.6%。",
+          "Same slice, same stain. Two point four times the blue.",
+          "Same slice same stain 2.4 times the blue",
+          "同一片组织，同一种染色，蓝色是 2.4 倍。",
+          "Same slice, same stain: 2.4 times the blue.",
+          "One nucleus, eight point five microns across.",
+          "One nucleus, 8.5 microns across.",
+          "一个细胞核，直径 8.5 微米。",
+          "Every number here was measured from the scan itself.",
+          "每个数字，都量自这张扫描本身。"
+        ]
+      }
+    ]
+  },
+  "sound_recreation": {
+    "instruction": "Generate new voice and music; original mix/track reuse is not permitted by latest user instruction. Preserve full words, cadence windows, BPM, musical form, silence and picture-synchronous hits.",
+    "published_score_sound_spec_verbatim": "90 BPM, 4/4, one chord per bar: Dsus2 – Bm7 – Gmaj7 – Asus4 (twice), Bm under the verdict, Gmaj7, Em9 for the dive, D major when the nucleus lands, Gmaj7 for the climb, Dsus2 – D for the card. Every designed hit sits on the grid (`demo/tools/cuecheck.py`: 0 ms); turret clicks are foley on the picture's level changes.\n\n| Section | Time | Palette | Notes |\n|---|---|---|---|\n| Open | 0–2.67 | bowed vibraphone pad, soft vibraphone arpeggio, long pulse bass, a high glass shimmer under the moving light, soft timpani | |\n| Push | 2.67–5.33 | hard-mallet vibraphone in 16ths, pulse bass in 8ths, riser | turret click + servo at each level |\n| Tissue | 5.33–9.33 | pad, quarter-note pulse | pen on glass for the dimension line |\n| Measure | 9.33–20.67 | vibraphone in 8ths, marimba off-beat ticks, quarter pulse | per circle: pen for the arc, a band-passed scan moving left → right with counter ticks that speed up; glockenspiel + timpani when the reading lands (A 12.67, B 18.0); whoosh for the truck |\n| Silence 1 | 21.8–22.67 | room tone only | |\n| Verdict | 22.67 | timpani + gran cassa + glockenspiel B5 + low B in the bass | first sound after the silence |\n| Dive | 26.67–29.33 | 16ths again, riser, three clicks | |\n| Land | 29.33–32.3 | water-glass motif D5–A4–F♯5–E5–D5 with echoes, D major pad, filtered sweep across the stereo field with the focal plane, glockenspiel F♯6 when the reading lands | the only resolution in the film |\n| Silence 2 | 32.3–32.67 | room tone | |\n| Climb | 32.67–35.33 | a long whoosh, six lighter clicks | |\n| Card | 35.33–39.5 | reversed swell into a soft bass drum and bowed cymbal, the glass motif once more, slower; low D | |\n\nMix (in `mix.py`): stems set against the voice by active RMS (music −11 dB, pulse −14, foley −12, hits −6, room −30), music ducked ~4 dB under speech, gentle bus compression on music, pulse, foley and room only; a 38 Hz high-pass and a −4 dB shelf below 62 Hz on everything but the voice. The film measures −14.0 LUFS, LRA 5.8 LU, peak −1.8 dBFS.",
+    "original_voice_records": [
+      {
+        "id": "v1",
+        "text": "One glass slide. One slice of human liver.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      },
+      {
+        "id": "v2",
+        "text": "Four point eight millimeters across. The stain turns collagen blue.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us",
+        "asr": "4.8 millimeters across, the stain turns collagen blue."
+      },
+      {
+        "id": "v3",
+        "text": "In this one millimeter circle, blue covers thirteen point five percent.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us",
+        "asr": "In this one millimeter circle, blue covers 13.5%."
+      },
+      {
+        "id": "v4",
+        "text": "One point four millimeters away: thirty two point six.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us",
+        "asr": "1.4 millimeters away, 32.6."
+      },
+      {
+        "id": "v5",
+        "text": "Same slice, same stain. Two point four times the blue.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us",
+        "asr": "Same slice same stain 2.4 times the blue"
+      },
+      {
+        "id": "v6",
+        "text": "One nucleus, eight point five microns across.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us",
+        "asr": "One nucleus, 8.5 microns across."
+      },
+      {
+        "id": "v7",
+        "text": "Every number here was measured from the scan itself.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    ],
+    "original_voice_durations_s": {
+      "v1": 2.733,
+      "v2": 4.197,
+      "v3": 4.195,
+      "v4": 3.263,
+      "v5": 3.602,
+      "v6": 2.964,
+      "v7": 2.756
+    }
+  },
+  "engine_and_build": {
+    "required_engine_spec_verbatim": "- `demo/film.js`: log-spiral camera (`camAt`), plate selection by downsampling ratio and coverage, objective events from real level changes, focus, frosted `panel()`, marks, readings, `TEXTS` / `SUBCHECK` / `EV`.\n- `demo/tools/plates.py`: slide-photo registration and cleaning, graded plates, collagen mask and the scan's cumulative curve, the tissue axis. `nucleus.py`: membrane edge on 72 rays, least-squares circle.\n- **Extra packages and packs** (beyond `setup.sh deps voice`): `tifffile` + `imagecodecs` read TIFF-based slides (Ventana BIF, Aperio SVS, Hamamatsu NDPI, generic pyramidal TIFF; `demo/tools/plates.py` is written for BIF: its label page, XMP and AOI); MRXS, SCN, VMS and others need `openslide-python` with the OpenSlide library (`brew install openslide`), or an adapter of your own. Install them yourself into a private venv in the project folder, not into `$LIB/.venv`.\n- Minimal example, not in the demo: a coated steel sample: one SEM pyramid, a dive to one crack, a circle counting coverage, a ring around one grain.",
+    "published_build_notes_verbatim": "```\ndemo/\n  build.sh          one command: (plates if missing) -> voice -> speech check -> cues -> events -> video -> mix -> master -> .srt -> checks -> poster\n  index.html        one canvas, fonts\n  film.js           render(t): similarity camera keys + log-spiral interpolation, plate selection, objective events,\n                    focus, frosted panels, every mark and reading, subtitles, end card, TEXTS, SUBCHECK, EV\n  timeline.js       90 BPM grid, key moments, narration with zh/en lines and the numbers it states (checked)\n  mix.py            score, foley, room, voice, mix -> out/mix.wav + out/stems/\n  config.json       circle centres, nucleus guess, the roll the scan direction is computed for\n  tools/            plates.py (registration, cleaning, plates, collagen masks and counts, tissue axis), nucleus.py,\n                    fonts.py (all fonts), export.mjs (voice lines, cues, number check), subcheck.mjs, cuecheck.py, finalasr.py\n  assets/           raw/Ventana-1.bif (227 MB, gitignored), plates/ (plates, ROI overlays, plates.json, nucleus.json)\n  FACTS.md, CREDITS, TREATMENT.md, PRODUCTION_LOG.md, stills/styleframe.jpg\n```\n\n- `sh demo/build.sh` takes about 5 minutes on Apple silicon (the picture renders in ~20–90 s with 4 workers; the final speech check is the slowest step). In a fresh clone it first downloads the slide (227 MB), rebuilds the plates and measurements (about a minute) and fetches the fonts (Barlow Condensed and IBM Plex Mono from github.com/google/fonts, Noto Sans SC / Noto Serif SC subsets from the Google Fonts API); `FETCH=1` forces all of that again. The slide reader runs in its own `demo/.venv` (tifffile, imagecodecs).\n- Checks it runs: `asr_check.py` with `small.en` (decimals are written as Whisper writes them in each line's `asr`), the script's numbers against the measurements (`export.mjs` fails on a mismatch), the cue grid, single-line subtitle widths with the real fonts (widest 642 px against 960), `readcheck.mjs`, speech-to-text on the final mix, black frames.\n- Plates: slide photo 1251 × 3685 (21.2 µm/px), scan levels 5/4/3 whole with a 0.3 mm feather, level 2 whole (6144 × 5376, 1 µm/px), levels 1 and 0 as 5120 × 3584 crops around the nucleus. About 400 MB of decoded images per render worker.\n- Demo-specific pitfalls: the scanner tray's clips at the slide's far end could only be filled roughly, so that end stays out of frame in every shot; the slide photo's resolution tag was trusted only after the tissue's centroid matched the scan through AOI0 (19 µm); with fields between 2.6 and 2.8 mm the level-2 plate flips in and out, so the circles are held at 2.6–2.7 mm to keep the turret quiet during a reading; the scan direction of the counting mask is computed for the roll in `config.json` and must follow the camera if the roll changes.",
+    "fetch_build_specs": [
+      {
+        "path": "styles/microscope/demo/build.sh",
+        "sha256": "90c88fb65236e83e60db2b4cb23bd78c48bbcafc947fee7521759dbdd1b15c8a",
+        "text_verbatim": "#!/bin/sh\n# One command: 《量出来的蓝》 Measured Blue (Microscope Story demo)\n#   sh demo/build.sh            fonts -> voice + speech check -> cues -> events -> picture -> score + mix -> master\n#                               -> subtitles -> checks -> poster and style frame\n#   FETCH=1 sh demo/build.sh    first re-download the slide (Ventana-1.bif, 227 MB, CC0), rebuild every plate\n#                               and measurement (tools/plates.py, tools/nucleus.py) and re-fetch the fonts.\n#                               Without FETCH, whatever is missing (slide, plates, fonts) is fetched or rebuilt.\n# Needs the library's core tier and voice tier (Kokoro, faster-whisper); the slide reader gets its own .venv here.\nset -e\nHERE=$(cd \"$(dirname \"$0\")\" && pwd)                 # .../<slug>/demo\nFILM=$(cd \"$HERE/..\" && pwd)                         # .../<slug>\nLIB=${LIB:-$(cd \"$HERE/../../..\" && pwd)}            # films/<slug>/demo or styles/<slug>/demo -> library root\nexport LIB\n[ -f \"$LIB/core/render/video.mjs\" ] || { echo \"set LIB to the library folder\"; exit 1; }\nPY=\"$LIB/.venv/bin/python\"\nNAME=microscope\nVPY=\"$HERE/.venv/bin/python\"\nif [ ! -x \"$VPY\" ]; then python3 -m venv \"$HERE/.venv\"; \"$HERE/.venv/bin/pip\" install -q tifffile imagecodecs numpy pillow scipy; fi\n\nRAW=\"$HERE/assets/raw/Ventana-1.bif\"\nSHA=2eb05cd8f628c36408c3fde09beeeebaaae90181c4f840d5475ec7594bdcbbb6\n# keyed on gitignored artefacts: a clean clone has plates.json (tracked) but no plate images, fonts or slide\nif [ \"${FETCH:-0}\" = \"1\" ] || [ ! -f \"$HERE/assets/plates/c1.jpg\" ] || [ ! -f \"$HERE/assets/plates/roiB.png\" ]; then\n  if [ \"${FETCH:-0}\" = \"1\" ] || [ ! -f \"$RAW\" ]; then\n    mkdir -p \"$HERE/assets/raw\"\n    curl -L --fail -o \"$RAW\" https://openslide.cs.cmu.edu/download/openslide-testdata/Ventana/Ventana-1.bif\n  fi\n  echo \"$SHA  $RAW\" | shasum -a 256 -c -\n  \"$VPY\" -I \"$HERE/tools/plates.py\" \"$HERE\"               # plates, registration, collagen counts, tissue axis\n  \"$VPY\" -I \"$HERE/tools/nucleus.py\" \"$HERE\" 13297 9265   # the measured nucleus (level-0 px, approx. centre)\nfi\nif [ \"${FETCH:-0}\" = \"1\" ] || [ ! -f \"$HERE/fonts/NotoSerifSC-600.woff2\" ] || [ ! -f \"$HERE/fonts/BarlowCondensed-Light.ttf\" ]; then\n  \"$VPY\" -I \"$HERE/tools/fonts.py\" \"$HERE\"                # Barlow Condensed, IBM Plex Mono, Noto Sans/Serif SC subsets\nfi\ncd \"$LIB\"\n\n# voice: Kokoro af_heart, speech-to-text check (small.en), then cues from the real durations\nnode \"$HERE/tools/export.mjs\" \"$HERE\" > /dev/null\n\"$PY\" core/tts/tts.py \"$HERE/voice/lines.json\" \"$HERE/voice/out\"\nWHISPER_MODEL=small.en \"$PY\" core/tts/asr_check.py \"$HERE/voice/lines.json\" \"$HERE/voice/out\" --lang en\nnode \"$HERE/tools/export.mjs\" \"$HERE\"\n\n# picture, events, score + mix, master, subtitles\nnode core/render/events.mjs \"$HERE\"\nnode core/render/video.mjs \"$HERE\" --fps 24 --workers 4 --out \"$HERE/out/video.mp4\"\n\"$PY\" \"$HERE/mix.py\"\nsh core/render/mux.sh \"$HERE/out/video.mp4\" \"$HERE/out/mix.wav\" \"$FILM/$NAME.mp4\" 24 0          # no grain: the scan carries its own texture\n\"$PY\" core/render/srt.py \"$HERE/out/cues_srt.json\" \"$FILM/$NAME.srt\"\n\n# checks\n\"$PY\" \"$HERE/tools/cuecheck.py\" \"$HERE\" | tail -1\nnode \"$HERE/tools/subcheck.mjs\" \"$HERE\" | tail -1\nnode core/render/readcheck.mjs \"$HERE\" > \"$HERE/out/readcheck.txt\" && echo \"readcheck ok\"\nWHISPER_MODEL=small.en \"$PY\" \"$HERE/tools/finalasr.py\" \"$FILM/$NAME.mp4\" \"$HERE\" | grep -c '^OK' | sed 's/$/ lines heard in the final mix/'\nffmpeg -v info -i \"$FILM/$NAME.mp4\" -vf blackdetect=d=0.1:pix_th=0.05 -an -f null - 2>&1 | grep -c black_start | sed 's/$/ black stretches/'\n\n# poster (the signature shot) and the gallery style frame\nffmpeg -v error -y -ss 24.6 -i \"$FILM/$NAME.mp4\" -frames:v 1 -q:v 2 \"$FILM/poster.jpg\"\nmkdir -p \"$HERE/stills\"\nffmpeg -v error -y -ss 24.6 -i \"$FILM/$NAME.mp4\" -frames:v 1 -q:v 2 \"$HERE/stills/styleframe.jpg\"\necho \"done: $FILM/$NAME.mp4\"\n"
+      }
+    ],
+    "local_original_asset_snapshot_inventory": [
+      {
+        "path": "styles/microscope/demo/events.json",
+        "sha256": "72373e1cd2728306c44faff8475f2dc4d03b34b0ef986c1173e249f1c599f9b8",
+        "bytes": 1352
+      },
+      {
+        "path": "styles/microscope/demo/config.json",
+        "sha256": "5886b9f12e6aa46c11df06f6e3473ce8368ebe7ed77088fe5f54a79964afa044",
+        "bytes": 138
+      },
+      {
+        "path": "styles/microscope/demo/timeline.json",
+        "sha256": "992816134452c24493c96d1a23634280dd522f21a97db5fbe0691ed9f19d3b33",
+        "bytes": 701
+      },
+      {
+        "path": "styles/microscope/demo/cues.json",
+        "sha256": "775d14b9453bddbea9435b6d6f73ef94148e6ef36cf1c017578c38092b58cc1a",
+        "bytes": 1092
+      },
+      {
+        "path": "styles/microscope/demo/assets/plates/nucleus.json",
+        "sha256": "397faa11ebd5af9bbdf94c169990a44918d2c6603ad46e57cfe8c617a94c4433",
+        "bytes": 153
+      },
+      {
+        "path": "styles/microscope/demo/assets/plates/plates.json",
+        "sha256": "f2eb328e0ecbadc224ee4933334af8f61c72f8879b6f6dac5ca110fcf948954a",
+        "bytes": 7736
+      }
+    ]
+  },
+  "evidence": {
+    "dataset": "PathAI CC0 Ventana-1.bif, SHA2562eb05cd8f628c36408c3fde09beeeebaaae90181c4f840d5475ec7594bdcbbb6.",
+    "required_measurements": [
+      "Tissue PCA span4.80mm.",
+      "A97058/716763=13.5%; B232688/713354=32.6%; separation1.41mm, ratio2.4.",
+      "At level2, tissueL<200 orRGB range>40; blue B>R+12 andB>=G.",
+      "Nucleus fitted center13295,9266.8, radius17.04 level0px; diameter8.52µm displayed8.5µm."
+    ],
+    "window": "Full scan24576×21504 at0.25µm/px; A(8393,13083), B(13425,10578), each1mm diameter,18.8° measuring roll.",
+    "needed": [
+      "assets/raw/Ventana-1.bif",
+      "assets/plates/c1.jpg",
+      "assets/plates/roiA.png",
+      "assets/plates/roiB.png",
+      "assets/plates/nucleus.json"
+    ],
+    "recipe": "Follow the isolated data-only preparation described in ASSET_GAPS.md and the exact original build/fetch scripts retained in engine_and_build.fetch_build_specs.",
+    "specific_blockers": [
+      "The full hash-verified BIF and exact original plates/masks/nucleus-fit output are absent. Rebuild with the preserved config. The v1 small circles and different crop centers are not the original measurement."
+    ],
+    "asset_status": [
+      {
+        "path": "styles/microscope/demo/assets/raw/Ventana-1.bif",
+        "present": false
+      },
+      {
+        "path": "styles/microscope/demo/assets/plates/c1.jpg",
+        "present": false
+      },
+      {
+        "path": "styles/microscope/demo/assets/plates/roiA.png",
+        "present": false
+      },
+      {
+        "path": "styles/microscope/demo/assets/plates/roiB.png",
+        "present": false
+      },
+      {
+        "path": "styles/microscope/demo/assets/plates/nucleus.json",
+        "present": true
+      }
+    ],
+    "original_facts_verbatim": "# 事实表：《量出来的蓝》 Measured Blue\n\n片中每一个数字和事实性说法都在下表里：说法、出处（URL）、原文引用。引文保留英文原文。核对日期：2026-10-16。\n\n数字分两类：\n\n- **文件与出处**：直接来自切片文件的元数据或公开说明（A 表）。\n- **本片实测**：在这张扫描图上自己量出来的（B 表）。画面上都写了测量方法（“胶原（蓝）占组织面积”下面附像素计数，核径下面附“核膜外缘拟合”），方法写在这里，可由 `tools/plates.py` 和 `tools/nucleus.py` 复现。\n\n本片只描述测量结果，不做诊断，也不评分期。\n\n## A. 文件与出处\n\n| # | 片中说法（画面 / 旁白） | 出处 | 原文 |\n|---|---|---|---|\n| A1 | “一片人肝组织”“人肝组织 · 三色染色”；旁白 “One slice of human liver.” | OpenSlide 测试数据索引 https://openslide.cs.cmu.edu/download/openslide-testdata/Ventana/index.yaml | `Ventana-1.bif: credit: PathAI · description: Human liver, trichrome stain, brightfield, joint direction LEFT, scanned on Ventana DP 200 · license: CC0-1.0` |\n| A2 | 来源署名“全切片扫描 Ventana DP 200 · PathAI · CC0” | 同 A1；文件 XMP | `ScannerModel=\"VENTANA DP 200\"` |\n| A3 | 旁白 “The stain turns collagen blue.”；读数标签“胶原（蓝）” | Wikipedia “Trichrome staining” https://en.wikipedia.org/wiki/Trichrome_staining | “A trichrome stain can colour the muscle tissue red, and the collagen fibres green or blue. Liver biopsies may have fine collagen fibres between the liver cells, and the amount of collagen may be estimated based on the staining method.” |\n| A4 | 比例尺、视野读数 | 文件 XMP（第 0 层），以及第 0 层的 TIFF XResolution | `Magnification=\"40\" ScanRes=\"0.25\"`；XResolution 40000 px/cm（即 0.25 µm/px） |\n| A5 | 仪表“等效 1.25× / 2.5× / 5× / 10× / 20× / 40×” | 各金字塔层的 TIFF ImageDescription | `level=0 mag=40`、`level=1 mag=20` … `level=5 mag=1.25` |\n| A6 | 开场的整片玻片照片及其比例 | 文件第 0 页 `Label_Image`，XResolution = 4294967295/9091032 px/cm；扫描区坐标在 XMP 的 AOI0 中 | `<AOI0 Left=\"297\" Top=\"2323\" Right=\"574\" Bottom=\"2069\"/>`。按 21.167 µm/px 计算，Top 从底边数起 |\n\n## B. 本片实测\n\n| # | 片中数字 | 方法 | 结果 |\n|---|---|---|---|\n| B0 | （对位核查，不上画面） | 玻片照片与扫描图通过 AOI0 和两边的像素尺寸对位；再各自用暗度掩膜求组织质心与面积，交叉核对 | 质心相差 19 µm（不到照片上 1 个像素）；面积比 0.999 |\n| B1 | “4.80 mm”；旁白 “Four point eight millimeters across.” | 在第 3 层（2 µm/px）上取组织掩膜（非玻璃且非低饱和），闭运算并填洞，取最大连通域，做主成分分析，取其在主轴上的投影跨度 | 4.80 mm（宽 2.80 mm） |\n| B2 | 圆 A“胶原（蓝）占组织面积 13.5%”“97,058 / 716,763 px”；旁白 “blue covers thirteen point five percent” | 在第 2 层（1 µm/px）上逐像素分类：组织 =（亮度 < 200）或（RGB 极差 > 40）；蓝色胶原 = 组织且 B > R + 12 且 B ≥ G。圆心为第 0 层坐标 (8393, 13083)，直径 1 mm（1000 px）；占比 = 圆内蓝色像素 / 圆内组织像素 | 97,058 / 716,763 = 13.5% |\n| B3 | 圆 B“32.6%”“232,688 / 713,354 px”；旁白 “thirty two point six” | 同 B2，圆心 (13425, 10578) | 232,688 / 713,354 = 32.6% |\n| B4 | “相隔 1.41 mm”；旁白 “One point four millimeters away” | 两个圆心之间的距离 × 0.25 µm/px | 1.41 mm |\n| B5 | “B 的蓝色占比是 A 的 2.4 倍”；旁白 “Two point four times the blue.” | B3 / B2 | 32.6 / 13.5 = 2.41 |\n| B6 | “肝细胞核 8.5 µm”；旁白 “eight point five microns across” | 在第 0 层（0.25 µm/px）上，从核中心发出 72 条射线；每条射线取 2–5 µm 内最暗的点（核膜），再向外找亮度回升一半的位置作为外缘；外缘点做最小二乘拟合圆，剔除离群点后迭代 6 次 | 半径 17.04 px，残差 0.72 px，直径 8.52 µm；核心坐标 (13295.0, 9266.8) |\n\n阈值是这张三色染色片子上的经验取值，蓝色掩膜的效果用叠加图逐区检查过（`stills/` 的测量帧上可以看到计数像素）。读数指的是“这个圆内、按这个阈值”的结果，不是临床意义上的纤维化分级。\n\n`tools/export.mjs` 会核对 `timeline.js` 中旁白和字幕里的每一个数字，必须与 `assets/plates/plates.json`、`nucleus.json` 的实测值一致，否则构建失败。\n",
+    "original_credits_verbatim": "Measured Blue (量出来的蓝) — Microscope Story (Lemo-Opuscar) · LemoLab × Claude Opus 5.5\n\nNo AI-generated images, no stock footage. Every pixel of glass and tissue is one real whole-slide scan and the\nscanner's own photo of that slide; every line, label and number is drawn in code from the file's metadata.\n\nIMAGERY\n- Ventana-1.bif — human liver, trichrome stain, brightfield, scanned on a VENTANA DP 200\n  (XMP ScanRes 0.25 um/px at level 0; pyramid levels labelled mag=40/20/10/5/2.5/1.25 in their ImageDescription;\n  the scanner's photo of the whole slide, TIFF page \"Label_Image\", 21.167 um/px from its XResolution tag).\n  Credit: PathAI. Licence: CC0-1.0 (public-domain dedication), per the OpenSlide test-data index\n  https://openslide.cs.cmu.edu/download/openslide-testdata/Ventana/index.yaml\n  Downloaded 2026-10-16 from https://openslide.cs.cmu.edu/download/openslide-testdata/Ventana/Ventana-1.bif\n  sha256 2eb05cd8f628c36408c3fde09beeeebaaae90181c4f840d5475ec7594bdcbbb6\n  Hosted by the OpenSlide project (Carnegie Mellon University).\n  Modifications (tools/plates.py): crops; one shared colour grade (glass normalised to a warm white, +12 % density,\n  +10 % chroma); a 0.3 mm alpha feather at the scan edge; on the slide photo: cut out of the scanner tray (tray bars\n  replaced by the neighbouring frosted glass, tray clips at the far end filled with the glass of the same row),\n  line-sensor streaks removed column by column, and the slide maker's printed logo between label and cover glass\n  filled with the surrounding frosted glass. The slide's own label (specimen ID, barcode) is shown as photographed.\n\nMEASUREMENTS (all computed here, from the file; method and values in FACTS.md)\n- Scale bar, field of view: level-0 pixel size 0.25 um/px. Magnification readout: the \"mag=\" of the level on screen.\n- Tissue length 4.80 mm, collagen shares 13.5 % / 32.6 % in two 1 mm circles, nucleus 8.5 um.\n\nFONTS (SIL Open Font License 1.1, licence texts in fonts/; Chinese fonts subset with the Google Fonts API &text=)\n- Noto Sans SC — Google / Adobe (labels, subtitles)\n- Noto Serif SC — Google / Adobe (title)\n- Barlow Condensed — The Barlow Project Authors (readings, English subtitle line)\n- IBM Plex Mono — IBM (instruments, pixel counts, credit line)\n\nVOICE\n- Kokoro-82M (hexgrad), voice af_heart, Apache License 2.0; run locally via kokoro-onnx (MIT) through the\n  library's core/tts/tts.py. Speech check: faster-whisper small.en (MIT; OpenAI Whisper weights, MIT).\n\nMUSIC AND SOUND (original score and foley, made in code for this film: mix.py)\n- Sampled instruments through core/audio/sampler.py, all CC0 1.0:\n  vibraphone, vibraphone_hard, vibraphone_bowed, marimba, glockenspiel — Versilian Community Sample Library (VCSL)\n  https://github.com/sgossner/VCSL\n  glass (water glasses) — FreePats project https://freepats.zenvoid.org\n  timpani, bass_drum — VS Chamber Orchestra: Community Edition (Versilian Studios / Sam Gossner)\n  https://github.com/sgossner/VSCO-2-CE\n  gran_cassa, sus_cymbal — VCSL\n- Synthesized in numpy (no samples): pulse bass, objective turret click and servo, pen on glass, scan noise and\n  counter ticks, focal sweep, whooshes, riser, room tone.\n\nSOFTWARE\n- Rendering: the library's core/render (headless Chromium, canvas 2D), ffmpeg / x264, core/render/mux.sh.\n- Slide reading: tifffile + imagecodecs (BSD), numpy, scipy, Pillow.\n",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Trichrome_staining",
+      "https://freepats.zenvoid.org",
+      "https://github.com/sgossner/VCSL",
+      "https://github.com/sgossner/VSCO-2-CE",
+      "https://openslide.cs.cmu.edu/download/openslide-testdata/Ventana/Ventana-1.bif",
+      "https://openslide.cs.cmu.edu/download/openslide-testdata/Ventana/index.yaml"
+    ]
+  },
+  "matching_blockers": [
+    "The full hash-verified BIF and exact original plates/masks/nucleus-fit output are absent. Rebuild with the preserved config. The v1 small circles and different crop centers are not the original measurement.",
+    "The original conversation prompt is not published. Use the complete published specification and audited reconstruction; do not claim the recovered text is a verbatim original chat prompt."
+  ],
+  "visual_audit": {
+    "state": "complete-regular-sheet-coverage",
+    "reference_video_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/films/microscope.mp4",
+    "reference_video_sha256": "7a68500b5753c0fa22e586474b931d5feacf5a0717a64600763306a4cdf62ab6",
+    "coverage": [
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/microscope/sheets/sheet-01.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/microscope/sheets/sheet-02.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/microscope/sheets/sheet-03.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/microscope/sheets/sheet-04.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      }
+    ],
+    "reference_verified_visual_observations": [
+      "Begin with the actual full glass-slide scan, including its barcode label and tiny tissue, then roll and zoom continuously through the registered pyramid. The true trichrome liver section has red parenchyma and blue connective bands; its4.80mm bracket and scale HUD stay calibrated. Exact1mm circles atA/B reveal13.5% and32.6% blue shares, then both remain in view for the1.41mm separation and2.4× comparison. A further zoom reaches the real measured nucleus and8.5µm fit. Pull back through the same scan to the glass-slide ending. All pixels, masks and coordinates must come from the exact BIF, not generated cells or different crops."
+    ],
+    "note": "All regular reference sheets were inspected across the complete film. Named supplementary frames cover important short actions and transitions. This is scene coverage, not a claim that every encoded frame was inspected."
+  }
+}

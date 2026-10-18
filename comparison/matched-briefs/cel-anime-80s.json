@@ -1,0 +1,855 @@
+{
+  "schema_version": "matched-original-brief-v2-audit-1",
+  "slug": "cel-anime-80s",
+  "status": "reference-audited-ready-for-reconstruction",
+  "original_title": "City Lights, 1987",
+  "original_title_aliases_from_demo": [
+    "Demo: *City Lights, 1987* (59 s) · `cel-anime-80s.mp4` · source in [`demo/`](demo/)",
+    "",
+    ""
+  ],
+  "published_premise_verbatim": "A courier girl rides through a rain-soaked neon city to deliver a tape before the dawn launch.",
+  "published_premise_zh_verbatim": "快递少女骑车穿过雨后霓虹都市，赶在黎明发射前送到一盘磁带。",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "verbatim_original_conversation_prompt": null,
+    "published_brief_statement": null,
+    "reconstructed_replication_instruction": "Recreate the full published City Lights, 1987 scene order, story, exact narration and screen text at original timing/resolution/fps, including all specified subjects, performance, mechanisms, lens/light/material treatment, transitions and sonic hits. This is a reconstruction from published sources, not a quoted original conversational prompt.",
+    "reconstruction_basis": [
+      "Complete published STYLE.md and DEMO.md",
+      "Published narration, cards and timing source",
+      "Original movie: all regular contact sheets and named key-event frames"
+    ]
+  },
+  "original_format": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24.0,
+    "duration_s_exact_timeline": 59,
+    "duration_s_gallery_rounded": 59.0,
+    "duration_s_published_demo_text": "59",
+    "video_stream_metadata_verified": true,
+    "note": "Encoded target is frame_count/fps, not rounded catalogue or container audio duration.",
+    "frame_count": 1416,
+    "duration_s": 59.0,
+    "container_duration_s": 59.008,
+    "production_canvas_width": 1920,
+    "production_canvas_height": 1080
+  },
+  "source_authorship": "Historical original by Lemomo/LemoLab using Claude Opus5.5. New output must identify actual GPT authorship and attribute any reused generic components.",
+  "source_hashes": [
+    {
+      "path": "styles/cel-anime-80s/STYLE.md",
+      "sha256": "1e16f5c6f90ebf09556ec94d37434400d309c978e00ee89e9d38dec476664eaf"
+    },
+    {
+      "path": "styles/cel-anime-80s/DEMO.md",
+      "sha256": "0bd17b229deac08331bdc603aba92126db7ecd2acca5cb40f954e548c23ef3ff"
+    },
+    {
+      "path": "styles/cel-anime-80s/style.json",
+      "sha256": "6a4afb02b4d388d7c8462b930556cfa2d79c61092efe9606783be7b626a62c4c"
+    },
+    {
+      "path": "styles/cel-anime-80s/demo/story.js",
+      "sha256": "79caaca76ac80f67e28a33f8b1a4b6b0cefdb8531513a9afc257e641d7708f6d"
+    },
+    {
+      "path": "styles/cel-anime-80s/demo/lines.json",
+      "sha256": "eb67c37cf39d24b8d0b5e0fbc77d56134b2ad4c46332c6c63ea1597eb5c84a31"
+    }
+  ],
+  "style_guide_sha256": "1e16f5c6f90ebf09556ec94d37434400d309c978e00ee89e9d38dec476664eaf",
+  "style_guide_verbatim": "# 80s Cel Anime — Style Prompt\n\n> Hand-painted cel animation from the golden age of Japanese OVAs, re-created in code: flat two-tone cels over airbrushed backgrounds, backlit neon, limited-animation timing, played back as a late-80s videotape on a CRT television.\n> References (grammar only): 1980s Japanese OVA and TV cel animation in general (painted-background vs flat-cel contrast, backlit light, held drawings, speed grammar, city-pop openings). Borrow the era's craft, never a specific work's characters, mecha, logos, place names or signature shots.\n\n## 1. Essence, and what it is not\n\nFour layers, and the contrast between them is the look:\n- **Background painting**: soft airbrushed gradients, glowing windows, wet reflections; painted once at load (colour + emissive pair), then only slid.\n- **Cel** (characters, vehicles, props): flat fills, **hard-edged** shadow and highlight shapes, **coloured** outlines, never pure black; stepped at 12 or 8 fps.\n- **Light**: backlit cel (透過光): signs, lamps, title letters glowing *through* the frame; flares, halation.\n- **Playback**: videotape on a CRT: chroma bleed, scanlines, grille, phosphor glow, darkened corners, faint noise.\n\nIf a frame looks like modern digital anime, one layer is missing. Not moe anime (round eyes, giant irises, hatched blush), not vector clip-art (uniform black lines, gradients in shapes), not a film-print pastiche (no gate weave or scratches: this is tape).\n\n## 2. Materials & rendering\n\n**Cel rendering.** Fill, then a **hard** shadow crescent, then a **hard** highlight crescent, then the coloured outline. No gradients inside a cel shape (exception: one \"harmony\" painted still at a peak). Automatic shading: clip to the shape and fill `shape − shape shifted toward the light` with the shadow colour (even-odd); the same shifted away for the highlight and for a saturated neon **rim light** (2–4 px). Add hand-placed cast shadows. Outlines ~2–3 px at 1080p, scaled down (0.45–0.8×) in extreme close-ups. **Colour models per lighting** (色指定): define each character in daylight, derive other sets by multiplying lit / shadow / line separately, plus a backlit silhouette set with a warm rim.\n\n**People the 80s way.** Construct the head (sphere + jaw): long egg-shaped face, soft-point chin, far eye foreshortened with a cheekbone turn in 3/4. **Almond** eyes near the vertical middle of the head, a thick upper lash line flicking outward, a tall oval layered iris, two highlights, long thin brows. Nose = a shadow plane + one stroke; one faint blush layer, never hatched. Hair in overlapping locks with sharp uneven tips over a wider dark under-layer, a continuous \"angel ring\" highlight with a zigzag lower edge. Lines: skin thin warm dark brown, hair dark purple; only hard props near-black. Emotion lives in brows, lid height, iris size, mouth corners and shoulders. Build and approve a **model sheet** first; draw every shot from the same head function.\n\n**Backgrounds.** Painted once at load: sky gradients, airbrushed clouds with lit undersides, buildings or landscape with painted light sources, and always a matching **emissive plate** that slides with the colour plate. Wet ground = a flipped, blurred, streaked copy of the plate darkened with ripple bands. Generic sign words only, never brands. Moving plates get a light horizontal smear (~16 px) against strobing.\n\n**Light and lens.** Bloom strongly from the emissive canvas, weakly from the colour canvas above ~0.9; tint the widest bloom red-orange (halation). Flares: star-burst, anamorphic streak, hexagonal ghosts through frame centre. Stamp every cel's silhouette in black onto the emissive canvas so glow never bleeds through it.\n\n**Videotape + CRT, restrained and deterministic:** chroma bleed (sharp luma, horizontally blurred and slightly shifted chroma), fine scanlines anchored to output pixels whose gap shrinks on brights, a faint RGB grille, phosphor glow, darkened corners without curved borders, faint signal noise. Subtitles are composited inside the pass after grading. Two optional accents: a **power-on** (dot → line → picture) and **tracking noise** (a few frames of tearing, rolling band, vertical hop). Check moiré on a 720p downscale. Frame: full 16:9 as a theatrical feature (4:3 pillarbox is valid for an OVA feel).\n\n## 3. Colour logic\n\n- Painted plates carry gradients and atmosphere; cels are flat, few-colour, saturated. Each time of day gets its own colour model, never a filter over the frame.\n- The protagonist has **one accent colour** that pops in every lighting set. Line colours are dark versions of their fill.\n- Skin gets its own colour in every set; multiplying daylight skin by a tint turns faces pink under neon.\n- Examples: night city (indigo, violet, neon magenta, cyan, window gold); seaside noon (cobalt, white cumulus, sand, coral); classroom dusk (amber, chalk green, brown wood, purple shadows).\n\n## 4. Type & subtitles\n\n- Subtitles live on the tape, composited inside the CRT pass: a semi-condensed sans (e.g. Barlow Semi Condensed 600, ~50–56 px), cream-yellow with a thick dark outline and soft shadow, ~96 px above the bottom; a second speaker may take a second colour and a small boxed tag. Hold ≥ max(1.8 s, speech + 0.6 s); a line yields to the next.\n- Titles: heavy italic Latin in a **chrome gradient** (sky → white horizon line → violet → pink → gold), dark + neon outlines, optional katakana line (e.g. Dela Gothic One), glowing through the emissive layer, flickering on at 12 fps with a light sweep and a star glint.\n\n## 5. Motion quality\n\n- **Characters on twos (12 fps)**; performance beats (blinks, eye openings, lip flaps, gestures) on threes (8 fps). Camera, light sweeps, flares and rain on ones (24 fps); a stepped camera judders.\n- **Cycles**: hair and cloth as ribbons driven by a travelling sine, 4-drawing cycle (6 when calm); bounce = a 12 fps jitter of a few px.\n- **Move light, not drawings**: coloured bands sweeping across a held cel (`source-atop`).\n- **Impact frames**: 2 frames of an inverted or monochrome silhouette over radial lines, then the result.\n- **Hold the peak**: a painted still with a slow pan, only cycles moving.\n- Fast blinks (one 8 fps closed drawing); eye openings in three drawings; lip flaps of 3–4 shapes at 8 fps ending on a held expression.\n\n## 6. Camera grammar\n\nA vocabulary, not a route. Opening and ending come from the topic.\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Multiplane crane over a tall plate | a world revealed layer by layer | arriving; descending into a place; rising above it |\n| Side tracking, 3–4 parallax layers | steady momentum | a journey; a chase; progress |\n| Rear view into a pseudo-3D canyon | speed, pressure ahead | a race; a tunnel; a countdown |\n| Held bust with light bands | speed or tension without animation | a drive; waiting; a decision |\n| Insert with bokeh and a sliding highlight | this object matters | a letter; a key; a ticket |\n| Extreme close-up on eyes | resolve, recognition | a choice; a promise |\n| Slow pan across a painted still | awe, a held breath | a peak; a memory; a landscape |\n| Radial speed lines + one-beat freeze | the instant before impact | a leap; a collision; a goal |\n| Truck-in through a window or screen | entering another world | a flashback; a broadcast; a dream |\n| Locked two-shot with lip flaps | conversation | banter; a confession; an argument |\n| An earlier composition repainted | what changed | after a storm; years later |\n\nCut on bars. Framing: cels readable against the painted plate; keep the lower ~120 px clear for subtitles. Transitions: cuts, white flashes, impact frames, tracking noise at a tape-related beat; no digital dissolves or wipes.\n\n## 7. Sound palette\n\n- **Instruments** (city pop, synth funk, anime-opening pop): saxophone or synth-brass lead, FM electric piano with a bell transient, slap bass, chorus-y 16th guitar chanks, gated-reverb snare and big toms, drum machine, arpeggiated analog synth, string pad, FM bell sparkle. Extended jazz-pop harmony (maj7, 9ths).\n- **Techniques, as options**: band-pass the score to cassette/AM when a diegetic source plays, then open it; a brass hit on a title; a drum fill left open for an effect; one beat of true silence before a peak; a semitone lift for a last chorus.\n- **Foley** (synthesized): engines from an RPM curve, rain, tire hiss, wind, bells, radio squelch, impacts, sparks, cassette clicks, crowd murmur, door buzzers, footsteps on wet pavement; tape accents get their own thunk, whine, hiss.\n- **Voice**: an English-dub feel, short lines; a second voice through a phone/radio band-pass (~380–2800 Hz). Verify every line with whisper.\n- **Mix**: limit then compress TTS, voices ~10 dB over ducked music (duck ~9 dB), beds ducked ~3 dB, choruses louder than intros, two-pass loudnorm to −14 LUFS.\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **Small flat hero in a huge painted world.** *Fits content like:* a first day in a big company; a child in a museum hall; a lone researcher at an observatory.\n- **Stillness as drama** (held close-up or harmony still). *Fits content like:* an exam result; a goodbye at a gate; an unveiling.\n- **Backlit light.** *Fits content like:* a lantern festival; a screen full of code; a lighthouse; stage lights.\n- **Speed grammar** (speed lines, looping plates, impact frames). *Fits content like:* a sprint final; a data packet crossing the world; a kitchen rush.\n- **Light-band sweep on a held cel.** *Fits content like:* a night train; a scanner reading a page; a heartbeat quickening.\n- **A song as an object** (tape, radio, jukebox changes the score). *Fits content like:* a band's origin; a family memory; a call-in show.\n- **Tape artefacts as punctuation.** *Fits content like:* found home video; a rewind to the past; an interrupted broadcast.\n- **Colour-model change** (one place, another hour). *Fits content like:* a day in a shop; a farm's seasons; before/after a renovation.\n\n## 9. Pitfalls of the medium\n\n- White cels bloom pink → bloom from the emissive canvas; weak, high-threshold bloom on colour.\n- Neon bleeds through characters → silhouettes stamped into the emissive canvas.\n- Black holes in highlights → clamp before S-curves.\n- Thick rim light swallows thin shapes → 2–4 px offsets.\n- Hair like tentacles, a face like a paper mask, moe eyes, uniform black lines → the drawing rules in §2.\n- Pink faces under coloured light → skin gets its own colour per set; weaker light sweeps on faces.\n- Front views are the hardest drawing → hide them behind a visor, a windscreen or backlight when you can.\n- Pseudo-3D points behind the camera flip into the sky → clamp z to the near plane.\n- Canvas silently falls back to a serif → `document.fonts.load` every weight before painting.\n- CRT detail inflates files → noise in the shader, only `noise=c0s=2:allf=t` in ffmpeg, CRF ≈ 23; loudnorm in two passes with `linear=true`; don't let a limiter flatten the dynamics.\n\n## 10. Engine\n\nIn `demo/`: `cel.js` (path, cel, ribbon, flutter), `pal.js` (colour models), `head80.js` (80s head, 3 views × expressions), `hands.js`, `bg.js` (painted plates, crane plates, wet reflections), `fx.js` (rain, speed lines, flares, trails), `post.js` (WebGL tape + CRT pass: bloom, grade, subtitles, power-on, tracking noise), `hud.js`, `music/score.py` (numpy FM/slap/brass synthesis), `tools/`. `?test=model|close|side` draws model sheets, `?raw=1` skips the CRT pass. A minimal new use: a harbour sunset plate with its emissive pair, one cel boat shaded with `cel.js`, through `post.js`.\n\n## 11. Variation space\n\nYou decide the structure, the characters, the world, the opening, the ending, the camera path, the pacing and the colour models. All far from our demo:\n\n- Structures: **slice of life in four seasons** (one place, four colour models, a small change each time); **two-hander dialogue** (a locked two-shot comedy that breaks into one fantasy sequence); **the mock opening credits** (a character roster introduced one by one, each with a pose and a name card).\n- Openings: **in the middle of a conversation** (lip flaps already moving, no establishing shot); **a TV being switched on** to an in-world broadcast; **a close-up of a drawing hand** in a classroom, then cut to the world it draws.\n- Endings: **a freeze-frame** on a laugh with a \"to be continued\" card; **the tape runs out** into blue screen; **a slow pan up to a starry sky** from a quiet rooftop, no dialogue.\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n",
+  "published_demo_verbatim": "# 80s Cel Anime — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *City Lights, 1987* (59 s) · `cel-anime-80s.mp4` · source in [`demo/`](demo/)\n\n\n## Story & structure\n\nAfter the rain, a courier nicknamed \"Nightbird\" rides a white motorbike across a neon city to deliver a pilot's forgotten cassette to the launch pad before a dawn rocket launch. One hero, one goal, one deadline (sunrise).\n\nArc (59 s): cold open with a deadline → the hero sets off (title hit) → joyful momentum montage → an obstacle (a drawbridge rising) → one decisive move (the jump; the peak *freezes*) → release into a new light (night becomes dawn) → end card. The song on the tape is the score itself: when the cassette plays aboard, the score becomes diegetic.\n\nHow the old guide phrased the adaptation idea for this story (kept as one example, not a rule): turn a topic into a delivery, a race against a deadline or a launch; plant the goal early (the rocket on the horizon), block it in act two, reveal it in the light at the end. Other adaptations it listed: a product launch as a courier racing the product to the stage; a love story as two lights crossing a sleeping city; a history lesson as a pilot flying through eras painted as backgrounds.\n\nNative powers spent: painted city vs flat cel (neon city, wet asphalt, dawn sky), limited animation (held close-ups, the jump as a painted still), backlit light (signs, tail lights, gauges, title), speed grammar (parallax, speed lines, impact frames), the theme song as a plot object (the cassette).\n\n## Shots\n\n| Beat | Camera |\n|---|---|\n| Cold open | **Multiplane crane-down** over a tall painted plate (sky → rooftops → neon → street), foreground layers faster; radio dispatch over rain |\n| The object that matters | Tight insert on a gloved hand holding the cassette, soft bokeh behind, a highlight sliding over its plastic |\n| Resolve | Extreme close-up on the eyes; they open in three 8 fps drawings on the line \"Copy. I'll beat the sun.\" |\n| Title | Backlit title card, letters flicker on at 12 fps, a light bar sweeps across, star glint, on the brass hit |\n| Momentum | Side tracking with 4 parallax layers + tail-light trail; rear view into a neon canyon (pseudo-3D); held bust with neon light bands; wheel insert through a puddle; a wide elevated-highway shot that **plants the goal** (the rocket across the bay) |\n| Obstacle | First-person approach to the rising drawbridge; glove twisting the throttle and the rev gauge in extreme close-up, cutting faster |\n| Peak | Low front view on radial speed lines → one-beat freeze + white flash → impact frame → painted \"harmony\" still of the airborne bike with a slow pan → impact frame → landing with sparks and camera shake |\n| Release | The same side-tracking composition as the night ride, repainted at dawn by the sea with the sky open |\n| Handover | Two hands through a fence pass the tape; a finger presses PLAY on the cockpit cassette deck |\n| Ending | The rocket lifts off (tilt up, delayed); warm close-up that answers the opening line (\"Told you I'd beat the sun.\"), then the end card |\n\nThe rider's front view was tucked behind a tinted windscreen so only goggles and hair show, letting the headlight flare carry the shot. Cuts landed on bars (116 BPM, bar = 2.069 s).\n\n## Score structure\n\nOriginal city-pop / synth-funk \"anime opening\", synthesized in numpy (`demo/music/score.py`): 116 BPM, E♭ major, maj7/9 chords, the J-pop \"royal road\" progression (IVM7–V7–iii7–vi7). FM electric piano (DX7-style 1:1 carriers + a 14:1 bell transient), slap bass (thumb + octave pops), gated-reverb snare, synth brass stabs, chorus-y 16th-note guitar chanks, string pad, a singable lead hook, FM bell sparkle, and a **key change up a semitone** for the last chorus.\n\nWritten to the cut: intro under the cold open, a fill bar with space for engine revs, the title on a brass hit, verse under the montage, a pre-chorus build, **one beat of true silence** before the jump, the chorus on the painted still, an accent on the landing, and the final chord on the end card. Diegetic twist: when the tape plays in the cockpit, the score is band-passed to a cassette sound for one bar, then opens to full range with the key change as the rocket lifts.\n\nFoley: engine from an RPM curve (harmonic saw stack + firing jitter + band-passed exhaust pulses, low-passed when airborne), rain bed + random drops, tire hiss on wet road, wind, bridge bells, radio squelch clicks, impact boom, metal scrape and sparks, cassette clicks, button + motor, rocket ignition and roar.\n\nVoices: an English-dub feel, 8 short lines: the heroine (Kokoro `af_bella`) and a radio dispatcher (Kokoro `am_michael` through a band-pass 380–2800 Hz + saturation + squelch). Whisper misheard \"Launch is at dawn\", so it became \"The launch is at dawn\". Mix: voices balanced by RMS ~10 dB above the ducked music, music ducked ~9 dB under lines, engine and ambience ducked 3 dB, chorus 4–6 dB louder than the intro, two-pass loudnorm to −14 LUFS.\n\n## Palette & props\n\n- Night: indigo / deep violet / neon magenta / cyan / warm window gold. Dawn: periwinkle / rose / peach / pale gold. The hero's accent: a **coral scarf**, readable in both.\n- Colour-model multipliers used: night lit ×[.78,.74,1.0], shadow ×[.58,.52,.92]; dawn lit ×[1.04,.9,.84]; a backlit silhouette set (dark purple with an orange rim) for the jump. Skin line ≈ `#5a2e2e`.\n- Props: white motorbike, cassette labelled \"SIDE A · CITY LIGHTS\", headset and goggles (near-black, heavier lines), pinch-grip gloves, rev gauge, drawbridge with red warning lights, rocket on a floodlit pad across the bay, cockpit cassette deck with backlit level meters. Signs: BAR, CAFE, 喫茶, ホテル, カラオケ.\n- The heroine, as built in `head80.js`: eyes at the vertical middle of the head, mouth at the upper third between nose base and chin; iris layered top-dark band → dark upper half → main colour → bright lower crescent, one large and one small highlight; 2–3 separate lashes in the flick; mouth set closed / set / talk / \"oh\" / pant / smile / open smile with a dark-red interior and a faint lower-lip stroke; profile with a small skull-back, small slightly upturned nose, neck leaning forward. Blinks hold the closed drawing 2–3 frames; brows carry resolve vs exhaustion; shoulders rise when panting; a star glint in the eye highlight on a musical accent.\n- CRT numbers used: chroma blur ~7 px, Cr shift ~2 px; scanlines 3 px period, strength 0.18, gap `1 − a·ph·(1 − 0.6·L)`; grille ±0.06; phosphor glow 0.35; corners `1 − 0.28·(2u²v² + 0.25(u²+v²))`. Moiré check: at 720p the 3 px scanline becomes a clean 2-row alternation; 900p shows a faint 5-row pattern; below 480p it disappears. Film-only artefacts (gate weave, dust, scratches, misregistration) were tried in the treatment and removed: they contradict the tape conceit. The power-on opens the film with a thunk + line whine; tracking noise marks the tape beat with a short hiss/warble.\n\n## End card\n\nDarkened final dawn background, the title, the style name \"80s Cel Anime\", \"LemoLab × Claude Opus 5.5\", a one-line originality note and credits. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\nTitle card as used: \"CITY LIGHTS\" in heavy italic chrome with シティ・ライツ above (Dela Gothic One), a red \"1987\" and a spaced-out tagline. Subtitles: Barlow Semi Condensed 600, 54 px, cream-yellow `#fff0a0`, 9 px dark outline, 96 px above the bottom; radio lines cyan `#8ff4ff` with a boxed \"● BASE\" tag; each line up for max(duration + 0.6 s, 1.9 s).\n\n## Rights & credits\n\n- Original score, sound design, animation and all drawings: generated by code in this folder (numpy, Canvas 2D, WebGL). No samples, no stock art.\n- Voices: Kokoro TTS (Apache 2.0), voices `af_bella`, `am_michael`.\n- Fonts (SIL Open Font License 1.1, licence files in `demo/fonts/`): Dela Gothic One (artakana), Kanit (Cadson Demak), Barlow Semi Condensed (Jeremy Tribby).\n- Inspired by 1980s Japanese cel animation; all characters, vehicles, places and the story are original.\n\n## Build notes\n\n```\nstyles/cel-anime-80s/demo/\n  cel.js     path / cel / ribbon / flutter helpers      pal.js   color models (day → night / dawn / backlit)\n  rider.js   side-view bike + rider, limbs, wheels      head80.js  80s heroine head: 3 views × expressions, body/collar/scarf\n  hands.js   pinch-grip gloves                          bg.js    painted plates (street, skyline, tall crane plates, reflections)\n  fx.js      rain, splashes, speed lines, flares, lamps, light trails\n  post.js    WebGL videotape + CRT pass (bloom, grade, chroma bleed, subtitles, scanlines, grille, glow, power-on, tracking noise)\n  shots.js + scenes1–4.js   one function per shot     story.js  bar-aligned timeline, lines, credits\n  hud.js     VHS-style subtitles     main.js  plates, shot dispatch, sound events\n  lines.json voices   mix.py   music/score.py (original score)   tools/ (still, sheet, srt, mux)\n```\n\n1. Treatment → `story.js` (116 BPM bar grid, shots, lines).\n2. `node styles/cel-anime-80s/demo/tools/still.mjs styles/cel-anime-80s/demo --range 0.5:58.5:1 --out /tmp/cs` → `tools/sheet.py` contact sheet → look → fix. `?test=model|close|side` renders the model sheet / head close-up / rider; `?raw=1` bypasses the CRT pass; `?nosub=1` hides subtitles.\n3. `.venv/bin/python core/tts/tts.py demo/lines.json demo/voices` → `core/tts/asr_check.py`.\n4. `.venv/bin/python demo/music/score.py` (score + stems + cue times).\n5. `node core/render/events.mjs demo` → `.venv/bin/python demo/mix.py`.\n6. `node core/render/video.mjs demo --fps 24 --workers 4 --out demo/out/video24.mp4` (1416 frames ≈ 36 s on an M-series Mac).\n7. `sh demo/tools/mux.sh demo/out/video24.mp4 demo/mix.wav cel-anime-80s.mp4 24`, `python demo/tools/srt.py`.\n\nEncoding numbers: ffmpeg grain luma 4 + chroma 1 at CRF 22 gave ~32 MB/min; luma 5 + chroma 2 at CRF 18 was 270 MB; with the CRT pass CRF 22 went over 35 MB/min, CRF 23 with luma-only noise 2 lands at ~31 MB. Single-pass loudnorm landed at −13.5 LUFS; two-pass with `linear=true` lands at −14.0. A hot limiter squashed the chorus to the intro's loudness: normalize to the 99.99th percentile and let only rare peaks hit the limiter.\n\nPitfalls tied to this demo's props:\n- Bloom threshold on the colour canvas turned the white bike and the jacket pink.\n- The S-curve made a black hole in the headlight (clamp first).\n- A rim offset of 6–8 px turned the thin hair ribbons completely pink.\n- The first hair version looked like tentacles; bang tips over the eyes hid the lash line.\n- The first face was a paper mask: a 3/4 body with a flattened front face (equal eyes, no cheekbone turn, V chin, long thin neck).\n- Night faces went pink from the night tint + magenta rim + pink light sweeps; forehead patches showed between bang locks.\n- In the rear canyon shot, points behind the camera flipped up into the sky.\n- The rocket left the frame: follow it with a delayed tilt and a slower (quadratic) climb.\n",
+  "canonical_scene_order": [
+    {
+      "id": "crane",
+      "t0": 0,
+      "t1": 4.137931034482759,
+      "world": null,
+      "visual_prompt_source_description": "Power-on line opens to rain-soaked painted neon city; multiplane crane sky→roofs→street, radio deadline.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "d1"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0003.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Power-on line opens to rain-soaked painted neon city; multiplane crane sky→roofs→street, radio deadline."
+    },
+    {
+      "id": "tape",
+      "t0": 4.137931034482759,
+      "t1": 7.24,
+      "world": null,
+      "visual_prompt_source_description": "Tight insert gloved pinch holding labelled SIDE A · CITY LIGHTS cassette; bokeh and plastic sweep.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "d2"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0006.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Tight insert gloved pinch holding labelled SIDE A · CITY LIGHTS cassette; bokeh and plastic sweep."
+    },
+    {
+      "id": "eyes",
+      "t0": 7.24,
+      "t1": 10.344827586206897,
+      "world": null,
+      "visual_prompt_source_description": "Extreme close-up long80s almond eyes opening in three drawings with resolve; coral scarf, goggles and coloured outlines.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "g1"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0009.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Extreme close-up long80s almond eyes opening in three drawings with resolve; coral scarf, goggles and coloured outlines."
+    },
+    {
+      "id": "title",
+      "t0": 10.344827586206897,
+      "t1": 14.482758620689657,
+      "world": null,
+      "visual_prompt_source_description": "Chrome italic CITY LIGHTS / シティ・ライツ /1987 flickers on brass hit; neon outlines, star glint.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0013.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Chrome italic CITY LIGHTS / シティ・ライツ /1987 flickers on brass hit; neon outlines, star glint."
+    },
+    {
+      "id": "side",
+      "t0": 14.482758620689657,
+      "t1": 18.620689655172416,
+      "world": null,
+      "visual_prompt_source_description": "White motorcycle side-track with four parallax city layers, wet asphalt, neon and tail-light trail.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0017.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "White motorcycle side-track with four parallax city layers, wet asphalt, neon and tail-light trail."
+    },
+    {
+      "id": "rear",
+      "t0": 18.620689655172416,
+      "t1": 20.689655172413794,
+      "world": null,
+      "visual_prompt_source_description": "Rear ride into pseudo3D neon city canyon; keep projected points in front of near plane.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0020.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Rear ride into pseudo3D neon city canyon; keep projected points in front of near plane."
+    },
+    {
+      "id": "bust",
+      "t0": 20.689655172413794,
+      "t1": 22.758620689655174,
+      "world": null,
+      "visual_prompt_source_description": "Held courier bust; neon bands cross flat cel while scarf/hair cycle.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0022.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Held courier bust; neon bands cross flat cel while scarf/hair cycle."
+    },
+    {
+      "id": "wheel",
+      "t0": 22.758620689655174,
+      "t1": 24.827586206896555,
+      "world": null,
+      "visual_prompt_source_description": "Wheel through puddle; rotating spokes tied to travel, splash and tire hiss.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0024.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Wheel through puddle; rotating spokes tied to travel, splash and tire hiss."
+    },
+    {
+      "id": "highway",
+      "t0": 24.827586206896555,
+      "t1": 26.896551724137932,
+      "world": null,
+      "visual_prompt_source_description": "Elevated-highway wide plants the rocket across bay before obstacle.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0026.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Elevated-highway wide plants the rocket across bay before obstacle."
+    },
+    {
+      "id": "bridge",
+      "t0": 26.896551724137932,
+      "t1": 28.965517241379313,
+      "world": null,
+      "visual_prompt_source_description": "First-person drawbridge rises with red warning lamps and bells.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "d3"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0028.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "First-person drawbridge rises with red warning lamps and bells."
+    },
+    {
+      "id": "throttle",
+      "t0": 28.965517241379313,
+      "t1": 31.03448275862069,
+      "world": null,
+      "visual_prompt_source_description": "Extreme insert twisting glove and rev gauge, faster cutting and engine rev.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "g2"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0030.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Extreme insert twisting glove and rev gauge, faster cutting and engine rev."
+    },
+    {
+      "id": "charge",
+      "t0": 31.03448275862069,
+      "t1": 33.10344827586207,
+      "world": null,
+      "visual_prompt_source_description": "Low front speed-line charge, visor and headlight flare conceal difficult full frontal face; one-beat silence/white flash.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0033.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Low front speed-line charge, visor and headlight flare conceal difficult full frontal face; one-beat silence/white flash."
+    },
+    {
+      "id": "jump",
+      "t0": 33.10344827586207,
+      "t1": 37.24137931034483,
+      "world": null,
+      "visual_prompt_source_description": "Impact frame, painted harmony still of airborne bike held under slow pan, chorus and backlight.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0036.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Impact frame, painted harmony still of airborne bike held under slow pan, chorus and backlight."
+    },
+    {
+      "id": "land",
+      "t0": 37.24137931034483,
+      "t1": 39.310344827586206,
+      "world": null,
+      "visual_prompt_source_description": "Impact frame into landing sparks and camera shake.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0039.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Impact frame into landing sparks and camera shake."
+    },
+    {
+      "id": "dawnride",
+      "t0": 39.310344827586206,
+      "t1": 41.37931034482759,
+      "world": null,
+      "visual_prompt_source_description": "Repeat night-side composition repainted open-sky peach dawn by sea.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0041.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Repeat night-side composition repainted open-sky peach dawn by sea."
+    },
+    {
+      "id": "handoff",
+      "t0": 41.37931034482759,
+      "t1": 43.44827586206897,
+      "world": null,
+      "visual_prompt_source_description": "Two hands pass cassette through launch-pad fence.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "g3"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0043.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Two hands pass cassette through launch-pad fence."
+    },
+    {
+      "id": "deck",
+      "t0": 43.44827586206897,
+      "t1": 45.51724137931035,
+      "world": null,
+      "visual_prompt_source_description": "Cockpit finger presses PLAY; meters glow; music becomes diegetic cassette for one bar.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "d4"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0045.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Cockpit finger presses PLAY; meters glow; music becomes diegetic cassette for one bar."
+    },
+    {
+      "id": "liftoff",
+      "t0": 45.51724137931035,
+      "t1": 49.65517241379311,
+      "world": null,
+      "visual_prompt_source_description": "Rocket lifts, delayed tilt follows quadratic climb; semitone music lift and full bandwidth.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0048.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Rocket lifts, delayed tilt follows quadratic climb; semitone music lift and full bandwidth."
+    },
+    {
+      "id": "smile",
+      "t0": 49.65517241379311,
+      "t1": 53.793103448275865,
+      "world": null,
+      "visual_prompt_source_description": "Warm courier close-up answers cold-open deadline; exhausted breath becomes smile.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "g4"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0052.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Warm courier close-up answers cold-open deadline; exhausted breath becomes smile."
+    },
+    {
+      "id": "endcard",
+      "t0": 53.793103448275865,
+      "t1": 59,
+      "world": null,
+      "visual_prompt_source_description": "Darkened dawn plate with film title/style/reference authorship and credits.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/frames/f-0057.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Darkened dawn plate with film title/style/reference authorship and credits."
+    }
+  ],
+  "narration": [
+    {
+      "id": "d1",
+      "t0": 0.9,
+      "duration_s_original_voice": 2.749,
+      "tts_text_verbatim": "Nightbird, come in. The launch is at dawn.",
+      "speaker": null,
+      "voice": "am_michael",
+      "tts_speed": 1.0,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "d1",
+        "text": "Nightbird, come in. The launch is at dawn.",
+        "voice": "am_michael",
+        "speed": 1.0
+      }
+    },
+    {
+      "id": "d2",
+      "t0": 4.35,
+      "duration_s_original_voice": 2.191,
+      "tts_text_verbatim": "The pilot won't fly without his tape.",
+      "speaker": null,
+      "voice": "am_michael",
+      "tts_speed": 1.0,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "d2",
+        "text": "The pilot won't fly without his tape.",
+        "voice": "am_michael",
+        "speed": 1.0
+      }
+    },
+    {
+      "id": "g1",
+      "t0": 8.05,
+      "duration_s_original_voice": 1.523,
+      "tts_text_verbatim": "Copy. I'll beat the sun.",
+      "speaker": null,
+      "voice": "af_bella",
+      "tts_speed": 1.0,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "g1",
+        "text": "Copy. I'll beat the sun.",
+        "voice": "af_bella",
+        "speed": 1.0
+      }
+    },
+    {
+      "id": "d3",
+      "t0": 27.146551724137932,
+      "duration_s_original_voice": 2.124,
+      "tts_text_verbatim": "The drawbridge is going up! Turn back!",
+      "speaker": null,
+      "voice": "am_michael",
+      "tts_speed": 1.12,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "d3",
+        "text": "The drawbridge is going up! Turn back!",
+        "voice": "am_michael",
+        "speed": 1.12
+      }
+    },
+    {
+      "id": "g2",
+      "t0": 29.793103448275865,
+      "duration_s_original_voice": 1.28,
+      "tts_text_verbatim": "No time to go around.",
+      "speaker": null,
+      "voice": "af_bella",
+      "tts_speed": 1.05,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "g2",
+        "text": "No time to go around.",
+        "voice": "af_bella",
+        "speed": 1.05
+      }
+    },
+    {
+      "id": "g3",
+      "t0": 42.362068965517246,
+      "duration_s_original_voice": 1.005,
+      "tts_text_verbatim": "Special delivery.",
+      "speaker": null,
+      "voice": "af_bella",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "g3",
+        "text": "Special delivery.",
+        "voice": "af_bella",
+        "speed": 0.95
+      }
+    },
+    {
+      "id": "d4",
+      "t0": 44.06896551724138,
+      "duration_s_original_voice": 2.166,
+      "tts_text_verbatim": "Tape's aboard. He's playing it now.",
+      "speaker": null,
+      "voice": "am_michael",
+      "tts_speed": 1.0,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "d4",
+        "text": "Tape's aboard. He's playing it now.",
+        "voice": "am_michael",
+        "speed": 1.0
+      }
+    },
+    {
+      "id": "g4",
+      "t0": 50.79310344827587,
+      "duration_s_original_voice": 1.368,
+      "tts_text_verbatim": "Told you I'd beat the sun.",
+      "speaker": null,
+      "voice": "af_bella",
+      "tts_speed": 0.92,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "g4",
+        "text": "Told you I'd beat the sun.",
+        "voice": "af_bella",
+        "speed": 0.92
+      }
+    }
+  ],
+  "narration_source_path": "styles/cel-anime-80s/demo/lines.json",
+  "published_timeline_extracted": {
+    "DUR": 59,
+    "BPM": 116,
+    "BEAT": 0.5172413793103449,
+    "BAR": 2.0689655172413794,
+    "SHOTS": [
+      [
+        0,
+        4.137931034482759,
+        "crane"
+      ],
+      [
+        4.137931034482759,
+        7.24,
+        "tape"
+      ],
+      [
+        7.24,
+        10.344827586206897,
+        "eyes"
+      ],
+      [
+        10.344827586206897,
+        14.482758620689657,
+        "title"
+      ],
+      [
+        14.482758620689657,
+        18.620689655172416,
+        "side"
+      ],
+      [
+        18.620689655172416,
+        20.689655172413794,
+        "rear"
+      ],
+      [
+        20.689655172413794,
+        22.758620689655174,
+        "bust"
+      ],
+      [
+        22.758620689655174,
+        24.827586206896555,
+        "wheel"
+      ],
+      [
+        24.827586206896555,
+        26.896551724137932,
+        "highway"
+      ],
+      [
+        26.896551724137932,
+        28.965517241379313,
+        "bridge"
+      ],
+      [
+        28.965517241379313,
+        31.03448275862069,
+        "throttle"
+      ],
+      [
+        31.03448275862069,
+        33.10344827586207,
+        "charge"
+      ],
+      [
+        33.10344827586207,
+        37.24137931034483,
+        "jump"
+      ],
+      [
+        37.24137931034483,
+        39.310344827586206,
+        "land"
+      ],
+      [
+        39.310344827586206,
+        41.37931034482759,
+        "dawnride"
+      ],
+      [
+        41.37931034482759,
+        43.44827586206897,
+        "handoff"
+      ],
+      [
+        43.44827586206897,
+        45.51724137931035,
+        "deck"
+      ],
+      [
+        45.51724137931035,
+        49.65517241379311,
+        "liftoff"
+      ],
+      [
+        49.65517241379311,
+        53.793103448275865,
+        "smile"
+      ],
+      [
+        53.793103448275865,
+        59,
+        "endcard"
+      ]
+    ],
+    "VO": [
+      {
+        "id": "d1",
+        "t": 0.9,
+        "who": "D",
+        "text": "Nightbird, come in. The launch is at dawn."
+      },
+      {
+        "id": "d2",
+        "t": 4.35,
+        "who": "D",
+        "text": "The pilot won't fly without his tape."
+      },
+      {
+        "id": "g1",
+        "t": 8.05,
+        "who": "G",
+        "text": "Copy. I'll beat the sun."
+      },
+      {
+        "id": "d3",
+        "t": 27.146551724137932,
+        "who": "D",
+        "text": "The drawbridge is going up! Turn back!"
+      },
+      {
+        "id": "g2",
+        "t": 29.793103448275865,
+        "who": "G",
+        "text": "No time to go around."
+      },
+      {
+        "id": "g3",
+        "t": 42.362068965517246,
+        "who": "G",
+        "text": "Special delivery."
+      },
+      {
+        "id": "d4",
+        "t": 44.06896551724138,
+        "who": "D",
+        "text": "Tape's aboard. He's playing it now."
+      },
+      {
+        "id": "g4",
+        "t": 50.79310344827587,
+        "who": "G",
+        "text": "Told you I'd beat the sun."
+      }
+    ],
+    "T": {
+      "eyesOpen": 7.75,
+      "rev": [
+        8.793103448275863,
+        9.56896551724138
+      ],
+      "title": 10.344827586206897,
+      "warn": 26.896551724137932,
+      "throttle": 29.48275862068966,
+      "cutout": 32.58620689655172,
+      "jump": 33.10344827586207,
+      "land": 37.24137931034483,
+      "handoff": 41.89655172413793,
+      "play": 43.70689655172414,
+      "lift": 45.51724137931035,
+      "smile": 52.241379310344826,
+      "end": 53.793103448275865
+    }
+  },
+  "on_screen_text_inventory": {
+    "published_subtitle_file_verbatim": "1\n00:00:00,850 --> 00:00:04,249\nBASE: Nightbird, come in. The launch is at dawn.\n\n2\n00:00:04,300 --> 00:00:07,141\nBASE: The pilot won't fly without his tape.\n\n3\n00:00:08,000 --> 00:00:10,173\nCopy. I'll beat the sun.\n\n4\n00:00:27,097 --> 00:00:29,743\nBASE: The drawbridge is going up! Turn back!\n\n5\n00:00:29,743 --> 00:00:31,693\nNo time to go around.\n\n6\n00:00:42,312 --> 00:00:44,019\nSpecial delivery.\n\n7\n00:00:44,019 --> 00:00:46,835\nBASE: Tape's aboard. He's playing it now.\n\n8\n00:00:50,743 --> 00:00:52,761\nTold you I'd beat the sun.\n",
+    "cues_original_json": [],
+    "timeline_text_fields": {},
+    "titles_subtitles_palette_verbatim": "",
+    "palette_props_verbatim": "- Night: indigo / deep violet / neon magenta / cyan / warm window gold. Dawn: periwinkle / rose / peach / pale gold. The hero's accent: a **coral scarf**, readable in both.\n- Colour-model multipliers used: night lit ×[.78,.74,1.0], shadow ×[.58,.52,.92]; dawn lit ×[1.04,.9,.84]; a backlit silhouette set (dark purple with an orange rim) for the jump. Skin line ≈ `#5a2e2e`.\n- Props: white motorbike, cassette labelled \"SIDE A · CITY LIGHTS\", headset and goggles (near-black, heavier lines), pinch-grip gloves, rev gauge, drawbridge with red warning lights, rocket on a floodlit pad across the bay, cockpit cassette deck with backlit level meters. Signs: BAR, CAFE, 喫茶, ホテル, カラオケ.\n- The heroine, as built in `head80.js`: eyes at the vertical middle of the head, mouth at the upper third between nose base and chin; iris layered top-dark band → dark upper half → main colour → bright lower crescent, one large and one small highlight; 2–3 separate lashes in the flick; mouth set closed / set / talk / \"oh\" / pant / smile / open smile with a dark-red interior and a faint lower-lip stroke; profile with a small skull-back, small slightly upturned nose, neck leaning forward. Blinks hold the closed drawing 2–3 frames; brows carry resolve vs exhaustion; shoulders rise when panting; a star glint in the eye highlight on a musical accent.\n- CRT numbers used: chroma blur ~7 px, Cr shift ~2 px; scanlines 3 px period, strength 0.18, gap `1 − a·ph·(1 − 0.6·L)`; grille ±0.06; phosphor glow 0.35; corners `1 − 0.28·(2u²v² + 0.25(u²+v²))`. Moiré check: at 720p the 3 px scanline becomes a clean 2-row alternation; 900p shows a faint 5-row pattern; below 480p it disappears. Film-only artefacts (gate weave, dust, scratches, misregistration) were tried in the treatment and removed: they contradict the tape conceit. The power-on opens the film with a thunk + line whine; tracking noise marks the tape beat with a short hiss/warble.",
+    "end_card_verbatim": "Darkened final dawn background, the title, the style name \"80s Cel Anime\", \"LemoLab × Claude Opus 5.5\", a one-line originality note and credits. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\nTitle card as used: \"CITY LIGHTS\" in heavy italic chrome with シティ・ライツ above (Dela Gothic One), a red \"1987\" and a spaced-out tagline. Subtitles: Barlow Semi Condensed 600, 54 px, cream-yellow `#fff0a0`, 9 px dark outline, 96 px above the bottom; radio lines cyan `#8ff4ff` with a boxed \"● BASE\" tag; each line up for max(duration + 0.6 s, 1.9 s).",
+    "completion_note": "Exact visible typography/content must be checked in original video; this inventory preserves all published cue/title/prop specifications. Model authorship credit is a reference fact, never new-output attribution.",
+    "original_annotation_literal_sources": []
+  },
+  "sound_recreation": {
+    "instruction": "Generate new voice and music; original mix/track reuse is not permitted by latest user instruction. Preserve full words, cadence windows, BPM, musical form, silence and picture-synchronous hits.",
+    "published_score_sound_spec_verbatim": "Original city-pop / synth-funk \"anime opening\", synthesized in numpy (`demo/music/score.py`): 116 BPM, E♭ major, maj7/9 chords, the J-pop \"royal road\" progression (IVM7–V7–iii7–vi7). FM electric piano (DX7-style 1:1 carriers + a 14:1 bell transient), slap bass (thumb + octave pops), gated-reverb snare, synth brass stabs, chorus-y 16th-note guitar chanks, string pad, a singable lead hook, FM bell sparkle, and a **key change up a semitone** for the last chorus.\n\nWritten to the cut: intro under the cold open, a fill bar with space for engine revs, the title on a brass hit, verse under the montage, a pre-chorus build, **one beat of true silence** before the jump, the chorus on the painted still, an accent on the landing, and the final chord on the end card. Diegetic twist: when the tape plays in the cockpit, the score is band-passed to a cassette sound for one bar, then opens to full range with the key change as the rocket lifts.\n\nFoley: engine from an RPM curve (harmonic saw stack + firing jitter + band-passed exhaust pulses, low-passed when airborne), rain bed + random drops, tire hiss on wet road, wind, bridge bells, radio squelch clicks, impact boom, metal scrape and sparks, cassette clicks, button + motor, rocket ignition and roar.\n\nVoices: an English-dub feel, 8 short lines: the heroine (Kokoro `af_bella`) and a radio dispatcher (Kokoro `am_michael` through a band-pass 380–2800 Hz + saturation + squelch). Whisper misheard \"Launch is at dawn\", so it became \"The launch is at dawn\". Mix: voices balanced by RMS ~10 dB above the ducked music, music ducked ~9 dB under lines, engine and ambience ducked 3 dB, chorus 4–6 dB louder than the intro, two-pass loudnorm to −14 LUFS.",
+    "original_voice_records": [
+      {
+        "id": "d1",
+        "text": "Nightbird, come in. The launch is at dawn.",
+        "voice": "am_michael",
+        "speed": 1.0
+      },
+      {
+        "id": "d2",
+        "text": "The pilot won't fly without his tape.",
+        "voice": "am_michael",
+        "speed": 1.0
+      },
+      {
+        "id": "g1",
+        "text": "Copy. I'll beat the sun.",
+        "voice": "af_bella",
+        "speed": 1.0
+      },
+      {
+        "id": "d3",
+        "text": "The drawbridge is going up! Turn back!",
+        "voice": "am_michael",
+        "speed": 1.12
+      },
+      {
+        "id": "g2",
+        "text": "No time to go around.",
+        "voice": "af_bella",
+        "speed": 1.05
+      },
+      {
+        "id": "g3",
+        "text": "Special delivery.",
+        "voice": "af_bella",
+        "speed": 0.95
+      },
+      {
+        "id": "d4",
+        "text": "Tape's aboard. He's playing it now.",
+        "voice": "am_michael",
+        "speed": 1.0
+      },
+      {
+        "id": "g4",
+        "text": "Told you I'd beat the sun.",
+        "voice": "af_bella",
+        "speed": 0.92
+      }
+    ],
+    "original_voice_durations_s": {
+      "d1": 2.749,
+      "d2": 2.191,
+      "g1": 1.523,
+      "d3": 2.124,
+      "g2": 1.28,
+      "g3": 1.005,
+      "d4": 2.166,
+      "g4": 1.368
+    }
+  },
+  "engine_and_build": {
+    "required_engine_spec_verbatim": "In `demo/`: `cel.js` (path, cel, ribbon, flutter), `pal.js` (colour models), `head80.js` (80s head, 3 views × expressions), `hands.js`, `bg.js` (painted plates, crane plates, wet reflections), `fx.js` (rain, speed lines, flares, trails), `post.js` (WebGL tape + CRT pass: bloom, grade, subtitles, power-on, tracking noise), `hud.js`, `music/score.py` (numpy FM/slap/brass synthesis), `tools/`. `?test=model|close|side` draws model sheets, `?raw=1` skips the CRT pass. A minimal new use: a harbour sunset plate with its emissive pair, one cel boat shaded with `cel.js`, through `post.js`.",
+    "published_build_notes_verbatim": "```\nstyles/cel-anime-80s/demo/\n  cel.js     path / cel / ribbon / flutter helpers      pal.js   color models (day → night / dawn / backlit)\n  rider.js   side-view bike + rider, limbs, wheels      head80.js  80s heroine head: 3 views × expressions, body/collar/scarf\n  hands.js   pinch-grip gloves                          bg.js    painted plates (street, skyline, tall crane plates, reflections)\n  fx.js      rain, splashes, speed lines, flares, lamps, light trails\n  post.js    WebGL videotape + CRT pass (bloom, grade, chroma bleed, subtitles, scanlines, grille, glow, power-on, tracking noise)\n  shots.js + scenes1–4.js   one function per shot     story.js  bar-aligned timeline, lines, credits\n  hud.js     VHS-style subtitles     main.js  plates, shot dispatch, sound events\n  lines.json voices   mix.py   music/score.py (original score)   tools/ (still, sheet, srt, mux)\n```\n\n1. Treatment → `story.js` (116 BPM bar grid, shots, lines).\n2. `node styles/cel-anime-80s/demo/tools/still.mjs styles/cel-anime-80s/demo --range 0.5:58.5:1 --out /tmp/cs` → `tools/sheet.py` contact sheet → look → fix. `?test=model|close|side` renders the model sheet / head close-up / rider; `?raw=1` bypasses the CRT pass; `?nosub=1` hides subtitles.\n3. `.venv/bin/python core/tts/tts.py demo/lines.json demo/voices` → `core/tts/asr_check.py`.\n4. `.venv/bin/python demo/music/score.py` (score + stems + cue times).\n5. `node core/render/events.mjs demo` → `.venv/bin/python demo/mix.py`.\n6. `node core/render/video.mjs demo --fps 24 --workers 4 --out demo/out/video24.mp4` (1416 frames ≈ 36 s on an M-series Mac).\n7. `sh demo/tools/mux.sh demo/out/video24.mp4 demo/mix.wav cel-anime-80s.mp4 24`, `python demo/tools/srt.py`.\n\nEncoding numbers: ffmpeg grain luma 4 + chroma 1 at CRF 22 gave ~32 MB/min; luma 5 + chroma 2 at CRF 18 was 270 MB; with the CRT pass CRF 22 went over 35 MB/min, CRF 23 with luma-only noise 2 lands at ~31 MB. Single-pass loudnorm landed at −13.5 LUFS; two-pass with `linear=true` lands at −14.0. A hot limiter squashed the chorus to the intro's loudness: normalize to the 99.99th percentile and let only rare peaks hit the limiter.\n\nPitfalls tied to this demo's props:\n- Bloom threshold on the colour canvas turned the white bike and the jacket pink.\n- The S-curve made a black hole in the headlight (clamp first).\n- A rim offset of 6–8 px turned the thin hair ribbons completely pink.\n- The first hair version looked like tentacles; bang tips over the eyes hid the lash line.\n- The first face was a paper mask: a 3/4 body with a flattened front face (equal eyes, no cheekbone turn, V chin, long thin neck).\n- Night faces went pink from the night tint + magenta rim + pink light sweeps; forehead patches showed between bang locks.\n- In the rear canyon shot, points behind the camera flipped up into the sky.\n- The rocket left the frame: follow it with a delayed tilt and a slower (quadratic) climb.",
+    "fetch_build_specs": [],
+    "local_original_asset_snapshot_inventory": [
+      {
+        "path": "styles/cel-anime-80s/demo/events.json",
+        "sha256": "58c4ad17c8f0b54ab88148367238e64ea701f422100d661a82c1c51e5a02490e",
+        "bytes": 1277
+      },
+      {
+        "path": "styles/cel-anime-80s/demo/lines.json",
+        "sha256": "eb67c37cf39d24b8d0b5e0fbc77d56134b2ad4c46332c6c63ea1597eb5c84a31",
+        "bytes": 751
+      },
+      {
+        "path": "styles/cel-anime-80s/demo/music/score.json",
+        "sha256": "3e4dc7874639aa909bd5fc1008e7739ecd9cbfec258302430511763193c213fb",
+        "bytes": 562
+      }
+    ]
+  },
+  "evidence": {
+    "original_credits_verbatim": "# Credits & licenses — City Lights, 1987 (80s Cel Anime demo)\n\n| Asset | Source | License |\n|---|---|---|\n| Original score (`music/score.py` → `score.wav`, stems) | synthesized from scratch in numpy/numba for this demo | same as this repository |\n| Sound design / foley (`mix.py`) | synthesized in numpy (uses `core/audio/sfx.py`) | same as this repository |\n| All drawings, backgrounds, animation, film look | Canvas 2D + WebGL code in this folder | same as this repository |\n| Voices (`voices/*.wav`) | Kokoro TTS v1.0 (hexgrad/Kokoro-82M, kokoro-onnx), voices `af_bella`, `am_michael` | Apache 2.0 |\n| Font: Dela Gothic One | artakana — Google Fonts | SIL OFL 1.1 (`fonts/OFL-DelaGothicOne.txt`) |\n| Font: Kanit | Cadson Demak — Google Fonts | SIL OFL 1.1 (`fonts/OFL-Kanit.txt`) |\n| Font: Barlow Semi Condensed | Jeremy Tribby — Google Fonts | SIL OFL 1.1 (`fonts/OFL-Barlow.txt`) |\n\nInspired by 1980s Japanese cel animation. All characters, vehicles, places and the story are original; no existing work's characters, mecha, logos or shots are reproduced. Neon signs use generic words only.\n",
+    "source_urls": []
+  },
+  "matching_blockers": [
+    "The original conversation prompt is not published. The complete published style, script, timing and reference movie support the reconstruction."
+  ],
+  "visual_audit": {
+    "state": "complete-scene-and-key-event-coverage",
+    "reference_video_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/films/cel-anime-80s.mp4",
+    "reference_video_sha256": "40657a5d85560e26e5768ff3580a21ba03ff5fcfc78b2d9ebbd064b67c002918",
+    "coverage": [
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/sheets/sheet-01.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/sheets/sheet-02.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/sheets/sheet-03.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/sheets/sheet-04.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/cel-anime-80s/sheets/sheet-05.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "times": [
+          33.08,
+          33.13,
+          37.24,
+          37.33,
+          42.1,
+          44.0
+        ],
+        "sheet": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/work/gptcar/matched-audit/event-frames/cel-anime-80s/sheet.jpg"
+      }
+    ],
+    "reference_verified_visual_observations": [
+      "Use the original letterboxed anime composition. The painted city has purple cloud bands, a crescent moon, dense warm windows, magenta/cyan signs, rain, wet reflections and coloured bokeh. The courier has detailed purple eyes, angular purple hair and ponytail, goggles, headset/mic, a blue riding suit, coral scarf and black gloves. Her white motorcycle has a teal stripe, pink tail glow, wheel spokes and a brake disc. Preserve the exact cassette label, chrome title, rear canyon, drawbridge warning, throttle/gauge, two impact silhouettes, held airborne harmony still, landing sparks, dawn repeat, cassette handoff, cockpit PLAY action, rocket launch and warm answering smile. Supplemental frames verify the short33.13s and37.24s impact drawings."
+    ],
+    "note": "All regular reference sheets were inspected across the complete film. Named supplementary frames cover important short actions and transitions. This is scene coverage, not a claim that every encoded frame was inspected."
+  }
+}

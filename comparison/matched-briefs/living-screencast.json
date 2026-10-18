@@ -1,0 +1,375 @@
+{
+  "slug": "living-screencast",
+  "title": "Clawd Moves In",
+  "premise": "Clawd, the Claude Code pixel mascot, hops out of the terminal into the Claude app and acts out plan mode, diff comments and self-checks in a one-take screencast.",
+  "provenance": {
+    "original_chat_prompt_available": false,
+    "published_style_prompt_path": "styles/living-screencast/STYLE.md",
+    "published_demo_guide_is_verbatim": true,
+    "scene_prompt_status": "Reconstruction from complete published STYLE/DEMO, exact narration/timing data and complete decoded-film contact sheets; not a recovered original chat prompt.",
+    "user_override": "User expressly requests original story/script/arc; STYLE/DEMO usual nonreuse admonition is overridden for reference-matched work."
+  },
+  "sources": [
+    {
+      "path": "styles/living-screencast/STYLE.md",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/living-screencast/STYLE.md",
+      "sha256": "91e75f666a6ab5122ead52aa5c47a603f83d0578bab0b9aa223cf83b639fbb16"
+    },
+    {
+      "path": "styles/living-screencast/DEMO.md",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/living-screencast/DEMO.md",
+      "sha256": "414fb4c7957ff033f1155e60174d1c5650b04683c3ab3fcebaa6f76e571b5c58"
+    },
+    {
+      "path": "styles/living-screencast/style.json",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/living-screencast/style.json",
+      "sha256": "e5f0f41ee19ed771ece9f5c1b920e3e17cda0c406f2c687f66165f9eda2e9d25"
+    },
+    {
+      "path": "styles/living-screencast/demo/CREDITS",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/living-screencast/demo/CREDITS",
+      "sha256": "deecb5fed436697261d4efaafdd5a561f635343443e8b181b1702d95ac3a4048"
+    },
+    {
+      "path": "styles/living-screencast/demo/lines.json",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/living-screencast/demo/lines.json",
+      "sha256": "08b94147e26a1aa6aa29df6b049497c848cf749811fce56867f155aa3d4eb771"
+    },
+    {
+      "path": "styles/living-screencast/living-screencast.srt",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/living-screencast/living-screencast.srt",
+      "sha256": "73f67135abcad32369df2fc8e894135f53ecd7539e3f4837fba3ebc04d9ba946"
+    }
+  ],
+  "delivery": {
+    "width": 1280,
+    "height": 720,
+    "fps": "30/1",
+    "frame_count": 1782,
+    "duration": 59.4
+  },
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "See published DEMO; delivery fps above overrides rounded catalogue values.",
+    "internal_raster": "See style prompt material requirements for native pixel/CRT/internal compositor resolutions."
+  },
+  "reference": {
+    "slug": "living-screencast",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/living-screencast.mp4",
+    "sha256": "b94fb5f0e41f542848464dafb136df46da4abc1c9291f9e1b8b30e948075a08a",
+    "duration": 59.4,
+    "width": 1280,
+    "height": 720,
+    "fps": "30/1",
+    "frame_count": "1782",
+    "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+    "frames": 59,
+    "sheets": 5
+  },
+  "inspection": {
+    "all_contact_sheets_inspected": true,
+    "sheet_count": 5,
+    "regular_frame_count": 59,
+    "sheet_paths": [
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/living-screencast/sheets/sheet-01.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/living-screencast/sheets/sheet-02.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/living-screencast/sheets/sheet-03.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/living-screencast/sheets/sheet-04.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/living-screencast/sheets/sheet-05.jpg"
+    ],
+    "sampling": "All1fps decoded samples reviewed across whole film, plus published source timing for short transitions. Exact shot-boundary decoding required before film timing acceptance; approximate sheet labels are not frame-accurate.",
+    "every_encoded_frame_claimed": false
+  },
+  "materials_characters_typography": "Unofficial Claude Code app recreation, actual Claude word mark typography Newsreader plus Inter/Jet Brains Mono. Clawd is 18×10 clay-salmon pixels, rectangular body/two dark eyes and tiny feet, flips to white on salmon interstitial s; a distinct pixel pet with squash and exact surfaces as platforms. Cream desktop with warm blur, app shadow and genuine readable UI for tomato-timer repo. UI state and diff must remain coherent across scenes.",
+  "audio_recreation": {
+    "original_master_audio_reused": false,
+    "direction": "100 BPM high-fidelity sampled piano/electric bass/glock/drums with small chip tune mascot motif, material clicks and foot taps, feature-specific arrangement, day/night tonal switch.17 exact am_michael lines. Recreate TTS/music, no old track.",
+    "narration_published_verbatim": [
+      {
+        "id": "v01",
+        "text": "Meet Clawd.",
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "asr": "Meet Claude.",
+        "start": 2.3,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "v02",
+        "text": "It used to live in your terminal.",
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "start": 3.5,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "v03",
+        "text": "Now it lives right inside the Claude app.",
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "start": 6.2,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "v04",
+        "text": "Just say what you want, in plain words.",
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "start": 10.9,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "v05",
+        "text": "Point at a file with the at sign,",
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "start": 13.5,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "v06",
+        "text": "and Claude reads your project before it touches a thing.",
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "start": 16.1,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "v07",
+        "text": "Not sure yet? Switch to Plan mode.",
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "start": 20.3,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "v08",
+        "text": "You get a clear plan, and nothing changes until you say go.",
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "start": 22.9,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "v09",
+        "text": "Every edit shows up as a diff.",
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "start": 28.1,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "v10",
+        "text": "Click any line, leave a note,",
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "start": 30.5,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "v11",
+        "text": "and Claude revises it.",
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "start": 32.8,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "v12",
+        "text": "Then it checks its own work.",
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "start": 36.5,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "v13",
+        "text": "It runs your app in the preview, and clicks through it, just like you would.",
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "start": 38.2,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "v14",
+        "text": "Got more to do? Start another session.",
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "start": 43,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "v15",
+        "text": "They work side by side.",
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "start": 45.8,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "v16",
+        "text": "Claude Code.",
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "start": 50.8,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "v17",
+        "text": "Say it. Plan it. Review it. Ship it.",
+        "voice": "am_michael",
+        "speed": 1.0,
+        "lang": "en-us",
+        "start": 52.42,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "end": 2.3,
+      "title": "Terminal origin",
+      "prompt": "Small black zsh terminal on warm cream desktop. Header tomato-timer — zsh; ~/tomato-timer $ claude types. Loading draws 18×10 Clawd pixel icon, Claude Code /Opus 5.5 /~/tomato-timer and Try add a dark mode toggle. Red/yellow/green macOS dots."
+    },
+    {
+      "start": 2.3,
+      "end": 6.2,
+      "title": "Meet Clawd",
+      "prompt": "VO Meet Clawd. Then It used to live in your terminal. Push terminal; icon squashes and disintegrates to climbing pixel particles 5.2, empty dotted footprint remains. Pet stands on terminal top with tiny question icon."
+    },
+    {
+      "start": 6.2,
+      "end": 10.4,
+      "title": "Now inside Claude app",
+      "prompt": "Terminal quadrant unfolds into full cream Claude desktop application. Left sessions sidebar, Chat/Co work/Code tabs; Clawd lands center over Newsreader Claude Code title and orange sub line now right inside the Claude app. Salmon pixel mosaic wipe 10.4."
+    },
+    {
+      "start": 10.4,
+      "end": 13.5,
+      "title": "Just say it",
+      "prompt": "Feature chip 01 Just say it top-left. Push composer at bottom; Clawd uses its top border as walking floor and follows caret as Add a dark mode toggle to types. Manual /Opus 5.5 controls, plus button and send icon are accurately staged."
+    },
+    {
+      "start": 13.5,
+      "end": 16.1,
+      "title": "At file popup",
+      "prompt": "Typing @Header opens file picker Header.tsx /src/components, Header Menu.tsx alternative. Pet steps onto drop down platform while a tag replaces typed mention. Exact second clause Point at a file with the at sign. Close picker on choice."
+    },
+    {
+      "start": 16.1,
+      "end": 19.6,
+      "title": "Read before edit",
+      "prompt": "Send cursor click, full app re frame; source tree right with App.tsx/Header.tsx/Timer.tsx/styles/theme.ts/reset.css/main.tsx/package.json. Four read/search check marks appear; pet hops highlighted file rows as camera racks focus. Chat reads project before any diff."
+    },
+    {
+      "start": 19.6,
+      "end": 22.9,
+      "title": "Plan first",
+      "prompt": "Pixel wipe 02 Plan first. Back composer opens Manual/Accept edits/Plan/Auto menu, Shift Cm dM key overlay. Clawd bonks Plan choice, pencil pixel prop and switch blue Plan mode."
+    },
+    {
+      "start": 22.9,
+      "end": 26.9,
+      "title": "No files changed",
+      "prompt": "Plan tab shows Dark mode toggle, PLAN MODE badge and No files changed. Four exact plan steps: add dark palette next to light in theme.ts; remember choice in local Storage; add sun/moon button to Header.tsx; open preview and click to verify. Pet points, spotlight isolates No files changed. Cursor sends Go after switching Accept edits."
+    },
+    {
+      "start": 26.9,
+      "end": 30.5,
+      "title": "Review every change",
+      "prompt": "Salmon mosaic 03 Review every change; chat Plan approved.Building it now... then edit summary src/theme.ts+12−1, src/Header.tsx+10−2, src/App.tsx+2, aggregate+24−3. Camera pushes diff panel, green additions and red deletion with real code/line numbers."
+    },
+    {
+      "start": 30.5,
+      "end": 32.8,
+      "title": "Comment a line",
+      "prompt": "Click line 6 of theme diff, inline comment input opens. Type Use the system theme when no saved choice. Cm d Return send note. Pet walks selected code row; comment is genuine story cause."
+    },
+    {
+      "start": 32.8,
+      "end": 36,
+      "title": "Revision",
+      "prompt": "Diff updates: remove initial=saved??light; add system match Media(prefers-color-scheme: dark), initial=saved??(system.matches?dark: light).13 line updated patch, resolved comment check and heart from pet. Exact narration and Claude revises it."
+    },
+    {
+      "start": 36,
+      "end": 38.2,
+      "title": "Check own work",
+      "prompt": "Feature chip 04 It checks its own work. Preview tab loading skeleton at local host 5173 then tomato timer app,25:00 large Newsreader, Focus·round 1 of 4, Start/Reset. Chat Preview app running and verification events."
+    },
+    {
+      "start": 38.2,
+      "end": 42.9,
+      "title": "Click through preview",
+      "prompt": "Push tomato timer. Pet stomps actual sun/moon toggle 40.5 and expanding circular dark transition changes entire film/UI environment. Click/check screenshot, event log green; timer stays 25:00, buttons keep contrast."
+    },
+    {
+      "start": 43,
+      "end": 46,
+      "title": "Start another session",
+      "prompt": "Feature Side by side, CmdN new session then split-view keyboard overlay. New left session Fix flaky timer test alongside Dark mode toggle, left tree and tabs remain coherent. Pet multiplies into two helpers using split divider as floor."
+    },
+    {
+      "start": 46,
+      "end": 50.8,
+      "title": "Parallel tests",
+      "prompt": "Two dark columns run npm test -- --repeat 10; readable pass/test rows/progress and 6 checks, session Merge ready. Clawd actors hop opposite surfaces and tests pass side by side; no unrelated windows montage."
+    },
+    {
+      "start": 50.8,
+      "end": 54.4,
+      "title": "Slogan choreography",
+      "prompt": "Dark desktop clears, Claude Code title; one pet drops in. Exact VO Claude Code. Then Say it.Plan it.Review it.Ship it. Four words reveal in rhythm, pet jumps each baseline; Ship it italic orange. Last stomp flips whole world to day."
+    },
+    {
+      "start": 54.4,
+      "end": 59.4,
+      "title": "Pet the mascot",
+      "prompt": "Cream end card Claude Code /Say it.Plan it.Review it.Ship it. /Claude Code · in the Claude app. Cursor pets Clawd, pixel heart, small unofficial/trademark/licence disclosures low frame. Keep 4 second quiet hold and full exact frame count."
+    }
+  ],
+  "published_timing_tables": {},
+  "published_style_prompt_verbatim": "# Living Screencast — Style Prompt\n\n> A product walkthrough that looks like a real screen recording, where a low-resolution mascot lives inside a high-resolution interface and acts out what the software is doing.\n> References (grammar only):\n> - **Screen Studio-style product recordings:** auto-zoom to the cursor, cursor smoothing, click push-ins, and a window floating on wallpaper.\n> - **Apple \"Guided Tour\" videos:** real interface, calm narration, one feature per sentence.\n> - **Duolingo and Headspace mascot motion:** squash and stretch, anticipation, a character that performs inside the UI.\n> - **The Browser Company (Arc) launch films:** playful tone and fast cutting.\n>\n> Never copy their characters, UI, music or footage.\n\nA walkthrough of a piece of software, typically 45–75 s. The user gives the product and the features; you decide the story, shots, choreography, sound and music.\n\n## 1. Essence, and what it is not\n\nThe film looks like a **screen recording of the real product**, but it is not a recording. Every window, menu, diff line and button is **redrawn in 2D (HTML/CSS/SVG)**, so the camera can go anywhere, every pixel is controllable and text stays sharp at any zoom.\n\nA **mascot made of big square pixels** lives in that high-resolution world. The clash of two resolutions, a hard-edged low-res sprite against anti-aliased UI, is the look.\n\nThe mascot is the software's agency made visible: when the software reads, it runs along the rows it reads; when it plans, it holds a pixel pencil; when it tests, it stomps the button.\n\n**Two actors, never a hand:** the **cursor** is the user; the **mascot** is the software.\n\nNot a dark tech keynote (no black stage, no invented abstract UI: this is the real product), not a pixel-art game (the world is hi-res vector UI; only the mascot and its props are pixels), not a real capture (nothing is a screenshot).\n\n## 2. Materials & rendering\n\n- **Real UI, redrawn**: every label, mode name and shortcut matches the real product; no screenshots, no lorem ipsum. Demo content (code, data, test output) is coherent, and the app under test really changes.\n- **Pixel grid is sacred**: the mascot, its props (pencil, \"!\", sparkles, heart, dust) and trails share one square-pixel grid with crisp edges. It scales with the camera; its position snaps to half-pixels, so its motion feels stepped.\n- **Gravity = top edges of UI**: the mascot only stands on the top edge of a real element (input box, menu, list row, code line, button, status bar, the letters of a heading). Its position comes from **measuring the live DOM** every frame, never hand-placed coordinates.\n- **Window on wallpaper**: the app floats on a desktop with a soft shadow; zoom never shows beyond the monitor.\n- **Depth** only where it serves attention: rack focus (blur the pane that doesn't matter), a vignette spotlight. Never blur text the viewer must read.\n- **Motion blur** is derived from camera speed and applied as an anisotropic blur on an **untransformed wrapper**, only on whips. Slow moves stay sharp.\n\n## 3. Colour logic\n\n- The product's own interface colours rule: follow its real light and dark themes exactly.\n- The mascot keeps the product's or brand's mascot colour, or one saturated hue that no UI element uses, so it finds the eye in any frame.\n- Overlays (chapter pill, key HUD, captions) are neutral frosted glass; one accent at most, taken from the product.\n- A theme switch can be a story event: the whole film may change state with it.\n\n## 4. Type & subtitles\n\n- UI type follows the product (or licence-free look-alikes such as Inter, JetBrains Mono, a serif for editorial UIs).\n- **Information layers only**: a chapter pill (01–04), a KeyCastr-style keystroke HUD, frosted-glass caption pills, an optional \"▶▶ 4×\" time-lapse tag. Nothing else overlays the screen.\n- Captions sit in a pill at the bottom, never over the element being discussed and never under the mascot; hold ≥ max(1.8 s, speech + 0.6 s).\n- A title, if any, is diegetic: it appears as part of the UI (an empty-state heading, a window title, a notification).\n\n## 5. Motion quality\n\n- 30 fps; UI on ones; mascot position stepped to its pixel grid.\n- **Mascot acting**: jumps with anticipation crouch, stretch on take-off, tucked legs, landing squash with a damped bounce and dust. Idle breathes (a tiny squash) on the score's beat and blinks irregularly. Walks by leg alternation, flipping the sprite for direction.\n- **Eyes carry the acting** (neutral / left / right / up / down / wide / happy / shut / blink): they look at what matters. Arms: down / up (cheer) / wave.\n- **Cursor**: smoothed, spring-eased paths, small push on click, never teleports.\n- **Cause and effect**: every mascot action triggers a real UI state change; every user action is a cursor move, click or keystroke shown on the HUD.\n- UI animates like the real product (its own menus, popovers, diff reveals); don't invent flourishes the product doesn't have.\n\n## 6. Camera grammar\n\nA recording-software camera: one continuous take inside the screen, zoom ≥ 1, cuts only under chapter transitions. Opening and ending come from the topic.\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Push-in to the cursor or caret | \"this is where it happens\" | typing a prompt; choosing a menu item; a setting |\n| Slow drift at rest | the app is alive while we listen | a line of narration; waiting for a result |\n| Whip-pan between panes (with blur) | cause here, effect there | sending a message → a result appearing; code → preview |\n| Push-in + vignette freeze | the one promise to remember | a safety guarantee; a price; an undo |\n| Rack focus between panes | attention moves, nothing else does | reading files; logs scrolling while chat waits |\n| Pull back to the full window | the whole workflow in view | a summary; parallel tasks; before/after |\n| Follow the mascot along a list | the software working through items | scanning results; a checklist; a migration |\n| Split-window reframe | two things at once | parallel sessions; compare two versions |\n\nFraming: the thing being discussed and its caption never overlap; the mascot never covers text to be read. Transitions: chapter pill wipes, pixel wipes, a theme reveal circle; never dissolves or screenshots.\n\n## 7. Sound palette\n\n- **Two resolutions in the music**: a hi-fi layer (piano, upright or electric bass, brushed or tight kit, glockenspiel, real samples) is the world; a chiptune square or pulse voice is the mascot. They can trade, duet or merge.\n- Options: a low-passed \"night\" version of the band for a dark theme; a tom fill and crash at chapter seams; dropping the drums to build tension; the mascot's notes on words it lands on; a stereo split for split screens; a single held pad under a freeze.\n- **Foley**: keyboard (a thock plus a click, human timing jitter), trackpad clicks, pane swishes, popup pops, notification chimes, CI ticks, a shutter for screenshots. Mascot steps, jumps and landings are 8-bit.\n- **Silence**: a short drop to room tone before the key promise makes it land.\n- **Voice**: calm, one feature per line; product names verified with whisper. Keep effects off word onsets. Duck music under voice; −14 LUFS.\n\n## 8. Native moves\n\nA menu: use the ones your walkthrough needs.\n\n- **Match-cut origin.** The mascot is born from something already in the UI (a logo's block characters, an icon, a loading spinner) and climbs out, leaving an outline. *Fits content like:* a CLI tool moving into an app; an icon becoming an assistant; a spinner becoming a helper.\n- **Diegetic title.** The name appears as a real UI element; the mascot lands on it on a downbeat. *Fits content like:* an empty state; a new-project dialog; a welcome email.\n- **Moving floor.** The mascot rides a caret, a popup, a sent message, a progress bar. *Fits content like:* a message flying into a thread; an upload bar; a drag-and-drop.\n- **Time-lapse with a tag.** Long work runs at N× with a flashing tag and rack focus. *Fits content like:* indexing a library; a data import; a build.\n- **Spotlight freeze.** Push in and vignette the one badge that holds the promise. *Fits content like:* \"Saved\"; \"Encrypted\"; \"No charges until…\".\n- **The film changes state.** A toggle's effect escapes the preview and takes over the whole film, and returns later. *Fits content like:* dark mode; a language switch; offline mode.\n- **Cell division.** A new session or window splits the screen and the mascot splits with a pixel burst. *Fits content like:* parallel tasks; multiple accounts; team members.\n- **Cursor and mascot as characters.** The cursor pets, pokes or drags the mascot, and it reacts. *Fits content like:* approving a suggestion; undoing; onboarding delight.\n- **Karaoke-ball words.** The mascot hops from word to word as they are spoken. *Fits content like:* a slogan; a shortcut list; step names.\n\n## 9. Pitfalls of the medium\n\n- Invented features or renamed modes → check every button, mode and shortcut against the product's documentation; if it isn't in the docs, it isn't in the film.\n- The mascot floats or drifts off its element → measure the DOM every frame, stand only on top edges.\n- The mascot covers text or sits under a caption → reserve a text-free lane for it.\n- Blur-filter \"fake depth\" on text you want read, or zooming out past the screen → rack focus only on panes not being read; zoom ≥ 1.\n- A hand, arm or finger on screen → the cursor is the user.\n- Motion blur applied to a transformed layer smears the pixel sprite wrong → blur an untransformed wrapper, and only on whips.\n- A keypress or pop landing on a product name masks it → shift foley off word onsets; re-check with whisper on the final mix.\n- TTS mispronounces the product name → try voices and spellings, verify with whisper.\n\n## 10. Engine\n\nIn `demo/`: `film.js` (timeline: VO at fixed times, every visual beat hung on a spoken word with `W(id, word)`, camera moves, `Actor` mascot segments, `Cursor`, sound events), `ui.js` (state → HTML for each interface), `clawd.js` (sprite grid, poses, pixel props: replace the sprite with your own mascot), `main.js` (light/dark layers, DOM anchor measurement, motion blur, HUD: captions, keys, pixel wipes, spotlight), `sound.py` (score, foley and VO from `events.json`, with ducking). Build notes: [DEMO.md](DEMO.md#build-notes).\n\n## 11. Variation space\n\nYou decide the features and their order, the mascot (the product's own, or an original pixel character), the story, the opening, the ending, the camera path, the chapters and the music. All far from our demo:\n\n- Structures: **a bug hunt** (the mascot chases one error through logs, code and a fix, a single chapter); **a day of one user** (morning to evening in one app, the theme and music shifting with the hour); **a race** (two windows side by side, old way vs. new way, the mascot winning on the right).\n- Openings: **mid-task** (a half-written document; the mascot is already pushing the cursor's selection); **the notification** (a system toast lands; the mascot is inside it); **empty state** (a blank app, a caret blinking; the mascot drops from the menu bar).\n- Endings: **the mascot goes to sleep** on the finished item as the window dims; **the app closes** and the mascot is left standing on the dock; **a real share** (the result is sent and the mascot rides it out of frame).\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n",
+  "published_demo_guide_verbatim": "# Living Screencast — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *Clawd Moves In* (59.4 s) · `living-screencast.mp4` · source in [`demo/`](demo/) (Chinese discussion draft) · Claude Code in the Claude app, with Clawd (the Claude Code pixel mascot) as the protagonist. Unofficial fan film.\n\n\n## Story & structure\n\nClawd, the Claude Code pixel mascot, climbs out of the terminal logo and moves into the Claude app, then acts out four features in four chapters: **01 Just say it** (plain-language prompt with an @-mention, reading files), **02 Plan first** (Plan mode; nothing changes until you say go), **03 Review** (the diff, a line comment, the revision), **04 Checks its own work** (the preview, the dark-mode toggle, parallel sessions). The slogan closes it: \"Say it. Plan it. Review it. Ship it.\" Every interaction was checked against the official desktop documentation.\n\nThe brief the demo was made from (the old \"six rules\", now spread over STYLE.md §1–§6):\n\n| Rule | Why |\n|---|---|\n| **Real UI, redrawn** | Every label, mode name and shortcut matches the real product. No screenshots, no lorem ipsum. The demo code, diff and test output are coherent, and the \"app under test\" really changes. |\n| **Recording-software camera** | One continuous take inside the screen. Push in on the action, drift slightly, and whip-pan between panes. Zoom never drops below 1, so we never see outside the monitor. Cuts happen only under chapter transitions. |\n| **Pixel grid is sacred** | The mascot, its props (pencil, \"!\", sparkles, heart, dust) and its trails share one square-pixel grid with crisp edges. It scales with the camera. Its position snaps to half-pixels, so its motion feels stepped. |\n| **Gravity = top edges of UI** | The mascot only ever stands on the top edge of a real element: input box, menu, file row, diff line, button, CI bar, the title's letters. Position comes from **measuring the live DOM** every frame, never hand-placed coordinates. |\n| **Cause and effect** | Every mascot action triggers a real UI state change, and every user action is a cursor move, click or keystroke shown on a KeyCastr-style HUD. |\n| **Information layers** | A chapter pill (01–04), the keystroke HUD, frosted-glass caption pills, and an optional \"▶▶ 4×\" time-lapse tag. Nothing else overlays the screen. |\n\n### Director's toolkit, as the demo spent it (all ten used)\n\n1. **Match-cut origin story.** The terminal logo's quadrant block characters (`▐▛███▜▌`) are the mascot's pixels 1:1. Each tall quadrant morphs into a square pixel, and the character climbs out of the terminal, leaving a dashed outline behind.\n2. **Diegetic title.** The product name drops in as the app's empty-state heading, and the mascot lands on its letters on the downbeat.\n3. **Staging on a moving floor.** The mascot follows the typing caret, jumps onto the @-mention popup, and rides the sent message as it flies up the chat.\n4. **Time-lapse with a tag.** Reading files runs at 4× with a flashing tag and rack focus: the chat is blurred and the pane is sharp.\n5. **Spotlight freeze.** On the key promise (\"nothing changes until you say go\") the camera pushes in and a vignette isolates the *No files changed* badge.\n6. **Directional motion blur only on whips.** It is derived from camera speed and applied as an anisotropic Gaussian on an **untransformed wrapper**. Slow moves stay sharp.\n7. **The film itself changes state.** The dark-mode toggle's reveal doesn't stop at the preview. The circle keeps growing over the whole app and desktop, and the rest of the film is in dark mode. At the end, the mascot's last stomp brings the light back from its own feet.\n8. **Cell division.** The new session splits the window, and the mascot splits into two with a pixel burst.\n9. **Karaoke-ball end card.** The mascot hops from word to word of the slogan, landing on each word as it is spoken.\n10. **The cursor and the mascot are characters.** The cursor \"pets\" the mascot on the head: it squashes, closes its eyes, and a heart pops up.\n\nThe demo's sprite is an **18×10** grid unfolded 1:1 from the terminal logo's quadrant characters; its props (pencil, \"!\", sparkles, heart, dust) share that grid.\n\n## Shots\n\n| # | Time | Picture / Clawd | Camera / move |\n|---|---|---|---|\n| 1 | 0:00 | `claude` typed in a terminal; the logo's blocks come alive and Clawd climbs out, leaving a dashed outline | locked on the terminal → match-cut origin |\n| 2 | 0:05 | The Claude app window opens; Clawd lands on the empty-state heading, the title | diegetic title on the downbeat |\n| 3 | 0:09 | **01** typing, @ file popup; Clawd stands on the input box, then rides the sent message | push-in to the caret; moving floor |\n| 4 | 0:14 | Clawd runs along the file tree, read rows highlight | 4× time-lapse tag + rack focus |\n| 5 | 0:19 | **02** ⇧⌘M mode menu; Clawd on top of the menu watches Plan get picked | push-in on the menu |\n| 6 | 0:23 | Plan pane; Clawd writes item 4 with a pixel pencil; *No files changed* badge | spotlight freeze |\n| 7 | 0:29 | **03** `+24 −3` stat bar; Clawd cheers on it; the cursor clicks Review | whip-pan to the diff (motion blur) |\n| 8 | 0:32 | Diff: comment on line 6, ⌘↵; Clawd lies on the comment box reading | push-in |\n| 9 | 0:37 | The line is rewritten, \"!\" over Clawd, stats become +13 | locked |\n| 10 | 0:42 | **04** preview; Clawd stomps the toggle, dark spreads from the button over the whole app and desktop | the film changes state |\n| 11 | 0:50 | ⌘N new session; the window splits, Clawd splits into three (CI green, tests 50/50, new session) | pull back; cell division |\n| 12 | 0:56 | End card: karaoke-ball slogan; the last stomp brings the light back from Clawd's feet | locked |\n\n## Score structure\n\n- **Score in two resolutions.** The hi-fi layer (piano, upright bass, drum kit, glockenspiel, real samples) is the world. The chiptune square wave is the mascot's voice.\n- **Score structure:**\n    - The band enters when the mascot lands on the title.\n    - Each chapter transition gets a tom fill and a crash.\n    - The last chapter drops the drums to build tension.\n    - The dark-mode stomp crossfades the whole band into a low-passed \"night\" version.\n    - The split screen becomes a left/right duet (piano left, chiptune right).\n    - The end-card words are chiptune notes; the final stomp opens the filter on a big major-9 chord.\n- **Foley:** keyboard (a thock plus a click, with human timing jitter), trackpad clicks, pane swishes, popup pops, CI ticks, a shutter for screenshots. Mascot steps, jumps and landings are 8-bit.\n- **VO:** calm, one feature per line, product names verified with whisper. Keep effects off word onsets: a keypress landing on \"Start\" masked the word.\n\nTempo ~104 BPM (the treatment's plan). The end-card words are chiptune notes C5 E5 G5 C6 in `sound.py`.\n\nMascot timings in the demo: anticipation crouch 0.14 s with squash 0.28; walk at 9 steps/s. The full acting notes:\n\n- **Jumps:** anticipation crouch (0.14 s, squash 0.28), stretch on take-off, tucked legs in the air, a landing squash with a damped bounce, and dust puffs.\n- **Idle:** a tiny squash on every beat of the score, so the character breathes in time with the music. It blinks at irregular intervals.\n- **Walk:** 9 steps/s leg alternation. The direction flips the sprite.\n- **Eyes carry the acting:** n / l / r / u / d / wide / happy / shut / blink. They look at what matters: the popup, the cursor, the line being revised.\n- **Arms:** down / up (cheer) / wave. Props sit on the same grid.\n\nVoice: Kokoro `am_michael`, speed 1.0 (other voices read \"Claude\" as \"Clod\"). A keypress landing on \"Start\" masked the word, hence the rule to keep effects off word onsets.\n\n## Palette & props\n\nThe Claude app's light theme (ink `#1F1E1C`, clay `#D97757`, `--clay2` `#BD5D3A` for the stressed slogan word) and its real dark theme after the toggle (ink `#EEEAE2`, clay `#E08565`), all as CSS variables in `demo/index.html`. Clawd in brand clay `#D97757` with `#B85F40` shading and `#2A2622` eyes; pencil yellow `#F2C14E`, heart `#E0543A`, check `#2F9E4F` (`demo/clawd.js`). Fonts: Inter, Newsreader, JetBrains Mono (OFL). The \"app under test\" is a small tomato-timer project (`~/tomato-timer`); the UI shows the model name as it appeared in the app.\n\n**Rights.** Unofficial fan film: it uses the official Claude Code mascot and redraws the Claude app's interface closely. The end card says \"Unofficial fan film\". A user's film should show their own product and mascot, or an original pixel character.\n\n## End card\n\nClawd hops across \"Say it. Plan it. Review it. Ship it.\" word by word as it is spoken (Newsreader 64 px, the last word in clay italic), then \"Claude Code · in the Claude app\" and a small credit line (`film.js`, end-card function): \"LemoLab × Claude Opus 5.5 · Unofficial fan film · Voice · Fonts\", plus the sample credits (Salamander Grand Piano V3, MuldjordKit, Versilian Studios, Karoryfer). The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card (remove that line when adapting `film.js`).\n\n## Build notes\n\n- `demo/film.js` is the timeline. VO lines are placed at fixed times, and every visual beat hangs off a spoken word (`W(id, word)`). It holds the camera moves, the `Actor` (mascot) segments, the `Cursor`, and the sound events.\n- `demo/ui.js` turns state into HTML for the terminal and the Claude app.\n- `demo/clawd.js` holds the sprite grid, poses and pixel props.\n- `demo/main.js` handles the light and dark layers, DOM anchor measurement, motion blur, and the HUD (captions, keys, pixel wipes, spotlight).\n- `demo/sound.py` builds the score, foley and VO from `events.json`, with ducking.\n- Run everything with `sh styles/living-screencast/demo/build.sh`. The full render takes about 30 s.\n\nOther files: `demo/lines.json` (VO lines), `demo/tools/asr_check.py` (whisper check + word timestamps, `sh demo/build.sh --vo`), `demo/tools/mixcheck.py`, `demo/tools/subs.mjs` (captions → `.srt`), `storyboard/` (the pre-production storyboard page and contact sheet). `build.sh` also renders the style frame (40.9 s) and the poster (8.9 s).\n\nDon'ts we wrote for this demo (now STYLE.md §9):\n\n- Don't invent features or rename modes. If a button isn't in the docs, it isn't in the film.\n- Don't let the mascot float in empty space, cover text the viewer should read, or sit under a caption.\n- Don't use screenshots, blur-filter \"fake depth\" on text you want read, or zoom out past the screen.\n- Don't put a hand, arm or finger on screen. The cursor is the user.\n",
+  "published_srt_verbatim": "1\n00:00:02,250 --> 00:00:03,450\nMeet Clawd.\n\n2\n00:00:03,450 --> 00:00:05,580\nIt used to live in your terminal.\n\n3\n00:00:06,150 --> 00:00:08,830\nNow it lives right inside the Claude app.\n\n4\n00:00:10,850 --> 00:00:13,390\nJust say what you want, in plain words.\n\n5\n00:00:13,450 --> 00:00:15,600\nPoint at a file with the @ sign,\n\n6\n00:00:16,050 --> 00:00:19,400\nand Claude reads your project before it touches a thing.\n\n7\n00:00:20,250 --> 00:00:22,810\nNot sure yet? Switch to Plan mode.\n\n8\n00:00:22,850 --> 00:00:26,910\nYou get a clear plan, and nothing changes until you say go.\n\n9\n00:00:28,050 --> 00:00:30,250\nEvery edit shows up as a diff.\n\n10\n00:00:30,450 --> 00:00:32,420\nClick any line, leave a note,\n\n11\n00:00:32,750 --> 00:00:34,480\nand Claude revises it.\n\n12\n00:00:36,450 --> 00:00:38,150\nThen it checks its own work.\n\n13\n00:00:38,150 --> 00:00:42,670\nIt runs your app in the preview, and clicks through it, just like you would.\n\n14\n00:00:42,950 --> 00:00:45,620\nGot more to do? Start another session.\n\n15\n00:00:45,750 --> 00:00:47,610\nThey work side by side.\n\n16\n00:00:50,750 --> 00:00:52,030\nClaude Code.\n\n17\n00:00:52,370 --> 00:00:54,660\nSay it. Plan it. Review it. Ship it.\n",
+  "original_assets_and_licenses_verbatim": "Living Screencast · \"Clawd Moves In\" (59.4 s) — LemoLab × Claude Opus 5.5 · Unofficial fan film, not affiliated with Anthropic.\nClawd and the Claude app interface are redrawn from scratch in HTML/CSS/SVG (no screenshots); they belong to Anthropic.\n\nVoice: Kokoro-82M (hexgrad, Apache 2.0) via kokoro-onnx, voice am_michael. Checked with faster-whisper medium.en.\nFonts (SIL OFL 1.1): Inter (Rasmus Andersson), Newsreader (Production Type), JetBrains Mono (JetBrains). Licences in fonts/.\nPiano: \"Salamander Grand Piano V3\" by Alexander Holm, licensed under CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)\nDrums: \"MuldjordKit\" by Lars Muldjord (drumgizmo.org), FreePats version, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)\nSamples (CC0): Karoryfer Samples / sfzinstruments (jazz bass), VS Chamber Orchestra: Community Edition and Versilian Community Sample Library (Versilian Studios) — glockenspiel, violins, claps, shaker.\nChiptune voice of Clawd, UI foley and all sound effects: synthesised in sound.py.\n",
+  "engine_reuse_recommendation": "General UI primitives, mascot pixel rig, camera/refocus utilities may be attributed; independently rebuild session content, app DOM, coherent diff/state and choreography. Claude marks/names are third-party and this is an unofficial reference study.",
+  "rights_or_evidence_notes": "Original codeMIT; reuse only explicitly attributed general helpers/fonts/assets with supplied licences. New scene staging and animation must be authored independently. Original model end credits recorded as historical reference, replaced honestly in recreation.",
+  "v1_quality_deficits": "V 1 replaced actual Clawd/Claude Code/tomato-timer story with generic Pip, removed 17-line narration, coherent real UI demos, diff revision, test toggling and full 59.4 s length.",
+  "recreation_status": "brief-audited; newfilmnotyetgenerated",
+  "published_asset_manifest": [
+    {
+      "path": "styles/living-screencast/demo/fonts/OFL-jetbrainsmono.txt",
+      "sha256": "a76abf002c49097d146e86740a3105a5d00450b1592e820a1109a8c5680cd697",
+      "bytes": 4399
+    },
+    {
+      "path": "styles/living-screencast/demo/fonts/OFL-inter.txt",
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "bytes": 4377
+    },
+    {
+      "path": "styles/living-screencast/demo/fonts/newsreader_OFL.txt",
+      "sha256": "fdfad38143ec470553cae82a1e45320bdd1b9ec70415d37bd0171051d8a4ded8",
+      "bytes": 4394
+    }
+  ]
+}

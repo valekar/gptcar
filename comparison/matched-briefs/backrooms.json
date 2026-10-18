@@ -1,0 +1,967 @@
+{
+  "slug": "backrooms",
+  "title": "Night Shift Orientation",
+  "premise": "A new night-shift hire films their first night in an endless yellow office, following the rules on the wall.",
+  "provenance": {
+    "original_chat_prompt_available": false,
+    "published_style_prompt_path": "styles/backrooms/STYLE.md",
+    "published_demo_guide_is_verbatim": true,
+    "scene_prompt_status": "Reconstruction from complete published STYLE/DEMO, exact narration/timing data and complete decoded-film contact sheets; not a recovered original chat prompt.",
+    "user_override": "User expressly requests original story/script/arc; STYLE/DEMO usual nonreuse admonition is overridden for reference-matched work."
+  },
+  "sources": [
+    {
+      "path": "styles/backrooms/STYLE.md",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/backrooms/STYLE.md",
+      "sha256": "621f204f5bc4576af497a169f2442b91caffee99046989a117ba06c6c1d572a0"
+    },
+    {
+      "path": "styles/backrooms/DEMO.md",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/backrooms/DEMO.md",
+      "sha256": "517cc6bd2ec1edd1ba78b599ca911193cd65e344158dbe83af93b66f6850af6a"
+    },
+    {
+      "path": "styles/backrooms/style.json",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/backrooms/style.json",
+      "sha256": "8e40af80d492119fd0ec63ab5a4284d52c65c0ce2e5b12a71d9e7d41e35a9299"
+    },
+    {
+      "path": "styles/backrooms/demo/CREDITS",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/backrooms/demo/CREDITS",
+      "sha256": "fd0e08f7840aec2df0b9bf5559c5e46d8703cb8ea998fce8d24d3c1ce8b64fd6"
+    },
+    {
+      "path": "styles/backrooms/demo/lines.json",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/backrooms/demo/lines.json",
+      "sha256": "1086cd8a482797e4eb5c15f30848245cc864fa24759fdff8ada3bfe2b333d134"
+    },
+    {
+      "path": "styles/backrooms/backrooms.srt",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/backrooms/backrooms.srt",
+      "sha256": "563c86ec4853759047bcc6040c618ef8e8949169998fc278775dca8a7ce1c5f0"
+    }
+  ],
+  "delivery": {
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": 1432,
+    "duration": 59.712
+  },
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "See published DEMO; delivery fps above overrides rounded catalogue values.",
+    "internal_raster": "See style prompt material requirements for native pixel/CRT/internal compositor resolutions."
+  },
+  "reference": {
+    "slug": "backrooms",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/backrooms.mp4",
+    "sha256": "3674549d1c13400b57517d04a02772f70d2136b26bc17194987b85c3865d4e65",
+    "duration": 59.712,
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": "1432",
+    "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+    "frames": 60,
+    "sheets": 5
+  },
+  "inspection": {
+    "all_contact_sheets_inspected": true,
+    "sheet_count": 5,
+    "regular_frame_count": 60,
+    "sheet_paths": [
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/backrooms/sheets/sheet-01.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/backrooms/sheets/sheet-02.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/backrooms/sheets/sheet-03.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/backrooms/sheets/sheet-04.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/backrooms/sheets/sheet-05.jpg"
+    ],
+    "sampling": "All1fps decoded samples reviewed across whole film, plus published source timing for short transitions. Exact shot-boundary decoding required before film timing acceptance; approximate sheet labels are not frame-accurate.",
+    "every_encoded_frame_claimed": false
+  },
+  "materials_characters_typography": "Found-footage 1996 camcorder,4:3 active frame with black pillar boxes, real 3 D repetitive yellow office corridors. Wallpaper vertical double lines/alternating diamond motif, stained short pile mustard carpet, mineral ceiling tiles/Tbars, recessed fluorescent troffers with lattice/insects.25 nearest lights local illumination+fog, distant corners dark; no expensive horror spotlights. Organic 2.4 m very thin figure at 33 m, subtle jointed posture. OSD white block REC/battery/date unaffected by VHS except tracking tear, operator only shoe toes.",
+  "audio_recreation": {
+    "original_master_audio_reused": false,
+    "direction": "Die get ic 88 BPM F major original hold mu zak, no non die get ic horror score; full bed fluorescent 120 Hz harmonic buzz, carpet footfalls, autofocus servos, PAc hime and cone voice. Wow playback slows 1→.97→.89; true silence 47.35–48.35 warped time. PAaf_bella filtered 310–3500 Hz,.84/.82/.78, operator am_michael quiet whisper.",
+    "narration_published_verbatim": [
+      {
+        "id": "p0",
+        "voice": "af_bella",
+        "speed": 0.84,
+        "text": "Good evening, and welcome to the night shift.",
+        "start": 2.7,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "p1",
+        "voice": "af_bella",
+        "speed": 0.84,
+        "text": "Rule one. The humming of the lights is normal.",
+        "asr": "Rule 1. The humming of the lights is normal.",
+        "start": 8.399999999999999,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "p2",
+        "voice": "af_bella",
+        "speed": 0.84,
+        "text": "Rule two. You are the only employee on this floor.",
+        "asr": "Rule 2. You are the only employee on this floor.",
+        "start": 13.499999999999998,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "p3",
+        "voice": "af_bella",
+        "speed": 0.84,
+        "text": "Rule three. If the lights flicker three times, do not look at the ceiling.",
+        "asr": "Rule 3. If the lights flicker three times, do not look at the ceiling.",
+        "start": 22.099999999999994,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "p4",
+        "voice": "af_bella",
+        "speed": 0.82,
+        "text": "Rule four. There are no exits on this floor. If you see an exit sign, do not follow it.",
+        "asr": "Rule 4. There are no exits on this floor. If you see an exit sign, do not follow it.",
+        "start": 40.4,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "p6",
+        "voice": "af_bella",
+        "speed": 0.78,
+        "text": "Rule six.",
+        "asr": "Rule 6.",
+        "start": 53.050000000000004,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "w1",
+        "voice": "am_michael",
+        "speed": 0.9,
+        "text": "Okay. First night.",
+        "start": 5.55,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "w2",
+        "voice": "am_michael",
+        "speed": 0.88,
+        "text": "Hello?",
+        "start": 33.74999999999999,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "w3",
+        "voice": "am_michael",
+        "speed": 0.9,
+        "text": "It was midnight a second ago.",
+        "start": 37.4,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "w4",
+        "voice": "am_michael",
+        "speed": 0.88,
+        "text": "That's an exit.",
+        "start": 47.949999999999996,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "end": 2.7,
+      "title": "Tape roll-in",
+      "prompt": "Black then VHS rollin.55, autofocus soft until 1.55 on wood/cork bulletin board on patterned yellow wall. Zoom orientation page. OSDREC red circle, battery 3 bars, PM 11:58/SEP.27.1996; title NIGHT SHIFT ORIENTATION 1.1–4.6. Caption[FLUORESCENT LIGHTS HUMMING]."
+    },
+    {
+      "start": 2.7,
+      "end": 6,
+      "title": "Welcome",
+      "prompt": "PA Good evening, and welcome to the night shift. Board notice says FLOOR STAFF—PLEASEREAD /FORMNS-01(REV.9) /NIGHTSHIFTORIENTATION /Read before beginning your rounds. White copy paper pinned with red tacks, small sticky aside. Operator Okay.First night 5.55."
+    },
+    {
+      "start": 6,
+      "end": 11.3,
+      "title": "Normal corridor",
+      "prompt": "Slow unsteady camcorder pan to right through door reveals long straight many columns corridor at vanishing point, overhead repeated rectangular lamps. Chime, p 1 at 8.4 Rule one.The humming of the lights is normal. Ordinary pace, breathed silence, not constant jump scares."
+    },
+    {
+      "start": 11.3,
+      "end": 13.4,
+      "title": "Check shoes",
+      "prompt": "POV tips down until only two leather shoe toes and carpet visible, stops, rises. OSD stay screen aligned; operator body never appears. Footsteps soft muffled."
+    },
+    {
+      "start": 13.4,
+      "end": 16.2,
+      "title": "Only employee",
+      "prompt": "Forward camera approach second notice on left wall. PA 13.5 You are the only employee on this floor. Build doubt through still distance and die get ic room tone."
+    },
+    {
+      "start": 16.2,
+      "end": 21.2,
+      "title": "Read rules1–5",
+      "prompt": "Push page into legible close up, taped upper corners. Exact 1 The humming of the lights is normal.2 You are the only employee on this floor.3 If the lights flicker three times, do not look at the ceiling.4 There are no exit son this floor.If you see an EXIT sign, do not follow it.5 If a coworker waves at you, wave back. Footer Thankyou for your cooperation.Management. Contradiction between 2 and 5 must remain."
+    },
+    {
+      "start": 21.2,
+      "end": 27.15,
+      "title": "Rule three walk",
+      "prompt": "Pan back to main corridor, clock 11:59, PA 22.1 Rule three...exact full line. Walk forward many seconds, framing becomes more cautious, ceiling fluorescent local bright not full ambient."
+    },
+    {
+      "start": 27.15,
+      "end": 30.8,
+      "title": "Three flickers do notlook",
+      "prompt": "Original times 27.45/27.95/28.45 mapped through WARP(see embedded T) =27.15/27.65/28.15. Lights gate exactly 3 times. Operator obeys, drops look to shoes 28.25–30.8, holds fear. Caption[LIGHTSFLICKER], no added music sting."
+    },
+    {
+      "start": 30.8,
+      "end": 33.65,
+      "title": "Rise and autofocus",
+      "prompt": "Rise 30.8–32.0, zoom 31.9–33.1 toward organically thin silhouette~33 m away. Figure visible only during A Flock 32.85–33.35 then empty hall focus. No monster close up, no human waving stick rig. Operator Hello?33.75."
+    },
+    {
+      "start": 33.65,
+      "end": 37.4,
+      "title": "Tape loses three hours",
+      "prompt": "Empty corridor only, focus locks far 34.85. Tracking tear 36.05–36.7 wipes image horizontally, room/music wows down; clock jumps to AM 2:59 and battery 1 bar. Operator tremor It was midnight a second ago 37.4."
+    },
+    {
+      "start": 37.4,
+      "end": 44.5,
+      "title": "No exits",
+      "prompt": "Camera un zooms, PA 40.4 Rule four full warning. Right turn through corridor sees red illuminated EXIT above grey flush door under ceiling blank panels. Turn and movement should obey warped story timing rather than direct un warped values."
+    },
+    {
+      "start": 44.5,
+      "end": 48.35,
+      "title": "The forbidden sign",
+      "prompt": "Slow approach door, no hand seen. One full second digital zero at warped hush 46.75–47.75(not original un warped 47.35). Strong held frame, no drift. Operator That’san exit 47.95. Return ballast softly."
+    },
+    {
+      "start": 48.35,
+      "end": 52.6,
+      "title": "Door opens itself",
+      "prompt": "Grey door panic bar opens without operator hand around 50.4–51.7, reveals another patterned wall and notice. Camera enters slowly, not jump cut. OSDAM 3:00/SEP.27.1996 battery 1 bar."
+    },
+    {
+      "start": 52.6,
+      "end": 55.8,
+      "title": "Rule six addresses tape",
+      "prompt": "Push final notice, taped corners, header NIGHT SHIFT ORIENTATION/(continued). Exact 6.Do not rewind this tape. PA 53.05 only Rule six. then never reads rest. Viewer reads the command, threat directed at recording. REC dot dies, tracking noise interrupts."
+    },
+    {
+      "start": 55.8,
+      "end": 59.666667,
+      "title": "End tape",
+      "prompt": "Black with NIGHT SHIFT ORIENTATION /LIMINALFOUND FOOTAGE /original credit for remaining seconds. End actual 1432 frames 24 fps, source 59.7 rounded. No unexpected monster button."
+    }
+  ],
+  "published_timing_tables": {
+    "work/matched-briefs-graphics/backrooms-timing.json": {
+      "DUR": 59.7,
+      "T": {
+        "rollIn": 0.55,
+        "afLock": 1.55,
+        "title": [
+          1.1,
+          4.6
+        ],
+        "chime0": 1.9,
+        "p0": 2.7,
+        "w1": 5.55,
+        "pan": [
+          6,
+          7.199999999999999
+        ],
+        "chime1": 7.6,
+        "p1": 8.399999999999999,
+        "lookDown1": [
+          11,
+          13.099999999999998
+        ],
+        "chime2": 12.699999999999998,
+        "p2": 13.499999999999998,
+        "notice2": [
+          15.899999999999997,
+          20.899999999999995
+        ],
+        "chime3": 21.299999999999997,
+        "p3": 22.099999999999994,
+        "flick": [
+          27.14999999999999,
+          27.64999999999999,
+          28.14999999999999
+        ],
+        "lookDown2": [
+          28.249999999999993,
+          30.799999999999997
+        ],
+        "rise": [
+          30.799999999999997,
+          31.999999999999993
+        ],
+        "zoom": [
+          31.9,
+          33.099999999999994
+        ],
+        "figOn": [
+          31.9,
+          33.65
+        ],
+        "afFig": [
+          32.849999999999994,
+          33.349999999999994
+        ],
+        "w2": 33.74999999999999,
+        "afEmpty": 34.849999999999994,
+        "tear": [
+          36.05,
+          36.699999999999996
+        ],
+        "w3": 37.4,
+        "unzoom": [
+          39.3,
+          39.8
+        ],
+        "chime4": 39.6,
+        "p4": 40.4,
+        "turn": [
+          42.1,
+          43.9
+        ],
+        "hush": [
+          46.75,
+          47.75
+        ],
+        "w4": 47.949999999999996,
+        "door": [
+          50.18125,
+          51.291666666666664
+        ],
+        "afFinal": 52.82916666666667,
+        "p6": 53.050000000000004,
+        "recOff": 56.400000000000006,
+        "endCard": [
+          56.800000000000004,
+          59.7
+        ]
+      },
+      "LINES": [
+        {
+          "id": "p0",
+          "t": 2.7,
+          "who": "PA"
+        },
+        {
+          "id": "w1",
+          "t": 5.55,
+          "who": "ME"
+        },
+        {
+          "id": "p1",
+          "t": 8.399999999999999,
+          "who": "PA"
+        },
+        {
+          "id": "p2",
+          "t": 13.499999999999998,
+          "who": "PA"
+        },
+        {
+          "id": "p3",
+          "t": 22.099999999999994,
+          "who": "PA"
+        },
+        {
+          "id": "w2",
+          "t": 33.74999999999999,
+          "who": "ME"
+        },
+        {
+          "id": "w3",
+          "t": 37.4,
+          "who": "ME"
+        },
+        {
+          "id": "p4",
+          "t": 40.4,
+          "who": "PA"
+        },
+        {
+          "id": "w4",
+          "t": 47.949999999999996,
+          "who": "ME"
+        },
+        {
+          "id": "p6",
+          "t": 53.050000000000004,
+          "who": "PA"
+        }
+      ],
+      "CHIMES": [
+        1.9,
+        7.6,
+        12.699999999999998,
+        21.299999999999997,
+        39.6
+      ],
+      "POS": [
+        [
+          0,
+          [
+            0.05,
+            0
+          ]
+        ],
+        [
+          6.6,
+          [
+            0.05,
+            0
+          ]
+        ],
+        [
+          12.699999999999998,
+          [
+            0.1,
+            -8.4
+          ]
+        ],
+        [
+          14.299999999999997,
+          [
+            -0.25,
+            -11
+          ]
+        ],
+        [
+          15.899999999999997,
+          [
+            -0.85,
+            -12.5
+          ]
+        ],
+        [
+          16.9,
+          [
+            -0.9,
+            -12.5
+          ]
+        ],
+        [
+          18.699999999999996,
+          [
+            -1.06,
+            -12.62
+          ]
+        ],
+        [
+          20.899999999999995,
+          [
+            -1.07,
+            -12.62
+          ]
+        ],
+        [
+          21.899999999999995,
+          [
+            -0.2,
+            -13.4
+          ]
+        ],
+        [
+          26.799999999999997,
+          [
+            0.1,
+            -19.2
+          ]
+        ],
+        [
+          40.3,
+          [
+            0.1,
+            -19.2
+          ]
+        ],
+        [
+          42.4,
+          [
+            0.25,
+            -21.9
+          ]
+        ],
+        [
+          44,
+          [
+            1.4,
+            -22.2
+          ]
+        ],
+        [
+          46.699999999999996,
+          [
+            3,
+            -22.2
+          ]
+        ],
+        [
+          48.9,
+          [
+            3,
+            -22.2
+          ]
+        ],
+        [
+          51.4625,
+          [
+            7,
+            -22.2
+          ]
+        ],
+        [
+          52.40208333333334,
+          [
+            9.6,
+            -22.2
+          ]
+        ],
+        [
+          53,
+          [
+            10.45,
+            -22.2
+          ]
+        ],
+        [
+          59.7,
+          [
+            10.45,
+            -22.2
+          ]
+        ]
+      ],
+      "YAW": [
+        [
+          0,
+          1.5707963267948966
+        ],
+        [
+          6,
+          1.5707963267948966
+        ],
+        [
+          7.199999999999999,
+          0.02
+        ],
+        [
+          13.299999999999997,
+          0
+        ],
+        [
+          14.299999999999997,
+          0.35
+        ],
+        [
+          15.899999999999997,
+          1.5707963267948966
+        ],
+        [
+          20.899999999999995,
+          1.5707963267948966
+        ],
+        [
+          21.999999999999996,
+          0.05
+        ],
+        [
+          26.799999999999997,
+          0
+        ],
+        [
+          42.1,
+          0
+        ],
+        [
+          43.9,
+          -1.5707963267948966
+        ],
+        [
+          59.7,
+          -1.5707963267948966
+        ]
+      ],
+      "PITCH": [
+        [
+          0,
+          -0.05
+        ],
+        [
+          6,
+          -0.05
+        ],
+        [
+          7.199999999999999,
+          -0.06
+        ],
+        [
+          11,
+          -0.08
+        ],
+        [
+          11.7,
+          -1.22
+        ],
+        [
+          12.699999999999998,
+          -1.18
+        ],
+        [
+          13.199999999999998,
+          -0.12
+        ],
+        [
+          15.899999999999997,
+          -0.12
+        ],
+        [
+          16.9,
+          -0.1
+        ],
+        [
+          18.699999999999996,
+          -0.12
+        ],
+        [
+          20.899999999999995,
+          -0.13
+        ],
+        [
+          21.899999999999995,
+          -0.06
+        ],
+        [
+          28.249999999999993,
+          -0.06
+        ],
+        [
+          28.549999999999997,
+          -1.28
+        ],
+        [
+          30.799999999999997,
+          -1.2
+        ],
+        [
+          31.999999999999993,
+          -0.015
+        ],
+        [
+          40.3,
+          -0.02
+        ],
+        [
+          43.9,
+          0.04
+        ],
+        [
+          46.699999999999996,
+          0.06
+        ],
+        [
+          48.9,
+          0.05
+        ],
+        [
+          51.4625,
+          0
+        ],
+        [
+          52.40208333333334,
+          -0.08
+        ],
+        [
+          53,
+          -0.12
+        ],
+        [
+          59.7,
+          -0.12
+        ]
+      ],
+      "CAMH": [
+        [
+          0,
+          0
+        ],
+        [
+          16.099999999999994,
+          0
+        ],
+        [
+          18.299999999999997,
+          -0.16
+        ],
+        [
+          20.899999999999995,
+          -0.16
+        ],
+        [
+          21.899999999999995,
+          0
+        ],
+        [
+          59.7,
+          0
+        ]
+      ],
+      "FOV": [
+        [
+          0,
+          52
+        ],
+        [
+          31.9,
+          52
+        ],
+        [
+          33.099999999999994,
+          27
+        ],
+        [
+          39.3,
+          27
+        ],
+        [
+          39.8,
+          52
+        ],
+        [
+          59.7,
+          52
+        ]
+      ],
+      "FOCUS": [
+        [
+          0,
+          0.4
+        ],
+        [
+          0.8,
+          0.5
+        ],
+        [
+          1.2,
+          3.5
+        ],
+        [
+          1.55,
+          1.7
+        ],
+        [
+          6.5,
+          1.7
+        ],
+        [
+          7.199999999999999,
+          6
+        ],
+        [
+          15.899999999999997,
+          3
+        ],
+        [
+          16.5,
+          0.35
+        ],
+        [
+          16.9,
+          0.7
+        ],
+        [
+          17.199999999999996,
+          0.62
+        ],
+        [
+          18.699999999999996,
+          0.46
+        ],
+        [
+          20.899999999999995,
+          0.46
+        ],
+        [
+          21.899999999999995,
+          5
+        ],
+        [
+          28.299999999999997,
+          5
+        ],
+        [
+          28.699999999999996,
+          1.5
+        ],
+        [
+          31.9,
+          1.8
+        ],
+        [
+          32.49999999999999,
+          2.5
+        ],
+        [
+          32.72,
+          3.5
+        ],
+        [
+          32.849999999999994,
+          33.2
+        ],
+        [
+          33.349999999999994,
+          32.8
+        ],
+        [
+          33.65,
+          70
+        ],
+        [
+          34.05,
+          4
+        ],
+        [
+          34.49999999999999,
+          12
+        ],
+        [
+          34.849999999999994,
+          33.3
+        ],
+        [
+          39.3,
+          33.3
+        ],
+        [
+          39.8,
+          6
+        ],
+        [
+          52.23125,
+          3
+        ],
+        [
+          52.572916666666664,
+          0.35
+        ],
+        [
+          52.82916666666667,
+          0.8
+        ],
+        [
+          59.7,
+          0.8
+        ]
+      ],
+      "APER": [
+        [
+          0,
+          3
+        ],
+        [
+          31.9,
+          3
+        ],
+        [
+          33.099999999999994,
+          14
+        ],
+        [
+          39.3,
+          14
+        ],
+        [
+          39.8,
+          3
+        ],
+        [
+          59.7,
+          3
+        ]
+      ],
+      "FEAR": [
+        [
+          0,
+          0.15
+        ],
+        [
+          19.699999999999996,
+          0.2
+        ],
+        [
+          27.099999999999994,
+          0.3
+        ],
+        [
+          28.299999999999997,
+          0.85
+        ],
+        [
+          31.199999999999996,
+          0.7
+        ],
+        [
+          33.699999999999996,
+          0.9
+        ],
+        [
+          36.699999999999996,
+          0.55
+        ],
+        [
+          43.9,
+          0.6
+        ],
+        [
+          46.699999999999996,
+          0.8
+        ],
+        [
+          48.9,
+          0.8
+        ],
+        [
+          53.7,
+          0.6
+        ],
+        [
+          59.7,
+          0.6
+        ]
+      ]
+    }
+  },
+  "published_style_prompt_verbatim": "# Liminal Found Footage — Style Prompt\n\n> Camcorder tapes recovered from empty, endless, fluorescent-lit spaces. Rules instead of monsters.\n> Genre reference (grammar only): \"the Backrooms\" internet folklore and new-weird / rule-horror; 1990s consumer camcorder footage. **Never** use the word \"Backrooms\", wiki \"Level\" numbers, community entity names, or any existing organisation or logo inside the film. Everything on screen (rules, forms, company voice, any presence) is original.\n\nSuits films of 45–60 s.\n\n## 1. Essence, and what it is not\n\n- **One first-person camcorder recording** (1990s VHS, 4:3), handheld, continuous.\n- **An empty, familiar-but-wrong interior** that repeats: an office, a hotel floor, a school, a mall, a parking level, a hospital wing. Humming fluorescent light, no people.\n- **Dread from emptiness, repetition, bureaucratic rules, and the camera's own machinery failing at the wrong moment.** Nothing chases anyone. A chill on the back of the neck, not a jump.\n- **The medium is the storyteller**: focus, exposure, tape damage and the on-screen display carry the plot.\n\nNot a horror film (no monster close-ups, no gore, no jump scares, no score stings), not an ASCII/CRT terminal piece (the artefacts are tape and lens, not phosphor and scanlines), not a ruin (clean is part of the style).\n\n## 2. Materials & rendering\n\n- **Frame**: 4:3 pillarboxed in 1920×1080. Render 3D at low resolution (e.g. 720×540) and let the VHS pass upscale; low resolution hides CG cleanliness.\n- **Space**: axis-aligned partitions on a grid with random gaps and stubs, pillars, a drop ceiling of tiles with recessed light panels at regular intervals. A hand-authored route through procedurally filled space, so every doorway shows more emptiness.\n- **Lighting = thousands of lights, no shadows**: store every panel's colour and intensity in a float texture; each fragment sums the nearest panels (emitter cosine × Lambert / (d² + ε)) plus a bounce term. No occlusion: this light is flat. Per-light variation (a few % warm/cool/green), a few % dead, a few % flickering. Ambient occlusion darkens seams.\n- **Fog follows local light**: fog colour × (local light / average). Where lights are dead the haze is dark, so a silhouette there reads as a *hole in the light*. Background = fog × ~0.15, so corridors dissolve into darkness, never a bright wall.\n- **Restrained decay**: tide-marks at the foot of some walls, a discoloured band under the ceiling, rare peeling seams, a few yellowed or missing tiles, dead insects in diffusers. Percentages in single digits.\n- **Printed matter**: office laser-print on yellowed paper, condensed sans headers, form numbers and revisions, numbered rules, a polite closing line from \"Management\". Pinned or taped.\n- **VHS camcorder pass** (not a CRT): small line jitter (≤ 0.25 px low-frequency wobble), a head-switching band, tracking tears on demand, barrel + vignette on the image but **not** the OSD, luma blur + edge ringing, chroma smeared right, light smear, drifting white balance, AGC noise in darks, dropouts, lifted blacks, soft clip. Noise at tape rate (30 fps). No scanlines, no RGB mask.\n- **OSD**: a hand-made bitmap font with a black outline: REC dot, battery, time and date. A camcorder title generator uses the same font, larger.\n\n## 3. Colour logic\n\n- **One dominant sickly hue** from the location's materials (mustard wallpaper, institutional green, hospital blue, beige laminate), with a darker trim and a mottled floor of the same family; ceiling and light panels near-white and slightly warm.\n- **Exactly one saturated colour**: a signal such as a red alarm lamp, a green emergency sign, an amber warning light. It is the only thing that blooms (drive its emissive high enough to cross the bloom threshold).\n- White balance drifts; colour is never graded clean.\n- Example material palettes: wallpaper `#d5bd66`, trim `#4d3d26`, carpet `#8c763c`; pool tile `#9fc7c0`, grout `#e6ece6`, water `#5e8f96`; school corridor `#b9c49a`, lockers `#6f7f66`, linoleum `#a89a7d`.\n\n## 4. Type & subtitles\n\n- **Closed captions (CEA-608 style)**: a monospace (e.g. IBM Plex Mono 600) ~42 px, white on a solid black box per row, ≤ 32 characters, centred inside the 4:3 frame above the OSD. Untouched by tape noise (the TV decodes them). Hold ≥ max(1.8 s, speech + 0.6 s).\n- **Speaker marks**: `[PA]` for announcements, italics for the operator, SDH descriptions in brackets (`[LIGHTS FLICKER]`, `[TAPE NOISE]`, `[SILENCE]`).\n- **Rules on notices are not captioned**: they are the picture. Readable at 1080p, ≥ 3–4 s uncovered. For close-ups **lower the camera so the lens is parallel to the page**; pitching down at a vertical sheet shears words into fake italics.\n- The **title** is camcorder title-generator text over the first shot.\n\n## 5. Motion quality\n\n- **One continuous handheld take.** Cuts happen only where the tape breaks: power-on roll-in, tracking tear, REC off.\n- **Handheld** = walking gait (head bob a few cm, sway, small roll) + breathing (~0.27 Hz) + tremor noise at a few frequencies whose amplitude follows a **fear** curve. At a held breath, **freeze all of it**.\n- **Looking down** shows only shoe toes and floor, never legs.\n- **Autofocus** = focus distance animated with overshoot: blur → lock → slip → lock. Blur comes from pulling focus *near*. Zoom narrows the FOV and opens the aperture.\n- **Lights flicker** as short blackouts (~0.1 s); auto-exposure catches up with a lag (~0.45 s) and gain noise pumps.\n- Things move by themselves slowly (a door over >1 s, eased), never snap.\n\n## 6. Camera grammar\n\nA vocabulary, not a route. Opening and ending come from the topic.\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Walking POV down a corridor | routine, the endless | establishing the space; time passing |\n| Slow pan off a detail to the space | scale; the space goes on | a reveal; a first look |\n| Glance down at the feet | obedience, avoidance | obeying a rule; not looking |\n| Crouch and hold on printed text | reading; bureaucracy | a rule; a contradiction |\n| Zoom + focus hunt into the distance | seeing / not seeing | a presence; a doubt |\n| Identical framing after a tear, only the OSD changed | time removed | a jump; a loss |\n| Turn a corner, hold still | a threshold | an exit; a choice |\n| Slow push-in with no sound | the pull of something | a door; a sign |\n| Backing away while filming | retreat, fear | leaving a room; a rule broken |\n| Camera set down on a surface, static, recording alone | abandonment | the operator gone; a long wait |\n| Whip toward a sound, then nothing | expectation denied | a noise with no source |\n\nFraming: text readable and uncovered; any presence small, far, and in a region of dead lights. Transitions: tape events only.\n\n## 7. Sound palette\n\n- **No score.** Only what the tape would have recorded. Music exists only inside the world (hold music, a radio through walls, a tinny PA jingle), filtered and reverberant, possibly slowing with tape wow.\n- **Fluorescent bed**: 120 Hz (or 100 Hz) + harmonics, a buzzy band-passed component, a faint ballast whine, bad-tube bursts; gated by the same light curve as the picture; closer in small rooms.\n- **PA voice**: calm, corporate, through a ceiling speaker (band-pass ~300–3500 Hz, cone resonance, saturation, room reverb), dry enough to stay intelligible. A short original chime before announcements; after a time jump, chime and voice may drift flat.\n- **Operator**: a few short, quiet lines with proximity bass and breath; breathing whose rate follows fear; a held breath and one long exhale.\n- **Foley by material**: carpet steps (low thud + wet squelch) or hard-floor squeaks, cloth rustles, camcorder clack and motor, zoom servo, AF ticks, ballast tink on flickers, a stick-slip hinge, a drag overhead, a vending machine, a pipe.\n- **Silence**: digital zero for a second or more (tails included), captioned `[SILENCE]`, is the strongest tool. A soft scare at most: everything restriking at once when sound returns.\n- **Drone** options: a low brown-noise band with beating sines rising slowly; the room tone itself pitch-shifting; nothing.\n- **Mix**: bed and in-world music ≈ −8 dB under voices. −14 LUFS; no added grain (the noise is in the picture).\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **Autofocus / auto-exposure hunting.** Something is there only while focus is correct. *Fits content like:* a missing pet on a hotel floor; a figure in an empty stadium; a shape at the end of a hospital corridor.\n- **Tape tracking damage.** A tear is a cut the universe made; same framing after, but the clock jumped, the battery drained, a light died. *Fits content like:* a night-watch log; a lost weekend in a mall; a house that ages between tapes.\n- **The OSD is plot.** REC, battery, date and time code are evidence. *Fits content like:* an alibi; a countdown; a dated inspection.\n- **Rules as text in frame.** Notices and PA announcements start ordinary, drift wrong, contradict each other, and finally address the viewer. *Fits content like:* a pool's safety rules; a school fire drill; a museum after hours.\n- **Emptiness and repetition.** The same notice in a different place; the same room with one detail changed; a corridor into fog. *Fits content like:* a moving-day walkthrough; an airport at 4 a.m.; an office after layoffs.\n- **The thing that is almost human.** A distant silhouette wrong by 15–40 % (small head, long neck, narrow high shoulders, long arms), drawn as organic curves on a billboard, moving slowly. *Fits content like:* a mannequin that is not; a night guard; a reflection that lags.\n\n## 9. Pitfalls of the medium\n\n- **A fully bright scene reads as a hospital corridor** → partitions with gaps; far areas fall dark.\n- **Lights leak through walls** (no occlusion) → a dead zone needs every light within ~±5 m dead, and the space behind it dim.\n- **Background shows as a bright rectangle** at a corridor's end → background = fog × ~0.15.\n- **Uniform fog lifts silhouettes to grey** → fog follows local light.\n- **Line wobble skews text; pitching down italicises it** → ≤ 0.25 px wobble; lower the camera.\n- **Primitive-built figures read as toys**, primitive legs as tubes → organic silhouettes; show only shoe toes.\n- **Pure red never blooms** at low emissive (low luminance) → drive it far higher.\n- **Normalising a filtered signal by its pre-filter peak** blows up a bus → normalise the processed signal.\n- **Heavy PA reverb destroys intelligibility** → ASR-check processed lines and the full mix.\n- **Billboards stamp dark rectangles** in AO → exclude them.\n- **Time-compressing a finished timeline** → keyframes in original time mapped through one warp function, including hard-coded times elsewhere.\n\n## 10. Engine\n\n`demo/world.js` (layout, light DataTexture, custom lighting and fog shaders, props), `demo/tex.js` (procedural wallpaper, carpet, ceiling, panels, notices, signs), `demo/vhs.js` (VHS camcorder ShaderPass), `demo/osd.js` (bitmap font, REC, battery, clock, title generator), `demo/subs.js` (608 captions), `demo/thing2d.js` (organic silhouette), `demo/story.js` (timeline, camera keyframes, focus / fear curves, time warp), `demo/main.js` (renderer, post chain GTAO + DOF + bloom → VHS, handheld rig). File map and build: [DEMO.md](DEMO.md#build-notes).\n\n## 11. Variation space\n\nYou decide the location and its materials, the procedure or reason for filming, the rules, the route, the presence (or none), the signal colour, the opening, the ending and the length.\n\nAll far from our demo:\n\n- Structures: **two tapes** (the same route filmed twice, a year apart; the second tape finds what changed); **a real-estate walkthrough** where every room is described cheerfully by the operator while the house keeps adding rooms; **a checklist read aloud** item by item, each item ticked on a clipboard in frame, until an item is not on the list.\n- Openings: **mid-sentence** (the tape starts with the operator already talking, tracking still rolling in); **a test pattern** and a date slate before the camera is picked up; **the lens cap on**, sound only, until the cap comes off.\n- Endings: **battery dies** (the icon blinks, the frame freezes on the dead cell); **the camera is set down** and keeps recording an empty room; **the tape loops** back to the first shot, now with the operator's shoes visible in it.\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n",
+  "published_demo_guide_verbatim": "# Liminal Found Footage — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *Night Shift Orientation* (59.7 s) · `backrooms.mp4` · source in [`demo/`](demo/)\n\n\n## Story & structure\n\nA new night-shift worker films his orientation walk through an endless office floor, following the printed rules and the PA. The original style notes, as written for this demo:\n\nA single first-person **camcorder recording** (1990s VHS, 4:3) walking through an **empty, familiar-but-wrong interior**: mustard wallpaper, damp carpet, drop ceilings full of humming fluorescent panels, repeating forever. Nothing chases anyone. The dread comes from **emptiness, repetition, bureaucratic rules, and the camera's own machinery failing at the wrong moment**. The viewer should feel a chill on the back of the neck, not jump out of their seat.\n\n**Never** use the word \"Backrooms\", wiki \"Level\" numbers, community entity names, or any existing organisation/logo inside the film. The genre name lives only in this file. Everything on screen — rules, forms, company voice, the \"thing\" — is original.\n\nThe recording medium is the storyteller. The demo used all five native powers and put the focus hunt at the emotional peak:\n\n| Native power | How the demo used it |\n|---|---|\n| **Autofocus / auto-exposure hunting** | The camera \"finds\" something only while focus is correct. It is there on the first lock, gone on the second. AE lags after a blackout and the image pumps with gain noise. |\n| **Tape tracking damage** | A tracking tear is a *cut the universe made*. Same framing afterwards, but the OSD clock jumped hours / the battery drained / one light is now dead. |\n| **The OSD is plot** | REC dot, battery, date and time code are diegetic evidence. A camcorder title-generator can write the film's title over the first shot. |\n| **Rules as text in frame** | Printed notices, PA announcements in a calm corporate voice. Rules start ordinary and drift wrong; two of them contradict each other; the last one addresses the viewer. |\n| **Emptiness and repetition** | The same notice appears again in a different place; the same room with one detail changed; a corridor that runs into fog. Emptiness itself is the threat. |\n\nHow we framed the topic (the same trick works for others): turn the topic into **an orientation, a procedure, or a checklist** that someone records on tape — a new job's first shift, a building inspection, a moving-day walkthrough, a school's safety drill, a hotel's night audit. Write 5–6 rules. Let the medium betray the rules.\n\n**Demo emotional arc (59.7 s):** boring normal (≈20 s of almost nothing) → a small wrongness (a contradiction, a repeated notice) → a rule is tested (lights flicker) → seeing / not seeing (focus hunt) → time removed (tracking tear) → a rule is broken (the exit) → the last rule turns to the audience → REC off. One subject (the camera operator — heard, never seen above the shoes), one goal (follow the procedure), one turn (the time code proves he is no longer in \"normal\").\n\n## Shots\n\n| Beat | Camera |\n|---|---|\n| Opening | Tape rolls in, AWB swings blue→yellow, AF finds a notice on a wall; camcorder title over it |\n| Reveal of space | Slow pan off the notice to a corridor of partitions and lights receding into fog |\n| Routine | Walking POV, glance down at shoes on damp carpet; no events for ~20 s |\n| The contradiction | Crouch to a repeated notice; hold ≥4 s with nothing covering the text |\n| Obeying a rule | Snap down to the shoes; let the light on the carpet change instead of showing the ceiling |\n| Peak | Zoom + autofocus hunt down the corridor; the figure exists only in the ~0.5 s of correct focus |\n| Time cut | Tracking tear, then the *identical* framing — only the OSD changed |\n| Breaking a rule | Turn a corner to the red EXIT; hold still in total silence; push in; door opens on its own |\n| Ending | Final notice in focus ≥3 s → REC off: freeze, tear, black |\n\n**The \"thing\"** is never a close-up: a 2.4 m silhouette (a colleague who is wrong by 15–40 %: small head, long tilted neck, narrow high shoulders, arms to the knee), drawn as an organic Canvas2D silhouette on a camera-facing billboard, ~33 m away in a stretch of dead lights with only dim light far behind it. Slow small wave (3.6 s cycle). Target: *you can tell it is waving, you cannot count fingers.* Exclude the billboard from the GTAO pre-pass (`mesh.isPoints = true`) or it stamps a dark rectangle.\n\nDemo motion numbers: 0.72 m stride, head bob 3 cm, sway 1.8 cm, roll ±0.8°, breathing 0.27 Hz, tremor at 1, 3.5 and 9 Hz; looking down at pitch ≈ −1.2 rad with the camera pushed 0.2 m forward; zoom FOV 52° → 27° with aperture ×5; three 0.1 s blackouts per flicker, AE lag ~0.45 s; doors open in 1.3 s. The original motion section:\n\n- **One continuous handheld take.** Cuts happen only where the tape breaks: power-on roll-in, tracking tear, REC off.\n- Handheld = walking gait (0.72 m stride, head bob 3 cm, sway 1.8 cm, roll ±0.8°) + breathing (0.27 Hz) + tremor noise at 1, 3.5 and 9 Hz whose amplitude rises with a **fear** curve. At the \"held breath\" moment **freeze all of it**.\n- Looking down: pitch ≈ −1.2 rad, camera pushed 0.2 m forward — only the shoe toes and carpet in frame, never trouser legs.\n- Autofocus is the DOF focus distance animated with overshoot: blur → lock → slip → lock. Blur comes from pulling focus *near* (a far target barely blurs when focus overshoots to infinity). Zoom narrows FOV 52°→27° and raises aperture ×5.\n- Lights flicker as three 0.1 s blackouts; AE brightens with ~0.45 s lag afterwards.\n- Doors open by themselves, slowly (1.3 s, eased).\n\n## Score structure\n\nThere is no score. The sound design as built for the demo:\n\n- **No score.** Only what the tape would have recorded.\n- **Fluorescent bed**: 120 Hz + harmonics (1, .55, .42, .22, .16, .06 at ×1…×7), a buzzy band-passed square component, a faint ~9 kHz ballast whine, random bad-tube \"zzz\" bursts; gated by the same light curve as the picture; +3 dB closer in small rooms.\n- **PA**: calm corporate voice (Kokoro `af_bella`, speed 0.82–0.84) through a \"ceiling speaker\": band-pass ~310–3500 Hz, cone resonance around 1.3 kHz, tanh saturation, room reverb — keep it dry enough for whisper to transcribe (too much reverb made \"night shift\" into \"my church\"). Original two-note chime (vibraphone E5→C5) before every rule; after the time jump both chime and voice drift flat with tape wow.\n- **Operator**: 3–4 short lines (`am_michael`), low level, proximity bass, a breath/air layer following the voice envelope, compressed. Kokoro cannot truly whisper — \"speaking quietly\" is the goal. Close-mic breathing whose rate follows the fear curve; held breath then one long exhale.\n- **Diegetic hold music**: an original easy-listening loop (here 88 BPM F major, vibraphone melody, clean-guitar comps on 2 & 4, finger bass), band-passed and drowned in reverb as if through walls, read with a slowing tape-speed curve (1.00 → 0.97 → 0.89) and growing wow. It cuts out during blackouts and dies at the silence, never to return.\n- **Foley**: damp-carpet steps (60–85 Hz thud + small wet 0.9–2.6 kHz squelch), cloth rustles on turns, camcorder clack + motor on REC on/off, zoom servo whine, AF motor ticks, ballast \"tink\" + arc buzz on each flicker, a barely audible drag overhead, door latch + stick-slip hinge creak + air push.\n- **Silence is the climax**: one full second of digital zero (including tails) when the exit appears; caption `[SILENCE]`. The only allowed scare is soft: all ballasts restriking at once with a low thunk when sound returns.\n- Low drone (35–55 Hz brown noise + 41/43.5 Hz beating) rising from the time jump to the silence. Duck bed and music ≈ −8 dB under voices. Loudness −14 LUFS, grain 0 (the noise is in the picture).\n\n## Palette & props\n\n- **Frame**: 4:3 image pillarboxed in 1920×1080 (black side bars). Render the 3D at **720×540** and let the VHS pass upscale — low resolution is part of the look and hides CG cleanliness.\n- **Space**: axis-aligned partition walls 0.16 m thick on a 2.4 m grid, random gaps and stubs, occasional square pillars; ceiling 2.70 m; drop-ceiling tiles 0.6×1.2 m; recessed troffers every 2.4 m (0.6×1.2 m prismatic panels). A hand-authored route (start room → long corridor → side corridor → one small room) inside procedurally filled offices so every doorway shows more empty rooms.\n- **Lighting = thousands of lights, no shadows**: store every troffer's colour/intensity in a 128×128 float **DataTexture**; each fragment sums the nearest 5×5 panels (emitter cosine × Lambert / (d²+0.3)) plus a bounce term from the same neighbourhood. No occlusion — backrooms light is flat. Per-light variation: ±8 % warm/cool, +0–7 % green, 3.5 % dead, 2.5 % flickering. GTAO (radius ≈0.55 m) darkens wall/floor seams.\n- **Fog follows local light**: fog colour × (local bounce light / average). Where lights are dead the haze is dark too, so a silhouette there reads as a *hole in the light*. Scene background = fog × 0.15, so corridors dissolve into darkness instead of a bright wall.\n- **Palette** (albedo, sRGB): wallpaper `#d5bd66` with darker stripes `rgba(140,112,40,.7)` and a diamond column, every roll faded differently; baseboard `#4d3d26`; carpet `#8c763c` mottled, damp patches ×0.6 with faint specular; ceiling tile `#d9d3b8`, grid `#e6e1cf`; troffer diffuser `#fbfaf0` at emissive ×5; the **only saturated colour is the red EXIT sign** (`#ff2a1a`, emissive ×9 so it blooms).\n- **Restrained decay** (clean is part of the style — never make it a ruin): water tide-marks at the foot of *some* wall runs, nicotine-yellow band under the ceiling, occasional peeling seam (≈7 % of rolls, pale paper-back triangle + shadow), rare small stains, ~4 % yellowed ceiling tiles, ~2 % return-air grilles, <1 % missing tiles (black holes), dead insects inside diffusers.\n- **Notices**: office laser-print on yellowed paper: IBM Plex Sans Condensed headers (\"FLOOR STAFF — PLEASE READ\", \"FORM NS-01 (REV. 9)\"), numbered rules in Plex Sans 600, \"Thank you for your cooperation. — Management\". Pinned to cork or taped to wallpaper. For close-ups, **lower the camera so the lens is parallel to the page** — pitching down at a vertical sheet shears the words into fake italics.\n- **VHS camcorder pass** (custom shader, *not* a CRT): per-line time-base jitter (small; low-frequency wobble ≤0.25 px or text skews), head-switching band on the bottom 8 lines, tracking tear on demand; barrel distortion 0.07 + vignette 0.42 applied to the image but **not** to the OSD; luma bandwidth limit (Gaussian σ≈1.25 px @720) + edge-enhancement ringing (sharp 0.9); chroma averaged over ±10 px and shifted 1.6 px right; bright lights smear to the right; AWB tint drifting; AGC noise (streaky, stronger in darks); 0–2 dropout lines per frame; black lift 0.045, soft highlight clip. Noise runs at 30 fps (tape rate) even though output is 24 fps. No scanlines, no RGB mask.\n- **OSD**: a hand-made 5×7 bitmap font with a black outline: `● REC` top-left, battery top-right, `PM 11:58` / `SEP.27.1996` bottom-right. The title uses the same font ×2 like a camcorder title generator.\n\n## Titles & subtitles\n\n- **CEA-608-style closed captions**: IBM Plex Mono 600, 42 px, white on a solid black box per row, ≤32 characters per row, centred inside the 4:3 frame just above the OSD clock. They are not affected by tape noise (the TV decodes them).\n- Speaker marks: `[PA]` prefix for announcements; italics for the operator (first line tagged `(whispering)`); SDH sound descriptions in brackets: `[FLUORESCENT LIGHTS HUMMING]`, `[LIGHTS FLICKER]`, `[TAPE NOISE]`, `[SILENCE]`.\n- Rules on notices are *not* captioned — they are the picture. Keep text readable at 1080p and give each notice ≥3–4 s uncovered.\n- Title: camcorder title-generator bitmap text typed over the first shot.\n\n## End card\n\nBlack, bitmap-font title, style name, `LemoLab × Claude Opus 5.5`. This sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Build notes\n\n```\nstyles/backrooms/demo/\n  story.js    timeline (single source of truth), camera keyframes, focus/aperture/fear curves, OSD clock, time warp W()\n  world.js    layout (walls/pillars/route), light DataTexture, custom lighting/fog shaders, props (notices, EXIT, door, outlets)\n  tex.js      procedural textures (wallpaper, carpet, ceiling, troffer, notices, EXIT, cork, outlet)\n  figures.js  operator's shoes, the silhouette billboard      thing2d.js  organic silhouette drawing\n  vhs.js      VHS camcorder ShaderPass (pillarbox, jitter, tear, luma/chroma, AGC, dropouts)\n  osd.js      5×7 bitmap font, REC/battery/clock, title generator      subs.js  608 captions\n  main.js     renderer, post chain (core/three/post.js GTAO+DOF+bloom → VHS), handheld rig, events\n  sheet.js    silhouette design sheet (?sheet=1)      music/muzak.py  original hold music (sampler)\n  mix.py      all sound → mix.wav        tools/mux.sh  core mux with CRF parameter        build.sh\n```\n\n1. `node core/render/still.mjs styles/backrooms/demo <t…> [--q nosub=1|raw=1|sheet=1]` — review stills.\n2. `sh styles/backrooms/demo/build.sh` — TTS → whisper → music → events → mix → whisper on processed voices → render (1433 frames ≈ 80 s with 3 workers) → mux (−14 LUFS) → SRT → poster/styleframe.\n\n### Pitfalls we hit\n\n- A fully bright scene reads as a hospital corridor. Break walls into partitions with gaps; let far areas fall dark.\n- Lights leak through walls (no occlusion) — a \"dead zone\" needs all lights within ±5 m across dead, and the corridor behind it dim too, or the figure is framed against a bright window.\n- The scene background showed as a bright rectangle at the corridor's end — set background = fog × 0.15.\n- A uniform fog colour lifts silhouettes to grey; make fog follow local light.\n- Low-frequency line wobble in the VHS pass skews text; keep it ≤0.25 px. Camera pitched down at a notice made words look italic — lower the camera instead.\n- Capsule-built figures read as toys / stick men. Draw the silhouette as organic curves on a billboard.\n- Legs from primitives look like tubes; show only shoe toes (extruded footprint outline with bevel, lighter sole, laces).\n- Emissive red at ×3 never reached the bloom threshold (luminance of pure red is low); use ×9.\n- Normalising a filtered chime by the *pre-filter* peak blew the PA bus up by 16 dB — normalise by the processed signal.\n- Heavy PA reverb destroys intelligibility; check every processed line with whisper and the full mix too.\n- Time-compressing a finished timeline: write keyframes in \"original\" time and map them through one piecewise-linear warp `W()`; remember to warp any hard-coded times elsewhere.\n- VHS noise makes files big: CRF 24 → ~47 MB for 60 s.\n",
+  "published_srt_verbatim": "1\n00:00:00,750 --> 00:00:02,650\n[FLUORESCENT LIGHTS HUMMING]\n\n2\n00:00:02,700 --> 00:00:05,550\n[PA] Good evening, and welcome to the night shift.\n\n3\n00:00:05,550 --> 00:00:07,596\n(whispering) Okay. First night.\n\n4\n00:00:08,400 --> 00:00:12,045\n[PA] Rule one. The humming of the lights is normal.\n\n5\n00:00:13,500 --> 00:00:17,558\n[PA] Rule two. You are the only employee on this floor.\n\n6\n00:00:22,100 --> 00:00:27,100\n[PA] Rule three. If the lights flicker three times, do not look at the ceiling.\n\n7\n00:00:27,100 --> 00:00:29,100\n[LIGHTS FLICKER]\n\n8\n00:00:33,700 --> 00:00:35,650\nHello?\n\n9\n00:00:36,050 --> 00:00:37,350\n[TAPE NOISE]\n\n10\n00:00:37,400 --> 00:00:39,805\nIt was midnight a second ago.\n\n11\n00:00:40,400 --> 00:00:44,030\n[PA] Rule four. There are no exits on this floor.\n\n12\n00:00:44,030 --> 00:00:46,750\nIf you see an exit sign, do not follow it.\n\n13\n00:00:46,750 --> 00:00:47,850\n[SILENCE]\n\n14\n00:00:47,950 --> 00:00:49,850\nThat's an exit.\n\n15\n00:00:53,050 --> 00:00:54,981\n[PA] Rule six.\n",
+  "original_assets_and_licenses_verbatim": "Night Shift Orientation — Liminal Found Footage demo (LemoLab × Claude Opus 5.5)\n\nAll visuals, the space, textures, the silhouette, the VHS camcorder look, OSD bitmap font, and all sound effects\nare generated by code in this folder. The hold music \"Hold Music No. 9\" is an original composition.\n\nFonts\n- IBM Plex Sans, IBM Plex Sans Condensed, IBM Plex Mono — © IBM Corp., SIL Open Font License 1.1 (via Google Fonts)\n\nVoices\n- Kokoro TTS (kokoro-v1.0, Apache-2.0), voices af_bella / am_michael\n\nInstrument samples (music/muzak.py, and the PA chime)\n- Vibraphone: Versilian Community Sample Library (VCSL), CC0 1.0 — https://github.com/sgossner/VCSL\n- Clean electric guitar, finger electric bass: FreePats (freepats.zenvoid.org), CC0 1.0\n\nNo third-party footage, images or recordings are used.\n",
+  "engine_reuse_recommendation": "world lighting, texture generators, vhs/osd/subtitle and organic figure primitives attributed reuse permitted; new corridor route/camera/staging/story assembly.",
+  "rights_or_evidence_notes": "Original codeMIT; reuse only explicitly attributed general helpers/fonts/assets with supplied licences. New scene staging and animation must be authored independently. Original model end credits recorded as historical reference, replaced honestly in recreation.",
+  "v1_quality_deficits": "V 1 reduced 3 D local-lit corridor/PA orientation/tape hours jump to generic yellow hallway cards, missing notice contradictions, shoe hesitation, half second AF figure and Rule 6 tape address.",
+  "recreation_status": "brief-audited; newfilmnotyetgenerated",
+  "published_asset_manifest": [
+    {
+      "path": "styles/backrooms/demo/fonts/fonts.css",
+      "sha256": "5cdedae4ef5108318c214d741dcfbec89125da93db7a82a51cc975b185864e27",
+      "bytes": 759
+    }
+  ]
+}

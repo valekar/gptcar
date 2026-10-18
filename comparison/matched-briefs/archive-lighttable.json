@@ -1,0 +1,941 @@
+{
+  "schema_version": "matched-original-brief-v2-audit-1",
+  "slug": "archive-lighttable",
+  "status": "reference-audited-original-assets-restored",
+  "original_title": "Two Seconds Short",
+  "original_title_aliases_from_demo": [
+    "Demo: *Two Seconds Short* 《差两秒》 (40.0 s) · `archive-lighttable.mp4` · source in [`demo/`](demo/)",
+    "",
+    "The Wright brothers' flights of 17 December 1903 on a light table, told through five Library of Congress items: two glass negatives, a telegram, a newspaper clipping, and a third negative as a prop. It is an unofficial film about a real event, made only from public-domain scans. Chinese on screen, English narration, bilingual subtitles (Chinese line above, English below). Every fact and its source is in [`demo/FACTS.md`](demo/FACTS.md)."
+  ],
+  "published_premise_verbatim": "The telegram said the longest flight lasted 57 seconds and the newspaper printed it; under a loupe, the Wright brothers' glass negatives and the Library of Congress record say 59.",
+  "published_premise_zh_verbatim": "电报说最长一次飞了 57 秒，第二天报纸照登；放大镜下，莱特兄弟的玻璃底片和国会图书馆的记录说是 59 秒。",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "verbatim_original_conversation_prompt": null,
+    "published_brief_statement": null,
+    "reconstructed_replication_instruction": "Recreate the full published Two Seconds Short scene order, story, exact narration and screen text at original timing/resolution/fps, including all specified subjects, performance, mechanisms, lens/light/material treatment, transitions and sonic hits. This is a reconstruction from published sources, not a quoted original conversational prompt.",
+    "reconstruction_basis": [
+      "Complete published STYLE.md and DEMO.md",
+      "Published narration, cards and timing source",
+      "Original movie: all regular contact sheets and named key-event frames"
+    ]
+  },
+  "original_format": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24.0,
+    "duration_s_exact_timeline": 40,
+    "duration_s_gallery_rounded": 40.0,
+    "duration_s_published_demo_text": "40.0",
+    "video_stream_metadata_verified": true,
+    "note": "Encoded target is frame_count/fps, not rounded catalogue or container audio duration.",
+    "frame_count": 960,
+    "duration_s": 40.0,
+    "container_duration_s": 40.0,
+    "production_canvas_width": 1920,
+    "production_canvas_height": 1080
+  },
+  "source_authorship": "Historical original by Lemomo/LemoLab using Claude Opus5.5. New output must identify actual GPT authorship and attribute any reused generic components.",
+  "source_hashes": [
+    {
+      "path": "styles/archive-lighttable/STYLE.md",
+      "sha256": "2f18ac9a42822b7a9941866c42b0642e5417dea5431d61f141f6e11b29c1ec14"
+    },
+    {
+      "path": "styles/archive-lighttable/DEMO.md",
+      "sha256": "4af757c7958912a10567f4005020e3ae989f82b7f28b45f552ae5fd340269bc0"
+    },
+    {
+      "path": "styles/archive-lighttable/style.json",
+      "sha256": "9f6647c3456c99117748a065cb1ec67e85a284b5d0f87e440558049a778b116b"
+    },
+    {
+      "path": "styles/archive-lighttable/demo/timeline.js",
+      "sha256": "dc7e95d5202d9b6f29518afa09ecf78eec006bd62b7225b4c03f9dcc8de12606"
+    },
+    {
+      "path": "styles/archive-lighttable/demo/voice/lines.json",
+      "sha256": "22b17c5cd1e59fc118271c7af774a786433c3d21bb8e0a589c7209ab4b9771c6"
+    }
+  ],
+  "style_guide_sha256": "2f18ac9a42822b7a9941866c42b0642e5417dea5431d61f141f6e11b29c1ec14",
+  "style_guide_verbatim": "# Archive Light Table — Style Prompt\n\n> Real archive objects (glass negatives, slides, letters, telegrams, clippings, drawings) lie on a cool, backlit light table. A loupe comes down on one of them, and inside the glass the object comes alive: a negative turns positive, a line of type lights up, a number lifts off the page, a photograph opens into depth. Precise catalogue numbers, dates and readings are pinned to the objects. Clean, modern and quiet, with no vintage filter.\n> References (grammar only): archive documentaries that push into still photographs; visual investigations that annotate real imagery (one line, one reading, one source per screen); product macro films (glass edges, transmitted light). Copy none of their layouts, typefaces, shots or music, and never name them in the film.\n\n## 1. Essence, and what it is not\n\n- **The objects are real**: scans of public-domain or licensed archive items, at their true proportions, with their real damage (broken corners, emulsion edges, folds, pencil marks). Nothing in them is drawn or generated.\n- **Light comes from below**: the table glows a near-white cool grey; film and glass transmit it, paper glows warm at its edges, opaque things read darker than the table.\n- **The loupe is the camera's door**: every dive into an object goes through a loupe that lands on it. The inside of the lens is where the object changes state.\n- **Catalogue truth**: every object carries its real identifier, date and title from its holder; numbers on screen come from the record.\n- **One signal colour** for marks, readings and anchors; everything else is the archive's own greys and paper tones.\n\n**Sources and licences.** Open collections with masters and catalogue records: the Library of Congress (files on `tile.loc.gov`; records from its SRU server `lx2.loc.gov:210/lcdb` when loc.gov pages are blocked), Smithsonian Open Access (CC0), the Rijksmuseum (CC0), NARA, Europeana (check each item's rights statement). CC0, public domain and CC BY (credited) are fine. \"No known restrictions\", CC BY-SA and other terms are not CC0: name the terms to the user and ask. For brand history, ask the user for their scans, archive numbers and right to use them. Never stand a generated image in for an archive object. Keep a `FACTS.md` in the project folder (claim, source URL, quoted wording, or how a figure was derived) and deliver it with the film.\n\nNot Halftone Dossier (no newsprint dots, no aged-paper grade), not Satellite Briefing (objects on a table, not the ground from orbit), not Data Storytelling (no charts; the numbers live on the objects), not a keynote (no slides or header bars).\n\n## 2. Materials & rendering\n\n- **One world, one camera**: every object is a textured quad on the table with a centre, rotation and scale (texture px → world units at true size). The camera is a 2D centre, zoom and roll; the table and every mark go through the same world → screen function.\n- **The light table**: an emissive surface (≈ 0.97 white, slightly cool), soft falloff, diffuser noise, an aluminium frame and a dark desk beyond. It can be switched off (ambient ≈ 0.04) and flicker on.\n- **Glass negatives**: transmission from the scan's positive, `T = 0.035 + 0.9 · (1 − pos)^1.25`, with a warm silver-gelatin tint; the emulsion mask comes from the scan (white margin touching the border = no glass), so broken corners show the table. Dust and scratches are procedural, anchored to the table.\n- **Paper**: backlit, its colour is transmission (paper tone × light); lit lines get darker ink and brighter paper; unlit text can dim to bring one line forward.\n- **The loupe**: inside the lens each pixel maps back to the table through the magnification (≈ 2.5×) with a pincushion term (k ≈ 0.16 at the rim), slightly different per RGB channel for colour fringes. Around it: a black ring with a bevel highlight and a clear acrylic skirt that refracts the table and glows at its foot. Landing and lifting, it scales by about 1.35× and casts a soft shadow.\n- **The photograph space**: after the push the lens stops being a lens. A photo gains depth from a ground-plane nearness map (zero at the horizon, linear in the row below it), cut-out layers for upright subjects and a filled background; a dolly and a lateral shift drive parallax, and a subject layer may drift. Things left on the ground plane lean: centre the dolly between them.\n- **Sampling**: all texture reads inside the branching lens code use explicit gradients (`textureGrad`), otherwise quads that cross a branch pick a wrong mip level and leave dashed seams.\n- **Marks** live on a 2D canvas above the picture: hairlines 1.5–3 px, rings, crop corners, underlines, leaders. Table marks are clipped out under the loupe; marks inside a photograph use its forward mapping, parallax included.\n- **Post**: a light vignette and fine moving grain (heavier inside photographs). No film damage, no sepia, no halftone.\n\n## 3. Colour logic\n\n- Neutral ground: the light table (near-white, cool) and the archive's own tones (silver greys, paper tans). Do not regrade the archive into a colour scheme.\n- **One signal colour** (e.g. a signal orange) for marks, readings, anchors and the verdict; never as a fill behind pictures, never for decoration.\n- Text is ink (near-black) on light areas and paper-white on dark caption plates; choose the contrast by the ground, never colour on colour.\n- Positives inside the lens may be gently levelled (black and white points) so a weak scan reads; negatives stay as the glass gives them.\n\nExample (our demo): table #F7F9FB, ink #15171A, signal #FF5A1F, caption plates rgba(14,15,17,0.74).\n\n## 4. Type & subtitles\n\n- **Roles**: a monospace for identifiers, dates and readings (e.g. IBM Plex Mono, 17–34 px; readings 74–120 px); a sans for labels in the film's language (e.g. Noto Sans SC or Inter, 21–36 px); a serif only for titles and the one name a photograph carries (60–76 px). OFL, self-hosted, CJK subset when needed.\n- **Labels attach to objects**: an anchor dot and ring, a vertical leader, then the text. A reading sits in a dark caption plate with a small label above and the source (the catalogue number or the original wording) below.\n- **Subtitles** are a caption strip at the bottom centre, on a dark plate with a 3 px signal-coloured edge. If the film is bilingual, the film's language goes on top. Hold ≥ max(1.8 s, speech + 0.6 s).\n- **Quote the source when you can**: a crop of the actual line, or the record's wording in quotation marks, beats a paraphrase.\n\n## 5. Motion quality\n\n- 24 fps on ones; every camera parameter on smooth monotone curves through keys (no overshoot, no stepping).\n- The camera glides across the table, slows to let the loupe land, then pushes. Speed lives in the glides and pushes; holds are for reading.\n- The loupe lands with a fast ease-out (≈ 0.4 s), lifts the same way. Lines draw on in 0.3–0.6 s; text wipes in from its leader side; numbers count up and land with the voice.\n- What never moves: the archive's own content outside a photograph space, and the table itself.\n\n## 6. Camera grammar\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| table glide (pan and roll) | surveying; moving to the next piece of evidence | a timeline of documents; a product family; an album |\n| loupe landing + push into the lens | choosing one object; \"look closer\" | the claim; the key photograph; a signature |\n| inside the lens: tracking along a line | reading | a letter, a ledger line, a caption, a spec |\n| photograph space: dolly + parallax | being there | the event itself; the founding moment; the place |\n| rise out of the lens | stepping back, the evidence noted | a transition; a summary |\n| pull back to the whole table | scale; everything at once | an index, a timeline, a closing |\n\nFraming: at a reading moment the subject fills at least a third of the frame height; readings and labels stay clear of the subtitle strip (bottom 140 px). Transitions are made by the loupe (land, push, rise, lift) and the glide; no cuts, fades to black or page turns between objects.\n\n## 7. Sound palette\n\n- **Ambience**: the light table's ballast hum (100 Hz and harmonics), starter clicks, room tone. Inside a photograph the hum gives way to that place's air.\n- **Foley**: the loupe on glass (a clack with a high ring), paper sweeps for glides and lit lines, ticks for scales and counters, a pen stroke for a verdict, soft clicks as labels land.\n- **Music**: restrained and small: a felt piano, a few strings, glass or bowed metal for the moments of seeing. Build by subdivision and register, not by drums. Leave real silences before a reveal or a verdict; the first sound after them should be the loupe, the place or the verdict.\n- **Voice**: a calm narrator, short sentences that state what the object says. Music about 10 dB under the voice, ducked while it speaks; −14 LUFS.\n\n## 8. Native moves\n\n- **Negative to positive under the loupe.** A develop front spreads from the lens centre with a thin warm edge, turning the glass negative into its positive only inside the lens. *Fits content like:* a founder's portrait plate; a factory on a lantern slide; an X-ray film becoming the product inside.\n- **The line lights up.** On paper inside the lens one line of type brightens while the rest dims, an underline draws under it, and one word or number lifts out into a reading card. *Fits content like:* a ledger entry; a patent claim; the first order on an invoice.\n- **Into the photograph.** The lens rim grows past the frame while the view inside widens; the photograph gains layered depth and a subject drifts. *Fits content like:* the first shop front; a launch day crowd; an expedition camp.\n- **Measuring on the photograph.** A ruler laid on the ground plane in perspective, with ticks that crowd toward the horizon and a counter that lands on the recorded figure, marked as a schematic when it is one. *Fits content like:* a race distance; a bridge span; a building's height.\n- **Two records, held side by side.** Two caption cards, each with a crop of its source, held still until both are read before one is struck. *Fits content like:* a misprinted date; two versions of a founding story; specification against delivery.\n- **The table becomes the index.** Pull back to the whole table; each object's tag flies into one list with its identifier and its reading. *Fits content like:* a company timeline; a collection catalogue; a product family.\n\n## 9. Pitfalls of the medium\n\n- **Over-magnifying a weak scan**: keep the lens interior under about 1.5 screen px per scan px; choose items by scan size.\n- **The loupe sweeping over empty table**: lay objects close together, land the loupe straight onto the object (drop in, don't slide in), and glide the camera over objects, not gaps.\n- **Shear in the photograph space**: one depth map for a photo with people or machines in it tears them apart. Cut upright subjects into layers, fill behind them, and keep 2.5D moves small enough that the fill is barely seen.\n- **Labels that scroll away**: a label on a moving table leaves the frame before it is read; hold the camera, or fix the caption on screen.\n- **Vintage creep**: no sepia, no halftone, no paper-ageing overlay. The age is in the objects, not the grade.\n\n## 10. Engine\n\n- `demo/film.js`: `IT` (objects: centre, rotation, scale), `toW()` / `toT()` (texture ↔ world), `CAM` keys and `w2s()`, `dive()` (loupe point, land/lift times, lens interior as tracks), `shot(t)`, `int2s()` (photograph → screen for marks), the shader (`lightTable`, `paper`, `negative`, `parallax`, rim and skirt), the overlay (`annot`, `measure`, `compare`, `indexPanel`).\n- `demo/tools/prep.py`: emulsion masks from scans, difference matting of a subject against a smooth sky, ground-only cuts, push-pull fill.\n- Minimal example, not in the demo: put one 35 mm slide (`IT.slide = {c, r, k, size}`), a loupe landing with `dive(toW(IT.slide, p), t0, t1, keysS, keysC)`, and light one line with `band()`.\n- **Extra packages and packs**: none beyond `setup.sh deps voice music` (numpy, scipy, Pillow, soxr are in the core tier). A score in this palette needs sample libraries: `sh tools/fetch.sh instruments salamander` (piano), `vsco2ce` (strings), `vcsl` (glass, bowed vibraphone). Anything else a film needs goes into a private venv or `node_modules` in the project folder, never into `$LIB/.venv`.\n\n## 11. Variation space\n\nThe agent decides the objects, their order, the story, which native moves to spend and where, the camera path, the subject of the photograph space, and the signal colour.\n\n- **Three structures**: a company's founding told as five objects in date order, each dive revealing one person; a single photograph explored in three dives (the place, the people, the date on the back); a before/after pair of plans and photographs of one building.\n- **Three openings**: the table switching on in the dark; a loupe already on a plate, rising to reveal the table; a hand-written date on an envelope filling the frame.\n- **Three endings**: the index of everything on the table; the last photograph held in depth with one line of text; the light table switching off, leaving one object glowing.\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n",
+  "published_demo_verbatim": "# Archive Light Table — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *Two Seconds Short* 《差两秒》 (40.0 s) · `archive-lighttable.mp4` · source in [`demo/`](demo/)\n\nThe Wright brothers' flights of 17 December 1903 on a light table, told through five Library of Congress items: two glass negatives, a telegram, a newspaper clipping, and a third negative as a prop. It is an unofficial film about a real event, made only from public-domain scans. Chinese on screen, English narration, bilingual subtitles (Chinese line above, English below). Every fact and its source is in [`demo/FACTS.md`](demo/FACTS.md).\n\n## Story & structure\n\nLogline: the telegram said the longest flight lasted 57 seconds, and the next day's paper printed it; the glass negatives and the Library's record say 59.\n\nArc: the claim (the table switches on; a loupe lands on Orville's telegram; inside the lens the lines light up and \"57\" lifts out as a reading) → the echo (the camera rises and glides to the Dayton Herald clipping, where the same sentence is underlined and its 57 ringed) → the evidence, which is also the emotional peak (the loupe lands on the first-flight negative, the negative turns positive inside the lens, the camera falls through the lens into the photograph, and the Flyer separates from the horizon and drifts forward; 12 s, 120 ft) → the measurement (the fourth-flight negative: a ruler laid on the ground plane from the camera to the tiny machine on the horizon; 852 ft, 59 s) → the verdict (57 and 59 side by side, held still 2.7 s, then 57 is struck: \"差 2 秒\") → the ending (pull back to the whole table; every object's tag flies into one archive index; end card).\n\nNative moves spent: *the line lights up* on the telegram and the clipping; *negative to positive under the loupe* and *into the photograph* for the first flight (the signature, at the peak); *measuring on the photograph* for the fourth flight; *two records, held side by side* for the verdict; *the table becomes the index* for the ending.\n\n## Shots\n\nOne continuous camera over one table; framing changes by zoom and by passing through the loupe. Times in seconds.\n\n| # | Time | Shot | Camera | Native move / note |\n|---|---|---|---|---|\n| 1 | 0.0–1.3 | the dark table flickers on (0.0, 0.17, 0.42, 0.55; steady at 0.67); the telegram fills two thirds of the frame, the clipping at the bottom edge | glide toward the telegram with a 4° roll that levels it | the starter clicks and hum are the first sounds |\n| 2 | 1.3–2.0 | the loupe drops onto the telegram (scale 1.35 → 1, shadow tightening) | settles | glass clack on the beat |\n| 3 | 2.0–3.3 | push into the lens: the rim passes the frame while the view inside widens to the whole message | zoom 0.31 → 1.5 | the date line lights at 2.67 |\n| 4 | 3.3–9.3 | inside the telegram: \"Success four flights …\" lights at 4.0, \"… longest 57 seconds …\" at 7.33, each with an underline; the rest of the paper dims; 57 is ringed at 8.0 and a reading card \"电报 · 最长一次 57 秒\" draws out to the right | slow track along the lines, then a push onto 57 | reading |\n| 5 | 9.3–11.3 | rise out of the lens; the loupe lifts at 10.33; the card stays on screen until 11.4 | zoom out and glide down-right | a ring stays on the telegram's 57 |\n| 6 | 11.3–13.3 | the Dayton Herald clipping: \"longest time in air was 57 seconds.\" lights and underlines at 12.0, its 57 ringed at 12.33; a caption plate \"1903.12.18 / 代顿先驱报\" held still on the right | push in with a 4° roll | the echo |\n| 7 | 13.3–14.7 | glide to the first-flight negative; crop corners (the 16:9 frame the photograph will open to) | glide and settle | the loupe lands at 14.67 |\n| 8 | 14.7–16.0 | inside the lens the negative; a develop front from the centre turns it positive (15.0–15.8); readout \"×2.5 负像 → 正像\" | hold | |\n| 9 | 16.0–18.0 | **signature**: the rim grows past the frame while the view inside widens, under a riser and the strings; at 17.6 the sound is sucked out; at 18.0 we are inside the photograph | zoom 0.335 → 1.45; inside 0.84 → 0.56 px per scan px | no narration through the push; the full chord lands at 18.0 and the narrator starts at 18.35 |\n| 10 | 18.0–22.7 | the photograph in depth: the Flyer (its own layer) drifts 125 px forward and up against the horizon; the sand swells under a dolly; wind over the dunes; labels \"第一次飞行 / 12 秒 · 120 英尺 · 上午 10:35\", \"威尔伯·莱特\", \"快门：John T. Daniels\" | dolly (0.55) + lateral shift (260, −140) about the Flyer's depth | near-silence from 21.3: wind only |\n| 11 | 22.7–24.7 | rise out of the photograph; glide over the 14 December plate to the fourth-flight negative | zoom out, glide right | |\n| 12 | 24.7–26.3 | the loupe lands; push in; the positive already shows (the viewer stays switched on) | zoom 0.31 → 1.45 | |\n| 13 | 26.3–30.0 | the ruler: from the bottom edge (the camera, the start) to the machine on the horizon, ticks every 100 ft crowding into perspective, labels 100 / 200 / 400; the reading counts 852 ft (lands 28.67) and 59 s (lands 30.0); \"落地点\" ringed | push toward the machine (0.62 → 1.3) with a ground-plane dolly | ticks on every 100 ft |\n| 14 | 30.0–33.3 | two caption cards: the telegram's own line (a crop of the scan) \"57 秒\", the record's wording \"852 feet covered in 59 seconds.\" \"59 秒\"; held still 2.67 s; silence from 32.8 | locked | comparison held before the verdict |\n| 15 | 33.3–35.9 | 57 struck in signal orange, \"差 2 秒\" | locked, then the rise begins under the cards at 35.0 | the strike lands on low D after the silence |\n| 16 | 35.9–40.0 | pull back to the whole light table in its frame on the dark desk; five tags fly into \"档案索引\" (the two 57s struck); end card at 36.33 | zoom to 0.094, roll to level | scale reveal |\n\n## Score structure\n\n90 BPM, 4/4; every key action on a beat or half-beat (`demo/tools/cuecheck.mjs`), except the two breaths (17.6, 32.8), which sit just before their downbeats by design. B minor turning to D major.\n\n| Section | Time | Palette | Notes |\n|---|---|---|---|\n| Light | 0–2.7 | piano D5 with the light; hum and starter clicks | |\n| Telegram | 2.7–10.7 | felt piano broken chords in eighths, Bm–G–D–A; a paper sweep and a glass ring on each lit line; cellos D3 and violas A3 enter under the 57 | |\n| Clipping | 10.7–13.3 | the same broken chords, quieter (Bm, G) | an echo |\n| First flight | 13.3–23.6 | D at the glide; strings swell from the develop (attack 1.6 s), piano climbs D4 → A5 in eighths and a noise riser rises through the push; everything is cut at 17.6; at 18.0 the full D chord (piano D2–A4, strings, contrabass D2, glass D6, a soft cymbal), then a falling line A4–F♯4–D4–E4–F♯4 | wind and surf replace the hum inside the photograph |\n| Measure | 26.3–32.8 | piano eighths on an A-major pedal, getting slightly louder; cellos A3 and violas E4 underneath; ticks every 100 ft; glass A5 at 852, E6 at 59 | acceleration by density, not tempo |\n| Verdict | 32.8–33.3 | silence (hum only) | |\n|  | 33.3 | pen stroke, piano D2/D3/A3, glass D6, soft timpani D3 | |\n| End | 35.7–40.0 | the theme in D (F♯4–A4–D5–C♯5–A4), ticks as index rows land; the final D chord with strings and bowed vibraphone at 36.33 | |\n\nMix (in `mix.py`): music about 11 dB under the voice before ducking, ducked a further ~5 dB while the narrator speaks; foley 9 dB under the voice, beds 24 dB under; a 38 Hz high-pass on everything but the voice; a master limiter keeps the peak-to-RMS ratio near 11.5 dB so `mux.sh` can reach −14 LUFS under −1.2 dBTP.\n\n## Palette & props\n\n- Table #F7F9FB with a brushed-aluminium frame and a dark desk (#0E0F11); ink #15171A; signal orange #FF5A1F; caption plates rgba(14,15,17,0.74).\n- Props (all Library of Congress, true scale, 5000 world units = 7 in): telegram (LC-USZ62-65459 / mcc.061), Dayton Herald clipping (LC-USZ62-70686), first-flight negative (LC-DIG-ppprs-00626), fourth-flight negative (LC-DIG-ppprs-00629), 14 December negative (LC-DIG-ppprs-00610).\n- The loupe: 2.5×, lens radius 1000 world units (≈ 1.4 in).\n- Narrator: Kokoro `bm_george`, speeds 0.92–1.0.\n\n## End card\n\nOver the pulled-back table, bottom left: 差两秒 (Noto Serif SC), *Two Seconds Short*, a signal-orange rule, `ARCHIVE LIGHT TABLE` 档案灯台, `LemoLab × Claude Opus 5.5`; the archive index on the right. 3.7 s. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Build notes\n\n```\ndemo/\n  build.sh          one command: (FETCH) scans + textures + fonts → voice → speech check → cues → cue grid →\n                    video → mix → master → .srt → subtitle widths → readcheck → poster + style frame\n  index.html        two canvases (WebGL2 picture, 2D marks), fonts\n  film.js           the table, camera keys, the three dives, the shader, every mark, readouts, index, end card, subtitles\n  timeline.js       beats, key actions, narration, subtitle cues (single source; tools/export.mjs → out/timeline.json, out/cues.json)\n  mix.py            score, foley, beds, voice, mix → out/mix.wav + out/stems/\n  tools/            prep.py (masks, layers, fill), fonts.py, sru.py (LoC catalogue lookups), export.mjs,\n                    cuecheck.mjs, subcheck.mjs\n  sources/          the Library of Congress catalogue records (MARCXML) behind FACTS.md\n  assets/           raw/ (downloads), tex/ (textures the page reads)\n  FACTS.md, CREDITS, TREATMENT.md, PRODUCTION_LOG.md, stills/styleframe.jpg\n```\n\n- `sh demo/build.sh` takes about 4 minutes on Apple silicon (the picture renders in about 40 s with 4 workers; the master pass is the slowest step). From a clean clone it first fetches what git does not hold: the fonts from Google Fonts (`tools/fonts.py`), the Kokoro model and the salamander, vsco2ce and vcsl sample libraries (`tools/fetch.sh`), and about 100 MB of Library of Congress scans, which `tools/prep.py` turns into textures (about 25 s). `FETCH=1` forces the fonts and scans again.\n- Checks it runs: `asr_check.py` with `small.en` (two lines carry an `asr` field: Whisper writes \"17th, 1903\" for the spoken date and hears \"four flights\" as \"for flights\"), the cue grid, subtitle single-line widths measured with the real fonts (widest 648 px against 1500 px), `readcheck.mjs`.\n- Demo-specific pitfalls: loc.gov item pages sit behind a Cloudflare challenge, so the catalogue records come from the Library's SRU server (`lx2.loc.gov:210/lcdb`) and the files from `tile.loc.gov`; in the first-flight plate the sky can be unmixed exactly against a smooth membrane, but the sand cannot, so below the horizon only strong marks are cut (lower wing, skids, struts; a vertical-line filter catches thin struts) and the rest stays on the ground; the fourth-flight scan is low in contrast and gets its own levels in the positive; the clipping is a low-resolution copy, so the camera never pushes past about 0.66 zoom on it.\n",
+  "canonical_scene_order": [
+    {
+      "id": "1",
+      "t0": 0.0,
+      "t1": 1.3,
+      "published_time_range": "0.0–1.3",
+      "visual_prompt_source_description": "the dark table flickers on (0.0, 0.17, 0.42, 0.55; steady at 0.67); the telegram fills two thirds of the frame, the clipping at the bottom edge",
+      "camera": "glide toward the telegram with a 4° roll that levels it",
+      "motion_transition_sound_notes": "the starter clicks and hum are the first sounds",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "L1"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/frames/f-0001.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "2",
+      "t0": 1.3,
+      "t1": 2.0,
+      "published_time_range": "1.3–2.0",
+      "visual_prompt_source_description": "the loupe drops onto the telegram (scale 1.35 → 1, shadow tightening)",
+      "camera": "settles",
+      "motion_transition_sound_notes": "glass clack on the beat",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/frames/f-0002.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "3",
+      "t0": 2.0,
+      "t1": 3.3,
+      "published_time_range": "2.0–3.3",
+      "visual_prompt_source_description": "push into the lens: the rim passes the frame while the view inside widens to the whole message",
+      "camera": "zoom 0.31 → 1.5",
+      "motion_transition_sound_notes": "the date line lights at 2.67",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/frames/f-0003.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "4",
+      "t0": 3.3,
+      "t1": 9.3,
+      "published_time_range": "3.3–9.3",
+      "visual_prompt_source_description": "inside the telegram: \"Success four flights …\" lights at 4.0, \"… longest 57 seconds …\" at 7.33, each with an underline; the rest of the paper dims; 57 is ringed at 8.0 and a reading card \"电报 · 最长一次 57 秒\" draws out to the right",
+      "camera": "slow track along the lines, then a push onto 57",
+      "motion_transition_sound_notes": "reading",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "L2",
+        "L3"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/frames/f-0007.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "5",
+      "t0": 9.3,
+      "t1": 11.3,
+      "published_time_range": "9.3–11.3",
+      "visual_prompt_source_description": "rise out of the lens; the loupe lifts at 10.33; the card stays on screen until 11.4",
+      "camera": "zoom out and glide down-right",
+      "motion_transition_sound_notes": "a ring stays on the telegram's 57",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "L4"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/frames/f-0011.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "6",
+      "t0": 11.3,
+      "t1": 13.3,
+      "published_time_range": "11.3–13.3",
+      "visual_prompt_source_description": "the Dayton Herald clipping: \"longest time in air was 57 seconds.\" lights and underlines at 12.0, its 57 ringed at 12.33; a caption plate \"1903.12.18 / 代顿先驱报\" held still on the right",
+      "camera": "push in with a 4° roll",
+      "motion_transition_sound_notes": "the echo",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/frames/f-0013.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "7",
+      "t0": 13.3,
+      "t1": 14.7,
+      "published_time_range": "13.3–14.7",
+      "visual_prompt_source_description": "glide to the first-flight negative; crop corners (the 16:9 frame the photograph will open to)",
+      "camera": "glide and settle",
+      "motion_transition_sound_notes": "the loupe lands at 14.67",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/frames/f-0014.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "8",
+      "t0": 14.7,
+      "t1": 16.0,
+      "published_time_range": "14.7–16.0",
+      "visual_prompt_source_description": "inside the lens the negative; a develop front from the centre turns it positive (15.0–15.8); readout \"×2.5 负像 → 正像\"",
+      "camera": "hold",
+      "motion_transition_sound_notes": "",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/frames/f-0016.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "9",
+      "t0": 16.0,
+      "t1": 18.0,
+      "published_time_range": "16.0–18.0",
+      "visual_prompt_source_description": "**signature**: the rim grows past the frame while the view inside widens, under a riser and the strings; at 17.6 the sound is sucked out; at 18.0 we are inside the photograph",
+      "camera": "zoom 0.335 → 1.45; inside 0.84 → 0.56 px per scan px",
+      "motion_transition_sound_notes": "no narration through the push; the full chord lands at 18.0 and the narrator starts at 18.35",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/frames/f-0018.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "10",
+      "t0": 18.0,
+      "t1": 22.7,
+      "published_time_range": "18.0–22.7",
+      "visual_prompt_source_description": "the photograph in depth: the Flyer (its own layer) drifts 125 px forward and up against the horizon; the sand swells under a dolly; wind over the dunes; labels \"第一次飞行 / 12 秒 · 120 英尺 · 上午 10:35\", \"威尔伯·莱特\", \"快门：John T. Daniels\"",
+      "camera": "dolly (0.55) + lateral shift (260, −140) about the Flyer's depth",
+      "motion_transition_sound_notes": "near-silence from 21.3: wind only",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "L5"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/frames/f-0021.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "11",
+      "t0": 22.7,
+      "t1": 24.7,
+      "published_time_range": "22.7–24.7",
+      "visual_prompt_source_description": "rise out of the photograph; glide over the 14 December plate to the fourth-flight negative",
+      "camera": "zoom out, glide right",
+      "motion_transition_sound_notes": "",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/frames/f-0024.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "12",
+      "t0": 24.7,
+      "t1": 26.3,
+      "published_time_range": "24.7–26.3",
+      "visual_prompt_source_description": "the loupe lands; push in; the positive already shows (the viewer stays switched on)",
+      "camera": "zoom 0.31 → 1.45",
+      "motion_transition_sound_notes": "",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "L7"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/frames/f-0026.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "13",
+      "t0": 26.3,
+      "t1": 30.0,
+      "published_time_range": "26.3–30.0",
+      "visual_prompt_source_description": "the ruler: from the bottom edge (the camera, the start) to the machine on the horizon, ticks every 100 ft crowding into perspective, labels 100 / 200 / 400; the reading counts 852 ft (lands 28.67) and 59 s (lands 30.0); \"落地点\" ringed",
+      "camera": "push toward the machine (0.62 → 1.3) with a ground-plane dolly",
+      "motion_transition_sound_notes": "ticks on every 100 ft",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/frames/f-0029.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "14",
+      "t0": 30.0,
+      "t1": 33.3,
+      "published_time_range": "30.0–33.3",
+      "visual_prompt_source_description": "two caption cards: the telegram's own line (a crop of the scan) \"57 秒\", the record's wording \"852 feet covered in 59 seconds.\" \"59 秒\"; held still 2.67 s; silence from 32.8",
+      "camera": "locked",
+      "motion_transition_sound_notes": "comparison held before the verdict",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/frames/f-0032.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "15",
+      "t0": 33.3,
+      "t1": 35.9,
+      "published_time_range": "33.3–35.9",
+      "visual_prompt_source_description": "57 struck in signal orange, \"差 2 秒\"",
+      "camera": "locked, then the rise begins under the cards at 35.0",
+      "motion_transition_sound_notes": "the strike lands on low D after the silence",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "L8"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/frames/f-0035.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "16",
+      "t0": 35.9,
+      "t1": 40.0,
+      "published_time_range": "35.9–40.0",
+      "visual_prompt_source_description": "pull back to the whole light table in its frame on the dark desk; five tags fly into \"档案索引\" (the two 57s struck); end card at 36.33",
+      "camera": "zoom to 0.094, roll to level",
+      "motion_transition_sound_notes": "scale reveal",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/frames/f-0038.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    }
+  ],
+  "narration": [
+    {
+      "id": "L1",
+      "t0": 0.42,
+      "duration_s_original_voice": 2.889,
+      "tts_text_verbatim": "December seventeenth, nineteen oh three.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "L1",
+        "text": "December seventeenth, nineteen oh three.",
+        "voice": "bm_george",
+        "speed": 0.95,
+        "asr": "December 17th, 1903"
+      }
+    },
+    {
+      "id": "L2",
+      "t0": 3.55,
+      "duration_s_original_voice": 3.244,
+      "tts_text_verbatim": "Orville wired home: success, four flights.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "L2",
+        "text": "Orville wired home: success, four flights.",
+        "voice": "bm_george",
+        "speed": 0.95,
+        "asr": "Orville wired home. Success for flights."
+      }
+    },
+    {
+      "id": "L3",
+      "t0": 6.95,
+      "duration_s_original_voice": 2.601,
+      "tts_text_verbatim": "The longest, fifty-seven seconds.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 0.92,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "L3",
+        "text": "The longest, fifty-seven seconds.",
+        "voice": "bm_george",
+        "speed": 0.92
+      }
+    },
+    {
+      "id": "L4",
+      "t0": 10.85,
+      "duration_s_original_voice": 2.796,
+      "tts_text_verbatim": "Next day, the paper printed the same number.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 0.98,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "L4",
+        "text": "Next day, the paper printed the same number.",
+        "voice": "bm_george",
+        "speed": 0.98
+      }
+    },
+    {
+      "id": "L5",
+      "t0": 18.35,
+      "duration_s_original_voice": 4.678,
+      "tts_text_verbatim": "The first flight lasted twelve seconds. One hundred and twenty feet.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 0.98,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "L5",
+        "text": "The first flight lasted twelve seconds. One hundred and twenty feet.",
+        "voice": "bm_george",
+        "speed": 0.98
+      }
+    },
+    {
+      "id": "L7",
+      "t0": 25.55,
+      "duration_s_original_voice": 4.812,
+      "tts_text_verbatim": "The fourth flight: eight hundred and fifty-two feet, in fifty-nine seconds.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1.0,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "L7",
+        "text": "The fourth flight: eight hundred and fifty-two feet, in fifty-nine seconds.",
+        "voice": "bm_george",
+        "speed": 1.0
+      }
+    },
+    {
+      "id": "L8",
+      "t0": 33.6,
+      "duration_s_original_voice": 2.718,
+      "tts_text_verbatim": "The telegram was two seconds short.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 0.92,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "L8",
+        "text": "The telegram was two seconds short.",
+        "voice": "bm_george",
+        "speed": 0.92
+      }
+    }
+  ],
+  "narration_source_path": "styles/archive-lighttable/demo/voice/lines.json",
+  "published_timeline_extracted": {
+    "BEAT": 0.6666666666666666,
+    "BPM": 90,
+    "DUR": 40,
+    "HIT": {
+      "lightOn": 0.6667,
+      "drop1": 1.3333,
+      "dive1": 2,
+      "lineDate": 2.6667,
+      "lineSuccess": 4,
+      "line57": 7.3333,
+      "pull57": 8,
+      "rise1": 9.3333,
+      "lift1": 10.3333,
+      "newsLine": 12,
+      "ring57": 12.3333,
+      "drop2": 14.6667,
+      "develop": 15,
+      "dive2": 16,
+      "suck": 17.6,
+      "enter": 18,
+      "flyTitle": 18.6667,
+      "credit": 19.6667,
+      "rise2": 22.6667,
+      "drop3": 24.6667,
+      "dive3": 25,
+      "measure": 26.3333,
+      "land852": 28.6667,
+      "land59": 30,
+      "compare": 30.6667,
+      "hush": 32.8,
+      "verdict": 33.3333,
+      "rise3": 35,
+      "index": 35.6667,
+      "endCard": 36.3333
+    },
+    "SUBS": [
+      {
+        "id": "S1",
+        "line": "L1",
+        "zh": "1903 年 12 月 17 日。",
+        "en": "December 17, 1903."
+      },
+      {
+        "id": "S2",
+        "line": "L2",
+        "zh": "奥维尔给家里发电报：成功，飞了四次。",
+        "en": "Orville wired home: success, four flights."
+      },
+      {
+        "id": "S3",
+        "line": "L3",
+        "zh": "最长一次，57 秒。",
+        "en": "The longest, 57 seconds."
+      },
+      {
+        "id": "S4",
+        "line": "L4",
+        "zh": "第二天，报纸登出了同一个数字。",
+        "en": "Next day, the paper printed the same number."
+      },
+      {
+        "id": "S5a",
+        "line": "L5",
+        "zh": "第一次飞行持续了 12 秒。",
+        "en": "The first flight lasted 12 seconds."
+      },
+      {
+        "id": "S5b",
+        "line": "L5",
+        "from": "120",
+        "zh": "飞了 120 英尺。",
+        "en": "One hundred and twenty feet."
+      },
+      {
+        "id": "S7a",
+        "line": "L7",
+        "zh": "第四次飞行：852 英尺，",
+        "en": "The fourth flight: 852 feet,"
+      },
+      {
+        "id": "S7b",
+        "line": "L7",
+        "from": "in",
+        "zh": "用时 59 秒。",
+        "en": "in 59 seconds."
+      },
+      {
+        "id": "S8",
+        "line": "L8",
+        "zh": "电报少算了两秒。",
+        "en": "The telegram was two seconds short."
+      }
+    ],
+    "VOICE": [
+      {
+        "id": "L1",
+        "t": 0.42,
+        "text": "December seventeenth, nineteen oh three."
+      },
+      {
+        "id": "L2",
+        "t": 3.55,
+        "text": "Orville wired home: success, four flights."
+      },
+      {
+        "id": "L3",
+        "t": 6.95,
+        "text": "The longest, fifty-seven seconds."
+      },
+      {
+        "id": "L4",
+        "t": 10.85,
+        "text": "Next day, the paper printed the same number."
+      },
+      {
+        "id": "L5",
+        "t": 18.35,
+        "text": "The first flight lasted twelve seconds. One hundred and twenty feet."
+      },
+      {
+        "id": "L7",
+        "t": 25.55,
+        "text": "The fourth flight: eight hundred and fifty-two feet, in fifty-nine seconds."
+      },
+      {
+        "id": "L8",
+        "t": 33.6,
+        "text": "The telegram was two seconds short."
+      }
+    ]
+  },
+  "on_screen_text_inventory": {
+    "published_subtitle_file_verbatim": "1\n00:00:00,420 --> 00:00:03,510\n1903 年 12 月 17 日。\nDecember 17, 1903.\n\n2\n00:00:03,550 --> 00:00:06,910\n奥维尔给家里发电报：成功，飞了四次。\nOrville wired home: success, four flights.\n\n3\n00:00:06,950 --> 00:00:10,151\n最长一次，57 秒。\nThe longest, 57 seconds.\n\n4\n00:00:10,850 --> 00:00:14,246\n第二天，报纸登出了同一个数字。\nNext day, the paper printed the same number.\n\n5\n00:00:18,350 --> 00:00:21,020\n第一次飞行持续了 12 秒。\nThe first flight lasted 12 seconds.\n\n6\n00:00:21,060 --> 00:00:23,628\n飞了 120 英尺。\nOne hundred and twenty feet.\n\n7\n00:00:25,550 --> 00:00:28,380\n第四次飞行：852 英尺，\nThe fourth flight: 852 feet,\n\n8\n00:00:28,420 --> 00:00:30,962\n用时 59 秒。\nin 59 seconds.\n\n9\n00:00:33,600 --> 00:00:36,918\n电报少算了两秒。\nThe telegram was two seconds short.\n",
+    "cues_original_json": [],
+    "timeline_text_fields": {
+      "SUBS": [
+        {
+          "id": "S1",
+          "line": "L1",
+          "zh": "1903 年 12 月 17 日。",
+          "en": "December 17, 1903."
+        },
+        {
+          "id": "S2",
+          "line": "L2",
+          "zh": "奥维尔给家里发电报：成功，飞了四次。",
+          "en": "Orville wired home: success, four flights."
+        },
+        {
+          "id": "S3",
+          "line": "L3",
+          "zh": "最长一次，57 秒。",
+          "en": "The longest, 57 seconds."
+        },
+        {
+          "id": "S4",
+          "line": "L4",
+          "zh": "第二天，报纸登出了同一个数字。",
+          "en": "Next day, the paper printed the same number."
+        },
+        {
+          "id": "S5a",
+          "line": "L5",
+          "zh": "第一次飞行持续了 12 秒。",
+          "en": "The first flight lasted 12 seconds."
+        },
+        {
+          "id": "S5b",
+          "line": "L5",
+          "from": "120",
+          "zh": "飞了 120 英尺。",
+          "en": "One hundred and twenty feet."
+        },
+        {
+          "id": "S7a",
+          "line": "L7",
+          "zh": "第四次飞行：852 英尺，",
+          "en": "The fourth flight: 852 feet,"
+        },
+        {
+          "id": "S7b",
+          "line": "L7",
+          "from": "in",
+          "zh": "用时 59 秒。",
+          "en": "in 59 seconds."
+        },
+        {
+          "id": "S8",
+          "line": "L8",
+          "zh": "电报少算了两秒。",
+          "en": "The telegram was two seconds short."
+        }
+      ]
+    },
+    "titles_subtitles_palette_verbatim": "",
+    "palette_props_verbatim": "- Table #F7F9FB with a brushed-aluminium frame and a dark desk (#0E0F11); ink #15171A; signal orange #FF5A1F; caption plates rgba(14,15,17,0.74).\n- Props (all Library of Congress, true scale, 5000 world units = 7 in): telegram (LC-USZ62-65459 / mcc.061), Dayton Herald clipping (LC-USZ62-70686), first-flight negative (LC-DIG-ppprs-00626), fourth-flight negative (LC-DIG-ppprs-00629), 14 December negative (LC-DIG-ppprs-00610).\n- The loupe: 2.5×, lens radius 1000 world units (≈ 1.4 in).\n- Narrator: Kokoro `bm_george`, speeds 0.92–1.0.",
+    "end_card_verbatim": "Over the pulled-back table, bottom left: 差两秒 (Noto Serif SC), *Two Seconds Short*, a signal-orange rule, `ARCHIVE LIGHT TABLE` 档案灯台, `LemoLab × Claude Opus 5.5`; the archive index on the right. 3.7 s. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.",
+    "completion_note": "Exact visible typography/content must be checked in original video; this inventory preserves all published cue/title/prop specifications. Model authorship credit is a reference fact, never new-output attribution.",
+    "original_annotation_literal_sources": [
+      {
+        "path": "styles/archive-lighttable/demo/film.js",
+        "sha256": "7bbae48890418497baa15472d0fd793127f1145b55cc8769077168a0444a8ba5",
+        "original_literal_inventory": [
+          ");\nconst gl = cv.getContext(",
+          ", { preserveDrawingBuffer: true, antialias: false });\nconst ov = document.getElementById(",
+          ")}.), WIL = vec4(${WIL.join(",
+          "; c.textAlign = opt.align || ",
+          ";\n  c.fillText(s, x, y);\n  if (id && c.globalAlpha * (opt.alpha ?? 1) > 0.6) {\n    const m = c.measureText(s), wdt = m.width, x0 = opt.align === ",
+          " ? x - wdt : opt.align === ",
+          "; const wz = c.measureText(q.zh).width; c.font = ",
+          " });\n    c.restore();\n  }\n}\n\n// world-anchored item tags, revealed when the camera first meets the item and kept to the end\nconst TAGS = [\n  { id: ",
+          ", INK);\n    text(c, null, g.id2, 40 + c.measureText(g.zh).width + 16, 0, ",
+          ", ORANGE);\n      const d1 = seg(t, HIT.develop, HIT.develop + 0.3);\n      c.globalAlpha = la * (1 - d1); text(c, null, ",
+          ", PAPER);\n      c.globalAlpha = la * d1; text(c, null, ",
+          "],\n    ], HIT.rise2 + 0.35);\n    const wil = photoP1([4392 + st.wil[0], 1478], NW, st);\n    annot(c, t, HIT.flyTitle + 0.6, ",
+          ")[1]) : sz) * 1.05 + 10; }\n    const top = y, wmax = Math.max(...blocks.map(q => q[4]));\n    c.beginPath(); align === ",
+          ", INK);\n  }\n  // start\n  const s0 = sp([xAt(P2_START[1] - 60), P2_START[1] - 60]);\n  if (s0[1] < H - 120) { dot(c, s0, 5); text(c, null, ",
+          ");\n    if (prog >= 1 && panelA > 0.6) TXT.push({ id: ",
+          ", x0: 1454, y0: 176, x1: 1590, y1: 236 });\n    if (t >= HIT.land59 && panelA > 0.6) TXT.push({ id: ",
+          ");\n  // right: the plate record\n  plate(c, x2, y0, cw, ch, 1.15);\n  text(c, ",
+          "852 feet covered in 59 seconds.",
+          ");\n    }\n  }\n  c.restore();\n}\n\n// the index: every item",
+          "电报",
+          "57 秒",
+          "代顿先驱报",
+          "第一次飞行",
+          "12 秒 · 120 英尺",
+          "第四次飞行",
+          "59 秒 · 852 英尺",
+          "试飞受损",
+          "档案索引",
+          "ARCHIVE INDEX · 5",
+          "差两秒",
+          "Two Seconds Short",
+          "ARCHIVE LIGHT TABLE",
+          "档案灯台",
+          "LemoLab × Claude Opus 5.5"
+        ]
+      },
+      {
+        "path": "styles/archive-lighttable/demo/timeline.js",
+        "sha256": "dc7e95d5202d9b6f29518afa09ecf78eec006bd62b7225b4c03f9dcc8de12606",
+        "original_literal_inventory": [
+          "Kitty Hawk N C Dec 17",
+          "Success four flights ...",
+          "... longest 57 seconds ...",
+          "December seventeenth, nineteen oh three.",
+          "Orville wired home: success, four flights.",
+          "The longest, fifty-seven seconds.",
+          "Next day, the paper printed the same number.",
+          "The first flight lasted twelve seconds. One hundred and twenty feet.",
+          "The fourth flight: eight hundred and fifty-two feet, in fifty-nine seconds.",
+          "The telegram was two seconds short.",
+          "s word timestamps) and holds to the next cue of the line, or to the speech end + 0.6 s\nexport const SUBS = [\n  { id: "
+        ]
+      }
+    ]
+  },
+  "sound_recreation": {
+    "instruction": "Generate new voice and music; original mix/track reuse is not permitted by latest user instruction. Preserve full words, cadence windows, BPM, musical form, silence and picture-synchronous hits.",
+    "published_score_sound_spec_verbatim": "90 BPM, 4/4; every key action on a beat or half-beat (`demo/tools/cuecheck.mjs`), except the two breaths (17.6, 32.8), which sit just before their downbeats by design. B minor turning to D major.\n\n| Section | Time | Palette | Notes |\n|---|---|---|---|\n| Light | 0–2.7 | piano D5 with the light; hum and starter clicks | |\n| Telegram | 2.7–10.7 | felt piano broken chords in eighths, Bm–G–D–A; a paper sweep and a glass ring on each lit line; cellos D3 and violas A3 enter under the 57 | |\n| Clipping | 10.7–13.3 | the same broken chords, quieter (Bm, G) | an echo |\n| First flight | 13.3–23.6 | D at the glide; strings swell from the develop (attack 1.6 s), piano climbs D4 → A5 in eighths and a noise riser rises through the push; everything is cut at 17.6; at 18.0 the full D chord (piano D2–A4, strings, contrabass D2, glass D6, a soft cymbal), then a falling line A4–F♯4–D4–E4–F♯4 | wind and surf replace the hum inside the photograph |\n| Measure | 26.3–32.8 | piano eighths on an A-major pedal, getting slightly louder; cellos A3 and violas E4 underneath; ticks every 100 ft; glass A5 at 852, E6 at 59 | acceleration by density, not tempo |\n| Verdict | 32.8–33.3 | silence (hum only) | |\n|  | 33.3 | pen stroke, piano D2/D3/A3, glass D6, soft timpani D3 | |\n| End | 35.7–40.0 | the theme in D (F♯4–A4–D5–C♯5–A4), ticks as index rows land; the final D chord with strings and bowed vibraphone at 36.33 | |\n\nMix (in `mix.py`): music about 11 dB under the voice before ducking, ducked a further ~5 dB while the narrator speaks; foley 9 dB under the voice, beds 24 dB under; a 38 Hz high-pass on everything but the voice; a master limiter keeps the peak-to-RMS ratio near 11.5 dB so `mux.sh` can reach −14 LUFS under −1.2 dBTP.",
+    "original_voice_records": [
+      {
+        "id": "L1",
+        "text": "December seventeenth, nineteen oh three.",
+        "voice": "bm_george",
+        "speed": 0.95,
+        "asr": "December 17th, 1903"
+      },
+      {
+        "id": "L2",
+        "text": "Orville wired home: success, four flights.",
+        "voice": "bm_george",
+        "speed": 0.95,
+        "asr": "Orville wired home. Success for flights."
+      },
+      {
+        "id": "L3",
+        "text": "The longest, fifty-seven seconds.",
+        "voice": "bm_george",
+        "speed": 0.92
+      },
+      {
+        "id": "L4",
+        "text": "Next day, the paper printed the same number.",
+        "voice": "bm_george",
+        "speed": 0.98
+      },
+      {
+        "id": "L5",
+        "text": "The first flight lasted twelve seconds. One hundred and twenty feet.",
+        "voice": "bm_george",
+        "speed": 0.98
+      },
+      {
+        "id": "L7",
+        "text": "The fourth flight: eight hundred and fifty-two feet, in fifty-nine seconds.",
+        "voice": "bm_george",
+        "speed": 1.0
+      },
+      {
+        "id": "L8",
+        "text": "The telegram was two seconds short.",
+        "voice": "bm_george",
+        "speed": 0.92
+      }
+    ],
+    "original_voice_durations_s": {
+      "L1": 2.889,
+      "L2": 3.244,
+      "L3": 2.601,
+      "L4": 2.796,
+      "L5": 4.678,
+      "L7": 4.812,
+      "L8": 2.718
+    }
+  },
+  "engine_and_build": {
+    "required_engine_spec_verbatim": "- `demo/film.js`: `IT` (objects: centre, rotation, scale), `toW()` / `toT()` (texture ↔ world), `CAM` keys and `w2s()`, `dive()` (loupe point, land/lift times, lens interior as tracks), `shot(t)`, `int2s()` (photograph → screen for marks), the shader (`lightTable`, `paper`, `negative`, `parallax`, rim and skirt), the overlay (`annot`, `measure`, `compare`, `indexPanel`).\n- `demo/tools/prep.py`: emulsion masks from scans, difference matting of a subject against a smooth sky, ground-only cuts, push-pull fill.\n- Minimal example, not in the demo: put one 35 mm slide (`IT.slide = {c, r, k, size}`), a loupe landing with `dive(toW(IT.slide, p), t0, t1, keysS, keysC)`, and light one line with `band()`.\n- **Extra packages and packs**: none beyond `setup.sh deps voice music` (numpy, scipy, Pillow, soxr are in the core tier). A score in this palette needs sample libraries: `sh tools/fetch.sh instruments salamander` (piano), `vsco2ce` (strings), `vcsl` (glass, bowed vibraphone). Anything else a film needs goes into a private venv or `node_modules` in the project folder, never into `$LIB/.venv`.",
+    "published_build_notes_verbatim": "```\ndemo/\n  build.sh          one command: (FETCH) scans + textures + fonts → voice → speech check → cues → cue grid →\n                    video → mix → master → .srt → subtitle widths → readcheck → poster + style frame\n  index.html        two canvases (WebGL2 picture, 2D marks), fonts\n  film.js           the table, camera keys, the three dives, the shader, every mark, readouts, index, end card, subtitles\n  timeline.js       beats, key actions, narration, subtitle cues (single source; tools/export.mjs → out/timeline.json, out/cues.json)\n  mix.py            score, foley, beds, voice, mix → out/mix.wav + out/stems/\n  tools/            prep.py (masks, layers, fill), fonts.py, sru.py (LoC catalogue lookups), export.mjs,\n                    cuecheck.mjs, subcheck.mjs\n  sources/          the Library of Congress catalogue records (MARCXML) behind FACTS.md\n  assets/           raw/ (downloads), tex/ (textures the page reads)\n  FACTS.md, CREDITS, TREATMENT.md, PRODUCTION_LOG.md, stills/styleframe.jpg\n```\n\n- `sh demo/build.sh` takes about 4 minutes on Apple silicon (the picture renders in about 40 s with 4 workers; the master pass is the slowest step). From a clean clone it first fetches what git does not hold: the fonts from Google Fonts (`tools/fonts.py`), the Kokoro model and the salamander, vsco2ce and vcsl sample libraries (`tools/fetch.sh`), and about 100 MB of Library of Congress scans, which `tools/prep.py` turns into textures (about 25 s). `FETCH=1` forces the fonts and scans again.\n- Checks it runs: `asr_check.py` with `small.en` (two lines carry an `asr` field: Whisper writes \"17th, 1903\" for the spoken date and hears \"four flights\" as \"for flights\"), the cue grid, subtitle single-line widths measured with the real fonts (widest 648 px against 1500 px), `readcheck.mjs`.\n- Demo-specific pitfalls: loc.gov item pages sit behind a Cloudflare challenge, so the catalogue records come from the Library's SRU server (`lx2.loc.gov:210/lcdb`) and the files from `tile.loc.gov`; in the first-flight plate the sky can be unmixed exactly against a smooth membrane, but the sand cannot, so below the horizon only strong marks are cut (lower wing, skids, struts; a vertical-line filter catches thin struts) and the rest stays on the ground; the fourth-flight scan is low in contrast and gets its own levels in the positive; the clipping is a low-resolution copy, so the camera never pushes past about 0.66 zoom on it.",
+    "fetch_build_specs": [
+      {
+        "path": "styles/archive-lighttable/demo/build.sh",
+        "sha256": "d5f06dc672de3c8e9ecc5f49156cdd00eac0b244595bcc62a5b31e48cdacc030",
+        "text_verbatim": "#!/bin/sh\n# One command: 《差两秒》 Two Seconds Short (Archive Light Table demo)\n#   sh demo/build.sh            voice, checks, cues, picture, score + mix, master, subtitles, checks, poster\n#   FETCH=1 sh demo/build.sh    first re-download the fonts and the Library of Congress scans (~100 MB), rebuild the textures\n#   (a clean clone fetches fonts, scans, the voice model and the sample libraries by itself; needs setup.sh deps voice)\nset -e\nHERE=$(cd \"$(dirname \"$0\")\" && pwd)                 # .../<slug>/demo\nFILM=$(cd \"$HERE/..\" && pwd)                         # .../<slug>\nLIB=${LIB:-$(cd \"$HERE/../../..\" && pwd)}            # films/<slug>/demo or styles/<slug>/demo -> library root\nexport LIB\n[ -f \"$LIB/core/render/video.mjs\" ] || { echo \"set LIB to the library folder\"; exit 1; }\nPY=\"$LIB/.venv/bin/python\"\nNAME=archive-lighttable\nRAW=\"$HERE/assets/raw\"\ncd \"$LIB\"\n\n# fonts (gitignored): every face the page uses, from Google Fonts\nif [ \"${FETCH:-0}\" = \"1\" ] || [ ! -f \"$HERE/fonts/IBMPlexMono-400.woff2\" ] || [ ! -f \"$HERE/fonts/NotoSansSC-400.woff2\" ]; then\n  mkdir -p \"$HERE/fonts\"; \"$PY\" -I \"$HERE/tools/fonts.py\" \"$HERE\"\nfi\n# the voice model and the three sample libraries the score uses (skipped when present)\n[ -f core/tts/kokoro-v1.0.onnx ] || sh tools/fetch.sh voice\nfor l in salamander vsco2ce vcsl; do [ -d \"core/audio/instruments/$l\" ] || sh tools/fetch.sh instruments $l; done\n\n# archive scans and textures (gitignored): keyed on a texture the page reads\nif [ \"${FETCH:-0}\" = \"1\" ] || [ ! -f \"$HERE/assets/tex/p1_fly.png\" ]; then\n  mkdir -p \"$RAW\"\n  T=https://tile.loc.gov/storage-services/master/pnp\n  for id in 00626 00629 00610; do curl -sSL -o \"$RAW/loc_ppprs${id}u.tif\" \"$T/ppprs/00600/${id}u.tif\"; done\n  curl -sSL -o \"$RAW/loc_cph3b18080u.tif\" \"$T/cph/3b10000/3b18000/3b18000/3b18080u.tif\"\n  curl -sSL -A \"LemoOpuscar/1.0\" -o \"$RAW/telegram_mcc061.jpg\" \"https://upload.wikimedia.org/wikipedia/commons/7/72/Telegram_Orville_Wright_17_dec_1903.jpg\"\n  \"$PY\" -I \"$HERE/tools/prep.py\" \"$HERE\"             # plates, masks, the Flyer / Wilbur layers and the cleaned background\nfi\n\n# voice: Kokoro (bm_george), speech-to-text check with the small English model\n\"$PY\" core/tts/tts.py \"$HERE/voice/lines.json\" \"$HERE/voice/out\"\nWHISPER_MODEL=small.en \"$PY\" core/tts/asr_check.py \"$HERE/voice/lines.json\" \"$HERE/voice/out\" --lang en\nnode \"$HERE/tools/export.mjs\" \"$HERE\" > /dev/null     # cues and timeline from the real durations; fails on overlap\nnode \"$HERE/tools/cuecheck.mjs\" \"$HERE\" | tail -1\n\n# picture, events, score + mix, master, subtitles\nnode core/render/video.mjs \"$HERE\" --fps 24 --workers 4 --out \"$HERE/out/video.mp4\"\n\"$PY\" \"$HERE/mix.py\"\nsh core/render/mux.sh \"$HERE/out/video.mp4\" \"$HERE/out/mix.wav\" \"$FILM/$NAME.mp4\" 24 1\n\"$PY\" core/render/srt.py \"$HERE/out/cues_srt.json\" \"$FILM/$NAME.srt\"\n\n# checks\nnode \"$HERE/tools/subcheck.mjs\" \"$HERE\" | tail -1\nnode core/render/readcheck.mjs \"$HERE\" > \"$HERE/out/readcheck.txt\" && echo \"readcheck ok\"\n\n# poster (the signature shot) and the gallery style frame\nmkdir -p \"$HERE/stills\"\nnode core/render/still.mjs \"$HERE\" 22.3 15.75 --q 'nosubs=1' --prefix pf_ --out \"$HERE/out\" > /dev/null\ncp \"$HERE/out/pf_22.3.jpg\" \"$FILM/poster.jpg\"                    # inside the first flight, labels on\ncp \"$HERE/out/pf_15.75.jpg\" \"$HERE/stills/styleframe.jpg\"        # the develop front under the loupe\necho \"done: $FILM/$NAME.mp4\"\n"
+      },
+      {
+        "path": "styles/archive-lighttable/demo/tools/prep.py",
+        "sha256": "cda9a1d2a03ed08f08c884de134a2b1f3819aa38d59e87d0fbdd35025c5ac48a",
+        "text_verbatim": "\"\"\"Textures for the page, from the archive scans in assets/raw/ (see CREDITS).\nusage: python -I tools/prep.py <demo_dir>\n\n  p1.jpg, p1_mask.png          first flight plate (LoC ppprs.00626), positive scan + emulsion mask\n  p1_bg.jpg                    the same plate with the Flyer and Wilbur removed and the hole filled (push-pull),\n  p1_fly.png, p1_wil.png       ... and the two cut-out layers (grey + alpha), full resolution, cropped to a box;\n                               their boxes are written to assets/tex/layers.json\n  p2.jpg, p2_mask.png          fourth flight, distant view (LoC ppprs.00629)\n  p3.jpg, p3_mask.png          14 December, the failed trial (LoC ppprs.00610), half resolution (a prop)\n  tg.jpg                       telegram (LoC mcc.061 via Wikimedia Commons), scan mat trimmed\n  news.jpg                     Dayton Herald, 18 Dec 1903 (LoC cph.3b18080)\n\"\"\"\nimport sys, os, json\nimport numpy as np\nfrom PIL import Image, ImageFilter\nfrom scipy import ndimage as ndi\nImage.MAX_IMAGE_PIXELS = None\n\nD = sys.argv[1]\nRAW = os.path.join(D, 'assets', 'raw'); OUT = os.path.join(D, 'assets', 'tex')\nos.makedirs(OUT, exist_ok=True)\n\n\ndef emulsion_mask(img, s=4):\n    \"\"\"near-white pixels connected to the scan border = scanner margin or missing glass\"\"\"\n    W, H = img.size\n    small = np.asarray(img.resize((W // s, H // s), Image.BILINEAR)).astype(np.float32)\n    white = small > 228\n    white[:3, :] = white[-3:, :] = True; white[:, :3] = white[:, -3:] = True\n    lab, _ = ndi.label(white)\n    border = set(np.unique(np.concatenate([lab[0], lab[-1], lab[:, 0], lab[:, -1]]))) - {0}\n    outside = np.isin(lab, list(border))\n    m = Image.fromarray(np.where(outside, 0, 255).astype(np.uint8)).filter(ImageFilter.MinFilter(3)).filter(ImageFilter.GaussianBlur(1.2))\n    return m\n\n\ndef pushpull(val, known):\n    \"\"\"fill unknown pixels from a pyramid of known ones (smooth membrane fill)\"\"\"\n    if min(val.shape) < 4 or known.all():\n        filled = val.copy()\n        if not known.all():\n            filled[~known] = val[known].mean() if known.any() else 0.5\n        return filled\n    v2 = val.reshape(val.shape[0] // 2, 2, val.shape[1] // 2, 2) if val.shape[0] % 2 == 0 and val.shape[1] % 2 == 0 else None\n    h, w = val.shape\n    h2, w2 = (h + 1) // 2, (w + 1) // 2\n    pv = np.zeros((h2 * 2, w2 * 2), np.float64); pk = np.zeros((h2 * 2, w2 * 2), np.float64)\n    pv[:h, :w] = val * known; pk[:h, :w] = known\n    sv = pv.reshape(h2, 2, w2, 2).sum((1, 3)); sk = pk.reshape(h2, 2, w2, 2).sum((1, 3))\n    cv = np.where(sk > 0, sv / np.maximum(sk, 1e-9), 0); ck = sk > 0\n    coarse = pushpull(cv, ck)\n    up = np.asarray(Image.fromarray(coarse.astype(np.float32)).resize((w2 * 2, h2 * 2), Image.BILINEAR))[:h, :w]\n    out = val.copy(); out[~known] = up[~known]\n    return out\n\n\ndef save_gray(arr, path, q=93):\n    Image.fromarray(np.clip(arr * 255 + 0.5, 0, 255).astype(np.uint8)).save(path, quality=q, subsampling=0)\n\n\n# ---------------- plate 1: first flight ----------------\np1 = Image.open(os.path.join(RAW, 'loc_ppprs00626u.tif')).convert('L')\np1.save(os.path.join(OUT, 'p1.jpg'), quality=93, subsampling=0)\nemulsion_mask(p1).save(os.path.join(OUT, 'p1_mask.png'))\nA = np.asarray(p1).astype(np.float64) / 255\nH, W = A.shape\nrng = np.random.default_rng(7)\n\n\nHZ = 1540                                                             # horizon row\ndef soft(x, a, b):\n    t = np.clip((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t)\n\n# Difference matting. In the sky a clean background b is known (a smooth membrane under the hazy sky), so every\n# pixel inside the Flyer's wing hull splits exactly into b and a layer of black (struts, wires, Orville) or white\n# (fabric) with an alpha: composite == original. On the sand below the horizon only strong marks are cut (the\n# lower wing, skids, struts) so the ground texture stays on the ground.\nfx0, fy0, fx1, fy1 = 1560, 1100, 4120, 1800\nsub = A[fy0:fy1, fx0:fx1]\nys = np.arange(fy0, fy1)[:, None] * np.ones((1, fx1 - fx0))\nxs = np.arange(fx0, fx1)[None, :] * np.ones((fy1 - fy0, 1))\nbig = ndi.median_filter(A[fy0 - 200:fy1 + 200:4, fx0 - 300:fx1 + 300:4], size=31)\nstrong0 = np.abs(sub - np.asarray(Image.fromarray(big.astype(np.float32)).resize((fx1 - fx0 + 600, fy1 - fy0 + 400), Image.BILINEAR))[200:-200, 300:-300]) > 0.06\nrows = np.median(np.concatenate([A[fy0:fy1, 900:1500], A[fy0:fy1, 4560:4900]], 1), 1)[:, None]   # sand/sky profile per row, outside the machine\ndg = sub - rows\nstrong0 = ndi.binary_dilation(strong0 | (dg > 0.08) | (dg < -0.075), iterations=12)\nb = ndi.gaussian_filter(pushpull(sub, ~strong0), 18)\nd = sub - b\n# hull: the quadrilateral around both wings (upper tip ~(1640,1290) .. (4040,1170), lower ~(1640,1760) .. (4060,1600))\ndef hull(x, y):\n    top = 1205 + (1085 - 1205) * (x - 1590) / (4100 - 1590)\n    bot = 1800 + (1640 - 1800) * (x - 1590) / (4100 - 1590)\n    return soft(np.minimum(x - 1585, 4105 - x), 0, 25) * soft(y - top, 0, 25) * soft(bot + 40 - y, 0, 25)\nhl = hull(xs, ys)\na_dark = np.clip(-d / np.maximum(b, 0.05), 0, 1); a_lit = np.clip(d / np.maximum(1 - b, 0.05), 0, 1)\na_sky = np.where(d < 0, a_dark, a_lit); c_sky = np.where(d < 0, 0.0, 1.0)\nvline = ndi.gaussian_filter(dg, (10, 1.0)) < -0.03                         # thin near-vertical struts and wires\nstrong = (dg > 0.08) | (dg < -0.075) | vline\nstrong = ndi.binary_closing(strong, iterations=3)\nlab, n = ndi.label(strong); sizes = ndi.sum(strong, lab, range(1, n + 1))\nstrong = np.isin(lab, [k + 1 for k, sz in enumerate(sizes) if sz > 80])\na_gnd = ndi.gaussian_filter(ndi.binary_dilation(strong, iterations=2).astype(np.float64), 1.0)\nwsky = 1 - soft(ys, HZ - 12, HZ + 12)\nalpha = hl * (wsky * a_sky + (1 - wsky) * a_gnd)\ncolor = wsky * c_sky + (1 - wsky) * sub\nprem = color * alpha\n# background: in the sky exactly the membrane b (composite == original), with grain only where the layer is opaque\n# (that part is never seen at rest); on the sand the original with the cut-out marks filled\ng = ndi.gaussian_filter(rng.normal(0, 1, A.shape), 0.7); g *= 0.016 / g.std()\ngs = g[fy0:fy1, fx0:fx1]\ngnd_hole = a_gnd > 0.02\ngnd_fill = np.where(gnd_hole, pushpull(sub, ~gnd_hole) + gs, sub)\nbg_sky = b + gs * soft(alpha, 0.3, 0.7)\nbgsub = wsky * bg_sky + (1 - wsky) * gnd_fill\nbg = A.copy()\nbg[fy0:fy1, fx0:fx1] = hl * bgsub + (1 - hl) * sub\nla = np.stack([np.clip(prem * 255 + .5, 0, 255), np.clip(alpha * 255 + .5, 0, 255)], -1).astype(np.uint8)\nImage.fromarray(la, 'LA').save(os.path.join(OUT, 'p1_fly.png'))\nprint('flyer alpha mean in hull', float(alpha[hl > .5].mean()))\n\n# Wilbur: dark suit against light sand / sky; strong cut with holes filled\nwx0, wy0, wx1, wy1 = 4260, 1440, 4540, 1915\nws = A[wy0:wy1, wx0:wx1]\nwb = ndi.gaussian_filter(pushpull(ws, ws > 0.5), 20)\nwm = ndi.binary_fill_holes(ndi.binary_closing((wb - ws) > 0.12, iterations=3))\nlab, n = ndi.label(wm); sizes = ndi.sum(wm, lab, range(1, n + 1)); wm = lab == (1 + int(np.argmax(sizes)))\nwa = ndi.gaussian_filter(ndi.binary_dilation(wm, iterations=3).astype(np.float64), 1.2)\nla = np.stack([np.clip(ws * wa * 255 + .5, 0, 255), np.clip(wa * 255 + .5, 0, 255)], -1).astype(np.uint8)\nImage.fromarray(la, 'LA').save(os.path.join(OUT, 'p1_wil.png'))\nwh = np.zeros_like(A, bool); wh[wy0:wy1, wx0:wx1] = ndi.binary_dilation(wm, iterations=8)\nbg = np.where(wh, pushpull(bg, ~wh) + g, bg)\nprint('wilbur px', int(wm.sum()))\nsave_gray(bg, os.path.join(OUT, 'p1_bg.jpg'))\njson.dump({'fly': [fx0, fy0, fx1, fy1], 'wil': [wx0, wy0, wx1, wy1], 'horizon': HZ}, open(os.path.join(OUT, 'layers.json'), 'w'))\n\n# ---------------- plate 2: fourth flight; plate 3: 14 December ----------------\np2 = Image.open(os.path.join(RAW, 'loc_ppprs00629u.tif')).convert('L')\np2.save(os.path.join(OUT, 'p2.jpg'), quality=93, subsampling=0); emulsion_mask(p2).save(os.path.join(OUT, 'p2_mask.png'))\np3 = Image.open(os.path.join(RAW, 'loc_ppprs00610u.tif')).convert('L')\np3h = p3.resize((p3.size[0] // 2, p3.size[1] // 2), Image.LANCZOS)\np3h.save(os.path.join(OUT, 'p3.jpg'), quality=90); emulsion_mask(p3h, 2).save(os.path.join(OUT, 'p3_mask.png'))\n\n# ---------------- paper ----------------\ntg = Image.open(os.path.join(RAW, 'telegram_mcc061.jpg')).convert('RGB').crop((43, 33, 3560, 2306))\ntg.save(os.path.join(OUT, 'tg.jpg'), quality=91)\nnw = Image.open(os.path.join(RAW, 'loc_cph3b18080u.tif')).convert('L')\nnw.save(os.path.join(OUT, 'news.jpg'), quality=92)\nprint('sizes', p1.size, p2.size, p3h.size, tg.size, nw.size)\n"
+      }
+    ],
+    "local_original_asset_snapshot_inventory": [
+      {
+        "path": "styles/archive-lighttable/demo/sources/sru_ppprs.00629.xml",
+        "sha256": "f7259746c8c926acec6b8f6a78c44b78a1723aeebe3301c14beb8270d8544c54",
+        "bytes": 7804
+      },
+      {
+        "path": "styles/archive-lighttable/demo/sources/sru_ppprs.00610.xml",
+        "sha256": "ab5ea76be58dbe9bf74df62239b6185950c0f8eb7f6925eb5d1ce9adb0b4acef",
+        "bytes": 15244
+      },
+      {
+        "path": "styles/archive-lighttable/demo/sources/sru_cph.3b18080.xml",
+        "sha256": "1aea0b723f7b8726e6aac451211bb9d5e484401a9d21754ecf5feb3cb3003174",
+        "bytes": 4529
+      },
+      {
+        "path": "styles/archive-lighttable/demo/sources/sru_cph.3b12982.xml",
+        "sha256": "6a1bbb0ecd404661e0e013aa2b3d2e0f4ff078e8c9df78f36efefb8577e763dd",
+        "bytes": 5394
+      },
+      {
+        "path": "styles/archive-lighttable/demo/sources/sru_ppprs.00626.xml",
+        "sha256": "c9c051def06eb9f2d4490a024aadddfdd453cf4f9c315d5444dcb393af7bd11f",
+        "bytes": 11731
+      },
+      {
+        "path": "styles/archive-lighttable/demo/assets/tex/layers.json",
+        "sha256": "f3fb17a1e6d6680da55a5d5b976fa8b697a0af02b08f0c183e03ac6b5c6d363f",
+        "bytes": 83
+      }
+    ]
+  },
+  "evidence": {
+    "dataset": "Five original LOC items: telegrammcc.061/cph3b12982, newspapercph3b18080, and negativesppprs00626/00629/00610.",
+    "required_measurements": [
+      "Telegram and newspaper say57s.",
+      "First flight12s/120ft/10:35; fourth flight59s/852ft; difference2s.",
+      "The852ft perspective ruler is explicitly schematic, not a measurement from the photograph."
+    ],
+    "window": "Exact full-resolution masters and original proportions; physical loupe2.5× and original cutout registration.",
+    "needed": [
+      "assets/raw/telegram_mcc061.jpg",
+      "assets/raw/loc_cph3b18080u.tif",
+      "assets/raw/loc_ppprs00626u.tif",
+      "assets/raw/loc_ppprs00629u.tif",
+      "assets/raw/loc_ppprs00610u.tif",
+      "assets/tex/p1_fly.png",
+      "assets/tex/p1_wil.png",
+      "assets/tex/layers.json"
+    ],
+    "recipe": "Follow the isolated data-only preparation described in ASSET_GAPS.md and the exact original build/fetch scripts retained in engine_and_build.fetch_build_specs.",
+    "specific_blockers": [],
+    "asset_status": [
+      {
+        "path": "styles/archive-lighttable/demo/assets/raw/telegram_mcc061.jpg",
+        "present": false
+      },
+      {
+        "path": "styles/archive-lighttable/demo/assets/raw/loc_cph3b18080u.tif",
+        "present": false
+      },
+      {
+        "path": "styles/archive-lighttable/demo/assets/raw/loc_ppprs00626u.tif",
+        "present": false
+      },
+      {
+        "path": "styles/archive-lighttable/demo/assets/raw/loc_ppprs00629u.tif",
+        "present": false
+      },
+      {
+        "path": "styles/archive-lighttable/demo/assets/raw/loc_ppprs00610u.tif",
+        "present": false
+      },
+      {
+        "path": "styles/archive-lighttable/demo/assets/tex/p1_fly.png",
+        "present": false
+      },
+      {
+        "path": "styles/archive-lighttable/demo/assets/tex/p1_wil.png",
+        "present": false
+      },
+      {
+        "path": "styles/archive-lighttable/demo/assets/tex/layers.json",
+        "present": true
+      }
+    ],
+    "original_facts_verbatim": "# 事实表：《差两秒》 Two Seconds Short\n\n片中每一个日期、数字、编号和事实性说法都在下表里，格式是：说法 → 官方出处（URL）→ 原文引用（英文原文）。核对日期：2026-10-16。\n\n**核对方式**：loc.gov 的条目页被 Cloudflare 人机验证拦住，curl 和 WebFetch 都打不开。所以条目著录改从美国国会图书馆自己的 SRU 目录服务取（`http://lx2.loc.gov:210/lcdb`，MARCXML），原始记录存在 `sources/sru_*.xml`，用 `tools/sru.py` 可以重查。影像文件直接取自馆方的 `tile.loc.gov` 母版存储，只有电报的彩色扫描经 Wikimedia Commons 获取，Commons 页注明来源是 LoC `mcc.061`。电报上的文字是从图像本身读出来的（原件是一手史料）。\n\n| # | 片中说法（画面 / 旁白 / 字幕） | 出处 | 原文 |\n|---|---|---|---|\n| F1 | 旁白 \"December seventeenth, nineteen oh three.\"，电报行 \"Kitty Hawk N C Dec 17\" | LoC 目录，电报 P&P 复制件 `cph.3b12982`（LC-USZ62-65459），`sources/sru_cph.3b12982.xml`；电报原件图像 | 245: \"[Telegram from Orville Wright in Kitty Hawk, N.C., to his father announcing four successful flights, 1903 Dec. 17]\" |\n| F2 | 旁白 \"Orville wired home: success, four flights.\"；索引行\"01 电报 · 1903.12.17 · LC-USZ62-65459\" | 同 F1；电报正文（图像） | 电报正文：\"Success four flights thursday morning all against twenty one mile wind …\"；收报人 \"Bishop M Wright / 7 Hawthorne St\" |\n| F3 | 旁白 \"The longest, fifty-seven seconds.\"；读数\"电报 · 最长一次 57 秒\" | 电报正文（图像，`assets/raw/telegram_mcc061.jpg`，LoC `mcc.061`） | \"… through air thirty one miles longest 57 seconds inform Press home … Christmas\" |\n| F4 | 旁白 \"Next day, the paper printed the same number.\"；标签\"1903.12.18 / 代顿先驱报\"；索引行\"02 代顿先驱报 · LC-USZ62-70686\" | LoC 目录 `cph.3b18080`（LC-USZ62-70686），`sources/sru_cph.3b18080.xml`；剪报正文（图像） | 245: \"[Newspaper notice of Wright Bros. 1st flight: Dayton Herald, Dec. 18, 1903]\"；剪报正文：\"Our longest time in air was 57 seconds. ORVILLE WRIGHT.\" |\n| F5 | 旁白 \"The first flight lasted twelve seconds. One hundred and twenty feet.\"；标签\"第一次飞行 / 12 秒 · 120 英尺 · 上午 10:35\"；索引行\"03\" | LoC 目录 `ppprs.00626`（LC-DIG-ppprs-00626），`sources/sru_ppprs.00626.xml` | 245: \"[First flight, 120 feet in 12 seconds, 10:35 a.m.; Kitty Hawk, North Carolina]\"；260: \"[1903 Dec. 17]\" |\n| F6 | 画面\"玻璃底片\"（第一张底片） | 同 F5 | 300: \"1 photograph : glass negative, dry plate ; plate 18 x 12.5 cm (5 x 7 format).\" |\n| F7 | 标签\"快门：John T. Daniels\" | 同 F5 | 520: \"(Orville Wright preset the camera and had John T. Daniels squeeze the rubber bulb, tripping the shutter.)\" |\n| F8 | 标签\"威尔伯·莱特 / Wilbur Wright\"（照片右侧的人） | 同 F5 | 520: \"Wilbur Wright running alongside to balance the machine, has just released his hold on the forward upright of the right wing.\" |\n| F9 | 旁白 \"The fourth flight: eight hundred and fifty-two feet, in fifty-nine seconds.\"；读数\"852 英尺 / 59 秒\"；对比卡引文 \"852 feet covered in 59 seconds.\"；索引行\"04 · LC-DIG-ppprs-00629\" | LoC 目录 `ppprs.00629`（LC-DIG-ppprs-00629），`sources/sru_ppprs.00629.xml` | 245: \"[Distant view of the Wright airplane just after landing, taken from the starting point, with wing-rest in center of picture and launching rail at right. This flight, the fourth and final of December 17, 1903, was the longest: 852 feet covered in 59 seconds.]\" |\n| F10 | 测量线\"起点\"到\"落地点\" | 同 F9 | \"… taken from the starting point …\"（相机位置即起点） |\n| F11 | 旁白 \"The telegram was two seconds short.\"；判定\"差 2 秒\" | F3 与 F9 的比较：电报写 57，馆藏记录写 59 | 两个数字之差；片中不推断出错原因 |\n| F12 | 索引行\"05 试飞受损 · 1903.12.14 · LC-DIG-ppprs-00610\"（灯台上的道具） | LoC 目录 `ppprs.00610`，`sources/sru_ppprs.00610.xml` | 245: \"[Wilbur in prone position in damaged machine on ground after unsuccessful trial of December 14, 1903; Kitty Hawk, North Carolina]\" |\n\n## 示意，不是测量\n\n- 第四次飞行的刻度按\"平地 + 针孔相机\"的透视排布：某一行离相机的距离 D = K /（行 − 地平线行），其中 K 取自记录的 852 英尺和落地机器底边所在的行（地平线在第 1385 行，机器底边约在第 1410 行，K = 852 × 25）。画面上标了\"透视刻度（示意）\"。它只是把记录里的 852 英尺排到照片上，不是从照片里量出来的距离。\n- 读数计时 0 → 59 秒与刻度同步滚动，只是动画，不代表飞行过程中的时刻。\n\n## 图像处理说明\n\n- 玻璃负片在灯台上的\"负像\"，是把馆方正像扫描在着色器里取反再加片基色得到的。镜内\"正像\"就是馆方扫描本身。\n- 第一张底片进入照片空间后，飞行器和威尔伯被抠成独立图层（`tools/prep.py`：天空里用差值抠像，沙地上只切强边缘），背后的空洞用金字塔插值填补并加颗粒。飞行器在画面里平移了约 125 像素（扫描像素）：这是动画，不是史实轨迹。\n",
+    "original_credits_verbatim": "Two Seconds Short (差两秒) — Archive Light Table (Lemo-Opuscar) · LemoLab × Claude Opus 5.5\nAn unofficial film about a real event (the Wright brothers' flights of 17 December 1903) made only from\npublic-domain archive scans. No AI-generated images, no stock footage. The light table, glass, dust, loupe,\nmarks, readouts and camera are drawn in code (film.js). Sources accessed 2026-10-16; catalogue records in sources/.\n\nARCHIVE (Library of Congress; public domain, published before 1929; the Library lists no known restrictions on the\nWright Brothers Negatives)\n- First flight, 120 feet in 12 seconds, 10:35 a.m.; Kitty Hawk, North Carolina. 1903 Dec. 17. Glass negative.\n  Prints & Photographs Division, LC-DIG-ppprs-00626, https://hdl.loc.gov/loc.pnp/ppprs.00626\n  File: https://tile.loc.gov/storage-services/master/pnp/ppprs/00600/00626u.tif\n- Distant view of the Wright airplane just after landing … the fourth and final [flight] of December 17, 1903.\n  Glass negative. LC-DIG-ppprs-00629, https://hdl.loc.gov/loc.pnp/ppprs.00629\n  File: https://tile.loc.gov/storage-services/master/pnp/ppprs/00600/00629u.tif\n- Wilbur in prone position in damaged machine … unsuccessful trial of December 14, 1903. Glass negative.\n  LC-DIG-ppprs-00610, https://hdl.loc.gov/loc.pnp/ppprs.00610\n  File: https://tile.loc.gov/storage-services/master/pnp/ppprs/00600/00610u.tif\n- Newspaper notice of Wright Bros. 1st flight: Dayton Herald, Dec. 18, 1903. LC-USZ62-70686,\n  https://hdl.loc.gov/loc.pnp/cph.3b18080\n  File: https://tile.loc.gov/storage-services/master/pnp/cph/3b10000/3b18000/3b18000/3b18080u.tif\n- Telegram from Orville Wright in Kitty Hawk, N.C., to his father announcing four successful flights, 1903 Dec. 17.\n  Wilbur and Orville Wright Papers, Manuscript Division (P&P copy LC-USZ62-65459, https://hdl.loc.gov/loc.pnp/cph.3b12982).\n  Colour scan from https://www.loc.gov/resource/mcc.061/ via Wikimedia Commons, public domain:\n  https://commons.wikimedia.org/wiki/File:Telegram_Orville_Wright_17_dec_1903.jpg\n- Modifications: inversion to a negative for the light table, emulsion masks, levels, the Flyer and Wilbur cut into\n  layers with the background filled (tools/prep.py), the telegram's scan mat trimmed.\n\nMUSIC (original score, mix.py, sampled instruments through core/audio/sampler.py)\n- Piano: \"Salamander Grand Piano V3\" by Alexander Holm, licensed under CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)\n- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition (Versilian Studios),\n  Versilian Community Sample Library (Versilian Studios) — strings, glass, bowed vibraphone, timpani, suspended cymbal\n- Foley and beds (light-table hum, loupe on glass, paper, ticks, pen, wind, surf): synthesised in mix.py with core/audio/sfx.py\n\nVOICE\n- Kokoro-82M (hexgrad), voice bm_george, Apache License 2.0; run locally via kokoro-onnx (MIT) through core/tts/tts.py.\n  Speech check: faster-whisper small.en (MIT; OpenAI Whisper weights, MIT).\n\nFONTS (SIL Open Font License 1.1; tools/fonts.py fetches every face from Google Fonts and the licence texts from\ngithub.com/google/fonts into fonts/; Chinese faces subset with the CSS2 API &text=)\n- IBM Plex Mono, IBM Plex Sans — IBM\n- Noto Sans SC, Noto Serif SC — Google / Adobe\n",
+    "source_urls": [
+      "http://lx2.loc.gov:210/lcdb`，MARCXML），原始记录存在",
+      "https://commons.wikimedia.org/wiki/File:Telegram_Orville_Wright_17_dec_1903.jpg",
+      "https://creativecommons.org/licenses/by/3.0/",
+      "https://hdl.loc.gov/loc.pnp/cph.3b12982",
+      "https://hdl.loc.gov/loc.pnp/cph.3b18080",
+      "https://hdl.loc.gov/loc.pnp/ppprs.00610",
+      "https://hdl.loc.gov/loc.pnp/ppprs.00626",
+      "https://hdl.loc.gov/loc.pnp/ppprs.00629",
+      "https://tile.loc.gov/storage-services/master/pnp",
+      "https://tile.loc.gov/storage-services/master/pnp/cph/3b10000/3b18000/3b18000/3b18080u.tif",
+      "https://tile.loc.gov/storage-services/master/pnp/ppprs/00600/00610u.tif",
+      "https://tile.loc.gov/storage-services/master/pnp/ppprs/00600/00626u.tif",
+      "https://tile.loc.gov/storage-services/master/pnp/ppprs/00600/00629u.tif",
+      "https://upload.wikimedia.org/wikipedia/commons/7/72/Telegram_Orville_Wright_17_dec_1903.jpg",
+      "https://www.loc.gov/resource/mcc.061/"
+    ],
+    "restored_asset_root": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/evidence-v2/archive-lighttable/assets/tex",
+    "restoration_note": "Root restored all five full-resolution masters and rebuilt the original negative, parallax and emulsion layers."
+  },
+  "matching_blockers": [
+    "The original conversation prompt is not published. Use the complete published specification and audited reconstruction; do not claim the recovered text is a verbatim original chat prompt."
+  ],
+  "visual_audit": {
+    "state": "complete-regular-sheet-coverage",
+    "reference_video_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/films/archive-lighttable.mp4",
+    "reference_video_sha256": "1551f544b61610c7d7be218cedca25def8ebcb0c4c532cdc78544321e65a22d1",
+    "coverage": [
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/sheets/sheet-01.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/sheets/sheet-02.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/sheets/sheet-03.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/archive-lighttable/sheets/sheet-04.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      }
+    ],
+    "reference_verified_visual_observations": [
+      "Use a dusty white light table containing the actual brown telegram, newspaper clipping and three damaged glass negatives. A physical glass loupe magnifies the telegram’s date, success statement and57 seconds, then the newspaper repeats that number. Develop the first-flight negative inside the loupe and enter the positive photo with restrained Flyer/Wilbur parallax and12s/120ft/10:35 labels. Move to the fourth-flight photograph and schematic852ft/59s ruler. Hold57 and59 side by side before striking57 and revealing 差2秒. Pull back to all five source artifacts, the complete archive index and title; preserve original paper and emulsion textures."
+    ],
+    "note": "All regular reference sheets were inspected across the complete film. Named supplementary frames cover important short actions and transitions. This is scene coverage, not a claim that every encoded frame was inspected."
+  }
+}

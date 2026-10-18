@@ -17,14 +17,23 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Download verified GPT films and posters
+      - name: Download verified full-length replicas and matched posters
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          mkdir -p .release/comparison/posters
-          gh release download comparison-v1 --repo "$GITHUB_REPOSITORY" --pattern '*.mp4' --dir .release/comparison
-          gh release download comparison-v1 --repo "$GITHUB_REPOSITORY" --pattern '*.jpg' --dir .release/comparison/posters
-      - run: python3 tools/build_comparison.py
+          mkdir -p .release/replicas/posters .release/replicas/reference-posters .release/poster-downloads
+          gh release download comparison-v2 --repo "$GITHUB_REPOSITORY" --pattern '*.mp4' --dir .release/replicas
+          gh release download comparison-v2 --repo "$GITHUB_REPOSITORY" --pattern '*.jpg' --dir .release/poster-downloads
+          gh release download comparison-v2 --repo "$GITHUB_REPOSITORY" --pattern 'replication-inputs.tar.gz' --dir .release
+          python3 tools/restore_replica_inputs.py
+          for f in .release/poster-downloads/*.jpg; do
+            name=$(basename "$f")
+            case "$name" in
+              original-*) mv "$f" ".release/replicas/reference-posters/${name#original-}" ;;
+              *) mv "$f" ".release/replicas/posters/$name" ;;
+            esac
+          done
+      - run: python3 tools/build_replication.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:

@@ -1,0 +1,1555 @@
+{
+  "duration": 32,
+  "bpm": 120,
+  "key": "F minor",
+  "room": 0,
+  "music_rms_db": -25,
+  "sections": [
+    {
+      "start": 0,
+      "end": 4,
+      "intent": "Near-black sub drone, moving inharmonic glass shimmers, contour revealed by two light sweeps."
+    },
+    {
+      "start": 4,
+      "end": 8,
+      "intent": "Restrained F-minor FM glass arpeggio gradually opens; friction and lid-click punctual, no acoustic orchestration."
+    },
+    {
+      "start": 8,
+      "end": 12,
+      "intent": "Soft short kicks every beat below macro glass sweeps; intimate dry voice."
+    },
+    {
+      "start": 12,
+      "end": 15.5,
+      "intent": "Glass-metal stack unzips; rising saw/noise tension, air puffs; music grows then hard stops."
+    },
+    {
+      "start": 15.5,
+      "end": 16,
+      "intent": "Total music silence, tails cut; only reverse suction into snap."
+    },
+    {
+      "start": 16,
+      "end": 24,
+      "intent": "F1 syncopated808-like sub release atbar offsets0,.75,1,1.5; clap2/4; new four-note glass motif. Light follows exact shared list."
+    },
+    {
+      "start": 24,
+      "end": 28,
+      "intent": "Minor9 pad and bell declamation; restrained voice; metallic settle punctuation."
+    },
+    {
+      "start": 28,
+      "end": 32,
+      "intent": "High glass ding, soft sustained F minor resolution and decaying cool glow; final0.6fade."
+    }
+  ],
+  "notes": [
+    {
+      "t": 0,
+      "duration": 3.8,
+      "midi": 29,
+      "gain": 0.065,
+      "pan": 0,
+      "instrument": "bass"
+    },
+    {
+      "t": 0.5,
+      "duration": 1.2,
+      "midi": 89,
+      "gain": 0.018,
+      "pan": -0.8,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 2,
+      "duration": 1.2,
+      "midi": 92,
+      "gain": 0.02,
+      "pan": 0.8,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 4.0,
+      "duration": 0.24,
+      "midi": 65,
+      "gain": 0.025,
+      "pan": 0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 4.25,
+      "duration": 0.24,
+      "midi": 72,
+      "gain": 0.025,
+      "pan": -0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 4.5,
+      "duration": 0.24,
+      "midi": 68,
+      "gain": 0.025,
+      "pan": 0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 4.75,
+      "duration": 0.24,
+      "midi": 75,
+      "gain": 0.025,
+      "pan": -0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 5.0,
+      "duration": 0.24,
+      "midi": 77,
+      "gain": 0.025,
+      "pan": 0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 5.25,
+      "duration": 0.24,
+      "midi": 72,
+      "gain": 0.025,
+      "pan": -0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 5.5,
+      "duration": 0.24,
+      "midi": 68,
+      "gain": 0.025,
+      "pan": 0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 5.75,
+      "duration": 0.24,
+      "midi": 72,
+      "gain": 0.025,
+      "pan": -0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 6.0,
+      "duration": 0.24,
+      "midi": 65,
+      "gain": 0.033,
+      "pan": 0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 6.25,
+      "duration": 0.24,
+      "midi": 72,
+      "gain": 0.033,
+      "pan": -0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 6.5,
+      "duration": 0.24,
+      "midi": 68,
+      "gain": 0.033,
+      "pan": 0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 6.75,
+      "duration": 0.24,
+      "midi": 75,
+      "gain": 0.033,
+      "pan": -0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 7.0,
+      "duration": 0.24,
+      "midi": 77,
+      "gain": 0.033,
+      "pan": 0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 7.25,
+      "duration": 0.24,
+      "midi": 72,
+      "gain": 0.033,
+      "pan": -0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 7.5,
+      "duration": 0.24,
+      "midi": 68,
+      "gain": 0.033,
+      "pan": 0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 7.75,
+      "duration": 0.24,
+      "midi": 72,
+      "gain": 0.033,
+      "pan": -0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 8.0,
+      "duration": 0.24,
+      "midi": 65,
+      "gain": 0.041,
+      "pan": 0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 8.25,
+      "duration": 0.24,
+      "midi": 72,
+      "gain": 0.041,
+      "pan": -0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 8.5,
+      "duration": 0.24,
+      "midi": 68,
+      "gain": 0.041,
+      "pan": 0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 8.75,
+      "duration": 0.24,
+      "midi": 75,
+      "gain": 0.041,
+      "pan": -0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 9.0,
+      "duration": 0.24,
+      "midi": 77,
+      "gain": 0.041,
+      "pan": 0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 9.25,
+      "duration": 0.24,
+      "midi": 72,
+      "gain": 0.041,
+      "pan": -0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 9.5,
+      "duration": 0.24,
+      "midi": 68,
+      "gain": 0.041,
+      "pan": 0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 9.75,
+      "duration": 0.24,
+      "midi": 72,
+      "gain": 0.041,
+      "pan": -0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 10.0,
+      "duration": 0.24,
+      "midi": 65,
+      "gain": 0.049,
+      "pan": 0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 10.25,
+      "duration": 0.24,
+      "midi": 72,
+      "gain": 0.049,
+      "pan": -0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 10.5,
+      "duration": 0.24,
+      "midi": 68,
+      "gain": 0.049,
+      "pan": 0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 10.75,
+      "duration": 0.24,
+      "midi": 75,
+      "gain": 0.049,
+      "pan": -0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 11.0,
+      "duration": 0.24,
+      "midi": 77,
+      "gain": 0.049,
+      "pan": 0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 11.25,
+      "duration": 0.24,
+      "midi": 72,
+      "gain": 0.049,
+      "pan": -0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 11.5,
+      "duration": 0.24,
+      "midi": 68,
+      "gain": 0.049,
+      "pan": 0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 11.75,
+      "duration": 0.24,
+      "midi": 72,
+      "gain": 0.049,
+      "pan": -0.3,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 0.45,
+      "duration": 0.4,
+      "midi": 89,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 0.469,
+      "duration": 0.4,
+      "midi": 106.58,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 0.488,
+      "duration": 0.4,
+      "midi": 118.2,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 1.95,
+      "duration": 0.4,
+      "midi": 89,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 1.969,
+      "duration": 0.4,
+      "midi": 106.58,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 1.988,
+      "duration": 0.4,
+      "midi": 118.2,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 8,
+      "duration": 0.4,
+      "midi": 89,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 8.019,
+      "duration": 0.4,
+      "midi": 106.58,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 8.038,
+      "duration": 0.4,
+      "midi": 118.2,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 9,
+      "duration": 0.4,
+      "midi": 89,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 9.019,
+      "duration": 0.4,
+      "midi": 106.58,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 9.038,
+      "duration": 0.4,
+      "midi": 118.2,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 10,
+      "duration": 0.4,
+      "midi": 89,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 10.019,
+      "duration": 0.4,
+      "midi": 106.58,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 10.038,
+      "duration": 0.4,
+      "midi": 118.2,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 11,
+      "duration": 0.4,
+      "midi": 89,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 11.019,
+      "duration": 0.4,
+      "midi": 106.58,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 11.038,
+      "duration": 0.4,
+      "midi": 118.2,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 23.95,
+      "duration": 0.4,
+      "midi": 89,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 23.969,
+      "duration": 0.4,
+      "midi": 106.58,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 23.988,
+      "duration": 0.4,
+      "midi": 118.2,
+      "gain": 0.018,
+      "pan": 0.4,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 12.0,
+      "duration": 0.23,
+      "midi": 53.0,
+      "gain": 0.018,
+      "pan": 0,
+      "instrument": "saw"
+    },
+    {
+      "t": 12.25,
+      "duration": 0.23,
+      "midi": 53.6,
+      "gain": 0.019999999999999997,
+      "pan": 0,
+      "instrument": "saw"
+    },
+    {
+      "t": 12.5,
+      "duration": 0.23,
+      "midi": 54.2,
+      "gain": 0.022,
+      "pan": 0,
+      "instrument": "saw"
+    },
+    {
+      "t": 12.75,
+      "duration": 0.23,
+      "midi": 54.8,
+      "gain": 0.024,
+      "pan": 0,
+      "instrument": "saw"
+    },
+    {
+      "t": 13.0,
+      "duration": 0.23,
+      "midi": 55.4,
+      "gain": 0.026,
+      "pan": 0,
+      "instrument": "saw"
+    },
+    {
+      "t": 13.25,
+      "duration": 0.23,
+      "midi": 56.0,
+      "gain": 0.027999999999999997,
+      "pan": 0,
+      "instrument": "saw"
+    },
+    {
+      "t": 13.5,
+      "duration": 0.23,
+      "midi": 56.6,
+      "gain": 0.03,
+      "pan": 0,
+      "instrument": "saw"
+    },
+    {
+      "t": 13.75,
+      "duration": 0.23,
+      "midi": 57.2,
+      "gain": 0.032,
+      "pan": 0,
+      "instrument": "saw"
+    },
+    {
+      "t": 14.0,
+      "duration": 0.23,
+      "midi": 57.8,
+      "gain": 0.034,
+      "pan": 0,
+      "instrument": "saw"
+    },
+    {
+      "t": 14.25,
+      "duration": 0.23,
+      "midi": 58.4,
+      "gain": 0.036000000000000004,
+      "pan": 0,
+      "instrument": "saw"
+    },
+    {
+      "t": 14.5,
+      "duration": 0.23,
+      "midi": 59.0,
+      "gain": 0.038,
+      "pan": 0,
+      "instrument": "saw"
+    },
+    {
+      "t": 14.75,
+      "duration": 0.23,
+      "midi": 59.6,
+      "gain": 0.039999999999999994,
+      "pan": 0,
+      "instrument": "saw"
+    },
+    {
+      "t": 15.0,
+      "duration": 0.23,
+      "midi": 60.2,
+      "gain": 0.041999999999999996,
+      "pan": 0,
+      "instrument": "saw"
+    },
+    {
+      "t": 15.25,
+      "duration": 0.23,
+      "midi": 60.8,
+      "gain": 0.044,
+      "pan": 0,
+      "instrument": "saw"
+    },
+    {
+      "t": 16,
+      "duration": 0.7,
+      "midi": 77,
+      "gain": 0.075,
+      "pan": 0,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 16,
+      "duration": 0.7,
+      "midi": 94.58,
+      "gain": 0.075,
+      "pan": 0,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 16,
+      "duration": 0.7,
+      "midi": 106.2,
+      "gain": 0.075,
+      "pan": 0,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 16,
+      "duration": 0.63,
+      "midi": 29,
+      "gain": 0.26,
+      "pan": 0,
+      "instrument": "sub808"
+    },
+    {
+      "t": 16.75,
+      "duration": 0.63,
+      "midi": 29,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "sub808"
+    },
+    {
+      "t": 17,
+      "duration": 0.63,
+      "midi": 29,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "sub808"
+    },
+    {
+      "t": 17.5,
+      "duration": 0.63,
+      "midi": 29,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "sub808"
+    },
+    {
+      "t": 16.0,
+      "duration": 0.38,
+      "midi": 77,
+      "gain": 0.06,
+      "pan": 0.35,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 16.5,
+      "duration": 0.38,
+      "midi": 80,
+      "gain": 0.06,
+      "pan": -0.35,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 17.0,
+      "duration": 0.38,
+      "midi": 72,
+      "gain": 0.06,
+      "pan": 0.35,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 17.5,
+      "duration": 0.38,
+      "midi": 75,
+      "gain": 0.06,
+      "pan": -0.35,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 18,
+      "duration": 0.63,
+      "midi": 29,
+      "gain": 0.26,
+      "pan": 0,
+      "instrument": "sub808"
+    },
+    {
+      "t": 18.75,
+      "duration": 0.63,
+      "midi": 29,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "sub808"
+    },
+    {
+      "t": 19,
+      "duration": 0.63,
+      "midi": 29,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "sub808"
+    },
+    {
+      "t": 19.5,
+      "duration": 0.63,
+      "midi": 29,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "sub808"
+    },
+    {
+      "t": 18.0,
+      "duration": 0.38,
+      "midi": 77,
+      "gain": 0.06,
+      "pan": 0.35,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 18.5,
+      "duration": 0.38,
+      "midi": 80,
+      "gain": 0.06,
+      "pan": -0.35,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 19.0,
+      "duration": 0.38,
+      "midi": 72,
+      "gain": 0.06,
+      "pan": 0.35,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 19.5,
+      "duration": 0.38,
+      "midi": 75,
+      "gain": 0.06,
+      "pan": -0.35,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 20,
+      "duration": 0.63,
+      "midi": 32,
+      "gain": 0.26,
+      "pan": 0,
+      "instrument": "sub808"
+    },
+    {
+      "t": 20.75,
+      "duration": 0.63,
+      "midi": 32,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "sub808"
+    },
+    {
+      "t": 21,
+      "duration": 0.63,
+      "midi": 32,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "sub808"
+    },
+    {
+      "t": 21.5,
+      "duration": 0.63,
+      "midi": 32,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "sub808"
+    },
+    {
+      "t": 20.0,
+      "duration": 0.38,
+      "midi": 77,
+      "gain": 0.06,
+      "pan": 0.35,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 20.5,
+      "duration": 0.38,
+      "midi": 80,
+      "gain": 0.06,
+      "pan": -0.35,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 21.0,
+      "duration": 0.38,
+      "midi": 72,
+      "gain": 0.06,
+      "pan": 0.35,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 21.5,
+      "duration": 0.38,
+      "midi": 75,
+      "gain": 0.06,
+      "pan": -0.35,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 22,
+      "duration": 0.63,
+      "midi": 29,
+      "gain": 0.26,
+      "pan": 0,
+      "instrument": "sub808"
+    },
+    {
+      "t": 22.75,
+      "duration": 0.63,
+      "midi": 29,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "sub808"
+    },
+    {
+      "t": 23,
+      "duration": 0.63,
+      "midi": 29,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "sub808"
+    },
+    {
+      "t": 23.5,
+      "duration": 0.63,
+      "midi": 29,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "sub808"
+    },
+    {
+      "t": 22.0,
+      "duration": 0.38,
+      "midi": 77,
+      "gain": 0.06,
+      "pan": 0.35,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 22.5,
+      "duration": 0.38,
+      "midi": 80,
+      "gain": 0.06,
+      "pan": -0.35,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 23.0,
+      "duration": 0.38,
+      "midi": 72,
+      "gain": 0.06,
+      "pan": 0.35,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 23.5,
+      "duration": 0.38,
+      "midi": 75,
+      "gain": 0.06,
+      "pan": -0.35,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 24,
+      "duration": 3.4,
+      "midi": 53,
+      "gain": 0.025,
+      "pan": -0.15,
+      "instrument": "pad"
+    },
+    {
+      "t": 24,
+      "duration": 3.4,
+      "midi": 60,
+      "gain": 0.025,
+      "pan": 0.15,
+      "instrument": "pad"
+    },
+    {
+      "t": 24,
+      "duration": 3.4,
+      "midi": 65,
+      "gain": 0.025,
+      "pan": -0.15,
+      "instrument": "pad"
+    },
+    {
+      "t": 24,
+      "duration": 3.4,
+      "midi": 68,
+      "gain": 0.025,
+      "pan": 0.15,
+      "instrument": "pad"
+    },
+    {
+      "t": 24,
+      "duration": 3.4,
+      "midi": 72,
+      "gain": 0.025,
+      "pan": 0.15,
+      "instrument": "pad"
+    },
+    {
+      "t": 24,
+      "duration": 3.4,
+      "midi": 79,
+      "gain": 0.025,
+      "pan": -0.15,
+      "instrument": "pad"
+    },
+    {
+      "t": 24,
+      "duration": 0.6,
+      "midi": 29,
+      "gain": 0.2,
+      "pan": 0,
+      "instrument": "sub808"
+    },
+    {
+      "t": 28,
+      "duration": 2.6,
+      "midi": 89,
+      "gain": 0.08,
+      "pan": 0.1,
+      "instrument": "fm_glass"
+    },
+    {
+      "t": 28,
+      "duration": 3.35,
+      "midi": 53,
+      "gain": 0.018,
+      "pan": 0,
+      "instrument": "pad"
+    },
+    {
+      "t": 28,
+      "duration": 3.35,
+      "midi": 60,
+      "gain": 0.018,
+      "pan": 0,
+      "instrument": "pad"
+    },
+    {
+      "t": 28,
+      "duration": 3.35,
+      "midi": 65,
+      "gain": 0.018,
+      "pan": 0,
+      "instrument": "pad"
+    },
+    {
+      "t": 28,
+      "duration": 3.35,
+      "midi": 68,
+      "gain": 0.018,
+      "pan": 0,
+      "instrument": "pad"
+    }
+  ],
+  "effects": [
+    {
+      "t": 8.0,
+      "duration": 0.16,
+      "kind": "thump",
+      "gain": 0.095,
+      "pan": 0
+    },
+    {
+      "t": 8.5,
+      "duration": 0.16,
+      "kind": "thump",
+      "gain": 0.095,
+      "pan": 0
+    },
+    {
+      "t": 9.0,
+      "duration": 0.16,
+      "kind": "thump",
+      "gain": 0.095,
+      "pan": 0
+    },
+    {
+      "t": 9.5,
+      "duration": 0.16,
+      "kind": "thump",
+      "gain": 0.095,
+      "pan": 0
+    },
+    {
+      "t": 10.0,
+      "duration": 0.16,
+      "kind": "thump",
+      "gain": 0.095,
+      "pan": 0
+    },
+    {
+      "t": 10.5,
+      "duration": 0.16,
+      "kind": "thump",
+      "gain": 0.095,
+      "pan": 0
+    },
+    {
+      "t": 11.0,
+      "duration": 0.16,
+      "kind": "thump",
+      "gain": 0.095,
+      "pan": 0
+    },
+    {
+      "t": 11.5,
+      "duration": 0.16,
+      "kind": "thump",
+      "gain": 0.095,
+      "pan": 0
+    },
+    {
+      "t": 0.45,
+      "duration": 1.3,
+      "kind": "glass_shimmer",
+      "gain": 0.045,
+      "pan": -0.55
+    },
+    {
+      "t": 1.95,
+      "duration": 1.3,
+      "kind": "glass_shimmer",
+      "gain": 0.045,
+      "pan": -0.55
+    },
+    {
+      "t": 8,
+      "duration": 0.45,
+      "kind": "glass_shimmer",
+      "gain": 0.045,
+      "pan": -0.55
+    },
+    {
+      "t": 9,
+      "duration": 0.45,
+      "kind": "glass_shimmer",
+      "gain": 0.045,
+      "pan": -0.55
+    },
+    {
+      "t": 10,
+      "duration": 0.45,
+      "kind": "glass_shimmer",
+      "gain": 0.045,
+      "pan": -0.55
+    },
+    {
+      "t": 11,
+      "duration": 0.45,
+      "kind": "glass_shimmer",
+      "gain": 0.045,
+      "pan": -0.55
+    },
+    {
+      "t": 23.95,
+      "duration": 1.3,
+      "kind": "glass_shimmer",
+      "gain": 0.045,
+      "pan": -0.55
+    },
+    {
+      "t": 4.5,
+      "duration": 3.05,
+      "kind": "scratch",
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 7.55,
+      "duration": 0.13,
+      "kind": "click",
+      "gain": 0.14,
+      "pan": 0
+    },
+    {
+      "t": 8,
+      "duration": 0.13,
+      "kind": "click",
+      "gain": 0.18,
+      "pan": 0.3
+    },
+    {
+      "t": 8.02,
+      "duration": 1.2,
+      "kind": "whoosh",
+      "gain": 0.035,
+      "pan": 0.3
+    },
+    {
+      "t": 12.02,
+      "duration": 0.22,
+      "kind": "whoosh",
+      "gain": 0.045,
+      "pan": -0.6
+    },
+    {
+      "t": 12.09,
+      "duration": 0.22,
+      "kind": "whoosh",
+      "gain": 0.055,
+      "pan": -0.47
+    },
+    {
+      "t": 12.16,
+      "duration": 0.22,
+      "kind": "whoosh",
+      "gain": 0.065,
+      "pan": -0.33999999999999997
+    },
+    {
+      "t": 12.23,
+      "duration": 0.22,
+      "kind": "whoosh",
+      "gain": 0.045,
+      "pan": -0.20999999999999996
+    },
+    {
+      "t": 12.3,
+      "duration": 0.22,
+      "kind": "whoosh",
+      "gain": 0.055,
+      "pan": -0.07999999999999996
+    },
+    {
+      "t": 12.37,
+      "duration": 0.22,
+      "kind": "whoosh",
+      "gain": 0.065,
+      "pan": 0.050000000000000044
+    },
+    {
+      "t": 12.44,
+      "duration": 0.22,
+      "kind": "whoosh",
+      "gain": 0.045,
+      "pan": 0.18000000000000005
+    },
+    {
+      "t": 12.51,
+      "duration": 0.22,
+      "kind": "whoosh",
+      "gain": 0.055,
+      "pan": 0.31000000000000005
+    },
+    {
+      "t": 12.58,
+      "duration": 0.22,
+      "kind": "whoosh",
+      "gain": 0.065,
+      "pan": 0.44000000000000006
+    },
+    {
+      "t": 12.65,
+      "duration": 0.22,
+      "kind": "whoosh",
+      "gain": 0.045,
+      "pan": 0.57
+    },
+    {
+      "t": 12,
+      "duration": 2.6,
+      "kind": "whoosh",
+      "gain": 0.045,
+      "pan": 0
+    },
+    {
+      "t": 15.55,
+      "duration": 0.45,
+      "kind": "whoosh",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 16,
+      "duration": 0.18,
+      "kind": "thump",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 16.75,
+      "duration": 0.18,
+      "kind": "thump",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 17,
+      "duration": 0.18,
+      "kind": "thump",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 17.5,
+      "duration": 0.18,
+      "kind": "thump",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 16.5,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 16.512,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 16.524,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 17.5,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 17.512,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 17.524,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 18,
+      "duration": 0.18,
+      "kind": "thump",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 18.75,
+      "duration": 0.18,
+      "kind": "thump",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 19,
+      "duration": 0.18,
+      "kind": "thump",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 19.5,
+      "duration": 0.18,
+      "kind": "thump",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 18.5,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 18.512,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 18.524,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 19.5,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 19.512,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 19.524,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 20,
+      "duration": 0.18,
+      "kind": "thump",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 20.75,
+      "duration": 0.18,
+      "kind": "thump",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 21,
+      "duration": 0.18,
+      "kind": "thump",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 21.5,
+      "duration": 0.18,
+      "kind": "thump",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 20.5,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 20.512,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 20.524,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 21.5,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 21.512,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 21.524,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 22,
+      "duration": 0.18,
+      "kind": "thump",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 22.75,
+      "duration": 0.18,
+      "kind": "thump",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 23,
+      "duration": 0.18,
+      "kind": "thump",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 23.5,
+      "duration": 0.18,
+      "kind": "thump",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 22.5,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 22.512,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 22.524,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 23.5,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 23.512,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 23.524,
+      "duration": 0.075,
+      "kind": "click",
+      "gain": 0.038,
+      "pan": 0
+    },
+    {
+      "t": 20,
+      "duration": 1.1,
+      "kind": "whoosh",
+      "gain": 0.04,
+      "pan": -0.6
+    },
+    {
+      "t": 27.72,
+      "duration": 0.13,
+      "kind": "click",
+      "gain": 0.18,
+      "pan": -0.35
+    },
+    {
+      "t": 27.72,
+      "duration": 0.12,
+      "kind": "thump",
+      "gain": 0.055,
+      "pan": -0.35
+    },
+    {
+      "t": 27.84,
+      "duration": 0.13,
+      "kind": "click",
+      "gain": 0.18,
+      "pan": 0.35
+    },
+    {
+      "t": 27.84,
+      "duration": 0.12,
+      "kind": "thump",
+      "gain": 0.055,
+      "pan": 0.35
+    },
+    {
+      "t": 16,
+      "kind": "magnetic_snap",
+      "duration": 0.7,
+      "gain": 0.27,
+      "pan": 0,
+      "frequency": 698.456
+    }
+  ],
+  "sound_design_requirements": [
+    "Glass shimmers use inharmonic partials1:2.76:5.4 with bandpassed noise, stereo sweep.",
+    "Magneticclicks combine <2ms transient,3\u20135kHz resonances and lowthump.",
+    "16s snap: sixclicks15msapart plus glasschord; bassdrop pitch-envelope F1.",
+    "808 lows require3dBheadroom; restrained speech ducks music12dB andfoley6dB.",
+    "The score has no piano/strings and uses no original master recording."
+  ],
+  "light_hit_times": [
+    16,
+    16.75,
+    17,
+    17.5,
+    18,
+    18.75,
+    19,
+    19.5,
+    20,
+    20.75,
+    21,
+    21.5,
+    22,
+    22.75,
+    23,
+    23.5,
+    24
+  ]
+}

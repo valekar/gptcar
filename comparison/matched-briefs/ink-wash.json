@@ -1,0 +1,856 @@
+{
+  "slug": "ink-wash",
+  "original_title": "The Swordsman and the River",
+  "premise": "A swordsman crosses the river on the water and splits the current with a single stroke.",
+  "published_delivery": {
+    "slug": "ink-wash",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/ink-wash.mp4",
+    "sha256": "38c2d3681aa7d49a5d2199a319e4934a1b89d182ace9446c3575eccfa606533c",
+    "duration": 48.0,
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": "1152",
+    "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+    "frames": 48,
+    "sheets": 4
+  },
+  "production_format_source": "Full verbatim DEMO header below; measured published delivery above governs v2.",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "explanation": "No initial conversation/inputprompt transcript is published in inspected repository. STYLE.md is a verbatim published styleprompt; DEMO.md is published retrospective productiondocumentation. Shot prompts are source-informed reconstruction of finishedmovie, never a claimed identical originalchatprompt."
+  },
+  "published_style": {
+    "path": "outputs/gptcar/styles/ink-wash/STYLE.md",
+    "sha256": "5d71598f0b9cf4034c6461956b0d8bd63bd33750b4045376044f0d956b01d645",
+    "verbatim": "# Chinese Ink Wash — Style Prompt\n\n> Xieyi ink painting on rice paper, animated: blank paper is space, one brushstroke is a mountain, a wave, a gesture or a cut.\n> References (grammar only): Shanghai Animation Film Studio's *Feelings of Mountains and Water* (1988) (blank-paper space, ink bloom, guqin pacing, figures in a few strokes); the bamboo-forest fight of *Crouching Tiger, Hidden Dragon* (weightlessness, stillness before action). Copy none of their characters, compositions or music.\n\n## 1. Essence, and what it is not\n\nAn ink painting (水墨) painted and unrolled before you: black ink on warm rice paper in five tones, plus **one** red, the vermilion seal. No Western outlines: forms are made by **loaded brushstrokes** whose dark edge *is* the contour (没骨, \"boneless\" painting), by **wet washes** that bleed into the paper, and by **dry, fast strokes** where the paper shows through the bristle tracks (飞白, \"flying white\").\n\nMost of the frame is **empty paper** (留白): water, sky, mist, silence. Things are *painted into existence*, not cut to.\n\nNot watercolour (no colour washes), not vector art with a brush texture (no flat fills or closed outlines), not a calligraphy title sequence.\n\n## 2. Materials & rendering\n\n- **Paper** is procedural, in the compositor, never a texture file: warm rice paper (around `#F2ECDE`), cloud mottling, long fibres, pulp flecks, grain that fades when zoomed out (or it shimmers), a light vignette; anchored to the world.\n- **Ink** is stroke opacity multiplied onto paper (never an overlay), in five tones (墨分五色):\n\n| Tone | Opacity | Use |\n|---|---|---|\n| 焦 jiao (burnt) | ~.96 | calligraphy, the sharpest lines, moss dots |\n| 浓 nong (thick) | ~.82 | contours, dark edge of loaded strokes |\n| 重 zhong (heavy) | ~.60 | secondary lines, folds |\n| 淡 dan (light) | ~.34 | mountain bodies, robe and body washes |\n| 清 qing (clear) | ~.16 | far mountains, faces, mist |\n\n- **Brushstroke model**: centreline × pressure profile × width noise, plus 4–60 **bristles** whose ink load drops along the stroke and breaks on long-scale noise. `dry` runs from a solid wet stroke to flying white (dry strokes are bristle tracks only).\n- **Loaded stroke**: bristles darker on one side, so the stroke carries its own contour: this makes bodies, rocks and waves read as ink, not vectors.\n- **Two layers**: the wet one bleeds in the compositor (noisy blur, **edge pigment accumulation**, granulation); the dry one only gets fibre jitter and paper tooth.\n- **Masses**: soft polygons, jittered edges, a gradient; never flat fills.\n- **Landscape**: mountains dissolve downward into mist bands, with 披麻皴 texture and 苔点 moss dots on near ranges only; rocks are outline → axe-cut texture → shadow wash → dots.\n- **Water is blank paper**, moved by faint dry streaks and open ink rings. Solid water: Song-dynasty **parallel wave lines** (dense near the edge) or a pale body with a few huge loaded strokes along its face.\n- **Figures are xieyi**: one pale body mass plus two loaded strokes, burnt-ink lines for limbs; features, if ever shown, in 3–5 strokes.\n- **Calligraphy**: an OFL brush font is only a **skeleton**: trace centrelines in stroke order, pressure from glyph thickness, hidden-tip entry (藏锋), tapered exits.\n\n## 3. Colour logic\n\n- Ink only, from cool grey at low density to warm black at full density. No other hue in the world.\n- **One vermilion** (around `#B02E22`), for the seal and at most one tiny accent in the story (an object the protagonist carries). The accent finds the protagonist in wide shots and can rhyme with the seal. Never a red wash, never red type.\n- Values carry depth: far = pale and soft, near = dark and textured. If a frame gets busy, remove ink rather than add tone.\n\n## 4. Type & subtitles\n\n- Subtitles are **inscriptions (题跋)**: a classical italic serif (Cormorant Garamond italic), ink-coloured, no box, ≤ 2 lines, placed in each shot's empty paper. A small vermilion square marks the start of each line. They appear wet and dry in a fraction of a second. Hold ≥ max(1.8 s, speech + 0.6 s).\n- Titles are written on the painting itself, in vertical columns in its empty space, with a vermilion 白文 seal drawn by code (lines knocked out of a slightly irregular red square, with ink-paste speckles). They move with the world.\n- Screen-space overlays reset the camera transform.\n\n## 5. Motion quality\n\n- **Figures step at 12 fps** (on twos); their position, the camera, blooms, ripples and splatter move on ones at 24 fps.\n- **Stable strokes on twos**: seed every stroke by its index and compute bristle breaks along *normalized* arc length × a fixed reference length, so flying-white gaps don't crawl every drawing. Allow only a small \"boil\" on the width noise.\n- **Painted into existence**: strokes appear in drawing order.\n- **Stillness before action** (when a decisive stroke is the event): hold, with at most a slow push-in, then let the stroke cross the frame in a few frames. Consequences start only after the stroke has finished.\n- Nothing is tweened like a vector shape: things are painted, bloom or dissolve into mist.\n\n## 6. Camera grammar\n\nA vocabulary, not a route. Opening and ending come from the topic.\n\n| Move | Expresses | Can serve |\n|---|---|---|\n| Locked frame on the paper | The page is the stage; things are painted in | a thing forming; a line being read; a still decision |\n| Right-to-left pan (handscroll) | Time and distance as one painting | a journey; a history; a process |\n| Vertical tilt (hanging scroll) | Height, stages stacked | seasons; a climb; generations |\n| Lateral tracking, lead room, slow far parallax | Motion through a world | travel; a chase; a commute |\n| High wide, a tiny figure in blank paper | Smallness, solitude | loneliness; nature's scale; one life among many |\n| Low angle, dark mass towering, slow push-in with shake | Weight, threat | an obstacle; a storm; pressure |\n| Hard cut to an extreme close-up | A break in the flow (the style's only hard cuts) | a decision; a shock; a memory |\n| Push into an ink bloom or mist | Passing between states | memory; dream; a season turning |\n| Pull back until a mark joins the whole | The part was inside something larger | a summing-up; irony of scale |\n| Return to an earlier framing | The rhyme shows what changed | aftermath; growth; before/after |\n\nFraming: 60–80 % empty paper; dark foreground may pass along the frame bottom. Transitions are ink blooms, pans along the scroll or mist; never a generic dissolve or a wipe.\n\n## 7. Sound palette\n\n- **Guqin-led, not piano and strings**: guqin (`core/audio/pluck.py` `guqin`: open and stopped strings, slides, vibrato, glassy harmonics, sweeps), a low breathy xiao, big drum and timpani for mass, frame drum for steps, a small gong for a seal. Chinese pentatonic modes.\n- **Cue to the picture, never loop**: unmetred plucks suit emptiness, a pulse suits movement, rolls suit mass; painted strokes can each land on a pluck.\n- **Silence is literal**: zero the whole bus (music, ambience, reverb tails) with short fades. At most one sound inside it (a drip, one ring). Place it where the story holds its breath.\n- **Foley follows the material**: ink drop (short \"tink\" + soft wet thud), brush air (band-passed noise with bristle grains, never a metal whoosh), steps on water (small splash), splatter (wet ticks), seal (wooden thump + paper crackle).\n- **Voice**: calm, few lines, like colophons that don't explain the picture. Duck music ~8 dB and ambience too; verify each line with whisper on the final mix.\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **One stroke is everything.** *Fits content like:* a product born from one line; a city growing from a single street; a day beginning with one bird.\n- **Emptiness is matter.** Removing ink reveals paper white. *Fits content like:* a door opening in a wall; a crowd parting; an absence in a family portrait.\n- **Brush = gesture = action.** Stroke order becomes choreography. *Fits content like:* a dancer's phrase that spells a word; a signature; a chef's knife work.\n- **Flying white (飞白).** One fast dry stroke across the frame, strongest out of a silence. *Fits content like:* a sprint finish; a decision; a comet.\n- **Ink bloom transition.** The next scene grows inside a spreading drop with a dark tide-line (noisy radial mask; world-anchored for elements, in the compositor for scenes). *Fits content like:* memories; seasons; one era giving way to the next.\n- **The handscroll.** One long painting panned right to left, seen whole at last. *Fits content like:* a history; a supply chain from field to hand; a day in a street.\n- **Splitting a mass.** Halves clipped either side of the cut; one rises and fades, one slumps; splatter stays. *Fits content like:* breaking a record; a barrier falling; an idea splitting in two.\n\n## 9. Pitfalls of the medium\n\n- Dry brush looks like dashed lines → breaks from long-scale noise and an ink load that drops along the stroke.\n- Parallel semi-transparent strokes make bodies look like organ pipes → one base mass + two loaded strokes.\n- Big side-brush strokes look like a hairbrush → a gradient mass + a few low-dryness strokes. Gradients in vertical bands leave seams → a cached per-pixel layer.\n- A stroke body split between wet and dry layers loses density → full body in the dry layer plus a wet halo.\n- Clipping calligraphy with the font outline notches the junctions → font as skeleton only.\n- Uniform hatching inside a wave turns it into a wire mesh → loaded strokes along the face.\n\n## 10. Engine\n\nIn `demo/`: `ink.js` (brush engine: strokes, bristles, loaded strokes, masses, blots), `comp.js` (WebGL rice-paper compositor: bleed, edge pigment, paper, bloom), `land.js` (mountains, cun, cliffs, pine, reeds, ripples), `wave.js` (gestural wave), `glyph.js` (skeleton-traced calligraphy), `seal.js` (vermilion seal), `hero.js` (xieyi figure rig), `subs.js` (inscription subtitles), `music/score.py` (guqin writing with `core/audio/pluck.py`); `?test=sheet|pose|frame` pages draw model sheets from the real engine.\n\n## 11. Variation space\n\nYou decide the structure, the characters (or none), the landscape, the opening, the ending, the camera path, the pacing and where the red goes. All far from our demo:\n\n- Structures: **one character, stroke by stroke** (no figure; each stroke of one large character opens into a vignette of the topic); **a hanging scroll** (a tilt from sky to ground through four stages, tone deepening); **two brushes in dialogue** (alternating strokes answer each other until they meet in one bloom).\n- Openings: **in motion** (a figure already painted and moving; the world washes in around it); **ink first** (a fully inked frame; ink is lifted where light or a road appears); **the bristles** (a wet stroke fills the frame; only when it lifts do we see what it drew).\n- Endings: **one small mark** (close on a footprint or a leaf while the ink around it dries; no pull-back); **evaporation** (the painting un-paints in reverse stroke order); **mid-gesture** (the brush stops before the last stroke lands).\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n"
+  },
+  "published_demo": {
+    "path": "outputs/gptcar/styles/ink-wash/DEMO.md",
+    "sha256": "4d295adcac64a6052353a5cfcd81519f41403689e06ddb2550210ca1cc1133c3",
+    "verbatim": "# Chinese Ink Wash — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *The Swordsman and the River* (48 s) · `ink-wash.mp4` · source in [`demo/`](demo/)\n\n\n## Story & structure\n\nA swordsman crosses a river on the water and splits a towering wave with one stroke. One character, one goal, one turn. The brush itself is the event: the stroke that cuts the wave is also the character 水 written in the air.\n\nArc (48 s): emptiness → a drop of ink (creation) → a small figure in vast space → lightness and joy (the qinggong run across the water) → an overwhelming obstacle drawn as mass (a wet splash of dark ink becoming a wave) → silence → one decisive stroke → release → scale reveal (the figure is a tiny mark in the whole painting) → seal. The closing line is philosophical rather than triumphant (\"cut water with a sword and it only flows on\").\n\nNative moves spent: one stroke is everything (the opening drop), brush = gesture (the written 水), flying white (the cut, after total silence), splitting a mass (the wave), the handscroll (the final pull-back and seal).\n\n## Shots\n\n| Beat | Camera |\n|---|---|\n| Opening | Locked frame of blank paper; the drop falls into it. |\n| Establishing | Slow right-to-left pan (scroll unrolling), ending on a **high wide** frame: the figure 150–180 px tall, the river a huge blank. |\n| Travel | Lateral tracking with the figure at ~60 % of the frame, lead room ahead; very slow parallax far mountains; occasional dark reeds passing at the very bottom. |\n| Threat | **Low angle**, horizon low, the wave towering, the figure tiny in a corner; slow push-in with growing shake. |\n| Silence | Hard cut to an extreme close-up (hat brim, no eyes); then an **over-the-shoulder** frame putting the figure, the written character and the wave on one axis. |\n| Release | Back to the same high wide scale as the establishing shot. |\n| Ending | Continuous pull-back from the figure to the whole handscroll on its silk mount; seal; end card below the scroll. |\n\nWhy this route, for this story: the locked blank paper put \"nothing\" before \"something\"; the scroll pan ending high and wide made the figure tiny; the extreme close-up in the silence was the film's only hard cut; the release returned to the establishing scale so the rhyme showed what changed; the pull-back to the mounted scroll turned the whole journey into one painting. Each of these is one choice from STYLE.md §6, not the style's default opening or ending.\n\nThe hold before the strike is a slow 5 % push-in; the stroke then crosses the frame in ~4 frames, and the wave only starts splitting after it.\n\n## Score structure\n\nOriginal guqin score (`demo/music/score.py`), F-gong pentatonic (F G A C D), cued by section rather than looped. Free-time opening, 60 BPM for landscape, 90 BPM for travel (footsteps on beats), drum roll for the threat, **digital silence**, three glassy harmonics for the three written strokes, silence again, then drum + seven-string sweep on the cut; the theme returns for the release; last note = seal.\n\nFoley specific to this film: sword draw (scabbard scrape + long thin metallic ring, cut before the second silence), the cut (tearing air + river roar + low boom). The sword ring and a single drip are the only sounds allowed inside the silences; the ambience hard-cuts into the first silence.\n\nVoice: calm British narrator, Kokoro `bm_george`, lang `en-gb`, speed .82–.86, 4–6 lines. Music ducked ~8 dB under voice, ambience ducked too: a river roar under a line made whisper hear \"Halfway\" as \"This way\". Every line checked with whisper and again on the final mix.\n\n## Palette & props\n\n- Paper: base `#F2ECDE`–`#F3EBDD` (rgb .95/.925/.87), cloud mottling ±7 %, three fibre directions (+1.8 % light), vignette ~.22. Ink from cool grey `rgb(.52,.55,.58)` to warm black `rgb(.075,.068,.062)`. Vermilion `#B02E22`: the seal and the hero's **sword tassel**, which finds him in wide shots and rhymes with the final seal.\n- Compositor numbers: wet bleed is a 12-tap noisy Poisson blur of ~5 px at 1:1; edge pigment = small blur − large blur.\n- Ink tones as used: burnt for calligraphy, sword, hat brim line, moss dots; thick for contours and hat; heavy for folds and scabbard; light for mountain bodies and robe washes; clear for far mountains, face, mist.\n- Stroke profiles in `ink.js`: `brush`, `tip`, `nail`, `lens`, `fan`, `rise`, `robe`, `even` + per-point pressure; loaded strokes use `darkDir`, `side`, `brWet` (their bristles go into the wet layer); body fill fades as `(1-dry)^1.6`; `dry` .3 = textured, .6+ = flying white.\n- Mountains (`land.js`): per pixel once and cached, pointed exponential peaks with 3-octave roughness; far ranges tone .12–.16 untextured, near .4–.5 textured; range ends faded with a horizontal alpha mask, never by sloping the ridge (it crosses the river). Pine: one crooked loaded trunk, a few tip branches, fan-shaped needle clusters. Reeds: long tip strokes + lens leaves, foreground only.\n- Water: ink rings at each footfall, one stroke of 1.86π with an open gap, r ∝ age^0.6, fading over ~2.4 s.\n- The wave: a pale wet body + 4–5 huge loaded strokes curled over at the crest + a few thin wave lines + spray as irregular blots.\n- The hero (`hero.js`): 100-unit rig (hip, chest, head, arms, legs, hem points, flare, sheath, ribbon). Hat = one wet mass + two dry ridge lines + a burnt-ink brim line; robe = one pale mass + two loaded strokes; legs and sword in burnt ink; one ribbon in the wind. The face stays under the hat; features shown once (sword brows, phoenix-eye lids, one nose line, drooping moustache).\n- **Qinggong leap**: body pitched ~30° forward, one knee tucked, the other leg trailing, robe pulled back into a big pale mass with a dark back edge, sleeves streaming. Step cycle: touch (14 %) → rise → glide (45 %) → descend; height `sin(π·phase)`; one ink ring per touch.\n- The written 水: traced from Ma Shan Zheng, `solid: true`, dryness .17, exits tapered to .12–.18, 45° hidden-tip lead-in.\n- Stable strokes: `gapLen` fixed reference length; boil on a 5-drawing cycle.\n- The split wave: the upper half rises and rotates, the lower slumps and squashes, with curling crests along both torn edges and pale wash blocks; splatter flies along the sword direction with gravity.\n- Ink bloom: mask `d·(0.62 + 0.8·fbm)`; element blooms use a 1/4-res mask with `destination-in`.\n\n## End card\n\nTitle: two vertical columns written on the scroll itself (English letterforms rotated 90°, Cormorant SC 600, wide tracking) + seal; it fades in wet → dry and evaporates when the pan starts. Subtitles: Cormorant Garamond italic 500, 46 px, 1 px tracking, drying in ~0.35 s.\n\nEnd card: the whole scroll on a dark table with silk borders and rollers; \"CHINESE INK WASH\" (Cormorant SC 600, 44 px, 14 px tracking) and the credit line (italic 30 px) in pale paper colour below. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Build notes\n\n```\nstyles/ink-wash/demo/\n  ink.js     brush engine (strokes, bristles, masses, blots)   comp.js    WebGL rice-paper compositor (bleed, edge, paper, bloom)\n  hero.js    xieyi figure rig + poses                           face.js    close-up face (one use)\n  land.js    mountains, cun, cliffs, pine, reeds, ripples       wave.js    gestural wave\n  glyph.js   \"水\" traced from Ma Shan Zheng + the cut stroke    seal.js    vermilion seal\n  world.js   the handscroll world, reveals, shots 1–2           cross.js   crossing + rising (shots 3–4)\n  climax.js  silence, writing, the cut (5–6)                    passage.js parted river, bow, scroll, end card (7–8)\n  story.js   timeline (single source of truth)                  shots.js   dispatcher, transitions, subtitle spots, sound events\n  subs.js    inscription subtitles   music/score.py  original guqin score   mix.py  foley + voice + music   build.sh\n```\n\n1. Write `story.js` times first (voice durations from `core/tts/tts.py`), then brief the score with the same numbers (the composer can run in parallel).\n2. `node core/render/still.mjs styles/ink-wash/demo --range a:b:1` + `core/render/sheet.py` for overview sheets; `?test=sheet|pose|shui|frame` pages for design work; `?nosub=1`, `?poster=1`.\n3. `node core/render/events.mjs` → `mix.py` → `video.mjs --fps 24 --workers 3` (1152 frames ≈ 60–130 s) → `mux.sh … 24 0` (grain 0: the paper is in the shader).\n4. Or simply `sh styles/ink-wash/demo/build.sh`.\n\nPitfalls tied to this demo's props:\n- Subtitles inherited the world camera transform in panning shots and slid off screen.\n- A cliff drawn with `flip=-1` put the figure in mid-air; the back of a cliff polygon showed a straight vertical edge; a rock's base was cut by the layer canvas bottom → compute screen extents after flipping, slant the back side, fade layer bottoms with a `destination-in` gradient.\n- The cut began splitting the wave while the stroke was still crossing the frame.\n- A scene with rare, heavy per-pixel steps can exceed Playwright's default screenshot timeout; just retry the still render (the frame itself is deterministic).\n"
+  },
+  "narration": [
+    {
+      "id": "L1",
+      "text": "The river keeps no name. It waits for no one.",
+      "voice": "bm_george",
+      "speed": 0.86,
+      "lang": "en-gb",
+      "start": 10.6,
+      "duration": 3.456
+    },
+    {
+      "id": "L2",
+      "text": "He crossed it the only way he knew... lightly.",
+      "voice": "bm_george",
+      "speed": 0.86,
+      "lang": "en-gb",
+      "start": 15.6,
+      "duration": 3.183
+    },
+    {
+      "id": "L3",
+      "text": "Halfway over, the river rose to meet him.",
+      "voice": "bm_george",
+      "speed": 0.86,
+      "lang": "en-gb",
+      "start": 22.5,
+      "duration": 3.237
+    },
+    {
+      "id": "L4",
+      "text": "Draw a sword to cut the water...",
+      "voice": "bm_george",
+      "speed": 0.84,
+      "lang": "en-gb",
+      "start": 35.9,
+      "duration": 2.623
+    },
+    {
+      "id": "L5",
+      "text": "and the water only flows on.",
+      "voice": "bm_george",
+      "speed": 0.82,
+      "lang": "en-gb",
+      "start": 39.6,
+      "duration": 2.728
+    }
+  ],
+  "verbatim_published_script_files": {
+    "lines.json": [
+      {
+        "id": "L1",
+        "text": "The river keeps no name. It waits for no one.",
+        "voice": "bm_george",
+        "speed": 0.86,
+        "lang": "en-gb"
+      },
+      {
+        "id": "L2",
+        "text": "He crossed it the only way he knew... lightly.",
+        "voice": "bm_george",
+        "speed": 0.86,
+        "lang": "en-gb"
+      },
+      {
+        "id": "L3",
+        "text": "Halfway over, the river rose to meet him.",
+        "voice": "bm_george",
+        "speed": 0.86,
+        "lang": "en-gb"
+      },
+      {
+        "id": "L4",
+        "text": "Draw a sword to cut the water...",
+        "voice": "bm_george",
+        "speed": 0.84,
+        "lang": "en-gb"
+      },
+      {
+        "id": "L5",
+        "text": "and the water only flows on.",
+        "voice": "bm_george",
+        "speed": 0.82,
+        "lang": "en-gb"
+      }
+    ]
+  },
+  "timed_shot_prompts": [
+    {
+      "start": 0,
+      "end": 5.6,
+      "name": "One ink drop makes a landscape",
+      "visual_prompt": "A falling black drop hits at0.9; wet bloom spreads into many pale receding mountain peaks. Vertical title and small vermilion seal enter2.6. Vast untouched rice paper.",
+      "onscreen_text": "THE SWORDSMAN\nAND THE RIVER",
+      "camera_motion": "Locked wide, mountain wash breathing.",
+      "sound_direction": "New F-gong guqin/xiao score,60BPM landscape into90BPM travel; gong/drum wave suspense, absolute silence30.5–32.4 then single sword ring. Fresh bm_george en-gb voice, original five lines.",
+      "transition": "Ink bloom; no photographic dissolve.",
+      "material_requirements": "Five ink tones on warm rice paper; wet bloom and pooled edges, dry flying-white bristle strokes. One vermilion accent on sword tassel/seal. Tiny xieyi swordsman in flowing robe, broad hat hiding eyes; pine, bamboo and torn cliff anatomy. Never replace calligraphic water with a generic sine band."
+    },
+    {
+      "start": 5.6,
+      "end": 13.8,
+      "name": "Find the tiny swordsman",
+      "visual_prompt": "Pan along peaks to pine rooted on a torn rock ledge. Hero paints in with three gestures8.8/9.4/10.0; vermilion tassel10.3. He stands small against blank river; robe/hat/sword are legible.",
+      "onscreen_text": "The river keeps no name.\nIt waits for no one.",
+      "camera_motion": "Pan5.6–10.6; hold to13.8.",
+      "sound_direction": "New F-gong guqin/xiao score,60BPM landscape into90BPM travel; gong/drum wave suspense, absolute silence30.5–32.4 then single sword ring. Fresh bm_george en-gb voice, original five lines.",
+      "transition": "Preserve the continuous material world; source-timed transition.",
+      "material_requirements": "Five ink tones on warm rice paper; wet bloom and pooled edges, dry flying-white bristle strokes. One vermilion accent on sword tassel/seal. Tiny xieyi swordsman in flowing robe, broad hat hiding eyes; pine, bamboo and torn cliff anatomy. Never replace calligraphic water with a generic sine band."
+    },
+    {
+      "start": 13.8,
+      "end": 15.3,
+      "name": "Crouch and leap",
+      "visual_prompt": "Hero compresses knees, robe gathers; leaps14.2 from ledge and crosses a bloom-like ink transition. Pine and cliff remain coherent before transition.",
+      "onscreen_text": "",
+      "camera_motion": "Track leap, open into water horizon.",
+      "sound_direction": "New F-gong guqin/xiao score,60BPM landscape into90BPM travel; gong/drum wave suspense, absolute silence30.5–32.4 then single sword ring. Fresh bm_george en-gb voice, original five lines.",
+      "transition": "Ink wash handoff14.45–15.3.",
+      "material_requirements": "Five ink tones on warm rice paper; wet bloom and pooled edges, dry flying-white bristle strokes. One vermilion accent on sword tassel/seal. Tiny xieyi swordsman in flowing robe, broad hat hiding eyes; pine, bamboo and torn cliff anatomy. Never replace calligraphic water with a generic sine band."
+    },
+    {
+      "start": 15.3,
+      "end": 21.3,
+      "name": "Nine light steps on water",
+      "visual_prompt": "Nine alternating water contacts at15.3333+i×0.66667, each creates fine expanding concentric ink ripples. Robe and tassel trail; bamboo passes foreground; peaks stay faint.",
+      "onscreen_text": "He crossed it the only way he knew —\nlightly.",
+      "camera_motion": "Lateral tracking, figure floats lightly between contacts.",
+      "sound_direction": "New F-gong guqin/xiao score,60BPM landscape into90BPM travel; gong/drum wave suspense, absolute silence30.5–32.4 then single sword ring. Fresh bm_george en-gb voice, original five lines.",
+      "transition": "Ink darkens subtly from19.9.",
+      "material_requirements": "Five ink tones on warm rice paper; wet bloom and pooled edges, dry flying-white bristle strokes. One vermilion accent on sword tassel/seal. Tiny xieyi swordsman in flowing robe, broad hat hiding eyes; pine, bamboo and torn cliff anatomy. Never replace calligraphic water with a generic sine band."
+    },
+    {
+      "start": 21.3,
+      "end": 26.8,
+      "name": "The river rises",
+      "visual_prompt": "He skids21.3–22.2 and stops tiny at right. A dense loaded-brush wave grows from left into a towering hooked crest, scores of directional bristles and separate ink droplets; not a solid triangle.",
+      "onscreen_text": "Halfway over,\nthe river rose to meet him.",
+      "camera_motion": "Widen/tilt with wave scale; keep hero grounded on ripple.",
+      "sound_direction": "New F-gong guqin/xiao score,60BPM landscape into90BPM travel; gong/drum wave suspense, absolute silence30.5–32.4 then single sword ring. Fresh bm_george en-gb voice, original five lines.",
+      "transition": "Preserve the continuous material world; source-timed transition.",
+      "material_requirements": "Five ink tones on warm rice paper; wet bloom and pooled edges, dry flying-white bristle strokes. One vermilion accent on sword tassel/seal. Tiny xieyi swordsman in flowing robe, broad hat hiding eyes; pine, bamboo and torn cliff anatomy. Never replace calligraphic water with a generic sine band."
+    },
+    {
+      "start": 26.8,
+      "end": 27.9,
+      "name": "Hat and a falling drop",
+      "visual_prompt": "The only hard close-up: textured dark hat dominates, eyes hidden, narrow nose/mouth and wet ink beard lines. Drop falls27.3 and drips27.6.",
+      "onscreen_text": "",
+      "camera_motion": "Extreme close-up under hat brim.",
+      "sound_direction": "Music tension leaves space for one drip.",
+      "transition": "Hard cut26.8; return to action27.9.",
+      "material_requirements": "Five ink tones on warm rice paper; wet bloom and pooled edges, dry flying-white bristle strokes. One vermilion accent on sword tassel/seal. Tiny xieyi swordsman in flowing robe, broad hat hiding eyes; pine, bamboo and torn cliff anatomy. Never replace calligraphic water with a generic sine band."
+    },
+    {
+      "start": 27.9,
+      "end": 30.5,
+      "name": "Sword writes water",
+      "visual_prompt": "Hero left foreground draws sword up; writes 水 using three distinct loaded strokes28.5–29.0,29.2–29.75,29.95–30.35. Giant wave right, hero red tassel only colour.",
+      "onscreen_text": "水",
+      "camera_motion": "Medium-wide with glyph above hero and crest at right.",
+      "sound_direction": "New F-gong guqin/xiao score,60BPM landscape into90BPM travel; gong/drum wave suspense, absolute silence30.5–32.4 then single sword ring. Fresh bm_george en-gb voice, original five lines.",
+      "transition": "Three calligraphic strokes remain readable.",
+      "material_requirements": "Five ink tones on warm rice paper; wet bloom and pooled edges, dry flying-white bristle strokes. One vermilion accent on sword tassel/seal. Tiny xieyi swordsman in flowing robe, broad hat hiding eyes; pine, bamboo and torn cliff anatomy. Never replace calligraphic water with a generic sine band."
+    },
+    {
+      "start": 30.5,
+      "end": 32.57,
+      "name": "Silence then one dry cut",
+      "visual_prompt": "Hold 水 and towering crest in silence. Sword flashes across in four frames32.4–32.57, making a ragged dry-brush horizontal slash; wave separates into upper/lower ribbons.",
+      "onscreen_text": "水",
+      "camera_motion": "Locked for tension, four-frame action.",
+      "sound_direction": "Digital silence to32.4; sword ring only at release.",
+      "transition": "No slow substitute for the decisive slash.",
+      "material_requirements": "Five ink tones on warm rice paper; wet bloom and pooled edges, dry flying-white bristle strokes. One vermilion accent on sword tassel/seal. Tiny xieyi swordsman in flowing robe, broad hat hiding eyes; pine, bamboo and torn cliff anatomy. Never replace calligraphic water with a generic sine band."
+    },
+    {
+      "start": 32.57,
+      "end": 35.8,
+      "name": "Wave unravels",
+      "visual_prompt": "Separate brush ribbons curl and thin into quiet river currents; droplets fall, glyph fades. Ink wash handoff restores long river with hero walking lightly toward bank.",
+      "onscreen_text": "",
+      "camera_motion": "Pull/widen into landscape35.0–35.8.",
+      "sound_direction": "New F-gong guqin/xiao score,60BPM landscape into90BPM travel; gong/drum wave suspense, absolute silence30.5–32.4 then single sword ring. Fresh bm_george en-gb voice, original five lines.",
+      "transition": "Ink dissipates, no generic alpha fade.",
+      "material_requirements": "Five ink tones on warm rice paper; wet bloom and pooled edges, dry flying-white bristle strokes. One vermilion accent on sword tassel/seal. Tiny xieyi swordsman in flowing robe, broad hat hiding eyes; pine, bamboo and torn cliff anatomy. Never replace calligraphic water with a generic sine band."
+    },
+    {
+      "start": 35.8,
+      "end": 40.4,
+      "name": "The current flows on",
+      "visual_prompt": "Hero traverses river toward left ledge; thin parallel current lines survive the sword. Closing poem appears with vermilion square marker.",
+      "onscreen_text": "Draw a sword to cut the water…\n…and the water only flows on.",
+      "camera_motion": "Tracking and gradual push38.6–40.2 to hero; bank reached39.6.",
+      "sound_direction": "New F-gong guqin/xiao score,60BPM landscape into90BPM travel; gong/drum wave suspense, absolute silence30.5–32.4 then single sword ring. Fresh bm_george en-gb voice, original five lines.",
+      "transition": "Preserve the continuous material world; source-timed transition.",
+      "material_requirements": "Five ink tones on warm rice paper; wet bloom and pooled edges, dry flying-white bristle strokes. One vermilion accent on sword tassel/seal. Tiny xieyi swordsman in flowing robe, broad hat hiding eyes; pine, bamboo and torn cliff anatomy. Never replace calligraphic water with a generic sine band."
+    },
+    {
+      "start": 40.4,
+      "end": 43.8,
+      "name": "Bow to the river",
+      "visual_prompt": "Robe folds articulate as hero bows40.9–41.5, sword at side and red tassel resting. Tiny opposite bank and mountains remain behind.",
+      "onscreen_text": "",
+      "camera_motion": "Medium hero, then pull back from42.6.",
+      "sound_direction": "New F-gong guqin/xiao score,60BPM landscape into90BPM travel; gong/drum wave suspense, absolute silence30.5–32.4 then single sword ring. Fresh bm_george en-gb voice, original five lines.",
+      "transition": "The landscape becomes a mounted handscroll.",
+      "material_requirements": "Five ink tones on warm rice paper; wet bloom and pooled edges, dry flying-white bristle strokes. One vermilion accent on sword tassel/seal. Tiny xieyi swordsman in flowing robe, broad hat hiding eyes; pine, bamboo and torn cliff anatomy. Never replace calligraphic water with a generic sine band."
+    },
+    {
+      "start": 43.8,
+      "end": 48,
+      "name": "Mounted handscroll",
+      "visual_prompt": "Whole long painted paper strip mounted in pale border against dark fabric; initial mountains at right and arrived hero at left. Vermilion seal44.6, style label45.6.",
+      "onscreen_text": "CHINESE INK WASH",
+      "camera_motion": "Pull to whole handscroll by45; hold.",
+      "sound_direction": "New F-gong guqin/xiao score,60BPM landscape into90BPM travel; gong/drum wave suspense, absolute silence30.5–32.4 then single sword ring. Fresh bm_george en-gb voice, original five lines.",
+      "transition": "End credit uses honest new GPT authorship in original placement.",
+      "material_requirements": "Five ink tones on warm rice paper; wet bloom and pooled edges, dry flying-white bristle strokes. One vermilion accent on sword tassel/seal. Tiny xieyi swordsman in flowing robe, broad hat hiding eyes; pine, bamboo and torn cliff anatomy. Never replace calligraphic water with a generic sine band."
+    }
+  ],
+  "published_text_source_inventory": {
+    "note": "Verbatim literals from text/annotation/caption sourcecalls. This supplemental audit index may include formatting/style strings; shot narrativecards and scripts above are authoritative. Source path/line retained to resolve exacttext.",
+    "entries": [
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/climax.js",
+        "line": 20,
+        "published_source_literals": [
+          "), dry: WV.dry.getContext("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/comp.js",
+        "line": 110,
+        "published_source_literals": [
+          "webgl2"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/comp.js",
+        "line": 155,
+        "published_source_literals": [
+          "), cd: dry.getContext(",
+          "), cc: col.getContext("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/frames.js",
+        "line": 7,
+        "published_source_literals": [
+          "./subs.js"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/frames.js",
+        "line": 9,
+        "published_source_literals": [
+          "canvas",
+          "), dry: TMP.dry.getContext(",
+          "), col: TMP.col.getContext(",
+          ") }; } for (const k of [",
+          "dry",
+          "col"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/frames.js",
+        "line": 29,
+        "published_source_literals": [
+          "The river keeps no name.\\nIt waits for no one."
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/glyph.js",
+        "line": 28,
+        "published_source_literals": [
+          "#000"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/index.html",
+        "line": 2,
+        "published_source_literals": [
+          "utf-8"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/main.js",
+        "line": 3,
+        "published_source_literals": [
+          "./subs.js"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/main.js",
+        "line": 36,
+        "published_source_literals": [
+          "600 64px CormorantSC",
+          "12px",
+          "THE SWORDSMAN",
+          "AND THE RIVER"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/main.js",
+        "line": 37,
+        "published_source_literals": [
+          "italic 500 30px Cormorant",
+          "3px",
+          "a Chinese ink wash film"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/passage.js",
+        "line": 144,
+        "published_source_literals": [
+          "600 44px CormorantSC",
+          "14px",
+          "CHINESE INK WASH"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/passage.js",
+        "line": 145,
+        "published_source_literals": [
+          "italic 500 30px Cormorant",
+          "2px",
+          "LemoLab × Claude Opus 5.5"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/sheet.js",
+        "line": 8,
+        "published_source_literals": [
+          "left"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/sheet.js",
+        "line": 24,
+        "published_source_literals": [
+          "THE SWORDSMAN",
+          "600 54px CormorantSC",
+          "left"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/sheet.js",
+        "line": 25,
+        "published_source_literals": [
+          "model sheet  ·  Chinese Ink Wash  ·  “The Swordsman and the River”  ·  v1",
+          "italic 500 25px Cormorant"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/sheet.js",
+        "line": 32,
+        "published_source_literals": [
+          "600 20px CormorantSC",
+          "center"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/sheet.js",
+        "line": 38,
+        "published_source_literals": [
+          "INK  ·  FIVE TONES",
+          "600 21px CormorantSC",
+          "left"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/sheet.js",
+        "line": 43,
+        "published_source_literals": [
+          "600 22px CormorantSC",
+          "left"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/sheet.js",
+        "line": 44,
+        "published_source_literals": [
+          "italic 500 22px Cormorant"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/sheet.js",
+        "line": 48,
+        "published_source_literals": [
+          "ZHU",
+          "600 22px CormorantSC",
+          "left"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/sheet.js",
+        "line": 49,
+        "published_source_literals": [
+          "vermilion · #B02E22",
+          "italic 500 22px Cormorant"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/sheet.js",
+        "line": 53,
+        "published_source_literals": [
+          "XUAN",
+          "600 22px CormorantSC",
+          "left"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/sheet.js",
+        "line": 54,
+        "published_source_literals": [
+          "rice paper · #F2ECDE",
+          "italic 500 22px Cormorant"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/sheet.js",
+        "line": 57,
+        "published_source_literals": [
+          "italic 500 22px Cormorant"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/sheet.js",
+        "line": 60,
+        "published_source_literals": [
+          "EXPRESSIONS",
+          "600 21px CormorantSC",
+          "left"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/sheet.js",
+        "line": 67,
+        "published_source_literals": [
+          "600 20px CormorantSC",
+          "center"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/sheet.js",
+        "line": 70,
+        "published_source_literals": [
+          "KEY POSES",
+          "600 21px CormorantSC",
+          "left"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/sheet.js",
+        "line": 75,
+        "published_source_literals": [
+          "LEAP",
+          "600 20px CormorantSC",
+          "center"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/test.js",
+        "line": 27,
+        "published_source_literals": [
+          "red",
+          "20px sans-serif"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/world.js",
+        "line": 16,
+        "published_source_literals": [
+          "), dry: dry.getContext("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/world.js",
+        "line": 64,
+        "published_source_literals": [
+          "), cr = mk1.r.getContext("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/world.js",
+        "line": 141,
+        "published_source_literals": [
+          "THE SWORDSMAN"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/ink-wash/demo/world.js",
+        "line": 143,
+        "published_source_literals": [
+          "AND THE RIVER"
+        ]
+      }
+    ]
+  },
+  "published_cue_events": [
+    {
+      "t": 10.6,
+      "type": "vo",
+      "id": "L1"
+    },
+    {
+      "t": 15.6,
+      "type": "vo",
+      "id": "L2"
+    },
+    {
+      "t": 22.5,
+      "type": "vo",
+      "id": "L3"
+    },
+    {
+      "t": 35.9,
+      "type": "vo",
+      "id": "L4"
+    },
+    {
+      "t": 39.6,
+      "type": "vo",
+      "id": "L5"
+    },
+    {
+      "t": 0.9,
+      "type": "drip",
+      "gain": 1
+    },
+    {
+      "t": 8.8,
+      "type": "brush",
+      "gain": 0.5
+    },
+    {
+      "t": 9.4,
+      "type": "brush",
+      "gain": 0.5
+    },
+    {
+      "t": 10,
+      "type": "brush",
+      "gain": 0.5
+    },
+    {
+      "t": 14.149999999999999,
+      "type": "whoosh",
+      "gain": 0.5
+    },
+    {
+      "t": 15.3333,
+      "type": "step",
+      "gain": 0.8,
+      "k": 0
+    },
+    {
+      "t": 15.99997,
+      "type": "step",
+      "gain": 0.8,
+      "k": 1
+    },
+    {
+      "t": 16.66664,
+      "type": "step",
+      "gain": 0.8,
+      "k": 2
+    },
+    {
+      "t": 17.33331,
+      "type": "step",
+      "gain": 0.8,
+      "k": 3
+    },
+    {
+      "t": 17.99998,
+      "type": "step",
+      "gain": 0.8,
+      "k": 4
+    },
+    {
+      "t": 18.66665,
+      "type": "step",
+      "gain": 0.8,
+      "k": 5
+    },
+    {
+      "t": 19.33332,
+      "type": "step",
+      "gain": 0.8,
+      "k": 6
+    },
+    {
+      "t": 19.99999,
+      "type": "step",
+      "gain": 0.8,
+      "k": 7
+    },
+    {
+      "t": 20.66666,
+      "type": "step",
+      "gain": 0.8,
+      "k": 8
+    },
+    {
+      "t": 15.4333,
+      "type": "whoosh",
+      "gain": 0.25,
+      "k": 0
+    },
+    {
+      "t": 16.09997,
+      "type": "whoosh",
+      "gain": 0.25,
+      "k": 1
+    },
+    {
+      "t": 16.766640000000002,
+      "type": "whoosh",
+      "gain": 0.25,
+      "k": 2
+    },
+    {
+      "t": 17.433310000000002,
+      "type": "whoosh",
+      "gain": 0.25,
+      "k": 3
+    },
+    {
+      "t": 18.099980000000002,
+      "type": "whoosh",
+      "gain": 0.25,
+      "k": 4
+    },
+    {
+      "t": 18.766650000000002,
+      "type": "whoosh",
+      "gain": 0.25,
+      "k": 5
+    },
+    {
+      "t": 19.433320000000002,
+      "type": "whoosh",
+      "gain": 0.25,
+      "k": 6
+    },
+    {
+      "t": 20.099990000000002,
+      "type": "whoosh",
+      "gain": 0.25,
+      "k": 7
+    },
+    {
+      "t": 20.76666,
+      "type": "whoosh",
+      "gain": 0.25,
+      "k": 8
+    },
+    {
+      "t": 21.3,
+      "type": "splash",
+      "gain": 0.8
+    },
+    {
+      "t": 21.55,
+      "type": "skid",
+      "gain": 0.7
+    },
+    {
+      "t": 27.6,
+      "type": "drip",
+      "gain": 0.9
+    },
+    {
+      "t": 28,
+      "type": "sword",
+      "gain": 1
+    },
+    {
+      "t": 28.5,
+      "type": "brush",
+      "gain": 1,
+      "dur": 0.5
+    },
+    {
+      "t": 29.2,
+      "type": "brush",
+      "gain": 1,
+      "dur": 0.5500000000000007
+    },
+    {
+      "t": 29.95,
+      "type": "brush",
+      "gain": 1,
+      "dur": 0.40000000000000213
+    },
+    {
+      "t": 32.4,
+      "type": "cut",
+      "gain": 1
+    },
+    {
+      "t": 32.449999999999996,
+      "type": "splatter",
+      "gain": 1
+    },
+    {
+      "t": 32.699999999999996,
+      "type": "collapse",
+      "gain": 1
+    },
+    {
+      "t": 38.6,
+      "type": "waterclose",
+      "gain": 0.7
+    },
+    {
+      "t": 40.9,
+      "type": "cloth",
+      "gain": 0.6
+    },
+    {
+      "t": 44.6,
+      "type": "seal",
+      "gain": 1
+    },
+    {
+      "type": "silence",
+      "t0": 26.8,
+      "t1": 27.59
+    },
+    {
+      "type": "silence",
+      "t0": 30.5,
+      "t1": 32.4
+    },
+    {
+      "type": "amb",
+      "kind": "wind",
+      "t0": 0,
+      "t1": 26.8
+    },
+    {
+      "type": "amb",
+      "kind": "water",
+      "t0": 14.45,
+      "t1": 26.8
+    },
+    {
+      "type": "amb",
+      "kind": "roar",
+      "t0": 19.9,
+      "t1": 26.8
+    },
+    {
+      "type": "amb",
+      "kind": "water",
+      "t0": 35,
+      "t1": 48
+    }
+  ],
+  "published_source_hashes": {
+    "outputs/gptcar/styles/ink-wash/demo/climax.js": "44db202a1592e30391c169ec4a4d19a7bd1731c6a1d8d5394bd46e9cc008b754",
+    "outputs/gptcar/styles/ink-wash/demo/comp.js": "063b2d9fa079772de016acc99f19aabddd6dbeaa2445119d01ccac5053a281af",
+    "outputs/gptcar/styles/ink-wash/demo/cross.js": "f994045ff45bf3298c24cd256a27063dbb2432d9f24e0007278d7081f6ff176b",
+    "outputs/gptcar/styles/ink-wash/demo/cues.json": "1c6bd83c77149ca513220b54cabaa01daaefc28a53cf5ef896d39319e1568744",
+    "outputs/gptcar/styles/ink-wash/demo/events.json": "200abe83fc93fef8326331311f5316bb3fe4905b2c30795909aec13612f7e299",
+    "outputs/gptcar/styles/ink-wash/demo/face.js": "86377f07cd19f02fb1fe295c755a8f76d3692b8d404b10ce112466fcba9ea38e",
+    "outputs/gptcar/styles/ink-wash/demo/frames.js": "4b540d56d4737066c5a93eeed7989345da4005b6f6abc907f9b1dd094f24a9f8",
+    "outputs/gptcar/styles/ink-wash/demo/glyph.js": "3397fa07bcf2c4ede5412cc83e8f775aec3ac4d94801b5adbd223fcde8fce47c",
+    "outputs/gptcar/styles/ink-wash/demo/hero.js": "bea1cb4f77efc89f68cbdd52cccc7c63b340ad9aa905d58453f857b3b553a798",
+    "outputs/gptcar/styles/ink-wash/demo/index.html": "cc09f28cff27a78c3b79715dd02ff04abf9b55e2583a813ccfdf26df2751d809",
+    "outputs/gptcar/styles/ink-wash/demo/ink.js": "dbe6474ab0a0798193a7b49be9a8166511bc67ced90594e4390bdb2b70eef399",
+    "outputs/gptcar/styles/ink-wash/demo/land.js": "687c1cc1a848e30cc7e8b2e73984f49925506f20a8500b64aac88059a02b50bb",
+    "outputs/gptcar/styles/ink-wash/demo/lines.json": "6c79e3dbd3db316fc5c547fea94a3b3797e99b9a141c4bfd3d63f46f4d530343",
+    "outputs/gptcar/styles/ink-wash/demo/main.js": "28aa1ced678c3b67d41b367ce8e02bfc84568576a5d84f56e459721a5ef2da98",
+    "outputs/gptcar/styles/ink-wash/demo/mix.py": "b7bb5d83f3d0c6a2bfa07b0e43a4c9e265825a153d67ef4bebb11ce62e5fdcce",
+    "outputs/gptcar/styles/ink-wash/demo/music/score.json": "aaeb69c1f092323032993b8ccf59f02e01b3b6f1897247ec1b6f76137eb5f876",
+    "outputs/gptcar/styles/ink-wash/demo/music/score.py": "9e9deddba6fcb544ca13f3dfe0bc315e1f150d0e496fd9132d0ca043419345a0",
+    "outputs/gptcar/styles/ink-wash/demo/passage.js": "1c90a142e4473591815836890469ab5b19d70bf2f5a78edf1d1cb6249108d61b",
+    "outputs/gptcar/styles/ink-wash/demo/seal.js": "d4f66f324895975a28a02ccad18c93a021d216b0b9365ef306adb7072a1ece98",
+    "outputs/gptcar/styles/ink-wash/demo/sheet.js": "f4bd5138ad1977d6f0d0c737b86753d0a6b23f8a21360d468e8eed721f08c8be",
+    "outputs/gptcar/styles/ink-wash/demo/shots.js": "768c054801dc962448cfcf5825e00f8930103f6e009addbfcef7132655f5f039",
+    "outputs/gptcar/styles/ink-wash/demo/story.js": "39724b30cdc1124c6c07aaca380641e649ebf3056a1542a79157685e58620117",
+    "outputs/gptcar/styles/ink-wash/demo/subs.js": "39aaf1e71063b826f2605db7a105c4a94d34f779b250e569394f555f5a6bbff8",
+    "outputs/gptcar/styles/ink-wash/demo/test.js": "af1350719d334e5c75504655a3b975c13324d1e7d8c85b825f95e5eb70506c64",
+    "outputs/gptcar/styles/ink-wash/demo/voices/dur.json": "ae2b327debe0b9626b120076c56459e7eb7a9e917edd341aca06f894058ec10e",
+    "outputs/gptcar/styles/ink-wash/demo/voices/words.json": "7b29f1ca23b0b74a848eb5b70b47f22c10456621b6ef883fad0c71aa624550e3",
+    "outputs/gptcar/styles/ink-wash/demo/wave.js": "408faca9dfc67c8fd077b1c25a447d7b49d56319976151457ec1c10e91716397",
+    "outputs/gptcar/styles/ink-wash/demo/world.js": "c58f3846c02227bcf052cc5585e0d16bbb880f0331e0d81d63831c499c0dcff4"
+  },
+  "original_assets_and_licenses": [
+    {
+      "path": "outputs/gptcar/styles/ink-wash/demo/CREDITS",
+      "sha256": "ec7bbc6fa7570a3cf817f5094517d26159cefbecc0046c7ff62923b16db4bfcf",
+      "verbatim": "The Swordsman and the River — Chinese Ink Wash (Lemo-Opuscar demo)\nLemoLab × Claude Opus 5.5\n\nAll imagery is generated by code in this folder (Canvas2D brush engine + WebGL rice-paper compositor). No photos, no AI-generated images.\nCharacters, story, calligraphy strokes, seal design and music are original.\n\nFonts (SIL Open Font License 1.1, license files in fonts/):\n- Cormorant Garamond / Cormorant SC — Christian Thalmann (Catharsis Fonts), fonts/OFL-Cormorant.txt\n- Ma Shan Zheng — Ma Shan Zheng, fonts/OFL-MaShanZheng.txt  (glyph \"水\" used only as a skeleton reference for the brush-written character; stroke centrelines were traced by hand)\n- Zhi Mang Xing — Wei Zhimang, fonts/OFL-ZhiMangXing.txt  (downloaded for comparison, not used in the film)\n\nVoice: Kokoro-82M (Apache-2.0), voice bm_george, via kokoro-onnx.\nSpeech check: faster-whisper base.en (MIT).\n\nMusic (original score, music/score.py):\n- Guqin: physical-model plucked string, core/audio/pluck.py (synthesis, no samples)\n- Xiao (substitute), bass drum, timpani, frame drum, small gong, contrabass:\n  Samples (CC0): VS Chamber Orchestra: Community Edition (Versilian Studios), Versilian Community Sample Library (Versilian Studios)\nSound effects: synthesized in mix.py / core/audio/sfx.py.\n\nPoem: the closing line paraphrases Li Bai (701–762), \"抽刀断水水更流\" (public domain); English wording by the authors.\n"
+    }
+  ],
+  "engine_reuse_recommendation": "Reuse attributed generic drawing/material/rig/math engines described by STYLE/DEMO; share fonts and named licensed data/assets with hashes. Independently generate scene assembly, animation, shot/camera staging and freshaudio. Never import original film renderer, mastervideo,originalframes or mastertrack as newGPTwork. Preserve exactscript/cardlanguage and measuredoriginalframecount. Full originals are analytical references only.",
+  "audio_recreation_direction": "New F-gong guqin/xiao score,60BPM landscape into90BPM travel; gong/drum wave suspense, absolute silence30.5–32.4 then single sword ring. Fresh bm_george en-gb voice, original five lines.",
+  "v1_primary_deficits": [
+    "V1 reduced48s to20s and omitted exact narration/poem, nine steps, hat close-up, 水 and four-frame slash",
+    "Flat wave/mountains lacked dense directional loaded-brush detail and mounted scroll"
+  ],
+  "visual_audit": {
+    "status": "complete",
+    "method": "Fulloriginal1fpscontactsheetreview andsourcecueboundaries; not everyencodedframe.",
+    "sheets": [
+      "work/gptcar/reference/ink-wash/sheets/sheet-01.jpg",
+      "work/gptcar/reference/ink-wash/sheets/sheet-02.jpg",
+      "work/gptcar/reference/ink-wash/sheets/sheet-03.jpg",
+      "work/gptcar/reference/ink-wash/sheets/sheet-04.jpg"
+    ],
+    "exact_time_supplement": [
+      "work/gptcar/reference/ink-wash/exact/t-27.6.jpg",
+      "work/gptcar/reference/ink-wash/exact/t-28.7.jpg",
+      "work/gptcar/reference/ink-wash/exact/t-29.5.jpg",
+      "work/gptcar/reference/ink-wash/exact/t-30.15.jpg",
+      "work/gptcar/reference/ink-wash/exact/t-32.42.jpg",
+      "work/gptcar/reference/ink-wash/exact/t-32.52.jpg",
+      "work/gptcar/reference/ink-wash/exact/t-33.1.jpg"
+    ]
+  }
+}

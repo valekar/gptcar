@@ -1,0 +1,7 @@
+Aura — Hear the Light · independently assembled reference recreation
+New scene assembly, product mesh construction, camera staging, light-guide shader and score plan: GPT-6.1 Sol, high effort, via Codex.
+Historical original: Lemomo / LemoLab with Claude Opus 5.5; https://lemomo-ai.github.io/lemo-opuscar/films/glass-product.mp4. Its STYLE.md, DEMO.md, published words and reference movie are the reconstruction brief. The original conversation prompt is unavailable. This production does not import the original main.js, product.js, story.js, original score or original film/frame imagery.
+Shared generic reusable engines (MIT, original library authors): styles/glass-product/demo/studio.js — strip-light PMREM environment, blurred floor mirror and procedural floor caustic/ripple shader. core/three/post.js — depth-of-field, bloom and neutral output. core/lib.js — deterministic math helpers. Three.js r170 (MIT), including RectAreaLightUniformsLib and dependencies of those helpers.
+Inter Tight variable font: SIL Open Font License1.1, Google Fonts contributors; fetched from https://github.com/google/fonts/tree/main/ofl/intertight; local assets/InterTight.ttf + OFL.txt.
+Fresh voice requested: Kokoro am_michael direction, original four published lines. Root audio pipeline synthesizes new voice and original electronic score; no upstream master recordings reused.
+Product/name/design are fictional, reconstructed from this library's authorized reference. The visible end credit identifies this new GPT recreation.

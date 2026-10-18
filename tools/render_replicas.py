@@ -11,10 +11,14 @@ def source_hash(folder,meta):
   if p.is_file() and not any(x in p.parts for x in ['stills','out','__pycache__']) and p.suffix not in ['.mp4','.wav','.log']:
    h.update(str(p.relative_to(folder)).encode());h.update(p.read_bytes())
  for component in meta.get('shared_components',[]):
-  path=component if isinstance(component,str) else component['path'];p=(ROOT/path).resolve()
+  path=component if isinstance(component,str) else component['path'];p=(ROOT/path.split('::',1)[0]).resolve()
   if ROOT not in p.parents:raise RuntimeError('Component outside repository: '+path)
-  if not p.is_file():raise RuntimeError('Shared component missing: '+path)
-  h.update(path.encode());h.update(p.read_bytes())
+  if not p.exists():raise RuntimeError('Shared component missing: '+path)
+  h.update(path.encode())
+  if p.is_dir():
+   for child in sorted(p.rglob('*')):
+    if child.is_file():h.update(str(child.relative_to(p)).encode());h.update(child.read_bytes())
+  else:h.update(p.read_bytes())
  return h.hexdigest()
 def run(cmd,log,timeout=3600):
  with log.open('a') as f:r=subprocess.run([str(v) for v in cmd],cwd=ROOT,stdout=f,stderr=subprocess.STDOUT,timeout=timeout)
@@ -46,7 +50,10 @@ def render(slug,stills_only=False):
  if int(v['nb_frames'])!=int(ref['frame_count']) or float(Fraction(v['r_frame_rate']))!=ref['fps_number'] or (v['width'],v['height'])!=(ref['width'],ref['height']):raise RuntimeError('Published reference format/framecount mismatch')
  run(['ffmpeg','-hide_banner','-i',final,'-af','ebur128=peak=true','-vf','blackdetect=d=0.15:pix_th=0.025','-f','null','-'],work/'analysis.log')
  MEDIA.mkdir(parents=True,exist_ok=True);(MEDIA/'posters').mkdir(exist_ok=True);final.replace(dest);poster_time=times[len(times)//2];poster=MEDIA/'posters'/(slug+'.jpg');poster_frame=min((work/'stills').glob('t_*.jpg'),key=lambda p:abs(float(p.stem[2:])-poster_time));poster.write_bytes(poster_frame.read_bytes())
- records={'slug':slug,'status':'rendered','model':'gpt-6.1-sol','reasoning_effort':'high','title':meta.get('title',slug),'source_sha256':digest,'matched_brief_sha256':sha(brief),'reference_video_sha256':ref['sha256'],'video_sha256':sha(dest),'poster_sha256':sha(poster),'bytes':dest.stat().st_size,'width':v['width'],'height':v['height'],'fps':ref['fps_number'],'frames':int(v['nb_frames']),'duration':ref['video_duration'],'audio_codec':a['codec_name'],'review_times':times,'shared_components':meta.get('shared_components',[]),'qa':{'technical_render':'passed','scene_fidelity':'pending','audio_review':'pending','black_intervals_detected':'black_start:' in (work/'analysis.log').read_text()},'updated_at':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())};RESULTS.mkdir(parents=True,exist_ok=True);result.write_text(json.dumps(records,indent=2)+'\n');return slug,'rendered-awaiting-review'
+ original_poster=MEDIA/'reference-posters'/(slug+'.jpg');original_poster.parent.mkdir(exist_ok=True)
+ reference_movie=ROOT.parent.parent/'work/gptcar/reference/films'/(slug+'.mp4')
+ run(['ffmpeg','-y','-v','error','-ss',poster_time,'-i',reference_movie,'-frames:v',1,'-q:v',2,original_poster],log)
+ records={'slug':slug,'status':'rendered','model':'gpt-6.1-sol','reasoning_effort':'high','title':meta.get('title',slug),'source_sha256':digest,'matched_brief_sha256':sha(brief),'reference_video_sha256':ref['sha256'],'video_sha256':sha(dest),'poster_sha256':sha(poster),'reference_poster_sha256':sha(original_poster),'poster_time':poster_time,'bytes':dest.stat().st_size,'width':v['width'],'height':v['height'],'fps':ref['fps_number'],'frames':int(v['nb_frames']),'duration':ref['video_duration'],'audio_codec':a['codec_name'],'review_times':times,'shared_components':meta.get('shared_components',[]),'qa':{'technical_render':'passed','scene_fidelity':'pending','audio_review':'pending','black_intervals_detected':'black_start:' in (work/'analysis.log').read_text()},'updated_at':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())};RESULTS.mkdir(parents=True,exist_ok=True);result.write_text(json.dumps(records,indent=2)+'\n');return slug,'rendered-awaiting-review'
 if __name__=='__main__':
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('slugs',nargs='+');p.add_argument('--jobs',type=int,default=1);p.add_argument('--stills-only',action='store_true');a=p.parse_args()
  with concurrent.futures.ThreadPoolExecutor(max_workers=a.jobs) as pool:

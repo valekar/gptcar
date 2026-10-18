@@ -1,3 +1,5 @@
 # Preserve upstream asset and font licences verbatim; lint authored source normally.
 comparisons/**/fonts/* -whitespace
 comparisons/teardown/assets/LICENSE* -whitespace
+replicas/**/fonts/* -whitespace
+replicas/**/assets/OFL.txt -whitespace

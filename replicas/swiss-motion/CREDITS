@@ -1,0 +1,11 @@
+Five Rules for a Poster — GPTcar reference-matched regeneration
+
+Scene assembly, deterministic animation and recreated accompaniment: GPT-6.1 Sol, high reasoning.
+Original film, story, exact narration, poster geometry, typography plan, seven-note grid motif and visual direction: LemoLab × Claude Opus5.5, lemo-opuscar, MIT, baseline ded40b25679fe5d5dcfc07a282a25da1ceee3be1. See comparison/matched-briefs/swiss-motion.json. New scene code does not import original film.js/main.js/renderFilm.
+The grid melody is an attributed shared compositional datum; accompaniment and audio performance newly generated. No original film frames, finished movie or master soundtrack appear in generated output.
+
+Fonts: Archivo, Omnibus-Type; UnifrakturMaguntia, j. mach wust/Peter Wiegel; DM Serif Display, Colophon Foundry/Google (based on Adobe Source Serif); all SIL OFL1.1, bundled texts in fonts/. Downloaded Google Fonts source binaries; UnifrakturMaguntia-Book.ttf is locally named UnifrakturMaguntia-Regular.ttf to satisfy original family mapping.
+
+Music samples: Drums: MuldjordKit by Lars Muldjord (drumgizmo.org), FreePats version, CC BY4.0 (https://creativecommons.org/licenses/by/4.0/). Electric bass: FreePats project, CC0. Glockenspiel: Versilian Community Sample Library, Versilian Studios, CC0. Saw/square/glide and dry foley synthesized afresh.
+Voice: Kokoro-82M, Apache2.0, af_sarah.
+Original authored end-card credit replaced by truthful GPT reference-study authorship, preserving its graphic placement.

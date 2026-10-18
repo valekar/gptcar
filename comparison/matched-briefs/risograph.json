@@ -1,0 +1,753 @@
+{
+  "slug": "risograph",
+  "original_title": "Sunday Ride",
+  "premise": "A Sunday-morning bike ride through the city — bakery, park, riverside — in two misregistered inks.",
+  "published_delivery": {
+    "slug": "risograph",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/risograph.mp4",
+    "sha256": "720b62ca3ed11662a7fadccf04743c32194cbef5c1e3d4ce5b57df0900f1f9fb",
+    "duration": 40.0,
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": "960",
+    "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+    "frames": 40,
+    "sheets": 4
+  },
+  "production_format_source": "Full verbatim DEMO header below; measured published delivery above governs v2.",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "explanation": "No initial conversation/inputprompt transcript is published in inspected repository. STYLE.md is a verbatim published styleprompt; DEMO.md is published retrospective productiondocumentation. Shot prompts are source-informed reconstruction of finishedmovie, never a claimed identical originalchatprompt."
+  },
+  "published_style": {
+    "path": "outputs/gptcar/styles/risograph/STYLE.md",
+    "sha256": "c3d85c91a81b0afde091d964482749482adc66c12730afe124708f7b18b331a6",
+    "verbatim": "# Risograph Print — Style Prompt\n\n> Animation that looks printed, frame by frame, on a stencil duplicator: two or three translucent spot inks overprinted on warm paper, halftone dots, ink grain, and plates that never quite line up.\n> References (grammar only): Tom Haugomat's riso illustrations (colour fields and silhouettes, a small figure in a large world, extra colours made by overprinting); Jacques Tati's *Jour de fête* (comedy staged small in a wide frame, everyday sounds as rhythm); real riso prints (translucent inks, misregistration, pinholes, feed streaks). Copy none of their characters, compositions or palettes.\n\n## 1. Essence, and what it is not\n\nA risograph prints **one colour at a time**: each colour is its own stencil (\"plate\") with its own drum of translucent ink. That one fact makes the look:\n\n- **A tiny palette**: 2–3 spot inks on warm off-white paper.\n- **Overprint mixing**: inks multiply, so two inks make a third colour and all three approach black; a tint of one ink over a solid of another gives the brightest mixes.\n- **Misregistration**: every plate lands a few pixels off; edges show slivers of paper or a coloured halo.\n- **Halftone dots** for mid-tones, each plate on its own screen angle; **imperfect ink**: pinholes in solids, streaks along the feed direction, blotchy density.\n- **Flat shapes, no outlines**: forms are colour fields and silhouettes.\n\nNot flat vector art with a noise overlay (every colour comes from the plates), not CMYK pop-art halftone (no process colours, no keyline), not screen-print posters (riso ink is translucent and grainy, not opaque). **Never** show the RISO brand, logo or machine trade dress; ink names are colour references only.\n\n## 2. Materials & rendering\n\n**Pipeline.** Draw each frame into **one RGB canvas where each channel is one plate's density** (R = ink 1, G = ink 2, B = ink 3; 0 = none, 1 = solid). `source-over` gives true **knockouts**; `globalCompositeOperation = 'lighter'` adds ink only to the channels you set: a true **overprint**. A WebGL2 shader \"prints\" it:\n\n- per plate: offset in px + tiny rotation → misregistration;\n- halftone: cosine spot function on a rotated grid, period ~6–8 px at 1080p, anti-aliased threshold; densities ≥ ~0.9 print solid; screen angles ≥ 15° apart;\n- grain on the dot threshold, pinholes in solids, density varying with a feed-direction streak and a slow blot noise;\n- composite `paper × Π mix(1, ink_i, coverage_i)`, with faint paper fibre;\n- dots anchored to the **paper** (screen), not to objects: a pan slides the image under a fixed screen, as if each frame were printed anew;\n- a per-plate **gate** and a **roller sweep** (moving edge, slightly heavier ink band) let a plate arrive mid-shot.\n\n**Composition rules.**\n- Every area uses **at most two plates, at most one of them as a tint**. Three halftones on top of each other = mud.\n- Big flat shapes, lots of solid paper and solid ink; halftone in a few stepped bands (e.g. 20 / 40 / 60 / 100 %) for skies, shadows, distance.\n- Characters get a **paper-white knockout halo** (4–5 px): stamp their layer in a ring with `filter: brightness(0)` (zero ink = paper), then draw them. Plates misregister around it, so it picks up coloured fringes like a real trap.\n- One horizon, one big flat field or disc, one small figure; the figure's head against the flattest colour in the frame.\n- Design for the **one-plate version**: every main colour contains some of the first plate, so a one-ink frame still reads as a complete silhouette. A deliberate exception stays blank paper until its plate arrives: a reveal.\n\n## 3. Colour logic\n\n- **2–3 spot inks, never more**, plus paper; every other colour is an overprint or a tint. No gradients except stepped halftone.\n- Pick inks whose pairs mix into useful colours; at least one must carry a silhouette alone.\n- Paper is warm off-white (around `#F4EEE2`), never pure white; paper white is a colour too (knockouts, highlights, subtitles).\n- Light neutral surfaces (skin): a light tint of the palest ink. Dots of a saturated ink on skin look like a rash.\n- Save the full overprint (every plate, densest mixes) for the moment that earns it.\n- Example ink sets: Blue `#0078BF` + Yellow `#FFE800` + Fluorescent Pink `#FF48B0`; Teal `#00838A` + Fluorescent Orange `#FF7477`; Federal Blue `#3D5588` + Red `#FF665E` + Sunflower `#FFB511`.\n\n## 4. Type & subtitles\n\n- **Type is printed**: titles and subtitles live on one plate, so they misregister and grain with it. A title can be printed on two plates with a visible offset: the riso double-hit.\n- Fonts (OFL): heavy grotesque for titles (e.g. Bricolage Grotesque 800), geometric sans for captions (e.g. Jost 500–700). Preload every weight before `READY`.\n- Subtitles: a **paper-white knockout strip** (zero ink, small radius) with text on one plate, ~40–46 px; its edges catch misregistration fringes. Hold ≥ max(1.8 s, speech + 0.6 s).\n- Prints don't fade: titles arrive with a roller wipe or on a beat and leave on a cut.\n\n## 5. Motion quality\n\n- **Characters act on twos** (12 fps); **camera moves on ones** (24 fps): a stepped camera reads as judder.\n- **Registration is not jittered every frame.** One fixed set of offsets per shot (±1–3 px). A **kick** (≈ 8–14 px, decaying in ~0.25 s with slight ringing) on an accent; a **drift** up to ~25 px through a held moment, snapping back on the downbeat.\n- Grain boils partly (about a third re-rolls per print); sheet streaks and blots change only at cuts.\n- Simple cycles on few drawings; secondary motion (scarf, flag, tail) as a travelling sine wave.\n\n## 6. Camera grammar\n\nA vocabulary, not a route. Opening and ending come from the topic.\n\n| Move | Expresses | Can serve |\n|---|---|---|\n| Wide lateral tracking, small figure, empty sky | Travel, routine, room | a commute; a process line; a title |\n| Static wide, the subject crosses the frame | Comedy of scale | a gag; an arrival; a crowd |\n| Locked composition: horizon, disc, figure | Stillness, awe | a decision; a reveal; the film's one pause |\n| Ground-level low angle, big foreground shapes | Energy, abundance | a burst; a harvest; a launch |\n| Medium two-shot held for a look | Reaction | a joke landing; a deal; a disagreement |\n| Straight top-down, long shadows | Pattern, a map | a schedule; a floor plan; a game board |\n| Push into a halftone field until dots are shapes | Entering the print | a close look at data; a memory; a cell |\n| Pull back to reveal the paper | It was one sheet | a series; an archive; a summing-up |\n| Match cut on a flat shape | Continuity through form | a time jump; cause and effect; before/after |\n\nFraming: lots of paper and solid ink, text on empty sky or a knockout strip. Transitions: overprint growths, roller sweeps, shape match cuts, hard cuts on beats. Never a cross-dissolve, never a soft digital wipe.\n\n## 7. Sound palette\n\n- **Instruments**, as options: warm, dry, handmade, slightly lo-fi: upright or electric bass, vibraphone or marimba, nylon guitar, whistled or hummed melody, Rhodes, toy piano, brushed kit, shaker and rim clave, a small drum machine through tape saturation.\n- **Layering like plates** (an option): each new plate brings one instrument, and they can leave one by one.\n- **The machine is the signature foley**: feed \"shhk\", drum \"ka-chunk\" at a plate arrival, motor hum, a sheet landing on a stack, a guillotine cut. Other foley dry, close and papery, following the story's materials.\n- **Silence**: a held bar with reverb tails cut, at most ambience or one distant sound; it pairs with a registration drift, and the snap brings everything back.\n- **Mix**: dry and close; music ducks ~8 dB under voice; −14 LUFS. Voice relaxed and conversational, short lines, verified with whisper. No grain added at mux: it is in the print.\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **Plates as narrative.** The world gains a plate at each turning point. *Fits content like:* a product arriving as a new ink; a city history, one ink per era; colour returning during a recovery.\n- **Two inks, a third where they meet.** *Fits content like:* a merger; a duet; two data sets whose overlap is the finding.\n- **Overprint transition.** A shape of one ink grows over the frame, turning everything beneath into the mix, then shrinks into the next scene's key shape. *Fits content like:* a pill dissolving; a spotlight becoming a moon; a stamp becoming a map pin.\n- **Registration as rhythm and feeling.** Kicks on accents, drift in a held moment, snap on the downbeat. *Fits content like:* nerves before a speech; dizziness; a memory coming into focus.\n- **Reflections as separated plates.** Each plate wobbles on its own phase. *Fits content like:* a shop window; heat over a road; a coffee surface.\n- **Knockout reveal.** A shape made only of missing ink; its plate arrives later. *Fits content like:* a missing piece; a secret; a logo hidden in plain sight.\n- **Halftone scale.** Dots grow into shapes as the camera pushes in. *Fits content like:* population; rainfall; a crowd that turns out to be people.\n- **It is a sheet of paper.** The print can be stacked, folded, cut or pinned; grain boils like a flipbook of prints. *Fits content like:* a zine; a poster series; a flyer passed hand to hand.\n\n## 9. Pitfalls of the medium\n\n- Three halftoned plates in one area = mud → two plates, one tint.\n- `fract(p*vec2(233.34,851.73))` draws vertical stripes across solids at 1080p → a well-mixed hash (`fract(vec3(p.xyx)*.1031)` family).\n- Per-frame registration jitter and sheet streaks flicker and blow up file size → fixed offsets per shot, kicks on accents, sheet noise at cuts, partial boil.\n- JPEG screenshots (4:2:0) smear saturated dots → PNG frames into a lossless yuv444 intermediate, encoded once with `-tune grain`; check at 100 % and 50 % for moiré.\n- The halo layer must copy the canvas transform, or zoomed shots draw the subject at the wrong scale.\n- Additive `over()` inside a transparent layer loses its meaning → overprint on the plate canvas.\n- A main colour without the first plate floats loose in one-ink frames → build palette recipes up from the one-ink silhouette.\n- `evenodd` fills of arches fill solid → trace the inner edge in the opposite direction.\n\n## 10. Engine\n\nIn `demo/`: `riso.js` (print shader: plates, halftone, grain, registration, kicks and drift, gates, roller sweeps, reflection wobble), `draw.js` (`ink(b,y,p)` densities, `over()` overprint, `layer()` paper halo, 2-bone IK, limbs), `sheet.js` (model sheet with a \"plates = story\" row via `S.mask`), `tools/video_png.mjs` (PNG frames → lossless intermediate), `tools/mux.sh`. Minimal new frame: two plates (R = teal, G = orange); a solid teal hill, an orange disc drawn with `lighter` so it darkens where it crosses the hill, a 40 % teal sky band, a figure knocked out with `layer()`.\n\n## 11. Variation space\n\nYou decide the inks and what each plate means, the structure, characters (or none), opening, ending, camera path and pacing. All far from our demo:\n\n- Structures: **two inks in dialogue** (two subjects alternate shots and only overlap at the end, making the third colour); **subtraction** (start at full overprint, lose a plate at each loss, end in one ink); **a zine** (each shot a page turned, each page a different two-plate pairing).\n- Openings: **a knockout** (a blank shape in a full-colour field, filled by its plate seconds later); **dots first** (extreme close-up of halftone that pulls back into an image); **ghosts converge** (three colour ghosts drift together and snap into a readable frame on the first beat).\n- Endings: **one ink left** (plates lift away until the last line stands in one colour); **the print on a wall** (the last frame becomes a poster pasted up inside the world it showed); **a folded sheet** (the print folds into something the story needs: a boat, an envelope, a ticket).\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n"
+  },
+  "published_demo": {
+    "path": "outputs/gptcar/styles/risograph/DEMO.md",
+    "sha256": "54604aaca90a7b74fc4273f05c4439ac6c07914a06ed9508a2ccf6337dfde39a",
+    "verbatim": "# Risograph Print — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *Sunday Ride* (40 s) · `risograph.mp4` · source in [`demo/`](demo/)\n\n\n## Story & structure\n\nA lanky man in round glasses cycles across town on a Sunday morning to eat breakfast by the river. The city starts printed in the Blue plate only; each place he passes adds a plate: the bakery brings Yellow (a baguette handed over without him slowing down), the park brings Pink (a burst of pigeons, one of which hitches a ride on the baguette), and by the river all three plates overprint. He shares the bread with the pigeon; the camera pulls back and the whole film was one sheet sliding out of the printer onto a stack of earlier prints. Theme line: \"Same ride every Sunday. Never quite the same print.\"\n\nArc (40 s = 20 bars of 2 s): quiet one-ink opening, hook inside 3 s (the ink being laid down) → each location adds a plate and an instrument → a small turn (the pigeon passenger) → full-overprint climax with a held silent bar → warm resolution (sharing) → scale reveal of the paper. One character, one goal, one turn.\n\nPlate recipe for the story: first plate = the \"before\" state (the sleepy city), each added plate = a turning point, full overprint = the climax. Native moves spent: plates as narrative (Blue → Yellow → Pink), overprint transition (a pink disc swallows the park and becomes the river sun), registration as rhythm (kicks on the title, plate arrivals and the pigeon burst; a drift in the silent bar, snap on the downbeat), reflections as separated plates (the river), every frame a print (grain boil), it is a sheet of paper (the final pull-back).\n\n## Shots\n\n| # | Time | Plates | Shot | Camera / note |\n|---|---|---|---|---|\n| 1 | 0–2 | B | Bell ECU | Blue plate **rolled on** left→right over handlebar and bell; thumb flicks the bell on the first beat (1.0) |\n| 2 | 2–8 | B | Sleepy blue street | Wide lateral tracking: the figure small, the sky big and empty for the title (2.0–5.4); narration from 5.6 |\n| 3 | 8–16 | B+Y | Bakery | Cut to medium tracking as Yellow sweeps across; the baker's hand offers the baguette at 11.3, caught without slowing at 12.0 (Tati's no-slowdown hand-off), staged at the rider's reach height, ahead of him, above the basket so nothing covers it |\n| 4 | 16–19 | all | Park | Static wide as Pink arrives: let him cross the frame (Tati) |\n| 5 | 19–21.5 | all | Pigeons | Ground-level low angle, pigeons big in the foreground; bell at 19.5, the flock bursts at 20.0 with a registration kick |\n| 6 | 21.5–24 | all | Passenger | Medium close on rider + pigeon on the baguette for a two-beat look |\n| 7 | 24–26 | all | Overprint transition | A pink disc grows from the basket, turns every blue beneath it violet, shrinks into the huge low river sun |\n| 8 | 26–29 | all | River | Haugomat composition, locked off; he brakes and stops (the only moment he stops); silent bar, plates drift, snap back at 28.0 |\n| 9 | 29–32 | all | Sharing | Medium side shot, the sun behind him; bread crack at 29.5, half to the pigeon at 30.5 |\n| 10 | 32–36 | all | Top-down → pull back | Straight top-down with long shadows, then pull back to the paper coming out of the printer onto a stack of earlier prints (blue street, bakery, park visible underneath) |\n| 11 | 36–40 | all | End card | Last bell at 38.0 |\n\n## Score structure\n\nOriginal light **bossa nova**, D major, 120 BPM (1 bar = 2 s, so cuts land on even seconds), `demo/music/score.py` (numpy) + `demo/music/bell.py`. **The music is layered like the plates**: one ink = nylon guitar alone; + Yellow = shaker, rim clave, soft brushes (and the bicycle bell as percussion); + Pink = upright bass and a whistled melody; full overprint = + vibraphone. Bar 1 has no music (paper feed, drum, bell). A fully silent bar (reverb tails cut) under the climax drift (26–28) holds only water, birds and a distant church bell (it is Sunday) at 26.3; the full band returns on the snap at 28.0. During the pull-back the instruments leave one by one (vibraphone → whistle → bass → percussion), one per step of the pull-back; guitar and a held Dmaj9 over the end card.\n\nFoley: the riso machine at every plate arrival (paper feed \"shhk\" + drum \"ka-chunk\"; motor and paper rub at the end; a soft paper landing at 39.5). Bicycle bell (two inharmonic partials ~2.1 / 3.4 kHz, 5 fast strikes per ring), freewheel ticks, brake squeal. Bread crust crunch (dense tiny band-passed clicks). Pigeon wings (short band-passed noise bursts), coo (gliding 300–400 Hz tone). Water lapping.\n\nVoice: relaxed male narrator, Kokoro `am_adam`, speed 0.95, 5 short lines at 5.6, 9.0, 21.7, 28.3, 32.8, each verified with whisper. Music ducks −8 dB under voice; −14 LUFS; mux grain 0.\n\n## Palette & props\n\n- Inks: Riso Blue `#0078BF` (screen 15°), Yellow `#FFE800` (0°), Fluorescent Pink `#FF48B0` (75°) on paper `#F6F1E6`. Mixes: Blue + Yellow = green, Blue + Pink = violet/indigo, Yellow + Pink = orange-red, all three = near-black; 60 % Blue dots over solid Pink = purple.\n- Shader numbers: rotation ±0.0005 rad; halftone period **7 px at 1080p**, threshold smoothstep ±0.07; solid at ≥ 0.9; grain ±0.08 on the threshold; pinholes where noise > 0.93 (×0.75); ink density `k = 0.80 + 0.14·streak + 0.08·blot` (streak = noise stretched ×10 along the feed); paper fibre ±1.5 %; grain boil 35 %.\n- Sky bands 20 / 38 / 62 / 100 %. Paper halo 4–5 px, 12 stamps in a ring.\n- The rider (plate densities): skin Yellow 26 % (cream; paper in the one-ink scene); sweater Blue 40 + Pink 100 (light blue dots → berry purple); trousers Blue 75 + Yellow 100 (→ olive green); hair Blue 100 + Pink 22; shoes Blue 100. The chunky scarf is Yellow + Pink only, so it is **blank paper** until the Yellow plate arrives and is the first thing to light up. His head sits against the sun disc at the river.\n- Pedalling: crank angle from wheel travel (`crank = distance / wheelRadius / 2.2`), legs by 2-bone IK to the pedals, scarf as a travelling sine wave.\n- Pigeons: about 1.2× his head size, round chest, tiny steps with a head bob, head tilts for \"thinking\", a **4-frame flap cycle** (up / half / down / tuck) on twos; flocks mix sizes 1.2–2.4× and stagger take-off by up to 0.35 s.\n\n## End card\n\nSubtitles: paper-white knockout strip, 6 px radius, centred 1000 px down, Blue text, Jost 500 42 px, 0.5 px tracking. Title card: \"SUNDAY RIDE\", Bricolage 800 190 px on the Blue plate in the sky, revealed by a left→right wipe on the first chord, removed on a beat.\n\nEnd card: blank paper, the title double-hit in Pink + Blue (10 px offset), \"RISOGRAPH PRINT\", the credit line, registration crosshairs in the corners, and a tiny rider crossing the baseline while the bell rings. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Build notes\n\n```\nstyles/risograph/demo/\n  riso.js     WebGL2 print shader (plates, halftone, grain, registration, sweeps, water reflection)\n  draw.js     plate-canvas helpers: ink(b,y,p), over() overprint, layer() paper-halo, IK, limbs\n  rider.js    rider, bike, pigeon, baguette (all colours as plate densities)\n  scenes.js   river, street + bakery      scenes2.js  park, top-down quay, printer, bell ECU\n  film.js     timeline (120 BPM), shots, registration kicks/drift, plate gates, subtitles, sound events\n  sheet.js    model sheet (?sheet=1)      lines.json  narration\n  music/score.py  original bossa nova (numpy)   music/bell.py  bicycle bell\n  mix.py      foley + ambience + ducked voice + score → mix.wav\n  tools/      video_png.mjs (PNG frames, lossless intermediate), mux.sh (crf16 -tune grain), subs.py\n```\n\n1. Design the plates first: what the one-ink frame looks like and what each plate adds. The model sheet (`?sheet=1&v=2`, [`demo/stills/modelsheet_v2.jpg`](demo/stills/modelsheet_v2.jpg)) has a \"plates = story\" row: the same character with 1, 2, 3 plates via `S.mask`.\n2. `sh styles/risograph/demo/build.sh` rebuilds everything: TTS → whisper → score → events → mix → SRT → render (960 frames, ~2–4 min with 3 workers) → mux → style frame, poster, model sheet.\n3. Review: `node core/render/still.mjs styles/risograph/demo --range 0:40:1.5` + `core/render/sheet.py`; key actions at 0.2 s steps; the encoded film at 100 % and 50 % for moiré.\n\nEncoding: PNG frames → lossless intermediate (qp 0, yuv444) → one encode at crf 16 `-tune grain` (~280 MB for 40 s); crf 20 without `-tune grain` is ~120 MB and still clean at 1080p and 50 %. Per-frame jitter + per-frame streaks had pushed x264 to 900 MB.\n\nPitfalls tied to this demo's props:\n- The hand-off: the baker's arm is in the background plane and disappeared behind the rider → the exchange staged ahead of and above him.\n- Bridge arches filled solid with `evenodd` → underside traced with `arc(..., true)`.\n- The first design (lanky, round glasses, horizontal stripes) read as a famous picture-book character → solid knitwear and a different signature (the chunky scarf).\n- Sweater and trousers without Blue showed a floating head in the one-ink opening.\n- Pink dots on skin looked like measles → skin is Yellow only.\n"
+  },
+  "narration": [
+    {
+      "id": "l1",
+      "t": 5.6,
+      "text": "Sunday morning. The whole city is still blue.",
+      "voice": "am_adam",
+      "speed": 0.95,
+      "start": 5.6,
+      "duration": 2.697
+    },
+    {
+      "id": "l2",
+      "t": 9.0,
+      "text": "Then the bakery opens, and the day gets its first color.",
+      "voice": "am_adam",
+      "speed": 0.95,
+      "start": 9.0,
+      "duration": 3.179
+    },
+    {
+      "id": "l3",
+      "t": 21.7,
+      "text": "The park adds pink. And, apparently, a passenger.",
+      "voice": "am_adam",
+      "speed": 0.95,
+      "start": 21.7,
+      "duration": 2.965
+    },
+    {
+      "id": "l4",
+      "t": 28.3,
+      "text": "By the river, every color overlaps.",
+      "voice": "am_adam",
+      "speed": 0.95,
+      "start": 28.3,
+      "duration": 2.172
+    },
+    {
+      "id": "l5",
+      "t": 32.8,
+      "text": "Same ride every Sunday. Never quite the same print.",
+      "voice": "am_adam",
+      "speed": 0.95,
+      "start": 32.8,
+      "duration": 3.106
+    }
+  ],
+  "verbatim_published_script_files": {
+    "lines.json": [
+      {
+        "id": "l1",
+        "t": 5.6,
+        "text": "Sunday morning. The whole city is still blue.",
+        "voice": "am_adam",
+        "speed": 0.95
+      },
+      {
+        "id": "l2",
+        "t": 9.0,
+        "text": "Then the bakery opens, and the day gets its first color.",
+        "voice": "am_adam",
+        "speed": 0.95
+      },
+      {
+        "id": "l3",
+        "t": 21.7,
+        "text": "The park adds pink. And, apparently, a passenger.",
+        "voice": "am_adam",
+        "speed": 0.95
+      },
+      {
+        "id": "l4",
+        "t": 28.3,
+        "text": "By the river, every color overlaps.",
+        "voice": "am_adam",
+        "speed": 0.95
+      },
+      {
+        "id": "l5",
+        "t": 32.8,
+        "text": "Same ride every Sunday. Never quite the same print.",
+        "voice": "am_adam",
+        "speed": 0.95
+      }
+    ]
+  },
+  "timed_shot_prompts": [
+    {
+      "start": 0,
+      "end": 2,
+      "name": "Blue bell close-up",
+      "visual_prompt": "Blue drum/roller arrives; extreme bicycle handlebar, detailed blue domed bell, thumb/hand pulls lever at1.0; concentric printed sound arcs.",
+      "onscreen_text": "",
+      "camera_motion": "Extreme close, slight push.",
+      "sound_direction": "Two-tone bell1.0, riso drum/feed.",
+      "transition": "Bell sound bridges cut to street.",
+      "material_requirements": "Three true translucent spot plates: Blue#0078BF15°, Yellow#FFE8000°, FluorescentPink#FF48B075°,7pxhalftone grain and density overprint. Fixed registration offsets with deliberate kicks, never screen-jitter. Cream fibrous stock. Lanky glasses-wearing cyclist, knitted scarf, articulated pedal legs/wheels driven by travel, wire basket, long baguette and small pigeon with four-frame wings. Dense low-rise street, bakery awning, park row/benches and river skyline."
+    },
+    {
+      "start": 2,
+      "end": 8,
+      "name": "Sunday city in blue",
+      "visual_prompt": "Lateral blue-only city ride: shuttered rows of varied windows, railings, street lamps, bakery at right. Rider pedals continuously with wire basket/scarf and glasses.",
+      "onscreen_text": "SUNDAY RIDE\na ride in three plates",
+      "camera_motion": "Wide street tracking; title2–5.4.",
+      "sound_direction": "Fresh am_adam0.95 five original lines. New120BPM D bossa: nylon guitar blue, percussion joins yellow, bass/whistle pink, vibraphone full overprint; water/birds/church bell alone26–28, band returns28 and instruments leave individually near end. Bell/bread/crunch/wings/brake/riso feed synchronized.",
+      "transition": "Blue plate only until8.",
+      "material_requirements": "Three true translucent spot plates: Blue#0078BF15°, Yellow#FFE8000°, FluorescentPink#FF48B075°,7pxhalftone grain and density overprint. Fixed registration offsets with deliberate kicks, never screen-jitter. Cream fibrous stock. Lanky glasses-wearing cyclist, knitted scarf, articulated pedal legs/wheels driven by travel, wire basket, long baguette and small pigeon with four-frame wings. Dense low-rise street, bakery awning, park row/benches and river skyline."
+    },
+    {
+      "start": 8,
+      "end": 11.3,
+      "name": "Bakery adds yellow",
+      "visual_prompt": "Yellow plate sweeps across city/awning/windows; true blue+yellow makes green. Bakery shutters/door open, warm sun/loaves; baker arm reaches toward moving bicycle.",
+      "onscreen_text": "BAKERY",
+      "camera_motion": "Medium side track, bakery doorway in passing background.",
+      "sound_direction": "Fresh am_adam0.95 five original lines. New120BPM D bossa: nylon guitar blue, percussion joins yellow, bass/whistle pink, vibraphone full overprint; water/birds/church bell alone26–28, band returns28 and instruments leave individually near end. Bell/bread/crunch/wings/brake/riso feed synchronized.",
+      "transition": "Yellow drum stroke8.0.",
+      "material_requirements": "Three true translucent spot plates: Blue#0078BF15°, Yellow#FFE8000°, FluorescentPink#FF48B075°,7pxhalftone grain and density overprint. Fixed registration offsets with deliberate kicks, never screen-jitter. Cream fibrous stock. Lanky glasses-wearing cyclist, knitted scarf, articulated pedal legs/wheels driven by travel, wire basket, long baguette and small pigeon with four-frame wings. Dense low-rise street, bakery awning, park row/benches and river skyline."
+    },
+    {
+      "start": 11.3,
+      "end": 16,
+      "name": "Baguette caught in motion",
+      "visual_prompt": "Baker tosses long yellow baguette at11.3; rider catches12, raises hand then deposits in front basket, never stops pedalling. Bell13.0.",
+      "onscreen_text": "",
+      "camera_motion": "Track rider, show full hand→bread→basket path.",
+      "sound_direction": "Fresh am_adam0.95 five original lines. New120BPM D bossa: nylon guitar blue, percussion joins yellow, bass/whistle pink, vibraphone full overprint; water/birds/church bell alone26–28, band returns28 and instruments leave individually near end. Bell/bread/crunch/wings/brake/riso feed synchronized.",
+      "transition": "Continue city until park cut16.",
+      "material_requirements": "Three true translucent spot plates: Blue#0078BF15°, Yellow#FFE8000°, FluorescentPink#FF48B075°,7pxhalftone grain and density overprint. Fixed registration offsets with deliberate kicks, never screen-jitter. Cream fibrous stock. Lanky glasses-wearing cyclist, knitted scarf, articulated pedal legs/wheels driven by travel, wire basket, long baguette and small pigeon with four-frame wings. Dense low-rise street, bakery awning, park row/benches and river skyline."
+    },
+    {
+      "start": 16,
+      "end": 19,
+      "name": "Pink park plate",
+      "visual_prompt": "Third pink plate enters: long row of round pink-flowered trees and dark blue trunks, green grass, blue benches and pigeons ahead. Rider small on path.",
+      "onscreen_text": "",
+      "camera_motion": "Static wide park, cyclist travels into frame.",
+      "sound_direction": "Fresh am_adam0.95 five original lines. New120BPM D bossa: nylon guitar blue, percussion joins yellow, bass/whistle pink, vibraphone full overprint; water/birds/church bell alone26–28, band returns28 and instruments leave individually near end. Bell/bread/crunch/wings/brake/riso feed synchronized.",
+      "transition": "Pink printing kick, pink leaves drift.",
+      "material_requirements": "Three true translucent spot plates: Blue#0078BF15°, Yellow#FFE8000°, FluorescentPink#FF48B075°,7pxhalftone grain and density overprint. Fixed registration offsets with deliberate kicks, never screen-jitter. Cream fibrous stock. Lanky glasses-wearing cyclist, knitted scarf, articulated pedal legs/wheels driven by travel, wire basket, long baguette and small pigeon with four-frame wings. Dense low-rise street, bakery awning, park row/benches and river skyline."
+    },
+    {
+      "start": 19,
+      "end": 21.5,
+      "name": "Bell and pigeon burst",
+      "visual_prompt": "Ground-low shot on pigeons; bicycle rolls in from right, bell19.5. Flock bursts20.0 across picture with deliberate registration kick; one pigeon stays near basket.",
+      "onscreen_text": "",
+      "camera_motion": "Low ground view, cut through flock.",
+      "sound_direction": "Three bell notes; sudden flaps20.",
+      "transition": "Four-pose wing cycles; do not replace flock with particles.",
+      "material_requirements": "Three true translucent spot plates: Blue#0078BF15°, Yellow#FFE8000°, FluorescentPink#FF48B075°,7pxhalftone grain and density overprint. Fixed registration offsets with deliberate kicks, never screen-jitter. Cream fibrous stock. Lanky glasses-wearing cyclist, knitted scarf, articulated pedal legs/wheels driven by travel, wire basket, long baguette and small pigeon with four-frame wings. Dense low-rise street, bakery awning, park row/benches and river skyline."
+    },
+    {
+      "start": 21.5,
+      "end": 24,
+      "name": "A passenger",
+      "visual_prompt": "Medium cyclist and pigeon perched on baguette/basket; rider glances sideways then back, pigeon head bobs. Glasses, scarf, articulated hands and wheel spokes visible.",
+      "onscreen_text": "",
+      "camera_motion": "Medium tracking, two-beat look.",
+      "sound_direction": "Fresh am_adam0.95 five original lines. New120BPM D bossa: nylon guitar blue, percussion joins yellow, bass/whistle pink, vibraphone full overprint; water/birds/church bell alone26–28, band returns28 and instruments leave individually near end. Bell/bread/crunch/wings/brake/riso feed synchronized.",
+      "transition": "Reveal passenger with original narration21.7.",
+      "material_requirements": "Three true translucent spot plates: Blue#0078BF15°, Yellow#FFE8000°, FluorescentPink#FF48B075°,7pxhalftone grain and density overprint. Fixed registration offsets with deliberate kicks, never screen-jitter. Cream fibrous stock. Lanky glasses-wearing cyclist, knitted scarf, articulated pedal legs/wheels driven by travel, wire basket, long baguette and small pigeon with four-frame wings. Dense low-rise street, bakery awning, park row/benches and river skyline."
+    },
+    {
+      "start": 24,
+      "end": 26,
+      "name": "Pink disk becomes river sun",
+      "visual_prompt": "Expanding pink disk overtakes park from basket area, colour overprints fill frame; it resolves as giant pink sun over broad river with blue distant skyline and yellow/green current bands.",
+      "onscreen_text": "",
+      "camera_motion": "Continuous graphic match as camera travels to water.",
+      "sound_direction": "Fresh am_adam0.95 five original lines. New120BPM D bossa: nylon guitar blue, percussion joins yellow, bass/whistle pink, vibraphone full overprint; water/birds/church bell alone26–28, band returns28 and instruments leave individually near end. Bell/bread/crunch/wings/brake/riso feed synchronized.",
+      "transition": "Disk/sun material is same pink plate.",
+      "material_requirements": "Three true translucent spot plates: Blue#0078BF15°, Yellow#FFE8000°, FluorescentPink#FF48B075°,7pxhalftone grain and density overprint. Fixed registration offsets with deliberate kicks, never screen-jitter. Cream fibrous stock. Lanky glasses-wearing cyclist, knitted scarf, articulated pedal legs/wheels driven by travel, wire basket, long baguette and small pigeon with four-frame wings. Dense low-rise street, bakery awning, park row/benches and river skyline."
+    },
+    {
+      "start": 26,
+      "end": 29,
+      "name": "Brake and plate drift",
+      "visual_prompt": "Rider coasts/stops at river wall; water drifts, birds and distant bell. Blue/yellow/pink plates separate slightly then snap into registration on28.0; river reflections turn orange/purple where inks overlap.",
+      "onscreen_text": "",
+      "camera_motion": "Locked river composition; subject remains throughout silence.",
+      "sound_direction": "Band silent26–28, brake/water/birds/church bell26.3.",
+      "transition": "No blank interlude; overshooting plates28.0.",
+      "material_requirements": "Three true translucent spot plates: Blue#0078BF15°, Yellow#FFE8000°, FluorescentPink#FF48B075°,7pxhalftone grain and density overprint. Fixed registration offsets with deliberate kicks, never screen-jitter. Cream fibrous stock. Lanky glasses-wearing cyclist, knitted scarf, articulated pedal legs/wheels driven by travel, wire basket, long baguette and small pigeon with four-frame wings. Dense low-rise street, bakery awning, park row/benches and river skyline."
+    },
+    {
+      "start": 29,
+      "end": 32,
+      "name": "Share the bread",
+      "visual_prompt": "Rider sits on purple brick wall, bicycle leaning below, pigeon beside. Bread cracks29.5, half offered30.5; pigeon pecks. Oversized pink sun/river skyline hold behind.",
+      "onscreen_text": "",
+      "camera_motion": "Medium two-subject view.",
+      "sound_direction": "Fresh am_adam0.95 five original lines. New120BPM D bossa: nylon guitar blue, percussion joins yellow, bass/whistle pink, vibraphone full overprint; water/birds/church bell alone26–28, band returns28 and instruments leave individually near end. Bell/bread/crunch/wings/brake/riso feed synchronized.",
+      "transition": "Direct cut from stopped bike to seated shared snack.",
+      "material_requirements": "Three true translucent spot plates: Blue#0078BF15°, Yellow#FFE8000°, FluorescentPink#FF48B075°,7pxhalftone grain and density overprint. Fixed registration offsets with deliberate kicks, never screen-jitter. Cream fibrous stock. Lanky glasses-wearing cyclist, knitted scarf, articulated pedal legs/wheels driven by travel, wire basket, long baguette and small pigeon with four-frame wings. Dense low-rise street, bakery awning, park row/benches and river skyline."
+    },
+    {
+      "start": 32,
+      "end": 36,
+      "name": "Every ride is a print",
+      "visual_prompt": "Top-down seated legs/cycle/pigeon at riverside; long printed shadows. Pull back reveals physical white-bordered print emerging onto stack of earlier route prints under riso machine;1·2·3 control strip and ink swatches.",
+      "onscreen_text": "1 · 2 · 3",
+      "camera_motion": "Top-down crane/pull to printer table.",
+      "sound_direction": "Fresh am_adam0.95 five original lines. New120BPM D bossa: nylon guitar blue, percussion joins yellow, bass/whistle pink, vibraphone full overprint; water/birds/church bell alone26–28, band returns28 and instruments leave individually near end. Bell/bread/crunch/wings/brake/riso feed synchronized.",
+      "transition": "Paper stack/feed reveal, not generic end title.",
+      "material_requirements": "Three true translucent spot plates: Blue#0078BF15°, Yellow#FFE8000°, FluorescentPink#FF48B075°,7pxhalftone grain and density overprint. Fixed registration offsets with deliberate kicks, never screen-jitter. Cream fibrous stock. Lanky glasses-wearing cyclist, knitted scarf, articulated pedal legs/wheels driven by travel, wire basket, long baguette and small pigeon with four-frame wings. Dense low-rise street, bakery awning, park row/benches and river skyline."
+    },
+    {
+      "start": 36,
+      "end": 40,
+      "name": "Sunday ride again",
+      "visual_prompt": "Cream end stock with triple-overprinted title/registration crosses, blue style line. Mini cyclist rides along baseline under title, bell38, paper lands39.5.",
+      "onscreen_text": "SUNDAY RIDE\nRISOGRAPH PRINT",
+      "camera_motion": "Locked print end card with small active rider.",
+      "sound_direction": "Fresh am_adam0.95 five original lines. New120BPM D bossa: nylon guitar blue, percussion joins yellow, bass/whistle pink, vibraphone full overprint; water/birds/church bell alone26–28, band returns28 and instruments leave individually near end. Bell/bread/crunch/wings/brake/riso feed synchronized.",
+      "transition": "Honest new GPTsignature in originalcredit position.",
+      "material_requirements": "Three true translucent spot plates: Blue#0078BF15°, Yellow#FFE8000°, FluorescentPink#FF48B075°,7pxhalftone grain and density overprint. Fixed registration offsets with deliberate kicks, never screen-jitter. Cream fibrous stock. Lanky glasses-wearing cyclist, knitted scarf, articulated pedal legs/wheels driven by travel, wire basket, long baguette and small pigeon with four-frame wings. Dense low-rise street, bakery awning, park row/benches and river skyline."
+    }
+  ],
+  "published_text_source_inventory": {
+    "note": "Verbatim literals from text/annotation/caption sourcecalls. This supplemental audit index may include formatting/style strings; shot narrativecards and scripts above are authoritative. Source path/line retained to resolve exacttext.",
+    "entries": [
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/draw.js",
+        "line": 87,
+        "published_source_literals": [
+          "left",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/film.js",
+        "line": 18,
+        "published_source_literals": [
+          "drum",
+          "blue",
+          "bell",
+          "titlehit"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/film.js",
+        "line": 84,
+        "published_source_literals": [
+          "SUNDAY RIDE",
+          "800 190px Bricolage",
+          "center",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/film.js",
+        "line": 85,
+        "published_source_literals": [
+          "a ride in three plates",
+          "500 40px Jost",
+          "center",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/film.js",
+        "line": 279,
+        "published_source_literals": [
+          "SUNDAY RIDE",
+          "800 170px Bricolage",
+          "center",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/film.js",
+        "line": 280,
+        "published_source_literals": [
+          "SUNDAY RIDE",
+          "800 170px Bricolage",
+          "center",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/film.js",
+        "line": 281,
+        "published_source_literals": [
+          "RISOGRAPH PRINT",
+          "600 44px Jost",
+          "center",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/film.js",
+        "line": 282,
+        "published_source_literals": [
+          "LemoLab × Claude Opus 5.5",
+          "500 34px Jost",
+          "center",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/film.js",
+        "line": 313,
+        "published_source_literals": [
+          "500 42px Jost",
+          "center",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/index.html",
+        "line": 2,
+        "published_source_literals": [
+          "utf-8"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/main.js",
+        "line": 20,
+        "published_source_literals": [
+          "SUNDAY RIDE",
+          "800 190px Bricolage",
+          "center",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/main.js",
+        "line": 50,
+        "published_source_literals": [
+          "SUNDAY RIDE",
+          "800 170px Bricolage",
+          "center",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/main.js",
+        "line": 51,
+        "published_source_literals": [
+          "SUNDAY RIDE",
+          "800 170px Bricolage",
+          "center",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/main.js",
+        "line": 52,
+        "published_source_literals": [
+          "RISOGRAPH PRINT  ·  LemoLab × Claude Opus 5.5",
+          "600 32px Jost",
+          "center",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/riso.js",
+        "line": 110,
+        "published_source_literals": [
+          "webgl2"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/scenes.js",
+        "line": 195,
+        "published_source_literals": [
+          "700 34px Bricolage",
+          "center",
+          "middle",
+          "6px",
+          "BAKERY",
+          "0px"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/scenes2.js",
+        "line": 130,
+        "published_source_literals": [
+          "1 · 2 · 3",
+          "700 40px Jost",
+          "center",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/sheet.js",
+        "line": 6,
+        "published_source_literals": [
+          "center",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/sheet.js",
+        "line": 12,
+        "published_source_literals": [
+          "THE RIDER",
+          "800 64px Bricolage",
+          "left",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/sheet.js",
+        "line": 13,
+        "published_source_literals": [
+          "600 26px Jost",
+          "left",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/sheet.js",
+        "line": 14,
+        "published_source_literals": [
+          "“Sunday Ride” · Risograph Print · three spot inks: Blue / Yellow / Fluorescent Pink",
+          "400 24px Jost"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/sheet.js",
+        "line": 31,
+        "published_source_literals": [
+          "8 heads · lanky",
+          "500 17px Jost"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/sheet.js",
+        "line": 35,
+        "published_source_literals": [
+          "EXPRESSIONS",
+          "700 22px Jost",
+          "left",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/sheet.js",
+        "line": 44,
+        "published_source_literals": [
+          "THE PIGEON  (co-star · ~1.2× his head)",
+          "700 22px Jost",
+          "left",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/sheet.js",
+        "line": 53,
+        "published_source_literals": [
+          "PLATES = STORY",
+          "700 20px Jost",
+          "left",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/sheet.js",
+        "line": 64,
+        "published_source_literals": [
+          "KEY POSES",
+          "700 22px Jost",
+          "left",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/sheet.js",
+        "line": 89,
+        "published_source_literals": [
+          "INKS & OVERPRINTS",
+          "600 15px Jost",
+          "left",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/risograph/demo/sheet.js",
+        "line": 91,
+        "published_source_literals": [
+          "B   Y   P   B+Y  B+P  Y+P  40B+P  75B+Y",
+          "500 12px Jost",
+          "left",
+          "alphabetic"
+        ]
+      }
+    ]
+  },
+  "published_cue_events": [
+    {
+      "t": 0.02,
+      "type": "drum",
+      "plate": "blue"
+    },
+    {
+      "t": 1,
+      "type": "bell",
+      "n": 2
+    },
+    {
+      "t": 2,
+      "type": "titlehit"
+    },
+    {
+      "t": 8,
+      "type": "drum",
+      "plate": "yellow"
+    },
+    {
+      "t": 8.2,
+      "type": "doorchime"
+    },
+    {
+      "t": 12,
+      "type": "catch"
+    },
+    {
+      "t": 13,
+      "type": "bell",
+      "n": 2,
+      "gain": 0.8
+    },
+    {
+      "t": 16,
+      "type": "drum",
+      "plate": "pink"
+    },
+    {
+      "t": 19.5,
+      "type": "bell",
+      "n": 3
+    },
+    {
+      "t": 20,
+      "type": "flock"
+    },
+    {
+      "t": 21.9,
+      "type": "flap"
+    },
+    {
+      "t": 22.05,
+      "type": "land"
+    },
+    {
+      "t": 22.7,
+      "type": "coo"
+    },
+    {
+      "t": 24,
+      "type": "whoosh"
+    },
+    {
+      "t": 26,
+      "type": "brake"
+    },
+    {
+      "t": 26.3,
+      "type": "church"
+    },
+    {
+      "t": 28,
+      "type": "snap"
+    },
+    {
+      "t": 29.5,
+      "type": "crunch"
+    },
+    {
+      "t": 30.6,
+      "type": "coo"
+    },
+    {
+      "t": 31.3,
+      "type": "peck"
+    },
+    {
+      "t": 31.7,
+      "type": "peck"
+    },
+    {
+      "t": 32.6,
+      "type": "paperout"
+    },
+    {
+      "t": 35.4,
+      "type": "paperland"
+    },
+    {
+      "t": 38,
+      "type": "bell",
+      "n": 2
+    },
+    {
+      "t": 0,
+      "type": "amb",
+      "kind": "street",
+      "t1": 8
+    },
+    {
+      "t": 8,
+      "type": "amb",
+      "kind": "bakery",
+      "t1": 16
+    },
+    {
+      "t": 16,
+      "type": "amb",
+      "kind": "park",
+      "t1": 24
+    },
+    {
+      "t": 24,
+      "type": "amb",
+      "kind": "river",
+      "t1": 32
+    },
+    {
+      "t": 0,
+      "type": "ride",
+      "t1": 2,
+      "v": 1
+    },
+    {
+      "t": 2,
+      "type": "ride",
+      "t1": 8,
+      "v": 0.8
+    },
+    {
+      "t": 8,
+      "type": "ride",
+      "t1": 16,
+      "v": 1
+    },
+    {
+      "t": 16,
+      "type": "ride",
+      "t1": 24,
+      "v": 1
+    },
+    {
+      "t": 24.6,
+      "type": "ride",
+      "t1": 26,
+      "v": 0.7
+    },
+    {
+      "t": 5.6,
+      "type": "vo",
+      "id": "l1"
+    },
+    {
+      "t": 9,
+      "type": "vo",
+      "id": "l2"
+    },
+    {
+      "t": 21.7,
+      "type": "vo",
+      "id": "l3"
+    },
+    {
+      "t": 28.3,
+      "type": "vo",
+      "id": "l4"
+    },
+    {
+      "t": 32.8,
+      "type": "vo",
+      "id": "l5"
+    }
+  ],
+  "published_source_hashes": {
+    "outputs/gptcar/styles/risograph/demo/draw.js": "beb5029bc8086f83281c99620bf0912916e6804af717491f330a1a6b532618f5",
+    "outputs/gptcar/styles/risograph/demo/events.json": "94daa78016ef618586e8d9f80183f3fe3a6a0135c3a0d9ee3b0da7a69714a924",
+    "outputs/gptcar/styles/risograph/demo/film.js": "a2f2dccdda62906cb23015d163027c6c889b95b92610a4930a61bbea44d75bca",
+    "outputs/gptcar/styles/risograph/demo/index.html": "26b2c841049a32aa533fb5cb6ad9585f72372bc05133c27204daa5aa612e0a0a",
+    "outputs/gptcar/styles/risograph/demo/lines.json": "2c8b01ce0fcd24b0882eb614d96f9c2a450894906aa75af5493674fa54df4049",
+    "outputs/gptcar/styles/risograph/demo/main.js": "c55b67974573c87d4c564935b49bbf1c55de3f06cf9cc7653c0b89c6e5c83817",
+    "outputs/gptcar/styles/risograph/demo/mix.py": "0c8c78773d7d23f821661f0f0e6fe470908bc203cabd5bb760c21c65185e4d63",
+    "outputs/gptcar/styles/risograph/demo/music/bell.py": "4a98430d8b5065a6acd15243f3acb6d1f4c38933159c6b1758934039bd0713f0",
+    "outputs/gptcar/styles/risograph/demo/music/score.json": "6474924c8d01a7c58293e429b9d8e606038728dec1fec7e5ba709d0733afad79",
+    "outputs/gptcar/styles/risograph/demo/music/score.py": "3fa3f7acca5f020d4057d12d5a2e2f701d8bc85761484d4c9296419457d58eb9",
+    "outputs/gptcar/styles/risograph/demo/rider.js": "45585dab4bc6285e9ffa7673377a0aa20c45805c7ec4957fd9071fe190c262bd",
+    "outputs/gptcar/styles/risograph/demo/riso.js": "33372178569914cbb0210e67901434e544db6b2fa32efcd3ac60275e9d62cbbd",
+    "outputs/gptcar/styles/risograph/demo/scenes.js": "03dba9c5e9e186dcb6c271f1a77a9cda4bd4a4b191b14bbcf594c10dee1bab99",
+    "outputs/gptcar/styles/risograph/demo/scenes2.js": "ae33acfc6482575577cf6f36bc0684ce8bad4f3f640805a2aa74e3c22421d4f7",
+    "outputs/gptcar/styles/risograph/demo/sheet.js": "b88ae950c72a96ad51de8991f2510f15b4676e9c66539bb857913a4f9d978615",
+    "outputs/gptcar/styles/risograph/demo/tools/subs.py": "421d61240c18c68136def5f0528c4d7e71c7f1eb51f9f55d774ddd26c1621395",
+    "outputs/gptcar/styles/risograph/demo/voices/dur.json": "e207b9e56b4d09b8a3c839016577b33f9f41d3f5596d0a775c4d1798dd45a1a7",
+    "outputs/gptcar/styles/risograph/demo/voices/words.json": "844fd242d01ec93374f614a88a491a9ac1973995850ed1734adc495e2daae5b8"
+  },
+  "original_assets_and_licenses": [
+    {
+      "path": "outputs/gptcar/styles/risograph/demo/CREDITS",
+      "sha256": "5b9c4ca2e745c1bf9622e32ed663acfda77401a855214ff98326d1c23dd2d1b9",
+      "verbatim": "Sunday Ride — Risograph Print demo · credits\n\nAll artwork, animation, character designs, music and sound effects are original and generated by code in this folder.\n\nFonts (SIL Open Font License 1.1)\n- Jost — Owen Earl (indestructible type*) — fonts/Jost.ttf, license fonts/Jost-OFL.txt — https://github.com/google/fonts/tree/main/ofl/jost\n- Bricolage Grotesque — Mathieu Triay — fonts/Bricolage.ttf, license fonts/Bricolage-OFL.txt — https://github.com/google/fonts/tree/main/ofl/bricolagegrotesque\n\nVoice\n- Kokoro-82M (Apache-2.0) via kokoro-onnx, voice am_adam — core/tts/\n\nMusic\n- Original bossa nova score, synthesized in numpy/numba (Karplus–Strong nylon guitar and upright bass, additive vibraphone, whistle, filtered-noise percussion) — music/score.py. No samples used.\n\nSound effects\n- Synthesized in mix.py and music/bell.py (riso drum and paper feed, bicycle bell, brake, bread crunch, pigeon wings and coo, water, church bell, birds).\n\nInk colours\n- Spot-ink hex values approximate the public Riso ink colour names Blue, Yellow and Fluorescent Pink (used as colour references only).\n"
+    }
+  ],
+  "engine_reuse_recommendation": "Reuse attributed generic drawing/material/rig/math engines described by STYLE/DEMO; share fonts and named licensed data/assets with hashes. Independently generate scene assembly, animation, shot/camera staging and freshaudio. Never import original film renderer, mastervideo,originalframes or mastertrack as newGPTwork. Preserve exactscript/cardlanguage and measuredoriginalframecount. Full originals are analytical references only.",
+  "audio_recreation_direction": "Fresh am_adam0.95 five original lines. New120BPM D bossa: nylon guitar blue, percussion joins yellow, bass/whistle pink, vibraphone full overprint; water/birds/church bell alone26–28, band returns28 and instruments leave individually near end. Bell/bread/crunch/wings/brake/riso feed synchronized.",
+  "v1_primary_deficits": [
+    "V1 reduced40s to20s, removed bakery handoff, passenger, sharing and printer-stack arc",
+    "Two-ink approximation missed actual three-plate density overprints, fixed registration kicks and detailed rider mechanics"
+  ],
+  "visual_audit": {
+    "status": "complete",
+    "method": "Fulloriginal1fpscontactsheetreview andsourcecueboundaries; not everyencodedframe.",
+    "sheets": [
+      "work/gptcar/reference/risograph/sheets/sheet-01.jpg",
+      "work/gptcar/reference/risograph/sheets/sheet-02.jpg",
+      "work/gptcar/reference/risograph/sheets/sheet-03.jpg",
+      "work/gptcar/reference/risograph/sheets/sheet-04.jpg"
+    ],
+    "exact_time_supplement": []
+  }
+}

@@ -1,0 +1,424 @@
+{
+  "slug": "urban-sketch",
+  "original_title": "Where the Wind Went",
+  "premise": "A park that is only a pen sketch; wherever the wind carries her straw hat, colour follows.",
+  "published_delivery": {
+    "slug": "urban-sketch",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/urban-sketch.mp4",
+    "sha256": "41c452cb880d7e69efbff99fa6d15da31ed00033e6a76a611e7fd14d015ada42",
+    "duration": 32.405,
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": "777",
+    "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+    "frames": 32,
+    "sheets": 3
+  },
+  "production_format_source": "Full verbatim DEMO header below; measured published delivery above governs v2.",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "explanation": "No initial conversation/inputprompt transcript is published in inspected repository. STYLE.md is a verbatim published styleprompt; DEMO.md is published retrospective productiondocumentation. Shot prompts are source-informed reconstruction of finishedmovie, never a claimed identical originalchatprompt."
+  },
+  "published_style": {
+    "path": "outputs/gptcar/styles/urban-sketch/STYLE.md",
+    "sha256": "2baf1a19f31b06e55d66d62e4c3449c7a2686c689190976f3e3d0cbdce2faa9a",
+    "verbatim": "# Urban Sketch · Pen & Wash — Style Prompt\n\n> A sketchbook page drawn on location: fine sepia fineliner lines that wobble, overshoot and never quite close, with loose transparent watercolour dropped on top. The colour sits slightly off the lines, spills over them, and dissolves into cream cold-press paper at the page edge.\n> References (grammar only):\n> - Urban-sketching sketchbook pages: line first, then wash; colour off-register; handwritten date and place in the corner; the page edge breaking up into dabs.\n> - *Paperman* (2012): a monochrome world with one coloured object.\n> - *The Red Balloon* (1956): an object as the protagonist, the camera following it across a city.\n> - Jazz waltz (the Vince Guaraldi school): 3/4 swing, walking bass, brushes, a woodwind lead.\n>\n> Nothing is copied from these: no characters, melodies, layouts or type.\n\n## 1. Essence, and what it is not\n\nReportage drawing, made on location in a few minutes. Two layers that stay visibly separate:\n\n1. **Ink.** One thin, near-constant line (a 0.3–0.5 mm fineliner) in dark sepia. It wobbles slightly, overshoots corners by a few pixels, breaks mid-stroke, and suggests rather than describes: a few window marks instead of a grid, scalloped fragments instead of a whole tree outline.\n2. **Wash.** Transparent watercolour glazed on top, **misregistered** by 1–3 px from the line, sometimes spilling past it, leaving paper white for highlights and figures (reserves). Dried edges are darker (pigment pools at the rim), and pigment granulates into the paper tooth.\n\n**The page is part of the image**: warm cream cold-press paper with large-scale mottling and fine tooth. Nothing is painted edge to edge; the painting frays into leaf-sized dabs and white holes, leaving margins for handwriting.\n\nNot Watercolor Brush (no line-free wet-in-wet painting, no painterly edges without ink), not Whiteboard (no marker, no explainer diagrams), not Chinese Ink Wash (no brush calligraphy, no monochrome ink tones). Line and wash, both, always.\n\n## 2. Materials & rendering\n\n- **Paper**: two octaves of fbm mottling (a few %), a tooth tile multiplied over everything, figures included.\n- **Ink**: ~96 % coverage; world line width thinner far, thicker near (e.g. 1.3–3.4 px); wobble ~1 px; overshoot 3–8 px; a third to half of long strokes get one small gap. Strokes are baked with their **draw time per pixel**, so the shader plays back stroke order.\n- **Wash**: 2–3 rough-edged layers, multiply, alpha ~0.4–0.65, offset from the line by about one line width, a dried edge at 30–40 %; granulation = pigment × (0.82 + 0.36 · fbm).\n- **Colour arrival field**: every pixel has a time at which colour reaches it. The wash is revealed through it with a ragged wet front (darkened band just behind the front) and noisy edges. Figures bloom from a point with a noisy circular clip.\n- **Foliage**: pale base wash, then light and shadow masses, then small leaf dabs coloured by light direction, holes at the rim, scalloped ink only on the outline.\n- **Sky**: a few big soft washes at low alpha, fading upward; clouds are reserves with a tinted belly.\n- **Buildings**: local colour; shadow side mixed ~45 % with a cool violet-grey; distant blocks mixed ~50 % with a haze colour.\n- **Figures**: a 3D skeleton in orthographic projection; torso from cross-sections; limbs as organic tapered tubes; hair and head as one mass; face left blank (one nose tick in profile); shadow side mixed with violet.\n- **Page edge**: a noisy boundary, a white-dab band inside, a coloured-dab spray outside.\n- Deterministic: same seed, same marks.\n\n## 3. Colour logic\n\n- **Ink is one colour** (dark sepia or warm black); it never changes.\n- **Wash is local colour, lightly**: few pigments, mixed on the page; shadows are the local colour mixed toward one shared cool violet; distance mixes toward one haze.\n- **Paper white is the brightest value**; it is reserved, never painted.\n- **Colour can be withheld**: a page may be ink-only with colour as an event (one tinted object, colour arriving with a cause).\n- Example palettes: park in summer (lawn `#c3c96f`, leaves `#7fa04a`, sky `#9fbcd6`, limestone `#d8c6a0`); harbour morning (sea `#7fa6b8`, hulls `#c9573f`, rope `#c8a86b`, sky `#bcd0dc`); winter market (roofs `#8b93a6`, lights `#e2b04a`, awnings `#b8483e`, snow = paper).\n\n## 4. Type & subtitles\n\n- **All text is handwriting on the page**, written on left to right with pen sound, and moves with the camera: a corner note (e.g. Reenie Beanie: day, time, weather, place), titles and colophon in a casual hand (e.g. Caveat 500–600), left-aligned in the blank margin.\n- **Subtitles**, if there is a voice: handwritten lines in the page margin or a caption strip written into the lower margin, never a generic overlay box. Hold ≥ max(1.8 s, speech + 0.6 s).\n- The style works well without any voice.\n\n## 5. Motion quality\n\n- **Figures boil at 12 fps** (line wobble and wash seeds change every 1/12 s). The static page does not boil (it is a real page); the camera moves every frame, smoothly.\n- **Performance**: anticipation, action, follow-through; footsteps on the beat.\n- **Invisible forces are drawn**: wind as ink curls that draw on and erase from the tail, trailing dabs; sound as ink lines; heat as wavy strokes.\n- **Colour never snaps**: it blooms from a point or arrives through the field.\n- Stroke-order draw-on for anything that \"appears\".\n\n## 6. Camera grammar\n\nA 2D camera over a large page (e.g. 5120 × 2880). Designed moves use cubic easing; follow shots use a critically damped spring on a lead-ahead target, so the camera lags like a hand-held follow. A vocabulary, not a route. Opening and ending come from the topic.\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Push-in | attention; a detail observed | a face; a sign; a small event |\n| Lateral follow on a spring | travel, pursuit | an object carried; a walker; a vehicle |\n| Crane up | a new level, a view opening | a skyline; a tree; a balcony |\n| Whip-tilt with slight roll | sudden change of direction | a fall; a gust; a surprise |\n| Punch-in with a short shake | impact | a catch; a collision; a door slam |\n| Pull back to the whole page | scale; the sketch as an object | a summary; a place in full |\n| Tilt into the margin | from picture to words | notes; a date; a title |\n| Slow pan across a line-only area | the world before colour | a quiet start; memory |\n| Hold while the pen draws | the act of noticing | a subject being drawn |\n| Page turn to a new spread | another time or place | a travel diary; a sequence of days |\n\nFraming: subjects ≥ ⅓ of frame height at story beats; a small key object gets a faint paper halo (reserve) so it reads over busy foliage. Transitions: camera travel on the page, page turns, or colour arriving; no dissolves.\n\n## 7. Sound palette\n\n- **Ambience from the place**: paper room tone first, then the location once it has colour (birds, traffic, harbour gulls, market chatter). J-cut a place's sound a bar before we see it.\n- **Pen on cold-press paper**: band-passed noise (~1.6–7.5 kHz) with a fibre texture and grain clicks, one burst per real stroke; thousands overlap into a hiss during a fast sketch; brighter short strokes read like a hi-hat.\n- **Water and brush**: a wet brush \"shhh\" for blooms, a jar rinse, a drip.\n- **Foley follows objects** at sketch scale: fabric or paper flapping for things in the wind (rate and level from speed, pan from screen x), steps on the beat, bells, splashes.\n- **Music families**: a jazz waltz (walking bass in three, brushes, piano, clarinet or flute); a café accordion trio; solo nylon guitar; a string quartet pizzicato; a brass band for crowds. One colour instrument per area of the page works well.\n- **Silence as a tool**: a bar of true silence (ambience included) at the height of suspense; the first sound after it is the next gesture.\n- **Mix**: music ducks under key hits; foley high-passed ~90 Hz; −14 LUFS, moderate LRA.\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **Line before colour.** The pen draws a subject in real stroke order, then the wash drops in; the drawing is the spectacle. *Fits content like:* a cathedral façade; a chef plating a dish; a street musician.\n- **Colour as arrival.** Wash spreads from a source with a wet front, so an event paints the page; figures stay frozen line drawings until colour touches them. *Fits content like:* a sunrise over a harbour; a parade moving down a street; the lights of a market switching on.\n- **The one coloured thing.** A colourless sketch with a single tinted object that becomes the protagonist. *Fits content like:* a red umbrella in the rain; a yellow taxi; a child's kite.\n- **The page as frame.** Pull back until the whole page shows, edges dissolving, handwritten notes in the margin. *Fits content like:* a travel diary entry; a neighbourhood portrait; a day in a place.\n- **Carrot people.** Distant crowds as one wash blob, two leg lines and a head dot. *Fits content like:* a station at rush hour; a stadium; a beach.\n\n## 9. Pitfalls of the medium\n\n- **Straight edges in the colour field** from clipping by a bounding box → clip by the actual noisy distance.\n- **Rectangular masks around complex silhouettes** leave notches → mask with the real stepped silhouette.\n- **Characters losing colour** when they move into unpainted areas → sample arrival once (or tie it to the event), never at the current position.\n- **Static ink can't be occluded by later washes** → erase far ink inside nearer shapes before drawing; use carrot people for far crowds.\n- **IK feet pinned while blending poses** splay the legs → blend foot targets toward under-hip.\n- **Front-facing heads go bald** → draw the hair mass, then knock the face out of it.\n- **Big canvases in headless Chrome**: pack ink and time into RGBA byte textures yourself and upload the arrival field as a filterable float texture (`R16F`).\n- **Painting edge to edge** kills the sketchbook feel → leave margins and fray the edge.\n\n## 10. Engine\n\n`demo/engine.js` (deterministic): `penStroke` + `drawPen` (fineliner with wobble, overshoot, gaps, draw-on), `rasterPen` (bakes stroke order into an ink + time layer), `wash`, `reserve`, `dab` / `foliage`, `arrivalField` (colour arrival per cell from sources), `compositor` (WebGL page: paper × wash revealed by arrival × ink revealed by stroke time), `figure` + `drawPrims` (sketched people), `sketchShape` (any shape in this style in one call), `handwrite`. `demo/poses.js` holds a pose library. API table and a minimal example that draws something new: [DEMO.md](DEMO.md#engine-reference).\n\n## 11. Variation space\n\nYou decide the place, the subjects, what colour does (always there, withheld, arriving), the voice (or none), the music family, the camera path, the opening, the ending and the length.\n\nAll far from our demo:\n\n- Structures: **a travel diary** of five pages, one per day, each page turned by the wind or a hand; **a single street corner** drawn at four times of day, the wash changing while the ink stays; **a recipe** where each ingredient is drawn from life at the market and the final dish is painted last.\n- Openings: **the blank page** with only the handwritten date, then the first line of the horizon; **a close-up of a coffee cup** on the page's edge, pulling back to find the city drawn behind it; **rain dots** landing on the paper and blooming into the first washes.\n- Endings: **the sketchbook closes** on the page; **the last figure walks off the page** into the blank margin; **the colour drains** back to ink as the evening comes, leaving one lit window.\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n"
+  },
+  "published_demo": {
+    "path": "outputs/gptcar/styles/urban-sketch/DEMO.md",
+    "sha256": "3b4997a836f0c3d7a865052123f41a886e85d522bd314a189e00f6840e0b1b62",
+    "verbatim": "# Urban Sketch · Pen & Wash — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *Where the Wind Went* (32.4 s, 1920×1080, 24 fps, no voice-over) · `urban-sketch.mp4` · source in [`demo/`](demo/)\n\n\nThe original header: a sketchbook page from the park bench: fine sepia fineliner lines that wobble, overshoot and never quite close, with loose transparent watercolour dropped on top. The colour sits slightly off the lines, spills over them, and dissolves into cream cold-press paper at the page edge.\n\n## Story & structure\n\nA park exists only as an ink sketch, and the only colour on the page is a straw hat. A gust steals the hat, and **the page gets painted wherever the wind carries it**.\n\nThe original \"what the style is\" notes with the demo's exact colours: paper `#f5eede`, ink `#2b2520`.\n\nReportage drawing, made on location in a few minutes. Two layers that stay visibly separate:\n1. **Ink.** One thin, near-constant line (a 0.3–0.5 mm fineliner), dark sepia `#2b2520`. It wobbles slightly, overshoots corners by a few pixels, breaks mid-stroke, and suggests rather than describes: a few window marks instead of a grid, scalloped fragments instead of a whole tree outline.\n2. **Wash.** Transparent watercolour glazed on top. It is **misregistered** by 1–3 px from the line, sometimes spills past it, and leaves paper white for highlights and for figures (reserves). Dried edges are darker (pigment pools at the rim), and pigment granulates into the paper tooth.\n\nThe page itself is part of the image. The warm cream `#f5eede` cold-press paper has large-scale mottling and a fine tooth. Nothing is painted edge to edge: the painting frays into leaf-sized dabs and white holes, leaving a blank margin for handwriting.\n\nStories the style was pitched for, and the native moves the demo used (line before colour for the sketch spread and skyline; colour as arrival driven by the gust; the one coloured thing = the straw hat; the page as frame for the ending):\n\nGood for: travel diaries, city portraits, a day in a place, \"the moment I noticed…\", slice-of-life, gentle comedy with small figures, anything that benefits from feeling observed and handmade.\n\n**Native moves (only this medium does them):**\n- **Line before colour.** Show the pen drawing a subject stroke by stroke (in real stroke order), then drop the wash in. The drawing process is the spectacle.\n- **Colour as arrival.** Every pixel has a *colour arrival time*. Wash spreads outward from a source with a ragged wet front and a dark tide line, so you can paint with an event (wind, a runner, music, a sunrise). Figures stay frozen line drawings until colour touches them, then start moving.\n- **The one coloured thing.** Open on a colourless sketch with a single tinted object; it becomes the protagonist.\n- **The page as frame.** Pull back until the whole page is visible, edges dissolving, with handwritten title and notes in the margin. This works as an end card and a scale reveal in one.\n\n## Shots\n\nA 2D camera over a 5120×2880 page (the final pull-back shows it 1:1 at 0.375×).\n- Designed moves use cubic easing. Follow shots use a critically damped spring on a lead-ahead target, so the camera lags like a hand-held follow (stiffness 28, or 70 for the fall).\n- The demo uses push, pull, lateral follow, crane-up, whip-tilt with a slight roll, a punch-in with a 0.35 s shake on impact, a long pull-back, and a tilt down into the margin.\n- Keep subjects at least one third of frame height at story beats; the hat gets a faint paper halo (reserve) so it reads over busy foliage.\n\n## Motion as used in the demo\n\n- Figures **boil** at 12 fps: line wobble and wash seeds change every 1/12 s. The static page does not boil (it is a real page); the camera moves every frame, smoothly.\n- Figures keep anticipation, action and follow-through: a crouch before standing, a lunge and stumble on a miss, a prone slide after a dive. Footsteps land on the beat (run cycle = 2 beats).\n- The wind is drawn: ink \"~@\" curls spawn behind the hat on every beat, draw on in 0.4 s, then erase from the tail; leaf dabs trail the hat.\n- Colour never snaps. It blooms from a point with a noisy circular clip (figures) or through the arrival field (the world).\n\n## Score structure\n\nThree layers; no voice-over.\n- **Ambience:** paper room tone → park birds (after colour arrives) → a low city hum that comes in a bar before the skyline (J-cut). Everything drops out for the silent bar.\n- **Foley:** pen on cold-press paper (band-passed noise, 1.6–7.5 kHz, with a fibre amplitude texture and grain clicks, one burst per real stroke; thousands overlap into a hiss during the sketch spread; skyline strokes are brighter and read as a hi-hat); a wet brush \"shhh\" for every big bloom; wind J-cut from the right channel; the straw hat as paper flapping whose rate and level follow its speed and whose pan follows its screen x; steps on the beat; bike bell; dive, slide, catch slap and water plop.\n- **Music:** 150 BPM jazz waltz in F: Sneakybass walking in three, synthesized brushes plus pedal hi-hat, upright piano on beats 2–3, a clarinet lead, muted trumpet for the city, pizzicato ostinato, vibraphone and marimba stabs where trees burst, and a floating D♭maj7♯11 at the apex, followed by **one bar of true silence**. The first sound after it is a chromatic clarinet fall with timpani; the catch lands on a tutti downbeat.\n- Mix: music ducks under the catch; foley high-passed at 90 Hz; −14 LUFS, LRA 7.\n\n## Palette & props\n\n| Element | Value |\n|---|---|\n| Paper | `#f5eede`; mottling fbm at 0.0011 and 0.0062 cycles/px, ±4.5 %; tooth tile multiplied on top of everything, figures included |\n| Ink | `#2b2520` at 96 % coverage; world line width 1.3–3.4 px (thinner far, thicker near); wobble 0.9–1.3 px; overshoot 3–8 px; 30–60 % of long strokes get one 3–9 px gap |\n| Wash | 2–3 rough-edged layers (edge noise 4–12 px), multiply blend; alpha 0.4–0.65; offset from line by 0.7–1× line width; dried edge stroke at 30–40 % |\n| Granulation | pigment × (0.82 + 0.36 · fbm(p · 0.21)) |\n| Wet front | reveal smoothstep over 0.16 s of arrival time; front band darkened +70 % (Gaussian at +0.07 s, σ 0.08 s); edge noise ±240 px coarse + ±40 px fine |\n| Foliage | pale base wash (sun `#d6d56f`), then light and shadow masses, then 5–20 px leaf dabs coloured by light direction: `#d6d56f` → `#aabf57` → `#7fa04a` → `#56793c` → `#3f5d36`; holes at the rim; scalloped ink fragments only on the outline |\n| Sky | a few big soft ellipses of `#9fbcd6` / `#86a6c8` at 10–20 % alpha, fading upward; clouds are reserves with a `#b7b3c9` belly |\n| Buildings | limestone `#d8c6a0`, ochre `#cfaa72`, glass `#98b1c8`, brick `#c49a7a`; shadow side = colour mixed 45 % with `#5a5f82`; distant blocks mixed 50 % with haze `#b9c0cc` |\n| Lawn and path | `#c3c96f` / `#dcd98b` light bands, `#7f9c52` shade dabs; path `#d8ccb1`; grass = 2–4 ink flicks per tuft, denser near the camera |\n| Figures | 3D skeleton, orthographic projection; torso silhouette from cross-sections; limbs as organic tapered tubes; hair and head as one mass; face left blank (one nose tick in profile); shadow side = colour mixed 40 % with violet `#464873` |\n| Page edge | noisy boundary (fbm 0.004, ±80 px); a white-dab band 70 px wide inside, a coloured-dab spray 70 px wide outside |\n\n## Titles and end card\n\nNo subtitles are needed. All text is **handwriting on the page**, written on with a left-to-right reveal and pen sound:\n- corner note in Reenie Beanie (`Sun. 3:40 pm — windy`);\n- title and colophon in Caveat (500–600 weight), left-aligned in the blank page margin.\n\nThe text stays in the world and moves with the camera, never as an overlay.\n\nEnd card (`demo/film.js`, `notes()`): the title \"Where the wind went.\" written in Caveat 500 at 190 px in the lower-left margin (28.2–29.5 s), then the colophon in the same column: \"Urban Sketch · Pen & Wash — a Lemo-Opuscar style\" (30.1–30.8 s), \"LemoLab × Claude Opus 5.5\" in Caveat 600 (30.6–31.2 s), and the music, sample and font credits (31.0–31.8 s). The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card (take those `handwrite()` lines out when reusing the code).\n\n## Build notes\n\n```\nstyles/urban-sketch/demo/\n  engine.js   pen, wash, foliage, arrival field, GL compositor, figure rig, hat, bike, handwriting, sketchShape\n  world.js    the static page: sky, skyline (ink in stroke order), trees, lawn, path, lamp, pond, bridge, crowd, edge dissolve\n  poses.js    character looks + pose library (sit, run, walk, cycle, dive, prone, wave)\n  film.js     timeline: hat path, camera, performances, colour sources, sound cues\n  audio/      score.py (music) · foley.py (all procedural sound) · mix.py\n  build.sh    one command, from nothing to urban-sketch.mp4\n```\nRender: `node core/render/video.mjs styles/urban-sketch/demo --fps 24 --workers 4` renders 778 frames in about 40 s on an M-series Mac; world build takes about 4 s per worker.\n\n### Pitfalls we hit\n\n- **Straight edges in the colour field.** The source bounding box ignored its vertical stretch (`sy`), and the slow \"creep\" beyond the reach radius was cut by a square box. Clip by the actual (noisy) distance, not the bbox.\n- **Rectangle masks around set-back towers** left white notches in the sky. Mask with the real stepped silhouette (tiers, spire, pyramid, water tank).\n- **Characters losing colour** when they run into unpainted areas. Sample arrival once at the character's start point (or tie it to the event that coloured them), never at the current position.\n- **Static ink cannot be occluded by later washes.** Far crowds therefore use carrot-people (one wash blob, two leg lines, a head dot) instead of full rigs; building ink is erased inside nearer buildings and tree crowns before drawing.\n- **IK feet left pinned** while blending sit → stand splays the legs. Blend the foot targets toward under-hip positions.\n- **Front-facing heads went bald.** Always draw the hair mass, then knock the face out of its lower part.\n- Headless Chrome and big canvases: 5120² canvases for ink, time, colour and the page are fine, but pack ink and time into RGBA byte textures yourself (`getImageData`), and upload the arrival field as `R16F` (filterable).\n\n## Engine reference\n\nAll functions are in `demo/engine.js` and are deterministic (same seed, same marks).\n\n| Function | What it does |\n|---|---|\n| `penStroke(pts, {w, wob, over, gap, seed, smooth})` | prepares a fineliner stroke along any polyline (wobble, overshoot, taper, gaps) |\n| `drawPen(ctx, stroke, p=1, col=INK, alpha=1, from=0)` | draws it up to fraction `p` (draw-on); `from` erases from the tail |\n| `rasterPen(inkCtx, timeCtx, stroke, t0, dur, win)` | bakes a stroke into a static ink layer **plus** its per-pixel arrival time (stroke order playback in the shader) |\n| `wash(ctx, poly, [r,g,b], {a, j, layers, edge, dx, dy, seed})` | a watercolour wash on any polygon (rough edges, glazing, dark tide line, offset) |\n| `reserve(ctx, poly, a)` | lifts colour back to paper (reserves, foreground occlusion) |\n| `dab(ctx, x, y, r, angle, col, a, seed)` / `foliage(ctx, crown[], opts)` | leaf dabs / a whole tree crown |\n| `arrivalField(W, H, gw, gh, sources, {amp, creep})` | colour arrival time per cell; `sources = [{x, y, t, v, R, sy, mask, hard}]` |\n| `compositor(canvas, layers)` → `draw(cam, t)` | WebGL page: paper × wash (revealed by arrival, wet front) × ink (revealed by stroke time) |\n| `figure(look, pose, place, {seed, boil})` → prims | a sketched person (knock / wash / ink primitives); `prims.head`, `prims.hand` for attachments |\n| `hat(c, r, [rx, ry, rz])`, `bike(place, phase, col)` | props with true 3D orientation |\n| `drawPrims(ctx, prims, {color, ink, clip})` | draws primitives; `color` 0..1 = how far the wash has arrived; `ink` = draw-on progress (number or per-primitive function) |\n| `sketchShape(ctx, poly, col, {ink, wash, offset, color, p})` | **any shape in this style** in one call |\n| `handwrite(ctx, text, x, y, size, p, {font})` | handwriting written on left to right |\n\n**The \"only colour\" hook.** Leave everything at `color: 0` (pure ink) and pass `color: 1` only for the element that keeps its colour, as the straw hat does in the demo. Or give that element an arrival source at t = 0 and everything else later.\n\nMinimal example: a warm orange `#D97757` four-point sparkle with a short cursor tail.\n```js\nimport { sketchShape, sparkle, penStroke, drawPen, hex } from './engine.js';\nconst star = sparkle(960, 540, 120, .24);                       // 4-point star polygon\nsketchShape(ctx, star, hex('#D97757'), { ink: 3, wash: .7, offset: 3, seed: 7 });\ndrawPen(ctx, penStroke([[1040, 610], [1180, 640], [1300, 646]], { w: 3, wob: 1.2, over: 6, seed: 8 }), 1);   // the tail\n```\n"
+  },
+  "narration": [],
+  "verbatim_published_script_files": {},
+  "timed_shot_prompts": [
+    {
+      "start": 0,
+      "end": 2.4,
+      "name": "A picnic is sketched",
+      "visual_prompt": "Start on woman’s hat, then man/woman/rug/basket draw in fine pen. Only hat receives warm straw wash first. Small handwritten weather note.",
+      "onscreen_text": "Sun. 3:40 pm — windy",
+      "camera_motion": "Intimate push from2978,2250,1.72 to2968,2242,1.82.",
+      "sound_direction": "No narration. New150BPM F jazz waltz: walking upright bass,piano,brushes,clarinet,muted trumpet; vibe/marimba accents. Apex chord D-flatmaj7#11 and absolute held bar20.4–21.6, clarinet falling glissando, catch tutti24. New scene wind/footsteps/bells/splash.",
+      "transition": "Pens build bodies/props before colour.",
+      "material_requirements": "One5120×2880 sketchbook page. Broken warm-sepia pen contours with retraced perspective, irregular tinted transparent washes offset from ink, granulation and pooled edges. Park picnic pair: man short dark hair/blue shirt/tan shorts, long-haired woman in white dress and straw hat; basket/checkered rug. Detailed cyclists, benches, iron lamp, dense leafy trees, skyline, arched pond bridge."
+    },
+    {
+      "start": 2.4,
+      "end": 6,
+      "name": "The uncoloured park opens",
+      "visual_prompt": "Pull to wide park full of still pen figures, cyclists and grass clusters. Wind lines curl from left; straw hat begins lifting6.0 while most page stays bare paper.",
+      "onscreen_text": "",
+      "camera_motion": "Pull to2760,2040,.8 then gently push1×.",
+      "sound_direction": "No narration. New150BPM F jazz waltz: walking upright bass,piano,brushes,clarinet,muted trumpet; vibe/marimba accents. Apex chord D-flatmaj7#11 and absolute held bar20.4–21.6, clarinet falling glissando, catch tutti24. New scene wind/footsteps/bells/splash.",
+      "transition": "Colour follows hat, not a full-screen wash.",
+      "material_requirements": "One5120×2880 sketchbook page. Broken warm-sepia pen contours with retraced perspective, irregular tinted transparent washes offset from ink, granulation and pooled edges. Park picnic pair: man short dark hair/blue shirt/tan shorts, long-haired woman in white dress and straw hat; basket/checkered rug. Detailed cyclists, benches, iron lamp, dense leafy trees, skyline, arched pond bridge."
+    },
+    {
+      "start": 6,
+      "end": 10.8,
+      "name": "The chase and first miss",
+      "visual_prompt": "Hat tumbles, a mossy wash trails its route and colours picnic/man/grass. Man stands6.45–6.95, runs and lunges8.2–8.95 but misses. Hat passes above cyclists; local wash reveals people/trees.",
+      "onscreen_text": "",
+      "camera_motion": "Spring-follow hat laterally, keep chasing man leg/arm contact readable.",
+      "sound_direction": "No narration. New150BPM F jazz waltz: walking upright bass,piano,brushes,clarinet,muted trumpet; vibe/marimba accents. Apex chord D-flatmaj7#11 and absolute held bar20.4–21.6, clarinet falling glissando, catch tutti24. New scene wind/footsteps/bells/splash.",
+      "transition": "No cut; page positions fixed.",
+      "material_requirements": "One5120×2880 sketchbook page. Broken warm-sepia pen contours with retraced perspective, irregular tinted transparent washes offset from ink, granulation and pooled edges. Park picnic pair: man short dark hair/blue shirt/tan shorts, long-haired woman in white dress and straw hat; basket/checkered rug. Detailed cyclists, benches, iron lamp, dense leafy trees, skyline, arched pond bridge."
+    },
+    {
+      "start": 10.8,
+      "end": 12,
+      "name": "The lamp leap",
+      "visual_prompt": "Hat spins around a detailed iron park lamp; man jumps11.55 with arm extended, still misses. Tree colour starts blooming behind.",
+      "onscreen_text": "",
+      "camera_motion": "Punch1.28× and tilt up with jump.",
+      "sound_direction": "No narration. New150BPM F jazz waltz: walking upright bass,piano,brushes,clarinet,muted trumpet; vibe/marimba accents. Apex chord D-flatmaj7#11 and absolute held bar20.4–21.6, clarinet falling glissando, catch tutti24. New scene wind/footsteps/bells/splash.",
+      "transition": "Hat’s arc routes into canopy.",
+      "material_requirements": "One5120×2880 sketchbook page. Broken warm-sepia pen contours with retraced perspective, irregular tinted transparent washes offset from ink, granulation and pooled edges. Park picnic pair: man short dark hair/blue shirt/tan shorts, long-haired woman in white dress and straw hat; basket/checkered rug. Detailed cyclists, benches, iron lamp, dense leafy trees, skyline, arched pond bridge."
+    },
+    {
+      "start": 12,
+      "end": 15.6,
+      "name": "Colour through the canopy",
+      "visual_prompt": "Three tree-burst washes at12/13.2/14.4 spread granular olive/green pigment between fine trunks/branch hatching. Hat tumbles over treetops, cyclists below continue.",
+      "onscreen_text": "",
+      "camera_motion": "Spring-follow and crane; widen vertical context.",
+      "sound_direction": "No narration. New150BPM F jazz waltz: walking upright bass,piano,brushes,clarinet,muted trumpet; vibe/marimba accents. Apex chord D-flatmaj7#11 and absolute held bar20.4–21.6, clarinet falling glissando, catch tutti24. New scene wind/footsteps/bells/splash.",
+      "transition": "Wash follows passage with uneven wet edges.",
+      "material_requirements": "One5120×2880 sketchbook page. Broken warm-sepia pen contours with retraced perspective, irregular tinted transparent washes offset from ink, granulation and pooled edges. Park picnic pair: man short dark hair/blue shirt/tan shorts, long-haired woman in white dress and straw hat; basket/checkered rug. Detailed cyclists, benches, iron lamp, dense leafy trees, skyline, arched pond bridge."
+    },
+    {
+      "start": 15.6,
+      "end": 19.2,
+      "name": "The city follows the wind",
+      "visual_prompt": "Crane up reveals individually windowed blue/ochre city towers behind canopy; sky paints blue-grey around reserved paper clouds. Hat rises toward tallest stepped tower.",
+      "onscreen_text": "",
+      "camera_motion": "Crane to2700,780,.56 then2745,520,.74.",
+      "sound_direction": "No narration. New150BPM F jazz waltz: walking upright bass,piano,brushes,clarinet,muted trumpet; vibe/marimba accents. Apex chord D-flatmaj7#11 and absolute held bar20.4–21.6, clarinet falling glissando, catch tutti24. New scene wind/footsteps/bells/splash.",
+      "transition": "Architecture receives transparent misregistered colour.",
+      "material_requirements": "One5120×2880 sketchbook page. Broken warm-sepia pen contours with retraced perspective, irregular tinted transparent washes offset from ink, granulation and pooled edges. Park picnic pair: man short dark hair/blue shirt/tan shorts, long-haired woman in white dress and straw hat; basket/checkered rug. Detailed cyclists, benches, iron lamp, dense leafy trees, skyline, arched pond bridge."
+    },
+    {
+      "start": 19.2,
+      "end": 21.6,
+      "name": "The hat hangs in the air",
+      "visual_prompt": "Straw hat at apex floats beside top of tallest tower under broad textured clouds. Tiny wind curls. Hold anticipation, no new scene.",
+      "onscreen_text": "",
+      "camera_motion": "Push to1.75× on hat; music bar rests20.4–21.6.",
+      "sound_direction": "Suspended chord then silence; only breeze.",
+      "transition": "Stillness before fall.",
+      "material_requirements": "One5120×2880 sketchbook page. Broken warm-sepia pen contours with retraced perspective, irregular tinted transparent washes offset from ink, granulation and pooled edges. Park picnic pair: man short dark hair/blue shirt/tan shorts, long-haired woman in white dress and straw hat; basket/checkered rug. Detailed cyclists, benches, iron lamp, dense leafy trees, skyline, arched pond bridge."
+    },
+    {
+      "start": 21.6,
+      "end": 24,
+      "name": "The fall and dive",
+      "visual_prompt": "Hat drops rapidly past skyline/canopy back toward pond. Man sprints and dives23.55, fully extended hands.",
+      "onscreen_text": "",
+      "camera_motion": "Whip tilt with slight roll; zoom.92→1.17 then catch punch1.45.",
+      "sound_direction": "Clarinet fall,timpani pickup.",
+      "transition": "Keep hat’s continuous fall legible.",
+      "material_requirements": "One5120×2880 sketchbook page. Broken warm-sepia pen contours with retraced perspective, irregular tinted transparent washes offset from ink, granulation and pooled edges. Park picnic pair: man short dark hair/blue shirt/tan shorts, long-haired woman in white dress and straw hat; basket/checkered rug. Detailed cyclists, benches, iron lamp, dense leafy trees, skyline, arched pond bridge."
+    },
+    {
+      "start": 24,
+      "end": 25.2,
+      "name": "Caught over water",
+      "visual_prompt": "Hat caught at24; man slides prone on grass with toes raised, hand holding hat above pond. Splash/rings24.02, arched bridge and reflection close by.",
+      "onscreen_text": "",
+      "camera_motion": "Impact shake0.35s then settle medium.",
+      "sound_direction": "Full jazz tutti, grass scrape and splash.",
+      "transition": "Catch must be seen, not replaced by splash graphic.",
+      "material_requirements": "One5120×2880 sketchbook page. Broken warm-sepia pen contours with retraced perspective, irregular tinted transparent washes offset from ink, granulation and pooled edges. Park picnic pair: man short dark hair/blue shirt/tan shorts, long-haired woman in white dress and straw hat; basket/checkered rug. Detailed cyclists, benches, iron lamp, dense leafy trees, skyline, arched pond bridge."
+    },
+    {
+      "start": 25.2,
+      "end": 29.8,
+      "name": "The whole page is coloured",
+      "visual_prompt": "Man rises and raises hat, woman waves from rug26.2. Wide pull shows entire lush park, city, pond bridge and pigment route. Title writes in lower margin.",
+      "onscreen_text": "Where the wind went.",
+      "camera_motion": "Long pull to whole-page.375.",
+      "sound_direction": "No narration. New150BPM F jazz waltz: walking upright bass,piano,brushes,clarinet,muted trumpet; vibe/marimba accents. Apex chord D-flatmaj7#11 and absolute held bar20.4–21.6, clarinet falling glissando, catch tutti24. New scene wind/footsteps/bells/splash.",
+      "transition": "Pigment irregularly feathered at page edge.",
+      "material_requirements": "One5120×2880 sketchbook page. Broken warm-sepia pen contours with retraced perspective, irregular tinted transparent washes offset from ink, granulation and pooled edges. Park picnic pair: man short dark hair/blue shirt/tan shorts, long-haired woman in white dress and straw hat; basket/checkered rug. Detailed cyclists, benches, iron lamp, dense leafy trees, skyline, arched pond bridge."
+    },
+    {
+      "start": 29.8,
+      "end": 32.4,
+      "name": "Sketchbook margin",
+      "visual_prompt": "Tilt down to handwritten title/style and small music/font credits under finished panorama.",
+      "onscreen_text": "Where the wind went.\nUrban Sketch · Pen & Wash",
+      "camera_motion": "Tilt to1320,2830,.8 through30.9.",
+      "sound_direction": "No narration. New150BPM F jazz waltz: walking upright bass,piano,brushes,clarinet,muted trumpet; vibe/marimba accents. Apex chord D-flatmaj7#11 and absolute held bar20.4–21.6, clarinet falling glissando, catch tutti24. New scene wind/footsteps/bells/splash.",
+      "transition": "New honest authorship in original credit slot.",
+      "material_requirements": "One5120×2880 sketchbook page. Broken warm-sepia pen contours with retraced perspective, irregular tinted transparent washes offset from ink, granulation and pooled edges. Park picnic pair: man short dark hair/blue shirt/tan shorts, long-haired woman in white dress and straw hat; basket/checkered rug. Detailed cyclists, benches, iron lamp, dense leafy trees, skyline, arched pond bridge."
+    }
+  ],
+  "published_text_source_inventory": {
+    "note": "Verbatim literals from text/annotation/caption sourcecalls. This supplemental audit index may include formatting/style strings; shot narrativecards and scripts above are authoritative. Source path/line retained to resolve exacttext.",
+    "entries": [
+      {
+        "file": "outputs/gptcar/styles/urban-sketch/demo/api.js",
+        "line": 3,
+        "published_source_literals": [
+          ").getContext("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/urban-sketch/demo/engine.js",
+        "line": 259,
+        "published_source_literals": [
+          "webgl2"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/urban-sketch/demo/film.js",
+        "line": 189,
+        "published_source_literals": [
+          "), ctx = cvs.getContext("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/urban-sketch/demo/film.js",
+        "line": 193,
+        "published_source_literals": [
+          "canvas"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/urban-sketch/demo/index.html",
+        "line": 2,
+        "published_source_literals": [
+          "utf-8"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/urban-sketch/demo/look.js",
+        "line": 11,
+        "published_source_literals": [
+          ").getContext("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/urban-sketch/demo/sheet.js",
+        "line": 4,
+        "published_source_literals": [
+          ").getContext("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/urban-sketch/demo/world.js",
+        "line": 26,
+        "published_source_literals": [
+          "canvas"
+        ]
+      }
+    ]
+  },
+  "published_cue_events": [
+    {
+      "t": 1.8,
+      "type": "hatColor"
+    },
+    {
+      "t": 4.4,
+      "type": "windIn"
+    },
+    {
+      "t": 4.6,
+      "type": "gust"
+    },
+    {
+      "t": 6,
+      "type": "hatLift"
+    },
+    {
+      "t": 8.4,
+      "type": "bounce"
+    },
+    {
+      "t": 8.45,
+      "type": "miss"
+    },
+    {
+      "t": 9.55,
+      "type": "bell"
+    },
+    {
+      "t": 9.95,
+      "type": "bell"
+    },
+    {
+      "t": 11.55,
+      "type": "jump"
+    },
+    {
+      "t": 10.8,
+      "type": "lampSpin"
+    },
+    {
+      "t": 12,
+      "type": "tree"
+    },
+    {
+      "t": 13.2,
+      "type": "tree"
+    },
+    {
+      "t": 14.4,
+      "type": "tree"
+    },
+    {
+      "t": 19.2,
+      "type": "apex"
+    },
+    {
+      "t": 20.4,
+      "type": "silence"
+    },
+    {
+      "t": 21.6,
+      "type": "fall"
+    },
+    {
+      "t": 23.55,
+      "type": "dive"
+    },
+    {
+      "t": 24,
+      "type": "catch"
+    },
+    {
+      "t": 24.02,
+      "type": "splash"
+    },
+    {
+      "t": 28.2,
+      "type": "writeTitle",
+      "d": 1.3
+    },
+    {
+      "t": 30,
+      "type": "writeCredits",
+      "d": 1.9
+    },
+    {
+      "t": 1.55,
+      "type": "writeNote",
+      "d": 0.8
+    },
+    {
+      "t": 7.15,
+      "type": "step",
+      "surf": "grass"
+    },
+    {
+      "t": 7.55,
+      "type": "step",
+      "surf": "grass"
+    },
+    {
+      "t": 7.95,
+      "type": "step",
+      "surf": "grass"
+    },
+    {
+      "t": 9.15,
+      "type": "step",
+      "surf": "grass"
+    },
+    {
+      "t": 9.55,
+      "type": "step",
+      "surf": "grass"
+    },
+    {
+      "t": 9.95,
+      "type": "step",
+      "surf": "grass"
+    },
+    {
+      "t": 10.35,
+      "type": "step",
+      "surf": "grass"
+    },
+    {
+      "t": 10.75,
+      "type": "step",
+      "surf": "grass"
+    },
+    {
+      "t": 11.15,
+      "type": "step",
+      "surf": "grass"
+    },
+    {
+      "t": 12.35,
+      "type": "step",
+      "surf": "grass"
+    },
+    {
+      "t": 12.75,
+      "type": "step",
+      "surf": "grass"
+    },
+    {
+      "t": 13.15,
+      "type": "step",
+      "surf": "grass"
+    },
+    {
+      "t": 22.75,
+      "type": "step",
+      "surf": "stone"
+    },
+    {
+      "t": 23.15,
+      "type": "step",
+      "surf": "stone"
+    }
+  ],
+  "published_source_hashes": {
+    "outputs/gptcar/styles/urban-sketch/demo/api.js": "9d6da5cc750b0caca612919c06e3685ac2831d4286bc3e8c5dec992fd80d246c",
+    "outputs/gptcar/styles/urban-sketch/demo/audio/cues.json": "3ba50959c1ddc71e886667b89f840bb291cd7d2ea8453d861f6c69c3fb76b4a2",
+    "outputs/gptcar/styles/urban-sketch/demo/audio/foley.py": "40f860929acaaccec0b52d5aaf13ab0129cbe2348d8cc783ca493d0b28cf1491",
+    "outputs/gptcar/styles/urban-sketch/demo/audio/mix.py": "38a4dd6106492ee16c3f8b049243ece549c6f36d2014bf5f5a610c7cbbdcc035",
+    "outputs/gptcar/styles/urban-sketch/demo/audio/score.py": "0c77abe015a59dcd80f28dd338031b88223d9613ef06b57c4240c6be2dc5a81d",
+    "outputs/gptcar/styles/urban-sketch/demo/audio/strokes.json": "5d2946ddebe3511c201cdda042cb9520d6459f6c856de077ead4ec669b811db1",
+    "outputs/gptcar/styles/urban-sketch/demo/engine.js": "fa08381391f449027789407be588a26fb944177673589c514317ffa66a782b41",
+    "outputs/gptcar/styles/urban-sketch/demo/events.json": "b170d05475362d2012558913ee8836718e747fd25d4e8c3cbf7bc283f710b505",
+    "outputs/gptcar/styles/urban-sketch/demo/film.js": "5c0d59b2ebad8bcf3f3cf3859204581c89e3d1bfbcf46fb09900e315989aeb0e",
+    "outputs/gptcar/styles/urban-sketch/demo/index.html": "8048371fca42e704bf1ac8765c049f1a653e3bd946166107119ab73789e655a1",
+    "outputs/gptcar/styles/urban-sketch/demo/look.js": "9db653504784a253d2540ce840ffef4d0796580669acdab84aba7d46a4ca3e87",
+    "outputs/gptcar/styles/urban-sketch/demo/main.js": "87830128edd54fa10ccec8794653eda9a987177cb54e760a554c6064fca63151",
+    "outputs/gptcar/styles/urban-sketch/demo/poses.js": "b1ce4b5a04cd69c816a08d12230fae286713347687aa2ea820a9c59fdb87af17",
+    "outputs/gptcar/styles/urban-sketch/demo/sheet.js": "b4f817a999abbc1c57a9a62eb61261c83906fe4e7b104b0ffe8ab489a885d8e5",
+    "outputs/gptcar/styles/urban-sketch/demo/subs.json": "444d91c6eaf7686a28d6c33b5ab3e636c2ef028c17a11a6eb39044071ff85a9b",
+    "outputs/gptcar/styles/urban-sketch/demo/tools/sheets.py": "607e474285d442111e8812521276ca541fbc7581810b9f3314bbd811aad87fb6",
+    "outputs/gptcar/styles/urban-sketch/demo/world.js": "a4926fc33baa3f7e58ad210241aaf0276de7794e35e7a1595b83ba4d2962eea8"
+  },
+  "original_assets_and_licenses": [
+    {
+      "path": "outputs/gptcar/styles/urban-sketch/demo/CREDITS",
+      "sha256": "76d6dffc1b327323bd767abed8c4bd559870e4857177995634c8479008f8f54b",
+      "verbatim": "Where the Wind Went — Urban Sketch · Pen & Wash (Lemo-Opuscar)\nLemoLab × Claude Opus 5.5\n\nPicture: every line, wash, figure and letter is drawn by code in this folder (engine.js, world.js, film.js). No generated or third-party images.\n\nMusic & sound: original composition and procedural foley (audio/score.py, audio/foley.py).\nInstrument samples (CC0 1.0): Versilian Studios — VS Chamber Orchestra Community Edition & Versilian Community Sample Library (Sam Gossner); Karoryfer Samples — \"Sneakybass\" upright bass.\n  https://github.com/sgossner/VSCO-2-CE · https://github.com/sgossner/VCSL · https://github.com/sfzinstruments\n\nFonts (SIL Open Font License 1.1, files + licences in fonts/):\n  Caveat — Impallari Type  (fonts/OFL-Caveat.txt)\n  Reenie Beanie — James Grieshaber  (fonts/OFL-ReenieBeanie.txt)\n"
+    }
+  ],
+  "engine_reuse_recommendation": "Reuse attributed generic drawing/material/rig/math engines described by STYLE/DEMO; share fonts and named licensed data/assets with hashes. Independently generate scene assembly, animation, shot/camera staging and freshaudio. Never import original film renderer, mastervideo,originalframes or mastertrack as newGPTwork. Preserve exactscript/cardlanguage and measuredoriginalframecount. Full originals are analytical references only.",
+  "audio_recreation_direction": "No narration. New150BPM F jazz waltz: walking upright bass,piano,brushes,clarinet,muted trumpet; vibe/marimba accents. Apex chord D-flatmaj7#11 and absolute held bar20.4–21.6, clarinet falling glissando, catch tutti24. New scene wind/footsteps/bells/splash.",
+  "v1_primary_deficits": [
+    "V1 simplified park into a few primitives and omitted miss/leap/crane/apex/dive/catch story",
+    "20s cap cut32.4s choreography and full city canopy/pond depth"
+  ],
+  "visual_audit": {
+    "status": "complete",
+    "method": "Fulloriginal1fpscontactsheetreview andsourcecueboundaries; not everyencodedframe.",
+    "sheets": [
+      "work/gptcar/reference/urban-sketch/sheets/sheet-01.jpg",
+      "work/gptcar/reference/urban-sketch/sheets/sheet-02.jpg",
+      "work/gptcar/reference/urban-sketch/sheets/sheet-03.jpg"
+    ],
+    "exact_time_supplement": []
+  }
+}

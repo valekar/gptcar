@@ -1,0 +1,833 @@
+{
+  "slug": "engraving",
+  "original_title": "The Honeybee, Plate VII",
+  "premise": "A natural-history plate engraves itself: the burin cuts the copper, the bee builds up line by line, and a watercolour wash brings it to life.",
+  "published_delivery": {
+    "slug": "engraving",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/engraving.mp4",
+    "sha256": "591d61bb01229b5870f78c0853a24920a91c1429ef83b23c308bc27d355f05ce",
+    "duration": 40.0,
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": "960",
+    "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+    "frames": 40,
+    "sheets": 4
+  },
+  "production_format_source": "Full verbatim DEMO header below; measured published delivery above governs v2.",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "explanation": "No initial conversation/inputprompt transcript is published in inspected repository. STYLE.md is a verbatim published styleprompt; DEMO.md is published retrospective productiondocumentation. Shot prompts are source-informed reconstruction of finishedmovie, never a claimed identical originalchatprompt."
+  },
+  "published_style": {
+    "path": "outputs/gptcar/styles/engraving/STYLE.md",
+    "sha256": "0c6816b8b47163d158ae0ea668feecf53dcbef9d1310e27b9e797d9b9e7aac0d",
+    "verbatim": "# Copperplate Engraving — Style Prompt\n\n> An intaglio plate that engraves itself: a burin cuts swelling lines into copper, a proof is pulled, and the figure builds up — outline, hatching, cross-hatching — until engraved lettering, magnified details and a hand-laid wash make a finished plate.\n> References (grammar only): 19th-century natural-history plates — Haeckel, Audubon, Westwood, the *Britannica* copperplates (centred subject, numbered roundels, roman title over an italic name, \"del.\" / \"sculp.\" credits, the plate mark); Hogarth and Doré for the burin line (hatching that follows the form, crossing only in half-tones); hand-coloured plates for washes laid after printing. Never copy a plate, pose, border or title.\n\n## 1. Essence, and what it is not\n\nAn **intaglio print**: the line is ink held in a groove a burin cut into copper. Three rules:\n\n1. **Tone is made of lines, never of fills.** Light is bare paper; half-tone is one family of parallel lines; shadow a second family crossing it; the deepest dark a third, lozenge-making family. No grey fill anywhere in the ink.\n2. **Every line swells and tapers.** The burin enters fine, bites deeper mid-run and lifts out to a point. Lines thicken where the form turns from the light and vanish where it faces it; contours are cut in several runs and thin where runs hand over. A uniform-width line reads as a pen or vector drawing — never.\n3. **Colour comes afterwards, by hand**: transparent watercolour laid flat region by region over the finished black print, spilling past the lines, pooling at its edges, ink always on top. A film may stay monochrome long; colour arriving is an event.\n\nNot a woodcut (black block, white gouges — `woodcut`), not a pen sketch (loose broken lines — `urban-sketch`), not an engineering drawing (`blueprint`), not a sepia filter.\n\n## 2. Materials & rendering\n\n- **The sheet is the world**: 1920×1080 world units of laid paper (cream, ~`#f1e8d2`) with world-space texture (fibres, laid lines, sparse foxing) that zooms with the camera; a pressed, bevelled **plate mark** and a ruled border (rule + hairline) frame it.\n- **Ink** is one warm near-black (~`#1c1510`). Width ratios: outlines heaviest (swelling ×0.45–1.35), first hatching from a hair (~0.18 px) to ~2 px, crossing ~0.8×, third family ~0.6×, hair and stipple finest. Spacing is **relative to the figure** (~1/180 of its height, a little wider per later family) so small figures never go grey.\n- **Swell law** for every hatch line: width × (0.2 + 0.8·sin(πu)^0.7), tapered over its first and last ~22 %. Families switch on by tone thresholds (~0.14, ~0.5, ~0.75 on a 0–1 tone).\n- **One light direction** for the whole film (upper left by convention); heavier outlines away from it; tone fields come from the shape (pillow lighting, analytic spheres and cylinders), never from texture. **Occlusion** is geometric: lines stop at the shapes in front.\n- **Roundels**: double-ruled circle, ruled-machine ground with a white halo round the subject, content authored at a large radius and scaled in. **Leaders**: hairlines from a dot on the part to the rim, routed with clearance, a small italic figure number at the root.\n- **Hand colouring** multiplies over paper and under ink: a few px of spill, slight misregister, tide-line at the wet edge, low-frequency density lift, occasional backruns, granulation; each region blooms from where the brush touched.\n- **Copper** (when shown): polished warm metal, polishing hairlines, a soft reflected window; grooves = dark trough + bright burr toward the light. The **burin** (lozenge steel shaft, bevelled face, mushroom handle) is held low and turned ≤ 15° off the line so the fresh groove shows; **swarf** is a narrowing ribbon curling ahead of the point, one edge lit.\n\n## 3. Colour logic\n\n- The print is two values, paper and ink; all tone is line density.\n- Colour is **transparent wash only**, in muted earth and mineral pigments, one stronger pigment at most. Never opaque, never on lettering, rules or paper outside the figure.\n- Reserve it: the whole subject at one moment, or only the part that matters — or none.\n- Example wash sets: an amber insect with blue-grey wings; a map with a sea-green coastal band on buff land; one madder-rose organ on an otherwise black anatomy plate.\n\n## 4. Type & subtitles\n\n- Lettering belongs to the plate: **roman capitals** (Bodoni Moda; title ~44–56 px, wide tracking; labels ~15–19 px), **italics** for scientific names (~20–24 px), **script** (Pinyon Script) for notes, fixed size, balanced over two lines, never shrunk.\n- Roman letters are **cut glyph by glyph**; script is **written** in one left-to-right stroke. Nothing fades in.\n- Subtitles: script on a deckled paper slip, bottom centre, ≤ 2 lines, never over a label. Hold ≥ max(1.8 s, speech + 0.6 s). An engraved note stays in frame chars ÷ 12 + 1 s from when it starts writing.\n\n## 5. Motion quality\n\n- **Cutting order is the animation**: outline → first hatching sweeping across each form → crossing → darks, hair, stipple. Strokes run at constant burin speed, many at once (a few for outlines, dozens for hatching).\n- A long single stroke may be followed by the camera; start it partly cut so no frame is empty. Keep a full build to a few seconds.\n- Roundels fly on an eased arc with a small lift, growing log-linearly to size. Colour blooms from one point with a ragged front and a wet rim that dries; regions staggered.\n- Nothing fades or slides like UI: lines are cut, text cut or written, colour blooms, sheets are pressed, peeled or laid down.\n\n## 6. Camera grammar\n\nThe camera is a **loupe over a sheet**. A vocabulary, not a route. Opening and ending come from the topic.\n\n| Move | Expresses | Can serve |\n|---|---|---|\n| Loupe following the burin tip | One point of attention; making | a first mark; a signature |\n| Log-zoom pull-out | The line was part of something larger | scale reveal; context |\n| Push to a part, ride with its roundel | Where → what, in one take | an invisible detail; a mechanism |\n| Tilt/pan along the sheet at reading zoom | Labels in order | a parts list; a coastline |\n| Pull back while something flies | Everything placed in relation | acceleration; summary |\n| Locked frame, or a ≤ 2 % breathing push | The plate as document | reading time; colour moving |\n| Raking view across the copper | The groove as depth | the cost of craft |\n| Cut from mirrored copper to true proof | Reversal | a hidden truth; before/after |\n\nFraming: subject inside the plate mark, labels and roundels in the margins; order details so push-ins never crop a note early. Transitions from printmaking only (proof pulled, tissue guard laid over, region burnished out and re-cut, new sheet on the bed); no dissolves or wipes.\n\n## 7. Sound palette\n\n- **Foley by material**: paper (peel crackle, slip tapped down, tissue rustle, sheet whoosh); press (roller rumble, thump); copper and steel (high band-passed burin hiss with chatter and faint plate ring, swarf pings, a tick on lift, circular scribe, burnishing rub); ink and water (pen scratch, ticks for cut letters, a water plip and wet brush swish). Hatching = micro-scratches denser each pass.\n- **Room**: a quiet workroom (faint clock), paper room once the print exists.\n- **Instruments** (choose): harpsichord, string quartet, solo cello or viola da gamba, lute, chamber organ, glass harmonica for a cold subject. Plucked and dry while lines are cut; bowed or sustained only when something soft arrives; tiny tings for a scribed ring, a low pluck on landing.\n- **Silence** is real: cut room tone too, keep at most one small sound.\n- **Mix**: melody an octave above the voice, music ~half under speech, −14 LUFS. Voice: a quiet curator or naturalist.\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **The cut.** Burin mid-stroke, swarf rising, nothing else. *Fits:* the first line of a treaty; a watchmaker's scribe; a coast being charted.\n- **The three passes.** Form gains volume pass by pass. *Fits:* a building from its plan; a portrait emerging; a skill improving.\n- **Magnification roundel.** Ring scribed, burnished, re-cut larger, flown to a margin with a leader, label cut on landing. *Fits:* a gear in a clock; a pollen grain; a harbour inset on a chart.\n- **The proof.** Sheet peels off; mirrored copper becomes true paper. *Fits:* a secret out; a draft made final; a coin's die and strike.\n- **States of the plate.** A region burnished out and re-cut. *Fits:* a border redrawn; before/after; a design revision.\n- **Hand colouring.** Washes bloom after the print. *Fits:* one organ lit; a flag on a historical map; a ripening fruit.\n- **Natural size.** A tiny true-scale figure beside the engraving. *Fits:* a seed by its tree; a chip by its circuit; a stamp by its enlargement.\n- **The finished plate.** Every label and credit, locked. *Fits:* a museum label; a frontispiece; a certificate.\n\n## 9. Pitfalls of the medium\n\n- Uniform width reads as pen → swell hatches, pinch contours between runs (`hatch({swell})`, `outline({run, pinch})`), keep wMin hair-fine.\n- Overlaps without occlusion → pass occluders as `excl` (subtracted ring by ring; even-odd would cancel overlaps).\n- Outline-only parts beside a hatched body → hatch along each part's axis, a dark at every joint.\n- Burin along the cut hides the groove; big skew looks like poking → ≤ 15°. Regular swarf helix reads as a spring → vary winding, twist, light one edge.\n- Reflections over grooves wash them out → copper light first. Roundels authored small freeze sub-pixel → author large, scale in. Leaders hugging the subject read as crossing it → clearance.\n- A long early stroke never draws → the ink's early exit must look ahead by the longest stroke.\n- A push-in cropping a fresh note breaks the reading rule → put consecutive details on one side.\n- Scientific names: TTS may manage, ASR won't → give the checker a plain spelling.\n\n## 10. Engine\n\n`demo/engine/`: `burin.js` (`B.Ink` ordered stroke store + `schedule`, `B.hatch`, `B.engraveTone`, `B.contourHatch`, `B.outline`/`B.stroke`, `B.stipple`, `B.fur`, tone fields), `plate.js` (`drawSheet`, `engraveText`, `writeScript`, `roundelFrame`), `wash.js` (`Wash`), `copper.js` (copper, burin, swarf), `index.js` (`engraveShape(svgPath, {at, light, spacing, style})`: any SVG shape → engraved figure). `demo/example/index.html` engraves and colours a four-pointed spark in ~20 lines; code and function table in DEMO.md \"Engine reference\".\n\n## 11. Variation space\n\nYou decide subject, details, order, opening, ending, camera path, colour, pacing and music. Use cases are **grammar for the order and duration of information**; build your own timeline from the user's facts.\n\n| Use case | Information order | Hold per layer | Length |\n|---|---|---|---|\n| **Museum label / case screen** | title + scientific name → detail + term + note (×N) → where to see it | title ≥ 2.2 s; note ≥ chars/12 + 1 s; final ≥ 4 s | 30–40 s |\n| **\"One minute on …\"** | question → name → 2–3 facts → one number → follow prompt | number ≥ 2.5 s alone | 35–60 s |\n| **Textbook figure** | figure → parts labelled one by one → caption | label ≥ chars/12 + 1 s | 20–45 s |\n| **Craft heritage** | object → 2–3 craft details → maker / edition | as above | 30–45 s |\n| **Map / site plan** | place → insets → legend → visiting info | inset ≥ 3 s; legend ≥ 4 s | 30–45 s |\n\nAll far from our demo:\n\n- Structures: **states of one plate** (one view re-cut three times as a place changes); **a book of plates** (four small plates turned like pages, one fact each, no roundels); **a dissection** (parts labelled in teaching order, colour only on the part taught).\n- Openings: **the finished proof burnished back** to its first line; **on paper at 1×** (title cut first, figure grows below); **raking light over blank copper** as the design is traced.\n- Endings: **plate beside its proof**; **the natural-size figure** held alone; **a blank new sheet** laid on the stack.\n\nSwapping `demo/content.json` and rebuilding is a technical check that the engine re-flows, not a way to make a film.\n\n---\n\nHow our demo was made (story, shots, score, end card, build, content fields): [DEMO.md](DEMO.md). Read it after your treatment exists.\n"
+  },
+  "published_demo": {
+    "path": "outputs/gptcar/styles/engraving/DEMO.md",
+    "sha256": "9e99a45fe8d3694c708ce0982407cd3c6b0628a7fc83e093c3b858e77ab5b37d",
+    "verbatim": "# Copperplate Engraving — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *The Honeybee, Plate VII* (40.0 s) · `engraving.mp4` · source in [`demo/`](demo/) · all words from [`demo/content.json`](demo/content.json)\n\n\n## Story & structure\n\nA scene demo, not a story: a **museum object label** for the screen next to a case. One object (the honeybee), its name, three things you did not know about it, and where to see the real one (\"see the living hive in Gallery 4\").\n\nStructure (40 s): copper ECU → proof pulled → pull out to the plate → three magnified details (eye, hamuli, corbicula), each flying to its slot → silence → hand colouring → locked final plate → tissue-guard end card.\n\nHow the native moves served information in this demo:\n\n- *The cut itself* was the hook: the first frame is the burin mid-stroke in copper, curl of copper rising ahead of the point. Nothing else is on screen, so the eye has one place to go.\n- *The build* (outline → first hatching → cross-hatching → darks and hair) was the \"this is a serious, made thing\" beat, kept under 5 s and under the title.\n- *The magnification roundel* was the information carrier: a ring is scribed around the part, the inside is burnished clean and re-engraved at magnification, and the roundel flies to its slot trailing a leader line. The viewer sees *where* the detail is and *what* it looks like in one move. Its label (roman capitals, italic term, script note) is engraved when it lands.\n- *Hand colouring* was the climax, after a real silence and after all information is on the plate, so it read as reward, not as new information.\n- *The final plate* was the poster: every label, the call to action and the engravers' credits at once, locked off.\n\nThe use-case table as first written for this demo, with the shot structure we had in mind for each (examples, not recipes):\n\n| Use | Shot structure |\n|---|---|\n| Museum object label (the demo) | copper ECU → proof pulled → pull out to the plate → 1–4 magnified details, each flying to its slot → silence → hand colouring → locked final plate |\n| \"One minute on …\" | same, with the narrator carrying the notes; end on the plate as the thumbnail |\n| Textbook figure | no copper opening; start on paper at 1×, engrave the figure, then label parts with leaders one by one; no colour or colour only on the part being taught |\n| Craft heritage (a watch, a violin, a knife) | ECU of the burin on the object's contour → build → roundels on the mechanism → colour only the material that matters (gold, varnish) |\n| Map or site plan | engrave the coastline or plan, roundels become insets (a building, a harbour) |\n\n## Shots\n\nThe camera is a loupe over the plate. Beat by beat in the demo:\n\n| Beat | Camera | Why |\n|---|---|---|\n| Hook (0–2.5 s) | 4.2× on copper, **follows** the burin tip, 3° roll | one point of attention; the cut is the hook |\n| Proof pulled (2.5–3.2) | locked while the sheet peels across | the medium's own transition |\n| Build (3.2–6.2) | **pull out** 4× → 1×, log-zoom with screen-linear dolly feel | scale reveal: the curve was a bee's abdomen |\n| Detail 1 (9.4–15.0) | **push** to 4.3× on the eye; **ride with the roundel** as it lifts off and flies to its slot, easing out to a 1.45× reading frame | the signature one-take: where → what → label |\n| Detail 2 (15.0–19.4) | **tilt down** at 1.45× from the upper to the lower left, keeping detail 1's note in frame | faster, same grammar |\n| Detail 3 (19.4–23.75) | **pull back** to the full plate while the roundel flies, then **push in** to read (after detail 2's note has had its time) | acceleration; reading time respected |\n| Gather, silence, colour | full plate; a 2 % breathing push during colour | the colour moves, not the camera |\n| Final plate | locked off | the poster |\n\nMotion timings in this demo: the first line is one stroke followed by the camera, 5.4 s long, so at frame 0 it is already a third cut; strokes run 6–90 at once; roundels lift 30 px at mid-flight and grow to radius 120; colour regions bloom over 1.25–1.6 s each and start 0.42 s apart.\n\n## Score structure\n\nThree layers: room tone (a quiet workroom with a faint clock on copper; paper room after), foley keyed to picture events, and a baroque chamber score.\n\n- **Score**: harpsichord + string quartet, 96 BPM, D major. `music/score.py` reads `events.json`: each detail section (A long / B tilt / C pull-back) is written once and placed where the film puts it; the outro shifts with the end of the details, so any number of details gets a matching score. Under narration the melody sits an octave up, out of the voice's band. Engraving sections are **all pizzicato** (the burin's small precise cuts), density growing pass by pass; each roundel = a high \"ting\" as the ring is scribed, a rising line as it flies, a low pizz as it lands. Before the colour: a run that stops dead, then **true silence** (1.25 s). The colour is the first time the strings use the bow. The final plate lands on a V–I cadence.\n- **Silences**: 2.0–2.5 s (burin lifted, before the press thump and the downbeat) and 25.0–26.25 s (before the first drop of water).\n- **Foley as built**: burin = band-passed hiss (2.6–9 kHz) with chatter clicks and a faint plate resonance (1.18/2.31/3.47 kHz); swarf = tiny 5–9 kHz pings; lift = metallic tick; press = low roller rumble (J-cut 0.35 s early) and a thump; peel = dense paper crackle; hatching = granular micro-scratches whose density rises with each pass; ring = circular scribe; burnish = soft rub; roundel flight = paper whoosh; landing = paper tap; letters = dotted ticks; notes = pen scratch at ~4 Hz strokes; colour = a falling water \"plip\" then a wet brush swish per region; end card = tissue rustle (J-cut).\n- **Narrator**: Kokoro `bm_fable` (en-gb), speed 0.92, a gentle naturalist; music ducked to ~50 % under him (the bowed strings duck least).\n\n## Palette & props\n\n**The sheet**: 1920×1080 world units, laid paper `#f1e8d2`, world-space paper texture (fibres, laid lines, sparse foxing `#9a6a34`). Plate mark (the pressed, bevelled rectangle) at (70, 44)–(1850, 1036): plate tone `#e8ddc2` at 55 % inside; bevel dark on the top/left walls, light on bottom/right (light from the upper left). Ruled border: 2.4 px rule + 0.8 px hairline 9 px inside, (100, 72)–(1820, 1008).\n\n**Ink**: `#1c1510`. World line widths at 1× zoom: outlines 1.8–2.4 (swelling ×0.45–1.35), first hatching 0.18–2.0, cross-hatching ×0.78, third family ×0.6, hair and stipple 0.6–0.9. Hatch spacing on a 600-px figure: 3.1–3.7 px (first), ×1.1 (cross), ×1.25 (third). Hatch thresholds on a 0–1 tone: first family from 0.14, crossing from 0.46–0.5, third from 0.74–0.78.\n\n**Light**: `{x: −0.55, y: −0.62, z: 0.56}`.\n\n**Lettering**: Bodoni Moda (title 50 px, tracking 0.16; labels 17 px, tracking 0.14), italics for Latin (20–24 px), Pinyon Script for notes (29 px). Subtitles: Pinyon Script 38 px, `#2b1e14`, on a deckled paper slip (`#f4eddb`, soft shadow) at the bottom centre, max width 860, up to two lines; on 0.1 s before the line, off 0.6 s after it; never over the call to action.\n\n**Roundels**: radius 120, double rule (2 px + 0.75 px, 4 px inside), ruled ground of horizontal lines every 11 local units; content drawn for a 500-unit radius and scaled in. Slots in order: upper left (300, 300), lower left (300, 700), lower right (1620, 700), upper right (1620, 300). An unused slot shows the specimen at **natural size** (plate ≈ 20 cm wide, so a 13 mm bee is 0.19× the main figure).\n\n**Leaders**: 0.95 px, from a dot on the part to the roundel's rim, routed around wings and body with ≥ 34 px clearance (one waypoint), a small italic figure number near the root.\n\n**Hand colouring**: abdomen amber `#d9962a`, thorax ochre `#a8743e`, head `#8a6242`, eyes `#6e4a3c`, wings pale blue-grey `#a9c3cf` (alpha 0.5), legs `#7a5a3c`, pollen `#eaa21a` (alpha 0.95). Multiply over paper; 3.5 px spill, 2/1.5 px misregister, tide-line at the wet edge, low-frequency density lift (0.55), 1–2 backruns in large regions, granulation.\n\n**The copper (opening only)**: base `#5e2a12 → #94502c → #4e220e`, a swirl of polishing hairlines (overlay), a soft studio window reflected across the plate (four panes, blurred 14 px, over a 90 px room glow), dark room toward the frame edges. Grooves: dark trough `#240c05`, a bright burr `rgba(255,226,186)` offset toward the light, a warm glint on the far wall. Burin: lit face `#d9e0e6`, shadow face `#262b30`, sharp ridge highlight, brass ferrule, mushroom-shaped wooden handle with grain; turned 0.22 rad (≤ 15°); swarf a thin, narrowing copper ribbon curling irregularly (turns open out as it grows, an occasional twist).\n\n**Subjects**: the honeybee (`subjects/bee.js`) with three drawn magnifications — compound eye, hamuli (wing hooks), corbicula (pollen basket) — in `subjects/details.js`; a second built-in subject, the great scallop (`subjects/scallop.js`), used by `content_alt.json`.\n\n## End card\n\nThe title is part of the plate (engraved, not a separate card). End card: a translucent tissue guard falls over the plate; on it, engraved: film title, style name, `LEMO-OPUSCAR`, `LemoLab × Claude Opus 5.5`, three credit lines. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Build notes\n\n```\nsh styles/engraving/demo/build.sh              # voice → check → score → events → mix → cue check → srt → frames → mux → stills\n```\n- `demo/engine/`: `burin.js` (lines), `plate.js` (sheet, lettering, roundels), `wash.js` (colour), `copper.js` (copper, burin, swarf), `index.js` (public entry + `engraveShape`).\n- `demo/subjects/`: `bee.js`, `details.js` (eye, hamuli, corbicula roundel drawings), `scallop.js` (second built-in subject).\n- `demo/film.js`: timeline (96 BPM grid), camera, render; reads `content.json`. `demo/mix.py`: foley + voice + ducked stems. `demo/music/score.py`: the score (written by a composer sub-agent against the cue map in `demo/TREATMENT.md`). `demo/tools/cuecheck.py`: score accents vs picture events (all within 1 frame) and the silence level.\n- Render with `core/render/video.mjs --workers 2`; frames take 60–500 ms (copper and colour frames are the slowest).\n\nPitfalls tied to this demo's props:\n\n- **Wing veins must close their cells.** Random vein strokes look fake; define long veins as curves and snap cross-veins onto them (`bee.js`, `FX`).\n- **Leg joints drawn as full capsules look like beads.** Exclude the previous segment so only the distal cap shows.\n- **Two renders of the same demo folder collide**: `video.mjs` writes its segments to `<demo>/out/`, so render the main and alt films one after the other.\n- **Burin skew**: 30° read as poking beside the line; 0.22 rad fixed it.\n- **Leaders** hugging a wing read as crossing it until routed with ≥ 34 px clearance.\n- \"Apis mellifera\": Kokoro says it acceptably but whisper can't transcribe it; the line uses the `asr` field.\n\n## content.json fields\n\n`demo/content.json` drives every word, number and colour.\n\n| Field | Type | Range | If out of range |\n|---|---|---|---|\n| `title` | string | ≤ 22 characters | longer titles run past the latin line's width; shorten or drop to 44 px in `film.js` |\n| `latin` | string | ≤ 30 characters | read time grows (chars/12 + 1 s must fit before the first push at 9.4 s) |\n| `plate_no`, `series` | string | ≤ 10 / ≤ 48 characters | series collides with the title above ~48 characters |\n| `subject` | `\"bee\"` \\| `\"scallop\"` | built-in subjects | unknown → `bee`; a new subject is a module returning `{ink, regions, focus}` with an `ol0` first stroke (see `subjects/scallop.js`) |\n| `details[]` | array of `{name, latin, note, focus}` | 1–4 | >4 are ignored; fewer leaves slots → the first empty one shows the natural-size figure; the timeline re-flows (first 9 beats, others 7 beats each) |\n| `details[].focus` | string | bee: `eye`, `hamuli`, `corbicula` (drawn magnifications); any subject: its `focus` keys | a key with no drawn magnification gets a live magnification of the figure itself |\n| `details[].note` | string | ≤ 60 characters (2 lines at 29 px) | a third line starts to meet the next roundel |\n| `colors[]` | `{region, color}` | regions of the subject (bee: abdomen, thorax, head, eyes, wings, legs, pollen; scallop: shell, bands, ears) | unknown regions are skipped; order = order of colouring |\n| `caption` | string | ≤ 50 characters | must stay readable ≥ chars/12 + 1 s inside the 4.4 s final plate |\n| `signature.left/right` | string | short | — |\n| `nat_size_label` | string | ≤ 16 characters | — |\n| `voice.voice`, `voice.speed`, `voice.lines[]` | Kokoro voice, 0.8–1.0, `{id, text, asr?}` | ids: `title`, `d1`…`dN`, `close` | a line longer than its section overlaps the next one; keep d-lines ≤ 4.5 s |\n| `end.film_title`, `end.style_name`, `end.credits[]` | strings | credits ≤ 3 lines of ≤ 35 characters | longer lines break the end card's reading time |\n\nSteps: edit (or copy) the JSON → `sh styles/engraving/demo/build.sh my_content.json` (TTS + whisper check, events, score re-placed from the events, mix, cue check, subtitles, frames). To keep the main film untouched, `sh styles/engraving/demo/tools/build_alt.sh my_content.json` builds everything in `demo/out/alt/` instead (the demo's `content_alt.json`, 2 details, 35.6 s, passes the cue check).\n\nMinimal example:\n\n```json\n{\n  \"title\": \"The Great Scallop\", \"latin\": \"Pecten maximus\", \"plate_no\": \"Pl. XII\",\n  \"series\": \"Shore Gallery · Shells of the Atlantic Coast\", \"subject\": \"scallop\",\n  \"details\": [ { \"name\": \"Hinge\", \"latin\": \"umbo\", \"note\": \"The oldest part of the shell.\", \"focus\": \"umbo\" } ],\n  \"colors\": [ { \"region\": \"shell\", \"color\": \"#d98a5c\" }, { \"region\": \"bands\", \"color\": \"#a8423a\" } ],\n  \"caption\": \"Hold a real shell at the Discovery Table\",\n  \"voice\": { \"voice\": \"bm_fable\", \"speed\": 0.92, \"lines\": [ { \"id\": \"title\", \"text\": \"Plate twelve. The great scallop.\" } ] }\n}\n```\n\nSwapping this file and running `build.sh` checks that the engine re-flows; it is not how a user's film is made.\n\n## Engine reference\n\n```js\nimport { B, engraveShape, Wash, drawSheet, engraveText } from './engine/index.js';\n\n// 1. any shape + a light direction → an engraved figure (contour lines follow the form), cut in order\nconst { ink, shape: spark } = engraveShape(\n  'M0 -120 C12 -40 40 -12 120 0 C40 12 12 40 0 120 C-12 40 -40 12 -120 0 C-40 -12 -12 -40 0 -120 Z',  // a four-pointed spark\n  { at: B.xf(860, 560, 1.9), light: [-0.6, -0.7], spacing: 4.2, style: 'contour' });               // or style: 'hatch'\nengraveShape('M0 0 H150 V26 H0 Z', { at: B.xf(1140, 740, 1), ink, g: 't' });                        // its cursor tail, same ink\nink.schedule(['ol', 'tol'], 0, 1.1, { conc: 2 }); ink.schedule(['h1', 'th1'], 0.8, 2.2, { conc: 40 });\nink.schedule(['h2', 'th2'], 1.6, 2.7, { conc: 40 }); ink.schedule(['h3', 'th3'], 2.2, 3.0, { conc: 40 }); ink.build();\n\n// 2. the \"only colour\": hand-colour one element and leave everything else in black ink\nconst w = new Wash({ scale: 1.5 });\nw.add({ path: spark.path, polys: spark.polys, color: '#D97757', origin: [860, 560], t0: 3.0, dur: 1.2, alpha: 0.85 });\n\nwindow.render = t => {\n  drawSheet(ctx);                 // paper, plate tone, plate mark\n  w.draw(ctx, t);                 // colour under the ink (omit for pure black-and-white)\n  ink.draw(ctx, t);               // everything cut by time t; lines being cut grow\n  engraveText(ctx, 'THE SPARK.', 960, 170, { size: 50, weight: 600, track: 0.16, p: t - 1.5 });\n};\n```\nRunnable as `demo/example/index.html` (`node core/render/still.mjs styles/engraving/demo/example 4.5`), output in `demo/stills/engine_example.jpg`.\n\nMain functions:\n\n| Function | What it does | Key parameters |\n|---|---|---|\n| `B.shape(d, xf)` | SVG path → world rings + Path2D | `xf(x, y, scale, rot, flip)` |\n| `B.Ink` | ordered, width-bucketed stroke store | `group(name)`, `schedule(group, t0, t1, {conc})`, `instant(group)`, `draw(ctx, t, {color, wScale, dx, dy})` → tips being cut |\n| `B.hatch(ink, polys, o)` | one family of swelling lines bent to the form | `angle, spacing, bend, tone(x,y), thr, wMin, wMax, swell, excl` |\n| `B.engraveTone(ink, polys, o)` | the engraver's three passes | `angle, cross, third, t2, t3, g` |\n| `B.formTone(polys, {light})` | any shape → pillow-lit tone field (+ `.df` distance) | `light, lz, base, radius, rim` |\n| `B.contourHatch(ink, polys, o)` | lines following the form (iso-distance contours) | `spacing, tone, thr, wMax` |\n| `B.outline / B.stroke` | swelling contour / open burin stroke | `w, light, vary, run, pinch, swell, excl` |\n| `B.stipple`, `B.fur` | dots by tone; combed hair flicks | `density, r, tone` / `len, dir(x,y), curl` |\n| `B.sphereTone`, `B.cylTone`, `B.linTone`, `B.blobTone` | analytic tone fields | light from `B.LIGHT` |\n| `Wash` | hand colouring, cached per region | `add({path, polys, color, alpha, origin, t0, dur, spill, offset, lift, pool})`, `draw(ctx, t)` |\n| `drawSheet`, `borderInk` | paper, plate tone, bevel; ruled border as ink | `plate: [x0, y0, x1, y1]` |\n| `engraveText`, `writeScript`, `wrapLines` | cut roman lettering; written script; fixed-size balanced wrap | `size, weight, italic, track, align, p` |\n| `roundelFrame` | double-ruled circle scribed by `p` | `x, y, r, p, w` |\n| `Copper.drawCopper / copperLight / drawGrooves / drawBurin / drawSwarf` | the copper close-up | `zoom, lift, skew, s` |\n\nA minimal runnable example of the whole thing is `demo/film.js` with `content_alt.json` (a different subject, two details).\n"
+  },
+  "narration": [
+    {
+      "id": "title",
+      "text": "Plate seven. The honeybee: Apis mellifera.",
+      "voice": "bm_fable",
+      "speed": 0.92,
+      "lang": "en-gb",
+      "asr": "Plate seven the honeybee a piece mellafura",
+      "start": 6.4,
+      "duration": 3.164
+    },
+    {
+      "id": "d1",
+      "text": "Each eye is built from some six thousand facets, and every one of them is a lens.",
+      "voice": "bm_fable",
+      "speed": 0.92,
+      "lang": "en-gb",
+      "asr": "Each eye is built from some 6000 facets and every one of them is a lens",
+      "start": 9.825,
+      "duration": 4.625
+    },
+    {
+      "id": "d2",
+      "text": "In flight, a row of tiny hooks locks the two wings into one.",
+      "voice": "bm_fable",
+      "speed": 0.92,
+      "lang": "en-gb",
+      "start": 15.3,
+      "duration": 3.581
+    },
+    {
+      "id": "d3",
+      "text": "And on the hind leg, a basket, for carrying pollen home.",
+      "voice": "bm_fable",
+      "speed": 0.92,
+      "lang": "en-gb",
+      "start": 19.675,
+      "duration": 3.176
+    },
+    {
+      "id": "close",
+      "text": "A lifetime of such work makes a twelfth of a teaspoon of honey.",
+      "voice": "bm_fable",
+      "speed": 0.92,
+      "lang": "en-gb",
+      "start": 26.75,
+      "duration": 3.779
+    }
+  ],
+  "verbatim_published_script_files": {
+    "lines.json": [
+      {
+        "id": "title",
+        "text": "Plate seven. The honeybee: Apis mellifera.",
+        "voice": "bm_fable",
+        "speed": 0.92,
+        "lang": "en-gb",
+        "asr": "Plate seven the honeybee a piece mellafura"
+      },
+      {
+        "id": "d1",
+        "text": "Each eye is built from some six thousand facets, and every one of them is a lens.",
+        "voice": "bm_fable",
+        "speed": 0.92,
+        "lang": "en-gb",
+        "asr": "Each eye is built from some 6000 facets and every one of them is a lens"
+      },
+      {
+        "id": "d2",
+        "text": "In flight, a row of tiny hooks locks the two wings into one.",
+        "voice": "bm_fable",
+        "speed": 0.92,
+        "lang": "en-gb"
+      },
+      {
+        "id": "d3",
+        "text": "And on the hind leg, a basket, for carrying pollen home.",
+        "voice": "bm_fable",
+        "speed": 0.92,
+        "lang": "en-gb"
+      },
+      {
+        "id": "close",
+        "text": "A lifetime of such work makes a twelfth of a teaspoon of honey.",
+        "voice": "bm_fable",
+        "speed": 0.92,
+        "lang": "en-gb"
+      }
+    ],
+    "content.json": {
+      "plate_no": "Pl. VII",
+      "series": "Natural History Gallery · Insects of the Garden",
+      "title": "The Honeybee",
+      "latin": "Apis mellifera",
+      "subject": "bee",
+      "details": [
+        {
+          "name": "Compound Eye",
+          "latin": "oculus compositus",
+          "note": "Some six thousand facets, each one a lens.",
+          "focus": "eye"
+        },
+        {
+          "name": "Wing Hooks",
+          "latin": "hamuli",
+          "note": "A row of tiny hooks locks both wings as one.",
+          "focus": "hamuli"
+        },
+        {
+          "name": "Pollen Basket",
+          "latin": "corbicula",
+          "note": "A fringed hollow that carries pollen home.",
+          "focus": "corbicula"
+        }
+      ],
+      "colors": [
+        {
+          "region": "abdomen",
+          "color": "#d9962a"
+        },
+        {
+          "region": "thorax",
+          "color": "#a8743e"
+        },
+        {
+          "region": "head",
+          "color": "#8a6242"
+        },
+        {
+          "region": "eyes",
+          "color": "#6e4a3c"
+        },
+        {
+          "region": "wings",
+          "color": "#a9c3cf"
+        },
+        {
+          "region": "legs",
+          "color": "#7a5a3c"
+        },
+        {
+          "region": "pollen",
+          "color": "#eaa21a"
+        }
+      ],
+      "caption": "See the living hive in Gallery 4",
+      "signature": {
+        "left": "Lemo del.",
+        "right": "Opus sculp."
+      },
+      "voice": {
+        "voice": "bm_fable",
+        "speed": 0.92,
+        "lines": [
+          {
+            "id": "title",
+            "text": "Plate seven. The honeybee: Apis mellifera.",
+            "asr": "Plate seven the honeybee a piece mellafura"
+          },
+          {
+            "id": "d1",
+            "text": "Each eye is built from some six thousand facets, and every one of them is a lens.",
+            "asr": "Each eye is built from some 6000 facets and every one of them is a lens"
+          },
+          {
+            "id": "d2",
+            "text": "In flight, a row of tiny hooks locks the two wings into one."
+          },
+          {
+            "id": "d3",
+            "text": "And on the hind leg, a basket, for carrying pollen home."
+          },
+          {
+            "id": "close",
+            "text": "A lifetime of such work makes a twelfth of a teaspoon of honey."
+          }
+        ]
+      },
+      "end": {
+        "film_title": "The Honeybee, Plate VII",
+        "style_name": "Copperplate Engraving",
+        "credits": [
+          "Voice · Kokoro TTS (Apache-2.0)",
+          "Type · Bodoni Moda · Pinyon Script",
+          "Score & sound · written in code"
+        ]
+      },
+      "nat_size_label": "Natural size"
+    }
+  },
+  "timed_shot_prompts": [
+    {
+      "start": 0,
+      "end": 2,
+      "name": "The burin cuts copper",
+      "visual_prompt": "Extreme macro warm polished copper reflecting window; wooden-handled steel burin pushes a curving groove, rolled swarf and shadowed trough appear behind point. Fine ghost drawing of bee visible on plate.",
+      "onscreen_text": "",
+      "camera_motion": "4.2× macro with3° roll, follow tool.",
+      "sound_direction": "Fresh bm_fable0.92,en-gb original five lines. New96BPM D-major harpsichord and string quartet, pizzicato while engraving and arco only when colour arrives. Silence2–2.5 and25–26.25; burin/swarf/press/peel/hatching/pen/water/tissue foley. Original museum narration rounded biology claims retained with source limitations.",
+      "transition": "Line is incised in metal, not drawn ink.",
+      "material_requirements": "Warm laid paper inside double engraved rule; fine swelling/tapering burin lines and shaped crosshatch create tone without painted grey. Bee has accurate segmented legs, wing cells/veins, thorax fur, compound eyes, hamuli and corbicula; three independently drawn magnification roundels and a natural-size specimen. Engraved roman Bodoni capitals and Pinyon calligraphy. Copper macro has real trough/burr/swarf and reflected workshop window. Translucent hand wash lies UNDER black ink."
+    },
+    {
+      "start": 2,
+      "end": 2.5,
+      "name": "Lift and press",
+      "visual_prompt": "Tool lifts2.0; tiny swarf rings, press contact2.25. Hold short silence then paper peels2.5.",
+      "onscreen_text": "",
+      "camera_motion": "Macro settles.",
+      "sound_direction": "Fresh bm_fable0.92,en-gb original five lines. New96BPM D-major harpsichord and string quartet, pizzicato while engraving and arco only when colour arrives. Silence2–2.5 and25–26.25; burin/swarf/press/peel/hatching/pen/water/tissue foley. Original museum narration rounded biology claims retained with source limitations.",
+      "transition": "Half-second silence/press boundary explicit.",
+      "material_requirements": "Warm laid paper inside double engraved rule; fine swelling/tapering burin lines and shaped crosshatch create tone without painted grey. Bee has accurate segmented legs, wing cells/veins, thorax fur, compound eyes, hamuli and corbicula; three independently drawn magnification roundels and a natural-size specimen. Engraved roman Bodoni capitals and Pinyon calligraphy. Copper macro has real trough/burr/swarf and reflected workshop window. Translucent hand wash lies UNDER black ink."
+    },
+    {
+      "start": 2.5,
+      "end": 6.25,
+      "name": "The insect engraves itself",
+      "visual_prompt": "Paper peel reveals outline; contour pass2.6, successive hatch families3.3/4.4/5.0 form abdomen bands, thorax volume/fur, six leg joints, antennae and detailed paired wings.",
+      "onscreen_text": "",
+      "camera_motion": "Logarithmic pull4×→1×by6.2.",
+      "sound_direction": "Fresh bm_fable0.92,en-gb original five lines. New96BPM D-major harpsichord and string quartet, pizzicato while engraving and arco only when colour arrives. Silence2–2.5 and25–26.25; burin/swarf/press/peel/hatching/pen/water/tissue foley. Original museum narration rounded biology claims retained with source limitations.",
+      "transition": "Detailed ink builds in ordered passes, not a complete image fade.",
+      "material_requirements": "Warm laid paper inside double engraved rule; fine swelling/tapering burin lines and shaped crosshatch create tone without painted grey. Bee has accurate segmented legs, wing cells/veins, thorax fur, compound eyes, hamuli and corbicula; three independently drawn magnification roundels and a natural-size specimen. Engraved roman Bodoni capitals and Pinyon calligraphy. Copper macro has real trough/burr/swarf and reflected workshop window. Translucent hand wash lies UNDER black ink."
+    },
+    {
+      "start": 6.25,
+      "end": 9.375,
+      "name": "A natural-history plate",
+      "visual_prompt": "Whole bee centred below engraved title/Latin name, double rule and generous blank margins. Title letters engrave6.25–7.15.",
+      "onscreen_text": "THE HONEYBEE.\nApis mellifera",
+      "camera_motion": "Locked specimen composition, tiny2% paper breathing.",
+      "sound_direction": "Fresh bm_fable0.92,en-gb original five lines. New96BPM D-major harpsichord and string quartet, pizzicato while engraving and arco only when colour arrives. Silence2–2.5 and25–26.25; burin/swarf/press/peel/hatching/pen/water/tissue foley. Original museum narration rounded biology claims retained with source limitations.",
+      "transition": "Title voice6.4; museum cadence.",
+      "material_requirements": "Warm laid paper inside double engraved rule; fine swelling/tapering burin lines and shaped crosshatch create tone without painted grey. Bee has accurate segmented legs, wing cells/veins, thorax fur, compound eyes, hamuli and corbicula; three independently drawn magnification roundels and a natural-size specimen. Engraved roman Bodoni capitals and Pinyon calligraphy. Copper macro has real trough/burr/swarf and reflected workshop window. Translucent hand wash lies UNDER black ink."
+    },
+    {
+      "start": 9.375,
+      "end": 10.425,
+      "name": "Lean into the eye",
+      "visual_prompt": "Push to bee head with compound facets/ocelli, antenna segments and wing-root anatomy. Circular selection ring appears10.425 over one eye.",
+      "onscreen_text": "",
+      "camera_motion": "4.3× eye close-up.",
+      "sound_direction": "Fresh bm_fable0.92,en-gb original five lines. New96BPM D-major harpsichord and string quartet, pizzicato while engraving and arco only when colour arrives. Silence2–2.5 and25–26.25; burin/swarf/press/peel/hatching/pen/water/tissue foley. Original museum narration rounded biology claims retained with source limitations.",
+      "transition": "Visible analytic ring, not an arbitrary label.",
+      "material_requirements": "Warm laid paper inside double engraved rule; fine swelling/tapering burin lines and shaped crosshatch create tone without painted grey. Bee has accurate segmented legs, wing cells/veins, thorax fur, compound eyes, hamuli and corbicula; three independently drawn magnification roundels and a natural-size specimen. Engraved roman Bodoni capitals and Pinyon calligraphy. Copper macro has real trough/burr/swarf and reflected workshop window. Translucent hand wash lies UNDER black ink."
+    },
+    {
+      "start": 10.425,
+      "end": 12.875,
+      "name": "Engrave and move eye detail",
+      "visual_prompt": "Burnish10.475; enlarged faceted sphere hatch draws10.725–12.875. Roundel travels11.275–12.775 to upper-left slot while camera rides it and pulls back; leader connects actual eye.",
+      "onscreen_text": "",
+      "camera_motion": "Ride selected eye to1.45× plate framing.",
+      "sound_direction": "Fresh bm_fable0.92,en-gb original five lines. New96BPM D-major harpsichord and string quartet, pizzicato while engraving and arco only when colour arrives. Silence2–2.5 and25–26.25; burin/swarf/press/peel/hatching/pen/water/tissue foley. Original museum narration rounded biology claims retained with source limitations.",
+      "transition": "Roundel independent full facet geometry.",
+      "material_requirements": "Warm laid paper inside double engraved rule; fine swelling/tapering burin lines and shaped crosshatch create tone without painted grey. Bee has accurate segmented legs, wing cells/veins, thorax fur, compound eyes, hamuli and corbicula; three independently drawn magnification roundels and a natural-size specimen. Engraved roman Bodoni capitals and Pinyon calligraphy. Copper macro has real trough/burr/swarf and reflected workshop window. Translucent hand wash lies UNDER black ink."
+    },
+    {
+      "start": 12.675,
+      "end": 15,
+      "name": "Label compound eye",
+      "visual_prompt": "Fine engraved roman/Latin labels and two-line script note write under upper-left roundel, pen scratch13.275.",
+      "onscreen_text": "FIG. 1 · COMPOUND EYE\noculus compositus\nSome six thousand\nfacets, each one a lens.",
+      "camera_motion": "Hold detail plus bee; labels sit clear of leader.",
+      "sound_direction": "Fresh bm_fable0.92,en-gb original five lines. New96BPM D-major harpsichord and string quartet, pizzicato while engraving and arco only when colour arrives. Silence2–2.5 and25–26.25; burin/swarf/press/peel/hatching/pen/water/tissue foley. Original museum narration rounded biology claims retained with source limitations.",
+      "transition": "Ordered lettering, no overlapping labels.",
+      "material_requirements": "Warm laid paper inside double engraved rule; fine swelling/tapering burin lines and shaped crosshatch create tone without painted grey. Bee has accurate segmented legs, wing cells/veins, thorax fur, compound eyes, hamuli and corbicula; three independently drawn magnification roundels and a natural-size specimen. Engraved roman Bodoni capitals and Pinyon calligraphy. Copper macro has real trough/burr/swarf and reflected workshop window. Translucent hand wash lies UNDER black ink."
+    },
+    {
+      "start": 15,
+      "end": 19.375,
+      "name": "Wing hooks magnified",
+      "visual_prompt": "Tilt/push to junction of fore/hind wing; ring15.5, burnish15.52, cut detail15.7–17.2. A row of individually curved hooks locks edge bars, roundel travels15.8–16.8 to lower-left slot. Labels16.9 onward.",
+      "onscreen_text": "FIG. 2 · WING HOOKS\nhamuli\nA row of tiny hooks\nlocks both wings as one.",
+      "camera_motion": "Camera follows roundel then restores sufficient plate context.",
+      "sound_direction": "Fresh bm_fable0.92,en-gb original five lines. New96BPM D-major harpsichord and string quartet, pizzicato while engraving and arco only when colour arrives. Silence2–2.5 and25–26.25; burin/swarf/press/peel/hatching/pen/water/tissue foley. Original museum narration rounded biology claims retained with source limitations.",
+      "transition": "Leader attaches to actual wing-hook site; quill17.4.",
+      "material_requirements": "Warm laid paper inside double engraved rule; fine swelling/tapering burin lines and shaped crosshatch create tone without painted grey. Bee has accurate segmented legs, wing cells/veins, thorax fur, compound eyes, hamuli and corbicula; three independently drawn magnification roundels and a natural-size specimen. Engraved roman Bodoni capitals and Pinyon calligraphy. Copper macro has real trough/burr/swarf and reflected workshop window. Translucent hand wash lies UNDER black ink."
+    },
+    {
+      "start": 19.375,
+      "end": 23.75,
+      "name": "Pollen basket magnified",
+      "visual_prompt": "Move to hind leg. Ring19.875, burnish19.895, detail cut20.075–21.575: hollow tibia fringed by many hairs, pollen texture inside. Travel20.275–21.475 to right slot, labels21.375 onward.",
+      "onscreen_text": "FIG. 3 · POLLEN BASKET\ncorbicula\nA fringed hollow that\ncarries pollen home.",
+      "camera_motion": "Wider push then tilt toward right roundel.",
+      "sound_direction": "Fresh bm_fable0.92,en-gb original five lines. New96BPM D-major harpsichord and string quartet, pizzicato while engraving and arco only when colour arrives. Silence2–2.5 and25–26.25; burin/swarf/press/peel/hatching/pen/water/tissue foley. Original museum narration rounded biology claims retained with source limitations.",
+      "transition": "Avoid simply duplicating bee body in circle.",
+      "material_requirements": "Warm laid paper inside double engraved rule; fine swelling/tapering burin lines and shaped crosshatch create tone without painted grey. Bee has accurate segmented legs, wing cells/veins, thorax fur, compound eyes, hamuli and corbicula; three independently drawn magnification roundels and a natural-size specimen. Engraved roman Bodoni capitals and Pinyon calligraphy. Copper macro has real trough/burr/swarf and reflected workshop window. Translucent hand wash lies UNDER black ink."
+    },
+    {
+      "start": 23.75,
+      "end": 25,
+      "name": "Natural size and series",
+      "visual_prompt": "Gather/pull to full plate; small actual-size bee in upper-right with label. Plate number and series become legible along border.",
+      "onscreen_text": "PL. VII.\nNATURAL HISTORY GALLERY · INSECTS OF THE GARDEN\nNATURAL SIZE",
+      "camera_motion": "Full complete museum plate.",
+      "sound_direction": "Fresh bm_fable0.92,en-gb original five lines. New96BPM D-major harpsichord and string quartet, pizzicato while engraving and arco only when colour arrives. Silence2–2.5 and25–26.25; burin/swarf/press/peel/hatching/pen/water/tissue foley. Original museum narration rounded biology claims retained with source limitations.",
+      "transition": "Fourth slot is natural-size specimen, no fourth narration.",
+      "material_requirements": "Warm laid paper inside double engraved rule; fine swelling/tapering burin lines and shaped crosshatch create tone without painted grey. Bee has accurate segmented legs, wing cells/veins, thorax fur, compound eyes, hamuli and corbicula; three independently drawn magnification roundels and a natural-size specimen. Engraved roman Bodoni capitals and Pinyon calligraphy. Copper macro has real trough/burr/swarf and reflected workshop window. Translucent hand wash lies UNDER black ink."
+    },
+    {
+      "start": 25,
+      "end": 26.25,
+      "name": "Before the wash",
+      "visual_prompt": "Completed monochrome line plate held entirely still. Tone comes from hatching; fine margin fibres remain visible.",
+      "onscreen_text": "",
+      "camera_motion": "Locked1× plate.",
+      "sound_direction": "Fresh bm_fable0.92,en-gb original five lines. New96BPM D-major harpsichord and string quartet, pizzicato while engraving and arco only when colour arrives. Silence2–2.5 and25–26.25; burin/swarf/press/peel/hatching/pen/water/tissue foley. Original museum narration rounded biology claims retained with source limitations.",
+      "transition": "1.25s silence preserved, no filler animation.",
+      "material_requirements": "Warm laid paper inside double engraved rule; fine swelling/tapering burin lines and shaped crosshatch create tone without painted grey. Bee has accurate segmented legs, wing cells/veins, thorax fur, compound eyes, hamuli and corbicula; three independently drawn magnification roundels and a natural-size specimen. Engraved roman Bodoni capitals and Pinyon calligraphy. Copper macro has real trough/burr/swarf and reflected workshop window. Translucent hand wash lies UNDER black ink."
+    },
+    {
+      "start": 26.25,
+      "end": 29.5,
+      "name": "Hand colour arrives",
+      "visual_prompt": "Seven controlled drops/washes: abdomen26.35 amber, thorax26.77 brown, head27.19, eyes27.61, wings28.03 pale blue, legs28.45, pollen28.87. Wash blooms beneath engraved black, detail roundels colour consistently.",
+      "onscreen_text": "",
+      "camera_motion": "2% living breathing only; no scene cut.",
+      "sound_direction": "Arco enters with colour; closing voice26.75.",
+      "transition": "Water blooms/margins under ink, never opaque paint.",
+      "material_requirements": "Warm laid paper inside double engraved rule; fine swelling/tapering burin lines and shaped crosshatch create tone without painted grey. Bee has accurate segmented legs, wing cells/veins, thorax fur, compound eyes, hamuli and corbicula; three independently drawn magnification roundels and a natural-size specimen. Engraved roman Bodoni capitals and Pinyon calligraphy. Copper macro has real trough/burr/swarf and reflected workshop window. Translucent hand wash lies UNDER black ink."
+    },
+    {
+      "start": 29.5,
+      "end": 35.425,
+      "name": "Living hive invitation",
+      "visual_prompt": "Hold fully coloured anatomically detailed bee, roundels and natural-size specimen; tiny leg/wing breath if any. CTA writes31.3–32.05 at foot, two pen dots32.25/32.45.",
+      "onscreen_text": "See the living hive in Gallery 4",
+      "camera_motion": "Locked readable final specimen.",
+      "sound_direction": "Fresh bm_fable0.92,en-gb original five lines. New96BPM D-major harpsichord and string quartet, pizzicato while engraving and arco only when colour arrives. Silence2–2.5 and25–26.25; burin/swarf/press/peel/hatching/pen/water/tissue foley. Original museum narration rounded biology claims retained with source limitations.",
+      "transition": "Signatures Lemo del./Opus sculp. are original attribution; new edition must label actual authorship honestly.",
+      "material_requirements": "Warm laid paper inside double engraved rule; fine swelling/tapering burin lines and shaped crosshatch create tone without painted grey. Bee has accurate segmented legs, wing cells/veins, thorax fur, compound eyes, hamuli and corbicula; three independently drawn magnification roundels and a natural-size specimen. Engraved roman Bodoni capitals and Pinyon calligraphy. Copper macro has real trough/burr/swarf and reflected workshop window. Translucent hand wash lies UNDER black ink."
+    },
+    {
+      "start": 35.425,
+      "end": 40,
+      "name": "Tissue and end title",
+      "visual_prompt": "Thin cream tissue rustles over plate, dropping original drawing to faint background. Centred engraved title/style and compact voice/type/score credits.",
+      "onscreen_text": "THE HONEYBEE, PLATE VII\nCopperplate Engraving",
+      "camera_motion": "Locked end plate.",
+      "sound_direction": "Fresh bm_fable0.92,en-gb original five lines. New96BPM D-major harpsichord and string quartet, pizzicato while engraving and arco only when colour arrives. Silence2–2.5 and25–26.25; burin/swarf/press/peel/hatching/pen/water/tissue foley. Original museum narration rounded biology claims retained with source limitations.",
+      "transition": "Tissue transition35.425, end from35.625; preserve40s.",
+      "material_requirements": "Warm laid paper inside double engraved rule; fine swelling/tapering burin lines and shaped crosshatch create tone without painted grey. Bee has accurate segmented legs, wing cells/veins, thorax fur, compound eyes, hamuli and corbicula; three independently drawn magnification roundels and a natural-size specimen. Engraved roman Bodoni capitals and Pinyon calligraphy. Copper macro has real trough/burr/swarf and reflected workshop window. Translucent hand wash lies UNDER black ink."
+    }
+  ],
+  "published_text_source_inventory": {
+    "note": "Verbatim literals from text/annotation/caption sourcecalls. This supplemental audit index may include formatting/style strings; shot narrativecards and scripts above are authoritative. Source path/line retained to resolve exacttext.",
+    "entries": [
+      {
+        "file": "outputs/gptcar/styles/engraving/demo/engine/copper.js",
+        "line": 11,
+        "published_source_literals": [
+          "canvas"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/engraving/demo/engine/plate.js",
+        "line": 17,
+        "published_source_literals": [
+          "canvas"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/engraving/demo/engine/wash.js",
+        "line": 19,
+        "published_source_literals": [
+          "canvas"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/engraving/demo/engine/wash.js",
+        "line": 29,
+        "published_source_literals": [
+          "canvas"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/engraving/demo/engine/wash.js",
+        "line": 46,
+        "published_source_literals": [
+          "canvas"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/engraving/demo/engine/wash.js",
+        "line": 65,
+        "published_source_literals": [
+          "canvas"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/engraving/demo/example/index.html",
+        "line": 1,
+        "published_source_literals": [
+          "utf-8"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/engraving/demo/example/index.html",
+        "line": 8,
+        "published_source_literals": [
+          ").getContext("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/engraving/demo/film.js",
+        "line": 111,
+        "published_source_literals": [
+          "title"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/engraving/demo/film.js",
+        "line": 196,
+        "published_source_literals": [
+          ").toUpperCase() + "
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/engraving/demo/film.js",
+        "line": 347,
+        "published_source_literals": [
+          "title"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/engraving/demo/index.html",
+        "line": 2,
+        "published_source_literals": [
+          "utf-8"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/engraving/demo/main.js",
+        "line": 5,
+        "published_source_literals": [
+          ").getContext("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/engraving/demo/tools/readcheck/index.html",
+        "line": 11,
+        "published_source_literals": [
+          "title",
+          "latin"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/engraving/demo/tools/readcheck/index.html",
+        "line": 16,
+        "published_source_literals": [
+          "caption"
+        ]
+      }
+    ]
+  },
+  "published_cue_events": [
+    {
+      "t": 0,
+      "type": "burin",
+      "until": 2
+    },
+    {
+      "t": 2,
+      "type": "lift"
+    },
+    {
+      "t": 2.25,
+      "type": "press"
+    },
+    {
+      "t": 2.5,
+      "type": "peel"
+    },
+    {
+      "t": 2.6,
+      "type": "hatch",
+      "until": 6.9
+    },
+    {
+      "t": 2.6,
+      "type": "pass",
+      "g": "ol"
+    },
+    {
+      "t": 3.3,
+      "type": "pass",
+      "g": "h1"
+    },
+    {
+      "t": 4.4,
+      "type": "pass",
+      "g": "h2"
+    },
+    {
+      "t": 5,
+      "type": "pass",
+      "g": "h3"
+    },
+    {
+      "t": 6.25,
+      "type": "title",
+      "n": 13,
+      "dur": 0.9
+    },
+    {
+      "t": 6.4,
+      "type": "vo",
+      "id": "title",
+      "dur": 3.1639999999999997
+    },
+    {
+      "t": 9.375,
+      "type": "push",
+      "i": 0,
+      "role": "A",
+      "dur": 5.625
+    },
+    {
+      "t": 9.825,
+      "type": "vo",
+      "id": "d1",
+      "dur": 4.625
+    },
+    {
+      "t": 10.425,
+      "type": "ring",
+      "i": 0
+    },
+    {
+      "t": 10.475,
+      "type": "burnish",
+      "i": 0
+    },
+    {
+      "t": 10.725,
+      "type": "cut",
+      "until": 12.875,
+      "i": 0
+    },
+    {
+      "t": 11.275,
+      "type": "travel",
+      "until": 12.775,
+      "i": 0
+    },
+    {
+      "t": 12.675,
+      "type": "letters",
+      "dur": 0.6
+    },
+    {
+      "t": 12.775,
+      "type": "land",
+      "i": 0
+    },
+    {
+      "t": 13.275,
+      "type": "quill",
+      "dur": 1.1,
+      "i": 0
+    },
+    {
+      "t": 15,
+      "type": "push",
+      "i": 1,
+      "role": "B",
+      "dur": 4.375
+    },
+    {
+      "t": 15.3,
+      "type": "vo",
+      "id": "d2",
+      "dur": 3.5809999999999995
+    },
+    {
+      "t": 15.5,
+      "type": "ring",
+      "i": 1
+    },
+    {
+      "t": 15.52,
+      "type": "burnish",
+      "i": 1
+    },
+    {
+      "t": 15.7,
+      "type": "cut",
+      "until": 17.2,
+      "i": 1
+    },
+    {
+      "t": 15.8,
+      "type": "travel",
+      "until": 16.8,
+      "i": 1
+    },
+    {
+      "t": 16.8,
+      "type": "land",
+      "i": 1
+    },
+    {
+      "t": 16.9,
+      "type": "letters",
+      "dur": 0.6
+    },
+    {
+      "t": 17.4,
+      "type": "quill",
+      "dur": 1.1,
+      "i": 1
+    },
+    {
+      "t": 19.375,
+      "type": "push",
+      "i": 2,
+      "role": "C",
+      "dur": 4.375
+    },
+    {
+      "t": 19.675,
+      "type": "vo",
+      "id": "d3",
+      "dur": 3.1759999999999984
+    },
+    {
+      "t": 19.875,
+      "type": "ring",
+      "i": 2
+    },
+    {
+      "t": 19.895,
+      "type": "burnish",
+      "i": 2
+    },
+    {
+      "t": 20.075,
+      "type": "cut",
+      "until": 21.575,
+      "i": 2
+    },
+    {
+      "t": 20.275,
+      "type": "travel",
+      "until": 21.475,
+      "i": 2
+    },
+    {
+      "t": 21.375,
+      "type": "letters",
+      "dur": 0.6
+    },
+    {
+      "t": 21.475,
+      "type": "land",
+      "i": 2
+    },
+    {
+      "t": 21.875,
+      "type": "quill",
+      "dur": 1.1,
+      "i": 2
+    },
+    {
+      "t": 23.75,
+      "type": "natsize"
+    },
+    {
+      "t": 25,
+      "type": "silence",
+      "until": 26.25
+    },
+    {
+      "t": 26.35,
+      "type": "drop",
+      "region": "abdomen"
+    },
+    {
+      "t": 26.75,
+      "type": "vo",
+      "id": "close",
+      "dur": 3.779
+    },
+    {
+      "t": 26.770000000000003,
+      "type": "drop",
+      "region": "thorax"
+    },
+    {
+      "t": 27.19,
+      "type": "drop",
+      "region": "head"
+    },
+    {
+      "t": 27.610000000000003,
+      "type": "drop",
+      "region": "eyes"
+    },
+    {
+      "t": 28.03,
+      "type": "drop",
+      "region": "wings"
+    },
+    {
+      "t": 28.450000000000003,
+      "type": "drop",
+      "region": "legs"
+    },
+    {
+      "t": 28.87,
+      "type": "drop",
+      "region": "pollen"
+    },
+    {
+      "t": 31.25,
+      "type": "landing"
+    },
+    {
+      "t": 31.3,
+      "type": "letters",
+      "dur": 0.75
+    },
+    {
+      "t": 32.25,
+      "type": "dot"
+    },
+    {
+      "t": 32.45,
+      "type": "dot"
+    },
+    {
+      "t": 35.425,
+      "type": "tissue"
+    }
+  ],
+  "published_source_hashes": {
+    "outputs/gptcar/styles/engraving/demo/content.json": "dc06966364f258420a072e03031949018018222cd32e8c14914e30c4461281c0",
+    "outputs/gptcar/styles/engraving/demo/content_alt.json": "678f54662ab8937e0a8ac2939cab80e0c2a1c20886ed2f715c16e21b952af58b",
+    "outputs/gptcar/styles/engraving/demo/engine/burin.js": "0c96d24e39b5ed275816fbaa8de993bc9a2a658d067e680728171150e5352242",
+    "outputs/gptcar/styles/engraving/demo/engine/copper.js": "e7771b4ceb045df0c6ccecf9fc8c40974ebbf8ce2a9281a28b9dc554b147585d",
+    "outputs/gptcar/styles/engraving/demo/engine/index.js": "127d4c84b3190a6a1a91d441601176d1037ffe159674b5b4a1a101d6a8b4e66d",
+    "outputs/gptcar/styles/engraving/demo/engine/plate.js": "279b7547dd6cac5edaeb2f93b02c03ec2ae05da38d7df79f6cacdb832b51511b",
+    "outputs/gptcar/styles/engraving/demo/engine/wash.js": "04893b86658947fb0312cd46df7f7863c214d05c3cf99ef7dcf3e473736a1001",
+    "outputs/gptcar/styles/engraving/demo/events.json": "b2d58e35a007bace9ac1ffaf75a5c1cc5d9a9269f5158cb5fbbd2275bc7993d7",
+    "outputs/gptcar/styles/engraving/demo/example/index.html": "f72d01a27371a7053fd9075d553d1b87967ae4750f8c13c136502d5445630207",
+    "outputs/gptcar/styles/engraving/demo/film.js": "2584571f559ff168001d0e647bab568182964db7c1b6fdae98d03fc397841002",
+    "outputs/gptcar/styles/engraving/demo/index.html": "1c36203f39f0da816325b321b3616c538b043b3abf9175840cdf7d37972dfff4",
+    "outputs/gptcar/styles/engraving/demo/lines.json": "184a84822d6fb752ba6e37390163aca1a2f7a4bc6bb4aa3a1c84ccdc1d0ac1c6",
+    "outputs/gptcar/styles/engraving/demo/main.js": "a2cc920bd11147f4ce84f9ffb4105045518286f2d4747f3bad9a4cc9cf42914f",
+    "outputs/gptcar/styles/engraving/demo/mix.py": "3cc734c6a5856a544a3c66a0bb39ec8a10222909bac5c0dd1f94348d7186fc88",
+    "outputs/gptcar/styles/engraving/demo/music/NOTES.md": "2e6eeb3bc392ebf7c7482d096a04f9553269b65eff9d5a3a14560805b988e16e",
+    "outputs/gptcar/styles/engraving/demo/music/cues.json": "d33455bf770ce6ff5200c1bf67d2f5cb4f75fe331b401800ae5bc86818e90fe0",
+    "outputs/gptcar/styles/engraving/demo/music/score.py": "943811a5cdbb2ecb2cb9d2ab78c7c468423131f319016edd5bee80c8c1b68485",
+    "outputs/gptcar/styles/engraving/demo/subjects/bee.js": "42995d407d3c1c5fd9c23754bae11a5f01a3604bd80eb2e1290f64ba18dd6bcf",
+    "outputs/gptcar/styles/engraving/demo/subjects/details.js": "aad1b78da841975eba844acb770255a9a27bb6c99c27df5e34a4a843c9b0abd5",
+    "outputs/gptcar/styles/engraving/demo/subjects/scallop.js": "6f10cca9b5386ecfdc80e7c0f7ebbcedc0c823964a5203d4d4111353cc2414e5",
+    "outputs/gptcar/styles/engraving/demo/tools/cuecheck.py": "5b2001affe52051d0bb9fda55ab23fd622e17316e7c3f4d12054fb0df9fa5fef",
+    "outputs/gptcar/styles/engraving/demo/tools/readcheck/index.html": "421e6bf9f4e3a3e51c4e9b4eb936ed96adfea1b3a9b74b34f50f382f2ade0887",
+    "outputs/gptcar/styles/engraving/demo/tools/subs.py": "66c90d6fdeab2281fda19571c17574a44d53c42b44b8e4c09f2598e726d8e106",
+    "outputs/gptcar/styles/engraving/demo/voices/dur.json": "573596a9da047f6c42f469925b8d84570dc2ec8f5f703dc1d25f0850bd67dc27",
+    "outputs/gptcar/styles/engraving/demo/voices/words.json": "d0392f79c21660bd905f3c1500d4594e4107bb8e98d38f846607a9f21373fcaf"
+  },
+  "original_assets_and_licenses": [
+    {
+      "path": "outputs/gptcar/styles/engraving/demo/CREDITS",
+      "sha256": "0a00603b99d32dd518e42375b70826e3e7d41eac9cfc4286df4ae2837a3e2da8",
+      "verbatim": "The Honeybee, Plate VII — Copperplate Engraving (Lemo-Opuscar)\nAll drawings, lettering layout, animation, sound effects and music are original and generated by code in this folder.\n\nMUSIC (music/score.py, original composition, D major, 96 BPM)\nHarpsichord; solo violin, violins, violas, cellos, contrabass (pizzicato and arco).\nSamples (CC0): VS Chamber Orchestra: Community Edition and the Versilian Community Sample Library (Versilian Studios).\n\nSOUND EFFECTS\nSynthesised in mix.py with numpy / core/audio/sfx.py: burin scrape and plate ring, swarf pings, press roller,\npaper peel, granular hatching, pen scratch, water drop, wet brush, tissue rustle, room tone.\n\nVOICE\nKokoro-82M (Apache-2.0) via kokoro-onnx, voice bm_fable (en-gb).\n\nFONTS (SIL Open Font License 1.1, OFL.txt in fonts/)\nBodoni Moda (engraved roman capitals and italics) · Pinyon Script (copperplate script notes and subtitles).\n\nANATOMY REFERENCE (reference only, nothing traced or copied)\nHoneybee wing venation, hamuli and corbicula after the public-domain diagrams in R. E. Snodgrass,\n\"Anatomy and Physiology of the Honeybee\" (1925) and \"The Anatomy of the Honey Bee\" (USDA Bulletin 18, 1910).\nFacts: compound eye of the worker ≈ 4,500–7,000 ommatidia (\"some six thousand\"); a worker's lifetime yield\n≈ 1/12 teaspoon of honey (commonly cited figure from beekeeping extension literature).\n\nSTYLE REFERENCES (grammar only, nothing copied)\n19th-century natural-history plates (Haeckel, Audubon, Westwood, the Encyclopaedia Britannica copperplates);\nHogarth and Doré for burin line and cross-hatching; hand-coloured plates for the watercolour washes.\nThe burin line engine began as a copy of the Opuscar 98 set engine (promo, not published) and was extended here.\n"
+    },
+    {
+      "path": "outputs/gptcar/styles/engraving/demo/music/NOTES.md",
+      "sha256": "2e6eeb3bc392ebf7c7482d096a04f9553269b65eff9d5a3a14560805b988e16e",
+      "verbatim": "# Music notes: \"The Honeybee, Plate VII\"\n\nOriginal score written in code (`score.py`; deterministic, and a rebuild gives a byte-identical `score.wav`). All melodies and progressions are new. It uses no existing or public-domain tunes.\n\n- **Key:** D major. **Tempo:** 96 BPM in 4/4 (beat 0.625 s, bar 2.5 s, 16 bars = 40.0 s).\n- **Forces:** harpsichord (continuo and solo figures) plus a string quartet: solo violin I and ensemble violin II, violas, cellos and contrabass. The strings play pizzicato up to 25.0 s and use the bow only from 26.25 s.\n- **Rebuild:** from the repo root, run `.venv/bin/python styles/engraving/demo/music/score.py`. It takes about 5 s and writes `score.wav`, `stems/`, `cues.json`, `CREDITS_music.txt` and `timing_report.txt`.\n- **Level:** integrated loudness is -18.0 LUFS (BS.1770, checked with ffmpeg ebur128). Peak is -1.2 dBFS. The file is 48 kHz stereo, 24-bit.\n- **Stems:** `harpsichord.wav`, `pizz.wav` and `bowed.wav`. Each is 40.0 s and uses the same gain as the mix, so the three sum to the mix before the limiter (about 1 dB of peak limiting on two hits).\n\n## Form (trio-sonata texture, the grammar of engraving followed by colour)\n\n| Bars / time | Harmony | What happens |\n|---|---|---|\n| 1 (0–2.5) | — | Silent for burin foley. **1.875 / 2.1875** harpsichord pickup A4 → C#5, damped short (below -28 dBFS by 2.3). |\n| 2 (2.5) | D, A/C# | **The print is pulled:** tutti downbeat accent (harpsichord D chord, cello, contrabass and viola pizz). Cello walking bass and viola in pizz 8ths. |\n| 3 (5.0) | Bm, G, A7 | **5.0** violin II enters in 16th pizz, broken-chord \"cross-hatching\". **6.25** harpsichord 32nd-note arpeggio flourish (G, then A7) rises into **7.5**. |\n| 4 (7.5) | D, G | Full texture. **9.375** it thins to a cello pizz A pedal plus a high harpsichord 8th figure (dominant, \"curious\"). |\n| 5 (10.0) | A pedal | **10.425** ring \"ting\": solo violin pizz A6 with harpsichord A5. **11.275–12.5875** rising pizz and harpsichord scale A4 → A5 (8 notes, 0.1875 s apart). **12.775** landing on low D (cello, contrabass and harpsichord D). |\n| 6 (12.5) | D, Bm | The pizz texture comes back lighter (it restarts at 13.125). |\n| 7 (15.0) | Em7, A7, D | **15.0** Em7 downbeat. **15.5** ting (B6). **15.8–16.66** faster rise (7 notes, 1/7 s apart). **16.8** landing on D. |\n| 8 (17.5) | Bm, G, A | Fuller texture. **19.375** thins to an A pedal (third detail). **19.875** ting (A6). |\n| 9 (20.0) | D, G | **20.0** the violin I pizz melody, the most tuneful moment: A5 F#5 D6 · B5 G5-A5 B5 C#6-D6 · E6 G5 F#5. **21.475** landing on low G. **22.19** the lift: violin II 16th crescendo plus a harpsichord roll. |\n| 10 (22.5) | Em, A7 | **23.75** harpsichord descending 16th run A5 → A4 (in octaves), ending on the dominant. The last note is 90 ms long and everything is gated to zero at 25.0. The expected tonic never comes, which is the joke. |\n| 11 (25.0–26.25) | — | **Total digital silence** (-inf dBFS, reverb tails included). |\n| 11b–13 (26.25) | D, Bm, G, Em7, A7 → **D** | **26.25** the first bowed notes of the film. Cellos, violas and violins enter pp on D and swell to mp by 27.6. Soprano line A5 B5 · D6 C#6 → D6, bass line descending in thirds D-B-G-E then A → D. The harpsichord is sparse and high: slow broken chords at 27.5, 28.75 and 30.0. **31.25** perfect cadence V7 → I: a low harpsichord D (not rolled) with the upper chord rolled after it, contrabass pizz, and bowed D chord. The tonic then rings. |\n| 14 (32.5) | D | **33.75** wink: one soft solo-violin pizz D6. |\n| 15–16 (35.0–40.0) | D | **35.625** a very soft harpsichord D-A-D roll for the end card. A fade from 36.6 reaches zero at 38.9. Digital silence from 39.0 to 40.0. |\n\n**Narration windows.** Inside 6.4–9.6, 9.8–14.9, 15.3–19.2 and 19.7–23.3 the pizz is short and dry, which keeps 300 Hz–3 kHz transient rather than sustained. During 26.9–30.9 the bowed chords sit mostly in the bass (cellos and contrabass below 300 Hz) and above 900 Hz (violins at A5–D6), with only violas and violin II in the voice band at pp. The harpsichord plays only four soft broken chords there.\n\n**Reverb.** `S.room` per stem, applied before the silence gates, so no tail leaks into 25.0–26.25: harpsichord size .28 / mix .16, pizz .30 / .18, bowed .42 / .24. There is a 35 Hz high-pass on every stem.\n\n## Timing check\n\nMethod: each accent in `cues.json` is measured on its own rendered stem, after reverb. The detector finds the first 30 % rise from the local trough to the local peak in [t-60 ms, t+120 ms]. Low landings are measured below 300 Hz and tings above 2 kHz. The results are then matched to the brief's cue map. Tolerance is ±42 ms (one frame at 24 fps). For the bowed entry, the measure is the first bowed sample above -100 dBFS.\n\n```\nAgainst the brief cue map (nearest measured accent):\nOK  map  1.8750s  <-  1.8730s  err   -2.0 ms  pickup 1: harpsichord A4\nOK  map  2.1875s  <-  2.1855s  err   -2.0 ms  pickup 2: harpsichord C#5\nOK  map  2.5000s  <-  2.4990s  err   -1.0 ms  bar 2 downbeat: print pulled (tutti D accent)\nOK  map  5.0000s  <-  5.0030s  err   +3.0 ms  bar 3: 2nd violin 16th pizz hatching enters\nOK  map  6.2500s  <-  6.2500s  err   +0.0 ms  harpsichord flourish starts (title engraved)\nOK  map  7.5000s  <-  7.5130s  err  +13.0 ms  bar 4: flourish lands, full texture\nOK  map  9.3750s  <-  9.3800s  err   +5.0 ms  texture thins: cello A pedal + high harpsichord figure\nOK  map 10.4250s  <- 10.4230s  err   -2.0 ms  ring ting #1 (violin pizz A6 + harpsichord A5)\nOK  map 11.2750s  <- 11.2740s  err   -1.0 ms  rising line #1 starts\nOK  map 12.7750s  <- 12.7970s  err  +22.0 ms  landing #1: low cello + bass pizz D\nOK  map 15.0000s  <- 15.0070s  err   +7.0 ms  bar 7: second detail begins (Em7 downbeat)\nOK  map 15.5000s  <- 15.4980s  err   -2.0 ms  ring ting #2 (violin pizz B6)\nOK  map 15.8000s  <- 15.7940s  err   -6.0 ms  rising line #2 starts\nOK  map 16.8000s  <- 16.8210s  err  +21.0 ms  landing #2: low cello + bass pizz D\nOK  map 19.3750s  <- 19.3730s  err   -2.0 ms  third detail: thins to cello A pedal (+ harpsichord A2 / E5 figure)\nOK  map 19.8750s  <- 19.8730s  err   -2.0 ms  ring ting #3 (violin pizz A6)\nOK  map 20.0000s  <- 19.9980s  err   -2.0 ms  1st violin pizz melody begins\nOK  map 21.4750s  <- 21.4810s  err   +6.0 ms  landing #3: low cello + bass pizz G\nOK  map 22.2000s  <- 22.1915s  err   -8.5 ms  gentle lift (swell into bar 10)\nOK  map 23.7500s  <- 23.7470s  err   -3.0 ms  harpsichord descending run starts\nOK  map 26.2500s  <- 26.2616s  err  +11.6 ms  FIRST BOWED NOTE: strings enter pp on D (cellos/violas/violins)\nOK  map 31.2500s  <- 31.2520s  err   +2.0 ms  perfect cadence V-I: tonic D lands (harpsichord roll + bass pizz + bowed D)\nOK  map 33.7500s  <- 33.7490s  err   -1.0 ms  wink: soft violin pizz D6\nOK  map 35.6250s  <- 35.6270s  err   +2.0 ms  end card: soft harpsichord tonic, fade begins\n\nSilence 0.0–1.87 s: peak -240.0 dBFS\nSilence 25.0–26.25 s: peak -240.0 dBFS  (25.3–26.25: -240.0)\nPickup ring 2.0–2.18 s: peak -31.6 dBFS; 2.3–2.49 s: peak -28.7 dBFS\nTail 39.0–40.0 s: peak -240.0 dBFS\nBowed stem silent before 26.25: peak -162.1 dBFS; first bowed sample above -100 dB at 26.2616 s\nBowed stem reaches -50 dBFS at 26.4148 s, -40 dBFS at 26.5168 s\nPer-bar RMS (dBFS): b1:-35 b2:-20 b3:-21 b4:-19 b5:-21 b6:-23 b7:-20 b8:-22 b9:-20 b10:-19 b11:-36 b12:-24 b13:-20 b14:-21 b15:-25 b16:-74\nMix: 40.000 s, 2 ch, 48000 Hz, peak -1.20 dBFS, integrated -18.0 LUFS\n\nALL CUES WITHIN TOLERANCE\n```\n\nThe full per-accent list, including the extra accents at 12.5875 and 24.8438, is in `timing_report.txt`.\n"
+    }
+  ],
+  "engine_reuse_recommendation": "Reuse attributed generic drawing/material/rig/math engines described by STYLE/DEMO; share fonts and named licensed data/assets with hashes. Independently generate scene assembly, animation, shot/camera staging and freshaudio. Never import original film renderer, mastervideo,originalframes or mastertrack as newGPTwork. Preserve exactscript/cardlanguage and measuredoriginalframecount. Full originals are analytical references only.",
+  "audio_recreation_direction": "Fresh bm_fable0.92,en-gb original five lines. New96BPM D-major harpsichord and string quartet, pizzicato while engraving and arco only when colour arrives. Silence2–2.5 and25–26.25; burin/swarf/press/peel/hatching/pen/water/tissue foley. Original museum narration rounded biology claims retained with source limitations.",
+  "v1_primary_deficits": [
+    "V1 geometric oval bee lacked segmented anatomy/fur/wing cells and three full magnifications",
+    "20s truncation lost copper tool/press, detail transfers/notes, exact five-line script, staged under-ink washes and CTA"
+  ],
+  "visual_audit": {
+    "status": "complete",
+    "method": "Complete original 1 fps contact-sheet sequence and published source cue boundaries inspected, plus listed exact short-action/transition frames. Does not claim every encoded frame.",
+    "sheets": [
+      "work/gptcar/reference/engraving/sheets/sheet-01.jpg",
+      "work/gptcar/reference/engraving/sheets/sheet-02.jpg",
+      "work/gptcar/reference/engraving/sheets/sheet-03.jpg",
+      "work/gptcar/reference/engraving/sheets/sheet-04.jpg"
+    ],
+    "exact_time_supplement": [
+      "work/gptcar/reference/engraving/exact/t-10.46.jpg",
+      "work/gptcar/reference/engraving/exact/t-15.55.jpg",
+      "work/gptcar/reference/engraving/exact/t-19.92.jpg",
+      "work/gptcar/reference/engraving/exact/t-2.25.jpg",
+      "work/gptcar/reference/engraving/exact/t-26.4.jpg",
+      "work/gptcar/reference/engraving/exact/t-35.65.jpg"
+    ]
+  }
+}

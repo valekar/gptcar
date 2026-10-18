@@ -1,0 +1,78 @@
+{
+  "language": "en-us",
+  "voice": "af_sarah",
+  "lines": [
+    {
+      "id": "l1",
+      "text": "Rule one. Build a grid.",
+      "voice": "af_sarah",
+      "speed": 1.0,
+      "start": 4.4,
+      "duration": 1.766,
+      "language": "en-us"
+    },
+    {
+      "id": "l2",
+      "text": "Rule two. Use one typeface.",
+      "voice": "af_sarah",
+      "speed": 1.0,
+      "start": 8.4,
+      "duration": 2.167,
+      "language": "en-us"
+    },
+    {
+      "id": "l3",
+      "text": "Rule three. Leave space.",
+      "voice": "af_sarah",
+      "speed": 1.0,
+      "start": 12.4,
+      "duration": 1.828,
+      "language": "en-us"
+    },
+    {
+      "id": "l4",
+      "text": "Rule four. Align everything.",
+      "voice": "af_sarah",
+      "speed": 1.0,
+      "start": 16.4,
+      "duration": 2.092,
+      "language": "en-us"
+    },
+    {
+      "id": "l4b",
+      "text": "Perfect. And a little dull.",
+      "voice": "af_sarah",
+      "speed": 1.0,
+      "start": 20.1,
+      "duration": 1.652,
+      "language": "en-us"
+    },
+    {
+      "id": "l5",
+      "text": "Rule five. Break one rule.",
+      "voice": "af_sarah",
+      "speed": 1.0,
+      "start": 22.15,
+      "duration": 1.952,
+      "language": "en-us"
+    },
+    {
+      "id": "l5b",
+      "text": "Only one.",
+      "voice": "af_sarah",
+      "speed": 1.0,
+      "start": 24.6,
+      "duration": 1.042,
+      "language": "en-us"
+    },
+    {
+      "id": "l6",
+      "text": "Same five rules. A different song every time.",
+      "voice": "af_sarah",
+      "speed": 1.0,
+      "start": 36.5,
+      "duration": 3.036,
+      "language": "en-us"
+    }
+  ]
+}

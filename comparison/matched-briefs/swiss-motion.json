@@ -1,0 +1,570 @@
+{
+  "slug": "swiss-motion",
+  "title": "Five Rules for a Poster",
+  "premise": "Five design rules build one concert poster; a red circle breaks its grid, revealing that the poster is also the score.",
+  "input_prompt": {
+    "verbatim_original_chat_available": false,
+    "published_demo_brief": "A 30–60 second film: five rules build one concert poster on a grid; a red circle breaks the grid, and the poster turns out to be the score of the music.",
+    "status": "Source-informed reconstruction from published STYLE, DEMO, script and finished movie; not a recovered chat prompt."
+  },
+  "sources": [
+    {
+      "path": "styles/swiss-motion/STYLE.md",
+      "sha256": "14ddeb6dc495e691a220497069a2ee4827d820f9ee7a3173de5846489ef41f57"
+    },
+    {
+      "path": "styles/swiss-motion/DEMO.md",
+      "sha256": "989c763362af45379b52a0a8e683fba27efad968e7aa438a3acc9d21d03d3a4e"
+    },
+    {
+      "path": "styles/swiss-motion/style.json",
+      "sha256": "90019625917e8461bb2ed091cc7cd0cc7dc47ba8a32f8d9cc9ca3a39cae9ed5e"
+    },
+    {
+      "path": "styles/swiss-motion/demo/lines.json",
+      "sha256": "87991ca9962cc58f0eab42579dfeddadb6674cd3a902491c456593ded25868e3"
+    },
+    {
+      "path": "styles/swiss-motion/demo/score.json",
+      "sha256": "52874af6f42ce4e19b4471e496c6b0c3cc6a64da8bc3e8de3c280b9235fe3afe"
+    },
+    {
+      "path": "styles/swiss-motion/demo/CREDITS",
+      "sha256": "129d4de51e31753c890d6452f0429676432c5b6a47f2c6061de27bf279d55dc5"
+    }
+  ],
+  "reference": {
+    "slug": "swiss-motion",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/swiss-motion.mp4",
+    "sha256": "09639ce0cc856adceb177bacbe6d380d619fb25576b612402f0fcf1aa9a303ca",
+    "duration": 44.0,
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": "1056",
+    "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+    "frames": 44,
+    "sheets": 4
+  },
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 24
+  },
+  "delivery": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frame_count": 1056,
+    "duration": 44
+  },
+  "inspection": {
+    "contact_sheets": [
+      "work/gptcar/reference/swiss-motion/sheets/sheet-01.jpg",
+      "work/gptcar/reference/swiss-motion/sheets/sheet-02.jpg",
+      "work/gptcar/reference/swiss-motion/sheets/sheet-03.jpg",
+      "work/gptcar/reference/swiss-motion/sheets/sheet-04.jpg"
+    ],
+    "coverage": "All44 regular decoded frames, 0.5–43.5sec, reviewed across all4 sheets. Source timing supplements subsecond transitions; exact boundary captures will be added to replica QA.",
+    "encoded_every_frame_reviewed": false
+  },
+  "narration": [
+    {
+      "id": "l1",
+      "t": 4.4,
+      "text": "Rule one. Build a grid.",
+      "asr": "Rule 1, build a grid.",
+      "voice": "af_sarah",
+      "speed": 1.0,
+      "start": 4.4,
+      "published_audio_duration": 1.516,
+      "published_word_offsets": [
+        0.0,
+        0.18,
+        0.68,
+        0.86,
+        1.0
+      ]
+    },
+    {
+      "id": "l2",
+      "t": 8.4,
+      "text": "Rule two. Use one typeface.",
+      "asr": "Rule 2, use one type face.",
+      "voice": "af_sarah",
+      "speed": 1.0,
+      "start": 8.4,
+      "published_audio_duration": 1.917,
+      "published_word_offsets": [
+        0.0,
+        0.16,
+        0.72,
+        0.86,
+        1.08
+      ]
+    },
+    {
+      "id": "l3",
+      "t": 12.4,
+      "text": "Rule three. Leave space.",
+      "asr": "Rule 3, leave space.",
+      "voice": "af_sarah",
+      "speed": 1.0,
+      "start": 12.4,
+      "published_audio_duration": 1.578,
+      "published_word_offsets": [
+        0.0,
+        0.16,
+        0.76,
+        0.88
+      ]
+    },
+    {
+      "id": "l4",
+      "t": 16.4,
+      "text": "Rule four. Align everything.",
+      "asr": "Rule 4, align everything.",
+      "voice": "af_sarah",
+      "speed": 1.0,
+      "start": 16.4,
+      "published_audio_duration": 1.842,
+      "published_word_offsets": [
+        0.0,
+        0.16,
+        0.78,
+        1.06
+      ]
+    },
+    {
+      "id": "l4b",
+      "t": 20.1,
+      "text": "Perfect. And a little dull.",
+      "voice": "af_sarah",
+      "speed": 1.0,
+      "start": 20.1,
+      "published_audio_duration": 1.402,
+      "published_word_offsets": [
+        0.0,
+        0.34,
+        0.68,
+        0.76,
+        0.88
+      ]
+    },
+    {
+      "id": "l5",
+      "t": 22.15,
+      "text": "Rule five. Break one rule.",
+      "asr": "Rule 5, break one rule.",
+      "voice": "af_sarah",
+      "speed": 1.0,
+      "start": 22.15,
+      "published_audio_duration": 1.702,
+      "published_word_offsets": [
+        0.0,
+        0.16,
+        0.84,
+        0.94,
+        1.2
+      ]
+    },
+    {
+      "id": "l5b",
+      "t": 24.6,
+      "text": "Only one.",
+      "voice": "af_sarah",
+      "speed": 1.0,
+      "start": 24.6,
+      "published_audio_duration": 0.792,
+      "published_word_offsets": [
+        0.0,
+        0.26
+      ]
+    },
+    {
+      "id": "l6",
+      "t": 36.5,
+      "text": "Same five rules. A different song every time.",
+      "voice": "af_sarah",
+      "speed": 1.0,
+      "start": 36.5,
+      "published_audio_duration": 2.786,
+      "published_word_offsets": [
+        0.0,
+        0.22,
+        0.48,
+        1.3,
+        1.42,
+        1.58,
+        1.86,
+        2.16
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "start": 0,
+      "end": 2,
+      "title": "Rulebook opens",
+      "reconstructed_prompt": "Locked 1920×1080 frame, page #EAE9E5. A 3px red ruling line draws left to right at y300 in 0.5s. Twelve 122px pale columns with 24px gutters start at x96 and grow up/down from it on sixteenths, 0.5–2s. No texture, shadows or decorative shapes. Dry knife then ruling-pen ticks."
+    },
+    {
+      "start": 2,
+      "end": 4,
+      "title": "Five Rules for a Poster",
+      "reconstructed_prompt": "Archivo700 120px, −2.2% tracking, at x96 baselines168/276; word clip-reveals on quarters: Five Rules / for a Poster. 19px top caption: A programme in five steps | 1961 | ♩ = 120, with 1px rule y36. At3.25–3.5 vertically wipe in white 706×1008 paper, center1471,540. Title exits upward by4.125. Paper slap and type clacks."
+    },
+    {
+      "start": 4,
+      "end": 8,
+      "title": "Rule one. Build a grid.",
+      "reconstructed_prompt": "Cause/effect spread. Giant optically aligned Archivo700 numeral1 at x96 baseline1044, glyph ascent700px; four eased steps4–4.5. Poster blank, grid draws seven91px columns and sixteen40px rows from margin34.5/35, then26px text baselines. VO4.4 and word reveals: small grey Rule one. baseline168, bold76px Build a grid. baseline252. Top Five Rules for a Poster | Rule 01 / 05 | Grid. Lower notes Columns 7 / Rows 16 / Module 91 × 40. Lower gutter live bar counter. Hats only. Opening frame columns retract8–8.3."
+    },
+    {
+      "start": 8,
+      "end": 10,
+      "title": "Rule two: the wrong typeface gag",
+      "reconstructed_prompt": "Numeral2 replaces1 on four steps. Top Rule 02 / 05 | Typeface. Ten centered overcrowded poster lines descend in staggered eighth-note reveals: Neue Musik (UnifrakturMaguntia118); Grosses Konzert (DM Serif62); !! nicht verpassen !! (Archivo40); Konzert 1961 (DM Serif58); Freitag 17. März 1961 · 20.15 Uhr (Archivo28); im Kleinen Saal (Fraktur54); mit Pauken und Trompeten (DM Serif42); Werke von Marti, Brunner, Weiss (Archivo24); Eintritt Fr. 3.– (DM Serif36); — Nur ein Abend — (Fraktur44). VO8.4: Rule two. Use one typeface. Add full motorik kit."
+    },
+    {
+      "start": 10,
+      "end": 12,
+      "title": "One family, still too much",
+      "reconstructed_prompt": "All ten lines change simultaneously to lowercase Archivo; exact surviving spellings: neue musik; grosses konzert; !! nicht verpassen !!; konzert 1961; freitag 17. märz 1961 · 20.15 uhr; kleiner saal; mit pauken und trompeten; werke von marti, brunner, weiss; eintritt fr. 3.–; nur ein abend. Keep visibly overcrowded centered layout. Notes Family Archivo / Weights 400–800 / Voices 1. Loud letterpress accent on10."
+    },
+    {
+      "start": 12,
+      "end": 16,
+      "title": "Rule three. Leave space.",
+      "reconstructed_prompt": "Giant3, top Rule03/05|Space. Knife crosses then collapses four unnecessary lines at12.5 (!! nicht verpassen !!),13 (mit pauken und trompeten),13.5 (nur ein abend),14 (grosses konzert). Six remaining lines compact down from15, nearest in short stagger, to lower text zone: headline104px baseline790, subtitle32px baseline842, four20px lines888/914/940/966. Notes Lines removed4 / White space62%. Bass root eighths join."
+    },
+    {
+      "start": 16,
+      "end": 20,
+      "title": "Rule four. Align everything.",
+      "reconstructed_prompt": "Giant4, Rule04/05|Alignment. Six retained poster lines move from centered to flush-left x34.5. Light-grey bass column fills score area16–17. Sixteen thick black83×34px cells enter18–20, four repeated 4-note descending-step groups, each on a sixteenth. They are graphic masses rather than thin chart marks. Notes Axis flush left / Every edge on a line. Add filtered sixteenth saw arpeggio."
+    },
+    {
+      "start": 20,
+      "end": 22,
+      "title": "Perfect. And a little dull.",
+      "reconstructed_prompt": "The only red protagonist, diameter182px, falls from just beyond paper top to column5,row0 on20. Grid retracts20–20.5. Hold the correct, boring four-step bar pattern. Numeral4 stays. VO20.1, small Perfect. and regular76px And a little dull. The red circle is absolutely still until the hesitation."
+    },
+    {
+      "start": 22,
+      "end": 24.5,
+      "title": "Rule five. Break one rule.",
+      "reconstructed_prompt": "Numeral5; Rule05/05|Exception, Notes Exceptions1. VO22.15, exact small Rule five. / bold Break one rule. Circle twitches one quarter-column at23.5, then snaps back at23.875. Paper grid returns24–24.5. Drums drop hard at24. Left programme page slides1200px left24–24.5, poster center moves1471→860 concurrently."
+    },
+    {
+      "start": 24.5,
+      "end": 26,
+      "title": "Only one: the exception travels",
+      "reconstructed_prompt": "Circle alone moves LINEARLY, diagonally from column5,row0 toward column−1.148,row12.5; diameter grows182→364. First40% flight24.5–25, pause25–25.25, remainder25.25–26. Do not ease or bounce. Leave thin red original-location ghost and trajectory line. Grid extends beyond paper to whole frame. Right coordinate readout x1290: col / row numerical2decimals, on grid switches to red off grid; left museum-label VO24.6 Only one. baseline848. Sine glide follows circle position; no drums."
+    },
+    {
+      "start": 26,
+      "end": 27.5,
+      "title": "Reflow: better through one violation",
+      "reconstructed_prompt": "Circle lands on26, bleeds left edge, doubles original scale. Full band returns. Black units ripple by distance from landing, two units per sixteenth26.125 onward. Units merge into final seven long/short bars: [col,row,length] [0,0,4],[1,4,1],[2,5,1],[3,6,4],[4,10,1],[5,11,1],[6,12,4]. First bleeds top, last bleeds right. Grey bass bars [0,0,8],[2,8,4],[3,12,4]. Final information shifts top-right x307.5: konzert1961 / freitag… / kleiner saal / werke… / eintritt… . Headline neue musik splits into two150px lines x34.5 baselines861/973, black over red. Final composition one dominant diagonal, not four staircases. Grid and ghost retract27.5–27.75."
+    },
+    {
+      "start": 27.5,
+      "end": 29.25,
+      "title": "Hold the final concert poster",
+      "reconstructed_prompt": "Poster centered860,540, white706×1008, strong diagonal notes and red bleed. Big negative space. Five information lines top-right, neue / musik overprints circle lower-left. No page numeral or extraneous subtitle. Hold so improvement can be read."
+    },
+    {
+      "start": 29.25,
+      "end": 30,
+      "title": "The poster rotates into a score",
+      "reconstructed_prompt": "Precise eased camera29.25–30, center860→960, scale1→1.34, rotation0→−90°. Stop completely at30. Grid grows back, extended beyond artifact. Never animate labels during rotation. Music thins to near-silent bass pedal and quarter ticks30–32."
+    },
+    {
+      "start": 30,
+      "end": 32,
+      "title": "Labels expose the coordinate system",
+      "reconstructed_prompt": "Keep rotated poster. Upright screen-space labels A B C D E F# G positioned beside original columns, and bar1/bar2 above original rows0/8. Labels stagger30.5 onward. A now bottom, G top; time runs left to right across16rows. Playhead draws at31.75 before moving32."
+    },
+    {
+      "start": 32,
+      "end": 36,
+      "title": "The poster IS the music",
+      "reconstructed_prompt": "Thin red playhead sweeps original row0→16 linearly32–36. The exact seven merged bars turn red ONLY while active; onset times32,33,33.25,33.5,34.5,34.75,35; lengths1,.25,.25,1,.25,.25,1sec. Circle pulsing ring at35.125 (row12.5). Kick+bass+glock/square, no busy full-kit distraction. Score and picture use the same note grid. At36 hide labels/playhead/grid."
+    },
+    {
+      "start": 36,
+      "end": 37,
+      "title": "One programme, many artifacts",
+      "reconstructed_prompt": "Rotate back and pull out simultaneously36–37 to wall scale.42 and center960,452. Neighboring posters become visible only in this shot. Five white posters on light-grey board: Klang/konzert1962 red Fraktur (breaks rule2 · typeface), takt/konzert1963 filled red upper-right whitespace (breaks rule3 · space), hero (breaks rule1 · grid), stille/konzert1964 red right-aligned title (breaks rule4 · alignment), Puls!/Konzert1965 rotated mixed-font broken-grid (breaks all five)."
+    },
+    {
+      "start": 37,
+      "end": 39,
+      "title": "A different song every time",
+      "reconstructed_prompt": "Wall5 posters fixed slots786px apart at.42scale, distinct bar patterns. Museum labels below; hero label red. VO36.5: Same five rules. A different song every time. Word-reveal small lead at x96,y928 then bold at1004. Full melodic band returns. Each variant must be genuinely different in typography, alignment or density."
+    },
+    {
+      "start": 39,
+      "end": 40,
+      "title": "Knife cuts the wall away",
+      "reconstructed_prompt": "Red horizontal line y452 travels left→right39–39.5. Cut wall board from the side line enters; neighboring artifacts collapse to horizontal midlines when reached, not all at once. Hero survives. Camera returns to original right spread center1471,540 scale1 by40; red line lowers to y300. Dry guillotine then paper slide."
+    },
+    {
+      "start": 40,
+      "end": 44,
+      "title": "Swiss Motion Graphics: reference end layout",
+      "reconstructed_prompt": "Original opening spread again, final hero poster at right. Top Five Rules for a Poster | A Lemo-Opuscar film |2026. Large120px Swiss Motion / Graphics left, red line y300, original credit LemoLab × Claude Opus5.5 at36px,y372; lower notes TypefaceArchivo / ScoreAdorian ·120bpm / VoiceKokoroaf_sarah. In GPT replica preserve layout/title but replace authorship credit with truthful GPT-6.1 Sol · reference by LemoLab and caption A GPTcar reference study. This is the sole intentional on-screen text exception, disclosed. End4secondhold; no fade/black tail."
+    }
+  ],
+  "shared_grid_composition": {
+    "bpm": 120,
+    "key": "A dorian",
+    "cols": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F#",
+      "G"
+    ],
+    "midi": [
+      57,
+      59,
+      60,
+      62,
+      64,
+      66,
+      67
+    ],
+    "note": "Poster grid = score. 7 columns = the 7 notes of A dorian (low to high, left to right). 16 rows = 16 eighth notes (2 bars), read top to bottom. A bar's top edge = onset, its length = duration. Picture (film.js) and music (music/score.py) both read this file.",
+    "stiff": {
+      "lead": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          3,
+          1
+        ],
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          1,
+          5,
+          1
+        ],
+        [
+          2,
+          6,
+          1
+        ],
+        [
+          3,
+          7,
+          1
+        ],
+        [
+          0,
+          8,
+          1
+        ],
+        [
+          1,
+          9,
+          1
+        ],
+        [
+          2,
+          10,
+          1
+        ],
+        [
+          3,
+          11,
+          1
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          1,
+          13,
+          1
+        ],
+        [
+          2,
+          14,
+          1
+        ],
+        [
+          3,
+          15,
+          1
+        ]
+      ],
+      "bass": [
+        [
+          0,
+          0,
+          16
+        ]
+      ],
+      "circle": [
+        5,
+        0
+      ]
+    },
+    "final": {
+      "lead": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          2,
+          5,
+          1
+        ],
+        [
+          3,
+          6,
+          4
+        ],
+        [
+          4,
+          10,
+          1
+        ],
+        [
+          5,
+          11,
+          1
+        ],
+        [
+          6,
+          12,
+          4
+        ]
+      ],
+      "bass": [
+        [
+          0,
+          0,
+          8
+        ],
+        [
+          2,
+          8,
+          4
+        ],
+        [
+          3,
+          12,
+          4
+        ]
+      ],
+      "circle": [
+        -1.148,
+        12.5
+      ],
+      "bleed": {
+        "0": "top",
+        "6": "right"
+      }
+    },
+    "circleDiameterCols": {
+      "stiff": 2,
+      "final": 4
+    },
+    "circlePitch": {
+      "stiff": "G5 (midi 79)",
+      "final": "A5 (midi 81), syncopated: onset row 12.5 = a sixteenth after the beat"
+    },
+    "timeline": {
+      "stiffRun16ths": [
+        18.0,
+        19.875
+      ],
+      "stiffLoop": [
+        20.0,
+        24.0
+      ],
+      "circleIn": 20.0,
+      "hesitate": 23.5,
+      "drumsOut": [
+        24.0,
+        26.0
+      ],
+      "circleFlight": [
+        [
+          24.5,
+          25.0
+        ],
+        [
+          25.25,
+          26.0
+        ]
+      ],
+      "land": 26.0,
+      "finalPhrase": [
+        26.0,
+        30.0
+      ],
+      "breath": [
+        30.0,
+        32.0
+      ],
+      "sweep": [
+        32.0,
+        36.0
+      ],
+      "wallPhrase": [
+        36.0,
+        40.0
+      ],
+      "endHit": 40.0,
+      "dur": 44.0
+    }
+  },
+  "published_styleguide": "# Swiss Motion Graphics — Style Prompt\n\n> International Typographic Style in motion: a modular grid, one typeface, one signal colour, and movement as exact as a printing press.\n> References (grammar only): 1950s–70s Zurich posters (Müller-Brockmann, Hofmann, Gerstner, Crouwel) for the grid, flush-left type, scale contrast and \"designing programmes\"; modern identity systems in motion (Experimental Jetset, Pentagram) for snaps on the beat. Never copy a specific historical poster's composition (no concentric-circle or fan layouts lifted from Müller-Brockmann), never use Helvetica or Akzidenz font files, never name a real institution on a poster.\n\n## 1. Essence, and what it is not\n\n- **Pure 2D graphic design animated on a grid**: flat paper, black type and bars, a very light grey and **one** saturated signal colour.\n- **Every element snaps to the grid, every move lands on a beat, nothing bounces.**\n- **Rigor with one exception**: the whole frame obeys a system, so the one element that doesn't becomes a character.\n- **Extreme scale contrast**: a giant numeral next to tiny technical notes.\n\nNot a keynote (no gradients, no glow, no device renders), not kinetic typography for a lyric video (words don't fly, spin or bounce), not data visualisation (bars have mass as graphic form, not as charted quantities, unless the grid gives them that meaning), not a Bauhaus pastiche of primary shapes.\n\n## 2. Materials & rendering\n\n- **Frame grid**: 1920×1080, 12 columns, ~96 px side margins, 24 px gutters, 24 px baseline. The frame can act as a **spread**: a left page (the programme: numeral, rule text, notes) and a right page (the artifact).\n- **Artifact grid** derived from the content (Gerstner): what the columns and rows *mean* is a design decision. **Choose module sizes that give the elements mass**; too many thin columns make a layout look like a chart.\n- **Surfaces**: page, paper, ink, signal colour, grid lines in two or three light greys (on page, while building, on paper). No gradients, no shadows, no particles, no grain (mux grain 0).\n- **Bars and blocks** are flat rects; consecutive cells of one unit merge into one bar, overdrawn 1 px at seams (antialiasing shows hairlines, especially when rotated or scaled).\n- **A secondary voice** can be light-grey elements under the black ones: depth without a second colour.\n- **A 2D camera matrix** (centre, scale, rotation) for all moves.\n\n## 3. Colour logic\n\n- **Paper, ink, greys, and one signal colour.** Only one thing carries the signal colour; that makes it the protagonist. It is the only thing allowed to be inexact.\n- Overprint is allowed: black type on the signal colour.\n- The signal colour can be red, orange, ultramarine or green; choose it for the topic, then never add a second.\n- Examples: `#EAE9E5` page, `#FFFFFF` paper, `#111111` ink, signal `#E30613`; or `#F2F0EA` / `#141414` / signal `#FF5A00`; or `#E9ECEF` / `#0B0B0B` / signal `#1F3FFF`.\n\n## 4. Type & subtitles\n\n- **One family for the whole film**, an OFL neo-grotesque (Archivo, Inter, Schibsted Grotesk, Instrument Sans…), several weights. Letter-spacing ~−2 % at ≥ 90 px. Headlines can be lowercase. Load every weight with `document.fonts.load` before drawing.\n- **Flush left, ragged right**; everything on a grid line; big white space is part of the layout. Giant numerals are **optically** flush left (subtract the glyph's left bearing).\n- **Subtitles are part of the layout**, not a bar at the bottom: each line sits at a column start in the current composition (a small grey lead-in + a large bold statement, or a caption like a museum label), each word clip-revealed on its whisper timestamp. Hold ≥ max(1.8 s, speech + 0.6 s); assert it in code.\n- **Caption rows**: small (~19 px) medium-weight notes with a 1 px rule above; technical notes in a corner (module sizes, counts, a bar counter).\n\n## 5. Motion quality\n\n- **Two curves only**: a precise ease `cubic-bezier(.7,0,.2,1)` for snaps; linear for lines being drawn, playheads and the exception. No overshoot, no spring, no bounce.\n- **Durations are note values** at the film's tempo. A snap starts one note value early and **lands on the beat**.\n- **Entrances are wipes or clip-reveals, never fades**: words rise out of a clip rect from below the baseline and leave upward; lines grow along their length; paper appears by a wipe; big numerals climb in eased steps (\"one module at a time\").\n- **Deletions are knife cuts**: a thin line crosses the element, then the element collapses to its midline.\n- **Ripples are ordered by distance** from their cause, a couple of units per subdivision.\n- **The exception moves differently**: linear, unsnapped, perhaps pausing mid-flight; a coordinate readout beside it can turn from \"on grid\" to \"off grid\".\n- Smooth 24 fps, no stepping: digital precision, not hand-made.\n\n## 6. Camera grammar\n\nA vocabulary, not a route. The camera moves only with the precise ease and only on beats. Opening and ending come from the topic.\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Locked spread | cause (left) → effect (right) | a rule applied; a before/after; a comparison |\n| Hard pan by one page or column | the next step in a system | a sequence; a catalogue; a timeline |\n| Rotate 90° and stop | the same thing read another way | a poster as a score; a chart as a map |\n| Pull out to a wall of artifacts | one programme, many outputs | a brand system; a product range; a series |\n| Push into one module | detail; the unit of the system | a pixel; a letter; a single data point |\n| Grid extends past the page | the system is bigger than the artifact | scale; ambition; a break from constraints |\n| Split frame into equal cells | parallel cases | options; variants; team members |\n| Vertical scroll through a column | reading; a list | a manifesto; a spec sheet; a timetable |\n\nFraming: everything on the grid; the signal element may sit off-grid only when it is being the exception. Transitions are wipes, knife cuts, camera moves and re-flows; never dissolves.\n\n## 7. Sound palette\n\n- **Music with a grid of its own**: a steady pulse whose subdivisions give snap durations. Options: motorik / krautrock kit and bass, minimal techno, marimba or vibraphone patterns, a mechanical piano ostinato, a drum machine with a glockenspiel; one instrument added per new rule is a clear build.\n- **Picture and music can share one data file** (a column → pitch, a row → onset), so a graphic can literally be the score.\n- **Techniques (options)**: drop the drums for the one moment of the exception; a near-silent bar before a reveal; thin the band during a reveal so every note is audible.\n- **Foley follows the materials of print**, dry and close, no reverb: letterpress clack, ruling pen \"tss\", guillotine snick, paper slap and slide, numeral thunk, block snap, felt thump for a landing, rubber stamp, typewriter carriage.\n- **The exception can be the only element that sings** (a sine glide following its position).\n- **Silence**: a hard stop of everything on a downbeat; the next snap reads as an event.\n- **Mix**: voice compressed and ≥ 6 dB above music, music ducked ~10 dB under voice, −14 LUFS.\n- **Voice**: cool, crisp, rule-like sentences; prefer voices with bright consonants.\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **The grid means something.** Columns and rows become a quantity (notes, hours, floors, years). *Fits content like:* a building's floors and rooms; a week's timetable; a city's districts.\n- **Snap = beat.** Every arrival is a percussion hit. *Fits content like:* a product's feature list; the steps of a recipe; a countdown.\n- **Programme.** Rules applied one by one to one artifact, then the same programme generating many. *Fits content like:* a brand identity; a typeface family; a set of stamps.\n- **Extreme scale contrast.** A giant element as chapter card beside tiny notes. *Fits content like:* a record statistic; a year; a price.\n- **The exception.** One element breaks the grid, linear and unsnapped. *Fits content like:* an inventor; an outlier in the data; a rebel employee.\n- **Knife cut.** An element deleted by a line. *Fits content like:* budget cuts; editing a text; removing a feature.\n- **Re-flow.** Everything else rearranges around a change, nearest first. *Fits content like:* a team reorganised; traffic after a road closes; a layout adapting to a phone.\n\n## 9. Pitfalls of the medium\n\n- Too many thin columns look like a chart → fewer, wider modules.\n- A \"better\" composition that isn't obviously better → one strong diagonal with long/short rhythm, a larger signal element, bleeds, type over colour. Merely tilting is not enough.\n- Rotating and labelling at once reads as noise → rotate, hold, then add labels.\n- Merged bars show seams after rotation → overdraw 1 px.\n- Elements that share the camera matrix leak into other shots → draw them only when on screen.\n- Canvas `letterSpacing` affects `measureText` → measure after setting the font.\n- Onsets that fall between frames flicker → put visual onsets on whole frames.\n- Whisper splits or merges words and pads the first word → align by letters, clamp to 0.\n\n## 10. Engine\n\nIn `demo/`: `ease.js` (`cubic-bezier(.7,0,.2,1)`, `snap(t, t_arrive, dur)`, `steps()`, `track()`), `film.js` (layout system, clip-reveal text, knife cuts, bars from a score, rotation reveal, wall of artifacts, caption rows), `main.js` (fonts, whisper word times, `?nosub=1`, `?poster=1`), `score.json` (the shared data file for picture and music), `tools/words.py` and `tools/subs.py` (word timings, asserted subtitle intervals). File list and build steps: [DEMO.md](DEMO.md) \"Build notes\".\n\n## 11. Variation space\n\nYou decide the system, what the grid means, the exception (or none), the signal colour, the opening and the ending. All far from our demo:\n\n- Structures: **a timetable** (a 24-row grid of hours fills with the topic's day, one row per beat); **an alphabet** (A to Z, each letter a module of the topic, the grid completing as a specimen sheet); **a comparison** (two systems side by side on a split spread until one element crosses the gutter).\n- Openings: **a single dot** placed on the page, then the grid growing from it; **the finished artifact** that is then dismantled into its rules; **a giant numeral** filling the frame, which turns out to be a detail of a small layout.\n- Endings: **the empty grid** after every element has been cut away; **a single word** flush left in the corner; **the exception leaves the frame** and the system closes over the space it left.\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n",
+  "published_demo_guide": "# Swiss Motion Graphics — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *Five Rules for a Poster* (44 s) · `swiss-motion.mp4` · source in [`demo/`](demo/)\n\n\nA 30–60 second film: five rules build one concert poster on a grid; a red circle breaks the grid, and the poster turns out to be the score of the music. The demo sets Archivo as its one family.\n\n## Story & structure\n\nPure 2D graphic design animated on a grid: flat white paper, black type and bars, a very light grey and **one** saturated red. It is the language of 1950s–70s Zurich concert posters (Müller-Brockmann, Hofmann, Gerstner, Crouwel) turned into motion the way modern identity systems move (Experimental Jetset, Pentagram): **every element snaps to the grid, every move lands on a beat, nothing bounces**.\n\nThe charm is **rigor with one exception**. The whole frame obeys a system, so the one element that doesn't obey it becomes a character.\n\nNever copy a specific historical poster's composition (no concentric-circle or fan compositions lifted from Müller-Brockmann). Don't use Helvetica or Akzidenz font files. Pick an OFL neo-grotesque (Archivo, Inter, Schibsted Grotesk, Instrument Sans…). Never name a real institution on a poster.\n\nPick stories where **the system itself tells the story**. The demo used all five native powers, the strongest (the grid means something) at the peak:\n\n| Native power | Story use |\n|---|---|\n| **The modular grid** | The grid is the stage and the rulebook. Show it being built (lines draw on the beat), show it briefly in section gaps, and at the peak **make the grid mean something**: in the demo, 7 columns = the 7 notes of A dorian and 16 rows = 16 eighth notes, so the poster *is* the score. |\n| **Snap = beat** | Every element's arrival is a percussion hit: type clack, knife, ruling pen. Picture and music share one coordinate system, not a sync pass after the fact. |\n| **Rules generate design (programme)** | The plot is a set of rules applied one by one to one artifact. End by showing the same programme generating many artifacts (the Gerstner reveal). |\n| **Extreme scale contrast** | A 700 px numeral next to 19 px technical notes. The giant element is the chapter card, the tiny one is texture. |\n| **One signal colour** | Only one thing is red, so red = the protagonist. When it breaks a rule it is the only thing on screen that is not exact. |\n\n**Adapting any topic:** turn it into **a system plus one exception**. A product launch: the product's spec sheet assembles on a grid, then one feature breaks out of it. A company's history: each decade is a rule added to one poster. A love story: two red elements on two different grids, and the film ends when one of them leaves its grid.\n\n**Emotional arc (30–60s):** order being built (curious, crisp) → order complete (correct and a bit dull, *say it*) → hesitation (the red element twitches and snaps back) → the break (the only non-snapped, linear move in the film; drums drop out) → everything else re-flows around it, better (full band back) → the reveal (the grid means something) → scale reveal (same system, many outputs) → back to the hero artifact on the end card.\n\n## Shots\n\nThe \"camera\" is a 2D matrix (centre, scale, rotation). It moves only with the precise ease and only on beats.\n\n| Beat | Camera |\n|---|---|\n| Opening | Locked full frame. One gesture: a red line strikes across and the grid columns grow out of it on sixteenths |\n| Building (rules) | Locked spread, so the viewer reads cause (rule, left) → effect (artifact, right) |\n| The break | Left page slides out, artifact moves to centre-left, grid lines extend across the whole frame (the grid is bigger than the page) |\n| Reveal | **Rotate the artifact 90° in 1.5 beats and stop.** Only then do labels (note names, bar numbers) wipe in, then the playhead sweeps two bars. Each bar turns red on the exact frame of its onset: put onsets on whole frames (multiples of 0.25 s at 24 fps) |\n| Scale reveal | Rotate back while pulling out to a wall of artifacts from the same system |\n| Ending | The red line strikes again and cuts the other artifacts away. Push back to the opening spread, end card on the left page, hero artifact on the right |\n\n- **Two curves only.** Precise ease `cubic-bezier(.7,0,.2,1)` for snaps, linear for lines being drawn, the playhead and the rule-breaker. No overshoot, no spring, no bounce.\n- **Durations are note values** at the film's BPM (120: 1/8 = 0.25 s, 1/16 = 0.125 s). A snap starts one note value early and **lands on the beat**.\n- **Entrances are wipes or clip-reveals, never fades.** Words rise out of a clip rect from below the baseline (1/16 note) and leave upward (1/8 note). Lines grow along their length. Paper appears by a vertical wipe. Big numerals climb in **4 eased steps** (\"one module at a time\").\n- **Deletions are knife cuts.** A 2 px line crosses the element in 1/16, then the element collapses vertically to its midline in 1/8.\n- **Ripples are ordered by distance** from the cause. After the red circle lands, units re-flow two at a time on sixteenths, nearest first.\n- **The exception moves differently.** It is linear, not snapped, and pauses for one eighth mid-flight (a glance back). It grows as it travels. A coordinate readout next to it turns from `col 5.00 row 0.00 · on grid` to red `off grid` with non-integer (even negative) values.\n- Everything renders at a smooth 24 fps. There's no stepping: this style is digital precision, not hand-made.\n\n## Score structure\n\n- **Music**: Motorik / krautrock, 120 BPM, A dorian (not a generic piano-and-strings bed). Layer one instrument per rule:\n  1. hats only;\n  2. + full motorik kit (`drum_kit`: kick 1, 3, 3&; snare 2, 4; closed hat eighths);\n  3. + `electric_bass` eighth-note root pulse;\n  4. + numpy saw arpeggio sixteenths with an opening filter;\n  5. + `glockenspiel` doubled by a soft numpy square lead.\n\n  **Drop the drums for the one bar of the break**, return on the landing. Before the reveal add one bar of near-silence (bass pedal + quarter-note tick). During the reveal keep only kick + bass + melody so every note is audible.\n- **The melody comes from the same JSON as the picture** (`score.json`: column → pitch, row → onset, length → duration). \"The poster is the score\" is true in code, not faked.\n- **Foley follows materials**, dry and close, no reverb:\n  - letterpress clack (metal transient + 3.3 / 5.1 kHz resonances + wooden tray);\n  - ruling pen \"tss\";\n  - guillotine (band-pass sweep + metal snick);\n  - paper slap / slide;\n  - numeral \"thunk\" per step;\n  - block snap;\n  - circle landing (58 Hz felt thump).\n\n  The rule-breaker is the only element that *sings*: a sine glide that follows its position.\n- **Voice**: cool, crisp female narrator, Kokoro `af_sarah` at speed 1.0. It had ~7× the 3–8 kHz consonant energy of `af_kore`. Keep lines rule-like: \"Rule one. Build a grid.\" Check every line with whisper (write numbers as `\"asr\": \"Rule 1, …\"`).\n- **Mix**: voice compressed, music ducked ~−10 dB under voice (voice ≥ 6 dB above music), −14 LUFS.\n\n## Palette & props\n\n- **Frame grid**: 1920×1080, 12 columns, 96 px side margins, 24 px gutters (122 px columns), 24 px baseline. Treat the frame as a **spread**: left page (cols 1–6) = the \"programme\" (numeral, rule text, notes); right page (cols 8–12) = the artifact (poster 706×1008, ratio 0.70 ≈ Swiss world format).\n- **Artifact grid**: derive it from the content (Gerstner). In the demo the poster has 7 columns × 91 px and 16 rows × 40 px, with a 26 px baseline grid in the text zone. I first tried 12 semitone columns: bars were only 43 px wide and the poster looked like a data chart. **Choose module sizes that give the bars mass.**\n- **Palette**: page `#EAE9E5`, paper `#FFFFFF`, ink `#111111`, signal red `#E30613`, grid lines `#CFCEC9` on the page / `#C9C8C2` while building / `#E2E1DC` on paper, secondary bars `#CFCEC9`. No gradients, no shadows, no particles, no grain (mux grain 0).\n- **Type**: one family for the whole film (demo: **Archivo** variable, weights 400–800). Letter-spacing −2.2% at ≥ 90 px. Lowercase headlines (`neue musik`). Rule numerals at ~980 px (700 px figure height), bottom-aligned with the poster's bottom edge, **optically** flush left (subtract the glyph's left bearing). Notes 19 px Medium. Always `document.fonts.load` every weight before drawing.\n- **Composition**: flush left, ragged right. Everything on a grid line. Big white spaces are part of the layout. The final composition must be **visibly bolder** than the \"correct\" one:\n  - one main diagonal with a strong long-short rhythm;\n  - the red element at ~2× scale;\n  - elements **bleeding** off the paper edge;\n  - type overprinting the red circle (black on red).\n  Merely tilting the correct layout is not enough.\n- **Bars as notes**: bar width = column minus 8 px; consecutive cells of one note merge into one bar (overdraw 1 px at the seams or antialiasing shows hairlines, especially when rotated).\n- **The secondary voice** (bass) is light-grey bars under the black ones. They read as a shadow diagonal and give depth without a second colour.\n\n## Titles, subtitles & end card\n\n- **Subtitles are part of the layout**, not a bar at the bottom. Each line sits at column 1 on the spread's left page: the first sentence as a 30 px Medium grey lead-in, the rest as a 76 px Bold statement. Each word clip-reveals on its whisper timestamp. Non-rule lines use Regular weight (\"Perfect. And a little dull.\"). In other shots the line sits at column 1 of that shot, at the artifact's headline baseline or under the wall like a museum label.\n- **Title card**: `Five Rules / for a Poster`, 120 px Bold, two lines flush left, sitting on the opening red line. A 19 px caption row with a 1 px rule above it (`A programme in five steps · 1961 · ♩ = 120`).\n- **Caption row + notes**: top of the left page (title / `Rule 0n / 05` / keyword); bottom of column 5: 2–3 technical notes per rule (`Columns 7 · Rows 16 · Module 91 × 40`). Bottom of column 7: a bar counter `bar 04.3`.\n- **End card**: the opening spread again. `Swiss Motion / Graphics` 120 px, red line under it, `LemoLab × Claude Opus 5.5` 36 px, notes at the bottom, hero poster on the right. The LemoLab sign-off belongs to this library's demo only: a user's film carries no LemoLab credit and no copy of this card.\n\n## Pitfalls we hit (demo record)\n\n- **12 columns looked like a chart.** Grid modules must give the graphic elements mass. We used fewer, wider columns for the artifact and kept the standard 12 columns for the frame.\n- **The \"better\" composition wasn't obviously better.** Four small staircases → one scattered layout wasn't convincing. Fix: one main diagonal with long/short rhythm, 2× red element, bleeds, type over red.\n- **Rotation reveal needs a stop.** Rotating and labelling at the same time read as noise. Order it: rotate (1.5 beats) → hold → grid lines → labels → playhead → sweep.\n- **Merged bars showed seams** after rotation and scaling (antialiasing between adjacent rects). Overdraw 1 px where cells join.\n- **Labels overlapping the header**: hide the caption row before the rotated shot.\n- **Word timings**: whisper splits or merges words (\"type face\"), and `asr_check` reports the first word at −0.6 s (padding). Align by letters and clamp to 0 (`tools/words.py`).\n- **Subtitle rule** (≥ voice + 0.6 s and ≥ 1.8 s): two lines missed by 2 ms. `tools/subs.py` asserts it, so fix by nudging start times.\n- **The wall cut must follow the line**: shrink the wall board from the side the red line enters, in screen space.\n- The other posters on the wall share the camera matrix, so draw them **only** during the wall shot. Otherwise they leak into other shots at ±786 px.\n- Canvas `letterSpacing` also affects `measureText`, so compute widths after setting the font.\n\n## Build notes\n\n```\nstyles/swiss-motion/demo/\n  score.json  grid = score: stiff / final melody, bass, circle, bleeds, timeline\n  ease.js     cubic-bezier(.7,0,.2,1), snap(t, t_arrive, dur), steps(), track()\n  film.js     layout system, rules, poster, circle, reveal, wall, end card, foley events\n  main.js     loads fonts, score, lines, whisper word times; ?nosub=1, ?poster=1\n  lines.json  voice script (af_sarah)          tools/words.py  word timings → subtitle reveal\n  music/score.py  motorik score from score.json   mix.py  foley + ducked voice + music\n  tools/subs.py   subtitle intervals (asserted) → srt     build.sh  one-shot rebuild\n```\n\n1. Design the layout system first: frame grid, artifact grid, what columns and rows *mean*. Write `score.json`.\n2. `node core/render/still.mjs styles/swiss-motion/demo --range 0.5:43.5:1 --out …` then `sheet.py`. Review a 1 s overview plus dense 0.25 s strips around the break and each transition.\n3. `tts.py` → `asr_check.py` (0 mismatches) → `tools/words.py`.\n4. `music/score.py` (onsets from `score.json`; check sweep onsets ≤ 5 ms) → `events.mjs` → `mix.py` (prints voice/music/foley dB per line).\n5. `video.mjs --workers 3` (1056 frames in ~12 s) → `mux.sh … 24 0`. Or simply `sh styles/swiss-motion/demo/build.sh` (~55 s from zero).\n",
+  "original_credits": "Five Rules for a Poster — Swiss Motion Graphics · LemoLab × Claude Opus 5.5\n\nPicture, typography, motion, score composition, foley: generated by code in this folder (original).\n\nFonts (SIL Open Font License 1.1):\n- Archivo — The Archivo Project Authors (Omnibus-Type), https://github.com/Omnibus-Type/Archivo  (fonts/OFL-Archivo.txt)\n- UnifrakturMaguntia — j. 'mach' wust, Peter Wiegel  (fonts/OFL-UnifrakturMaguntia.txt) — only in the \"wrong typeface\" gag\n- DM Serif Display — Colophon Foundry / Google, based on Source Serif by Adobe  (fonts/OFL-DMSerifDisplay.txt) — only in the \"wrong typeface\" gag\n\nMusic samples:\n- Drums: \"MuldjordKit\" by Lars Muldjord (drumgizmo.org), FreePats version, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)\n- Electric bass: FreePats project (freepats.zenvoid.org), CC0 1.0\n- Glockenspiel: Versilian Community Sample Library (Versilian Studios), CC0 1.0\n- Arpeggio synth, square lead, glide: numpy synthesis (original)\n\nVoice: Kokoro-82M (Apache-2.0) via kokoro-onnx, voice af_sarah.\nSpeech check: faster-whisper (MIT).\n",
+  "asset_reuse_recommendations": [
+    "Reuse Archivo, UnifrakturMaguntia and DM Serif Display fonts under supplied OFL texts.",
+    "Attribute generic ease.js cubic-bezier helpers, permitted to reuse. New scene assembly must not import film.js/main.js/renderFilm.",
+    "Published score-grid values are required graphical reference data, explicitly attributed. Compose fresh accompaniment and synthesize new audio, no master-track reuse.",
+    "Recreate af_sarah voice with same exact lines, timing windows and crisp delivery; retain published word offsets as visual planning evidence, replace with fresh alignment if needed."
+  ],
+  "v1_deficits": [
+    "20-second replacement omitted24seconds and full original narration.",
+    "Original detailed wrong-font gag, ten-line content, four knife cuts, reflow, labeled score and five genuinely distinct wall artifacts were not preserved.",
+    "Generic score failed instrument-per-rule, silence/linear-glide exception and literal grid-to-melody structure."
+  ],
+  "status": "canonical-source-and-full-sequence-audited"
+}

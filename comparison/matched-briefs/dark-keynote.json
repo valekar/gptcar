@@ -1,0 +1,2064 @@
+{
+  "slug": "dark-keynote",
+  "title": "Room to Think",
+  "premise": "Launch film for Tidy, a fictional app: one buried cursor snaps hundreds of windows back into place.",
+  "provenance": {
+    "original_chat_prompt_available": false,
+    "published_style_prompt_path": "styles/dark-keynote/STYLE.md",
+    "published_demo_guide_is_verbatim": true,
+    "scene_prompt_status": "Reconstruction from complete published STYLE/DEMO, exact narration/timing data and complete decoded-film contact sheets; not a recovered original chat prompt.",
+    "user_override": "User expressly requests original story/script/arc; STYLE/DEMO usual nonreuse admonition is overridden for reference-matched work."
+  },
+  "sources": [
+    {
+      "path": "styles/dark-keynote/STYLE.md",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/dark-keynote/STYLE.md",
+      "sha256": "b0791b5e95f56bf46c621e6064d426ebbee810c7515fb87e951b73668a2a0d24"
+    },
+    {
+      "path": "styles/dark-keynote/DEMO.md",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/dark-keynote/DEMO.md",
+      "sha256": "d0da5c1e25642b2b68269088e4fe7c7b1dbf361a9cf3590d3e2509dfb55b8bf0"
+    },
+    {
+      "path": "styles/dark-keynote/style.json",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/dark-keynote/style.json",
+      "sha256": "c992e65414bb4e96ff6e0eeeba2cfc7a795d332fadfb3baa5301faa0b0c6b992"
+    },
+    {
+      "path": "styles/dark-keynote/demo/CREDITS",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/dark-keynote/demo/CREDITS",
+      "sha256": "0c28931a2414b40a65f1794733d2342e0f59e4ae1183fc090aa11125bb1fc456"
+    },
+    {
+      "path": "styles/dark-keynote/demo/lines.json",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/dark-keynote/demo/lines.json",
+      "sha256": "58630d9810da93bd667c736a5643b27de1d09f273eb754257fe72edb85988d5e"
+    },
+    {
+      "path": "styles/dark-keynote/demo/timeline.json",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/dark-keynote/demo/timeline.json",
+      "sha256": "62110ff53296bba113b18a125656753a6679ca21fc4467bb33798ea3b8061433"
+    },
+    {
+      "path": "styles/dark-keynote/dark-keynote.srt",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/dark-keynote/dark-keynote.srt",
+      "sha256": "75b8f5f380728a1f60caacc25a1b06c054c9da6b55bcdc2ea2f040642b3f210f"
+    }
+  ],
+  "delivery": {
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": 1008,
+    "duration": 42.005
+  },
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "See published DEMO; delivery fps above overrides rounded catalogue values.",
+    "internal_raster": "See style prompt material requirements for native pixel/CRT/internal compositor resolutions."
+  },
+  "reference": {
+    "slug": "dark-keynote",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/dark-keynote.mp4",
+    "sha256": "1a441812461fe54e10572efde07b28b1e69c90679eb963958a896f9c9b04b9a4",
+    "duration": 42.005,
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": "1008",
+    "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+    "frames": 42,
+    "sheets": 4
+  },
+  "inspection": {
+    "all_contact_sheets_inspected": true,
+    "sheet_count": 4,
+    "regular_frame_count": 42,
+    "sheet_paths": [
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/dark-keynote/sheets/sheet-01.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/dark-keynote/sheets/sheet-02.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/dark-keynote/sheets/sheet-03.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/dark-keynote/sheets/sheet-04.jpg"
+    ],
+    "sampling": "All1fps decoded samples reviewed across whole film, plus published source timing for short transitions. Exact shot-boundary decoding required before film timing acceptance; approximate sheet labels are not frame-accurate.",
+    "every_encoded_frame_claimed": false
+  },
+  "materials_characters_typography": "Dark charcoal cinematic software surface, subtle depth and edge lighting, Inter/Inter Tight/Jet Brains Mono. Cursor is a lime COLOR A TOKEN living caret and only persistent accent.264 actual file/photo/mail objects have readable labels, tiny vector mountain photos and notification panels. Problem red disappears after press. App Tidy is fictional.",
+  "audio_recreation": {
+    "original_master_audio_reused": false,
+    "direction": "120 BPM phase-shifting marimba/vibraphone 12-note patterns with subtle synth/bass pulse; progressively chaotic off-grid drift. True zero 15–16, clean Amaj 9 press resolves patterns to lockstep. Thin instruments 32–34 for echo; exact af_kore .95 script.",
+    "narration_published_verbatim": [
+      {
+        "id": "l1",
+        "text": "Your desktop.",
+        "voice": "af_kore",
+        "speed": 0.95,
+        "start": 4.25,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "l2",
+        "text": "Your photos.",
+        "voice": "af_kore",
+        "speed": 0.95,
+        "start": 6.25,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "l3",
+        "text": "Your inbox.",
+        "voice": "af_kore",
+        "speed": 0.95,
+        "start": 8.25,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "l4",
+        "text": "Meet Tidy.",
+        "voice": "af_kore",
+        "speed": 0.95,
+        "start": 20.5,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "l5",
+        "text": "One press, and everything finds its place.",
+        "voice": "af_kore",
+        "speed": 0.95,
+        "start": 23,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "l6",
+        "text": "Room to think.",
+        "voice": "af_kore",
+        "speed": 0.95,
+        "onscreen": true,
+        "start": 34.55,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "end": 3,
+      "title": "Room to think",
+      "prompt": "A lone vertical lime caret types Room to think. on charcoal from.75; tiny TIDY · A LAUNCH FILM above. Return 2.5 and next I 2.75 begin a thought but are interrupted."
+    },
+    {
+      "start": 3,
+      "end": 6.25,
+      "title": "Your desktop",
+      "prompt": "Three huge notifications Messages Are you there?, Calendar Stand up in 5 min, Reminders Pay the in voice enter 3/3.5/3.75. Continuous camera pulls 4–12 from 5× to 1× revealing PDFs, text files, budget copies, final_FINAL variants. Readable icon pile, not identical squares."
+    },
+    {
+      "start": 6.25,
+      "end": 8.25,
+      "title": "Your photos",
+      "prompt": "Distinct mountain-image snapshots with orange/purple/blue gradients, rotated masses enter; same camera still pulls and lime caret gets buried. Exact photos VO."
+    },
+    {
+      "start": 8.25,
+      "end": 12,
+      "title": "Your inbox",
+      "prompt": "Mail windows/browser tabs/notifications multiply into 264 objects. Tiny unread red counters, multiple real window-like shapes and mountaintops fill nearly entire frame. Keep centered title becoming lost in clutter."
+    },
+    {
+      "start": 12,
+      "end": 13.5,
+      "title": "Problem inserts",
+      "prompt": "Quick camera inserts 12 unread 999+ mail icon,12.5 browser 148 tabs,13 storage almost full 0.2 GB left,13.5 swallowed caret. Use exact archived source interface text; no new arbitrary stats."
+    },
+    {
+      "start": 13.5,
+      "end": 16,
+      "title": "One second to breathe",
+      "prompt": "Camera returns to full chaos 13.5; caret strains upward under pile. Freeze all UI and sound 15–16. Caret winds up 15.5 then presses at 16."
+    },
+    {
+      "start": 16,
+      "end": 19.5,
+      "title": "Objects become order",
+      "prompt": "Expanding lime ring organizes same 264 objects into crisp rectangular rows 17, then sorts by categories 18, app chrome forms 19. Objects visibly travel continuous paths with three category trails; no swap to unrelated screenshot."
+    },
+    {
+      "start": 19.5,
+      "end": 24.5,
+      "title": "Meet Tidy",
+      "prompt": "Brief dim 19.5, product reveal 20 with perspective−24° easing to 0 by 24.5 and 1.3 s light sweep. Tidy top-left, lime Tidy up button, Desktop/Photos/Inbox sidebar and rows of exact same assets. Three checks 21.75/22.25/22.75. Exact lines Meet Tidy. /One press, and everything finds its place."
+    },
+    {
+      "start": 25,
+      "end": 29.5,
+      "title": "The promise",
+      "prompt": "Dive from bottom app counter into giant rolling digits 26; lock individual digits 26.5–27 to 12,408 files. Second line 28 Sorted in 0.8 seconds. with lime 0.8 and thin 0→1 s timing gauge. Top tiny TIDY · FIRST RUN. This is a fictional product claim, not tested benchmark."
+    },
+    {
+      "start": 29.5,
+      "end": 33,
+      "title": "Unbuild to the caret",
+      "prompt": "Back to app 29.5 then retract chrome 30, category labels 30.5, grid items 31/31.5/32 in beat groups; interface outline turns to initial lime caret 32.5. Preserve same object causality."
+    },
+    {
+      "start": 33,
+      "end": 37,
+      "title": "Room to think, again",
+      "prompt": "Near-silence 33–34. Original center framing returns 34, caret calmly types Room to think.34.5 with last narration 34.55. No crowded objects or red remain."
+    },
+    {
+      "start": 37,
+      "end": 42,
+      "title": "End lockup",
+      "prompt": "Small Room to Think ·Launch film for Tidy, a fictional app /Dark Tech Keynote /original provenance and font/music licences under center title. Fade 40, caret off 41.5, end 42."
+    }
+  ],
+  "published_timing_tables": {
+    "styles/dark-keynote/demo/timeline.json": {
+      "bpm": 120,
+      "beat": 0.5,
+      "bar": 2,
+      "s16": 0.125,
+      "dur": 42,
+      "P": [
+        57,
+        64,
+        71,
+        64,
+        73,
+        64,
+        57,
+        64,
+        71,
+        64,
+        74,
+        73
+      ],
+      "K": {
+        "typeStart": 0.75,
+        "title": "Room to think.",
+        "ret": 2.5,
+        "typeI": 2.75,
+        "ding": [
+          3,
+          3.5,
+          3.75
+        ],
+        "pullStart": 4,
+        "pullEnd": 12,
+        "vo": {
+          "l1": 4.25,
+          "l2": 6.25,
+          "l3": 8.25,
+          "l4": 20.5,
+          "l5": 23,
+          "l6": 34.55
+        },
+        "inserts": [
+          12,
+          12.5,
+          13,
+          13.5
+        ],
+        "drown": 13.5,
+        "freeze": 15,
+        "stretch": 15.5,
+        "press": 16,
+        "gridShow": 17,
+        "sort": 18,
+        "chrome": 19,
+        "dim": 19.5,
+        "reveal": 20,
+        "checks": [
+          21.75,
+          22.25,
+          22.75
+        ],
+        "rotZero": 24.5,
+        "pushNum": 25,
+        "num": 26,
+        "locks": [
+          26.5,
+          26.625,
+          26.75,
+          26.875,
+          27
+        ],
+        "files": 27,
+        "line2": 28,
+        "numBack": 29.5,
+        "retract": [
+          30,
+          30.5,
+          31,
+          31.5,
+          32
+        ],
+        "toCaret": 32.5,
+        "silence2": 33,
+        "echo": 34,
+        "echoType": 34.5,
+        "endCard": 37,
+        "endFade": 40,
+        "caretOff": 41.5
+      },
+      "voice1": [
+        {
+          "t": 4,
+          "k": 0,
+          "i": 0,
+          "m": 57
+        },
+        {
+          "t": 4.125,
+          "k": 1,
+          "i": 1,
+          "m": 64
+        },
+        {
+          "t": 4.25,
+          "k": 2,
+          "i": 2,
+          "m": 71
+        },
+        {
+          "t": 4.375,
+          "k": 3,
+          "i": 3,
+          "m": 64
+        },
+        {
+          "t": 4.5,
+          "k": 4,
+          "i": 4,
+          "m": 73
+        },
+        {
+          "t": 4.625,
+          "k": 5,
+          "i": 5,
+          "m": 64
+        },
+        {
+          "t": 4.75,
+          "k": 6,
+          "i": 6,
+          "m": 57
+        },
+        {
+          "t": 4.875,
+          "k": 7,
+          "i": 7,
+          "m": 64
+        },
+        {
+          "t": 5,
+          "k": 8,
+          "i": 8,
+          "m": 71
+        },
+        {
+          "t": 5.125,
+          "k": 9,
+          "i": 9,
+          "m": 64
+        },
+        {
+          "t": 5.25,
+          "k": 10,
+          "i": 10,
+          "m": 74
+        },
+        {
+          "t": 5.375,
+          "k": 11,
+          "i": 11,
+          "m": 73
+        },
+        {
+          "t": 5.5,
+          "k": 12,
+          "i": 0,
+          "m": 57
+        },
+        {
+          "t": 5.625,
+          "k": 13,
+          "i": 1,
+          "m": 64
+        },
+        {
+          "t": 5.75,
+          "k": 14,
+          "i": 2,
+          "m": 71
+        },
+        {
+          "t": 5.875,
+          "k": 15,
+          "i": 3,
+          "m": 64
+        },
+        {
+          "t": 6,
+          "k": 16,
+          "i": 4,
+          "m": 73
+        },
+        {
+          "t": 6.125,
+          "k": 17,
+          "i": 5,
+          "m": 64
+        },
+        {
+          "t": 6.25,
+          "k": 18,
+          "i": 6,
+          "m": 57
+        },
+        {
+          "t": 6.375,
+          "k": 19,
+          "i": 7,
+          "m": 64
+        },
+        {
+          "t": 6.5,
+          "k": 20,
+          "i": 8,
+          "m": 71
+        },
+        {
+          "t": 6.625,
+          "k": 21,
+          "i": 9,
+          "m": 64
+        },
+        {
+          "t": 6.75,
+          "k": 22,
+          "i": 10,
+          "m": 74
+        },
+        {
+          "t": 6.875,
+          "k": 23,
+          "i": 11,
+          "m": 73
+        },
+        {
+          "t": 7,
+          "k": 24,
+          "i": 0,
+          "m": 57
+        },
+        {
+          "t": 7.125,
+          "k": 25,
+          "i": 1,
+          "m": 64
+        },
+        {
+          "t": 7.25,
+          "k": 26,
+          "i": 2,
+          "m": 71
+        },
+        {
+          "t": 7.375,
+          "k": 27,
+          "i": 3,
+          "m": 64
+        },
+        {
+          "t": 7.5,
+          "k": 28,
+          "i": 4,
+          "m": 73
+        },
+        {
+          "t": 7.625,
+          "k": 29,
+          "i": 5,
+          "m": 64
+        },
+        {
+          "t": 7.75,
+          "k": 30,
+          "i": 6,
+          "m": 57
+        },
+        {
+          "t": 7.875,
+          "k": 31,
+          "i": 7,
+          "m": 64
+        },
+        {
+          "t": 8,
+          "k": 32,
+          "i": 8,
+          "m": 71
+        },
+        {
+          "t": 8.125,
+          "k": 33,
+          "i": 9,
+          "m": 64
+        },
+        {
+          "t": 8.25,
+          "k": 34,
+          "i": 10,
+          "m": 74
+        },
+        {
+          "t": 8.375,
+          "k": 35,
+          "i": 11,
+          "m": 73
+        },
+        {
+          "t": 8.5,
+          "k": 36,
+          "i": 0,
+          "m": 57
+        },
+        {
+          "t": 8.625,
+          "k": 37,
+          "i": 1,
+          "m": 64
+        },
+        {
+          "t": 8.75,
+          "k": 38,
+          "i": 2,
+          "m": 71
+        },
+        {
+          "t": 8.875,
+          "k": 39,
+          "i": 3,
+          "m": 64
+        },
+        {
+          "t": 9,
+          "k": 40,
+          "i": 4,
+          "m": 73
+        },
+        {
+          "t": 9.125,
+          "k": 41,
+          "i": 5,
+          "m": 64
+        },
+        {
+          "t": 9.25,
+          "k": 42,
+          "i": 6,
+          "m": 57
+        },
+        {
+          "t": 9.375,
+          "k": 43,
+          "i": 7,
+          "m": 64
+        },
+        {
+          "t": 9.5,
+          "k": 44,
+          "i": 8,
+          "m": 71
+        },
+        {
+          "t": 9.625,
+          "k": 45,
+          "i": 9,
+          "m": 64
+        },
+        {
+          "t": 9.75,
+          "k": 46,
+          "i": 10,
+          "m": 74
+        },
+        {
+          "t": 9.875,
+          "k": 47,
+          "i": 11,
+          "m": 73
+        },
+        {
+          "t": 10,
+          "k": 48,
+          "i": 0,
+          "m": 57
+        },
+        {
+          "t": 10.125,
+          "k": 49,
+          "i": 1,
+          "m": 64
+        },
+        {
+          "t": 10.25,
+          "k": 50,
+          "i": 2,
+          "m": 71
+        },
+        {
+          "t": 10.375,
+          "k": 51,
+          "i": 3,
+          "m": 64
+        },
+        {
+          "t": 10.5,
+          "k": 52,
+          "i": 4,
+          "m": 73
+        },
+        {
+          "t": 10.625,
+          "k": 53,
+          "i": 5,
+          "m": 64
+        },
+        {
+          "t": 10.75,
+          "k": 54,
+          "i": 6,
+          "m": 57
+        },
+        {
+          "t": 10.875,
+          "k": 55,
+          "i": 7,
+          "m": 64
+        },
+        {
+          "t": 11,
+          "k": 56,
+          "i": 8,
+          "m": 71
+        },
+        {
+          "t": 11.125,
+          "k": 57,
+          "i": 9,
+          "m": 64
+        },
+        {
+          "t": 11.25,
+          "k": 58,
+          "i": 10,
+          "m": 74
+        },
+        {
+          "t": 11.375,
+          "k": 59,
+          "i": 11,
+          "m": 73
+        },
+        {
+          "t": 11.5,
+          "k": 60,
+          "i": 0,
+          "m": 57
+        },
+        {
+          "t": 11.625,
+          "k": 61,
+          "i": 1,
+          "m": 64
+        },
+        {
+          "t": 11.75,
+          "k": 62,
+          "i": 2,
+          "m": 71
+        },
+        {
+          "t": 11.875,
+          "k": 63,
+          "i": 3,
+          "m": 64
+        },
+        {
+          "t": 12,
+          "k": 64,
+          "i": 4,
+          "m": 73
+        },
+        {
+          "t": 12.125,
+          "k": 65,
+          "i": 5,
+          "m": 64
+        },
+        {
+          "t": 12.25,
+          "k": 66,
+          "i": 6,
+          "m": 57
+        },
+        {
+          "t": 12.375,
+          "k": 67,
+          "i": 7,
+          "m": 64
+        },
+        {
+          "t": 12.5,
+          "k": 68,
+          "i": 8,
+          "m": 71
+        },
+        {
+          "t": 12.625,
+          "k": 69,
+          "i": 9,
+          "m": 64
+        },
+        {
+          "t": 12.75,
+          "k": 70,
+          "i": 10,
+          "m": 74
+        },
+        {
+          "t": 12.875,
+          "k": 71,
+          "i": 11,
+          "m": 73
+        },
+        {
+          "t": 13,
+          "k": 72,
+          "i": 0,
+          "m": 57
+        },
+        {
+          "t": 13.125,
+          "k": 73,
+          "i": 1,
+          "m": 64
+        },
+        {
+          "t": 13.25,
+          "k": 74,
+          "i": 2,
+          "m": 71
+        },
+        {
+          "t": 13.375,
+          "k": 75,
+          "i": 3,
+          "m": 64
+        },
+        {
+          "t": 13.5,
+          "k": 76,
+          "i": 4,
+          "m": 73
+        },
+        {
+          "t": 13.625,
+          "k": 77,
+          "i": 5,
+          "m": 64
+        },
+        {
+          "t": 13.75,
+          "k": 78,
+          "i": 6,
+          "m": 57
+        },
+        {
+          "t": 13.875,
+          "k": 79,
+          "i": 7,
+          "m": 64
+        },
+        {
+          "t": 14,
+          "k": 80,
+          "i": 8,
+          "m": 71
+        },
+        {
+          "t": 14.125,
+          "k": 81,
+          "i": 9,
+          "m": 64
+        },
+        {
+          "t": 14.25,
+          "k": 82,
+          "i": 10,
+          "m": 74
+        },
+        {
+          "t": 14.375,
+          "k": 83,
+          "i": 11,
+          "m": 73
+        },
+        {
+          "t": 14.5,
+          "k": 84,
+          "i": 0,
+          "m": 57
+        },
+        {
+          "t": 14.625,
+          "k": 85,
+          "i": 1,
+          "m": 64
+        },
+        {
+          "t": 14.75,
+          "k": 86,
+          "i": 2,
+          "m": 71
+        },
+        {
+          "t": 14.875,
+          "k": 87,
+          "i": 3,
+          "m": 64
+        }
+      ],
+      "voice2": [
+        {
+          "t": 6,
+          "k": 0,
+          "i": 0,
+          "m": 57
+        },
+        {
+          "t": 6.125,
+          "k": 1,
+          "i": 1,
+          "m": 64
+        },
+        {
+          "t": 6.25,
+          "k": 2,
+          "i": 2,
+          "m": 71
+        },
+        {
+          "t": 6.375,
+          "k": 3,
+          "i": 3,
+          "m": 64
+        },
+        {
+          "t": 6.5,
+          "k": 4,
+          "i": 4,
+          "m": 73
+        },
+        {
+          "t": 6.625,
+          "k": 5,
+          "i": 5,
+          "m": 64
+        },
+        {
+          "t": 6.75,
+          "k": 6,
+          "i": 6,
+          "m": 57
+        },
+        {
+          "t": 6.875,
+          "k": 7,
+          "i": 7,
+          "m": 64
+        },
+        {
+          "t": 7,
+          "k": 8,
+          "i": 8,
+          "m": 71
+        },
+        {
+          "t": 7.125,
+          "k": 9,
+          "i": 9,
+          "m": 64
+        },
+        {
+          "t": 7.25,
+          "k": 10,
+          "i": 10,
+          "m": 74
+        },
+        {
+          "t": 7.375,
+          "k": 11,
+          "i": 11,
+          "m": 73
+        },
+        {
+          "t": 7.5,
+          "k": 12,
+          "i": 0,
+          "m": 57
+        },
+        {
+          "t": 7.625,
+          "k": 13,
+          "i": 1,
+          "m": 64
+        },
+        {
+          "t": 7.75,
+          "k": 14,
+          "i": 2,
+          "m": 71
+        },
+        {
+          "t": 7.875,
+          "k": 15,
+          "i": 3,
+          "m": 64
+        },
+        {
+          "t": 8,
+          "k": 16,
+          "i": 4,
+          "m": 73
+        },
+        {
+          "t": 8.125,
+          "k": 17,
+          "i": 5,
+          "m": 64
+        },
+        {
+          "t": 8.2495,
+          "k": 18,
+          "i": 6,
+          "m": 57
+        },
+        {
+          "t": 8.3735,
+          "k": 19,
+          "i": 7,
+          "m": 64
+        },
+        {
+          "t": 8.4975,
+          "k": 20,
+          "i": 8,
+          "m": 71
+        },
+        {
+          "t": 8.621,
+          "k": 21,
+          "i": 9,
+          "m": 64
+        },
+        {
+          "t": 8.744,
+          "k": 22,
+          "i": 10,
+          "m": 74
+        },
+        {
+          "t": 8.867,
+          "k": 23,
+          "i": 11,
+          "m": 73
+        },
+        {
+          "t": 8.9895,
+          "k": 24,
+          "i": 0,
+          "m": 57
+        },
+        {
+          "t": 9.1115,
+          "k": 25,
+          "i": 1,
+          "m": 64
+        },
+        {
+          "t": 9.233,
+          "k": 26,
+          "i": 2,
+          "m": 71
+        },
+        {
+          "t": 9.3545,
+          "k": 27,
+          "i": 3,
+          "m": 64
+        },
+        {
+          "t": 9.476,
+          "k": 28,
+          "i": 4,
+          "m": 73
+        },
+        {
+          "t": 9.5965,
+          "k": 29,
+          "i": 5,
+          "m": 64
+        },
+        {
+          "t": 9.717,
+          "k": 30,
+          "i": 6,
+          "m": 57
+        },
+        {
+          "t": 9.8375,
+          "k": 31,
+          "i": 7,
+          "m": 64
+        },
+        {
+          "t": 9.957,
+          "k": 32,
+          "i": 8,
+          "m": 71
+        },
+        {
+          "t": 10.077,
+          "k": 33,
+          "i": 9,
+          "m": 64
+        },
+        {
+          "t": 10.1965,
+          "k": 34,
+          "i": 10,
+          "m": 74
+        },
+        {
+          "t": 10.316,
+          "k": 35,
+          "i": 11,
+          "m": 73
+        },
+        {
+          "t": 10.435,
+          "k": 36,
+          "i": 0,
+          "m": 57
+        },
+        {
+          "t": 10.5545,
+          "k": 37,
+          "i": 1,
+          "m": 64
+        },
+        {
+          "t": 10.674,
+          "k": 38,
+          "i": 2,
+          "m": 71
+        },
+        {
+          "t": 10.793,
+          "k": 39,
+          "i": 3,
+          "m": 64
+        },
+        {
+          "t": 10.912,
+          "k": 40,
+          "i": 4,
+          "m": 73
+        },
+        {
+          "t": 11.031,
+          "k": 41,
+          "i": 5,
+          "m": 64
+        },
+        {
+          "t": 11.15,
+          "k": 42,
+          "i": 6,
+          "m": 57
+        },
+        {
+          "t": 11.269,
+          "k": 43,
+          "i": 7,
+          "m": 64
+        },
+        {
+          "t": 11.388,
+          "k": 44,
+          "i": 8,
+          "m": 71
+        },
+        {
+          "t": 11.507,
+          "k": 45,
+          "i": 9,
+          "m": 64
+        },
+        {
+          "t": 11.6255,
+          "k": 46,
+          "i": 10,
+          "m": 74
+        },
+        {
+          "t": 11.744,
+          "k": 47,
+          "i": 11,
+          "m": 73
+        },
+        {
+          "t": 11.863,
+          "k": 48,
+          "i": 0,
+          "m": 57
+        },
+        {
+          "t": 11.9815,
+          "k": 49,
+          "i": 1,
+          "m": 64
+        },
+        {
+          "t": 12.1,
+          "k": 50,
+          "i": 2,
+          "m": 71
+        },
+        {
+          "t": 12.218,
+          "k": 51,
+          "i": 3,
+          "m": 64
+        },
+        {
+          "t": 12.3365,
+          "k": 52,
+          "i": 4,
+          "m": 73
+        },
+        {
+          "t": 12.455,
+          "k": 53,
+          "i": 5,
+          "m": 64
+        },
+        {
+          "t": 12.573,
+          "k": 54,
+          "i": 6,
+          "m": 57
+        },
+        {
+          "t": 12.691,
+          "k": 55,
+          "i": 7,
+          "m": 64
+        },
+        {
+          "t": 12.809,
+          "k": 56,
+          "i": 8,
+          "m": 71
+        },
+        {
+          "t": 12.927,
+          "k": 57,
+          "i": 9,
+          "m": 64
+        },
+        {
+          "t": 13.045,
+          "k": 58,
+          "i": 10,
+          "m": 74
+        },
+        {
+          "t": 13.163,
+          "k": 59,
+          "i": 11,
+          "m": 73
+        },
+        {
+          "t": 13.2805,
+          "k": 60,
+          "i": 0,
+          "m": 57
+        },
+        {
+          "t": 13.3985,
+          "k": 61,
+          "i": 1,
+          "m": 64
+        },
+        {
+          "t": 13.516,
+          "k": 62,
+          "i": 2,
+          "m": 71
+        },
+        {
+          "t": 13.634,
+          "k": 63,
+          "i": 3,
+          "m": 64
+        },
+        {
+          "t": 13.7515,
+          "k": 64,
+          "i": 4,
+          "m": 73
+        },
+        {
+          "t": 13.869,
+          "k": 65,
+          "i": 5,
+          "m": 64
+        },
+        {
+          "t": 13.986,
+          "k": 66,
+          "i": 6,
+          "m": 57
+        },
+        {
+          "t": 14.103,
+          "k": 67,
+          "i": 7,
+          "m": 64
+        },
+        {
+          "t": 14.2185,
+          "k": 68,
+          "i": 8,
+          "m": 71
+        },
+        {
+          "t": 14.333,
+          "k": 69,
+          "i": 9,
+          "m": 64
+        },
+        {
+          "t": 14.4465,
+          "k": 70,
+          "i": 10,
+          "m": 74
+        },
+        {
+          "t": 14.5585,
+          "k": 71,
+          "i": 11,
+          "m": 73
+        },
+        {
+          "t": 14.6695,
+          "k": 72,
+          "i": 0,
+          "m": 57
+        },
+        {
+          "t": 14.7795,
+          "k": 73,
+          "i": 1,
+          "m": 64
+        },
+        {
+          "t": 14.888,
+          "k": 74,
+          "i": 2,
+          "m": 71
+        },
+        {
+          "t": 14.996,
+          "k": 75,
+          "i": 3,
+          "m": 64
+        }
+      ],
+      "voice3": [
+        {
+          "t": 10.266,
+          "k": 2,
+          "i": 2,
+          "m": 83
+        },
+        {
+          "t": 10.532,
+          "k": 4,
+          "i": 4,
+          "m": 85
+        },
+        {
+          "t": 11.33,
+          "k": 10,
+          "i": 10,
+          "m": 86
+        },
+        {
+          "t": 11.463,
+          "k": 11,
+          "i": 11,
+          "m": 85
+        },
+        {
+          "t": 11.862,
+          "k": 14,
+          "i": 2,
+          "m": 83
+        },
+        {
+          "t": 12.128,
+          "k": 16,
+          "i": 4,
+          "m": 85
+        },
+        {
+          "t": 12.926,
+          "k": 22,
+          "i": 10,
+          "m": 86
+        },
+        {
+          "t": 13.059,
+          "k": 23,
+          "i": 11,
+          "m": 85
+        },
+        {
+          "t": 13.4575,
+          "k": 26,
+          "i": 2,
+          "m": 83
+        },
+        {
+          "t": 13.7235,
+          "k": 28,
+          "i": 4,
+          "m": 85
+        },
+        {
+          "t": 14.5055,
+          "k": 34,
+          "i": 10,
+          "m": 86
+        },
+        {
+          "t": 14.6295,
+          "k": 35,
+          "i": 11,
+          "m": 85
+        },
+        {
+          "t": 14.991,
+          "k": 38,
+          "i": 2,
+          "m": 83
+        }
+      ],
+      "voiceClean": [
+        {
+          "t": 18,
+          "k": 0,
+          "i": 0,
+          "m": 57,
+          "v": 0.55
+        },
+        {
+          "t": 18.125,
+          "k": 1,
+          "i": 1,
+          "m": 64,
+          "v": 0.55
+        },
+        {
+          "t": 18.25,
+          "k": 2,
+          "i": 2,
+          "m": 71,
+          "v": 0.55
+        },
+        {
+          "t": 18.375,
+          "k": 3,
+          "i": 3,
+          "m": 64,
+          "v": 0.55
+        },
+        {
+          "t": 18.5,
+          "k": 4,
+          "i": 4,
+          "m": 73,
+          "v": 0.55
+        },
+        {
+          "t": 18.625,
+          "k": 5,
+          "i": 5,
+          "m": 64,
+          "v": 0.55
+        },
+        {
+          "t": 18.75,
+          "k": 6,
+          "i": 6,
+          "m": 57,
+          "v": 0.55
+        },
+        {
+          "t": 18.875,
+          "k": 7,
+          "i": 7,
+          "m": 64,
+          "v": 0.55
+        },
+        {
+          "t": 19,
+          "k": 8,
+          "i": 8,
+          "m": 71,
+          "v": 0.55
+        },
+        {
+          "t": 19.125,
+          "k": 9,
+          "i": 9,
+          "m": 64,
+          "v": 0.55
+        },
+        {
+          "t": 19.25,
+          "k": 10,
+          "i": 10,
+          "m": 74,
+          "v": 0.55
+        },
+        {
+          "t": 19.375,
+          "k": 11,
+          "i": 11,
+          "m": 73,
+          "v": 0.55
+        },
+        {
+          "t": 19.5,
+          "k": 12,
+          "i": 0,
+          "m": 57,
+          "v": 0.55
+        },
+        {
+          "t": 19.625,
+          "k": 13,
+          "i": 1,
+          "m": 64,
+          "v": 0.55
+        },
+        {
+          "t": 19.75,
+          "k": 14,
+          "i": 2,
+          "m": 71,
+          "v": 0.55
+        },
+        {
+          "t": 19.875,
+          "k": 15,
+          "i": 3,
+          "m": 64,
+          "v": 0.55
+        },
+        {
+          "t": 20,
+          "k": 16,
+          "i": 4,
+          "m": 73,
+          "v": 0.32
+        },
+        {
+          "t": 20.125,
+          "k": 17,
+          "i": 5,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 20.25,
+          "k": 18,
+          "i": 6,
+          "m": 57,
+          "v": 0.32
+        },
+        {
+          "t": 20.375,
+          "k": 19,
+          "i": 7,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 20.5,
+          "k": 20,
+          "i": 8,
+          "m": 71,
+          "v": 0.32
+        },
+        {
+          "t": 20.625,
+          "k": 21,
+          "i": 9,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 20.75,
+          "k": 22,
+          "i": 10,
+          "m": 74,
+          "v": 0.32
+        },
+        {
+          "t": 20.875,
+          "k": 23,
+          "i": 11,
+          "m": 73,
+          "v": 0.32
+        },
+        {
+          "t": 21,
+          "k": 24,
+          "i": 0,
+          "m": 57,
+          "v": 0.32
+        },
+        {
+          "t": 21.125,
+          "k": 25,
+          "i": 1,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 21.25,
+          "k": 26,
+          "i": 2,
+          "m": 71,
+          "v": 0.32
+        },
+        {
+          "t": 21.375,
+          "k": 27,
+          "i": 3,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 21.5,
+          "k": 28,
+          "i": 4,
+          "m": 73,
+          "v": 0.32
+        },
+        {
+          "t": 21.625,
+          "k": 29,
+          "i": 5,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 21.75,
+          "k": 30,
+          "i": 6,
+          "m": 57,
+          "v": 0.32
+        },
+        {
+          "t": 21.875,
+          "k": 31,
+          "i": 7,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 22,
+          "k": 32,
+          "i": 8,
+          "m": 71,
+          "v": 0.32
+        },
+        {
+          "t": 22.125,
+          "k": 33,
+          "i": 9,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 22.25,
+          "k": 34,
+          "i": 10,
+          "m": 74,
+          "v": 0.32
+        },
+        {
+          "t": 22.375,
+          "k": 35,
+          "i": 11,
+          "m": 73,
+          "v": 0.32
+        },
+        {
+          "t": 22.5,
+          "k": 36,
+          "i": 0,
+          "m": 57,
+          "v": 0.32
+        },
+        {
+          "t": 22.625,
+          "k": 37,
+          "i": 1,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 22.75,
+          "k": 38,
+          "i": 2,
+          "m": 71,
+          "v": 0.32
+        },
+        {
+          "t": 22.875,
+          "k": 39,
+          "i": 3,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 23,
+          "k": 40,
+          "i": 4,
+          "m": 73,
+          "v": 0.32
+        },
+        {
+          "t": 23.125,
+          "k": 41,
+          "i": 5,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 23.25,
+          "k": 42,
+          "i": 6,
+          "m": 57,
+          "v": 0.32
+        },
+        {
+          "t": 23.375,
+          "k": 43,
+          "i": 7,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 23.5,
+          "k": 44,
+          "i": 8,
+          "m": 71,
+          "v": 0.32
+        },
+        {
+          "t": 23.625,
+          "k": 45,
+          "i": 9,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 23.75,
+          "k": 46,
+          "i": 10,
+          "m": 74,
+          "v": 0.32
+        },
+        {
+          "t": 23.875,
+          "k": 47,
+          "i": 11,
+          "m": 73,
+          "v": 0.32
+        },
+        {
+          "t": 24,
+          "k": 48,
+          "i": 0,
+          "m": 57,
+          "v": 0.32
+        },
+        {
+          "t": 24.125,
+          "k": 49,
+          "i": 1,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 24.25,
+          "k": 50,
+          "i": 2,
+          "m": 71,
+          "v": 0.32
+        },
+        {
+          "t": 24.375,
+          "k": 51,
+          "i": 3,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 24.5,
+          "k": 52,
+          "i": 4,
+          "m": 73,
+          "v": 0.32
+        },
+        {
+          "t": 24.625,
+          "k": 53,
+          "i": 5,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 24.75,
+          "k": 54,
+          "i": 6,
+          "m": 57,
+          "v": 0.32
+        },
+        {
+          "t": 24.875,
+          "k": 55,
+          "i": 7,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 25,
+          "k": 56,
+          "i": 8,
+          "m": 71,
+          "v": 0.32
+        },
+        {
+          "t": 25.125,
+          "k": 57,
+          "i": 9,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 25.25,
+          "k": 58,
+          "i": 10,
+          "m": 74,
+          "v": 0.32
+        },
+        {
+          "t": 25.375,
+          "k": 59,
+          "i": 11,
+          "m": 73,
+          "v": 0.32
+        },
+        {
+          "t": 25.5,
+          "k": 60,
+          "i": 0,
+          "m": 57,
+          "v": 0.32
+        },
+        {
+          "t": 25.625,
+          "k": 61,
+          "i": 1,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 25.75,
+          "k": 62,
+          "i": 2,
+          "m": 71,
+          "v": 0.32
+        },
+        {
+          "t": 25.875,
+          "k": 63,
+          "i": 3,
+          "m": 64,
+          "v": 0.32
+        },
+        {
+          "t": 30,
+          "k": 0,
+          "i": 0,
+          "m": 57,
+          "v": 0.36
+        },
+        {
+          "t": 30.25,
+          "k": 2,
+          "i": 2,
+          "m": 71,
+          "v": 0.36
+        },
+        {
+          "t": 30.375,
+          "k": 3,
+          "i": 3,
+          "m": 64,
+          "v": 0.36
+        },
+        {
+          "t": 30.5,
+          "k": 4,
+          "i": 4,
+          "m": 73,
+          "v": 0.36
+        },
+        {
+          "t": 30.75,
+          "k": 6,
+          "i": 6,
+          "m": 57,
+          "v": 0.36
+        },
+        {
+          "t": 30.875,
+          "k": 7,
+          "i": 7,
+          "m": 64,
+          "v": 0.36
+        },
+        {
+          "t": 31,
+          "k": 0,
+          "i": 0,
+          "m": 57,
+          "v": 0.3
+        },
+        {
+          "t": 31.125,
+          "k": 9,
+          "i": 9,
+          "m": 64,
+          "v": 0.36
+        },
+        {
+          "t": 31.25,
+          "k": 10,
+          "i": 10,
+          "m": 74,
+          "v": 0.36
+        },
+        {
+          "t": 31.5,
+          "k": 12,
+          "i": 0,
+          "m": 57,
+          "v": 0.36
+        },
+        {
+          "t": 31.5,
+          "k": 2,
+          "i": 4,
+          "m": 73,
+          "v": 0.3
+        },
+        {
+          "t": 31.75,
+          "k": 14,
+          "i": 2,
+          "m": 71,
+          "v": 0.36
+        },
+        {
+          "t": 31.75,
+          "k": 3,
+          "i": 6,
+          "m": 57,
+          "v": 0.3
+        },
+        {
+          "t": 31.875,
+          "k": 15,
+          "i": 3,
+          "m": 64,
+          "v": 0.36
+        },
+        {
+          "t": 32,
+          "k": 0,
+          "i": 0,
+          "m": 69,
+          "v": 0.26
+        },
+        {
+          "t": 32.25,
+          "k": 5,
+          "i": 10,
+          "m": 74,
+          "v": 0.3
+        },
+        {
+          "t": 32.5,
+          "k": 6,
+          "i": 0,
+          "m": 57,
+          "v": 0.3
+        },
+        {
+          "t": 32.5,
+          "k": 1,
+          "i": 0,
+          "m": 69,
+          "v": 0.26
+        }
+      ]
+    },
+    "work/matched-briefs-graphics/dark-keynote-timing.json": {
+      "DUR": 42,
+      "BPM": 120,
+      "K": {
+        "typeStart": 0.75,
+        "title": "Room to think.",
+        "ret": 2.5,
+        "typeI": 2.75,
+        "ding": [
+          3,
+          3.5,
+          3.75
+        ],
+        "pullStart": 4,
+        "pullEnd": 12,
+        "vo": {
+          "l1": 4.25,
+          "l2": 6.25,
+          "l3": 8.25,
+          "l4": 20.5,
+          "l5": 23,
+          "l6": 34.55
+        },
+        "inserts": [
+          12,
+          12.5,
+          13,
+          13.5
+        ],
+        "drown": 13.5,
+        "freeze": 15,
+        "stretch": 15.5,
+        "press": 16,
+        "gridShow": 17,
+        "sort": 18,
+        "chrome": 19,
+        "dim": 19.5,
+        "reveal": 20,
+        "checks": [
+          21.75,
+          22.25,
+          22.75
+        ],
+        "rotZero": 24.5,
+        "pushNum": 25,
+        "num": 26,
+        "locks": [
+          26.5,
+          26.625,
+          26.75,
+          26.875,
+          27
+        ],
+        "files": 27,
+        "line2": 28,
+        "numBack": 29.5,
+        "retract": [
+          30,
+          30.5,
+          31,
+          31.5,
+          32
+        ],
+        "toCaret": 32.5,
+        "silence2": 33,
+        "echo": 34,
+        "echoType": 34.5,
+        "endCard": 37,
+        "endFade": 40,
+        "caretOff": 41.5
+      },
+      "pattern": [
+        57,
+        64,
+        71,
+        64,
+        73,
+        64,
+        57,
+        64,
+        71,
+        64,
+        74,
+        73
+      ]
+    }
+  },
+  "published_style_prompt_verbatim": "# Dark Tech Keynote — Style Prompt\n\n> A software launch film where the interface itself is the star: near-black gradient, hairline grid, soft light, one brand accent, and UI that moves with snap-grid precision. Light reveals, one giant number, and a sound design that is as ordered as the pixels.\n> **References (grammar only):** Apple product reveals (black stage, light sweeps, one line per screen, the lone giant number); Linear / Stripe / Vercel launch videos (snap-grid motion, 1 px lines, one accent); Steve Reich's process music (phasing, subtraction); Edgar Wright's insert cuts. Never use their names, interfaces, fonts, system controls, melodies or logos, and never name them in the film.\n\n## 1. Essence, and what it is not\n\nA keynote-grade product film for **software**. There is no physical product and no glass render: the protagonist is the interface (a cursor, windows, notifications, tiles, a number). It lives on a dark stage lit by soft, cool light, with **one brand accent** reserved for the single most important element.\n\nThe style is defined by **precision**: every element snaps to a grid, every motion lands on a beat, every sound belongs to one designed family. Drama comes from contrast: disorder shown as generated UI, one decisive action, then empty space.\n\nNot a glass product render (no physical object), not a screencast (no real OS or apps), not a hologram HUD (no scanlines), not a chart film (one number, not a chart).\n\n## 2. Materials & rendering\n\n- **Stage**: a near-black base with a radial lift at the upper centre, one large cool glow at single-digit opacity off-centre, a 50–55 % corner vignette. A hairline grid (white at ~3 %, every 4th line ~6 %) on a 48 px module. No grain.\n- **UI kit, all original and drawn in code**: rounded windows (title bar with only a small glyph and title; never traffic-light buttons, menu bars or docks), notification cards, file icons with mono filenames, procedural thumbnails, list rows, tabs, badges, bars, uniform tiles.\n- **Surfaces**: three steps of raised dark surface, 1 px border (~8 % white), 1 px inner top highlight, soft shadows.\n- **Depth**: a 2.5D camera (`s = 1/(1/zoom − z)`); cards near the lens blur with magnification. Rotations use strip-rendered perspective (rotY ≤ ~24°).\n- **Light** is the reveal tool: only pixels the light has passed turn on; unlit areas sit at a few percent.\n\n## 3. Colour logic\n\n- A cool neutral ladder only: near-black stage, three surface steps, text in three greys (primary, secondary, label). Neutrals are slightly blue, never warm brown.\n- **One accent**, saturated and luminous, with its own glow. It is reserved for what the product *is* or *does*: the protagonist element, the call to action, confirmations, the key number. If two things are accent-coloured, one is wrong.\n- **A problem colour** (typically a red for badges and warnings) may exist only while the problem exists; after the turn it never returns. Problem colour = noise, accent = the product.\n- Secondary hues only as **category codes** in motion (a trail per data type), desaturated, and never on static UI.\n- Example accents, pick one per film: lime `#B7F34A`, electric violet `#8B7CFF`, signal orange `#FF7A1A`.\n\n## 4. Type & subtitles\n\n- **OFL faces**: Inter (UI, captions, headlines; variable weight), Inter Tight 600 for giant numbers (tracking around −4.5 %), JetBrains Mono for labels, filenames and status text (wide tracking in small-caps labels).\n- One line per screen for headlines. The big number gets its own screen and **no caption over it**: the number is the message.\n- **Captions are a UI component**: a bottom-centre toast (dark translucent pill, 1 px light border, soft shadow, Inter 500 around 40 px, a small accent \"speaking\" dot). It enters with a small rise + fade in ~0.16 s and can turn more opaque over busy frames. Hold ≥ max(1.8 s, speech + 0.6 s).\n- **Typed text is its own subtitle**: text the cursor types in frame is not burned twice (it goes only into the .srt).\n- Lift product content while captions are up so toasts never clip it.\n\n## 5. Motion quality\n\n- 24 fps on ones, no stepping, no boil: this is precision, not craft.\n- **Everything lands on the grid and on the beat.** Moves start a beat early and land on it. Easing is fast-out with one small overshoot (`back`, s ≈ 1.3) and an immediate settle. No floaty sine drift.\n- **Spawns are short and typed** (drop + bounce, fling, slide-in, pop; 0.2–0.3 s), one motion per element type. Tension can be a tremble of a few px.\n- **Flights** follow curved paths with overshoot along the final tangent; same-type elements bend the same way and never cross.\n- **A living element can act**: squash, stretch, anticipation (≥ 8 frames of wind-up), a 2-frame contact, spring follow-through. The blink of a cursor makes a natural metronome.\n- **Disappearing is designed** (retract one part per beat, CRT-off squash into a point); nothing just fades.\n- The stage and grid never move on their own; only the camera moves them.\n\n## 6. Camera grammar\n\nA vocabulary, not a route. Opening and ending come from the topic.\n\n| Move | Expresses | Can serve |\n|---|---|---|\n| Locked extreme close-up on a tiny UI element | Intimacy, one thing alive on a screen | a single action; a thought forming; a quiet status |\n| Continuous pull-back, keyed per bar in log space | Accumulation, scale growing out of one point | spreading load; a network growing; a team joining |\n| Push-in through a frozen frame | Time stopped, focus narrowing | a decision; the instant before a commit; a bug found |\n| Whip pull-out in one beat | Cause and effect seen at once | a sync completing; a deploy landing everywhere |\n| Dive into a small UI element (log-zoom) + match cut | Going inside the detail | a counter that matters; a log line; a setting |\n| Half-second inserts expanding from their source | Overload, too much to read | notification storms; errors; choice overload |\n| Near-locked frame while an object turns and light sweeps | Presentation, the product as hero | a reveal; a new version; a feature name |\n| Slow lateral track across a UI plane | Order read by the eye | a timeline; a pipeline |\n| Top-down plan over the grid | System view, structure | architecture; permissions; a workflow map |\n| Return to an earlier framing | Rhyme: what changed | before/after; a loop closed; an echo |\n\nFraming: generous negative space, one focal element, the accent at the focal point. Dutch angle and wobble only for disorder.\n\n**Transitions = UI expand / collapse**: every shot change is an interface element expanding into the frame or the frame collapsing into an element. No fades, no blank frames. An expansion on a beat starts one frame early so the beat frame is already ~80 % open.\n\n## 7. Sound palette\n\n- **Tuned percussion and pads**: marimba, vibraphone (mallet or bowed), glockenspiel, celesta, a synth pad or drone, a low sine pulse, a shaker, plucked synth, felt piano. Clean, dry, minimal; samples e.g. VCSL (CC0).\n- **Music as a visible process**: options include phasing (two voices on one pattern, one drifting), additive build (one note per bar), subtractive process (notes removed until one is left), dividing the beat to accelerate instead of changing tempo, or one chord that everything lands on. Picture events can spawn on score notes from a shared note table.\n- **Two sound families = story**: disorder sounds *scattered* (detuned by tens of cents, random pans, a different timbre per source); the product's sounds are *one family* (felt ticks, glass taps, all in one mode, centred), so many landings form one in-key shimmer.\n- **Foley materials**: cursor tick, low-profile keys, notification glass, file plop, window whoosh, glitch accents, stacking thumps, felt mallet + sine drop for a press, light-sweep shimmer, digit grains, CRT-off.\n- **Ambience**: a quiet room, a computer fan, a high coil whine that can grow with pressure. Fan and whine live in the voice band: keep them down until a line ends.\n- **Silence is a tool**: digital zero on every track when the screen pauses; near-silence (a −60 dB room) for a breath. The first sound after a silence is the most important one.\n- **J / L cuts** carry sound across UI transitions (a chord ringing on, a shimmer arriving before the light).\n- **Mix**: music ducks ~8 dB and foley ~4 dB under voice; −14 LUFS; no grain. **Voice**: confident and restrained, short declaratives.\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **Generated accumulation.** UI spawned by rule, faster and faster, hundreds of items; you don't draw the mess, you generate it. *Fits content like:* unread tickets piling up; cloud costs creeping; a dependency tree exploding.\n- **The snap grid.** A whole promise in one motion: everything flies into a grid in one beat; the grid stays invisible until then. *Fits content like:* a CMS publishing to every channel; a scheduler filling a week; an audit turning green.\n- **The living element.** The cursor (or the product's smallest live element) is the protagonist and the brand mark. *Fits content like:* a search box that grows ambitious; a progress ring that refuses to finish; a status dot.\n- **Freeze.** Everything stops mid-air and the sound drops to digital zero; only a screen can stop time like this. *Fits content like:* a security breach caught; a failed deploy; the second before \"send\".\n- **Light reveal.** A soft band sweeps across and only lit pixels turn on (soft front, glint ≤ 20 %, ≤ ~1.3 s so nothing stays dark). *Fits content like:* a redesign; a new pricing page; an API console.\n- **Number from glyph noise.** Digits scramble and lock one per sixteenth note with a small bounce. *Fits content like:* latency cut; a count of users; a price.\n- **Type streams.** Elements fly to their own rows along coloured curved trails, so categories read as streams. *Fits content like:* an inbox triaged; logs routed by severity; files synced by device.\n- **Put-away.** The UI dismantles itself one part per beat until one element is left. *Fits content like:* \"less is more\" features; offboarding; focus mode.\n\n## 9. Pitfalls of the medium\n\n- Strip perspective of a semi-transparent canvas shows vertical seams (overlapping slices double alpha) → project the *opaque* surface, then light it in screen space.\n- A hard white glint reads as a sticker reflection → soft front, glint ≤ 20 %.\n- Nearest-slot snapping looks like a flicker, not a collapse → typed destinations, curved paths, trails.\n- Too few elements leave holes in a grid that read as a mistake → generate by rule, then trim or pad to exactly the slot count per group.\n- A flat tinted rectangle for \"closing\" looks like a placeholder → squash the real surface.\n\n## 10. Engine\n\n`demo/engine.js` (Canvas 2D ES module): `setAccent`, `bg`, `grid`, `panel`, `litShape` (any shape in this style), `trail`, `caret`, the UI kit, `flyPose`, `lightReveal`, `perspective`, `scramble`, `toast`, `camera` (2.5D). Function table and a minimal example: [DEMO.md](DEMO.md#engine-reference); `?scene=engineDemo` renders it.\n\n## 11. Variation space\n\nYou decide the product's verb, the protagonist element (or none), the problem image, the accent, the structure, the opening, the ending, the camera path and the score process. All far from our demo:\n\n- Structures: **a countdown** (a release checklist ticking through its items, each a UI moment, ending on \"shipped\"); **side by side** (two versions of a workflow run in split screen, the old one drowning, the new one finishing early); **a zoom ladder** (one pixel → a component → a screen → a fleet of devices, each level a new fact).\n- Openings: **the number first** (a huge stat on black, its meaning revealed backwards); **a plan view of an empty grid** that fills slot by slot; **a hard insert storm** from frame one, calm arriving only later.\n- Endings: **one tile left** lit in the accent on an empty grid; **the product running quietly** in a wide shot, no text; **a shipped state** (a single confirmation toast, then darkness).\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n",
+  "published_demo_guide_verbatim": "# Dark Tech Keynote — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *Room to Think* (42 s) · `dark-keynote.mp4` · source in [`demo/`](demo/) · a launch film for **Tidy**, a fictional app that sorts your desktop, photos and inbox in one press.\n\n\n## Story & structure\n\nThe brief we set ourselves: a 30–45 second launch film for a software product (topic → story, shots, sound, music, captions → finished film).\n\nHow the native moves were spent on this story:\n\n| Native power | Story use in the demo |\n|---|---|\n| **UI can be generated without limit** | The problem as accumulation: notifications, files, tabs and photos spawning faster and faster, hundreds of them (264 elements). |\n| **The snap grid** | The whole product promise as one motion: everything flies into a grid in one beat. The grid stayed invisible until that moment. |\n| **The cursor is the only thing alive on a screen** | The cursor is the protagonist. It blinks on the beat, gets shoved by interruptions, hesitates, winds up and presses. It is also the Tidy brand mark, so the reveal pays off twice. |\n| **Screens can pause** | Everything freezes mid-air and the sound cuts to digital silence. |\n| **Dark stage + soft light** | The product is revealed by a band of light sweeping across it. |\n| **Numbers roll out of glyph noise** | The one stat (\"0.8\") gets its own screen and scrambles into place digit by digit, one digit per sixteenth note. |\n\n**Arc:** calm hook (a cursor types the title in silence) → interruption (first notification at 3 s) → accumulation in one continuous pull-back (each bar adds a layer) → overload inserts → **freeze + silence** → **the one action** (all layers realign into one chord) → light reveal of the product → the big number → a breath where the UI puts itself away and the music subtracts itself → echo (the cursor finishes the sentence it started).\n\n**The core directing idea — sound and picture share one timeline.** Every UI element spawns *on a note* of the score. Two marimbas play the same 12-note pattern; the second slowly speeds up and drifts out of phase. Files and photos appear on the on-grid line, notifications on the drifting line, so the visual chaos *is* the audible phasing. At the press both lines realign into one chord. We wrote the note table first (`timeline.js`), then let the picture read it.\n\nThe recipe we followed for this topic: pick the one verb the product does (here: sort). Show its absence as generated UI noise tied to a phasing score. Give the cursor the action. Reveal with light. One number. Put everything away. End on the smallest thing on an empty screen. This is one route, not the style's shape.\n\n## Shots\n\n| Beat | Camera |\n|---|---|\n| Hook | Locked extreme close-up of the cursor and one line of text (text ~150 px). Barely perceptible push (×1.04). |\n| Accumulation | **One continuous pull-back** from ×5 to ×1 over 4 bars, keyed per bar in log space with monotone interpolation (one \"notch\" per bar, continuous velocity). Foreground cards pass the lens blurred. From 10.5 s a 1–2° dutch angle and a handheld wobble build. |\n| Overload | Three half-second **inserts**, each expanding out of its source position (UI expand transition): 999+ badge / 148 thin tabs / red storage bar. |\n| Freeze | Silent push-in through the frozen mess onto the cursor (×0.8 → ×2.6, ease-in-out). |\n| Press | **Whip pull-out** in one beat (×2.6 → ×0.78, cubic ease-out) so the audience sees both the press point and the whole grid landing. |\n| Reveal | The window turns in from a 3/4 angle (−24° → 0°) over 4.5 s while light sweeps across. The camera barely moves: only light and product move. |\n| Number | Dive into the status bar counter (log-zoom to ×16), then match cut to the full-screen number. Back out the same way. |\n| Breath | Slow push (×1.08) while the UI puts itself away. |\n| Echo | The exact framing of the first shot. The cursor sits in the same pixel. |\n\nEvery shot change is a UI expand / collapse; no fades, no blank frames.\n\n### Motion numbers used in the demo\n\n- **Spawn motions** (mess section): files drop 34 px with a 6 px bounce (0.22 s), photos fling in from off-screen with rotation (0.3 s), notifications slide 90 px from the right (0.24 s), windows pop 0.94 → 1.0 (0.22 s). Everything trembles ±2.4 px in the last second before the freeze.\n- **The collapse (signature move of this demo)**: a ring expands from the cursor at 2600 px/s. As the ring front passes, each element launches **towards its own type's row** (files → Desktop rows, photos → Photos rows, notifications → Inbox rows) along a curved path; each type bends the same way, so the screen shows **three coloured streams**. Within a group, rows are filled by the elements' y order and x order, so paths don't cross. Flights last 0.26–0.40 s depending on distance, morph into uniform tiles in the first third, overshoot along their final tangent and settle. Light trails in the stream colour, 9 segments, additive. Grid slot outlines light up in the accent just behind the ring front.\n- **Cursor acting**: blink = 0.5 s on / 0.5 s off (it is the metronome). Interrupted: 8 px shove + 10 % squash, 0.25 s decaying wobble, then it stays solid (\"frozen\"). Wind-up: height ×1.35, width ×0.8, ease-in over 12 frames (≥ 8). Press: 2 frames at height ×0.3, width ×2.4. Follow-through: spring back with overshoot over 0.6 s.\n- **Light reveal**: the lit area trails the front by 700 px, a 360 px soft glint rides the front at 20 %, unlit areas stay at 7 %. It takes 1.3 s.\n- **Number scramble**: glyphs cycle at 24 fps with a 3-copy vertical smear; digits lock right to left on sixteenth notes, each drops in with a small damped bounce.\n- **Put-away**: one element retracts per beat (sidebar, status bar, title bar, headers), then the window rim lights in the accent, then the window collapses vertically like a CRT switching off (ease-in, 0.22 s) and shrinks into the cursor.\n\n## Score structure\n\n- **Music first**: `timeline.js` holds the tempo grid (**120 BPM**), the 12-note pattern and the note tables of all voices (phasing is computed there as a time warp). The picture spawns elements from the same tables. `tools/cuecheck.py` checks the key cues and that every spawned element sits on a score note.\n- **Score (original, minimalist)**: marimba (voice 1, on grid) + hard-mallet vibraphone (voice 2, unison, then phasing ahead; slightly detuned and brighter at the peak) + glockenspiel (voice 3, drifting the other way) + a numpy pad (A drone that gains G#/D# dissonance and rises) + a low sine pulse (eighths → sixteenths) + a quiet noise shaker. At the press all voices land on **one A major 9 chord**, the bowed vibraphone carries it into the reveal (L-cut), then one clean pattern plays, and in the breath the pattern subtracts notes bar by bar until one quarter note is left. Samples: VCSL (CC0).\n- **Sound families**: the mess sounds are scattered (every notification pitched ±45 cents off, random pans, a different timbre per source). Tidy's sounds are one family: felt ticks and glass taps, all in A major pentatonic, centred. The 264 landing taps form one in-key shimmer.\n- **Layers**: ambience (quiet room + computer fan and a 6.8 kHz coil whine that grow through the mess, **held back until the last voice-over line ends**), foley (cursor tick, low-profile keys, return, notification glass, file plop, photo flick, window whoosh, glitch accents, storage buzz, stacking thumps, the press \"doom\" = felt mallet + 55→40 Hz sine drop, grid tick, felt ticks, light-sweep shimmer, digit grains, CRT-off), music.\n- **Silences**: 15.0–16.0 s is **digital zero on every track** (the screen paused); the first sound after it is the press. 33.0–34.0 s is near-silence (−60 dB room); the first sound after it is the cursor tick, the same sound as frame 1.\n- **J / L cuts**: a muffled crowd of notifications fades in under the close-up before the pull-back (J); the press chord rings into the reveal (L); the light shimmer starts 0.4 s before the light (J); the number chord rings into the breath (L).\n- **Voice**: Kokoro `af_kore`, speed 0.95, confident and restrained: short declaratives. Music ducks −8 dB and foley −4 dB under voice.\n\n## Palette & props\n\n**Stage**: base `#0A0B0F`, radial lift to `#151822` at the upper centre, one large cool glow `#3B4CCA` at 8 % in the upper right, vignette 50–55 % at the corners. Hairline grid `rgba(255,255,255,.032)` every 48 px with every 4th line at `.06`. Grain: none (`mux.sh` grain 0).\n\n| Role | Value |\n|---|---|\n| Window surface / raised / raised-2 | `#12151C` / `#1A1E28` / `#222734` |\n| Border / inner top highlight | `rgba(255,255,255,.08)` / `rgba(255,255,255,.07)` (1 px) |\n| Text / secondary / label | `#E8EAF0` / `#8A90A0` / `#5C6272` |\n| **Brand accent (the one colour)** | lime `#B7F34A`, glow `rgba(183,243,74,.35)` — the cursor, the \"Tidy up\" pill, the checkmarks, \"0.8\" |\n| Noise red (problem section only) | `#FF5A5F` badges. After the press, no red ever appears again |\n| Three flow colours (collapse trails) | files `#C9D3E6`, photos `#F2A65A`, notifications `#7E95FF` |\n\n**Props**: the Tidy brand mark (squircle + cursor) and wordmark; windows (radius 14, 40 px title bar); notification cards with \"now\"; folded-corner file icons with mono filenames (`final_FINAL_2.pdf`, `Untitled 38.txt`); procedural landscape photo thumbnails; inbox rows with unread dots; a tab strip that keeps splitting (148 tabs); a 999+ badge; a red storage bar; uniform snap tiles (60–64 px, radius 20 %). Product shots rotate up to 24°.\n\n**Captions as used**: toast `rgba(12,14,19,.72)` pill (`.88` during the mess), 1 px `rgba(255,255,255,.09)` border, Inter 500 40 px `#E8EAF0`, 8 px accent dot, 12 px rise + fade in 0.16 s. The title and final line are typed by the cursor in frame (only in the .srt). The product window is lifted 25 px while captions are up.\n\n## End card\n\n**Title card** = the cursor typing the film title in the close-up, with a small mono overline `TIDY · A LAUNCH FILM`. **End card** = the typed tagline plus, left-aligned beneath it: film title, \"a launch film for Tidy, a fictional app\", style name, `Lemo-Opuscar`, `LemoLab × Claude Opus 5.5`, credits. Then everything fades except the cursor, which blinks twice and goes out.\n\nThe \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Rights\n\nTidy is fictional. Every interface element is original and drawn in code; no real OS chrome, app layout, font, logo or melody from the reference films is used. Samples: VCSL (CC0); fonts OFL (see `demo/CREDITS`).\n\n## Build notes\n\n```\nstyles/dark-keynote/demo/\n  engine.js     the style engine (see Engine reference)   timeline.js  tempo grid + pattern + phasing note tables + key times\n  world.js      the mess: 264 elements generated from the note tables, spawn poses, freeze, type-row snap targets\n  film.js       scenes: mess / inserts / collapse / product reveal / number / breath / echo, captions, event list\n  frames.js     engine demo scene          main.js / index.html   page (window.render(t), window.EV)\n  music/score.py   original score (sub-agent), stems, score.json      mix.py   foley + voices + ducking + silences\n  tools/        dump_timeline.mjs export.mjs cuecheck.py\n```\n1. Write `timeline.js` (grid, pattern, voices, key times) → `node tools/dump_timeline.mjs` → hand `timeline.json` + the cue map to a music sub-agent. Draw in parallel.\n2. Build the engine and the product window first (they are the style frames), then the mess generator from the note tables, then the collapse.\n3. `sh demo/build.sh` rebuilds everything: TTS → whisper → score → events → cue check → mix → srt → render → mux (−14 LUFS, grain 0).\n4. Review with `node core/render/still.mjs demo --range 0.5:42:1` + `sheet.py` at least twice, plus frame strips of the collapse and the press.\n\nPitfalls tied to this demo's props:\n- Nearest-slot snapping of the 264 elements looked like a flicker; sending each type to its own rows (Desktop / Photos / Inbox) along curved paths with trails fixed it.\n- The first generator left holes in the grid; we trimmed or padded each group to exactly its slot count.\n- The \"window closes\" first used a flat tinted rectangle; the real window is now squashed and tinted only in the last 45 %.\n- Fan and coil whine (300 Hz–7 kHz) masked the voice; they are held down until the last line of the section ends.\n- Caption toasts clipped the bottom of the product window; the product is lifted 25 px while captions are up.\n\n## Engine reference\n\n`demo/engine.js` is a plain ES module (Canvas 2D, no dependencies besides `core/lib.js`). All drawing functions take the context first. Coordinates are in pixels of whatever transform is active.\n\n| Function | What it does |\n|---|---|\n| `setAccent(hex)` | Set the one brand colour (default `#B7F34A`). Everything accent-driven follows: cursor, toast dot, `litShape({accent:true})`, `trail`. |\n| `bg(g, {lift, cool, dark})` | Near-black stage with radial lift and cool glow. |\n| `grid(g, {ox, oy, scale, module, alpha, rect})` | Hairline grid that can follow a camera. |\n| `glow(g, x, y, r, color, a)` · `vignette(g, a)` | Soft light pools, corner falloff. |\n| `panel(g, x, y, w, h, {r, fill, shadow, cheap})` | Rounded UI surface: soft shadow, top-lit fill, 1 px border, inner highlight. `cheap` = offset shadow for hundreds of items. |\n| `litShape(g, path2d, {accent, color, glowR, sweep, bbox})` | **Draw any shape in this style**: dark lit surface with rim light, or (with `accent`) a glowing accent fill; `sweep` 0..1 adds a moving light band. |\n| `sparklePath(cx, cy, r, k, rot)` | A four-point star path (for sparkles, \"new\" marks). |\n| `trail(g, pts, {color, width, caretH})` | A fading light trail along points, optionally ending in a cursor. |\n| `caret(g, x, y, h, {sx, sy, on, glow, color})` | The cursor with squash/stretch and blink. |\n| `tidyMark(g, x, y, s)` · `wordmark(g, x, y, px)` | Brand mark (squircle + cursor) and word + cursor. Rename for your product. |\n| `windowBox` / `windowContent(kind)` / `notif` / `fileIcon` / `photo` / `badge` / `appIcon` / `storageBar` | The UI kit. `windowContent` kinds: note, inbox, browser, sheet, chat, viewer, code. |\n| `flyPose(from, to, p)` · `motionBlur(p, span, n, draw)` | Snap flight with overshoot, spring rotation and morph; multi-sample motion blur. |\n| `lightReveal(g, src, x, y, w, h, p, {base, soft, band, glint, angle})` | Light-sweep reveal of any canvas. |\n| `perspective(g, src, cx, cy, w, h, rotY, {slices})` | Strip-rendered Y-rotation of a flat canvas; returns `map(u,v)` to screen. |\n| `scramble(g, text, x, y, t, locks, {px, fam, color, tracking})` | Glyph-noise-to-number roll with per-character lock times. |\n| `toast(g, text, a, {dense})` | The caption component. |\n| `camera({x, y, zoom, rot, sx, sy})` | 2.5D camera: `.apply(g, z)` transforms to depth z; `.proj(x, y, z)` returns screen position and scale. |\n| `buf(name, w, h)` · `rr(g, …)` · `font(px, wt, fam)` · `rgba` · `mix` | Helpers. |\n\n**Minimal example: a warm orange four-point spark with a cursor tail, in this style.**\n```js\nimport * as E from './engine.js';\nconst g = document.querySelector('canvas').getContext('2d');\nE.setAccent('#D97757');                       // the one colour\nE.bg(g); E.grid(g, { ox: 960, oy: 540 });\nconst pts = []; for (let i = 0; i <= 40; i++) { const u = i / 40; pts.push([360 + u * 1100, 640 - Math.sin(u * Math.PI) * 260]); }\nE.trail(g, pts, { width: 8 });                // the cursor's path as a fading light trail\nE.litShape(g, E.sparklePath(1480, 380, 90, 0.2), { accent: true, glowR: 40, bbox: [1390, 290, 180, 180] });\nE.caret(g, 1560, 380, 120);                   // a cursor riding the spark\nconst card = new Path2D(); card.roundRect(300, 200, 420, 160, 28);\nE.litShape(g, card, { sweep: 0.5, bbox: [300, 200, 420, 160] });   // any shape as a lit dark UI surface\nE.vignette(g);\n```\nRender it with `?scene=engineDemo` (see `frames.js`). To keep a single element in colour in an otherwise neutral frame, draw everything with default `litShape` and only that element with `{accent: true}`.\n",
+  "published_srt_verbatim": "1\n00:00:04,250 --> 00:00:06,050\nYour desktop.\n\n2\n00:00:06,250 --> 00:00:08,050\nYour photos.\n\n3\n00:00:08,250 --> 00:00:10,050\nYour inbox.\n\n4\n00:00:20,500 --> 00:00:22,300\nMeet Tidy.\n\n5\n00:00:23,000 --> 00:00:25,852\nOne press, and everything finds its place.\n\n6\n00:00:34,500 --> 00:00:37,000\nRoom to think.\n",
+  "original_assets_and_licenses_verbatim": "Room to Think — Dark Tech Keynote · Lemo-Opuscar · LemoLab × Claude Opus 5.5\n\nPicture\n- All UI, icons, photos, windows and typography layouts are drawn in code (demo/engine.js). No generated or stock images.\n- \"Tidy\" is a fictional app. No real product, brand, logo or system interface appears.\n\nFonts (SIL Open Font License 1.1, licence files in demo/fonts/)\n- Inter — Rasmus Andersson (rsms/inter)\n- Inter Tight — Rasmus Andersson\n- JetBrains Mono — The JetBrains Mono Project Authors\n\nVoice\n- Kokoro TTS v1.0 (hexgrad/Kokoro-82M, Apache-2.0), voice af_kore, via kokoro-onnx\n\nMusic (original composition, demo/music/score.py)\n- Samples: VCSL — Versilian Community Sample Library (CC0 1.0): marimba, vibraphone (hard mallets), vibraphone (bowed), glockenspiel\n- Pad, pulse, shaker and rise are synthesised in numpy\n\nSound design\n- All foley and ambience synthesised in numpy (demo/mix.py, core/audio/sfx.py)\n",
+  "engine_reuse_recommendation": "engine.js general camera/world/projection/text primitives permitted; new 264-element layout, app chrome and scene/animation assembly.",
+  "rights_or_evidence_notes": "Original codeMIT; reuse only explicitly attributed general helpers/fonts/assets with supplied licences. New scene staging and animation must be authored independently. Original model end credits recorded as historical reference, replaced honestly in recreation.",
+  "v1_quality_deficits": "V 1 shortened 42 s to 20, removed full clutter evolution, exact speech, one-press transformation,12,408 files/0.8 s promise and cursor echo.",
+  "recreation_status": "brief-audited; newfilmnotyetgenerated",
+  "published_asset_manifest": [
+    {
+      "path": "styles/dark-keynote/demo/fonts/OFL-jetbrainsmono.txt",
+      "sha256": "a76abf002c49097d146e86740a3105a5d00450b1592e820a1109a8c5680cd697",
+      "bytes": 4399
+    },
+    {
+      "path": "styles/dark-keynote/demo/fonts/OFL-inter.txt",
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "bytes": 4377
+    },
+    {
+      "path": "styles/dark-keynote/demo/fonts/fonts.css",
+      "sha256": "19ba918990a38086dd0528f4e9ecbef903bd94fd7dddc44f6fe8a1dc5769bd3f",
+      "bytes": 347
+    }
+  ]
+}

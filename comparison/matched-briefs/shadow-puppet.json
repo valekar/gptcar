@@ -1,0 +1,983 @@
+{
+  "slug": "shadow-puppet",
+  "original_title": "Hou Yi Shoots the Suns",
+  "premise": "Ten suns scorch the earth until the archer Hou Yi draws his bow, told with leather puppets on a lit screen.",
+  "published_delivery": {
+    "slug": "shadow-puppet",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/shadow-puppet.mp4",
+    "sha256": "b5c63168b11ed4468769326d057f3d8e9639cfeeb877f4b06d99b525ca7e7acd",
+    "duration": 54.4,
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": "1305",
+    "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+    "frames": 54,
+    "sheets": 5
+  },
+  "production_format_source": "Full verbatim DEMO header below; measured published delivery above governs v2.",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "explanation": "No initial conversation/inputprompt transcript is published in inspected repository. STYLE.md is a verbatim published styleprompt; DEMO.md is published retrospective productiondocumentation. Shot prompts are source-informed reconstruction of finishedmovie, never a claimed identical originalchatprompt."
+  },
+  "published_style": {
+    "path": "outputs/gptcar/styles/shadow-puppet/STYLE.md",
+    "sha256": "8be075a8262d5a3deea9b05684d8a9abdc1e54c0d90649bf14609ecb4106c3af",
+    "verbatim": "# Shadow Puppetry — Style Prompt\n\n> Chinese shadow theatre: translucent dyed-hide puppets, carved like lace, pressed against a cotton screen and lit from behind by oil lamps.\n> References (grammar only): Lotte Reiniger's *The Adventures of Prince Achmed* (1926) for profile acting and lace-like scenery; Shaanxi / Huayin shadow theatre for carving, colour and gong-and-drum rhythm. Never reproduce a specific historical puppet, melody or recording, and never name them in the film.\n\n## 1. Essence, and what it is not\n\nA white cloth screen; behind it, flat puppets cut from **translucent dyed hide**, lit by an **oil lamp**. Colour arrives *by transmitted light*: dyes glow like stained glass, carved holes shine brightest, overlaps go darker. Puppets are jointed with **visible thread rivets** and moved by **thin rods** (neck and hands) that show as soft grey lines just off the screen. It is live theatre, not stop-motion: the screen **flickers with the lamp**, puppets **tremble in the hand**, loose parts **swing on their rivets**.\n\nNot a black silhouette film (colour is the second protagonist), not paper-cut (the light comes *through*), not stained glass (no lead lines; pieces move and overlap), not flat vector cut-out animation.\n\n## 2. Materials & rendering\n\n**Rendering model.** Per pixel: `image = tonemap( lampLight × hideTransmission × clothTexture )`.\n- `hideTransmission`: a 2D canvas that starts **white**; every piece is drawn with `multiply`. Holes stay white, overlaps darken by themselves.\n- `lampLight`: per lamp a broad lobe plus a tight hotspot (~6 : 1), each flickering independently (a few % of ~7 Hz value noise plus a faster sine). Warm light, never white.\n- `tonemap = 1 − exp(−hdr)`, exposure ∝ `1/√(lamps lit)`: more lamps bleach the frame but keep it readable. Lamp count is a dial the story can turn.\n- **Cloth**: procedural weave (sin × sin, noise-warped), fibre speckle, low-frequency density blotches, darker edges at the frame. **Post**: warm-tinted bloom, a **warm vignette** (toward brown, never grey), slight saturation, soft S-curve, light grain; heat haze only when the story burns.\n\n**Hide and carving.** Multiply a tileable hide texture (mottling, fibres, specks) into each piece and restore its alpha with `destination-in` so holes survive. **Carving is density**: leave thin strips, cut out most of the area. Cut vocabulary: crescent rows (scales, tiles), diamond lattice, coin holes (round hole, square of hide inside), cloud collars and scrolls, tapered slits (cracks, rain, fur), strata along a ridge, leaf holes in a canopy. A dark carved outline (1.5–2.4 px) on every region. With `destination-out`, set `fillStyle = '#000'` first: fill alpha decides how much is cut.\n\n**Figures are jointed puppets**: 8–12 pieces, head ~1.2× natural with large headwear, sleeves in a different dye from the torso, round joint lobes with a rivet (dark ring + pale knot), arms by 2-bone IK from hand targets, held objects as separate pieces on the hand line. Sympathetic figures have *open-cut faces* (features as thin strips around a hole); antagonists solid faces.\n\n**Scenery** is carved set pieces on mostly empty lit cloth: one lace piece per element, a narrow carved ground strip, separate liftable strips for water or sky. Fire, smoke and moving water are carved pieces on rods, swapped and shaken, never particles.\n\n**Stage and backstage.** A lacquered frame (lintel, pillars, warm spill on its inner edges), optional blurred audience heads. Backstage = the same transmission canvas with the camera mirrored (`x → −x`), dark wood around, hanging lamps (additive flame glow; snuffed ones trailing dark smoke), hands and sleeves as **silhouettes with a warm rim** (mask minus mask shifted away from the light), rods sharp.\n\n## 3. Colour logic\n\n- All colour is **transmitted**: a dye filters warm lamplight, so nothing is brighter than the lamp and every hue leans warm.\n- 3–5 saturated dyes + **raw hide** (the neutral) + **ink** (outlines, hair, boots). Holes are the brightest value.\n- Overlap is darkness: plan which pieces cross.\n- Brightness comes from the number of lamps, not grading. Night is fewer lamps, never added blue.\n- Thin things that must read (strings, shafts, text) are dark: pale pieces vanish on a bright cloth.\n- Example sets: *court* (vermilion, ochre, malachite); *river* (indigo, jade, one ochre); *harvest* (flame orange, gold, one green).\n\n## 4. Type & subtitles\n\n- Subtitles belong to the theatre: a **storyteller's placard** (narrow dark-lacquer board, thin gold line, small carved seal), a label on a rod, or letters carved into hide. Classical OFL serif (e.g. Cormorant Garamond 600), 40–50 px, cream on dark, short slide in. Hold ≥ max(1.8 s, speech + 0.6 s).\n- **Titles are puppets**: dark hide plaques with letters cut out (`fillText` + `destination-out`, so words glow), a carved border, carried on rods, pressed on to enter, lifted off to exit.\n\n## 5. Motion quality\n\n- **24 fps continuous** for puppets and camera; only swapped effect pieces (fire, water) step at 12 fps.\n- **Hand tremor** on every puppet (a few px, ~0.02 rad, low-frequency), stronger under tension.\n- Body glides with the main rod; **legs, plumes, tassels are simulated** (damped pendulums / spring chains driven by body acceleration, pre-simulated at a fixed rate for determinism).\n- Operatic phrasing: shuffling run → hop → crouch → **freeze pose on a percussion accent** (~1 s, only loose parts quiver) → head turn.\n- Faces never change; attitude = head angle + body tilt (up = resolve, down = sorrow).\n- **Press on / lift off**: arrivals come large and blurred onto the cloth and snap sharp (~0.5 s); exits grow, blur and fade (~1 s).\n- A new lamp flares with overshoot; a snuffed lamp gutters with fast flicker.\n- Never moves: the cloth, the frame. Nothing morphs: pieces rotate on rivets, slide on rods, or are swapped.\n\n## 6. Camera grammar\n\nA vocabulary, not a route. Opening and ending come from the topic.\n\n| Move | Expresses | Can serve |\n|---|---|---|\n| Audience seat (whole stage, heads below) | \"This is a show\" | a legend; a lesson; a framed memory |\n| Push through the frame onto the cloth | Entering the tale | a story within a story; focus |\n| Lateral pan across a wide cloth | Extent, a place laid out | a journey; a disaster's reach; a procession |\n| Follow a puppet, slight zoom | Being with one figure | a pursuit; a working day |\n| **Crash zoom** of a few frames on a percussion hit | The drum becomes the camera | an entrance; a pose; a reveal |\n| Whip pan along a moving piece | Cause to effect | a message sent; a strike |\n| **Locked wide** | Every step of a change is seen | counting; repetition; stages |\n| Medium-close, empty cloth between two pieces | Distance, hesitation | a choice; a parting |\n| Close on a carved detail | Craft as meaning | a vow; a tool; a clue |\n| Tilt from ground strip to top of cloth | Height, hierarchy | a tower; heaven and earth |\n| Truck round to the back (mirror view) | The trick revealed | behind the scenes; who pulls the strings |\n| Pull back from cloth into the dark room | The tale becomes an object | aftermath; a story ending for the night |\n\nPuppets in profile; most of the cloth stays empty. When zoomed in, clamp the camera to the screen rectangle (no black bars); push on frame centre unless diving into a lamp. Transitions: lamps dimming, a blurred foreground pillar wipe, a piece lifting off in light, a flash to warm white; never a generic crossfade or digital wipe.\n\n## 7. Sound palette\n\n- **Percussion first, not piano and strings** (gong-and-drum pattern thinking, 锣鼓经): low barrel drum, hard high clapper drum (woodblock), cymbals, small gong with rising pitch (\"tai\"), big gong with falling pitch (\"kuang\"); also a bamboo clapper board, pellet drum, sanxian pluck, a bamboo flute for quiet.\n- **Bowed and reed voices**: a bright nasal fiddle (erhu-like: pitched up, nasal formant, pitch-curve resampling for slides and vibrato), plain pentatonic (**huan-yin**) or sorrowful microtonal (**ku-yin**: raised 4th, lowered 7th); a shrill suona-like reed (oboe + 1.2–3 kHz formant + saturation) at most once.\n- **Techniques, as options**: a single tap inside a silence; one big gong per decisive hit; a heartbeat drum under dread; accelerating rolls into an entrance; one hit per visual step; a gong scrape to change space; a hard stop (≤ 30 ms, tails included).\n- **Silence**: hard-cut the whole bed; at most one sound inside (a breath, a tap, a sizzle).\n- **Foley follows the materials**: wooden clapper (醒木), match strike, lamp \"fwoomp\" and \"pfft\" + sizzle, rod taps on cloth, dry leather flaps on lift-off, leather steps, creaks of hide and wood props, leather thwacks, cloth rustle, backstage room tone.\n- **Voice**: a storyteller, few short lines, small-theatre reverb; music ducked ~12 dB, foley ~4 dB, voice ≥ 12 dB above the bed; −14 LUFS; check each line with whisper alone and on the final mix.\n\n## 8. Native moves\n\nA menu: use the ones your story needs; put the strongest at the peak.\n\n- **The light is the world.** Lamp count drives heat and colour. *Fits content like:* city lights spreading at night; a fever rising and falling; servers switching on one by one.\n- **Off the screen = big and blurry.** A piece pulled toward the lamp grows and blurs. *Fits content like:* a rumour growing; a memory fading; a deadline pressing onto the cloth and snapping sharp.\n- **Go behind the screen.** Lamp, hands, rods. *Fits content like:* how a product is really made; who controls a market; a teacher revealing the method.\n- **Carved and translucent.** Holes glow, overlaps darken, open faces vs solid. *Fits content like:* an x-ray of a system; good and bad actors in a fable; layers of a city.\n- **Hand-held.** Tremor and swinging parts. *Fits content like:* a nervous interview; a tightrope; a toddler's first steps.\n- **Piece swap.** One carved piece on a rod replaced by another. *Fits content like:* seasons; a machine's states; weather over a harvest.\n- **Strip lift-off.** A band of scenery lifted to reveal another. *Fits content like:* geological layers; before/after a flood; an old town under a new one.\n\n## 9. Pitfalls of the medium\n\n- Flat clip-art look → hide texture, denser openwork, deeper dyes, carved outlines everywhere.\n- Figures unreadable in profile → bigger head, fuller lower body, collar piece, contrasting sleeves.\n- Radiating shapes read as saw blades or petals → flame tongues with a fat base, belly and hooked tip, alternating curl.\n- Grey corners when overexposed → warm vignette.\n- Thin pale pieces vanish → make them dark.\n- Mirror view flips pieces when rotation uses the x scale for both axes → x scale for x, y scale for y.\n- Smoke with `lighter` is invisible on bright cloth → dark wisps, warm additive only near a lamp.\n- Push-in centred on an edge lamp shoves figures out → push on frame centre.\n- Beds leaking into a silence → hard-cut them.\n- Headless screenshots time out under GPU load → retry.\n\n## 10. Engine\n\nIn `demo/`: `carve.js` (piece sprites, `cut` / `cutLine` / `cutTaper`, pattern library, hide texture, rivets), `gl.js` (WebGL2 compositor: lamp field × transmission × cloth, mirror, bloom, haze, warm fade), `stage.js` (frame, audience, pillar wipe, cut-letter plaques), `backstage.js` (rim-lit silhouettes, flame, smoke), `hud.js` (placard), `scenery.js` (landscape pieces, ground strip, fire), plus the jointed rig with IK and pendulum parts; `?test=model|frame|hands` draws sheets from the real engine. A first test unlike the demo: carve a lantern-seller with a lattice basket, press it onto one lamp, light three more and watch the frame bleach.\n\n## 11. Variation space\n\nYou decide the story, the figures (or none), what the lamp means, what leaves the screen, the opening, the ending, the camera path, the dyes and the pacing. All far from our demo:\n\n- Structures: **a procession** (one long pan; each figure adds a dye until the cloth is a full street); **two puppeteers** (rival hands argue through their puppets; backstage shows who is winning); **a workshop** (a puppet is carved, dyed and riveted on the cloth, then performs its own making).\n- Openings: **backstage first** (rim-lit hands and rods before the front); **one hole of light** (the screen all dark hide; one carved hole glows and widens); **mid-show** (the camera finds a performance already in full percussion).\n- Endings: **the lamp is carried away** (the cloth darkens from one side); **the puppets rest** (lifted off one by one, laid flat on a dim table); **the audience leaves** (the heads stand and go, the cloth still glowing).\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n"
+  },
+  "published_demo": {
+    "path": "outputs/gptcar/styles/shadow-puppet/DEMO.md",
+    "sha256": "db06736b217c34c4b74e7c15083ed3eb742c10499a12a3272c479899a825b708",
+    "verbatim": "# Shadow Puppetry — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *Hou Yi Shoots the Suns* (54 s) · `shadow-puppet.mp4` · source in [`demo/`](demo/)\n\n\n## Story & structure\n\nTen oil lamps burn as ten suns; each time the archer Hou Yi shoots one down, a lamp behind the screen goes out, until only the last lamp is left, and that lamp is the one lighting the play. One character, one goal (shoot down the suns that scorch the land), one turn (the tenth arrow is already nocked and he stops, leaving one sun).\n\nThe core idea: *each sun is a lamp* and each arrow puts one out, so the frame literally steps darker. One lamp at the start (the show begins); at \"ten suns\" nine more light behind the cloth, the screen whitens, overexposes and the colours bleach; every sun shot down snuffs a lamp and the colour steps back to warm gold. The end goes behind the screen: the \"sun\" was a lamp and the \"sky\" a cloth a metre wide, so the story's ending (one sun is enough) and the medium's truth (a shadow play needs one lamp) close in the same shot. Echoes: 1 lamp → 10 → 1; clapper at the start ↔ clapper at the end; title plaque ↔ end-card plaque.\n\nHow the demo adapted its topic: the lamp was the sun, and what went off the screen was each golden crow as it died. (The same question works for any topic: a product launch → the product is the lamp that finally lights the screen; a memory → figures lift off the cloth and blur as they are forgotten.)\n\nArc (54 s): a lamp lights in the dark → a world appears on the cloth → trouble arrives (ten lamps: the light changes) → the hero's entrance and freeze pose → the shooting, set to percussion → a silent choice → the world restored → go behind the screen → end card on the cloth.\n\nNative moves spent: the light is the world (lamp count = sun count), off the screen (the crows tumble off and dissolve into light), carved and translucent (Hou Yi's open-cut face), hand-held (plumes and legs on pendulums), go behind the screen (after the climax, as the echo).\n\n## Shots\n\n| Beat | Camera |\n|---|---|\n| Opening | Audience seat: full stage frame with children's heads. Black until a match flares behind the cloth. Very slow push. |\n| Into the story | Push through the frame until the cloth fills the screen. |\n| Disaster | 1.5× lateral pan across the burning land (give the disaster area). |\n| Hero entrance | 1.15× follow; on the freeze-pose gong, a 5-frame **crash zoom** (the percussion accent becomes a camera move). |\n| First action | Close on hands/bow/face, then a whip pan along the arrow to the target. |\n| Repetition | **Locked wide** so the audience sees every step of the change (nine lamp-steps of darkening). |\n| The choice | Medium-close with the target at the far edge: the hero at left, empty sky, the last sun at right. Music stops. |\n| Echo | Pull back to reveal the stage frame again, **truck right as a blurred foreground pillar wipes the frame**, and come out behind the screen. Slow push, then a fast dive into the flame that flashes to warm white before the end card. |\n\nWhy this route, for this story: the audience seat made it a told legend; the locked wide let nine darkening steps be counted; the silent medium-close held the refusal; the backstage truck paid off \"the sun is a lamp\". Each is one choice from STYLE.md §6, not the style's default opening or ending.\n\nTimeline highlights (`story.js`): title plaque in at 2.4 s, set 3.6 s, out 6.6 s; 1306 frames at 24 fps.\n\n## Score structure\n\nOriginal gong-and-drum score (`demo/music/score.py`). Patterns map to the drama in this order: opening roll → one hit per lamp, accelerating → heartbeat drum under the disaster → *jijifeng* roll accelerating into the entrance → big gong on the freeze → fast strokes with one gong per hit → **hard stop** (≤ 30 ms, reverb tails included) for the silent choice → one tiny small-gong tap for the decision → gentle fiddle theme → gong scrape to go backstage → a final big gong tail.\n\nFiddle: **ku-yin** for the disaster, **huan-yin** for heroism and healing. The suona-like reed only at the climax.\n\nFoley specific to this film: wooden clapper to open and close the show, match strike, lamp ignition, rod taps, leather flaps when a crow lifts off, leather footsteps, bow creak (rising pitch with draw), string twang, arrow whoosh, leather thwack on hit, lamp snuff (\"pfft\" + sizzle), wing flaps, crackle, heat drone (hard-cut at the silence), water, a quiet backstage room tone and one breath.\n\nVoice: a storyteller, Kokoro `am_michael`, speed 0.86–0.88, 5–6 short lines, compressed, plus small-theatre reverb. Music ducked ~12 dB, foley ~4 dB. A line that passed whisper alone blurred under music (\"shadow play still\" became \"shadow place\"): rewrite the line rather than fight the mix.\n\n## Palette & props\n\n- **Rendering constants**: lamp lobe σ ≈ 700 px + hotspot σ ≈ 120 px; flicker ≈ ±6 % value noise at 7 Hz plus a small 23 Hz sine; light colour `(1, .77, .46)`; exposure `1.75 / √(lamps lit)` (ten lamps ≈ 3× one lamp); cloth weave at ~2.6 rad/px; bloom from a 3-level pyramid, threshold 0.72, tint `(1,.82,.6)`; warm vignette toward `(.7,.47,.25)`; saturation ×1.1; hide texture tileable 512²; film grain 2 in ffmpeg.\n- **Dyes**: vermilion `#b8211a`, flame `#d9541c`, ochre `#dc9d1e`, gold `#c98a26`, malachite `#236e3a`, jade `#2f8a5c`, indigo `#22647e`, raw hide `#e2bd80`, ink `#1a100a` (outlines, hair, boots).\n- **Hou Yi** (11 pieces): head+helmet, chest, skirt, two upper arms, two forearms, two hands, two legs, plus quiver, bow, pheasant plumes. Head ~1.2× natural, helmet about a quarter of the figure. Armour = rows of thick crescent holes (\"open fish-scale\"), trousers = diamond lattice, belt = coin holes, four-lobed cloud collar with cloud-scroll cuts, sleeves in a different colour from the torso. Court boots: tall black shaft with cut cloud scrolls, upturned toe, thick white sole carved as one piece (grooves + a row of oval holes). Open-cut face.\n- **The bow** is drawn procedurally: limbs bend with draw, the string goes to the nocking hand, and **the nock sits on the aim line**: grip = shoulder + u·118, nock = grip − u·(40 + 72·pull). Arrow shaft dark `#4a2612`, 3 px.\n- **Suns**: a carved round piece: flame-tongue rim (alternating curl, teardrop holes between tongues, tongues ~40 px long × 0.78 of the arc spacing), bead ring, translucent orange-red disc, with a separate dark three-legged crow on top so it can drop out.\n- **Scenery**: mountains one piece each with wide strata cuts following the ridge and cloud holes near the peaks; the tree = a trunk piece plus a single lace canopy full of leaf-shaped holes; the ground is a narrow carved strip (meander band + coin holes), with cracks cut as tapered slits that widen and lengthen as the land burns through. Water is a separate indigo wave strip that can be lifted off. Fire is a carved piece of S-curling flame tongues (red → orange → yellow bands, spiral hooks at the tips) on a rod, swapped and shaken at 12 fps. A hut.\n- **Stage**: red-and-black lacquer frame, carved lintel with gold cloud curls, pillars; blurred children's heads along the bottom in the opening and end-card wides.\n- **Backstage**: lamps as dish + cords, one lit, the other nine just snuffed and trailing smoke.\n- **Motion numbers**: tremor ≈ 3 px / 0.018 rad, ×1.8 under tension; pendulums pre-simulated at 120 Hz; arrivals scale 2.6 → 1, blur 34 → 0 over 0.55 s; exits scale ×1.9, blur +30 px, fade over ~0.9 s; lamp flare overshoot to 1.5×, snuff over 0.35 s; freeze pose on the big gong held ~1 s.\n- **Subtitle placard**: dark brown gradient at 0.93 alpha, thin gold inner line, a small vermilion seal with 说 (\"tell\", Ma Shan Zheng) on the left, Cormorant Garamond 600, 46 px, cream `#f3e2bf`, centred 58 px above the bottom; slides up 18 px in 0.22 s; shown from line start until speech + 0.8 s (≥ 1.8 s), cut 0.3 s before the next.\n- **Title plaque**: \"HOU YI / SHOOTS THE SUNS / a shadow puppet tale\" cut out of dark hide, red border with a meander band, green cloud-scroll corner roundels, a red seal with carved characters, carried up on two rods and lifted off the cloth to exit.\n\n## End card\n\nA cut-letter plaque on the cloth: \"SHADOW PUPPETRY\" / \"Hou Yi Shoots the Suns\" / \"LemoLab × Claude Opus 5.5\" (`stage.js` `buildStage().end`), after the dive into the backstage flame flashes to warm white; the poster frame carries the same credit line (`main.js`). The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\nRights (see [`demo/CREDITS`](demo/CREDITS)): the Hou Yi legend is public-domain folklore; puppets, scenery, carving patterns, staging and melodies are original and generated by code; traditional motifs (fish-scale armour, cloud scrolls, meander, coin and lattice patterns, flame tongues) are used generically and no historical puppet is copied. Fonts Cormorant Garamond and Ma Shan Zheng (OFL 1.1); voice Kokoro TTS (Apache-2.0); music samples CC0 (Karoryfer erhu, Versilian Studios libraries); sound effects synthesized.\n\n## Build notes\n\n```\nstyles/shadow-puppet/demo/\n  carve.js     cutting toolkit: piece sprites, cut/cutLine/cutTaper, pattern library, hide texture, rivets\n  gl.js        WebGL2 screen compositor (lamp field × transmission × cloth, mirror, bloom, haze, warm fade)\n  houyi.js     jointed puppet (11 pieces, IK arms, bow, plumes, rods)    poses.js  key poses\n  suns.js      carved suns + crow                     scenery.js  mountains, ground strip, river, tree, hut, fire pieces\n  stage.js     lacquer frame, audience, pillar wipe, cut-letter plaques\n  backstage.js rim-lit silhouettes (hands, lamps), lamp flame, smoke\n  story.js     timeline (single source of truth)      main.js  shots, acting, lamps, events\n  hud.js       subtitle placard    test.js  ?test=model | frame | hands | (main) poster\n  lines.json   narration   mix.py  foley + voice + music ducking   music/score.py  original gong-and-drum score\n  tools/       cues.py (SRT), mux.sh (CRF 22), probe.mjs (render timing)\n```\n\n1. `node core/render/still.mjs styles/shadow-puppet/demo 0 --q test=model`: model sheet first (character risk comes first). Then `--q test=frame&f=ten|one` style frames and `--q test=hands`.\n2. `.venv/bin/python core/tts/tts.py lines.json voices` → `core/tts/asr_check.py` (use `asr` fields for homophones).\n3. Timeline in `story.js`. Review with `still.mjs --range 0.5:54:1.5` + `core/render/sheet.py` (two rounds, offset by half a step), then frame strips from the mp4 for key actions.\n4. `node core/render/events.mjs` → `music/score.py` → `mix.py`.\n5. `node core/render/video.mjs … --fps 24 --workers 3` (1306 frames ≈ 80 s on an M-series Mac, 3 workers).\n6. `sh demo/tools/mux.sh out/video24.mp4 mix.wav shadow-puppet.mp4 24 2`. Or just `sh demo/build.sh`.\n\nPitfalls tied to this demo's props:\n- Hou Yi first read with stilt legs, an egg torso and arms lost in the torso → enlarged head, longer skirt, wider trousers, cloud collar, sleeves in a different colour from the chest.\n- Sun rays looked like a saw blade, then like flower petals → fat-based, hooked flame tongues at the sizes above.\n- The raw-hide arrow disappeared on the ten-lamp screen → dark shaft; the arrow pointed sideways until the nock sat on the aim line.\n- The backstage mirror helper built the rotation from `C[0]` for both axes and flipped pieces upside down → `C[0]` for x terms, `C[3]` for y terms.\n- The push-in on the backstage lamp at the top edge shoved the hands out of frame → push on frame centre, fixed point moved to the flame only for the final dive.\n- Heat drone and crackle leaked into the silent choice → hard-cut at the stop.\n- Headless Chrome screenshots occasionally timed out while 14 other renders shared the GPU → retry.\n"
+  },
+  "narration": [
+    {
+      "id": "L1",
+      "text": "Long ago, ten suns climbed the sky at once.",
+      "asr": "Long ago, 10 sons climbed the sky at once.",
+      "voice": "am_michael",
+      "speed": 0.88,
+      "start": 7.45,
+      "duration": 3.061
+    },
+    {
+      "id": "L2",
+      "text": "The rivers boiled. The fields cracked. The whole earth began to burn.",
+      "voice": "am_michael",
+      "speed": 0.88,
+      "start": 12.3,
+      "duration": 4.976
+    },
+    {
+      "id": "L3",
+      "text": "Then came Hou Yi, the archer.",
+      "asr": "Then came Hu Yi, the archer.",
+      "voice": "am_michael",
+      "speed": 0.86,
+      "start": 22.35,
+      "duration": 1.993
+    },
+    {
+      "id": "L4",
+      "text": "One arrow for every burning sun.",
+      "voice": "am_michael",
+      "speed": 0.88,
+      "start": 25.2,
+      "duration": 2.179
+    },
+    {
+      "id": "L5",
+      "text": "But the last one, he spared. So the world would have light, and not fire.",
+      "voice": "am_michael",
+      "speed": 0.88,
+      "start": 37.75,
+      "duration": 4.57
+    },
+    {
+      "id": "L6",
+      "text": "One light is enough. Even now, every shadow play burns just one.",
+      "voice": "am_michael",
+      "speed": 0.86,
+      "start": 45.2,
+      "duration": 4.833
+    }
+  ],
+  "verbatim_published_script_files": {
+    "lines.json": [
+      {
+        "id": "L1",
+        "text": "Long ago, ten suns climbed the sky at once.",
+        "asr": "Long ago, 10 sons climbed the sky at once.",
+        "voice": "am_michael",
+        "speed": 0.88
+      },
+      {
+        "id": "L2",
+        "text": "The rivers boiled. The fields cracked. The whole earth began to burn.",
+        "voice": "am_michael",
+        "speed": 0.88
+      },
+      {
+        "id": "L3",
+        "text": "Then came Hou Yi, the archer.",
+        "asr": "Then came Hu Yi, the archer.",
+        "voice": "am_michael",
+        "speed": 0.86
+      },
+      {
+        "id": "L4",
+        "text": "One arrow for every burning sun.",
+        "voice": "am_michael",
+        "speed": 0.88
+      },
+      {
+        "id": "L5",
+        "text": "But the last one, he spared. So the world would have light, and not fire.",
+        "voice": "am_michael",
+        "speed": 0.88
+      },
+      {
+        "id": "L6",
+        "text": "One light is enough. Even now, every shadow play burns just one.",
+        "voice": "am_michael",
+        "speed": 0.86
+      }
+    ]
+  },
+  "timed_shot_prompts": [
+    {
+      "start": 0,
+      "end": 3.6,
+      "name": "A shadow theatre lights up",
+      "visual_prompt": "Dark red/gold carved wooden theatre frame; seated audience silhouettes foreground. Match1.0 lights single lamp1.25 behind cloth. Red framed plaque rises on rods.",
+      "onscreen_text": "HOU YI\nSHOOTS THE SUNS\na shadow puppet tale",
+      "camera_motion": "Wide stage view, warm light spreads through woven screen.",
+      "sound_direction": "Audience clap0.4,match,flame,rod taps.",
+      "transition": "Title settles on stage.",
+      "material_requirements": "Transmitted lamp light through woven cloth; patterned translucent carved leather, not black cardboard. Hou Yi has eleven articulated pieces, fish-scale armour, red headdress, long curved plume, rods/joints and profile face. Ten flame-rimmed suns each with crow emblem. Scenery has lattice hut, meander rail, contour-carved hills/tree. Red-gold wooden proscenium and audience silhouettes; backstage hands/lamp reveal."
+    },
+    {
+      "start": 3.6,
+      "end": 7.2,
+      "name": "Title gives way to the world",
+      "visual_prompt": "Plaque held in light then lifts6.6. Small green tree, contour hills, patterned hut and narrow river strip revealed behind.",
+      "onscreen_text": "",
+      "camera_motion": "Wide, audience still foreground until story starts.",
+      "sound_direction": "Fresh am_michael0.86/0.88 narration. New100BPM drum/gong/woodblock score with erhu moving ku-yin→huan-yin, nine impacts individually synchronized, hard-cut silence at spared-sun choice, soft gong36.9, room/claps at stage bookends.",
+      "transition": "Plaque physically exits on rods.",
+      "material_requirements": "Transmitted lamp light through woven cloth; patterned translucent carved leather, not black cardboard. Hou Yi has eleven articulated pieces, fish-scale armour, red headdress, long curved plume, rods/joints and profile face. Ten flame-rimmed suns each with crow emblem. Scenery has lattice hut, meander rail, contour-carved hills/tree. Red-gold wooden proscenium and audience silhouettes; backstage hands/lamp reveal."
+    },
+    {
+      "start": 7.2,
+      "end": 12,
+      "name": "Ten suns",
+      "visual_prompt": "One sun becomes ten via nine staggered flares7.8–10.6. Each has orange/red crow emblem and flame tongues; light overwhelms cloth by10.8.",
+      "onscreen_text": "Long ago, ten suns climbed the sky at once.",
+      "camera_motion": "Push into stage, scale of heat increasing.",
+      "sound_direction": "Fresh am_michael0.86/0.88 narration. New100BPM drum/gong/woodblock score with erhu moving ku-yin→huan-yin, nine impacts individually synchronized, hard-cut silence at spared-sun choice, soft gong36.9, room/claps at stage bookends.",
+      "transition": "Flares remain material puppets, not particles.",
+      "material_requirements": "Transmitted lamp light through woven cloth; patterned translucent carved leather, not black cardboard. Hou Yi has eleven articulated pieces, fish-scale armour, red headdress, long curved plume, rods/joints and profile face. Ten flame-rimmed suns each with crow emblem. Scenery has lattice hut, meander rail, contour-carved hills/tree. Red-gold wooden proscenium and audience silhouettes; backstage hands/lamp reveal."
+    },
+    {
+      "start": 12,
+      "end": 18,
+      "name": "Earth burns",
+      "visual_prompt": "Lateral close travel over carved hut, drying river and bare branching tree as leafy canopy disappears, patterned flames rise13.2. Leather translucency and tiny cutouts remain readable.",
+      "onscreen_text": "The rivers boiled. The fields cracked. The whole earth began to burn.",
+      "camera_motion": "Traverse landscape while suns clip at top.",
+      "sound_direction": "Fresh am_michael0.86/0.88 narration. New100BPM drum/gong/woodblock score with erhu moving ku-yin→huan-yin, nine impacts individually synchronized, hard-cut silence at spared-sun choice, soft gong36.9, room/claps at stage bookends.",
+      "transition": "Heat shifts greener palette toward orange.",
+      "material_requirements": "Transmitted lamp light through woven cloth; patterned translucent carved leather, not black cardboard. Hou Yi has eleven articulated pieces, fish-scale armour, red headdress, long curved plume, rods/joints and profile face. Ten flame-rimmed suns each with crow emblem. Scenery has lattice hut, meander rail, contour-carved hills/tree. Red-gold wooden proscenium and audience silhouettes; backstage hands/lamp reveal."
+    },
+    {
+      "start": 18,
+      "end": 21.6,
+      "name": "Hero enters",
+      "visual_prompt": "Hou Yi runs on articulated legs18.3–20.7, plume flexes on second-order motion and rods follow hands. Hop20.9 lands hero in stage centre.",
+      "onscreen_text": "",
+      "camera_motion": "Medium-wide; preserve river baseline and hut.",
+      "sound_direction": "Fresh am_michael0.86/0.88 narration. New100BPM drum/gong/woodblock score with erhu moving ku-yin→huan-yin, nine impacts individually synchronized, hard-cut silence at spared-sun choice, soft gong36.9, room/claps at stage bookends.",
+      "transition": "Cut/punch to heroic pose21.6.",
+      "material_requirements": "Transmitted lamp light through woven cloth; patterned translucent carved leather, not black cardboard. Hou Yi has eleven articulated pieces, fish-scale armour, red headdress, long curved plume, rods/joints and profile face. Ten flame-rimmed suns each with crow emblem. Scenery has lattice hut, meander rail, contour-carved hills/tree. Red-gold wooden proscenium and audience silhouettes; backstage hands/lamp reveal."
+    },
+    {
+      "start": 21.6,
+      "end": 25.2,
+      "name": "The archer presents himself",
+      "visual_prompt": "Five-frame crash zoom into liang-gong freeze: head/plume, torso carving and bow arm precise; looks up22.9, then turns into aiming stance.",
+      "onscreen_text": "Then came Hou Yi, the archer.",
+      "camera_motion": "Close hero with suns at upper right.",
+      "sound_direction": "Fresh am_michael0.86/0.88 narration. New100BPM drum/gong/woodblock score with erhu moving ku-yin→huan-yin, nine impacts individually synchronized, hard-cut silence at spared-sun choice, soft gong36.9, room/claps at stage bookends.",
+      "transition": "Freeze-pose punctuation before draw.",
+      "material_requirements": "Transmitted lamp light through woven cloth; patterned translucent carved leather, not black cardboard. Hou Yi has eleven articulated pieces, fish-scale armour, red headdress, long curved plume, rods/joints and profile face. Ten flame-rimmed suns each with crow emblem. Scenery has lattice hut, meander rail, contour-carved hills/tree. Red-gold wooden proscenium and audience silhouettes; backstage hands/lamp reveal."
+    },
+    {
+      "start": 25.2,
+      "end": 28.3,
+      "name": "First arrow",
+      "visual_prompt": "Draw bow25.5–27.2 under visible tension. Release27.6, arrow flight0.3s, hit27.9. Sun6 extinguishes/flutters away with separate crow.",
+      "onscreen_text": "One arrow for every burning sun.",
+      "camera_motion": "Close bow then widen enough to show hit.",
+      "sound_direction": "String snap and one gong exactly27.9.",
+      "transition": "Rod-driven hand/bow mechanics.",
+      "material_requirements": "Transmitted lamp light through woven cloth; patterned translucent carved leather, not black cardboard. Hou Yi has eleven articulated pieces, fish-scale armour, red headdress, long curved plume, rods/joints and profile face. Ten flame-rimmed suns each with crow emblem. Scenery has lattice hut, meander rail, contour-carved hills/tree. Red-gold wooden proscenium and audience silhouettes; backstage hands/lamp reveal."
+    },
+    {
+      "start": 28.3,
+      "end": 30,
+      "name": "Second arrow",
+      "visual_prompt": "Release second arrow29.4 with0.3s flight; second distinct sun falls. Do not collapse nine shots into one explosion.",
+      "onscreen_text": "",
+      "camera_motion": "Medium stage with clear aiming line.",
+      "sound_direction": "Fresh am_michael0.86/0.88 narration. New100BPM drum/gong/woodblock score with erhu moving ku-yin→huan-yin, nine impacts individually synchronized, hard-cut silence at spared-sun choice, soft gong36.9, room/claps at stage bookends.",
+      "transition": "Accelerating action.",
+      "material_requirements": "Transmitted lamp light through woven cloth; patterned translucent carved leather, not black cardboard. Hou Yi has eleven articulated pieces, fish-scale armour, red headdress, long curved plume, rods/joints and profile face. Ten flame-rimmed suns each with crow emblem. Scenery has lattice hut, meander rail, contour-carved hills/tree. Red-gold wooden proscenium and audience silhouettes; backstage hands/lamp reveal."
+    },
+    {
+      "start": 30,
+      "end": 34.8,
+      "name": "Seven-arrow volley",
+      "visual_prompt": "Releases30.6,31.2,31.8,32.1,32.4,32.7,33.0 with respective0.22/0.22/0.20/0.20/0.18/0.18/0.18 flights. Kill sequence6,1,3,7,2,8,4,9,5 overall; sun0 survives. Ninth fall at33.5.",
+      "onscreen_text": "",
+      "camera_motion": "Widen to count remaining suns against stage.",
+      "sound_direction": "Rapid but separated gong/drum hits.",
+      "transition": "Each hit distinct, translucent flame/crow exits.",
+      "material_requirements": "Transmitted lamp light through woven cloth; patterned translucent carved leather, not black cardboard. Hou Yi has eleven articulated pieces, fish-scale armour, red headdress, long curved plume, rods/joints and profile face. Ten flame-rimmed suns each with crow emblem. Scenery has lattice hut, meander rail, contour-carved hills/tree. Red-gold wooden proscenium and audience silhouettes; backstage hands/lamp reveal."
+    },
+    {
+      "start": 34.8,
+      "end": 37.2,
+      "name": "The final arrow is refused",
+      "visual_prompt": "Hero nocks/draws toward sole remaining sun, stops at34.8, chooses mercy; slowly lowers bow36–37.1. Stage holds golden and quiet.",
+      "onscreen_text": "",
+      "camera_motion": "Closer hero-left/sun-right composition.",
+      "sound_direction": "Hard silence then soft gong36.9.",
+      "transition": "Actual unshot arrow and lowered bow must read.",
+      "material_requirements": "Transmitted lamp light through woven cloth; patterned translucent carved leather, not black cardboard. Hou Yi has eleven articulated pieces, fish-scale armour, red headdress, long curved plume, rods/joints and profile face. Ten flame-rimmed suns each with crow emblem. Scenery has lattice hut, meander rail, contour-carved hills/tree. Red-gold wooden proscenium and audience silhouettes; backstage hands/lamp reveal."
+    },
+    {
+      "start": 37.2,
+      "end": 43.2,
+      "name": "Healing under one light",
+      "visual_prompt": "Flames shrink, river returns38.6, canopy regrows39.6; scenery cools green, hero stands at ease.",
+      "onscreen_text": "But the last one, he spared. So the world would have light, and not fire.",
+      "camera_motion": "Slow pull from40.6, return to framed stage.",
+      "sound_direction": "Fresh am_michael0.86/0.88 narration. New100BPM drum/gong/woodblock score with erhu moving ku-yin→huan-yin, nine impacts individually synchronized, hard-cut silence at spared-sun choice, soft gong36.9, room/claps at stage bookends.",
+      "transition": "No independent new location.",
+      "material_requirements": "Transmitted lamp light through woven cloth; patterned translucent carved leather, not black cardboard. Hou Yi has eleven articulated pieces, fish-scale armour, red headdress, long curved plume, rods/joints and profile face. Ten flame-rimmed suns each with crow emblem. Scenery has lattice hut, meander rail, contour-carved hills/tree. Red-gold wooden proscenium and audience silhouettes; backstage hands/lamp reveal."
+    },
+    {
+      "start": 43.2,
+      "end": 44.5,
+      "name": "Move behind the screen",
+      "visual_prompt": "Truck laterally around solid proscenium pillar; pillar wipes picture and masks mirrored cut43.8.",
+      "onscreen_text": "",
+      "camera_motion": "Camera physically moves through stage boundary.",
+      "sound_direction": "Fresh am_michael0.86/0.88 narration. New100BPM drum/gong/woodblock score with erhu moving ku-yin→huan-yin, nine impacts individually synchronized, hard-cut silence at spared-sun choice, soft gong36.9, room/claps at stage bookends.",
+      "transition": "Pillar occlusion, not dissolve.",
+      "material_requirements": "Transmitted lamp light through woven cloth; patterned translucent carved leather, not black cardboard. Hou Yi has eleven articulated pieces, fish-scale armour, red headdress, long curved plume, rods/joints and profile face. Ten flame-rimmed suns each with crow emblem. Scenery has lattice hut, meander rail, contour-carved hills/tree. Red-gold wooden proscenium and audience silhouettes; backstage hands/lamp reveal."
+    },
+    {
+      "start": 44.5,
+      "end": 50.8,
+      "name": "One real lamp, one pair of hands",
+      "visual_prompt": "Backstage mirror view shows puppeteer’s silhouetted hands controlling rods. Nine hanging lamp cups dark, one lamp/sun still lit. Puppet and tree reversed correctly. Bow48.3; audience clap50.6.",
+      "onscreen_text": "One light is enough. Even now, every shadow play burns just one.",
+      "camera_motion": "Slow push behind screen, visible hands/rods.",
+      "sound_direction": "Fresh am_michael0.86/0.88 narration. New100BPM drum/gong/woodblock score with erhu moving ku-yin→huan-yin, nine impacts individually synchronized, hard-cut silence at spared-sun choice, soft gong36.9, room/claps at stage bookends.",
+      "transition": "Cloth/light stays physically coherent.",
+      "material_requirements": "Transmitted lamp light through woven cloth; patterned translucent carved leather, not black cardboard. Hou Yi has eleven articulated pieces, fish-scale armour, red headdress, long curved plume, rods/joints and profile face. Ten flame-rimmed suns each with crow emblem. Scenery has lattice hut, meander rail, contour-carved hills/tree. Red-gold wooden proscenium and audience silhouettes; backstage hands/lamp reveal."
+    },
+    {
+      "start": 50.8,
+      "end": 54.4,
+      "name": "The theatre closes its tale",
+      "visual_prompt": "Return front wide, audience foreground, hero lowered, original surviving sun at upper right. Red leather framed end plaque.",
+      "onscreen_text": "SHADOW PUPPETRY\nHou Yi Shoots the Suns",
+      "camera_motion": "Wide stage final hold.",
+      "sound_direction": "Fresh am_michael0.86/0.88 narration. New100BPM drum/gong/woodblock score with erhu moving ku-yin→huan-yin, nine impacts individually synchronized, hard-cut silence at spared-sun choice, soft gong36.9, room/claps at stage bookends.",
+      "transition": "Honest GPT recreation signature replaces original credit.",
+      "material_requirements": "Transmitted lamp light through woven cloth; patterned translucent carved leather, not black cardboard. Hou Yi has eleven articulated pieces, fish-scale armour, red headdress, long curved plume, rods/joints and profile face. Ten flame-rimmed suns each with crow emblem. Scenery has lattice hut, meander rail, contour-carved hills/tree. Red-gold wooden proscenium and audience silhouettes; backstage hands/lamp reveal."
+    }
+  ],
+  "published_text_source_inventory": {
+    "note": "Verbatim literals from text/annotation/caption sourcecalls. This supplemental audit index may include formatting/style strings; shot narrativecards and scripts above are authoritative. Source path/line retained to resolve exacttext.",
+    "entries": [
+      {
+        "file": "outputs/gptcar/styles/shadow-puppet/demo/carve.js",
+        "line": 9,
+        "published_source_literals": [
+          "canvas"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/shadow-puppet/demo/gl.js",
+        "line": 66,
+        "published_source_literals": [
+          "webgl2"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/shadow-puppet/demo/houyi.js",
+        "line": 171,
+        "published_source_literals": [
+          "bow",
+          "draw"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/shadow-puppet/demo/hud.js",
+        "line": 17,
+        "published_source_literals": [
+          "400 34px ",
+          "; g.fillStyle = ",
+          "; g.textAlign = ",
+          "; g.textBaseline = ",
+          "; g.fillText("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/shadow-puppet/demo/hud.js",
+        "line": 18,
+        "published_source_literals": [
+          "600 46px ",
+          "; g.fillStyle = ",
+          "; g.textAlign = ",
+          "; g.textBaseline = "
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/shadow-puppet/demo/index.html",
+        "line": 2,
+        "published_source_literals": [
+          "utf-8"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/shadow-puppet/demo/main.js",
+        "line": 247,
+        "published_source_literals": [
+          "center",
+          "#e9cf9c",
+          "700 64px ",
+          "; fr.letterSpacing = ",
+          "; fr.fillText("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/shadow-puppet/demo/main.js",
+        "line": 248,
+        "published_source_literals": [
+          "italic 600 30px ",
+          "; fr.letterSpacing = ",
+          "; fr.fillStyle = ",
+          "; fr.fillText("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/shadow-puppet/demo/main.js",
+        "line": 352,
+        "published_source_literals": [
+          "rodtap",
+          "rodtap",
+          "liftoff"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/shadow-puppet/demo/stage.js",
+        "line": 68,
+        "published_source_literals": [
+          "; else g.letterSpacing = "
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/shadow-puppet/demo/stage.js",
+        "line": 73,
+        "published_source_literals": [
+          "#b3261b",
+          "destination-out",
+          "#000",
+          "400 40px ",
+          "; g.textAlign = ",
+          "; g.textBaseline = ",
+          "; g.fillText(",
+          ", sx + 45, sy + 26); g.fillText("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/shadow-puppet/demo/test.js",
+        "line": 27,
+        "published_source_literals": [
+          "#2b170d",
+          "left",
+          "Cormorant Garamond",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/shadow-puppet/demo/test.js",
+        "line": 29,
+        "published_source_literals": [
+          "#a3170f",
+          "700 15px ",
+          "; fr.fillStyle = ",
+          "; fr.textAlign = "
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/shadow-puppet/demo/test.js",
+        "line": 101,
+        "published_source_literals": [
+          "700 34px ",
+          "; fr.fillStyle = ",
+          "; fr.textBaseline = ",
+          "; fr.fillText("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/shadow-puppet/demo/test.js",
+        "line": 102,
+        "published_source_literals": [
+          "600 21px ",
+          "; fr.fillStyle = ",
+          "; fr.textAlign = ",
+          "; fr.fillText("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/shadow-puppet/demo/test.js",
+        "line": 103,
+        "published_source_literals": [
+          "400 30px ",
+          "; fr.fillStyle = ",
+          "; fr.textAlign = ",
+          "; fr.fillText("
+        ]
+      }
+    ]
+  },
+  "published_cue_events": [
+    {
+      "type": "clap",
+      "t": 0.4
+    },
+    {
+      "type": "match",
+      "t": 1
+    },
+    {
+      "type": "ignite",
+      "t": 1.25
+    },
+    {
+      "type": "rodtap",
+      "t": 2.5
+    },
+    {
+      "type": "rodtap",
+      "t": 3.6,
+      "v": 0.6
+    },
+    {
+      "type": "liftoff",
+      "t": 6.6
+    },
+    {
+      "type": "liftoff",
+      "t": 7.15,
+      "v": 0.5
+    },
+    {
+      "type": "vo",
+      "t": 7.45,
+      "id": "L1"
+    },
+    {
+      "type": "flare",
+      "t": 7.8,
+      "i": 0
+    },
+    {
+      "type": "flare",
+      "t": 8.4,
+      "i": 1
+    },
+    {
+      "type": "flare",
+      "t": 8.9,
+      "i": 2
+    },
+    {
+      "type": "flare",
+      "t": 9.3,
+      "i": 3
+    },
+    {
+      "type": "flare",
+      "t": 9.6,
+      "i": 4
+    },
+    {
+      "type": "flare",
+      "t": 9.9,
+      "i": 5
+    },
+    {
+      "type": "flare",
+      "t": 10.2,
+      "i": 6
+    },
+    {
+      "type": "flare",
+      "t": 10.4,
+      "i": 7
+    },
+    {
+      "type": "flare",
+      "t": 10.6,
+      "i": 8
+    },
+    {
+      "type": "heat",
+      "t": 10.8,
+      "d": 24.049999999999997
+    },
+    {
+      "type": "crackle",
+      "t": 12,
+      "d": 22.799999999999997
+    },
+    {
+      "type": "vo",
+      "t": 12.3,
+      "id": "L2"
+    },
+    {
+      "type": "crack",
+      "t": 14.15
+    },
+    {
+      "type": "crack",
+      "t": 14.5,
+      "v": 0.6
+    },
+    {
+      "type": "fireup",
+      "t": 16.55
+    },
+    {
+      "type": "step",
+      "t": 18.5,
+      "v": 0.5
+    },
+    {
+      "type": "step",
+      "t": 18.657,
+      "v": 0.8
+    },
+    {
+      "type": "step",
+      "t": 18.814,
+      "v": 0.5
+    },
+    {
+      "type": "step",
+      "t": 18.971,
+      "v": 0.8
+    },
+    {
+      "type": "step",
+      "t": 19.129,
+      "v": 0.5
+    },
+    {
+      "type": "step",
+      "t": 19.286,
+      "v": 0.8
+    },
+    {
+      "type": "step",
+      "t": 19.443,
+      "v": 0.5
+    },
+    {
+      "type": "step",
+      "t": 19.6,
+      "v": 0.8
+    },
+    {
+      "type": "step",
+      "t": 19.757,
+      "v": 0.5
+    },
+    {
+      "type": "step",
+      "t": 19.914,
+      "v": 0.8
+    },
+    {
+      "type": "step",
+      "t": 20.071,
+      "v": 0.5
+    },
+    {
+      "type": "step",
+      "t": 20.229,
+      "v": 0.8
+    },
+    {
+      "type": "step",
+      "t": 20.386,
+      "v": 0.5
+    },
+    {
+      "type": "step",
+      "t": 20.543,
+      "v": 0.8
+    },
+    {
+      "type": "hop",
+      "t": 20.9
+    },
+    {
+      "type": "land",
+      "t": 21.25
+    },
+    {
+      "type": "vo",
+      "t": 22.35,
+      "id": "L3"
+    },
+    {
+      "type": "vo",
+      "t": 25.2,
+      "id": "L4"
+    },
+    {
+      "type": "creak",
+      "t": 25.5,
+      "d": 1.6999999999999993
+    },
+    {
+      "type": "twang",
+      "t": 27.6
+    },
+    {
+      "type": "arrow",
+      "t": 27.6,
+      "d": 0.3
+    },
+    {
+      "type": "hit",
+      "t": 27.9,
+      "i": 0
+    },
+    {
+      "type": "snuff",
+      "t": 27.95,
+      "i": 0
+    },
+    {
+      "type": "crowflap",
+      "t": 28
+    },
+    {
+      "type": "creak",
+      "t": 29.05,
+      "d": 0.3,
+      "v": 0.5
+    },
+    {
+      "type": "twang",
+      "t": 29.4
+    },
+    {
+      "type": "arrow",
+      "t": 29.4,
+      "d": 0.3
+    },
+    {
+      "type": "hit",
+      "t": 29.7,
+      "i": 1
+    },
+    {
+      "type": "snuff",
+      "t": 29.75,
+      "i": 1
+    },
+    {
+      "type": "crowflap",
+      "t": 29.85,
+      "v": 0.6
+    },
+    {
+      "type": "creak",
+      "t": 30.25,
+      "d": 0.3,
+      "v": 0.5
+    },
+    {
+      "type": "twang",
+      "t": 30.6
+    },
+    {
+      "type": "arrow",
+      "t": 30.6,
+      "d": 0.22
+    },
+    {
+      "type": "hit",
+      "t": 30.82,
+      "i": 2
+    },
+    {
+      "type": "creak",
+      "t": 30.85,
+      "d": 0.3,
+      "v": 0.5
+    },
+    {
+      "type": "snuff",
+      "t": 30.87,
+      "i": 2
+    },
+    {
+      "type": "twang",
+      "t": 31.2
+    },
+    {
+      "type": "arrow",
+      "t": 31.2,
+      "d": 0.22
+    },
+    {
+      "type": "hit",
+      "t": 31.42,
+      "i": 3
+    },
+    {
+      "type": "creak",
+      "t": 31.45,
+      "d": 0.3,
+      "v": 0.5
+    },
+    {
+      "type": "snuff",
+      "t": 31.47,
+      "i": 3
+    },
+    {
+      "type": "creak",
+      "t": 31.75,
+      "d": 0.3,
+      "v": 0.5
+    },
+    {
+      "type": "twang",
+      "t": 31.8
+    },
+    {
+      "type": "arrow",
+      "t": 31.8,
+      "d": 0.2
+    },
+    {
+      "type": "hit",
+      "t": 32,
+      "i": 4
+    },
+    {
+      "type": "snuff",
+      "t": 32.05,
+      "i": 4
+    },
+    {
+      "type": "creak",
+      "t": 32.05,
+      "d": 0.3,
+      "v": 0.5
+    },
+    {
+      "type": "twang",
+      "t": 32.1
+    },
+    {
+      "type": "arrow",
+      "t": 32.1,
+      "d": 0.2
+    },
+    {
+      "type": "hit",
+      "t": 32.3,
+      "i": 5
+    },
+    {
+      "type": "snuff",
+      "t": 32.35,
+      "i": 5
+    },
+    {
+      "type": "creak",
+      "t": 32.35,
+      "d": 0.3,
+      "v": 0.5
+    },
+    {
+      "type": "twang",
+      "t": 32.4
+    },
+    {
+      "type": "arrow",
+      "t": 32.4,
+      "d": 0.18
+    },
+    {
+      "type": "hit",
+      "t": 32.58,
+      "i": 6
+    },
+    {
+      "type": "snuff",
+      "t": 32.63,
+      "i": 6
+    },
+    {
+      "type": "twang",
+      "t": 32.7
+    },
+    {
+      "type": "arrow",
+      "t": 32.7,
+      "d": 0.18
+    },
+    {
+      "type": "hit",
+      "t": 32.88,
+      "i": 7
+    },
+    {
+      "type": "snuff",
+      "t": 32.93,
+      "i": 7
+    },
+    {
+      "type": "twang",
+      "t": 33
+    },
+    {
+      "type": "arrow",
+      "t": 33,
+      "d": 0.18
+    },
+    {
+      "type": "hit",
+      "t": 33.18,
+      "i": 8
+    },
+    {
+      "type": "snuff",
+      "t": 33.23,
+      "i": 8
+    },
+    {
+      "type": "creak",
+      "t": 34,
+      "d": 0.7999999999999972,
+      "v": 1
+    },
+    {
+      "type": "bowease",
+      "t": 36,
+      "d": 1.1
+    },
+    {
+      "type": "vo",
+      "t": 37.75,
+      "id": "L5"
+    },
+    {
+      "type": "water",
+      "t": 38.6,
+      "d": 4.600000000000001
+    },
+    {
+      "type": "wind",
+      "t": 43.2,
+      "d": 1.5
+    },
+    {
+      "type": "cloth",
+      "t": 43.5
+    },
+    {
+      "type": "room",
+      "t": 43.8,
+      "d": 7.100000000000004
+    },
+    {
+      "type": "vo",
+      "t": 45.2,
+      "id": "L6"
+    },
+    {
+      "type": "breath",
+      "t": 47.2
+    },
+    {
+      "type": "rodtap",
+      "t": 48.3,
+      "v": 0.5
+    },
+    {
+      "type": "rodtap",
+      "t": 49.5,
+      "v": 0.35
+    },
+    {
+      "type": "clap",
+      "t": 50.6
+    },
+    {
+      "type": "rodtap",
+      "t": 51,
+      "v": 0.6
+    }
+  ],
+  "published_source_hashes": {
+    "outputs/gptcar/styles/shadow-puppet/demo/backstage.js": "7abc7c0181eaa5bdf0aa545c527233b5057c525017463ebf696e60d56f62d719",
+    "outputs/gptcar/styles/shadow-puppet/demo/carve.js": "a439554a32c75c8d65b7a8d7d25786abe274f565b28fbbb1d062c73b84097223",
+    "outputs/gptcar/styles/shadow-puppet/demo/events.json": "ca537fce6f78b03ac83212f1adb7a1e6ac9dda52941c802e676dd8782cb40875",
+    "outputs/gptcar/styles/shadow-puppet/demo/gl.js": "e2ef60ce02e2eae389c3a8613980d67c2e4f786e9567d9dceb62eb97e4b5c6fa",
+    "outputs/gptcar/styles/shadow-puppet/demo/houyi.js": "a96128da1092be69d0f3fffa94ddfcec8b6d09447e8aab24aaa8bdbf064bb920",
+    "outputs/gptcar/styles/shadow-puppet/demo/hud.js": "bb5877aeada67a1a4e189321568cf06832d92057c19a460ed684f04d59a525aa",
+    "outputs/gptcar/styles/shadow-puppet/demo/index.html": "8b05155d6863b0c6e8123d88543e5b7bdac0bb0a16d6a422a86ce148ec8fe1a8",
+    "outputs/gptcar/styles/shadow-puppet/demo/lines.json": "e81d3e85955e6434a132d3c3a1777d5926c9eb3734b96a00a817b3ac76fcee5c",
+    "outputs/gptcar/styles/shadow-puppet/demo/main.js": "fb2028f85ae11164550453254fe3c2e507ea2d4f2b3497c211a75bd4b08ce51b",
+    "outputs/gptcar/styles/shadow-puppet/demo/mix.py": "ee58155b8135bfb89f3a488dd22454d0336b083a63b6b274e830268fc447c24e",
+    "outputs/gptcar/styles/shadow-puppet/demo/music/README.md": "2ac2d62de9f035e888784d5d574b82fc383b16866686851b3b74c9e5541ed759",
+    "outputs/gptcar/styles/shadow-puppet/demo/music/score.json": "253c99011e4acc4d3c2b6d70fd2c434e3aee166b15cd8459a55cb80ca6d7e2d4",
+    "outputs/gptcar/styles/shadow-puppet/demo/music/score.py": "0a495b63fb9412635ceb18fcc58223bcb187ce8ce698a3b68d22df63321bd84b",
+    "outputs/gptcar/styles/shadow-puppet/demo/poses.js": "2aa31a61881392f45c3de27ffab9cb1d8a5d9b66db89d37db70ba8c21d32092a",
+    "outputs/gptcar/styles/shadow-puppet/demo/scenery.js": "8b247806ab42225d3c5b66d1a499474a16c0a4a6e9c527c5cf0212bb258dec58",
+    "outputs/gptcar/styles/shadow-puppet/demo/stage.js": "38a8900684e4f19e0e5cb2c7c32d4961f514d6ea597ede7e7af1d7ca92e9827b",
+    "outputs/gptcar/styles/shadow-puppet/demo/story.js": "b5766faa43672ae5edc73218e4d54b6b30b2d49493e56599c9fd75e313737274",
+    "outputs/gptcar/styles/shadow-puppet/demo/suns.js": "84a20608eb8c1df34013de1850253ea01dfc68c33da4b7686aae960ce3c41bea",
+    "outputs/gptcar/styles/shadow-puppet/demo/test.js": "f67b46cd2b45ce8e1ec21f76bbed4aeb457c9831681e0fb7e65a4625c594e928",
+    "outputs/gptcar/styles/shadow-puppet/demo/tools/cues.py": "aeb5dec47f3d65c5f0104292da5fedc9bc93a9267b0a24c4077c246a34b4e926",
+    "outputs/gptcar/styles/shadow-puppet/demo/voices/dur.json": "8789b6b5af904a97ee568e6438f76ce1ffa0f3e2476ecf97f21fe1e8f17d670f",
+    "outputs/gptcar/styles/shadow-puppet/demo/voices/words.json": "20bd9231dd4da1e14bf2d65a5859fe7b0488c0f8e546bd128a41e718106bdf03"
+  },
+  "original_assets_and_licenses": [
+    {
+      "path": "outputs/gptcar/styles/shadow-puppet/demo/CREDITS",
+      "sha256": "eca42a59138592893a3a2f58b6a5463bf1c52989b2a9bef5c3dc8db588979308",
+      "verbatim": "Hou Yi Shoots the Suns — Shadow Puppetry demo · LemoLab × Claude Opus 5.5\n\nAll puppets, scenery, carving patterns, story staging and melodies are original, generated by code in this folder.\nTraditional motifs used generically (fish-scale armour, cloud scrolls, meander, coin and lattice patterns, flame tongues); no specific historical puppet is copied.\n\nFonts\n- Cormorant Garamond — Copyright 2015 the Cormorant Project Authors, SIL Open Font License 1.1 (fonts/OFL-CormorantGaramond.txt)\n- Ma Shan Zheng — Copyright 2018 The Ma Shan Zheng Project Authors, SIL Open Font License 1.1 (fonts/OFL-MaShanZheng.txt)\n\nVoice\n- Kokoro TTS v1.0 (Apache-2.0), voice am_michael\n\nMusic samples (all CC0 1.0, via core/audio/sampler.py; instruments: gong2, sus_cymbal, crash, woodblock, frame_drum, bass_drum, log_drum, erhu, oboe, cellos, contrabass)\n- Karoryfer Samples / sfzinstruments (aliexpress-erhu)\n- VS Chamber Orchestra: Community Edition (Versilian Studios)\n- Versilian Community Sample Library (Versilian Studios)\n\nSound effects: synthesized (numpy / core/audio/sfx.py + demo/mix.py). Score: demo/music/score.py (original composition).\n"
+    }
+  ],
+  "engine_reuse_recommendation": "Reuse attributed generic drawing/material/rig/math engines described by STYLE/DEMO; share fonts and named licensed data/assets with hashes. Independently generate scene assembly, animation, shot/camera staging and freshaudio. Never import original film renderer, mastervideo,originalframes or mastertrack as newGPTwork. Preserve exactscript/cardlanguage and measuredoriginalframecount. Full originals are analytical references only.",
+  "audio_recreation_direction": "Fresh am_michael0.86/0.88 narration. New100BPM drum/gong/woodblock score with erhu moving ku-yin→huan-yin, nine impacts individually synchronized, hard-cut silence at spared-sun choice, soft gong36.9, room/claps at stage bookends.",
+  "v1_primary_deficits": [
+    "V1 sparse cutout hero lacked dense leather carving, rods/cloth transmission and all ten suns",
+    "20s truncation omitted ninth kill, final-arrow mercy and one-lamp backstage meaning"
+  ],
+  "visual_audit": {
+    "status": "complete",
+    "method": "Complete original 1 fps contact-sheet sequence and published source cue boundaries inspected, plus listed exact short-action/transition frames. Does not claim every encoded frame.",
+    "sheets": [
+      "work/gptcar/reference/shadow-puppet/sheets/sheet-01.jpg",
+      "work/gptcar/reference/shadow-puppet/sheets/sheet-02.jpg",
+      "work/gptcar/reference/shadow-puppet/sheets/sheet-03.jpg",
+      "work/gptcar/reference/shadow-puppet/sheets/sheet-04.jpg",
+      "work/gptcar/reference/shadow-puppet/sheets/sheet-05.jpg"
+    ],
+    "exact_time_supplement": [
+      "work/gptcar/reference/shadow-puppet/exact/t-25.35.jpg",
+      "work/gptcar/reference/shadow-puppet/exact/t-27.9.jpg",
+      "work/gptcar/reference/shadow-puppet/exact/t-29.7.jpg",
+      "work/gptcar/reference/shadow-puppet/exact/t-31.2.jpg",
+      "work/gptcar/reference/shadow-puppet/exact/t-34.9.jpg",
+      "work/gptcar/reference/shadow-puppet/exact/t-44.7.jpg"
+    ]
+  }
+}

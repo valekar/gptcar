@@ -1,0 +1,953 @@
+{
+  "schema_version": "matched-original-brief-v2-audit-1",
+  "slug": "rubber-hose",
+  "status": "reference-audited-ready-for-reconstruction",
+  "original_title": "Coffee Cup Chase",
+  "original_title_aliases_from_demo": [
+    "Demo: *Coffee Cup Chase* (50 s) · `rubber-hose.mp4` · source in [`demo/`](demo/)",
+    "",
+    ""
+  ],
+  "published_premise_verbatim": "A coffee cup chases a runaway sugar cube around the kitchen, 1930s-cartoon style.",
+  "published_premise_zh_verbatim": "一只咖啡杯满厨房追一块逃跑的方糖。",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "verbatim_original_conversation_prompt": null,
+    "published_brief_statement": null,
+    "reconstructed_replication_instruction": "Recreate the full published Coffee Cup Chase scene order, story, exact narration and screen text at original timing/resolution/fps, including all specified subjects, performance, mechanisms, lens/light/material treatment, transitions and sonic hits. This is a reconstruction from published sources, not a quoted original conversational prompt.",
+    "reconstruction_basis": [
+      "Complete published STYLE.md and DEMO.md",
+      "Published narration, cards and timing source",
+      "Original movie: all regular contact sheets and named key-event frames"
+    ]
+  },
+  "original_format": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24.0,
+    "duration_s_exact_timeline": 50,
+    "duration_s_gallery_rounded": 50.0,
+    "duration_s_published_demo_text": "50",
+    "video_stream_metadata_verified": true,
+    "note": "Encoded target is frame_count/fps, not rounded catalogue or container audio duration.",
+    "frame_count": 1200,
+    "duration_s": 50.0,
+    "container_duration_s": 50.005,
+    "production_canvas_width": 1920,
+    "production_canvas_height": 1080
+  },
+  "source_authorship": "Historical original by Lemomo/LemoLab using Claude Opus5.5. New output must identify actual GPT authorship and attribute any reused generic components.",
+  "source_hashes": [
+    {
+      "path": "styles/rubber-hose/STYLE.md",
+      "sha256": "bf850f9cd22e68b2125fed00d1b9804e91479620b44420ba7ec50e570e472a94"
+    },
+    {
+      "path": "styles/rubber-hose/DEMO.md",
+      "sha256": "614029fd591f982c3c2755541d5d8add63b1f121183243308590bbcc4aed38ba"
+    },
+    {
+      "path": "styles/rubber-hose/style.json",
+      "sha256": "c23b23f1363450dd324e8c6ca14a4e980d61e570faae64d08fa57f63a2848fcf"
+    },
+    {
+      "path": "styles/rubber-hose/demo/story.js",
+      "sha256": "f3d637233367466250e73e70aa8dcab4a54acd8c0905b8da2214205edc952ebf"
+    },
+    {
+      "path": "styles/rubber-hose/demo/lines.json",
+      "sha256": "82169b6408931f502b8f2b1f83b9f887c4c8208759d0a0e8b73693c54bb15b83"
+    }
+  ],
+  "style_guide_sha256": "bf850f9cd22e68b2125fed00d1b9804e91479620b44420ba7ec50e570e472a94",
+  "style_guide_verbatim": "# 1930s Rubber Hose Cartoon — Style Prompt\n\n> Black-and-white hand-inked cartoons where every object is alive and swings to a hot jazz band.\n> References (grammar only): early Fleischer Studios shorts (c. 1930–33) for \"the whole world dances\", surreal transformation, the bouncing-ball singalong and ink-and-pen framing devices; *Cuphead* for how a modern team finishes the look and scores it with a big band. Never use an existing cartoon character, name or silhouette, and never copy designs, melodies or logos. **Avoid the \"cup-head on a human body with a straw\" design**: if your hero is an object, the *whole object is the body*.\n\n## 1. Essence, and what it is not\n\nHand-inked black-and-white animation from the early sound era: characters with **rubber-hose limbs** (equal-width tubes, no elbows, no knees), **white four-finger gloves**, **pie eyes** (black oval pupils with a wedge cut out), huge round shoes, and bodies that squash and stretch like balloons. The backgrounds are soft grey watercolour paintings; the characters are flat white, grey and ink. Everything (furniture, machines, plants, the walls) **breathes in time with the music**. The film looks like a worn 35 mm print projected in a 4:3 gate: flicker, scratches, dust, gate weave, vignette.\n\nNot a 1950s flat cartoon (no limited animation, no colour, no graphic backgrounds), not a silent film (the synchronised music is the engine), not a \"retro filter\" over modern animation (no joints, no rendered shading).\n\n## 2. Materials & rendering\n\n- **Frame**: 1920×1080 output with a **4:3 gate** (1440×1080 centred, black pillarbox), gate corners rounded (r ≈ 28 px), soft inner shadow on the gate edge.\n- **Characters**: flat fills, one hard-edged form-shadow band (light grey) on the side away from an upper-left light, ink outline **constant in screen space** at any zoom (transform points first, then stroke; ~6 px at 1080p), light **line boil** (±1.2 px, 3 drawings cycling at 12 fps).\n- **Anatomy kit**:\n  - Limbs: noodle tubes of constant width (about 1/20 of the character's height), one smooth bend, round caps.\n  - Gloves: palm + 3 fat fingers + thumb, flared cuff with a fold line, 3 stitch lines on the back. Outline the union only (stroke all parts thick first, then fill all).\n  - Pie eyes: white oval, big black pupil (≈ 64 % × 74 % of the eye) with a wedge cut toward the upper right; blink with an eyelid in body colour and a lid line.\n  - Mouths: smile with cheek ticks, open grin, \"O\", wavy (scared), pucker, tongue-out. Shoes: big black ovals with a white toe glint.\n- **Object characters**: the face sits on the body; a **secondary feature carries the mood** (steam, a flame, a lampshade tilt, a spring). A box-shaped object is a real projected 3D shape seen slightly from above, the face mapped onto its front.\n- **Backgrounds**: painted once into a cached canvas at 1.25–1.5× (push-ins stay crisp): flat wash + soft blotches (±5 %) + inner edge darkening + a thin dark-grey outline + paper grain. They never boil. Period motifs: patterned wallpaper, panelled furniture, checker floors, brick, clapboard.\n- **Film damage** (composite pass, not the scene): low-frequency gate weave (±1.2 px) with a rare jump; flicker ±4 %; 0–3 drifting vertical scratches; 3–8 dust specks per frame; an occasional hair; strong vignette; a small jump on every cut; slight blur. Grain in ffmpeg (`mux.sh` grain **3**), not in the page.\n\n## 3. Colour logic\n\n- **Strictly greyscale**: about 6 grey steps plus a separate character white. No hue anywhere, not even in the film damage.\n- **Characters own the extremes**: character whites and ink blacks are brighter and darker than anything in the background. Backgrounds live in the middle greys (walls around mid grey, furniture one or two steps darker). Add a mild contrast boost (≈ 1.1–1.15) in the final composite: 1930s prints are rich black and bright white, never flat grey.\n- Form shadow is one light-grey band, never a gradient.\n- Examples of the grey ramp's temperature: warm paper greys (our demo); cool silver-nitrate greys; a faint sepia print. Pick one and keep it for the whole film.\n\n## 4. Type & subtitles\n\n- **Subtitles are a period title card**: a small near-black plate with a white double-rule border and dot-and-ring corner ornaments; text in **IM Fell English SC** (~36 px), paper white. Drawn in the scene layer so it weaves and flickers with the film; pops on and off with no fades. Bottom by default, top when the action is low. One card may span two short voice clips; hold ≥ max(1.8 s, speech + 0.6 s).\n- **Titles**: **Shrikhand** fat retro script, white face, heavy ink outline (~14 % of the cap height), ink drop shadow down-right; letters can hop in a travelling wave on the beat. Sub-lines in **Limelight** caps.\n\n## 5. Motion quality\n\n- **Characters on twos** (12 fps); camera moves on ones (24 fps). A stepped camera reads as judder.\n- **Tempo grid**: choose a tempo where one beat is an **even whole number of frames** at 24 fps (8, 10, 12, 16 or 20 frames), so every beat lands on a drawing of the twos.\n- **Breathing**: every idle object squashes and stretches with `cos(2π·beats)`: an extreme on every beat (stretch on the beat, squash on the off-beat), sampled on twos, amplitude ~5–7 %, all props in phase. A peak of joy can raise the amplitude ×3 and squash the whole background painting around the floor line (~2.5 %).\n- **Walk**: one step per beat with a body bob (sad = smaller steps, limp arms). **Run**: legs as a windmill (feet orbit a circle), lean forward, speed lines.\n- **Anticipation–hold–action**: before every big move, crouch (squash to ~0.8), hold (let the band stop), then snap. Impacts get a squash with an exponential spring-back.\n- **Held frames are acting**: a chain of holds, each glance on an eighth note with a woodblock tick, reads as thinking.\n- **Freeze on a band stop**: when the music stops, freeze everything, background breathing included.\n\n## 6. Camera grammar\n\nA theatre camera: mostly locked, moving only to follow a runner or to land a gag. Opening and ending come from the topic.\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Stage-wide, locked, eye level | A proscenium: the set is a stage and everyone on it performs | introducing a place; a group number; a routine |\n| Hard cut to a face close-up | The reaction is the joke | a surprise; a taste; a realisation |\n| Trucking pan beside a runner, eased start and stop | Pursuit, momentum | a chase; a race; a delivery |\n| Medium follow shot (character ≈ 1/4–1/3 of the frame height) | Every step is a note | Mickey-moused climbing, dancing, working |\n| Tilt with a fall or a rise | Gravity as rhythm | a tumble; a rocket; a lift |\n| Slightly high angle, one unbroken shot | The hazard and the answer in one frame | a danger; a stretch; a rescue |\n| Tabletop pan (flat characters in front of a model set turning in depth) | The world is a real place | a street; a carousel; a factory floor |\n| Pull-back from a close-up to a packed medium-full | One feeling spreads to everyone | a celebration; a crowd joining in |\n| Iris in / iris out (grabbable by a character) | The film is an object | a beginning; an ending; a scene change with a gag |\n\nFraming: faces must read, so no far-wide shot for a gag or a musical moment. The destination prop enters frame before the gag lands. Arcs and leaps stay inside the gate at the current zoom. Transitions: iris, a hard cut on a beat, a title card rolling up like a window shade; no dissolves.\n\n## 7. Sound palette\n\n- **1930s hot dance band / ragtime**: stride piano, clarinet, trumpet (open + plunger-mute \"wah-wah\"), trombone (smears), tuba oom-pah, banjo on 2 & 4, snare with brushes and rolls, xylophone, woodblocks, slide whistle, cymbal, kazoo, washboard, a pit organ. **No string pads, no modern synths.** One short original syncopated theme can be restated in different arrangements.\n- **Mickey-mouse the score, as options**: a band member \"answering\" a character (trombone raspberry, trumpet laugh); a stop (hard silence, reverb tails too) before a gag or on a stare; a stinger per gag; slide whistle for every stretch or fall; a prop that *is* an instrument; a solo for tenderness; a key change for a lift.\n- **Foley by material** (synthesised): porcelain and glass = hard inharmonic partials + a tiny transient; wood = woodblock; metal = bells and clanks; springs = \"boing\"; water = filtered noise + rising blips and bubbles; rubber = sawtooth creak through a band-pass.\n- **Voice**: a period character (a radio announcer calling the action, a vaudeville MC, a crooner), few short lines. Radio chain: HP ~260 Hz / LP ~4.6 kHz, tanh saturation, a short room, compression. Duck the music ~8 dB.\n- **Optical soundtrack pass** over music + foley: band-limit ~110 Hz–6.2 kHz, slight wow (~0.6 Hz) and flutter (~7 Hz), soft saturation; then a bed of hiss, crackle and a 24 Hz projector gate clatter, the *only* sound allowed inside a silence.\n- Loudness −14 LUFS (two-pass loudnorm in `core/render/mux.sh`).\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **Everything breathes on the beat.** The setting is a character; at the peak the *whole world* can dance in sync, walls included. *Fits content like:* a factory at shift change; a garden after rain; a city waking up.\n- **Mickey-mousing.** Every step is a note; a prop becomes an instrument. *Fits content like:* stairs as a piano; a typewriter as a drum kit; fence posts as a xylophone.\n- **Rubber-hose stretch.** Limbs reach any length in one unbroken shot. *Fits content like:* reaching a top shelf; a long-distance handshake; catching a falling baby bird.\n- **Transformation.** Anything becomes something else mid-motion (a tail into a question mark, a hose into a saxophone). *Fits content like:* an idea turning into a product; a problem into a tool; a word into an object.\n- **The bouncing-ball singalong.** Lyrics on a title card, a ball hopping from word to word on the beat. *Fits content like:* a jingle; a safety rhyme; a slogan to remember.\n- **The film is a physical object.** Title cards roll up like window shades; the iris is grabbed and pulled shut; intertitles get bumped; the frame line slips. *Fits content like:* a brand reveal; a \"the end?\" twist; a character escaping the cartoon.\n- **The ink bottle.** An artist's pen draws the hero, who then argues with it. *Fits content like:* a making-of; a mascot introduction; a lesson about drawing.\n\n## 9. Pitfalls of the medium\n\n- **Flat grey frames.** Push backgrounds to mid grey, keep pure white and ink for characters, add a contrast boost.\n- **Wide shots kill gags**: a far shot makes characters tiny and Mickey-mousing unreadable. Use medium shots, and a packed medium-full for crowds.\n- \"Sad\" brows drawn as \"angry\": define brows by inner / outer end (inner = near the nose), not by left / right.\n- A limb drawn behind a body gets hidden by the silhouette (a handle, a tail): kick and reach outward past it.\n- Painted characters collide with background props at some camera positions: check every shot's last frame.\n- Smoke puffs in a row read as thought bubbles: scatter and grow them.\n- Short voice clips make subtitles flash: merge consecutive lines into one card.\n\n## 10. Engine\n\nIn `demo/`: `toon.js` (constant-width ink, line boil, affine stack), `film.js` (gate and film damage, reusable as is), `chars.js` (rigs, pie eyes, gloves, shoes), `cast.js` (breathing props), `bg.js` (cached watercolour backgrounds), `ui.js` (title lettering, title-card subtitles), `mix.py` (foley, radio chain, optical ageing), `music/score.py` (big band via `core/audio/sampler.py`). File map and commands: [DEMO.md](DEMO.md#build-notes).\n\n## 11. Variation space\n\nYou decide the location (or several), the cast, the structure, the opening, the ending, the camera path, the tempo and the band's line-up. All far from our demo:\n\n- Structures: **a singalong** (verse and chorus, the bouncing ball carrying the message while the set acts out each line); **a talent show** (objects take turns on a stage, the smallest wins); **a relay** (a thing passed hand to hand across a town, each hand-off a new instrument on the melody).\n- Openings: **out of the inkwell** (a pen draws the hero, who hops onto the set); **a curtain rise** (the band tuning up; a baton starts the film); **an iris on one eye** (it blinks, the iris widens to show whose eye it is).\n- Endings: **the card pulled over** (a character drags \"The End\" in front of itself mid-gag); **the film snaps** (the frame burns, a gloved hand splices it for one last bow); **the band packs up** (instruments leave until one note remains).\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n",
+  "published_demo_verbatim": "# 1930s Rubber Hose Cartoon — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *Coffee Cup Chase* (50 s) · `rubber-hose.mp4` · source in [`demo/`](demo/)\n\n\n## Story & structure\n\nA just-woken diner mug tastes itself: bitter! It chases a runaway sugar cube around the kitchen (counter, china cabinet, sink). When the cube is about to be sucked down the drain, the mug stretches its rubber-hose arm around the whirlpool and fishes it out, then sadly lets it go; the cube jumps into the mug by itself. The coffee turns sweet and the whole kitchen dances with the band. A 1930s radio sports announcer calls the chase like a horse race (\"And they're off!\").\n\nArc (40–55 s): hook on frame 1 (bouncing title letters, band hit) → a small want → a chase in 3 escalating set pieces, one visual gag each → danger → the stretch → dead silence → a quiet, kind turn → release: the whole world dances → iris out with a gag. One hero, one goal, one turn.\n\nThe old guide asked for at least three of the four native powers with the strongest at the peak, and suggested adapting any topic as **a chase or a performance inside one lively location** (a kitchen, an office, a toy shop, a factory) with a supporting cast of 5–8 living objects. That was this demo's shape, not a rule of the style.\n\nNative moves spent:\n- **Everything breathes on the beat**: the kitchen is a character; at the climax the whole world dances in sync, walls included (the payoff shot).\n- **Mickey-mousing**: a stair of plates is a xylophone; the small character climbs it on rising xylophone eighths, the big one on tuba quarters.\n- **Rubber-hose stretch**: the turning point; the mug's arm stretches around a whirlpool and down a drain in one unbroken shot.\n- **The film is a physical object**: the title card rolls up like a window shade; a character's glove pulls the iris shut.\n\n## Shots\n\n| Beat | Camera |\n|---|---|\n| Opening | Title card with rotating sunburst; letters hop in a wave each beat; the card rolls up like a window shade to reveal the set |\n| Establishing | **Stage-wide, locked off**, eye level. The set reads like a proscenium; props lined along the counter |\n| Reaction gag | Hard cut to a close-up of the face (the only big face shot early on) |\n| Chase | **Trucking pan** alongside the runners, eased start and stop; the destination prop enters frame before the gag |\n| Vertical set piece | Not the whole set piece far away: each climber followed in a **medium shot** (character ≈ 1/4–1/3 of frame height) so each musical step and the plate's bounce reads; cut between climbers; then tilt down with the fall |\n| Danger | Slightly high angle so the hazard reads at a glance; **one unbroken shot** through the big stretch |\n| Quiet turn | Medium two-shot, then the hero's **back** walking away small in the background while the other character is big in the foreground (on a foreground counter piece) |\n| Climax | Pull back from a close-up to a **medium-full** shot (not a far wide: faces must read): hero in the middle, living props on the counter behind, and a **foreground row of bigger dancers** on a nearer counter piece. 2–3 steps by bar (sway → kicks → group squat-and-spring), then **everyone freezes in a ta-da pose on the last beat** and holds into the iris |\n| Ending | Iris closes on the heroes; a character's glove pulls it shut |\n\nThe hesitation beat before the leap, as held-frame acting: crouch (hold) → eyes to the other character's back (hold) → eyes up to the goal (hold) → back → up + grin → small hop → leap. Each glance on an eighth note, with a woodblock tick, while the camera slowly pushes in. The music stops for a \"lock eyes\" beat and everything freezes, background breathing included.\n\n## Score structure\n\nOriginal big-band score (`demo/music/score.py`, VSCO 2 CE / VCSL samples via `core/audio/sampler.py`, banjo via `pluck.py`). **144 BPM, 4/4 → 1 beat = 10 frames**, 1 bar = 1.667 s, 28 bars. One original 4-bar syncopated theme, stated for the title, the chase, a slow solo-clarinet version for the tender beat, and a key-change full-band out-chorus for the climax.\n\nStops (hard silence including reverb tails) on the lock-eyes beat, on the suspense before a gag, and a full 2 beats of silence right after the stretch; stingers on every gag; slide whistle for every stretch / slide / fall; the xylophone *is* the plates. The projector clatter is the only sound inside the silence.\n\nFoley specific to this film (all synthesised): porcelain = hard inharmonic partials (~2.7 / 4.2 / 6.3 kHz) + tiny transient; thick mug = lower, duller partials; sugar = high woodblock + sparse crunch; clock = 18 Hz hammer on two bells; toaster = click, eighth-note ticks, bell + spring \"boing\"; water = filtered noise + rising blips, drain slurp, bubble bed; rubber = sawtooth creak through a band-pass.\n\nVoice: an old radio announcer calling the action like a horse race (Kokoro `bm_lewis`, speed 1.0), 7 short lines (\"Seven a.m., folks!\" … \"Good night, folks!\"). Chain: HP 260 Hz / LP 4.6 kHz, tanh saturation, a short room, compression. Music ducked ~8 dB under the voice. Optical pass: band-limit 110 Hz–6.2 kHz, wow 0.6 Hz, flutter 7 Hz.\n\n## Palette & props\n\n- Grey ramp: paper `#F1EEE6` · light `#C8C5BC` · mid `#9A978F` · dark-mid `#6B6963` · dark `#3B3A37` · ink `#0E0D0C` · character white `#FCFBF7`.\n- Contrast fix (the first style frame was too flat): walls `#8C8981`, tiles `#A29F97`, cabinets `#66635D`–`#7C7972`; `contrast(1.14)` in the final composite.\n- Ink outline 6 px in screen space; limbs 13 px on a 280 px character; film damage: gate weave ±1.2 px with a rare 3–6 px jump, vignette 0 → 62 % black at the corners, 3 px vertical jump on every cut, 0.55 px blur; walk bob 10 px (sad walk: steps 34, bob 4), run lean 0.24 rad.\n- **The Mug** (hero): a squat diner mug, white porcelain, two thin black rings at the rim, full of black coffee (black ellipse + a white crescent highlight); face on the body, pie eyes, small black nose, big mouth; handle at the back like a little tail. Its **steam** carries the mood: lazy waves / bitter zigzag / straight-up alarm / wilted droop / heart.\n- **The Sugar Cube**: a real projected 3D cube with a slight top-down view (elevation ≈ 0.26 rad), face mapped onto the front face with an affine transform.\n- **Kitchen cast** (living props, all taking a breath phase): pots, a clock, a toaster, plates, curtains. Background motifs: striped wallpaper with small diamonds, square tiles, panelled cabinets, black-and-white checker floor, hanging lamp. Two cached backgrounds: kitchen; cupboard + sink.\n- Deliberately not learnt from the references: no existing character (cat, girl, clown), no title-card or theme copy, no period racial caricature; the mug's whole body is the mug (no human torso, no straw, no shorts), unlike *Cuphead*'s design.\n\n## Titles & subtitles\n\n- Subtitles: \"the announcer's title card\": plate `rgba(12,11,10,.92)`, white double-rule border, dot-and-ring corner ornaments and a tiny 1930s ribbon-microphone icon; IM Fell English SC 36 px, paper white; bottom at y ≈ 986 by default, top when the action is low. Each card ≥ speech + 0.6 s.\n- Title: Shrikhand, white face, 14 % ink outline, ink drop shadow down-right, letters hopping in a travelling wave on the beat over a rotating sunburst; sub-line in Limelight caps.\n\n## End card\n\nSame sunburst, a wavy-edged sign with \"The End\", the style name, `LemoLab × Claude Opus 5.5`, small credit lines at the bottom; it opens with an iris from black. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Build notes\n\n```\nstyles/rubber-hose/demo/\n  toon.js    constant-width ink + line boil + affine stack      film.js   4:3 gate, weave, flicker, scratches, vignette\n  chars.js   mug & cube rigs, pie eyes, gloves, shoes, steam     cast.js   living kitchen props (all take a breath phase)\n  bg.js      cached watercolor backgrounds (kitchen, cupboard+sink)\n  story.js   144 BPM bar grid, VO times, subtitle cards, shots, key moments, music cues  (single source of truth)\n  scenes.js  every shot: camera, props, acting            events.js  foley event list → events.json\n  ui.js      title lettering, announcer title card        sheet.js   model sheets (?mode=sheet / ?mode=kitchen)\n  music/score.py  original big-band score (VSCO 2 CE / VCSL samples via core/audio/sampler.py, banjo via pluck.py)\n  mix.py     foley synthesis + radio-voice chain + ducking + optical-track aging\n  build.sh   one-command rebuild (≈9 min, mostly TTS/whisper/sample loading; frames render in ~50 s)\n```\n\n1. Write the bar grid first (`story.js`), then the cue map; score to it (a forked sub-agent can write `music/score.py` in parallel from `story.js` + the cue list).\n2. Model sheets: `node demo/tools/still.mjs demo 0 --q 'mode=sheet&w=2880&h=1620' --w 2880 --h 1620`.\n3. `core/tts/tts.py lines.json voices` → `core/tts/asr_check.py`.\n4. Review: `core/render/still.mjs demo --range a:b:1` + `core/render/sheet.py` (two full passes), and frame strips at 1/12 s on key acting beats.\n5. `node core/render/events.mjs demo` → `python music/score.py` → `python mix.py`.\n6. `node core/render/video.mjs demo --fps 24 --workers 3` → `sh core/render/mux.sh out/video24.mp4 mix.wav rubber-hose.mp4 24 3` → `python demo/tools/final_asr.py rubber-hose.mp4`.\n\nOr simply `sh styles/rubber-hose/demo/build.sh`.\n\nPitfalls tied to this demo:\n- **Kokoro heard \"bitter\" as \"better\"** after an ellipsis (`is... bitter!`). \"And boy, is this coffee bitter!\" passes. Check every line with whisper; also check the final mp4 (whisper writes \"7am\" / \"they're\": normalise before comparing).\n- The cube read as a tall box in pure front view: elevation ~0.26 and a slight 3/4 turn for expressions.\n- A far shot of the plate-xylophone and of the dance climax (reviewer note) killed both gags; both were reshot as medium / medium-full.\n- A kicking leg drawn behind the mug body was hidden by the handle: kick outward past the silhouette.\n- A pot \"grew\" out of the mug's head at one camera position: check every shot's final frame.\n- A leap arc that was too high left the frame; keep arcs inside the gate at the camera's zoom.\n- `sfx`-style clips of different lengths → numpy broadcast errors. Place clips into a fixed-length buffer (`seq()` in `mix.py`).\n- zsh: `echo =====` fails (`=word` expansion) and `timeout` doesn't exist on macOS.\n- JS: `-x ** 6` is a syntax error; write `-(x ** 6)`.\n",
+  "canonical_scene_order": [
+    {
+      "id": "title",
+      "t0": 0,
+      "t1": 5,
+      "world": null,
+      "visual_prompt_source_description": "Rotating sunburst title; fat Shrikhand letters hop in a travelling wave, then the whole card rolls upward like a window shade.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/frames/f-0003.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Rotating sunburst title; fat Shrikhand letters hop in a travelling wave, then the whole card rolls upward like a window shade."
+    },
+    {
+      "id": "wide1",
+      "t0": 5,
+      "t1": 8.333333333333334,
+      "world": null,
+      "visual_prompt_source_description": "Eye-level kitchen proscenium: sleeping squat diner mug, alarm clock, living kitchen props; alarm rings, mug wakes, dips/tastes its own black coffee.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "v1a",
+        "v1b"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/frames/f-0007.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Eye-level kitchen proscenium: sleeping squat diner mug, alarm clock, living kitchen props; alarm rings, mug wakes, dips/tastes its own black coffee."
+    },
+    {
+      "id": "bitterCU",
+      "t0": 8.333333333333334,
+      "t1": 10,
+      "world": null,
+      "visual_prompt_source_description": "Hard close-up of pie-eyed mug reacting to bitter coffee, zigzag steam, mouth wah shapes on brass responses.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/frames/f-0010.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Hard close-up of pie-eyed mug reacting to bitter coffee, zigzag steam, mouth wah shapes on brass responses."
+    },
+    {
+      "id": "wide2",
+      "t0": 10,
+      "t1": 11.666666666666668,
+      "world": null,
+      "visual_prompt_source_description": "Mug spots projected3D sugar cube by sugar jar; two characters lock eyes in stop-time, wind up and run.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/frames/f-0011.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Mug spots projected3D sugar cube by sugar jar; two characters lock eyes in stop-time, wind up and run."
+    },
+    {
+      "id": "chase",
+      "t0": 11.666666666666668,
+      "t1": 15,
+      "world": null,
+      "visual_prompt_source_description": "Eased lateral truck beside noodle-limbed cup and cube across countertop; destination toaster arrives before gag.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "v2"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/frames/f-0014.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Eased lateral truck beside noodle-limbed cup and cube across countertop; destination toaster arrives before gag."
+    },
+    {
+      "id": "toaster",
+      "t0": 15,
+      "t1": 16.666666666666668,
+      "world": null,
+      "visual_prompt_source_description": "Toaster lever is pressed, ticks, ding and spring pop; held blink/reaction.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/frames/f-0016.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Toaster lever is pressed, ticks, ding and spring pop; held blink/reaction."
+    },
+    {
+      "id": "cupboard",
+      "t0": 16.666666666666668,
+      "t1": 23.333333333333336,
+      "world": null,
+      "visual_prompt_source_description": "Medium follow cube up a plate xylophone on eighths; alternate mug climbing on tuba quarters; cube uses spoon slide, crash and downward tilt.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "v3"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/frames/f-0020.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Medium follow cube up a plate xylophone on eighths; alternate mug climbing on tuba quarters; cube uses spoon slide, crash and downward tilt."
+    },
+    {
+      "id": "sink",
+      "t0": 23.333333333333336,
+      "t1": 30,
+      "world": null,
+      "visual_prompt_source_description": "High view of sink whirlpool: cube at drain, cup anticipates then extends one rubber arm around whirlpool; full unbroken stretch, silence, tug and retract.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "v4"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/frames/f-0027.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "High view of sink whirlpool: cube at drain, cup anticipates then extends one rubber arm around whirlpool; full unbroken stretch, silence, tug and retract."
+    },
+    {
+      "id": "twoShot",
+      "t0": 30,
+      "t1": 31.666666666666668,
+      "world": null,
+      "visual_prompt_source_description": "Mug lowers rescued cube, pats it and turns away rather than eating it.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/frames/f-0031.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Mug lowers rescued cube, pats it and turns away rather than eating it."
+    },
+    {
+      "id": "leaving",
+      "t0": 31.666666666666668,
+      "t1": 36.87500000000001,
+      "world": null,
+      "visual_prompt_source_description": "Mug back walks small into background, cube larger on foreground counter hesitates; eye glances, crouch, smile, hop and voluntary leap into mug.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/frames/f-0035.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Mug back walks small into background, cube larger on foreground counter hesitates; eye glances, crouch, smile, hop and voluntary leap into mug."
+    },
+    {
+      "id": "sweetCU",
+      "t0": 36.87500000000001,
+      "t1": 38.333333333333336,
+      "world": null,
+      "visual_prompt_source_description": "Close reaction as sugar enters coffee; white steam heart, sweet grin.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "v5"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/frames/f-0038.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Close reaction as sugar enters coffee; white steam heart, sweet grin."
+    },
+    {
+      "id": "dance",
+      "t0": 38.333333333333336,
+      "t1": 43.333333333333336,
+      "world": null,
+      "visual_prompt_source_description": "Pull from hero close-up to packed medium-full: living props behind and larger dancers in a foreground row; sway, kick, squat-and-spring; held ta-da.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/frames/f-0041.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Pull from hero close-up to packed medium-full: living props behind and larger dancers in a foreground row; sway, kick, squat-and-spring; held ta-da."
+    },
+    {
+      "id": "iris",
+      "t0": 43.333333333333336,
+      "t1": 46.66666666666667,
+      "world": null,
+      "visual_prompt_source_description": "Iris follows heroes; glove reaches beyond frame and pulls iris shut.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "v6"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/frames/f-0046.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Iris follows heroes; glove reaches beyond frame and pulls iris shut."
+    },
+    {
+      "id": "end",
+      "t0": 46.66666666666667,
+      "t1": 50,
+      "world": null,
+      "visual_prompt_source_description": "Sunburst The End card, original style/credits as published reference.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/frames/f-0049.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Sunburst The End card, original style/credits as published reference."
+    }
+  ],
+  "narration": [
+    {
+      "id": "v1a",
+      "t0": 5.15,
+      "duration_s_original_voice": 1.856,
+      "tts_text_verbatim": "Seven a.m., folks!",
+      "speaker": null,
+      "voice": "bm_lewis",
+      "tts_speed": 1.0,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v1a",
+        "text": "Seven a.m., folks!",
+        "asr": "7 a.m. Folks",
+        "voice": "bm_lewis",
+        "speed": 1.0
+      }
+    },
+    {
+      "id": "v1b",
+      "t0": 7.053333333333334,
+      "duration_s_original_voice": 1.91,
+      "tts_text_verbatim": "And boy, is this coffee bitter!",
+      "speaker": null,
+      "voice": "bm_lewis",
+      "tts_speed": 1.0,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v1b",
+        "text": "And boy, is this coffee bitter!",
+        "voice": "bm_lewis",
+        "speed": 1.0
+      }
+    },
+    {
+      "id": "v2",
+      "t0": 11.666666666666668,
+      "duration_s_original_voice": 0.899,
+      "tts_text_verbatim": "And they're off!",
+      "speaker": null,
+      "voice": "bm_lewis",
+      "tts_speed": 1.0,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v2",
+        "text": "And they're off!",
+        "asr": "And they are off",
+        "voice": "bm_lewis",
+        "speed": 1.0
+      }
+    },
+    {
+      "id": "v3",
+      "t0": 17.083333333333336,
+      "duration_s_original_voice": 2.61,
+      "tts_text_verbatim": "Up the china cabinet... what a climber!",
+      "speaker": null,
+      "voice": "bm_lewis",
+      "tts_speed": 1.0,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v3",
+        "text": "Up the china cabinet... what a climber!",
+        "voice": "bm_lewis",
+        "speed": 1.0
+      }
+    },
+    {
+      "id": "v4",
+      "t0": 23.750000000000004,
+      "duration_s_original_voice": 1.977,
+      "tts_text_verbatim": "Look out, folks... the drain!",
+      "speaker": null,
+      "voice": "bm_lewis",
+      "tts_speed": 1.0,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v4",
+        "text": "Look out, folks... the drain!",
+        "voice": "bm_lewis",
+        "speed": 1.0
+      }
+    },
+    {
+      "id": "v5",
+      "t0": 37.50000000000001,
+      "duration_s_original_voice": 2.089,
+      "tts_text_verbatim": "Well, I'll be... sweet as pie!",
+      "speaker": null,
+      "voice": "bm_lewis",
+      "tts_speed": 1.0,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v5",
+        "text": "Well, I'll be... sweet as pie!",
+        "voice": "bm_lewis",
+        "speed": 1.0
+      }
+    },
+    {
+      "id": "v6",
+      "t0": 43.75,
+      "duration_s_original_voice": 1.264,
+      "tts_text_verbatim": "Good night, folks!",
+      "speaker": null,
+      "voice": "bm_lewis",
+      "tts_speed": 1.0,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v6",
+        "text": "Good night, folks!",
+        "voice": "bm_lewis",
+        "speed": 1.0
+      }
+    }
+  ],
+  "narration_source_path": "styles/rubber-hose/demo/lines.json",
+  "published_timeline_extracted": {
+    "DUR": 50,
+    "BPM": 144,
+    "BEAT": 0.4166666666666667,
+    "BAR": 1.6666666666666667,
+    "ANIM_FPS": 12,
+    "SHOTS": [
+      [
+        0,
+        5,
+        "title"
+      ],
+      [
+        5,
+        8.333333333333334,
+        "wide1"
+      ],
+      [
+        8.333333333333334,
+        10,
+        "bitterCU"
+      ],
+      [
+        10,
+        11.666666666666668,
+        "wide2"
+      ],
+      [
+        11.666666666666668,
+        15,
+        "chase"
+      ],
+      [
+        15,
+        16.666666666666668,
+        "toaster"
+      ],
+      [
+        16.666666666666668,
+        23.333333333333336,
+        "cupboard"
+      ],
+      [
+        23.333333333333336,
+        30,
+        "sink"
+      ],
+      [
+        30,
+        31.666666666666668,
+        "twoShot"
+      ],
+      [
+        31.666666666666668,
+        36.87500000000001,
+        "leaving"
+      ],
+      [
+        36.87500000000001,
+        38.333333333333336,
+        "sweetCU"
+      ],
+      [
+        38.333333333333336,
+        43.333333333333336,
+        "dance"
+      ],
+      [
+        43.333333333333336,
+        46.66666666666667,
+        "iris"
+      ],
+      [
+        46.66666666666667,
+        50,
+        "end"
+      ]
+    ],
+    "VO": {
+      "v1a": 5.15,
+      "v1b": 7.053333333333334,
+      "v2": 11.666666666666668,
+      "v3": 17.083333333333336,
+      "v4": 23.750000000000004,
+      "v5": 37.50000000000001,
+      "v6": 43.75
+    },
+    "K": {
+      "roll": [
+        4.583333333333334,
+        5
+      ],
+      "ring": [
+        5,
+        5.625
+      ],
+      "wake": 5,
+      "yawn": [
+        5.833333333333333,
+        6.583333333333333
+      ],
+      "dip": 6.666666666666667,
+      "lick": 7.083333333333334,
+      "taste": 7.5,
+      "wah": [
+        8.75,
+        9.166666666666668,
+        9.583333333333334
+      ],
+      "look": 10,
+      "peek": [
+        10.083333333333334,
+        10.333333333333334
+      ],
+      "lock": 10.416666666666666,
+      "boing": 10.833333333333334,
+      "windup": 11.25,
+      "go": 11.666666666666668,
+      "shakerPass": 12.500000000000002,
+      "dive": 14.166666666666668,
+      "skid": [
+        14.583333333333334,
+        15
+      ],
+      "lever": 15,
+      "ding": 15.833333333333334,
+      "blink": [
+        16.083333333333332,
+        16.375
+      ],
+      "fallIn": 16.666666666666668,
+      "land0": 16.875,
+      "mugHand": 18.333333333333336,
+      "mugUp": 18.541666666666668,
+      "cubeSpot": 20.208333333333332,
+      "leap": 20.833333333333332,
+      "slide": [
+        21,
+        21.458333333333332
+      ],
+      "crash": 21.666666666666668,
+      "tilt": [
+        21.666666666666668,
+        23.333333333333336
+      ],
+      "splash": 23.333333333333336,
+      "mugLand": 24.166666666666668,
+      "worry": 25,
+      "reach": 25.416666666666668,
+      "recoil": 25.625,
+      "resolve": 26.25,
+      "stretch": [
+        26.666666666666668,
+        28.166666666666668
+      ],
+      "sink": 26.916666666666668,
+      "silence": [
+        28.333333333333336,
+        29.166666666666668
+      ],
+      "tug": 28.916666666666668,
+      "retract": [
+        29.166666666666668,
+        29.458333333333336
+      ],
+      "lower": 30.416666666666668,
+      "setDown": 30.833333333333332,
+      "pats": [
+        31.041666666666668,
+        31.25
+      ],
+      "turnAway": 31.458333333333332,
+      "walk": [
+        31.666666666666668,
+        33.333333333333336
+      ],
+      "sigh": 33.75,
+      "lookDown": 34.16666666666667,
+      "lookUp": 34.583333333333336,
+      "crouch": 35,
+      "glances": [
+        35.416666666666664,
+        35.625,
+        35.833333333333336,
+        36.041666666666664
+      ],
+      "smile": 36.041666666666664,
+      "hop": 36.25,
+      "launch": 36.458333333333336,
+      "plop": 36.66666666666667,
+      "smack": 37.083333333333336,
+      "dingSweet": 37.50000000000001,
+      "popUp": 37.62500000000001,
+      "pull": [
+        38.333333333333336,
+        40
+      ],
+      "danceEnd": 43.333333333333336,
+      "irisClose": [
+        43.333333333333336,
+        45.416666666666664
+      ],
+      "handOut": 45.416666666666664,
+      "grab": 45.625,
+      "shut": 45.833333333333336,
+      "end": 46.66666666666667
+    },
+    "SUBS": [
+      [
+        5.15,
+        9.583333333333334,
+        "Seven a.m., folks! And boy, is this coffee bitter!",
+        "b"
+      ],
+      [
+        11.666666666666668,
+        13.616666666666667,
+        "And they're off!",
+        "b"
+      ],
+      [
+        17.083333333333336,
+        20.333333333333336,
+        "Up the china cabinet... what a climber!",
+        "b"
+      ],
+      [
+        23.750000000000004,
+        26.350000000000005,
+        "Look out, folks... the drain!",
+        "t"
+      ],
+      [
+        37.50000000000001,
+        40.20000000000001,
+        "Well, I'll be... sweet as pie!",
+        "b"
+      ],
+      [
+        43.75,
+        45.7,
+        "Good night, folks!",
+        "b"
+      ]
+    ],
+    "CUES": [
+      {
+        "name": "C1_title",
+        "bars": [
+          1,
+          3
+        ],
+        "key": "F",
+        "note": "fanfare tpt+clar unison theme, tuba oom-pah, snare; slide whistle up bar3 beat4; cymbal on bar4.1"
+      },
+      {
+        "name": "C2_morning",
+        "bars": [
+          4,
+          7
+        ],
+        "key": "F",
+        "note": "lazy half-time banjo+tuba, soft piano; alarm bell 4.1; muted tpt wah 6.2/6.3/6.4(long); band STOP on 7.2 (choke cymbal) hold; 7.3 boing; 7.4 snare roll"
+      },
+      {
+        "name": "C3_chase",
+        "bars": [
+          8,
+          10
+        ],
+        "key": "F",
+        "note": "full hot band stride; clarinet runs; tpt lead; band drops out 10.1–10.2 (only ticks); 10.3 DING + band stab"
+      },
+      {
+        "name": "C4_xylophone",
+        "bars": [
+          11,
+          14
+        ],
+        "key": "F",
+        "note": "thin: piano+banjo; xylophone eighths rising C D E F G A B from 11.2; tuba quarters rising from 12.2; 13.3 slide whistle down; 14.1 crash + drum fill"
+      },
+      {
+        "name": "C5_agitato",
+        "bars": [
+          15,
+          17
+        ],
+        "key": "Dm",
+        "note": "tuba ostinato, low clarinet trills + chromatic climb, tpt stabs, tom rolls; 17.1–17.4 long slide whistle down; HARD CUT to silence at 18.1"
+      },
+      {
+        "name": "silence",
+        "bars": [
+          18,
+          18
+        ],
+        "note": "bar 18 beats 1–2 silent; 18.3 spring boing + one soft piano chord"
+      },
+      {
+        "name": "C7_lonesome",
+        "bars": [
+          19,
+          22
+        ],
+        "key": "F",
+        "note": "solo clarinet slow theme (half-note feel) + soft piano chords; bar 21 thins; bar 22 = STOP-TIME holds: 22.1 hold, woodblock ticks on 22.2/22.25/22.3/22.35 (glances), 22.4 two rising woodblocks; 23.1 plop then 1 beat silence"
+      },
+      {
+        "name": "C8_stomp",
+        "bars": [
+          23,
+          26
+        ],
+        "key": "G",
+        "note": "23.3 xylophone DING + cymbal; from 24.1 full band out-chorus in G, loudest; accent every beat"
+      },
+      {
+        "name": "C9_tag",
+        "bars": [
+          27,
+          28
+        ],
+        "key": "G",
+        "note": "theme tag winding down; 28.3 final chord + low tuba (hand pulls iris shut)"
+      },
+      {
+        "name": "C10_end",
+        "bars": [
+          29,
+          30
+        ],
+        "key": "G",
+        "note": "short piano+clarinet coda, last long chord; projector run-out"
+      }
+    ]
+  },
+  "on_screen_text_inventory": {
+    "published_subtitle_file_verbatim": "1\n00:00:05,150 --> 00:00:09,583\nSeven a.m., folks! And boy, is this coffee bitter!\n\n2\n00:00:11,667 --> 00:00:13,617\nAnd they're off!\n\n3\n00:00:17,083 --> 00:00:20,333\nUp the china cabinet... what a climber!\n\n4\n00:00:23,750 --> 00:00:26,350\nLook out, folks... the drain!\n\n5\n00:00:37,500 --> 00:00:40,200\nWell, I'll be... sweet as pie!\n\n6\n00:00:43,750 --> 00:00:45,700\nGood night, folks!\n",
+    "cues_original_json": [],
+    "timeline_text_fields": {
+      "SUBS": [
+        [
+          5.15,
+          9.583333333333334,
+          "Seven a.m., folks! And boy, is this coffee bitter!",
+          "b"
+        ],
+        [
+          11.666666666666668,
+          13.616666666666667,
+          "And they're off!",
+          "b"
+        ],
+        [
+          17.083333333333336,
+          20.333333333333336,
+          "Up the china cabinet... what a climber!",
+          "b"
+        ],
+        [
+          23.750000000000004,
+          26.350000000000005,
+          "Look out, folks... the drain!",
+          "t"
+        ],
+        [
+          37.50000000000001,
+          40.20000000000001,
+          "Well, I'll be... sweet as pie!",
+          "b"
+        ],
+        [
+          43.75,
+          45.7,
+          "Good night, folks!",
+          "b"
+        ]
+      ]
+    },
+    "titles_subtitles_palette_verbatim": "- Subtitles: \"the announcer's title card\": plate `rgba(12,11,10,.92)`, white double-rule border, dot-and-ring corner ornaments and a tiny 1930s ribbon-microphone icon; IM Fell English SC 36 px, paper white; bottom at y ≈ 986 by default, top when the action is low. Each card ≥ speech + 0.6 s.\n- Title: Shrikhand, white face, 14 % ink outline, ink drop shadow down-right, letters hopping in a travelling wave on the beat over a rotating sunburst; sub-line in Limelight caps.",
+    "palette_props_verbatim": "- Grey ramp: paper `#F1EEE6` · light `#C8C5BC` · mid `#9A978F` · dark-mid `#6B6963` · dark `#3B3A37` · ink `#0E0D0C` · character white `#FCFBF7`.\n- Contrast fix (the first style frame was too flat): walls `#8C8981`, tiles `#A29F97`, cabinets `#66635D`–`#7C7972`; `contrast(1.14)` in the final composite.\n- Ink outline 6 px in screen space; limbs 13 px on a 280 px character; film damage: gate weave ±1.2 px with a rare 3–6 px jump, vignette 0 → 62 % black at the corners, 3 px vertical jump on every cut, 0.55 px blur; walk bob 10 px (sad walk: steps 34, bob 4), run lean 0.24 rad.\n- **The Mug** (hero): a squat diner mug, white porcelain, two thin black rings at the rim, full of black coffee (black ellipse + a white crescent highlight); face on the body, pie eyes, small black nose, big mouth; handle at the back like a little tail. Its **steam** carries the mood: lazy waves / bitter zigzag / straight-up alarm / wilted droop / heart.\n- **The Sugar Cube**: a real projected 3D cube with a slight top-down view (elevation ≈ 0.26 rad), face mapped onto the front face with an affine transform.\n- **Kitchen cast** (living props, all taking a breath phase): pots, a clock, a toaster, plates, curtains. Background motifs: striped wallpaper with small diamonds, square tiles, panelled cabinets, black-and-white checker floor, hanging lamp. Two cached backgrounds: kitchen; cupboard + sink.\n- Deliberately not learnt from the references: no existing character (cat, girl, clown), no title-card or theme copy, no period racial caricature; the mug's whole body is the mug (no human torso, no straw, no shorts), unlike *Cuphead*'s design.",
+    "end_card_verbatim": "Same sunburst, a wavy-edged sign with \"The End\", the style name, `LemoLab × Claude Opus 5.5`, small credit lines at the bottom; it opens with an iris from black. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.",
+    "completion_note": "Exact visible typography/content must be checked in original video; this inventory preserves all published cue/title/prop specifications. Model authorship credit is a reference fact, never new-output attribution.",
+    "original_annotation_literal_sources": [
+      {
+        "path": "styles/rubber-hose/demo/film.js",
+        "sha256": "95bc2c5749f011bbd44d5932882b7656ca7c63544dfe44e1be2fb12687b6d61f",
+        "original_literal_inventory": []
+      }
+    ]
+  },
+  "sound_recreation": {
+    "instruction": "Generate new voice and music; original mix/track reuse is not permitted by latest user instruction. Preserve full words, cadence windows, BPM, musical form, silence and picture-synchronous hits.",
+    "published_score_sound_spec_verbatim": "Original big-band score (`demo/music/score.py`, VSCO 2 CE / VCSL samples via `core/audio/sampler.py`, banjo via `pluck.py`). **144 BPM, 4/4 → 1 beat = 10 frames**, 1 bar = 1.667 s, 28 bars. One original 4-bar syncopated theme, stated for the title, the chase, a slow solo-clarinet version for the tender beat, and a key-change full-band out-chorus for the climax.\n\nStops (hard silence including reverb tails) on the lock-eyes beat, on the suspense before a gag, and a full 2 beats of silence right after the stretch; stingers on every gag; slide whistle for every stretch / slide / fall; the xylophone *is* the plates. The projector clatter is the only sound inside the silence.\n\nFoley specific to this film (all synthesised): porcelain = hard inharmonic partials (~2.7 / 4.2 / 6.3 kHz) + tiny transient; thick mug = lower, duller partials; sugar = high woodblock + sparse crunch; clock = 18 Hz hammer on two bells; toaster = click, eighth-note ticks, bell + spring \"boing\"; water = filtered noise + rising blips, drain slurp, bubble bed; rubber = sawtooth creak through a band-pass.\n\nVoice: an old radio announcer calling the action like a horse race (Kokoro `bm_lewis`, speed 1.0), 7 short lines (\"Seven a.m., folks!\" … \"Good night, folks!\"). Chain: HP 260 Hz / LP 4.6 kHz, tanh saturation, a short room, compression. Music ducked ~8 dB under the voice. Optical pass: band-limit 110 Hz–6.2 kHz, wow 0.6 Hz, flutter 7 Hz.",
+    "original_voice_records": [
+      {
+        "id": "v1a",
+        "text": "Seven a.m., folks!",
+        "asr": "7 a.m. Folks",
+        "voice": "bm_lewis",
+        "speed": 1.0
+      },
+      {
+        "id": "v1b",
+        "text": "And boy, is this coffee bitter!",
+        "voice": "bm_lewis",
+        "speed": 1.0
+      },
+      {
+        "id": "v2",
+        "text": "And they're off!",
+        "asr": "And they are off",
+        "voice": "bm_lewis",
+        "speed": 1.0
+      },
+      {
+        "id": "v3",
+        "text": "Up the china cabinet... what a climber!",
+        "voice": "bm_lewis",
+        "speed": 1.0
+      },
+      {
+        "id": "v4",
+        "text": "Look out, folks... the drain!",
+        "voice": "bm_lewis",
+        "speed": 1.0
+      },
+      {
+        "id": "v5",
+        "text": "Well, I'll be... sweet as pie!",
+        "voice": "bm_lewis",
+        "speed": 1.0
+      },
+      {
+        "id": "v6",
+        "text": "Good night, folks!",
+        "voice": "bm_lewis",
+        "speed": 1.0
+      }
+    ],
+    "original_voice_durations_s": {
+      "v1a": 1.856,
+      "v1b": 1.91,
+      "v2": 0.899,
+      "v3": 2.61,
+      "v4": 1.977,
+      "v5": 2.089,
+      "v6": 1.264
+    }
+  },
+  "engine_and_build": {
+    "required_engine_spec_verbatim": "In `demo/`: `toon.js` (constant-width ink, line boil, affine stack), `film.js` (gate and film damage, reusable as is), `chars.js` (rigs, pie eyes, gloves, shoes), `cast.js` (breathing props), `bg.js` (cached watercolour backgrounds), `ui.js` (title lettering, title-card subtitles), `mix.py` (foley, radio chain, optical ageing), `music/score.py` (big band via `core/audio/sampler.py`). File map and commands: [DEMO.md](DEMO.md#build-notes).",
+    "published_build_notes_verbatim": "```\nstyles/rubber-hose/demo/\n  toon.js    constant-width ink + line boil + affine stack      film.js   4:3 gate, weave, flicker, scratches, vignette\n  chars.js   mug & cube rigs, pie eyes, gloves, shoes, steam     cast.js   living kitchen props (all take a breath phase)\n  bg.js      cached watercolor backgrounds (kitchen, cupboard+sink)\n  story.js   144 BPM bar grid, VO times, subtitle cards, shots, key moments, music cues  (single source of truth)\n  scenes.js  every shot: camera, props, acting            events.js  foley event list → events.json\n  ui.js      title lettering, announcer title card        sheet.js   model sheets (?mode=sheet / ?mode=kitchen)\n  music/score.py  original big-band score (VSCO 2 CE / VCSL samples via core/audio/sampler.py, banjo via pluck.py)\n  mix.py     foley synthesis + radio-voice chain + ducking + optical-track aging\n  build.sh   one-command rebuild (≈9 min, mostly TTS/whisper/sample loading; frames render in ~50 s)\n```\n\n1. Write the bar grid first (`story.js`), then the cue map; score to it (a forked sub-agent can write `music/score.py` in parallel from `story.js` + the cue list).\n2. Model sheets: `node demo/tools/still.mjs demo 0 --q 'mode=sheet&w=2880&h=1620' --w 2880 --h 1620`.\n3. `core/tts/tts.py lines.json voices` → `core/tts/asr_check.py`.\n4. Review: `core/render/still.mjs demo --range a:b:1` + `core/render/sheet.py` (two full passes), and frame strips at 1/12 s on key acting beats.\n5. `node core/render/events.mjs demo` → `python music/score.py` → `python mix.py`.\n6. `node core/render/video.mjs demo --fps 24 --workers 3` → `sh core/render/mux.sh out/video24.mp4 mix.wav rubber-hose.mp4 24 3` → `python demo/tools/final_asr.py rubber-hose.mp4`.\n\nOr simply `sh styles/rubber-hose/demo/build.sh`.\n\nPitfalls tied to this demo:\n- **Kokoro heard \"bitter\" as \"better\"** after an ellipsis (`is... bitter!`). \"And boy, is this coffee bitter!\" passes. Check every line with whisper; also check the final mp4 (whisper writes \"7am\" / \"they're\": normalise before comparing).\n- The cube read as a tall box in pure front view: elevation ~0.26 and a slight 3/4 turn for expressions.\n- A far shot of the plate-xylophone and of the dance climax (reviewer note) killed both gags; both were reshot as medium / medium-full.\n- A kicking leg drawn behind the mug body was hidden by the handle: kick outward past the silhouette.\n- A pot \"grew\" out of the mug's head at one camera position: check every shot's final frame.\n- A leap arc that was too high left the frame; keep arcs inside the gate at the camera's zoom.\n- `sfx`-style clips of different lengths → numpy broadcast errors. Place clips into a fixed-length buffer (`seq()` in `mix.py`).\n- zsh: `echo =====` fails (`=word` expansion) and `timeout` doesn't exist on macOS.\n- JS: `-x ** 6` is a syntax error; write `-(x ** 6)`.",
+    "fetch_build_specs": [
+      {
+        "path": "styles/rubber-hose/demo/build.sh",
+        "sha256": "b41621d556146c417b8db685832f3e7a4fe23f8a6033acce28a4616d0b15dc77",
+        "text_verbatim": "#!/bin/sh\n# 从零重现成片：sh styles/rubber-hose/demo/build.sh   （任意目录运行）\nset -e\ncd \"$(dirname \"$0\")/../../..\"\nPY=.venv/bin/python; D=styles/rubber-hose/demo; S=styles/rubber-hose\n$PY core/tts/tts.py $D/lines.json $D/voices                     # 1. Kokoro 配音（bm_lewis 电台播音腔）\n$PY core/tts/asr_check.py $D/lines.json $D/voices               # 2. whisper 逐句校对\nnode core/render/events.mjs $D                                  # 3. 时间线 → events.json（旁白 / 拟音事件）\n$PY $D/music/score.py                                           # 4. 原创大乐队配乐（采样 + 拨弦建模）→ music/score.wav\n$PY $D/mix.py                                                   # 5. 拟音 + 电台腔旁白 + 闪避 + 光学声轨老化 → mix.wav\nnode $D/tools/subs.mjs && $PY core/render/srt.py $D/out/cues.json $S/rubber-hose.srt   # 6. 字幕\nnode core/render/video.mjs $D --fps 24 --workers 3 --out $D/out/video24.mp4          # 7. 逐帧渲染（1200 帧 ~50–80 s）\nsh core/render/mux.sh $D/out/video24.mp4 $D/mix.wav $S/rubber-hose.mp4 24 3           # 8. 合成 + 颗粒 3 + −14 LUFS\n$PY $D/tools/final_asr.py $S/rubber-hose.mp4                                         # 9. 成片 whisper 自检\n# 10. 海报 / 风格帧；设定表只渲到 out/（stills/ 里是关卡 1 批准的版本）\nnode core/render/still.mjs $D 43.1 --q 'poster=1&nosub=1' --out $D/out --prefix poster_ && cp $D/out/poster_43.1.jpg $S/poster.jpg\nnode core/render/still.mjs $D 37.95 --q 'nosub=1' --out $D/out --prefix sf_ && cp $D/out/sf_37.95.jpg $D/stills/styleframe.jpg\nnode $D/tools/still.mjs $D 0 --q 'mode=sheet&w=2880&h=1620' --w 2880 --h 1620 --out $D/out --prefix sheet_\nnode $D/tools/still.mjs $D 0 --q 'mode=kitchen&w=2880&h=1620' --w 2880 --h 1620 --out $D/out --prefix kitchen_\n"
+      }
+    ],
+    "local_original_asset_snapshot_inventory": [
+      {
+        "path": "styles/rubber-hose/demo/events.json",
+        "sha256": "c4c90a129443f77e6cc5ba97916138fc656fa053bb8fae5a67bc059d00fc7565",
+        "bytes": 3729
+      },
+      {
+        "path": "styles/rubber-hose/demo/lines.json",
+        "sha256": "82169b6408931f502b8f2b1f83b9f887c4c8208759d0a0e8b73693c54bb15b83",
+        "bytes": 750
+      },
+      {
+        "path": "styles/rubber-hose/demo/music/score.json",
+        "sha256": "17f678670804adf96d6243956670dd958d9bd345c5116546c23a2ea4e6724833",
+        "bytes": 3192
+      }
+    ]
+  },
+  "evidence": {
+    "original_credits_verbatim": "Coffee Cup Chase — 1930s Rubber Hose Cartoon (Lemo-Opuscar · rubber-hose)\nLemoLab × Claude Opus 5.5\n\nPicture\n- All characters, props, backgrounds, film damage and titles drawn in code (Canvas2D) — original.\n\nMusic (original composition, rendered with samples; see music/score.py)\n- VS Chamber Orchestra: Community Edition — Versilian Studios — CC0 1.0\n  (upright piano, trumpet incl. mute, trombone, clarinet, tuba, snare, kick, cymbals)\n- Versilian Community Sample Library (VCSL) — Versilian Studios — CC0 1.0 (xylophone, woodblock)\n- Drums: \"MuldjordKit\" by Lars Muldjord (drumgizmo.org), FreePats version,\n  licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) (toms)\n- Banjo: physical-modelling pluck (core/audio/pluck.py), slide whistle / spring / brush swish synthesized in numpy\n\nSound effects\n- All foley synthesized in code (mix.py, core/audio/sfx.py)\n\nVoice\n- Kokoro TTS v1.0 (Apache-2.0), voice bm_lewis\n\nFonts (SIL Open Font License 1.1, license files in fonts/)\n- Shrikhand (Jonny Pinhorn), Limelight (Nicole Fally / Sorkin Type), IM Fell English SC (Igino Marini)\n",
+    "source_urls": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ]
+  },
+  "matching_blockers": [
+    "The original conversation prompt is not published. The complete published style, script, timing and reference movie support the reconstruction."
+  ],
+  "visual_audit": {
+    "state": "complete-scene-and-key-event-coverage",
+    "reference_video_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/films/rubber-hose.mp4",
+    "reference_video_sha256": "e7d1d0a0ad1b88ef411b97787fbd83dfdbdb414ad92207a7718466b078a7eeb5",
+    "coverage": [
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/sheets/sheet-01.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/sheets/sheet-02.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/sheets/sheet-03.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/sheets/sheet-04.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/rubber-hose/sheets/sheet-05.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "times": [
+          4.95,
+          16.0,
+          28.0,
+          28.5,
+          29.0,
+          37.0,
+          37.5,
+          45.8
+        ],
+        "sheet": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/work/gptcar/matched-audit/event-frames/rubber-hose/sheet.jpg"
+      }
+    ],
+    "reference_verified_visual_observations": [
+      "Stage the full cartoon inside an Academy4:3 gate with black side bars, monochrome warm greys, film weave, scratches and a soft vignette. A detailed kitchen contains striped wallpaper, tiles, cupboards, a curtain-framed window, jars, pans and ladles. The hero is a white cylindrical mug with black coffee, pie eyes, a left handle, white gloves, noodle limbs and black shoes. The sugar cube has three visible faces and a face on its front. Preserve every acted gag: toaster soot, plate staircase and spoon slide, sink spiral rescue, deliberate release, the cube’s voluntary return, steam heart, ensemble dance and the glove closing the iris. Caption plaques and the moving starburst cards must follow the complete script."
+    ],
+    "note": "All regular reference sheets were inspected across the complete film. Named supplementary frames cover important short actions and transitions. This is scene coverage, not a claim that every encoded frame was inspected."
+  }
+}

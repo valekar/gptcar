@@ -1,0 +1,267 @@
+{
+  "slug": "impasto",
+  "original_title": "The Colour of Rain",
+  "premise": "In a grey, rainy square one red umbrella opens, and a waltz paints the whole plaza in colour.",
+  "published_delivery": {
+    "slug": "impasto",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/impasto.mp4",
+    "sha256": "a03f8fcd7dd293233d3f71feb4832c3867b07a443dd030bca818352d21e654e2",
+    "duration": 39.666667,
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": "952",
+    "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+    "frames": 40,
+    "sheets": 4
+  },
+  "production_format_source": "Full verbatim DEMO header below; measured published delivery above governs v2.",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "explanation": "No initial conversation/inputprompt transcript is published in inspected repository. STYLE.md is a verbatim published styleprompt; DEMO.md is published retrospective productiondocumentation. Shot prompts are source-informed reconstruction of finishedmovie, never a claimed identical originalchatprompt."
+  },
+  "published_style": {
+    "path": "outputs/gptcar/styles/impasto/STYLE.md",
+    "sha256": "38a0dcb2808c2ff03ef721c1319b9145438b4074ed37ab7a09dcf20b7268e062",
+    "verbatim": "# Impasto · Palette Knife — Style Prompt\n\n> Thick oil paint laid with a palette knife: big, flat, sharp-edged planes of colour, raked by light so every ridge of paint shows. Clarity first: value structure before texture, hard edges at the focus, calm planes everywhere else.\n> References (grammar only): the opening titles of *The Umbrellas of Cherbourg* (1964) (overhead choreography read as moving colour); palette-knife street paintings (Leonid Afremov and the genre around him) (knife mosaic, vertical wet reflections, warm lights against cool shadow); Sorolla / Sargent (few, decisive strokes and strong light); Edgar Wright's music-locked editing (one action, one sound, one cut). Never copy their images, compositions, melodies or characters, and never name them in the film.\n\n## 1. Essence, and what it is not\n\nA moving oil painting made of knife strokes. Each stroke is a real object: a slanted plane of paint with a ridge where the blade pressed, a lip where it lifted off, broken streaks where the paint ran out, two colours dragged into each other. The world is **repainted from its strokes every frame**, but static paint never moves: only things that move in the story move. Light rakes across a height field, so the paint has body.\n\nThe look is clear and graphic (readable like a children's book at thumbnail size) but has the tactile surface of impasto at 100 % crop.\n\nNot a Van Gogh swirl filter (strokes boiling everywhere), not a brush texture over flat vector art, not watercolour (paint is opaque), not a \"painterly\" photo filter (strokes are designed, not sampled from noise).\n\n## 2. Materials & rendering\n\n- **Value first.** Design each set as a flat, value-planned illustration (3 values minimum), then convert it to strokes. If the reference doesn't read at 480 px wide, no brushwork will save it.\n- **Stroke sizes by importance and depth.** Coarse to fine: large planes in sky and walls, a few px only at edges and faces (per shape: `maxR`, `detail`, `dir`).\n- **Strokes never cross shape groups**, so silhouettes stay crisp. Lost edges are opt-in (put two shapes in the same `group`).\n- **Thin underpainting** (the reference itself, blurred ~1.5 px) under the strokes, so the canvas never peeks through as outlines.\n- **Knife stroke**: longer than wide (≈ 1.7–3.1 × radius long, 0.95–1.45 × radius wide), slanted ends, small angle and value jitter (≈ ±13°, ±6 %). Solid objects that must read as silhouettes (figures, props) get little or no ragged run-out.\n- **Light** rakes over a height field; wet or glossy surfaces get slightly more specular.\n- **Reflections** (wet ground, glass, water) are **explicit stacks of short horizontal knife dabs** under each light source, broken and fading; never a painted rectangle.\n- Render supersampled (2×). **No film grain**: grain plus compression eats the knife edges.\n\n## 3. Colour logic\n\n- Planes of mixed, slightly broken colour; each stroke may drag a second colour (`c2`) into the first. No gradients made by blending pixels: gradients are made by stroke-to-stroke steps.\n- Warm light against cool shadow is the default temperature structure; the brightest, purest chroma is reserved for the story's subject (a prop, a crowd, a light source), not the background.\n- **Colour can be an event.** Every stroke can hold a grey and a colour version; a monochrome world with one coloured exception, or a world re-laid from grey to colour, is native to the medium. The grey version is the luminance of the same strokes, slightly cool, with a small colour residue.\n- Examples of palettes that fit: an after-rain sunset (cobalt → peach → gold sky, ochre facades, full-chroma props); a harvest field (straw yellow, burnt sienna earth, one viridian tractor); a night kitchen (umber shadows, sodium-lamp orange, one cold blue window). Choose from the topic.\n\n## 4. Type & subtitles\n\n- Titles are **laid in with the knife** (a stroke-by-stroke `appear` sweep of about a second) and can be taken off by the world (washed by rain, scraped, painted over). They move with the world.\n- Small text (credits, data, captions) stays crisp DOM text over the painting: knife strokes can't carry small letters.\n- A serif display face (e.g. Cormorant, OFL). Subtitles, if there is a voice: plain serif, ≤ 2 lines, in a calm plane; hold ≥ max(1.8 s, speech + 0.6 s).\n\n## 5. Motion quality\n\n- Static paint is static. Only the things the story moves move (weather, figures, props, ribbons, light). Smooth 24 fps, no stepping: clarity is the brief.\n- Moving figures are procedural strokes rebuilt each frame from **fixed seeds**, so their paint doesn't boil (walk cycles, IK arms, props that open and close).\n- Actions sit on the music grid: a change of direction, a pop, a swell lands on a beat.\n- Anticipation → action → follow-through on every gesture (lift before the strike, dip before the snap, swing after the stop).\n\n## 6. Camera grammar\n\nA vocabulary, not a route. Opening and ending come from the topic.\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Slow truck + push on a wide | a world observed; patience | a place; a routine; a crowd |\n| Push-in through a silence | inner pressure | a doubt; a decision; giving up |\n| Tilt-up from the ground or a reflection | discovery from below | a small character entering; a first sight |\n| Pull-back from a close-up | reaction; the world answering | consequence; a reveal of who is watching |\n| Rotating crane-out, overhead | pattern emerging from many | choreography; traffic; a gathering |\n| Same wide, repeated | before/after | change of colour, season or time |\n| Locked frame, light moves | time and weather as the actor | a day passing; a storm arriving |\n| Macro slide along the paint surface | the matter itself | a texture; a crafted object; a map |\n| Whip-pan into a new painted plate | energy, a jump | a list; montage; travel |\n\nFraming: keep the camera **inside the painted plate** (`half = W/2/zoom`), or the canvas shows. The subject gets the hard edges and the smallest strokes; everything else stays in big calm planes. Transitions: paint-over sweeps and scrapes, hard cuts on beats; no dissolves (two layers of knife ridges turn to mud).\n\n## 7. Sound palette\n\n- **Foley follows the paint and the world**: palette-knife scrapes on every repaint or paint-over, wet dabs, the materials of the scene (wet stone, nylon, wood, fabric, glass).\n- **Beds** in layers (a hiss, near grains, one distinct detail), filtered when the camera goes under cover.\n- **Acoustic instruments with a hand-made grain**: solo strings, accordion, pizzicato, harp arpeggios, glockenspiel or celesta for pops, piano, guitar, woodwinds; a solo instrument for a lonely world, an ensemble for a shared one.\n- Options: **one action = one sound = one cut** (music-locked edit); pops pitched as a rising arpeggio so a sequence of events climbs; an unresolved phrase that the film resolves later; a hard silence that cuts music and beds to digital zero, containing at most one sound; a J-cut of the next scene's foley into a silence.\n- Mix: music and ambience duck under any voice (~8 dB); −14 LUFS. Music and foley can carry a film without narration.\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **Colour re-laid by the knife.** Every stroke keeps a grey and a colour version; a reveal wave re-paints them stroke by stroke (`reveal`, `revC`). *Fits content like:* a town waking up; a patient recovering; a brand relaunch; a season turning.\n- **The one coloured thing.** The world drawn with `grey: 1`, one object with `grey: 0`. *Fits content like:* one person in a crowd; the fruit that ripened; a warning light.\n- **Motion paints the picture.** Moving objects drip their colour as knife dabs; seen from above, their paths leave a painted pattern. *Fits content like:* a dance; delivery routes across a city; a football play; migration.\n- **Raking light.** At the peak, drop the light to a grazing angle so every ridge catches it, then let it settle. *Fits content like:* a sunrise; a moment of recognition; unveiling a sculpture.\n- **Paint-over transition.** The next shot's strokes are laid over the previous one in a sweep (`appear`), with a scrape on the soundtrack. *Fits content like:* a renovation; memory replacing the present; a timeline of versions.\n- **Sound made visible.** A note or a voice becomes a paint ribbon that carries colour to what it touches. *Fits content like:* a song reaching listeners; a radio broadcast; a rumour spreading.\n\n## 9. Pitfalls of the medium\n\n- Confined strokes shrink near edges and leave canvas-coloured outlines → add the underpainting texture.\n- Draw order in the reference matters: painting the ground after the buildings covers their feet.\n- Plain rectangles read as posts or blocks → give silhouettes taper, a lit edge, and one or two defining dabs (shoulder, hair, handle).\n- Proportions carry the object's identity at this stroke size: a prop drawn too wide reads as a different thing. Check silhouettes at thumbnail size.\n- Film grain or heavy compression destroys the knife edges → no grain, supersample, high bitrate.\n- Strokes that are re-seeded every frame boil → fixed seeds per stroke.\n- Engine-level WebGL traps (reserved words, VAO binding) are listed in DEMO.md build notes.\n\n## 10. Engine\n\nFiles: `demo/engine/impasto.js` (renderer), `demo/engine/plate.js` (reference → strokes).\n\nMain calls: `new Impasto(canvas,{W,H,ss})`, `E.begin()` / `E.finish(post)` (raking light + grade), `E.batch()` → `E.draw(batch,o)` for static plates (`cam`, `grey`, `reveal`, `appear`), `E.drawNow()` for moving strokes, `E.under()` for the underpainting, `new Strokes().push({...})` (`KNIFE`, `BRUSH`, `DAB`, `LINE`), `new Ref()` + `paintRef()` (reference illustration → coarse-to-fine strokes confined to shape groups), `strokePath()`. Full parameter table: DEMO.md \"Engine reference\".\n\nMinimal example: a warm-orange four-point sparkle with a short cursor tail, in knife paint.\n```js\nimport { Impasto, Strokes, KNIFE, DAB, hex } from './engine/impasto.js';\nconst E = new Impasto(canvas), s = new Strokes(), c = hex('#D97757');\nfor (let k = 0; k < 4; k++) {                                   // four tapered knife points\n  const a = k * Math.PI / 2;\n  s.push({ x: 960 + Math.cos(a) * 60, y: 540 + Math.sin(a) * 60, ang: a, len: 120, wid: 46, c, c2: hex('#f0a07a'), type: KNIFE, taper: .95, seed: k });\n}\ns.push({ x: 960, y: 540, len: 40, wid: 40, c: hex('#f6c0a0'), type: DAB, seed: 9 });   // bright core\ns.push({ x: 1060, y: 610, ang: .6, len: 90, wid: 16, c, type: KNIFE, alpha: .8, seed: 10 });   // cursor tail\nE.begin(); E.drawNow(s.data(), { grey: 0, run: 0 }); E.finish();\n```\n\"Only one colour\" (monochrome with one exception): draw the world with `grey: 1, reveal: 1e6`, draw the exception with `grey: 0`.\n\n## 11. Variation space\n\nYou decide the structure, the cast (or none), the sets, the opening, the ending, the camera path, the pacing, whether there is a voice, and where colour lives. All far from our demo:\n\n- Structures: **one object, many hands** (a bowl or a boat passes through the people who make and use it, one painted plate per hand); **a still life comes alive** (a locked table whose objects move in turn, the light crossing it hour by hour); **a portrait in layers** (a face painted coarse to fine as a voice tells one life, each layer a decade).\n- Openings: **the bare canvas** (underpainting only; the first knife stroke is the first event); **macro on a ridge of paint** that pulls back to become a mountain or a roof; **mid-action** (a figure already running across a finished plate).\n- Endings: **scraped back** (the knife takes the painting off to the underpainting, leaving one mark); **the light goes out** (raking light sinks until only the ridges glow, then black); **the frame in a room** (the film was a painting hanging somewhere, seen by someone).\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n"
+  },
+  "published_demo": {
+    "path": "outputs/gptcar/styles/impasto/DEMO.md",
+    "sha256": "82c202334f8edf20434a0d7c96675053cf2876835ca506471ce961950d9bab6f",
+    "verbatim": "# Impasto · Palette Knife — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *The Colour of Rain* (39.7 s) · `impasto.mp4` · source in [`demo/`](demo/)\n\n\n## Story & structure\n\nA grey square in the rain. A street cellist plays and nobody stops; halfway through he gives up. A little girl opens a red umbrella in front of him: the film's first colour. The cello starts again as a waltz, and umbrella after umbrella turns to colour on the beat. From overhead, the crowd's waltz paints a coloured mandala on the cobbles. The last chord lands, the rain stops, colour fills the whole square.\n\nArc: loneliness (grey) → giving up (silence) → one touch of colour (the red umbrella) → being heard (the waltz) → the crowd (overhead choreography) → echo (same camera, grey turned to colour; the phrase that broke off on E resolves to D).\n\nWhy it fits the medium: colour is the story, and the knife can re-lay any stroke in a new colour. It is a music film with no narration: the title is laid in with the knife over the grey sky and washed off by the rain (it drifts down and fades).\n\nNative moves spent: colour re-laid by the knife (the umbrella opening, the cellist's recovery, the final chord filling the square); the one coloured thing (the red umbrella is the only colour in the first half); motion paints the picture (overhead, each umbrella drips its colour along its path, and the pull-back reveals a mandala); raking light (the sun grazes the ground at the final chord, then settles); paint-over transitions with a knife scrape.\n\n## Shots\n\n| # | Time | Shot / camera | Why |\n|---|---|---|---|\n| 1 | 0–2.65 | CU cello body + bow, slight push | 3 s hook: the only colour in the grey world is the note (an amber ribbon), soon washed out by the rain |\n| 2 | 2.65–7.15 | Extreme wide, slow truck + push, paint-over in | The world: grey square, people hurrying. Title knifed in, then carried away by the rain |\n| 3 | 7.15–12.4 | Medium, one continuous push through the silence | Nobody stops: passers-by cross close to camera and block him; push to his face as he gives up |\n| 4 | 12.18–16.66 | Low CU on a puddle → tilt-up, hard cut | A boot lands on the splash; up to her, him, the umbrella; anticipation, POP, impact zoom |\n| 5 | 16.66–19.39 | Face CU → pull-back, hard cut on the downbeat | He looks up, lifts the bow; at 18.03 the bow lands and colour pours out of the cello |\n| 6 | 19.39–23.48 | Closer framing of the same wide, paint-over | The ribbon carries colour to each umbrella, one per beat |\n| 7 | 23.48–31.66 | Overhead, rotating + crane-out | Signature shot: choreography and the coloured trails on the ground |\n| 8 | 31.66–35.75 | Extreme wide (same set-up as 2), push toward the arch | Rhyme with the opening: grey to colour, raking light, umbrellas closing, birdsong |\n| 9 | 35.75–39.66 | End card, paint-over | Title, a red dot (an umbrella seen from above), credits |\n\nSix moves (push, truck, tilt-up, pull, rotate, crane-out overhead); sizes from CU to extreme wide and overhead. The same wide camera serves the opening (grey), the middle (umbrellas in colour) and the finale (all colour): for this story, the change was the story. Keep the camera inside the painted plate.\n\n## Score structure\n\n`demo/timeline.js` holds the grids; picture and score both read it.\n\n- **Part A**: solo cello, D minor, 3/4 at 80 BPM from 0.4 s. The phrase stops on an unresolved E3 at 10.15 s; the bow leaves the string 0.3 s later.\n- **Silence** 10.45–12.4: rain nearly gone, one drip at 11.15, two small steps at 11.5 / 11.95 enter before the picture (J-cut), a big splash at 12.4 is the first sound after it.\n- **Part B**: street-musette waltz, D major, 3/4 at 132 BPM.\n  - 15.3 POP (pickup bar): glockenspiel + rising harp glissando.\n  - 16.66 accompaniment enters: pizzicato bass + accordion \"oom-pah-pah\".\n  - 18.03 the cello melody enters.\n  - 19.39–23.03 nine umbrellas, one per beat; glockenspiel pitches climb G→B→D / A→C#→E / D→F#→A.\n  - 23.48–31.21 overhead, six bars of choreography; accordion repeats the melody an octave up, one harp arpeggio per bar.\n  - 31.21 grand pause, digital zero; the rain freezes in the air.\n  - 31.66 final chord (tutti + timpani + suspended cymbal).\n  - Coda F#→E→D resolves the phrase that broke off at the start.\n  - 35.75 last pizzicato, end card.\n- Other voices: violin pizz, shaker.\n\nSound design, section by section:\n\n| Section | Bed | Foley | Music |\n|---|---|---|---|\n| CU | rain (slightly distant) | bow rosin, raindrops on varnished wood | the solo's first note |\n| Grey square | full rain + gutter trickle | wet cobble footsteps (placed by the walk algorithm, panned), knife scrape on the title | solo |\n| Medium | rain under the arcade (low-passed) | passers-by footsteps close + umbrella fabric brushing | solo, breaks off |\n| Silence | almost nothing | one drip, small steps (J-cut), big splash | none |\n| Girl | rain | nylon rustle, rib click, umbrella \"fwump\", paint dabs landing | POP |\n| Reaction | muffled rain | bow-lift air | accompaniment, then cello |\n| Street | rain (lowered) | each umbrella's \"fwump\" + a soft hiss as the ribbon arrives | waltz + glockenspiel arpeggios |\n| Overhead | rain | the crowd's water steps on the waltz (beat 1 heavy) | tutti |\n| Grand pause | digital zero | — | — |\n| Ending | rain stopped | drips, umbrellas closing, birdsong | chord → coda |\n\nPalette-knife scrapes sit on every repaint.\n\n## Palette & props\n\n- After-rain sunset sky: cobalt `#34507e` → peach `#d99a78` → gold `#f7dca0`. Facades ochre `#dca064` and rose `#c98d7e`, shutter green `#3f7a6c`, awning red `#b8342a`.\n- Umbrellas at full chroma: cadmium red `#dc2f28`, yellow `#f4bc2a`, cobalt `#2f62c0`, viridian `#23906c`, magenta `#cc3a82`, orange `#ee7a2a`, turquoise `#26aab4`, violet `#6e4cc0`.\n- Grey world = luminance of the same strokes, slightly cool, 5 % colour residue; its specular is slightly higher (wet).\n- Light: `light [-.55,-.6,.7]`, `norm 3.2`, `amb .8`, `dif .28`, `spec .16–.3`, `ao 1.2`.\n- Stroke sizes: 40–60 px planes in sky and walls, 3–6 px only at edges and faces. Knife stroke: skew ±0.55, angle jitter ±13°, value jitter ±6 %. Figures and umbrellas use `run: 0–0.25` so they stay solid.\n- Figures: the cellist (IK bow arm, bow direction changes on each note), the girl (dips the umbrella before it snaps open), the crowd (rings swell on every downbeat; umbrellas pop on beats with a scale bounce and a burst of paint dabs, swing down to hang after closing). Faces: eyes, brows and mouth are separate procedural strokes so they can act.\n- Wet reflections: stacks of short horizontal dabs under each lamp and window.\n\n## End card\n\nKnife-painted title on deep ultramarine, a red dot (an umbrella from above), and crisp DOM text for the credits (small text must stay legible): \"an impasto palette-knife study\", then \"Lemo-Opuscar · LemoLab × Claude Opus 5.5\", then the sample and font credits. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card (the line lives in `demo/film.js`: remove it if you adapt that file).\n\n## Build notes\n\n```\nstyles/impasto/demo/\n  engine/impasto.js  WebGL2 knife-stroke renderer     engine/plate.js  reference illustration → strokes\n  timeline.js        BPM grids, cut times, melodies (MEL_A, MEL_B), pops\n  scenes/*.js        sets as reference illustrations (Ref.fill/line/text/tint) → paintRef()\n  film.js            shots, cameras, transitions (EDIT table), post looks, end card\n  music/score.py     sampler score (CC0 instruments)   mix.py  foley + ambience + ducking + true silence\n  tools/dump_timeline.mjs  timeline → out/timeline.json    build.sh\n```\n\n1. `timeline.js` first: BPM grids, cut times, melodies, pops. `tools/dump_timeline.mjs` writes `out/timeline.json` for the score.\n2. Sets in `scenes/*.js` → `paintRef()`.\n3. `film.js`: shots, cameras, transitions, post.\n4. `music/score.py`, then `mix.py`.\n5. `sh styles/impasto/demo/build.sh` renders everything (≈ 30 s of GPU render for 952 frames), muxed with grain 0.\n\nEngine-level traps: `half` is a reserved word in GLSL ES 3.00; binding the composite quad while a stroke VAO is still bound silently rewires attribute 0 (\"vertex buffer not big enough\" on the next frame): unbind the VAO first.\n\nPitfalls tied to this demo's props:\n- Umbrella radius 0.46 × body height looked like a parasol table; 0.34 reads as an umbrella.\n- Coats as plain rectangles read as bollards: A-line taper + lit edge + shoulder dab + hair dab.\n- A global index in the per-shot ribbon loop flung control points off-screen (a streak from the sky).\n- Painting the ground after the buildings covered their feet.\n\n## Engine reference\n\n`demo/engine/impasto.js` (renderer) and `demo/engine/plate.js` (reference → strokes).\n\n| API | What it does |\n|---|---|\n| `new Impasto(canvas, {W, H, ss})` | WebGL2 renderer, supersampled colour + height buffers |\n| `E.begin()` / `E.finish(post)` | start a frame / light + grade (`light, norm, amb, dif, spec, ao, expo, sat, vig…`) |\n| `E.batch(Float32Array)` → `E.draw(batch, o)` | static stroke set. `o = {M, cam:{x,y,zoom,rot}, t, grey, reveal, revDur, appear, appDur, alpha, run, hgt}` |\n| `E.drawNow(Float32Array, o)` | transient strokes (figures, weather, ribbons) |\n| `E.texture(canvas)` + `E.under(tex, w, h, o)` | thin underpainting (supports `revC:[x,y,speed]` reveal wave) |\n| `new Strokes().push({x,y,ang,len,wid,c,c2,type,taper,bend,skew,alpha,hgt,rev,app,seed})` | build strokes; `type`: `KNIFE`, `BRUSH`, `DAB`, `LINE` |\n| `new Ref(w, h, scale)` + `.fill(path, fill, props)` / `.line` / `.text` / `.tint` | reference illustration; props `{dir, maxR, detail, group, type, hgt, jit, len, wid, aj, fallback}` |\n| `paintRef(ref, {R:[radii], T, rev(x,y), app(x,y,level)})` | coarse→fine knife strokes confined to shape groups |\n| `strokePath(out, pts, {wid, c, type, step})` | strokes along a polyline |\n"
+  },
+  "narration": [],
+  "verbatim_published_script_files": {},
+  "timed_shot_prompts": [
+    {
+      "start": 0,
+      "end": 2.65,
+      "name": "Bow across the cello",
+      "visual_prompt": "Extreme close-up of wet grey cello surface, strings/f-holes and bow crossing; first warm amber ribbon of sound sweeps from bow stroke. Knife ridges and droplets visible.",
+      "onscreen_text": "",
+      "camera_motion": "Slow push on cello.",
+      "sound_direction": "No narration. New solo cello D-minor3/4 at80BPM breaks on unresolved E10.15, silence10.45–12.4 except drip11.15 and footsteps11.5/11.95. Splash12.4; red umbrella POP15.3 starts D-major132BPM musette with accordion/pizz bass/harp/glock. Grand pause31.209, chord31.664 stops rain and opens warm light.",
+      "transition": "Hard cut at2.65.",
+      "material_requirements": "Opaque palette-knife oil strokes with actual height field/ridged pigment under raking light. Same architectural geometry in grey and colour; fine crisp character features over coarse buildings. Bearded seated cellist in cap/scarf, cello/string/bow rig; girl bob haircut, boots, yellow coat and red umbrella."
+    },
+    {
+      "start": 2.65,
+      "end": 7.15,
+      "name": "Nobody stops in the grey plaza",
+      "visual_prompt": "Deep-perspective rainy square, arch arcade at right, block windows at left, distant clock tower. Small cellist sheltered right; pedestrians under black umbrellas pass. Amber sound ribbon arcs across grey.",
+      "onscreen_text": "The Colour of Rain",
+      "camera_motion": "Wide street truck/push; maintain vanishing point.",
+      "sound_direction": "No narration. New solo cello D-minor3/4 at80BPM breaks on unresolved E10.15, silence10.45–12.4 except drip11.15 and footsteps11.5/11.95. Splash12.4; red umbrella POP15.3 starts D-major132BPM musette with accordion/pizz bass/harp/glock. Grand pause31.209, chord31.664 stops rain and opens warm light.",
+      "transition": "Title painted in knife strokes, washed out with rain.",
+      "material_requirements": "Opaque palette-knife oil strokes with actual height field/ridged pigment under raking light. Same architectural geometry in grey and colour; fine crisp character features over coarse buildings. Bearded seated cellist in cap/scarf, cello/string/bow rig; girl bob haircut, boots, yellow coat and red umbrella."
+    },
+    {
+      "start": 7.15,
+      "end": 12.18,
+      "name": "The cellist gives up",
+      "visual_prompt": "Push medium to cap/beard/scarf/cello. Near passers block him then leave; nobody listens. His bow slows/stops10.15; head lowers, bow off10.45. Open case remains at feet.",
+      "onscreen_text": "",
+      "camera_motion": "Continuous slow push, foreground bodies occlude.",
+      "sound_direction": "Unresolved E; rain drips and two approaching footsteps.",
+      "transition": "Cut toward boots after suspense silence.",
+      "material_requirements": "Opaque palette-knife oil strokes with actual height field/ridged pigment under raking light. Same architectural geometry in grey and colour; fine crisp character features over coarse buildings. Bearded seated cellist in cap/scarf, cello/string/bow rig; girl bob haircut, boots, yellow coat and red umbrella."
+    },
+    {
+      "start": 12.18,
+      "end": 15.3,
+      "name": "One pair of boots, one red umbrella",
+      "visual_prompt": "Boot lands in puddle12.4, ripples splash out of thick grey paint. Tilt up the child from boots to grey coat/face, then umbrella springs open exactly15.3 as first saturated red pigment.",
+      "onscreen_text": "",
+      "camera_motion": "Low boot close-up tilts to girl.",
+      "sound_direction": "Splash, mechanism pop; musical pickup.",
+      "transition": "Umbrella opening is the major colour event.",
+      "material_requirements": "Opaque palette-knife oil strokes with actual height field/ridged pigment under raking light. Same architectural geometry in grey and colour; fine crisp character features over coarse buildings. Bearded seated cellist in cap/scarf, cello/string/bow rig; girl bob haircut, boots, yellow coat and red umbrella."
+    },
+    {
+      "start": 15.3,
+      "end": 16.663636,
+      "name": "Colour reaches the girl",
+      "visual_prompt": "Girl smiles under detailed red canopy/ribs; yellow paint spreads along sleeves/coat while surrounding architecture remains grey. One hand holds handle, other follows rhythmic gesture.",
+      "onscreen_text": "",
+      "camera_motion": "Hold medium profile.",
+      "sound_direction": "No narration. New solo cello D-minor3/4 at80BPM breaks on unresolved E10.15, silence10.45–12.4 except drip11.15 and footsteps11.5/11.95. Splash12.4; red umbrella POP15.3 starts D-major132BPM musette with accordion/pizz bass/harp/glock. Grand pause31.209, chord31.664 stops rain and opens warm light.",
+      "transition": "Cut to cellist reaction16.663636.",
+      "material_requirements": "Opaque palette-knife oil strokes with actual height field/ridged pigment under raking light. Same architectural geometry in grey and colour; fine crisp character features over coarse buildings. Bearded seated cellist in cap/scarf, cello/string/bow rig; girl bob haircut, boots, yellow coat and red umbrella."
+    },
+    {
+      "start": 16.663636,
+      "end": 19.390909,
+      "name": "He looks up and plays",
+      "visual_prompt": "Close-up of cellist face: eyebrows rise, mouth softens. Colour paints blue coat, golden scarf and warm cello. Arm/bow resumes18.02727 with articulated joints and changing bow direction.",
+      "onscreen_text": "",
+      "camera_motion": "Reaction close-up pulls back to cello.",
+      "sound_direction": "Cello enters new D-major waltz18.02727.",
+      "transition": "Warm wipe spreads through figure/background.",
+      "material_requirements": "Opaque palette-knife oil strokes with actual height field/ridged pigment under raking light. Same architectural geometry in grey and colour; fine crisp character features over coarse buildings. Bearded seated cellist in cap/scarf, cello/string/bow rig; girl bob haircut, boots, yellow coat and red umbrella."
+    },
+    {
+      "start": 19.390909,
+      "end": 23.481818,
+      "name": "Nine umbrellas answer",
+      "visual_prompt": "Street-wide with girl and cellist right. Nine umbrellas pop colour one per132BPM beat, each distinct panel palette. Thick painted sound ribbons arc toward each canopy; puddles reflect accents.",
+      "onscreen_text": "",
+      "camera_motion": "Medium-wide track through square.",
+      "sound_direction": "One glock note per umbrella; accordion/bass enter.",
+      "transition": "Nine beat-synchronous colour transfers.",
+      "material_requirements": "Opaque palette-knife oil strokes with actual height field/ridged pigment under raking light. Same architectural geometry in grey and colour; fine crisp character features over coarse buildings. Bearded seated cellist in cap/scarf, cello/string/bow rig; girl bob haircut, boots, yellow coat and red umbrella."
+    },
+    {
+      "start": 23.481818,
+      "end": 31.209091,
+      "name": "The plaza dances",
+      "visual_prompt": "Overhead umbrellas fill picture, segmented coloured canopies with dark hubs/ribs and tiny feet. They circle and leave thick bright trails, shaping a rotating mandala on patterned cobblestones; lift reveals whole spiral.",
+      "onscreen_text": "",
+      "camera_motion": "Overhead crane rises and rotates; deepen spiral rather than flat random dots.",
+      "sound_direction": "Full waltz, harp/glock flourishes.",
+      "transition": "Keep each canopy/route coherent.",
+      "material_requirements": "Opaque palette-knife oil strokes with actual height field/ridged pigment under raking light. Same architectural geometry in grey and colour; fine crisp character features over coarse buildings. Bearded seated cellist in cap/scarf, cello/string/bow rig; girl bob haircut, boots, yellow coat and red umbrella."
+    },
+    {
+      "start": 31.209091,
+      "end": 31.663636,
+      "name": "Grand pause",
+      "visual_prompt": "The rotating painted mandala and rain freeze for one musical beat; preserve motion anticipation without a fade or new card.",
+      "onscreen_text": "",
+      "camera_motion": "Locked overhead freeze.",
+      "sound_direction": "Digital zero; no reverb tail.",
+      "transition": "Hard release into warm wide street.",
+      "material_requirements": "Opaque palette-knife oil strokes with actual height field/ridged pigment under raking light. Same architectural geometry in grey and colour; fine crisp character features over coarse buildings. Bearded seated cellist in cap/scarf, cello/string/bow rig; girl bob haircut, boots, yellow coat and red umbrella."
+    },
+    {
+      "start": 31.663636,
+      "end": 35.754545,
+      "name": "The whole square is painted",
+      "visual_prompt": "Return to original deep street view now warm golden architecture, green window accents, mauve wet pavement and dusk sky. Rain stops; umbrellas close, pedestrians continue, girl and musician visible. Raking light reveals oil ridges.",
+      "onscreen_text": "",
+      "camera_motion": "Original wide composition with gentle settling push.",
+      "sound_direction": "D-major resolve, birds after rain.",
+      "transition": "Rain ends on final chord, warm light expands.",
+      "material_requirements": "Opaque palette-knife oil strokes with actual height field/ridged pigment under raking light. Same architectural geometry in grey and colour; fine crisp character features over coarse buildings. Bearded seated cellist in cap/scarf, cello/string/bow rig; girl bob haircut, boots, yellow coat and red umbrella."
+    },
+    {
+      "start": 35.754545,
+      "end": 39.654545,
+      "name": "Blue painted end plate",
+      "visual_prompt": "Deep blue knife-painted ground, golden italic film title, small red pigment dot and quiet production/style text.",
+      "onscreen_text": "The Colour of Rain\nAN IMPASTO PALETTE-KNIFE STUDY",
+      "camera_motion": "Locked plate, subtle raking surface.",
+      "sound_direction": "Last pizz note; natural decay, no voice.",
+      "transition": "0.8s painted transition into end.",
+      "material_requirements": "Opaque palette-knife oil strokes with actual height field/ridged pigment under raking light. Same architectural geometry in grey and colour; fine crisp character features over coarse buildings. Bearded seated cellist in cap/scarf, cello/string/bow rig; girl bob haircut, boots, yellow coat and red umbrella."
+    }
+  ],
+  "published_text_source_inventory": {
+    "note": "Verbatim literals from text/annotation/caption sourcecalls. This supplemental audit index may include formatting/style strings; shot narrativecards and scripts above are authoritative. Source path/line retained to resolve exacttext.",
+    "entries": [
+      {
+        "file": "outputs/gptcar/styles/impasto/demo/engine/impasto.js",
+        "line": 221,
+        "published_source_literals": [
+          "webgl2"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/impasto/demo/engine/plate.js",
+        "line": 18,
+        "published_source_literals": [
+          "canvas"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/impasto/demo/engine/plate.js",
+        "line": 41,
+        "published_source_literals": [
+          "function"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/impasto/demo/engine/plate.js",
+        "line": 79,
+        "published_source_literals": [
+          "canvas"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/impasto/demo/scenes/cards.js",
+        "line": 6,
+        "published_source_literals": [
+          "The Colour of Rain",
+          "italic 600 176px ",
+          ", lin(0, 60, 0, 240, [[0, ",
+          "], [1, ",
+          "]]), { dir: ",
+          ", fallback: 20, maxR: 6, group: "
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/impasto/demo/scenes/cards.js",
+        "line": 13,
+        "published_source_literals": [
+          "The Colour of Rain",
+          "italic 600 150px ",
+          ", lin(0, 350, 0, 480, [[0, ",
+          "], [1, ",
+          "]]), { dir: ",
+          ", fallback: 15, maxR: 6, group: "
+        ]
+      }
+    ]
+  },
+  "published_cue_events": [],
+  "published_source_hashes": {
+    "outputs/gptcar/styles/impasto/demo/engine/impasto.js": "d7e2d33cbecd21c905615260a65cd7dc9fdf5f9dffaf9d9eeae933d30b7eae1e",
+    "outputs/gptcar/styles/impasto/demo/engine/plate.js": "7120f53f1827481c97ea7204f4ef269c46339c0b87181c7f56603d0150964567",
+    "outputs/gptcar/styles/impasto/demo/film.js": "622f7b960df7cc3d88ee191f932654a4cfeeb69d3b36031624a4d066a4a8c1ae",
+    "outputs/gptcar/styles/impasto/demo/index.html": "9c43f15703c8b20d30e3f8df9fba2d394bc85bee96bfc5717341010f0c00aecb",
+    "outputs/gptcar/styles/impasto/demo/main.js": "a02d67a8fba2d5a9ddb830f29eb0c0e6160c36db9553c03a5020550d8cda90c9",
+    "outputs/gptcar/styles/impasto/demo/mix.py": "da354d25bb5d431680b81644f6b57178d9bc4beeb5fdaf7c51771eda46751b8b",
+    "outputs/gptcar/styles/impasto/demo/music/score.py": "9481396c52e17e86b3780e4e2b82e0e41d36fc418412c082042cd950ba8cdd74",
+    "outputs/gptcar/styles/impasto/demo/scenes/cards.js": "d4191cb24f263f780df0169a0eeadb105aff34cde60dc43dd7cdad5ccf6aff87",
+    "outputs/gptcar/styles/impasto/demo/scenes/cellist.js": "a5552f3cd44f1c520d0eb738f03519a8a62e39dae78632bdadbc546844253bbd",
+    "outputs/gptcar/styles/impasto/demo/scenes/common.js": "a13d791f53313ae87a8c6c4448378d7b91612c40a1433426b1831c849ece8c75",
+    "outputs/gptcar/styles/impasto/demo/scenes/ecu.js": "8cac1b71acd7b25cc4b5b3d37890204183049f3e386c8d4528e7be2373fd7dd3",
+    "outputs/gptcar/styles/impasto/demo/scenes/figures.js": "7527fc5ecfa489ba6298fa632eeb720ea15c143b75ebe1da3f86afde7a9700c8",
+    "outputs/gptcar/styles/impasto/demo/scenes/girl.js": "5e185ce6bc441b4412e3fcc5928cb5c8c33f4ac1bbc85bccf9b892933a5a8b8a",
+    "outputs/gptcar/styles/impasto/demo/scenes/medium.js": "8307b7bd0832c8256bcc181fdb033859bbfbc00852eb69a38b1d730eb524dd21",
+    "outputs/gptcar/styles/impasto/demo/scenes/top.js": "5e319f235c9e1426fcaee8c2850c094bc9e0c1fc71a2200b9efc64960f7cd1fd",
+    "outputs/gptcar/styles/impasto/demo/scenes/wide.js": "47f41b551b9ea3e80cb4196a94e0bca87b5c2d94b3d93cd1b37144578f484801",
+    "outputs/gptcar/styles/impasto/demo/test.js": "5b1ba4ec1d33dd46b44ead6f5afbe27f6c02383a784107514072cc6c745db263",
+    "outputs/gptcar/styles/impasto/demo/timeline.js": "fe2d540f5e89db8afa00dc14ed1d0f8b916e5d230c9e1354e18853240574d0c0"
+  },
+  "original_assets_and_licenses": [
+    {
+      "path": "outputs/gptcar/styles/impasto/demo/CREDITS",
+      "sha256": "0d6c7780b75fcf9db6f2d978ebe6887070299d897df0b3261ef2c17483b38564",
+      "verbatim": "The Colour of Rain — impasto (palette-knife)\nAll pictures painted in code (engine/impasto.js + engine/plate.js). No generated images, no photos.\nMusic composed and rendered in code with core/audio/sampler.py:\n  Samples (CC0): VS Chamber Orchestra: Community Edition and Versilian Community Sample Library (Versilian Studios); FreePats project (freepats.zenvoid.org)\nSound effects synthesized in code (mix.py).\nFont: Cormorant Garamond / Cormorant SC — Copyright 2015 the Cormorant Project Authors, SIL Open Font License 1.1 (fonts/OFL.txt)\n"
+    }
+  ],
+  "engine_reuse_recommendation": "Reuse attributed generic drawing/material/rig/math engines described by STYLE/DEMO; share fonts and named licensed data/assets with hashes. Independently generate scene assembly, animation, shot/camera staging and freshaudio. Never import original film renderer, mastervideo,originalframes or mastertrack as newGPTwork. Preserve exactscript/cardlanguage and measuredoriginalframecount. Full originals are analytical references only.",
+  "audio_recreation_direction": "No narration. New solo cello D-minor3/4 at80BPM breaks on unresolved E10.15, silence10.45–12.4 except drip11.15 and footsteps11.5/11.95. Splash12.4; red umbrella POP15.3 starts D-major132BPM musette with accordion/pizz bass/harp/glock. Grand pause31.209, chord31.664 stops rain and opens warm light.",
+  "v1_primary_deficits": [
+    "V1 removed cellist/grey-to-colour emotional cause, silent stop/splash and full39.66s musical architecture",
+    "Repeated painted dabs and simple figures omitted deep plaza geometry, bow rig, nine canopy events and overhead mandala"
+  ],
+  "visual_audit": {
+    "status": "complete",
+    "method": "Fulloriginal1fpscontactsheetreview andsourcecueboundaries; not everyencodedframe.",
+    "sheets": [
+      "work/gptcar/reference/impasto/sheets/sheet-01.jpg",
+      "work/gptcar/reference/impasto/sheets/sheet-02.jpg",
+      "work/gptcar/reference/impasto/sheets/sheet-03.jpg",
+      "work/gptcar/reference/impasto/sheets/sheet-04.jpg"
+    ],
+    "exact_time_supplement": [
+      "work/gptcar/reference/impasto/exact/t-12.45.jpg",
+      "work/gptcar/reference/impasto/exact/t-15.3.jpg",
+      "work/gptcar/reference/impasto/exact/t-15.4.jpg",
+      "work/gptcar/reference/impasto/exact/t-31.25.jpg",
+      "work/gptcar/reference/impasto/exact/t-31.4.jpg",
+      "work/gptcar/reference/impasto/exact/t-31.68.jpg"
+    ]
+  }
+}

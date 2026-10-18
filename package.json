@@ -17,7 +17,7 @@
     "test": "python3 -m unittest discover -s tests -v",
     "setup": "sh tools/setup.sh deps",
     "setup:check": "sh tools/setup.sh check",
-    "gallery:build": "python3 tools/build_comparison.py",
-    "gallery:preview": "python3 tools/build_comparison.py --preview"
+    "gallery:build": "python3 tools/build_replication.py",
+    "gallery:preview": "python3 tools/build_replication.py --preview"
   }
 }

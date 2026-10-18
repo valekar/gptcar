@@ -1,0 +1,913 @@
+{
+  "slug": "paper-lantern",
+  "original_title": "A Mooncake's Longing",
+  "premise": "A single mooncake tells the Mid-Autumn story of reunion and longing inside a glowing paper-cut lightbox.",
+  "published_delivery": {
+    "slug": "paper-lantern",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/paper-lantern.mp4",
+    "sha256": "bc276d3675f337e7f6fb8f3c214705d870003b25ede191ea91037515c1327674",
+    "duration": 121.766667,
+    "width": 1280,
+    "height": 720,
+    "fps": "30/1",
+    "frame_count": "3653",
+    "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+    "frames": 122,
+    "sheets": 11
+  },
+  "production_format_source": "Full verbatim DEMO header below; measured published delivery above governs v2.",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "explanation": "No initial conversation/inputprompt transcript is published in inspected repository. STYLE.md is a verbatim published styleprompt; DEMO.md is published retrospective productiondocumentation. Shot prompts are source-informed reconstruction of finishedmovie, never a claimed identical originalchatprompt."
+  },
+  "published_style": {
+    "path": "outputs/gptcar/styles/paper-lantern/STYLE.md",
+    "sha256": "6f3001ad45657262384b3012f441883ef5ac9c558b82d23e503d14e2f672ac91",
+    "verbatim": "# Paper-cut Lightbox — Style Prompt\n\n> A layered paper-cut shadow box (纸雕灯) lit from behind: 6–9 sheets of cut card stacked in a shallow box, a warm light glowing through the paper, windows and moons burning through holes, soft shadows falling from each layer onto the next. The frame is the box; the camera is a macro lens inside a lamp.\n> References (grammar only): commercial paper-cut shadow-box lamps (纸雕灯 / \"shadow box lightbox\") for the layer stack and backlight; Lotte Reiniger's silhouette films for the cut-out, jointed figure language; Chinese 剪纸 motifs (auspicious clouds, eaves, mountains) as one possible vocabulary. Do not copy any specific lamp design, film frame or character.\n\n## 1. Essence, and what it is not\n\nEvery shot is **one physical object**: a shallow box (a cavity about 0.56 × 0.33 m, 0.16 m deep) holding parallel sheets of cut paper. Everything on screen is one of three things:\n\n1. **A paper layer**: a flat cut sheet, one flat colour, fibre grain, a thin warm **rim of light on its top edge** and a **dark band on its bottom edge**. Back layers lighter and cooler, the front almost black: that value ladder *is* the depth.\n2. **Light through paper**: a warm, cloudy translucency (pulp mottling), strongest near the light source. Windows, lanterns, trails of light are **holes / emissive windows** that burn and bloom.\n3. **Shadows**: a top spot casts **soft shadows** from every layer onto the layers behind. This sells \"real paper in a real box\"; never turn it off.\n\nThe film may step out of the box into the **real world** (the lit lamp on a table, spill light on nearby objects) to say \"this is an object someone keeps\"; whether, where and how often is a choice of the film.\n\nNot flat paper-cut animation (here: depth, backlight, cast shadows), not shadow puppetry (no single screen, no rods), not a 3D diorama (every element is a flat sheet parallel to the box front).\n\n## 2. Materials & rendering\n\n- **Units in metres, y up.** Layers from z ≈ −0.14 (sky) to 0 (front); camera at z ≈ 0.3–0.56, fov ~26°. Full-bleed sheets are **never larger than the cavity**.\n- **A layer** is a Canvas2D drawing in metre space mapped to a plane; cut-outs are `destination-out` holes. Finish on every sheet: fibre grain (`source-atop`), a warm top rim and a dark bottom shade, each shifted a few px.\n- **Backlight shader**: `emissive += albedo × lightCol × trans × lit × falloff × (base + cloud)`, with a Gaussian falloff around a per-shot light point and a tiled pulp-mottle texture. `trans` per layer goes from ~.9 (far) to ~.05 (front).\n- **Emissive windows**: a second canvas (white = light) gated by a 0→1 \"switch on\" uniform; bloom makes them burn. Titles, lights and curtains in front neither cast nor receive shadows.\n- **Lens**: shallow depth of field, bloom, a gentle vignette; supersample 2× so cut edges stay crisp.\n- **Real-world set** (when used): wood frame, black lining, a dark room, an area light as the box's spill onto real objects.\n\n## 3. Colour logic\n\n- **Back layers bright and translucent, front layers dark and opaque.** Each layer is one flat colour; the ladder of values from back to front is the depth. Never break it (a pale front layer flattens the box).\n- **One temperature per stack**, chosen by the scene (cool night, warm interior, violet or green elsewhere). Changing ladder is how the film says \"another place\".\n- **Light is warm** (amber to gold) against the stack, and it is the only saturated element besides one accent.\n- **One accent colour** (a seal red, or a single object's colour) marks what the story is about. A second accent only when the story has two sides (one each).\n- Examples of ladders: night village — `#0a1330` sky → `#6a86c2` far → `#3f5a92` mid → `#0e1532` front, windows `#ffb862`; desert caravan — `#f0c890` dusk sky → `#c07850` dunes → `#6a3020` → `#1e0e08`, fires `#ffd080`; winter forest — `#dfe6ee` → `#9aaec4` → `#4a6078` → `#101820`, one red scarf.\n\n## 4. Type & subtitles\n\n- **Text in the picture is paper**: titles, letters, poems and captions are cut strips inside the box, revealed by growing from an anchor edge (scale the texture repeat with the mesh so glyphs aren't squashed), with an optional small seal.\n- Chinese: an OFL brush font (e.g. Ma Shan Zheng) for titles, a running script for handwriting, Noto Serif SC for subtitles. Latin: an OFL serif (e.g. Cormorant) at similar weight.\n- **Subtitles** are a quiet burned-in line under the box (serif 500, ~40 px CJK / ~38 px Latin, warm off-white, soft shadow, ~74 px from the bottom), fading in just before the line. Split long lines at the comma nearest the middle (~21 CJK / ~42 Latin characters).\n- **Words that appear as paper are not subtitled**: never show the same words twice.\n- Hold ≥ max(1.8 s, speech + 0.6 s).\n\n## 5. Motion quality\n\n- **Everything moves like paper on a stick**: layers slide (x/y), rotate about a pivot, scale in from 0 along one axis (\"written out\"), or light up. No squash and stretch, no morphing, no bending.\n- **Jointed figures**: a body sheet + separate limb sheets anchored at the joint; animate rotation only.\n- **Light cues are the big motion**: the source, then each layer's translucency in a ~0.4 s stagger, then windows, then flicker (`1 + .06·sin(7.3t)·sin(3.1t)`).\n- **Hard action lands on spoken words** (use whisper word timings): an object slams, a character flashes, a light arc grows on its word.\n- Hand-held micro-drift on the camera (~0.6 mm) keeps a locked frame alive. Render on ones at 30 fps; never step.\n\n## 6. Camera grammar\n\nA vocabulary, not a route. The lens is small and the box is shallow: moves are short. Opening and ending come from the topic.\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Slow dolly in, nearly frontal | intimacy; being drawn into a place | a memory; a detail that matters; a lit window |\n| Slow dolly out | context; loneliness; scale | a figure alone; before/after; the whole place at once |\n| Rack focus between layers | attention moving in depth | two people near and far; a clue behind; now and then |\n| Lateral travel with depth parallax | journey; time passing | a road trip; a process in stages; a timeline |\n| Top-down layer stack | a made thing seen as a craftsman sees it | a recipe; a letter; a map; a product being assembled |\n| Pull out of / push into the box | the frame as object; \"this is a story told\" | a keepsake; a framing device; returning to the present |\n| Locked frame with only light changing | waiting; the passage of a day or a night | a vigil; seasons; a city going to sleep |\n| Tilt up/down the stack | climbing; falling; sky vs ground | a mountain; a well; hope and weight |\n| Near-plane occluder wipe | a curtain between scenes | chapter changes; dreams; a secret revealed |\n\nFraming: the story layer in focus, foreground and far layers soft; box edges fully out of frame inside, clearly in frame outside, never half. Transitions: dissolves (0.5–1.2 s), an iris, light off/on, a near-plane curtain whose halves meet exactly. No whip pans, no digital zooms.\n\n## 7. Sound palette\n\n- **Instruments** that sit like light behind paper: felt piano, music box, celesta, harp or plucked zithers, bamboo flutes, soft strings; a solo instrument of the topic's culture. No drum kit; percussion only as single soft strokes (woodblock, small gong, hand drum).\n- **Foley is paper and light**: switch click + rising shimmer when a light turns on; paper rustle and slide; card-stock tap; lid thud; chimes on reveals; soft whoosh for curtains; beds from the scene (river, rails, city hum, crickets, snow wind).\n- **Silence**: the lamp switched off — all sound but a room tone drops out, then returns with the light.\n- **Mix character**: voice compressed and forward (RMS ~−18 dB), music underneath with ~5–6 dB of ducking under speech, foley low (−24…−34 dB), peak-limited, final at −14 LUFS.\n- **Options**: a new instrument entering when the film changes place; one foley sound per light cue; a music hand-over solved backwards so a swell lands on the line that matters.\n- **Voice**: warm, a storyteller at a table, not an announcer. Proof every line with whisper; for Chinese polyphonic characters feed TTS a homophone and keep the real text for subtitles.\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **The lamp turns on.** Source, then far layers, then windows light up one by one. *Fits content like:* a shop opening at dawn; a startup's first customer; a stadium before a match.\n- **Two windows, one light.** Two lit places sharing one light source (a moon, a lighthouse, a satellite). *Fits content like:* a long-distance friendship; two labs working on the same problem; a sister city pair.\n- **Depth as distance.** A stack of ranges or streets makes \"far away\" visible; travel moves layers at speeds proportional to depth. *Fits content like:* a migration route; shipping a parcel; the history of a river.\n- **Paper that writes itself.** A strip grows from its edge on the spoken word. *Fits content like:* a recipe; the terms of a treaty; a child's first word.\n- **The box as keepsake.** The camera finds the real lamp in a room, real objects lit by its spill. *Fits content like:* a wedding anniversary; a product unboxing; a museum object's story.\n- **Light burst from an opened thing.** A lid lifts and analytic glow spills out. *Fits content like:* a gift; a discovery; a new idea.\n- **Silhouette in a window.** One jointed figure inside a lit frame. *Fits content like:* someone working late; a portrait of a craftsperson; a patient waiting.\n\n## 9. Pitfalls of the medium\n\n- `destination-out` cut-outs need an **opaque fillStyle** before punching, or the hole is half-cut (`props.js` `cut(x, fn)` does it).\n- Soft shadows bleed and halo: layers that must not take part need **both** `shadow: false` and `recv: false`.\n- A transparent radial-gradient texture shows a square edge as an additive glow → use an analytic shader falloff (`burst()`).\n- A near-plane curtain whose halves don't meet at their **front edges** leaves a slit of the old shot.\n- Sheets larger than the cavity poke through the frame in outside shots.\n- **Grade state must not carry over** between shots: every grade key a shot omits must fall back to a default each frame, or renders depend on which frame a worker started on (visible pops at worker boundaries).\n- Headless Chrome must run with GPU flags; SwiftShader is ~6× slower.\n\n## 10. Engine\n\nIn `demo/src/`: `paper.js` (`sheet()` = one lit paper layer; `skyPanel`, `moon`, `text`, `burst`), `stage.js` (scene, top spot, `aim()` camera), `post.js` (DoF, bloom, transitions, grade), `room.js` (the real box and table), `art.js` / `people.js` / `props.js` (motifs, jointed figures, props), `lib.js`. `src/main.js` schedules shots, each `build(E) → { S, update(t), post(t), grade(t) }`. API table and a minimal shot: [DEMO.md](DEMO.md) \"Engine reference\".\n\n## 11. Variation space\n\nYou decide the places, the figures (or none), the ladders, the light source, whether the real world appears, the opening, the ending and the camera path. All far from our demo:\n\n- Structures: **one window, one year** (a locked lamp; the scene inside changes season by season, light the only transition); **a vertical stack** (the film tilts down through sky, city, street, underground, each a chapter); **a relay of objects** (a single object passes hand to hand across five small boxes, each a different ladder).\n- Openings: **already lit, mid-scene** (a figure walking through a lit street; we learn it is paper only when the camera racks focus); **darkness and one hole** (a single pinprick of light widens into a moon, a door, an eye); **top-down** (hands' view of a sheet being cut; the cut sheet slides into the stack).\n- Endings: **the lights go out one by one**, the last window last; **rack focus to the front layer** until the story blurs into warm light; **a new sheet slides in** at the front, starting the next story.\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n"
+  },
+  "published_demo": {
+    "path": "outputs/gptcar/styles/paper-lantern/DEMO.md",
+    "sha256": "81fb7c9f7794096ea96bcb224e98505fa8797fde2271db1b29ff0c8da941452c",
+    "verbatim": "# Paper-cut Lightbox — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *一个月饼的相思 · A Mooncake's Longing* (121.8 s) · `paper-lantern.mp4` · source in [`demo/`](demo/) · engine: three.js 0.170 (WebGL, SSAA 2×, VSM soft shadows, custom DoF + bloom compositor), Canvas2D-drawn paper layers, headless Chrome frame capture.\n\n\n**The demo narration is Mandarin Chinese** (edge-tts `zh-CN-XiaoxiaoNeural`) with Chinese subtitles. The library default is English with Kokoro (`core/tts/`); \"Score structure\" and \"Engine reference\" show how to switch. The demo runs 2 minutes; 45–120 s all work in this style.\n\n## Story & structure\n\nThe film opens on the real lightbox on a table and pushes into it. The box cavity is **0.56 × 0.33 m, 0.16 m deep**. The film is bookended by the **real world**: a walnut table in a dark room, the lit lightbox in a wooden frame, a tea set and a plate of real mooncakes lit by the box's spill light. The first shot pushes from the room into the box; the last pulls back out.\n\nHow the demo used the medium's powers:\n\n| Native power | Story use |\n|---|---|\n| **Light turns on** | The opening is literally switching the lamp on: moon, then far layers, then windows light up one by one. \"Lights coming on\" = a story beginning, a home, someone waiting. |\n| **Depth = distance** | Stacked layers of mountains, rivers, cities make *distance* visible. Journeys, longing, \"far away\" stories are native. |\n| **Silhouettes** | People are black cut-outs with a few jointed parts (an arm, a sleeve). Faceless figures read as everyone — good for folk tales, family, festivals. |\n| **Windows** | A lit window with a silhouette inside is the strongest image this style has. Two lit windows sharing one moon is the demo's thesis shot. |\n| **Paper text** | Titles, letters and poems are paper too: vertical brush calligraphy on a cut strip, revealed column by column, with a red seal. |\n| **The box itself** | Pulling out to the real table at the end says \"this was a keepsake / a story told at home\". |\n\n**Story shape (proven in the demo):** room → lamp on → push into the box, title → origin (grandma's kitchen, the mooncake is pressed) → a bit of culture (a Ming-dynasty scroll quote) → the absence (an empty seat) → the journey (train across layered mountains, a myth told on the way, a box passing the other way) → arrival in the far city → the letter → **the twist: the other box was going the other way** (mutual longing — two windows, one moon) → a classical poem → pull out of the box, \"中秋快乐\".\n\nAdapting any topic: find the **two places** and the **one light** they share (a moon, a lighthouse, a window). Build each place as a layer stack; build one travel sequence between them; end with both lit at once.\n\n## Shots\n\n| Beat | Camera |\n|---|---|\n| Opening | Room wide (z 1.45) on the dark box → lamp on → 7 s ease-in-out push through the frame to z ≈ 0.56, then keep creeping in. Focus pulls from the front layer to the village. |\n| In-box shots | Nearly frontal, slow dolly in/out (`aim(cam, [px,py,pz, tx,ty,tz], t)`), hand-held micro-drift `hand ≈ .0006 m`. Aperture 12–26 (in `post()`), focus on the story layer so foreground reeds and back mountains soften. |\n| Top-down inserts | The mooncake press and the open gift box are shot as flat top-down layer stacks (same engine, different set). |\n| Train | Lateral travel: layers scroll at speeds proportional to depth (parallax). |\n| Ending | Push inside the box, then a pull back out to the table (z 0.5 → 1.08), tea set enters frame, title 「中秋快乐」 fades in inside the box, credits under it, 1.2 s fade to black. |\n\nMotion as built in the demo:\n\n- **Everything moves like paper on a stick**: layers slide (x/y), rotate about a pivot (`ax/ay` anchor = joint), scale in from 0 along one axis (\"written out\"), or light up. No squash and stretch, no morphing.\n- **Jointed figures**: a body sheet + a separate arm sheet anchored at the shoulder (`GRAN_SHOULDER`, `GIRL_SHOULDER`, `SUSHI_SHOULDER` in `people.js`); animate `rotation.z` only.\n- **Light cues are the big motion**: lamp-on sequence in S01 — moon (0.5–3.2 s) → sky → each layer's translucency staggered by 0.42 s → key light → windows → lanterns flicker (`1 + .06·sin(7.3t)·sin(3.1t)`).\n- **Text reveal**: paper strips grow from their anchor edge (`reveal()` in `s13_note.js` scales the mesh *and* the texture repeat so glyphs are not squashed), timed to the spoken word.\n- **Hard action beats land on whisper word times**: the wooden mould slams on 「啪」(`E.word('L04', 13)`), the 「圆」 character flashes on its word, the light arcs grow from 「互」.\n- **Transitions**: 0.5–1.2 s dissolves between shots (`in: { type: 'dissolve', dur }`), an `iris` mode exists (circular wipe from `center`). The signature transition is a **near-plane auspicious-cloud curtain** (`cloudCurtain()` in `s17_sushi.js`) closing over the last 1.2 s of a shot and opening on the next — the two halves must meet exactly at their front edges.\n\n## Score structure\n\n**Voice (demo, Mandarin):** `edge-tts`, voice `zh-CN-XiaoxiaoNeural`, rate `+10%`, pitch `-2Hz` (`demo/tts.py`); per-line `rate` overrides in `script.json` (L01 `+5%`, quoted letters `+2%`, the poem L23 **`-12%`**, closing line `-6%`). Output is trimmed at 2 % of peak (20 ms pre-roll, 120 ms tail) → 48 kHz mono `vo/<id>.wav` + `vo/dur.json`.\n- **Polyphonic characters**: feed TTS a homophone via a `say` field and keep the real text for subtitles: 「相思的\"相\"」→ `say: 原来，相思的香，是互相的香。` (TTS otherwise reads xiàng).\n- **Proof**: `demo/asr.py` (faster-whisper **medium**, zh) prints OK/DIFF per line; DIFFs that are homophones or numerals (八月十五 → 8月15, 她 → 他) are fine — listen to the rest.\n- **Word timings**: `demo/words.py <ids…>` → `vo/words.json` (whisper word timestamps). Shots read them via `E.word(id, k)`; **k is a whisper token index, not a character index** (whisper groups 「我们」 as one token) — print the list and count.\n\n**Voice (English, library default):** write `lines.json` with `{id, text, voice, speed}`, run `core/tts/tts.py` (Kokoro, e.g. `bf_emma` / `af_heart`, speed ≈ .9) into `demo/vo/`, then `core/tts/asr_check.py` which writes `vo/dur.json` and a compatible `vo/words.json` (English word indices). Put the same ids/text into `script.json`. See \"Switching to English\" under Engine reference for the subtitle-split change.\n\n**Music:** Kevin MacLeod — **\"Ripples\"** (guzheng, 0 → ~37 s) handing over to **\"Nu Flute\"** (dizi + strings) with a 4.5 s crossfade; both CC BY 4.0 (incompetech.com). The handover is solved backwards so Nu Flute's own 70 s swell lands on the poem: `T_FLU = C.L23.at − 70 + .3`. Nu Flute −3.3 dB relative. 2 s fade in, 3 s fade out. Why these: pentatonic, no drums (percussive energy < 0.02) — see `demo/music/MUSIC.md` for the librosa analysis and the rejected candidates.\n\n**Mix (`demo/mix.py`):** voice → downsampled-envelope compressor (−22 dB, 3:1) → HP 70 Hz → RMS −18 dB; music RMS −27.5 dB with **5.5 dB ducking** under speech (0.25 s smoothed envelope); procedural foley at −24…−34 dB: switch click + rising shimmer (lamp on), wooden-mould thud + puff, chimes on reveals, paper rustles, lid thud, train bed (rumble + 0.62 s \"clack-clack\"), whoosh for the passing train and cloud curtain, city hum, a bite crunch. Everything is placed from `out/timeline.json` (line starts) and `vo/words.json`. Peak-limited to −1 dBFS; the final mux normalises to **−14 LUFS** (two-pass loudnorm in `core/render/mux.sh`).\n\n## Palette & props\n\n**Units and layout.** Everything is in metres, y up. Box cavity `BOX = { w: .56, h: .33, d: .16 }` (`src/room.js`). Layers sit at z from about **−0.14 (sky) to 0 (front)**; in-box camera at z ≈ 0.3–0.56 with fov 26°. Full-bleed layers inside the box are `.558 × .328` — **never larger than the cavity**, or they poke through the wooden frame in the room shots.\n\n**Layer stack for a night exterior (S01):**\n| z | Layer | Colour | backlight `trans` |\n|---|---|---|---|\n| −.135 | sky gradient (unlit, `skyPanel`) + stars | `#0a1330 → #172a58 → #2e4478 → #43598a` | — |\n| −.125 | moon disc + additive halo | `#fffaf0 / #fff0cf / #f7dca4` | — |\n| −.112 | auspicious clouds (祥云) | `#c3cbe8` | .9 |\n| −.098 | far karst mountains, carved contour slits | `#6a86c2` | .7 |\n| −.080 | mid mountains | `#3f5a92` | .45 |\n| −.062 | village (江南 houses) + emissive windows | `#5a70a6` walls / `#1b284f` roofs, glow `#ffb862` | .25 |\n| −.046 | river + moon trail (emissive) | `#22325e`, trail `#e9cf96` | .3 |\n| −.030 | osmanthus tree + bridge, emissive blossoms | `#17224a`, flowers `#d9a24a` | .12 |\n| −.014 | foreground bank + reeds | `#0e1532` | .05 |\n| +.004 | hanging lanterns (emissive) | `#0d1328`, glow `#ff8a48` | .05 |\n\nRule: **back layers bright + translucent, front layers dark + opaque**. Interiors use the same ladder in warm browns (kitchen wall `#b08058`, props `#6e3b1f`, figure `#2e170d`, lamp glow `#ffc878`); the far city uses violets (`#2a2456`, windows `#e8cc90`).\n\n**Accents:** seal red `#b3302a`, gold title paper `#f1dbac` / `#f3d998`, box red `#9e2a20`, a single blue box `#2a4f7a` for the granddaughter's reply.\n\n**Paper finish** (`finish()` in `src/paper.js`): tiled fibre grain (`GRAIN`, 512², α .9, `source-atop`), top rim band `rgba(255,236,200,.35)` shifted 3 px, bottom shade `rgba(0,0,0,.28)` shifted 3 px. Canvas resolution `PPM = 5200` px/m.\n\n**Backlight shader** (`paperMat()`): `emissive += albedo × lightCol × trans × uLit × fall × (.35 + 1.3·cloud)`, `fall = mix(.22, 1, exp(−d²/R²))` around the per-shot light point `uLight` (usually the moon). `cloud` is a tiled pulp-mottle texture (`CLOUD()`). Emissive windows come from a second Canvas (`glowDraw`, white = light) scaled by `glow` and gated by `uGlowLit` (0→1 to \"switch on\").\n\n**Fonts** (`demo/fonts/`, OFL): Ma Shan Zheng `FONT.brush` for titles/poems, Zhi Mang Xing `FONT.xing` for running script, Long Cang `FONT.hand` for the child's handwriting, Noto Serif SC `FONT.song` for subtitles and credits.\n\n**Real-world set** (`lightbox()` in `src/room.js`): extruded walnut frame (Poly Haven `american_walnut_veneer`, tint `#8a6a52`), black paper lining inside, walnut table, dark radial wall `#2a2018 → #0a0806`, a `RectAreaLight` spill `#ffc98a` (intensity 6–7) at the box mouth, hemisphere fill `.25`, Poly Haven `tea_set_01` (teapot, cup, saucer, plate) and two procedural 3D mooncakes (cylinder + bump-mapped face from `cakeFace`).\n\n## Titles, subtitles & end card\n\n- Burned-in DOM subtitle (`#sub` in `index.html`): Noto Serif SC 500, 40 px, `#fbf3e4`, letter-spacing .06em, 74 px from the bottom, soft black shadow; fades in 0.15 s before the line, out 0.3 s after. Lines longer than 21 characters split at the comma nearest the middle; trailing punctuation is dropped and inner `，。：` become full-width spaces.\n- **Lines that appear as paper in the picture are not subtitled** (`\"sub\": false` in `script.json`): grandma's letter (L17) and the poem (L23). Don't show the same words twice.\n- Title: vertical Ma Shan Zheng on a paper strip inside the box (「一个月饼 / 的相思」) with a red seal 「中秋」, fading in after the second line.\n- End card: 「中秋快乐」 paper title inside the box + red seal 「团圆」; the credit block (`#credit`, 19 px, two lines: music / assets / fonts) fades in 0.6 s after the last line.\n- **Sign-off (this library's demo only):** our demo's end card carries **\"LemoLab × Claude Opus 5.5\"** as a **paper-cut strip inside the lightbox**, not as overlay text: `sign` sheet in `src/shots/s18_finale.js` — `w .26, h .02`, centred at `y −.1515` on the dark foreground bank, `z −.024` (in front of the bank layer, near the final focus plane), `text(…, .0115, FONT.song, { fill: '#f3d998', weight: 600 })`, `trans .3`, `shadow/recv: false`. It fades in over `tT + 1.0 → tT + 2.0` (1 s after 「中秋快乐」 starts, ≈116.6–117.6 s) and stays to the end, so it reads as part of the lamp while the credit block sits on the table below. It belongs to the library's own demos: a user's film carries no LemoLab credit, no strip like this and no copy of this end card.\n- `paper-lantern.srt` holds all 25 lines (including the two in-picture ones) at their spoken times.\n\n## Pitfalls we hit (demo record)\n\n- **`destination-out` cut-outs need an opaque fillStyle**: set `x.fillStyle = '#000'` (or any opaque colour) before punching holes; a transparent or glow-white fill leaves the hole half-cut. `props.js` `cut(x, fn)` does it for you.\n- **VSM shadows leak light bleeding / self-shadow halos**: layers that must not take part (titles, lanterns in front, light arcs, curtains) need **both** `shadow: false` **and** `recv: false`.\n- **Additive glows**: a transparent radial-gradient `CanvasTexture` shows a visible square edge. Use the analytic `ShaderMaterial` falloff (`burst()` in `paper.js`) for light spilling out of an opened box.\n- **Near-plane cloud curtain**: compute the closing position so the two curtains' **front edges** touch (`±.035` offset in `s16_mutual.js`), otherwise a slit of the old shot shows through.\n- **Layers bigger than the cavity** poke through the wooden frame in room shots — keep full-bleed sheets ≤ `.558 × .328`.\n- **Grade uniforms were sticky (fixed 2026-09-26)**: v1 of `Pipe.final()` only wrote `lift`/`gain` when a shot's `grade()` returned them, so a shot without them inherited the previous shot's values and the result depended on which frame a render worker started on — the first release (`paper-lantern_v1.mp4`) had visible grade pops at the worker boundaries 60.9 s (S09) and 101.5 s (S16). Now every missing grade key falls back to `GRADE0` (`post.js`: lift `[0, .005, .018]` cool night default, gain `[1.03, 1, .95]`), so renders are identical for any worker count. Night exteriors rely on the defaults; interiors must return their warm `lift` explicitly (S08 was fixed this way).\n- Whisper medium mishears Chinese homophones (八月 → 8月, 她 → 他, 婵娟 → 禅绢); judge DIFFs by ear, not by string match.\n- Headless Chrome must run with GPU flags (`--use-angle=gl --enable-gpu --ignore-gpu-blocklist`, `render/browser.mjs`); SwiftShader is ~6× slower.\n\n## Build notes\n\n```\nstyles/paper-lantern/demo/\n  index.html        page: canvas + #sub + #credit, importmap → /node_modules/three (repo root is the static server root)\n  script.json       lines: {id, text, rate?, say?, sub?}\n  tts.py asr.py words.py   edge-tts → vo/*.wav + dur.json; whisper proof; word timings → vo/words.json\n  src/main.js       timeline (GAP table), shot scheduler (lazy build / dispose), dissolves, subtitles, credits, window.render(t)\n  src/shots/index.js   shot list, each start anchored to a line: start: L('L06') - .5\n  src/shots/sNN_*.js   one module per shot: build(E) → { S, update(t), post(t), grade(t) }\n  src/paper.js stage.js post.js room.js art.js people.js props.js lib.js   engine (see Engine reference)\n  render/still.mjs video.mjs cues.mjs   stills, parallel video render, export out/timeline.json\n  mix.py            voice + music + foley → out/mix.wav\n  music/            candidate tracks + MUSIC.md (only km_Ripples.mp3 and km_Nu_Flute.mp3 are used)\n```\n\nAll commands from the repo root (`Lemo-Opuscar/`). Python = `.venv/bin/python`; `edge-tts` must be on `PATH` (user-level `pip install edge-tts`; it is not in `.venv`).\n\n```sh\nD=styles/paper-lantern/demo\n# 1. voice (Mandarin demo) — delete vo/<id>.mp3 or set \"redo\": true to regenerate a line\npython3 $D/tts.py                          # → $D/vo/<id>.wav, $D/vo/dur.json\n.venv/bin/python $D/asr.py                 # OK / DIFF per line (≈1.5 min, whisper medium, CPU)\n.venv/bin/python $D/words.py L01 L02 … L25 # → $D/vo/words.json (pass ALL ids: it rewrites the file)\n#    English instead: .venv/bin/python core/tts/tts.py $D/lines_en.json $D/vo && .venv/bin/python core/tts/asr_check.py $D/lines_en.json $D/vo\n\n# 2. timeline + review stills (any number of times, seconds)\nnode $D/render/cues.mjs                    # → $D/out/timeline.json (DUR, line cues C, shot plan P)\nnode $D/render/still.mjs 5 12.5 62.5 116 --out $D/out/review          # add --q '?ssaa=1' for fast previews\n#    core renderer works too: node core/render/still.mjs $D 12.5 --out $D/out/review\n#    debug: ?sheet (character sheet), ?nolit=1 (backlight off), ?hide=clouds,far (S01 layers)\n\n# 3. mix\n.venv/bin/python $D/mix.py                 # → $D/out/mix.wav   (optional arg: other output path)\n\n# 4. render video (≈90 s for 3653 frames with 6 workers on an M-series Mac; ≈3 min with 2)\nnode $D/render/video.mjs --workers 6       # → $D/out/video.mp4 (segments written next to the output; any worker count gives the same frames)\n\n# 5. mux: two-pass loudnorm −14 LUFS, 30 fps, no grain\nsh core/render/mux.sh $D/out/video.mp4 $D/out/mix.wav styles/paper-lantern/paper-lantern.mp4 30 0\n```\n\nReview loop: stills of every shot at its key word time → sheet (`ffmpeg … tile=6x5`) → fix → only then the full render. Check the room shots (first 10 s, last 8 s) at full SSAA; they carry the \"it's a real object\" illusion.\n\n## Engine reference\n\n**Page contract** (`src/main.js`): exposes `window.READY`, `window.DUR`, `window.render(t)` (deterministic per frame), `window.CUES` (line cues), `window.PLAN` (shot table). Query `?ssaa=N` (default 2).\n\n**Timeline**: lines start at 2.6 s; each line lasts its `dur.json` length followed by `GAP[id]` seconds (`GAP` table in `main.js`, e.g. `L02: 4.2` for the title beat, `L25: 5.0` for the ending). Shots are anchored to lines in `src/shots/index.js`; changing a voice line re-times everything automatically.\n\n**Shot context `E`** (passed to `build`): `dur`, `T0`, `C` (all cues), `env` (PMREM room env map), `W` (words), `cue(id)` / `cueEnd(id)` (line start/end in shot-local seconds), `word(id, k)` (shot-local start of whisper token k).\n\n| Module | Key API | Notes |\n|---|---|---|\n| `paper.js` | `sheet({ U, w, h, draw, glowDraw?, glow, glowCol, trans, z, x, y, ax, ay, shadow, recv, finish, ppm, bumpDraw? })` | One paper layer. `draw(x, k)` paints in metres (origin centre, y up). `glowDraw` paints the emissive map (white = light, black = mask). `trans` = backlight translucency. `ax/ay` = pivot. Returns a Mesh; `m.material.userData.u` has `uTrans`, `uGlowLit`, `uClip` (circle clip `[cx, cy, r, inside?]`). |\n| | `skyPanel({ w, h, z, stops, stars, starMinY, gain })` | Unlit gradient back panel. |\n| | `moon({ x, y, z, r, gain, halo, haloGain, art? })`, `setMoon(m, k)` | Disc + additive halo; `k` = brightness 0…1+. |\n| | `text(x, s, px, py, size, font, o)`, `vtext(…)` | Text in metre space (vertical for `vtext`). |\n| | `burst(w, h, col)` → `m.userData.set(k)` | Analytic additive glow. |\n| | `paint(w, h, draw, ppm)`, `finish(c, o)`, `tex(c)`, `PPM`, `GRAIN`, `CLOUD()` | Low-level canvas helpers. |\n| `stage.js` | `stage({ light, lightR, lightCol, key, keyCol, keyPos, keyTarget, keyAngle, amb, ambCol, shadowR, fov, bg })` → `{ scene, U, cam, key, amb, add(...) }` | Scene + top LED spot (VSM, 2048², radius 10) + ambient + backlight uniforms `U`. |\n| | `aim(cam, [px,py,pz, tx,ty,tz], t, { hand, handF, roll, fov })` | Camera with hand-held drift. |\n| | `dispose(scene)` | Called by the scheduler when a shot leaves. |\n| `post.js` | `Pipe.shot(scene, cam, { focus, aper, maxCoc, bloom: { strength, radius, threshold } }, target)` | MSAA4 half-float → CoC → 96-tap gather DoF → UnrealBloom. `focus` = distance in metres. |\n| | `Pipe.final({ mixB, mode, center, expo, fade, vig, sat, contrast, lift, gain })` | Dissolve / iris, grade, vignette, neutral tone map, sRGB. Keys a shot omits fall back to `GRADE0` every frame. |\n| `room.js` | `await lightbox(S, E, { spill, spillCol })` → `{ g, frame, spill, table, props }`, `BOX` | Real-world box, table, tea set, mooncakes. Textures load from `/core/assets/polyhaven/`. |\n| `art.js` | `karst`, `ridge`, `xiangyun`, `waves`, `waterTop`, `osmanthus`, `pine`, `willow`, `reeds`, `jiangnanHouse(x, o, g)`, `pavilion`, `lantern(x, o, g)`, `mooncake`, `FONT` | Paper-cut motifs; functions with `g` draw their windows into the glow canvas. |\n| `people.js` | `grannyStand/Sit`, `girlStand/Sit`, `childStand`, `sushi`, `change` (Chang'e), `rabbit`, `arm(x, s, a, b)`, `spline`, `ribbon`, `*_SHOULDER` | Silhouette figures, scale `s` = height in m. |\n| `props.js` | `cut(x, fn)`, `roundWindow`, `steamers`, `stove`, `jar`, `bowl`, `teapot`, `pendant`, `calendar`, `table`, `chair`, `boxFront`, `label`, `cake3q` | Interior props. |\n| `lib.js` | `ss`, `seg`, `eio`, `eo`, `ei`, `back`, `spring`, `lerp`, `clamp`, `mulberry`, `vnoise`, `track`, `env` | Deterministic helpers. |\n\n**Minimal shot** (a moonlit hill with one lit window; add it to `SHOTS()` as `{ id: 'S99', start: L('L05') - .3, in: { type: 'dissolve', dur: .8 }, build: s99.build }`):\n\n```js\nimport { sheet, skyPanel, moon, setMoon } from '../paper.js';\nimport { karst, jiangnanHouse } from '../art.js';\nimport { stage, aim } from '../stage.js';\nimport { seg, ss, eio, lerp } from '../lib.js';\n\nexport function build(E) {\n  const MN = [.08, .07, -.13];\n  const S = stage({ light: MN, lightR: .15, lightCol: '#ffe2ae', key: 1.0, amb: .3, ambCol: '#7d90c8', keyCol: '#d6dcff' });\n  const { U } = S;\n  S.add(skyPanel({ w: .56, h: .33, z: -.14, stops: [[0, '#0a1330'], [1, '#43598a']], stars: 200 }));\n  const mn = S.add(moon({ x: MN[0], y: MN[1], z: MN[2], r: .035 }));\n  S.add(sheet({ U, w: .558, h: .328, z: -.1, trans: .7, draw: x => { x.fillStyle = '#6a86c2';\n    karst(x, { x0: -.28, x1: .28, base: -.03, peaks: [[-.15, .06, .03], [.1, .05, .025]], carve: .0005 }); } }));\n  const house = { cx: -.05, by: -.09, w: .06, h: .03, windows: [[.012, .01, .01, .01]], wall: '#5a70a6', tile: '#1b284f' };\n  const town = S.add(sheet({ U, w: .558, h: .328, z: -.06, trans: .25, glow: 2.2, glowCol: '#ffb862',\n    draw: x => jiangnanHouse(x, house), glowDraw: g => jiangnanHouse(null, house, g) }));\n  S.add(sheet({ U, w: .558, h: .328, z: -.02, trans: .05, draw: x => { x.fillStyle = '#0e1532'; x.fillRect(-.28, -.165, .56, .075); } }));\n  const tOn = E.word('L05', 2);                        // light the window on the 3rd spoken token\n  return {\n    S,\n    update(t) {\n      setMoon(mn, ss(seg(t, 0, 1.5)));\n      town.material.userData.u.uGlowLit.value = ss(seg(t, tOn, tOn + .6));\n      aim(S.cam, [0, 0, lerp(.56, .48, eio(t / E.dur)), 0, 0, -.07], t);\n    },\n    post() { return { focus: S.cam.position.z + .06, aper: 14, maxCoc: 14, bloom: { strength: .35, radius: .6, threshold: 1.15 } }; },\n    grade() { return { expo: 1.05, vig: .42, sat: 1.05, contrast: .1 }; },   // missing lift/gain → GRADE0 (cool night); interiors add lift: [.012, .006, 0]\n  };\n}\n```\n\n**Switching to English**: in `main.js` the subtitle splitter assumes Chinese (`st.length > 21`, split on `[，。：]`, punctuation → full-width space). For English change it to split at the `, ` nearest the middle when longer than ~42 characters and keep punctuation; set `#sub` to a Latin serif (e.g. add an OFL font such as Cormorant to `fonts/`) at ~38 px. `E.word(id, k)` then counts English words. Everything else (timeline, mix, render) is language-agnostic.\n"
+  },
+  "narration": [
+    {
+      "id": "L01",
+      "text": "农历八月十五，秋天刚好走到一半，所以叫中秋。",
+      "rate": "+5%",
+      "duration": 4.046,
+      "start": 2.6,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L02",
+      "text": "这一夜，月亮最圆，想念也最重。",
+      "duration": 2.793,
+      "start": 7.246,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L03",
+      "text": "我是一块月饼，出生在外婆的厨房。",
+      "duration": 2.684,
+      "start": 14.239,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L04",
+      "text": "揉面，包馅，再用外公刻的木模子，啪地一压——",
+      "duration": 3.894,
+      "start": 17.273,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L05",
+      "text": "我的脸上，就印上了一个“圆”字。",
+      "duration": 2.249,
+      "start": 21.317,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L06",
+      "text": "早在明朝，中秋送月饼就成了习俗，图的就是团圆。",
+      "duration": 4.377,
+      "start": 24.566,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L07",
+      "text": "可今年，外婆的饭桌上，又空着一个位子。",
+      "duration": 3.358,
+      "start": 30.343,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L08",
+      "text": "小满在很远的城市上班，已经三年没回家过中秋了。",
+      "duration": 4.209,
+      "start": 34.201,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L09",
+      "text": "外婆把我装进盒子，压上一张字条，写好了地址。",
+      "duration": 4.053,
+      "start": 39.41,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L10",
+      "text": "于是，我出发了。",
+      "duration": 1.398,
+      "start": 43.813,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L11",
+      "text": "翻过山，跨过江，在夜车里摇摇晃晃。",
+      "duration": 3.111,
+      "start": 46.811,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L12",
+      "text": "第一次离开外婆，我才知道，原来这就是想家。",
+      "duration": 3.539,
+      "start": 50.422,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L13",
+      "text": "外婆讲过，月亮上住着嫦娥，她回不了家，就把月亮点得格外亮，好让地上想家的人，都看得见。",
+      "duration": 7.667,
+      "start": 54.861,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L14",
+      "text": "半路上，一个盒子和我擦肩而过。它往南走，走得很急。",
+      "duration": 4.769,
+      "start": 63.328,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L15",
+      "text": "终于，我到了小满的城市。楼很高，灯很亮，月亮却很远。",
+      "duration": 5.064,
+      "start": 69.397,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L16",
+      "text": "她加完班回来，拆开盒子，看见了外婆的字：",
+      "duration": 3.487,
+      "start": 75.261,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L17",
+      "text": "“月亮圆了，就算你回过家了。”",
+      "rate": "+2%",
+      "sub": false,
+      "duration": 2.31,
+      "start": 78.998,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L18",
+      "text": "她咬了一口，是小时候的味道。眼睛，一下就红了。",
+      "duration": 4.232,
+      "start": 82.508,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L19",
+      "text": "同一个晚上，外婆也收到了一个盒子。",
+      "duration": 2.861,
+      "start": 88.34,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L20",
+      "text": "里面是一块歪歪扭扭的月饼，还有一张字条：“外婆，今年换我给你做。”",
+      "duration": 5.352,
+      "start": 91.651,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L21",
+      "text": "原来，相思的“相”，是互相的相。",
+      "rate": "+2%",
+      "say": "原来，相思的香，是互相的香。",
+      "duration": 2.784,
+      "start": 98.403,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L22",
+      "text": "九百多年前的中秋，苏轼想念弟弟，写下了一句：",
+      "duration": 3.903,
+      "start": 102.787,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L23",
+      "text": "但愿人长久，千里共婵娟。",
+      "rate": "-12%",
+      "sub": false,
+      "duration": 2.726,
+      "start": 107.04,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L24",
+      "text": "隔着千里，我们看的，是同一个月亮。",
+      "duration": 2.935,
+      "start": 111.766,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    },
+    {
+      "id": "L25",
+      "text": "中秋快乐。",
+      "rate": "-6%",
+      "duration": 1.069,
+      "start": 115.701,
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "language": "zh-CN",
+      "default_rate": "+10%",
+      "pitch": "-2Hz"
+    }
+  ],
+  "verbatim_published_script_files": {
+    "script.json": [
+      {
+        "id": "L01",
+        "text": "农历八月十五，秋天刚好走到一半，所以叫中秋。",
+        "rate": "+5%"
+      },
+      {
+        "id": "L02",
+        "text": "这一夜，月亮最圆，想念也最重。"
+      },
+      {
+        "id": "L03",
+        "text": "我是一块月饼，出生在外婆的厨房。"
+      },
+      {
+        "id": "L04",
+        "text": "揉面，包馅，再用外公刻的木模子，啪地一压——"
+      },
+      {
+        "id": "L05",
+        "text": "我的脸上，就印上了一个“圆”字。"
+      },
+      {
+        "id": "L06",
+        "text": "早在明朝，中秋送月饼就成了习俗，图的就是团圆。"
+      },
+      {
+        "id": "L07",
+        "text": "可今年，外婆的饭桌上，又空着一个位子。"
+      },
+      {
+        "id": "L08",
+        "text": "小满在很远的城市上班，已经三年没回家过中秋了。"
+      },
+      {
+        "id": "L09",
+        "text": "外婆把我装进盒子，压上一张字条，写好了地址。"
+      },
+      {
+        "id": "L10",
+        "text": "于是，我出发了。"
+      },
+      {
+        "id": "L11",
+        "text": "翻过山，跨过江，在夜车里摇摇晃晃。"
+      },
+      {
+        "id": "L12",
+        "text": "第一次离开外婆，我才知道，原来这就是想家。"
+      },
+      {
+        "id": "L13",
+        "text": "外婆讲过，月亮上住着嫦娥，她回不了家，就把月亮点得格外亮，好让地上想家的人，都看得见。"
+      },
+      {
+        "id": "L14",
+        "text": "半路上，一个盒子和我擦肩而过。它往南走，走得很急。"
+      },
+      {
+        "id": "L15",
+        "text": "终于，我到了小满的城市。楼很高，灯很亮，月亮却很远。"
+      },
+      {
+        "id": "L16",
+        "text": "她加完班回来，拆开盒子，看见了外婆的字："
+      },
+      {
+        "id": "L17",
+        "text": "“月亮圆了，就算你回过家了。”",
+        "rate": "+2%",
+        "sub": false
+      },
+      {
+        "id": "L18",
+        "text": "她咬了一口，是小时候的味道。眼睛，一下就红了。"
+      },
+      {
+        "id": "L19",
+        "text": "同一个晚上，外婆也收到了一个盒子。"
+      },
+      {
+        "id": "L20",
+        "text": "里面是一块歪歪扭扭的月饼，还有一张字条：“外婆，今年换我给你做。”"
+      },
+      {
+        "id": "L21",
+        "text": "原来，相思的“相”，是互相的相。",
+        "rate": "+2%",
+        "say": "原来，相思的香，是互相的香。"
+      },
+      {
+        "id": "L22",
+        "text": "九百多年前的中秋，苏轼想念弟弟，写下了一句："
+      },
+      {
+        "id": "L23",
+        "text": "但愿人长久，千里共婵娟。",
+        "rate": "-12%",
+        "sub": false
+      },
+      {
+        "id": "L24",
+        "text": "隔着千里，我们看的，是同一个月亮。"
+      },
+      {
+        "id": "L25",
+        "text": "中秋快乐。",
+        "rate": "-6%"
+      }
+    ]
+  },
+  "timed_shot_prompts": [
+    {
+      "start": 0,
+      "end": 13.039,
+      "name": "A real lightbox wakes",
+      "visual_prompt": "Dark real walnut desk; framed box lights from single moon into layered blue karst village, osmanthus blossoms, curled clouds/lanterns and water reflection. Tea set and mooncakes on desk edges. Push into box, then vertical title.",
+      "onscreen_text": "一个月饼的相思",
+      "camera_motion": "Slow real3D push from room into paper world.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "Practical lamp-on opening; title after L02end+.35.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 13.039,
+      "end": 17.173,
+      "name": "Grandmother’s kitchen",
+      "visual_prompt": "Amber layered kitchen: grandmother kneads at long table, flour/dough/bowl/stacked cakes, hanging peppers, oven fire, round moon window and 八月十五 calendar.",
+      "onscreen_text": "八月十五",
+      "camera_motion": "Dolly slightly right-to-left and forward, separating paper depths.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "1.2s dissolve with layer-depth continuity.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 17.173,
+      "end": 24.066,
+      "name": "Press a mooncake",
+      "visual_prompt": "Top-down flour-dusted wood table, round dough; silhouetted hand and carved square mold press down on 啪 then lift to reveal fluted golden cake, radial motif and 圆 centre. Fine dust and raised paper embossing.",
+      "onscreen_text": "圆",
+      "camera_motion": "Close overhead push with subtle roll and impact shake.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "Hard change of angle, then continue press through L05.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 24.066,
+      "end": 29.743,
+      "name": "A Ming custom",
+      "visual_prompt": "Warm sepia layered ancient bridge/pagoda and two figures exchange gift under full moon. Tall parchment scroll unrolls right with exact vertical public-domain quote and attribution.",
+      "onscreen_text": "八月十五日谓之中秋\n民间以月饼相遗\n取团圆之义\n明·田汝成\n《西湖游览志余》",
+      "camera_motion": "Pan from exchanging figures left to scroll right.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "0.9s dissolve; actual paper-scroll reveal.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 29.743,
+      "end": 39.11,
+      "name": "An empty place at the table",
+      "visual_prompt": "Amber grandmother’s dining room, teapot/bowls/mooncakes, 福 diamond and round moon window. Grandmother sits left; empty chair on right becomes focus, then a framed silhouette of granddaughter against city implies distance.",
+      "onscreen_text": "福",
+      "camera_motion": "Truck along tabletop to empty place, then tilt/push to portrait.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "0.9s dissolve; hold emotional absence through L07/L08.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 39.11,
+      "end": 44.713,
+      "name": "Packed with a note",
+      "visual_prompt": "Golden 圆 cake lowers into red/gold decorated gift box. Hands place folded handwritten note and close lid; address tag is legible.",
+      "onscreen_text": "月\n中秋\n小满收\n外婆寄",
+      "camera_motion": "Low close box view with gentle push; lid/hand physically cast shadows.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "0.6s dissolve, lid darkens scene at departure.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 44.713,
+      "end": 50.122,
+      "name": "Night train through mountains",
+      "visual_prompt": "Warm-lit passenger train crosses thin bridge above river; several blue paper mountain layers and enormous moon shift with parallax, cloud curls overhead. Mooncake box is a passenger.",
+      "onscreen_text": "",
+      "camera_motion": "Lateral travel, multiple landscape depths; changing speed on near bridge.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "1.0s dissolve; avoid a flat train icon.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 50.122,
+      "end": 54.361,
+      "name": "Longing at the train window",
+      "visual_prompt": "Red gift box and paper drink cup on train-window sill, green curtains, layered pines/karst and telegraph poles slide outside; soft reflected moon and box shadow.",
+      "onscreen_text": "",
+      "camera_motion": "Push slightly toward box, small train sway/roll.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "0.7s dissolve; retain train motion in background.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 54.361,
+      "end": 62.928,
+      "name": "Chang’e and the bright moon",
+      "visual_prompt": "Blue paper Chang’e silhouette floats before glowing moon with long red/gold ribbons, small jade rabbit and osmanthus/cloud motifs. Camera follows floating figure then tilts down to ordinary village windows.",
+      "onscreen_text": "",
+      "camera_motion": "Slow upward drift then downward crane/pull to village.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "1.0s dissolve, myth visual returns to human world.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 62.928,
+      "end": 68.997,
+      "name": "Two boxes pass",
+      "visual_prompt": "Parallel trains slide opposite directions at different depths; window glimpses show red box heading north and blue box heading south. A brief visual clue, not an explained plot label.",
+      "onscreen_text": "",
+      "camera_motion": "Lateral two-train tracking, window and box timing precise.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "0.7s dissolve into rushing train layers.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 68.997,
+      "end": 74.961,
+      "name": "Distant city",
+      "visual_prompt": "Layered violet/blue city towers with hundreds of warm cutout windows and elevated train. Moon now small/far, room windows begin appearing.",
+      "onscreen_text": "",
+      "camera_motion": "Dolly/pull from train into wide skyline, then prepare apartment approach.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "0.8s dissolve; city needs dense depth and varied buildings.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 74.961,
+      "end": 78.648,
+      "name": "Granddaughter opens the box",
+      "visual_prompt": "Ponytailed granddaughter returns to desk under angled lamp, city window behind. Reaches/opens red box with separate lid, discovers note.",
+      "onscreen_text": "",
+      "camera_motion": "Medium paper profile, slightly oblique camera to see depth.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "0.7s dissolve, warm lamp pool on violet room.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 78.648,
+      "end": 81.808,
+      "name": "Grandmother’s handwriting",
+      "visual_prompt": "Overhead cream lined paper and embossed golden cake beside it; two vertical running-script columns write in sequence, signature appears. No duplicate subtitle on this quoted line.",
+      "onscreen_text": "月亮圆了，\n就算你回过家了。\n外婆",
+      "camera_motion": "Push/slide across note, shallow depth of field; keep all columns readable.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "0.5s dissolve to paper macro.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 81.808,
+      "end": 87.94,
+      "name": "A childhood taste",
+      "visual_prompt": "Girl profile lifts mooncake to lips, bite removes real crescent. Window’s city bokeh briefly becomes grandmother’s osmanthus/tree memory, then city returns; tiny bright tear forms on cheek.",
+      "onscreen_text": "",
+      "camera_motion": "Intimate side close-up, subtle push; cake geometry must change.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "0.6s dissolve with window-memory crossfade.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 87.94,
+      "end": 91.351,
+      "name": "Another box arrives",
+      "visual_prompt": "Back in grandmother’s amber kitchen, blue/gold box on table tagged for her. She opens it, lid floats aside, round moon window echoes earlier.",
+      "onscreen_text": "外婆收",
+      "camera_motion": "Gentle push on box and grandmother’s hand.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "0.9s dissolve; same kitchen geography.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 91.351,
+      "end": 97.903,
+      "name": "The granddaughter’s return gift",
+      "visual_prompt": "Macro slightly crooked homemade mooncake and horizontal blue-lined note on paper table. Childlike granddaughter handwriting appears, signature/drawn circle at bottom; cake differs from perfect original.",
+      "onscreen_text": "外婆，\n今年换我给你做。\n— 小满",
+      "camera_motion": "Top-down slide/push from cake to note.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "0.5s dissolve; show complete note before leaving.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 97.903,
+      "end": 102.187,
+      "name": "Longing is mutual",
+      "visual_prompt": "Blue night view combines grandmother’s round amber window left and granddaughter’s square city window right under same full moon/river. Dotted golden arcs connect each figure’s home to moon.",
+      "onscreen_text": "",
+      "camera_motion": "Slow pull joining both windows in one coherent space.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "0.9s dissolve; causal reunion metaphor.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 102.187,
+      "end": 111.166,
+      "name": "Su Shi’s moon",
+      "visual_prompt": "Paper-cloud curtain wipes in to Song-poet silhouette raising cup/hand toward moon by willow river; layered mountains and curled clouds. Vertical poem writes in warm gold and red seal; no duplicate subtitle for poem.",
+      "onscreen_text": "但愿人长久\n千里共婵娟",
+      "camera_motion": "Slow lyrical drift; poet left, poem right, moon centre.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "Material cloud curtain, not generic dissolve.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    },
+    {
+      "start": 111.166,
+      "end": 121.8,
+      "name": "One moon, reunion greeting",
+      "visual_prompt": "Return two windows/golden arcs and moon reflection; pull out through layered box to real walnut frame and desk/tea set. Gold 中秋快乐 with 团圆 seal, small truthful new credit and licensed-asset/audio disclosures.",
+      "onscreen_text": "中秋快乐\n团圆",
+      "camera_motion": "Long3D pull to real room, settle on lightbox and practical shadows.",
+      "sound_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+      "transition": "1.0s dissolve; final dim121+.",
+      "material_requirements": "A physically dimensional0.56×0.33×0.16m walnut-framed lightbox, nine translucent laser-cut paper depthsz−0.135→+0.004m. Backlit blue distance, opaque dark foreground, glowing moon/windows, soft contact/cast shadows and lit paper rims with fibres; bloom and depth of field. Actual3D walnut table/tea set/mooncakes outside frame. Grandmother bun-profile silhouette; granddaughter ponytail; patterned golden mooncake stamped 圆, two distinct red/blue gift boxes."
+    }
+  ],
+  "published_text_source_inventory": {
+    "note": "Verbatim literals from text/annotation/caption sourcecalls. This supplemental audit index may include formatting/style strings; shot narrativecards and scripts above are authoritative. Source path/line retained to resolve exacttext.",
+    "entries": [
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/index.html",
+        "line": 2,
+        "published_source_literals": [
+          "utf-8"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/art.js",
+        "line": 283,
+        "published_source_literals": [
+          "center",
+          "middle"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/paper.js",
+        "line": 63,
+        "published_source_literals": [
+          "#000"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/paper.js",
+        "line": 131,
+        "published_source_literals": [
+          "); if (o.bumpBlur) { const t = cv(bc.width, bc.height), tx = t.getContext("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/paper.js",
+        "line": 157,
+        "published_source_literals": [
+          "); x.save(); x.globalAlpha = .5; x.globalCompositeOperation = ",
+          "; x.fillStyle = x.createPattern(GRAIN, "
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/props.js",
+        "line": 102,
+        "published_source_literals": [
+          "left",
+          "#2a1a12",
+          "center"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/index.js",
+        "line": 25,
+        "published_source_literals": [
+          "S01"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s01_night.js",
+        "line": 55,
+        "published_source_literals": [
+          "一个月饼",
+          "#f1dbac"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s01_night.js",
+        "line": 56,
+        "published_source_literals": [
+          "的相思",
+          "#f1dbac"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s01_night.js",
+        "line": 58,
+        "published_source_literals": [
+          ", -.0145, -.0395, .0058, FONT.brush, { fill: "
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s01_night.js",
+        "line": 63,
+        "published_source_literals": [
+          "hide"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s03_press.js",
+        "line": 40,
+        "published_source_literals": [
+          "#f4f4f4",
+          "#fff"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s03_press.js",
+        "line": 41,
+        "published_source_literals": [
+          "#f4f4f4",
+          "#fff",
+          "#f4f4f4",
+          "#fff"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s03_press.js",
+        "line": 81,
+        "published_source_literals": [
+          ", 0, 0, .04, FONT.brush, { fill: "
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s04_scroll.js",
+        "line": 60,
+        "published_source_literals": [
+          "八月十五日谓之中秋"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s04_scroll.js",
+        "line": 61,
+        "published_source_literals": [
+          "民间以月饼相遗"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s04_scroll.js",
+        "line": 62,
+        "published_source_literals": [
+          "取团圆之义"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s04_scroll.js",
+        "line": 63,
+        "published_source_literals": [
+          "明·田汝成",
+          "#5a3a22",
+          "︽西湖游览志余︾",
+          "#5a3a22"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s04_scroll.js",
+        "line": 64,
+        "published_source_literals": [
+          "#b3302a",
+          ", -.0375, -.0508, .0055, F, { fill: "
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s05_table.js",
+        "line": 35,
+        "published_source_literals": [
+          ", .02, .059, .022, FONT.brush, { fill: "
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s10_pass.js",
+        "line": 39,
+        "published_source_literals": [
+          "#2a4f7a",
+          "#e0c070",
+          "#f2ead6",
+          "外婆收",
+          "#2a1a12"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s13_note.js",
+        "line": 51,
+        "published_source_literals": [
+          "#2a170c",
+          "#27405e",
+          "left"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s17_sushi.js",
+        "line": 59,
+        "published_source_literals": [
+          "#f0d596"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s17_sushi.js",
+        "line": 62,
+        "published_source_literals": [
+          "#b3302a",
+          ", 0, .0032, .0052, FONT.brush, { fill: "
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s18_finale.js",
+        "line": 14,
+        "published_source_literals": [
+          "中秋快乐",
+          "#f3d998",
+          "#b3302a",
+          ", .112, -.015, .0055, FONT.brush, { fill: "
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/paper-lantern/demo/src/shots/s18_finale.js",
+        "line": 16,
+        "published_source_literals": [
+          "LemoLab × Claude Opus 5.5",
+          "#f3d998"
+        ]
+      }
+    ]
+  },
+  "published_cue_events": [],
+  "published_source_hashes": {
+    "outputs/gptcar/styles/paper-lantern/demo/asr.py": "631dda5fa05fcc8f179d805e689483f97c1b2b5e09931f2f7c91aeed12aa2704",
+    "outputs/gptcar/styles/paper-lantern/demo/assets/SOURCES.md": "407fee33eaf70cbec52dd165830d22b5b8a52d71f0d1067720a60c0d4f529609",
+    "outputs/gptcar/styles/paper-lantern/demo/index.html": "ec900f193b86d7dc6caa410855e92fc6ff060769ee47b19e834c8351a39d2a98",
+    "outputs/gptcar/styles/paper-lantern/demo/mix.py": "540e9f5ac6bea4336b950ee29e8951a55d8c2f9c16cfd1433efd15a984aa6fda",
+    "outputs/gptcar/styles/paper-lantern/demo/music/MUSIC.md": "31bb9562fa326aa14c9a1d0861390f87e520e1545a305a259a83a970cf23253b",
+    "outputs/gptcar/styles/paper-lantern/demo/music/analysis.json": "5f7662b85b227ba637d24df4147146980c247fafc7af4c4b1a79077ae3c3fe71",
+    "outputs/gptcar/styles/paper-lantern/demo/script.json": "c6d0f878d484ab63468f1b6a635a48f7c40778e3003266a12cc1bf16d2428b81",
+    "outputs/gptcar/styles/paper-lantern/demo/src/art.js": "7637a97ad5e534e93e5bfc08c24090de00dd222c9e484734a847f9eccc14e9c4",
+    "outputs/gptcar/styles/paper-lantern/demo/src/lib.js": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+    "outputs/gptcar/styles/paper-lantern/demo/src/main.js": "90187a0dabc7839440a75b02be9f145221b72e33596ac5162c835f85894d5c00",
+    "outputs/gptcar/styles/paper-lantern/demo/src/paper.js": "d63f0efdefe46604046bf202a86f8483928536c877af4687f441d8b8f637e17e",
+    "outputs/gptcar/styles/paper-lantern/demo/src/people.js": "77a65cad225c8b55d5627c724e93d37b27516c9612e0ea9084c4844a4335ef39",
+    "outputs/gptcar/styles/paper-lantern/demo/src/post.js": "7970de0db4f2a50e6d26cd5654bd26484945a87a4e7595f474d1270a8144b0a3",
+    "outputs/gptcar/styles/paper-lantern/demo/src/props.js": "d93f7b6eb2ebaa0c2bc29f0932232078cf6b1f1db483b1afc5e04f4d10f524fe",
+    "outputs/gptcar/styles/paper-lantern/demo/src/room.js": "7ad7c6f50c78b5b18667b80fbe51b542a178e72886544110ce7890586b389abc",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/index.js": "9e34c01630cb54639d6fd622ccf3ad82a108403a59e8fec0512955402fb37830",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s01_night.js": "2ec907f7d4c708faff58eedaaec5bc20f3a30301423ff9d9340d2c11c35326c2",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s02_kitchen.js": "f12e91afcd72b39c8b9dca7a6a991272b838875b3ec75976ff04b093342ebd8a",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s03_press.js": "2c3e5656e4646154b9c16f31ad44e4b8b6dc1cdac650b6005219eac5eb92e767",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s04_scroll.js": "274f8ff8459c37f3066782926c410ea06cb546c1bb65f5e00857eb81907a7c0e",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s05_table.js": "05be0d7749d50c5cd3e086cc61b1369eb42f96f3f0a2ebda77e89ef0c72dc751",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s06_pack.js": "ccc0643f2360ed03a61822fe27d4706825164e7bb9026f532d07216cd4840237",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s07_journey.js": "ac15e5636e191a43968b1c0c7a44abb3b895eca8e30faeba24bdb7e4f5008bd6",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s08_window.js": "2c9add8caebe248da35c6d17337d9af9aefe9b7b2ea6162599619f2f27544c31",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s09_change.js": "153b744c3ce74ea4f1ad52dc4cd59954d3841f51a0f91d3503be689b1307be6f",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s10_pass.js": "e3128defe16a64b09fef3197afb245db4184f6f2bcc4fe6c058b220e306fb2bf",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s11_city.js": "f52479a040c3f6fb5a62084b083d9952685a0d0e818de91506efbb7f2d1b5dfb",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s12_apartment.js": "41a86b456cd26f18e0bdcee1b97e25e3b42eaa2c3a4facafbfc03d70bc506e3c",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s13_note.js": "e9ab58569404ac059927d52c4166c3e84cd0ae84209a615c00e4d49961b82d65",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s14_bite.js": "3f22da7a715047f3b9433859ddb7120db7157d4dff3526543a0071ac91ae5166",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s15_gran_open.js": "849060ee4a2c3c8b3c3028a9e799a17e98f746b1337fb2a0043914643a9a3638",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s16_mutual.js": "aac2a50f4490fb9bf92676c932b7d4d88adb5412219dba98d422c82eeaee4662",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s17_sushi.js": "67d400996994582c2616afffafbf951ea7735a923efc7dad17f1594ab13654d7",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/s18_finale.js": "e90b5be8178f69eb2617107aa5add42096bfd8caac41117bc71cfd8c0ef11505",
+    "outputs/gptcar/styles/paper-lantern/demo/src/shots/sheet.js": "d31bd37b3cf947bb57cf83d3c22cf3db20747f83dd63456af379765367718a8f",
+    "outputs/gptcar/styles/paper-lantern/demo/src/stage.js": "910de43bc81125fcc0ab0b01581286842ce7429af2c033bff748e6263a88346e",
+    "outputs/gptcar/styles/paper-lantern/demo/tts.py": "18b0bdddf81662bcd9fa232fb02de93625875bf7982d432a6739655931275b15",
+    "outputs/gptcar/styles/paper-lantern/demo/vo/dur.json": "cdeebbfc73005c40b935d74ede49e02d5a8e818494b0236a26923217bfbec0b6",
+    "outputs/gptcar/styles/paper-lantern/demo/vo/words.json": "eacbf21c528fd1b90df17e0ae28d8f7b982733282e9a882fb0475a0c8d96f91e",
+    "outputs/gptcar/styles/paper-lantern/demo/vo/words_partial.json": "d1b8923532d49e74ac1850e38e9a5d3fd3a08ac580c3f7027519ba53cd749d75",
+    "outputs/gptcar/styles/paper-lantern/demo/words.py": "2c8702151df8ec0ab0dfcc547d8c16b9d71f999d9dad60a870b918fe7f23d1bf"
+  },
+  "original_assets_and_licenses": [
+    {
+      "path": "outputs/gptcar/styles/paper-lantern/demo/CREDITS",
+      "sha256": "35808e9e5865ed81ac9d0d84ba226e538aab114bac5711c4fee9ac717ee98160",
+      "verbatim": "一个月饼的相思 · A Mooncake's Longing — Paper-cut Lightbox (Lemo-Opuscar demo)\nLemoLab × Claude Opus 5.5\n\nAll paper layers, figures, props, calligraphy layouts and the lightbox are drawn by code in this folder\n(Canvas2D paper layers + three.js renderer). No photos or AI-generated images inside the box.\nStory, script and shot design are original.\n\nMusic (both used in the film, crossfaded at ~37 s):\n- \"Ripples\" — Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License\n  http://creativecommons.org/licenses/by/4.0/  · file: music/km_Ripples.mp3\n- \"Nu Flute\" — Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License\n  http://creativecommons.org/licenses/by/4.0/  · file: music/km_Nu_Flute.mp3\nCandidate tracks kept in music/ but NOT used in the film (sources and licences in music/MUSIC.md):\n- \"Echoes Of Home\", \"The Long Way Home\" — Scott Buckley, CC BY 4.0\n- \"Asian - Asian China Chinese Music\" — NastelBom; \"Mo Li Hua - Chinese Jasmine Flower\" — NourishedByMusic; Pixabay Content License\n\n3D assets and textures (Poly Haven, CC0), loaded from core/assets/polyhaven/ (identical copies also in demo/assets/):\n- tea_set_01 — https://polyhaven.com/a/tea_set_01\n- american_walnut_veneer (walnut_diff / walnut_nor / walnut_rough) — https://polyhaven.com/a/american_walnut_veneer\nEnvironment lighting: three.js RoomEnvironment (procedural, MIT). No HDRI is used.\n\nFonts (SIL Open Font License 1.1, Google Fonts; files in fonts/src/, licence texts not bundled — see fonts.google.com):\n- Ma Shan Zheng — titles, poem, seals\n- Zhi Mang Xing — running-script notes\n- Long Cang — the granddaughter's handwriting\n- Noto Serif SC — subtitles and credits\n\nVoice: Microsoft Edge neural TTS voice zh-CN-XiaoxiaoNeural, generated with the open-source edge-tts client\n(github.com/rany2/edge-tts). Check Microsoft's terms of use before commercial redistribution of the audio.\nSpeech check / word timings: faster-whisper (MIT) with the Systran faster-whisper-medium model (MIT).\nSound effects: synthesized in mix.py (no samples).\n\nTexts quoted: 苏轼《水调歌头·明月几时有》(Song dynasty); 田汝成《西湖游览志余》(Ming dynasty) — public domain.\n\nSoftware: three.js (MIT), playwright-core (Apache-2.0), FFmpeg (LGPL/GPL).\n"
+    },
+    {
+      "path": "outputs/gptcar/styles/paper-lantern/demo/assets/SOURCES.md",
+      "sha256": "407fee33eaf70cbec52dd165830d22b5b8a52d71f0d1067720a60c0d4f529609",
+      "verbatim": "# Poly Haven assets (CC0)\n- lythwood_lounge_2k.hdr — https://polyhaven.com/a/lythwood_lounge\n- walnut_diff/nor/rough.jpg — american_walnut_veneer, https://polyhaven.com/a/american_walnut_veneer\n- photo_studio_loft_hall_2k.hdr — https://polyhaven.com/a/photo_studio_loft_hall\n- desk_lamp_arm_01 — https://polyhaven.com/a/desk_lamp_arm_01\n- tea_set_01 — https://polyhaven.com/a/tea_set_01\n"
+    },
+    {
+      "path": "outputs/gptcar/styles/paper-lantern/demo/music/MUSIC.md",
+      "sha256": "31bb9562fa326aa14c9a1d0861390f87e520e1545a305a259a83a970cf23253b",
+      "verbatim": "# 《一个月饼的相思》配乐候选\n\n所有候选曲都没有试听过。筛选依据是来源页面的元数据（标题、标签、描述、乐器表），再加上 librosa 分析。原始数据在 `analysis.json`。\n\n**怎么读数据**\n- **arc** 是每 5 秒窗口的 RMS 响度，单位 dB，以整首曲子最响的一帧为 0 dB。每行 30 秒，数值越接近 0 越响。\n- **RMS dBFS** 是整首曲子的平均电平，混音前用它来对齐几首曲子的音量。\n- **Tempo** 是 librosa 的节拍估计。自由速度的钢琴曲和民乐独奏，这个值不可靠。\n- **perc** 是 HPSS 分离后打击成分的能量占比，小于 0.05 基本可以认为没有鼓。\n- **pent** 是和声声部 chroma 能量落在最佳匹配大调五声音阶上的比例。数值高（大于 0.75）说明是纯五声调式，也就是中国宫调式的听感；日本都节 / 阴音阶里的半音在这项上会拿低分。\n\n**旁白时间参考**：根据 `vo/dur.json` 加每句 0.9 s 的间隔估算，旁白总长约 111 s。按 125 s 成片等比放大约 ×1.12 后，大致时间点如下：\n- 厨房段 L03–L06 ≈ 10–28 s\n- \"我出发了\" L10 ≈ 45 s\n- 旅途 L11–L14 ≈ 47–72 s\n- 拆盒、外婆字条 L16–L17 ≈ 79–86 s\n- 反转 L19–L21 ≈ 93–107 s\n- 苏轼 / \"但愿人长久\" L22–L23 ≈ 109–117 s\n- \"中秋快乐\" L25 ≈ 122 s\n\n---\n\n## 推荐排名\n\n### 第 1 名（首选）：Ripples → Nu Flute 双曲接力（Kevin MacLeod，CC BY 4.0）\n- **为什么选它**\n  - 真实的古筝（Ripples）和竹笛 + 弦乐（Nu Flute）。\n  - Ripples 的五声占比 0.83，是纯宫调式，听感偏中国而不是日本。\n  - 两首都没有鼓（perc 0.017 / 0.006）。\n  - 调性兼容，都以 C 五声为中心，可以直接交叉淡化。\n  - 许可证最干净：CC BY 4.0，没有 Content ID 风险。\n- **拼接方案**\n  1. Ripples 从 0:00 起用，成片 0–约 46 s 覆盖厨房、装盒、\"我出发了\"。开头 10 s 很轻（-18/-17 dB），10 s 后古筝才真正进来。\n  2. Nu Flute 在成片约 42 s 处用 4 s 交叉淡化进入，自然播完 82.8 s，刚好落在成片 125 s。\n  3. 这样 Nu Flute 自身的时间点对应到成片是：\n     - 35 s 的抬升（+3.8 dB）→ 成片约 77 s，也就是拆盒、外婆字条。\n     - 65 s 的回落（-6.3 dB）→ 成片约 107 s，苏轼那句前面留出一口气。\n     - 70 s 的再抬升（+4.3 dB）→ 成片约 112 s，正好是\"但愿人长久\"。\n     - 80 s 后收尾 → 最后的\"中秋快乐\"。\n  4. 如果旁白最终时间有变，平移 Nu Flute 的起点，让它的 70 s 峰落在 L23 上就行。\n- **电平**：Ripples 平均约 -22 dBFS，Nu Flute 约 -18.7 dBFS。接的时候把 Nu Flute 压低约 3 dB。\n- **风险**\n  - Nu Flute 标签里有 \"Somber\"，整体偏淡淡的忧伤，好在也有 \"Uplifting\"，和\"相思 + 团圆\"的调子一致。\n  - Ripples 在 incompetech 的乐器表里写成 \"Koto\"，但描述里明确说是中国古筝，chroma 分析也支持五声。\n\n### 第 2 名：NastelBom \"Asian - Asian China Chinese Music\"（Pixabay，单曲自带起伏）\n- **为什么选它**\n  - 是这批里中国味最正的一首：五声占比 0.84，纯宫调式；描述写的是 \"traditional Chinese instruments\"，分类是弦乐四重奏。\n  - 没有鼓（perc 0.01）。\n  - 单曲自带弧线：开头 0–20 s 很轻 → 20 s 全面进入 → 110–130 s 回落 → 130 s 大幅抬升（+6.3 dB），一直到 170 s 结束。\n- **用法**：原曲长 178 s，套到 125 s 成片上需要剪一刀。\n  - 删掉曲中 20–110 s 的平台段里约 25 s，例如 55→80 s，接点放在小节线上。\n  - 删完后，回落落在成片约 85–105 s（反转段），抬升落在约 105 s（苏轼 / 月亮）。\n- **风险（重要）**\n  - Pixabay 页面标注了 **\"Content ID Registered\"**。发 YouTube 可能被自动认领，需要保留 Pixabay 下载页作为授权证明去申诉。国内平台一般不受影响。\n  - 这首曲子的母带很响（-13.5 dBFS），要压低约 8 dB 才能和其他曲子对齐。\n\n### 第 3 名：Scott Buckley \"Echoes Of Home\"（CC BY 4.0，西洋管弦，弧线最好）\n- **为什么选它**\n  - 响度曲线是一条教科书式的长渐强：-22 dB 起，55 s 到 -14，75 s 到 -12，峰值在 145–155 s 左右（-7 dB）。\n  - 作者描述是温暖怀旧的管弦乐，风格接近 Zelda / 吉卜力。\n  - 没有鼓（perc 0.028）。\n- **用法**：从曲中 35 s 处开始放，对应成片 0 s。\n  - 峰值会落在成片约 110–120 s，正好是\"但愿人长久\"。\n  - 成片最后 5 s 淡出。\n- **不足**：没有中国乐器（五声占比 0.63，是西洋和声）。如果想要中国味，可以作为兜底，或者和第 1 名混搭（开头用古筝，高潮换这首的管弦）。\n\n### 第 4 名：NourishedByMusic \"Mo Li Hua - Chinese Jasmine Flower\"（Pixabay）\n- 竹笛为主。五声占比 0.79，没有鼓，几乎没有低频（<250 Hz 的能量只占 0.4%）。\n- 母带非常轻（-27.8 dBFS），需要提升约 8 dB。\n- **弧线**：前 100 s 平稳 → 100–135 s 回落 → 135 s 重新进入（+8.8 dB）→ 170 s 起淡出。\n- **没排更前的原因**：《茉莉花》旋律辨识度太高，容易抢旁白的注意力，也会把联想带到江南 / 茉莉，而不是月亮和思乡。\n\n### 第 5 名：Scott Buckley \"The Long Way Home\"（CC BY 4.0）\n- **特点**\n  - 作者描述是简单怀旧的钢琴，像摇篮曲，配柔和的弦乐和合成器。\n  - 最安静、最不抢戏。\n  - 约 125 s 后进入安静尾声。\n- **不足**：开头没有弱起（第一个窗口就是 -8 dB），整体几乎是平的，也没有中国味。适合做\"只要柔、不要抢\"的保底。\n\n---\n\n## 候选曲目详情\n\n### 1. `km_Ripples.mp3`\n- **曲名 / 作者**：Ripples / Kevin MacLeod\n- **许可证**：CC BY 4.0（https://creativecommons.org/licenses/by/4.0/）\n- **署名**：\"Ripples\" Kevin MacLeod (incompetech.com) / Licensed under Creative Commons: By Attribution 4.0 License / http://creativecommons.org/licenses/by/4.0/\n- **来源**：https://incompetech.com/music/royalty-free/mp3-royaltyfree/Ripples.mp3（目录页：https://incompetech.com/music/royalty-free/music.html）\n- **时长**：3:25（205.5 s）\n- **Tempo**：目录标 57 BPM；librosa 估 117（是双倍误判）\n- **来源页的乐器和情绪**\n  - 乐器表写 \"Koto\"。\n  - 描述说这是中国古筝孤独的拨弦，像流水一样宁静，适合内省、亚洲题材的内容。\n  - Feel 标签：Calming, Mystical, Relaxed。\n- **分析**\n  - RMS -22.2 dBFS，频谱质心 893 Hz。\n  - 能量分布：低 0.17 / 中 0.82 / 高 0.01。\n  - perc 0.017，pent(C) 0.83。\n- **5 s 响度曲线（dB）**：\n  - 0–25 s: -18 -17 -13 -15 -11 -12\n  - 30–55 s: -16 -11 -14 -14 -16 -15\n  - 60–85 s: -14 -16 -11 -13 -16 -12\n  - 90–115 s: -10 -13 -14 -14 -13 -12\n  - 120–145 s: -13 -14 -21 -13 -9 -12\n  - 150–175 s: -10 -11 -13 -11 -16 -14\n  - 180–205 s: -13 -9 -12 -21 -50 (end)\n- **抬升点**：10 s（+4.1）、70 s（+3.8）、130 s 短暂停顿（-7.8）后 140 s 抬升（+8.4，全曲最大）、185 s（+4.3）；约 195 s 开始淡出。\n- **结论**：平稳的古筝垫底，适合放在旁白下面。\n\n### 2. `km_Nu_Flute.mp3`\n- **曲名 / 作者**：Nu Flute / Kevin MacLeod\n- **许可证**：CC BY 4.0\n- **署名**：\"Nu Flute\" Kevin MacLeod (incompetech.com) / Licensed under Creative Commons: By Attribution 4.0 License / http://creativecommons.org/licenses/by/4.0/\n- **来源**：https://incompetech.com/music/royalty-free/mp3-royaltyfree/Nu%20Flute.mp3\n- **时长**：1:23（82.8 s）\n- **Tempo**：目录标 60 BPM；librosa 估 129（是双倍误判）\n- **来源页的乐器和情绪**\n  - 乐器表：Flute, Strings。描述说这是笛子（Dizi）。\n  - Feel 标签：Calming, Relaxed, Somber, Uplifting。\n- **分析**\n  - RMS -18.7 dBFS，频谱质心 967 Hz。\n  - 能量分布：低 0.31 / 中 0.68。\n  - perc 0.006，pent(C) 0.61（弦乐和声里带 F，偏西洋配器）。\n- **5 s 响度曲线（dB）**：\n  - 0–25 s: -9 -8 -5 -9 -6 -8\n  - 30–55 s: -9 -5 -6 -8 -8 -8\n  - 60–80 s: -8 -14 -7 -10 -46 (end)\n- **抬升点**：10 s（+3.9）、35 s（+3.8）、65 s 回落（-6.3）后 70 s 抬升（+4.3）；80 s 结束。\n- **结论**：适合做结尾那一段。\n\n### 3. `pb_NastelBom_Asian_China_Chinese_Music.mp3`\n- **曲名 / 作者**：Asian - Asian China Chinese Music / NastelBom（Dmitrii Spis）\n- **许可证**：Pixabay Content License（https://pixabay.com/service/license-summary/）\n  - 可以免费用于商业和非商业用途，可以修改，不要求署名。\n  - 不能把音乐单独出售或二次分发。\n  - **页面标注 \"Content ID Registered\"**。\n- **署名（自愿，建议加上）**：Music: \"Asian - Asian China Chinese Music\" by NastelBom via Pixabay\n- **来源**：https://pixabay.com/music/classical-string-quartet-asian-asian-china-chinese-music-501705/\n  - 音频地址：https://cdn.pixabay.com/download/audio/2026/03/13/audio_494876aaa5.mp3\n- **时长**：2:59（178.5 s）\n- **Tempo**：librosa 估 89\n- **来源页的乐器和情绪**\n  - 描述：使用中国传统乐器的氛围器乐曲。\n  - 流派：Classical String Quartet / China。情绪：Relaxing, Peaceful。\n  - 标签：Chinese flute, Chinese festival, Oriental。\n  - Pixabay 没有标 AI 生成。\n- **分析**\n  - RMS -13.5 dBFS（很响），频谱质心 1465 Hz。\n  - 能量分布：中频占 0.95。\n  - perc 0.010，pent(B) 0.84。\n- **5 s 响度曲线（dB）**：\n  - 0–25 s: -18 -18 -16 -14 -8 -6\n  - 30–55 s: -6 -6 -5 -6 -6 -6\n  - 60–85 s: -7 -7 -7 -6 -7 -6\n  - 90–115 s: -7 -6 -8 -6 -12 -13\n  - 120–145 s: -13 -12 -6 -7 -6 -5\n  - 150–175 s: -4 -6 -5 -7 -6 -32 (end)\n- **抬升点**：20 s（+6.9，全面进入）、25 s（+5.2）；110–125 s 回落段；130 s 抬升（+6.3），峰值在 150 s（-4）。\n- **结论**：单曲弧线最完整，中国味最正。\n\n### 4. `sb_EchoesOfHome.mp3`\n- **曲名 / 作者**：Echoes Of Home / Scott Buckley\n- **许可证**：CC BY 4.0\n- **署名（作者指定格式）**：'Echoes Of Home' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au\n  - 作者要求：YouTube 视频的署名必须写在视频简介里。\n- **来源**：https://www.scottbuckley.com.au/library/echoes-of-home/\n  - 音频地址：https://www.scottbuckley.com.au/library/wp-content/uploads/2025/05/EchoesOfHome.mp3\n- **时长**：4:52（291.7 s）\n- **Tempo**：librosa 估 136（不可靠）\n- **来源页的乐器和情绪**：温暖、怀旧的管弦乐，气质接近 Zelda 游戏和吉卜力电影。\n- **分析**\n  - RMS -17.2 dBFS，频谱质心 857 Hz。\n  - 能量分布：低 0.72（弦乐和低音垫底厚）。\n  - perc 0.028，pent 0.63（西洋和声）。\n- **5 s 响度曲线（dB）**：\n  - 0–25 s: -22 -24 -22 -20 -22 -22\n  - 30–55 s: -21 -20 -20 -19 -19 -14\n  - 60–85 s: -16 -14 -16 -12 -12 -14\n  - 90–115 s: -12 -11 -12 -12 -12 -12\n  - 120–145 s: -12 -11 -9 -10 -10 -7\n  - 150–175 s: -7 -8 -10 -9 -10 -11\n  - 180–205 s: -9 -10 -10 -12 -14 -13\n  - 210–235 s: -14 -14 -14 -13 -12 -13\n  - 240–265 s: -12 -12 -9 -8 -7 -10\n  - 270–290 s: -9 -16 -20 -29 -55 (end)\n- **抬升点**：55 s（+5.2）；130–155 s 缓升到主高潮（-7）；250–260 s 第二个高潮（-7）；275 s 起淡出。\n- **结论**：整首是一条长渐强，高潮来得晚。\n\n### 5. `pb_MoLiHua_JasmineFlower.mp3`\n- **曲名 / 作者**：Mo Li Hua - Chinese Jasmine Flower / NourishedByMusic\n- **许可证**：Pixabay Content License。不要求署名；页面没有标 Content ID，也没有标 AI 生成。\n- **署名（自愿）**：Music: \"Mo Li Hua - Chinese Jasmine Flower\" by NourishedByMusic via Pixabay\n- **来源**：https://pixabay.com/music/china-mo-li-hua-chinese-jasmine-flower-356371/\n  - 音频地址：https://cdn.pixabay.com/download/audio/2025/06/07/audio_61d4f3c103.mp3\n- **时长**：3:26（206.1 s）\n- **Tempo**：librosa 估 99\n- **来源页的乐器和情绪**\n  - 标签：Chinese, Flute, Oriental, Classical, Instrumental, Ambient。\n  - 情绪：Bright, Dreamy, Relaxing, Peaceful, Elegant, Floating。\n  - 编曲基于传统民歌《茉莉花》。\n- **分析**\n  - RMS -27.8 dBFS（很轻），频谱质心 1759 Hz。\n  - 能量分布：低 0.004，中 0.90，高 0.10。\n  - perc 0.009，pent(C) 0.79。\n- **5 s 响度曲线（dB）**：\n  - 0–25 s: -6 -5 -5 -7 -6 -8\n  - 30–55 s: -10 -6 -5 -6 -7 -6\n  - 60–85 s: -8 -8 -5 -6 -6 -8\n  - 90–115 s: -6 -9 -15 -13 -12 -13\n  - 120–145 s: -12 -13 -15 -6 -5 -5\n  - 150–175 s: -6 -6 -8 -9 -17 -16\n  - 180–205 s: -20 -21 -17 -16 -18 -22\n- **抬升点**：100 s 回落（-7.3）；135 s 重新进入（+8.8）、140 s（+5.3）；170 s 起淡出。\n\n### 6. `sb_TheLongWayHome.mp3`\n- **曲名 / 作者**：The Long Way Home / Scott Buckley\n- **许可证**：CC BY 4.0\n- **署名**：'The Long Way Home' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au\n- **来源**：https://www.scottbuckley.com.au/library/the-long-way-home/\n  - 音频地址：https://www.scottbuckley.com.au/library/wp-content/uploads/2021/05/sb_thelongwayhome.mp3\n- **时长**：2:53（172.7 s）\n- **Tempo**：librosa 估 185（不可靠，是自由速度的钢琴）\n- **来源页的乐器和情绪**：柔和、简单、怀旧的钢琴，几乎像摇篮曲；柔和的弦乐和合成器托着它飘回家。\n- **分析**\n  - RMS -18.6 dBFS，频谱质心 482 Hz（很暗、很柔）。\n  - perc 0.049。\n- **5 s 响度曲线（dB）**：\n  - 0–25 s: -8 -10 -8 -8 -9 -6\n  - 30–55 s: -7 -7 -7 -9 -9 -8\n  - 60–85 s: -7 -8 -9 -7 -7 -6\n  - 90–115 s: -6 -5 -6 -5 -6 -5\n  - 120–145 s: -6 -10 -13 -13 -14 -14\n  - 150–170 s: -16 -15 -17 -34 -40 (end)\n- **抬升点**：没有明显的突然进入；95–120 s 是温和的平台峰（-5）；125 s 起进入安静尾声。\n\n---\n\n## 看过但没选的曲目（附原因）\n- **Kevin MacLeod**\n  - Shenyang：二胡、琵琶、扬琴加打击乐，129 BPM，太欢快。\n  - Guzheng City：带 dhol 鼓，定位是\"酒店大堂\"。\n  - Cattails：班卓琴、手风琴加二胡，西部乡村味。\n  - Senbazuru、Finding Movement、Ishikari Lore：都是 koto，日本味。\n- **Scott Buckley**\n  - Moonlight：钢琴加弦乐，2022 年作品，曲名很合适，但 25–150 s 是一整段平台，没有中国味。下载地址是 wp-content/uploads/2022/07/Moonlight.mp3，需要的话可以备用。\n  - Amberlight：有久石让的气质，但时长 4:43，峰值在中段。\n  - Home Was You：有民谣打击乐，perc 0.215。\n- **Pixabay**\n  - kaazoom 的全部作品（A Peaceful Morning、Back To Hong Kong、Bamboo and Paper Lanterns、Mountain Spring 等）：作者简介里自称全部作品都是 AI 生成。\n  - RainStreetCat、Asian_Background_Music、AiCanvas、JorisVermeer \"Gentle Chinese Flute & Strings\"：要么标了 AI 生成，要么是批量 BGM。\n  - VPRODMUSIC \"Mid Autumn Festival\"：打击乐加进行曲感，perc 0.14，低频很重；另外标了 Content ID Registered。\n  - VPRODMUSIC \"Hoi An Ancient Charm\"：越南题材，标了 Content ID Registered。\n  - \"lasting sorrow\"：上传者匿名（用户号 38534292），时长 14 分钟，基调悲伤。\n  - Joylo1111 \"Plum Blossom (pure piano)\"：5:19，偏台湾流行钢琴。可以作为备选。\n- **free-stock-music.com 上的中文分类**：几乎全是新年、史诗、EDM 类型，或者是 CC BY-NC / BY-SA 许可证，不符合要求。\n\n## 片尾署名（如果用首选方案）\n```\nMusic:\n\"Ripples\" Kevin MacLeod (incompetech.com)\n\"Nu Flute\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0 License\nhttp://creativecommons.org/licenses/by/4.0/\n```\n"
+    }
+  ],
+  "engine_reuse_recommendation": "Reuse attributed generic drawing/material/rig/math engines described by STYLE/DEMO; share fonts and named licensed data/assets with hashes. Independently generate scene assembly, animation, shot/camera staging and freshaudio. Never import original film renderer, mastervideo,originalframes or mastertrack as newGPTwork. Preserve exactscript/cardlanguage and measuredoriginalframecount. Full originals are analytical references only.",
+  "audio_recreation_direction": "Fresh Mandarin zh-CN-XiaoxiaoNeural, default+10% rate/−2Hz pitch with per-line overrides in script.json;25 exact lines, no translated narration. Recreate new C-pentatonic guzheng intimacy→dizi/strings journey/emotional reveal and poem swell. Original Ripples/NuFlute are CC-BY direction references only; user requests fresh voice/music, no original tracks. Paper/press/box/train/tea/room foley.",
+  "v1_primary_deficits": [
+    "V1 cut121.8s Mandarin25-line film to20s and removed19-shot reciprocal-gift reveal",
+    "2D imitation omitted real lightbox thickness/transmission/DoF, embossed cake/handwriting and licensed real3D tea/walnut assets"
+  ],
+  "visual_audit": {
+    "status": "complete",
+    "method": "Fulloriginal1fpscontactsheetreview andsourcecueboundaries; not everyencodedframe.",
+    "sheets": [
+      "work/gptcar/reference/paper-lantern/sheets/sheet-01.jpg",
+      "work/gptcar/reference/paper-lantern/sheets/sheet-02.jpg",
+      "work/gptcar/reference/paper-lantern/sheets/sheet-03.jpg",
+      "work/gptcar/reference/paper-lantern/sheets/sheet-04.jpg",
+      "work/gptcar/reference/paper-lantern/sheets/sheet-05.jpg",
+      "work/gptcar/reference/paper-lantern/sheets/sheet-06.jpg",
+      "work/gptcar/reference/paper-lantern/sheets/sheet-07.jpg",
+      "work/gptcar/reference/paper-lantern/sheets/sheet-08.jpg",
+      "work/gptcar/reference/paper-lantern/sheets/sheet-09.jpg",
+      "work/gptcar/reference/paper-lantern/sheets/sheet-10.jpg",
+      "work/gptcar/reference/paper-lantern/sheets/sheet-11.jpg"
+    ],
+    "exact_time_supplement": []
+  }
+}

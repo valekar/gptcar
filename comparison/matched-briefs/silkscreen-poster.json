@@ -1,0 +1,960 @@
+{
+  "slug": "silkscreen-poster",
+  "original_title": "Three Trails",
+  "premise": "Three trail posters are screen-printed one ink at a time, then climbed in one long take from noon to dusk.",
+  "published_delivery": {
+    "slug": "silkscreen-poster",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/silkscreen-poster.mp4",
+    "sha256": "8ae1b2c07bd4585a3a24a1b38dad489440fb7e0f80faf6c02503416378b88d2c",
+    "duration": 38.416667,
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": "922",
+    "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+    "frames": 38,
+    "sheets": 4
+  },
+  "production_format_source": "Full verbatim DEMO header below; measured published delivery above governs v2.",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "explanation": "No initial conversation/inputprompt transcript is published in inspected repository. STYLE.md is a verbatim published styleprompt; DEMO.md is published retrospective productiondocumentation. Shot prompts are source-informed reconstruction of finishedmovie, never a claimed identical originalchatprompt."
+  },
+  "published_style": {
+    "path": "outputs/gptcar/styles/silkscreen-poster/STYLE.md",
+    "sha256": "a8b3792efb1476b78493f86a033221b27f60c1927463cc435f8816e4d9eda148",
+    "verbatim": "# Silkscreen Travel Poster — Style Prompt\n\n> Opaque, hard-edged flat inks pulled one colour at a time through a screen: 4–6 inks per poster, stepped colour bands instead of gradients, thin paper-white gaps where the registration slips. Information is revealed the way the print is made: one layer, one beat.\n> References (grammar only):\n> - **1930s–40s WPA national-park screen prints**: 4–6 flat inks, lit and shade faces, stepped-band skies, a dark information band, concentric sun rings.\n> - **Fifty-Nine Parks (contemporary)**: restraint, paper as a colour, a series on one template with a new palette per poster.\n> - **The physical process**: hinged screen, squeegee pushing an ink bead across mesh, split-fountain pulls, drag streaks, pinholes, off-register slivers.\n>\n> Never copy a real poster's composition, park name, lettering or logo, and never name a real agency.\n\nA **scene style**: it does a practical job (a guide, an event poster, a destination series) for any place, event or product with a few facts. See §11 for the jobs.\n\n## 1. Essence, and what it is not\n\nA poster being **printed on camera**. Every colour is an opaque ink laid by its own pull; later ink covers earlier ink completely. No halftone, no fluorescent ink, no line work: a shape's edge is where one flat ink stops. **Gradients are forbidden**: skies and haze are **stepped bands** (a flat colour, thinning stripes, the next colour).\n\nWhat makes it read as silkscreen and not as flat vector art:\n- **Registration**: every layer offset 1–3 px at 1080p; a knocked-out shape leaves a crescent of bare paper.\n- **Overprint edge**: a faint multiply ghost ~2 u off under each ink, leaving a darker sliver where ink laps over ink.\n- **Ink thickness**: a light rim top-left, a dark rim bottom-right, fills only; fresh ink has a wet sheen that fades within a second.\n- **Paper**: cream stock with fibres; mottle and pinholes in paper colour, visible only on ink.\n\nNot risograph (translucent fluorescent overprint with halftone grain), not ukiyo-e (key-block line work with bokashi), not woodcut (carved line), not low-poly (3D facets). This style is opaque, line-free, flat and banded.\n\n## 2. Materials & rendering\n\n- **One `Path2D` per ink layer**, filled in the current transform's units; knock-outs are holes in the path. Any shape can be printed.\n- **Pull reveal**: a ragged squeegee front as a clip (a ~30 u drag tail); blade, bead and a sliver of handle ride on it.\n- **Ink bead**: a round tube with lit half, dark underside, rolling glints and viscous strands; a split fountain puts several colours in one bead.\n- **Screen**: a hinged frame with mesh, emulsion and tape; its shadow is a ring (even-odd), never a full rectangle.\n- **Shapes**: ridges with a jagged lit facet, pines as one outline of drooping tiers, water as a flat body with glint bars. Hard edges everywhere.\n- **Poster template** (1000×1500 u): paper border, art area, a dark **info band** at the foot holding a name, a number, a rule and a row of stats; columns sized by content.\n- **Texture budget**: fine paper tile, mottle multiply ~55 %, pinholes ~75 %, light encode grain. More reads as risograph.\n\n## 3. Colour logic\n\n- **One palette per poster, ≤ 6 inks**, assigned by role: light sky, deep sky / bands, far, mid, near (darkest; also the info band), and **one bright accent** (sun, route, highlights, key number). An optional lit-face ink.\n- **Values step from far (light) to near (dark)**; depth is value, never blur.\n- **The accent is rare**: the sun or light source, the one route or product, the most important number.\n- **Paper is a colour**: an unprinted area is the brightest thing on the sheet (water, snow, a beam of light).\n- **A series = one template, a new palette per item** (time of day, season, colourway, neighbourhood). Re-inking the same geometry in another palette is a statement.\n- **Text inks are chosen by contrast** against the ink underneath (WCAG), never by a fixed key; a night palette must not swallow a header.\n- Examples (sky1 → near, accent): dawn `#F6CD98 #EE9A73 #9A7FA8 #3E7079 #1E3B3F #FBE6B4`; harbour noon `#E8F0F2 #7FB3C8 #D9C7A3 #2F6E8E #173247 #E8553D`; winter `#EEF1F4 #B8C9D9 #8B9BB0 #4A5D78 #1F2A3C #F2B134`.\n\n## 4. Type & subtitles\n\n- **Condensed display** for names and values (e.g. Big Shoulders Display, League Gothic), auto-fit; a geometric sans for letter-spaced labels (e.g. Outfit 600).\n- Headers are **printed into the sky**, tracked out; the info band is printed last.\n- **The poster text is the subtitle.** No narration is needed; if there is a voice, subtitles are a printed strip (a band pull), never a floating caption.\n- **Reading rule**: each text stays ≥ chars/12 + 1 s (min 1.5 s) after its **last** item lands, and ≥ max(1.8 s, speech + 0.6 s) with a voice. Compute it from the content, round up to the beat.\n- On a wall shot, labels stay ≥ ~18 px and values ≥ ~30 px at 1080p; close-ups on a band keep the whole band in frame with ≥ 5 % side margins.\n\n## 5. Motion quality\n\n- **Pulls are linear and steady** (a squeegee does not ease). Accent inks start half a beat after the main ink of their layer.\n- **Info items** print left to right on subdivisions of the beat. **There is no fade anywhere.**\n- **Screen lift**: the frame hinges up (vertical squash + growing shadow) in ~0.4 s.\n- **Palette re-ink**: a wide squeegee travels diagonally over the sheet in ~0.35 s; geometry identical on both sides of the blade, only the inks change. Show only the blade, bead and a sliver of handle.\n- **Loose layers**: in a multi-plane move, planes parallax by depth with paper gaps and thickness shadows, then **snap into register** on one hit.\n\n## 6. Camera grammar\n\nA vocabulary, not a route. Opening and ending come from the topic.\n\n| Move | Expresses | Can serve |\n|---|---|---|\n| Truck with the squeegee, slight roll, frame edge in view | the act of printing; colour arriving | a hook; a split-fountain sky |\n| Locked top-down full sheet | layers stacking into a picture | watching a poster build; a comparison |\n| Fast pull-back as the screen lifts | the reveal of a finished layer | a scene complete; a title |\n| Push + tilt to the info band | reading | facts; a date; a price |\n| Truck through a foreground silhouette (tree, lamp post, sail) in screen space | passing into the next poster | poster-to-poster transitions |\n| Crane through loose planes (multi-plane parallax) | depth, a journey inside the print | a route; a climb; a street |\n| Slow lateral dolly along a row of prints | a set, a range | a series wall; colourways |\n| Push into the mesh until the weave shows | the craft, the grain of the medium | an intimate beat; a detail |\n| Log-zoom pull-back to the wall or window | the poster in the world | a final lockup (hold ≥ 3 s) |\n\nClose-ups on a sheet keep its edge in frame; a squeegee across a close-up is tilted with the handle hidden, so it doesn't split the frame. Layers change by squeegee, posters through foreground silhouettes or a table move. No dissolves, no bare cuts.\n\n## 7. Sound palette\n\n- **Acoustic, hand-played instruments**: strummed guitar, slide guitar, harmonica, upright bass, cajon or brushes, banjo, fiddle, accordion, harmonium, ukulele. Choose the family from the place: folk, surf, bossa or brass band all fit.\n- **One pull, one hit**: each ink lands on a musical event (a strum, a hit, a chord change); accelerate by subdividing, not by changing tempo. A registration snap is a loud downbeat.\n- **Foley by material**: squeegee on mesh (band-passed noise with a ~220–280 Hz mesh grain; faster = brighter), wet ink squelch, screen clack and hinge creak, paper stamps, ticks for dashed routes, paper hiss, a wood-and-metal clamp, drying-rack clips.\n- **Ambience from inside the print**: a finished scene may \"wake up\" (surf, street, crowd), J-cut in and L-cut out. Room tone under the table.\n- **Silence as a tool**: the music drops out for a beat before the key facts; what remains is one ambience, and the first sound after is a decisive gesture (a clamp, a long slide up).\n- Music ducks a few dB under foley. −14 LUFS.\n\n## 8. Native moves\n\nEach serves information order. A menu: use the ones your film needs.\n\n- **One ink, one beat.** Facts print last, when they are read. *Fits content like:* museum hours; a ferry timetable; tasting notes.\n- **Split fountain.** Several inks in one pull fill the frame with colour. *Fits content like:* a festival's night sky; a sunset beach bar; a rainbow of colourways.\n- **Palette re-ink.** Same poster, another palette = time passing, a season, a variant. *Fits content like:* summer vs winter hours; three jacket colourways; day and night at a market.\n- **Registration slip → snap.** Loose layers clamp into register with one hit, before the key facts. *Fits content like:* the date of a race; a launch price; a ticket sale opening.\n- **Paper as a colour.** The unprinted sheet is the brightest element. *Fits content like:* a ski slope; a lighthouse beam; fresh snow on a roof.\n- **The route as a printed layer.** A dashed accent line stamped segment by segment. *Fits content like:* a bus line; a marathon course; a delivery path.\n- **The series wall.** Every print ends up hung together as the final lockup. *Fits content like:* a city's four districts; a band's tour dates; a product family.\n\n## 9. Pitfalls of the medium\n\n- Stroke edge effects draw internal lines on unioned paths → fills only (fill, then fill shifted inside a clip).\n- A full-rectangle screen shadow muddies the print → ring shadow.\n- Cool shadow facets next to water read as water → shadows in the near ink.\n- Jagged ink beads read as paper edges → a round bead.\n- Parallax alone reads as \"the mountains are moving\" → paper gaps and thickness while loose, snapped to zero with a sound.\n- Silhouette wipes hold a dark blank → centre on the switch so full cover lasts ~1 frame.\n- Very wide banners are slivers in 16:9 → about 4:1.\n- Random coloured dots on the table read as confetti → a real workbench (planks, grain, muted stains, tape).\n- Too many items at honest reading times overrun the length → print items side by side in the same pulls, or let secondary ones be read on the final wall.\n\n## 10. Engine\n\n`demo/engine/silk.js` prints **any shape** in this style from a `Path2D`: `makeTextures`, `paperSheet`, `ink(ctx, {path, knock, paint}, {color, reg, clip, sheen, trap})`, `wipeRegion`/`wipeFront` (ragged pull), `squeegee` (blade, beads, split fountain), `screenFrame`, `inkFinish`, `bandSteps` (the gradient substitute), shape helpers. `demo/engine/poster.js` (template, banner, `pickInk` contrast), `demo/engine/scenes.js` (planes you can reorder or extend), `demo/film.js` (timeline and shots). API table and a minimal example that prints a new shape: [DEMO.md](DEMO.md#engine-reference).\n\n## 11. Variation space\n\nYou decide the subject, the scenes and their planes, the palettes within the colour logic, the number of posters, the camera path, the opening, the ending, the instrument family and the length. Use cases are **grammar for the order and duration of information**; build your own timeline from the user's facts.\n\n| Use case | Information order (print order) | Hold per layer | Length |\n|---|---|---|---|\n| **Trail / attraction guide** | place → per item: scene → name → difficulty → distance → time → footer | title ~3 s; name ≥ chars/12 + 1 s; stat row ≥ 2.2–3 s after its last item | 30–40 s, 3 items |\n| **Event / festival poster** | scene pulls → headline → date → venue → call to action | headline 2.5 s, date + venue 3 s, final 3 s | 15–20 s |\n| **Destination series** | one template, a palette per place: name → one fact → series wall | 2.5 s per poster + 4 s wall | 20–30 s |\n| **Product drop** | layers around a flat product silhouette → name → colourway ×3 (re-ink) → price / date | 1.8 s per colourway | 12–18 s |\n| **Seasonal / hours notice** | one poster re-inked per season → season + hours | 2 s per swap | 10–15 s |\n\nAll far from our demo:\n\n- Structures: **one poster, many runs** (re-inked for each of four nights, the line-up changing in the band); **a street walk** (one multi-plane truck down a street, each shop sign printed as we pass); **a misprint story** (registration drifts until the last pull lands true on the date).\n- Openings: **the empty screen** (light through a blank mesh, a stencil being exposed); **the accent first** (a lone product in the bright ink on bare paper); **the finished wall at night**, then back to the table.\n- Endings: **the drying rack** (prints clipped in a row, swaying); **the poster in use** (pasted on a bus shelter, rain starting); **the last pull is paper** (the squeegee runs dry, leaving a white silhouette).\n\nSwapping `demo/content.json` and rebuilding is a technical check that the engine re-flows, not a way to make a film.\n\n---\n\nHow our demo was made (story, shots, score, end card, build, content fields): [DEMO.md](DEMO.md). Read it after your treatment exists.\n"
+  },
+  "published_demo": {
+    "path": "outputs/gptcar/styles/silkscreen-poster/DEMO.md",
+    "sha256": "a67473de891fc9b925cbe8e90c05567e098021801d2724957dffa9bd546983cf",
+    "verbatim": "# Silkscreen Travel Poster — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *Three Trails* (38.4 s) · `silkscreen-poster.mp4` · source in [`demo/`](demo/)\n\n\n## Story & structure\n\nA trail guide for a fictional park: three trail posters are printed, one faster than the last, the third is climbed in one long take, and all three end up on a visitor-center wall. No narration.\n\nThis is the first use case of STYLE.md §11 (trail / attraction guide). Shot structure: title banner pull → poster 1 printed layer by layer → poster 2 printed on eighth notes → last poster climbed in one take → pull back to the wall. Information order: park title → scene → trail name → difficulty → distance → time → climb → footer. Holds: title 3.2 s; name ≥ chars/12+1 s; stat row ≥ 2.2–3.0 s after its last item; 30–40 s for 3 trails.\n\nThe other use cases in STYLE.md §11 use the same engine: a scene is just a list of planes, the band template takes any 1–4 facts, and `swap` re-inks a whole poster in another palette.\n\n**How the native moves serve information** (not story):\n- *One ink, one beat*: each pull is one musical hit, so the eye is led through the layers in order and the facts are printed last, which is exactly when they are read.\n- *Split fountain*: several inks in one pull. It opens the film, because one stroke fills the frame with colour.\n- *Palette re-ink*: the whole poster pulled again in the next time-of-day palette. In the demo this is the data point \"7 h\": the day passes while the camera climbs.\n- *Registration slip → snap*: during the climb the layers hang loose (white gaps, paper-thickness shadows), then clamp into register with one hit. This is the only time the film pauses before the most important facts.\n- *Paper as a colour*: the waterfall is simply unprinted paper, the brightest thing on the sheet.\n- *The trail as a printed layer*: the route is a dashed line in the sun ink, stamped segment by segment as the camera follows it.\n\n## Shots\n\n| Move | Use | Demo |\n|---|---|---|\n| Truck with the squeegee, slight roll (−1.7°), frame edge and handle ends in view | hook: the squeegee holds its place in frame while the bands stream past | 0–1.0 s |\n| Fast pull-back (ease-out 0.65 s) | reveal the whole print as the screen lifts | 1.0–1.65 s |\n| Tilt across the print table | from one sheet to the next | 4.8 s |\n| Locked top-down full shot | watching layers stack | 5.4–7.8 s |\n| Push + tilt to the info band | reading | 7.8–9.0 s |\n| Truck through a foreground tree (screen-space silhouette in the previous poster's `near` ink, covers the frame for about 1 frame) | poster-to-poster transition | 13.2 s, 19.2 s |\n| Pull-back from a detail to the whole sheet | \"the white is the waterfall\" | 14.4 s |\n| **Crane up the trail, multi-plane parallax** (signature) | the hardest trail, one take | 19.2–23.4 s |\n| Tilt down from summit to band | the climb ends in the data | 24.0 s |\n| Log-zoom pull-back to the wall | final lockup, hold ≥ 3 s | 29.4–30.6 s |\n\nUnified transition grammar: layers change by squeegee; posters change through foreground trees; the film ends with a squeegee pulling the end-card ink. No dissolves and no bare cuts.\n\nDemo motion numbers: info band items 0.18 s each on eighth notes; accent inks `sub: 1` (half a beat late); screen lift 0.4 s; palette swap blade at −12° over 0.35 s; climb parallax `(camTopY − camY) × (depth − 1) × 0.42`, each spur slides sideways (Gaussian bump, 190 u × depth); paper gaps 3 u and thickness shadows 9 u at 28 %, scaled by \"looseness\", zero on the registration snap. Hook truck roll −1.7°.\n\n## Score structure\n\n- **Music**: American outdoor folk, 100 BPM, D major, open-D guitar strums (physical model), slide guitar (numpy), VCSL harmonica, cajon kick, brushes, upright bass. **Each pull is one strum**, and the chords climb D – D/F# – G – A as the layers come nearer. Poster 2 doubles to eighth notes (acceleration). The climb builds instrument by instrument. The registration snap is the loudest downbeat in the film.\n- **Foley by material**: squeegee on mesh (band-passed noise with a 220–280 Hz amplitude grain from the mesh; faster pull = brighter), wet ink \"squelch\" (falling sine plus sticky noise), aluminium screen clack plus hinge creak, paper stamps for stats, 16th-note ticks for trail dashes, a paper hiss for sliding layers, and a wood-and-metal registration clamp.\n- **Ambience**: studio room tone; the lake inside poster 1 fades in when the screen lifts (the print \"wakes up\"); waterfall (J-cut 0.9 s early); mountain wind (J-cut into the silence, L-cut out onto the wall); visitor-center murmur, a door, footsteps.\n- **Silences**: 18.0–19.2 s (music off; the waterfall tail fades to about −59 dBFS; the first sound after it is a long slide up) and 23.4–24.0 s (wind only; the first sound after it is the clamp plus the full band).\n- Music ducks 2.5 dB under foley. Master: −14 LUFS.\n\n## Palette & props\n\n- **Palette discipline**: one palette per poster, 6 inks: `sky1` (light sky), `sky2` (deep sky / bands), `far`, `mid`, `near` (darkest, also the info band), `sun` (the one bright accent: sun, trail, difficulty, climb). An optional `glow` is the lit face of mountains. A given poster should use ≤ 6 of these. The demo palettes are:\n  - dawn `#F6CD98 #EE9A73 #9A7FA8 #3E7079 #1E3B3F #FBE6B4`\n  - noon `#E4EEDC #86BCD0 #C2AE92 #4C8753 #1D4331 #F2C14A`\n  - golden `#F7D787 #E9A94F #A57C68 #5E7A45 #2B3A28 #FFF1C4`\n  - dusk `#F4B461 #D8613F #7C3E5F #43325A #1B1B2F #FBE3A6`\n  - Paper `#F2E8D2`. Title banner `#F7C66B #E4683F #2F6F73 #1C2A33`.\n- **Contrast is automatic**: text inks are picked by WCAG contrast against the ink underneath (`pickInk`). A night palette will not make the header vanish.\n- **Shapes**: mountains are midpoint-displaced ridges with a jagged lit facet; pines are one outline of drooping tiers plus a short trunk; water is a flat body with horizontal glint bars; forests are rows of pines on a solid base. Everything is drawn with hard edges.\n- **Poster template** (units 1000×1500): paper border 26 u; art area to y = 1140; the scene is shifted up 50 u, so a little sky is cropped to make room for the info band. The band (y 1148–1474, `near` ink) holds the trail name (Big Shoulders Display 900, up to 122 u, auto-fit), the number `01`–`04` in `sun`, a 6 u `sun` rule, and a row of stats: labels 34–38 u (Outfit 600, letter-spaced), values 48–68 u (Big Shoulders 800). Columns are sized by content. On a wall at 0.49 scale, labels are about 18 px and values about 31 px.\n- **Header**: park name tracked out at 62 u, printed in the sky.\n- **Texture budget**: paper tile at 0.6 u per texel, mottle multiply at 55 %, pinholes at 75 %, then ffmpeg grain 3. More than this starts to read as risograph.\n\n## Titles & text\n\nNo narration and no subtitles: the poster text *is* the information. The title card is a printed 4:1 banner (1800×440 u, title split into two balanced lines), framed to fill the width (≈5 % margins, ≈40 % of frame height), which becomes the header of the final wall (hung at 1150 px wide so the posters keep ≥30 px values). Reading rule used in the demo: each text stays ≥ chars/12 + 1 s (min 1.5 s) after its **last** item lands. The timeline computes this from `content.json` and rounds up to the beat.\n\n## End card\n\nThe end card is printed as a last landscape mini-poster in two pulls: a split-fountain pull for the art (sky bands, sun ring, ridge, trail dashes, title), then a `near` pull for the info band (style name, `Lemo-Opuscar`, `LemoLab × Claude Opus 5.5`, font and sample credits). The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Build notes\n\n`sh styles/silkscreen-poster/demo/build.sh` rebuilds everything:\n1. `tools/timeline.mjs` prints the timeline derived from `content.json`.\n2. `core/render/events.mjs` → `events.json` (every pull, lift, band, name, item, wipe, swap, part, silence, clack).\n3. `music/compose.py` reads `events.json` → `score.wav` plus stems.\n4. `mix.py` → `mix.wav` (ambience, foley, ducking, silence windows).\n5. `tools/cuecheck.py` checks the mix onsets against the events: median error 4 ms; 30/33 within 1 frame. The rest are overlapping events and slow harmonica attacks.\n6. Render (`--workers 2`, through a render limiter if your machine has one) → `mux.sh … 24 3`.\n\nFiles: `engine/silk.js` (print engine), `engine/scenes.js` (5 built-in scenes), `engine/poster.js` (template, banner, contrast), `film.js` (timeline and shots), `mix.py`, `music/compose.py`. Roughly 0.1 s per frame; a full render takes under a minute.\n\n### Pitfalls we hit\n\n- **Stroke-based edge effects draw internal lines on unioned paths.** A forest drawn as a union of pines showed every tree outline. Do sheen and trap with fills only: fill the shape, then fill it again shifted, inside a clip.\n- **Screen shadow darkened the whole print.** The frame's drop shadow must be a ring (even-odd), not a full rectangle, or everything under the mesh looks muddy.\n- **Blue shadow facets on granite read as water.** Keep shadow planes in `near` and put them on the inside faces next to the waterfall.\n- **A thick squeegee across a close-up splits the frame into \"two pictures\".** Tilt the blade, hide most of the handle, and keep the geometry continuous across it.\n- **Jagged-triangle ink beads read as paper edges.** The bead needs roundness: lit half, dark underside, highlight and strands.\n- **Parallax alone reads as \"the mountains are moving\".** Show paper gaps and thickness shadows while layers are loose, and snap them to zero with a sound.\n- **Night palettes hid the header and labels.** Choose text inks by contrast (`pickInk`), never by a fixed key.\n- **Wet-sheen gradient stuck at the end of the pull** (condition `p < 1.02` stays true forever). Fade it out by time.\n- **Tree-wipe covered the frame for 0.4 s** (a dark blank). Centre the silhouette on the switch time so full cover lasts about 1 frame.\n- Four trails at these reading times run to about 45 s. See \"Four trails in 40 s\" below for how to compress.\n- **A 7:1 title banner is a sliver in a 16:9 frame** (about 1/5 of the height, lots of empty table). Make the banner about 4:1 so it can fill the width and about 40 % of the height.\n- **Random coloured dots on the table read as confetti or placeholders.** Build a real workbench: planks, grain, knots, a few large muted ink stains and torn tape.\n- **Close-ups on an info band must keep the whole band in frame** with ≥5 % side margins (z ≤ 1.75 for a 1000 u poster). Close-ups on a sheet being printed must keep the sheet's edge in frame, or the viewer sees only a flat colour.\n\n## Engine reference\n\n`engine/silk.js` prints **any shape** in this style: it only needs a `Path2D` in whatever units the current transform uses.\n\n| Function | What it does |\n|---|---|\n| `makeTextures(paperHex, seed)` | paper, mottle and pinhole tiles (once) |\n| `paperSheet(ctx, T, x, y, w, h)` | paper stock |\n| `ink(ctx, part, o)` | one ink layer. `part = { path, knock?, paint? }` (`knock` = knocked-out holes, `paint(ctx)` = custom fill such as text). `o = { color, reg:[dx,dy], clip, sheen, trap }` |\n| `wipeRegion(box, dir, p, seed)` / `wipeFront(...)` | the ragged squeegee front as a clip path, and where the blade is |\n| `squeegee(ctx, a, b, lead, o)` | blade from `a` to `b` moving along `lead`; `o.beads=[{t0,t1,color}]` (split fountain), `roll`, `handle` 0–1, `scale` |\n| `screenFrame(ctx, box, o)` | hinged screen with mesh, emulsion and tape; `lift` 0–1 |\n| `inkFinish(ctx, T, x, y, w, h)` | mottle and pinholes over the sheet |\n| `bandSteps(x, w, y0, y1, n)` | stepped colour bands (the gradient substitute) |\n| `ridgeLine`, `polyPath`, `circlePath`, `ringPath` | shape helpers |\n\n`engine/poster.js`: `buildPoster(content, trail, i, n)`, `drawPoster(ctx, P, { pal, T, prog, off, reg, sep, swap, items, … })`, `drawBanner`, `pickInk`. `engine/scenes.js`: `buildScene('lake'|'waterfall'|'ridge'|'forest'|'coast')` returns planes you can reorder or extend.\n\nMinimal example: a warm-orange `#D97757` four-point spark with a cursor tail, printed in two inks and knocked out of a sky, then pulled in by the squeegee:\n```js\nimport { makeTextures, paperSheet, ink, wipeRegion, wipeFront, squeegee, inkFinish, polyPath, rectPath, circlePath } from './engine/silk.js';\nconst T = makeTextures('#F2E8D2');\npaperSheet(ctx, T, 0, 0, 800, 600);\nconst spark = polyPath([[400,180],[430,270],[520,300],[430,330],[400,420],[370,330],[280,300],[370,270]]);\nconst tail = rectPath(540, 285, 160, 30);\nconst p = 0.7;                                                    // 70 % of the pull done\nconst clip = wipeRegion([0, 0, 800, 600], 'right', p, 3);\nink(ctx, { path: rectPath(0, 0, 800, 600), knock: circlePath(400, 300, 150) }, { color: '#1C2A33', clip, sheen: 1 });   // sky with a knocked-out halo\nink(ctx, { path: spark }, { color: '#D97757', reg: [2, -1], clip, sheen: 1, trap: 1 });\nink(ctx, { path: tail }, { color: '#D97757', reg: [2, -1], clip, sheen: 1 });\nconst x = wipeFront([0, 0, 800, 600], 'right', p);\nsqueegee(ctx, [x + 10, -20], [x + 10, 620], [1, 0], { color: '#D97757', roll: x / 30 });\ninkFinish(ctx, T, 0, 0, 800, 600);\n```\nSingle-colour posters: keep one palette key (usually `sun`) as the only colour and set the other inks to tints of one hue. `pickInk` keeps the text legible.\n\n## content.json fields\n\nAll text, data and colour come from `demo/content.json`; `film.js` has no copy in it.\n\n| Field | Type | Range | If out of range |\n|---|---|---|---|\n| `park` | string | ≤ 22 chars | header is letter-spaced at 62 u; longer names overflow the sky width (shorten or reduce tracking) |\n| `title` | string | ≤ 34 chars | auto-fits 132 → 60 u on the banner; under 60 u it gets too small to read |\n| `footer` | string | ≤ 45 chars | one line in the banner strip; the wall hold grows with its reading time |\n| `trails[]` | array | **1–4** | 1 = press only (no climb); 2 = press + climb; 3 = press, quick, climb; 4 = press, quick, quick, climb (about 45 s, see below). Above 4, the wall posters become too small to read |\n| `trails[].name` | string | ≤ 22 chars | auto-fits 122 → 60 u |\n| `trails[].difficulty` | `easy` \\| `moderate` \\| `hard` \\| `expert` | — | unknown values show 1 filled triangle |\n| `trails[].distance` | number | any | printed as `3.2 KM` (unit from `units.distance`) |\n| `trails[].time` | string | ≤ 7 chars (`1 h`, `45 min`) | the column widens and all values shrink together (min 48 u) |\n| `trails[].elevation` | number \\| null | null hides the CLIMB column | shown in `sun` ink as `↑1,100 M` |\n| `trails[].scene` | `lake` \\| `waterfall` \\| `ridge` \\| `forest` \\| `coast` | built in | unknown → `lake` |\n| `trails[].time_of_day` | key into `palette` | `dawn`, `noon`, `golden`, `dusk`, `night` | missing → `noon`. The climb re-inks from the previous trail's palette through `golden` to this one |\n| `palette.<time>` | `{sky1, sky2, far, mid, near, sun, glow?}` | hex | text contrast is checked automatically |\n| `palette.paper`, `palette.wall`, `banner_time` | hex / object / key | — | — |\n\n**Steps**: edit `content.json` → `sh demo/build.sh`. There is no TTS; the music and mix re-time themselves from `events.json`. To preview another file without overwriting: `node core/render/still.mjs styles/silkscreen-poster/demo 30 --q content=content_alt.json`.\n\n**Four trails in 40 s**: the reading rule makes each middle poster about 6 s long. Options, in order of preference:\n1. Print the two middle posters **side by side on one table in the same pulls** (one quick section, two bands, read together).\n2. Drop the per-item stamp spacing from an eighth note to a sixteenth for middle posters.\n3. Skip the band close-up on middle posters and let them be read on the final wall (extend the wall hold by 2 s).\n\n`content_alt.json` (4 walks, dawn/golden/noon/night, a new park, wall and banner palette) is the tested example. Its stills are in `demo/stills/alt_*.jpg`.\n\nMinimal content:\n```json\n{ \"park\": \"Pine Lake\", \"title\": \"One Walk at Pine Lake\", \"footer\": \"Open dawn to dusk\",\n  \"units\": { \"distance\": \"km\", \"elevation\": \"m\" }, \"banner_time\": \"dawn\",\n  \"trails\": [ { \"name\": \"Shore Path\", \"difficulty\": \"easy\", \"distance\": 2, \"time\": \"40 min\",\n                \"elevation\": null, \"scene\": \"lake\", \"time_of_day\": \"dawn\" } ],\n  \"palette\": { \"paper\": \"#F2E8D2\",\n    \"dawn\": { \"sky1\": \"#F6CD98\", \"sky2\": \"#EE9A73\", \"far\": \"#9A7FA8\", \"mid\": \"#3E7079\", \"near\": \"#1E3B3F\", \"sun\": \"#FBE6B4\" } } }\n```\n\nSwapping this file and running `build.sh` checks that the engine re-flows; it is not how a user's film is made.\n"
+  },
+  "narration": [],
+  "verbatim_published_script_files": {
+    "content.json": {
+      "park": "Granite Valley",
+      "title": "3 Trails in Granite Valley",
+      "kicker": "Visitor Center Trail Guide",
+      "footer": "Free trail maps at the Visitor Center",
+      "units": {
+        "distance": "km",
+        "elevation": "m"
+      },
+      "trails": [
+        {
+          "name": "Lakeshore Loop",
+          "difficulty": "easy",
+          "distance": 3.2,
+          "time": "1 h",
+          "elevation": null,
+          "scene": "lake",
+          "time_of_day": "dawn"
+        },
+        {
+          "name": "Cascade Falls Trail",
+          "difficulty": "moderate",
+          "distance": 7,
+          "time": "3 h",
+          "elevation": null,
+          "scene": "waterfall",
+          "time_of_day": "noon"
+        },
+        {
+          "name": "Summit Ridge",
+          "difficulty": "hard",
+          "distance": 14,
+          "time": "7 h",
+          "elevation": 1100,
+          "scene": "ridge",
+          "time_of_day": "dusk"
+        }
+      ],
+      "banner_time": "banner",
+      "palette": {
+        "banner": {
+          "sky1": "#F7C66B",
+          "sky2": "#E4683F",
+          "far": "#2F6F73",
+          "mid": "#2F6F73",
+          "near": "#1C2A33",
+          "sun": "#FBE3A6",
+          "glow": "#F7C66B"
+        },
+        "paper": "#F2E8D2",
+        "wall": {
+          "board": "#5E4432",
+          "groove": "#3F2C21",
+          "rail": "#8A6547"
+        },
+        "dawn": {
+          "sky1": "#F6CD98",
+          "sky2": "#EE9A73",
+          "far": "#9A7FA8",
+          "mid": "#3E7079",
+          "near": "#1E3B3F",
+          "sun": "#FBE6B4"
+        },
+        "noon": {
+          "sky1": "#E4EEDC",
+          "sky2": "#86BCD0",
+          "far": "#C2AE92",
+          "mid": "#4C8753",
+          "near": "#1D4331",
+          "sun": "#F2C14A",
+          "glow": "#F0DFA6"
+        },
+        "golden": {
+          "sky1": "#F7D787",
+          "sky2": "#E9A94F",
+          "far": "#A57C68",
+          "mid": "#5E7A45",
+          "near": "#2B3A28",
+          "sun": "#FFF1C4",
+          "glow": "#F4C065"
+        },
+        "dusk": {
+          "sky1": "#F4B461",
+          "sky2": "#D8613F",
+          "far": "#7C3E5F",
+          "mid": "#43325A",
+          "near": "#1B1B2F",
+          "sun": "#FBE3A6",
+          "glow": "#E8683F"
+        },
+        "night": {
+          "sky1": "#3D4B72",
+          "sky2": "#27304F",
+          "far": "#4E5C82",
+          "mid": "#232B45",
+          "near": "#12152A",
+          "sun": "#EDE6C8"
+        }
+      }
+    }
+  },
+  "timed_shot_prompts": [
+    {
+      "start": 0,
+      "end": 1,
+      "name": "Truck with the split fountain",
+      "visual_prompt": "Extreme close cream banner on a wooden workbench; orange/gold stepped sky, teal ridge and cream concentric sun rings arrive behind vertical squeegee. Rounded bead carries separate flat inks, a sliver of handle and screen edge visible. Paper pinholes and tiny misregistration stay fixed to print.",
+      "onscreen_text": "",
+      "camera_motion": "Camera trucks with blade, roll −1.7 degrees; keep sheet edge in frame.",
+      "sound_direction": "One long mesh scrape and guitar strum; wet ink bead.",
+      "transition": "Linear steady ink pull, no fades.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 1,
+      "end": 1.65,
+      "name": "Reveal the title banner",
+      "visual_prompt": "Screen hinges upward while camera pulls back to an approximately 4:1 landscape banner with paper border and taped corners. Title prints left-to-right1.2–1.5 and footer1.35–1.6. Banner fills width with about5% margins.",
+      "onscreen_text": "3 TRAILS IN\nGRANITE VALLEY\nFREE TRAIL MAPS AT THE VISITOR CENTER",
+      "camera_motion": "Fast ease-out pullback0.65s.",
+      "sound_direction": "Hinge creak, screen clack, two shorter pulls.",
+      "transition": "Screen lift0.4s with ring shadow, never full rectangle.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 1.65,
+      "end": 4.8,
+      "name": "Read the guide banner",
+      "visual_prompt": "Hold completed banner: condensed dark two-line title over orange/yellow sky bands, teal low hills, cream sun at right; dark footer strip. Grainy horizontal woodplanks extend around it, tape marks at four corners.",
+      "onscreen_text": "3 TRAILS IN\nGRANITE VALLEY\nFREE TRAIL MAPS AT THE VISITOR CENTER",
+      "camera_motion": "Locked top-down, slight settled table framing.",
+      "sound_direction": "Folk opening settles; quiet studio room.",
+      "transition": "Maintain3.2s title reading hold.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 4.8,
+      "end": 5.4,
+      "name": "Move to the first sheet",
+      "visual_prompt": "Camera tilts/trucks across wooden bench to tall unprinted cream sheet held in hinged screen. Neatly aligned paper borders and frame establish physical printing scale.",
+      "onscreen_text": "",
+      "camera_motion": "Tilt across table to full sheet.",
+      "sound_direction": "Table/hinge movement; first layer strum ready5.4.",
+      "transition": "Continuous table move; no bare cut.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 5.4,
+      "end": 6,
+      "name": "Lake sky pull",
+      "visual_prompt": "Dawn palette sky #F6CD98/#EE9A73 in thinning flat bands; concentric cream sun rings and park header land on half beat. Sheet below remains untouched.",
+      "onscreen_text": "GRANITE VALLEY",
+      "camera_motion": "Locked top-down whole1000×1500 sheet.",
+      "sound_direction": "Guitar D, mesh scrape, half-beat accent.",
+      "transition": "Ragged squeegee pull lasts0.45s, no opacity fade.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 6,
+      "end": 6.6,
+      "name": "Lake far mountains",
+      "visual_prompt": "Lavender #9A7FA8 midpoint-displaced ridge with sharp golden lit facets prints over sky. Value is lighter than foreground, no blur.",
+      "onscreen_text": "",
+      "camera_motion": "Same whole-sheet stage.",
+      "sound_direction": "D/F# strum and scrape.",
+      "transition": "Second opaque0.45s pull.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 6.6,
+      "end": 7.2,
+      "name": "Lake middle shore",
+      "visual_prompt": "Teal #3E7079 forest and lake plane print; dense pine tiers follow bank. Peach water includes cream horizontal glint bars aligned toward light source.",
+      "onscreen_text": "",
+      "camera_motion": "Locked sheet, geometry coherent under blade.",
+      "sound_direction": "G chord, waking lake ambience begins with lift later.",
+      "transition": "Third opaque0.45s pull.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 7.2,
+      "end": 7.8,
+      "name": "Lake foreground",
+      "visual_prompt": "Near #1E3B3F ink prints two framing pine silhouettes, rough rock island, bank and foreground ridge. Route dashes in cream accent become distinct.",
+      "onscreen_text": "",
+      "camera_motion": "Full sheet before camera moves.",
+      "sound_direction": "A chord, near scrape and clack.",
+      "transition": "Final picture pull; screen lift at7.8.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 7.8,
+      "end": 9,
+      "name": "Lake band push",
+      "visual_prompt": "Screen lifts, finished lake awakens. Camera pushes and tilts down; entire dark band stays within frame with5% side margins. Band prints8.4, name waits9.0.",
+      "onscreen_text": "",
+      "camera_motion": "Push/tilt7.8–9.0, do not crop band edges.",
+      "sound_direction": "Hinge, lake ambience and warm guitar.",
+      "transition": "Information arrives through its own ink pull.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 9,
+      "end": 10.5,
+      "name": "Print the easy facts",
+      "visual_prompt": "Condensed cream LAKESHORE LOOP at left, large01 at right, cream rule. Labels and values stamp in three columns: LEVEL easy with one filled/two outline triangles, DISTANCE3.2KM, TIME1H. Each item prints0.18s beginning9.6,9.9,10.2.",
+      "onscreen_text": "LAKESHORE LOOP\n01\nLEVEL\n△△△ EASY\nDISTANCE\n3.2 KM\nTIME\n1 H",
+      "camera_motion": "Band close-up, all columns legible.",
+      "sound_direction": "Paper stamps on eighth subdivisions, route ticks.",
+      "transition": "Name and items print left-to-right; no fades.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 10.5,
+      "end": 13.2,
+      "name": "Read the lakeshore card",
+      "visual_prompt": "Hold finished band and lower part of lake scene, route above it. Cream paper borders and woodtable remain visible at sides. One filled difficulty triangle.",
+      "onscreen_text": "LAKESHORE LOOP · 01\nEASY · 3.2 KM · 1 H",
+      "camera_motion": "Locked reading hold.",
+      "sound_direction": "Lake and guitar; waterfall J-cut from12.3.",
+      "transition": "A foreground pine begins moving over picture around13.2.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 13.2,
+      "end": 14.4,
+      "name": "Waterfall on eighth notes",
+      "visual_prompt": "Near-ink tree silhouette crosses full frame for approximately one frame at13.2. Next poster prints four fast layers: sky12.9, far13.5, mid13.8, near14.1, each0.26s. Blue stepped sky and gold sun, pale distant snowy peaks, tan granite walls with deep green inside faces; tall waterfall is unprinted cream paper narrowing into blue basin. Pine rows frame falls.",
+      "onscreen_text": "GRANITE VALLEY",
+      "camera_motion": "Begin on sky detail; subsequent pullback reveals waterfall.",
+      "sound_direction": "Eighth-note guitar and brighter mesh; waterfall ambience wakes.",
+      "transition": "Tree wipe, then steady quick pulls. White falls must be negative space.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 14.4,
+      "end": 15,
+      "name": "Waterfall detail becomes poster",
+      "visual_prompt": "Pull back from white waterfall to full sheet then return/tilt to complete lower band. Near green band arrives14.7, name15.0.",
+      "onscreen_text": "",
+      "camera_motion": "Pullback14.4–15.12; sheet edge remains apparent.",
+      "sound_direction": "Waterfall and second screen movement.",
+      "transition": "Material printing transition.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 15,
+      "end": 16.1,
+      "name": "Print moderate facts",
+      "visual_prompt": "Dark green card has cream CASCADE FALLS TRAIL, yellow02, yellow rule, Outfit labels and condensed values. Two filled/one outline difficulty triangles, 7KM and3H print15.3/15.6/15.9.",
+      "onscreen_text": "CASCADE FALLS TRAIL\n02\nLEVEL\nMODERATE\nDISTANCE\n7 KM\nTIME\n3 H",
+      "camera_motion": "Close band with lower waterfall visible above.",
+      "sound_direction": "Three paper stamps and guitar subdivisions.",
+      "transition": "Left-to-right printed fact row.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 16.1,
+      "end": 19.2,
+      "name": "Read and listen to falls",
+      "visual_prompt": "Hold all moderate trail facts; preserve readable band before next change. Camera remains still while waterfall inside print is a flat light shape.",
+      "onscreen_text": "CASCADE FALLS TRAIL · 02\nMODERATE · 7 KM · 3 H",
+      "camera_motion": "Locked card hold.",
+      "sound_direction": "Intentional1.2s music silence; first sound after is long slide up.",
+      "transition": "Music stops18.0–19.2; waterfall tail nearly vanishes before climb.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 19.2,
+      "end": 20.6,
+      "name": "Enter the hard trail",
+      "visual_prompt": "One-frame foreground pine wipe19.2 enters ridge close-up. Dashed cream route climbs between pines and jagged granite spurs. Separate paper planes have visible3-unit gaps and9-unit thickness shadows, with near plane sliding past at19.704 and spurC at20.46.",
+      "onscreen_text": "",
+      "camera_motion": "Continuous crane up trail19.2–23.4; parallax per depth, no floating mountains without paper thickness.",
+      "sound_direction": "Long upward slide, paper hiss; instruments build individually.",
+      "transition": "Route ticks print segment by segment.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 20.6,
+      "end": 22,
+      "name": "First day-to-evening re-ink",
+      "visual_prompt": "Diagonal squeegee at−12degrees recolours identical ridge geometry from noon toward golden over0.35s. Dashed route remains registered. SpurB parts at21.3; warm light moves over geometric rock faces, pines darken.",
+      "onscreen_text": "",
+      "camera_motion": "Continue vertical crane and lateral spurs, staying inside print.",
+      "sound_direction": "Mesh wipe, acoustic climb expands.",
+      "transition": "Palette swap20.6, not a dissolve or scene geometry replacement.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 22,
+      "end": 23.4,
+      "name": "Dusk summit",
+      "visual_prompt": "Second0.35s re-ink at22 turns sky orange, far ridges plum, near mountain violet/navy; concentric cream sun rings rise behind ridge summit. SpurA parts22.14. Cream dashed trail winds up central pointed peak.",
+      "onscreen_text": "",
+      "camera_motion": "Crane reaches summit23.4.",
+      "sound_direction": "Slide/harmonica ascent, ticks and paper hiss.",
+      "transition": "Same landscape geometry, golden→dusk palette; loose paper planes remain separated.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 23.4,
+      "end": 24,
+      "name": "Wind before registration",
+      "visual_prompt": "Hold close summit, route and sun in dusk inks. Separated planes pause, tiny cream paper gaps remain visible until the hit.",
+      "onscreen_text": "",
+      "camera_motion": "Locked summit hold.",
+      "sound_direction": "Wind only; first following sound is clamp.",
+      "transition": "No filler or music in this0.6s pause.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 24,
+      "end": 24.9,
+      "name": "Snap and descend to band",
+      "visual_prompt": "At24.0 all planes clamp into registration: gaps and thickness shadows snap to zero. Camera tilts down through winding trail to near-navy band, printing24.6.",
+      "onscreen_text": "",
+      "camera_motion": "Summit-to-band tilt24.0–24.9.",
+      "sound_direction": "Loudest downbeat: wood/metal clamp plus full band.",
+      "transition": "One decisive register snap, no fade.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 24.9,
+      "end": 26.4,
+      "name": "Print the hardest facts",
+      "visual_prompt": "Gold condensed SUMMIT RIDGE and03; coral small labels above gold values in four columns. Three filled difficulty triangles, HARD,14KM,7H and upward-arrow1,100M. Four items start25.2,25.5,25.8,26.1.",
+      "onscreen_text": "SUMMIT RIDGE\n03\nLEVEL\nHARD\nDISTANCE\n14 KM\nTIME\n7 H\nCLIMB\n↑1,100 M",
+      "camera_motion": "Band close-up retains all four columns and5% margins.",
+      "sound_direction": "Four paper stamps and full folk cadence.",
+      "transition": "No omitted climb datum; reading rhythm follows complete last item.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 26.4,
+      "end": 29.4,
+      "name": "Read the summit guide",
+      "visual_prompt": "Hold completed four-column hard-trail band with lower dusk trail visible above; all small labels contrasting coral and values warm cream.",
+      "onscreen_text": "SUMMIT RIDGE · 03\nHARD · 14 KM · 7 H · ↑1,100 M",
+      "camera_motion": "Locked card, no premature pullback.",
+      "sound_direction": "Wind L-cut toward next room; music resolves.",
+      "transition": "Three-second reading hold after final stat.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 29.4,
+      "end": 30.6,
+      "name": "All prints on the wall",
+      "visual_prompt": "Logarithmic pullback reveals three vertically hung posters side-by-side on dark vertical wooden visitor-center wall. Original banner hangs centred above. Each poster distinct dawn/noon/dusk but same border and band template.",
+      "onscreen_text": "",
+      "camera_motion": "Log-zoom pullback1.2s, smooth scale rather than linear zoom.",
+      "sound_direction": "Wind leaves, murmur/door/footsteps enter, drying-rack clip sounds.",
+      "transition": "Physical sheet edges/shadows persist.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 30.6,
+      "end": 34.8,
+      "name": "Visitor-center series hold",
+      "visual_prompt": "Whole wall shows banner above three equal-sized posters. Lakeshore left, waterfall centre, summit right; all facts retained and readable. Header1150px at production canvas, posters approximately0.49scale; small labels≈18px and values≈31px at1080p.",
+      "onscreen_text": "3 TRAILS IN GRANITE VALLEY\nFREE TRAIL MAPS AT THE VISITOR CENTER\nLAKESHORE LOOP · 01 · EASY · 3.2 KM · 1 H\nCASCADE FALLS TRAIL · 02 · MODERATE · 7 KM · 3 H\nSUMMIT RIDGE · 03 · HARD · 14 KM · 7 H · ↑1,100 M",
+      "camera_motion": "Gentle settled lateral wall framing, preserve full4.2s hold.",
+      "sound_direction": "Visitor-center room and folk cadence.",
+      "transition": "No blank transition hold.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    },
+    {
+      "start": 34.8,
+      "end": 38.416667,
+      "name": "Last mini-poster and credits",
+      "visual_prompt": "Landscape end print on cream stock. Split-fountain upper art has orange banded sky, concentric cream sun, plum ridge and cream dashed trail, with dark condensed title. Second near-navy pull35.3–35.6 prints style line and compact production credits below. Newly generated version honestly identifies GPT and actual fresh audio/assets in original credit area.",
+      "onscreen_text": "3 TRAILS IN GRANITE VALLEY\nSILKSCREEN TRAVEL POSTER",
+      "camera_motion": "Locked end-sheet frame; cream border visible.",
+      "sound_direction": "Two final mesh gestures, ink bead/wood contact and folk ending.",
+      "transition": "Two physical squeegee pulls. Preserve measured922frames,38.416667s, including final encoded-frame tail.",
+      "material_requirements": "Opaque hard-edged silkscreen on cream #F2E8D2 stock. Six flat inks per poster; stepped sky bands, no gradients or line outlines. Fine pinholes, modest mottle, 1–3 px registration slips and filled edge traps. The workbench has dark wooden planks, grain, knots, muted stains and tape corners. Hinged aluminium/wood screen shows mesh and ring shadow; rounded viscous ink bead and squeegee blade drive every reveal. Big Shoulders Display 900 names and Outfit 600 tracked labels are printed ink. Posters are 1000×1500 units with 26-unit borders, art to y1140 and dark information band y1148–1474."
+    }
+  ],
+  "published_text_source_inventory": {
+    "note": "Verbatim literals from text/annotation/caption sourcecalls. This supplemental audit index may include formatting/style strings; shot narrativecards and scripts above are authoritative. Source path/line retained to resolve exacttext.",
+    "entries": [
+      {
+        "file": "outputs/gptcar/styles/silkscreen-poster/demo/engine/poster.js",
+        "line": 123,
+        "published_source_literals": [
+          "14px",
+          "center",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/silkscreen-poster/demo/engine/poster.js",
+        "line": 135,
+        "published_source_literals": [
+          "left",
+          "alphabetic"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/silkscreen-poster/demo/engine/poster.js",
+        "line": 137,
+        "published_source_literals": [
+          "0px",
+          "right"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/silkscreen-poster/demo/engine/poster.js",
+        "line": 147,
+        "published_source_literals": [
+          "; c.textAlign = "
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/silkscreen-poster/demo/engine/poster.js",
+        "line": 152,
+        "published_source_literals": [
+          "; c.textAlign = "
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/silkscreen-poster/demo/engine/poster.js",
+        "line": 222,
+        "published_source_literals": [
+          "9px",
+          "center"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/silkscreen-poster/demo/engine/silk.js",
+        "line": 18,
+        "published_source_literals": [
+          "canvas"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/silkscreen-poster/demo/film.js",
+        "line": 33,
+        "published_source_literals": [
+          "banner"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/silkscreen-poster/demo/film.js",
+        "line": 34,
+        "published_source_literals": [
+          "squeegee",
+          "sky",
+          "lift",
+          "squeegee",
+          "title",
+          "squeegee",
+          "footer"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/silkscreen-poster/demo/film.js",
+        "line": 35,
+        "published_source_literals": [
+          "title"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/silkscreen-poster/demo/film.js",
+        "line": 174,
+        "published_source_literals": [
+          "golden"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/silkscreen-poster/demo/film.js",
+        "line": 391,
+        "published_source_literals": [
+          "900 118px BigShoulders",
+          "3px",
+          "center"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/silkscreen-poster/demo/film.js",
+        "line": 399,
+        "published_source_literals": [
+          "700 40px Outfit",
+          "14px",
+          "SILKSCREEN TRAVEL POSTER"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/silkscreen-poster/demo/film.js",
+        "line": 401,
+        "published_source_literals": [
+          "600 38px Outfit",
+          "9px",
+          "LEMO-OPUSCAR",
+          "LEMOLAB × CLAUDE OPUS 5.5"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/silkscreen-poster/demo/film.js",
+        "line": 403,
+        "published_source_literals": [
+          "FONTS: BIG SHOULDERS DISPLAY, OUTFIT (SIL OFL)"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/silkscreen-poster/demo/film.js",
+        "line": 404,
+        "published_source_literals": [
+          "SAMPLES: VCSL, VSCO 2 CE, KARORYFER (CC0) · ARTWORK, GUITARS & SOUND MADE IN CODE"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/silkscreen-poster/demo/index.html",
+        "line": 2,
+        "published_source_literals": [
+          "utf-8"
+        ]
+      }
+    ]
+  },
+  "published_cue_events": [
+    {
+      "t": 0,
+      "type": "squeegee",
+      "dur": 1,
+      "ink": "sky"
+    },
+    {
+      "t": 0,
+      "type": "section",
+      "kind": "banner",
+      "t1": 4.8,
+      "time_of_day": null
+    },
+    {
+      "t": 1,
+      "type": "lift"
+    },
+    {
+      "t": 1.2,
+      "type": "squeegee",
+      "dur": 0.3,
+      "ink": "title"
+    },
+    {
+      "t": 1.35,
+      "type": "squeegee",
+      "dur": 0.25,
+      "ink": "footer"
+    },
+    {
+      "t": 1.5,
+      "type": "title"
+    },
+    {
+      "t": 4.8,
+      "type": "tilt",
+      "i": 0
+    },
+    {
+      "t": 4.8,
+      "type": "section",
+      "kind": "press",
+      "t1": 13.2,
+      "time_of_day": "dawn"
+    },
+    {
+      "t": 5.4,
+      "type": "pull",
+      "i": 0,
+      "layer": "sky",
+      "n": 0,
+      "dur": 0.45
+    },
+    {
+      "t": 6,
+      "type": "pull",
+      "i": 0,
+      "layer": "far",
+      "n": 1,
+      "dur": 0.45
+    },
+    {
+      "t": 6.6,
+      "type": "pull",
+      "i": 0,
+      "layer": "mid",
+      "n": 2,
+      "dur": 0.45
+    },
+    {
+      "t": 7.2,
+      "type": "pull",
+      "i": 0,
+      "layer": "near",
+      "n": 3,
+      "dur": 0.45
+    },
+    {
+      "t": 7.8,
+      "type": "lift",
+      "i": 0
+    },
+    {
+      "t": 8.4,
+      "type": "band",
+      "i": 0
+    },
+    {
+      "t": 9,
+      "type": "name",
+      "i": 0
+    },
+    {
+      "t": 9.6,
+      "type": "item",
+      "i": 0,
+      "k": 0,
+      "last": 0,
+      "climb": 0
+    },
+    {
+      "t": 9.9,
+      "type": "item",
+      "i": 0,
+      "k": 1,
+      "last": 0,
+      "climb": 0
+    },
+    {
+      "t": 10.2,
+      "type": "item",
+      "i": 0,
+      "k": 2,
+      "last": 1,
+      "climb": 0
+    },
+    {
+      "t": 12.9,
+      "type": "pull",
+      "i": 1,
+      "layer": "sky",
+      "n": 0,
+      "dur": 0.26,
+      "quick": 1
+    },
+    {
+      "t": 13.2,
+      "type": "wipe",
+      "i": 1
+    },
+    {
+      "t": 13.2,
+      "type": "section",
+      "kind": "quick",
+      "t1": 19.2,
+      "time_of_day": "noon"
+    },
+    {
+      "t": 13.5,
+      "type": "pull",
+      "i": 1,
+      "layer": "far",
+      "n": 1,
+      "dur": 0.26,
+      "quick": 1
+    },
+    {
+      "t": 13.8,
+      "type": "pull",
+      "i": 1,
+      "layer": "mid",
+      "n": 2,
+      "dur": 0.26,
+      "quick": 1
+    },
+    {
+      "t": 14.1,
+      "type": "pull",
+      "i": 1,
+      "layer": "near",
+      "n": 3,
+      "dur": 0.26,
+      "quick": 1
+    },
+    {
+      "t": 14.4,
+      "type": "pullback",
+      "i": 1
+    },
+    {
+      "t": 14.7,
+      "type": "band",
+      "i": 1
+    },
+    {
+      "t": 15,
+      "type": "name",
+      "i": 1
+    },
+    {
+      "t": 15.3,
+      "type": "item",
+      "i": 1,
+      "k": 0,
+      "last": 0,
+      "climb": 0
+    },
+    {
+      "t": 15.6,
+      "type": "item",
+      "i": 1,
+      "k": 1,
+      "last": 0,
+      "climb": 0
+    },
+    {
+      "t": 15.9,
+      "type": "item",
+      "i": 1,
+      "k": 2,
+      "last": 1,
+      "climb": 0
+    },
+    {
+      "t": 18,
+      "type": "silence",
+      "dur": 1.2,
+      "pre": 1
+    },
+    {
+      "t": 19.2,
+      "type": "wipe",
+      "i": 2
+    },
+    {
+      "t": 19.2,
+      "type": "ascent",
+      "i": 2,
+      "dur": 4.199999999999999
+    },
+    {
+      "t": 19.2,
+      "type": "section",
+      "kind": "ascent",
+      "t1": 29.4,
+      "time_of_day": "dusk"
+    },
+    {
+      "t": 19.704,
+      "type": "part",
+      "i": 2,
+      "layer": "near"
+    },
+    {
+      "t": 20.46,
+      "type": "part",
+      "i": 2,
+      "layer": "spurC"
+    },
+    {
+      "t": 20.6,
+      "type": "swap",
+      "i": 2,
+      "k": 1,
+      "dur": 0.35
+    },
+    {
+      "t": 21.3,
+      "type": "part",
+      "i": 2,
+      "layer": "spurB"
+    },
+    {
+      "t": 22,
+      "type": "swap",
+      "i": 2,
+      "k": 2,
+      "dur": 0.35
+    },
+    {
+      "t": 22.14,
+      "type": "part",
+      "i": 2,
+      "layer": "spurA"
+    },
+    {
+      "t": 23.4,
+      "type": "silence",
+      "dur": 0.6000000000000014
+    },
+    {
+      "t": 24,
+      "type": "clack",
+      "i": 2
+    },
+    {
+      "t": 24,
+      "type": "tiltdown",
+      "i": 2
+    },
+    {
+      "t": 24.6,
+      "type": "band",
+      "i": 2
+    },
+    {
+      "t": 24.9,
+      "type": "name",
+      "i": 2
+    },
+    {
+      "t": 25.2,
+      "type": "item",
+      "i": 2,
+      "k": 0,
+      "last": 0,
+      "climb": 0
+    },
+    {
+      "t": 25.5,
+      "type": "item",
+      "i": 2,
+      "k": 1,
+      "last": 0,
+      "climb": 0
+    },
+    {
+      "t": 25.8,
+      "type": "item",
+      "i": 2,
+      "k": 2,
+      "last": 0,
+      "climb": 0
+    },
+    {
+      "t": 26.1,
+      "type": "item",
+      "i": 2,
+      "k": 3,
+      "last": 1,
+      "climb": 1
+    },
+    {
+      "t": 29.4,
+      "type": "wallpull"
+    },
+    {
+      "t": 29.4,
+      "type": "section",
+      "kind": "wall",
+      "t1": 34.8,
+      "time_of_day": null
+    },
+    {
+      "t": 30.6,
+      "type": "land",
+      "dur": 4.199999999999999
+    },
+    {
+      "t": 34.8,
+      "type": "endcard",
+      "dur": 3.6000000000000014
+    },
+    {
+      "t": 34.8,
+      "type": "section",
+      "kind": "end",
+      "t1": 38.4,
+      "time_of_day": null
+    },
+    {
+      "t": 35.3,
+      "type": "endpull",
+      "dur": 0.3
+    }
+  ],
+  "published_source_hashes": {
+    "outputs/gptcar/styles/silkscreen-poster/demo/content.json": "26bdcbdeb37d4adff485ccbfe3d8349c4638a745bf1776f7e51a0c3cc221b32a",
+    "outputs/gptcar/styles/silkscreen-poster/demo/content_alt.json": "3722d90716a92983bfc77f7fc95f5f0dcfbd79f3e1c78e8b90e61d2826e4417f",
+    "outputs/gptcar/styles/silkscreen-poster/demo/engine/poster.js": "33a12e1cc180b721f5918e40ee2fd62635fb624dc73f477a7fe66a5a4eb836ef",
+    "outputs/gptcar/styles/silkscreen-poster/demo/engine/scenes.js": "8f46fde92d9c8a08178cf1b03c1d3237ebb551d059cc040abac6d7312facd4fc",
+    "outputs/gptcar/styles/silkscreen-poster/demo/engine/silk.js": "9d73e4bcb9f400264daf638f99a3cc82b351197acda448573000c63843a2e7be",
+    "outputs/gptcar/styles/silkscreen-poster/demo/events.json": "b67f1dd79309039e50cb29b7291d364adff4157fa5f8288b399d2c48e037ea69",
+    "outputs/gptcar/styles/silkscreen-poster/demo/film.js": "6d431fcf25c91ed9d3b7878ccd538fd4253a03258ae76a97ce237cf586144a35",
+    "outputs/gptcar/styles/silkscreen-poster/demo/index.html": "d131838a8876df5c11fa7f0e02e0ef527caefffa04aca8e1161b585957d364fb",
+    "outputs/gptcar/styles/silkscreen-poster/demo/main.js": "00190bd1bb8e890488efc5fdc3e51997cc8f4e955ce6e3d62858b28211724126",
+    "outputs/gptcar/styles/silkscreen-poster/demo/mix.py": "7204ef8e26e1368795f004ebae4866f7f709062a7124044e41aed3a5a7a70357",
+    "outputs/gptcar/styles/silkscreen-poster/demo/music/compose.py": "651f19556a560450bb0ccbe03b4a9d3be6fff4180795b577bd5607bc346a0fec",
+    "outputs/gptcar/styles/silkscreen-poster/demo/tools/cuecheck.py": "eaca5f7f965b12bfff7200d64075937f09d4936d938d8fc3f2a74a0ee1fe12da"
+  },
+  "original_assets_and_licenses": [
+    {
+      "path": "outputs/gptcar/styles/silkscreen-poster/demo/CREDITS",
+      "sha256": "51a617e49fc224e92afbefaced3a06c1133ce6c2ec1ec15303c1bf6229852563",
+      "verbatim": "Three Trails — Silkscreen Travel Poster demo · credits\n\nAll artwork, poster designs, the park, trails and data are fictional and drawn by code in this folder (engine/, film.js). No generated images.\n\nFonts (SIL Open Font License 1.1)\n- Big Shoulders Display — Patric King / The Chicago Design Collective — fonts/BigShouldersDisplay.ttf, license fonts/OFL-BigShouldersDisplay.txt — https://github.com/google/fonts/tree/main/ofl/bigshouldersdisplay\n- Outfit — Rodrigo Fuenzalida — fonts/Outfit.ttf, license fonts/OFL-Outfit.txt — https://github.com/google/fonts/tree/main/ofl/outfit\n- League Gothic — The League of Moveable Type (bundled, not used in the final cut) — fonts/LeagueGothic.ttf, license fonts/OFL-LeagueGothic.txt\n\nMusic (music/compose.py; original, 100 BPM open-D folk)\n- Acoustic guitar: physical-model strums (core/audio/pluck.py); slide guitar: additive synthesis in numpy.\n- VCSL — Versilian Community Sample Library (CC0 1.0), https://github.com/sgossner/VCSL: harmonica, cajon, snare (brushes), shaker.\n- VSCO 2 Community Edition (CC0 1.0), https://github.com/sgossner/VSCO-2-CE: suspended cymbal.\n- Karoryfer Samples \"Sneakybass\" upright bass (CC0 1.0), https://github.com/sfzinstruments\n\nSound effects and ambience\n- Synthesized in mix.py: squeegee on mesh, ink bead, screen hinge, paper stamps, registration clamp, pine brush, lake, waterfall, wind, visitor-center room.\n"
+    }
+  ],
+  "engine_reuse_recommendation": "Reuse attributed generic drawing/material/rig/math engines described by STYLE/DEMO; share fonts and named licensed data/assets with hashes. Independently generate scene assembly, animation, shot/camera staging and freshaudio. Never import original film renderer, mastervideo,originalframes or mastertrack as newGPTwork. Preserve exactscript/cardlanguage and measuredoriginalframecount. Full originals are analytical references only.",
+  "audio_recreation_direction": "Fresh instrumental American outdoor folk, 100 BPM, D major: open-D acoustic guitar, slide guitar, harmonica, cajon, brushes and upright bass. Every pull gets a strum, D–D/F#–G–A approaching the foreground; eighth-note pulls for poster two. Music stops 18.0–19.2 and 23.4–24.0. Registration clamp at24.0 is the loudest downbeat. Recreate mesh scrape at220–280 Hz, wet ink squelch, hinge/screen clack, paper stamps, route ticks, paper hiss; lake, waterfall J-cut, mountain wind, visitor-center murmurs/door/steps. No narration. New music and sound recordings only.",
+  "v1_primary_deficits": [
+    "V1 reduced the full guide to20s and did not retain all facts, print order, full summit crane, silence windows and final wall reading hold.",
+    "Simple flat cards missed the opaque multicolour printing process, squeegee/bead/screen mechanics, fixed registration, stepped depth, paper separation/snap and re-inking geometry."
+  ],
+  "visual_audit": {
+    "status": "complete",
+    "method": "Complete original 1 fps contact-sheet sequence and published source cue boundaries inspected, plus listed exact short-action/transition frames. Does not claim every encoded frame.",
+    "sheets": [
+      "work/gptcar/reference/silkscreen-poster/sheets/sheet-01.jpg",
+      "work/gptcar/reference/silkscreen-poster/sheets/sheet-02.jpg",
+      "work/gptcar/reference/silkscreen-poster/sheets/sheet-03.jpg",
+      "work/gptcar/reference/silkscreen-poster/sheets/sheet-04.jpg"
+    ],
+    "exact_time_supplement": [
+      "work/gptcar/reference/silkscreen-poster/exact/t-1.4.jpg",
+      "work/gptcar/reference/silkscreen-poster/exact/t-13.2.jpg",
+      "work/gptcar/reference/silkscreen-poster/exact/t-13.75.jpg",
+      "work/gptcar/reference/silkscreen-poster/exact/t-19.2.jpg",
+      "work/gptcar/reference/silkscreen-poster/exact/t-20.75.jpg",
+      "work/gptcar/reference/silkscreen-poster/exact/t-22.15.jpg",
+      "work/gptcar/reference/silkscreen-poster/exact/t-23.75.jpg",
+      "work/gptcar/reference/silkscreen-poster/exact/t-24.05.jpg",
+      "work/gptcar/reference/silkscreen-poster/exact/t-35.4.jpg"
+    ]
+  }
+}

@@ -1,0 +1,974 @@
+{
+  "schema_version": "matched-original-brief-v2-audit-1",
+  "slug": "briefing-board",
+  "status": "reference-audited-asset-rebuild-required",
+  "original_title": "The Ship Decides",
+  "original_title_aliases_from_demo": [
+    "Demo: *The Ship Decides* (船说了算, 40.0 s) · `briefing-board.mp4` · source in [`demo/`](demo/)",
+    "",
+    "A river 1,000 m wide needs a bridge. The first instinct, piers all the way across, is stamped out the moment a container ship sails into one of them. The new rule: no piers in the channel, one span. Four bridge types are tested against the river's width, drawn to one scale. The river set the question; the ship sets the span."
+  ],
+  "published_premise_verbatim": "A river needs a bridge; four bridge types are tested on one briefing wall, and the ship that must pass underneath picks the winner.",
+  "published_premise_zh_verbatim": "一条河要架桥，四种桥型在一面简报墙上逐个受检，拍板的是桥下要过的船。",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "verbatim_original_conversation_prompt": null,
+    "published_brief_statement": null,
+    "reconstructed_replication_instruction": "Recreate the full published The Ship Decides scene order, story, exact narration and screen text at original timing/resolution/fps, including all specified subjects, performance, mechanisms, lens/light/material treatment, transitions and sonic hits. This is a reconstruction from published sources, not a quoted original conversational prompt.",
+    "reconstruction_basis": [
+      "Complete published STYLE.md and DEMO.md",
+      "Published narration, cards and timing source",
+      "Original movie: all regular contact sheets and named key-event frames"
+    ]
+  },
+  "original_format": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24.0,
+    "duration_s_exact_timeline": 40,
+    "duration_s_gallery_rounded": 40.0,
+    "duration_s_published_demo_text": "8",
+    "video_stream_metadata_verified": true,
+    "note": "Encoded target is frame_count/fps, not rounded catalogue or container audio duration.",
+    "frame_count": 960,
+    "duration_s": 40.0,
+    "container_duration_s": 40.0,
+    "production_canvas_width": 1920,
+    "production_canvas_height": 1080
+  },
+  "source_authorship": "Historical original by Lemomo/LemoLab using Claude Opus5.5. New output must identify actual GPT authorship and attribute any reused generic components.",
+  "source_hashes": [
+    {
+      "path": "styles/briefing-board/STYLE.md",
+      "sha256": "44669da808da4ed37e2a4a0f6e5d2b23008775a3c4870add04641d714e9f323d"
+    },
+    {
+      "path": "styles/briefing-board/DEMO.md",
+      "sha256": "5937681709e7ceb206a881351550d6c98932aaa82dec00f344ff4c5f38754be1"
+    },
+    {
+      "path": "styles/briefing-board/style.json",
+      "sha256": "71dddab315ee8836442646e7185435610be499c6ed8a4948575a0b7e734ed65e"
+    },
+    {
+      "path": "styles/briefing-board/demo/audio/lines.json",
+      "sha256": "bdad4871f0b2e1ca6832525c1d81a0f50a36c784dbbc7f1b3a2b82a9b2bd06c3"
+    },
+    {
+      "path": "styles/briefing-board/demo/audio/cues.json",
+      "sha256": "399cf97a08f4fb63a7ba93a78c3cc7a6c6962d9be47d66ea3a546c95088c4c14"
+    }
+  ],
+  "style_guide_sha256": "44669da808da4ed37e2a4a0f6e5d2b23008775a3c4870add04641d714e9f323d",
+  "style_guide_verbatim": "# Engineering Briefing Board — Style Prompt\n\n> One real whiteboard wall, filmed: window light on enamel, ghosts of erased marker, frame and tray. Cut-out photographs of real things land on it with weight; tags, magnets, a ruler and stamps are pinned to it; marker ink draws itself in three colours with fixed meanings. The camera rides the lines from fact to fact and only at the end pulls back to show the whole briefing.\n> References (grammar only): explainers filmed on a map wall; the long pull-back over a wall covered in work; drafting conventions (plan above elevation, dimension lines, hatching). Never copy them or name them in the film.\n\n## 1. Essence, and what it is not\n\n1. **A physical board in a room**: enamel, window falloff, a sliding reflection, ghosts of earlier work, frame and tray.\n2. **Real things on it**: cut-out photographs of the real objects, a few millimetres off the board, shadowed by one window, parallaxing. They are evidence: never a generated image presented as a real object.\n3. **Ink that means something**: graphite for names and rules, blue for water and measurement, red only for the decision; rejected ideas erased to ghosts.\n4. **One continuous wall**: no pages; the camera travels along lines, projections and leaders.\n5. **The whole wall, once**: every shot is a crop of the final briefing, seen whole only in the last pull-back, as a poster.\n\nNot **Whiteboard Explainer** (a hand drawing line art on a flat page): the board is a filmed object, subjects are photographs. Not **Data Storytelling**: comparisons are dimension lines in real units beside real objects. Not a keynote: no headers, centred bullets, page turns.\n\n## 2. Materials & rendering\n\n- **Board (z 0)**: procedural enamel, wiped ghost strokes, smudges, a window falloff, a sliding diagonal reflection; the frame shadows a warm grey wall.\n- **Ink (multiply)**: flat colour at about 90 %, lighter core, round caps, a wet-tip glint on the stroke being drawn. Lettering: a marker font revealed glyph by glyph with seeded tilt and baseline jitter. Erasing leaves a blurred ghost (about 7 %).\n- **Prints (z ≈ 6–14)**: photographs cut out at full resolution (a matting model, or a hand polygon / mask), clean edges, one shared grade (lower saturation, a touch warmer, lifted blacks). Thin structure (cables, wires, masts, railings) is measured in the photo and redrawn as clean lines in one colour. Shadow = blurred silhouette along one light vector, softer the higher the object. **No frame upsamples a photo**: ≥ 1 source px per screen px at its largest, measured; cap the zoom or find a bigger source.\n- **Secondary layer** (only where the camera never goes before the end): the photos as pinned prints, a source card, sums on sticky notes, a small sketch. Texture and proof for the final wall, lighter than the main line.\n- **Props (z ≈ 8–26)**: magnetic tags, magnets, a steel ruler, printed cards, a pitted stamp impression; the tray (z 70) nearest the lens.\n- **Camera**: parallax by height, sub-frame motion blur (180° shutter), light grain. Only subtitles are screen-space.\n\n## 3. Colour logic\n\n- Ground: the enamel and its light falloff; the wall around is neutral warm grey.\n- Ink: graphite = names, rules, facts; blue = water and measurement (dimensions, projection lines, measured numbers); red = the decision (a rejection, the key word of a verdict, the one mark to notice); grey for drafting only (extension lines, hatching).\n- Red is rare: two or three red marks per frame at most, never on a red object. Full colour belongs to the photographs; props stay neutral; a red magnet is a verdict.\n\n## 4. Type & subtitles\n\n- **Marker lettering**: a single-weight marker face covering every script the film uses (ours: LXGW Marker Gothic, OFL, subset — re-run when words change). Content 100–160 board px; a verdict 230–400.\n- **Printed labels** (tags, cards, stamps): a sturdy sans; credit lines in a monospace. A tag holds one to three words.\n- **Subtitles**: a frosted acrylic strip at the bottom centre with a blue marker tick. If the film is bilingual, the film's language sits on top. **One line per language**: `nowrap`, measured in the page against a 1,500 px safe width; a long line becomes two cues. Key content stays above the strip (bottom 15 %).\n- **Reading time**: subtitles ≥ max(1.8 s, speech + 0.6 s); board text stays fully in frame for CJK ÷ 4.5 + other ÷ 15 + 1.5 s from when it appears. In the final wall, text meant to be read is ≥ 20 px on screen.\n\n## 5. Motion quality\n\n- 24 fps on ones; nothing is stepped.\n- Camera: overlapping eased moves, velocity ∝ u^a (1−u)^b (a, b ≈ 1.5–4), so speed and acceleration never jump; b > a gives inertia. A hand-held breath (≤ 3 px) underneath; shake only on an impact.\n- Weight: prints are lowered from the camera side, land, bounce and settle as the shadow tightens; magnets clack on to pin them; tags swing; removed magnets pop toward the lens; struck things jolt and spring back. The camera may meet a landing close, briefly, on the object's most telling detail, then pulls out.\n- Blurred in motion, sharp where words are read. Every 1–2 beats something lands, draws or swings; only silences and judgement holds go still.\n- Ink draws at the speed of a hand; dimension lines land with an arrowhead tap.\n- Never: dissolves, scale-pops on text, bouncy UI easing, text fading in by itself.\n\n## 6. Camera grammar\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Ride a line (with the pen or a dimension) | measuring; \"how far does it go?\" | lengths compared; a route; a timeline |\n| Tilt along projection lines | the same quantity in another view | plan → elevation; a total → its parts |\n| Slow push-in, slight Dutch tilt | tension, an approaching problem | a collision; a deadline; an overrun |\n| Pull back and sideways | stepping back to state a rule | a constraint; a turn in the argument |\n| Whip with the line, overshoot, settle | a result that exceeds | a record; an outlier |\n| Rise along a leader line | from evidence to verdict | a conclusion; a recommendation |\n| Staircase framing (each new item with the previous result) | comparison in sequence | rankings; tests; options |\n| Judgement frame: the whole item, the limit and the verdict, held ≥ 2.5 s | a test the viewer can check | pass / fail against a threshold; a budget against a cap |\n| Long pull-back to the whole wall | scale; everything at once | the end of an argument; a summary |\n\nFraming: off-centre, cropped, close. The first frame holds a readable subject; the first strong action hits within 0.5 s. Items tested against a limit each get a judgement frame (wider each time if they grow); the verdict lands after the camera settles. Before the reveal: ≤ about 60 % of the board's width, never both side edges, never the reveal's zone. Transitions are moves; no cuts, fades or zoom-to-fit.\n\n## 7. Sound palette\n\n- Room: an air-conditioning bed and traffic through the window, about 20 dB under the voice — audible, not a hiss; silences keep only this.\n- Foley: felt-tip squeaks scaled to stroke length, nib taps, magnet clacks (a pitch per magnet in a row), suction pops, print landings (board thump, paper slap), a ruler's ring, eraser felt, a stamp's thud.\n- The subject's own sound arrives early as a J-cut; the first sound after a silence is an impact or the subject's sound.\n- Music: a small rhythmic ensemble, walking to brisk — bass, a light kit, wooden percussion, low brass stabs for verdicts (or mallets); no piano-and-strings pad. Landings, stamps and arrows sit on the beat. Voice calm, briefing-room confident, about 8–10 dB over the music; −14 LUFS.\n\n## 8. Native moves\n\n- **The whole-wall reveal.** Design the wall as a poster first (hierarchy, reading path, filling the frame), then plan every shot as a crop of it; keep one zone (secondary layer, verdict, title card) for the reveal alone. *Fits:* a product roadmap; a household budget.\n- **The subject passes through the answer.** The real thing moves through the chosen solution, its sound first. *Fits:* a parcel along the chosen route; a train over the new viaduct.\n- **Ride the dimension line.** A quantity drawn as a real length to one scale; the camera rides the tip. *Fits:* battery ranges of four cars.\n- **Projection lines.** Dashed lines carry an edge from one view to another so two drawings share a scale. *Fits:* a trail map above its elevation profile.\n- **Magnets as countable things.** Units clack on in rhythm, pop off when a rule removes them. *Fits:* seats in a vote.\n- **Erase to a ghost.** A rejected idea wiped but faintly visible. *Fits:* last year's plan under this year's.\n- **The stamp.** A verdict lands with a thud and a jolt. *Fits:* passed / failed tests.\n- **The physical answer.** A real prop laid down as the solution. *Fits:* one cable instead of five.\n- **Leader to the verdict.** An arrow from the deciding number to the conclusion. *Fits:* the bottleneck in a process.\n\n## 9. Pitfalls of the medium\n\n- **Text glimpsed in passing** fails the reading time. Fix: words where the camera rests; frame each new item with the last result.\n- **Only close-ups.** The viewer never sees the whole object against the limit. Fix: detail → judgement frame → hold → verdict → move on.\n- **Photos that don't belong together.** Fix: one grade, one light vector, one viewpoint family.\n- **Thin parts lost or stair-stepped** by the matte. Fix: key them against the clean background, redraw clean lines at the measured positions.\n- **Upsampled photos** go soft in close-ups. Fix: full-resolution cuts, large sources, a per-frame check.\n- **Lettering in photos** (signs, names, logos). Fix: paint out, cut, or choose another photo.\n- **The wall seen too early** spends the ending; **a sparse or tiny final wall** wastes it. Fix: measure every frame's visible share; size the hierarchy for the poster; a quiet secondary layer, no empty middle.\n\n## 10. Sources, facts, engine\n\n- **Photos**: Wikimedia Commons (read each file page's licence and author), national libraries and archives (e.g. the Library of Congress: check each item's rights statement), agency media pages, Flickr Commons. Fine: CC0, public domain, CC BY (credit it). CC BY-SA, \"no known restrictions\" (≠ CC0) or other terms: name them to the user and ask first. For the user's own product, site or people, ask for their photos. No licensable photo of a real thing → draw it in marker as a sketch; never a generated image presented as the real object.\n- **Facts**: keep a `FACTS.md` in the project folder (each claim on screen or in the voice, its source URL, the quoted wording, or the measurement method) and deliver it with the film. List every photo in `CREDITS` with source, author and licence.\n- **Extra packages and packs** (beyond `setup.sh deps voice music`): `onnxruntime` and the BiRefNet-general matting model (MIT, ~970 MB: https://github.com/danielgatis/rembg/releases/download/v0.0.0/BiRefNet-general-epoch_244.onnx, path in `$BIREFNET_ONNX`) for cut-outs; `fonttools` only to subset CJK fonts offline. The agent installs them itself into a private venv in the project folder (`demo/kit/tools/kit_env.sh` does venv and model), never into `$LIB/.venv`. Without the model: cut with `prep_object.py --poly` (hand polygon) or `--mask` (a mask image).\n- **Engine** (copy into the project): `demo/kit/board.js` (camera, prints, tags, magnets, ruler, cards, stamp, ink, erasing, `sceneTexts(t)`, `subCheck()`; fields in `demo/kit/README.md`), `demo/kit/batch.mjs` (stills), `demo/kit/tools/` (cut-outs, line redraws, lettering wipe, prints, fonts), checks in `demo/tools/` (`camcheck.mjs` visible share and judgement frames, `rescheck.mjs`, `subcheck.mjs`).\n\nA minimal world (`node demo/kit/batch.mjs park.json`; `fetch_fonts.py park.json` first for new characters):\n\n```json\n{ \"dur\": 6, \"t\": 5.5, \"board\": { \"w\": 4000, \"h\": 2400 }, \"hand\": 0, \"cam\": { \"x\": 1500, \"y\": 1000, \"z\": 0.8, \"moves\": [] },\n  \"elements\": [\n    { \"type\": \"tag\", \"text\": \"地下车库\", \"xy\": [560, 800], \"size\": 60, \"arrive\": { \"t\": 0.2, \"kind\": \"swing\" } },\n    { \"type\": \"ink\", \"kind\": \"dim\", \"from\": [700, 900], \"to\": [1300, 900], \"color\": \"blue\", \"t\": 0.6, \"d\": 0.6 },\n    { \"type\": \"ink\", \"kind\": \"write\", \"text\": \"120 米\", \"xy\": [1360, 940], \"size\": 100, \"color\": \"blue\", \"t\": 1.2 },\n    { \"type\": \"stamp\", \"text\": \"首选\", \"xy\": [1500, 700], \"size\": 110, \"rot\": -8, \"t\": 4.2 } ] }\n```\n\n## 11. Variation space\n\nThe agent decides per film: structure, which objects are photographed, plan vs elevation, the wall's reading path, opening, ending, camera path, pacing.\n\n- **Three structures:** one measurement that keeps growing until it breaks a limit; a before/after where the erased first plan stays as a ghost under the second; a checklist stamped item by item as the camera moves down the wall.\n- **Three openings:** a stamp on a finished drawing, then back to see why; one number written large, then the line that measures it; a photo dropped onto an empty corner.\n- **Three endings:** the wall revealed with the answer circled; back to the opening mark, now corrected; the last tag flipped from a question to an answer, then the pull-back.\n\n---\n\nHow our demo was made (story, shots, score, title card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n",
+  "published_demo_verbatim": "# Engineering Briefing Board — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *The Ship Decides* (船说了算, 40.0 s) · `briefing-board.mp4` · source in [`demo/`](demo/)\n\nA river 1,000 m wide needs a bridge. The first instinct, piers all the way across, is stamped out the moment a container ship sails into one of them. The new rule: no piers in the channel, one span. Four bridge types are tested against the river's width, drawn to one scale. The river set the question; the ship sets the span.\n\n## Story & structure\n\nShape: an elimination that turns early. Hook (0–1 s): the river's width snaps across in the first quarter-second. Setup (1–8 s): \"1,000 米\", a pier-by-pier beam crossing. Turn (8 s): after a second of near-silence the ship touches the centre pier and a red stamp lands. Development (11–27 s): the rule is written, the piers pop off, a steel ruler is laid bank to bank; dashed projection lines carry the banks down into an elevation \"test bench\" where four photographed bridges land one after another, each met close by the camera as it lands, then judged in a held frame that shows the whole bridge, the two bank lines (the 1,000 m \"door\"), its dimension line drawn to its record main span, and the verdict landing after the camera has settled. Each judgement frame is wider than the last, so the widening is the rhythm: the cable-stayed line crawls just past the far bank, the suspension line rockets past it and throws the camera. Ending (32.8–40 s): down at the waterline a side-view container ship comes out from behind the far tower and sails under the suspension span; half a second of room tone; then the only pull-back, starting from the ship, to the whole wall, where the verdict \"船决定跨度\" is written beside the results. The final frame is the poster.\n\nWhy it fits the style: one continuous wall holds a plan view (top-down ship, river, crossing) above an elevation view (side-on bridges) with projection lines between them — a real drafting convention, so a top-down ship and side-on bridges share one board without breaking geometry. The same ship appears in both views: the problem in plan, the answer in elevation. Native moves spent: magnets as countable things, the stamp, erase to a ghost, the physical answer (the ruler), projection lines, ride the dimension line (four times), the subject passes through the answer, leader to the verdict, and the whole-wall reveal as the signature shot.\n\n## Shots\n\nOne continuous camera, no cuts. Times in seconds; zoom 1 = 1,920 board px across.\n\n| # | Time | Shot | Camera | Native move / note |\n|---|---|---|---|---|\n| 1 | 0.0–1.2 | ECU on the left bank, the dimension arrow already leaving it | z 2.6, roll −3°; whips right with the line as it snaps across (0.25), overshoots, settles (z 1.32) | the hook: line, brass hit and kick in the first 0.25 s |\n| 2 | 1.2–2.9 | MCU on \"1,000 米\" being written | push in (z 1.42), roll +1° | |\n| 3 | 2.9–5.5 | MS of the crossing | tilt down as the deck draws, then track right along seven pier magnets (eighths) | magnets as countable things |\n| 4 | 5.5–8.0 | MS → CU up the channel | tilt up as the horn sounds (J-cut), then a slow push to z 2.05 with a −1.6° Dutch tilt | silence 7.0–8.0 |\n| 5 | 8.0–10.7 | CU on the bow, the pier and the stamp → the whole ship | impact shake, then a pull back along the hull (z 1.42) | the stamp; the centre pier jolts |\n| 6 | 10.75–14.4 | MS: the rule; the river edge | pull back right (z 1.0), ride the marker as the rule is written, drift back as the piers pop | erase to a ghost; the ruler drops at 14.0 |\n| 7 | 14.4–15.25 | ECU: the beam's pier foot as the print lands (15.0) | tilt down the dashed projection lines into it (z 2.05) | projection lines; two magnets pin each print |\n| 8 | 15.25–18.45 | **Judgement: beam** — whole bridge, both bank lines, 330 m line, tag, number | pull out (z 1.09), **hold 15.85–18.45 (2.6 s)** with a slow push | line 15.875–16.25; red strike and dashed shortfall at 17.125 |\n| 9 | 18.45–19.25 | CU: the arch rib and hangers as it lands (19.0) | crane down (z 1.6) | |\n| 10 | 19.25–22.45 | **Judgement: arch**, with the beam's result above | pull out (z 0.99), **hold 19.85–22.45 (2.6 s)** | line 19.875–20.25; strike 21.125 |\n| 11 | 22.45–23.4 | CU: the pylon top and its fan as it lands (23.125) | crane down (z 1.8) | |\n| 12 | 23.4–28.2 | **Judgement: cable-stayed**, with the arch's result above | pull out (z 0.81), **hold 24.08–28.2 (4.1 s)** | the line crawls 24.125–25.625 just past the right bank line; \"勉强\" at 26.0 |\n| 13 | 28.2–29.1 | CU: the near tower and its long hangers as the heaviest print lands (28.875) | crane down (z 1.38, capped by rescheck) | |\n| 14 | 29.1–32.8 | **Judgement: suspension**, with the cable-stayed result above | pull out (z 0.60), **hold 29.83–32.83 (3.0 s)**; thrown right as the line passes the bank (30.175), settles back | the line rockets 29.875–30.375; ring 31.25; the horn (32.0) brings the side-view ship in at the right edge |\n| 15 | 32.8–35.75 | CU at the waterline: the far tower, hangers, the side-view ship | down to the water (z 1.42), then pan left with the ship under the main span | the subject passes through the answer; silence 35.25–35.75 |\n| 16 | 35.75–37.8 | the whole wall | the only pull-back, from the ship (z 1.42 → 0.2795, 2.05 s) | **signature shot**: both side edges first in frame at 37.17 s; leader (36.7) and verdict (36.875–37.875) drawn during it |\n| 17 | 38.15–40.0 | the whole wall | a slow push (×1.025) that keeps the wall whole; a cloud shadow crosses the wall | the end card is part of the wall |\n\nJudgement frames widen 1,768 → 1,945 → 2,361 → 3,205 board px (28 % → 50 % of the wall's width). `tools/camcheck.mjs` checks each one: the whole box (print, both bank lines, dimension line, labels, verdict) stays in frame and above the subtitle strip for the whole hold. Before 35.75 s the camera never shows more than 51.4 % of the board's width, never both side edges and none of the right zone (prints, cards, notes, verdict, end card). `tools/rescheck.mjs` checks that no frame shows any photo at less than one source pixel per screen pixel (lowest: the stretched suspension span, 1.03, at its landing).\n\n## Score structure\n\n- 120 BPM, 4/4, D minor → D major at the reveal. Instruments: electric bass (eighth-note figure), MuldjordKit kick/snare/hats, claves, shaker, low brass stabs (trombone, tuba, horn), timpani, gran cassa, crash, tubular bells, glockenspiel, vibraphone. No piano, no string pad.\n- Arc: the hook (Dm brass stab, low tom, kick with the snapping line at 0.25) → groove A → low-pass dive → **silence 7.0–8.0** → stamp: Dm brass stab + timpani + gran cassa → half time (held D, low toms) → groove A rebuilt under the rule → groove B (kit) under the test bench, one brass stab per landing in the bar's chord, a sour trombone blat (D + E♭) per strike → the cable crawl: bass climbs chromatically in eighths G1 → G2 with a shaker swell → \"just enough\": two horn notes → snare sixteenths into the suspension's line (A, dominant, on the landing) → the line lands: crash + a bright B♭ chord (VI) → vibraphone pair on the ring → bass whole notes and soft trombone fifths under the last line and the ship → **silence 35.25–35.75** → the reveal: the ship's horn tuned to D (root and fifth) with a D-major brass chord, timpani and tubular bells → the verdict is written to a horn line A–F♯–E–D–A → glockenspiel D–F♯–A–D while the wall settles.\n- Hits: every landing, pin, stamp, arrow, strike and tag sits on the 16th-note grid (`tools/cuecheck.py`: 27/27 at 0 ms).\n- Foley (procedural, `audio/mix.py`): felt-tip squeaks scaled to stroke length, nib taps, magnet clacks pitched per pier, two pin clacks after every landing, suction pops, print landings (board thump + paper slap, heavier for the suspension), the steel ruler's ring, eraser felt, rubber stamp, ship horn (far and near), diesel rumble, water lapping, whooshes, room tone with distant traffic.\n- J-cuts: the horn at 5.75 before the top-down ship is seen; the horn at 32.0 before the side-view ship comes out from behind the tower. L-cuts: the eraser over the move into the bench; the reveal horn over the whole pull-back.\n- Mix: music about 9 dB under the voice and ducked; foley ducked under speech; room tone (air conditioning on the right, traffic through the window on the left) about 20 dB under the voice and never ducked; silences gated to that room tone; −14 LUFS integrated.\n- Voice: Kokoro `af_heart`, nine lines; numbers spelled out for TTS and written as digits in the subtitles.\n\n## Palette & props\n\n- Board 6,400 × 3,600 board px (16:9, so the final pull-back fills the frame); enamel `#F3F1EB`; wall `#8F8B83`; ink graphite `#23272E`, blue `#1F4FC8`, red `#D33A21`, water hatching `#5F86DA`, drafting grey `#6C727B`.\n- Plan view (top left): river 1,240 px = 1,000 m between two blue banks with grey ground hatching; \"1,000 米\" above; crossing with seven graphite magnets; the top-down ship scaled to 500 px (about true scale); stamp \"否决\" (Noto Sans SC 900, pitted red). Rule \"新规矩\" red with an underline, \"航道不立墩\" graphite (LXGW Marker Gothic). The ruler: brushed steel with engraved graduations, a magnet at each end.\n- Elevation (left two-thirds): projection lines dashed blue; four rows scaled so each main span is its record length at 1.24 px per metre (330, 600, 1,208, 2,023 m); each print pinned by two magnets; under each arrow end a label block: a name tag (Noto Sans SC 700, 78 px) and the number in blue marker (100 px), the tag placed by the number's measured width so they never touch. The side-view ship is 340 px long (about true scale) on a hand-drawn waterline. The cable-stayed bridge is a mirrored composite of a single-pylon photo and the suspension bridge's main span is stretched ×1.7 (see `demo/CREDITS`).\n- Right third (never in shot before the reveal): four photo prints with magnets (suspension, cable-stayed, arch, and the side-view ship whose lettering was wiped), a source card (\"数据来源\"), two sticky notes with the sums (1,208 − 1,000 = 208; 2,023 ÷ 1,000 ≈ 2), a small navigation-clearance sketch without numbers, the verdict \"船决定跨度\" (400 px, \"船\" red) at the right middle with a leader from the circled 2,023, and the end card.\n- Subtitles: frosted strip, Chinese Noto Sans SC 500 42 px over English Archivo 500 29 px, blue tick at left; every cue measured on one line per language (`tools/subcheck.mjs`).\n\n## Title card\n\nA printed card pinned at the bottom right of the wall from the start, seen only in the reveal: \"船说了算\", a red rule, \"ENGINEERING / BRIEFING BOARD\", \"工程简报板\", \"LemoLab × Claude Opus 5.5\". It is part of the final wall (the poster) and is on screen for the last three seconds. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Build notes\n\n```\ndemo/\n  index.html            the page: fonts, setScene / render / TEXTS / SUBCHECK / RESCHECK\n  kit/board.js          the renderer (style engine)            kit/batch.mjs   stills from scene JSON\n  kit/objects/          cut-outs + meta (anchors L/R for bridges, bow/stern for the ships)\n  kit/tools/            prep_object.py, sky_key.py, mirror_span.py, stretch_span.py, redraw_stays.py,\n                        redraw_suspension.py, repair_hangers.py, clean_lettering.py, ship_anchors.py,\n                        make_print.py, rebuild_objects.sh; fetch_fonts.py, fetch_sources.py, kit_env.sh\n  scenes/_gen_film.py   the film as data → scenes/film.json, audio/cues.json\n  audio/lines.json      narration (Kokoro)          audio/mix.py   score, foley, voice, mix\n  tools/                camcheck.mjs + camplot.py, rescheck.mjs, subcheck.mjs, cuecheck.py, rhythm_report.py, final_asr.py\n  sources/              candidates/candidates.json (every photo looked at: URL, author, licence, evidence;\n                        the six used ones with sha256); photos, masks and derived/ are downloaded or rebuilt\n```\n\n1. `sh demo/build.sh` (library set up with `setup.sh deps voice music`): fetches what git does not hold — fonts from Google Fonts (`fetch_fonts.py`: Archivo and IBM Plex Mono from github.com/google/fonts, the CJK subsets through the CSS API), the six photos from Commons (`fetch_sources.py`, ~470 MB), a private `demo/.venv` with onnxruntime and the BiRefNet model (`kit_env.sh`, ~970 MB unless cached), the voice model and the freepats / vsco2ce / vcsl samples — and cuts the objects again (`rebuild_objects.sh`); then speech check → scene → cue check → reading check → camera check (incl. judgement frames) → resolution check → events → render (960 frames, 5 workers) → mix → subtitles (+ one-line check) → mux (−14 LUFS, grain 1) → poster and styleframe → rhythm report → speech check on the final mix → camera plot.\n2. Objects: `sh demo/kit/tools/rebuild_objects.sh` recreates every cut-out from the photos at their own resolution (BiRefNet masks are cached in `sources/masks/`; a recomputed mask can differ by a pixel or two from ours).\n3. Stills and thumbnails: a scene JSON that `extends` `scenes/film.json` with its own `cam` and `t`, rendered by `node demo/kit/batch.mjs`.\n\nBridge-specific choices: each landing is met close on a pylon top, an arch rib, the hangers or a pier's foot; stays, main cables and hangers are redrawn as clean lines at the positions measured in the photos. Pitfalls tied to this demo: the first cut rode each dimension line close and never showed the cable-stayed or suspension bridge whole; viewers lost what was being tested (\"too fast\"). The fix was the judgement frame per bridge, held, widening each time, with the voice and the verdict inside the hold. Text first glimpsed during a move failed the reading check, so every label block is pinned where the camera rests and each new row is framed with the previous row's result. The first cut-outs were downscaled and the close-ups upsampled them (a blocky ship); every object is now cut at full resolution and `rescheck.mjs` caps each zoom. Keyed stays turned into stair-steps and arch hangers vanished against the hills; stays and suspension cables are now measured and redrawn, the arch hangers continued to the deck. Name tags at a fixed offset overlapped the wider numbers; they are placed from the number's measured advance width. The stretched suspension photo allows z 1.38 at most, so its landing close-up is on the near tower, which is not stretched. The photographed suspension bridge has the proportions of a 500 m span; scaled uniformly to 2,023 m its towers would be far too tall, so only the main span is stretched. A road sign, a water-level gauge, a ship's name and container logos were removed (lettering). The pier clacks masked \"piers\" in the voice; they were lowered.\n",
+  "canonical_scene_order": [
+    {
+      "id": "1",
+      "t0": 0.0,
+      "t1": 1.2,
+      "published_time_range": "0.0–1.2",
+      "visual_prompt_source_description": "ECU on the left bank, the dimension arrow already leaving it",
+      "camera": "z 2.6, roll −3°; whips right with the line as it snaps across (0.25), overshoots, settles (z 1.32)",
+      "motion_transition_sound_notes": "the hook: line, brass hit and kick in the first 0.25 s",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "t0": 0.45,
+          "t1": 3.043,
+          "text": "这条河宽 1,000 米。\nThis river is a thousand meters wide."
+        }
+      ],
+      "voice_line_ids": [
+        "L1"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/frames/f-0001.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "2",
+      "t0": 1.2,
+      "t1": 2.9,
+      "published_time_range": "1.2–2.9",
+      "visual_prompt_source_description": "MCU on \"1,000 米\" being written",
+      "camera": "push in (z 1.42), roll +1°",
+      "motion_transition_sound_notes": "",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "t0": 0.45,
+          "t1": 3.043,
+          "text": "这条河宽 1,000 米。\nThis river is a thousand meters wide."
+        }
+      ],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/frames/f-0003.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "3",
+      "t0": 2.9,
+      "t1": 5.5,
+      "published_time_range": "2.9–5.5",
+      "visual_prompt_source_description": "MS of the crossing",
+      "camera": "tilt down as the deck draws, then track right along seven pier magnets (eighths)",
+      "motion_transition_sound_notes": "magnets as countable things",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "t0": 0.45,
+          "t1": 3.043,
+          "text": "这条河宽 1,000 米。\nThis river is a thousand meters wide."
+        },
+        {
+          "t0": 3.08,
+          "t1": 6.988,
+          "text": "第一反应：一路立桥墩，修座梁桥。\nFirst instinct: piers all the way across. A beam bridge."
+        }
+      ],
+      "voice_line_ids": [
+        "L2"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/frames/f-0005.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "4",
+      "t0": 5.5,
+      "t1": 8.0,
+      "published_time_range": "5.5–8.0",
+      "visual_prompt_source_description": "MS → CU up the channel",
+      "camera": "tilt up as the horn sounds (J-cut), then a slow push to z 2.05 with a −1.6° Dutch tilt",
+      "motion_transition_sound_notes": "silence 7.0–8.0",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "t0": 3.08,
+          "t1": 6.988,
+          "text": "第一反应：一路立桥墩，修座梁桥。\nFirst instinct: piers all the way across. A beam bridge."
+        }
+      ],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/frames/f-0007.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "5",
+      "t0": 8.0,
+      "t1": 10.7,
+      "published_time_range": "8.0–10.7",
+      "visual_prompt_source_description": "CU on the bow, the pier and the stamp → the whole ship",
+      "camera": "impact shake, then a pull back along the hull (z 1.42)",
+      "motion_transition_sound_notes": "the stamp; the centre pier jolts",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "t0": 8.3,
+          "t1": 11.386,
+          "text": "可麻烦不在河，在船。\nBut the river isn't the problem. The ship is."
+        }
+      ],
+      "voice_line_ids": [
+        "L3"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/frames/f-0010.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "6",
+      "t0": 10.75,
+      "t1": 14.4,
+      "published_time_range": "10.75–14.4",
+      "visual_prompt_source_description": "MS: the rule; the river edge",
+      "camera": "pull back right (z 1.0), ride the marker as the rule is written, drift back as the piers pop",
+      "motion_transition_sound_notes": "erase to a ghost; the ruler drops at 14.0",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "t0": 8.3,
+          "t1": 11.386,
+          "text": "可麻烦不在河，在船。\nBut the river isn't the problem. The ship is."
+        },
+        {
+          "t0": 11.42,
+          "t1": 14.757,
+          "text": "新规矩：航道里不能有桥墩，一跨过去。\nNew rule: no piers in the channel. One span."
+        }
+      ],
+      "voice_line_ids": [
+        "L4"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/frames/f-0013.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "7",
+      "t0": 14.4,
+      "t1": 15.25,
+      "published_time_range": "14.4–15.25",
+      "visual_prompt_source_description": "ECU: the beam's pier foot as the print lands (15.0)",
+      "camera": "tilt down the dashed projection lines into it (z 2.05)",
+      "motion_transition_sound_notes": "projection lines; two magnets pin each print",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "t0": 11.42,
+          "t1": 14.757,
+          "text": "新规矩：航道里不能有桥墩，一跨过去。\nNew rule: no piers in the channel. One span."
+        }
+      ],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/frames/f-0015.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "8",
+      "t0": 15.25,
+      "t1": 18.45,
+      "published_time_range": "15.25–18.45",
+      "visual_prompt_source_description": "**Judgement: beam** — whole bridge, both bank lines, 330 m line, tag, number",
+      "camera": "pull out (z 1.09), **hold 15.85–18.45 (2.6 s)** with a slow push",
+      "motion_transition_sound_notes": "line 15.875–16.25; red strike and dashed shortfall at 17.125",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "t0": 15.9,
+          "t1": 18.771,
+          "text": "梁桥：330 米，差得远。\nBeam: 330. Not close."
+        }
+      ],
+      "voice_line_ids": [
+        "L5"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/frames/f-0017.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "9",
+      "t0": 18.45,
+      "t1": 19.25,
+      "published_time_range": "18.45–19.25",
+      "visual_prompt_source_description": "CU: the arch rib and hangers as it lands (19.0)",
+      "camera": "crane down (z 1.6)",
+      "motion_transition_sound_notes": "",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "t0": 15.9,
+          "t1": 18.771,
+          "text": "梁桥：330 米，差得远。\nBeam: 330. Not close."
+        }
+      ],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/frames/f-0019.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "10",
+      "t0": 19.25,
+      "t1": 22.45,
+      "published_time_range": "19.25–22.45",
+      "visual_prompt_source_description": "**Judgement: arch**, with the beam's result above",
+      "camera": "pull out (z 0.99), **hold 19.85–22.45 (2.6 s)**",
+      "motion_transition_sound_notes": "line 19.875–20.25; strike 21.125",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "t0": 19.9,
+          "t1": 22.442,
+          "text": "拱桥：600 米，还差。\nArch: 600. Still short."
+        }
+      ],
+      "voice_line_ids": [
+        "L6"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/frames/f-0021.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "11",
+      "t0": 22.45,
+      "t1": 23.4,
+      "published_time_range": "22.45–23.4",
+      "visual_prompt_source_description": "CU: the pylon top and its fan as it lands (23.125)",
+      "camera": "crane down (z 1.8)",
+      "motion_transition_sound_notes": "",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/frames/f-0023.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "12",
+      "t0": 23.4,
+      "t1": 28.2,
+      "published_time_range": "23.4–28.2",
+      "visual_prompt_source_description": "**Judgement: cable-stayed**, with the arch's result above",
+      "camera": "pull out (z 0.81), **hold 24.08–28.2 (4.1 s)**",
+      "motion_transition_sound_notes": "the line crawls 24.125–25.625 just past the right bank line; \"勉强\" at 26.0",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "t0": 24.0,
+          "t1": 27.598,
+          "text": "斜拉桥：1,208 米，刚好够。\nCable-stayed: 1,208. Just enough."
+        }
+      ],
+      "voice_line_ids": [
+        "L7"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/frames/f-0026.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "13",
+      "t0": 28.2,
+      "t1": 29.1,
+      "published_time_range": "28.2–29.1",
+      "visual_prompt_source_description": "CU: the near tower and its long hangers as the heaviest print lands (28.875)",
+      "camera": "crane down (z 1.38, capped by rescheck)",
+      "motion_transition_sound_notes": "",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/frames/f-0029.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "14",
+      "t0": 29.1,
+      "t1": 32.8,
+      "published_time_range": "29.1–32.8",
+      "visual_prompt_source_description": "**Judgement: suspension**, with the cable-stayed result above",
+      "camera": "pull out (z 0.60), **hold 29.83–32.83 (3.0 s)**; thrown right as the line passes the bank (30.175), settles back",
+      "motion_transition_sound_notes": "the line rockets 29.875–30.375; ring 31.25; the horn (32.0) brings the side-view ship in at the right edge",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "t0": 29.875,
+          "t1": 32.338,
+          "text": "悬索桥：2,000 米以上。\nSuspension: over 2,000."
+        },
+        {
+          "t0": 32.375,
+          "t1": 35.845,
+          "text": "河宽只是出题，船决定跨度。\nThe river sets the question. The ship sets the span."
+        }
+      ],
+      "voice_line_ids": [
+        "L8",
+        "L9"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/frames/f-0031.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "15",
+      "t0": 32.8,
+      "t1": 35.75,
+      "published_time_range": "32.8–35.75",
+      "visual_prompt_source_description": "CU at the waterline: the far tower, hangers, the side-view ship",
+      "camera": "down to the water (z 1.42), then pan left with the ship under the main span",
+      "motion_transition_sound_notes": "the subject passes through the answer; silence 35.25–35.75",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "t0": 32.375,
+          "t1": 35.845,
+          "text": "河宽只是出题，船决定跨度。\nThe river sets the question. The ship sets the span."
+        }
+      ],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/frames/f-0035.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "16",
+      "t0": 35.75,
+      "t1": 37.8,
+      "published_time_range": "35.75–37.8",
+      "visual_prompt_source_description": "the whole wall",
+      "camera": "the only pull-back, from the ship (z 1.42 → 0.2795, 2.05 s)",
+      "motion_transition_sound_notes": "**signature shot**: both side edges first in frame at 37.17 s; leader (36.7) and verdict (36.875–37.875) drawn during it",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "t0": 32.375,
+          "t1": 35.845,
+          "text": "河宽只是出题，船决定跨度。\nThe river sets the question. The ship sets the span."
+        }
+      ],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/frames/f-0037.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "17",
+      "t0": 38.15,
+      "t1": 40.0,
+      "published_time_range": "38.15–40.0",
+      "visual_prompt_source_description": "the whole wall",
+      "camera": "a slow push (×1.025) that keeps the wall whole; a cloud shadow crosses the wall",
+      "motion_transition_sound_notes": "the end card is part of the wall",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/frames/f-0040.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    }
+  ],
+  "narration": [
+    {
+      "id": "L1",
+      "t0": 0.5,
+      "duration_s_original_voice": 1.993,
+      "tts_text_verbatim": "This river is a thousand meters wide.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 1.06,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "L1",
+        "text": "This river is a thousand meters wide.",
+        "voice": "af_heart",
+        "speed": 1.06
+      }
+    },
+    {
+      "id": "L2",
+      "t0": 3.13,
+      "duration_s_original_voice": 3.308,
+      "tts_text_verbatim": "First instinct: piers all the way across. A beam bridge.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 1.1,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "L2",
+        "text": "First instinct: piers all the way across. A beam bridge.",
+        "voice": "af_heart",
+        "speed": 1.1
+      }
+    },
+    {
+      "id": "L3",
+      "t0": 8.35,
+      "duration_s_original_voice": 2.486,
+      "tts_text_verbatim": "But the river isn't the problem. The ship is.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 1.02,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "L3",
+        "text": "But the river isn't the problem. The ship is.",
+        "voice": "af_heart",
+        "speed": 1.02
+      }
+    },
+    {
+      "id": "L4",
+      "t0": 11.47,
+      "duration_s_original_voice": 2.737,
+      "tts_text_verbatim": "New rule: no piers in the channel. One span.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 1.08,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "L4",
+        "text": "New rule: no piers in the channel. One span.",
+        "voice": "af_heart",
+        "speed": 1.08,
+        "asr": "New rule, no peers in the channel. One span."
+      }
+    },
+    {
+      "id": "L5",
+      "t0": 15.95,
+      "duration_s_original_voice": 2.271,
+      "tts_text_verbatim": "Beam: three hundred and thirty. Not close.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 1.08,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "L5",
+        "text": "Beam: three hundred and thirty. Not close.",
+        "voice": "af_heart",
+        "speed": 1.08,
+        "asr": "Beam 330, not close."
+      }
+    },
+    {
+      "id": "L6",
+      "t0": 19.95,
+      "duration_s_original_voice": 1.942,
+      "tts_text_verbatim": "Arch: six hundred. Still short.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 1.08,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "L6",
+        "text": "Arch: six hundred. Still short.",
+        "voice": "af_heart",
+        "speed": 1.08,
+        "asr": "Arch 600, still short."
+      }
+    },
+    {
+      "id": "L7",
+      "t0": 24.05,
+      "duration_s_original_voice": 2.998,
+      "tts_text_verbatim": "Cable-stayed: twelve hundred and eight. Just enough.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 1.08,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "L7",
+        "text": "Cable-stayed: twelve hundred and eight. Just enough.",
+        "voice": "af_heart",
+        "speed": 1.08,
+        "asr": "Cable stayed 1,208, just enough."
+      }
+    },
+    {
+      "id": "L8",
+      "t0": 29.925,
+      "duration_s_original_voice": 1.863,
+      "tts_text_verbatim": "Suspension: over two thousand.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 1.08,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "L8",
+        "text": "Suspension: over two thousand.",
+        "voice": "af_heart",
+        "speed": 1.08,
+        "asr": "Suspension over 2,000."
+      }
+    },
+    {
+      "id": "L9",
+      "t0": 32.425,
+      "duration_s_original_voice": 2.87,
+      "tts_text_verbatim": "The river sets the question. The ship sets the span.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 1.04,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "L9",
+        "text": "The river sets the question. The ship sets the span.",
+        "voice": "af_heart",
+        "speed": 1.04
+      }
+    }
+  ],
+  "narration_source_path": "styles/briefing-board/demo/audio/lines.json",
+  "published_timeline_extracted": {},
+  "on_screen_text_inventory": {
+    "published_subtitle_file_verbatim": "1\n00:00:00,450 --> 00:00:03,043\n这条河宽 1,000 米。\nThis river is a thousand meters wide.\n\n2\n00:00:03,080 --> 00:00:06,988\n第一反应：一路立桥墩，修座梁桥。\nFirst instinct: piers all the way across. A beam bridge.\n\n3\n00:00:08,300 --> 00:00:11,386\n可麻烦不在河，在船。\nBut the river isn't the problem. The ship is.\n\n4\n00:00:11,420 --> 00:00:14,757\n新规矩：航道里不能有桥墩，一跨过去。\nNew rule: no piers in the channel. One span.\n\n5\n00:00:15,900 --> 00:00:18,771\n梁桥：330 米，差得远。\nBeam: 330. Not close.\n\n6\n00:00:19,900 --> 00:00:22,442\n拱桥：600 米，还差。\nArch: 600. Still short.\n\n7\n00:00:24,000 --> 00:00:27,598\n斜拉桥：1,208 米，刚好够。\nCable-stayed: 1,208. Just enough.\n\n8\n00:00:29,875 --> 00:00:32,338\n悬索桥：2,000 米以上。\nSuspension: over 2,000.\n\n9\n00:00:32,375 --> 00:00:35,845\n河宽只是出题，船决定跨度。\nThe river sets the question. The ship sets the span.\n",
+    "cues_original_json": [
+      {
+        "t0": 0.45,
+        "t1": 3.043,
+        "text": "这条河宽 1,000 米。\nThis river is a thousand meters wide."
+      },
+      {
+        "t0": 3.08,
+        "t1": 6.988,
+        "text": "第一反应：一路立桥墩，修座梁桥。\nFirst instinct: piers all the way across. A beam bridge."
+      },
+      {
+        "t0": 8.3,
+        "t1": 11.386,
+        "text": "可麻烦不在河，在船。\nBut the river isn't the problem. The ship is."
+      },
+      {
+        "t0": 11.42,
+        "t1": 14.757,
+        "text": "新规矩：航道里不能有桥墩，一跨过去。\nNew rule: no piers in the channel. One span."
+      },
+      {
+        "t0": 15.9,
+        "t1": 18.771,
+        "text": "梁桥：330 米，差得远。\nBeam: 330. Not close."
+      },
+      {
+        "t0": 19.9,
+        "t1": 22.442,
+        "text": "拱桥：600 米，还差。\nArch: 600. Still short."
+      },
+      {
+        "t0": 24.0,
+        "t1": 27.598,
+        "text": "斜拉桥：1,208 米，刚好够。\nCable-stayed: 1,208. Just enough."
+      },
+      {
+        "t0": 29.875,
+        "t1": 32.338,
+        "text": "悬索桥：2,000 米以上。\nSuspension: over 2,000."
+      },
+      {
+        "t0": 32.375,
+        "t1": 35.845,
+        "text": "河宽只是出题，船决定跨度。\nThe river sets the question. The ship sets the span."
+      }
+    ],
+    "timeline_text_fields": {},
+    "titles_subtitles_palette_verbatim": "",
+    "palette_props_verbatim": "- Board 6,400 × 3,600 board px (16:9, so the final pull-back fills the frame); enamel `#F3F1EB`; wall `#8F8B83`; ink graphite `#23272E`, blue `#1F4FC8`, red `#D33A21`, water hatching `#5F86DA`, drafting grey `#6C727B`.\n- Plan view (top left): river 1,240 px = 1,000 m between two blue banks with grey ground hatching; \"1,000 米\" above; crossing with seven graphite magnets; the top-down ship scaled to 500 px (about true scale); stamp \"否决\" (Noto Sans SC 900, pitted red). Rule \"新规矩\" red with an underline, \"航道不立墩\" graphite (LXGW Marker Gothic). The ruler: brushed steel with engraved graduations, a magnet at each end.\n- Elevation (left two-thirds): projection lines dashed blue; four rows scaled so each main span is its record length at 1.24 px per metre (330, 600, 1,208, 2,023 m); each print pinned by two magnets; under each arrow end a label block: a name tag (Noto Sans SC 700, 78 px) and the number in blue marker (100 px), the tag placed by the number's measured width so they never touch. The side-view ship is 340 px long (about true scale) on a hand-drawn waterline. The cable-stayed bridge is a mirrored composite of a single-pylon photo and the suspension bridge's main span is stretched ×1.7 (see `demo/CREDITS`).\n- Right third (never in shot before the reveal): four photo prints with magnets (suspension, cable-stayed, arch, and the side-view ship whose lettering was wiped), a source card (\"数据来源\"), two sticky notes with the sums (1,208 − 1,000 = 208; 2,023 ÷ 1,000 ≈ 2), a small navigation-clearance sketch without numbers, the verdict \"船决定跨度\" (400 px, \"船\" red) at the right middle with a leader from the circled 2,023, and the end card.\n- Subtitles: frosted strip, Chinese Noto Sans SC 500 42 px over English Archivo 500 29 px, blue tick at left; every cue measured on one line per language (`tools/subcheck.mjs`).",
+    "end_card_verbatim": "A printed card pinned at the bottom right of the wall from the start, seen only in the reveal: \"船说了算\", a red rule, \"ENGINEERING / BRIEFING BOARD\", \"工程简报板\", \"LemoLab × Claude Opus 5.5\". It is part of the final wall (the poster) and is on screen for the last three seconds. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.",
+    "completion_note": "Exact visible typography/content must be checked in original video; this inventory preserves all published cue/title/prop specifications. Model authorship credit is a reference fact, never new-output attribution.",
+    "original_annotation_literal_sources": []
+  },
+  "sound_recreation": {
+    "instruction": "Generate new voice and music; original mix/track reuse is not permitted by latest user instruction. Preserve full words, cadence windows, BPM, musical form, silence and picture-synchronous hits.",
+    "published_score_sound_spec_verbatim": "- 120 BPM, 4/4, D minor → D major at the reveal. Instruments: electric bass (eighth-note figure), MuldjordKit kick/snare/hats, claves, shaker, low brass stabs (trombone, tuba, horn), timpani, gran cassa, crash, tubular bells, glockenspiel, vibraphone. No piano, no string pad.\n- Arc: the hook (Dm brass stab, low tom, kick with the snapping line at 0.25) → groove A → low-pass dive → **silence 7.0–8.0** → stamp: Dm brass stab + timpani + gran cassa → half time (held D, low toms) → groove A rebuilt under the rule → groove B (kit) under the test bench, one brass stab per landing in the bar's chord, a sour trombone blat (D + E♭) per strike → the cable crawl: bass climbs chromatically in eighths G1 → G2 with a shaker swell → \"just enough\": two horn notes → snare sixteenths into the suspension's line (A, dominant, on the landing) → the line lands: crash + a bright B♭ chord (VI) → vibraphone pair on the ring → bass whole notes and soft trombone fifths under the last line and the ship → **silence 35.25–35.75** → the reveal: the ship's horn tuned to D (root and fifth) with a D-major brass chord, timpani and tubular bells → the verdict is written to a horn line A–F♯–E–D–A → glockenspiel D–F♯–A–D while the wall settles.\n- Hits: every landing, pin, stamp, arrow, strike and tag sits on the 16th-note grid (`tools/cuecheck.py`: 27/27 at 0 ms).\n- Foley (procedural, `audio/mix.py`): felt-tip squeaks scaled to stroke length, nib taps, magnet clacks pitched per pier, two pin clacks after every landing, suction pops, print landings (board thump + paper slap, heavier for the suspension), the steel ruler's ring, eraser felt, rubber stamp, ship horn (far and near), diesel rumble, water lapping, whooshes, room tone with distant traffic.\n- J-cuts: the horn at 5.75 before the top-down ship is seen; the horn at 32.0 before the side-view ship comes out from behind the tower. L-cuts: the eraser over the move into the bench; the reveal horn over the whole pull-back.\n- Mix: music about 9 dB under the voice and ducked; foley ducked under speech; room tone (air conditioning on the right, traffic through the window on the left) about 20 dB under the voice and never ducked; silences gated to that room tone; −14 LUFS integrated.\n- Voice: Kokoro `af_heart`, nine lines; numbers spelled out for TTS and written as digits in the subtitles.",
+    "original_voice_records": [
+      {
+        "id": "L1",
+        "text": "This river is a thousand meters wide.",
+        "voice": "af_heart",
+        "speed": 1.06
+      },
+      {
+        "id": "L2",
+        "text": "First instinct: piers all the way across. A beam bridge.",
+        "voice": "af_heart",
+        "speed": 1.1
+      },
+      {
+        "id": "L3",
+        "text": "But the river isn't the problem. The ship is.",
+        "voice": "af_heart",
+        "speed": 1.02
+      },
+      {
+        "id": "L4",
+        "text": "New rule: no piers in the channel. One span.",
+        "voice": "af_heart",
+        "speed": 1.08,
+        "asr": "New rule, no peers in the channel. One span."
+      },
+      {
+        "id": "L5",
+        "text": "Beam: three hundred and thirty. Not close.",
+        "voice": "af_heart",
+        "speed": 1.08,
+        "asr": "Beam 330, not close."
+      },
+      {
+        "id": "L6",
+        "text": "Arch: six hundred. Still short.",
+        "voice": "af_heart",
+        "speed": 1.08,
+        "asr": "Arch 600, still short."
+      },
+      {
+        "id": "L7",
+        "text": "Cable-stayed: twelve hundred and eight. Just enough.",
+        "voice": "af_heart",
+        "speed": 1.08,
+        "asr": "Cable stayed 1,208, just enough."
+      },
+      {
+        "id": "L8",
+        "text": "Suspension: over two thousand.",
+        "voice": "af_heart",
+        "speed": 1.08,
+        "asr": "Suspension over 2,000."
+      },
+      {
+        "id": "L9",
+        "text": "The river sets the question. The ship sets the span.",
+        "voice": "af_heart",
+        "speed": 1.04
+      }
+    ],
+    "original_voice_durations_s": {
+      "L1": 1.993,
+      "L2": 3.308,
+      "L3": 2.486,
+      "L4": 2.737,
+      "L5": 2.271,
+      "L6": 1.942,
+      "L7": 2.998,
+      "L8": 1.863,
+      "L9": 2.87
+    }
+  },
+  "engine_and_build": {
+    "required_engine_spec_verbatim": "",
+    "published_build_notes_verbatim": "```\ndemo/\n  index.html            the page: fonts, setScene / render / TEXTS / SUBCHECK / RESCHECK\n  kit/board.js          the renderer (style engine)            kit/batch.mjs   stills from scene JSON\n  kit/objects/          cut-outs + meta (anchors L/R for bridges, bow/stern for the ships)\n  kit/tools/            prep_object.py, sky_key.py, mirror_span.py, stretch_span.py, redraw_stays.py,\n                        redraw_suspension.py, repair_hangers.py, clean_lettering.py, ship_anchors.py,\n                        make_print.py, rebuild_objects.sh; fetch_fonts.py, fetch_sources.py, kit_env.sh\n  scenes/_gen_film.py   the film as data → scenes/film.json, audio/cues.json\n  audio/lines.json      narration (Kokoro)          audio/mix.py   score, foley, voice, mix\n  tools/                camcheck.mjs + camplot.py, rescheck.mjs, subcheck.mjs, cuecheck.py, rhythm_report.py, final_asr.py\n  sources/              candidates/candidates.json (every photo looked at: URL, author, licence, evidence;\n                        the six used ones with sha256); photos, masks and derived/ are downloaded or rebuilt\n```\n\n1. `sh demo/build.sh` (library set up with `setup.sh deps voice music`): fetches what git does not hold — fonts from Google Fonts (`fetch_fonts.py`: Archivo and IBM Plex Mono from github.com/google/fonts, the CJK subsets through the CSS API), the six photos from Commons (`fetch_sources.py`, ~470 MB), a private `demo/.venv` with onnxruntime and the BiRefNet model (`kit_env.sh`, ~970 MB unless cached), the voice model and the freepats / vsco2ce / vcsl samples — and cuts the objects again (`rebuild_objects.sh`); then speech check → scene → cue check → reading check → camera check (incl. judgement frames) → resolution check → events → render (960 frames, 5 workers) → mix → subtitles (+ one-line check) → mux (−14 LUFS, grain 1) → poster and styleframe → rhythm report → speech check on the final mix → camera plot.\n2. Objects: `sh demo/kit/tools/rebuild_objects.sh` recreates every cut-out from the photos at their own resolution (BiRefNet masks are cached in `sources/masks/`; a recomputed mask can differ by a pixel or two from ours).\n3. Stills and thumbnails: a scene JSON that `extends` `scenes/film.json` with its own `cam` and `t`, rendered by `node demo/kit/batch.mjs`.\n\nBridge-specific choices: each landing is met close on a pylon top, an arch rib, the hangers or a pier's foot; stays, main cables and hangers are redrawn as clean lines at the positions measured in the photos. Pitfalls tied to this demo: the first cut rode each dimension line close and never showed the cable-stayed or suspension bridge whole; viewers lost what was being tested (\"too fast\"). The fix was the judgement frame per bridge, held, widening each time, with the voice and the verdict inside the hold. Text first glimpsed during a move failed the reading check, so every label block is pinned where the camera rests and each new row is framed with the previous row's result. The first cut-outs were downscaled and the close-ups upsampled them (a blocky ship); every object is now cut at full resolution and `rescheck.mjs` caps each zoom. Keyed stays turned into stair-steps and arch hangers vanished against the hills; stays and suspension cables are now measured and redrawn, the arch hangers continued to the deck. Name tags at a fixed offset overlapped the wider numbers; they are placed from the number's measured advance width. The stretched suspension photo allows z 1.38 at most, so its landing close-up is on the near tower, which is not stretched. The photographed suspension bridge has the proportions of a 500 m span; scaled uniformly to 2,023 m its towers would be far too tall, so only the main span is stretched. A road sign, a water-level gauge, a ship's name and container logos were removed (lettering). The pier clacks masked \"piers\" in the voice; they were lowered.",
+    "fetch_build_specs": [
+      {
+        "path": "styles/briefing-board/demo/build.sh",
+        "sha256": "086ea32a45c33578b511750571d7080a85e08178cb9d4fc7f3311218c1e1b9dd",
+        "text_verbatim": "#!/bin/sh\n# Engineering Briefing Board — \"The Ship Decides\": one-command build.\n# fetch what git does not hold → voice (+ speech check) → scene → checks → picture → score and sound → subtitles → master → poster.\n# From a clean clone (library set up with `setup.sh deps voice music`) the first run also downloads:\n#   fonts (Google Fonts, OFL) → kit/fonts/                      kit/tools/fetch_fonts.py\n#   the six source photos (Commons, licences in candidates.json) kit/tools/fetch_sources.py   (~470 MB)\n#   a private venv demo/.venv (onnxruntime …) + the BiRefNet model kit/tools/kit_env.sh         (~970 MB unless cached)\n#   and cuts every object again                                   kit/tools/rebuild_objects.sh  (~3 min)\n#   the voice model and the freepats / vsco2ce / vcsl samples      tools/fetch.sh (library packs)\nset -e\nHERE=$(cd \"$(dirname \"$0\")\" && pwd)\nLIB=${LIB:-$(cd \"$HERE/../../..\" && pwd)}          # <repo>/films/<name>/demo or <repo>/styles/<slug>/demo\nexport LIB\n[ -f \"$LIB/core/render/video.mjs\" ] || { echo \"set LIB to the library folder\"; exit 1; }\nPY=\"$LIB/.venv/bin/python\"\nNAME=$(basename \"$(dirname \"$HERE\")\")\nOUT=\"$HERE/..\"\ncd \"$HERE\"\n# fetch / prepare only what is missing; every test keys on a git-ignored file\nfor f in Archivo-VF.ttf IBMPlexMono-Medium.ttf IBMPlexMono-SemiBold.ttf LXGWMarkerGothic-sub.woff2 NotoSansSC-500-sub.woff2 NotoSansSC-700-sub.woff2 NotoSansSC-900-sub.woff2; do\n  [ -f \"kit/fonts/$f\" ] || { python3 kit/tools/fetch_fonts.py; break; }\ndone\nfor j in kit/objects/*.json; do [ -f \"${j%.json}.png\" ] || { sh kit/tools/rebuild_objects.sh; break; }; done\n[ -f \"$LIB/core/tts/kokoro-v1.0.onnx\" ] && [ -f \"$LIB/core/tts/voices-v1.0.bin\" ] || (cd \"$LIB\" && sh tools/fetch.sh voice)\nfor l in freepats vsco2ce vcsl; do [ -d \"$LIB/core/audio/instruments/$l\" ] || (cd \"$LIB\" && sh tools/fetch.sh instruments $l); done\n[ -f audio/vo/L9.wav ] || \"$PY\" \"$LIB/core/tts/tts.py\" audio/lines.json audio/vo\n\"$PY\" \"$LIB/core/tts/asr_check.py\" audio/lines.json audio/vo --lang en\npython3 scenes/_gen_film.py                                   # scenes/film.json + audio/cues.json\npython3 tools/cuecheck.py\ncd \"$LIB\"\nnode core/render/readcheck.mjs \"$HERE\" --step 0.05\nnode \"$HERE/tools/camcheck.mjs\"\nnode \"$HERE/tools/rescheck.mjs\"\nnode core/render/events.mjs \"$HERE\"\nnode core/render/video.mjs \"$HERE\" --fps 24 --workers ${WORKERS:-5} --out \"$HERE/out/video.mp4\"\n\"$PY\" \"$HERE/audio/mix.py\"\n\"$PY\" core/render/srt.py \"$HERE/audio/cues.json\" \"$OUT/$NAME.srt\"\nnode \"$HERE/tools/subcheck.mjs\" \"$OUT/$NAME.srt\"\nsh core/render/mux.sh \"$HERE/out/video.mp4\" \"$HERE/out/mix.wav\" \"$OUT/$NAME.mp4\" 24 1\nnode core/render/still.mjs \"$HERE\" 39.9 --prefix poster_ --out \"$HERE/stills\"\ncp \"$HERE/stills/poster_39.9.jpg\" \"$OUT/poster.jpg\"\nmv \"$HERE/stills/poster_39.9.jpg\" \"$HERE/stills/styleframe.jpg\"\n\"$PY\" \"$HERE/tools/rhythm_report.py\" \"$OUT/$NAME.mp4\"\n\"$PY\" \"$HERE/tools/final_asr.py\" \"$OUT/$NAME.mp4\"\n\"$PY\" \"$HERE/tools/camplot.py\"\necho \"done: $OUT/$NAME.mp4\"\n"
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/tools/prep_object.py",
+        "sha256": "d9f09a1260a255d7904dc95e341714a8aa812dc675372556b9ed6cbf805cb74b",
+        "text_verbatim": "#!/usr/bin/env python3\n\"\"\"Turn one photo into a kit object: kit/objects/<id>.png + <id>.json.\n\n    $KPY kit/tools/prep_object.py <raw image> <id> [options]        ($KPY: the private venv, see kit/tools/kit_env.sh)\n\nSteps: rotate / crop → mask (BiRefNet, a mask file, a polygon, or both combined) → clean the edge\n(tighten, erode, anti-alias, decontaminate the fringe colour) → shared grade (so photos from\ndifferent sources sit together on the board) → trim → meta (size, anchors, credit).\n\nOptions\n  --rotate DEG              rotate the raw image first (counter-clockwise, expand)\n  --crop x0,y0,x1,y1        crop in (rotated) raw pixels\n  --mask FILE               greyscale mask at the cropped size (or raw size with --mask-raw) instead of BiRefNet\n  --mask-mul FILE           multiply the BiRefNet mask by this mask (keep thin parts a sky key found, drop the rest)\n  --mask-max FILE           take max(BiRefNet, this mask): add thin cables found by a sky key\n  --poly \"x,y x,y …\"        keep only what lies inside this polygon (cropped pixels)\n  --cut x0,y0,x1,y1         remove this rectangle (signs, lettering; repeatable)\n  --patch x0,y0,x1,y1,dx,dy clone the photo over a rectangle from an offset (paint out lettering)\n  --thin-region FILE        with --mask-max: inside this region use the key for thin parts and BiRefNet only where solid\n  --radial cx,cy,len        smooth the keyed thin parts along rays through (cx, cy), ±len px (a stay-cable fan)\n  --keep-largest / --min-island 0.002\n  --erode 1                 bite 1 px off the edge (0 for thin lattice and cables)\n  --sat 0.9 --contrast 1.06 --warm 0.015 --gamma 1.0 --exposure 0\n  --max 2400                longest side of the output\n  --anchor name=nx,ny       anchor in output-normalised coordinates (repeatable; kept on re-runs)\n  --anchor-px name=x,y      anchor in cropped-image pixels, converted after the trim\n  --credit FILE.json        {title, author, licence, source} merged into meta\nModel: BiRefNet-general ONNX (MIT, ~970 MB), from $BIREFNET_ONNX, demo/.models/birefnet-general.onnx or\n~/.rembg/models/birefnet-general/birefnet-general.onnx; download:\nhttps://github.com/danielgatis/rembg/releases/download/v0.0.0/BiRefNet-general-epoch_244.onnx (kit/tools/kit_env.sh does it).\nWithout the model, --poly alone (or --mask) still cuts. Requires numpy, scipy, Pillow, onnxruntime (private venv).\n\"\"\"\nimport argparse, json, os, sys, hashlib\nimport numpy as np\nfrom PIL import Image, ImageOps, ImageDraw\nfrom scipy import ndimage as ndi\n\nHERE = os.path.dirname(os.path.abspath(__file__))\nOBJ = os.path.join(os.path.dirname(HERE), 'objects')\nCACHE = os.path.join(os.path.dirname(os.path.dirname(HERE)), 'sources', 'masks')\nMODEL = next((m for m in (os.environ.get('BIREFNET_ONNX'), os.path.join(os.path.dirname(os.path.dirname(HERE)), '.models', 'birefnet-general.onnx'),\n                           os.path.expanduser('~/.rembg/models/birefnet-general/birefnet-general.onnx')) if m and os.path.exists(m)), None)\n\n\ndef birefnet(img):\n    \"\"\"Soft foreground mask, 0..1, at the image size (cached by image hash).\"\"\"\n    os.makedirs(CACHE, exist_ok=True)\n    key = os.path.join(CACHE, 'birefnet_' + hashlib.md5(img.tobytes()).hexdigest()[:16] + '.png')\n    if os.path.exists(key):\n        return np.asarray(Image.open(key).convert('L'), np.float32) / 255\n    if MODEL is None:\n        return None\n    import onnxruntime as ort\n    sess = ort.InferenceSession(MODEL, providers=['CPUExecutionProvider'])\n    x = np.asarray(img.resize((1024, 1024), Image.BICUBIC), np.float32) / 255\n    x = (x - [0.485, 0.456, 0.406]) / [0.229, 0.224, 0.225]\n    x = x.transpose(2, 0, 1)[None].astype(np.float32)\n    out = sess.run(None, {sess.get_inputs()[0].name: x})[0]\n    m = 1 / (1 + np.exp(-out[0, 0]))\n    m = Image.fromarray((m * 255).astype(np.uint8)).resize(img.size, Image.BICUBIC)\n    m.save(key)\n    return np.asarray(m, np.float32) / 255\n\n\ndef poly_mask(size, poly, ss=4):\n    W, H = size\n    im = Image.new('L', (W * ss, H * ss), 0)\n    ImageDraw.Draw(im).polygon([(x * ss, y * ss) for x, y in poly], fill=255)\n    return np.asarray(im.resize((W, H), Image.LANCZOS), np.float32) / 255\n\n\ndef clean_alpha(a, keep_largest, min_island, erode=1):\n    a = np.clip((a - .06) / (.94 - .06), 0, 1)\n    solid = a > .5\n    lab, n = ndi.label(solid)\n    if n > 1:\n        sizes = ndi.sum(solid, lab, range(1, n + 1))\n        keep = np.zeros(n + 1, bool)\n        if keep_largest: keep[1 + int(np.argmax(sizes))] = True\n        else: keep[1:] = sizes >= min_island * sizes.sum()\n        region = ndi.binary_dilation(keep[lab], iterations=3)\n        a = a * region\n    if erode: a = ndi.grey_erosion(a, size=(3, 3))\n    a = ndi.gaussian_filter(a, .6)\n    a[a < .02] = 0\n    return np.clip(a, 0, 1)\n\n\ndef decontaminate(rgb, a, r=5):\n    w = (a > .92).astype(np.float32)\n    num = np.stack([ndi.gaussian_filter(rgb[..., i] * w, r) for i in range(3)], -1)\n    den = ndi.gaussian_filter(w, r)[..., None]\n    inner = num / np.maximum(den, 1e-4)\n    edge = ((a > 0) & (a < .92))[..., None] & (den > 1e-3)\n    return np.where(edge, inner, rgb)\n\n\ndef grade(rgb, sat, contrast, warm, gamma, exposure):\n    x = np.clip(rgb * (2 ** exposure), 0, 1) ** (1 / gamma)\n    lum = (x * [.2126, .7152, .0722]).sum(-1, keepdims=True)\n    x = lum + (x - lum) * sat\n    x = .5 + (x - .5) * contrast\n    x = x + np.array([warm, warm * .35, -warm])\n    x = .015 + x * .975\n    return np.clip(x, 0, 1)\n\n\ndef main():\n    ap = argparse.ArgumentParser()\n    ap.add_argument('raw'); ap.add_argument('id')\n    ap.add_argument('--rotate', type=float, default=0); ap.add_argument('--crop')\n    ap.add_argument('--mask'); ap.add_argument('--mask-mul'); ap.add_argument('--mask-max'); ap.add_argument('--thin-region'); ap.add_argument('--thin-color'); ap.add_argument('--radial'); ap.add_argument('--patch', action='append', default=[]); ap.add_argument('--poly'); ap.add_argument('--cut', action='append', default=[])\n    ap.add_argument('--keep-largest', action='store_true'); ap.add_argument('--min-island', type=float, default=.002)\n    ap.add_argument('--erode', type=int, default=1)\n    ap.add_argument('--sat', type=float, default=.9); ap.add_argument('--contrast', type=float, default=1.06)\n    ap.add_argument('--warm', type=float, default=.015); ap.add_argument('--gamma', type=float, default=1.0)\n    ap.add_argument('--exposure', type=float, default=0.0)\n    ap.add_argument('--max', type=int, default=2400)\n    ap.add_argument('--anchor', action='append', default=[]); ap.add_argument('--anchor-px', action='append', default=[]); ap.add_argument('--credit')\n    a = ap.parse_args()\n\n    img = ImageOps.exif_transpose(Image.open(a.raw)).convert('RGB')\n    if a.rotate: img = img.rotate(a.rotate, Image.BICUBIC, expand=True)\n    if a.crop: img = img.crop(tuple(int(v) for v in a.crop.split(',')))\n    rgb = np.asarray(img, np.float32) / 255\n    for p_ in a.patch:   # clone texture over lettering: x0,y0,x1,y1,dx,dy copies from (x0+dx, y0+dy)\n        px0, py0, px1, py1, pdx, pdy = (int(v) for v in p_.split(','))\n        rgb = rgb.copy(); rgb[py0:py1, px0:px1] = rgb[py0 + pdy:py1 + pdy, px0 + pdx:px1 + pdx]\n    img = Image.fromarray((rgb * 255).astype(np.uint8))\n    thin_w = None\n    load = lambda f: np.asarray(Image.open(f).convert('L').resize(img.size, Image.LANCZOS), np.float32) / 255\n    if a.mask:\n        alpha = load(a.mask)\n    else:\n        alpha = birefnet(img)\n        if alpha is None:\n            if not a.poly: sys.exit('no BiRefNet model (see kit/tools/kit_env.sh): give --poly or --mask to cut without it')\n            alpha = np.ones((img.height, img.width), np.float32)      # the polygon alone makes the cut\n        if a.mask_mul: alpha = alpha * load(a.mask_mul)\n        if a.mask_max:   # add thin parts, but only those connected to the main object (no clouds, no birds)\n            extra = load(a.mask_max)\n            if a.radial:   # smooth thin straight parts along rays through a centre (a cable fan): fills gaps, kills stair-steps\n                rcx, rcy, rlen = (float(v) for v in a.radial.split(','))\n                H_, W_ = extra.shape; yy, xx = np.mgrid[0:H_, 0:W_].astype(np.float32)\n                dx_, dy_ = rcx - xx, rcy - yy; dn = np.hypot(dx_, dy_) + 1e-6; ux, uy = dx_ / dn, dy_ / dn\n                acc_ = np.zeros_like(extra); L_ = int(rlen)\n                for k_ in range(-L_, L_ + 1):\n                    acc_ += ndi.map_coordinates(extra, [yy + uy * k_, xx + ux * k_], order=1, mode='nearest')\n                acc_ /= (2 * L_ + 1)\n                extra = np.clip(acc_ * 1.6, 0, 1)\n            core = ndi.binary_dilation(alpha > .5, iterations=4)\n            lab, n = ndi.label(extra > .35)\n            if n:\n                hit = np.unique(lab[core & (lab > 0)]); keep = np.isin(lab, hit[hit > 0])\n                extra = extra * ndi.binary_dilation(keep, iterations=2)\n            if a.thin_region:   # inside the sky region BiRefNet keeps only its solid core; thin parts come from the key\n                reg = load(a.thin_region); core_a = alpha * (alpha > .85)\n                alpha = alpha * (1 - reg) + np.maximum(core_a, extra) * reg\n                if a.thin_color:   # thin parts take one steel colour: a thin line's pixels are mostly sky\n                    thin_w = np.clip((extra - core_a) * reg * 3, 0, 1)[..., None]\n            else: alpha = np.maximum(alpha, extra)\n    if a.poly:\n        pts = [tuple(float(v) for v in p.split(',')) for p in a.poly.split()]\n        alpha = alpha * ndi.gaussian_filter(poly_mask(img.size, pts), .7)\n    for c_ in a.cut:   # rectangles removed outright (signs, lettering, stray objects)\n        cx0, cy0, cx1, cy1 = (int(v) for v in c_.split(',')); alpha[cy0:cy1, cx0:cx1] = 0\n    alpha = clean_alpha(alpha, a.keep_largest, a.min_island, a.erode)\n    rgb = decontaminate(rgb, alpha)\n    if a.thin_color and thin_w is not None:\n        tc = np.array([float(v) for v in a.thin_color.split(',')], np.float32); rgb = rgb * (1 - thin_w) + tc * thin_w\n    rgb = grade(rgb, a.sat, a.contrast, a.warm, a.gamma, a.exposure)\n\n    ys, xs = np.where(alpha > .02); pad = 6\n    y0, y1 = max(0, ys.min() - pad), min(alpha.shape[0], ys.max() + pad + 1)\n    x0, x1 = max(0, xs.min() - pad), min(alpha.shape[1], xs.max() + pad + 1)\n    out = Image.fromarray((np.dstack([rgb, alpha])[y0:y1, x0:x1] * 255 + .5).astype(np.uint8), 'RGBA')\n    s = min(1, a.max / max(out.size))\n    if s < 1: out = out.resize((round(out.width * s), round(out.height * s)), Image.LANCZOS)\n    os.makedirs(OBJ, exist_ok=True)\n    png = os.path.join(OBJ, a.id + '.png'); out.save(png, optimize=True)\n    meta_path = os.path.join(OBJ, a.id + '.json')\n    meta = json.load(open(meta_path)) if os.path.exists(meta_path) else {}\n    meta.pop('placeholder', None)\n    meta.update({'id': a.id, 'w': out.width, 'h': out.height, 'trim': [int(x0), int(y0), int(x1), int(y1)]})\n    anchors = meta.get('anchors', {})\n    for s_ in a.anchor:\n        n, v = s_.split('='); anchors[n] = [float(t) for t in v.split(',')]\n    for s_ in a.anchor_px:   # anchor in cropped-image pixels → output-normalised (after the trim)\n        n, v = s_.split('='); px, py = (float(t) for t in v.split(','))\n        anchors[n] = [round((px - x0) / (x1 - x0), 5), round((py - y0) / (y1 - y0), 5)]\n    meta['anchors'] = anchors\n    if a.credit: meta['credit'] = json.load(open(a.credit))\n    meta['prep'] = {k_: v for k_, v in vars(a).items() if k_ not in ('anchor', 'anchor_px', 'credit')}\n    json.dump(meta, open(meta_path, 'w'), indent=2)\n    print(png, out.size)\n\n\nif __name__ == '__main__':\n    sys.exit(main())\n"
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/tools/fetch_sources.py",
+        "sha256": "32ec38befd89e3ba2e98d3f8e5b1be518510aba3a731dea14bc02fcbd986663d",
+        "text_verbatim": "#!/usr/bin/env python3\n\"\"\"Download the source photos the demo's cut-outs are made from, as recorded in\nsources/candidates/candidates.json (every entry with \"used\": true): original_url → sources/candidates/<file>.\n\n    python3 kit/tools/fetch_sources.py [--all]\n\nEach record already holds the Commons page, author, licence and the licence evidence (the file page's\ntemplate); this script prints them as it goes. Files that exist are kept; a recorded sha256 is checked\n(a mismatch is only a warning: Commons files can be re-uploaded). About 470 MB, two Library of Congress\nTIFFs being most of it. --all also fetches the candidates that were looked at but not used.\nStandard library only.\n\"\"\"\nimport hashlib, json, os, sys, urllib.request, time\n\nHERE = os.path.dirname(os.path.abspath(__file__)); DEMO = os.path.dirname(os.path.dirname(HERE))\nSRC = os.path.join(DEMO, 'sources', 'candidates')\nUA = 'LemoOpuscar-demo-fetch/1.0 (https://github.com/lemomo-ai/lemo-opuscar; library demo rebuild)'\n\ndef sha256(p):\n    h = hashlib.sha256()\n    with open(p, 'rb') as f:\n        for b in iter(lambda: f.read(1 << 20), b''): h.update(b)\n    return h.hexdigest()\n\ndef fetch(url, out):\n    tmp = out + '.part'\n    for attempt in range(4):\n        try:\n            with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': UA}), timeout=120) as r, open(tmp, 'wb') as f:\n                while True:\n                    b = r.read(1 << 20)\n                    if not b: break\n                    f.write(b)\n            os.replace(tmp, out); return\n        except Exception as e:\n            print('  retry', attempt + 1, e); time.sleep(5 * (attempt + 1))\n    raise SystemExit(f'could not download {url}')\n\nif __name__ == '__main__':\n    recs = json.load(open(os.path.join(SRC, 'candidates.json')))\n    for r in recs:\n        if not (r.get('used') or '--all' in sys.argv): continue\n        out = os.path.join(SRC, r['file']); os.makedirs(os.path.dirname(out), exist_ok=True)\n        print(f\"{r['file']}: {r['license']} · {r['author']} · {r['commons_url']}\")\n        if not os.path.exists(out):\n            fetch(r['original_url'], out)\n        if r.get('sha256') and sha256(out) != r['sha256']:\n            print(f\"  WARNING: {r['file']} differs from the recorded file (sha256); the cut-out parameters may need a look\")\n    print('sources ready in', SRC)\n"
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/tools/fetch_fonts.py",
+        "sha256": "de80ab4d98af1644af65ff7459a8dc94c21b772a6683bd2b009c6c666b019559",
+        "text_verbatim": "#!/usr/bin/env python3\n\"\"\"Fetch every font the page uses from Google Fonts (all SIL Open Font License 1.1) into kit/fonts/.\n\n    python3 kit/tools/fetch_fonts.py [scenes/film.json …] [--latin-only]\n\n- Latin faces, whole files from github.com/google/fonts (ofl/): Archivo (variable, wdth + wght) as\n  Archivo-VF.ttf, IBM Plex Mono Medium / SemiBold; plus each family's OFL.txt.\n- Chinese faces, subset to the characters the scenes use: LXGW Marker Gothic 400 (marker lettering) and\n  Noto Sans SC 500 / 700 / 900 (subtitles, tags, stamp, cards), through the Google Fonts CSS API with\n  &text= (a few kB each instead of megabytes). Run it again when the words change.\nCharacters are collected from tags, marker lettering, stamps, cards and subtitles of the scene files\n(default: scenes/film.json). Needs a network connection; standard library only.\n\"\"\"\nimport json, os, sys, urllib.parse, urllib.request, re\n\nHERE = os.path.dirname(os.path.abspath(__file__)); KIT = os.path.dirname(HERE); FD = os.path.join(KIT, 'fonts')\nUA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120 Safari/537.36'\nGF = 'https://raw.githubusercontent.com/google/fonts/main/ofl/'\nLATIN = {'Archivo-VF.ttf': 'archivo/Archivo%5Bwdth,wght%5D.ttf',\n         'IBMPlexMono-Medium.ttf': 'ibmplexmono/IBMPlexMono-Medium.ttf',\n         'IBMPlexMono-SemiBold.ttf': 'ibmplexmono/IBMPlexMono-SemiBold.ttf'}\nLICENCES = {'OFL-Archivo.txt': 'archivo', 'OFL-IBMPlexMono.txt': 'ibmplexmono',\n            'OFL-LXGWMarkerGothic.txt': 'lxgwmarkergothic', 'OFL-NotoSansSC.txt': 'notosanssc'}\nBASE = '0123456789,.:;!?()-–—+×·%米 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz，。：；！？、（）“”'\n\ndef get(url, timeout=60):\n    return urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': UA}), timeout=timeout).read()\n\ndef chars(scene_files):\n    s = set(BASE)\n    for f in scene_files:\n        d = json.load(open(f))\n        for e in d.get('elements', []):\n            if isinstance(e.get('text'), str): s |= set(e['text'])\n            for l in e.get('lines', []) or []:\n                if isinstance(l.get('text'), str): s |= set(l['text'])\n        for q in d.get('subs', []):\n            s |= set(q.get('zh', '')) | set(q.get('en', ''))\n    return ''.join(sorted(c for c in s if c.strip()))\n\ndef subset(family, weight, text, out):\n    q = f'https://fonts.googleapis.com/css2?family={family.replace(\" \", \"+\")}:wght@{weight}&text={urllib.parse.quote(text)}'\n    url = re.search(r'url\\((https://[^)]+)\\)', get(q, 30).decode()).group(1)\n    data = get(url); open(out, 'wb').write(data); print(out, len(data), 'bytes')\n\nif __name__ == '__main__':\n    args = [a for a in sys.argv[1:] if not a.startswith('--')]\n    os.makedirs(FD, exist_ok=True)\n    for name, path in {**LATIN, **{k: v + '/OFL.txt' for k, v in LICENCES.items()}}.items():\n        out = os.path.join(FD, name)\n        if not os.path.exists(out):\n            data = get(GF + path); open(out, 'wb').write(data); print(out, len(data), 'bytes')\n    if '--latin-only' in sys.argv: sys.exit(0)\n    files = args or [os.path.join(os.path.dirname(KIT), 'scenes', 'film.json')]\n    txt = chars(files); print(len(txt), 'characters')\n    subset('LXGW Marker Gothic', 400, txt, os.path.join(FD, 'LXGWMarkerGothic-sub.woff2'))\n    for w in (500, 700, 900):\n        subset('Noto Sans SC', w, txt, os.path.join(FD, f'NotoSansSC-{w}-sub.woff2'))\n    open(os.path.join(FD, 'chars.txt'), 'w').write(txt)\n"
+      }
+    ],
+    "local_original_asset_snapshot_inventory": [
+      {
+        "path": "styles/briefing-board/demo/events.json",
+        "sha256": "4c188cc594e40ccd9b12f4afaa8555562f3b6eaf0f7837f00967ca93c6ea3e10",
+        "bytes": 4061
+      },
+      {
+        "path": "styles/briefing-board/demo/scenes/film.json",
+        "sha256": "32b40adc3d13e0aaffb6ded3c5e50d4f34885195591b9311c96b9c0a1478e0f8",
+        "bytes": 54692
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/susp_raw.json",
+        "sha256": "57f98cf4e6cb533394d59f0ffef67209e70ec4f39d55235c98500a5646f9eb28",
+        "bytes": 742
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/print_susp.json",
+        "sha256": "fb04f0e85b5bf947ec02e51b52113325ce8336ea604970b9c7ff85a73a899cb5",
+        "bytes": 269
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/cable.json",
+        "sha256": "811739caf7946af39e5625600fd1b0a2391fb0ef8edaf7c8360b3d5780daa697",
+        "bytes": 878
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/suspension.json",
+        "sha256": "208dc27b3d0331e42ef7e95a4bd9476bce50458b11fef1a008d4cc7ad6d0fe14",
+        "bytes": 965
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/print_cable.json",
+        "sha256": "f80a4beb7d20e4e8798a3ed14663ad2875835acdcc3114dffc4996a5ce21fa46",
+        "bytes": 260
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/ship.json",
+        "sha256": "bac0770c010512c046dbbde6f353a61da8d46c9f9b809335885c22861e651d2f",
+        "bytes": 774
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/beam.json",
+        "sha256": "a80c09562f6c587aff774e9930ba68a5d67e795dddba8485410d668034fcbd15",
+        "bytes": 701
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/print_ship.json",
+        "sha256": "c81997c2e058e3a35c44aa58e3c6cb121a283d361e544959213d7dd33141636c",
+        "bytes": 259
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/ship_side.json",
+        "sha256": "cfaf927e6e158400c076257056fff5e169e8099349a6c9d818ec8d8630c777b9",
+        "bytes": 718
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/print_arch.json",
+        "sha256": "ba93502542f58d4b7c0e1e5d759f15717ea281bc7bd1f9721f07cdb21f4def1f",
+        "bytes": 257
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/cable_half.json",
+        "sha256": "7d542a0be84278eddadc605c1633c58fc94549234906a46cc5e41c890113b7dd",
+        "bytes": 794
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/arch.json",
+        "sha256": "a8c10bc46f988afc77e5e87b1b3ca4f509634aa5720205a10b0b20d349693822",
+        "bytes": 802
+      },
+      {
+        "path": "styles/briefing-board/demo/sources/candidates/candidates.json",
+        "sha256": "b438373f5844ab729f2ab2be0c9513ee10f3d9efcc5caf4d8f53c8b55e2fc09f",
+        "bytes": 45898
+      }
+    ]
+  },
+  "evidence": {
+    "dataset": "The original six source photos, cutout masks and anchor metadata from the published engineering board.",
+    "required_measurements": [
+      "Span records330/600/1208/2023m.",
+      "Cable-stayed image is a mirrored composite; suspension span is stretched1.7× as a type illustration, not a measurement of those photographs."
+    ],
+    "window": "Hypothetical1,000m river, common scale1.24px/m; original four bridge-type images and two ship views.",
+    "needed": [
+      "sources/candidates/ship_top.jpg",
+      "kit/objects/beam.png",
+      "kit/objects/arch.png",
+      "kit/objects/cable.png",
+      "kit/objects/suspension.png",
+      "kit/objects/ship.png",
+      "kit/objects/ship_side.png"
+    ],
+    "recipe": "Follow the isolated data-only preparation described in ASSET_GAPS.md and the exact original build/fetch scripts retained in engine_and_build.fetch_build_specs.",
+    "specific_blockers": [
+      "The six original photos/cutout PNGs are absent locally. Re-fetch the exact original photographs and rebuild masks using the archived anchors. Minor regenerated mask-pixel differences are acceptable with disclosure; no new approval gate is needed."
+    ],
+    "asset_status": [
+      {
+        "path": "styles/briefing-board/demo/sources/candidates/ship_top.jpg",
+        "present": false
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/beam.png",
+        "present": false
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/arch.png",
+        "present": false
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/cable.png",
+        "present": false
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/suspension.png",
+        "present": false
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/ship.png",
+        "present": false
+      },
+      {
+        "path": "styles/briefing-board/demo/kit/objects/ship_side.png",
+        "present": false
+      }
+    ],
+    "original_facts_verbatim": "# 事实与来源 · 《船说了算》\n\n所有上屏数字和旁白里的说法，逐条列出来源和原文。核对日期 2026-10-15（截至该日已建成通车的桥）。画面上只出现桥型和数字，不出现任何具体桥名、公司或品牌；下面的桥名只用来说明数字从哪来。\n\n\"1,000 米宽的河\"是假设的题目，不是某条真实的河。\n\n## 上屏 / 旁白对照\n\n| 上屏 | 旁白 | 说法 | 来源（见下） |\n|---|---|---|---|\n| 1,000 米 | \"a thousand meters wide\" | 假设的河宽 | — |\n| 梁桥 · 330 米 | \"Beam: three hundred and thirty.\" | 梁桥（箱梁，含钢-混混合梁）的最大主跨纪录 330 m | F1 |\n| 拱桥 · 600 米 | \"Arch: six hundred.\" | 拱桥最大跨径 600 m | F2 |\n| 斜拉桥 · 1,208 米 | \"Cable-stayed: twelve hundred and eight.\" | 斜拉桥最大主跨 1,208 m | F3 |\n| 悬索桥 · 2,023 米 | \"Suspension: over two thousand.\" | 悬索桥最大主跨 2,023 m | F4 |\n| 航道里不能有桥墩 / 船决定跨度 | \"The ship sets the span.\" | 跨河桥的主跨常由通航要求决定；航道内桥墩有船撞风险 | F5, F6 |\n\n## F1 梁桥 330 m\n\n- 桥：重庆长江大桥复线桥（石板坡复线桥），2006 年建成。预应力混凝土连续刚构，主跨中段嵌约 108 m 钢箱梁（钢-混混合梁）。\n- 工程承包方 DLT Engineering 项目页 https://www.dlteng.com/en/projects/Shibanpo.htm\n  > \"a main span of 330m\"\n  > \"it also boasts the longest box girder span in the world\"\n  > \"The central 108m of the main span was designed as a steel box girder to save weight\"\n- 团体标准征求意见稿（设计规范编制组，2025-06）https://www.ttbz.org.cn/upload/file/20250711/6388782936651095878446847.pdf\n  > \"目前梁桥的最大跨径已达 330 m。\"\n- 行业媒体 Bridge Design & Engineering（2006-07-28）https://www.bridgeweb.com/Completion-announced-of-record-breaking-span/985\n  > \"the world's longest box girder span\"\n- 口径说明：这是实腹箱梁（含混合梁）的纪录。若把钢桁架悬臂梁也算作梁桥，纪录是 549 m（Guinness：\"has the longest cantilever truss span of any in the world\"），仍远小于 1,000 m，论点不变。片中梁桥照片用的是箱梁桥。\n\n## F2 拱桥 600 m\n\n- 桥：天峨龙滩特大桥，2024-02-01 通车。\n- 广西壮族自治区交通运输厅（2024-02-02）http://jtt.gxzf.gov.cn/xwdt/jtxw/t17945057.shtml\n  > \"2月1日，世界最大跨径拱桥——南丹至天峨下老高速公路（以下简称南天高速）天峨龙滩特大桥建成通车。\"\n  > \"主桥为计算跨径600米的上承式劲性骨架混凝土拱桥\"\n- IABSE 项目页 https://www.iabse.org/page-18512\n  > \"a recently-built deck-type steel-reinforced concrete arch bridges in China with a world record-breaking effective span of 600 m.\"\n- 冲突说明：Guinness 页面仍列 575 m（2020 年的旧纪录），未更新；以官方通车口径 600 m 为准。\n\n## F3 斜拉桥 1,208 m\n\n- 桥：常泰长江大桥，2025-09-09 正式通车。\n- 常州市政府网（常州日报，2025-09-10）https://www.changzhou.gov.cn/ns_news/128175746480025\n  > \"常泰长江大桥还是世界最大跨度斜拉桥，主跨1208米\"\n- 常州市交通局（2025-09-09）https://www.changzhou.gov.cn/ns_news/892175738737795\n  > \"2025年9月9日，历经六年建设，常泰长江大桥正式通车。\"\n- 新华社（2025-09-10）https://www.news.cn/politics/20250910/1f8b916613e34a2bad02a5dd2ab24797/c.html\n  > \"常泰长江大桥主航道桥是主跨1208米的斜拉桥，创下了最大跨度斜拉桥的世界纪录\"\n- 冲突说明：Guinness 仍列 1,104 m（2012 年的旧纪录），未更新；以通车官方口径 1,208 m 为准。\n\n## F4 悬索桥 2,023 m\n\n- 桥：1915 恰纳卡莱大桥，2022-03-18 通车。\n- Guinness World Records https://www.guinnessworldrecords.com/world-records/longest-bridge-cable-suspension-bridge\n  > \"The longest cable suspension bridge is 2023 metres (6,637 ft) and was achieved by the 1915 Çanakkale Bridge, which was built in Çanakkale, Turkey, on 18 March 2022.\"\n- 土耳其公路总局 KGM 项目页 https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Projeler/ProjelerDetay.aspx?q=148\n  > \"2023 metrelik orta açıklığı ile … Dünyanın En Uzun Orta Açıklıklı Asma Köprüsü unvanına sahiptir.\"\n\n## F5 主跨常由通航决定\n\n- FHWA《Steel Bridge Design Handbook: Selecting the Right Bridge Type》（FHWA-HIF-16-002 Vol. 5, 2015）https://rosap.ntl.bts.gov/view/dot/42909\n  > \"One critical requirement that often controls the main span lengths for water crossings is navigational clearance.\"\n- Britannica, \"suspension bridge\" https://www.britannica.com/technology/suspension-bridge\n  > \"the suspension bridge provided an economical solution to the problem of long spans over navigable streams or at other sites where it is difficult to found piers in the stream.\"\n  > \"Modern suspension bridges are light and aesthetically pleasing and can span longer distances than any other bridge form.\"\n\n## F6 航道内桥墩与船撞\n\n- FHWA Technical Advisory T 5140.19 https://www.fhwa.dot.gov/engineering/hydraulics/policymemo/t514019.cfm\n  > \"…the location and arrangement of the bridge piers in relation to the navigable channel and the resulting vulnerability of the piers to ship collisions\"\n  > \"to locate and design piers on new bridges in such a way that the risks of collision are reduced to an acceptable level.\"\n\n## 墙上的次要层（只在终镜整墙里出现）\n\n| 上屏 | 说法 | 依据 |\n|---|---|---|\n| 来源卡\"梁桥 330 · 工程资料\" | 330 m 出自工程方项目页和设计规范征求意见稿 | F1 |\n| 来源卡\"拱桥 600 · 通车公告\" | 600 m 出自通车时的官方公告 | F2 |\n| 来源卡\"斜拉 1,208 · 通车公告\" | 1,208 m 出自通车时的官方公告 | F3 |\n| 来源卡\"悬索 2,023 · 纪录认证\" | 2,023 m 出自纪录认证（Guinness） | F4 |\n| 便签\"1,208 − 1,000 = 208 / 刚好够\" | 斜拉桥纪录跨度只比题目要求的 1,000 m 多 208 m，和尺寸线\"勉强\"一致 | F3 + 题设 |\n| 便签\"2,023 ÷ 1,000 ≈ 2 / 两倍有余\" | 2,023 / 1,000 = 2.023，略多于两倍 | F4 + 题设 |\n| 小草图\"通航净空\" | 只画航道净空的示意框和一艘船的剖面，没有数字 | F5 |\n| 钉着的五张照片打印件 | 片中抠图所用的同一组照片（不点名，见 `CREDITS`） | — |\n\n题设的简化：把整条 1,000 米宽的河都当作航道，所以\"航道里不能有桥墩，一跨过去\"意味着主跨至少 1,000 米。真实工程里航道只占河面的一部分，主跨按通航净空宽度定（F5）。\n\n## 终渲前核对\n\n终渲前把 `scenes/_gen_film.py` 里的上屏文字、`audio/lines.json` 的旁白和这张表逐条对过，结果记在 `PRODUCTION_LOG.md`。\n",
+    "original_credits_verbatim": "Engineering Briefing Board — \"The Ship Decides\" (library demo)\nEvery third-party asset in the film, with its source and licence.\n\nPHOTOGRAPHS (Wikimedia Commons; cut out at the photo's own resolution with BiRefNet, graded, and modified as noted)\n- Container ship from above (kit object \"ship\")\n  \"Containerschiffe auf der Elbe zwischen Wedel und Hamburg\" by BAW_Bundesanstalt für Wasserbau,\n  CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)\n  https://commons.wikimedia.org/wiki/File:Containerschiffe_auf_der_Elbe_zwischen_Wedel_und_Hamburg_(55103130595).jpg\n  Changes: rotated, cropped to the hull, background and shadow removed, colour graded.\n- Container ship, side view (kit objects \"ship_side\", \"print_ship\")\n  \"Ship Harrison (1)\" by Tvabutzku1234, CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)\n  https://commons.wikimedia.org/wiki/File:Ship_Harrison_(1).jpg\n  Changes: the ship's name, hull markings and the container operators' logos wiped with a median filter so that\n  no lettering is readable; cut out, colour graded; also shown uncut (lettering wiped) as a pinned print.\n- Beam bridge (kit object \"beam\")\n  \"Kiiminkiriver Bridge 20100705\" by Estormiz, public domain (PD-self)\n  https://commons.wikimedia.org/wiki/File:Kiiminkiriver_Bridge_20100705.JPG\n  Changes: cut out, desaturated.\n- Arch bridge (kit objects \"arch\", \"print_arch\")\n  \"Fort Henry Bridge, Wheeling, West Virginia\" by Carol M. Highsmith, Library of Congress, public domain (PD-Highsmith)\n  https://commons.wikimedia.org/wiki/File:Fort_Henry_Bridge)_Wheeling,_West_Virginia_LCCN2015632042.tif\n  Changes: cut out; a road sign under the arch removed; hangers lost against the hills continued down to the deck\n  at their measured positions.\n- Cable-stayed bridge (kit objects \"cable\", \"print_cable\")\n  \"East Huntington bridge, Huntington, West Virginia\" by Carol M. Highsmith, Library of Congress, public domain (PD-Highsmith)\n  https://commons.wikimedia.org/wiki/File:East_Huntington_bridge,_Huntington,_West_Virginia_LCCN2015631874.tif\n  Changes: cut out; a water-level gauge and a road sign painted out; the stay cables measured in the photo and\n  redrawn as clean lines; the single pylon with its main-span fan mirrored to make a two-pylon main span\n  (a composite that represents the bridge type, not a real bridge).\n- Suspension bridge (kit objects \"suspension\", \"print_susp\")\n  \"Bear mountain bridge west II\" by Russ, CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/)\n  https://commons.wikimedia.org/wiki/File:Bear_mountain_bridge_west_II_(14104379089).jpg\n  Changes: cut out, desaturated; the main span between the towers stretched horizontally (×1.7) so the\n  towers keep their shape at a two-kilometre span; the main cables (fitted parabolas) and the hangers\n  (measured positions) redrawn as clean lines (represents the bridge type, not a real bridge).\nThe four \"print_*\" objects are the same photographs, uncropped, on a white photo-paper border, pinned at the\ntop right of the wall. No real bridge, ship, company or place is named or readable in the film. The licence\ntrail of every photo looked at is in sources/candidates/candidates.json; kit/tools/fetch_sources.py downloads\nthe six used ones from Commons.\n\nThe whiteboard, its light and ghosts, the frame and tray, magnets, tags, the steel ruler, the cards and sticky\nnotes, the clearance sketch, the rubber stamp and all marker ink are drawn in code.\n\nFONTS (SIL Open Font License 1.1; texts in kit/fonts/; all from Google Fonts, fetched by kit/tools/fetch_fonts.py)\n- LXGW Marker Gothic, The LXGW Marker Gothic Project Authors (subset)\n- Noto Sans SC, Adobe / Google (subset)\n- Archivo, Omnibus-Type\n- IBM Plex Mono, IBM\n\nVOICE\n- Narration: Kokoro-82M text-to-speech (Apache-2.0), voice af_heart, run offline with kokoro-onnx (MIT).\n- Speech check: faster-whisper (MIT).\n\nMUSIC AND SOUND\n- Original score and procedural sound design written for this film (audio/mix.py).\n- Drums: \"MuldjordKit\" by Lars Muldjord (drumgizmo.org), FreePats version, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)\n- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition (Versilian Studios), Versilian Community Sample Library (Versilian Studios)\n  (electric bass, contrabass, claves, hi-hat, toms, shaker, crash, suspended cymbal, gran cassa, timpani,\n  trombone, tuba, horn, tubular bells, glockenspiel, vibraphone)\n\nTOOLS\n- Segmentation: BiRefNet-general (MIT; ONNX export from https://github.com/danielgatis/rembg/releases), run through onnxruntime (MIT).\n- Rendering: headless Chromium (Playwright); ffmpeg.\n\nFACTS\n- Every number on screen and in the voice-over, including the source card and the two sticky-note sums, is sourced in FACTS.md.\n",
+    "source_urls": [
+      "http://jtt.gxzf.gov.cn/xwdt/jtxw/t17945057.shtml",
+      "https://[^",
+      "https://commons.wikimedia.org/wiki/File:Bear_mountain_bridge_west_II_(14104379089",
+      "https://commons.wikimedia.org/wiki/File:Containerschiffe_auf_der_Elbe_zwischen_Wedel_und_Hamburg_(55103130595",
+      "https://commons.wikimedia.org/wiki/File:East_Huntington_bridge,_Huntington,_West_Virginia_LCCN2015631874.tif",
+      "https://commons.wikimedia.org/wiki/File:Fort_Henry_Bridge",
+      "https://commons.wikimedia.org/wiki/File:Kiiminkiriver_Bridge_20100705.JPG",
+      "https://commons.wikimedia.org/wiki/File:Ship_Harrison_(1",
+      "https://creativecommons.org/licenses/by/2.0/",
+      "https://creativecommons.org/licenses/by/4.0/",
+      "https://creativecommons.org/publicdomain/zero/1.0/",
+      "https://fonts.googleapis.com/css2?family={family.replace(",
+      "https://github.com/danielgatis/rembg/releases",
+      "https://github.com/danielgatis/rembg/releases/download/v0.0.0/BiRefNet-general-epoch_244.onnx",
+      "https://github.com/lemomo-ai/lemo-opuscar;",
+      "https://raw.githubusercontent.com/google/fonts/main/ofl/'",
+      "https://rosap.ntl.bts.gov/view/dot/42909",
+      "https://www.bridgeweb.com/Completion-announced-of-record-breaking-span/985",
+      "https://www.britannica.com/technology/suspension-bridge",
+      "https://www.changzhou.gov.cn/ns_news/128175746480025",
+      "https://www.changzhou.gov.cn/ns_news/892175738737795",
+      "https://www.dlteng.com/en/projects/Shibanpo.htm",
+      "https://www.fhwa.dot.gov/engineering/hydraulics/policymemo/t514019.cfm",
+      "https://www.guinnessworldrecords.com/world-records/longest-bridge-cable-suspension-bridge",
+      "https://www.iabse.org/page-18512",
+      "https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Projeler/ProjelerDetay.aspx?q=148",
+      "https://www.news.cn/politics/20250910/1f8b916613e34a2bad02a5dd2ab24797/c.html",
+      "https://www.ttbz.org.cn/upload/file/20250711/6388782936651095878446847.pdf"
+    ]
+  },
+  "matching_blockers": [
+    "The six original photos/cutout PNGs are absent locally. Re-fetch the exact original photographs and rebuild masks using the archived anchors. Minor regenerated mask-pixel differences are acceptable with disclosure; no new approval gate is needed.",
+    "The original conversation prompt is not published. Use the complete published specification and audited reconstruction; do not claim the recovered text is a verbatim original chat prompt."
+  ],
+  "visual_audit": {
+    "state": "complete-regular-sheet-coverage",
+    "reference_video_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/films/briefing-board.mp4",
+    "reference_video_sha256": "1a0dafce471a6dea58645e7a21bb053325337abf97916fc43eb944576008b3f7",
+    "coverage": [
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/sheets/sheet-01.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/sheets/sheet-02.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/sheets/sheet-03.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/briefing-board/sheets/sheet-04.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      }
+    ],
+    "reference_verified_visual_observations": [
+      "Use one large ivory enamel wall, not a slide deck. Blue hand-drawn banks and a1,000m dimension establish the hypothetical river. Black bridge lines and magnetic piers are rejected when the real top-view ship collides; a rough red 否决 stamp lands. The new rule is 航道不立墩. A metal ruler establishes scale, then four real photographed bridge cutouts enter stacked rows with blue span arrows330/600/1,208/2,023m. Beam and arch are crossed out, cable-stayed marked 勉强 and suspension circled. A real side-view ship passes underneath before a single pullback exposes the complete accumulated board and 船决定跨度 headline."
+    ],
+    "note": "All regular reference sheets were inspected across the complete film. Named supplementary frames cover important short actions and transitions. This is scene coverage, not a claim that every encoded frame was inspected."
+  }
+}

@@ -1,0 +1,936 @@
+{
+  "schema_version": "matched-original-brief-v2-audit-1",
+  "slug": "teardown",
+  "status": "reference-audited-asset-rebuild-required",
+  "original_title": "21 Keys, Opened",
+  "original_title_aliases_from_demo": [
+    "Demo: *21 Keys, Opened* 《二十一键》 (38.75 s) · `teardown.mp4` · source in [`demo/`](demo/)",
+    "",
+    "One half of the open-source Corne v4 split keyboard (foostan/crkbd, CC BY 4.0 / MIT), built from the project's own KiCad board, switch-plate file, case STEP, bill of materials and build guide. Chinese on screen, English narration, bilingual subtitles (Chinese line above, English below). Every number on screen and in the voice is in [`demo/FACTS.md`](demo/FACTS.md). The project's name and logo are not shown in the picture (only in the end-card credit line); the chip and part numbers are component designations from the BOM, and no package top carries a marking."
+  ],
+  "published_premise_verbatim": "One half of an open-source keyboard comes apart in a single orbit, dives under its circuit board to the chip, the lights and the sockets, then closes with its real dimensions drawn on it.",
+  "published_premise_zh_verbatim": "开源键盘的一半在一次环绕中逐层拆开，镜头钻到电路板背面看主控、灯珠和热插拔座，再合拢，把真实尺寸画在实物上。",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "verbatim_original_conversation_prompt": null,
+    "published_brief_statement": null,
+    "reconstructed_replication_instruction": "Recreate the full published 21 Keys, Opened scene order, story, exact narration and screen text at original timing/resolution/fps, including all specified subjects, performance, mechanisms, lens/light/material treatment, transitions and sonic hits. This is a reconstruction from published sources, not a quoted original conversational prompt.",
+    "reconstruction_basis": [
+      "Complete published STYLE.md and DEMO.md",
+      "Published narration, cards and timing source",
+      "Original movie: all regular contact sheets and named key-event frames"
+    ]
+  },
+  "original_format": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24.0,
+    "duration_s_exact_timeline": 38.75,
+    "duration_s_gallery_rounded": 38.8,
+    "duration_s_published_demo_text": "38.75",
+    "video_stream_metadata_verified": true,
+    "note": "Encoded target is frame_count/fps, not rounded catalogue or container audio duration.",
+    "frame_count": 930,
+    "duration_s": 38.75,
+    "container_duration_s": 38.75,
+    "production_canvas_width": 1920,
+    "production_canvas_height": 1080
+  },
+  "source_authorship": "Historical original by Lemomo/LemoLab using Claude Opus5.5. New output must identify actual GPT authorship and attribute any reused generic components.",
+  "source_hashes": [
+    {
+      "path": "styles/teardown/STYLE.md",
+      "sha256": "90df05a02a3d33add58e0dd99bef19ca20ea16b10390b3c2350d8483106922ee"
+    },
+    {
+      "path": "styles/teardown/DEMO.md",
+      "sha256": "f2503d411b65f504a4624dcb54bb9e1b4c42b6bb764d0fb7222dbf18d3f1aa93"
+    },
+    {
+      "path": "styles/teardown/style.json",
+      "sha256": "98011b0068006b13f9ceb47d2cd581c893ae6472a04abd17a882d9a225552893"
+    },
+    {
+      "path": "styles/teardown/demo/src/timeline.js",
+      "sha256": "f55ab15c168dc23f384d22792cd8218b3fee305d6919fdf741bde1b3cfb25341"
+    },
+    {
+      "path": "styles/teardown/demo/voice/lines.json",
+      "sha256": "2c997ee9999642e5a0778ac381950e5facc2f11d28661663ed2aa85a555fda7a"
+    },
+    {
+      "path": "styles/teardown/demo/cues.json",
+      "sha256": "6c9a9d6f8d3b5e303ec2b5b48605b63b2b724571c9e15cdb063a2edd74ce48a8"
+    }
+  ],
+  "style_guide_sha256": "90df05a02a3d33add58e0dd99bef19ca20ea16b10390b3c2350d8483106922ee",
+  "style_guide_verbatim": "# Exploded Teardown — Style Prompt\n\n> A real product, built from its own engineering files (CAD, PCB layout, bill of materials), lit like a studio packshot and taken apart in front of the camera: the layers lift on one axis, the camera travels between them, every part is named with the numbers its files contain, and it closes again into one object.\n> References (grammar only): hardware-launch exploded films (layer stagger, orbit timing), repair-guide teardowns (opening order, the macro on the part that matters), engineering drawing (leaders, dimension lines). Never copy their products, layouts, typefaces or music, or name them in the film.\n\n## 1. Essence, and what it is not\n\nA frame reads as this style when:\n\n- **the object is real and exact**: geometry, positions and counts come from the product's own files (STEP, KiCad, BOM, assembly guide). Nothing is eyeballed that a file can give;\n- **it is shown apart**: layers float on one axis with even, readable gaps, each still oriented as it sits in the product;\n- **it is photographed, not drawn**: physically based materials, a studio key light, a cool rim, an HDRI reflection, soft contact shadow on an invisible floor;\n- **the numbers live on the object**: thin leader lines from a dot on the part, dimension lines with ticks drawn in the scene's own perspective, never a table beside it;\n- **the camera never stops travelling**: one or a few continuous moves, orbit outside, macro inside.\n\nIt is not a glass product render (one object, material beauty, no disassembly), not a blueprint (line drawing on a grid, no light), not a keynote (slides, headline type, a stage), not an assembly manual (step numbers, arrows, hands).\n\n## 2. Materials & rendering\n\n- Real-time PBR (three.js `MeshPhysicalMaterial`) at 2× and downsampled, ambient occlusion, a depth of field with one aperture for wide and macro (blur follows 1/focus − 1/z, so it grows as the camera comes close), a high-threshold bloom for emitters only, a vignette.\n- Each material keeps its character: plastics with soft sheen (roughness 0.55–0.7), boards with a thin clearcoat and traces as a raised, lighter relief under the mask, metallic pads, tight highlights on machined metal, matte rubber.\n- **Boards are painted from their layout files**: copper pours, every trace, via, pad and drill, silkscreen, on both sides, at 14–20 px per millimetre, with roughness, metalness and bump maps from the same drawing. Components stand at their footprint positions with their package sizes.\n- Light: a warm key from above front, a cool rectangular rim behind that follows the camera so edges separate from the ground, a soft top light, a low HDRI for reflections; a practical fill only where the camera goes inside.\n- Background: a dark graphite seamless sweep (screen-space radial gradient), floor visible only as soft shadow.\n- Effects anchored to the world (leaders, dimension lines, glows) are projected from 3D points every frame; only subtitles and title cards live in screen space.\n\n**Where the geometry comes from.** For the user's own product, ask for its STEP / IGES / KiCad / other CAD exports, BOM and spec sheet before anything else. For a public product, look for open hardware (GitHub, GitLab, OSHWA certification list, Hackaday.io, Printables/Thingiverse sources with the original CAD) and component datasheets from the maker. CC0, public domain, CC BY and MIT are fine with credit; CERN-OHL (-P, -W, -S), CC BY-SA, GPL hardware and \"no known restrictions\" are not the same thing: name the terms to the user and ask before using them. Without files, build only from published dimensions (datasheet, spec page), say on screen or in the voice that it is a model, and show no number you could not source. Never stand in a generated image for the real part.\n\nKeep a FACTS.md in the project folder (claim, source URL, quoted wording, or the measurement method for anything measured from the CAD) and deliver it with the film.\n\n## 3. Colour logic\n\n- The product brings its own colours; the frame around it is neutral and dark, so the product is always the brightest, most saturated thing.\n- Interface ink is one warm white at two strengths (names at full, specs at about 60 %), plus **one accent** reserved for measured things: dimension lines, label indices and one matching detail on the product itself.\n- Values are ordered: ground darkest, product mid to light, labels lightest. Never put text on a busy, bright part without a dark backing.\n- Example (our demo): ground #34363a → #0d0e10, ink #f1efe9, accent #ff6b3d.\n\n## 4. Type & subtitles\n\n- Names: a clean sans at medium weight in the film's script (28–32 px; Noto Sans SC 500 in our demo). Specs and numbers: a monospaced face (15–22 px; JetBrains Mono) so digits line up and read as measurement. A neutral grotesque (Inter) for Latin running text.\n- Label structure is fixed: a two-digit index in the accent, the name, one spec line. Units always written (mm, MB, ×n for counts). A label carries at most one fact the voice does not say.\n- Dimension text sits on a small dark plate, follows the line's angle and is never upside down.\n- Subtitles: a centred strip at the bottom with a soft shadow and no box; if the film is bilingual, the film's language on top. Hold every cue ≥ max(1.8 s, speech + 0.6 s); every label stays fully in frame for CJK ÷ 4.5 + other ÷ 15 + 1.5 s.\n\n## 5. Motion quality\n\n- 24 fps on ones; everything is smooth and deterministic.\n- **Separation**: smooth start, fast middle, long settle (ease-in-out cubed); layers leave top first, 0.15–0.2 s apart; repeated parts (keys, screws) fan out in a wave ordered by distance from a corner.\n- **Closing**: bottom first, quicker (about 1 s per layer), the last layer lands with a real mechanical response (a key travels its stroke and returns; nothing bounces like rubber unless it is rubber).\n- While held apart, layers may float a millimetre or two with offset phases; during macro shots they hold perfectly still.\n- Labels draw in (anchor dot, leader growing, text sliding 10 px) and fade out before the parts move again.\n- Never moves: the floor, the light rig's relation to the camera, the label column's x position.\n\n## 6. Camera grammar\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Orbit while layers separate | the whole, its order of assembly | a reveal; a structure overview |\n| Grazing macro dolly | touch, material, finish | an opening; a texture |\n| Dive between layers | being inside | a hidden component; how it works |\n| Slow push on one still part | the part that matters | a chip, a sensor, a seal |\n| Rise through the stack | one subsystem to the next | a transition between stops |\n| Fast pull back | return, synthesis | a closing; a before/after |\n| High three-quarter drift | scale and precision | sizes, pitch, thickness |\n\n- At key moments the subject fills at least a third of the frame height. Labels live in a column on the free side (shift the projection with a view offset rather than moving the object), subtitles in the bottom 12 %.\n- Transitions are camera moves through the object itself. No cuts to black, no slide transitions, no split screens.\n- The camera path is keyed in the product's own coordinates and interpolated without overshoot (monotone cubic), so a held macro really holds.\n\n## 7. Sound palette\n\n- Instruments: tuned mallets (marimba, vibraphone, glockenspiel, glass), a round bass, a short synthetic kick and small dry percussion. Precise and dry outside the object; sustained and airy inside it.\n- Foley is the material: hollow plastic clacks for keycaps or housings, a switch click with a low thock, dry taps for boards, inharmonic rings for small machined metal, a soft thud for the enclosure, airy swooshes for layers lifting and for camera dives, a fine pen hiss when a dimension line draws, a tiny tick per label.\n- Every separation and every landing has its sound, panned to where the part is.\n- Silence: at least two near-silences (room tone only) before the big separations or the turn back; the first sound after each is the most important hit around it.\n- Mix: voice clearly on top (music about 10 dB under it while it speaks), music bus ducked, sub-bass kept lean (20–60 Hz well under the full band), loudness −14 LUFS.\n- Voice: calm, close, unhurried, short sentences; numbers spoken as words, written as digits.\n\n## 8. Native moves\n\n- **The wave lift.** Repeated parts rise in a wave across the object. *Fits content like:* battery cells; solar tiles; the drawers of a modular shelf.\n- **Inside the gap.** The camera enters the space between two lifted layers to see a hidden face. *Fits content like:* the back of a logic board; the inside of a drone arm; the underside of a sensor module.\n- **The leader that lands on the part.** A macro label whose line ends on the component. *Fits content like:* a pressure sensor in a shoe; a gasket in a waterproof case; a motor driver.\n- **Dimensions drawn on the thing.** After closing, the real outline gets dimension lines in perspective. *Fits content like:* the thickness of a laptop lid; the footprint of a router; the bore of a valve.\n- **One real motion.** A part performs its true mechanical motion once (a press, a hinge, a latch). *Fits content like:* a camera shutter; a buckle; a folding hinge.\n- **Lights on inside.** Emitters inside the product switch on while it is apart. *Fits content like:* status LEDs; a backlit display; an indicator ring.\n\n## 9. Pitfalls of the medium\n\n- **Invented numbers.** A size that no file gives. Fix: measure it from the CAD and say \"measured\" in the facts file, or leave it out.\n- **Mixed-up revisions.** Plates, cases and boards from different versions of a project. Fix: check hole positions and stack heights across the files (they must coincide), and pin the commit.\n- **Panelised boards.** Layout files may hold a panel with breakaway tabs. Fix: take the outline from a plate or case of the same revision, or flood-fill from an interior point.\n- **Zero-length edges.** Duplicate outline points give zero normals → NaN → black squares after bloom. Fix: clean outlines, repair zero normals, scan frames for one-frame black tiles.\n- **Overshooting camera splines.** Catmull-Rom over unevenly spaced keys flies past a macro stop. Fix: monotone interpolation per component.\n- **Labels too short.** Macro stops last about three seconds. Fix: one fact per label, opened before the camera settles; check with `readcheck`.\n- **Over-bright light sweeps.** Area lights blow plastics to white. Fix: sweeps at a fraction of the key, bloom threshold above the brightest diffuse surface.\n- **Brand marks on parts.** Chip tops and connector shells carry trademarks. Fix: plain package tops; drop logo footprints unless the product is the user's own.\n- **Crushed blacks.** Black plastics against a black ground disappear. Fix: lift them to a dark grey and let the rim light separate them.\n\n## 10. Engine\n\nAll in `demo/src/` (three.js r170, the library's `core/three/post.js` and `core/lib.js`):\n\n- `parts.js`: `keycapGeometry(w, d, h)` (lofted shell with a spherical dish and a stem), `switchGeometries()`, `loft(rings)`, `shapeFrom(outline, holes, circles)` (KiCad outline to extrusion), `inset`, `hexSpacer`, `screwGeometry`.\n- `pcbtex.js`: `paintPCB(data, side, outline, box, ppm)` paints colour, roughness/metalness and bump maps from extracted layout data.\n- `comps.js`: `buildBackParts(data, group, y, materials)` places package bodies at footprint positions and returns anchors.\n- `overlay.js`: anchored labels (`label`), perspective dimension lines (`dimension`), subtitles, title card, readcheck texts, subtitle width check.\n- `main.js`: layers, explode and gap functions, the camera keys (orbit or eye/target, monotone), lights, `window.EV` for the mixer.\n- `tools/extract_pcb.py`, `kicad_geom.py`, `sexp.py`: read any `.kicad_pcb` (outlines, tracks, zones, pads, silkscreen, footprints; plain Python). `tools/step2mesh.mjs`: STEP to mesh.\n\n**Extra packages and packs**, beyond `setup.sh deps [voice] [music]`: `occt-import-js` (npm, LGPL-2.1, not in the library's package.json) to triangulate STEP files, and the studio HDRI (`sh tools/fetch.sh hdri`). Install the npm package yourself into a private `node_modules` in the project folder (as `tools/fetch_cad.sh` does in a temp folder), never into `$LIB`.\n\nMinimal example, not in the demo: read a plate file with `extract_pcb.py`, extrude `shapeFrom(outline, cutouts)` 1.5 mm as aluminium (`metalness: 1, roughness: .35`) and orbit it with three `CAM` keys.\n\n## 11. Variation space\n\nDecided per film: which product and revision, which layers to separate and in what order, how many stops inside and which parts deserve them, the camera route, whether to open from the whole or from a detail, the product's palette and the accent, the voice.\n\n- **Three structures**: one orbit with two stops; a \"how it works\" path following a signal or flow through the layers; two revisions taken apart side by side, each held still before a difference is named.\n- **Three openings**: a part performing its real motion in macro; the closed product turning in silence on the seamless; a single component floating alone before the rest of the product assembles around it.\n- **Three endings**: closed with its dimensions drawn on it; closing into a top view that becomes a technical drawing; apart one last time, frozen, every part labelled like a printable sheet.\n\n---\n\nHow our demo was made (story, shots, score, title card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n",
+  "published_demo_verbatim": "# Exploded Teardown — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *21 Keys, Opened* 《二十一键》 (38.75 s) · `teardown.mp4` · source in [`demo/`](demo/)\n\nOne half of the open-source Corne v4 split keyboard (foostan/crkbd, CC BY 4.0 / MIT), built from the project's own KiCad board, switch-plate file, case STEP, bill of materials and build guide. Chinese on screen, English narration, bilingual subtitles (Chinese line above, English below). Every number on screen and in the voice is in [`demo/FACTS.md`](demo/FACTS.md). The project's name and logo are not shown in the picture (only in the end-card credit line); the chip and part numbers are component designations from the BOM, and no package top carries a marking.\n\n## Story & structure\n\nLogline: twenty-one keys look like one object; opened, they are six layers drawn in public files, down to the chip, the lights and the sockets; closed again, every size on them is a published number.\n\nArc: touch (a grazing macro over the keycaps, one real keystroke) → the opening (one orbit, layers lift top first, keys in a wave, six labels) → inside (a dive into the room between the board and the case, looking up at the back of the board: the RP2040, the flash, a reverse-mounted LED; then a rise through the plate to the switch pins) → back together (a fast pull back, bottom-first closing, keys land with their stroke) → the numbers on the object (key pitch, width, depth, height as dimension lines) → end card.\n\nNative moves spent: *one real keystroke* in the opening; *the wave lift* at the separation; *inside the gap* and *the leader that lands on the part* for the three stops; *lights on inside* at the LED; *dimensions drawn on the thing* before the card.\n\n## Shots\n\nOne continuous camera. Times in seconds; 96 BPM, bar = 2.5 s.\n\n| # | Time | Shot | Camera | Native move / note |\n|---|---|---|---|---|\n| 1 | 0.0–2.5 | keycap tops, the orange 1.5u key in the foreground, a soft light gliding across | grazing macro dolly, eye 33 mm above the floor, lens 30° | hook: material, a light sweep |\n| 2 | 2.5–4.4 | the orange key travels its 4 mm stroke at 3.13 and returns; pull up to the whole half | dolly → three-quarter hero, 330 mm | one real keystroke |\n| 3 | 4.4–5.0 | held | orbit continues | silence 1 (room tone, a rising suck) |\n| 4 | 5.0–7.5 | keys rise in a wave from the back-left corner, then switches, plate, board, spacers, case; feet stay on the floor | orbit −31° → −9°, pulls back to 432 mm, model slides left (view offset 170 px) | the wave lift; hit at 5.0 |\n| 5 | 6.9–11.9 | six labels draw in down the right column: 键帽 1u ×20 · 1.5u ×1, 机械轴体 十字轴 ×21, 定位板 FR-4 1.6 mm, 电路板 双层 1.6 mm, 铜柱 M2 × 7.5 mm ×4, 外壳 底厚 2.0 mm | slow orbit to +18°; at 10.0 the board and everything above rise 30 mm more | signature frame at 9.75 (poster) |\n| 6 | 12.5–15.0 | down past the plate and the board edge into the gap; the case's interior lights up | dive, 452 mm → 30 mm, tilting up | the dive swoosh starts 0.35 s before |\n| 7 | 15.0–18.1 | the back of the board: RP2040 (7 × 7 mm), flash (16 MB), crystal, 0402 parts, sockets, all at footprint positions | held macro, eye 24 mm under the board, slow drift | leader lands on the chip |\n| 8 | 18.1–21.3 | slide to LED10: the reverse-mounted LED; the lights on the top side come on | macro slide 9 mm | lights on inside |\n| 9 | 21.3–22.3 | out from under the board, up past the plate | rise through the stack | transition |\n| 10 | 22.3–25.0 | the thumb-row switches seen from below: pins over the hot-swap holes; label 热插拔 ×21 | held macro at pin height, switches lifted a further 16 mm | silence 2 at 24.6–25.0 |\n| 11 | 25.0–27.6 | fast pull back; the case comes up, board, plate, switches; the keys land last in a wave, each with its stroke | pull to 380 mm, three-quarter high | the loudest moment (26.6) |\n| 12 | 27.5–33.7 | dimension lines on the closed half: 键距 19.05 mm, 138.4 mm, 97.6 mm, 11.1 mm | high three-quarter drift, az 20° → 40°, 374 → 336 mm | dimensions drawn on the thing |\n| 13 | 33.75–38.75 | end card on the left, the keyboard turning on the right | drift az 40° → 59°, view offset −230 px | |\n\n## Score structure\n\n96 BPM, 4/4, D (Dm9 – B♭maj7 – F – C/E per bar), D major on the card. Every hit sits on a beat or half-beat of `src/timeline.js`.\n\n| Section | Time | Palette | Notes |\n|---|---|---|---|\n| Touch | 0–4.4 | marimba in 8ths (soft), bowed vibraphone, room tone | the keystroke: switch click + low thock + return clack |\n| Silence 1 | 4.4–5.0 | room tone, a filtered-noise suck | |\n| Opening | 5.0–12.5 | marimba 16ths, electric bass, synth kick on 1 and 3, claves on 2 and 4, closed hi-hat 16ths | 21 plastic ticks in the wave, swooshes per layer, a ring for the brass, a thud for the case, a tick per label |\n| Inside | 12.5–24.4 | bowed vibraphone chords, glass motif, pedal hi-hat in 8ths, sub kick once a bar | glockenspiel pings on each stop (A5, D6, E6), an arpeggio for the lights |\n| Silence 2 | 24.6–25.0 | room tone only | |\n| Closing | 25.0–33.75 | groove returns, four on the floor | 21 key landings (clack + click), board taps, the case thud; a pen hiss per dimension |\n| Card | 33.75–38.75 | D-major marimba roll, bowed vibraphone D–F♯–A, bass D, glockenspiel answers | long tail |\n\nMix (`demo/mix.py`): voice compressed and about 8–10 dB over the music while it speaks (music ducked 55 % on the voice envelope), music high-passed at 44 Hz, foley at 36 Hz; loudest moments in order: the landings (26.6), the card, the pull back (25.0), the opening hit (5.0). The film measures −14.2 LUFS integrated, LRA 4.9 LU, true peak about −1 dBTP; 20–60 Hz sits 12.5 dB under the full band.\n\n## Palette & props\n\n- Ground #34363a → #0d0e10; ink #f1efe9; accent #ff6b3d (labels' indices, dimension lines, the 1.5u key, the switch stems).\n- Keycaps: off-white #d9d4c9, grey #686c73 on the outer column and thumbs, the 1.5u thumb key orange; uniform-height sculpted profile drawn in code. Switches: cross-stem generic (14 mm bottom, 15.6 mm top housing), drawn in code. Plate black FR-4 with a warm core edge; board green mask, gold pads; brass hex spacers; dark screws; anodised-look case (the files do not name a material; the look is a render choice).\n- Narrator: Kokoro `am_michael`, speed 0.95.\n\n## End card\n\n二十一键 (Noto Sans SC 500), *21 Keys, Opened* (Inter Light), `产品拆解 · EXPLODED TEARDOWN`, `CAD：foostan/crkbd · CC BY 4.0`, `LemoLab × Claude Opus 5.5`, an orange rule; the closed keyboard drifting on the right. 5 s. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Build notes\n\n```\ndemo/\n  build.sh          one command: voice → speech check → cues → events → video → mix → master → .srt → checks → poster\n  index.html        WebGL canvas + 2D marks canvas, fonts\n  src/timeline.js   the single timeline: beats, layer timings, gaps, narration, label windows, camera keys\n  src/main.js       scene, layers, explode/gap, camera (monotone keys), lights, render(t), window.EV\n  src/parts.js      keycap, switch, outline extrusion, spacer, screw geometry\n  src/pcbtex.js     board textures painted from the KiCad data\n  src/comps.js      back-side parts at footprint positions\n  src/overlay.js    labels, dimensions, subtitles, end card, readcheck texts, subtitle width check\n  mix.py            score (sampler), foley (synthesised), voice, mix → out/mix.wav + out/stems/\n  tools/            extract_pcb.py, kicad_geom.py, sexp.py, step2mesh.mjs, fetch_cad.sh (data); fetch_fonts.py;\n                    export.mjs (voice lines, cues, timeline.json); subcheck.mjs, motioncheck.py (checks)\n  data/             pcb.json (left half, extracted), case.bin (case mesh)\n  FACTS.md, CREDITS, TREATMENT.md, PRODUCTION_LOG.md, stills/styleframe.jpg\n```\n\n- `sh demo/build.sh` takes about 3 minutes on Apple silicon (picture about 60 s with 4 workers). In a clean clone it first rebuilds what git does not carry: `data/case.bin` and `data/pcb.json` from the CAD at the pinned commit (network, and npm for a temporary occt-import-js), the fonts from Google Fonts, and any missing library pack (HDRI, Kokoro, the vcsl / freepats / vsco2ce samples). `FETCH=1` forces the CAD and fonts.\n- Checks it runs: `asr_check.py` with `small.en` (two lines carry the words Whisper writes: \"RP 2040\", \"19.05 millimeters\"), subtitle single-line widths with the real fonts (widest 552 px against 1500), `readcheck.mjs` (all 19 texts pass), `motioncheck.py` (no one-frame black tiles; motion per second).\n- Demo-specific pitfalls: the v4 board file is a panel with breakaway tabs, so the board outline is the 3x6 plate outline inset 0.4 mm (the plate's 21 cutouts sit 0.4 mm off the switch footprints, measured, and corrected); the case STEP has y up and must be flipped and shifted onto the board (offsets in `tools/step2mesh.mjs`), checked by the four screw holes; the project logo footprint is skipped at extraction; the Kokoro voice reads \"RP2040\" badly, so the spoken text says \"R P twenty forty\".\n",
+  "canonical_scene_order": [
+    {
+      "id": "1",
+      "t0": 0.0,
+      "t1": 2.5,
+      "published_time_range": "0.0–2.5",
+      "visual_prompt_source_description": "keycap tops, the orange 1.5u key in the foreground, a soft light gliding across",
+      "camera": "grazing macro dolly, eye 33 mm above the floor, lens 30°",
+      "motion_transition_sound_notes": "hook: material, a light sweep",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v1",
+          "t0": 0.5,
+          "t1": 3.78,
+          "zh": "二十一个键，半把键盘。",
+          "en": "Twenty-one keys. Half a keyboard."
+        }
+      ],
+      "voice_line_ids": [
+        "v1"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/teardown/frames/f-0002.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "2",
+      "t0": 2.5,
+      "t1": 4.4,
+      "published_time_range": "2.5–4.4",
+      "visual_prompt_source_description": "the orange key travels its 4 mm stroke at 3.13 and returns; pull up to the whole half",
+      "camera": "dolly → three-quarter hero, 330 mm",
+      "motion_transition_sound_notes": "one real keystroke",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v1",
+          "t0": 0.5,
+          "t1": 3.78,
+          "zh": "二十一个键，半把键盘。",
+          "en": "Twenty-one keys. Half a keyboard."
+        }
+      ],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/teardown/frames/f-0004.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "3",
+      "t0": 4.4,
+      "t1": 5.0,
+      "published_time_range": "4.4–5.0",
+      "visual_prompt_source_description": "held",
+      "camera": "orbit continues",
+      "motion_transition_sound_notes": "silence 1 (room tone, a rising suck)",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/teardown/frames/f-0005.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "4",
+      "t0": 5.0,
+      "t1": 7.5,
+      "published_time_range": "5.0–7.5",
+      "visual_prompt_source_description": "keys rise in a wave from the back-left corner, then switches, plate, board, spacers, case; feet stay on the floor",
+      "camera": "orbit −31° → −9°, pulls back to 432 mm, model slides left (view offset 170 px)",
+      "motion_transition_sound_notes": "the wave lift; hit at 5.0",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v2",
+          "t0": 5.3,
+          "t1": 8.06,
+          "zh": "拆开，是六层。",
+          "en": "Take it apart: six layers."
+        }
+      ],
+      "voice_line_ids": [
+        "v2"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/teardown/frames/f-0007.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "5",
+      "t0": 6.9,
+      "t1": 11.9,
+      "published_time_range": "6.9–11.9",
+      "visual_prompt_source_description": "six labels draw in down the right column: 键帽 1u ×20 · 1.5u ×1, 机械轴体 十字轴 ×21, 定位板 FR-4 1.6 mm, 电路板 双层 1.6 mm, 铜柱 M2 × 7.5 mm ×4, 外壳 底厚 2.0 mm",
+      "camera": "slow orbit to +18°; at 10.0 the board and everything above rise 30 mm more",
+      "motion_transition_sound_notes": "signature frame at 9.75 (poster)",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v2",
+          "t0": 5.3,
+          "t1": 8.06,
+          "zh": "拆开，是六层。",
+          "en": "Take it apart: six layers."
+        },
+        {
+          "id": "v3",
+          "t0": 8.1,
+          "t1": 11.831,
+          "zh": "每一层，都画在公开的文件里。",
+          "en": "Every one of them is drawn in open files."
+        }
+      ],
+      "voice_line_ids": [
+        "v3"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/teardown/frames/f-0010.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "6",
+      "t0": 12.5,
+      "t1": 15.0,
+      "published_time_range": "12.5–15.0",
+      "visual_prompt_source_description": "down past the plate and the board edge into the gap; the case's interior lights up",
+      "camera": "dive, 452 mm → 30 mm, tilting up",
+      "motion_transition_sound_notes": "the dive swoosh starts 0.35 s before",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v4",
+          "t0": 14.85,
+          "t1": 18.46,
+          "zh": "一颗 RP2040 芯片，管着全部。",
+          "en": "One RP2040 chip runs it all."
+        }
+      ],
+      "voice_line_ids": [
+        "v4"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/teardown/frames/f-0014.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "7",
+      "t0": 15.0,
+      "t1": 18.1,
+      "published_time_range": "15.0–18.1",
+      "visual_prompt_source_description": "the back of the board: RP2040 (7 × 7 mm), flash (16 MB), crystal, 0402 parts, sockets, all at footprint positions",
+      "camera": "held macro, eye 24 mm under the board, slow drift",
+      "motion_transition_sound_notes": "leader lands on the chip",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v4",
+          "t0": 14.85,
+          "t1": 18.46,
+          "zh": "一颗 RP2040 芯片，管着全部。",
+          "en": "One RP2040 chip runs it all."
+        }
+      ],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/teardown/frames/f-0017.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "8",
+      "t0": 18.1,
+      "t1": 21.3,
+      "published_time_range": "18.1–21.3",
+      "visual_prompt_source_description": "slide to LED10: the reverse-mounted LED; the lights on the top side come on",
+      "camera": "macro slide 9 mm",
+      "motion_transition_sound_notes": "lights on inside",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v4",
+          "t0": 14.85,
+          "t1": 18.46,
+          "zh": "一颗 RP2040 芯片，管着全部。",
+          "en": "One RP2040 chip runs it all."
+        },
+        {
+          "id": "v5",
+          "t0": 18.5,
+          "t1": 21.949,
+          "zh": "二十三颗灯珠，反着贴在背面。",
+          "en": "Twenty-three lights, mounted upside down."
+        }
+      ],
+      "voice_line_ids": [
+        "v5"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/teardown/frames/f-0020.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "9",
+      "t0": 21.3,
+      "t1": 22.3,
+      "published_time_range": "21.3–22.3",
+      "visual_prompt_source_description": "out from under the board, up past the plate",
+      "camera": "rise through the stack",
+      "motion_transition_sound_notes": "transition",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v5",
+          "t0": 18.5,
+          "t1": 21.949,
+          "zh": "二十三颗灯珠，反着贴在背面。",
+          "en": "Twenty-three lights, mounted upside down."
+        }
+      ],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/teardown/frames/f-0022.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "10",
+      "t0": 22.3,
+      "t1": 25.0,
+      "published_time_range": "22.3–25.0",
+      "visual_prompt_source_description": "the thumb-row switches seen from below: pins over the hot-swap holes; label 热插拔 ×21",
+      "camera": "held macro at pin height, switches lifted a further 16 mm",
+      "motion_transition_sound_notes": "silence 2 at 24.6–25.0",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v6",
+          "t0": 22.3,
+          "t1": 25.066,
+          "zh": "热插拔，不用焊接。",
+          "en": "Hot-swappable. No soldering."
+        }
+      ],
+      "voice_line_ids": [
+        "v6"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/teardown/frames/f-0024.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "11",
+      "t0": 25.0,
+      "t1": 27.6,
+      "published_time_range": "25.0–27.6",
+      "visual_prompt_source_description": "fast pull back; the case comes up, board, plate, switches; the keys land last in a wave, each with its stroke",
+      "camera": "pull to 380 mm, three-quarter high",
+      "motion_transition_sound_notes": "the loudest moment (26.6)",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v6",
+          "t0": 22.3,
+          "t1": 25.066,
+          "zh": "热插拔，不用焊接。",
+          "en": "Hot-swappable. No soldering."
+        },
+        {
+          "id": "v7",
+          "t0": 25.5,
+          "t1": 27.55,
+          "zh": "装回去。",
+          "en": "Put it back together."
+        }
+      ],
+      "voice_line_ids": [
+        "v7"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/teardown/frames/f-0027.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "12",
+      "t0": 27.5,
+      "t1": 33.7,
+      "published_time_range": "27.5–33.7",
+      "visual_prompt_source_description": "dimension lines on the closed half: 键距 19.05 mm, 138.4 mm, 97.6 mm, 11.1 mm",
+      "camera": "high three-quarter drift, az 20° → 40°, 374 → 336 mm",
+      "motion_transition_sound_notes": "dimensions drawn on the thing",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "v7",
+          "t0": 25.5,
+          "t1": 27.55,
+          "zh": "装回去。",
+          "en": "Put it back together."
+        },
+        {
+          "id": "v8",
+          "t0": 27.75,
+          "t1": 31.01,
+          "zh": "键距 19.05 毫米。",
+          "en": "19.05 millimetres apart."
+        },
+        {
+          "id": "v9",
+          "t0": 31.05,
+          "t1": 33.366,
+          "zh": "每一个数字，都是公开的。",
+          "en": "Every number is public."
+        }
+      ],
+      "voice_line_ids": [
+        "v8",
+        "v9"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/teardown/frames/f-0031.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "13",
+      "t0": 33.75,
+      "t1": 38.75,
+      "published_time_range": "33.75–38.75",
+      "visual_prompt_source_description": "end card on the left, the keyboard turning on the right",
+      "camera": "drift az 40° → 59°, view offset −230 px",
+      "motion_transition_sound_notes": "",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/teardown/frames/f-0037.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    }
+  ],
+  "narration": [
+    {
+      "id": "v1",
+      "t0": 0.55,
+      "duration_s_original_voice": 2.43,
+      "tts_text_verbatim": "Twenty-one keys. Half a keyboard.",
+      "speaker": null,
+      "voice": "am_michael",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v1",
+        "text": "Twenty-one keys. Half a keyboard.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    },
+    {
+      "id": "v2",
+      "t0": 5.35,
+      "duration_s_original_voice": 2.073,
+      "tts_text_verbatim": "Take it apart: six layers.",
+      "speaker": null,
+      "voice": "am_michael",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v2",
+        "text": "Take it apart: six layers.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    },
+    {
+      "id": "v3",
+      "t0": 8.15,
+      "duration_s_original_voice": 2.881,
+      "tts_text_verbatim": "Every one of them is drawn in open files.",
+      "speaker": null,
+      "voice": "am_michael",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v3",
+        "text": "Every one of them is drawn in open files.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    },
+    {
+      "id": "v4",
+      "t0": 14.9,
+      "duration_s_original_voice": 2.767,
+      "tts_text_verbatim": "One R P twenty forty chip runs it all.",
+      "speaker": null,
+      "voice": "am_michael",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v4",
+        "text": "One R P twenty forty chip runs it all.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us",
+        "asr": "One RP 2040 chip runs it all."
+      }
+    },
+    {
+      "id": "v5",
+      "t0": 18.55,
+      "duration_s_original_voice": 2.599,
+      "tts_text_verbatim": "Twenty-three lights, mounted upside down.",
+      "speaker": null,
+      "voice": "am_michael",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v5",
+        "text": "Twenty-three lights, mounted upside down.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    },
+    {
+      "id": "v6",
+      "t0": 22.35,
+      "duration_s_original_voice": 1.916,
+      "tts_text_verbatim": "Hot-swappable. No soldering.",
+      "speaker": null,
+      "voice": "am_michael",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v6",
+        "text": "Hot-swappable. No soldering.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    },
+    {
+      "id": "v7",
+      "t0": 25.55,
+      "duration_s_original_voice": 1.193,
+      "tts_text_verbatim": "Put it back together.",
+      "speaker": null,
+      "voice": "am_michael",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v7",
+        "text": "Put it back together.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    },
+    {
+      "id": "v8",
+      "t0": 27.8,
+      "duration_s_original_voice": 2.528,
+      "tts_text_verbatim": "Nineteen point oh five millimetres apart.",
+      "speaker": null,
+      "voice": "am_michael",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v8",
+        "text": "Nineteen point oh five millimetres apart.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us",
+        "asr": "19.05 millimeters apart."
+      }
+    },
+    {
+      "id": "v9",
+      "t0": 31.1,
+      "duration_s_original_voice": 1.466,
+      "tts_text_verbatim": "Every number is public.",
+      "speaker": null,
+      "voice": "am_michael",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v9",
+        "text": "Every number is public.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    }
+  ],
+  "narration_source_path": "styles/teardown/demo/voice/lines.json",
+  "published_timeline_extracted": {
+    "BPM": 96,
+    "T": {
+      "hero": 0,
+      "tap": 3.125,
+      "suck": 4.375,
+      "explode": 5,
+      "labelsIn": 6.875,
+      "gapOpen": 10,
+      "labelsOut": 11.875,
+      "dive": 12.5,
+      "chip": 15,
+      "led": 18.125,
+      "swTravel": 21.25,
+      "sw": 22.1875,
+      "pullOut": 25,
+      "collapse": 25.625,
+      "dims": 28.125,
+      "card": 33.75,
+      "end": 38.75
+    },
+    "VO": [
+      {
+        "id": "v1",
+        "t": 0.55
+      },
+      {
+        "id": "v2",
+        "t": 5.35
+      },
+      {
+        "id": "v3",
+        "t": 8.15
+      },
+      {
+        "id": "v4",
+        "t": 14.9
+      },
+      {
+        "id": "v5",
+        "t": 18.55
+      },
+      {
+        "id": "v6",
+        "t": 22.35
+      },
+      {
+        "id": "v7",
+        "t": 25.55
+      },
+      {
+        "id": "v8",
+        "t": 27.8
+      },
+      {
+        "id": "v9",
+        "t": 31.1
+      }
+    ]
+  },
+  "on_screen_text_inventory": {
+    "published_subtitle_file_verbatim": "1\n00:00:00,500 --> 00:00:03,780\n二十一个键，半把键盘。\nTwenty-one keys. Half a keyboard.\n\n2\n00:00:05,300 --> 00:00:08,060\n拆开，是六层。\nTake it apart: six layers.\n\n3\n00:00:08,100 --> 00:00:11,831\n每一层，都画在公开的文件里。\nEvery one of them is drawn in open files.\n\n4\n00:00:14,850 --> 00:00:18,460\n一颗 RP2040 芯片，管着全部。\nOne RP2040 chip runs it all.\n\n5\n00:00:18,500 --> 00:00:21,949\n二十三颗灯珠，反着贴在背面。\nTwenty-three lights, mounted upside down.\n\n6\n00:00:22,300 --> 00:00:25,066\n热插拔，不用焊接。\nHot-swappable. No soldering.\n\n7\n00:00:25,500 --> 00:00:27,550\n装回去。\nPut it back together.\n\n8\n00:00:27,750 --> 00:00:31,010\n键距 19.05 毫米。\n19.05 millimetres apart.\n\n9\n00:00:31,050 --> 00:00:33,366\n每一个数字，都是公开的。\nEvery number is public.\n",
+    "cues_original_json": [
+      {
+        "id": "v1",
+        "t0": 0.5,
+        "t1": 3.78,
+        "zh": "二十一个键，半把键盘。",
+        "en": "Twenty-one keys. Half a keyboard."
+      },
+      {
+        "id": "v2",
+        "t0": 5.3,
+        "t1": 8.06,
+        "zh": "拆开，是六层。",
+        "en": "Take it apart: six layers."
+      },
+      {
+        "id": "v3",
+        "t0": 8.1,
+        "t1": 11.831,
+        "zh": "每一层，都画在公开的文件里。",
+        "en": "Every one of them is drawn in open files."
+      },
+      {
+        "id": "v4",
+        "t0": 14.85,
+        "t1": 18.46,
+        "zh": "一颗 RP2040 芯片，管着全部。",
+        "en": "One RP2040 chip runs it all."
+      },
+      {
+        "id": "v5",
+        "t0": 18.5,
+        "t1": 21.949,
+        "zh": "二十三颗灯珠，反着贴在背面。",
+        "en": "Twenty-three lights, mounted upside down."
+      },
+      {
+        "id": "v6",
+        "t0": 22.3,
+        "t1": 25.066,
+        "zh": "热插拔，不用焊接。",
+        "en": "Hot-swappable. No soldering."
+      },
+      {
+        "id": "v7",
+        "t0": 25.5,
+        "t1": 27.55,
+        "zh": "装回去。",
+        "en": "Put it back together."
+      },
+      {
+        "id": "v8",
+        "t0": 27.75,
+        "t1": 31.01,
+        "zh": "键距 19.05 毫米。",
+        "en": "19.05 millimetres apart."
+      },
+      {
+        "id": "v9",
+        "t0": 31.05,
+        "t1": 33.366,
+        "zh": "每一个数字，都是公开的。",
+        "en": "Every number is public."
+      }
+    ],
+    "timeline_text_fields": {},
+    "titles_subtitles_palette_verbatim": "",
+    "palette_props_verbatim": "- Ground #34363a → #0d0e10; ink #f1efe9; accent #ff6b3d (labels' indices, dimension lines, the 1.5u key, the switch stems).\n- Keycaps: off-white #d9d4c9, grey #686c73 on the outer column and thumbs, the 1.5u thumb key orange; uniform-height sculpted profile drawn in code. Switches: cross-stem generic (14 mm bottom, 15.6 mm top housing), drawn in code. Plate black FR-4 with a warm core edge; board green mask, gold pads; brass hex spacers; dark screws; anodised-look case (the files do not name a material; the look is a render choice).\n- Narrator: Kokoro `am_michael`, speed 0.95.",
+    "end_card_verbatim": "二十一键 (Noto Sans SC 500), *21 Keys, Opened* (Inter Light), `产品拆解 · EXPLODED TEARDOWN`, `CAD：foostan/crkbd · CC BY 4.0`, `LemoLab × Claude Opus 5.5`, an orange rule; the closed keyboard drifting on the right. 5 s. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.",
+    "completion_note": "Exact visible typography/content must be checked in original video; this inventory preserves all published cue/title/prop specifications. Model authorship credit is a reference fact, never new-output attribution.",
+    "original_annotation_literal_sources": []
+  },
+  "sound_recreation": {
+    "instruction": "Generate new voice and music; original mix/track reuse is not permitted by latest user instruction. Preserve full words, cadence windows, BPM, musical form, silence and picture-synchronous hits.",
+    "published_score_sound_spec_verbatim": "96 BPM, 4/4, D (Dm9 – B♭maj7 – F – C/E per bar), D major on the card. Every hit sits on a beat or half-beat of `src/timeline.js`.\n\n| Section | Time | Palette | Notes |\n|---|---|---|---|\n| Touch | 0–4.4 | marimba in 8ths (soft), bowed vibraphone, room tone | the keystroke: switch click + low thock + return clack |\n| Silence 1 | 4.4–5.0 | room tone, a filtered-noise suck | |\n| Opening | 5.0–12.5 | marimba 16ths, electric bass, synth kick on 1 and 3, claves on 2 and 4, closed hi-hat 16ths | 21 plastic ticks in the wave, swooshes per layer, a ring for the brass, a thud for the case, a tick per label |\n| Inside | 12.5–24.4 | bowed vibraphone chords, glass motif, pedal hi-hat in 8ths, sub kick once a bar | glockenspiel pings on each stop (A5, D6, E6), an arpeggio for the lights |\n| Silence 2 | 24.6–25.0 | room tone only | |\n| Closing | 25.0–33.75 | groove returns, four on the floor | 21 key landings (clack + click), board taps, the case thud; a pen hiss per dimension |\n| Card | 33.75–38.75 | D-major marimba roll, bowed vibraphone D–F♯–A, bass D, glockenspiel answers | long tail |\n\nMix (`demo/mix.py`): voice compressed and about 8–10 dB over the music while it speaks (music ducked 55 % on the voice envelope), music high-passed at 44 Hz, foley at 36 Hz; loudest moments in order: the landings (26.6), the card, the pull back (25.0), the opening hit (5.0). The film measures −14.2 LUFS integrated, LRA 4.9 LU, true peak about −1 dBTP; 20–60 Hz sits 12.5 dB under the full band.",
+    "original_voice_records": [
+      {
+        "id": "v1",
+        "text": "Twenty-one keys. Half a keyboard.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us"
+      },
+      {
+        "id": "v2",
+        "text": "Take it apart: six layers.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us"
+      },
+      {
+        "id": "v3",
+        "text": "Every one of them is drawn in open files.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us"
+      },
+      {
+        "id": "v4",
+        "text": "One R P twenty forty chip runs it all.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us",
+        "asr": "One RP 2040 chip runs it all."
+      },
+      {
+        "id": "v5",
+        "text": "Twenty-three lights, mounted upside down.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us"
+      },
+      {
+        "id": "v6",
+        "text": "Hot-swappable. No soldering.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us"
+      },
+      {
+        "id": "v7",
+        "text": "Put it back together.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us"
+      },
+      {
+        "id": "v8",
+        "text": "Nineteen point oh five millimetres apart.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us",
+        "asr": "19.05 millimeters apart."
+      },
+      {
+        "id": "v9",
+        "text": "Every number is public.",
+        "voice": "am_michael",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    ],
+    "original_voice_durations_s": {
+      "v1": 2.43,
+      "v2": 2.073,
+      "v3": 2.881,
+      "v4": 2.767,
+      "v5": 2.599,
+      "v6": 1.916,
+      "v7": 1.193,
+      "v8": 2.528,
+      "v9": 1.466
+    }
+  },
+  "engine_and_build": {
+    "required_engine_spec_verbatim": "All in `demo/src/` (three.js r170, the library's `core/three/post.js` and `core/lib.js`):\n\n- `parts.js`: `keycapGeometry(w, d, h)` (lofted shell with a spherical dish and a stem), `switchGeometries()`, `loft(rings)`, `shapeFrom(outline, holes, circles)` (KiCad outline to extrusion), `inset`, `hexSpacer`, `screwGeometry`.\n- `pcbtex.js`: `paintPCB(data, side, outline, box, ppm)` paints colour, roughness/metalness and bump maps from extracted layout data.\n- `comps.js`: `buildBackParts(data, group, y, materials)` places package bodies at footprint positions and returns anchors.\n- `overlay.js`: anchored labels (`label`), perspective dimension lines (`dimension`), subtitles, title card, readcheck texts, subtitle width check.\n- `main.js`: layers, explode and gap functions, the camera keys (orbit or eye/target, monotone), lights, `window.EV` for the mixer.\n- `tools/extract_pcb.py`, `kicad_geom.py`, `sexp.py`: read any `.kicad_pcb` (outlines, tracks, zones, pads, silkscreen, footprints; plain Python). `tools/step2mesh.mjs`: STEP to mesh.\n\n**Extra packages and packs**, beyond `setup.sh deps [voice] [music]`: `occt-import-js` (npm, LGPL-2.1, not in the library's package.json) to triangulate STEP files, and the studio HDRI (`sh tools/fetch.sh hdri`). Install the npm package yourself into a private `node_modules` in the project folder (as `tools/fetch_cad.sh` does in a temp folder), never into `$LIB`.\n\nMinimal example, not in the demo: read a plate file with `extract_pcb.py`, extrude `shapeFrom(outline, cutouts)` 1.5 mm as aluminium (`metalness: 1, roughness: .35`) and orbit it with three `CAM` keys.",
+    "published_build_notes_verbatim": "```\ndemo/\n  build.sh          one command: voice → speech check → cues → events → video → mix → master → .srt → checks → poster\n  index.html        WebGL canvas + 2D marks canvas, fonts\n  src/timeline.js   the single timeline: beats, layer timings, gaps, narration, label windows, camera keys\n  src/main.js       scene, layers, explode/gap, camera (monotone keys), lights, render(t), window.EV\n  src/parts.js      keycap, switch, outline extrusion, spacer, screw geometry\n  src/pcbtex.js     board textures painted from the KiCad data\n  src/comps.js      back-side parts at footprint positions\n  src/overlay.js    labels, dimensions, subtitles, end card, readcheck texts, subtitle width check\n  mix.py            score (sampler), foley (synthesised), voice, mix → out/mix.wav + out/stems/\n  tools/            extract_pcb.py, kicad_geom.py, sexp.py, step2mesh.mjs, fetch_cad.sh (data); fetch_fonts.py;\n                    export.mjs (voice lines, cues, timeline.json); subcheck.mjs, motioncheck.py (checks)\n  data/             pcb.json (left half, extracted), case.bin (case mesh)\n  FACTS.md, CREDITS, TREATMENT.md, PRODUCTION_LOG.md, stills/styleframe.jpg\n```\n\n- `sh demo/build.sh` takes about 3 minutes on Apple silicon (picture about 60 s with 4 workers). In a clean clone it first rebuilds what git does not carry: `data/case.bin` and `data/pcb.json` from the CAD at the pinned commit (network, and npm for a temporary occt-import-js), the fonts from Google Fonts, and any missing library pack (HDRI, Kokoro, the vcsl / freepats / vsco2ce samples). `FETCH=1` forces the CAD and fonts.\n- Checks it runs: `asr_check.py` with `small.en` (two lines carry the words Whisper writes: \"RP 2040\", \"19.05 millimeters\"), subtitle single-line widths with the real fonts (widest 552 px against 1500), `readcheck.mjs` (all 19 texts pass), `motioncheck.py` (no one-frame black tiles; motion per second).\n- Demo-specific pitfalls: the v4 board file is a panel with breakaway tabs, so the board outline is the 3x6 plate outline inset 0.4 mm (the plate's 21 cutouts sit 0.4 mm off the switch footprints, measured, and corrected); the case STEP has y up and must be flipped and shifted onto the board (offsets in `tools/step2mesh.mjs`), checked by the four screw holes; the project logo footprint is skipped at extraction; the Kokoro voice reads \"RP2040\" badly, so the spoken text says \"R P twenty forty\".",
+    "fetch_build_specs": [
+      {
+        "path": "styles/teardown/demo/build.sh",
+        "sha256": "1bcf70993c944424a12737e49745332158532a97f732ff9df48d6de86a864c81",
+        "text_verbatim": "#!/bin/sh\n# One command: 《二十一键》 21 Keys, Opened (Exploded Teardown demo)\n#   sh demo/build.sh          voice → checks → events → picture → score + mix → master → .srt → checks → poster\n#   FETCH=1 sh demo/build.sh  first rebuild the CAD data from foostan/crkbd (pinned commit) and the fonts\nset -e\nHERE=$(cd \"$(dirname \"$0\")\" && pwd)                 # .../teardown/demo\nFILM=$(cd \"$HERE/..\" && pwd)                         # .../teardown\nLIB=${LIB:-$(cd \"$HERE/../../..\" && pwd)}            # films/teardown/demo or styles/teardown/demo -> library root\nexport LIB\n[ -f \"$LIB/core/render/video.mjs\" ] || { echo \"set LIB to the library folder\"; exit 1; }\nPY=\"$LIB/.venv/bin/python\"\nNAME=teardown\ncd \"$LIB\"\n\n# prep: everything below is gitignored, so a clean clone rebuilds it (FETCH=1 forces it)\n#   data/case.bin (+ data/pcb.json): the CAD from foostan/crkbd at a pinned commit (needs network, npm for occt-import-js)\n#   fonts: Noto Sans SC subsets, Inter, JetBrains Mono from Google Fonts\n#   library packs: the studio HDRI, the Kokoro model, the sample libraries the score uses (vcsl, freepats, vsco2ce)\nif [ \"${FETCH:-0}\" = \"1\" ] || [ ! -f \"$HERE/data/case.bin\" ]; then sh \"$HERE/tools/fetch_cad.sh\"; fi\nif [ \"${FETCH:-0}\" = \"1\" ] || [ ! -f \"$HERE/fonts/NotoSansSC-500.woff2\" ] || [ ! -f \"$HERE/fonts/Inter.ttf\" ] || [ ! -f \"$HERE/fonts/JetBrainsMono.ttf\" ]; then\n  python3 -I \"$HERE/tools/fetch_fonts.py\"\nfi\n[ -f core/assets/polyhaven/photo_studio_loft_hall_2k.hdr ] || sh tools/fetch.sh hdri\n[ -f core/tts/kokoro-v1.0.onnx ] || sh tools/fetch.sh voice\nfor l in vcsl freepats vsco2ce; do [ -d \"core/audio/instruments/$l\" ] || sh tools/fetch.sh instruments $l; done\n\n# voice: Kokoro am_michael, speech-to-text check with the small English model; then cues from the real durations\nnode \"$HERE/tools/export.mjs\" \"$HERE\" > /dev/null || true\n\"$PY\" core/tts/tts.py \"$HERE/voice/lines.json\" \"$HERE/voice/out\"\nWHISPER_MODEL=small.en \"$PY\" core/tts/asr_check.py \"$HERE/voice/lines.json\" \"$HERE/voice/out\" --lang en\nnode \"$HERE/tools/export.mjs\" \"$HERE\"\n\n# picture, events, score + mix, master, subtitles\nnode core/render/events.mjs \"$HERE\"\nnode core/render/video.mjs \"$HERE\" --fps 24 --workers 4 --out \"$HERE/out/video.mp4\"\n\"$PY\" \"$HERE/mix.py\"\nsh core/render/mux.sh \"$HERE/out/video.mp4\" \"$HERE/out/mix.wav\" \"$FILM/$NAME.mp4\" 24 1\n\"$PY\" core/render/srt.py \"$HERE/out/cues_srt.json\" \"$FILM/$NAME.srt\"\n\n# checks\nnode \"$HERE/tools/subcheck.mjs\" \"$HERE\"\nnode core/render/readcheck.mjs \"$HERE\" > \"$HERE/out/readcheck.txt\" && echo \"readcheck ok\"\n\"$PY\" -I \"$HERE/tools/motioncheck.py\" \"$FILM/$NAME.mp4\"\n\n# poster and gallery style frame: the signature shot (all six layers labelled), rendered without the subtitle strip\nnode core/render/still.mjs \"$HERE\" 9.75 --q nosub=1 --prefix sig_ --out \"$HERE/out\"\nffmpeg -v error -y -i \"$HERE/out/sig_9.75.jpg\" -q:v 2 \"$FILM/poster.jpg\"\nmkdir -p \"$HERE/stills\" && cp \"$FILM/poster.jpg\" \"$HERE/stills/styleframe.jpg\"\necho \"done: $FILM/$NAME.mp4\"\n"
+      },
+      {
+        "path": "styles/teardown/demo/tools/fetch_fonts.py",
+        "sha256": "7ab573e3f378d61b7949910e09b47ce02781adb5bf92ce54fd6be72e64a50333",
+        "text_verbatim": "# Fonts (all SIL OFL 1.1, from Google Fonts): Noto Sans SC subset to the characters the overlay uses (CSS API text=),\n# Inter and JetBrains Mono as variable TTFs from github.com/google/fonts, plus their licence texts\n# usage: python3 -I tools/fetch_fonts.py   (run from the film folder; needs network)\nimport re, urllib.parse, urllib.request, pathlib\nhere = pathlib.Path(__file__).resolve().parent.parent\nsrc = ''.join(p.read_text() for p in (here / 'src').glob('*.js'))\nchars = ''.join(sorted(set(c for c in src if ord(c) > 0x2000 and not c.isspace())))\nchars += '0123456789.·×mmRPKBYC() '\nUA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120 Safari/537.36'\nfor w in (400, 500):\n    url = f'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@{w}&text=' + urllib.parse.quote(chars)\n    css = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': UA}), timeout=30).read().decode()\n    furl = re.search(r'url\\((https://[^)]+)\\)', css).group(1)\n    (here / 'fonts').mkdir(exist_ok=True)\n    (here / 'fonts' / f'NotoSansSC-{w}.woff2').write_bytes(urllib.request.urlopen(furl, timeout=30).read())\nprint(len(chars), 'chars:', chars)\n\nGF = 'https://github.com/google/fonts/raw/main/ofl/'\nfor url, name in [(GF + 'inter/Inter%5Bopsz,wght%5D.ttf', 'Inter.ttf'), (GF + 'inter/OFL.txt', 'OFL-inter.txt'),\n                  (GF + 'jetbrainsmono/JetBrainsMono%5Bwght%5D.ttf', 'JetBrainsMono.ttf'), (GF + 'jetbrainsmono/OFL.txt', 'OFL-jetbrainsmono.txt'),\n                  (GF + 'notosanssc/OFL.txt', 'OFL-notosanssc.txt')]:\n    (here / 'fonts' / name).write_bytes(urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': UA}), timeout=60).read())\nprint('fonts ready in', here / 'fonts')\n"
+      },
+      {
+        "path": "styles/teardown/demo/tools/extract_pcb.py",
+        "sha256": "56404a9d4a87adc0a11185db3b1373d8ee697752f895d9f98bd940867390c06b",
+        "text_verbatim": "# Extract the left half of the Corne Cherry v4.1 PCB + 3x6 switch plate from the KiCad sources\n# usage: python -I tools/extract_pcb.py <corne-cherry.kicad_pcb> <plate-top-cherrymx.kicad_pcb> <out.json>\nimport sys, os, json, math\nsys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))\nfrom sexp import parse, kids, kid\nfrom kicad_geom import *\n\npcb = parse(open(sys.argv[1]).read())\nplate = parse(open(sys.argv[2]).read())\nR = lambda v: round(v, 3)\n\n# ---- plate (own file) -> PCB coordinates (plate = pcb + (-0.40, +0.40), measured from 21 cutout centres)\nloops, _ = chain(collect(plate)); loops.sort(key=lambda l: -abs(area(l)))\nDX, DY = 0.4, -0.4\ndef sh(l): return [[R(x+DX), R(y+DY)] for x, y in l]\nplate_outline = sh(loops[0])\ncut, holes = [], []\nfor l in loops[1:]:\n    bx = bbox(l); w = bx[2]-bx[0]\n    if w > 10: cut.append(sh(l))\n    else: holes.append({'c': [R((bx[0]+bx[2])/2+DX), R((bx[1]+bx[3])/2+DY)], 'r': R(w/2)})\npb = bbox(plate_outline)\ndef inside_left(x, y): return pb[0]-1 < x < pb[2]+1 and pb[1]-1 < y < pb[3]+1\n\n# ---- PCB board holes (Edge.Cuts circles in the left half)\npcb_holes = []\nfor p in collect(pcb, with_fp=False):\n    if p[0] == 'circle' and inside_left(*p[2]): pcb_holes.append({'c': [R(p[2][0]), R(p[2][1])], 'r': R(p[3])})\n\ndef ref_of(f):\n    for p in kids(f, 'property'):\n        if p[1] == 'Reference': return p[2]\n    for t in kids(f, 'fp_text'):\n        if t[1] == 'reference': return t[2]\n    return '?'\ndef val_of(f):\n    for p in kids(f, 'property'):\n        if p[1] == 'Value': return p[2]\n    for t in kids(f, 'fp_text'):\n        if t[1] == 'value': return t[2]\n    return ''\n\nside = lambda layer: 'F' if layer.startswith('F.') else ('B' if layer.startswith('B.') else None)\n\n# ---- tracks, vias\ntracks = {'F': [], 'B': []}\nfor s in kids(pcb, 'segment'):\n    a = xy(s, 'start'); b = xy(s, 'end'); L = side(kid(s, 'layer')[1])\n    if L and inside_left(*a): tracks[L].append([R(a[0]), R(a[1]), R(b[0]), R(b[1]), R(num(s, 'width'))])\nfor s in kids(pcb, 'arc'):\n    pts = arc3(xy(s, 'start'), xy(s, 'mid'), xy(s, 'end'), 0.3); L = side(kid(s, 'layer')[1]); w = num(s, 'width')\n    if L and inside_left(*pts[0]):\n        for i in range(len(pts)-1): tracks[L].append([R(pts[i][0]), R(pts[i][1]), R(pts[i+1][0]), R(pts[i+1][1]), R(w)])\nvias = []\nfor v in kids(pcb, 'via'):\n    a = xy(v, 'at')\n    if inside_left(*a): vias.append([R(a[0]), R(a[1]), R(num(v, 'size')), R(num(v, 'drill'))])\n\n# ---- zones (filled copper)\nzones = {'F': [], 'B': []}\nfor z in kids(pcb, 'zone'):\n    for fp in kids(z, 'filled_polygon'):\n        L = side(kid(fp, 'layer')[1])\n        pts = [(float(p[1]), float(p[2])) for p in kid(fp, 'pts')[1:] if p[0] == 'xy']\n        if L and pts and inside_left(*pts[0]) and abs(area(pts)) > 0.5:\n            zones[L].append([[R(x), R(y)] for x, y in pts])\n\n# ---- footprints: pads, silk, courtyard bodies\npads, silk, comps, switches = [], {'F': [], 'B': []}, [], []\nfor f in kids(pcb, 'footprint'):\n    at = kid(f, 'at'); fat = (float(at[1]), float(at[2]), float(at[3]) if len(at) > 3 else 0.0)\n    if not inside_left(fat[0], fat[1]): continue\n    ref = ref_of(f); lib = f[1]; fl = side(kid(f, 'layer')[1])\n    if 'logo' in lib or 'Breakaway' in lib: continue   # project logo and panel tabs are not part of the finished board\n    for p in kids(f, 'pad'):\n        pat = kid(p, 'at'); local = (float(pat[1]), float(pat[2])); prot = float(pat[3]) if len(pat) > 3 else 0.0\n        g = xform(fat, local); size = kid(p, 'size'); dr = kid(p, 'drill')\n        layers = kid(p, 'layers')[1:]\n        lay = 'both' if any(l.startswith('*.Cu') for l in layers) else ('F' if 'F.Cu' in layers else ('B' if 'B.Cu' in layers else None))\n        drill = float(dr[1]) if dr and len(dr) > 1 and dr[1] != 'oval' else (float(dr[2]) if dr and len(dr) > 2 else 0)\n        pads.append({'x': R(g[0]), 'y': R(g[1]), 'rot': R(prot), 'shape': p[3], 'w': R(float(size[1])), 'h': R(float(size[2])), 'drill': R(drill), 'type': p[2], 'lay': lay})\n    for g in f:\n        if isinstance(g, list) and g and g[0] in ('fp_line', 'fp_arc', 'fp_circle', 'fp_poly', 'fp_rect'):\n            L = kid(g, 'layer')[1]\n            if L in ('F.SilkS', 'B.SilkS'):\n                pr = prim_poly(g, L, fat); st = kid(g, 'stroke'); w = float(kid(st, 'width')[1]) if st else (num(g, 'width') or 0.15)\n                if pr:\n                    pts = pr[1] + ([pr[1][0]] if pr[0] in ('circle', 'closed') else [])\n                    silk[L[0]].append({'pts': [[R(x), R(y)] for x, y in pts], 'w': R(w), 'fill': g[0] == 'fp_poly'})\n    # courtyard bbox in local coords -> body footprint\n    cy = []\n    for g in f:\n        if isinstance(g, list) and g and g[0].startswith('fp_') and kid(g, 'layer') and kid(g, 'layer')[1] in ('F.CrtYd', 'B.CrtYd', 'F.Fab', 'B.Fab'):\n            for k in ('start', 'end', 'center', 'mid'):\n                v = xy(g, k)\n                if v: cy.append(v)\n            if kid(g, 'pts'): cy += [(float(p[1]), float(p[2])) for p in kid(g, 'pts')[1:] if p[0] == 'xy']\n    lb = [R(min(p[0] for p in cy)), R(min(p[1] for p in cy)), R(max(p[0] for p in cy)), R(max(p[1] for p in cy))] if cy else None\n    rec = {'ref': ref, 'lib': lib.split(':')[-1], 'val': val_of(f), 'x': R(fat[0]), 'y': R(fat[1]), 'rot': R(fat[2]), 'side': fl, 'lbox': lb}\n    if ref.startswith('SW') and 'keyswitch' in lib:\n        rec['u'] = 1.5 if '1.5u' in lib else 1.0; switches.append(rec)\n    else: comps.append(rec)\n\nout = {\n  'source': 'foostan/crkbd @ 63366fb, pcbs/corne-cherry/hotswap/corne-cherry.kicad_pcb (rev 4.1.0) + plates/3x6/pcb/plate-top-cherrymx.kicad_pcb',\n  'license': 'CC BY 4.0 (LICENSE_CC) / MIT (LICENSE_MIT), (c) foostan',\n  'pcb_thickness': 1.6,\n  'plate': {'outline': plate_outline, 'cutouts': cut, 'holes': holes},\n  'pcb_holes': pcb_holes, 'switches': switches, 'comps': comps, 'pads': pads,\n  'tracks': tracks, 'vias': vias, 'zones': zones, 'silk': silk,\n}\njson.dump(out, open(sys.argv[3], 'w'), separators=(',', ':'))\nprint('plate cutouts', len(cut), 'plate holes', holes, 'pcb holes', pcb_holes)\nprint('switches', len(switches), 'comps', len(comps), 'pads', len(pads), 'tracks F/B', len(tracks['F']), len(tracks['B']), 'vias', len(vias), 'zones F/B', len(zones['F']), len(zones['B']), 'silk', len(silk['F']), len(silk['B']))\nimport collections; print(collections.Counter(c['lib'] for c in comps))\n"
+      },
+      {
+        "path": "styles/teardown/demo/tools/step2mesh.mjs",
+        "sha256": "67913a2d10cbf363777eaed1c72d700e079152ff958b696e8a064ee7ebe428b5",
+        "text_verbatim": "// Corne v4 case STEP -> triangle mesh in PCB coordinates (x right, y down = KiCad, z up from case bottom), mm\n// usage: node tools/step2mesh.mjs left.step data/case.bin   (needs: npm i occt-import-js@0.0.23)\n// Alignment (measured): x_pcb = x + 14.2876, y_pcb = -y - 57.1513, z = z + 11.4 (case bottom at 0, rim at 11.1)\nimport fs from 'fs';\nimport { createRequire } from 'module';\nconst require = createRequire(process.env.OCCT_DIR ? process.env.OCCT_DIR + '/' : import.meta.url);\nconst occt = await require('occt-import-js')();\nconst r = occt.ReadStepFile(new Uint8Array(fs.readFileSync(process.argv[2])), { linearUnit: 'millimeter', linearDeflectionType: 'absolute_value', linearDeflection: 0.02, angularDeflection: 0.08 });\nconst m = r.meshes[0];\nconst p = m.attributes.position.array, n = m.attributes.normal.array, idx = m.index.array;\nconst nv = p.length / 3, P = new Float32Array(nv * 3), N = new Float32Array(nv * 3);\nfor (let i = 0; i < nv; i++) {\n  P[i*3] = p[i*3] + 14.2876; P[i*3+1] = -p[i*3+1] - 57.1513; P[i*3+2] = p[i*3+2] + 11.4;\n  N[i*3] = n[i*3]; N[i*3+1] = -n[i*3+1]; N[i*3+2] = n[i*3+2];\n}\nconst I = new Uint32Array(idx.length);\nfor (let i = 0; i < idx.length; i += 3) { I[i] = idx[i]; I[i+1] = idx[i+2]; I[i+2] = idx[i+1]; }   // y flip mirrors winding\nconst head = new Uint32Array([nv, I.length]);\nfs.writeFileSync(process.argv[3], Buffer.concat([Buffer.from(head.buffer), Buffer.from(P.buffer), Buffer.from(N.buffer), Buffer.from(I.buffer)]));\nconsole.log('case mesh', nv, 'verts', I.length / 3, 'tris');\n"
+      },
+      {
+        "path": "styles/teardown/demo/tools/fetch_cad.sh",
+        "sha256": "37aefcedffd5c6158063b00d6973f7355c92428ec32d922406880e881ea64798",
+        "text_verbatim": "#!/bin/sh\n# 从开源仓库 foostan/crkbd（固定提交 63366fb）重新生成 data/pcb.json 与 data/case.bin。\n# 需要：网络、python3、node、npm（临时安装 occt-import-js@0.0.23 到 $TMP）\nset -e\nHERE=$(cd \"$(dirname \"$0\")/..\" && pwd)\nTMP=${TMP_DIR:-$(mktemp -d)}\nREV=63366fb7f51cf2a796462fdd90527e99dd126055\nB=https://raw.githubusercontent.com/foostan/crkbd/$REV\nmkdir -p \"$TMP/dl\" \"$TMP/occt\"\nfor f in pcbs/corne-cherry/hotswap/corne-cherry.kicad_pcb plates/3x6/pcb/plate-top-cherrymx.kicad_pcb cases/3x6/left.step; do\n  curl -sfL -o \"$TMP/dl/$(basename \"$f\")\" \"$B/$f\"\ndone\npython3 -I \"$HERE/tools/extract_pcb.py\" \"$TMP/dl/corne-cherry.kicad_pcb\" \"$TMP/dl/plate-top-cherrymx.kicad_pcb\" \"$HERE/data/pcb.json\"\n(cd \"$TMP/occt\" && npm init -y >/dev/null && npm i --silent occt-import-js@0.0.23)\nOCCT_DIR=\"$TMP/occt\" node \"$HERE/tools/step2mesh.mjs\" \"$TMP/dl/left.step\" \"$HERE/data/case.bin\"\necho \"data regenerated from crkbd@$REV\"\n"
+      }
+    ],
+    "local_original_asset_snapshot_inventory": [
+      {
+        "path": "styles/teardown/demo/events.json",
+        "sha256": "db6e89c2c232641aa406ca2dd4b97b1a58f87a0fa09e6f2f04ee61765a2cb25d",
+        "bytes": 3543
+      },
+      {
+        "path": "styles/teardown/demo/timeline.json",
+        "sha256": "7c888e0955b52f60bcd45a374b63c4ae8d956c52e2f345369a1bc84a311cb1ab",
+        "bytes": 671
+      },
+      {
+        "path": "styles/teardown/demo/cues.json",
+        "sha256": "6c9a9d6f8d3b5e303ec2b5b48605b63b2b724571c9e15cdb063a2edd74ce48a8",
+        "bytes": 1199
+      },
+      {
+        "path": "styles/teardown/demo/data/pcb.json",
+        "sha256": "13b2ba5274cd6b10b9f3f3ca88a82fa7561e18ca1c094f561e114853b797e838",
+        "bytes": 660897
+      }
+    ]
+  },
+  "evidence": {
+    "dataset": "Corne v4.1.0 by foostan, pinned commit63366fb7f51cf2a796462fdd90527e99dd126055; original PCB, plate, STEP case and BOM.",
+    "required_measurements": [
+      "21 keys:20×1u and1×1.5u; six editorial layers.",
+      "FR4 plate1.6mm; PCB1.6mm; fourM2×7.5mm spacers.",
+      "RP2040QFN7×7mm,16MB flash,23 reverse LEDs.",
+      "Pitch19.05mm; case138.35×97.62×11.10mm; bottom2mm; key travel4mm."
+    ],
+    "window": "Exact left half; use the plate outline inset0.4mm and verify four-hole alignment against the case transform.",
+    "needed": [
+      "data/pcb.json",
+      "data/case.bin"
+    ],
+    "recipe": "Follow the isolated data-only preparation described in ASSET_GAPS.md and the exact original build/fetch scripts retained in engine_and_build.fetch_build_specs.",
+    "specific_blockers": [
+      "The complete original PCB extraction is present. The pinned STEP-derived case.bin is absent; rebuild it and verify the original dimensions and four-hole transform."
+    ],
+    "asset_status": [
+      {
+        "path": "styles/teardown/demo/data/pcb.json",
+        "present": true
+      },
+      {
+        "path": "styles/teardown/demo/data/case.bin",
+        "present": false
+      }
+    ],
+    "original_facts_verbatim": "# 事实表：《二十一键》 21 Keys, Opened\n\n片中每一个数字和事实性说法都在下表：说法 → 出处（URL）→ 原文引用。项目文件固定在 foostan/crkbd 提交 63366fb（2025-05-10）。核对日期：2026-10-16。\n\n两类数字分开看：\n\n- **项目文件原文**：组装文档、BOM、KiCad 文件里直接写着的（A）。\n- **从 CAD 实测**：本片从项目的 STEP / KiCad 几何里量的（B），方法写在下面，可用 `tools/` 复现。\n\n## A. 项目文件与器件资料原文\n\n| # | 片中说法（画面 / 旁白） | 出处 | 原文 |\n|---|---|---|---|\n| A1 | 旁白 \"Twenty-one keys. Half a keyboard.\"；字幕\"二十一个键，半把键盘\" | README https://github.com/foostan/crkbd/blob/63366fb7f51cf2a796462fdd90527e99dd126055/README.md | \"The Corne keyboard is a split keyboard with 3x6 column staggered keys and 3 thumb keys\"（每半 3×6 + 3 = 21） |\n| A2 | 标签\"键帽 1u ×20 · 1.5u ×1\" | v4 组装文档 https://github.com/foostan/crkbd/blob/63366fb7f51cf2a796462fdd90527e99dd126055/docs/corne-cherry/v4/buildguide_en.md | \"\\| Keycaps \\| 42 - 46 \\| 1u 40 pcs, 1.5u 2 pcs \\|\"（两半合计；每半 20 + 1） |\n| A3 | 标签\"机械轴体 十字轴 ×21\"；\"热插拔 ×21\"；旁白 \"Hot-swappable. No soldering.\" | 同 A2；README | \"\\| Key switches \\| 42 - 46 \\| Only Cherry MX compatible \\|\"；README \"v4 Hotswappable\"。KiCad 左半有 21 个轴位封装 `keyswitch_cherrymx_hotswap_1u` / `_1.5u`（热插拔座封装） |\n| A4 | 标签\"定位板 FR-4 · 1.6 mm\" | 同 A2 | \"\\| Switch plate \\| 1 set \\| FR4 1.6mm thick \\|\" |\n| A5 | 标签\"铜柱 M2 × 7.5 mm ×4\" | 同 A2 | \"\\| Spacer M2 \\| 8 \\| 7.5 mm For Case assembly \\|\"（两半合计；每半 4）；螺丝 \"\\| Screw M2 \\| 16 \\| 5 mm For Case assembly \\|\"；脚垫 \"\\| Rubber cushion \\| 8 \\|\" |\n| A6 | 标签\"电路板 双层 · 1.6 mm\" | KiCad 板文件 https://github.com/foostan/crkbd/blob/63366fb7f51cf2a796462fdd90527e99dd126055/pcbs/corne-cherry/hotswap/corne-cherry.kicad_pcb | `(general (thickness 1.6))`；叠层只有 `\"F.Cu\"` 与 `\"B.Cu\"` 两层铜，`(rev \"4.1.0\")` |\n| A7 | 标签\"主控 RP2040 · 7 × 7 mm\"；旁白 \"One RP2040 chip runs it all.\" | BOM https://github.com/foostan/crkbd/blob/63366fb7f51cf2a796462fdd90527e99dd126055/pcbs/corne-cherry/hotswap/jlcpcb/production_files/BOM-corne-cherry.csv ；RP2040 数据手册 https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf | BOM：\"RP2040,\\\"U1,rU1\\\",QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm\"；手册：\"The RP2040 7×7 mm QFN-56 package …\" |\n| A8 | 标签\"闪存 16 MB\" | BOM（同 A7）；Winbond W25Q128JV 数据手册 https://www.winbond.com/resource-files/w25q128jv%20revf%2003272018%20plus.pdf | BOM：\"W25Q128JVSIQ,\\\"U4,rU4\\\",SOIC-8_5.23x5.23mm_P1.27mm\"；手册：\"W25Q128JV: 128M-bit / 16M-byte\" |\n| A9 | 标签\"灯珠 ×23 · 反贴\"；旁白 \"Twenty-three lights, mounted upside down.\" | BOM（同 A7）；KiCad 板文件 | BOM 列出 YS-SK6812MINI-E：LED1–LED21、EXLED1–2（左半 23 颗，右半带 r 前缀另 23 颗）；KiCad 里这些封装全部在 `(layer \"B.Cu\")`（背面），型号后缀 -E 为反贴式 |\n| A10 | 画面上的晶振、0402 阻容、USB-C、TRRS 插座、复位按键的位置与封装 | KiCad 板文件、BOM | 封装名与坐标原样读取（例如 \"Crystal_SMD_3225-4Pin_3.2x2.5mm\"、\"TYPE-C-31-M-13C\"、\"PJ-398A-5A_PJ-399B-6A\"）；无文字标注 |\n| A11 | 旁白 \"Every one of them is drawn in open files.\" / \"Every number is public.\" | 仓库许可 https://github.com/foostan/crkbd （LICENSE_CC、LICENSE_MIT） | 仓库以 CC BY 4.0（LICENSE_CC）与 MIT（LICENSE_MIT）公开；本片用到的全部文件都在该仓库 |\n\n## B. 从 CAD 实测\n\n| # | 片中说法 | 方法 | 结果 |\n|---|---|---|---|\n| B1 | 尺寸线\"键距 19.05 mm\"；旁白 \"Nineteen point oh five millimetres apart.\" | KiCad 板文件里相邻轴位的中心距：SW19 (−128.5875, −7.14375) 与 SW18 (−109.5375, −7.14375) | 19.050 mm（整块板的列距都是 19.05） |\n| B2 | 尺寸线\"138.4 mm\"\"97.6 mm\"\"11.1 mm\" | 外壳 STEP https://github.com/foostan/crkbd/blob/63366fb7f51cf2a796462fdd90527e99dd126055/cases/3x6/left.step 用 occt-import-js 三角化后的包围盒（`tools/step2mesh.mjs`） | 138.35 × 97.62 × 11.10 mm，画面取一位小数 |\n| B3 | 标签\"外壳 底厚 2.0 mm\" | 同 B2：外壳网格水平面高度，底面 −11.40、内底面 −9.40 | 2.00 mm |\n| B4 | 拆解层次与装配高度（画面里零件的相对位置） | 内底 2.0 + 铜柱 7.5（A5）+ 定位板 1.6（A4）= 11.1 mm，正好等于外壳边沿高度（B2）；定位板 4 个 Ø2.2 孔与外壳螺丝孔、电路板 Ø5 孔位置重合 | 三份文件互相吻合；电路板放在定位板下 5.0 mm（十字轴通用安装高度） |\n| B5 | 旁白 \"Take it apart: six layers.\" | 本片的分层方式：键帽、轴体、定位板、电路板、铜柱、外壳（螺丝与脚垫随相邻层） | 编辑性归类，不是项目文件里的数字 |\n\n## C. 画面上不是数据的部分\n\n键帽造型、轴体外形、各种材质颜色、外壳的金属质感、脚垫位置、背面器件的高度都是按通用规格的建模选择，画面上没有为它们标任何数字。\n",
+    "original_credits_verbatim": "21 Keys, Opened (二十一键) — Exploded Teardown (Lemo-Opuscar) · LemoLab × Claude Opus 5.5\n\nNo AI-generated images, no stock footage. Every surface is rendered in code from the files below.\n\nHARDWARE DATA (geometry, positions, counts, specifications)\n- Corne keyboard (crkbd) by foostan — https://github.com/foostan/crkbd, commit 63366fb7f51cf2a796462fdd90527e99dd126055\n  Licence: Creative Commons Attribution 4.0 (LICENSE_CC) / MIT (LICENSE_MIT), © foostan.\n  Files: pcbs/corne-cherry/hotswap/corne-cherry.kicad_pcb (rev 4.1.0); pcbs/corne-cherry/hotswap/jlcpcb/production_files/BOM-corne-cherry.csv;\n  plates/3x6/pcb/plate-top-cherrymx.kicad_pcb; cases/3x6/left.step; docs/corne-cherry/v4/buildguide_en.md; README.md.\n  Changes: left half only; panel tabs and the project logo dropped; coordinates unified; the case STEP triangulated;\n  the board outline taken from the plate outline inset 0.4 mm. Credited on the end card (\"CAD：foostan/crkbd · CC BY 4.0\").\n- Component facts: RP2040 datasheet (Raspberry Pi Ltd), W25Q128JV datasheet (Winbond) — quoted in FACTS.md only;\n  no logo or package marking is drawn.\n\nLIGHT\n- photo_studio_loft_hall_2k.hdr — Poly Haven, CC0 — https://polyhaven.com/a/photo_studio_loft_hall (library core/assets/polyhaven)\n\nFONTS (SIL Open Font License 1.1, licence texts in fonts/; Noto Sans SC subset with the Google Fonts API &text=)\n- Noto Sans SC — Google / Adobe (names, Chinese subtitle line, title)\n- JetBrains Mono — JetBrains (specs, numbers, dimensions)\n- Inter — The Inter Project Authors (English subtitle line, English title)\n\nMUSIC (original score, demo/mix.py; samples via the library's core/audio/sampler.py)\n- Samples (CC0): FreePats project (freepats.zenvoid.org), VS Chamber Orchestra: Community Edition (Versilian Studios),\n  Versilian Community Sample Library (Versilian Studios). Instruments: marimba, bowed vibraphone, glass, glockenspiel,\n  electric bass, hi-hat, claves. Kick, foley and room tone are synthesised in code.\n\nVOICE\n- Kokoro-82M (hexgrad), voice am_michael, Apache License 2.0; run locally via kokoro-onnx (MIT) through core/tts/tts.py.\n  Speech check: faster-whisper small.en (MIT; OpenAI Whisper weights, MIT).\n\nSOFTWARE\n- three.js r170 (MIT); the library's core/three/post.js, core/lib.js, core/render/*, core/audio/*.\n- occt-import-js 0.0.23 (LGPL-2.1) — used offline by tools/step2mesh.mjs to triangulate the STEP; not shipped.\n",
+    "source_urls": [
+      "https://[^",
+      "https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf",
+      "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@{w}&text='",
+      "https://github.com/foostan/crkbd",
+      "https://github.com/foostan/crkbd,",
+      "https://github.com/foostan/crkbd/blob/63366fb7f51cf2a796462fdd90527e99dd126055/README.md",
+      "https://github.com/foostan/crkbd/blob/63366fb7f51cf2a796462fdd90527e99dd126055/cases/3x6/left.step",
+      "https://github.com/foostan/crkbd/blob/63366fb7f51cf2a796462fdd90527e99dd126055/docs/corne-cherry/v4/buildguide_en.md",
+      "https://github.com/foostan/crkbd/blob/63366fb7f51cf2a796462fdd90527e99dd126055/pcbs/corne-cherry/hotswap/corne-cherry.kicad_pcb",
+      "https://github.com/foostan/crkbd/blob/63366fb7f51cf2a796462fdd90527e99dd126055/pcbs/corne-cherry/hotswap/jlcpcb/production_files/BOM-corne-cherry.csv",
+      "https://github.com/google/fonts/raw/main/ofl/'",
+      "https://polyhaven.com/a/photo_studio_loft_hall",
+      "https://raw.githubusercontent.com/foostan/crkbd/$REV",
+      "https://www.winbond.com/resource-files/w25q128jv%20revf%2003272018%20plus.pdf"
+    ]
+  },
+  "matching_blockers": [
+    "The complete original PCB extraction is present. The pinned STEP-derived case.bin is absent; rebuild it and verify the original dimensions and four-hole transform.",
+    "The original conversation prompt is not published. Use the complete published specification and audited reconstruction; do not claim the recovered text is a verbatim original chat prompt."
+  ],
+  "visual_audit": {
+    "state": "complete-regular-sheet-coverage",
+    "reference_video_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/films/teardown.mp4",
+    "reference_video_sha256": "a5e2a47c1ccf9233ed2c314edb999f5cb743352b9558bd7b8ea6830700c2b30c",
+    "coverage": [
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/teardown/sheets/sheet-01.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/teardown/sheets/sheet-02.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/teardown/sheets/sheet-03.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/teardown/sheets/sheet-04.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      }
+    ],
+    "reference_verified_visual_observations": [
+      "The dark-studio product is the exact left Corne half:21 sculpted blank keycaps, ivory alphas, grey modifiers and one coral thumb key. Lift caps to reveal white switches with red cross stems, then separate six labelled editorial layers. Preserve real plate holes, PCB routing/components, four brass spacers and the triangulated case. Macro travel under the PCB reveals the RP2040,16MB flash,23 reverse LEDs and hot-swap sockets. Reassemble all layers, dimension the actual138.4×97.6mm case and19.05mm pitch, demonstrate the4mm key stroke, then hold the complete product beside the title. Use exact source CAD and actual package placements."
+    ],
+    "note": "All regular reference sheets were inspected across the complete film. Named supplementary frames cover important short actions and transitions. This is scene coverage, not a claim that every encoded frame was inspected."
+  }
+}

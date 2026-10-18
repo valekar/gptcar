@@ -1,0 +1,726 @@
+{
+  "schema_version": "matched-original-brief-v2-audit-1",
+  "slug": "data-physical",
+  "status": "reference-audited-asset-rebuild-required",
+  "original_title": "Two Spirals",
+  "original_title_aliases_from_demo": [
+    "Demo: *Two Spirals* 《两条螺旋》 (39.4 s) · `data-physical.mp4` · source in [`demo/`](demo/)",
+    "",
+    "Twelve years of global wind and solar capacity (IRENA 2026, via Our World in Data, CC BY 4.0), built as two spirals of real plates on a walnut dial: one plate is 10 GW for both, aluminium for solar, teal acrylic for wind, a brass plate every 100 GW. Chinese on screen, English narration, bilingual subtitles (Chinese line above, English line below)."
+  ],
+  "published_premise_verbatim": "Twelve years of wind and solar capacity stacked as real plates on a walnut dial: wind led in 2014, solar passed it in 2021, and by 2025 the ratio has turned the other way round.",
+  "published_premise_zh_verbatim": "十二年的风电和太阳能装机，按同一个单位叠成实物，绕胡桃木表盘升成两条螺旋：2014 年风电领先，2021 年太阳能超过，2025 年比值整个反了过来。",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "verbatim_original_conversation_prompt": null,
+    "published_brief_statement": null,
+    "reconstructed_replication_instruction": "Recreate the full published Two Spirals scene order, story, exact narration and screen text at original timing/resolution/fps, including all specified subjects, performance, mechanisms, lens/light/material treatment, transitions and sonic hits. This is a reconstruction from published sources, not a quoted original conversational prompt.",
+    "reconstruction_basis": [
+      "Complete published STYLE.md and DEMO.md",
+      "Published narration, cards and timing source",
+      "Original movie: all regular contact sheets and named key-event frames"
+    ]
+  },
+  "original_format": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24.0,
+    "duration_s_exact_timeline": 39.375,
+    "duration_s_gallery_rounded": 39.4,
+    "duration_s_published_demo_text": "39.4",
+    "video_stream_metadata_verified": true,
+    "note": "Encoded target is frame_count/fps, not rounded catalogue or container audio duration.",
+    "frame_count": 945,
+    "duration_s": 39.375,
+    "container_duration_s": 39.381,
+    "production_canvas_width": 1920,
+    "production_canvas_height": 1080
+  },
+  "source_authorship": "Historical original by Lemomo/LemoLab using Claude Opus5.5. New output must identify actual GPT authorship and attribute any reused generic components.",
+  "source_hashes": [
+    {
+      "path": "styles/data-physical/STYLE.md",
+      "sha256": "2d2e6685b0dcf8a1e2ba2ff904ab02d51aede1f5dbb246fd2f6e81c8d146f208"
+    },
+    {
+      "path": "styles/data-physical/DEMO.md",
+      "sha256": "d099bc33c4e8ece38b8a5ad8ab30ec2beef353bce75f31936db0a29038358845"
+    },
+    {
+      "path": "styles/data-physical/style.json",
+      "sha256": "7777378d05ccc25f7e242d5a84aec1a8a283970af40b3714062bceac6661f9e7"
+    },
+    {
+      "path": "styles/data-physical/demo/timeline.js",
+      "sha256": "7bf5758687c654be0914c3e4fe9b6989decb610d47e23ad1d2eb9943273752aa"
+    },
+    {
+      "path": "styles/data-physical/demo/voice/lines.json",
+      "sha256": "bfd895c40a9f0cbb7b802275b2ac2bf38a2dfb7e81d4b295820b671efe9bfb06"
+    }
+  ],
+  "style_guide_sha256": "2d2e6685b0dcf8a1e2ba2ff904ab02d51aede1f5dbb246fd2f6e81c8d146f208",
+  "style_guide_verbatim": "# Data Physicalization — Style Prompt\n\n> Real statistics built as real objects: every unit is a countable piece of material (a plate, a block, a coin, a bar) stacked to exact scale on a crafted base, shot like a product in a studio — soft key, long shadows, shallow depth of field, physically based materials. The camera reads a number at the edge of one plate, follows the data as it grows, and pulls back until the chart is an installation.\n> References (grammar only): data-sculpture and physical-visualisation practice (one unit = one object, the object is the axis); product and still-life photography (a warm key at a low angle, a cool rim, a seamless sweep); annual-report editorial design (one reading per screen, a source line, a quiet grotesk). Copy none of them; never name them in the film.\n\n## 1. Essence, and what it is not\n\n- **The unit is an object.** One plate, block or coin equals one stated quantity, and the rule is said on screen once (\"1 plate = 10 GW\"). A heavier material marks every tenth unit, so the stack is its own ruler.\n- **Scale is exact.** Heights, counts and areas are computed from the data; rounding is one unit at most and written in the facts. Two series compared on the same base use the same unit.\n- **Studio light, real matter.** Metal reflects an HDRI, wood shows grain, acrylic transmits; nothing glows, nothing is outlined, no fake UI.\n- **Growth is assembly.** Data increases by pieces being placed, one after another, with weight and sound; it never scales or morphs.\n- **The pull-back.** At least once the chart is revealed as a made thing: a dial, a table piece, a landscape of stacks.\n- **Every number has a source on screen**: real published statistics (or the user's own figures), credited in frame.\n\nNot Isometric Infographic (no icons, no flat colour coding), not Glass Product Render (the object is data), not Data Storytelling (no paper chart or inked axes), not Dark Tech Keynote (no black stage or neon), not Brick Toy (no toy proportions, no characters).\n\n## 2. Materials & rendering\n\n- **Pieces**: thin boxes or cylinders instanced in the thousands, each with a few-millimetre random offset and yaw, a ±7 % value change and a hairline gap: that is what makes a stack read as stacked, not as a bar.\n- **Material per series**, chosen so two series separate in one glance at thumbnail size: brushed metal against tinted acrylic, pale wood against dark stone, copper coins against paper. A third material (e.g. brass) only for the ruler pieces, shared by every series.\n- **Base**: a real-texture slab (wood veneer, stone) with inlaid marks: a tick ring, the series' paths, the labels of categories or years, cut into the surface at the base's own scale, lit with the scene.\n- **Rendering**: PBR (transmission for acrylic), an HDRI at low intensity for reflections only, a warm key at 20–35° with long soft shadows, one or two cool rims so metal and acrylic separate from wood at distance; GTAO, physical depth of field, 2× supersampling, a light vignette.\n- **Screen space only for type**: readings, verdicts, the source line, subtitles, the title card. Every reading is pinned to its object through the same world → screen function as the camera.\n- **Post**: grain light (the background is pale), no lens flares, no chromatic aberration.\n\n## 3. Colour logic\n\n- The set is warm and neutral: a seamless greige sweep, the base in a natural material, the series in material colours (silver, pale teal, brass, oak). Material, not paint, separates series.\n- **One accent** (e.g. signal orange) for the reading or verdict that matters on this screen; nothing else is accent-coloured.\n- Ink is near-black at two strengths (value, then labels at ~60 %).\n- No rainbow series palettes, no colour ramps on the objects, no dark mode.\n\nExample (our demo): sweep #C4BEB4, walnut base, aluminium #C8CCD1 (metal), acrylic #9FD3D6 with teal attenuation, brass #D2B07A, ink #1C1D20, accent #D4521C.\n\n## 4. Type & subtitles\n\n- **Roles**: a light grotesk for numbers (e.g. Inter 200–300; the hero reading 130–170 px, a stack reading 46–56 px); a sans for labels and verdicts in the film's language (e.g. Noto Sans SC 500, 24–46 px); a monospace for units, years and source lines (20–24 px); a serif only for the title. OFL, self-hosted, CJK subset.\n- **A reading** = a dot on the object, a 1.4 px leader, a small swatch of the series' material, the category line, then the value and unit, on a translucent paper plate (~84 %). Two readings of one pair stack in one column, larger value on top.\n- **The source line** (dataset, publisher, year, licence, e.g. \"数据：IRENA (2026)，经 Our World in Data 整理 · CC BY 4.0\") is in frame with the data, small (20–22 px, ink at ~60 %) in a corner away from the subtitles, at least from the first reading to the summary, and on the title card.\n- **A verdict** sits in the upper-left third on its own plate in the accent colour, underlined by a growing rule; it appears only after the readings it judges have been still for ≥ 2.5 s.\n- **Subtitles**: bottom-left, a 2 px ink rule and a paper plate fading right; if the film is bilingual, the film's language on top; each line one line only, measured with the real font (`nowrap`), split into two cues rather than wrapped. Hold ≥ max(1.8 s, speech + 0.6 s).\n- Labels hold ≥ CJK characters ÷ 4.5 + 1.5 s / letters ÷ 15 + 1.5 s; a counter reports its landing value; nothing below 20 px.\n\n## 5. Motion quality\n\n- On ones, 24 fps; the camera never stops (2–5 % creep on holds).\n- **Cascade**: a stack assembles bottom-to-top in 0.5–1.0 s, each piece dropping a few centimetres with an ease-out.\n- **Feed**: one period's increase arrives piece by piece from out of frame, quintic ease-out, a yaw that unwinds (\"placed\", not \"dropped\"), 8–16 pieces per second, the counter rolling with the pieces landed.\n- **A single heavy object** falls with gravity, lands with one small damped bounce, its shadow tightening.\n- Readings fade in with a 16 px rise and draw their leader; they leave by fading, never by sliding.\n- Never moves: the base, a piece once landed, the ruler pieces.\n\n## 6. Camera grammar\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Macro dolly along a stack's edge, rack focus | the unit is real and countable | the rule \"1 piece = X\"; a single record |\n| Low lateral track along the series | time passing; growth | a decade; a ranking; a sequence of sites |\n| Locked three-quarter frame on two subjects | comparison | before/after; A against B; a crossover |\n| Crane with the rising top | accumulation | one year's increase; a target being reached |\n| Pull-back to near top view | the whole as an object | a summary; a ratio; an ending |\n| Slow orbit around the base | the installation as sculpture | a title; a breath |\n\nThe subject fills at least a third of the frame height at key moments; readings live in empty background, never over the subtitle strip; comparisons keep both subjects completely in frame. Transitions are camera moves inside one set (one continuous take where possible); no cuts to a chart, no wipes, no page turns.\n\n## 7. Sound palette\n\n- **The material's own sound** is the foley: metal plates tick bright and short (inharmonic partials 3–8 kHz), acrylic toks duller (1–3 kHz), wood knocks, coins ring. A cascade is a burst of these at the landing times, scaled down as density rises.\n- **The ruler sings**: every ruler piece (each 10th) rings a pitched mallet note, one timbre per series (e.g. glockenspiel for metal, glass harp for acrylic), climbing a pentatonic scale with the count — the chart becomes an arpeggio.\n- **Score**: mallets and air — marimba ostinato, bowed and struck vibraphone, harp, glass, a soft synth pad and a pulse bass with audible 2nd/3rd harmonics; horns for a turn. Accelerate by subdivision (8ths → 16ths), not tempo.\n- **Impacts**: a turn or a last object lands on punch (60–120 Hz) + bass drum + timpani + a bell; the two or three designed impacts are the loudest moments.\n- **Silence**: a 0.3–0.6 s suck-out (music and foley −30 dB) before each designed impact; a thin studio-air bed stays.\n- **Mix**: voice ~10 dB over music, ruler notes under the voice, −14 LUFS, true peak ≤ −1.2 dBTP. Voice: calm, precise, short sentences.\n\n## 8. Native moves\n\n- **The unit close-up.** Push into the side of a stack until one piece fills the frame; bracket one piece (\"= 10 GW\") and one ruler piece (\"= 100 GW\"). *Fits content like:* tonnes of CO₂ as steel plates; a budget as banknote bricks; a population as wooden discs.\n- **The paired climb.** Two series on one base, one material each, built year by year as the camera tracks; the crossover is held still with both readings before the verdict. *Fits content like:* imports vs exports; renewables vs fossil capacity; two companies' revenue.\n- **The feed.** One period's increase arrives piece by piece onto last period's level, the counter rolling with the landings. *Fits content like:* this year's new hires on last year's team; a quarter's sales; a record harvest.\n- **Chart to installation.** Pull back until the bars are a dial, a skyline or a table piece; the base's inlaid marks become its typography. *Fits content like:* twelve months as a clock; regions as a map-shaped base; product lines as a city.\n- **The last object.** One single heavier piece (a brass puck, a coin, a weight) lands on the base carrying the final number engraved. *Fits content like:* a total; a ratio; a target met.\n\n## 9. Pitfalls of the medium\n\n- Two materials too alike (bright aluminium vs clear acrylic) read as one series: give one a tint or a finish change, and check at thumbnail size.\n- Long shadows and warm reflections turn metal brown at distance: add a cool rim light and keep the base darker than the pieces.\n- Thin pieces moiré at 2–3 px per layer: random per-piece value and offset, 2× supersampling.\n- A reading pinned to a moving object can leave the frame: clamp it to a safe box.\n- Counters that roll by time instead of by landed pieces lie; tie them to the object count.\n- Rounding to whole pieces can invert close values; when two values are within one unit, say so on screen or choose a finer unit.\n- Transmission streaks at low angles: acrylic roughness ≥ 0.2, tinted attenuation.\n\n## 10. Engine\n\n- `demo/set.js` — `buildSet(scene)` (HDRI, warm key + cool rims, base with inlay canvas, instanced pieces per material, the last object) and the landing schedule (`SHEETS`, `EVENTS`, `landed(stack, t)`); change `PAIRS`, the unit and the materials for any single or paired series.\n- `demo/film.js` — cylindrical camera keys (`track`, `core/lib.js`) with focus on a target point, the reading kit (`pairLabels`, `verdict`, `plate`, `swatch`), counter, subtitles (`SUBCHECK`), `TEXTS`, `EV`. `demo/mix.py` — material foley (`tick_alu`, `tok_acr`), ruler notes, suck-outs, master.\n- **Extra packages and packs**: beyond `setup.sh deps` only the studio HDRI, `sh tools/fetch.sh hdri` (Poly Haven, CC0, 12 MB); with narration `setup.sh deps voice`; for a sampled score `sh tools/fetch.sh instruments vsco2ce` / `vcsl` / `freepats`. The walnut veneer is in `core/assets/polyhaven/`. Anything you add (a spreadsheet reader, other textures) goes into a private venv / node_modules in the project folder, never into `$LIB/.venv`.\n- Minimal example, not in the demo: one series of twelve monthly values on a 12-position circle, the annual total engraved on the last object.\n\n### Sources, licences, facts\n\n- **Statistics for a new topic**: Our World in Data (each chart's \"About this data\" names the original source; CC BY 4.0 — credit both), World Bank Open Data (CC BY 4.0), Eurostat (CC BY 4.0), US Census / BLS / EIA (public domain); UN Data, IRENA, IEA free tables and other national statistics offices (e.g. 国家统计局): check each dataset's terms. Search the portal for the indicator, download the CSV, keep the file and its metadata in the project's `data/`.\n- **Licences**: CC0, public domain and CC BY are fine with a credit. ODbL, CC BY-SA, \"no known restrictions\" or \"free for non-commercial use\" are not CC0: name the terms to the user and ask before using them. Textures and HDRIs: Poly Haven / ambientCG (CC0).\n- **The user's own numbers** (annual report, ESG data, sales): ask for them and for the document they come from; never invent or round them into a better story. Never let generated images stand in for real data or material.\n- **Keep a FACTS.md in the project folder** — each on-screen number and spoken claim, its source URL, the quoted wording or row, and how any derived value (ratio, difference, units per piece) was computed — and deliver it with the film.\n\n## 11. Variation space\n\nDecided per film: the unit and its materials, the base and its shape, which series share it, the camera route, pacing, the last object, accent hue within the colour logic.\n\n- Structures: a single series rising to a record; two series and their crossover; a ranking of regions laid out as a map-shaped base.\n- Openings: the macro of one piece being placed; the finished installation seen from above, then the dive to the first unit; an empty base with its inlay waiting.\n- Endings: the last object landing at the centre; a slow orbit of the whole installation; a single piece lifted off to show what one unit is.\n\n---\n\nHow our demo was made (story, shots, score, title card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n",
+  "published_demo_verbatim": "# Data Physicalization — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *Two Spirals* 《两条螺旋》 (39.4 s) · `data-physical.mp4` · source in [`demo/`](demo/)\n\nTwelve years of global wind and solar capacity (IRENA 2026, via Our World in Data, CC BY 4.0), built as two spirals of real plates on a walnut dial: one plate is 10 GW for both, aluminium for solar, teal acrylic for wind, a brass plate every 100 GW. Chinese on screen, English narration, bilingual subtitles (Chinese line above, English line below).\n\n## Story & structure\n\nLogline: in 2014 the world had almost twice as much wind as solar; in 2021 solar passed wind; by 2025 the ratio is the other way round (solar = wind × 1.86).\n\nArc: the pair (2014, wind and solar side by side, held, then the verdict ×1.95) → the rule (a macro of one plate and one brass plate) → growth (2015–2020 pairs assemble as the camera tracks along the spiral) → the turn (2020 and 2021 pairs held still with four readings, a suck-out, then \"2021 · solar passed wind\") → the climax (2025: last year's level cascades in, then 52 new plates are fed one by one while the counter rolls to 2,396.7 GW) → the reveal (the crane pulls back to near top view: two spirals and the inlaid ticks become one dial) → the ending (a brass puck engraved ×1.86 falls onto the centre; end card).\n\nNative moves spent: *the unit close-up* for the rule; *the paired climb* through the decade; *the feed* for 2025; *chart to installation* as the signature pull-back; *the last object* for the final number. Every number and its source is in [`demo/FACTS.md`](demo/FACTS.md).\n\n## Shots\n\nOne continuous take. Times in seconds; 96 BPM, a bar is 2.5 s.\n\n| # | Time | Shot | Camera | Native move / note |\n|---|---|---|---|---|\n| 1 | 0.0–2.5 | the 2014 pair assembles (wind from 0.1, solar from 0.4): 35 acrylic plates, 18 aluminium | low side view, pulling back from close | first plates land in the first frame |\n| 2 | 2.5–7.5 | both readings in one column (349.5 / 178.8 GW), held 2.8 s; verdict \"风电 = 太阳能 × 1.95\" at 5.0 | slow orbit | comparison held before the verdict |\n| 3 | 7.5–10.3 | brackets on one plate \"1 片 = 10 GW\" and one brass plate \"黄铜 = 100 GW\" | push into the solar stack's side, f-stop wide | the unit close-up |\n| 4 | 10.0–17.5 | 2015–2020 pairs cascade one every 1.25 s; brass plates ring | low lateral track along the spiral, rising with the tops | no labels: the inlaid years carry it |\n| 5 | 17.5–22.5 | 2021 assembles; 2020 and 2021 pairs held with four readings from 18.85; suck-out 21.5; verdict \"2021 · 太阳能超过风电\" at 21.875 | crane up to a locked three-quarter frame, 2–3 % creep | the turn |\n| 6 | 22.5–25.3 | 2022–2025 pairs cascade in quick succession | fast track along the spiral | the verdict stays in the upper-left third over the move |\n| 7 | 25.3–30.0 | 2025 solar shoots up to 2024's level, then 52 plates are fed one per 1/10 beat; counter 1,883.2 → 2,396.7 GW, \"当年新增 +513.5 GW\" | crane rising with the top | the feed; style frame at 28.6 |\n| 8 | 30.0–34.4 | the whole set: two spirals, ticks and inlaid years read as a dial | crane back and up to ~70° top view, target offset left for the end card | chart to installation |\n| 9 | 34.4–39.4 | a brass puck engraved ×1.86 falls to the centre (suck-out 33.75–34.375); accent line \"2025 · 太阳能装机是风电的 1.86 倍\" with a leader to the puck; end card | slow turn of the top view | the last object; poster at 37.8 |\n\n## Score structure\n\n96 BPM, 4/4, D major; one chord per bar: Dadd9 – Dadd9 – Bm – Gmaj7 | D – A/C♯ – Bm – G | Asus (bar 8, cut short) | D – Bm – G | A – Gmaj7 | D – D.\n\n| Section | Time | Palette | Notes |\n|---|---|---|---|\n| Wind leads | 0–10 | glass harp + harp motif (A5 F♯5 E5 D5…), synth pad, bowed vibraphone | sparse; the plates' own ticks and brass notes carry the rhythm |\n| Growth | 10–20 | marimba arpeggio in 8ths, pulse bass in quarters (2nd/3rd harmonics) | each pair's cascade is an arpeggio of ticks and glockenspiel / glass notes climbing a D pentatonic ladder (one note per 100 GW) |\n| Crossover | 20–21.875 | timpani heartbeat on A, a held horn A3 | suck-out 21.5–21.875 (music and foley −30 dB) |\n| Turn | 21.875 | punch (60–120 Hz) + bass drum + timpani D3 + horns D–F♯–A + trombone D2 + glockenspiel F♯6 + metal ring | second-loudest moment |\n| 2025 | 22.5–30 | marimba 16ths, pulse 8ths, a glockenspiel line D6–E6–F♯6–A6–B6–A6 over the feed; 52 metal ticks; vibraphone chord + timpani when the last plate lands (29.2) | the densest stretch |\n| Dial | 30–33.75 | horns D3/A3/F♯4 and cellos D3 under the crane, marimba back to 8ths | suck-out 33.75–34.375 |\n| Puck | 34.375 | punch + bass drum + gran cassa + timpani D3 + tubular bells D5/A4 + metal rings; five small ticks of the puck settling | the loudest moment of the film |\n| End | 34.4–39.4 | harp arpeggio D4…D6, bowed vibraphone D5/A4 | fade |\n\nMix (`demo/mix.py`): stems set against the voice's active RMS (music −10.9 dB, pulse −12.2 dB, foley −8.6 dB, hits −2.3 dB, studio-air bed far under), music ducked ~4 dB under speech; bus compression on music, pulse, foley and bed only; a 36 Hz high-pass (44 Hz, 4th order on hits) and a −5 dB shelf below 62 Hz on everything but the voice; master to −14.4 LUFS with a 4× oversampled true-peak limiter at −4.6 dBTP, then `mux.sh` (−14 LUFS). The film measures −13.8 LUFS integrated, LRA 6.6 LU.\n\n## Palette & props\n\n- Sweep #C4BEB4 with fog to it; walnut veneer dial (r 3.35, 0.11 thick) with an aluminium rim, inlay in #EFE4CF: 2° tick ring, the two spiral paths (dashes long for solar, short for wind), years in JetBrains Mono.\n- Solar: aluminium plates #C8CCD1, metalness 1, roughness 0.27; wind: acrylic #9FD3D6, transmission 0.72, clearcoat, teal attenuation; brass #D2B07A every tenth plate in both. Plate 0.50 × 0.42, 0.0125 thick (10 GW); solar ring r 2.25–2.58, wind ring 0.6 inside, 27.6° per year.\n- Lights: warm key #FFF1DC from the left at ~35°, 4096 shadow map; cool rims #B9D2FF / #C6DBFF from behind-right and front-right; HDRI `photo_studio_loft_hall` at 0.8 for reflections.\n- The puck: brass, r 0.64, engraved (dark patina) \"2025 · ×1.86 · 太阳能 ÷ 风电\" with a tick ring.\n- Type: Inter 200/300 for numbers, Noto Sans SC 500 for labels, verdicts and subtitles, JetBrains Mono for years and units, Noto Serif SC 600 for the title. Ink #1C1D20, accent #D4521C.\n- Narrator: Kokoro `af_heart`, speed 0.95.\n\n## End card\n\nLeft third over the turning dial: 两条螺旋 (Noto Serif SC), *Two Spirals*, a rule, `DATA PHYSICALIZATION · 数据实物化`, `LemoLab × Claude Opus 5.5`; above it the accent line with its leader to the puck; the data source stays in the top-right corner from the crane on. 4.6 s. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Build notes\n\n```\ndemo/\n  build.sh          one command: fonts (first run) → voice → speech check → cues → events → picture → mix → master → .srt → checks → poster\n  index.html        WebGL canvas + 2D overlay canvas, fonts.css\n  timeline.js       single source: BPM grid, build times, holds, verdicts, suck-outs, narration + subtitles, every on-screen string (LABELS)\n  data.js           the twelve years of both series (IRENA 2026 via OWID) and the unit rule\n  set.js            the physical set (lights, walnut dial + inlay, instanced plates per material, the puck), the landing schedule, EVENTS\n  film.js           camera keys, reading kit (pairLabels, verdict, counter), subtitles, end card, TEXTS (readcheck), SUBCHECK, EV\n  mix.py            score, material foley, voice, suck-outs, mix and master → out/mix.wav, out/stems/\n  tools/            export.mjs (voice lines, timeline.json, cues), fonts.mjs (OFL subsets), srt.mjs, subcheck.mjs, holdcheck.py\n  data/             the downloaded CSVs and metadata\n  FACTS.md, CREDITS, TREATMENT.md, PRODUCTION_LOG.md, stills/styleframe.jpg\n```\n\n- Needs `setup.sh deps voice` (Kokoro and faster-whisper; the Whisper `small.en` model downloads on the first check). `build.sh` fetches what git doesn't hold, only when missing: the studio HDRI (`sh tools/fetch.sh hdri`, 12 MB), the Kokoro model (`fetch.sh voice`), the sample libraries `vsco2ce`, `vcsl`, `freepats` (`fetch.sh instruments <lib>`, ~1 GB together), and the font subsets (`tools/fonts.mjs` from the Google Fonts CSS2 API, OFL: Noto Sans SC, Noto Serif SC, Inter, JetBrains Mono) whenever a `.woff2` named in `fonts.css` is missing. The walnut veneer textures are in git (`core/assets/polyhaven/`), the data CSVs in `demo/data/`.\n- `sh demo/build.sh` takes about 7 minutes on Apple silicon; the picture (945 frames, 2× supersampled, acrylic transmission) is ~55 s with 3 workers, the speech check most of the rest.\n- Checks it runs: `asr_check.py` (small.en, 7/7), subtitle single-line widths with the real fonts (widest 836 px against 1100 px), `readcheck.mjs` (all pass), `holdcheck.py` (2014 pair held 2.77 s, 2020/2021 held 2.67 s before their verdicts).\n- Demo-specific pitfalls: aluminium and clear acrylic first read as the same white plates, so the acrylic got a teal tint and attenuation and the aluminium full metalness; long warm shadows turned the far aluminium brown until the two cool rims were added; the 2014 and 2020/2021 reading columns collided with the verdict plate until they were kept below y = 430; the 2025 stack sat behind the subtitle strip until the crane's target was dropped below the top; the top-view puck engraving reads upright only with yaw π/2 + 0.30 for this camera.\n",
+  "canonical_scene_order": [
+    {
+      "id": "1",
+      "t0": 0.0,
+      "t1": 2.5,
+      "published_time_range": "0.0–2.5",
+      "visual_prompt_source_description": "the 2014 pair assembles (wind from 0.1, solar from 0.4): 35 acrylic plates, 18 aluminium",
+      "camera": "low side view, pulling back from close",
+      "motion_transition_sound_notes": "first plates land in the first frame",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "l1"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/data-physical/frames/f-0002.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "2",
+      "t0": 2.5,
+      "t1": 7.5,
+      "published_time_range": "2.5–7.5",
+      "visual_prompt_source_description": "both readings in one column (349.5 / 178.8 GW), held 2.8 s; verdict \"风电 = 太阳能 × 1.95\" at 5.0",
+      "camera": "slow orbit",
+      "motion_transition_sound_notes": "comparison held before the verdict",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/data-physical/frames/f-0006.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "3",
+      "t0": 7.5,
+      "t1": 10.3,
+      "published_time_range": "7.5–10.3",
+      "visual_prompt_source_description": "brackets on one plate \"1 片 = 10 GW\" and one brass plate \"黄铜 = 100 GW\"",
+      "camera": "push into the solar stack's side, f-stop wide",
+      "motion_transition_sound_notes": "the unit close-up",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "l2"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/data-physical/frames/f-0009.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "4",
+      "t0": 10.0,
+      "t1": 17.5,
+      "published_time_range": "10.0–17.5",
+      "visual_prompt_source_description": "2015–2020 pairs cascade one every 1.25 s; brass plates ring",
+      "camera": "low lateral track along the spiral, rising with the tops",
+      "motion_transition_sound_notes": "no labels: the inlaid years carry it",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "l3"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/data-physical/frames/f-0014.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "5",
+      "t0": 17.5,
+      "t1": 22.5,
+      "published_time_range": "17.5–22.5",
+      "visual_prompt_source_description": "2021 assembles; 2020 and 2021 pairs held with four readings from 18.85; suck-out 21.5; verdict \"2021 · 太阳能超过风电\" at 21.875",
+      "camera": "crane up to a locked three-quarter frame, 2–3 % creep",
+      "motion_transition_sound_notes": "the turn",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "l4"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/data-physical/frames/f-0020.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "6",
+      "t0": 22.5,
+      "t1": 25.3,
+      "published_time_range": "22.5–25.3",
+      "visual_prompt_source_description": "2022–2025 pairs cascade in quick succession",
+      "camera": "fast track along the spiral",
+      "motion_transition_sound_notes": "the verdict stays in the upper-left third over the move",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/data-physical/frames/f-0024.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "7",
+      "t0": 25.3,
+      "t1": 30.0,
+      "published_time_range": "25.3–30.0",
+      "visual_prompt_source_description": "2025 solar shoots up to 2024's level, then 52 plates are fed one per 1/10 beat; counter 1,883.2 → 2,396.7 GW, \"当年新增 +513.5 GW\"",
+      "camera": "crane rising with the top",
+      "motion_transition_sound_notes": "the feed; style frame at 28.6",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "l5"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/data-physical/frames/f-0028.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "8",
+      "t0": 30.0,
+      "t1": 34.4,
+      "published_time_range": "30.0–34.4",
+      "visual_prompt_source_description": "the whole set: two spirals, ticks and inlaid years read as a dial",
+      "camera": "crane back and up to ~70° top view, target offset left for the end card",
+      "motion_transition_sound_notes": "chart to installation",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "l6"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/data-physical/frames/f-0033.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "9",
+      "t0": 34.4,
+      "t1": 39.4,
+      "published_time_range": "34.4–39.4",
+      "visual_prompt_source_description": "a brass puck engraved ×1.86 falls to the centre (suck-out 33.75–34.375); accent line \"2025 · 太阳能装机是风电的 1.86 倍\" with a leader to the puck; end card",
+      "camera": "slow turn of the top view",
+      "motion_transition_sound_notes": "the last object; poster at 37.8",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "l7"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/data-physical/frames/f-0037.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    }
+  ],
+  "narration": [
+    {
+      "id": "l1",
+      "t0": 1.25,
+      "duration_s_original_voice": 4.669,
+      "tts_text_verbatim": "In twenty fourteen, the world had almost twice as much wind power as solar.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l1",
+        "text": "In twenty fourteen, the world had almost twice as much wind power as solar.",
+        "asr": "In 2014, the world had almost twice as much wind power as solar.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    },
+    {
+      "id": "l2",
+      "t0": 7.5,
+      "duration_s_original_voice": 3.768,
+      "tts_text_verbatim": "Every plate is ten gigawatts. Every brass plate, one hundred.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l2",
+        "text": "Every plate is ten gigawatts. Every brass plate, one hundred.",
+        "asr": "Every plate is ten gigawatts. Every brass plate, one hundred.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    },
+    {
+      "id": "l3",
+      "t0": 11.875,
+      "duration_s_original_voice": 2.568,
+      "tts_text_verbatim": "Wind kept growing. Solar grew faster.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l3",
+        "text": "Wind kept growing. Solar grew faster.",
+        "asr": "Wind kept growing. Solar grew faster.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    },
+    {
+      "id": "l4",
+      "t0": 21.875,
+      "duration_s_original_voice": 2.386,
+      "tts_text_verbatim": "In twenty twenty-one, solar passed wind.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l4",
+        "text": "In twenty twenty-one, solar passed wind.",
+        "asr": "In 2021, solar passed wind.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    },
+    {
+      "id": "l5",
+      "t0": 25.625,
+      "duration_s_original_voice": 4.349,
+      "tts_text_verbatim": "In twenty twenty-five alone, solar added more than five hundred gigawatts.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l5",
+        "text": "In twenty twenty-five alone, solar added more than five hundred gigawatts.",
+        "asr": "In 2025 alone, solar added more than five hundred gigawatts.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    },
+    {
+      "id": "l6",
+      "t0": 30.625,
+      "duration_s_original_voice": 2.6,
+      "tts_text_verbatim": "Step back, and twelve years become one dial.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l6",
+        "text": "Step back, and twelve years become one dial.",
+        "asr": "Step back, and twelve years become one dial.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    },
+    {
+      "id": "l7",
+      "t0": 35,
+      "duration_s_original_voice": 1.76,
+      "tts_text_verbatim": "Now it is the other way round.",
+      "speaker": null,
+      "voice": "af_heart",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l7",
+        "text": "Now it is the other way round.",
+        "asr": "Now it is the other way round.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    }
+  ],
+  "narration_source_path": "styles/data-physical/demo/voice/lines.json",
+  "published_timeline_extracted": {
+    "BAR": 2.5,
+    "BEAT": 0.625,
+    "BPM": 96,
+    "BUILD": {
+      "2014": 0.1,
+      "2015": 10,
+      "2016": 11.25,
+      "2017": 12.5,
+      "2018": 13.75,
+      "2019": 15,
+      "2020": 16.25,
+      "2021": 17.5,
+      "2022": 23.125,
+      "2023": 23.75,
+      "2024": 24.375,
+      "2025": 25
+    },
+    "BUILD_LEN": {
+      "2014": 1,
+      "2021": 1,
+      "def": 0.875,
+      "fast": 0.5625
+    },
+    "DUR": 39.375,
+    "LABELS": {
+      "wind": "风电",
+      "solar": "太阳能",
+      "verdict14": "风电 = 太阳能 × 1.95",
+      "unit1": "1 片 = 10 GW",
+      "unit2": "黄铜 = 100 GW",
+      "verdict21": "2021 · 太阳能超过风电",
+      "c25": "2025 · 太阳能累计装机",
+      "add25": "当年新增 +513.5 GW",
+      "puck": "2025 · 太阳能装机是风电的 1.86 倍",
+      "title": "两条螺旋",
+      "titleEn": "Two Spirals",
+      "style": "DATA PHYSICALIZATION · 数据实物化",
+      "sign": "LemoLab × Claude Opus 5.5",
+      "source": "数据：IRENA (2026)，经 Our World in Data 整理 · CC BY 4.0"
+    },
+    "T": {
+      "hold14": [
+        1.875,
+        7.5
+      ],
+      "verdict14": 5,
+      "unit": [
+        7.5,
+        10
+      ],
+      "hold21": [
+        18.85,
+        21.875
+      ],
+      "suck": 21.5,
+      "verdict21": 21.875,
+      "drop25": 25.625,
+      "dropStep": 0.0625,
+      "crane": 30,
+      "suck2": 33.75,
+      "puck": 34.375,
+      "end": 36.25
+    },
+    "VO": [
+      {
+        "id": "l1",
+        "t": 1.25,
+        "text": "In 2014, the world had almost twice as much wind power as solar.",
+        "zh": "2014 年，全球风电装机将近太阳能的两倍。"
+      },
+      {
+        "id": "l2",
+        "t": 7.5,
+        "text": "Every plate is ten gigawatts. Every brass plate, one hundred.",
+        "zh": "每一片是 10 GW，每一片黄铜是 100 GW。"
+      },
+      {
+        "id": "l3",
+        "t": 11.875,
+        "text": "Wind kept growing. Solar grew faster.",
+        "zh": "风电一直在涨，太阳能涨得更快。"
+      },
+      {
+        "id": "l4",
+        "t": 21.875,
+        "text": "In 2021, solar passed wind.",
+        "zh": "2021 年，太阳能超过了风电。"
+      },
+      {
+        "id": "l5",
+        "t": 25.625,
+        "text": "In 2025 alone, solar added more than five hundred gigawatts.",
+        "zh": "仅 2025 一年，太阳能就新增了 500 多 GW。"
+      },
+      {
+        "id": "l6",
+        "t": 30.625,
+        "text": "Step back, and twelve years become one dial.",
+        "zh": "退后一步，十二年合成一张表盘。"
+      },
+      {
+        "id": "l7",
+        "t": 35,
+        "text": "Now it is the other way round.",
+        "zh": "如今，正好反了过来。"
+      }
+    ],
+    "VOICE": {
+      "voice": "af_heart",
+      "speed": 0.95,
+      "lang": "en-us"
+    }
+  },
+  "on_screen_text_inventory": {
+    "published_subtitle_file_verbatim": "1\n00:00:01,250 --> 00:00:06,519\n2014 年，全球风电装机将近太阳能的两倍。\nIn 2014, the world had almost twice as much wind power as solar.\n\n2\n00:00:07,500 --> 00:00:11,868\n每一片是 10 GW，每一片黄铜是 100 GW。\nEvery plate is ten gigawatts. Every brass plate, one hundred.\n\n3\n00:00:11,875 --> 00:00:15,043\n风电一直在涨，太阳能涨得更快。\nWind kept growing. Solar grew faster.\n\n4\n00:00:21,875 --> 00:00:24,861\n2021 年，太阳能超过了风电。\nIn 2021, solar passed wind.\n\n5\n00:00:25,625 --> 00:00:30,574\n仅 2025 一年，太阳能就新增了 500 多 GW。\nIn 2025 alone, solar added more than five hundred gigawatts.\n\n6\n00:00:30,625 --> 00:00:33,825\n退后一步，十二年合成一张表盘。\nStep back, and twelve years become one dial.\n\n7\n00:00:35,000 --> 00:00:37,360\n如今，正好反了过来。\nNow it is the other way round.\n",
+    "cues_original_json": [],
+    "timeline_text_fields": {
+      "LABELS": {
+        "wind": "风电",
+        "solar": "太阳能",
+        "verdict14": "风电 = 太阳能 × 1.95",
+        "unit1": "1 片 = 10 GW",
+        "unit2": "黄铜 = 100 GW",
+        "verdict21": "2021 · 太阳能超过风电",
+        "c25": "2025 · 太阳能累计装机",
+        "add25": "当年新增 +513.5 GW",
+        "puck": "2025 · 太阳能装机是风电的 1.86 倍",
+        "title": "两条螺旋",
+        "titleEn": "Two Spirals",
+        "style": "DATA PHYSICALIZATION · 数据实物化",
+        "sign": "LemoLab × Claude Opus 5.5",
+        "source": "数据：IRENA (2026)，经 Our World in Data 整理 · CC BY 4.0"
+      }
+    },
+    "titles_subtitles_palette_verbatim": "",
+    "palette_props_verbatim": "- Sweep #C4BEB4 with fog to it; walnut veneer dial (r 3.35, 0.11 thick) with an aluminium rim, inlay in #EFE4CF: 2° tick ring, the two spiral paths (dashes long for solar, short for wind), years in JetBrains Mono.\n- Solar: aluminium plates #C8CCD1, metalness 1, roughness 0.27; wind: acrylic #9FD3D6, transmission 0.72, clearcoat, teal attenuation; brass #D2B07A every tenth plate in both. Plate 0.50 × 0.42, 0.0125 thick (10 GW); solar ring r 2.25–2.58, wind ring 0.6 inside, 27.6° per year.\n- Lights: warm key #FFF1DC from the left at ~35°, 4096 shadow map; cool rims #B9D2FF / #C6DBFF from behind-right and front-right; HDRI `photo_studio_loft_hall` at 0.8 for reflections.\n- The puck: brass, r 0.64, engraved (dark patina) \"2025 · ×1.86 · 太阳能 ÷ 风电\" with a tick ring.\n- Type: Inter 200/300 for numbers, Noto Sans SC 500 for labels, verdicts and subtitles, JetBrains Mono for years and units, Noto Serif SC 600 for the title. Ink #1C1D20, accent #D4521C.\n- Narrator: Kokoro `af_heart`, speed 0.95.",
+    "end_card_verbatim": "Left third over the turning dial: 两条螺旋 (Noto Serif SC), *Two Spirals*, a rule, `DATA PHYSICALIZATION · 数据实物化`, `LemoLab × Claude Opus 5.5`; above it the accent line with its leader to the puck; the data source stays in the top-right corner from the crane on. 4.6 s. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.",
+    "completion_note": "Exact visible typography/content must be checked in original video; this inventory preserves all published cue/title/prop specifications. Model authorship credit is a reference fact, never new-output attribution.",
+    "original_annotation_literal_sources": [
+      {
+        "path": "styles/data-physical/demo/film.js",
+        "sha256": "ff46f3686ba8a4ec154045d4bc840adc0b5dc065035ecac72c7771cff8f5c7a5",
+        "original_literal_inventory": []
+      },
+      {
+        "path": "styles/data-physical/demo/timeline.js",
+        "sha256": "7bf5758687c654be0914c3e4fe9b6989decb610d47e23ad1d2eb9943273752aa",
+        "original_literal_inventory": [
+          "将近两倍",
+          "In 2014, the world had almost twice as much wind power as solar.",
+          "2014 年，全球风电装机将近太阳能的两倍。",
+          "Every plate is ten gigawatts. Every brass plate, one hundred.",
+          "每一片是 10 GW，每一片黄铜是 100 GW。",
+          "Wind kept growing. Solar grew faster.",
+          "风电一直在涨，太阳能涨得更快。",
+          "In 2021, solar passed wind.",
+          "2021 年，太阳能超过了风电。",
+          "In 2025 alone, solar added more than five hundred gigawatts.",
+          "仅 2025 一年，太阳能就新增了 500 多 GW。",
+          "Step back, and twelve years become one dial.",
+          "退后一步，十二年合成一张表盘。",
+          "Now it is the other way round.",
+          "如今，正好反了过来。",
+          "风电",
+          "太阳能",
+          "风电 = 太阳能 × 1.95",
+          "1 片 = 10 GW",
+          "黄铜 = 100 GW",
+          "2021 · 太阳能超过风电",
+          "2025 · 太阳能累计装机",
+          "当年新增 +513.5 GW",
+          "2025 · 太阳能装机是风电的 1.86 倍",
+          "两条螺旋",
+          "Two Spirals",
+          "DATA PHYSICALIZATION · 数据实物化",
+          "LemoLab × Claude Opus 5.5",
+          "数据：IRENA (2026)，经 Our World in Data 整理 · CC BY 4.0"
+        ]
+      }
+    ]
+  },
+  "sound_recreation": {
+    "instruction": "Generate new voice and music; original mix/track reuse is not permitted by latest user instruction. Preserve full words, cadence windows, BPM, musical form, silence and picture-synchronous hits.",
+    "published_score_sound_spec_verbatim": "96 BPM, 4/4, D major; one chord per bar: Dadd9 – Dadd9 – Bm – Gmaj7 | D – A/C♯ – Bm – G | Asus (bar 8, cut short) | D – Bm – G | A – Gmaj7 | D – D.\n\n| Section | Time | Palette | Notes |\n|---|---|---|---|\n| Wind leads | 0–10 | glass harp + harp motif (A5 F♯5 E5 D5…), synth pad, bowed vibraphone | sparse; the plates' own ticks and brass notes carry the rhythm |\n| Growth | 10–20 | marimba arpeggio in 8ths, pulse bass in quarters (2nd/3rd harmonics) | each pair's cascade is an arpeggio of ticks and glockenspiel / glass notes climbing a D pentatonic ladder (one note per 100 GW) |\n| Crossover | 20–21.875 | timpani heartbeat on A, a held horn A3 | suck-out 21.5–21.875 (music and foley −30 dB) |\n| Turn | 21.875 | punch (60–120 Hz) + bass drum + timpani D3 + horns D–F♯–A + trombone D2 + glockenspiel F♯6 + metal ring | second-loudest moment |\n| 2025 | 22.5–30 | marimba 16ths, pulse 8ths, a glockenspiel line D6–E6–F♯6–A6–B6–A6 over the feed; 52 metal ticks; vibraphone chord + timpani when the last plate lands (29.2) | the densest stretch |\n| Dial | 30–33.75 | horns D3/A3/F♯4 and cellos D3 under the crane, marimba back to 8ths | suck-out 33.75–34.375 |\n| Puck | 34.375 | punch + bass drum + gran cassa + timpani D3 + tubular bells D5/A4 + metal rings; five small ticks of the puck settling | the loudest moment of the film |\n| End | 34.4–39.4 | harp arpeggio D4…D6, bowed vibraphone D5/A4 | fade |\n\nMix (`demo/mix.py`): stems set against the voice's active RMS (music −10.9 dB, pulse −12.2 dB, foley −8.6 dB, hits −2.3 dB, studio-air bed far under), music ducked ~4 dB under speech; bus compression on music, pulse, foley and bed only; a 36 Hz high-pass (44 Hz, 4th order on hits) and a −5 dB shelf below 62 Hz on everything but the voice; master to −14.4 LUFS with a 4× oversampled true-peak limiter at −4.6 dBTP, then `mux.sh` (−14 LUFS). The film measures −13.8 LUFS integrated, LRA 6.6 LU.",
+    "original_voice_records": [
+      {
+        "id": "l1",
+        "text": "In twenty fourteen, the world had almost twice as much wind power as solar.",
+        "asr": "In 2014, the world had almost twice as much wind power as solar.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      },
+      {
+        "id": "l2",
+        "text": "Every plate is ten gigawatts. Every brass plate, one hundred.",
+        "asr": "Every plate is ten gigawatts. Every brass plate, one hundred.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      },
+      {
+        "id": "l3",
+        "text": "Wind kept growing. Solar grew faster.",
+        "asr": "Wind kept growing. Solar grew faster.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      },
+      {
+        "id": "l4",
+        "text": "In twenty twenty-one, solar passed wind.",
+        "asr": "In 2021, solar passed wind.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      },
+      {
+        "id": "l5",
+        "text": "In twenty twenty-five alone, solar added more than five hundred gigawatts.",
+        "asr": "In 2025 alone, solar added more than five hundred gigawatts.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      },
+      {
+        "id": "l6",
+        "text": "Step back, and twelve years become one dial.",
+        "asr": "Step back, and twelve years become one dial.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      },
+      {
+        "id": "l7",
+        "text": "Now it is the other way round.",
+        "asr": "Now it is the other way round.",
+        "voice": "af_heart",
+        "speed": 0.95,
+        "lang": "en-us"
+      }
+    ],
+    "original_voice_durations_s": {
+      "l1": 4.669,
+      "l2": 3.768,
+      "l3": 2.568,
+      "l4": 2.386,
+      "l5": 4.349,
+      "l6": 2.6,
+      "l7": 1.76
+    }
+  },
+  "engine_and_build": {
+    "required_engine_spec_verbatim": "- `demo/set.js` — `buildSet(scene)` (HDRI, warm key + cool rims, base with inlay canvas, instanced pieces per material, the last object) and the landing schedule (`SHEETS`, `EVENTS`, `landed(stack, t)`); change `PAIRS`, the unit and the materials for any single or paired series.\n- `demo/film.js` — cylindrical camera keys (`track`, `core/lib.js`) with focus on a target point, the reading kit (`pairLabels`, `verdict`, `plate`, `swatch`), counter, subtitles (`SUBCHECK`), `TEXTS`, `EV`. `demo/mix.py` — material foley (`tick_alu`, `tok_acr`), ruler notes, suck-outs, master.\n- **Extra packages and packs**: beyond `setup.sh deps` only the studio HDRI, `sh tools/fetch.sh hdri` (Poly Haven, CC0, 12 MB); with narration `setup.sh deps voice`; for a sampled score `sh tools/fetch.sh instruments vsco2ce` / `vcsl` / `freepats`. The walnut veneer is in `core/assets/polyhaven/`. Anything you add (a spreadsheet reader, other textures) goes into a private venv / node_modules in the project folder, never into `$LIB/.venv`.\n- Minimal example, not in the demo: one series of twelve monthly values on a 12-position circle, the annual total engraved on the last object.\n\n### Sources, licences, facts\n\n- **Statistics for a new topic**: Our World in Data (each chart's \"About this data\" names the original source; CC BY 4.0 — credit both), World Bank Open Data (CC BY 4.0), Eurostat (CC BY 4.0), US Census / BLS / EIA (public domain); UN Data, IRENA, IEA free tables and other national statistics offices (e.g. 国家统计局): check each dataset's terms. Search the portal for the indicator, download the CSV, keep the file and its metadata in the project's `data/`.\n- **Licences**: CC0, public domain and CC BY are fine with a credit. ODbL, CC BY-SA, \"no known restrictions\" or \"free for non-commercial use\" are not CC0: name the terms to the user and ask before using them. Textures and HDRIs: Poly Haven / ambientCG (CC0).\n- **The user's own numbers** (annual report, ESG data, sales): ask for them and for the document they come from; never invent or round them into a better story. Never let generated images stand in for real data or material.\n- **Keep a FACTS.md in the project folder** — each on-screen number and spoken claim, its source URL, the quoted wording or row, and how any derived value (ratio, difference, units per piece) was computed — and deliver it with the film.",
+    "published_build_notes_verbatim": "```\ndemo/\n  build.sh          one command: fonts (first run) → voice → speech check → cues → events → picture → mix → master → .srt → checks → poster\n  index.html        WebGL canvas + 2D overlay canvas, fonts.css\n  timeline.js       single source: BPM grid, build times, holds, verdicts, suck-outs, narration + subtitles, every on-screen string (LABELS)\n  data.js           the twelve years of both series (IRENA 2026 via OWID) and the unit rule\n  set.js            the physical set (lights, walnut dial + inlay, instanced plates per material, the puck), the landing schedule, EVENTS\n  film.js           camera keys, reading kit (pairLabels, verdict, counter), subtitles, end card, TEXTS (readcheck), SUBCHECK, EV\n  mix.py            score, material foley, voice, suck-outs, mix and master → out/mix.wav, out/stems/\n  tools/            export.mjs (voice lines, timeline.json, cues), fonts.mjs (OFL subsets), srt.mjs, subcheck.mjs, holdcheck.py\n  data/             the downloaded CSVs and metadata\n  FACTS.md, CREDITS, TREATMENT.md, PRODUCTION_LOG.md, stills/styleframe.jpg\n```\n\n- Needs `setup.sh deps voice` (Kokoro and faster-whisper; the Whisper `small.en` model downloads on the first check). `build.sh` fetches what git doesn't hold, only when missing: the studio HDRI (`sh tools/fetch.sh hdri`, 12 MB), the Kokoro model (`fetch.sh voice`), the sample libraries `vsco2ce`, `vcsl`, `freepats` (`fetch.sh instruments <lib>`, ~1 GB together), and the font subsets (`tools/fonts.mjs` from the Google Fonts CSS2 API, OFL: Noto Sans SC, Noto Serif SC, Inter, JetBrains Mono) whenever a `.woff2` named in `fonts.css` is missing. The walnut veneer textures are in git (`core/assets/polyhaven/`), the data CSVs in `demo/data/`.\n- `sh demo/build.sh` takes about 7 minutes on Apple silicon; the picture (945 frames, 2× supersampled, acrylic transmission) is ~55 s with 3 workers, the speech check most of the rest.\n- Checks it runs: `asr_check.py` (small.en, 7/7), subtitle single-line widths with the real fonts (widest 836 px against 1100 px), `readcheck.mjs` (all pass), `holdcheck.py` (2014 pair held 2.77 s, 2020/2021 held 2.67 s before their verdicts).\n- Demo-specific pitfalls: aluminium and clear acrylic first read as the same white plates, so the acrylic got a teal tint and attenuation and the aluminium full metalness; long warm shadows turned the far aluminium brown until the two cool rims were added; the 2014 and 2020/2021 reading columns collided with the verdict plate until they were kept below y = 430; the 2025 stack sat behind the subtitle strip until the crane's target was dropped below the top; the top-view puck engraving reads upright only with yaw π/2 + 0.30 for this camera.",
+    "fetch_build_specs": [
+      {
+        "path": "styles/data-physical/demo/build.sh",
+        "sha256": "4c69c1b8d709a462477b6e35b6f1d7cfb36ee2f7e0aaf9540be00413f6b6a782",
+        "text_verbatim": "#!/bin/sh\n# One command: 《两条螺旋》Two Spirals (Data Physicalization demo)\n#   sh demo/build.sh     packs + fonts (when missing) → voice → speech check → events → picture → score + mix → master → .srt → checks → poster\nset -e\nHERE=$(cd \"$(dirname \"$0\")\" && pwd)                 # .../<slug>/demo\nFILM=$(cd \"$HERE/..\" && pwd)                         # .../<slug>\nLIB=${LIB:-$(cd \"$HERE/../../..\" && pwd)}            # films/<slug>/demo or styles/<slug>/demo -> library root\nexport LIB\n[ -f \"$LIB/core/render/video.mjs\" ] || { echo \"set LIB to the library folder\"; exit 1; }\nPY=\"$LIB/.venv/bin/python\"\nNAME=data-physical\ncd \"$LIB\"\n\n# packs that are not in git (each fetched only when missing)\n[ -f core/assets/polyhaven/photo_studio_loft_hall_2k.hdr ] || sh tools/fetch.sh hdri      # Poly Haven studio HDRI (CC0, 12 MB)\n[ -f core/tts/kokoro-v1.0.onnx ] || sh tools/fetch.sh voice                               # Kokoro model (setup.sh deps voice installs the Python side)\nfor l in vsco2ce vcsl freepats; do [ -d \"core/audio/instruments/$l\" ] || sh tools/fetch.sh instruments $l; done   # CC0 samples for the score\n# fonts: the .woff2 subsets are gitignored; fetch them (Google Fonts, OFL) whenever one that fonts.css names is missing\nNEED_FONTS=0\n[ -f \"$HERE/fonts.css\" ] || NEED_FONTS=1\nfor f in $(grep -o 'fonts/[^)]*\\.woff2' \"$HERE/fonts.css\" 2>/dev/null); do [ -f \"$HERE/$f\" ] || NEED_FONTS=1; done\nif [ \"$NEED_FONTS\" = 1 ]; then node \"$HERE/tools/fonts.mjs\" \"$HERE\"; fi\n\n# voice: Kokoro (af_heart), then a speech-to-text check with the small English model\nnode \"$HERE/tools/export.mjs\" \"$HERE\" > /dev/null || true\n\"$PY\" core/tts/tts.py \"$HERE/voice/lines.json\" \"$HERE/voice/out\"\nWHISPER_MODEL=small.en \"$PY\" core/tts/asr_check.py \"$HERE/voice/lines.json\" \"$HERE/voice/out\" --lang en\nnode \"$HERE/tools/export.mjs\" \"$HERE\"                # out/cues.json from the real durations; fails on overlap\n\n# picture, events, score + mix, master\nnode core/render/events.mjs \"$HERE\"\nnode core/render/video.mjs \"$HERE\" --fps 24 --workers 3 --out \"$HERE/out/video.mp4\"\n\"$PY\" \"$HERE/mix.py\"\nsh core/render/mux.sh \"$HERE/out/video.mp4\" \"$HERE/out/mix.wav\" \"$FILM/$NAME.mp4\" 24 1\nnode \"$HERE/tools/srt.mjs\" \"$HERE\" > \"$HERE/out/cues_srt.json\"\n\"$PY\" core/render/srt.py \"$HERE/out/cues_srt.json\" \"$FILM/$NAME.srt\"\n\n# checks\nnode \"$HERE/tools/subcheck.mjs\" \"$HERE\"\nnode core/render/readcheck.mjs \"$HERE\" > \"$HERE/out/readcheck.txt\" && echo \"readcheck ok\" || { cat \"$HERE/out/readcheck.txt\" | grep -v \"^OK\" ; exit 1; }\n\"$PY\" -I \"$HERE/tools/holdcheck.py\" \"$HERE\"\n\n# poster (the dial with the brass puck) and the gallery style frame\nffmpeg -v error -y -ss 37.8 -i \"$FILM/$NAME.mp4\" -frames:v 1 -q:v 2 \"$FILM/poster.jpg\"\nmkdir -p \"$HERE/stills\"\nffmpeg -v error -y -ss 28.6 -i \"$FILM/$NAME.mp4\" -frames:v 1 -q:v 2 \"$HERE/stills/styleframe.jpg\"\necho \"done: $FILM/$NAME.mp4\"\n"
+      }
+    ],
+    "local_original_asset_snapshot_inventory": [
+      {
+        "path": "styles/data-physical/demo/events.json",
+        "sha256": "686a62adaef79a8fc2245ea89de71c330566e0fe539a1aa0aa57de5fd42d4c15",
+        "bytes": 15241
+      },
+      {
+        "path": "styles/data-physical/demo/data.js",
+        "sha256": "13138197d354fe57b7f240833e1a28ddf2c1a949bca50b70512dcd8ca82276d8",
+        "bytes": 942
+      },
+      {
+        "path": "styles/data-physical/demo/data/owid_solar_capacity.metadata.json",
+        "sha256": "fc9c1e629b9c9e0df1a2172f4ef7884b773a6b13b2290d605d72aea7a3e04171",
+        "bytes": 1116
+      },
+      {
+        "path": "styles/data-physical/demo/data/world_wind_capacity_irena2026.csv",
+        "sha256": "bf7493538369a57391406b7868d1f0c20b2b0c9502e3bd40bef031a40daa4ad4",
+        "bytes": 782
+      },
+      {
+        "path": "styles/data-physical/demo/data/world_solar_capacity_irena2026.csv",
+        "sha256": "76123dcb87b300bac1d8462e4d663a0d837751d053171cd73862cb7ace63e187",
+        "bytes": 791
+      },
+      {
+        "path": "styles/data-physical/demo/data/owid_wind_capacity.metadata.json",
+        "sha256": "876558b0c9ce2f8bc7400a7b01b94458608c7ec836ad63e0e92cc07536993b4d",
+        "bytes": 1166
+      }
+    ]
+  },
+  "evidence": {
+    "dataset": "The archived World solar/wind capacity CSVs2014–2025 from IRENA2026 via Our World in Data.",
+    "required_measurements": [
+      "One thin square sheet=10GW; every tenth sheet brass=100GW.",
+      "2014 wind349.49323GW /solar178.84773GW, ratio1.95.",
+      "Solar crosses wind in2021:865.921GW versus824.1905GW.",
+      "2025 solar2396.7092GW /wind1291.015GW, ratio1.86; solar growth513.5316GW,52 new sheets."
+    ],
+    "window": "World,2014–2025 inclusive. Solar includesPV+CSP; wind includes onshore+offshore.",
+    "needed": [
+      "data/world_solar_capacity_irena2026.csv",
+      "data/world_wind_capacity_irena2026.csv"
+    ],
+    "recipe": "Follow the isolated data-only preparation described in ASSET_GAPS.md and the exact original build/fetch scripts retained in engine_and_build.fetch_build_specs.",
+    "specific_blockers": [
+      "The exact archived CSVs and arrays are present. There is no source-data blocker; restore the exact fonts and material/rendering detail."
+    ],
+    "asset_status": [
+      {
+        "path": "styles/data-physical/demo/data/world_solar_capacity_irena2026.csv",
+        "present": true
+      },
+      {
+        "path": "styles/data-physical/demo/data/world_wind_capacity_irena2026.csv",
+        "present": true
+      }
+    ],
+    "original_facts_verbatim": "# 事实表：《两条螺旋》Two Spirals\n\n片中每一个数字和事实性说法都在下表：说法 → 出处（URL）→ 原文引用。数据为 IRENA《Renewable Energy Statistics》（2026 版），经 Our World in Data 整理发布（CC BY 4.0）。原始 CSV 与元数据于 2026-10-16 下载，原样存在 `data/`：\n\n- `data/world_solar_capacity_irena2026.csv`、`data/owid_solar_capacity.metadata.json` — https://ourworldindata.org/grapher/installed-solar-pv-capacity\n- `data/world_wind_capacity_irena2026.csv`、`data/owid_wind_capacity.metadata.json` — https://ourworldindata.org/grapher/cumulative-installed-wind-energy-capacity-gigawatts\n\n两个数据集的定义（元数据原文）：\n\n- 太阳能：\"Total solar (on- and off-grid) electricity installed capacity, measured in gigawatts. This includes solar photovoltaic and concentrated solar power.\" 图表副标题：\"Cumulative installed solar capacity, measured in gigawatts (GW).\"\n- 风电：\"Total wind (on- and off-grid) electricity installed capacity, measured in gigawatts. This includes onshore and offshore wind.\" 图表副标题：\"Cumulative installed wind energy capacity including both onshore and offshore wind sources, measured in gigawatts (GW).\"\n- 引用格式（元数据原文）：\"IRENA (2026) – processed by Our World in Data. “Total solar capacity” [dataset]. IRENA, “Renewable Energy Statistics” [original data].\"（风电同，\"Total wind capacity\"）\n\n所以片中\"太阳能\"= 光伏 + 光热，\"风电\"= 陆上 + 海上，都是年末累计装机（GW），全球（OWID 实体 \"World\"）。\n\n## A. 画面与旁白里的数字\n\n| # | 片中说法（画面 / 旁白） | 出处 | 原文（CSV 行） |\n|---|---|---|---|\n| A1 | 读数\"2014 风电 349.5 GW\" | 风电 CSV | `World,OWID_WRL,2014,349.49323` |\n| A2 | 读数\"2014 太阳能 178.8 GW\" | 太阳能 CSV | `World,OWID_WRL,2014,178.84773` |\n| A3 | 判定\"风电 = 太阳能 × 1.95\"；旁白 \"In 2014, the world had almost twice as much wind power as solar.\" / 字幕\"将近太阳能的两倍\" | A1 ÷ A2 | 349.49323 ÷ 178.84773 = 1.954 → 1.95，\"将近两倍\" |\n| A4 | 读数\"2020 风电 733.3 GW\"、\"2020 太阳能 721.2 GW\" | 两份 CSV | `World,OWID_WRL,2020,733.2712`；`World,OWID_WRL,2020,721.2222` |\n| A5 | 读数\"2021 风电 824.2 GW\"、\"2021 太阳能 865.9 GW\" | 两份 CSV | `World,OWID_WRL,2021,824.1905`；`World,OWID_WRL,2021,865.921` |\n| A6 | 判定\"2021 · 太阳能超过风电\"；旁白 \"In 2021, solar passed wind.\" | A4、A5：2020 年末太阳能仍少 12.0 GW，2021 年末多 41.7 GW。2014–2020 每年都是风电多（见 CSV） | 累计装机口径；第一次超过的年份是 2021 |\n| A7 | 2025 计数器从\"1,883.2\"滚到\"2,396.7 GW\"，\"2025 · 太阳能累计装机\" | 太阳能 CSV | `World,OWID_WRL,2024,1883.1776`；`World,OWID_WRL,2025,2396.7092` |\n| A8 | \"当年新增 +513.5 GW\"；旁白 \"In 2025 alone, solar added more than five hundred gigawatts.\" / 字幕\"新增了 500 多 GW\" | A7 相减 | 2396.7092 − 1883.1776 = 513.53 GW（两年累计值之差，含光伏与光热；不是 IRENA 单独公布的\"新增\"表，IRENA 每年会修订往年累计值） |\n| A9 | 圆片刻字\"×1.86 · 太阳能 ÷ 风电 · 2025\"；\"2025 · 太阳能装机是风电的 1.86 倍\"；旁白 \"Now it is the other way round.\" | 两份 CSV | 2396.7092 ÷ 1291.015 = 1.856 → 1.86；风电 2025：`World,OWID_WRL,2025,1291.015` |\n| A10 | 旁白 \"Wind kept growing. Solar grew faster.\" | 两份 CSV | 2014→2025 风电 349.5 → 1,291.0（×3.7），太阳能 178.8 → 2,396.7（×13.4）；风电每年都在增加 |\n| A11 | 旁白 \"Step back, and twelve years become one dial.\" | 2014–2025 共 12 个年份 | 修辞句 |\n\n## B. 实物的比例（本片自己定的换算）\n\n- **1 片 = 10 GW**（两种材料同一个单位）：片数 = round(装机 ÷ 10)。例：2025 太阳能 239.67 → 240 片，风电 129.10 → 129 片；2014 太阳能 17.88 → 18 片，风电 34.95 → 35 片。高度误差 < 半片（5 GW）。\n- **每第 10 片为黄铜**：黄铜片的位置 = 每满 100 GW。\n- 2020 年两个值相差 12.0 GW（73 片 vs 72 片），取整后仍是风电高一片，不会因为取整颠倒先后。\n- 画面上的数字一律用原值（保留一位小数），实物高度只是比例。\n- 2025 新增落下的片数 = 240 − 188 = 52 片（= 2025 片数 − 2024 片数），计数器按落定的片数线性插值，最后一片落定时显示原值 2,396.7。\n\n## C. 核对\n\n- 最后一次渲染前把 `timeline.js` 的旁白、`LABELS` 和本表逐项对过（2026-10-16）。\n- 屏幕数字由 `data.js` 直接格式化（`fmt`，一位小数），1.95、1.86、+513.5 为本表计算值写进 `timeline.js` 的 `LABELS`，`set.js` 里圆片刻字由数据现算 `(SOLAR[11] / WIND[11]).toFixed(2)`。\n",
+    "original_credits_verbatim": "Two Spirals 《两条螺旋》 — Data Physicalization demo · CREDITS\n\nDATA\n- Installed solar energy capacity (World, 2014–2025, GW): IRENA (2026) – processed by Our World in Data.\n  \"Total solar capacity\" [dataset]. IRENA, \"Renewable Energy Statistics\" [original data].\n  https://ourworldindata.org/grapher/installed-solar-pv-capacity — CC BY 4.0. Downloaded 2026-10-16 (data/).\n- Installed wind energy capacity (World, 2014–2025, GW): IRENA (2026) – processed by Our World in Data.\n  \"Total wind capacity\" [dataset]. IRENA, \"Renewable Energy Statistics\" [original data].\n  https://ourworldindata.org/grapher/cumulative-installed-wind-energy-capacity-gigawatts — CC BY 4.0. Downloaded 2026-10-16 (data/).\n\nIMAGES AND TEXTURES (CC0, Poly Haven, via the library's core/assets/polyhaven/)\n- photo_studio_loft_hall_2k.hdr — https://polyhaven.com/a/photo_studio_loft_hall (reflections)\n- american_walnut_veneer (walnut_diff / walnut_nor / walnut_rough) — https://polyhaven.com/a/american_walnut_veneer (the dial)\nEverything else (plates, acrylic, brass, the puck and its engraving, inlays, labels) is generated in code. No AI-generated images.\n\nFONTS (SIL Open Font License 1.1; subsets fetched from the Google Fonts CSS2 API by tools/fonts.mjs into fonts/)\n- Noto Sans SC, Noto Serif SC — Google / Adobe\n- Inter — Rasmus Andersson\n- JetBrains Mono — JetBrains\n\nVOICE\n- Kokoro-82M (Apache-2.0), voice af_heart, run offline through kokoro-onnx (MIT) by core/tts/tts.py.\n  Speech check: faster-whisper (MIT) with the Whisper small.en model (MIT).\n\nMUSIC AND SOUND (original score and procedural foley in demo/mix.py)\n- Samples (CC0): VS Chamber Orchestra: Community Edition (Versilian Studios) — horn, trombone, timpani, bass drum, cellos;\n  Versilian Community Sample Library (Versilian Studios) — glockenspiel, marimba, vibraphone (soft, hard, bowed), harp, tubular bells, gran cassa;\n  FreePats project (freepats.zenvoid.org) — glass harp.\n  (Lines from core/audio/sampler.py credits(); all CC0.)\n- Synthesis and foley (pad, pulse bass, metal ticks, acrylic toks, punch, air, room tone): numpy/scipy, written for this film.\n\nCODE\n- three.js r170 (MIT); the library's core/three/post.js (depth of field, GTAO, grade), core/lib.js, core/render/*, core/audio/*.\n",
+    "source_urls": [
+      "https://ourworldindata.org/grapher/cumulative-installed-wind-energy-capacity-gigawatts",
+      "https://ourworldindata.org/grapher/installed-solar-pv-capacity",
+      "https://polyhaven.com/a/american_walnut_veneer",
+      "https://polyhaven.com/a/photo_studio_loft_hall"
+    ]
+  },
+  "matching_blockers": [
+    "The exact archived CSVs and arrays are present. There is no source-data blocker; restore the exact fonts and material/rendering detail.",
+    "The original conversation prompt is not published. Use the complete published specification and audited reconstruction; do not claim the recovered text is a verbatim original chat prompt."
+  ],
+  "visual_audit": {
+    "state": "complete-regular-sheet-coverage",
+    "reference_video_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/films/data-physical.mp4",
+    "reference_video_sha256": "105cfdd6cbc140dffc71aae36c8f40c7fde324dfcdef362339e5b0a0d9e1dabd",
+    "coverage": [
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/data-physical/sheets/sheet-01.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/data-physical/sheets/sheet-02.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/data-physical/sheets/sheet-03.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/data-physical/sheets/sheet-04.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      }
+    ],
+    "reference_verified_visual_observations": [
+      "Use a physical walnut dial in a warm cream studio, with paired spirals of thin square aluminium solar plates and translucent teal acrylic wind plates. Brass every tenth plate marks100GW; one plate is10GW. Camera macros reveal layer edges, surface grain, contact shadows and the exact2014 ratio. Traverse all12 years, demonstrate the2020/2021 crossover, then show52 new layers arriving on the2025 solar column with a2,396.7GW endpoint. Pull to the entire dial with24 stacks, engraved years and central×1.86 brass medallion. Hold the Two Spirals ending and exact source note."
+    ],
+    "note": "All regular reference sheets were inspected across the complete film. Named supplementary frames cover important short actions and transitions. This is scene coverage, not a claim that every encoded frame was inspected."
+  }
+}

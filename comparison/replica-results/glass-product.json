@@ -1,0 +1,73 @@
+{
+  "slug": "glass-product",
+  "status": "rendered",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "title": "Aura \u2014 Hear the Light",
+  "source_sha256": "77e8318b96ab1172dc38b17bbca9062580bf47c1770523946b48e36108ba4e37",
+  "matched_brief_sha256": "2b0d5d922e70ebb63e240dbe6c995bb9dfad7f467829b9b7e6f6287b19d5bc05",
+  "reference_video_sha256": "4d4d07073e2bc7abcb537afae06fa19562de6f69f67f754df6865b734c308f25",
+  "video_sha256": "ac7cf79fcfd5cbf17444f8b336f90593bc8d2d380b72428ad9d8498bb59006c8",
+  "poster_sha256": "354021ad24cecc721d0dd7e134cc91c6feb0485fe09377bc99b8018152042780",
+  "bytes": 11247314,
+  "width": 1280,
+  "height": 720,
+  "fps": 24.0,
+  "frames": 768,
+  "duration": 32.0,
+  "audio_codec": "aac",
+  "review_times": [
+    0.5,
+    1.5,
+    2.5,
+    3.5,
+    4.5,
+    6.5,
+    7.9,
+    8.05,
+    9.5,
+    11.5,
+    12.5,
+    14.5,
+    15.75,
+    15.9583,
+    16.0,
+    16.5,
+    17.5,
+    19.5,
+    20.05,
+    21.5,
+    23.5,
+    24.5,
+    25.5,
+    26.5,
+    27.72,
+    27.84,
+    28.5,
+    30.5,
+    31.95
+  ],
+  "shared_components": [
+    {
+      "path": "styles/glass-product/demo/studio.js",
+      "purpose": "Reusable strip studio PMREM, blurred reflector floor and procedural caustic/ripple engine; no scene/model assembly."
+    },
+    {
+      "path": "core/three/post.js",
+      "purpose": "Generic depth-of-field, bloom and output."
+    },
+    {
+      "path": "core/lib.js",
+      "purpose": "Generic deterministic math utilities."
+    }
+  ],
+  "qa": {
+    "technical_render": "passed",
+    "scene_fidelity": "pending",
+    "audio_review": "pending",
+    "black_intervals_detected": true
+  },
+  "updated_at": "2026-10-18T04:16:56Z",
+  "poster_time": 16.0,
+  "reference_poster_sha256": "ce05150a9b61b68d466ef39f0a476aca53967abd4d523d7d6c65106bee1fbac4"
+}

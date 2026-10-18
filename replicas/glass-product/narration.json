@@ -1,0 +1,43 @@
+{
+  "language": "en-us",
+  "voice": "am_michael",
+  "direction": "Restrained, low launch-film male voice; retain the exact complete words. Recreate voice freshly, do not reuse original WAVs.",
+  "lines": [
+    {
+      "id": "v1",
+      "text": "Nothing to hide.",
+      "voice": "am_michael",
+      "speed": 0.88,
+      "start": 8.55,
+      "duration": 1.7,
+      "language": "en-us"
+    },
+    {
+      "id": "v2",
+      "text": "Every part, in plain sight.",
+      "voice": "am_michael",
+      "speed": 0.88,
+      "start": 12.45,
+      "duration": 2.35,
+      "language": "en-us"
+    },
+    {
+      "id": "v3",
+      "text": "Meet Aura.",
+      "voice": "am_michael",
+      "speed": 0.86,
+      "start": 24.5,
+      "duration": 1.25,
+      "language": "en-us"
+    },
+    {
+      "id": "v4",
+      "text": "Hear the light.",
+      "voice": "am_michael",
+      "speed": 0.86,
+      "start": 25.8,
+      "duration": 1.45,
+      "language": "en-us"
+    }
+  ]
+}

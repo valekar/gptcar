@@ -1,0 +1,492 @@
+{
+  "slug": "one-line",
+  "original_title": "The Line That Never Lifted",
+  "premise": "One unbroken line draws a whole life, then the pen passes to a child.",
+  "published_delivery": {
+    "slug": "one-line",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/one-line.mp4",
+    "sha256": "2a084ae16953363dd8e7927495f0c17ca34f3f28ca1d8902523ac2ecf9db1d3c",
+    "duration": 47.5,
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": "1140",
+    "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+    "frames": 48,
+    "sheets": 4
+  },
+  "production_format_source": "Full verbatim DEMO header below; measured published delivery above governs v2.",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "explanation": "No initial conversation/inputprompt transcript is published in inspected repository. STYLE.md is a verbatim published styleprompt; DEMO.md is published retrospective productiondocumentation. Shot prompts are source-informed reconstruction of finishedmovie, never a claimed identical originalchatprompt."
+  },
+  "published_style": {
+    "path": "outputs/gptcar/styles/one-line/STYLE.md",
+    "sha256": "69d26cb06f48ab6b03c12a76c2390d0945cdaddc38bc109b7d5e292b9af1399b",
+    "verbatim": "# One-line Drawing — Style Prompt\n\n> A single ink line that never leaves the paper. Everything on screen is that one line being drawn; scenes don't cut, they morph.\n> References (grammar only): Osvaldo Cavandoli's *La Linea* (1971) — one line is both the world and the character, and transformations of the line are the jokes and the transitions; Gjon Mili's 1949 photographs of Picasso drawing with light — the confidence and speed of a single gesture; Norman McLaren's *Begone Dull Care* and *Boogie-Doodle* — lines drawn *to* the music. Do not copy La Linea's character, its gibberish voice, or any specific continuous-line illustration.\n\n## 1. Essence, and what it is not\n\n- **One continuous line** on warm white paper. The pen never lifts: in code the whole film can literally be one point array, from the first touch of the nib to the last frame.\n- **Everything is a line**: characters, places, objects, even time. No fills, no shading, no second line weight, no background art.\n- **We watch the line being drawn**: the camera follows the nib with a little lag and anticipation.\n- Besides ink there is only the paper and a soft **shadow of the pen** (the real world above the paper). One accent colour at most, used once.\n\nNot a whiteboard explainer (no hand, no marker, no erasing, no text-heavy boards), not ink wash (no tones, no brush bloom as a look), not a line-art animation with cuts and many strokes.\n\n## 2. Materials & rendering\n\n- **Paper**: warm white (around `#F4EFE4`), procedural mottling (soft-light, large tile), long fibres that fade out when zoomed out (or they shimmer), a sparse paper-tooth speckle over the ink at close zoom, light vignette. All textures anchored to the paper; they move with the camera.\n- **Ink** is a filled polygon around the path (not `ctx.stroke`), mixed with paper colour to an opaque tone per point.\n  - Width = base width of the current \"voice\" of the line × pen pressure × fine noise (±8 %); pressure from speed: `0.66 + 0.8·exp(−v/300)` (fast = thin, slow = fat).\n  - The line's character can change along the path (base width, alpha, tremble, dryness); blend over a short stretch at boundaries.\n  - Ink bleed: the same polygon slightly wider, blurred on an offscreen layer, composited at ~20 %.\n  - Pooling: extra round dots where speed drops low.\n  - Tremble (perpendicular noise) and dry-brush gaps (long-scale noise + thin bristle strands) for age, fear or fatigue.\n  - A stop leaves a teardrop-shaped blot: tip at the nib, belly sagging downward as it spreads, a dark tide line at the rim.\n  - **A screen-space minimum width**: widths scale with zoom like a line under a macro lens, but clamp the zoom used for width during pull-backs so a wide view keeps its weight.\n- **The pen is never drawn**: a soft blurred wedge of shadow from the nib and a tiny contact dot. Hands, if any, appear only as shadows, each hand composited as one flat layer.\n- **Path design**: chapters written as SVG path strings, sampled by arc length, joined by tangent-continuous connectors; time assigned per point weighted by curvature.\n\n## 3. Colour logic\n\n- **Ink on paper.** A warm black (around `#1D1A17`) on warm white; nothing else fills the frame.\n- **One accent at most, used once**, on a stretch of the line that means something; it returns to ink afterwards and stays visible in the final picture if the picture is revealed.\n- Examples of an accent's job: red for love or danger; blue for water or cold; gold for money or a prize. Never a second accent.\n\n## 4. Type & subtitles\n\n- **Text is written, like the line**: a handwriting face (e.g. Caveat) for subtitles, ink at ~84 %, no box, centred near the bottom, **written on** left to right (~0.2 s + ~17 ms per character) behind a soft paper-coloured halo so passing lines never cross the letters; fade out ~0.45 s. Hold ≥ max(1.8 s, speech + 0.6 s).\n- Titles in a monoline connected script (e.g. Sacramento: itself a one-line drawing), written on in empty paper away from the drawing, gone before the camera moves into them.\n\n## 5. Motion quality\n\n- **Everything on ones** (24 fps): the appeal is the continuous act of drawing; stepping breaks it.\n- **Timing = chapter windows + curvature**: within a window, time per point is weighted by `1 + K·turn` (sharp turns get more time, smoothed so speed never jumps). Pin musical beats with marks: by arc-length fraction or by position (\"the second time the pen passes here\"). A stop is two marks at the same place.\n- Corners (speed minima at high turn) can be exported to the soundtrack as candidate note onsets.\n- Speeds: ~300–700 units/s for travelling lines, ~50–150 for small details. The most important stroke is usually the slowest.\n- **Retracing** over an existing line is legal and invisible (it only thickens slightly).\n\n## 6. Camera grammar\n\nA vocabulary, not a route. The camera is one continuous move: composition centre, zoom, a few degrees of roll, and a follow weight (0 = composed, 1 = locked to the nib); the follow point averages the nib over roughly −0.55…+0.4 s (lag and anticipation), with a soft clamp keeping the nib inside the central ~70 % of the frame. Opening and ending come from the topic.\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Follow the nib (high follow weight) | travel; momentum; a thread of time | a journey; a process; a timeline |\n| Composed frame, low follow weight | a scene that must read as a whole | a vignette; a joke; a diagram |\n| Macro on the nib | intimacy; the act of making | a first touch; a signature; a detail |\n| Hold with a slow push-in | weight; a stop | a loss; a doubt; a decision |\n| Mirrored framing | rhyme across time | parent and child; before/after |\n| Continuous pull-back | everything was one picture | a reveal; a map; a word |\n| Lateral scroll with the line running ahead | a horizon; a graph; a race | a stock chart; a heartbeat; a road |\n| Roll with the line | vertigo; play | a loop-the-loop; a fall; a dance |\n\nNo cuts. Transitions are morphs: the last stroke of one image is the first stroke of the next.\n\n## 7. Sound palette\n\n- **Music: one solo instrument, one unbroken melodic line**, the sound equivalent of the drawing: a bowed or plucked string (cello, violin, viola, harp), a solo woodwind (clarinet, flute, bassoon), a hummed voice, a single guitar. A second colour only as a rare accent (a chime, a pizzicato stretch). No pads.\n- **Write the score to the drawing**: key notes on marks and corners; fast line = short notes; a stopped line = one long note fading into silence; the highest note on the most important touch.\n- **The pen on paper is the most important sound**, synthesised from the pen speed: band-passed noise (brighter when fast, duller when slow), random paper-fibre ticks with density ∝ speed, amplitude ∝ √speed, panned with the nib's screen position; broken up by dry gaps; lighter and jerkier for a young hand. Plus: a wooden tap on the first touch, a faint wet swell for a blot, a tiny rub for a handoff, a page lift.\n- **Silence is literal**: zero the music bus including reverb tails; drop room tone.\n- **Mix**: music ducks ~5 dB and the pen ~4 dB under voice; −14 LUFS; grain 0 (the paper is in the render).\n- **Voice**: warm, few short lines that leave space for the line; place key words on picture beats with whisper word timestamps.\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **The pen never lifts.** Anything that is one continuous thing. *Fits content like:* a river from source to sea; a relay race; a production line.\n- **The line is time.** The stroke's character changes with age, mood or strain. *Fits content like:* a building aging; a runner tiring; a machine wearing out.\n- **Transformation.** One image morphs into the next. *Fits content like:* a seed becoming a tree becoming a table; a sketch becoming a product; a word becoming its object.\n- **Stopping is an event.** The nib stops, ink pools, music cuts to silence (1.5–3 s). *Fits content like:* a power cut; a pause for a minute's silence; a hesitation before a signature.\n- **Reverse-designed scale reveal.** Every vignette is secretly part of one big picture seen at the end. *Fits content like:* a city's landmarks forming its skyline; a company's milestones forming its logo; a recipe's steps forming the dish.\n- **Handoff.** The pen passes to another hand (as a shadow) and a new line begins. *Fits content like:* a teacher and a student; a founder and a successor; one generation to the next.\n- **Line as graph.** The line becomes a chart while staying a drawing. *Fits content like:* a heartbeat; a temperature record; a football match's momentum.\n\n## 9. Pitfalls of the medium\n\n- **Stray connectors ruin a reveal**: every extra line reads as a wrinkle, beard or mask. Fix the topology (where each chapter enters and leaves), not the drawing. Plan it like an Euler path: a closed motif is a circuit (you leave where you came in); retrace or reorder chapters.\n- Each region of a final picture is drawn exactly once; connectors must fall on natural lines of that picture.\n- **Test the reveal early and often**: render the whole path at once at final scale after every change.\n- Lines drawn too close braid together once width is applied; keep a gap.\n- A round blot reads as a mole → a sagging teardrop.\n- Thin lines at wide zoom → clamp the width zoom.\n- Translucent hand shadows double-darken where they overlap → one layer per hand.\n- Titles collide with the drawing as the camera moves → check every frame of the title's window.\n- Whisper mishears short lines → rephrase rather than fight it.\n\n## 10. Engine\n\nIn `demo/`: `geom.js` (samples SVG paths by arc length in the browser, adds tangent-continuous connectors, assigns time by curvature, marks and holds), `ink.js` (the line renderer: pressure, bleed, pooling, tremble, dry brush, accent stretch, blot, minimum screen width), `paper.js` (paper, fibres, tooth, vignette), `cam.js` (composition keys + nib follow + soft clamp), `hands.js` (pen and hand shadows), `subs.js` (written-on subtitles and titles). The drawing itself lives in one file of SVG path strings and a chapter table (`face.js`); replace it with your own path. Debug views (`?all=1`, `?cams=`) render the whole path or many camera views in one session: see [DEMO.md](DEMO.md) \"Build notes\".\n\n## 11. Variation space\n\nYou decide what the line draws, whether it reveals one final picture, where it stops, the accent (or none), the opening and the ending. All far from our demo:\n\n- Structures: **a line that is a graph** (a data series drawn as a horizon; each peak and trough becomes a scene); **two lines** that start in opposite corners and are drawn in alternation until they meet; **a loop** (the line draws a scene and then retraces its way back to the start, which now means something else).\n- Openings: **mid-line at speed**, the pen already running across the paper; **a finished drawing** whose line then unravels into the story; **a word written in script** whose last letter becomes the first scene.\n- Endings: **the line runs off the edge** of the paper and keeps going; **the ink runs out** and the last stroke fades into dry scratches; **the pen stops in mid-air** over the paper before the last stroke.\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n"
+  },
+  "published_demo": {
+    "path": "outputs/gptcar/styles/one-line/DEMO.md",
+    "sha256": "eb86f839b5a726434acfadc12e589419e8ee9d9c1961ccacd772d8e04bc974ae",
+    "verbatim": "# One-line Drawing — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *The Line That Never Lifted* (47.5 s) · `one-line.mp4` · source in [`demo/`](demo/)\n\n\nA 30–60 second film: one man's life drawn as one line that, in the final pull-back, turns out to be his own face as an old man.\n\n## Story & structure\n\nA film made of **one continuous line** on warm white paper. The pen never lifts: in code the entire film is literally one point array, from the first touch of the nib to the last frame. There are no cuts. The camera follows the nib like a tracking shot, with a little lag and a little anticipation, so the audience always watches the line *being drawn*.\n\nEverything is a line: characters, places, objects, even time. No fills, no shading, no second weight of line, no background art. The only things on screen besides ink are the paper itself and a soft **shadow of the pen** (the real world above the paper). One accent colour at most, used once.\n\nLearn the grammar from Osvaldo Cavandoli's *La Linea* (1971) — one line is both the world and the character, and transformations of the line are the jokes and the transitions; from Gjon Mili's 1949 photographs of Picasso drawing with light — the confidence and speed of a single gesture; and from Norman McLaren's *Begone Dull Care* and *Boogie-Doodle* — lines that are drawn *to* the music. Do not copy La Linea's character, its gibberish voice, or any specific continuous-line illustration.\n\nPick stories where **the continuity of the line is the meaning**. The demo used all five native powers and put the strongest one (the scale reveal) at the peak:\n\n| Native power | Story use |\n|---|---|\n| **The pen never lifts** | A life, a journey, a process, a history: anything that is *one continuous thing*. No cuts, ever; the camera follows the nib. |\n| **The line is time** | The character of the stroke changes with age or mood: light and fast in youth, full and steady in adulthood, trembling with dry-brush breaks in old age. One stretch can change colour (love, danger) and change back. |\n| **Transformation** | A kite string becomes a bicycle frame, a smile becomes a road. Scenes don't cut, they *morph*: the last stroke of one image is the first stroke of the next. |\n| **Stopping is an event** | When the nib stops, ink pools and blooms. A 1.5–3 s stop with music cut to silence is the strongest possible beat in this medium (loss, doubt, a decision). |\n| **Reverse-designed scale reveal** | Every vignette drawn in close-up is secretly a part of one big picture. At the end the camera pulls back and the audience sees that the whole story *was* a face (a tree, a map, a word). |\n\nAdapting any topic: find the **one picture** the story can end on, and the 6–8 moments that can each become a part of it. A company history → the founders' first desk, the first product, the first office… are the features of the logo. A city → its landmarks are the lines of a portrait of its founder. A love story → two lives drawn separately that join into one heart.\n\n**Emotional arc for 40–50 s:** a single touch on blank paper (hook in the first 3 s) → quick, light early chapters → the one coloured chapter → a stop (silence, ink blooms) → the line resumes, changed → the final, slow strokes while the camera pulls back → the whole picture, held → a coda that passes the pen on.\n\n## Shots\n\nThe camera is one continuous move: keyframes of composition centre, zoom, a few degrees of roll, and a follow weight `f` (0 = composed, 1 = locked to the nib). The follow point is a weighted average of the nib position over −0.55…+0.4 s, which gives lag and anticipation. A soft clamp keeps the nib inside 72 % × 66 % of the frame.\n\n| Beat | Camera |\n|---|---|\n| Opening | Macro (z ≈ 4.3) on blank paper where the pen will land; the first vignette is composed, f ≈ 0.1 |\n| Traveling lines | Follow (f 0.6–0.85), zoom out to ≈ 2.4 |\n| Each vignette | Composed (f 0.15–0.35), framed so the finished drawing sits centred |\n| The stop | Hold, with a very slow push-in (4.6 → 5.4) through the silence |\n| Mirror chapter | Same framing as the chapter it rhymes with, mirrored |\n| Reveal | One continuous pull-back from ≈ 3 to 1 over 5 s while the last strokes are drawn, then hold ≈ 1 s |\n| Coda | Push in to where the pen rests for the handoff; pull back again as the new line runs; the end card sits in the empty paper |\n\n- **Everything on ones** (24 fps). The appeal is the continuous act of drawing; stepping it would break the illusion.\n- **Timing = chapter windows + curvature.** Each chapter has a time window; within it, time per point is weighted by `1 + K·turn` (sharp turns get more time, smoothed so speed never jumps). Pin musical beats with marks: by arc-length fraction `f`, or by position `at:[x,y]` (\"the second time the pen passes the nose\"). A stop is two marks at the same place.\n- Corners (local speed minima at high turn) are exported to the soundtrack as candidate note onsets.\n- Typical speeds: 300–700 units/s for traveling lines, 50–150 for small details (fingers, eyelashes). The last stroke of a life should be the slowest in the film.\n\n## Score structure\n\n- **Music: one solo instrument, one unbroken melodic line** — the sound equivalent of the drawing. The demo uses cello (`cellos` at low velocity, mono, slightly left, legato with 0.14 s overlaps), `cellos_pizz` for childhood, one `hand_chimes` note when the next generation starts. No piano, no string pad.\n- Write the score to the drawing: key notes on the marks and corners (the grip closes on the tonic, each kite corner is a pluck, the highest note is the first touch of the two noses, eyelashes of the last eye are the last three notes). Line fast = short notes; line stopped = one long note fading into silence.\n- **Silence is literal**: zero the music bus including reverb tails during the stop; drop room tone to 15 %.\n- **The pen on paper is the most important sound**: synthesized from the pen speed track — band-passed noise (bright 2.2–7.5 kHz when fast, dull 0.7–2.4 kHz when slow), random paper-fibre ticks with density ∝ speed, amplitude ∝ (v/520)^0.5, panned with the nib's screen position; broken up by the dry-brush gaps in old age; lighter and jerkier for the child. Plus a wooden tap on the first touch, a barely audible wet swell for the blot, a tiny rub at the handoff.\n- **Voice**: warm, retrospective male narrator (Kokoro `am_liam`, speed 0.84; high-passed at 85 Hz, low-passed at 7.2 kHz to soften it). 5–6 short lines that leave space for the line. Place them by whisper word timestamps so key words land on picture beats (\"holding **on**\" on the grip, \"**goes** on\" when the pen resumes). Music ducks ≈ 5 dB and the pen ≈ 4 dB under voice. Loudness −14 LUFS, **grain 0** (the paper texture is in the render).\n\n## Palette, props & the reverse-designed face\n\n**Reverse design is the core technique.** Draw the final picture first, then cut it into chapters, then design each chapter so it reads as its own scene in close-up *and* as a feature of the final picture. Rules that made this work in the demo:\n- **Each region of the final picture is drawn exactly once.** Connectors between chapters must fall on natural lines of the final picture: lens rims, nasolabial folds, crow's feet, the jaw contour, a hair. Every \"extra\" connector becomes a stray wrinkle, a jowl or a beard in the reveal.\n- **Plan the topology like an Euler path.** A closed motif such as a mouth (smile + upper lip + two profiles) is a circuit: you leave where you came in. Either route the next chapter from the same point (a retraced fold is invisible) or reorder the chapters. We moved \"loss\" before \"child\" purely for topology, then made it the emotional point (\"and then it goes on\").\n- **Retracing is legal and invisible:** going back over an existing line only thickens it slightly. In the demo the pen \"reels in\" the kite by retracing its tail and string back down to the head.\n- **Test the reveal early and often:** render the whole path at once, at final scale, after every change (`?all=1&cam=0,-170,1`).\n\n**Mapping used in the demo** (old man's face): left ear = his birth (a baby fist curled into the C of an ear, gripping an adult finger that is also the arm of his glasses); bald dome = kite string, the kite = his single hair; glasses = the bicycle (wheels = lenses, saddle = left brow, handlebar = right brow, frame = sides of the nose); mouth = first love (two profiles nose to nose; their crowns form the M of the upper lip, the red smile below); nose = the house (the ring and a round window are the nostrils); right eye + tear = the loss; right ear = his own child (mirror of his birth); jaw contour = old age; left eye closing = the last stroke.\n\n**Paper**: warm white `#F4EFE4`; procedural mottling (1400-unit tile, soft-light), long fibres (260-unit tile, fading out when zoomed out so it does not shimmer), a sparse \"paper tooth\" speckle screened over the ink at close zoom; vignette 0.13 multiply. All textures are anchored to the paper and move with the camera.\n\n**Ink**: warm black `#1D1A17`, rendered as a filled polygon around the path (not `ctx.stroke`), mixed with paper colour to an opaque tone per point.\n- Width = age base width × pen pressure × fine noise (±8 %). Pressure from speed: `0.66 + 0.8·exp(−v/300)` (fast = thin, slow = fat).\n- Base widths (paper units): child 2.4 (alpha .82), teen 2.5, adult 2.9 (.96), old 2.7 (.93), the next generation 2.0 (.76). Blend styles over ±60 units at chapter boundaries.\n- Ink bleed: the same polygon slightly wider, drawn to an offscreen layer, blurred (≈0.9 × zoom px) and composited at 22 %.\n- Pooling: extra round dots where speed < 45 units/s.\n- Old age: perpendicular tremble (two noise octaves, amplitude up to ≈1.1 units), dry-brush gaps from long-scale noise plus three thin bristle strands; **reduce the dryness again for the final strokes** so the last gesture is clear.\n- The stop: a teardrop-shaped blot (tip at the stopped nib, belly sagging downward as it spreads, dark tide line at the rim).\n- **Keep a screen-space minimum line width.** Line widths scale with zoom like a real line under a macro lens, but during the pull-back clamp the zoom used for width to ≥ 1.3 (≈ 3–4 px at the reveal). Without it the final picture looks like a pencil sketch and loses weight.\n\n**Colour**: at most one accent, used once and kept in the final picture where it means something. The demo's red `#B3332B` starts exactly at the mouth corner and returns to ink at the next chapter, so the old man's only colour is his smile.\n\n**The pen**: never drawn. Only a soft shadow (blurred wedge from the nib toward the lower right, length ≈ 560 × zoom px, alpha .15) and a 1–4 px contact dot. Hands appear only as shadows at the handoff (each hand composited as one flat shadow so overlaps don't darken).\n\n## Titles, subtitles & end card\n\n- Subtitles: Caveat 500, 46 px, ink at 84 %, no box, centred with the baseline 100 px from the bottom; they are **written on** left to right (0.2 s + 17 ms per character) behind a soft paper-coloured halo so passing ink lines never cross the letters; fade out over 0.45 s. Stay ≥ voice + 0.6 s and ≥ 1.8 s.\n- Title: Sacramento (a monoline connected script — itself a one-line drawing) 76 px, written on over 1.6 s in empty paper away from the current vignette, with a small Caveat sub-line. Keep it short enough to disappear before the camera moves into it.\n- End card: Sacramento title on two lines, \"ONE-LINE DRAWING\" in Caveat 600 with wide tracking, the credit line below, written in the empty paper beside the final picture while the new line is still being drawn. Its \"LemoLab × Claude Opus 5.5\" line (`subs.js`) belongs to this library's demo only: a user's film carries no LemoLab credit and no copy of this card.\n\n## Pitfalls we hit (demo record)\n\n- **Stray connectors ruin the reveal.** Every early version had lines that read as a beard, jowls, a bib or a mask. Fix the topology (which chapter enters and leaves where), not the drawing.\n- **A kite drawn straight up from the head made a pointed onion dome.** Let the string be the single hair and retrace (reel in) back to the crown so the dome stays a clean arc.\n- **Hands jutting sideways from the temples read as bolts.** Curl the baby fist into the vertical C of an ear, fingertip hidden inside, knuckles as four short round bumps (long loops read as springs).\n- **Two profiles closed by an arc over their heads read as a goblet** (Rubin's vase). Let their crowns become the M of the upper lip instead, and join their necks into the smile at one point.\n- **Profiles too close braid together** once line width is applied; keep ≥ 5 units between lips, touch only at the nose tips.\n- **Eyes**: almond shapes with bags read as toothy mouths; a closed lid (‿) with three short lashes reads best.\n- **A round blot reads as a mole.** Make it a teardrop that sags as it spreads.\n- **Thin lines at the reveal.** Clamp the width zoom (see \"Palette, props & the reverse-designed face\").\n- **Hand shadows as separate translucent shapes** double-darken where fingers overlap — composite each hand as one layer.\n- **Titles collide with the vignette as the camera moves.** Check the title against every frame of its window, not just the first.\n- **Whisper mishears**: \"Sometimes it stops\" was heard as \"But sometimes it stops\" and \"Your turn.\" as \"Your turns\" — rephrase (\"Sometimes the line stops.\", \"Your turn now.\") rather than fight it.\n- **zsh**: `=====` as an echo separator is expanded; heavy machine load makes `still.mjs` slow — the page supports `?cams=` / `?camt=` to render many views in one browser session.\n\n## Build notes\n\n```\nstyles/one-line/demo/\n  face.js    THE drawing: every chapter as SVG path strings + transforms, and the chapter table (time windows, marks, holds)\n  geom.js    samples SVG paths by arc length (browser SVGPathElement), adds tangent-continuous connectors, assigns time (curvature-weighted, marks, holds)\n  ink.js     line renderer (pressure, bleed, pooling, tremble, dry brush, red stretch, teardrop blot, min screen width)\n  paper.js   procedural paper, fibres, tooth, vignette          cam.js    composition keys + nib follow + soft clamp\n  shots.js   camera keyframes                                    hands.js  pen shadow and hand shadows\n  story.js   single source of truth for voice/subtitle/title/handoff times\n  subs.js    written-on subtitles, title, end card               main.js   render(t), debug modes, events for the mix\n  lines.json voice script   music/score.py  solo cello score   mix.py  pen-scratch foley + voice + music   build.sh\n```\n\n1. Design the final picture in `face.js` and iterate with `node core/render/still.mjs styles/one-line/demo 0 --q 'all=1&nopen=1&nosub=1&cams=0,-170,1.0'` (add more `;x,y,z` views to check vignettes in the same run).\n2. Voice: `core/tts/tts.py lines.json voices` → `asr_check.py`; read `voices/words.json` and place lines in `story.js`.\n3. Set chapter windows and marks in `face.js`; `node demo/tools/probe.mjs 0.5` prints part boundaries and the nib track to write camera keys.\n4. `node core/render/events.mjs styles/one-line/demo` → `music/score.py` → `mix.py`.\n5. `node core/render/video.mjs styles/one-line/demo --fps 24 --workers 3` (1140 frames ≈ 30–45 s) → `sh core/render/mux.sh out/video24.mp4 mix.wav one-line.mp4 24 0`.\n6. Or simply `sh styles/one-line/demo/build.sh`.\n"
+  },
+  "narration": [
+    {
+      "id": "L1",
+      "text": "Everyone begins by holding on.",
+      "voice": "am_liam",
+      "speed": 0.84,
+      "start": 2.44,
+      "duration": 2.377
+    },
+    {
+      "id": "L2",
+      "text": "Then someone teaches you to let go.",
+      "voice": "am_liam",
+      "speed": 0.84,
+      "start": 10.8,
+      "duration": 2.334
+    },
+    {
+      "id": "L3",
+      "text": "For a while, one line was enough for two.",
+      "voice": "am_liam",
+      "speed": 0.84,
+      "start": 16.3,
+      "duration": 2.638
+    },
+    {
+      "id": "L4a",
+      "text": "Sometimes the line stops.",
+      "voice": "am_liam",
+      "speed": 0.84,
+      "start": 24.05,
+      "duration": 2.005
+    },
+    {
+      "id": "L4b",
+      "text": "And then it goes on.",
+      "voice": "am_liam",
+      "speed": 0.84,
+      "start": 26.37,
+      "duration": 1.584
+    },
+    {
+      "id": "L5",
+      "text": "Your turn now.",
+      "voice": "am_liam",
+      "speed": 0.84,
+      "start": 40.35,
+      "duration": 1.386
+    }
+  ],
+  "verbatim_published_script_files": {
+    "lines.json": [
+      {
+        "id": "L1",
+        "text": "Everyone begins by holding on.",
+        "voice": "am_liam",
+        "speed": 0.84
+      },
+      {
+        "id": "L2",
+        "text": "Then someone teaches you to let go.",
+        "voice": "am_liam",
+        "speed": 0.84
+      },
+      {
+        "id": "L3",
+        "text": "For a while, one line was enough for two.",
+        "voice": "am_liam",
+        "speed": 0.84
+      },
+      {
+        "id": "L4a",
+        "text": "Sometimes the line stops.",
+        "voice": "am_liam",
+        "speed": 0.84
+      },
+      {
+        "id": "L4b",
+        "text": "And then it goes on.",
+        "voice": "am_liam",
+        "speed": 0.84
+      },
+      {
+        "id": "L5",
+        "text": "Your turn now.",
+        "voice": "am_liam",
+        "speed": 0.84
+      }
+    ]
+  },
+  "timed_shot_prompts": [
+    {
+      "start": 0,
+      "end": 1,
+      "name": "An unseen pen approaches",
+      "visual_prompt": "Blank cream paper; long soft diagonal pen shadow arrives at the first ink point.",
+      "onscreen_text": "",
+      "camera_motion": "Extreme close view,4.5× on left-ear position.",
+      "sound_direction": "Fresh am_liam0.84 voice, six source entries. Solo cello follows the growing path, child pizzicato and one hand-chime; nib-speed paper scratch. Literal silent stop23.8–26.85 and ink pooling. New performance/music.",
+      "transition": "First ink begins1.0.",
+      "material_requirements": "One literal unbroken sampled pen path; variable ink width tracks speed/pressure, pooling at a held nib. Cream paper and soft travelling pen/hand shadow, no drawn pen silhouette. Only red ink in the lovers/mouth portion. Final composite is an old man’s face with round spectacles, bald dome, kite hair, house nose and ear-fists."
+    },
+    {
+      "start": 1,
+      "end": 4.9,
+      "name": "Holding on",
+      "visual_prompt": "A baby fist wraps an adult finger using one path; rounded tiny fingers and wrist connect continuously into future left ear/spectacle arm.",
+      "onscreen_text": "Everyone begins by holding on.",
+      "camera_motion": "Close locked composition4.3→4.1×.",
+      "sound_direction": "Fresh am_liam0.84 voice, six source entries. Solo cello follows the growing path, child pizzicato and one hand-chime; nib-speed paper scratch. Literal silent stop23.8–26.85 and ink pooling. New performance/music.",
+      "transition": "No lifted/teleported path segments.",
+      "material_requirements": "One literal unbroken sampled pen path; variable ink width tracks speed/pressure, pooling at a held nib. Cream paper and soft travelling pen/hand shadow, no drawn pen silhouette. Only red ink in the lovers/mouth portion. Final composite is an old man’s face with round spectacles, bald dome, kite hair, house nose and ear-fists."
+    },
+    {
+      "start": 4.9,
+      "end": 9.7,
+      "name": "Letting a kite go",
+      "visual_prompt": "The line travels upward along future bald head contour, draws one hair as a kite string, diamond kite and looped tail. Title writes separately as graphic type.",
+      "onscreen_text": "The Line That Never Lifted\na one-line drawing",
+      "camera_motion": "Follow nib upward with subtle±3° roll;2.5× at kite then glide back toward temple.",
+      "sound_direction": "Fresh am_liam0.84 voice, six source entries. Solo cello follows the growing path, child pizzicato and one hand-chime; nib-speed paper scratch. Literal silent stop23.8–26.85 and ink pooling. New performance/music.",
+      "transition": "Retracing allowed only where one pen can physically return.",
+      "material_requirements": "One literal unbroken sampled pen path; variable ink width tracks speed/pressure, pooling at a held nib. Cream paper and soft travelling pen/hand shadow, no drawn pen silhouette. Only red ink in the lovers/mouth portion. Final composite is an old man’s face with round spectacles, bald dome, kite hair, house nose and ear-fists."
+    },
+    {
+      "start": 9.7,
+      "end": 13.9,
+      "name": "Bicycle becomes spectacles",
+      "visual_prompt": "Bicycle wheel loops become round spectacle lenses; frame/handlebar portions become angled eyebrows and bridge. Maintain a convincing temporary bicycle before final face meaning.",
+      "onscreen_text": "Then someone teaches you to let go.",
+      "camera_motion": "Track right-to-left at2.05×, allow both wheels to read.",
+      "sound_direction": "Fresh am_liam0.84 voice, six source entries. Solo cello follows the growing path, child pizzicato and one hand-chime; nib-speed paper scratch. Literal silent stop23.8–26.85 and ink pooling. New performance/music.",
+      "transition": "Continuous nib path.",
+      "material_requirements": "One literal unbroken sampled pen path; variable ink width tracks speed/pressure, pooling at a held nib. Cream paper and soft travelling pen/hand shadow, no drawn pen silhouette. Only red ink in the lovers/mouth portion. Final composite is an old man’s face with round spectacles, bald dome, kite hair, house nose and ear-fists."
+    },
+    {
+      "start": 13.9,
+      "end": 19.4,
+      "name": "One line for two",
+      "visual_prompt": "Path descends to mouth corner and changes red. Two profiles form a kiss; their facing noses/lips also make the old man’s red smile/upper-lip shape.",
+      "onscreen_text": "For a while, one line was enough for two.",
+      "camera_motion": "Push to mouth,3.7×; hold full two-profile reading.",
+      "sound_direction": "Fresh am_liam0.84 voice, six source entries. Solo cello follows the growing path, child pizzicato and one hand-chime; nib-speed paper scratch. Literal silent stop23.8–26.85 and ink pooling. New performance/music.",
+      "transition": "Red carries emotional emphasis; no extra colour.",
+      "material_requirements": "One literal unbroken sampled pen path; variable ink width tracks speed/pressure, pooling at a held nib. Cream paper and soft travelling pen/hand shadow, no drawn pen silhouette. Only red ink in the lovers/mouth portion. Final composite is an old man’s face with round spectacles, bald dome, kite hair, house nose and ear-fists."
+    },
+    {
+      "start": 19.4,
+      "end": 22.8,
+      "name": "A house becomes a nose",
+      "visual_prompt": "Line retraces up cheek fold, draws a simple house roof/chimney and two curled lower ends; in final face these become nose/nostrils.",
+      "onscreen_text": "",
+      "camera_motion": "Push4.1× to house while glasses remain context.",
+      "sound_direction": "Fresh am_liam0.84 voice, six source entries. Solo cello follows the growing path, child pizzicato and one hand-chime; nib-speed paper scratch. Literal silent stop23.8–26.85 and ink pooling. New performance/music.",
+      "transition": "Single physical path links house to right lens.",
+      "material_requirements": "One literal unbroken sampled pen path; variable ink width tracks speed/pressure, pooling at a held nib. Cream paper and soft travelling pen/hand shadow, no drawn pen silhouette. Only red ink in the lovers/mouth portion. Final composite is an old man’s face with round spectacles, bald dome, kite hair, house nose and ear-fists."
+    },
+    {
+      "start": 22.8,
+      "end": 26.85,
+      "name": "The line stops",
+      "visual_prompt": "Right eyelid with eyelashes completes; pen holds at its outer corner, ink pools into a dark tear. Freeze path progress at0.999 from23.8 for3.05s; shadow held almost still.",
+      "onscreen_text": "Sometimes the line stops.",
+      "camera_motion": "Slow push4.6→5.4× on eye/tear.",
+      "sound_direction": "VO L4a24.05; music/drawing falls silent, tiny room/ink texture only.",
+      "transition": "Actual stop, no unrelated motion.",
+      "material_requirements": "One literal unbroken sampled pen path; variable ink width tracks speed/pressure, pooling at a held nib. Cream paper and soft travelling pen/hand shadow, no drawn pen silhouette. Only red ink in the lovers/mouth portion. Final composite is an old man’s face with round spectacles, bald dome, kite hair, house nose and ear-fists."
+    },
+    {
+      "start": 26.85,
+      "end": 30.8,
+      "name": "Then it goes on",
+      "visual_prompt": "Ink resumes from tear, follows temple and draws a second small fist holding finger, mirror of birth. Right ear is a child entering the story.",
+      "onscreen_text": "And then it goes on.",
+      "camera_motion": "Travel to right ear,4.3→4.1×.",
+      "sound_direction": "Fresh am_liam0.84 voice, six source entries. Solo cello follows the growing path, child pizzicato and one hand-chime; nib-speed paper scratch. Literal silent stop23.8–26.85 and ink pooling. New performance/music.",
+      "transition": "Scratch resumes from exactly held nib location.",
+      "material_requirements": "One literal unbroken sampled pen path; variable ink width tracks speed/pressure, pooling at a held nib. Cream paper and soft travelling pen/hand shadow, no drawn pen silhouette. Only red ink in the lovers/mouth portion. Final composite is an old man’s face with round spectacles, bald dome, kite hair, house nose and ear-fists."
+    },
+    {
+      "start": 30.8,
+      "end": 38.8,
+      "name": "A whole face emerges",
+      "visual_prompt": "A slower, drier tremulous path descends right cheek/jaw/chin and finishes left eye. Pull back reveals entire old man: spectacle wheels, house nose, red lovers-mouth, fist ears and kite hair.",
+      "onscreen_text": "",
+      "camera_motion": "Follow jaw,then long reveal to0.98× by38.5.",
+      "sound_direction": "Fresh am_liam0.84 voice, six source entries. Solo cello follows the growing path, child pizzicato and one hand-chime; nib-speed paper scratch. Literal silent stop23.8–26.85 and ink pooling. New performance/music.",
+      "transition": "No fade/morph shortcut; parts must already occupy final geometry.",
+      "material_requirements": "One literal unbroken sampled pen path; variable ink width tracks speed/pressure, pooling at a held nib. Cream paper and soft travelling pen/hand shadow, no drawn pen silhouette. Only red ink in the lovers/mouth portion. Final composite is an old man’s face with round spectacles, bald dome, kite hair, house nose and ear-fists."
+    },
+    {
+      "start": 38.8,
+      "end": 41.7,
+      "name": "Your turn now",
+      "visual_prompt": "Hold completed closed-eyed face; soft hand shadow enters40.3, grips41.1 and old shadow withdraws41.3–42.6.",
+      "onscreen_text": "Your turn now.",
+      "camera_motion": "Push to left eye/hand-off at1.85×, then prepare pull-back.",
+      "sound_direction": "VO L5at40.35 and one chime.",
+      "transition": "Hand shadows overlap naturally, never a drawn hand.",
+      "material_requirements": "One literal unbroken sampled pen path; variable ink width tracks speed/pressure, pooling at a held nib. Cream paper and soft travelling pen/hand shadow, no drawn pen silhouette. Only red ink in the lovers/mouth portion. Final composite is an old man’s face with round spectacles, bald dome, kite hair, house nose and ear-fists."
+    },
+    {
+      "start": 41.7,
+      "end": 47.5,
+      "name": "A new line begins",
+      "visual_prompt": "Child’s new pen trail extends from left of the face into a second small kite. Pull back to old man plus kite, title/card on right, cream paper retained.",
+      "onscreen_text": "The Line That Never Lifted\nONE-LINE DRAWING",
+      "camera_motion": "Pull to0.94× by44.2; balanced final face-left/title-right.",
+      "sound_direction": "Fresh am_liam0.84 voice, six source entries. Solo cello follows the growing path, child pizzicato and one hand-chime; nib-speed paper scratch. Literal silent stop23.8–26.85 and ink pooling. New performance/music.",
+      "transition": "End title43.4–47.5; replace original authorship signature honestly.",
+      "material_requirements": "One literal unbroken sampled pen path; variable ink width tracks speed/pressure, pooling at a held nib. Cream paper and soft travelling pen/hand shadow, no drawn pen silhouette. Only red ink in the lovers/mouth portion. Final composite is an old man’s face with round spectacles, bald dome, kite hair, house nose and ear-fists."
+    }
+  ],
+  "published_text_source_inventory": {
+    "note": "Verbatim literals from text/annotation/caption sourcecalls. This supplemental audit index may include formatting/style strings; shot narrativecards and scripts above are authoritative. Source path/line retained to resolve exacttext.",
+    "entries": [
+      {
+        "file": "outputs/gptcar/styles/one-line/demo/index.html",
+        "line": 2,
+        "published_source_literals": [
+          "utf-8"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/one-line/demo/main.js",
+        "line": 6,
+        "published_source_literals": [
+          "./subs.js"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/one-line/demo/main.js",
+        "line": 13,
+        "published_source_literals": [
+          "), ctx = cv.getContext("
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/one-line/demo/paper.js",
+        "line": 9,
+        "published_source_literals": [
+          "canvas"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/one-line/demo/paper.js",
+        "line": 79,
+        "published_source_literals": [
+          "canvas"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/one-line/demo/subs.js",
+        "line": 16,
+        "published_source_literals": [
+          "0.84)"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/one-line/demo/subs.js",
+        "line": 30,
+        "published_source_literals": [
+          "0.9)"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/one-line/demo/subs.js",
+        "line": 32,
+        "published_source_literals": [
+          "500 30px Caveat",
+          "4px",
+          "0.62)"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/one-line/demo/subs.js",
+        "line": 45,
+        "published_source_literals": [
+          "0.9)",
+          "The Line That",
+          "Never Lifted"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/one-line/demo/subs.js",
+        "line": 46,
+        "published_source_literals": [
+          "600 32px Caveat",
+          "9px",
+          "0.72)",
+          "ONE-LINE DRAWING"
+        ]
+      },
+      {
+        "file": "outputs/gptcar/styles/one-line/demo/subs.js",
+        "line": 47,
+        "published_source_literals": [
+          "500 30px Caveat",
+          "2px",
+          "0.58)",
+          "LemoLab × Claude Opus 5.5"
+        ]
+      }
+    ]
+  },
+  "published_cue_events": [
+    {
+      "t": 1,
+      "type": "tap"
+    },
+    {
+      "t": 23.8,
+      "type": "blot",
+      "dur": 3.05
+    },
+    {
+      "t": 41.7,
+      "type": "chime"
+    },
+    {
+      "t": 41.1,
+      "type": "handoff"
+    },
+    {
+      "t": 2.44,
+      "type": "vo",
+      "id": "L1"
+    },
+    {
+      "t": 10.8,
+      "type": "vo",
+      "id": "L2"
+    },
+    {
+      "t": 16.3,
+      "type": "vo",
+      "id": "L3"
+    },
+    {
+      "t": 24.05,
+      "type": "vo",
+      "id": "L4a"
+    },
+    {
+      "t": 26.37,
+      "type": "vo",
+      "id": "L4b"
+    },
+    {
+      "t": 40.35,
+      "type": "vo",
+      "id": "L5"
+    },
+    {
+      "t": 1,
+      "type": "seg",
+      "id": "birth",
+      "t1": 4.9
+    },
+    {
+      "t": 4.9,
+      "type": "seg",
+      "id": "kite",
+      "t1": 9.7
+    },
+    {
+      "t": 9.7,
+      "type": "seg",
+      "id": "bike",
+      "t1": 13.9
+    },
+    {
+      "t": 13.9,
+      "type": "seg",
+      "id": "love",
+      "t1": 19.4
+    },
+    {
+      "t": 19.4,
+      "type": "seg",
+      "id": "house",
+      "t1": 22.8
+    },
+    {
+      "t": 22.8,
+      "type": "seg",
+      "id": "loss",
+      "t1": 26.85
+    },
+    {
+      "t": 26.85,
+      "type": "seg",
+      "id": "child",
+      "t1": 30.8
+    },
+    {
+      "t": 30.8,
+      "type": "seg",
+      "id": "old",
+      "t1": 38.8
+    },
+    {
+      "t": 41.7,
+      "type": "seg",
+      "id": "kid",
+      "t1": 46.4
+    }
+  ],
+  "published_source_hashes": {
+    "outputs/gptcar/styles/one-line/demo/cam.js": "ae15d60fae21ea0ccc7ba875d6c10d5d66af515daedc5601d58be8068779fdbf",
+    "outputs/gptcar/styles/one-line/demo/cues.json": "17be1ad10a07d04a5382a82626fd2352929001aefd35fa93f92e8e358a181b39",
+    "outputs/gptcar/styles/one-line/demo/cues_export.py": "992f60393b461ee6f6c71f0621049d9a4f07e5c0681ddc333cbfd75a03120aab",
+    "outputs/gptcar/styles/one-line/demo/events.json": "bbb6f8f2c50612d2bba4b0c2bc3c58200361accf891f55a803f13f03e73e5822",
+    "outputs/gptcar/styles/one-line/demo/face.js": "959b9d512b9d68b28d8a20bfe1db9579c3fb249b55d28d0d38caf35e907b7af1",
+    "outputs/gptcar/styles/one-line/demo/geom.js": "2ce3a4d03ac83f099d6bae0b579d7dc65153f3dbabf1e098b7e6f3fb0dae9ab2",
+    "outputs/gptcar/styles/one-line/demo/hands.js": "f18c60e5913368733e93d306699936ed96879b625228355e89ad7f376e82c080",
+    "outputs/gptcar/styles/one-line/demo/index.html": "b867ae97661d976cae248e919e6c569d4418cf6f0ffd6973a05e61f9692a41f0",
+    "outputs/gptcar/styles/one-line/demo/ink.js": "98ebd25fb1f45a209876511349552435dd4cf5b22aae30124b5e5851f73d1743",
+    "outputs/gptcar/styles/one-line/demo/lines.json": "d77415d2de9af8c5ac74a38436c23f3e3f3699d914de4304e7bbb447752af897",
+    "outputs/gptcar/styles/one-line/demo/main.js": "bf142e6373159606c7595c18edf8034e3aff9723b17812c305745f6e074809fe",
+    "outputs/gptcar/styles/one-line/demo/mix.py": "452d3319a4a3591c50519157e93828390feffd849fea45d6bb5d88ce17a152de",
+    "outputs/gptcar/styles/one-line/demo/music/cues.json": "e32aa3d618977dbbbe5dd3efec9ed424a8c788d5c639be52c3fe0d84f242319f",
+    "outputs/gptcar/styles/one-line/demo/music/score.py": "a79603466ca226cef55157750d71fdd6487be2ad31a93eaa0341ed6ec756fe63",
+    "outputs/gptcar/styles/one-line/demo/paper.js": "d9a218459f779643d6c75964a89256635799ed005706816190e15449bb600254",
+    "outputs/gptcar/styles/one-line/demo/shots.js": "9c5c59ff8fc5364ac5822abcd338b481d1f1a69b9082843905cfcbfe7a15f79d",
+    "outputs/gptcar/styles/one-line/demo/story.js": "7d9fa58bef46a7c99b9e393efb6ad0e2f2780b96ab1b7aa0b65ef40543bda07b",
+    "outputs/gptcar/styles/one-line/demo/subs.js": "12717699b8806f1940c3183f6c3fc26efddb5153b5f56416a338bceabadb000d",
+    "outputs/gptcar/styles/one-line/demo/voices/dur.json": "c012aabd70fb538e4593292dfab2fe5a34e0cdf9f6a589a666f72c719e738de8",
+    "outputs/gptcar/styles/one-line/demo/voices/words.json": "42386a6d3856939d2e8eafac6b1a3cad2ca49f18a66bd48dfdc32151a3377714"
+  },
+  "original_assets_and_licenses": [
+    {
+      "path": "outputs/gptcar/styles/one-line/demo/CREDITS",
+      "sha256": "6f7886ded328b8177c544b91702a50e447a133acacfdf94860d9279640393723",
+      "verbatim": "The Line That Never Lifted — One-line Drawing (Lemo-Opuscar · LemoLab × Claude Opus 5.5)\n\nEverything visual is drawn by code in this folder (one continuous SVG-sampled path, Canvas2D ink renderer, procedural paper).\n\nFonts (SIL Open Font License 1.1, license texts in fonts/):\n  Caveat — Impallari Type (github.com/google/fonts/tree/main/ofl/caveat)\n  Sacramento — Astigmatic (github.com/google/fonts/tree/main/ofl/sacramento)\n\nMusic: original score (music/score.py), rendered with core/audio/sampler.py\n  Samples (CC0 1.0): Versilian Studios — VS Chamber Orchestra: Community Edition (cellos, cellos_pizz)\n                     and Versilian Community Sample Library (hand_chimes)\n\nVoice: Kokoro TTS (Apache-2.0), voice am_liam; verified with faster-whisper.\nSound effects: synthesized in mix.py (pen on paper, tap, ink bloom, room tone).\n"
+    }
+  ],
+  "engine_reuse_recommendation": "Reuse attributed generic drawing/material/rig/math engines described by STYLE/DEMO; share fonts and named licensed data/assets with hashes. Independently generate scene assembly, animation, shot/camera staging and freshaudio. Never import original film renderer, mastervideo,originalframes or mastertrack as newGPTwork. Preserve exactscript/cardlanguage and measuredoriginalframecount. Full originals are analytical references only.",
+  "audio_recreation_direction": "Fresh am_liam0.84 voice, six source entries. Solo cello follows the growing path, child pizzicato and one hand-chime; nib-speed paper scratch. Literal silent stop23.8–26.85 and ink pooling. New performance/music.",
+  "v1_primary_deficits": [
+    "V1 replaced final old-man face with a generic horizon, losing every double-reading shape",
+    "20s truncation omitted loss/ink-tear pause, child return and pen handoff; flat path lacked speed/pressure pooling"
+  ],
+  "visual_audit": {
+    "status": "complete",
+    "method": "Fulloriginal1fpscontactsheetreview andsourcecueboundaries; not everyencodedframe.",
+    "sheets": [
+      "work/gptcar/reference/one-line/sheets/sheet-01.jpg",
+      "work/gptcar/reference/one-line/sheets/sheet-02.jpg",
+      "work/gptcar/reference/one-line/sheets/sheet-03.jpg",
+      "work/gptcar/reference/one-line/sheets/sheet-04.jpg"
+    ],
+    "exact_time_supplement": [
+      "work/gptcar/reference/one-line/exact/t-23.8.jpg",
+      "work/gptcar/reference/one-line/exact/t-25.3.jpg",
+      "work/gptcar/reference/one-line/exact/t-41.2.jpg",
+      "work/gptcar/reference/one-line/exact/t-41.75.jpg"
+    ]
+  }
+}

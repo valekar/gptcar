@@ -1,0 +1,483 @@
+{
+  "slug": "art-deco",
+  "title": "Midnight at the Starlight Hotel",
+  "premise": "A grand hotel, 1930: a bellboy races lifts and revolving doors to deliver one letter before midnight.",
+  "provenance": {
+    "original_chat_prompt_available": false,
+    "published_style_prompt_path": "styles/art-deco/STYLE.md",
+    "published_demo_guide_is_verbatim": true,
+    "scene_prompt_status": "Reconstruction from complete published STYLE/DEMO, exact narration/timing data and complete decoded-film contact sheets; not a recovered original chat prompt.",
+    "user_override": "User expressly requests original story/script/arc; STYLE/DEMO usual nonreuse admonition is overridden for reference-matched work."
+  },
+  "sources": [
+    {
+      "path": "styles/art-deco/STYLE.md",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/art-deco/STYLE.md",
+      "sha256": "d73b30c0fa6d153487549d32d8c6c599733cf5e7576badec862a12da6d284761"
+    },
+    {
+      "path": "styles/art-deco/DEMO.md",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/art-deco/DEMO.md",
+      "sha256": "7a13b1552b34de4232012d4f598ba758a115601bda0faca034175bb8bf74567e"
+    },
+    {
+      "path": "styles/art-deco/style.json",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/art-deco/style.json",
+      "sha256": "0ea0e1866adf9c601ca4118229555a563f0f9f0b2dca433f60c2b70a21bf23d5"
+    },
+    {
+      "path": "styles/art-deco/demo/CREDITS",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/art-deco/demo/CREDITS",
+      "sha256": "c08c3f9623c15afd55617da9febd8c9b735c41b8a935ed34e6a761d3187329c2"
+    },
+    {
+      "path": "styles/art-deco/demo/lines.json",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/art-deco/demo/lines.json",
+      "sha256": "833af59bc4b391efb9394af41bcb2fe355c1aff6ba98940358ac7a57c67aa7b5"
+    },
+    {
+      "path": "styles/art-deco/demo/timeline.json",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/art-deco/demo/timeline.json",
+      "sha256": "e2da937f9361fd02d52f0a49b00637957a23ca9662782630456cf272d2c2093f"
+    },
+    {
+      "path": "styles/art-deco/art-deco.srt",
+      "absolute_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/styles/art-deco/art-deco.srt",
+      "sha256": "f5fb721ac6c1a406118f19f2ce730f115f9eb81884e2d631e32a237b96a5a037"
+    }
+  ],
+  "delivery": {
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": 1401,
+    "duration": 58.375
+  },
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "See published DEMO; delivery fps above overrides rounded catalogue values.",
+    "internal_raster": "See style prompt material requirements for native pixel/CRT/internal compositor resolutions."
+  },
+  "reference": {
+    "slug": "art-deco",
+    "source_url": "https://lemomo-ai.github.io/lemo-opuscar/films/art-deco.mp4",
+    "sha256": "7b55fe51616048dcda50e920ab1e4141c00e009f141015a24c09f25837ca8bc1",
+    "duration": 58.375,
+    "width": 1280,
+    "height": 720,
+    "fps": "24/1",
+    "frame_count": "1401",
+    "review_sampling": "One decoded frame per second across the complete film. Supplement with exact shot-boundary frames from source script for short shots.",
+    "frames": 58,
+    "sheets": 5
+  },
+  "inspection": {
+    "all_contact_sheets_inspected": true,
+    "sheet_count": 5,
+    "regular_frame_count": 58,
+    "sheet_paths": [
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/art-deco/sheets/sheet-01.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/art-deco/sheets/sheet-02.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/art-deco/sheets/sheet-03.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/art-deco/sheets/sheet-04.jpg",
+      "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/art-deco/sheets/sheet-05.jpg"
+    ],
+    "sampling": "All1fps decoded samples reviewed across whole film, plus published source timing for short transitions. Exact shot-boundary decoding required before film timing acceptance; approximate sheet labels are not frame-accurate.",
+    "every_encoded_frame_claimed": false
+  },
+  "materials_characters_typography": "Black/gold/jade/burgundy with engraved key lines, radial fans, stepped bevel geometry, soft airbrush shading and true perspective. Pip: expressive slim young bellboy, burgundy pillbox with gold stripe, burgundy double breasted jacket, black hair/gloves, ivory sealed envelope. Conductor mature silver hair ivory tailcoat;8 ivory fan dancers. Limelight/Poiret One/Josefin Sans/Italiana OFL.",
+  "audio_recreation": {
+    "original_master_audio_reused": false,
+    "direction": "116 BPM foxtrot, stride piano/clarinet gliss/brass strings muted trumpet, accelerate stair Charleston 116→138. Kitchen syncopation, stop for letter throw 33.155–35.86, twelve 116 BPM bells then new D-flat full song.",
+    "narration_published_verbatim": [
+      {
+        "id": "L1",
+        "text": "Good evening, America! Live from the Starlight Hotel, it's five minutes to midnight.",
+        "voice": "bm_fable",
+        "speed": 1.0,
+        "asr": "Good evening, America! Live from the Starlight Hotel, it's 5 minutes to midnight.",
+        "start": 6.546896551724139,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "L2",
+        "text": "The band is ready, folks. All they need now is the song.",
+        "voice": "bm_fable",
+        "speed": 1.0,
+        "start": 12.87103448275862,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "B1",
+        "text": "Out... of order?",
+        "voice": "am_puck",
+        "speed": 0.86,
+        "pitch": 4,
+        "sub": "Out of order?!",
+        "asr": "Out of order",
+        "start": 16.611724137931034,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "L3",
+        "text": "Word is, the elevator's out. Somebody's taking the stairs!",
+        "voice": "bm_fable",
+        "speed": 1.02,
+        "start": 18.920689655172417,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "L4",
+        "text": "Thirty seconds to midnight!",
+        "voice": "bm_fable",
+        "speed": 1.0,
+        "asr": "30 seconds to midnight!",
+        "start": 24.924429818748735,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "B2",
+        "text": "Special delivery!",
+        "voice": "am_puck",
+        "speed": 0.86,
+        "pitch": 4,
+        "start": 33.43517981501015,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      },
+      {
+        "id": "L5",
+        "text": "Right on time. Happy New Year, from the Starlight Hotel.",
+        "voice": "bm_fable",
+        "speed": 0.96,
+        "start": 48.57379310344828,
+        "timing_source": "Published authored picture timeline (preferred over stale lines.json t field)."
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "end": 6.206897,
+      "title": "Engraved title doors",
+      "prompt": "Black field radial golden fan rays draw from central diamond, stepped symmetrical arch traces. Plaque MIDNIGHT / AT THE STARLIGHT HOTEL,1930 diamond, NEW YEAR’S EVE. Doors open laterally into exterior."
+    },
+    {
+      "start": 6.206897,
+      "end": 9.6,
+      "title": "Starlight facade",
+      "prompt": "Crane down a many-tiered black/gold skyscraper under crescent moon, star bursts and slow searchlights; THE STARLIGHT rooftop letters with dense bulbs and golden fans. Pip tiny foreground enters grand stairs."
+    },
+    {
+      "start": 9.6,
+      "end": 12.413793,
+      "title": "Delivery closeup",
+      "prompt": "Tilted ivory envelope in white-gloved hand, double thin gold rule, green fan stamp top-right, treble-clef golden wax seal. Exact SPECIAL DELIVERY / ROOFTOP BALLROOM / BEFORE MIDNIGHT. Subtle push, warm paper and wrist reveals Burgundy sleeve."
+    },
+    {
+      "start": 12.413793,
+      "end": 16.5,
+      "title": "Lobby perspective",
+      "prompt": "Grand symmetric hotel lobby, black/gold columns, fan chandeliers and white black perspective chevron carpet; silent slender patrons. Pip approaches gold elevator, button to right, stairs sign far right. Camera glides in."
+    },
+    {
+      "start": 16.5,
+      "end": 18.62069,
+      "title": "Out of order",
+      "prompt": "Suspended OUT OF ORDER plaque above lift, band VO held. Pip checks envelope and lifts forearm to forehead, close expressive face open mouth: Out of order?! Do not substitute generic stick actor."
+    },
+    {
+      "start": 18.62069,
+      "end": 23.2,
+      "title": "Charleston stair climb",
+      "prompt": "Building cutaway stairwell, zigzag landings with numbered circles 1/2/3, wall fans and elevator shaft. Pip climbs in Charleston gait, alternates flights direction as camera tracks up. Envelope held level."
+    },
+    {
+      "start": 23.2,
+      "end": 26.198658,
+      "title": "Thirty floors",
+      "prompt": "Pull far back to see full 30 floor cutaway, quick vertical climb then push to floor 30 KITCHEN. Bellboy tiny burgundy light against structural stair lace. Thirty seconds to midnight line lands 24.924."
+    },
+    {
+      "start": 26.198658,
+      "end": 31.416049,
+      "title": "Kitchen tray gauntlet",
+      "prompt": "Tray close up match cuts into black/white tiled kitchen; row 7 slender chefs/waiters raising reflective oval silver-gold trays. Pip runs under/over tray rhythm, one tray knocks cap off, cap flies overhead and returns exactly. Pendants copper, double swing doors portholes. Camera tracks horizontally."
+    },
+    {
+      "start": 31.416049,
+      "end": 33.155172,
+      "title": "Rooftop run",
+      "prompt": "Night roof medium-wide, colossal unlit THE STARLIGHT bulb letters on metal struts; Pip runs along balustrade toward conductor off screen, slows and launches letter. Moon/searchlights link exterior."
+    },
+    {
+      "start": 33.155172,
+      "end": 35.86,
+      "title": "Special delivery silence",
+      "prompt": "Stop score. Close envelope arcs rotating, cut conductor catching it from bottom of frame. Pip calls Special delivery! at 33.435. Envelope opens to sheet music, not an invitation."
+    },
+    {
+      "start": 35.86,
+      "end": 42.066897,
+      "title": "Twelve letter bells",
+      "prompt": "Conductor ivory tux close up looks from song to band and gestures baton. At 12 precise strikes starting 35.86 separated.517241 s, one successive letter in THE STARLIGHT ignites. Long perspective view bulbs/filament circles and wires; Pip smiles in front. Bell 13 launches full score."
+    },
+    {
+      "start": 42.066897,
+      "end": 48.273793,
+      "title": "Ballroom clock",
+      "prompt": "Eight women in ivory trumpet gowns each gold-rim fan; radial circle dancing. Camera starts shallow perspective then cranes to overhead, fans open/close into clockwork pattern, hour/minute clock rings and Roman numerals. No static stars replacement."
+    },
+    {
+      "start": 48.273793,
+      "end": 52.411724,
+      "title": "Happy New Year",
+      "prompt": "Pip salutes under fully illuminated STARLIGHT, pull to building roof then full city skyscraper, geometric radial fireworks and searchlights. Radio Happy New Year VO 48.574."
+    },
+    {
+      "start": 52.411724,
+      "end": 54.4,
+      "title": "Lift now works",
+      "prompt": "Cut to same elevator close symmetry. Needle finally moves, plaque flips OUT OF ORDER→IN SERVICE too late; exact narrative gag. Gold doors close to black plaque field."
+    },
+    {
+      "start": 54.4,
+      "end": 58.375,
+      "title": "Hotel end plaque",
+      "prompt": "Same title plaque engraved gold on dark bronze framed inset, ART DECO / LEMO-OPUSCAR original provenance plus font/music licences. Preserve style/title and honest regenerated attribution. Fade at end only as original."
+    }
+  ],
+  "published_timing_tables": {
+    "styles/art-deco/demo/timeline.json": {
+      "BPM": 116,
+      "B": 0.5172413793103449,
+      "BAR": 2.0689655172413794,
+      "K_BPM": 138,
+      "STAIR_BEATS": [
+        18.620689655172416,
+        19.134883549119927,
+        19.643088948802298,
+        20.14544373687137,
+        20.64208108813883,
+        21.133129681489216,
+        21.618713900002113,
+        22.098954020062145,
+        22.57396639017595,
+        23.043863600161266,
+        23.508754641323495,
+        23.96874505818981,
+        24.42393709232921,
+        24.874429818748734,
+        25.32031927532096,
+        25.761698585665787,
+        26.198658075879717
+      ],
+      "KIT0": 26.198658075879717,
+      "STRIKES": [
+        35.86,
+        36.37724137931034,
+        36.89448275862069,
+        37.41172413793103,
+        37.92896551724138,
+        38.44620689655172,
+        38.96344827586207,
+        39.48068965517241,
+        39.99793103448276,
+        40.5151724137931,
+        41.032413793103444,
+        41.54965517241379
+      ],
+      "DUR": 58.363,
+      "SEC": [
+        {
+          "id": "T",
+          "t0": 0,
+          "t1": 6.206896551724139,
+          "name": "title"
+        },
+        {
+          "id": "S",
+          "t0": 6.206896551724139,
+          "t1": 12.413793103448278,
+          "name": "street"
+        },
+        {
+          "id": "L",
+          "t0": 12.413793103448278,
+          "t1": 18.620689655172416,
+          "name": "lobby"
+        },
+        {
+          "id": "C",
+          "t0": 18.620689655172416,
+          "t1": 26.198658075879717,
+          "name": "stairwell"
+        },
+        {
+          "id": "K",
+          "t0": 26.198658075879717,
+          "t1": 31.41604938022754,
+          "name": "kitchen"
+        },
+        {
+          "id": "R1",
+          "t0": 31.41604938022754,
+          "t1": 33.15517981501015,
+          "name": "roof run"
+        },
+        {
+          "id": "R2",
+          "t0": 33.15517981501015,
+          "t1": 35.86,
+          "name": "throw (silence)"
+        },
+        {
+          "id": "R3",
+          "t0": 35.86,
+          "t1": 42.06689655172414,
+          "name": "twelve bells"
+        },
+        {
+          "id": "R4",
+          "t0": 42.06689655172414,
+          "t1": 48.273793103448284,
+          "name": "ballroom"
+        },
+        {
+          "id": "R5",
+          "t0": 48.273793103448284,
+          "t1": 52.411724137931046,
+          "name": "pull-back"
+        },
+        {
+          "id": "E",
+          "t0": 52.411724137931046,
+          "t1": 58.363,
+          "name": "end"
+        }
+      ],
+      "T": {
+        "gold": 0,
+        "titleHit": 2.0689655172413794,
+        "archOpen": 5.172413793103448,
+        "street": 6.206896551724139,
+        "envelope": 10.344827586206897,
+        "sealGlint": 10.862068965517242,
+        "wing1": 12.413793103448278,
+        "wing2": 12.931034482758621,
+        "press1": 14.482758620689657,
+        "press2": 15.000000000000002,
+        "press3": 15.258620689655173,
+        "plaque": 15.517241379310345,
+        "faceCU": 16.551724137931036,
+        "tick1": 17.06896551724138,
+        "capFix": 17.586206896551726,
+        "tick2": 17.586206896551726,
+        "snare": 18.10344827586207,
+        "stair": 18.620689655172416,
+        "zoomOut": 22.57396639017595,
+        "zoomIn": 24.42393709232921,
+        "vortex": 25.32031927532096,
+        "kitchen": 26.198658075879717,
+        "trays": 27.937788510662326,
+        "capHit": 28.37257111935798,
+        "capLand": 29.676918945444935,
+        "whistle": 29.89431024979276,
+        "doors": 30.981266771531892,
+        "roof": 31.41604938022754,
+        "clock": 33.15517981501015,
+        "windup": 33.90517981501015,
+        "release": 34.35517981501015,
+        "catch": 35.86,
+        "tutti": 42.06689655172414,
+        "ballTop": 44.13586206896552,
+        "clockForm": 47.756551724137935,
+        "pull": 48.273793103448284,
+        "final": 52.411724137931046,
+        "ding": 52.92896551724139,
+        "doors0": 53.446206896551736,
+        "doors1": 53.96344827586208,
+        "card": 53.96344827586208
+      },
+      "LINES": [
+        {
+          "id": "L1",
+          "t": 6.546896551724139,
+          "who": "radio",
+          "space": "street"
+        },
+        {
+          "id": "L2",
+          "t": 12.87103448275862,
+          "who": "radio",
+          "space": "radio"
+        },
+        {
+          "id": "B1",
+          "t": 16.611724137931034,
+          "who": "boy",
+          "space": "dry"
+        },
+        {
+          "id": "L3",
+          "t": 18.920689655172417,
+          "who": "radio",
+          "space": "hall"
+        },
+        {
+          "id": "L4",
+          "t": 24.924429818748735,
+          "who": "radio",
+          "space": "radio"
+        },
+        {
+          "id": "B2",
+          "t": 33.43517981501015,
+          "who": "boy",
+          "space": "wind"
+        },
+        {
+          "id": "L5",
+          "t": 48.57379310344828,
+          "who": "radio",
+          "space": "live"
+        }
+      ]
+    }
+  },
+  "published_style_prompt_verbatim": "# Art Deco — Style Prompt\n\n> Black lacquer, engraved gold line and airbrushed geometry: a 1930s poster that moves. Every composition has a centre axis, transitions open or close along it, and light arrives as bulbs switching on one by one.\n> References (grammar only): **A. M. Cassandre** posters (giant geometry, steep perspective, airbrush inside hard edges); **Chrysler Building / Rockefeller Center ornament** (setbacks, sunbursts, chevrons); **Busby Berkeley** overhead numbers overheads (human kaleidoscopes); **The Great Gatsby (2013) title sequence** (gold line drawing itself on black); **Gershwin-era symphonic jazz** (clarinet, piano, muted trumpet). Never copy a poster layout, a real building, a character, a typeface design or a melody.\n\n## 1. Essence, and what it is not\n\nA world built from **gold keylines on warm black**, filled with **airbrushed hard-edged volumes** (Cassandre, Lempicka), organised around **one vertical axis**. Ornament *is* the picture: sunbursts are backgrounds, stepped arches are frames, a dial is a progress bar, a bulb marquee is a reveal. Motion is **mechanical and symmetrical**: things unfold from the centre, doors split along the seam, lights switch on in counted order. Native register: glamour with a clock ticking (an event, a deadline, a launch).\n\nNot a gold-foil slideshow (things move and have volume), not Art Nouveau (no whiplash curves, no flowers), not a flat vector poster (volumes are airbrushed and rimmed), not a 60s spy title (no silhouettes on flat colour).\n\n## 2. Materials & rendering\n\n- **Ground**: warm lacquer black, never neutral grey-black; a night sky may drift toward a deep emerald near the horizon.\n- **Gold is a banded metal gradient** (dark – light – hot – light – dark); animate its `sheen` offset for a light sweep.\n- **The signature stroke** (`gline`): a dark engraved underline ~1.6 px wider than the line, the gold gradient line, and a hairline highlight on top. Optional glow and a parallel twin (`double`). Nothing gets a black cartoon outline.\n- **Volumes**: hard edge + airbrush (`airbrush`): a directional gradient from shade to light inside the shape, one consistent light direction (upper left by default), a thin gold rim on the lit side.\n- **Motifs** (sunburst, stepped arch / ziggurat, fish-scale, chevrons, fan, four-point sparkle, speed lines, clock face, dial) are structural (a background, a frame, a transition), not stickers.\n- **Perspective is real**: true one-point (mode-7 floors) and two-point perspective through a pinhole camera, so dolly, tilt and pan change perspective instead of scaling flats.\n- **Characters are deco too**: about 7 heads tall, tapered streamline bodies, faceted lacquer planes (Lempicka), almond or arc eyes, a one-stroke nose, airbrush + gold rim. Give each lead one or two silhouette marks readable at a quarter of frame height.\n\n## 3. Colour logic\n\n- Three constants: **warm black ground, gold line and metal, ivory** for paper, gloves, light and type.\n- **One saturated accent reserved for the protagonist** (or the one object the story follows). It is the only large saturated area, so the eye finds it in any wide shot. A cooler jewel tone may carry secondary surfaces, never competing in area.\n- **The one-colour exception**: any single element can be drawn in its own colour through the same fill + keyline + glow (`color` option) while everything else stays gold.\n- Always expand hex to six digits in code (three-digit hex breaks colour mixing).\n- Examples of the triad (accent / jewel / metal): burgundy / emerald / gold; coral / sapphire / pale gold; jade / plum / rose gold. Our demo's actual values are in DEMO.md.\n\n## 4. Type & subtitles\n\n- **Type (OFL)**: Limelight (titles), Poiret One (numbers, sign skeletons, plaques), Josefin Sans (subtitles, labels), Italiana (numerals).\n- **Titles are architecture**: a stepped gold title bar over an arch or sunburst, optional badge and wings; drawn on in gold, then a sheen sweep.\n- **Subtitle card** (`subtitleCard`): a lacquer bar (~88 % black) with stepped ends like the title bar, double gold keyline, Josefin Sans SemiBold ~40–42 px ivory, an optional small speaker icon per voice. It **unfolds from the centre** like every other title, so titles, subtitles and transitions are one system. Hold ≥ max(1.8 s, speech + 0.6 s).\n- Numbers carry plot without narration: dials, clock faces, floor medallions, badges.\n\n## 5. Motion quality\n\n- **Characters step on twos (12 fps)**; camera, light, bulbs, gold draw-on and sheen run on ones (24 fps). A stepped camera reads as stutter.\n- **Everything unfolds from the centre**: a point → a hairline → bars open symmetrically → text rises → wings and sparkle.\n- **Draw-on follows the music**: a gold line grows at the speed of the phrase under it and lands on the hit.\n- **Bulbs have an ignition overshoot** (~1.6× flash settling in ~0.18 s) and a relay \"chunk\"; once a sign is lit, a fast chase may run across it.\n- **Mechanical easing**: doors, dials and hands move with firm ease-in-out and a small settle, like machinery; nothing floats.\n- **Performance beats get anticipation** and escalation in threes (once, twice, mash).\n- What never moves: the centre axis of a composition. Symmetry may rotate or open, but it never drifts off-centre.\n\n## 6. Camera grammar\n\nA vocabulary, not a route. Opening and ending come from the topic.\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Symmetric split (two door leaves hinged at the edges; or a revolving-door wipe) | a threshold crossed | a new place; a new chapter; a reveal behind a façade |\n| Leaves sliding shut over the live shot | a door closing on a moment | leaving; a decision made; the end of an era |\n| Extreme low-angle Cassandre tilt | scale and aspiration | a goal far above; a tower, a rocket, a monument |\n| Architectural section (pull out to a cutaway of the whole building) | progress through a structure | climbing, descending, a process in stages; a company's floors |\n| Busby Berkeley overhead, mirrored and rotating | people become pattern | a team, a release, a celebration, a system of parts |\n| Push-in on a dial, medallion or clock | the number is the plot | a deadline; a count; a milestone |\n| Match-cut on shape (circle → circle, ray → ray) | two places, one rhyme | jumping between departments, cities, eras |\n| Low oblique along a sign or marquee | light travelling letter by letter | a name revealed; a launch; a score being counted |\n| Pull back from detail to skyline | where the moment sits in the world | aftermath; a city-wide effect; scale |\n\nFraming: the centre axis is sacred; an asymmetric frame must resolve to it within the shot. At an emotional peak the protagonist fills ≥ ~1/3 of frame height (smaller, the face reads as a prop in the ornament). Transitions: splits, revolves, arch openings, shape matches; never a generic dissolve or slide.\n\n## 7. Sound palette\n\n- **Symphonic jazz of the 1920s–30s, not a 60s big band.** Options: stride or concert piano, clarinet (trill; a glissando by time-varying resampling of a long note), strings (tremolo, rushes, pizzicato), muted trumpet commentary, trombone and sax section, walking pizz bass, brushes or sticks, tubular bells, harp glissandi, banjo, xylophone runs, celesta.\n- Rhythm families to choose from: foxtrot, Charleston, tango, a slow torch-song ballad, a fanfare in the manner of a newsreel.\n- **Techniques (options)**: one hit per unit of counted light; accelerate by dividing the beat; plant a theme in fragments so its full statement is a payoff; low-pass a band that is physically far away and open it as we approach; move a period narrator through acoustic spaces (horn, radio, PA, live mic) to make distance audible.\n- **Foley by material**: brass clicks, bronze clang + chain, iron treads, marble heels, silver trays, wooden doors + spring twang, paper flutter, knife-switch \"chunk\" + filament hum, relay ticks, elevator ding, champagne cork.\n- **Silence as a tool**: before the most important sound, drop to one small diegetic sound (a clock tick, wind) and cut back in with that sound alone.\n- **J/L-cuts** carry architecture: the next room's sound enters a bar before its door opens.\n- Mix: duck music ~−9 dB under voice (less under a period announcer who is part of the texture), beds −6 dB, −14 LUFS, light film grain.\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **Counted light.** A bulb sign lights one letter per beat or per event, so the audience can count. *Fits content like:* the countdown to a product launch; the letters of a city name lighting as a train arrives; votes tallied into a winner.\n- **Threshold doors.** Every scene change is a door split along the seam. *Fits content like:* the departments of a company; the rooms of a museum; stages of a career.\n- **Machine kaleidoscope.** People or objects become a mirrored, rotating pattern that locks into a symbol. *Fits content like:* a team becoming a logo; gears of a supply chain; a choir becoming a clock.\n- **Dials carry the plot.** A floor indicator, a clock or a gauge moves instead of narration. *Fits content like:* a funding thermometer; the altitude of a climb; a stock ticker at the opening bell.\n- **The architectural cutaway.** Pull out until a building is a section and the protagonist a coloured dot with speed lines. *Fits content like:* data moving through a server stack; a letter through a post office; a skier down a resort.\n- **Sheen sweep / draw-on.** Light crosses a gold object on a hit; a gold line engraves itself at the speed of a glissando. *Fits content like:* unveiling a trophy; a map route; a signature on a treaty.\n- **The one colour.** One element keeps its own colour in a gold world. *Fits content like:* the one product among competitors; the patient among doctors; the new idea in an old firm.\n\n## 9. Pitfalls of the medium\n\n- Bulb signs from glyph skeletons break on curves (G, S, R): Zhang–Suen staircase pixels fool a neighbour-count junction test → use the **crossing number** and weld chain ends within ~14 px.\n- A generic cartoon character looks pasted in → characters are deco (§2).\n- Fish-scale reads as brickwork → lower half-circles row by row, each overlapping the previous row, plus an inner arc.\n- Door leaves over a flat \"interior\" read as a blank frame → draw only the leaves, closing over the live shot.\n- A gold point on pure black trips `blackdetect` → lift the background wedges and glow slightly.\n- Period loudspeaker distortion is unintelligible under music → gentle drive; whisper-check every line on the final mix.\n\n## 10. Engine\n\nCanvas2D, deterministic in `t`, in `demo/engine/`: `deco.js` (gold gradient, `gline`, `airbrush`, motifs, `drawShape` for any path in the deco manner, `color` for the one-colour exception), `type.js` (title bar, digits, badges, dial, clock, `subtitleCard`), `bulbs.js` (any text → bulb sign, `litSequence`), `cam.js` (pinhole camera, `cardTransform`). `demo/frames.js` renders model sheets and style frames from the real engine. Signatures and a minimal example that draws something not in the demo: DEMO.md \"Engine reference\".\n\n## 11. Variation space\n\nYou decide the structure, the characters (or none), the settings, the opening, the ending, the camera path, the pacing, the accent colour and what gets counted. All far from our demo:\n\n- Structures: **the exhibition** (five pavilions of a world's fair, one idea of the topic behind each door); **the ocean liner** (three decks from engine room to ballroom, a horn per stage); **the trophy night** (nominees as sunburst panels, the winner revealed in light).\n- Openings: **the machine room** (gold gears and pistons building to the first beat); **the engraved map** (a gold route crosses a continent before anyone appears); **the telegram** (ticker tape types the premise).\n- Endings: **the lights go out** (letters switch off in reverse until one bulb remains); **the dawn** (lacquer black warms to a pale sky); **the poster** (the last shot flattens into a printed poster with a date).\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n",
+  "published_demo_guide_verbatim": "# Art Deco — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *Midnight at the Starlight Hotel* (58.4 s) · `art-deco.mp4` · source in [`demo/`](demo/)\n\n\nThe original brief for the demo: a 40–60 second film in the Art Deco style; the director decides story, shots, score, sound and titles.\n\n## Story & structure\n\nA bellboy, Pip, must carry a sealed letter to the rooftop before midnight on New Year's Eve 1930. A small, urgent errand in a grand place. A mechanical obstacle (the elevator is OUT OF ORDER) turns panic into resolve. A rising middle with a tempo change (the stairs = Charleston). A true silence before the climax (the clock hits XII, the band stops, the letter tumbles). The climax is counted light: twelve strikes of midnight = the twelve letters of THE STARLIGHT lighting one by one.\n\n**The music is the plot:** the letter holds the band's new song; the theme is only heard in fragments until the conductor opens it, and the 13th beat is the first full statement. Echo at the end: the hero who looked up at a dark sign now stands inside the lit one; a button gag closes the loop (the elevator dings IN SERVICE — too late).\n\nHow the style's native powers were spent in this story:\n\n| Native power | Demo use |\n|---|---|\n| The centre axis | Every transition is a door: the title arch splits open, stair doors burst, kitchen swing doors bang, elevator doors close into the end card. |\n| Counted light | The bulb sign lights letter by letter, one per bell. |\n| Machine symmetry | A Busby Berkeley overhead: fans opening on eighth notes become a sunburst, then lock into a clock face. Used as the release after the climax. |\n| Dials & numbers | Floor indicator, clock face, floor medallions, year badge: floor 30, 11:55, 1930 carry the plot without narration. |\n| Period radio | An announcer as narrator, moved through acoustic spaces (street horn → desk radio → stairwell PA → live mic) so the audience hears the hero getting closer to the source. |\n\nThe recipe we used to adapt it (for this demo): find the threshold (doors), the deadline (a clock), the counted reveal (a sign, floor numbers), and the thing the finale unlocks (a song).\n\n## Shots\n\n| Beat | Camera |\n|---|---|\n| Opening (3 s hook) | A single gold point explodes into rays and stepped arches; slow 6 % push. Title bar blooms on the orchestra hit. |\n| Transition grammar | **Symmetric split**: the outgoing frame becomes two door leaves hinged at the edges that swing open from the seam (arch, stair doors, kitchen doors). The revolving door is its rotary cousin (glass wings wipe). The film closes with elevator doors sliding shut over the live shot. |\n| Establishing | Extreme low-angle Cassandre tilt from the dark sign at the top of the tower down to the tiny hero on the street: goal, difficulty and the dark sign (the setup of the ending) in one move. |\n| Obstacle | Medium on the plaque dropping; a slow push on the face during the silence while he straightens his cap. |\n| Signature 1 | The stairwell as an **architectural section**: rise with him, pull out until the whole tower is a cutaway and he is a red dot with speed lines, push back in on the \"30\" floor medallion, match-cut to a spinning silver tray in the kitchen. |\n| Silence | Insert of the tower clock's minute hand clicking to XII; the letter tumbling in slow motion past the dark letters. |\n| Climax | Twelve bells: catch (ECU glove) → conductor (tear the seal, insert of the score, baton up) → low oblique of the sign as letters light one per strike → close-up as the last T lights behind the hero, gold light across his face. |\n| Signature 2 | **Busby Berkeley**: an oblique high angle as 8 dancers open their fans one per eighth note, then straight overhead, 8-way mirrored and slowly rotating; the fans lock into a clock face with two gold hands at XII. |\n| Scale reveal | Pull back from the sign to the whole tower, the city and fireworks (echoes the opening tilt). |\n| Ending | Elevator doors slide shut over the live shot; the end card plaque sits on the closed doors. |\n\nPerformance beats: the elevator button pressed three times (once, twice, mash); the throw has a wind-up, release and a near-fall over the railing; the cap knocked off by a tray lands back on his head one bar later while he doesn't even look. In the opening the gold lines grow at the speed of the clarinet glissando (slow → fast), landing on the downbeat hit. After all letters are lit, a 16th-note chase runs across the whole sign.\n\n## Score structure\n\n- **Score first**: `timeline.js` is the single source of truth (116 BPM foxtrot → 16 beats accelerating to 138 BPM Charleston → stop → 12 bells on the 116 grid → the song in D♭). `tools/cuecheck.py` checks 53 picture sync points against `music/score.json` (max offset 0.5 ms).\n- **Orchestration as used**: piano lead (Salamander), clarinet (low trill + two-octave glissando curtain-raiser), strings (tremolo bed, upward rushes), muted trumpet commentary (\"wah-wah\" on the plaque), brushes → sticks in the Charleston, walking pizz bass, tubular bells (B♭) for midnight, harp/piano glissandi for each fan, trombone + sax for the final chorus.\n- **Planting the theme**: title = piano bar 1; street = muted trumpet tries two bars and is cut off; kitchen = the hero whistles the first four notes; finale = the full song.\n- **Distance automation**: the band plays on the 30th floor, so it is low-passed at 2.5 kHz on the street, 1.2 kHz in the lobby (through the floor), opens up as he climbs, full-range and dry on the roof.\n- **Announcer in five spaces** (Kokoro `bm_fable`): street horn (band-pass 320–3.8 kHz, soft drive, slap echo) → desk radio → stairwell PA (long reverb) → kitchen radio → live mic (full range). Heavy horn distortion made \"five minutes to midnight\" unintelligible in the full mix, so the drive was reduced.\n- **Foley as used**: brass button click, bronze plaque clang + chain rattle, iron stair treads on eighth notes, marble heels, silver trays, wooden swing doors + spring twang, paper flutter, glove slap, knife-switch \"chunk\" + filament hum per letter, relay ticks for the chase, firework whistles.\n- **Silences**: after \"Out of order?!\" only the lobby clock ticks twice (next sound: the Charleston snare); after the tower clock clicks to XII only wind and the fluttering letter (next sound: the first bell, the most important sound in the film); one beat of held breath after bell 12 (next: tutti).\n- **J/L-cuts**: radio tuning noise before the arch opens; the echo of \"Out of order?!\" rolls up the stairwell; the kitchen radio starts during the stairwell; rooftop wind enters a bar before the kitchen doors; bell 12's tail rings into the tutti.\n- Mix: music ducked ≈ −9 dB under voice (−6 dB under the live announcer), beds −6 dB; −14 LUFS, grain 3.\n\n## Palette & props\n\n- Ground: warm black `#0d0b09`, lacquer `#060504`; night sky `#0a0e16` → horizon emerald `#10231f`.\n- Gold: `#6F5220` (shadow) → `#C9A24B` (base) → `#F3D98B` (light) → `#FFF4D2` (specular).\n- Accents: burgundy `#8E1B2E` (the hero's uniform, the only large saturated area), emerald `#1D6B57` (fans, door panels, night), ivory `#F2E8D5` (the letter, gloves, carpet).\n- Scenes: the lobby in one-point perspective with a mode-7 floor; the rooftop sign in two-point perspective from below with a tiny pinhole camera.\n- Pip: 7 heads tall, tapered streamline body, faceted lacquer planes; silhouette marks: tilted pillbox cap + chin strap, a V of brass buttons, the sealed letter always in hand.\n- Other props: the OUT OF ORDER plaque, the tower clock, the bulb sign THE STARLIGHT, the conductor and the score, waiters with silver trays, 8 dancers with emerald fans, fireworks.\n\n## Titles & end card\n\n- Subtitle card speaker icons: a gold ribbon mic for the announcer, a burgundy pillbox cap for the hero.\n- Title: MIDNIGHT / AT THE STARLIGHT HOTEL in a gold title bar over the stepped arch, a 1930 diamond year badge, NEW YEAR'S EVE label.\n- End card: a lacquer plaque on the closed elevator doors: title, ART DECO, LEMO-OPUSCAR, \"LemoLab × Claude Opus 5.5\", asset credits. This sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Build notes\n\n```\nstyles/art-deco/demo/\n  timeline.js      tempo grid + all sync points (single source of truth) → tools/dump_timeline.mjs → timeline.json\n  engine/          deco.js (palette, gold, gline, airbrush, motifs, drawShape) · type.js (title bar, digits, badges, dial, clock, subtitle card)\n                   bulbs.js (any text → bulb sign, lighting patterns) · cam.js (pinhole camera + card transforms)\n  chars.js         Pip (FK rig, 4 views, 8 faces, pose library, run cycles), conductor, waiters, dancers, the letter\n  scenes/          lobby.js (one-point + mode-7 floor, doors, plaque) · roof.js (two-point sign) · tower.js · stairs.js\n  shots_*.js       one function per shot: shot(g, t)       film.js   shot list, transitions (split / revolve / close), subtitles\n  frames.js        model sheet, component kit, style frames, ?scene=frames.shotTest&shot=<name>\n  music/score.py   original score → score.wav + stems + score.json      mix.py   voices in 5 spaces + foley + beds + ducking\n  tools/           cuecheck.py · subs.py · pitch.py · dump_timeline.mjs\n```\n1. Write the tempo grid and the cue table first; hand them to a music sub-agent and draw in parallel.\n2. Build the engine and the hero model sheet, then one scene per location, then one function per shot. Review single shots with `?scene=frames.shotTest&shot=<name>`.\n3. `sh demo/build.sh` rebuilds everything: timeline → TTS → pitch → whisper → score → cue check → mix → srt → render (≈15 s with 4 workers for 1401 frames) → mux (−14 LUFS, grain 3) → stills.\n4. Review at 1 s intervals with `still.mjs --range 0:58:1` + `sheet.py`, then frame strips at 0.15–0.2 s for every key action.\n\nPitfalls tied to this demo's props:\n- The first transition to the end card slid the elevator doors in over a flat brown \"interior\", which read as a blank frame; only the leaves are drawn now, closing over the live shot.\n- The opening (one gold point on black) tripped `blackdetect`; the background sunburst wedges and glow were lifted.\n- Pip at ¼ frame height in the bell shots was too small for the emotional peak; the last bell got a close-up.\n- Three-digit hex turned the emerald fans blue-violet.\n\n## Engine reference\n\nAll drawing is Canvas2D, deterministic in `t`. Import from `demo/engine/`.\n\n**deco.js**\n| Function | Purpose |\n|---|---|\n| `C` | palette (`ink black night gold0 gold1 gold2 goldHi ivory emerald burg plum skin bulb…`) |\n| `goldGrad(g, x0,y0,x1,y1, {sheen, hot, tint})` | banded metal gradient; animate `sheen` −0.2→1.2 for a light sweep |\n| `gline(g, pts, {w, part, closed, glow, double, sheen, alpha, color})` | the engraved gold keyline; `part` 0→1 draws it on; `color` = any hex for the one-colour exception |\n| `airbrush(g, pts|Path2D, {base, dark, light, dir, rim})` | hard-edged airbrushed fill |\n| `sunburst(g, cx, cy, {rays, r0, r1, mode:'lines'|'wedges', a0, a1, rot, part})` | radial backgrounds |\n| `stepArchPts(cx, base, w, h, {steps, crown})` / `archFrame(g, cx, base, w, h, {rings, gap, fill, burst, part})` | ziggurat arches and arch frames |\n| `fan`, `fishScale`, `chevrons`, `sparkle`, `speedLines`, `glow`, `beam`, `vignette` | motif library |\n| `drawShape(g, pts, {color, halo, trail, glints, part})` | **any path in the deco manner**: airbrushed gold (or `color`) fill + gold keyline + optional sunburst halo, speed-line trail and glints |\n| `starPts(cx, cy, r, k, rot, n)` | four-point star path |\n\n**type.js**: `goldText(g, text, x, y, {size, font, track, sheen})` · `titleBar(g, text, cx, cy, {p, out, size, sub, wings})` (animated in/out) · `decoDigits(g, '11:59', x, y, size)` · `yearBadge(g, '1930', cx, cy, r, {p})` · `floorMedallion(g, '30', cx, cy, r, {sub})` · `dial(g, cx, cy, r, value, {labels})` (semicircle floor indicator, value 0..1) · `clockFace(g, cx, cy, r, {h, m, s, roman})` · `subtitleCard(g, text, {p, out, speaker:'radio'|'boy'})`.\n\n**bulbs.js**: `buildSign(text, {font, size, spacing})` (any text → glyph skeleton → evenly spaced bulbs, cached) · `drawSign(g, sign, x, y, scale, {lit, channel, color})` · `litAll(v)` · `litSequence(t, times[], {flash, chaseFrom, chaseSpeed})` (letter i switches on at `times[i]`, then chases).\n\n**cam.js**: `makeCam({x, y, z, f, yaw, pitch, roll})` → `{P(X,Y,Z), scaleAt(X,Y,Z)}` · `cardTransform(g, cam, TL, TR, BL, w, h)` (map a flat card onto a 3D quad).\n\n**chars.js** (demo characters): `drawFigure(g, {x, y, s, view:'side'|'q'|'front'|'back', face, ...pose})` · `POSES`, `FRONT_POSES`, `lerpPose`, `runCycle(phase)`, `runFront(phase)` · `drawDancer`, `drawDancerTop`, `envelope`, `clef`.\n\n**The one colour.** To keep one element in its own colour, pass `color` — it is used for the fill, keyline and glow while everything else stays gold:\n\n```js\nimport * as D from './engine/deco.js';\nimport * as B from './engine/bulbs.js';\n\n// a warm-orange four-point light with a short cursor tail, drawn the Art Deco way\nD.sunburst(g, 960, 540, { rays: 72, r1: 1400, mode: 'wedges' });\nD.drawShape(g, D.starPts(960, 540, 120, .22), { color: '#D97757', halo: 1, trail: { ang: Math.PI, len: 420, n: 4 } });\n\n// a bulb sign that lights letter by letter, in the same orange\nconst sign = B.buildSign('LEMO', { size: 260, spacing: 20 });\nB.drawSign(g, sign, 560, 700, 1, { lit: B.litSequence(t, [0, .5, 1, 1.5], { chaseFrom: 2.5 }), color: '#D97757' });\n```\n",
+  "published_srt_verbatim": "1\n00:00:06,547 --> 00:00:11,684\nGood evening, America! Live from the Starlight Hotel, it's five minutes to midnight.\n\n2\n00:00:12,871 --> 00:00:16,540\nThe band is ready, folks. All they need now is the song.\n\n3\n00:00:16,612 --> 00:00:18,412\nOut of order?!\n\n4\n00:00:18,921 --> 00:00:23,292\nWord is, the elevator's out. Somebody's taking the stairs!\n\n5\n00:00:24,924 --> 00:00:27,118\nThirty seconds to midnight!\n\n6\n00:00:33,435 --> 00:00:35,235\nSpecial delivery!\n\n7\n00:00:48,574 --> 00:00:52,327\nRight on time. Happy New Year, from the Starlight Hotel.\n",
+  "original_assets_and_licenses_verbatim": "Midnight at the Starlight Hotel — Lemo-Opuscar · Art Deco demo\nLemoLab × Claude Opus 5.5\n\nPicture: everything drawn in code (Canvas2D), no generated images, no third-party artwork.\nStory, characters, score and sound design: original (Lemo-Opuscar).\n\nFonts (SIL Open Font License 1.1, licence texts in fonts/):\n  Limelight — Eben Sorkin\n  Poiret One — Denis Masharov\n  Josefin Sans — Santiago Orozco\n  Italiana — Santiago Orozco\n\nVoices: Kokoro-82M (Apache 2.0), voices bm_fable (announcer), am_puck (bellboy).\n\nMusic samples:\n  Piano: \"Salamander Grand Piano V3\" by Alexander Holm, CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)\n  CC0: VS Chamber Orchestra: Community Edition and Versilian Community Sample Library (Versilian Studios);\n       Karoryfer Samples / sfzinstruments.\n  All sound effects synthesised in code (numpy).\n\nReferences (grammar only, nothing copied): A. M. Cassandre posters; Chrysler Building / Rockefeller Center ornament;\nBusby Berkeley overhead choreography (1930s); The Great Gatsby (2013) title sequence; Gershwin-era symphonic jazz.\n",
+  "engine_reuse_recommendation": "engine/deco.js, type.js, bulbs.js, cam.js for attributed general material/text/light/camera; independently assemble hotel, casts and scenes.",
+  "rights_or_evidence_notes": "Original codeMIT; reuse only explicitly attributed general helpers/fonts/assets with supplied licences. New scene staging and animation must be authored independently. Original model end credits recorded as historical reference, replaced honestly in recreation.",
+  "v1_quality_deficits": "V 1 reduced faceted engraved hotel/characters and omitted envelope delivery,30 floors, kitchen cap gag,12 letter bells and lift punchline.",
+  "recreation_status": "brief-audited; newfilmnotyetgenerated",
+  "published_asset_manifest": [
+    {
+      "path": "styles/art-deco/demo/fonts/OFL-josefinsans.txt",
+      "sha256": "aee5a4081e8a52f80428b30f178b719d115f18dad3e1fa15a986163e1078a85b",
+      "bytes": 4449
+    },
+    {
+      "path": "styles/art-deco/demo/fonts/OFL-poiretone.txt",
+      "sha256": "708e33bed791c40638926a7577bcef8ff8748f84045f3825277540cbb8d483ba",
+      "bytes": 4389
+    },
+    {
+      "path": "styles/art-deco/demo/fonts/OFL-italiana.txt",
+      "sha256": "486c4d5b9baf0d0ba5546ef3c43fcfe22c062299ab6948045a43efffe4b0f74b",
+      "bytes": 4393
+    },
+    {
+      "path": "styles/art-deco/demo/fonts/fonts.css",
+      "sha256": "3b03da525e50c9171b97fe12c51c81d6035063aa8ce135b84913d0e57b70a56d",
+      "bytes": 289
+    },
+    {
+      "path": "styles/art-deco/demo/fonts/OFL-limelight.txt",
+      "sha256": "6b53fb03a50914cc382f4d025ee595c17c43f24ae870f840bc51969d3e316c7e",
+      "bytes": 4399
+    }
+  ]
+}

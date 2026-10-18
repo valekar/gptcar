@@ -3,15 +3,17 @@
 import argparse,json,sys
 from pathlib import Path
 import numpy as np,soundfile as sf
-from scipy.signal import fftconvolve
+from scipy.signal import fftconvolve, butter, sosfilt
 from scipy.ndimage import uniform_filter1d
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT));sys.path.insert(0,str(ROOT/'tools'))
 from core.audio import sampler as S
+from core.audio import pluck as P
 from compose_comparison_audio import compose as synth_score
+from replica_foley import effect as make_effect, synth_note
 SR=48000
 
 def compose(score,voice_records,duration,out):
-    music=np.zeros((round(duration*SR),2),np.float32);speech=np.zeros_like(music);S.seed(6101)
+    music=np.zeros((round(duration*SR),2),np.float32);speech=np.zeros_like(music);foley=np.zeros_like(music);S.seed(6101);P._rng=np.random.default_rng(6104)
     def add(dst,signal,start,gain=1,pan=0):
         signal=np.asarray(signal,dtype=np.float32);i=round(float(start)*SR)
         if i<0:signal=signal[-i:];i=0
@@ -26,18 +28,29 @@ def compose(score,voice_records,duration,out):
         if name in S.REG or name in S.ALIASES:
             signal=S.note(name,note.get('midi',60),float(note['duration']),vel=float(note.get('velocity',.65)))
             add(music,signal,note['t'],note.get('gain',.15),np.clip(note.get('pan',0),-1,1))
+        elif name in P.PRESETS:
+            signal=P.pluck(name,note.get('midi',60),float(note['duration']),vel=float(note.get('velocity',.65)),**{k:note[k] for k in ['bend','vib','glide','harmonic','trem'] if k in note})
+            add(music,signal,note['t'],note.get('gain',.1),note.get('pan',0))
+        elif name in ['saw','fm_glass','sub808','toy_piano']:add(music,synth_note(name,note.get('midi',60),float(note['duration'])),note['t'],note.get('gain',.1),note.get('pan',0))
         else:synth.append(note)
     for hit in score.get('hits',[]):
         a=S.hit(hit['instrument'],hit.get('variant'),vel=float(hit.get('velocity',.7)),dur=float(hit.get('duration',.4)));add(music,a,hit['t'],hit.get('gain',.15),np.clip(hit.get('pan',0),-1,1))
     # Explicit synth voices and seeded material foley from the original root synthesizer.
-    if synth or score.get('effects'):
-        add(music,synth_score({'notes':synth,'effects':score.get('effects',[])},duration),0,1)
+    if synth:add(music,synth_score({'notes':synth,'effects':[]},duration),0,1)
+    for i,cue in enumerate(score.get('effects',[])):
+        params={k:v for k,v in cue.items() if k not in ['kind','duration','t','gain','pan']}
+        add(foley,make_effect(cue['kind'],cue.get('duration',.25),seed=6103+i,**params),cue['t'],cue.get('gain',.1),cue.get('pan',0))
+    if not score.get('silence_music_ranges'):
+        music+=foley;foley.fill(0)
     room=float(score.get('room',.12))
     if room:
         rng=np.random.default_rng(6102);t=np.arange(int(.65*SR))/SR;ir=rng.normal(size=len(t))*np.exp(-t*10);ir[:int(.02*SR)]=0;ir/=np.sqrt(np.sum(ir*ir)+1e-9)
         for ch in range(2):music[:,ch]+=fftconvolve(music[:,ch],ir,mode='full')[:len(music)]*room
     def rms(a):return np.sqrt(np.mean(a*a)+1e-12)
     if np.max(np.abs(music))>1e-6:music*=10**(float(score.get('music_rms_db',-23))/20)/rms(music)
+    # Narrative pauses cut musical releases while retaining clock, room and action foley.
+    for start,end in score.get('silence_music_ranges',[]):
+        music[max(0,round(start*SR)):min(len(music),round(end*SR))]=0
     duck=np.ones(len(music),np.float32)
     from scipy.signal import resample_poly
     from fractions import Fraction
@@ -45,12 +58,17 @@ def compose(score,voice_records,duration,out):
         a,sr=sf.read(line['file'],dtype='float32');a=a.mean(axis=1) if a.ndim==2 else a
         if sr!=SR:
             ratio=Fraction(SR,sr);a=resample_poly(a,ratio.numerator,ratio.denominator)
+        if line.get('filter')=='radio':
+            a=sosfilt(butter(4,[380,2800],btype='bandpass',fs=SR,output='sos'),a)
+            a=np.tanh(a*3)/3
+        elif line.get('filter'):
+            raise RuntimeError('Unsupported narration filter: '+str(line['filter']))
         active=a[np.abs(a)>max(.005,np.max(np.abs(a))*.02)]
         if not len(active):raise RuntimeError(line['id']+' is silent')
         # Bound Kokoro transient peaks before matching speech level.
         a=np.tanh(a/(rms(active)*4))*rms(active)*4;a*=10**(-18/20)/max(rms(a[np.abs(a)>.003]),1e-8)
         add(speech,a,line['start']);i=max(0,round((line['start']-.15)*SR));j=min(len(duck),round((line['start']+len(a)/SR+.2)*SR));duck[i:j]=np.minimum(duck[i:j],.62)
-    duck=uniform_filter1d(duck,size=int(.25*SR),mode='nearest');mix=music*duck[:,None]+speech
+    duck=uniform_filter1d(duck,size=int(.25*SR),mode='nearest');mix=(music+foley)*duck[:,None]+speech
     peak=float(np.max(np.abs(mix)))
     if peak<1e-5:raise RuntimeError('Empty soundtrack')
     if peak>.88:mix*=.88/peak

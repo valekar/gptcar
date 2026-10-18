@@ -1,0 +1,1083 @@
+{
+  "schema_version": "matched-original-brief-v2-audit-1",
+  "slug": "lidar-survey",
+  "status": "reference-audited-original-assets-restored",
+  "original_title": "The Fields Under the Forest",
+  "original_title_aliases_from_demo": [
+    "Demo: *The Fields Under the Forest* 《林下的田》 (40.0 s) · `lidar-survey.mp4` · source in [`demo/`](demo/)",
+    "",
+    "From the air, a patch of Ashford, Connecticut is only forest. A laser survey turns the photo into points, a cutting plane strips the canopy layer by layer, and the ground that is left condenses into a surface with stone walls on it: the field system of farms that were here, 3.4 km of wall traced in 0.74 km². One wall is cut and measured; the town's history comes in two numbers; the forest grows back over the walls. Chinese on screen, English narration, bilingual subtitles (Chinese line above, English line below)."
+  ],
+  "published_premise_verbatim": "A laser survey strips the canopy off a Connecticut forest, layer by layer, and finds the stone walls of the farms that were there: 3.4 km of them, measured.",
+  "published_premise_zh_verbatim": "激光点云把康涅狄格州一片森林的树冠一层层剥掉，地面上露出当年农田的石墙：描出 3.4 公里，逐一量过。",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "verbatim_original_conversation_prompt": null,
+    "published_brief_statement": null,
+    "reconstructed_replication_instruction": "Recreate the full published The Fields Under the Forest scene order, story, exact narration and screen text at original timing/resolution/fps, including all specified subjects, performance, mechanisms, lens/light/material treatment, transitions and sonic hits. This is a reconstruction from published sources, not a quoted original conversational prompt.",
+    "reconstruction_basis": [
+      "Complete published STYLE.md and DEMO.md",
+      "Published narration, cards and timing source",
+      "Original movie: all regular contact sheets and named key-event frames"
+    ]
+  },
+  "original_format": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24.0,
+    "duration_s_exact_timeline": 40,
+    "duration_s_gallery_rounded": 40.0,
+    "duration_s_published_demo_text": "40.0",
+    "video_stream_metadata_verified": true,
+    "note": "Encoded target is frame_count/fps, not rounded catalogue or container audio duration.",
+    "frame_count": 960,
+    "duration_s": 40.0,
+    "container_duration_s": 40.0,
+    "production_canvas_width": 1920,
+    "production_canvas_height": 1080
+  },
+  "source_authorship": "Historical original by Lemomo/LemoLab using Claude Opus5.5. New output must identify actual GPT authorship and attribute any reused generic components.",
+  "source_hashes": [
+    {
+      "path": "styles/lidar-survey/STYLE.md",
+      "sha256": "d1b60fda2793932286372e7cf68d62af5723bba14c37e9a437639ea57b1a310d"
+    },
+    {
+      "path": "styles/lidar-survey/DEMO.md",
+      "sha256": "90dd5974299f395447f1a98f35da161f348fa136e73c58a9ca7d02adc5192746"
+    },
+    {
+      "path": "styles/lidar-survey/style.json",
+      "sha256": "6b00b0b23bb74147180fd675f7210e70a3eaccdbbd43c9393d434db62a866f7e"
+    },
+    {
+      "path": "styles/lidar-survey/demo/timeline.js",
+      "sha256": "735c136174deddd08c1b89317582aa3e40c1e5363236983067c212cef4bd7147"
+    },
+    {
+      "path": "styles/lidar-survey/demo/voice/lines.json",
+      "sha256": "b4c09cad39d92b41209f01783929b8f145f742f7d1275b639fe0fbbef7b49e82"
+    },
+    {
+      "path": "styles/lidar-survey/demo/cues.json",
+      "sha256": "02662f6384960e6a62414a6b0734cd590f45b1f4ba52754823824339f62781f0"
+    }
+  ],
+  "style_guide_sha256": "d1b60fda2793932286372e7cf68d62af5723bba14c37e9a437639ea57b1a310d",
+  "style_guide_verbatim": "# LiDAR Survey — Style Prompt\n\n> Real airborne laser points of a real place, floating in the dark as a measured cloud; a scan line or a cutting plane passes through them and the points condense into a solid, raking-lit surface, which is then measured with hairline instruments. One designed camera move carries the whole film: the cloud is something you fly through, not a picture you look at.\n> References (grammar only): survey and archaeology lidar visualisations (colour as height, the canopy removed); architectural section drawings (a cut, dimensioned); museum film cadence (one held reading per screen). Copy none of their layouts, ramps, typefaces or music, and never name them in the film.\n\n## 1. Essence, and what it is not\n\n- **The cloud is the data**: every point is a real return at its measured position; points appear, glow, lift away or give way to a surface, but are never moved into a shape.\n- **Points become a surface**: a front (scan line, cutting plane) behind which the cloud condenses into a solid model of the same place.\n- **Classification is a lever**: ground, vegetation, buildings, water are layers to peel, isolate and recolour.\n- **Measurement in hairlines**: one reading at a time, in the accent, attached to what it measures; numbers from the points or an official source.\n- **Dark, quiet, exact**: near-black ground, restrained colour, no glow except at the front.\n\nNot Sci-fi Hologram HUD (no invented interface: the points are real, sparse where the survey was), not Satellite Briefing (photographs from above; here a 3D cloud flown through), not Blueprint, not Low-poly Isometric, not Glass Product Render.\n\n## 2. Materials & rendering\n\n- **Points**: GL points sized in world units (0.12–0.3 m), floor of one output pixel, soft discs, opaque and depth-tested (additive only for a ghost layer); colour from height or class, value from intensity; distance fog.\n- **Quantise for the browser**: uint16 positions (2 cm / 1 cm) plus a byte each for height above ground, class, intensity, seed.\n- **Height above ground** for every return (minus a ground model triangulated from class-2 returns) drives the colour ramp, the cutting plane and the ruler.\n- **The solid surface**: a 0.5–1 m mesh of the ground or surface model, smooth normals, baked short-radius AO, a low raking sun (20–35°), faint contours, crests lightened. Display exaggeration of micro relief (×2–3) only with an on-screen note; measure on undistorted data.\n- **The front**: one world-space plane (one uniform) shared by the point and surface shaders; points ahead of it brighten, a thin seam glows behind it and the surface fills in over tens of metres.\n- **The cutting plane** (by height above ground): returns above it lift away and fade, a ring glows where it meets the trees, a ruler on the frame edge tracks it.\n- **Marks on the surface** (traced features, section lines) are a distance field in the surface shader, kept hairline with `fwidth`; readings, leaders and charts are a 2D overlay through the same world → screen function.\n- **A survey window**: outside the measured area the cloud stays as dim points instead of ending in black.\n- **Post**: 2× render, high-threshold bloom (only fronts and seams), vignette; no grain (points are already fine detail; encode at a higher CRF).\n\n## 3. Colour logic\n\n- Background near-black with a cold tint; never pure black, never a gradient sky.\n- Points: one ramp by height or class, desaturated (deep green-teal → pale; or grey → white); intensity modulates value, not hue. No rainbow elevation ramps.\n- The front and seams: one cool near-white; it is light, not a colour.\n- The solid surface: warm neutral (stone, clay, plaster), lit; its colour never competes with the accent.\n- One accent (amber) reserved for what was found and measured: traced features, the reading, the section line. A second, cooler hue only in a comparison chart.\n\nExample (our demo): background #05080A, canopy #1F3F35 → #5C9A7A → #E2F3DC, ground returns #C8B38C, surface #BDB5A6, front #D4FFF0, accent #FFB347, chart green #83C495.\n\n## 4. Type & subtitles\n\n- **Roles**: light condensed numerals for readings (110–130 px, e.g. Barlow Condensed 300); a monospace for instruments, coordinates, counts and source lines (19–22 px, e.g. IBM Plex Mono); a sans for labels in the film's language (24–36 px, e.g. Noto Sans SC 500). OFL, self-hosted, CJK subset to the characters used.\n- **Instruments** in one corner: place, coordinates, area, data source, point count, any exaggeration; they change only when the medium does.\n- **Readings** in the right third beside what they measure: label, number, source/method line; a leader when the feature is in frame; a rolling counter reports its landing value.\n- **Subtitles**: a transcript strip bottom-left (2 px rule, plate fading right), one line per language measured with the real font, split rather than wrapped; if bilingual, the film's language on top.\n- Nothing below 19 px at 1080p. Hold subtitles ≥ max(1.8 s, speech + 0.6 s); labels ≥ characters ÷ 4.5 + 1.5 s (CJK), letters ÷ 15 + 1.5 s (Latin).\n\n## 5. Motion quality\n\n- On ones, 24 fps; the camera never stops; keys as a C1 spline in target / distance / heading / pitch (no `lookAt` from nadir).\n- The front moves on an ease, slowest where the subject is; a cutting plane steps on the beat (eased steps, short holds) so the layers read.\n- Points appear behind a front or by height, never by random fade-in across the whole frame.\n- Readings land with a small pop; traced features light up along their length in order.\n- Never moves: the points relative to each other (no wobble, no noise displacement), the instruments' positions.\n\n## 6. Camera grammar\n\n| Move | What it expresses | Can serve |\n|---|---|---|\n| Locked nadir with slow push | \"this is what a photo shows\" | a claim to test; a before; an ending that returns to the map |\n| Crane down with tilt to oblique | entering the data; the place has height | the switch from picture to cloud |\n| Low oblique close to the cloud (10–20° pitch, 90–150 m) | volume; things standing up | canopy, buildings, a facade, a cliff |\n| Slow orbit | studying, the plane doing the work | a peel; a scan; a held reading |\n| Rising pull-back | scale reveal of what was found | a network, a site plan, a corridor |\n| Lateral track | travelling a feature | a wall, a road, a pipeline, a coast |\n| Push to a section | the detail that proves it | a cross-section, a clearance, a height |\n\nSubject ≥ a third of the frame height at key moments; readings right third; instruments in a corner; nothing in the subtitle strip. Transitions are fronts and planes, never crossfades or hard cuts inside the cloud.\n\n## 7. Sound palette\n\n- **Instrument sounds**: FM pings, fine crackle as points arrive, noise sweeps tied to a front, ticks that divide (8ths → 16ths → 32nds) to accelerate, a descending pitched blip per peeled layer, a ratchet while a counter rolls, a ping when a reading lands.\n- **Weight and synthesis**: timpani, bass drum, gran cassa for condensations and cuts, a reversed swell into the main impact; low-passed detuned-saw pads; a pulse bass with audible 2nd/3rd harmonics.\n- **Dry and wet**: one option is electronics while the subject is still points, and a single organic, wooden or bowed timbre (marimba, bowed vibraphone) for the found features once the surface exists.\n- **Beds**: the place's own ambience (wind in leaves, water, traffic) at the start and the end as J- and L-cuts; a thin air bed in between.\n- **Silence**: a near silence (air only) before the main reveal; the first sound after it is the impact.\n- **Mix**: voice ~10 dB over the music and ducking it; impacts outside the bus compressor; −14 LUFS, true peak ≤ −1.2 dBTP. Voice: a calm, plain narrator, short declarative lines.\n\n## 8. Native moves\n\n- **Photo to points.** A scan line crosses an aerial photo; behind it the place is points. *Fits content like:* a site visit before a design; what the satellite misses; a quarry's real volume.\n- **The canopy peel.** A plane descends by height above ground, returns above it lift away layer by layer, a ruler tracks it. *Fits content like:* archaeology under forest; a hidden trail; flood channels; landslide scars.\n- **Points condense.** A front turns the remaining points into a solid surface; found features light up in order. *Fits content like:* a building scan to a BIM shell; a cliff to a hazard model; a street to a vehicle clearance model.\n- **The section.** A plane crosses one feature; the profile glows and a dimensioned chart of the real returns hangs beside it. *Fits content like:* a levee's height; a bridge's clearance; a road cut.\n- **The window.** The measured area is a stage inside the unmeasured cloud. *Fits content like:* a parcel; a corridor; a site boundary.\n- **The regrowth.** The removed layer returns as a ghost over what was found. *Fits content like:* an ending; a clearing before/after; a buried pipe under a street.\n\n## 9. Pitfalls of the medium\n\n- **Finding data for a new place**: USGS 3DEP (US) as Entwine Point Tiles per project at `https://s3-us-west-2.amazonaws.com/usgs-lidar-public/<project>/ept.json`, projects and footprints in `boundaries/resources.geojson` of github.com/hobuinc/usgs-lidar; bare-earth scouting through the 3DEP elevation ImageServer. OpenTopography (catalogue of many collections, licence per dataset). AHN (Netherlands, CC0). National portals, e.g. England's Environment Agency LiDAR (OGL), France IGN LiDAR HD (Licence Ouverte), Spain PNOA-LiDAR (CC BY 4.0), Finland NLS (CC BY 4.0), New Zealand LINZ (CC BY 4.0); read each portal's terms. Fetch a subset by box and depth, not whole tiles.\n- **Licences**: public domain, CC0, CC BY and attribution-only government licences are fine, with credit in `CREDITS`. ODbL, CC BY-SA, \"no known restrictions\" (not CC0) or non-commercial terms: name them to the user and ask first. Never commercial scans or Google 3D tiles. Ask the user for their own scans (a site survey, a drone or terrestrial scan, their BIM) when the film is about their asset. Never stand in a generated or invented cloud for real evidence.\n- **Facts**: keep a FACTS.md in the project folder (claim, source URL, quoted wording, or the measurement method) and deliver it with the film.\n- **Coordinates**: EPT copies are often Web Mercator: convert to a local east/north/up frame first; check the vertical datum against known ground.\n- **Leaf-off vs leaf-on**: leaf-off lidar reaches the ground but its canopy is sparse; say which season each layer is.\n- **Classification is the provider's**: class 1 mixes vegetation, buildings and noise; drop 7 and 18; finish a cut below 0 m or low vegetation stays as stripes.\n- **A dense cloud reads as a flat carpet** from afar: go close and low for volume; let the distance fog out.\n- **Scan striping** is real texture; don't frame a reveal on it at grazing angles.\n- **Traced features are interpretation**: say \"traced\", keep the tracing in a data file, snap it to the data, leave faint candidates out.\n- **Privacy**: crop out houses and yards; keep the survey window on public or uninhabited land.\n\n## 10. Engine\n\n- `demo/film.js`: point shader (front, cutting plane, lift, ghost, window), surface shader (light, AO, contours, feature field, section), photo shader, camera spline (`camAt`), overlay (`reading`, `drawSection`, `subtitles`, readcheck registry).\n- `demo/tools/`: `fetch_ept.py` (EPT subset), `terrain.py` (local frame, DTM), `walls.py` (relief model), `trace.py` (snap a tracing, measure), `profile.py` (section from raw returns), `build_data.py` (binaries + facts).\n- **Extra packages and packs** (beyond `setup.sh deps voice music`): Python `laspy`, `lazrs` (LAZ decoding), `scikit-image` (relief and ridge tools), `fonttools` + `brotli` (CJK subset). They are not in the library's `.venv`: the agent installs them itself into a private venv in the project folder (the demo uses `demo/assets/raw/.venv`), never into `$LIB/.venv`. Fonts come from github.com/google/fonts (ofl/), fetched by script.\n- Minimal example, not in the demo: a building scan. Points coloured by class, a vertical front sweeping the street; behind it a 1 m surface model; one reading (roof height above the street).\n\n## 11. Variation space\n\nThe agent decides the place and dataset, which classes to peel or keep, the fronts and their directions, the camera route, the readings, the accent within the colour logic, and whether a photo or a map opens the film.\n\n- **Structures**: a corridor flown end to end with three readings; two surveys of one place (erosion, construction) swapped by a front; one object scanned, cut and dimensioned.\n- **Openings**: a black frame the scan paints in line by line; a street-level photograph that dissolves into its own returns; a top-down map that tilts up into the cloud.\n- **Endings**: the cloud pulls back to show the whole survey tile; the removed layer returns as a ghost; the last reading holds while the points fade to the instruments.\n\n---\n\nHow our demo was made (story, shots, score, title card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n",
+  "published_demo_verbatim": "# LiDAR Survey — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *The Fields Under the Forest* 《林下的田》 (40.0 s) · `lidar-survey.mp4` · source in [`demo/`](demo/)\n\nFrom the air, a patch of Ashford, Connecticut is only forest. A laser survey turns the photo into points, a cutting plane strips the canopy layer by layer, and the ground that is left condenses into a surface with stone walls on it: the field system of farms that were here, 3.4 km of wall traced in 0.74 km². One wall is cut and measured; the town's history comes in two numbers; the forest grows back over the walls. Chinese on screen, English narration, bilingual subtitles (Chinese line above, English line below).\n\n## Story & structure\n\nLogline: from the air it is only forest; take away every return that hit a tree and the ground still holds the walls of the fields.\n\nArc: a claim (a July 2016 aerial photo, nothing but canopy) → the medium changes (a scan line turns the photo into the spring 2016 lidar cloud; 27.6 % of the returns reached the ground) → the peel (a horizontal plane steps down 30 → 0 m on the beat, returns above it lift away and glow, a ruler with the canopy's height histogram tracks it) → near silence over the bare ground returns → the turn (a second scan condenses the ground returns into a raking-lit surface; an impact) → the walls light up one after another as the camera rises → the measurements (3.4 km traced; a section through one wall from 1,451 raw ground returns: 0.56 m high, 2.5 m wide at half height) → history (Ashford 1870: 67.3 km² cleared farmland; 2006: 80.2 km² forest) → the forest grows back as a ghost over the glowing walls; end card.\n\nNative moves spent: *photo to points* at the opening; *the canopy peel* as the signature shot; *points condense* at the turn; *the section* for the detail; *the window* (the survey area as a stage inside the dim, unpeeled cloud) throughout; *the regrowth* as the ending.\n\nEvery number and its source is in [`demo/FACTS.md`](demo/FACTS.md); measured values are labelled as measured or traced on screen.\n\n## Shots\n\nOne continuous camera (C1 spline over time in target, distance, heading, pitch). Times in seconds.\n\n| # | Time | Shot | Camera | Native move / note |\n|---|---|---|---|---|\n| 1 | 0.0–3.75 | NAIP July 2016 photo on the canopy surface, north up; label 2016 年 7 月 · 夏季航拍 | nadir, push 480 → 395 m with a 6° turn | the claim, held still enough to read as a photo |\n| 2 | 3.75–6.9 | a scan line crosses left → right; behind it the photo is the point cloud (colour = height above ground) | crane down, tilt nadir → 44° | photo to points; crackle and sweep on the line |\n| 3 | 6.9–10.0 | the cloud; reading 打到地面的回波 27.6 % (lands 7.5) | crane down to a low oblique, 105 m, 15° pitch | canopy as a layer above the ground returns |\n| 4 | 10.0–13.1 | **signature**: the cutting plane at 30, 24, 18, 12, 6, 0 m, one step per beat; returns above lift away and glow; ruler + histogram on the right edge | slow orbit +12°, 92–105 m | the canopy peel; ticks divide, one descending blip per layer |\n| 5 | 13.1–14.4 | only ground returns left, grey stripes of the scan pattern | orbit continues | near silence |\n| 6 | 14.4–15.9 | a second scan condenses the ground returns into the surface (local relief ×2, raking sun from the north-west) | pull back 100 → 170 m | points condense; the impact |\n| 7 | 15.6–20.0 | 22 traced walls light up in order along the network, amber hairlines on the crests | rising pull-back to 480 m, 48° | scale reveal of the field system |\n| 8 | 20.0–24.4 | reading 已描出的石墙 3.4 km (rolls 20.0–20.6), 22 段 | drift, heading 12° → −12° | held 3.75 s |\n| 9 | 24.4–28.75 | push to wall C; a section line glows across it; a chart of the 1,451 raw ground returns (vertical ×5) with the median profile and dimensions 0.56 m / 2.5 m | push 230 → 88 m, pitch 34° → 21°, creep | the section |\n| 10 | 28.75–35.6 | crane up; card 1870 · 67.3 km² 开垦为农田 (29.4), card 2006 · 80.2 km² 为森林 (32.5), bars against the town's ~100 km² | crane up and back to 470 m, 56° | the surface dims a little under the cards |\n| 11 | 33.75–40.0 | the canopy regrows as a faint additive ghost from the ground up; walls glow through; end card from 35.9 | slow rise 470 → 560 m | the regrowth |\n\n## Score structure\n\n96 BPM, 4/4 (beat 0.625 s); every picture cue on a beat or half-beat (`demo/tools/cuecheck.py`: 0 ms on 17 cues). D minor in the dry first half, F major from the turn.\n\n| Section | Time | Palette | Notes |\n|---|---|---|---|\n| Canopy | 0–3.75 | forest bed (filtered wind in leaves, gusts, synthesized two-note bird calls), Dm pad | |\n| Laser | 3.75–10 | FM blips on 8ths (D5 A5 F5 A5 …), scan sweep 700 → 3800 Hz with fine crackle, pulse bass D2/C2 on 8ths from 5.0 | the forest bed fades out by 5.2 |\n| Peel | 10–13.1 | ticks 8ths → 16ths → 32nds, one FM ping per layer D6 A5 F5 D5 A4, upward shimmer sweeps | acceleration by subdivision |\n| Silence | 13.1–14.4 | air bed only (−22 dB under the programme median), a reversed noise swell from 13.4 | |\n| Turn | 14.4 | bass drum + gran cassa + timpani F2, a settling sweep; bowed vibraphone A4/E5 | −1.9 dB under the loudest moment, after a −16 dB dip |\n| Walls | 15.6–20 | marimba on half-beats through F major pentatonic; pads F–Dm–B♭–C, pulse bass returns | the one wooden timbre |\n| Measure | 20–28.75 | ratchet clicks while 3.4 rolls, ping C6 on landing; suck-out 24.1–24.4, sweep + timpani D2 + bass drum on the cut, ping A5 on the reading | |\n| History | 28.75–35.6 | rising sine glide for each bar, marimba on its landing | |\n| End | 33.75–40 | grains for the regrowth; forest bed J-cut from 34.4; F-major chord (marimba, pad, bowed vibraphone, soft timpani) | |\n\nMix (in `mix.py`): music −10 dB under the voice and ducked ~5 dB while it speaks, pulse, foley and beds below; bus compression on music, pulse, foley and beds only; sub-bass high-passed at 38 Hz (46 Hz on hits) with a −5 dB shelf below 62 Hz; master stage to −14.4 LUFS with a true-peak limiter at −4.6 dBTP so `mux.sh` stays linear. The film measures −14.0 LUFS, peak −3.9 dBFS, LRA 2.4 LU (`demo/tools/audiocheck.py` for the impacts and the silence).\n\n## Palette & props\n\n- Background #05080A; canopy ramp #1F3F35 → #5C9A7A → #E2F3DC by height above ground (0–28 m), intensity on value; ground returns #C8B38C; surface #BDB5A6 lit from azimuth 315°, 26° up; fronts #D4FFF0; accent #FFB347 (walls, readings, section); chart green #83C495.\n- Props: the 2016 NAIP photo draped on a 1 m canopy surface; 4,789,797 returns; a 0.5 m ground model; 22 walls traced by hand on a local relief model and snapped to the crests (`demo/data/walls_traced.json` → `walls.json`); wall C's cross-section (`data/profile_C.json`).\n- The survey window: x < 235 m (east of it are a gravel lane and houses, kept as dim unpeeled points).\n- Narrator: Kokoro `bm_george`, speed 1.0.\n\n## End card\n\nLeft third over the dimmed field system while the canopy regrows: 林下的田 (Noto Sans SC 500), *The Fields Under the Forest*, a short amber rule, `LIDAR SURVEY · 点云测绘`, `LemoLab × Claude Opus 5.5`. 4.1 s. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.\n\n## Build notes\n\n```\ndemo/\n  build.sh          one command: (data) → voice → speech check → cues → events → video → mix → master → .srt → checks → poster\n  index.html        two canvases (WebGL scene, 2D overlay), fonts\n  film.js           render(t): points / surface / photo shaders, camera spline, fronts, cutting plane, overlay, subtitles, EV\n  timeline.js       beats, cues, peel steps, narration, camera keys (single source; tools/export.mjs → timeline.json, cues.json, voice/lines.json)\n  mix.py            score, foley, beds, voice, mix → out/mix.wav + out/stems/\n  data/             walls_traced.json (hand tracing), walls.json, profile_C.json, facts.json (all on-screen numbers)\n  tools/            fetch_ept.py, terrain.py, load.py, walls.py, trace.py, profile.py, build_data.py, fetch_naip.py, fonts.py,\n                    scout_dem.py (finding the site); export.mjs (voice/cues); cuecheck.py, subcheck.mjs, audiocheck.py, motioncheck.py (checks)\n  assets/raw/       ept/ (EPT nodes), work/ (DTM, relief), build/ (points.bin, ground.bin, canopy.bin, naip.jpg), fonts/, .venv (laspy, lazrs, scikit-image)\n  FACTS.md, CREDITS, TREATMENT.md, PRODUCTION_LOG.md, stills/styleframe.jpg\n```\n\n- `sh demo/build.sh` takes about 5 minutes on Apple silicon (the picture renders in ~30 s with 3 workers; Kokoro and the Whisper check take most of the rest). With no data yet, or `FETCH=1`, it first fetches and builds the data (~3 minutes, ~350 MB in `assets/raw/`).\n- Fonts (Barlow Condensed, IBM Plex Mono, Noto Sans SC) are not in git: `tools/fonts.py` fetches them from github.com/google/fonts when missing and subsets the CJK font. The data tools run in a private venv (`assets/raw/.venv`: laspy, lazrs, scikit-image, fonttools) that build.sh creates.\n- Checks it runs: `asr_check.py` with `small.en` (0 mismatches), cue overlap from real voice durations, cue grid, subtitle single-line widths with the real fonts (widest 595 px against 1100 px), `readcheck.mjs`, motion per second (no flat stretch > 1 s, no cut-like jump).\n- Data notes: the EPT copy is Web Mercator; everything is converted to a local metric frame around 41.8875° N, 72.1960° W. The provider's class 1 mixes vegetation and buildings; low vegetation just above the ground survives a cut at 0 m, so the plane finishes at −6 m. The ground model is triangulated from class-2 returns (1.3 M) at 0.5 m.\n- Demo-specific pitfalls: the leaf-off canopy reads as a flat carpet from more than ~150 m, so the peel is shot low and close; a pond in the north-east has no returns (a black hole outside the window); the regular scan-line striping of the ground returns is strongest at grazing angles; the second scan must start just outside the frame or the first frames jump.\n",
+  "canonical_scene_order": [
+    {
+      "id": "1",
+      "t0": 0.0,
+      "t1": 3.75,
+      "published_time_range": "0.0–3.75",
+      "visual_prompt_source_description": "NAIP July 2016 photo on the canopy surface, north up; label 2016 年 7 月 · 夏季航拍",
+      "camera": "nadir, push 480 → 395 m with a 6° turn",
+      "motion_transition_sound_notes": "the claim, held still enough to read as a photo",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l1",
+          "t0": 0.4,
+          "t1": 3.457,
+          "zh": "从空中看，这里只是一片森林。",
+          "en": "From the air, it's only forest."
+        }
+      ],
+      "voice_line_ids": [
+        "l1"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lidar-survey/frames/f-0002.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "2",
+      "t0": 3.75,
+      "t1": 6.9,
+      "published_time_range": "3.75–6.9",
+      "visual_prompt_source_description": "a scan line crosses left → right; behind it the photo is the point cloud (colour = height above ground)",
+      "camera": "crane down, tilt nadir → 44°",
+      "motion_transition_sound_notes": "photo to points; crackle and sweep on the line",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l2",
+          "t0": 3.9,
+          "t1": 7.16,
+          "zh": "但激光能从叶隙间穿过，",
+          "en": "But laser light slips between the leaves,"
+        }
+      ],
+      "voice_line_ids": [
+        "l2"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lidar-survey/frames/f-0006.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "3",
+      "t0": 6.9,
+      "t1": 10.0,
+      "published_time_range": "6.9–10.0",
+      "visual_prompt_source_description": "the cloud; reading 打到地面的回波 27.6 % (lands 7.5)",
+      "camera": "crane down to a low oblique, 105 m, 15° pitch",
+      "motion_transition_sound_notes": "canopy as a layer above the ground returns",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l2",
+          "t0": 3.9,
+          "t1": 7.16,
+          "zh": "但激光能从叶隙间穿过，",
+          "en": "But laser light slips between the leaves,"
+        },
+        {
+          "id": "l3",
+          "t0": 7.2,
+          "t1": 10.16,
+          "zh": "有一部分打到了地面。",
+          "en": "and some of it reaches the ground."
+        }
+      ],
+      "voice_line_ids": [
+        "l3"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lidar-survey/frames/f-0009.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "4",
+      "t0": 10.0,
+      "t1": 13.1,
+      "published_time_range": "10.0–13.1",
+      "visual_prompt_source_description": "**signature**: the cutting plane at 30, 24, 18, 12, 6, 0 m, one step per beat; returns above lift away and glow; ruler + histogram on the right edge",
+      "camera": "slow orbit +12°, 92–105 m",
+      "motion_transition_sound_notes": "the canopy peel; ticks divide, one descending blip per layer",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l3",
+          "t0": 7.2,
+          "t1": 10.16,
+          "zh": "有一部分打到了地面。",
+          "en": "and some of it reaches the ground."
+        },
+        {
+          "id": "l4",
+          "t0": 10.2,
+          "t1": 13.692,
+          "zh": "去掉每一个打在树上的回波。",
+          "en": "Remove every return that hit a tree."
+        }
+      ],
+      "voice_line_ids": [
+        "l4"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lidar-survey/frames/f-0012.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "5",
+      "t0": 13.1,
+      "t1": 14.4,
+      "published_time_range": "13.1–14.4",
+      "visual_prompt_source_description": "only ground returns left, grey stripes of the scan pattern",
+      "camera": "orbit continues",
+      "motion_transition_sound_notes": "near silence",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l4",
+          "t0": 10.2,
+          "t1": 13.692,
+          "zh": "去掉每一个打在树上的回波。",
+          "en": "Remove every return that hit a tree."
+        }
+      ],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lidar-survey/frames/f-0014.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "6",
+      "t0": 14.4,
+      "t1": 15.9,
+      "published_time_range": "14.4–15.9",
+      "visual_prompt_source_description": "a second scan condenses the ground returns into the surface (local relief ×2, raking sun from the north-west)",
+      "camera": "pull back 100 → 170 m",
+      "motion_transition_sound_notes": "points condense; the impact",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l5",
+          "t0": 14.5,
+          "t1": 16.91,
+          "zh": "地面还记得。",
+          "en": "And the ground remembers."
+        }
+      ],
+      "voice_line_ids": [
+        "l5"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lidar-survey/frames/f-0016.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "7",
+      "t0": 15.6,
+      "t1": 20.0,
+      "published_time_range": "15.6–20.0",
+      "visual_prompt_source_description": "22 traced walls light up in order along the network, amber hairlines on the crests",
+      "camera": "rising pull-back to 480 m, 48°",
+      "motion_transition_sound_notes": "scale reveal of the field system",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l5",
+          "t0": 14.5,
+          "t1": 16.91,
+          "zh": "地面还记得。",
+          "en": "And the ground remembers."
+        },
+        {
+          "id": "l6",
+          "t0": 16.95,
+          "t1": 20.81,
+          "zh": "是石墙。一块块旧田，都在树下。",
+          "en": "Stone walls. Old fields, under the trees."
+        }
+      ],
+      "voice_line_ids": [
+        "l6"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lidar-survey/frames/f-0018.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "8",
+      "t0": 20.0,
+      "t1": 24.4,
+      "published_time_range": "20.0–24.4",
+      "visual_prompt_source_description": "reading 已描出的石墙 3.4 km (rolls 20.0–20.6), 22 段",
+      "camera": "drift, heading 12° → −12°",
+      "motion_transition_sound_notes": "held 3.75 s",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l6",
+          "t0": 16.95,
+          "t1": 20.81,
+          "zh": "是石墙。一块块旧田，都在树下。",
+          "en": "Stone walls. Old fields, under the trees."
+        },
+        {
+          "id": "l7",
+          "t0": 20.85,
+          "t1": 24.61,
+          "zh": "我们描出了 3.4 公里石墙。",
+          "en": "We traced 3.4 km of wall."
+        }
+      ],
+      "voice_line_ids": [
+        "l7"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lidar-survey/frames/f-0023.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "9",
+      "t0": 24.4,
+      "t1": 28.75,
+      "published_time_range": "24.4–28.75",
+      "visual_prompt_source_description": "push to wall C; a section line glows across it; a chart of the 1,451 raw ground returns (vertical ×5) with the median profile and dimensions 0.56 m / 2.5 m",
+      "camera": "push 230 → 88 m, pitch 34° → 21°, creep",
+      "motion_transition_sound_notes": "the section",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l7",
+          "t0": 20.85,
+          "t1": 24.61,
+          "zh": "我们描出了 3.4 公里石墙。",
+          "en": "We traced 3.4 km of wall."
+        },
+        {
+          "id": "l8",
+          "t0": 24.85,
+          "t1": 27.648,
+          "zh": "高半米出头。",
+          "en": "Just over half a metre high."
+        }
+      ],
+      "voice_line_ids": [
+        "l8"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lidar-survey/frames/f-0027.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "10",
+      "t0": 28.75,
+      "t1": 35.6,
+      "published_time_range": "28.75–35.6",
+      "visual_prompt_source_description": "crane up; card 1870 · 67.3 km² 开垦为农田 (29.4), card 2006 · 80.2 km² 为森林 (32.5), bars against the town's ~100 km²",
+      "camera": "crane up and back to 470 m, 56°",
+      "motion_transition_sound_notes": "the surface dims a little under the cards",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l9",
+          "t0": 28.85,
+          "t1": 33.11,
+          "zh": "1870 年，阿什福德三分之二是农田。",
+          "en": "In 1870, two-thirds of Ashford was farmland."
+        },
+        {
+          "id": "l10",
+          "t0": 33.15,
+          "t1": 37.21,
+          "zh": "到 2006 年，五分之四已是森林。",
+          "en": "By 2006, four-fifths was forest."
+        }
+      ],
+      "voice_line_ids": [
+        "l9",
+        "l10"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lidar-survey/frames/f-0033.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    },
+    {
+      "id": "11",
+      "t0": 33.75,
+      "t1": 40.0,
+      "published_time_range": "33.75–40.0",
+      "visual_prompt_source_description": "the canopy regrows as a faint additive ghost from the ground up; walls glow through; end card from 35.9",
+      "camera": "slow rise 470 → 560 m",
+      "motion_transition_sound_notes": "the regrowth",
+      "provenance": "verbatim published DEMO.md shot row; visual audit pending",
+      "on_screen_subtitle_cues": [
+        {
+          "id": "l10",
+          "t0": 33.15,
+          "t1": 37.21,
+          "zh": "到 2006 年，五分之四已是森林。",
+          "en": "By 2006, four-fifths was forest."
+        },
+        {
+          "id": "l11",
+          "t0": 37.25,
+          "t1": 39.866,
+          "zh": "森林替它保存了地图。",
+          "en": "The forest kept the map."
+        }
+      ],
+      "voice_line_ids": [
+        "l11"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lidar-survey/frames/f-0037.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames."
+    }
+  ],
+  "narration": [
+    {
+      "id": "l1",
+      "t0": 0.45,
+      "duration_s_original_voice": 2.207,
+      "tts_text_verbatim": "From the air, it's only forest.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l1",
+        "text": "From the air, it's only forest.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb"
+      }
+    },
+    {
+      "id": "l2",
+      "t0": 3.95,
+      "duration_s_original_voice": 2.444,
+      "tts_text_verbatim": "But laser light slips between the leaves,",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l2",
+        "text": "But laser light slips between the leaves,",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb"
+      }
+    },
+    {
+      "id": "l3",
+      "t0": 7.25,
+      "duration_s_original_voice": 2.303,
+      "tts_text_verbatim": "and some of it reaches the ground.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l3",
+        "text": "and some of it reaches the ground.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb"
+      }
+    },
+    {
+      "id": "l4",
+      "t0": 10.25,
+      "duration_s_original_voice": 2.642,
+      "tts_text_verbatim": "Remove every return that hit a tree.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l4",
+        "text": "Remove every return that hit a tree.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb"
+      }
+    },
+    {
+      "id": "l5",
+      "t0": 14.55,
+      "duration_s_original_voice": 1.801,
+      "tts_text_verbatim": "And the ground remembers.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l5",
+        "text": "And the ground remembers.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb"
+      }
+    },
+    {
+      "id": "l6",
+      "t0": 17,
+      "duration_s_original_voice": 3.143,
+      "tts_text_verbatim": "Stone walls. Old fields, under the trees.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l6",
+        "text": "Stone walls. Old fields, under the trees.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb"
+      }
+    },
+    {
+      "id": "l7",
+      "t0": 20.9,
+      "duration_s_original_voice": 2.91,
+      "tts_text_verbatim": "We traced three point four kilometres of wall.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l7",
+        "text": "We traced three point four kilometres of wall.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb",
+        "asr": "We traced 3.4 km of wall."
+      }
+    },
+    {
+      "id": "l8",
+      "t0": 24.9,
+      "duration_s_original_voice": 1.948,
+      "tts_text_verbatim": "Just over half a metre high.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l8",
+        "text": "Just over half a metre high.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb"
+      }
+    },
+    {
+      "id": "l9",
+      "t0": 28.9,
+      "duration_s_original_voice": 3.611,
+      "tts_text_verbatim": "In eighteen seventy, two thirds of Ashford was farmland.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l9",
+        "text": "In eighteen seventy, two thirds of Ashford was farmland.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb",
+        "asr": "In 1870, two thirds of Ashford was farmland."
+      }
+    },
+    {
+      "id": "l10",
+      "t0": 33.2,
+      "duration_s_original_voice": 3.449,
+      "tts_text_verbatim": "By two thousand and six, four fifths was forest.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l10",
+        "text": "By two thousand and six, four fifths was forest.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb",
+        "asr": "By 2006, four fifths was forest."
+      }
+    },
+    {
+      "id": "l11",
+      "t0": 37.3,
+      "duration_s_original_voice": 1.766,
+      "tts_text_verbatim": "The forest kept the map.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 1,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "l11",
+        "text": "The forest kept the map.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb"
+      }
+    }
+  ],
+  "narration_source_path": "styles/lidar-survey/demo/voice/lines.json",
+  "published_timeline_extracted": {
+    "bpm": 96,
+    "T": {
+      "photo": 0,
+      "scan1": 3.75,
+      "scan1End": 6.875,
+      "r0": 7.5,
+      "r0Off": 11.25,
+      "peel": 10,
+      "peelEnd": 13.125,
+      "sil": 13.125,
+      "turn": 14.375,
+      "turnEnd": 15.625,
+      "walls": 15.625,
+      "wallsEnd": 20,
+      "r1": 20,
+      "r1Land": 20.625,
+      "r1Off": 24.375,
+      "sec": 24.375,
+      "r2": 25,
+      "r2Off": 28.75,
+      "crane": 28.75,
+      "card1": 29.375,
+      "card2": 32.5,
+      "cardsOff": 35.625,
+      "ghost": 33.75,
+      "closed": 36.25,
+      "end": 35.9375,
+      "dur": 40
+    },
+    "PEEL_STEPS": [
+      30,
+      24,
+      18,
+      12,
+      6,
+      0
+    ],
+    "VO": [
+      {
+        "id": "l1",
+        "t": 0.45
+      },
+      {
+        "id": "l2",
+        "t": 3.95
+      },
+      {
+        "id": "l3",
+        "t": 7.25
+      },
+      {
+        "id": "l4",
+        "t": 10.25
+      },
+      {
+        "id": "l5",
+        "t": 14.55
+      },
+      {
+        "id": "l6",
+        "t": 17
+      },
+      {
+        "id": "l7",
+        "t": 20.9
+      },
+      {
+        "id": "l8",
+        "t": 24.9
+      },
+      {
+        "id": "l9",
+        "t": 28.9
+      },
+      {
+        "id": "l10",
+        "t": 33.2
+      },
+      {
+        "id": "l11",
+        "t": 37.3
+      }
+    ]
+  },
+  "on_screen_text_inventory": {
+    "published_subtitle_file_verbatim": "1\n00:00:00,400 --> 00:00:03,457\n从空中看，这里只是一片森林。\nFrom the air, it's only forest.\n\n2\n00:00:03,900 --> 00:00:07,160\n但激光能从叶隙间穿过，\nBut laser light slips between the leaves,\n\n3\n00:00:07,200 --> 00:00:10,160\n有一部分打到了地面。\nand some of it reaches the ground.\n\n4\n00:00:10,200 --> 00:00:13,692\n去掉每一个打在树上的回波。\nRemove every return that hit a tree.\n\n5\n00:00:14,500 --> 00:00:16,910\n地面还记得。\nAnd the ground remembers.\n\n6\n00:00:16,950 --> 00:00:20,810\n是石墙。一块块旧田，都在树下。\nStone walls. Old fields, under the trees.\n\n7\n00:00:20,850 --> 00:00:24,610\n我们描出了 3.4 公里石墙。\nWe traced 3.4 km of wall.\n\n8\n00:00:24,850 --> 00:00:27,648\n高半米出头。\nJust over half a metre high.\n\n9\n00:00:28,850 --> 00:00:33,110\n1870 年，阿什福德三分之二是农田。\nIn 1870, two-thirds of Ashford was farmland.\n\n10\n00:00:33,150 --> 00:00:37,210\n到 2006 年，五分之四已是森林。\nBy 2006, four-fifths was forest.\n\n11\n00:00:37,250 --> 00:00:39,866\n森林替它保存了地图。\nThe forest kept the map.\n",
+    "cues_original_json": [
+      {
+        "id": "l1",
+        "t0": 0.4,
+        "t1": 3.457,
+        "zh": "从空中看，这里只是一片森林。",
+        "en": "From the air, it's only forest."
+      },
+      {
+        "id": "l2",
+        "t0": 3.9,
+        "t1": 7.16,
+        "zh": "但激光能从叶隙间穿过，",
+        "en": "But laser light slips between the leaves,"
+      },
+      {
+        "id": "l3",
+        "t0": 7.2,
+        "t1": 10.16,
+        "zh": "有一部分打到了地面。",
+        "en": "and some of it reaches the ground."
+      },
+      {
+        "id": "l4",
+        "t0": 10.2,
+        "t1": 13.692,
+        "zh": "去掉每一个打在树上的回波。",
+        "en": "Remove every return that hit a tree."
+      },
+      {
+        "id": "l5",
+        "t0": 14.5,
+        "t1": 16.91,
+        "zh": "地面还记得。",
+        "en": "And the ground remembers."
+      },
+      {
+        "id": "l6",
+        "t0": 16.95,
+        "t1": 20.81,
+        "zh": "是石墙。一块块旧田，都在树下。",
+        "en": "Stone walls. Old fields, under the trees."
+      },
+      {
+        "id": "l7",
+        "t0": 20.85,
+        "t1": 24.61,
+        "zh": "我们描出了 3.4 公里石墙。",
+        "en": "We traced 3.4 km of wall."
+      },
+      {
+        "id": "l8",
+        "t0": 24.85,
+        "t1": 27.648,
+        "zh": "高半米出头。",
+        "en": "Just over half a metre high."
+      },
+      {
+        "id": "l9",
+        "t0": 28.85,
+        "t1": 33.11,
+        "zh": "1870 年，阿什福德三分之二是农田。",
+        "en": "In 1870, two-thirds of Ashford was farmland."
+      },
+      {
+        "id": "l10",
+        "t0": 33.15,
+        "t1": 37.21,
+        "zh": "到 2006 年，五分之四已是森林。",
+        "en": "By 2006, four-fifths was forest."
+      },
+      {
+        "id": "l11",
+        "t0": 37.25,
+        "t1": 39.866,
+        "zh": "森林替它保存了地图。",
+        "en": "The forest kept the map."
+      }
+    ],
+    "timeline_text_fields": {},
+    "titles_subtitles_palette_verbatim": "",
+    "palette_props_verbatim": "- Background #05080A; canopy ramp #1F3F35 → #5C9A7A → #E2F3DC by height above ground (0–28 m), intensity on value; ground returns #C8B38C; surface #BDB5A6 lit from azimuth 315°, 26° up; fronts #D4FFF0; accent #FFB347 (walls, readings, section); chart green #83C495.\n- Props: the 2016 NAIP photo draped on a 1 m canopy surface; 4,789,797 returns; a 0.5 m ground model; 22 walls traced by hand on a local relief model and snapped to the crests (`demo/data/walls_traced.json` → `walls.json`); wall C's cross-section (`data/profile_C.json`).\n- The survey window: x < 235 m (east of it are a gravel lane and houses, kept as dim unpeeled points).\n- Narrator: Kokoro `bm_george`, speed 1.0.",
+    "end_card_verbatim": "Left third over the dimmed field system while the canopy regrows: 林下的田 (Noto Sans SC 500), *The Fields Under the Forest*, a short amber rule, `LIDAR SURVEY · 点云测绘`, `LemoLab × Claude Opus 5.5`. 4.1 s. The \"LemoLab × Claude Opus 5.5\" sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card.",
+    "completion_note": "Exact visible typography/content must be checked in original video; this inventory preserves all published cue/title/prop specifications. Model authorship credit is a reference fact, never new-output attribution.",
+    "original_annotation_literal_sources": [
+      {
+        "path": "styles/lidar-survey/demo/film.js",
+        "sha256": "ab095f184637d2c47741216daca2357df23a3da72c875bc602361bc049ba5cce",
+        "original_literal_inventory": [
+          "k = uGhost * (1.0 - smoothstep(0.0, 4.0, h - uCut)) * smoothstep(1.0, 3.0, h);",
+          "c = uScan * (0.07 + 0.09 * inten);",
+          "\"Noto Sans SC\"",
+          "\"Plex Mono\"",
+          "\"Barlow Condensed\"",
+          "林下的田 0123 abc",
+          "美国 康涅狄格州 阿什福德",
+          "NAIP 航拍 · 2016-07-24",
+          "2016 年 7 月 · 夏季航拍",
+          "激光扫描 ▸",
+          "打到地面的回波",
+          ");\n    }\n  }\n  // ---- reading 1: wall length (anchored to the network) ----\n  reading(",
+          ", `${PR.width_half.toFixed(1)} m`, crest - half - 10, yh + 8, `500 30px ${COND}`, C.ink, da, ",
+          ");\n  g2.fillStyle = lg; g2.fillRect(0, 0, 1100, H); g2.restore();\n  text(",
+          ", to: T.scan1End });\nEV.push({ t: T.r0, type: ",
+          " });\nPEEL_STEPS.forEach((h, i) => { if (i) EV.push({ t: T.peel + (i - 1) * BEAT, type: ",
+          ", to: T.turn });\nEV.push({ t: T.turn, type: ",
+          ", to: T.turnEnd });\nEV.push({ t: T.r1, type: ",
+          ", to: T.r1Land }); EV.push({ t: T.r1Land, type: ",
+          ", to: T.closed }); EV.push({ t: T.end, type: "
+        ]
+      },
+      {
+        "path": "styles/lidar-survey/demo/timeline.js",
+        "sha256": "735c136174deddd08c1b89317582aa3e40c1e5363236983067c212cef4bd7147",
+        "original_literal_inventory": [
+          "From the air, it's only forest.",
+          "从空中看，这里只是一片森林。",
+          "But laser light slips between the leaves,",
+          "但激光能从叶隙间穿过，",
+          "and some of it reaches the ground.",
+          "有一部分打到了地面。",
+          "Remove every return that hit a tree.",
+          "去掉每一个打在树上的回波。",
+          "And the ground remembers.",
+          "地面还记得。",
+          "Stone walls. Old fields, under the trees.",
+          "是石墙。一块块旧田，都在树下。",
+          "We traced three point four kilometres of wall.",
+          "我们描出了 3.4 公里石墙。",
+          "We traced 3.4 km of wall.",
+          "Just over half a metre high.",
+          "高半米出头。",
+          "In eighteen seventy, two thirds of Ashford was farmland.",
+          "1870 年，阿什福德三分之二是农田。",
+          "In 1870, two-thirds of Ashford was farmland.",
+          "In 1870, two thirds of Ashford was farmland.",
+          "By two thousand and six, four fifths was forest.",
+          "到 2006 年，五分之四已是森林。",
+          "By 2006, four-fifths was forest.",
+          "By 2006, four fifths was forest.",
+          "The forest kept the map.",
+          "森林替它保存了地图。"
+        ]
+      }
+    ]
+  },
+  "sound_recreation": {
+    "instruction": "Generate new voice and music; original mix/track reuse is not permitted by latest user instruction. Preserve full words, cadence windows, BPM, musical form, silence and picture-synchronous hits.",
+    "published_score_sound_spec_verbatim": "96 BPM, 4/4 (beat 0.625 s); every picture cue on a beat or half-beat (`demo/tools/cuecheck.py`: 0 ms on 17 cues). D minor in the dry first half, F major from the turn.\n\n| Section | Time | Palette | Notes |\n|---|---|---|---|\n| Canopy | 0–3.75 | forest bed (filtered wind in leaves, gusts, synthesized two-note bird calls), Dm pad | |\n| Laser | 3.75–10 | FM blips on 8ths (D5 A5 F5 A5 …), scan sweep 700 → 3800 Hz with fine crackle, pulse bass D2/C2 on 8ths from 5.0 | the forest bed fades out by 5.2 |\n| Peel | 10–13.1 | ticks 8ths → 16ths → 32nds, one FM ping per layer D6 A5 F5 D5 A4, upward shimmer sweeps | acceleration by subdivision |\n| Silence | 13.1–14.4 | air bed only (−22 dB under the programme median), a reversed noise swell from 13.4 | |\n| Turn | 14.4 | bass drum + gran cassa + timpani F2, a settling sweep; bowed vibraphone A4/E5 | −1.9 dB under the loudest moment, after a −16 dB dip |\n| Walls | 15.6–20 | marimba on half-beats through F major pentatonic; pads F–Dm–B♭–C, pulse bass returns | the one wooden timbre |\n| Measure | 20–28.75 | ratchet clicks while 3.4 rolls, ping C6 on landing; suck-out 24.1–24.4, sweep + timpani D2 + bass drum on the cut, ping A5 on the reading | |\n| History | 28.75–35.6 | rising sine glide for each bar, marimba on its landing | |\n| End | 33.75–40 | grains for the regrowth; forest bed J-cut from 34.4; F-major chord (marimba, pad, bowed vibraphone, soft timpani) | |\n\nMix (in `mix.py`): music −10 dB under the voice and ducked ~5 dB while it speaks, pulse, foley and beds below; bus compression on music, pulse, foley and beds only; sub-bass high-passed at 38 Hz (46 Hz on hits) with a −5 dB shelf below 62 Hz; master stage to −14.4 LUFS with a true-peak limiter at −4.6 dBTP so `mux.sh` stays linear. The film measures −14.0 LUFS, peak −3.9 dBFS, LRA 2.4 LU (`demo/tools/audiocheck.py` for the impacts and the silence).",
+    "original_voice_records": [
+      {
+        "id": "l1",
+        "text": "From the air, it's only forest.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb"
+      },
+      {
+        "id": "l2",
+        "text": "But laser light slips between the leaves,",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb"
+      },
+      {
+        "id": "l3",
+        "text": "and some of it reaches the ground.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb"
+      },
+      {
+        "id": "l4",
+        "text": "Remove every return that hit a tree.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb"
+      },
+      {
+        "id": "l5",
+        "text": "And the ground remembers.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb"
+      },
+      {
+        "id": "l6",
+        "text": "Stone walls. Old fields, under the trees.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb"
+      },
+      {
+        "id": "l7",
+        "text": "We traced three point four kilometres of wall.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb",
+        "asr": "We traced 3.4 km of wall."
+      },
+      {
+        "id": "l8",
+        "text": "Just over half a metre high.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb"
+      },
+      {
+        "id": "l9",
+        "text": "In eighteen seventy, two thirds of Ashford was farmland.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb",
+        "asr": "In 1870, two thirds of Ashford was farmland."
+      },
+      {
+        "id": "l10",
+        "text": "By two thousand and six, four fifths was forest.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb",
+        "asr": "By 2006, four fifths was forest."
+      },
+      {
+        "id": "l11",
+        "text": "The forest kept the map.",
+        "voice": "bm_george",
+        "speed": 1,
+        "lang": "en-gb"
+      }
+    ],
+    "original_voice_durations_s": {
+      "l1": 2.207,
+      "l2": 2.444,
+      "l3": 2.303,
+      "l4": 2.642,
+      "l5": 1.801,
+      "l6": 3.143,
+      "l7": 2.91,
+      "l8": 1.948,
+      "l9": 3.611,
+      "l10": 3.449,
+      "l11": 1.766
+    }
+  },
+  "engine_and_build": {
+    "required_engine_spec_verbatim": "- `demo/film.js`: point shader (front, cutting plane, lift, ghost, window), surface shader (light, AO, contours, feature field, section), photo shader, camera spline (`camAt`), overlay (`reading`, `drawSection`, `subtitles`, readcheck registry).\n- `demo/tools/`: `fetch_ept.py` (EPT subset), `terrain.py` (local frame, DTM), `walls.py` (relief model), `trace.py` (snap a tracing, measure), `profile.py` (section from raw returns), `build_data.py` (binaries + facts).\n- **Extra packages and packs** (beyond `setup.sh deps voice music`): Python `laspy`, `lazrs` (LAZ decoding), `scikit-image` (relief and ridge tools), `fonttools` + `brotli` (CJK subset). They are not in the library's `.venv`: the agent installs them itself into a private venv in the project folder (the demo uses `demo/assets/raw/.venv`), never into `$LIB/.venv`. Fonts come from github.com/google/fonts (ofl/), fetched by script.\n- Minimal example, not in the demo: a building scan. Points coloured by class, a vertical front sweeping the street; behind it a 1 m surface model; one reading (roof height above the street).",
+    "published_build_notes_verbatim": "```\ndemo/\n  build.sh          one command: (data) → voice → speech check → cues → events → video → mix → master → .srt → checks → poster\n  index.html        two canvases (WebGL scene, 2D overlay), fonts\n  film.js           render(t): points / surface / photo shaders, camera spline, fronts, cutting plane, overlay, subtitles, EV\n  timeline.js       beats, cues, peel steps, narration, camera keys (single source; tools/export.mjs → timeline.json, cues.json, voice/lines.json)\n  mix.py            score, foley, beds, voice, mix → out/mix.wav + out/stems/\n  data/             walls_traced.json (hand tracing), walls.json, profile_C.json, facts.json (all on-screen numbers)\n  tools/            fetch_ept.py, terrain.py, load.py, walls.py, trace.py, profile.py, build_data.py, fetch_naip.py, fonts.py,\n                    scout_dem.py (finding the site); export.mjs (voice/cues); cuecheck.py, subcheck.mjs, audiocheck.py, motioncheck.py (checks)\n  assets/raw/       ept/ (EPT nodes), work/ (DTM, relief), build/ (points.bin, ground.bin, canopy.bin, naip.jpg), fonts/, .venv (laspy, lazrs, scikit-image)\n  FACTS.md, CREDITS, TREATMENT.md, PRODUCTION_LOG.md, stills/styleframe.jpg\n```\n\n- `sh demo/build.sh` takes about 5 minutes on Apple silicon (the picture renders in ~30 s with 3 workers; Kokoro and the Whisper check take most of the rest). With no data yet, or `FETCH=1`, it first fetches and builds the data (~3 minutes, ~350 MB in `assets/raw/`).\n- Fonts (Barlow Condensed, IBM Plex Mono, Noto Sans SC) are not in git: `tools/fonts.py` fetches them from github.com/google/fonts when missing and subsets the CJK font. The data tools run in a private venv (`assets/raw/.venv`: laspy, lazrs, scikit-image, fonttools) that build.sh creates.\n- Checks it runs: `asr_check.py` with `small.en` (0 mismatches), cue overlap from real voice durations, cue grid, subtitle single-line widths with the real fonts (widest 595 px against 1100 px), `readcheck.mjs`, motion per second (no flat stretch > 1 s, no cut-like jump).\n- Data notes: the EPT copy is Web Mercator; everything is converted to a local metric frame around 41.8875° N, 72.1960° W. The provider's class 1 mixes vegetation and buildings; low vegetation just above the ground survives a cut at 0 m, so the plane finishes at −6 m. The ground model is triangulated from class-2 returns (1.3 M) at 0.5 m.\n- Demo-specific pitfalls: the leaf-off canopy reads as a flat carpet from more than ~150 m, so the peel is shot low and close; a pond in the north-east has no returns (a black hole outside the window); the regular scan-line striping of the ground returns is strongest at grazing angles; the second scan must start just outside the frame or the first frames jump.",
+    "fetch_build_specs": [
+      {
+        "path": "styles/lidar-survey/demo/build.sh",
+        "sha256": "344a8ead82e7476ebee0b1f6892ef82b56d655c4f6dc0ebf6145371ab1ebb971",
+        "text_verbatim": "#!/bin/sh\n# One command: 《林下的田》 The Fields Under the Forest (LiDAR Survey demo)\n#   sh demo/build.sh          voice, checks, events, picture, score + mix, master, subtitles, checks, poster\n#   FETCH=1 sh demo/build.sh  first re-download and rebuild the data: USGS 3DEP points (EPT, ~50 MB), NAIP 2016 photo,\n#                             DTM, wall tracing, wall profile, binaries for the page (~3 min, ~350 MB in assets/raw)\n# Fonts are fetched from Google Fonts by tools/fonts.py whenever they are missing (they are not in git).\nset -e\nHERE=$(cd \"$(dirname \"$0\")\" && pwd)                 # .../<slug>/demo\nFILM=$(cd \"$HERE/..\" && pwd)                         # .../<slug>\nLIB=${LIB:-$(cd \"$HERE/../../..\" && pwd)}            # films/<slug>/demo or styles/<slug>/demo -> library root\nexport LIB\n[ -f \"$LIB/core/render/video.mjs\" ] || { echo \"set LIB to the library folder\"; exit 1; }\nPY=\"$LIB/.venv/bin/python\"\nDPY=\"$HERE/assets/raw/.venv/bin/python\"              # data tools need laspy + lazrs + scikit-image (private venv)\nNAME=lidar-survey\ncd \"$LIB\"\n\n# style-specific packages live in a private venv inside the project, not in $LIB/.venv\n[ -x \"$DPY\" ] || { python3 -m venv \"$HERE/assets/raw/.venv\" && \"$DPY\" -m pip install -q laspy lazrs numpy scipy pillow scikit-image fonttools brotli; }\n# data: keyed on a gitignored artefact, so a clean clone always rebuilds it\nif [ \"${FETCH:-0}\" = \"1\" ] || [ ! -f \"$HERE/assets/raw/build/points.bin\" ] || [ ! -f \"$HERE/assets/raw/build/naip.jpg\" ]; then\n  \"$DPY\" -I \"$HERE/tools/fetch_ept.py\" \"$HERE/assets/raw/ept\" 14 USGS_LPC_CT_Statewide_B8_2016 -72.2005,-72.1915,41.8830,41.8920\n  \"$DPY\" -I \"$HERE/tools/walls.py\" \"$HERE/assets/raw/ept\" \"$HERE/assets/raw/work\"        # DTM + local relief (+ a ridge review image)\n  \"$DPY\" -I \"$HERE/tools/trace.py\" \"$HERE/assets/raw/work\" \"$HERE/data\"                  # snap data/walls_traced.json -> data/walls.json\n  \"$DPY\" -I \"$HERE/tools/profile.py\" \"$HERE/assets/raw/ept\" \"$HERE/data\" C 20 80         # data/profile_C.json\n  \"$DPY\" -I \"$HERE/tools/build_data.py\" \"$HERE/assets/raw/ept\" \"$HERE/assets/raw/work\" \"$HERE/data\" \"$HERE/assets/raw/build\"\n  \"$DPY\" -I \"$HERE/tools/fetch_naip.py\" \"$HERE/assets/raw/build\"\nfi\n\"$DPY\" -I \"$HERE/tools/fonts.py\" \"$HERE\"           # fetches Barlow Condensed, IBM Plex Mono, Noto Sans SC (Google Fonts, OFL) if missing; CJK subset\n\n# voice: Kokoro (bm_george), speech-to-text check with the small English model, cues from the real durations\nnode \"$HERE/tools/export.mjs\" \"$HERE\" > /dev/null || true\n\"$PY\" core/tts/tts.py \"$HERE/voice/lines.json\" \"$HERE/voice/out\"\nWHISPER_MODEL=small.en \"$PY\" core/tts/asr_check.py \"$HERE/voice/lines.json\" \"$HERE/voice/out\" --lang en\nnode \"$HERE/tools/export.mjs\" \"$HERE\"\n\n# picture, events, score + mix, master, subtitles\nnode core/render/events.mjs \"$HERE\"\nnode core/render/video.mjs \"$HERE\" --fps 24 --workers 3 --out \"$HERE/out/video.mp4\"\n\"$PY\" \"$HERE/mix.py\"\nsh core/render/mux.sh \"$HERE/out/video.mp4\" \"$HERE/out/mix.wav\" \"$HERE/out/master.mp4\" 24 0\n# a dense point cloud is all fine detail: at mux's CRF 19 the film is ~200 MB; CRF 26 looks the same on the points and is ~90 MB\nffmpeg -v error -y -i \"$HERE/out/master.mp4\" -map 0 -c:v libx264 -preset slow -crf 26 -pix_fmt yuv420p -c:a copy -movflags +faststart \"$FILM/$NAME.mp4\"\n\"$PY\" core/render/srt.py \"$HERE/out/cues_srt.json\" \"$FILM/$NAME.srt\"\n\n# checks\n\"$PY\" -I \"$HERE/tools/cuecheck.py\" \"$HERE\" | tail -1\nnode \"$HERE/tools/subcheck.mjs\" \"$HERE\" | tail -1\nnode core/render/readcheck.mjs \"$HERE\" > \"$HERE/out/readcheck.txt\" && echo \"readcheck ok\"\n\"$PY\" -I \"$HERE/tools/motioncheck.py\" \"$FILM/$NAME.mp4\" | tail -2\n\n# poster (the signature shot) and the gallery style frame\nffmpeg -v error -y -ss 15.4 -i \"$FILM/$NAME.mp4\" -frames:v 1 -q:v 2 \"$FILM/poster.jpg\"\nmkdir -p \"$HERE/stills\"\nffmpeg -v error -y -ss 18.6 -i \"$FILM/$NAME.mp4\" -frames:v 1 -q:v 2 \"$HERE/stills/styleframe.jpg\"\necho \"done: $FILM/$NAME.mp4\"\n"
+      },
+      {
+        "path": "styles/lidar-survey/demo/tools/fetch_ept.py",
+        "sha256": "9823753ac3a71fdabf714e394d31f316fd80969ed1ccd942d77aa1aae7cf212f",
+        "text_verbatim": "\"\"\"Fetch a bounded subset of the USGS 3DEP EPT point cloud (public domain).\nusage: fetch_ept.py <out_dir> <maxdepth> <dataset> <lon0,lon1,lat0,lat1> [--plan]\nBox is in lon/lat below; nodes are cached as .laz in out_dir/nodes/.\"\"\"\nimport json, math, os, sys, urllib.request\nBASE = \"https://s3-us-west-2.amazonaws.com/usgs-lidar-public/\" + sys.argv[3]\n# box: lon0,lon1,lat0,lat1\nLON0, LON1, LAT0, LAT1 = map(float, sys.argv[4].split(\",\"))\nR = 6378137.0\ndef merc(lon, lat):\n    return R*math.radians(lon), R*math.log(math.tan(math.pi/4+math.radians(lat)/2))\nX0, Y0 = merc(LON0, LAT0); X1, Y1 = merc(LON1, LAT1)\nout = sys.argv[1]; maxd = int(sys.argv[2]); plan = \"--plan\" in sys.argv\nos.makedirs(os.path.join(out, \"nodes\"), exist_ok=True)\ndef get(url, path=None):\n    if path and os.path.exists(path): return open(path, \"rb\").read()\n    for i in range(4):\n        try:\n            b = urllib.request.urlopen(url, timeout=60).read(); break\n        except Exception as e:\n            if i == 3: raise\n    if path: open(path, \"wb\").write(b)\n    return b\nept = json.loads(get(BASE+\"/ept.json\", os.path.join(out, \"ept.json\")))\nbx = ept[\"bounds\"]\nhier = {}\ndef load_h(key):\n    h = json.loads(get(f\"{BASE}/ept-hierarchy/{key}.json\", os.path.join(out, \"nodes\", f\"h_{key}.json\")))\n    hier.update(h)\nload_h(\"0-0-0-0\")\ndef nb(d, x, y, z):\n    s = (bx[3]-bx[0]) / 2**d\n    return bx[0]+x*s, bx[1]+y*s, bx[0+0]+0, s\nsel = []\ndef walk(d, x, y, z):\n    key = f\"{d}-{x}-{y}-{z}\"\n    if key not in hier: return\n    if hier[key] == -1:\n        load_h(key)\n    s = (bx[3]-bx[0]) / 2**d\n    nx0, ny0 = bx[0]+x*s, bx[1]+y*s\n    if nx0 > X1 or nx0+s < X0 or ny0 > Y1 or ny0+s < Y0: return\n    sel.append((key, hier[key]))\n    if d >= maxd: return\n    for dx in (0,1):\n        for dy in (0,1):\n            for dz in (0,1):\n                walk(d+1, 2*x+dx, 2*y+dy, 2*z+dz)\nwalk(0,0,0,0)\nfrom collections import Counter\nc = Counter(); n = Counter()\nfor k, cnt in sel: c[int(k.split('-')[0])] += cnt; n[int(k.split('-')[0])] += 1\nfor d in sorted(c): print(\"depth\", d, \"nodes\", n[d], \"points\", c[d])\nprint(\"total\", sum(c.values()))\njson.dump(sel, open(os.path.join(out, \"selection.json\"), \"w\"))\nif plan: sys.exit()\nfrom concurrent.futures import ThreadPoolExecutor\ndef dl(k):\n    get(f\"{BASE}/ept-data/{k[0]}.laz\", os.path.join(out, \"nodes\", k[0]+\".laz\"))\nwith ThreadPoolExecutor(12) as ex: list(ex.map(dl, sel))\ntot = sum(os.path.getsize(os.path.join(out,\"nodes\",k[0]+\".laz\")) for k in sel)\nprint(\"downloaded MB\", tot/1e6)\n"
+      },
+      {
+        "path": "styles/lidar-survey/demo/tools/fetch_naip.py",
+        "sha256": "671a88a1e9a07d64b0333368d130e79ac616f751501570ae84fa29f86c5cd79f",
+        "text_verbatim": "\"\"\"USDA NAIP aerial photo (public domain), July 2016, cropped to the film's grid via the Microsoft Planetary\nComputer data API (no account). usage: fetch_naip.py <out_dir>   -> naip.jpg (north up, lon/lat linear)\"\"\"\nimport os, sys, urllib.request\nsys.path.insert(0, os.path.dirname(__file__))\nimport terrain as T\nout = sys.argv[1]; os.makedirs(out, exist_ok=True)\nITEM = \"ct_m_4107207_sw_18_.6_20160724_20160913\"      # NAIP Connecticut, 2016-07-24, 0.6 m\nlon0, lat0 = T.lonlat(T.X0, T.Y0); lon1, lat1 = T.lonlat(T.X1, T.Y1)\nW = 1488; H = 2000\nurl = (f\"https://planetarycomputer.microsoft.com/api/data/v1/item/bbox/{lon0:.7f},{lat0:.7f},{lon1:.7f},{lat1:.7f}/{W}x{H}.jpg\"\n       f\"?collection=naip&item={ITEM}&assets=image&asset_bidx=image%7C1,2,3\")\nb = urllib.request.urlopen(url, timeout=300).read()\nopen(os.path.join(out, \"naip.jpg\"), \"wb\").write(b)\nprint(\"naip\", ITEM, len(b), \"bytes\", url)\n"
+      },
+      {
+        "path": "styles/lidar-survey/demo/tools/build_data.py",
+        "sha256": "7578260eae1ae9a450478d35e195105d924c175f50f6a2e7266a725905ea5fbe",
+        "text_verbatim": "\"\"\"Build the film's data from the cached USGS 3DEP points (public domain) and the NAIP 2016 photo.\nusage: build_data.py <raw_dir> <work_dir> <data_dir> <out_dir>\n  raw_dir   assets/raw/ept (EPT nodes)          work_dir  assets/raw/work (dtm.npy, walls.npz from walls.py)\n  data_dir  data/ (walls.json, profile_C.json)   out_dir   assets/raw/build (binaries the page loads)\nWrites points.bin, ground.bin (DTM 0.5 m + normals + light + wall field), canopy.bin (canopy surface 1 m),\nand data/facts.json (every number on screen, measured here).\"\"\"\nimport json, math, os, sys\nimport numpy as np\nfrom scipy import ndimage\nsys.path.insert(0, os.path.dirname(__file__))\nimport terrain as T\nraw, work, data, out = sys.argv[1:5]\nos.makedirs(out, exist_ok=True)\nd = T.points(raw)\nN = len(d[\"z\"])\ninside = (d[\"x\"] > T.X0) & (d[\"x\"] < T.X1) & (d[\"y\"] > T.Y0) & (d[\"y\"] < T.Y1)\nfor k in d: d[k] = d[k][inside]\nN = len(d[\"z\"]); print(\"points\", N)\nz = np.load(os.path.join(work, \"dtm.npy\")).astype(np.float64); RES = 0.5\nH, W = z.shape\ndef dtm_at(x, y):\n    return ndimage.map_coordinates(z, [(y - T.Y0) / RES, (x - T.X0) / RES], order=1, mode=\"nearest\")\nhag = d[\"z\"] - dtm_at(d[\"x\"], d[\"y\"])\ncls = np.where(d[\"c\"] == 2, 0, np.where(d[\"c\"] == 9, 2, 1)).astype(np.uint8)   # 0 ground, 1 vegetation/other, 2 water\nveg = cls == 1\n# ---------------- points.bin ----------------\nOX, OY, OZ, SXY, SZ = T.X0, T.Y0, 150.0, 0.02, 0.01\nrng = np.random.default_rng(11); order = rng.permutation(N)\nq = lambda a: a[order]\nqx = np.round((d[\"x\"] - OX) / SXY).astype(\"<u2\"); qy = np.round((d[\"y\"] - OY) / SXY).astype(\"<u2\")\nqz = np.round((np.clip(d[\"z\"], OZ, 800) - OZ) / SZ).astype(\"<u2\")\nqh = np.clip(np.round(np.clip(hag, 0, None) * 8), 0, 255).astype(np.uint8)\nit = d[\"i\"].astype(float); lo, hi = np.percentile(it, [2, 98]); qi = (np.clip((it - lo) / (hi - lo), 0, 1) * 255).astype(np.uint8)\nqr = rng.integers(0, 256, N).astype(np.uint8)\nwith open(os.path.join(out, \"points.bin\"), \"wb\") as f:\n    f.write(np.array([N], \"<u4\").tobytes())\n    f.write(np.stack([q(qx), q(qy), q(qz)], 1).astype(\"<u2\").tobytes())\n    f.write(q(qh).tobytes()); f.write(q(cls).tobytes()); f.write(q(qi).tobytes()); f.write(qr.tobytes())\n# ---------------- ground.bin : DTM 0.5 m with the micro-relief exaggerated x3 for display ----------------\nEXAG = 2.0\nlrm = z - ndimage.gaussian_filter(z, 5 / RES)\nzd = ndimage.gaussian_filter(z, 0.5) + (EXAG - 1) * ndimage.gaussian_filter(lrm, 0.8)                                   # display surface: local relief x3, landform x1\ngy, gx = np.gradient(ndimage.gaussian_filter(zd, 0.6), RES)\nnx, ny, nz = -gx, np.ones_like(zd), gy                       # three.js axes: x east, y up, z south\nnl = np.sqrt(nx ** 2 + ny ** 2 + nz ** 2)\nnq = np.clip(np.round(np.stack([nx, ny, nz], -1) / nl[..., None] * 127), -127, 127).astype(np.int8)\n# ambient occlusion on the display surface, short radius (micro relief)\nao = np.zeros_like(zd); ND = 10\nfor k in range(ND):\n    a = 2 * math.pi * k / ND; ca, sa = math.cos(a), math.sin(a); hmax = np.zeros_like(zd)\n    for r in (1, 2, 4, 7, 11, 16):\n        ox, oy = int(round(ca * r)), int(round(sa * r))\n        sh = np.roll(np.roll(zd, -oy, 0), -ox, 1)\n        hmax = np.maximum(hmax, np.arctan2(sh - zd, r * RES))\n    ao += 1 - np.sin(np.clip(hmax, 0, math.pi / 2))\nao = ndimage.gaussian_filter(ao / ND, 0.7)\n# wall field: distance to the nearest traced wall (m) and that wall point's reveal order (0..1)\nwalls = json.load(open(os.path.join(data, \"walls.json\")))[\"walls\"]\nreveal_order = [\"A\", \"B\", \"E\", \"F\", \"C\", \"D\", \"J\", \"G\", \"L\", \"H\", \"I\", \"K\", \"N9\", \"N7\", \"N5\", \"N4\", \"N8\", \"N6\", \"N3\", \"N2\", \"N1\", \"N10\"]\nseed = np.zeros((H, W), bool); val = np.zeros((H, W))\nfor wi, k in enumerate(reveal_order):\n    pl = np.array(walls[k][\"pts\"]); seglen = np.hypot(*np.diff(pl, axis=0).T); cum = np.r_[0, np.cumsum(seglen)]\n    for (x0, y0), (x1, y1), c0, L in zip(pl[:-1], pl[1:], cum[:-1], seglen):\n        n = max(2, int(L / 0.25))\n        for t in np.linspace(0, 1, n):\n            x, y = x0 + (x1 - x0) * t, y0 + (y1 - y0) * t\n            i, j = int(round((y - T.Y0) / RES)), int(round((x - T.X0) / RES))\n            if 0 <= i < H and 0 <= j < W:\n                seed[i, j] = True\n                val[i, j] = (wi + (c0 + L * t) / cum[-1]) / len(reveal_order)\ndist, (ii, jj) = ndimage.distance_transform_edt(~seed, return_indices=True)\ndist *= RES; wval = val[ii, jj]\nzc = np.round((np.clip(zd, OZ, 800) - OZ) / SZ).astype(\"<u2\")\nlight = np.stack([np.clip(ao * 255, 0, 255), np.clip(dist / 6 * 255, 0, 255), np.clip(wval * 255, 0, 255),\n                  np.clip(128 + lrm / 0.6 * 127, 0, 255)], -1).astype(np.uint8)\nwith open(os.path.join(out, \"ground.bin\"), \"wb\") as f:\n    f.write(np.array([W, H], \"<u4\").tobytes()); f.write(np.array([T.X0, T.Y0, RES, OZ, SZ], \"<f4\").tobytes())\n    f.write(zc.tobytes()); f.write(nq.tobytes()); f.write(light.tobytes())\n# ---------------- canopy.bin : top-of-canopy surface 1 m, for the photo ----------------\nCR = 1.0; CW = int((T.X1 - T.X0) / CR) + 1; CH = int((T.Y1 - T.Y0) / CR) + 1\nix = np.clip(((d[\"x\"] - T.X0) / CR).astype(int), 0, CW - 1); iy = np.clip(((d[\"y\"] - T.Y0) / CR).astype(int), 0, CH - 1)\ntop = np.full((CH, CW), -1e9); np.maximum.at(top, (iy, ix), d[\"z\"])\nemp = top < -1e8\n_, (a, b) = ndimage.distance_transform_edt(emp, return_indices=True); top = top[a, b]\ntop = ndimage.grey_closing(top, size=(3, 3)); top = ndimage.gaussian_filter(top, 1.4)\nzground1 = ndimage.zoom(z, (CH / H, CW / W), order=1)[:CH, :CW]\ntop = np.maximum(top, zground1 + 0.3)\nwith open(os.path.join(out, \"canopy.bin\"), \"wb\") as f:\n    f.write(np.array([CW, CH], \"<u4\").tobytes()); f.write(np.array([T.X0, T.Y0, CR, OZ, SZ], \"<f4\").tobytes())\n    f.write(np.round((top - OZ) / SZ).astype(\"<u2\").tobytes())\n# ---------------- facts ----------------\nW_ = json.load(open(os.path.join(data, \"walls.json\"))); P = json.load(open(os.path.join(data, \"profile_C.json\")))\narea = (T.X1 - T.X0) * (T.Y1 - T.Y0)\nhv = hag[veg & (hag > 2)]\nhist, _ = np.histogram(np.clip(hag[veg], 0, 40), bins=np.arange(0, 40.01, 0.25))\nfacts = dict(\n    points=int(N), area_km2=round(area / 1e6, 3), density=round(N / area, 1),\n    ground=int((cls == 0).sum()), ground_share=round(float((cls == 0).mean()) * 100, 1),\n    veg=int(veg.sum()), canopy_p95=round(float(np.percentile(hv, 95)), 1), canopy_max=round(float(np.percentile(hv, 99.9)), 1),\n    veg_hag_hist=hist.tolist(),\n    walls_total_m=W_[\"total_m\"], walls_count=len(W_[\"walls\"]),\n    profile=dict(wall=P[\"wall\"], height=P[\"height\"], width_half=P[\"fwhm\"], n=P[\"n\"], along=P[\"along\"], centre=P[\"centre\"], dir=P[\"dir\"], lat=P[\"lat\"], lon=P[\"lon\"]),\n    exag=EXAG, origin=dict(lat=T.LAT0, lon=T.LON0), box=T.BOX,\n    terrain=dict(min=round(float(z.min()), 1), max=round(float(z.max()), 1)),\n    quant=dict(OX=OX, OY=OY, OZ=OZ, SXY=SXY, SZ=SZ),\n    dataset=\"USGS 3DEP USGS_LPC_CT_Statewide_B8_2016 (EPT, all returns)\",\n)\njson.dump(facts, open(os.path.join(data, \"facts.json\"), \"w\"), indent=1)\nprint({k: v for k, v in facts.items() if k != \"veg_hag_hist\"})\n"
+      }
+    ],
+    "local_original_asset_snapshot_inventory": [
+      {
+        "path": "styles/lidar-survey/demo/events.json",
+        "sha256": "9ee87096d8c8d3bab0fbe1a01696f598405cc9d9112f054749d0e343d9a4d30d",
+        "bytes": 952
+      },
+      {
+        "path": "styles/lidar-survey/demo/timeline.json",
+        "sha256": "86cb9aaff4a4220933bdead4c8aa9db211e23a918922a5e93f5e86c7d27cd314",
+        "bytes": 953
+      },
+      {
+        "path": "styles/lidar-survey/demo/cues.json",
+        "sha256": "02662f6384960e6a62414a6b0734cd590f45b1f4ba52754823824339f62781f0",
+        "bytes": 1552
+      },
+      {
+        "path": "styles/lidar-survey/demo/data/walls_traced.json",
+        "sha256": "a8467bcab27782e84630bd668942429ef753f20732f4eec9916119aac88dacf6",
+        "bytes": 2069
+      },
+      {
+        "path": "styles/lidar-survey/demo/data/profile_C.json",
+        "sha256": "da1e0622c34149e746ea45d550b45be930b21717bc0928c8db9e2b1f93c16cbd",
+        "bytes": 14705
+      },
+      {
+        "path": "styles/lidar-survey/demo/data/facts.json",
+        "sha256": "58a0212bba151e9d60c08881e909b98335252e127a5014a8fd824950d4ff21a2",
+        "bytes": 2113
+      },
+      {
+        "path": "styles/lidar-survey/demo/data/walls.json",
+        "sha256": "d2078ff7f16fe97d19c00e48c0448f6fb4db756ecdfe1a6d053dde3ec90c71b9",
+        "bytes": 32093
+      }
+    ]
+  },
+  "evidence": {
+    "dataset": "USGS3DEP2016 classified returns from the exact original Connecticut crop, plus the original2016 NAIP image.",
+    "required_measurements": [
+      "4,789,797 returns;1,319,669 ground=27.6%;0.744km²;0.5m DTM.",
+      "22 traced walls total3425.5m, displayed3.4km.",
+      "SectionC20–80m:1451 ground returns,0.56m high,2.5m FWHM.",
+      "1870 farmland67.3km²;2006 forest80.2km²."
+    ],
+    "window": "Lon−72.2005..−72.1915, lat41.8830..41.8920; center41.8875N,72.1960W, same x<235m exclusion.",
+    "needed": [
+      "assets/raw/build/points.bin",
+      "assets/raw/build/ground.bin",
+      "assets/raw/build/canopy.bin",
+      "assets/raw/build/naip.jpg"
+    ],
+    "recipe": "Follow the isolated data-only preparation described in ASSET_GAPS.md and the exact original build/fetch scripts retained in engine_and_build.fetch_build_specs.",
+    "specific_blockers": [],
+    "asset_status": [
+      {
+        "path": "styles/lidar-survey/demo/assets/raw/build/points.bin",
+        "present": false
+      },
+      {
+        "path": "styles/lidar-survey/demo/assets/raw/build/ground.bin",
+        "present": false
+      },
+      {
+        "path": "styles/lidar-survey/demo/assets/raw/build/canopy.bin",
+        "present": false
+      },
+      {
+        "path": "styles/lidar-survey/demo/assets/raw/build/naip.jpg",
+        "present": false
+      }
+    ],
+    "original_facts_verbatim": "# FACTS — 《林下的田》 The Fields Under the Forest\n\nEvery claim on screen and in the narration, its source and the quoted wording. Measured values come from the data in this folder and are labelled as measured or traced on screen. Checked against the final script (timeline.js, film.js) before the last render, 2026-10-16.\n\n## Sourced claims\n\n| # | Claim (screen / voice) | Source | Quoted wording |\n|---|---|---|---|\n| 1 | The place is Ashford, Connecticut; 41.8875° N, 72.1960° W is inside Ashford town | US Census Bureau Geocoder, geographies by coordinates (County Subdivisions, current vintage), queried 2026-10-16: `https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-72.196&y=41.8875&benchmark=Public_AR_Current&vintage=Current_Current&layers=County+Subdivisions&format=json` | result: \"Ashford town\" |\n| 2 | In public lidar, stone walls, old roads and foundations of a farming past show under New England forest; aerial photos don't show them | K. M. Johnson & W. B. Ouimet (2014), \"Rediscovering the lost archaeological landscape of southern New England using airborne light detection and ranging (LiDAR)\", *Journal of Archaeological Science* 43: 9–20. PDF hosted by the UConn Stone Wall Initiative: https://stonewall.uconn.edu/wp-content/uploads/sites/534/2014/03/Johnson-and-Ouimet-2014-Rediscovering-the-lost-archaeological-landscape-of-southern-New-England-using-airborne-LiDAR.pdf | \"In aerial and satellite imagery, these features are often hidden from view by a dense forest canopy; but by using LiDAR as others have done, these features become visible for identification and analysis.\" |\n| 3 | The ridges are stone walls (voice: \"Stone walls. Old fields, under the trees.\"; screen: 石墙) | same paper | \"Stone walls appear as thin linear ridges of raised elevation that can form polygonal or linear patterns dependent on field or farmstead layout or arrangement. The presence of the walls indicates that the land nearby was likely used for agriculture and was cleared at one point in time\" |\n| 4 | Ashford ≈ 100 km² (card: 阿什福德全镇 · 约 100 km²) | same paper | \"The town is comprised of approximately 100 km2 of land.\" |\n| 5 | 1870: 67.3 km² cleared farmland (card; voice: \"In 1870, two-thirds of Ashford was farmland.\") | same paper, citing the 1870 Federal Census agricultural schedule | \"the agricultural schedule from the Federal Census of 1870 denotes that 67.3 km2 were listed as “improved,” indicating that it had been cleared for agriculture\" |\n| 6 | 2006: 80.2 km² forest (card; voice: \"By 2006, four-fifths was forest.\") | same paper, citing 2006 land cover (UConn CLEAR) | \"The 2006 land cover data for the town indicates that 80.2 km2 are currently forested (includes deciduous, coniferous, and forested wetlands)\" |\n| 7 | The photo is a July 2016 summer aerial (2016 年 7 月 · 夏季航拍; NAIP 航拍 · 2016-07-24) | NAIP item `ct_m_4107207_sw_18_.6_20160724_20160913`, Microsoft Planetary Computer STAC, collection `naip` | item datetime 2016-07-24, gsd 0.6 m |\n| 8 | The point cloud is USGS 3DEP 2016 (USGS 3DEP 2016) | `USGS_LPC_CT_Statewide_B8_2016`, Entwine Point Tile on AWS Open Data: https://s3-us-west-2.amazonaws.com/usgs-lidar-public/USGS_LPC_CT_Statewide_B8_2016/ept.json | dataset name, Connecticut statewide 2016 |\n\nRatios in the voice: 67.3 / ≈100 km² → \"two-thirds\"; 80.2 / ≈100 km² → \"four-fifths\". The bars on the card are drawn against 100 km².\n\n## Measured in this folder (labelled as measured / traced on screen)\n\n| Value on screen | How | File |\n|---|---|---|\n| 4,789,797 个回波 (returns) | all returns of the EPT nodes (depth 0–10, full resolution) inside the 744 × 1000 m grid, noise classes 7 and 18 removed | `tools/build_data.py` → `data/facts.json` (`points`) |\n| 0.744 km² | grid extent 744 m × 1000 m | `data/facts.json` (`area_km2`) |\n| 27.6 % 打到地面的回波 (1,319,669 / 4,789,797) | share of returns classified ground (class 2) by the data provider | `data/facts.json` (`ground`, `ground_share`) |\n| 树冠高度 ruler 0–30 m and its histogram | height of every non-ground return above a ground model triangulated from the class-2 returns (0.5 m grid); 95th percentile 26.1 m | `data/facts.json` (`veg_hag_hist`, `canopy_p95`) |\n| 3.4 km 已描出的石墙, 22 段 (voice: \"We traced 3.4 km of wall\") | 22 walls digitised by eye on a local relief model (DTM minus a 5 m Gaussian), each snapped to the ridge crest within ±2.5 m and smoothed; total 3,425.5 m. Conservative: faint ridges were left out | `data/walls_traced.json` (the hand tracing), `tools/trace.py` → `data/walls.json` |\n| 石墙剖面: 0.56 m high, 2.5 m wide at half height (voice: \"Just over half a metre high\") | wall C, 60 m of wall (along 20–80 m), 1,451 ground returns within 0.5 m of 60 profile lines spaced 1 m, offset across the wall, detrended by a line fitted beyond ±3.5 m; median in 0.5 m bins; height = peak of the median; width = full width at half height | `tools/profile.py` → `data/profile_C.json` |\n| 地形起伏 ×2（局部）| display only: local relief (DTM minus a 5 m Gaussian) doubled on the rendered surface; all measurements use the undistorted data | `tools/build_data.py` (`EXAG`) |\n\n## Not claimed\n\n- No date is given for these particular walls. The paper links walls to agriculture and Ashford's clearance to the 19th century; the film says only \"old fields\" and gives the town's 1870 and 2006 figures.\n- The film does not say this patch is one of the paper's mapped sites; it is a patch inside the same town, found by scouting the 3DEP elevation service and NAIP imagery.\n- Modern houses and a gravel lane east of x ≈ 235 m are outside the survey window and not shown.\n",
+    "original_credits_verbatim": "The Fields Under the Forest (林下的田) — LiDAR Survey (Lemo-Opuscar) · LemoLab × Claude Opus 5.5\n\nNo AI-generated images, no stock footage, no commercial basemaps. Every point and every surface in the film is\ncomputed from public-domain airborne lidar; the opening photograph is a public-domain aerial; every line, label\nand chart is drawn in code. Facts and measured values: FACTS.md.\n\nPOINT CLOUD\n- U.S. Geological Survey, 3D Elevation Program (3DEP), lidar project USGS_LPC_CT_Statewide_B8_2016 (Connecticut, 2016),\n  all returns with the provider's classification. Entwine Point Tile copy on AWS Open Data (\"USGS 3DEP LiDAR Point Clouds\"):\n  https://s3-us-west-2.amazonaws.com/usgs-lidar-public/USGS_LPC_CT_Statewide_B8_2016/ept.json\n  Box lon -72.2005 … -72.1915, lat 41.8830 … 41.8920 (Ashford, Connecticut), octree depth 0–10 (full resolution), ~50 MB.\n  Public domain: \"USGS-authored or produced data and information are considered to be in the U.S. Public Domain.\"\n  Credit: U.S. Geological Survey. Accessed 2026-10-16.\n- Scouting only (not in the film): USGS 3DEP dynamic elevation service, exportImage,\n  https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer (public domain).\n- Dataset index used to find the project: hobuinc/usgs-lidar, boundaries/resources.geojson.\n- Modifications: cropping, ground model triangulated from class-2 returns, local relief model, wall tracing and\n  snapping, a wall cross-section, height above ground for every return, display exaggeration x2 of local relief.\n\nAERIAL PHOTO\n- USDA Farm Service Agency, National Agriculture Imagery Program (NAIP), Connecticut, 2016-07-24, 0.6 m,\n  item ct_m_4107207_sw_18_.6_20160724_20160913, read and cropped through the Microsoft Planetary Computer data API\n  (https://planetarycomputer.microsoft.com, collection naip). Public domain (NAIP through 2019): \"Public domain\n  information may be freely distributed or copied, but use of appropriate byline/photo/image credits is requested.\"\n  Credit: USDA Farm Service Agency, NAIP.\n\nFACTS\n- K. M. Johnson & W. B. Ouimet (2014), Rediscovering the lost archaeological landscape of southern New England using\n  airborne light detection and ranging (LiDAR), Journal of Archaeological Science 43: 9–20 (Ashford land area, 1870\n  improved land, 2006 forest cover; walls as ridges). US Census Bureau Geocoder (the site lies in Ashford town).\n\nFONTS (SIL Open Font License 1.1, licence texts in fonts/)\n- Noto Sans SC — Google / Adobe, variable font from github.com/google/fonts (ofl/notosanssc), subset to the\n  characters used (tools/fonts.py)\n- Barlow Condensed — The Barlow Project Authors (readings, English subtitle line), github.com/google/fonts (ofl/barlowcondensed)\n- IBM Plex Mono — IBM (instruments, source lines), github.com/google/fonts (ofl/ibmplexmono)\n  All fonts are fetched by tools/fonts.py when missing (they are not in git).\n\nVOICE\n- Kokoro-82M (hexgrad), voice bm_george, Apache License 2.0; run locally via kokoro-onnx (MIT) through the\n  library's core/tts/tts.py. Speech check: faster-whisper small.en (MIT; OpenAI Whisper weights, MIT).\n\nMUSIC AND SOUND\n- Original score and sound design, synthesised in mix.py (numpy/scipy) on the film's timeline.\n- Samples (CC0): VS Chamber Orchestra: Community Edition (Versilian Studios), Versilian Community Sample Library\n  (Versilian Studios) — marimba, bowed vibraphone, timpani, bass drum, gran cassa — through core/audio/sampler.py.\n\nSOFTWARE\n- three.js 0.170.0 (MIT), playwright-core + headless Chromium, FFmpeg; laspy + lazrs (BSD-2 / Apache-2.0),\n  NumPy, SciPy, scikit-image, fontTools; Lemo-Opuscar core/ (render, tts, audio).\n",
+    "source_urls": [
+      "https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer",
+      "https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=-72.196&y=41.8875&benchmark=Public_AR_Current&vintage=Current_Current&layers=County+Subdivisions&format=json`",
+      "https://planetarycomputer.microsoft.com,",
+      "https://planetarycomputer.microsoft.com/api/data/v1/item/bbox/{lon0:.7f},{lat0:.7f},{lon1:.7f},{lat1:.7f}/{W}x{H}.jpg",
+      "https://s3-us-west-2.amazonaws.com/usgs-lidar-public/",
+      "https://s3-us-west-2.amazonaws.com/usgs-lidar-public/USGS_LPC_CT_Statewide_B8_2016/ept.json",
+      "https://stonewall.uconn.edu/wp-content/uploads/sites/534/2014/03/Johnson-and-Ouimet-2014-Rediscovering-the-lost-archaeological-landscape-of-southern-New-England-using-airborne-LiDAR.pdf"
+    ],
+    "restored_asset_root": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/evidence-v2/lidar-survey/assets/raw/build",
+    "restoration_note": "Root restored the original survey and verified4,789,797 returns,1,319,669 ground and3425.5m traced walls. Although maxdepth14 was requested, the selected original nodes end atdepth10; the depth issue is resolved."
+  },
+  "matching_blockers": [
+    "The original conversation prompt is not published. Use the complete published specification and audited reconstruction; do not claim the recovered text is a verbatim original chat prompt."
+  ],
+  "visual_audit": {
+    "state": "complete-regular-sheet-coverage",
+    "reference_video_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/films/lidar-survey.mp4",
+    "reference_video_sha256": "078d2ca0065febc50a495cf1e078bfdc1508ca489fb7174bfda9cd236c582863",
+    "coverage": [
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lidar-survey/sheets/sheet-01.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lidar-survey/sheets/sheet-02.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lidar-survey/sheets/sheet-03.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/lidar-survey/sheets/sheet-04.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      }
+    ],
+    "reference_verified_visual_observations": [
+      "Keep the actual NAIP forest image registered to the dense return cloud. A luminous laser slash reveals millions of white/green points, with a distinct canopy above the ground and the27.6% statistic. Remove non-ground returns while preserving the survey surface, then turn the actual0.5m DTM into warm neutral hillshade. Gold lines trace the real irregular field walls; low oblique camera movement reveals their relief. A wall-section graph shows2.5m width and0.56m height, followed by the historical farmland/forest bars. The final overhead view combines the gold field map with returning faint canopy. Sparse dark points and a different terrain window cannot reproduce this film."
+    ],
+    "note": "All regular reference sheets were inspected across the complete film. Named supplementary frames cover important short actions and transitions. This is scene coverage, not a claim that every encoded frame was inspected."
+  }
+}

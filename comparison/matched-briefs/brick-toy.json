@@ -1,0 +1,897 @@
+{
+  "schema_version": "matched-original-brief-v2-audit-1",
+  "slug": "brick-toy",
+  "status": "reference-audited-ready-for-reconstruction",
+  "original_title": "Rocket from Spare Parts",
+  "original_title_aliases_from_demo": [
+    "Demo: *Rocket from Spare Parts* (54 s) · `brick-toy.mp4` · source in [`demo/`](demo/) · asset credits [`demo/CREDITS`](demo/CREDITS)",
+    "",
+    "## Story & structure"
+  ],
+  "published_premise_verbatim": "A brick astronaut builds a rocket from spare parts and flies to a brick moon.",
+  "published_premise_zh_verbatim": "积木宇航员用零件拼出火箭，飞向积木月亮。",
+  "prompt_provenance": {
+    "original_conversation_prompt_available": false,
+    "verbatim_original_conversation_prompt": null,
+    "published_brief_statement": null,
+    "reconstructed_replication_instruction": "Recreate the full published Rocket from Spare Parts scene order, story, exact narration and screen text at original timing/resolution/fps, including all specified subjects, performance, mechanisms, lens/light/material treatment, transitions and sonic hits. This is a reconstruction from published sources, not a quoted original conversational prompt.",
+    "reconstruction_basis": [
+      "Complete published STYLE.md and DEMO.md",
+      "Published narration, cards and timing source",
+      "Original movie: all regular contact sheets and named key-event frames"
+    ]
+  },
+  "original_format": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24.0,
+    "duration_s_exact_timeline": 54,
+    "duration_s_gallery_rounded": 54.0,
+    "duration_s_published_demo_text": "54",
+    "video_stream_metadata_verified": true,
+    "note": "Encoded target is frame_count/fps, not rounded catalogue or container audio duration.",
+    "frame_count": 1296,
+    "duration_s": 54.0,
+    "container_duration_s": 54.016,
+    "production_canvas_width": 1920,
+    "production_canvas_height": 1080
+  },
+  "source_authorship": "Historical original by Lemomo/LemoLab using Claude Opus5.5. New output must identify actual GPT authorship and attribute any reused generic components.",
+  "source_hashes": [
+    {
+      "path": "styles/brick-toy/STYLE.md",
+      "sha256": "29b23e846951856b722a698a03c9458cfc17b4fc71d044f45d773acf2a742768"
+    },
+    {
+      "path": "styles/brick-toy/DEMO.md",
+      "sha256": "04acbfc0282b0c31177c8988f9151424f504111c007e1c789019cc64804f3d85"
+    },
+    {
+      "path": "styles/brick-toy/style.json",
+      "sha256": "74691fbe30fb39816e51f8a0290f79a7b130e980e67967400f98267b7d31aa56"
+    },
+    {
+      "path": "styles/brick-toy/demo/story.js",
+      "sha256": "a5d0962346b22f2c202d8154b6176a9551171ef38b6727396757ef5b572dfca4"
+    },
+    {
+      "path": "styles/brick-toy/demo/lines.json",
+      "sha256": "f74b02a5ff63c925a46e67bae1cd73df9a47d6b15e66ba449e3e36bcff510a27"
+    }
+  ],
+  "style_guide_sha256": "29b23e846951856b722a698a03c9458cfc17b4fc71d044f45d773acf2a742768",
+  "style_guide_verbatim": "# Brick Toy — Style Prompt\n\n> Stop-motion toy-brick films shot like macro photography on a real desk: a world built from interlocking plastic bricks with round studs, animated a pose at a time.\n> References (grammar only): brick-film stop-motion on a tabletop and the \"brick movie\" approach of stepping characters while the camera moves smoothly; macro toy photography (softboxes on glossy plastic, shallow focus, real objects as landscape). Copy none of their characters, sets or music, and never use a brand name.\n\n## 1. Essence, and what it is not\n\nA brick world on a **real surface** (a wooden desk, a kitchen table, a windowsill), shot with a **macro lens** and animated **in stop-motion**. The charm is the tension between the toy world and the real room.\n\nOne-glance traits: glossy ABS with clean rectangular highlights; studs on every top face; seams darkened by contact shadow; real objects out of focus behind; characters that move in held poses on twos.\n\n**Never** use the LEGO name, logo or minifigure silhouette (trademarks). Characters are *built from bricks* (e.g. 1×1 columns for legs, a 2×2 brick for a torso, round bricks for arms, a round 2×2 helmet). Studs carry no lettering.\n\nNot a low-poly isometric island (no flat-shaded facets, no floating diorama), not a clay or felt stop-motion (no deformation: bricks are rigid), not a clean product render of a toy (this world is played with, handled, knocked over).\n\n## 2. Materials & rendering\n\n- **Plastic**: ABS with strong clearcoat (~0.85, clearcoat roughness ~0.07); a roughness map with faint fingerprints and scratches (base ~0.17, scratches up to ~0.65); a bevel so edges catch a highlight.\n- **Geometry**: rounded box bodies (bevel ~0.045 stud), studs with a thin lip. Unit = 1 stud pitch (8 mm); brick height 1.2, plate 0.4. Large baseplates are **matte** (lower clearcoat than bricks), or they reflect softboxes as a coloured wash.\n- **Set**: a real surface with a real texture and real props at true scale (1 m = 125 studs). Household objects become landscape. Light it with a **neutral daylight studio HDRI**, never a tungsten interior (white bricks turn orange).\n- **Light**: a toy-photography setup. A directional key from one upper side, warm-white, casting shadows (fit its shadow frustum to each shot so shadows stay crisp); two or three **RectAreaLight softboxes** (key front, cool rim behind, one over any big set) so glossy plastic shows clean rectangular highlights; environment kept low (~0.45) for contrast. Add a soft contact-shadow blob where the key's shadow falls behind a hero object.\n- **Ambient occlusion is mandatory**: GTAO (radius a few studs) darkens seams between stacked bricks, stud bases and contact points. Without it bricks look pasted on.\n- **Supersample 2×** (render 3840×2160, deliver 1080p): thin stud edges and bevel highlights shimmer without it.\n- **Lens**: physical depth of field (CoC ∝ |1/focus − 1/z|). Scale aperture with shot size: widest for close-ups, less for mediums, least for a wide (too much blurs the hero at mid distance). Focus is always on a character's head or the brick being placed.\n- **Effects are bricks**: fire, smoke, water, light, weather, celestial bodies are all built from plates, round bricks and translucent pieces, jittered or rebuilt per drawing. Nothing is a particle system or a soft gradient.\n\n## 3. Colour logic\n\n- A **toy palette**: a handful of saturated brick primaries plus white, black, greys, tan. Each built object has one dominant colour and at most one or two trim colours; characters and hero objects take the most saturated ones.\n- The **real world stays natural and muted**: wood, paper, ceramic, daylight. The saturated colour belongs to the toys, which makes them pop against the room.\n- **Whites must read white**: grade slightly cool so white bricks don't go cream from the room bounce; soft contrast, saturation lifted ~10 %.\n- Translucent pieces (orange, yellow, clear, blue) are reserved for effects: fire, light, water, glass.\n- Example palette (the classic brick primaries): red `#c91a09`, blue `#0055bf`, yellow `#f2cd37`, green `#237841`, white `#f2f2ee`, black `#1b2a34`. Others: pastels and tan; greys with one accent.\n\n## 4. Type & subtitles\n\n- A rounded, friendly OFL face (e.g. Fredoka, in `core/fonts`) for titles and subtitles.\n- Subtitles live on a **toy element**: a dark rounded pill low in the frame with a small brick icon beside the text, or a printed tile, or a sign built into the set. White on dark, ≤ 2 lines. A second speaker type (radio, device, narrator) gets its own icon colour or tag. Hold ≥ max(1.8 s, speech + 0.6 s).\n- Titles pop in on 12 fps steps, like a piece being placed; a short sub-line in a brick colour.\n\n## 5. Motion quality\n\n- **Characters and bricks step at 12 fps** (on twos); **camera, focus, fire and flying vehicles move on ones** at 24 fps. Stepping the camera too reads as judder, not charm.\n- Bricks **fly in on arcs** and **snap** with a tiny overshoot (a fraction of a stud → 0 in ~4 frames). Every snap is a click on the soundtrack.\n- Characters act with **big readable poses** held for several drawings: a V of arms for pride, arms flung up for alarm, a bowed head for sadness, a hop for joy. Walk cycles swing legs about ±0.55 rad with a small bob. Arms and legs rotate at their joints; nothing bends.\n- Collapses and falls use **real rigid-body physics**: tip about the base edge, then independent bodies with gravity (a lower-than-true value reads better at this scale), bounces (restitution ~0.3), friction, settling flat. Pre-simulate so every render is identical.\n- Tiny imperfections are allowed. Bricks never stretch, squash or morph.\n\n## 6. Camera grammar\n\nA vocabulary, not a route. Opening and ending come from the topic.\n\n| Move | Expresses | Can serve |\n|---|---|---|\n| Extreme macro on one brick or stud, real room blurred behind | The toy scale is the world | a beginning; a detail that matters; a single part |\n| Low angle at minifig eye level | A tiny character made heroic | ambition; pride; standing up to something big |\n| High wide over the whole surface | The scale reveal: it was a toy all along | a summing-up; irony; a finished build |\n| Low, wide, lonely frame, character small in a corner | Smallness, failure | a setback; waiting; loss |\n| Frontal close-up, hands and brick in focus | Intimacy, decision | a choice; a repair; a gift |\n| Handheld shake on impact | Physical shock | a collapse; an arrival; a collision |\n| Tracking alongside a moving object, destination ahead | Momentum toward a goal | a journey; a race; a launch |\n| Top-down plan view | Order, layout, a map | a plan; sorting parts; a city from above |\n| Rack focus from a real object to a brick (or back) | Two scales in one frame | \"big world, small maker\"; a comparison |\n| Orbit around a finished build | Pride, inspection | a product; a monument; a result |\n\nFraming: keep foreground clutter out of the frame edges (piles of parts love to block the lens); check headroom in every shot; check every real prop against every camera, because an object placed on one shot's axis sneaks into the background of another. Cut on beats or bars; a snap can be a cut point. No generic dissolves; transitions can be a hand-placed brick covering the lens, a whip along the desk, or a pull out of one set into the next.\n\n## 7. Sound palette\n\n- **Instruments**: small, acoustic, playful (glockenspiel, toy piano, pizzicato, ukulele, whistling, claps, melodica); a brass or orchestral swell for scale; a heartbeat drum for suspense. Licensed or original, edited to the picture (cut on bars, bar-aligned jumps, chroma similarity at joins) rather than looped under it.\n- **Foley** (synthesizable): plastic creak before a failure, tiny plastic footsteps, a crash of many clacks, a brick click (short transient + resonances near 2.9 kHz and 4.6 kHz), clack on wood, rattle of a parts pile being stirred, whoosh on throws, a bell \"ding\" for discovery, bricks sliding over paper, motors and engines built from filtered noise.\n- **Silence is a tool**: cut music dead at a failure or a surprise; leave only room tone and one small real-world sound (a ticking clock, a fridge hum, a distant bird). Music can also drop out before a big moment, leaving a pulse or a countdown.\n- **Voice**: a warm storyteller, few short lines with room to breathe; secondary voices through a device filter (band-pass ~380–2800 Hz + soft saturation), optionally with beeps. Verify every line with whisper.\n- Mix: voice compressed, music ducked ~40 % under voice, loudness −14 LUFS.\n\n## 8. Native moves\n\nA menu: use the ones your story needs.\n\n- **Snap-together building.** The plot is an act of building; pieces fly in on arcs and click home. *Fits content like:* a company assembling its first product; a neighbourhood rising street by street; a recipe put together ingredient by ingredient.\n- **Break without harm.** Things fall apart and the parts become something new; failure yields spare parts. *Fits content like:* a pivot after a failed plan; recycling; a team reshuffled into a better shape.\n- **Toy on a real desk.** Real objects become landscape at toy scale. *Fits content like:* a laptop keyboard as a city grid; a houseplant as a jungle; a coffee spill as a flood.\n- **Hand-made stop-motion.** 12 fps poses, tiny imperfections, even fire and water made of bricks. *Fits content like:* a weather report; a kitchen explained with brick flames; a science demo of a volcano.\n- **Rebuild into something else.** The same pieces, rearranged on screen, become a different object. *Fits content like:* one career turning into another; a before/after renovation; a word re-spelled.\n- **The scale reveal.** Pull back until the whole world is a toy on a table. *Fits content like:* a big ambition that is still small; a year in review; a child's imagination.\n\n## 9. Pitfalls of the medium\n\n- Tungsten HDRI → orange whites. Use a neutral studio HDRI and a slightly cool grade.\n- Clearcoat on a large flat baseplate reflects softboxes as a coloured wash. Make it matte.\n- Flat, slightly jagged first renders: even light, no AO, single-sample rendering, stepped camera. Fix: softboxes + low environment, GTAO, 2× supersampling, cool grade, camera on ones.\n- Too much aperture blurs the hero at mid distance. Scale aperture with shot size.\n- A fast-rising or fast-moving object becomes a dot on a blank wall. Track it and keep its destination in frame.\n- Curved transparent parts made from a sphere segment vanish inside a cylindrical part. Use an open-cylinder panel.\n- Real props on a later shot's camera axis sneak into the background. Check props against every camera.\n- Random jitter used as a material or colour index can go negative → undefined material crash. Clamp.\n\n## 10. Engine\n\nIn `demo/`: `bricks.js` (rounded brick/plate/round-brick geometry, studs, plastic materials with clearcoat and fingerprint roughness), `actors.js` (a brick-built character rig with pose objects and `walkPose`), `set.js` (desk, HDRI, real props at true scale, softboxes), `rockets.js` (props, pre-simulated rigid-body physics, brick fire and smoke), `main.js` (acting, cameras, DOF, subtitles, sound events), `mix.py` (synthesized foley + voice + music), `music/edit.py` (bar-aligned score edit). Minimal start: a brick lighthouse from `bricks.js` on a stack of books, lit by the `set.js` softboxes, one still via `core/render/still.mjs`.\n\n## 11. Variation space\n\nYou decide the structure, the characters (or none), the surface and its props, the opening, the ending, the camera path, the pacing, the palette within the colour logic and the music. All far from our demo:\n\n- Structures: **a catalogue** (one build per beat, each a different object answering the same question, lined up at the end); **two builders** on opposite sides of the table whose builds grow toward each other; **a disassembly** (a finished thing is taken apart piece by piece to explain what's inside).\n- Openings: **a hand pours a bin of bricks** onto the table and the pile settles into the first shape; **a real object first** (a mug, a phone), then rack focus to the tiny world at its base; **plan view** of an empty baseplate filling in like a map.\n- Endings: **one piece left over** held in close-up, the question it raises unanswered; **the lights go out** in the room and only a lit brick window glows; **a real hand** reaches in and picks the character up.\n\n---\n\nHow our demo was made (story, shots, score, end card, build): [DEMO.md](DEMO.md). Read it after your treatment exists.\n",
+  "published_demo_verbatim": "# Brick Toy — our demo\n\nOne example among many. Don't reuse its story, arc, shots, props or timings.\n\nDemo: *Rocket from Spare Parts* (54 s) · `brick-toy.mp4` · source in [`demo/`](demo/) · asset credits [`demo/CREDITS`](demo/CREDITS)\n\n## Story & structure\n\nA brick astronaut builds a rocket; it collapses; he rebuilds it from the fallen parts and flies to the \"moon\" (a stack of books). Failure isn't the end, it's just spare parts. One character, one goal.\n\nThe old guide told agents to \"turn the topic into something being built\" and to use at least three of the four native powers; the demo used all four: snap-together building (open on one brick, end on one brick), break without harm (the collapse becomes the parts for a better rocket), toy on a real desk (a teapot is a mountain, a stack of books is the moon, the lamp is the sun), hand-made stop-motion (12 fps, even the flames and smoke are bricks). The old guide also listed adaptation examples: a product launch → the product is assembled brick by brick; a love story → two characters build a bridge between two books; a history lesson → an era is built, falls, is rebuilt.\n\nArc (45–60 s, as written for this film): curiosity → excitement → a setback (collapse) → a quiet beat → rebuilding → climax → a warm scale-reveal. Acts: opening 0:00–0:06 (one red brick, the first snap), act one 0:06–0:18 (fast building, pride), act two 0:18–0:30 (collapse, silence, picking up the parts), act three 0:30–0:50 (countdown, ignition, launch, landing on the moon), end card after.\n\n## Shots\n\n| Beat | Camera |\n|---|---|\n| Opening | Extreme macro on one brick, slow push, background blurred to real props |\n| Building | Low angles make the tiny character heroic; cut every bar |\n| Setback | Handheld shake on the collapse, then a **low, wide, lonely** frame with the character small |\n| Emotional beat | Close-up from the front, character's hands and the brick in focus |\n| Climax | Low angle following upward; then a **tracking shot** alongside the rocket with the moon (books) visible ahead |\n| Ending | Slow pull-back to a high wide shot of the whole desk: the scale reveal |\n\nEach of these is one choice from STYLE.md §6 made for this story, not the style's default opening or ending.\n\nLens settings as used: aperture ~500–700 for close-ups, ~800 for mediums, ~400 for the final wide. Snap overshoot 0.35 stud → 0 in ~0.17 s. Collapse gravity ~420 studs/s² (true would be 1225), restitution ~0.3.\n\n## Score structure\n\nTwo Kevin MacLeod tracks (CC BY 4.0), edited to the picture by `demo/music/edit.py`: \"Monkeys Spinning Monkeys\" (playful, cut on bars) for building, the same theme returning quietly for the rebuild, \"Heroic Age\" as the orchestral swell for the climax. The edit makes the climax hit land on ignition and the final chord land on the end card (bar-aligned jumps, chroma similarity at the joins). `story.js` times are aligned to the music bars.\n\nSilences: music cut dead on the collapse, leaving room tone and a ticking clock; music pulled out again before the climax, with a low heartbeat drum under the countdown.\n\nFoley specific to this film: ignition boom and rocket roar; radio chatter with Quindar beeps.\n\nVoice: warm British storyteller, Kokoro `bm_george`, speed ~0.9, 4–6 short lines; mission control is `am_adam` through a radio filter (band-pass 380–2800 Hz + soft saturation) with Quindar beeps. Every line verified with whisper. Voice compressed, music ducked ~40 % under voice, −14 LUFS.\n\n## Palette & props\n\n- Classic brick palette: red `#c91a09`, blue `#0055bf`, yellow `#f2cd37`, green `#237841`, white `#f2f2ee`, black `#1b2a34`, plus orange, light/dark grey, tan, azure. Bevel radius 0.06; baseplate matte green (it turned cyan with full clearcoat).\n- Set: walnut desk (Poly Haven `american_walnut_veneer`), `photo_studio_loft_hall` HDRI, tea set (teapot mountain, cup), pencil, books (the moon), desk lamp (the sun). Key light `#fff4e8` from upper left; softboxes key front-left, cool rim behind, one over the finale set. GTAO radius ~3.5 studs, scale 2.5. Grade: contrast +0.26, saturation ×1.1, slightly cool.\n- The astronaut: 1×1 columns for legs, a 2×2 brick torso, round-brick arms, a round 2×2 helmet with a curved visor panel.\n- The rocket, fire (translucent orange/yellow round plates jittered every frame), smoke (white round bricks that grow and roll outward), the moon (grey round plates with crater tiles).\n- Subtitles: a dark rounded pill `rgba(18,20,26,.62)` centred 150 px above the bottom, Fredoka 600 46 px white, a small yellow 2×1 brick icon on the left. Radio lines get a red brick icon and a \"MISSION CONTROL\" tag.\n- Title: \"Rocket from Spare Parts\", Fredoka 700, popping in on 12 fps steps, with the yellow sub-line \"A BRICK TOY FILM\".\n\n## End card\n\nThe darkened final wide, the title (Fredoka 700), a brick icon, \"BRICK TOY · LEMO-OPUSCAR\" in yellow, the \"LemoLab × Claude Opus 5.5\" line and the asset credits. That sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card (remove the line drawn in `main.js` if you adapt it).\n\n## Build notes\n\n```\nstyles/brick-toy/demo/\n  bricks.js   geometry + plastic materials        rockets.js  props, physics, fx\n  actors.js   brick-built character rig            set.js      desk, HDRI, real props, moon\n  story.js    timeline aligned to music bars        main.js     acting, cameras, subtitles, events\n  lines.json  voice script    mix.py  foley+voice+music    music/edit.py  score edit\n```\n\n1. `node core/render/still.mjs styles/brick-toy/demo <t…>`: review stills, iterate.\n2. `.venv/bin/python core/tts/tts.py lines.json voices` → `core/tts/asr_check.py` to verify.\n3. `node core/render/events.mjs styles/brick-toy/demo` → `python music/edit.py` → `python mix.py`.\n4. `node core/render/video.mjs styles/brick-toy/demo --fps 24` (1296 frames with 2× SSAA + GTAO ≈ 65 s on an M4 Pro).\n5. `core/render/mux.sh out/video24.mp4 mix.wav brick-toy.mp4 24`.\n\nPitfalls tied to this demo's props:\n- The helmet visor made from a sphere segment disappeared inside the cylinder helmet; a curved open-cylinder panel fixed it.\n- The rocket simply accelerating upward became a dot on a blank wall; a tracking shot aimed at the moon fixed it.\n- The desk lamp, placed on the camera axis of a later shot, kept sneaking into the background.\n- Stepping the camera at 12 fps too was tried and looked unsmooth; the camera moved to ones.\n- Spare-parts piles kept blocking the lens at frame edges.\n",
+  "canonical_scene_order": [
+    {
+      "id": "macro",
+      "t0": 0,
+      "t1": 3.4,
+      "world": null,
+      "visual_prompt_source_description": "Extreme macro of one red bevelled plastic brick on real walnut desk; room props soft beyond focus.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "v1"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0002.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Extreme macro of one red bevelled plastic brick on real walnut desk; room props soft beyond focus."
+    },
+    {
+      "id": "place",
+      "t0": 3.4,
+      "t1": 5.671833095329316,
+      "world": null,
+      "visual_prompt_source_description": "Tiny brick-built astronaut snaps first piece onto build at4s.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0005.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Tiny brick-built astronaut snaps first piece onto build at4s."
+    },
+    {
+      "id": "mA",
+      "t0": 5.671833095329316,
+      "t1": 7.343666190658633,
+      "world": null,
+      "visual_prompt_source_description": "Low heroic build montage: first rocket layers fly in on arcs and snap.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "v2"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0007.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Low heroic build montage: first rocket layers fly in on arcs and snap."
+    },
+    {
+      "id": "mB",
+      "t0": 7.343666190658633,
+      "t1": 9.015499285987948,
+      "world": null,
+      "visual_prompt_source_description": "Second build angle; rigid studded layers stack, camera smooth and character on twos.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0009.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Second build angle; rigid studded layers stack, camera smooth and character on twos."
+    },
+    {
+      "id": "mC",
+      "t0": 9.015499285987948,
+      "t1": 10.687332381317265,
+      "world": null,
+      "visual_prompt_source_description": "Third low-angle build shot, saturated toy primaries against muted tea-set mountain.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0010.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Third low-angle build shot, saturated toy primaries against muted tea-set mountain."
+    },
+    {
+      "id": "mD",
+      "t0": 10.687332381317265,
+      "t1": 12.35916547664658,
+      "world": null,
+      "visual_prompt_source_description": "Fourth detail build angle, no brick stretching.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0012.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Fourth detail build angle, no brick stretching."
+    },
+    {
+      "id": "mE",
+      "t0": 12.35916547664658,
+      "t1": 14.030998571975896,
+      "world": null,
+      "visual_prompt_source_description": "Fifth build detail leading to small cone top.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0014.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Fifth build detail leading to small cone top."
+    },
+    {
+      "id": "proud",
+      "t0": 14.030998571975896,
+      "t1": 16.9,
+      "world": null,
+      "visual_prompt_source_description": "Astronaut proud V-arm pose; rocket begins to wobble.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0016.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Astronaut proud V-arm pose; rocket begins to wobble."
+    },
+    {
+      "id": "collapse",
+      "t0": 16.9,
+      "t1": 20.5,
+      "world": null,
+      "visual_prompt_source_description": "Rocket tips about base edge then independent rigid bricks fall under precomputed gravity and settle; impact shake; music cuts.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0019.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Rocket tips about base edge then independent rigid bricks fall under precomputed gravity and settle; impact shake; music cuts."
+    },
+    {
+      "id": "alone",
+      "t0": 20.5,
+      "t1": 25,
+      "world": null,
+      "visual_prompt_source_description": "Low wide lonely shot, astronaut small with fallen pieces; room tone and ticking clock.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "v3"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0023.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Low wide lonely shot, astronaut small with fallen pieces; room tone and ticking clock."
+    },
+    {
+      "id": "pickup",
+      "t0": 25,
+      "t1": 26.3,
+      "world": null,
+      "visual_prompt_source_description": "Frontal close-up: glove/brick in focus, picks one useful spare piece.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "v4"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0026.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Frontal close-up: glove/brick in focus, picks one useful spare piece."
+    },
+    {
+      "id": "rummage",
+      "t0": 26.3,
+      "t1": 29.8,
+      "world": null,
+      "visual_prompt_source_description": "Searches parts, tosses wheel and flower, discovers bigger cone; quiet theme returns.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0029.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Searches parts, tosses wheel and flower, discovers bigger cone; quiet theme returns."
+    },
+    {
+      "id": "rebuild",
+      "t0": 29.8,
+      "t1": 32.5,
+      "world": null,
+      "visual_prompt_source_description": "Same fallen pieces fly back and snap every.19s; stronger rocket assembled.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0032.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Same fallen pieces fly back and snap every.19s; stronger rocket assembled."
+    },
+    {
+      "id": "visor",
+      "t0": 32.5,
+      "t1": 34.2,
+      "world": null,
+      "visual_prompt_source_description": "Helmet/visor countdown close-up, radio and Quindar.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "c3"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0034.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Helmet/visor countdown close-up, radio and Quindar."
+    },
+    {
+      "id": "fins",
+      "t0": 34.2,
+      "t1": 35.4,
+      "world": null,
+      "visual_prompt_source_description": "Fin detail with countdown, held rigid poses.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "c2",
+        "c1"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0035.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Fin detail with countdown, held rigid poses."
+    },
+    {
+      "id": "pad",
+      "t0": 35.4,
+      "t1": 36.5,
+      "world": null,
+      "visual_prompt_source_description": "Launch-pad anticipation and heartbeat, brick fire flickers before ignition.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0036.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Launch-pad anticipation and heartbeat, brick fire flickers before ignition."
+    },
+    {
+      "id": "liftoff",
+      "t0": 36.5,
+      "t1": 40,
+      "world": null,
+      "visual_prompt_source_description": "Ignition at36.5; rising low-angle camera tracks rocket; flame/smoke made of bricks.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0039.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Ignition at36.5; rising low-angle camera tracks rocket; flame/smoke made of bricks."
+    },
+    {
+      "id": "cruise",
+      "t0": 40,
+      "t1": 42.5,
+      "world": null,
+      "visual_prompt_source_description": "Tracking shot beside rocket with book-stack moon visibly ahead.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0042.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Tracking shot beside rocket with book-stack moon visibly ahead."
+    },
+    {
+      "id": "moon",
+      "t0": 42.5,
+      "t1": 48,
+      "world": null,
+      "visual_prompt_source_description": "Landing on grey brick moon/book stack; astronaut exits and places single base brick.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [
+        "v5"
+      ],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0046.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Landing on grey brick moon/book stack; astronaut exits and places single base brick."
+    },
+    {
+      "id": "reveal",
+      "t0": 48,
+      "t1": 51.71,
+      "world": null,
+      "visual_prompt_source_description": "Slow high pullback reveals desk, tea-set mountain, book moon and lamp sun.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0050.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Slow high pullback reveals desk, tea-set mountain, book moon and lamp sun."
+    },
+    {
+      "id": "endcard",
+      "t0": 51.71,
+      "t1": 54,
+      "world": null,
+      "visual_prompt_source_description": "Darkened final wide with stepped friendly title and credits.",
+      "provenance": "published story.js SHOTS exact times, description reconstructed from published DEMO and shot naming; video audit pending",
+      "on_screen_subtitle_cues": [],
+      "voice_line_ids": [],
+      "sound_requirement": "Recreate the original section timbre, form, material foley and synchronized hits from the score specification. Generate fresh speech/music; do not reuse the original audio master.",
+      "reference_frames": [
+        "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/frames/f-0053.jpg"
+      ],
+      "visual_audit_status": "Reviewed in the full reference sequence; see visual_audit.coverage for actual sampled frames.",
+      "camera_and_action_prompt": "Darkened final wide with stepped friendly title and credits."
+    }
+  ],
+  "narration": [
+    {
+      "id": "v1",
+      "t0": 0.8,
+      "duration_s_original_voice": 2.462,
+      "tts_text_verbatim": "Every rocket starts with one brick.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 0.9,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v1",
+        "text": "Every rocket starts with one brick.",
+        "voice": "bm_george",
+        "speed": 0.9,
+        "lang": "en-gb"
+      }
+    },
+    {
+      "id": "v2",
+      "t0": 6,
+      "duration_s_original_voice": 1.865,
+      "tts_text_verbatim": "Then another. And another.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v2",
+        "text": "Then another. And another.",
+        "voice": "bm_george",
+        "speed": 0.95,
+        "lang": "en-gb"
+      }
+    },
+    {
+      "id": "v3",
+      "t0": 22.6,
+      "duration_s_original_voice": 2.176,
+      "tts_text_verbatim": "The first one fell apart.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 0.85,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v3",
+        "text": "The first one fell apart.",
+        "voice": "bm_george",
+        "speed": 0.85,
+        "lang": "en-gb"
+      }
+    },
+    {
+      "id": "v4",
+      "t0": 25.6,
+      "duration_s_original_voice": 2.697,
+      "tts_text_verbatim": "That's okay. Now we have spare parts.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 0.9,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v4",
+        "text": "That's okay. Now we have spare parts.",
+        "voice": "bm_george",
+        "speed": 0.9,
+        "lang": "en-gb"
+      }
+    },
+    {
+      "id": "c3",
+      "t0": 33.3,
+      "duration_s_original_voice": 0.643,
+      "tts_text_verbatim": "Three.",
+      "speaker": null,
+      "voice": "am_adam",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "c3",
+        "text": "Three.",
+        "voice": "am_adam",
+        "speed": 0.95
+      }
+    },
+    {
+      "id": "c2",
+      "t0": 34.3,
+      "duration_s_original_voice": 0.594,
+      "tts_text_verbatim": "Two.",
+      "speaker": null,
+      "voice": "am_adam",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "c2",
+        "text": "Two.",
+        "voice": "am_adam",
+        "speed": 0.95
+      }
+    },
+    {
+      "id": "c1",
+      "t0": 35.3,
+      "duration_s_original_voice": 0.573,
+      "tts_text_verbatim": "One.",
+      "speaker": null,
+      "voice": "am_adam",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "c1",
+        "text": "One.",
+        "voice": "am_adam",
+        "speed": 0.95
+      }
+    },
+    {
+      "id": "v5",
+      "t0": 45.2,
+      "duration_s_original_voice": 3.143,
+      "tts_text_verbatim": "And every moon base... starts with one brick.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 0.88,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v5",
+        "text": "And every moon base... starts with one brick.",
+        "voice": "bm_george",
+        "speed": 0.88,
+        "lang": "en-gb"
+      }
+    }
+  ],
+  "narration_source_path": "styles/brick-toy/demo/lines.json",
+  "published_timeline_extracted": {
+    "DUR": 54,
+    "BEAT": 0.41795827383232903,
+    "ANIM_FPS": 12,
+    "SHOTS": [
+      [
+        0,
+        3.4,
+        "macro"
+      ],
+      [
+        3.4,
+        5.671833095329316,
+        "place"
+      ],
+      [
+        5.671833095329316,
+        7.343666190658633,
+        "mA"
+      ],
+      [
+        7.343666190658633,
+        9.015499285987948,
+        "mB"
+      ],
+      [
+        9.015499285987948,
+        10.687332381317265,
+        "mC"
+      ],
+      [
+        10.687332381317265,
+        12.35916547664658,
+        "mD"
+      ],
+      [
+        12.35916547664658,
+        14.030998571975896,
+        "mE"
+      ],
+      [
+        14.030998571975896,
+        16.9,
+        "proud"
+      ],
+      [
+        16.9,
+        20.5,
+        "collapse"
+      ],
+      [
+        20.5,
+        25,
+        "alone"
+      ],
+      [
+        25,
+        26.3,
+        "pickup"
+      ],
+      [
+        26.3,
+        29.8,
+        "rummage"
+      ],
+      [
+        29.8,
+        32.5,
+        "rebuild"
+      ],
+      [
+        32.5,
+        34.2,
+        "visor"
+      ],
+      [
+        34.2,
+        35.4,
+        "fins"
+      ],
+      [
+        35.4,
+        36.5,
+        "pad"
+      ],
+      [
+        36.5,
+        40,
+        "liftoff"
+      ],
+      [
+        40,
+        42.5,
+        "cruise"
+      ],
+      [
+        42.5,
+        48,
+        "moon"
+      ],
+      [
+        48,
+        51.71,
+        "reveal"
+      ],
+      [
+        51.71,
+        54,
+        "endcard"
+      ]
+    ],
+    "VO": [
+      {
+        "id": "v1",
+        "t": 0.8,
+        "text": "Every rocket starts with one brick."
+      },
+      {
+        "id": "v2",
+        "t": 6,
+        "text": "Then another. And another."
+      },
+      {
+        "id": "v3",
+        "t": 22.6,
+        "text": "The first one fell apart."
+      },
+      {
+        "id": "v4",
+        "t": 25.6,
+        "text": "That's okay. Now we have spare parts."
+      },
+      {
+        "id": "c3",
+        "t": 33.3,
+        "text": "Three…",
+        "radio": true
+      },
+      {
+        "id": "c2",
+        "t": 34.3,
+        "text": "Two…",
+        "radio": true
+      },
+      {
+        "id": "c1",
+        "t": 35.3,
+        "text": "One…",
+        "radio": true
+      },
+      {
+        "id": "v5",
+        "t": 45.2,
+        "text": "And every moon base… starts with one brick."
+      }
+    ],
+    "T": {
+      "firstClick": 4,
+      "title": [
+        4.15,
+        5.6
+      ],
+      "cone1": 14.030998571975896,
+      "wobble": 15.702831667305214,
+      "fall": 17.37466476263453,
+      "sit": 20.9,
+      "pickUp": 25.2,
+      "reprise": 26.4,
+      "toss": [
+        27.4,
+        28.2
+      ],
+      "found": 29,
+      "rebuild": 29.9,
+      "rebuildStep": 0.19,
+      "coneLand": 32.5,
+      "quindar": 32.8,
+      "count": [
+        33.3,
+        34.3,
+        35.3
+      ],
+      "flicker": 35,
+      "ignite": 36.5,
+      "lift": 37,
+      "land": 44.2,
+      "walkOut": 45,
+      "placeBrick": 46.6,
+      "reveal": 48,
+      "end": 51.71
+    }
+  },
+  "on_screen_text_inventory": {
+    "published_subtitle_file_verbatim": "1\n00:00:00,750 --> 00:00:03,762\nEvery rocket starts with one brick.\n\n2\n00:00:05,950 --> 00:00:08,365\nThen another. And another.\n\n3\n00:00:22,550 --> 00:00:25,276\nThe first one fell apart.\n\n4\n00:00:25,550 --> 00:00:28,797\nThat's okay. Now we have spare parts.\n\n5\n00:00:33,250 --> 00:00:34,250\nThree…\n\n6\n00:00:34,250 --> 00:00:35,250\nThree…  Two…\n\n7\n00:00:35,250 --> 00:00:36,500\nThree…  Two…  One…\n\n8\n00:00:45,150 --> 00:00:48,843\nAnd every moon base… starts with one brick.\n",
+    "cues_original_json": [],
+    "timeline_text_fields": {},
+    "titles_subtitles_palette_verbatim": "",
+    "palette_props_verbatim": "- Classic brick palette: red `#c91a09`, blue `#0055bf`, yellow `#f2cd37`, green `#237841`, white `#f2f2ee`, black `#1b2a34`, plus orange, light/dark grey, tan, azure. Bevel radius 0.06; baseplate matte green (it turned cyan with full clearcoat).\n- Set: walnut desk (Poly Haven `american_walnut_veneer`), `photo_studio_loft_hall` HDRI, tea set (teapot mountain, cup), pencil, books (the moon), desk lamp (the sun). Key light `#fff4e8` from upper left; softboxes key front-left, cool rim behind, one over the finale set. GTAO radius ~3.5 studs, scale 2.5. Grade: contrast +0.26, saturation ×1.1, slightly cool.\n- The astronaut: 1×1 columns for legs, a 2×2 brick torso, round-brick arms, a round 2×2 helmet with a curved visor panel.\n- The rocket, fire (translucent orange/yellow round plates jittered every frame), smoke (white round bricks that grow and roll outward), the moon (grey round plates with crater tiles).\n- Subtitles: a dark rounded pill `rgba(18,20,26,.62)` centred 150 px above the bottom, Fredoka 600 46 px white, a small yellow 2×1 brick icon on the left. Radio lines get a red brick icon and a \"MISSION CONTROL\" tag.\n- Title: \"Rocket from Spare Parts\", Fredoka 700, popping in on 12 fps steps, with the yellow sub-line \"A BRICK TOY FILM\".",
+    "end_card_verbatim": "The darkened final wide, the title (Fredoka 700), a brick icon, \"BRICK TOY · LEMO-OPUSCAR\" in yellow, the \"LemoLab × Claude Opus 5.5\" line and the asset credits. That sign-off belongs to this library's demo only; a user's film carries no LemoLab credit and no copy of this card (remove the line drawn in `main.js` if you adapt it).",
+    "completion_note": "Exact visible typography/content must be checked in original video; this inventory preserves all published cue/title/prop specifications. Model authorship credit is a reference fact, never new-output attribution.",
+    "original_annotation_literal_sources": []
+  },
+  "sound_recreation": {
+    "instruction": "Generate new voice and music; original mix/track reuse is not permitted by latest user instruction. Preserve full words, cadence windows, BPM, musical form, silence and picture-synchronous hits.",
+    "published_score_sound_spec_verbatim": "Two Kevin MacLeod tracks (CC BY 4.0), edited to the picture by `demo/music/edit.py`: \"Monkeys Spinning Monkeys\" (playful, cut on bars) for building, the same theme returning quietly for the rebuild, \"Heroic Age\" as the orchestral swell for the climax. The edit makes the climax hit land on ignition and the final chord land on the end card (bar-aligned jumps, chroma similarity at the joins). `story.js` times are aligned to the music bars.\n\nSilences: music cut dead on the collapse, leaving room tone and a ticking clock; music pulled out again before the climax, with a low heartbeat drum under the countdown.\n\nFoley specific to this film: ignition boom and rocket roar; radio chatter with Quindar beeps.\n\nVoice: warm British storyteller, Kokoro `bm_george`, speed ~0.9, 4–6 short lines; mission control is `am_adam` through a radio filter (band-pass 380–2800 Hz + soft saturation) with Quindar beeps. Every line verified with whisper. Voice compressed, music ducked ~40 % under voice, −14 LUFS.",
+    "original_voice_records": [
+      {
+        "id": "v1",
+        "text": "Every rocket starts with one brick.",
+        "voice": "bm_george",
+        "speed": 0.9,
+        "lang": "en-gb"
+      },
+      {
+        "id": "v2",
+        "text": "Then another. And another.",
+        "voice": "bm_george",
+        "speed": 0.95,
+        "lang": "en-gb"
+      },
+      {
+        "id": "v3",
+        "text": "The first one fell apart.",
+        "voice": "bm_george",
+        "speed": 0.85,
+        "lang": "en-gb"
+      },
+      {
+        "id": "v4",
+        "text": "That's okay. Now we have spare parts.",
+        "voice": "bm_george",
+        "speed": 0.9,
+        "lang": "en-gb"
+      },
+      {
+        "id": "c3",
+        "text": "Three.",
+        "voice": "am_adam",
+        "speed": 0.95
+      },
+      {
+        "id": "c2",
+        "text": "Two.",
+        "voice": "am_adam",
+        "speed": 0.95
+      },
+      {
+        "id": "c1",
+        "text": "One.",
+        "voice": "am_adam",
+        "speed": 0.95
+      },
+      {
+        "id": "v5",
+        "text": "And every moon base... starts with one brick.",
+        "voice": "bm_george",
+        "speed": 0.88,
+        "lang": "en-gb"
+      }
+    ],
+    "original_voice_durations_s": {
+      "v1": 2.462,
+      "v2": 1.865,
+      "v3": 2.176,
+      "v4": 2.697,
+      "c3": 0.643,
+      "c2": 0.594,
+      "c1": 0.573,
+      "v5": 3.143
+    }
+  },
+  "engine_and_build": {
+    "required_engine_spec_verbatim": "In `demo/`: `bricks.js` (rounded brick/plate/round-brick geometry, studs, plastic materials with clearcoat and fingerprint roughness), `actors.js` (a brick-built character rig with pose objects and `walkPose`), `set.js` (desk, HDRI, real props at true scale, softboxes), `rockets.js` (props, pre-simulated rigid-body physics, brick fire and smoke), `main.js` (acting, cameras, DOF, subtitles, sound events), `mix.py` (synthesized foley + voice + music), `music/edit.py` (bar-aligned score edit). Minimal start: a brick lighthouse from `bricks.js` on a stack of books, lit by the `set.js` softboxes, one still via `core/render/still.mjs`.",
+    "published_build_notes_verbatim": "```\nstyles/brick-toy/demo/\n  bricks.js   geometry + plastic materials        rockets.js  props, physics, fx\n  actors.js   brick-built character rig            set.js      desk, HDRI, real props, moon\n  story.js    timeline aligned to music bars        main.js     acting, cameras, subtitles, events\n  lines.json  voice script    mix.py  foley+voice+music    music/edit.py  score edit\n```\n\n1. `node core/render/still.mjs styles/brick-toy/demo <t…>`: review stills, iterate.\n2. `.venv/bin/python core/tts/tts.py lines.json voices` → `core/tts/asr_check.py` to verify.\n3. `node core/render/events.mjs styles/brick-toy/demo` → `python music/edit.py` → `python mix.py`.\n4. `node core/render/video.mjs styles/brick-toy/demo --fps 24` (1296 frames with 2× SSAA + GTAO ≈ 65 s on an M4 Pro).\n5. `core/render/mux.sh out/video24.mp4 mix.wav brick-toy.mp4 24`.\n\nPitfalls tied to this demo's props:\n- The helmet visor made from a sphere segment disappeared inside the cylinder helmet; a curved open-cylinder panel fixed it.\n- The rocket simply accelerating upward became a dot on a blank wall; a tracking shot aimed at the moon fixed it.\n- The desk lamp, placed on the camera axis of a later shot, kept sneaking into the background.\n- Stepping the camera at 12 fps too was tried and looked unsmooth; the camera moved to ones.\n- Spare-parts piles kept blocking the lens at frame edges.",
+    "fetch_build_specs": [],
+    "local_original_asset_snapshot_inventory": [
+      {
+        "path": "styles/brick-toy/demo/events.json",
+        "sha256": "13f9829f191dfa3fbe403c2dce727bbe3aaf78ceeefa043b592c38b4bf3fda58",
+        "bytes": 4402
+      },
+      {
+        "path": "styles/brick-toy/demo/lines.json",
+        "sha256": "f74b02a5ff63c925a46e67bae1cd73df9a47d6b15e66ba449e3e36bcff510a27",
+        "bytes": 774
+      },
+      {
+        "path": "styles/brick-toy/demo/music/score.json",
+        "sha256": "ee0ce6c0e685210b9f58e22955a10c40724811a6046f62a36be547a38a646a31",
+        "bytes": 76
+      }
+    ]
+  },
+  "evidence": {
+    "original_credits_verbatim": "Rocket from Spare Parts — Brick Toy demo · LemoLab × Claude Opus 5.5 · asset sources & licenses\n\nMusic        Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0\n             \"Monkeys Spinning Monkeys\", \"Heroic Age\" — edited to the picture by music/edit.py\nSound FX     Synthesized in code (mix.py + core/audio/sfx.py). No samples.\nVoices       Kokoro TTS v1.0 (kokoro-onnx), Apache-2.0 — bm_george (narrator), am_adam (radio)\n3D assets    Poly Haven, CC0 (see core/assets/polyhaven/SOURCES.md):\n             photo_studio_loft_hall HDRI, american_walnut_veneer texture, tea_set_01, desk_lamp_arm_01\nBricks       Brick geometry, characters and the rocket built procedurally in code (bricks.js / actors.js / rockets.js).\n             Generic interlocking-brick shapes only; no LEGO logos, minifigure designs or set models.\nFont         Fredoka (core/fonts) — Google Fonts, SIL Open Font License 1.1\nCode         three.js (MIT)\n",
+    "source_urls": []
+  },
+  "matching_blockers": [
+    "The original conversation prompt is not published. The complete published style, script, timing and reference movie support the reconstruction."
+  ],
+  "visual_audit": {
+    "state": "complete-scene-and-key-event-coverage",
+    "reference_video_path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/films/brick-toy.mp4",
+    "reference_video_sha256": "1d74377276a890a3094601f939786b29a70bbde495ee40a75b43ddadd6337936",
+    "coverage": [
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/sheets/sheet-01.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/sheets/sheet-02.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/sheets/sheet-03.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/sheets/sheet-04.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "path": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/brick-toy/sheets/sheet-05.jpg",
+        "sampling": "One decoded sample persecond acrosscompletefilm; actual timestampsapprox0.5s+i."
+      },
+      {
+        "times": [
+          17.37,
+          17.65,
+          18.0,
+          36.5,
+          37.0,
+          44.2,
+          46.6
+        ],
+        "sheet": "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/outputs/gptcar/work/gptcar/matched-audit/event-frames/brick-toy/sheet.jpg"
+      }
+    ],
+    "reference_verified_visual_observations": [
+      "Build the full physical toy world on a real walnut desk, with photogrammetry tea set and articulated lamp at household scale. The white brick robot has a cylindrical head, navy face with two white eyes, red antenna ball, three coloured chest buttons, rigid tube arms and separate block legs. Dense bevelled studs, seams, clearcoat, fingerprints, AO and macro depth of field are essential. Show the thin first rocket failing into individual rigid parts; the seated disappointment, brick pickup and rummage; a broader finned rocket rebuilt from the spares; the complete countdown, brick flame/smoke, flight to the book-stack moon, landing, red base brick placement and extended desk reveal. Preserve all21 shots and54seconds."
+    ],
+    "note": "All regular reference sheets were inspected across the complete film. Named supplementary frames cover important short actions and transitions. This is scene coverage, not a claim that every encoded frame was inspected."
+  }
+}
