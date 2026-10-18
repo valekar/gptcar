@@ -1,0 +1,38 @@
+[
+  {
+    "t0": 5.15,
+    "t1": 9.583333333333334,
+    "text": "Seven a.m., folks! And boy, is this coffee bitter!",
+    "position": "b"
+  },
+  {
+    "t0": 11.666666666666668,
+    "t1": 13.616666666666667,
+    "text": "And they're off!",
+    "position": "b"
+  },
+  {
+    "t0": 17.083333333333336,
+    "t1": 20.333333333333336,
+    "text": "Up the china cabinet... what a climber!",
+    "position": "b"
+  },
+  {
+    "t0": 23.750000000000004,
+    "t1": 26.350000000000005,
+    "text": "Look out, folks... the drain!",
+    "position": "t"
+  },
+  {
+    "t0": 37.50000000000001,
+    "t1": 40.20000000000001,
+    "text": "Well, I'll be... sweet as pie!",
+    "position": "b"
+  },
+  {
+    "t0": 43.75,
+    "t1": 45.7,
+    "text": "Good night, folks!",
+    "position": "b"
+  }
+]

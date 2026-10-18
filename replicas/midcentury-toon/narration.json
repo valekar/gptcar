@@ -1,0 +1,62 @@
+{
+  "duration": 40,
+  "voice": "am_michael",
+  "language": "en-us",
+  "direction": "Warm unhurried 1950s classroom instructor; exact published six lines.",
+  "lines": [
+    {
+      "id": "hook",
+      "text": "Meet Pip, your new robot vacuum.",
+      "start": 1.978181818181818,
+      "duration": 2.307,
+      "voice": "am_michael",
+      "speed": 0.94,
+      "language": "en-us"
+    },
+    {
+      "id": "step0",
+      "text": "Step one. Set the dock against a wall.",
+      "start": 7.045454545454545,
+      "duration": 2.56,
+      "voice": "am_michael",
+      "speed": 0.94,
+      "language": "en-us"
+    },
+    {
+      "id": "step1",
+      "text": "Step two. Open the app and add Pip.",
+      "start": 12.5,
+      "duration": 2.47,
+      "voice": "am_michael",
+      "speed": 0.94,
+      "language": "en-us"
+    },
+    {
+      "id": "step2",
+      "text": "Step three. Press start.",
+      "start": 17.954545454545453,
+      "duration": 1.569,
+      "voice": "am_michael",
+      "speed": 0.94,
+      "language": "en-us"
+    },
+    {
+      "id": "tip",
+      "text": "Tip: pick up loose cables first.",
+      "start": 27.35272727272727,
+      "duration": 1.972,
+      "voice": "am_michael",
+      "speed": 0.94,
+      "language": "en-us"
+    },
+    {
+      "id": "outro",
+      "text": "Three steps. That's it.",
+      "start": 31.443635909090904,
+      "duration": 1.555,
+      "voice": "am_michael",
+      "speed": 0.94,
+      "language": "en-us"
+    }
+  ]
+}

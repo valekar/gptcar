@@ -22,6 +22,26 @@ def effect(kind,duration,seed=6103,**p):
   a=(np.sin(ph)*.5+bp(noise,250,2200)*.35)*env*(.4+.6*np.maximum(np.sin(2*np.pi*11*t),0))
  elif kind=='alarm_ring':
   a=(np.sin(2*np.pi*1800*t)+.4*np.sin(2*np.pi*2930*t))*(.25+.75*np.maximum(np.sin(2*np.pi*18*t),0))*np.minimum(t/.003,1)*np.minimum((d-t)/.05,1)
+ elif kind=='crt_power_on':
+  f=280+1000*np.exp(-t*8);a=(np.sin(2*np.pi*np.cumsum(f)/SR)*.25+bp(noise,1500,9000)*.3)*np.exp(-u*6)+np.sin(2*np.pi*15625*t)*.025*env
+ elif kind=='radio_squelch':
+  a=bp(noise,600,5000)*(.5+.5*np.sin(2*np.pi*83*t))*np.exp(-u*5)*np.minimum(t/.004,1)
+ elif kind=='cassette_click':
+  a=(bp(noise,800,6000)*.6+np.sin(2*np.pi*730*t)*.2)*np.exp(-u*32)*np.minimum(t/.0005,1)
+ elif kind in ('cassette_motor','tape_tracking'):
+  a=(lp(noise,1400)*.16+np.sin(2*np.pi*(110*t+.12*np.sin(2*np.pi*.8*t)))*.08+bp(noise,3000,11000)*.04)*env
+ elif kind=='tire_hiss':
+  a=bp(noise,1500,9000)*env*(.7+.3*np.sin(2*np.pi*17*t))
+ elif kind=='throttle_twist':
+  f=90+230*u;ph=2*np.pi*np.cumsum(f)/SR;a=(np.sin(ph)+.25*np.sin(3*ph)+lp(noise,750)*.35)*env
+ elif kind=='bridge_bell':
+  f=float(p.get('frequency',780));a=sum(g*np.sin(2*np.pi*f*r*t)*np.exp(-t*k) for r,g,k in [(1,.8,2),(2.76,.3,4),(5.4,.16,7)])*np.minimum(t/.002,1)*np.minimum((d-t)/.04,1)
+ elif kind=='impact':
+  a=(lp(noise,1800)*.8+np.sin(2*np.pi*(70*t-18*t*t/max(d,.1)))*.5+bp(noise,2400,9000)*.2)*np.exp(-u*13)*np.minimum(t/.001,1)
+ elif kind in ('metal_scrape','sparks'):
+  a=(bp(noise,1600,10500)*.5+np.sin(2*np.pi*(1900*t+700*t*t))*.2)*env*(.3+.7*(rng.random(len(t))<.06))
+ elif kind in ('rocket_ignition','rocket_roar'):
+  a=(lp(noise,550)*.8+bp(noise,700,6000)*.3+np.sin(2*np.pi*47*t)*.1)*np.minimum(t/(.025 if kind=='rocket_ignition' else .3),1)*np.minimum((d-t)/.15,1)
  elif kind=='light_switch':
   a=(bp(noise,1500,7500)*.7+np.sin(2*np.pi*950*t)*.2)*np.exp(-u*45)*np.minimum(t/.0005,1)
  elif kind=='wood_mould':
@@ -368,7 +388,13 @@ def saw(midi,duration):
 def synth_note(kind,midi,duration,**p):
  if kind=='saw':return saw(midi,duration)
  t=np.arange(max(1,round(duration*SR)))/SR;f=440*2**((float(midi)-69)/12);edge=np.minimum(t/.003,1)*np.minimum((duration-t)/.025,1)
- if kind=='lpg_plonk':
+ if kind=='fm_epiano':
+  a=(np.sin(2*np.pi*f*t+1.6*np.sin(2*np.pi*f*2*t)*np.exp(-t*5))+.12*np.sin(2*np.pi*f*7*t)*np.exp(-t*15))*np.exp(-t*2.6/max(duration,.3))
+ elif kind=='slap_bass':
+  a=(np.sin(2*np.pi*f*t)+.4*np.sin(2*np.pi*f*2*t)*np.exp(-t*7)+.23*np.sin(2*np.pi*f*8*t)*np.exp(-t*35))*np.exp(-t*5/max(duration,.3))
+ elif kind=='synth_brass':
+  a=sum(np.sin(2*np.pi*f*k*t)/k*np.exp(-k/6) for k in range(1,min(24,int(18000/f))+1))*np.minimum(t/.035,1)*np.exp(-t*1.2/max(duration,.1))
+ elif kind=='lpg_plonk':
   value=float(p.get('value',0));index=float(p.get('fm_index',.3+2.4*np.clip((value+.4)/1.8,0,1)))
   mod=np.sin(2*np.pi*f*2.713*t)*index*np.exp(-t*5)
   a=(np.sin(2*np.pi*f*t+mod)+.12*np.sin(2*np.pi*f*4.12*t)*np.exp(-t*12))*np.exp(-t*(7-2*np.clip(value,0,1)))

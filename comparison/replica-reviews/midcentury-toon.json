@@ -1,0 +1,23 @@
+{
+  "slug": "midcentury-toon",
+  "verdict": "accepted-for-gallery",
+  "reviewer": "root independent scene review",
+  "reviewed_source_sha256": "b8aae0f9d11c3205806a8f095157776444350f692bd8f278bccc6b8e8103cf74",
+  "reviewed_video_sha256": "e454d39ef4223c0fb84eda5d496bfbaef36ccad37ebabadadc3d35a74e61c427",
+  "scene_review": "passed",
+  "audio_review": "passed",
+  "review_times": [
+    23.708333333333332,
+    24.5,
+    26.5,
+    30.958333333333332,
+    32.5,
+    35.0,
+    37.5,
+    39.0
+  ],
+  "method": "Inspected all37 paired decoded full-film scene/event targets and eight final repair targets for plan dock, pointing callout, incoming summary wipe/pop envelopes, TIP ribbon, manual pill and closing medallion.",
+  "audio_evidence": "Six fresh am_michael narration takes normalized exact in independent ASR. New132BPM jazz score:376 notes,76 ride hits,147 material effects, preserving full-mix and music-only pauses. Final -14.0LUFS / -1.2dBTP.",
+  "comparison_notes": "Complete40-second setup follows the original: dock placement and50cm clearance, app/Wi-Fi, timed button hold, cleaning plan, cable removal and three-step summary. Generic UPA helpers are credited. Fine arm curves, outline texture, furniture details and some transition phases remain distinct.",
+  "reviewed_at": "2026-10-18T06:49:09.825106+00:00"
+}

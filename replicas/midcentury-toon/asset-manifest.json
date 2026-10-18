@@ -1,0 +1,42 @@
+[
+  {
+    "path": "replicas/midcentury-toon/fonts/AlfaSlabOne-Regular.ttf",
+    "sha256": "28664afa698a3393bd5a29eec750230a0645c5301d62200e5f2d3a027fb2299d",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/midcentury-toon/fonts/Jost.ttf",
+    "sha256": "6343b70971000b04c5d401c96ae08ce371086135e999d5e1e1413039c0213076",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/midcentury-toon/fonts/OFL-alfaslabone.txt",
+    "sha256": "e315abc82a78710c7242e2f2e6529651fd631d4d50e6ad98ea194f9b54c3d701",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/midcentury-toon/fonts/OFL-jost.txt",
+    "sha256": "1af3438a4d5f0ed2bdbc5751a5a67ebf6d537334161184b7fbb68503ef0ea0c5",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/midcentury-toon/fonts/OFL-oleoscript.txt",
+    "sha256": "8fbe530adcbe30c658393c3f2b5a4785d6765afcefdfe47f594730131f3a0abd",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/midcentury-toon/fonts/OleoScript-Bold.ttf",
+    "sha256": "7e4843c9d74233f00a2815954177e33758c1c42a08d218b11c131cf7d818f1d5",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/midcentury-toon/fonts/OleoScript-Regular.ttf",
+    "sha256": "1aa003ac938adf9bea644c406ce90eeb1913138aa1d7492242c0ca948c0f48ac",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/midcentury-toon/fonts/fonts.css",
+    "sha256": "d45eb37574c02ff89b8d88b4218095273518fd978bcf9e171bad89981d24a8bb",
+    "license": "SIL OFL"
+  }
+]

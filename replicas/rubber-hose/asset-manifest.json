@@ -1,0 +1,37 @@
+[
+  {
+    "path": "replicas/rubber-hose/fonts/IMFeENsc28P.ttf",
+    "sha256": "102324fb5434bb5da7963533426b0ad44c85bbc9e7755067535c9d11464a176b",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/rubber-hose/fonts/Limelight-Regular.ttf",
+    "sha256": "f5bf8a9159adfc5b9c756c85d812a4fd1299b8916fefdf39ad4b24ade6d8d0cf",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/rubber-hose/fonts/OFL-imfellenglishsc.txt",
+    "sha256": "2a3ca501fc4d5efcad9798531e3e06962b1e20c60e464f6cbd6c17630112c773",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/rubber-hose/fonts/OFL-limelight.txt",
+    "sha256": "6b53fb03a50914cc382f4d025ee595c17c43f24ae870f840bc51969d3e316c7e",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/rubber-hose/fonts/OFL-shrikhand.txt",
+    "sha256": "325e890b8b26fe0a683c3ba24c506d902bdd7034d9c47bd7fa2bb72b5433b9c9",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/rubber-hose/fonts/Shrikhand-Regular.ttf",
+    "sha256": "8ba32f6d6a96fb8dbc92fc1acfbc4d2123d5348063d89b2c3dd784e7afcb81af",
+    "license": "SIL OFL"
+  },
+  {
+    "path": "replicas/rubber-hose/fonts/fonts.css",
+    "sha256": "5ce6ffcbc98a28a1bc96ddd6f6579189bb2f0372639d37438a44ba18a896aaa6",
+    "license": "SIL OFL"
+  }
+]

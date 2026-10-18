@@ -1,0 +1,2 @@
+import{textures}from'./engine/toon.js';import{init,render}from'./scenes.js';
+const [content,sections,subs]=await Promise.all(['reference-content.json','timing.json','subtitles.json'].map(f=>fetch(f).then(r=>r.json())));await Promise.all(['700 80px Oleo','400 80px Oleo','80px Slab','400 40px Jost','500 40px Jost','600 40px Jost','700 40px Jost'].map(f=>document.fonts.load(f)));textures();init(content,sections,subs);const g=document.querySelector('#c').getContext('2d');window.DUR=40;window.render=t=>render(g,t);window.EV=[];window.SRT=subs;window.render(0);window.READY=true;

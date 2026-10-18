@@ -1,0 +1,11 @@
+Coffee Cup Chase — independent GPT-6.1 Sol High reconstruction.
+
+Original film/story/script and reference timing by Lemomo/LemoLab. The original chat prompt is unpublished. PROMPT.md reconstructs the full published brief; no claim of a verbatim original prompt.
+
+New action.js independently assembles and choreographs every shot, including the title roll, wake/taste, stare, chase, toaster, plate climb and collapse, spiral rescue, lowering/pats, turn-away, held glances, leap, sweet reaction, three dance phases, physical iris and credits. New sets.js independently builds the two same-geometry painted sets. New timing.js transcribes numerical reference data; new main.js owns page setup and dispatch. No original scenes.js/story.js/main.js, original events builder or original paintKitchen/paintCupboard factory executes.
+
+Attributed generic LemoLab MIT style/rig components: toon.js constant-width screen ink, affine stack, line boil and primitives; chars.js mug/cube/glove/shoe/steam facial/limb rigs; cast.js generic living clock, toaster, shakers, curtain, faucet, plates, bowl and hanging-pan drawing factories; ui.js title and subtitle-card drawing; film.js reusable gate/weave/flicker/damage/composite. paint.js extracts only generic wash, grain, canvas-cache and camera functions from bg.js, excluding the original two set factories. MIT license and original toolkit credit text retained.
+
+Fonts Shrikhand, Limelight and IM Fell English SC: Google Fonts, SIL OFL; full local fonts and licenses in fonts/.
+
+Fresh seven Kokoro bm_lewis lines at speed 1.0, original starts, new radio1930 filter (260–4600Hz). New 144 BPM score: 696 notes, 72 percussion hits and 109 material cues. Samples: VSCO 2 CE and VCSL, Versilian Studios, CC0; MuldjordKit by Lars Muldjord/drumgizmo.org, CC BY 4.0. Banjo uses credited core/audio/pluck.py physical modelling; projector/porcelain/sugar/rubber/water/brush/whistles are newly synthesized. New optical master filtering with subtle wow/flutter; projector survives the band stops. No original voice/score/foley waveform reuse. End credit updated to actual GPT authorship.

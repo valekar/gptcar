@@ -1,0 +1,81 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_ready": true,
+  "status": "source-ready-for-independent-review",
+  "title": "Meet Pip",
+  "duration": 40,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frame_count": 960,
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "matched_brief_sha256": "ab29ce285f90503c65958cc43e7db376d960e450d9982cb70cc2eee8fe0a59b8",
+  "original_reference_sha256": "02212da5584e09cf29b0590f8d24fbed41e2a69687c1b4f6c5a80cb929943844",
+  "uses_upstream_scene_code": false,
+  "shared_components": [
+    {
+      "path": "styles/midcentury-toon/demo/engine/toon.js",
+      "purpose": "Generic UPA shape/character/icon drawing primitives, copied with MIT attribution."
+    },
+    {
+      "path": "styles/midcentury-toon/demo/engine/chars.js",
+      "purpose": "Generic UPA shape/character/icon drawing primitives, copied with MIT attribution."
+    },
+    {
+      "path": "styles/midcentury-toon/demo/engine/icons.js",
+      "purpose": "Generic UPA shape/character/icon drawing primitives, copied with MIT attribution."
+    },
+    {
+      "path": "styles/midcentury-toon/demo/film.js",
+      "purpose": "Only explicitly liftable generic color/camera/caption/header/tag/callout/badge/IK/furniture and potential-flow route helpers adapted. No original scene/choreography/render functions copied."
+    }
+  ],
+  "review_times": [
+    0.5,
+    1.5,
+    2.5,
+    3.5,
+    5.5,
+    6.9,
+    7.1,
+    7.3,
+    8.5,
+    9.2,
+    10.5,
+    12.5,
+    13.5,
+    14.55,
+    15.5,
+    17,
+    18,
+    19.5,
+    20.45,
+    21.5,
+    21.81,
+    21.95,
+    22.5,
+    23.7,
+    24.5,
+    25.4,
+    26.5,
+    27.4,
+    28.5,
+    30,
+    30.95,
+    30.958333,
+    32.5,
+    32.6,
+    33,
+    35,
+    36.6,
+    37,
+    37.5,
+    38.5,
+    39
+  ],
+  "review_notes": "REVIEW.md"
+}

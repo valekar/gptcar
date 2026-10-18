@@ -34,7 +34,7 @@ def compose(score,voice_records,duration,out):
         elif name in P.PRESETS:
             signal=P.pluck(name,note.get('midi',60),float(note['duration']),vel=float(note.get('velocity',.65)),**{k:note[k] for k in ['bend','vib','glide','harmonic','trem'] if k in note})
             add(dst,signal,note['t'],note.get('gain',.1),note.get('pan',0))
-        elif name in ['saw','fm_glass','sub808','toy_piano','analog_saw_pad','analog_square_seq','lpg_plonk']:add(dst,synth_note(name,note.get('midi',60),float(note['duration']),**{k:note[k] for k in ['value','fm_index'] if k in note}),note['t'],note.get('gain',.1),note.get('pan',0))
+        elif name in ['saw','fm_glass','sub808','toy_piano','analog_saw_pad','analog_square_seq','lpg_plonk','fm_epiano','slap_bass','synth_brass']:add(dst,synth_note(name,note.get('midi',60),float(note['duration']),**{k:note[k] for k in ['value','fm_index'] if k in note}),note['t'],note.get('gain',.1),note.get('pan',0))
         else:synth[channel].append(note)
     for hit in score.get('hits',[]):
         channel=hit.get('channel','music')
@@ -54,6 +54,14 @@ def compose(score,voice_records,duration,out):
         for ch in range(2):music[:,ch]+=fftconvolve(music[:,ch],ir,mode='full')[:len(music)]*room
     def rms(a):return np.sqrt(np.mean(a*a)+1e-12)
     if np.max(np.abs(music))>1e-6:music*=10**(float(score.get('music_rms_db',-23))/20)/rms(music)
+    for region in score.get('music_filter_ranges',[]):
+        i=max(0,round(float(region['start'])*SR));j=min(len(music),round(float(region['end'])*SR))
+        if j<=i:raise ValueError('Empty music filter range')
+        low=float(region.get('low',350));high=float(region.get('high',3300))
+        filtered=sosfilt(butter(3,[low,high],btype='bandpass',fs=SR,output='sos'),music[i:j],axis=0)
+        ramp=min(round(.01*SR),(j-i)//2);weight=np.ones(j-i)
+        if ramp:weight[:ramp]=np.linspace(0,1,ramp);weight[-ramp:]=np.linspace(1,0,ramp)
+        music[i:j]=music[i:j]*(1-weight[:,None])+filtered*weight[:,None]
     # Narrative pauses cut musical releases while retaining clock, room and action foley.
     for start,end in score.get('silence_music_ranges',[]):
         music[max(0,round(start*SR)):min(len(music),round(end*SR))]=0

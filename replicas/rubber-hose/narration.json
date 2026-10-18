@@ -1,0 +1,80 @@
+{
+  "duration": 50,
+  "voice": "bm_lewis",
+  "language": "en-gb",
+  "direction": "Old radio race caller; recreated seven exact lines. Radio-filtered.",
+  "lines": [
+    {
+      "id": "v1a",
+      "text": "Seven a.m., folks!",
+      "asr": "7 a.m. Folks",
+      "voice": "bm_lewis",
+      "speed": 1.0,
+      "start": 5.15,
+      "duration": 1.856,
+      "language": "en-gb",
+      "filter": "radio1930"
+    },
+    {
+      "id": "v1b",
+      "text": "And boy, is this coffee bitter!",
+      "voice": "bm_lewis",
+      "speed": 1.0,
+      "start": 7.053333333333334,
+      "duration": 1.91,
+      "language": "en-gb",
+      "filter": "radio1930"
+    },
+    {
+      "id": "v2",
+      "text": "And they're off!",
+      "asr": "And they are off",
+      "voice": "bm_lewis",
+      "speed": 1.0,
+      "start": 11.666666666666668,
+      "duration": 0.899,
+      "language": "en-gb",
+      "filter": "radio1930"
+    },
+    {
+      "id": "v3",
+      "text": "Up the china cabinet... what a climber!",
+      "voice": "bm_lewis",
+      "speed": 1.0,
+      "start": 17.083333333333336,
+      "duration": 2.61,
+      "language": "en-gb",
+      "filter": "radio1930"
+    },
+    {
+      "id": "v4",
+      "text": "Look out, folks... the drain!",
+      "voice": "bm_lewis",
+      "speed": 1.0,
+      "start": 23.750000000000004,
+      "duration": 1.977,
+      "language": "en-gb",
+      "filter": "radio1930"
+    },
+    {
+      "id": "v5",
+      "text": "Well, I'll be... sweet as pie!",
+      "voice": "bm_lewis",
+      "speed": 1.0,
+      "start": 37.50000000000001,
+      "duration": 2.089,
+      "language": "en-gb",
+      "filter": "radio1930"
+    },
+    {
+      "id": "v6",
+      "text": "Good night, folks!",
+      "voice": "bm_lewis",
+      "speed": 1.0,
+      "start": 43.75,
+      "duration": 1.264,
+      "language": "en-gb",
+      "filter": "radio1930"
+    }
+  ]
+}

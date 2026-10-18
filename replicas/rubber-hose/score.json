@@ -1,0 +1,7738 @@
+{
+  "duration": 50,
+  "bpm": 144,
+  "key": "F major / D minor danger / G major release",
+  "direction": "New hot dance band with stride upright piano, banjo, tuba, trumpet/mute, clarinet, trombone, xylophone and drums. Material foley; projector survives band stops.",
+  "room": 0.09,
+  "music_rms_db": -23,
+  "sections": [
+    {
+      "start": 0,
+      "end": 5,
+      "intent": "Title fanfare"
+    },
+    {
+      "start": 5,
+      "end": 11.6667,
+      "intent": "Lazy morning, bitter wah and stare stop"
+    },
+    {
+      "start": 11.6667,
+      "end": 16.6667,
+      "intent": "Hot-band chase and toaster stop"
+    },
+    {
+      "start": 16.6667,
+      "end": 23.3333,
+      "intent": "Musical plate climb and collapsing glissando"
+    },
+    {
+      "start": 23.3333,
+      "end": 28.3333,
+      "intent": "D-minor drain danger"
+    },
+    {
+      "start": 28.3333,
+      "end": 29.1667,
+      "intent": "Projector-only rescue silence"
+    },
+    {
+      "start": 30,
+      "end": 36.6667,
+      "intent": "Tender clarinet and held glance ticks"
+    },
+    {
+      "start": 36.6667,
+      "end": 38.3333,
+      "intent": "Plop rest, sweet hit and G-major lift"
+    },
+    {
+      "start": 38.3333,
+      "end": 43.3333,
+      "intent": "Three dance phases and ta-da"
+    },
+    {
+      "start": 43.3333,
+      "end": 50,
+      "intent": "Iris pull and short coda"
+    }
+  ],
+  "notes": [
+    {
+      "t": 0.0,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 0.416667,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 0.422667,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 0.428667,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 0.833333,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 1.25,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 1.256,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 1.262,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 0.0,
+      "midi": 41,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 0.833333,
+      "midi": 41,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 0.416667,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 0.416667,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 0.416667,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 1.25,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 1.25,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 1.25,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 0.0,
+      "midi": 77,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 0.0,
+      "midi": 65,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 0.270833,
+      "midi": 81,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 0.270833,
+      "midi": 69,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 0.416667,
+      "midi": 79,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 0.416667,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 0.6875,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 0.6875,
+      "midi": 65,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 1.041667,
+      "midi": 72,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 1.041667,
+      "midi": 60,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 1.354167,
+      "midi": 76,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 1.354167,
+      "midi": 64,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 1.666667,
+      "midi": 46,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 2.083333,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 2.089333,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 2.095333,
+      "midi": 81,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 2.5,
+      "midi": 46,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 2.916667,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 2.922667,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 2.928667,
+      "midi": 81,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 1.666667,
+      "midi": 46,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 2.5,
+      "midi": 46,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 2.083333,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 2.083333,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 2.083333,
+      "midi": 81,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 2.916667,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 2.916667,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 2.916667,
+      "midi": 81,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 1.666667,
+      "midi": 77,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 1.666667,
+      "midi": 65,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 1.9375,
+      "midi": 84,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 1.9375,
+      "midi": 72,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 2.083333,
+      "midi": 82,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 2.083333,
+      "midi": 70,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 2.354167,
+      "midi": 81,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 2.354167,
+      "midi": 69,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 2.708333,
+      "midi": 79,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 2.708333,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 3.020833,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 3.020833,
+      "midi": 65,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 3.333333,
+      "midi": 36,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 3.75,
+      "midi": 64,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 3.756,
+      "midi": 67,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 3.762,
+      "midi": 70,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 4.166667,
+      "midi": 36,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 4.583333,
+      "midi": 64,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 4.589333,
+      "midi": 67,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 4.595333,
+      "midi": 70,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 3.333333,
+      "midi": 36,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 4.166667,
+      "midi": 36,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 3.75,
+      "midi": 64,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 3.75,
+      "midi": 67,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 3.75,
+      "midi": 70,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 4.583333,
+      "midi": 64,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 4.583333,
+      "midi": 67,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 4.583333,
+      "midi": 70,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 3.333333,
+      "midi": 77,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 3.333333,
+      "midi": 65,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 3.604167,
+      "midi": 81,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 3.604167,
+      "midi": 69,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 3.75,
+      "midi": 79,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 3.75,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 4.020833,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 4.020833,
+      "midi": 65,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 4.375,
+      "midi": 72,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 4.375,
+      "midi": 60,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 4.6875,
+      "midi": 76,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 4.6875,
+      "midi": 64,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 5.0,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 5.416667,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 5.422667,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 5.428667,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 5.833333,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 6.25,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 6.256,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 6.262,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 5.0,
+      "midi": 41,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 5.833333,
+      "midi": 41,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 5.416667,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 5.416667,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 5.416667,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 6.25,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 6.25,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 6.25,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 6.666667,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 7.083333,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 7.089333,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 7.095333,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 7.5,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 7.916667,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 7.922667,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 7.928667,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 6.666667,
+      "midi": 41,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 7.5,
+      "midi": 41,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 7.083333,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 7.083333,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 7.083333,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 7.916667,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 7.916667,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 7.916667,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 8.333333,
+      "midi": 46,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 8.75,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 8.756,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 8.762,
+      "midi": 81,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 9.166667,
+      "midi": 46,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 9.583333,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 9.589333,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 9.595333,
+      "midi": 81,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 8.333333,
+      "midi": 46,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 9.166667,
+      "midi": 46,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 8.75,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 8.75,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 8.75,
+      "midi": 81,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 9.583333,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 9.583333,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 9.583333,
+      "midi": 81,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 10.0,
+      "midi": 36,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 10.416667,
+      "midi": 64,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 10.422667,
+      "midi": 67,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 10.428667,
+      "midi": 70,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 10.833333,
+      "midi": 36,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 11.25,
+      "midi": 64,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 11.256,
+      "midi": 67,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 11.262,
+      "midi": 70,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 10.0,
+      "midi": 36,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 10.833333,
+      "midi": 36,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 10.416667,
+      "midi": 64,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 10.416667,
+      "midi": 67,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 10.416667,
+      "midi": 70,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 11.25,
+      "midi": 64,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 11.25,
+      "midi": 67,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 11.25,
+      "midi": 70,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 11.666667,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 12.083333,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 12.089333,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 12.095333,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 12.5,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 12.916667,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 12.922667,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 12.928667,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 11.666667,
+      "midi": 41,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 12.5,
+      "midi": 41,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 12.083333,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 12.083333,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 12.083333,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 12.916667,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 12.916667,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 12.916667,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 11.666667,
+      "midi": 77,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 11.666667,
+      "midi": 65,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 11.9375,
+      "midi": 84,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 11.9375,
+      "midi": 72,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 12.083333,
+      "midi": 82,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 12.083333,
+      "midi": 70,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 12.354167,
+      "midi": 81,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 12.354167,
+      "midi": 69,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 12.708333,
+      "midi": 79,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 12.708333,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 13.020833,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 13.020833,
+      "midi": 65,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 13.333333,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 13.75,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 13.756,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 13.762,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 14.166667,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 14.583333,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 14.589333,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 14.595333,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 13.333333,
+      "midi": 41,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 14.166667,
+      "midi": 41,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 13.75,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 13.75,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 13.75,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 14.583333,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 14.583333,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 14.583333,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 13.333333,
+      "midi": 77,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 13.333333,
+      "midi": 65,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 13.604167,
+      "midi": 81,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 13.604167,
+      "midi": 69,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 13.75,
+      "midi": 79,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 13.75,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 14.020833,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 14.020833,
+      "midi": 65,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 14.375,
+      "midi": 72,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 14.375,
+      "midi": 60,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 14.6875,
+      "midi": 76,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 14.6875,
+      "midi": 64,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 15.0,
+      "midi": 46,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 15.416667,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 15.422667,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 15.428667,
+      "midi": 81,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 15.833333,
+      "midi": 46,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 16.25,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 16.256,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 16.262,
+      "midi": 81,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 15.0,
+      "midi": 46,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 15.833333,
+      "midi": 46,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 15.416667,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 15.416667,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 15.416667,
+      "midi": 81,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 16.25,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 16.25,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 16.25,
+      "midi": 81,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 15.0,
+      "midi": 77,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 15.0,
+      "midi": 65,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 15.270833,
+      "midi": 84,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 15.270833,
+      "midi": 72,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 15.416667,
+      "midi": 82,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 15.416667,
+      "midi": 70,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 15.6875,
+      "midi": 81,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 15.6875,
+      "midi": 69,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 16.041667,
+      "midi": 79,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 16.041667,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 16.354167,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 16.354167,
+      "midi": 65,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 16.666667,
+      "midi": 36,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 17.083333,
+      "midi": 64,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 17.089333,
+      "midi": 67,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 17.095333,
+      "midi": 70,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 17.5,
+      "midi": 36,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 17.916667,
+      "midi": 64,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 17.922667,
+      "midi": 67,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 17.928667,
+      "midi": 70,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 16.666667,
+      "midi": 36,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 17.5,
+      "midi": 36,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 17.083333,
+      "midi": 64,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 17.083333,
+      "midi": 67,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 17.083333,
+      "midi": 70,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 17.916667,
+      "midi": 64,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 17.916667,
+      "midi": 67,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 17.916667,
+      "midi": 70,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 18.333333,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 18.75,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 18.756,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 18.762,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 19.166667,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 19.583333,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 19.589333,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 19.595333,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 18.333333,
+      "midi": 41,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 19.166667,
+      "midi": 41,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 18.75,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 18.75,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 18.75,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 19.583333,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 19.583333,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 19.583333,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 20.0,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 20.416667,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 20.422667,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 20.428667,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 20.833333,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 21.25,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 21.256,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 21.262,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 20.0,
+      "midi": 41,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 20.833333,
+      "midi": 41,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 20.416667,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 20.416667,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 20.416667,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 21.25,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 21.25,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 21.25,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 21.666667,
+      "midi": 46,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 22.083333,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 22.089333,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 22.095333,
+      "midi": 81,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 22.5,
+      "midi": 46,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 22.916667,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 22.922667,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 22.928667,
+      "midi": 81,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 21.666667,
+      "midi": 46,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 22.5,
+      "midi": 46,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 22.083333,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 22.083333,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 22.083333,
+      "midi": 81,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 22.916667,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 22.916667,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 22.916667,
+      "midi": 81,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 23.333333,
+      "midi": 38,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 23.75,
+      "midi": 65,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 23.756,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 23.762,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 24.166667,
+      "midi": 38,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 24.583333,
+      "midi": 65,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 24.589333,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 24.595333,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 23.333333,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 24.166667,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 23.75,
+      "midi": 65,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 23.75,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 23.75,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 24.583333,
+      "midi": 65,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 24.583333,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 24.583333,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 23.333333,
+      "midi": 53,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 23.541667,
+      "midi": 50,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 23.75,
+      "midi": 51,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 23.958333,
+      "midi": 52,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 24.166667,
+      "midi": 53,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 24.375,
+      "midi": 50,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 24.583333,
+      "midi": 51,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 24.791667,
+      "midi": 52,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 23.333333,
+      "midi": 69,
+      "duration": 0.2,
+      "gain": 0.13,
+      "pan": 0.3,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 23.958333,
+      "midi": 69,
+      "duration": 0.2,
+      "gain": 0.13,
+      "pan": 0.3,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 24.583333,
+      "midi": 69,
+      "duration": 0.2,
+      "gain": 0.13,
+      "pan": 0.3,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 25.0,
+      "midi": 38,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 25.416667,
+      "midi": 65,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 25.422667,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 25.428667,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 25.833333,
+      "midi": 38,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 26.25,
+      "midi": 65,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 26.256,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 26.262,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 25.0,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 25.833333,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 25.416667,
+      "midi": 65,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 25.416667,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 25.416667,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 26.25,
+      "midi": 65,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 26.25,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 26.25,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 25.0,
+      "midi": 50,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 25.208333,
+      "midi": 51,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 25.416667,
+      "midi": 52,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 25.625,
+      "midi": 53,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 25.833333,
+      "midi": 50,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 26.041667,
+      "midi": 51,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 26.25,
+      "midi": 52,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 26.458333,
+      "midi": 53,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 25.0,
+      "midi": 70,
+      "duration": 0.2,
+      "gain": 0.13,
+      "pan": 0.3,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 25.625,
+      "midi": 70,
+      "duration": 0.2,
+      "gain": 0.13,
+      "pan": 0.3,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 26.25,
+      "midi": 70,
+      "duration": 0.2,
+      "gain": 0.13,
+      "pan": 0.3,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 26.666667,
+      "midi": 38,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 27.083333,
+      "midi": 65,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 27.089333,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 27.095333,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 27.5,
+      "midi": 38,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 27.916667,
+      "midi": 65,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 27.922667,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 27.928667,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 26.666667,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 27.5,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 27.083333,
+      "midi": 65,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 27.083333,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 27.083333,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 27.916667,
+      "midi": 65,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 27.916667,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 27.916667,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 26.666667,
+      "midi": 51,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 26.875,
+      "midi": 52,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 27.083333,
+      "midi": 53,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 27.291667,
+      "midi": 50,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 27.5,
+      "midi": 51,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 27.708333,
+      "midi": 52,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 27.916667,
+      "midi": 53,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 28.125,
+      "midi": 50,
+      "duration": 0.19,
+      "gain": 0.12,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 26.666667,
+      "midi": 71,
+      "duration": 0.2,
+      "gain": 0.13,
+      "pan": 0.3,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 27.291667,
+      "midi": 71,
+      "duration": 0.2,
+      "gain": 0.13,
+      "pan": 0.3,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 27.916667,
+      "midi": 71,
+      "duration": 0.2,
+      "gain": 0.13,
+      "pan": 0.3,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 28.333333,
+      "midi": 46,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 28.75,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 28.756,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 28.762,
+      "midi": 81,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 29.166667,
+      "midi": 46,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 29.583333,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 29.589333,
+      "midi": 77,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 29.595333,
+      "midi": 81,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 28.333333,
+      "midi": 46,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 29.166667,
+      "midi": 46,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 28.75,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 28.75,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 28.75,
+      "midi": 81,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 29.583333,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 29.583333,
+      "midi": 77,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 29.583333,
+      "midi": 81,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 30.0,
+      "midi": 36,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 30.833333,
+      "midi": 36,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 30.0,
+      "midi": 77,
+      "duration": 0.7,
+      "gain": 0.18,
+      "pan": -0.18,
+      "instrument": "clarinet",
+      "channel": "music"
+    },
+    {
+      "t": 30.833333,
+      "midi": 74,
+      "duration": 0.7,
+      "gain": 0.18,
+      "pan": -0.18,
+      "instrument": "clarinet",
+      "channel": "music"
+    },
+    {
+      "t": 31.666667,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 32.5,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 31.666667,
+      "midi": 77,
+      "duration": 0.7,
+      "gain": 0.18,
+      "pan": -0.18,
+      "instrument": "clarinet",
+      "channel": "music"
+    },
+    {
+      "t": 32.5,
+      "midi": 72,
+      "duration": 0.7,
+      "gain": 0.18,
+      "pan": -0.18,
+      "instrument": "clarinet",
+      "channel": "music"
+    },
+    {
+      "t": 33.333333,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 34.166667,
+      "midi": 41,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 33.333333,
+      "midi": 77,
+      "duration": 0.7,
+      "gain": 0.18,
+      "pan": -0.18,
+      "instrument": "clarinet",
+      "channel": "music"
+    },
+    {
+      "t": 34.166667,
+      "midi": 74,
+      "duration": 0.7,
+      "gain": 0.18,
+      "pan": -0.18,
+      "instrument": "clarinet",
+      "channel": "music"
+    },
+    {
+      "t": 35.0,
+      "midi": 46,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 35.833333,
+      "midi": 46,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 35.0,
+      "midi": 77,
+      "duration": 0.7,
+      "gain": 0.18,
+      "pan": -0.18,
+      "instrument": "clarinet",
+      "channel": "music"
+    },
+    {
+      "t": 35.833333,
+      "midi": 72,
+      "duration": 0.7,
+      "gain": 0.18,
+      "pan": -0.18,
+      "instrument": "clarinet",
+      "channel": "music"
+    },
+    {
+      "t": 36.666667,
+      "midi": 38,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 37.083333,
+      "midi": 66,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 37.089333,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 37.095333,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 37.5,
+      "midi": 38,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 37.916667,
+      "midi": 66,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 37.922667,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 37.928667,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 36.666667,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 37.5,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 37.083333,
+      "midi": 66,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 37.083333,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 37.083333,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 37.916667,
+      "midi": 66,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 37.916667,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 37.916667,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 38.333333,
+      "midi": 43,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 38.75,
+      "midi": 71,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 38.756,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 38.762,
+      "midi": 76,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 39.166667,
+      "midi": 43,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 39.583333,
+      "midi": 71,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 39.589333,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 39.595333,
+      "midi": 76,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 38.333333,
+      "midi": 43,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 39.166667,
+      "midi": 43,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 38.75,
+      "midi": 71,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 38.75,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 38.75,
+      "midi": 76,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 39.583333,
+      "midi": 71,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 39.583333,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 39.583333,
+      "midi": 76,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 38.333333,
+      "midi": 79,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 38.333333,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 38.604167,
+      "midi": 86,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 38.604167,
+      "midi": 74,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 38.75,
+      "midi": 84,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 38.75,
+      "midi": 72,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 39.020833,
+      "midi": 83,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 39.020833,
+      "midi": 71,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 39.375,
+      "midi": 81,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 39.375,
+      "midi": 69,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 39.6875,
+      "midi": 79,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 39.6875,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 38.333333,
+      "midi": 59,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 38.333333,
+      "midi": 62,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 38.333333,
+      "midi": 64,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 39.166667,
+      "midi": 59,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 39.166667,
+      "midi": 62,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 39.166667,
+      "midi": 64,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 40.0,
+      "midi": 43,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 40.416667,
+      "midi": 71,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 40.422667,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 40.428667,
+      "midi": 79,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 40.833333,
+      "midi": 43,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 41.25,
+      "midi": 71,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 41.256,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 41.262,
+      "midi": 79,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 40.0,
+      "midi": 43,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 40.833333,
+      "midi": 43,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 40.416667,
+      "midi": 71,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 40.416667,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 40.416667,
+      "midi": 79,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 41.25,
+      "midi": 71,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 41.25,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 41.25,
+      "midi": 79,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 40.0,
+      "midi": 79,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 40.0,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 40.270833,
+      "midi": 83,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 40.270833,
+      "midi": 71,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 40.416667,
+      "midi": 81,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 40.416667,
+      "midi": 69,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 40.6875,
+      "midi": 79,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 40.6875,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 41.041667,
+      "midi": 74,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 41.041667,
+      "midi": 62,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 41.354167,
+      "midi": 78,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 41.354167,
+      "midi": 66,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 40.0,
+      "midi": 59,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 40.0,
+      "midi": 62,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 40.0,
+      "midi": 67,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 40.833333,
+      "midi": 59,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 40.833333,
+      "midi": 62,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 40.833333,
+      "midi": 67,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 41.666667,
+      "midi": 48,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 42.083333,
+      "midi": 76,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 42.089333,
+      "midi": 79,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 42.095333,
+      "midi": 83,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 42.5,
+      "midi": 48,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 42.916667,
+      "midi": 76,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 42.922667,
+      "midi": 79,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 42.928667,
+      "midi": 83,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 41.666667,
+      "midi": 48,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 42.5,
+      "midi": 48,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 42.083333,
+      "midi": 76,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 42.083333,
+      "midi": 79,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 42.083333,
+      "midi": 83,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 42.916667,
+      "midi": 76,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 42.916667,
+      "midi": 79,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 42.916667,
+      "midi": 83,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 41.666667,
+      "midi": 79,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 41.666667,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 41.9375,
+      "midi": 86,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 41.9375,
+      "midi": 74,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 42.083333,
+      "midi": 84,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 42.083333,
+      "midi": 72,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 42.354167,
+      "midi": 83,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 42.354167,
+      "midi": 71,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 42.708333,
+      "midi": 81,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 42.708333,
+      "midi": 69,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 43.020833,
+      "midi": 79,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 43.020833,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 41.666667,
+      "midi": 64,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 41.666667,
+      "midi": 67,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 41.666667,
+      "midi": 71,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 42.5,
+      "midi": 64,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 42.5,
+      "midi": 67,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 42.5,
+      "midi": 71,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 43.333333,
+      "midi": 38,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 43.75,
+      "midi": 66,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 43.756,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 43.762,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 44.166667,
+      "midi": 38,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 44.583333,
+      "midi": 66,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 44.589333,
+      "midi": 69,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 44.595333,
+      "midi": 72,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 43.333333,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 44.166667,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 43.75,
+      "midi": 66,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 43.75,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 43.75,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 44.583333,
+      "midi": 66,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 44.583333,
+      "midi": 69,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 44.583333,
+      "midi": 72,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 43.333333,
+      "midi": 79,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 43.333333,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 43.604167,
+      "midi": 83,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 43.604167,
+      "midi": 71,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 43.75,
+      "midi": 81,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 43.75,
+      "midi": 69,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 44.020833,
+      "midi": 79,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 44.020833,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 44.375,
+      "midi": 74,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 44.375,
+      "midi": 62,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 44.6875,
+      "midi": 78,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 44.6875,
+      "midi": 66,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 43.333333,
+      "midi": 54,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 43.333333,
+      "midi": 57,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 43.333333,
+      "midi": 60,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 44.166667,
+      "midi": 54,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 44.166667,
+      "midi": 57,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 44.166667,
+      "midi": 60,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 45.0,
+      "midi": 43,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 45.416667,
+      "midi": 71,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 45.422667,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 45.428667,
+      "midi": 76,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 45.833333,
+      "midi": 43,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 46.25,
+      "midi": 71,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 46.256,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 46.262,
+      "midi": 76,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 45.0,
+      "midi": 43,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 45.833333,
+      "midi": 43,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 45.416667,
+      "midi": 71,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 45.416667,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 45.416667,
+      "midi": 76,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 46.25,
+      "midi": 71,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 46.25,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 46.25,
+      "midi": 76,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 46.666667,
+      "midi": 43,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 47.083333,
+      "midi": 71,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 47.089333,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 47.095333,
+      "midi": 79,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 47.5,
+      "midi": 43,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 47.916667,
+      "midi": 71,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 47.922667,
+      "midi": 74,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 47.928667,
+      "midi": 79,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 46.666667,
+      "midi": 43,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 47.5,
+      "midi": 43,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 47.083333,
+      "midi": 71,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 47.083333,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 47.083333,
+      "midi": 79,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 47.916667,
+      "midi": 71,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 47.916667,
+      "midi": 74,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 47.916667,
+      "midi": 79,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 46.666667,
+      "midi": 79,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 46.666667,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 46.9375,
+      "midi": 83,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 46.9375,
+      "midi": 71,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 47.083333,
+      "midi": 81,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 47.083333,
+      "midi": 69,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 47.354167,
+      "midi": 79,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 47.354167,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 47.708333,
+      "midi": 74,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 47.708333,
+      "midi": 62,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 48.020833,
+      "midi": 78,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 48.020833,
+      "midi": 66,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 46.666667,
+      "midi": 59,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 46.666667,
+      "midi": 62,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 46.666667,
+      "midi": 67,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 47.5,
+      "midi": 59,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 47.5,
+      "midi": 62,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 47.5,
+      "midi": 67,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 48.333333,
+      "midi": 48,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 48.75,
+      "midi": 76,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 48.756,
+      "midi": 79,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 48.762,
+      "midi": 83,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 49.166667,
+      "midi": 48,
+      "duration": 0.22,
+      "gain": 0.18,
+      "pan": -0.24,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 49.583333,
+      "midi": 76,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.16,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 49.589333,
+      "midi": 79,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": -0.04000000000000001,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 49.595333,
+      "midi": 83,
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0.07999999999999999,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 48.333333,
+      "midi": 48,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 49.166667,
+      "midi": 48,
+      "duration": 0.28,
+      "gain": 0.19,
+      "pan": 0.08,
+      "instrument": "tuba_stac",
+      "channel": "music"
+    },
+    {
+      "t": 48.75,
+      "midi": 76,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 48.75,
+      "midi": 79,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 48.75,
+      "midi": 83,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 49.583333,
+      "midi": 76,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 49.583333,
+      "midi": 79,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 49.583333,
+      "midi": 83,
+      "duration": 0.18,
+      "gain": 0.085,
+      "pan": 0.3,
+      "instrument": "banjo",
+      "channel": "music"
+    },
+    {
+      "t": 48.333333,
+      "midi": 79,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 48.333333,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 48.604167,
+      "midi": 86,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 48.604167,
+      "midi": 74,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 48.75,
+      "midi": 84,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 48.75,
+      "midi": 72,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 49.020833,
+      "midi": 83,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 49.020833,
+      "midi": 71,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 49.375,
+      "midi": 81,
+      "duration": 0.36,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 49.375,
+      "midi": 69,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 49.6875,
+      "midi": 79,
+      "duration": 0.22,
+      "gain": 0.16,
+      "pan": 0.2,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 49.6875,
+      "midi": 67,
+      "duration": 0.28,
+      "gain": 0.105,
+      "pan": -0.25,
+      "instrument": "clarinet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 48.333333,
+      "midi": 64,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 48.333333,
+      "midi": 67,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 48.333333,
+      "midi": 71,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 49.166667,
+      "midi": 64,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 49.166667,
+      "midi": 67,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 49.166667,
+      "midi": 71,
+      "duration": 0.4,
+      "gain": 0.095,
+      "pan": -0.3,
+      "instrument": "trombone_stac",
+      "channel": "music"
+    },
+    {
+      "t": 17.083333,
+      "midi": 72,
+      "duration": 0.25,
+      "gain": 0.22,
+      "pan": 0.1,
+      "instrument": "xylophone",
+      "channel": "foley"
+    },
+    {
+      "t": 17.291667,
+      "midi": 74,
+      "duration": 0.25,
+      "gain": 0.22,
+      "pan": 0.1,
+      "instrument": "xylophone",
+      "channel": "foley"
+    },
+    {
+      "t": 17.5,
+      "midi": 76,
+      "duration": 0.25,
+      "gain": 0.22,
+      "pan": 0.1,
+      "instrument": "xylophone",
+      "channel": "foley"
+    },
+    {
+      "t": 17.708333,
+      "midi": 77,
+      "duration": 0.25,
+      "gain": 0.22,
+      "pan": 0.1,
+      "instrument": "xylophone",
+      "channel": "foley"
+    },
+    {
+      "t": 17.916667,
+      "midi": 79,
+      "duration": 0.25,
+      "gain": 0.22,
+      "pan": 0.1,
+      "instrument": "xylophone",
+      "channel": "foley"
+    },
+    {
+      "t": 18.125,
+      "midi": 81,
+      "duration": 0.25,
+      "gain": 0.22,
+      "pan": 0.1,
+      "instrument": "xylophone",
+      "channel": "foley"
+    },
+    {
+      "t": 18.333333,
+      "midi": 83,
+      "duration": 0.25,
+      "gain": 0.22,
+      "pan": 0.1,
+      "instrument": "xylophone",
+      "channel": "foley"
+    },
+    {
+      "t": 18.75,
+      "midi": 36,
+      "duration": 0.3,
+      "gain": 0.2,
+      "pan": -0.1,
+      "instrument": "tuba_stac",
+      "channel": "foley"
+    },
+    {
+      "t": 19.166667,
+      "midi": 38,
+      "duration": 0.3,
+      "gain": 0.2,
+      "pan": -0.1,
+      "instrument": "tuba_stac",
+      "channel": "foley"
+    },
+    {
+      "t": 19.583333,
+      "midi": 40,
+      "duration": 0.3,
+      "gain": 0.2,
+      "pan": -0.1,
+      "instrument": "tuba_stac",
+      "channel": "foley"
+    },
+    {
+      "t": 20.0,
+      "midi": 41,
+      "duration": 0.3,
+      "gain": 0.2,
+      "pan": -0.1,
+      "instrument": "tuba_stac",
+      "channel": "foley"
+    },
+    {
+      "t": 20.416667,
+      "midi": 43,
+      "duration": 0.3,
+      "gain": 0.2,
+      "pan": -0.1,
+      "instrument": "tuba_stac",
+      "channel": "foley"
+    },
+    {
+      "t": 20.833333,
+      "midi": 45,
+      "duration": 0.3,
+      "gain": 0.2,
+      "pan": -0.1,
+      "instrument": "tuba_stac",
+      "channel": "foley"
+    },
+    {
+      "t": 21.25,
+      "midi": 47,
+      "duration": 0.3,
+      "gain": 0.2,
+      "pan": -0.1,
+      "instrument": "tuba_stac",
+      "channel": "foley"
+    },
+    {
+      "t": 8.75,
+      "midi": 58,
+      "duration": 0.38,
+      "gain": 0.28,
+      "pan": 0.15,
+      "instrument": "trumpet_mute",
+      "channel": "foley"
+    },
+    {
+      "t": 9.166667,
+      "midi": 58,
+      "duration": 0.38,
+      "gain": 0.28,
+      "pan": 0.15,
+      "instrument": "trumpet_mute",
+      "channel": "foley"
+    },
+    {
+      "t": 9.583333,
+      "midi": 58,
+      "duration": 0.38,
+      "gain": 0.28,
+      "pan": 0.15,
+      "instrument": "trumpet_mute",
+      "channel": "foley"
+    },
+    {
+      "t": 5.0,
+      "midi": 53,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 5.0,
+      "midi": 57,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 5.0,
+      "midi": 60,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 5.0,
+      "midi": 65,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 15.833333,
+      "midi": 53,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 15.833333,
+      "midi": 57,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 15.833333,
+      "midi": 60,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 15.833333,
+      "midi": 65,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 21.666667,
+      "midi": 53,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 21.666667,
+      "midi": 57,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 21.666667,
+      "midi": 60,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 21.666667,
+      "midi": 65,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 37.5,
+      "midi": 55,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 37.5,
+      "midi": 59,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 37.5,
+      "midi": 62,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 37.5,
+      "midi": 67,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 42.916667,
+      "midi": 55,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 42.916667,
+      "midi": 59,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 42.916667,
+      "midi": 62,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 42.916667,
+      "midi": 67,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 45.833333,
+      "midi": 55,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 45.833333,
+      "midi": 59,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 45.833333,
+      "midi": 62,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 45.833333,
+      "midi": 67,
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": -0.15,
+      "instrument": "trumpet_stac",
+      "channel": "music"
+    },
+    {
+      "t": 35.416667,
+      "midi": 78,
+      "duration": 0.08,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "woodblock",
+      "channel": "foley"
+    },
+    {
+      "t": 35.625,
+      "midi": 82,
+      "duration": 0.08,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "woodblock",
+      "channel": "foley"
+    },
+    {
+      "t": 35.833333,
+      "midi": 78,
+      "duration": 0.08,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "woodblock",
+      "channel": "foley"
+    },
+    {
+      "t": 36.041667,
+      "midi": 82,
+      "duration": 0.08,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "woodblock",
+      "channel": "foley"
+    },
+    {
+      "t": 36.25,
+      "midi": 78,
+      "duration": 0.08,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "woodblock",
+      "channel": "foley"
+    },
+    {
+      "t": 36.354167,
+      "midi": 82,
+      "duration": 0.08,
+      "gain": 0.18,
+      "pan": 0,
+      "instrument": "woodblock",
+      "channel": "foley"
+    },
+    {
+      "t": 29.166667,
+      "midi": 65,
+      "duration": 1.1,
+      "gain": 0.07,
+      "pan": -0.15,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 29.166667,
+      "midi": 69,
+      "duration": 1.1,
+      "gain": 0.07,
+      "pan": -0.15,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 29.166667,
+      "midi": 72,
+      "duration": 1.1,
+      "gain": 0.07,
+      "pan": -0.15,
+      "instrument": "upright",
+      "channel": "music"
+    },
+    {
+      "t": 29.166667,
+      "midi": 77,
+      "duration": 1.1,
+      "gain": 0.07,
+      "pan": -0.15,
+      "instrument": "upright",
+      "channel": "music"
+    }
+  ],
+  "hits": [
+    {
+      "t": 0.4166666666666667,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 1.25,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 0.0,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 2.0833333333333335,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 2.916666666666667,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 1.6666666666666667,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 3.75,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 4.583333333333334,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 3.3333333333333335,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 5.416666666666667,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 6.25,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 5.0,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 7.083333333333334,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 7.916666666666667,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 6.666666666666667,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 8.75,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 9.583333333333334,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 8.333333333333334,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 10.416666666666666,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 11.25,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 10.0,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 12.083333333333334,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 12.916666666666668,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 11.666666666666668,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 13.75,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 14.583333333333334,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 13.333333333333334,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 15.416666666666666,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 16.25,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 15.0,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 23.750000000000004,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 24.583333333333336,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 23.333333333333336,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 25.416666666666668,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 26.25,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 25.0,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 27.083333333333336,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 27.916666666666668,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 26.666666666666668,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 28.750000000000004,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 29.583333333333336,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 28.333333333333336,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 37.083333333333336,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 37.91666666666667,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 36.66666666666667,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 38.75,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 39.583333333333336,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 38.333333333333336,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 40.416666666666664,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 41.25,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 40.0,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 42.083333333333336,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 42.91666666666667,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 41.66666666666667,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 43.75,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 44.583333333333336,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 43.333333333333336,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 45.416666666666664,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 46.25,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 45.0,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 47.083333333333336,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 47.91666666666667,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 46.66666666666667,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 48.75,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 49.583333333333336,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "duration": 0.2,
+      "gain": 0.065,
+      "pan": 0.12
+    },
+    {
+      "t": 48.333333333333336,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "duration": 0.28,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 5.0,
+      "instrument": "drum_kit",
+      "variant": "crash_left",
+      "duration": 0.75,
+      "gain": 0.13,
+      "pan": 0.24
+    },
+    {
+      "t": 15.833333333333334,
+      "instrument": "drum_kit",
+      "variant": "crash_left",
+      "duration": 0.75,
+      "gain": 0.13,
+      "pan": 0.24
+    },
+    {
+      "t": 21.666666666666668,
+      "instrument": "drum_kit",
+      "variant": "crash_left",
+      "duration": 0.75,
+      "gain": 0.13,
+      "pan": 0.24
+    },
+    {
+      "t": 37.50000000000001,
+      "instrument": "drum_kit",
+      "variant": "crash_left",
+      "duration": 0.75,
+      "gain": 0.13,
+      "pan": 0.24
+    },
+    {
+      "t": 42.91666666666667,
+      "instrument": "drum_kit",
+      "variant": "crash_left",
+      "duration": 0.75,
+      "gain": 0.13,
+      "pan": 0.24
+    },
+    {
+      "t": 45.833333333333336,
+      "instrument": "drum_kit",
+      "variant": "crash_left",
+      "duration": 0.75,
+      "gain": 0.13,
+      "pan": 0.24
+    }
+  ],
+  "effects": [
+    {
+      "t": 4.5833,
+      "kind": "paper",
+      "duration": 0.4166666666666661,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 5,
+      "kind": "alarm_ring",
+      "duration": 0.625,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 5,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0,
+      "frequency": 2600
+    },
+    {
+      "t": 5.8333,
+      "kind": "breath",
+      "duration": 0.75,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 6.7667,
+      "kind": "drip",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 7.0833,
+      "kind": "drain_slurp",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 8.75,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.06,
+      "pan": 0,
+      "frequency": 2600
+    },
+    {
+      "t": 9.1667,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.06,
+      "pan": 0,
+      "frequency": 2600
+    },
+    {
+      "t": 9.5833,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.06,
+      "pan": 0,
+      "frequency": 2600
+    },
+    {
+      "t": 10.0833,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0,
+      "frequency": 2600
+    },
+    {
+      "t": 10.8333,
+      "kind": "rubber_boing",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 11.0333,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0,
+      "frequency": 2600
+    },
+    {
+      "t": 11.25,
+      "kind": "scratch",
+      "duration": 0.41666666666666785,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 11.6667,
+      "kind": "whoosh",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 11.6667,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15
+    },
+    {
+      "t": 11.6667,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": -0.15,
+      "frequency": 1819.9999999999998
+    },
+    {
+      "t": 11.875,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15
+    },
+    {
+      "t": 12.0833,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15
+    },
+    {
+      "t": 12.0833,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": -0.15,
+      "frequency": 1819.9999999999998
+    },
+    {
+      "t": 12.2917,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15
+    },
+    {
+      "t": 12.35,
+      "kind": "whoosh",
+      "duration": 1.2,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 12.5,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15
+    },
+    {
+      "t": 12.5,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": -0.15,
+      "frequency": 1819.9999999999998
+    },
+    {
+      "t": 12.7083,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15
+    },
+    {
+      "t": 12.9167,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15
+    },
+    {
+      "t": 12.9167,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": -0.15,
+      "frequency": 1819.9999999999998
+    },
+    {
+      "t": 13.125,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15
+    },
+    {
+      "t": 13.3333,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15
+    },
+    {
+      "t": 13.3333,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": -0.15,
+      "frequency": 1819.9999999999998
+    },
+    {
+      "t": 13.5417,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15
+    },
+    {
+      "t": 13.75,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15
+    },
+    {
+      "t": 13.75,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": -0.15,
+      "frequency": 1819.9999999999998
+    },
+    {
+      "t": 13.9583,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15
+    },
+    {
+      "t": 14.1667,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": -0.15,
+      "frequency": 1819.9999999999998
+    },
+    {
+      "t": 14.1667,
+      "kind": "whoosh",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 14.5833,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": -0.15,
+      "frequency": 1819.9999999999998
+    },
+    {
+      "t": 14.5833,
+      "kind": "rubber_creak",
+      "duration": 0.4166666666666661,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 15,
+      "kind": "click",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 15.2083,
+      "kind": "wood_knock",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0,
+      "bounce_gain": 0
+    },
+    {
+      "t": 15.4167,
+      "kind": "wood_knock",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0,
+      "bounce_gain": 0
+    },
+    {
+      "t": 15.625,
+      "kind": "wood_knock",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0,
+      "bounce_gain": 0
+    },
+    {
+      "t": 15.8333,
+      "kind": "alarm_ring",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 15.8333,
+      "kind": "rubber_boing",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 15.8533,
+      "kind": "whoosh",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 16.0833,
+      "kind": "wood_knock",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0,
+      "bounce_gain": 0
+    },
+    {
+      "t": 16.375,
+      "kind": "wood_knock",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0,
+      "bounce_gain": 0
+    },
+    {
+      "t": 16.6667,
+      "kind": "sine_glide",
+      "duration": 0.41666666666666785,
+      "gain": 0.12,
+      "pan": 0,
+      "freq_start": 1600,
+      "freq_end": 260
+    },
+    {
+      "t": 17.0833,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15,
+      "frequency": 4160.0
+    },
+    {
+      "t": 17.2917,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15,
+      "frequency": 4160.0
+    },
+    {
+      "t": 17.5,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15,
+      "frequency": 4160.0
+    },
+    {
+      "t": 17.7083,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15,
+      "frequency": 4160.0
+    },
+    {
+      "t": 17.9167,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15,
+      "frequency": 4160.0
+    },
+    {
+      "t": 18.125,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15,
+      "frequency": 4160.0
+    },
+    {
+      "t": 18.3333,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0.15,
+      "frequency": 4160.0
+    },
+    {
+      "t": 18.3333,
+      "kind": "catch_slap",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 18.5417,
+      "kind": "rubber_creak",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 18.75,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": -0.15,
+      "frequency": 1819.9999999999998
+    },
+    {
+      "t": 19.1667,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": -0.15,
+      "frequency": 1819.9999999999998
+    },
+    {
+      "t": 19.5833,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": -0.15,
+      "frequency": 1819.9999999999998
+    },
+    {
+      "t": 20,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": -0.15,
+      "frequency": 1819.9999999999998
+    },
+    {
+      "t": 20.4167,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": -0.15,
+      "frequency": 1819.9999999999998
+    },
+    {
+      "t": 20.8333,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": -0.15,
+      "frequency": 1819.9999999999998
+    },
+    {
+      "t": 20.8333,
+      "kind": "whoosh",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 21,
+      "kind": "scratch",
+      "duration": 0.45833333333333215,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 21.25,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": -0.15,
+      "frequency": 1819.9999999999998
+    },
+    {
+      "t": 21.6667,
+      "kind": "glass_shatter",
+      "duration": 0.7,
+      "gain": 0.2,
+      "pan": 0
+    },
+    {
+      "t": 22.3667,
+      "kind": "whoosh",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 23.3333,
+      "kind": "bubble_splash",
+      "duration": 0.7,
+      "gain": 0.2,
+      "pan": 0
+    },
+    {
+      "t": 23.3333,
+      "kind": "water_gurgle",
+      "duration": 5,
+      "gain": 0.028,
+      "pan": 0
+    },
+    {
+      "t": 24.1667,
+      "kind": "glass_shatter",
+      "duration": 0.7,
+      "gain": 0.2,
+      "pan": 0
+    },
+    {
+      "t": 25,
+      "kind": "porcelain_clink",
+      "duration": 0.5,
+      "gain": 0.1,
+      "pan": 0,
+      "frequency": 2600
+    },
+    {
+      "t": 26.6667,
+      "kind": "rubber_creak",
+      "duration": 1.5,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 26.9167,
+      "kind": "drain_slurp",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 29.1667,
+      "kind": "whoosh",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 29.2167,
+      "kind": "suction_pop",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 29.4583,
+      "kind": "drip",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 30.8333,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0,
+      "frequency": 2600
+    },
+    {
+      "t": 31.0417,
+      "kind": "catch_slap",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 31.25,
+      "kind": "catch_slap",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 31.4583,
+      "kind": "brush",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 31.6667,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0,
+      "frequency": 2600
+    },
+    {
+      "t": 32.0833,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0,
+      "frequency": 2600
+    },
+    {
+      "t": 32.5,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0,
+      "frequency": 2600
+    },
+    {
+      "t": 32.9167,
+      "kind": "porcelain_clink",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0,
+      "frequency": 2600
+    },
+    {
+      "t": 33.75,
+      "kind": "breath",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 36.25,
+      "kind": "rubber_boing",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 36.4583,
+      "kind": "whoosh",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 36.6667,
+      "kind": "water_plop",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 37.0833,
+      "kind": "suction_pop",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 37.25,
+      "kind": "suction_pop",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 37.4167,
+      "kind": "suction_pop",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 37.625,
+      "kind": "bubble_splash",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 38.3333,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 38.75,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 39.1667,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 39.5833,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 40,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 40.4167,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 40.8333,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 41.25,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 41.6667,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 42.0833,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 42.5,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 42.9167,
+      "kind": "sugar_step",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 45.8333,
+      "kind": "thump",
+      "duration": 0.15,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 0,
+      "kind": "projector_clatter",
+      "duration": 50,
+      "gain": 0.025,
+      "pan": 0,
+      "rate": 24
+    },
+    {
+      "t": 26.666667,
+      "kind": "sine_glide",
+      "duration": 1.5,
+      "gain": 0.09,
+      "pan": -0.1,
+      "freq_start": 1700,
+      "freq_end": 170
+    },
+    {
+      "t": 20.833333,
+      "kind": "sine_glide",
+      "duration": 0.8,
+      "gain": 0.09,
+      "pan": 0.2,
+      "freq_start": 1300,
+      "freq_end": 280
+    },
+    {
+      "t": 10.833333,
+      "kind": "rubber_boing",
+      "duration": 0.35,
+      "gain": 0.16,
+      "pan": 0
+    }
+  ],
+  "silence_music_ranges": [
+    [
+      10.576666666666666,
+      10.828333333333333
+    ],
+    [
+      15.02,
+      15.829333333333334
+    ],
+    [
+      28.333333333333336,
+      29.16466666666667
+    ],
+    [
+      36.686666666666675,
+      37.49700000000001
+    ],
+    [
+      35.291666666666664,
+      35.413666666666664
+    ]
+  ],
+  "master_filter": "optical"
+}

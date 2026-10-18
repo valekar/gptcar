@@ -1,0 +1,16 @@
+Meet Pip — independent GPT-6.1 Sol High reconstruction.
+
+The published Meet Pip story, exact six narration lines, screen text, numerical plan, choreography reference values and 132 BPM action times are documentary reference data. Original film by Lemomo/LemoLab. The original chat prompt is unpublished; PROMPT.md is a reconstruction.
+
+New scenes.js independently assembles the box, homeowner actions, dock/outlet/clearance, app interface, signals, press/hold, floor plan and progressive route, cable pickup, summary and end card. New film.js assembles the page. No original sceneHook/actPlace/actTap/actPress/scenePayoff/sceneTip/sceneLockup/sceneEnd, drawSection/renderFilm, setup or main.js executes.
+
+Shared generic LemoLab MIT components:
+- engine/toon.js: off-register fills, broken contour, print tooth, 12fps registration, shapes, type, arrows, sunburst, finish and math.
+- engine/chars.js: generic June/Pip/dock/hand/phone character drawing and arm joints.
+- engine/icons.js: generic instructional icons.
+- marks.js adapts explicitly liftable frame-in-frame, numbered badge, caption card, header, detail tag, color/camera, two-bone kneeling IK and furniture helpers from demo/film.js. No scene implementation.
+- route.js adapts explicitly liftable potential-flow route construction/progress helper from demo/film.js; the new scene builds and draws its own plan and route.
+Original license retained in TOOLKIT_LICENSE.txt. Generic helper reuse is disclosed and listed in generation.json.
+
+Fonts: Oleo Script, Alfa Slab One and Jost from Google Fonts, SIL OFL. Local full fonts and license texts in fonts/.
+Fresh narration: Kokoro am_michael at 0.94, six exact published inputs. New score: 376 notes, 76 sampled ride hits, 147 material/brush/room cues. Flute/flute_stac, vibraphone, jazz_bass, glockenspiel and drum_kit licensed root sample packs; synthesized brushed material sound. Original recording and score waveform are not reused. New credit identifies actual GPT authorship.
