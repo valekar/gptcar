@@ -1,0 +1,2 @@
+import{setScene,renderScene,loadFonts,sceneTexts,subCheck,resCheck,camAt}from'./kit/board.js';import{makeScene}from'./scene.js';
+const canvas=document.querySelector('canvas');canvas.width=innerWidth;canvas.height=innerHeight;const scene=await makeScene();window.STORY=scene;await loadFonts();await setScene(scene);window.DUR=40;window.render=t=>renderScene(canvas,t);window.TEXTS=t=>sceneTexts(t);window.SUBCHECK=()=>subCheck();window.RESCHECK=t=>resCheck(t);window.CAM=t=>camAt(t);window.render(0);window.READY=true;

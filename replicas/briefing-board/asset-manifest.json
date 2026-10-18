@@ -1,0 +1,146 @@
+{
+  "kit/objects/susp_raw.json": {
+    "bytes": 742,
+    "sha256": "57f98cf4e6cb533394d59f0ffef67209e70ec4f39d55235c98500a5646f9eb28"
+  },
+  "kit/objects/print_susp.json": {
+    "bytes": 269,
+    "sha256": "fb04f0e85b5bf947ec02e51b52113325ce8336ea604970b9c7ff85a73a899cb5"
+  },
+  "kit/objects/print_susp.png": {
+    "bytes": 783339,
+    "sha256": "7cc44c31feaa078441f068748551d9968bac7b74963a16ee11b93381e0bee2fb"
+  },
+  "kit/objects/ship.png": {
+    "bytes": 2604044,
+    "sha256": "594ce7762b8a583052cfefe41072010095bc24a45879ec02d50ee0c5d5154caa"
+  },
+  "kit/objects/susp_raw.png": {
+    "bytes": 9237988,
+    "sha256": "8d462704b2366ac72f30ceb0d952f3ebf1070125615260c73956a235dc48ef44"
+  },
+  "kit/objects/cable.json": {
+    "bytes": 878,
+    "sha256": "811739caf7946af39e5625600fd1b0a2391fb0ef8edaf7c8360b3d5780daa697"
+  },
+  "kit/objects/beam.png": {
+    "bytes": 893543,
+    "sha256": "0e9c6c8afd01870d07adcfe2fc39c27619e007425c51ed75d4995d357422f7aa"
+  },
+  "kit/objects/print_arch.png": {
+    "bytes": 924570,
+    "sha256": "46a33a3c570bf26e438a8d078dd851671d94dc9b444f94db7c000de95d99508a"
+  },
+  "kit/objects/suspension.json": {
+    "bytes": 965,
+    "sha256": "208dc27b3d0331e42ef7e95a4bd9476bce50458b11fef1a008d4cc7ad6d0fe14"
+  },
+  "kit/objects/ship_side.png": {
+    "bytes": 2748716,
+    "sha256": "5c62b967ab5de928c7da700419792bb698e50cf981e554a3ba0a5e630bde6b3f"
+  },
+  "kit/objects/suspension.png": {
+    "bytes": 5438294,
+    "sha256": "75ec867b32f57bc41fb63d1d1446565de0dc7efe59a420dd2791821afbf66ec2"
+  },
+  "kit/objects/cable.png": {
+    "bytes": 6455140,
+    "sha256": "7016ebf996433364651129b65b418570f88392c2f4717d7e7f52aa9a04440b7a"
+  },
+  "kit/objects/arch.png": {
+    "bytes": 20684148,
+    "sha256": "694a8119b4f17ff29f28e4e84d1f5cd57467b07e335e6c97363d8268939c97aa"
+  },
+  "kit/objects/print_cable.png": {
+    "bytes": 880382,
+    "sha256": "21f3e1ba884a569606ca69dfc52c5220c65d701c4dbed1dfe05897bd9ffa57b2"
+  },
+  "kit/objects/print_cable.json": {
+    "bytes": 260,
+    "sha256": "f80a4beb7d20e4e8798a3ed14663ad2875835acdcc3114dffc4996a5ce21fa46"
+  },
+  "kit/objects/ship.json": {
+    "bytes": 774,
+    "sha256": "bac0770c010512c046dbbde6f353a61da8d46c9f9b809335885c22861e651d2f"
+  },
+  "kit/objects/cable_half.png": {
+    "bytes": 21765999,
+    "sha256": "bda29c4d96f7585762376a7779a163caa1f6441c47f9be9262df1506f3509c9b"
+  },
+  "kit/objects/beam.json": {
+    "bytes": 701,
+    "sha256": "a80c09562f6c587aff774e9930ba68a5d67e795dddba8485410d668034fcbd15"
+  },
+  "kit/objects/print_ship.json": {
+    "bytes": 259,
+    "sha256": "c81997c2e058e3a35c44aa58e3c6cb121a283d361e544959213d7dd33141636c"
+  },
+  "kit/objects/ship_side.json": {
+    "bytes": 718,
+    "sha256": "cfaf927e6e158400c076257056fff5e169e8099349a6c9d818ec8d8630c777b9"
+  },
+  "kit/objects/print_ship.png": {
+    "bytes": 532431,
+    "sha256": "b52c2f2e58877fe8eb7fb642cf8a6a0299ddff591f84b0d9ade851a632a60ce9"
+  },
+  "kit/objects/print_arch.json": {
+    "bytes": 257,
+    "sha256": "ba93502542f58d4b7c0e1e5d759f15717ea281bc7bd1f9721f07cdb21f4def1f"
+  },
+  "kit/objects/cable_half.json": {
+    "bytes": 794,
+    "sha256": "7d542a0be84278eddadc605c1633c58fc94549234906a46cc5e41c890113b7dd"
+  },
+  "kit/objects/arch.json": {
+    "bytes": 802,
+    "sha256": "a8c10bc46f988afc77e5e87b1b3ca4f509634aa5720205a10b0b20d349693822"
+  },
+  "kit/fonts/OFL-IBMPlexMono.txt": {
+    "bytes": 4456,
+    "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+  },
+  "kit/fonts/chars.txt": {
+    "bytes": 388,
+    "sha256": "8d982cb4fed753976170acb1f2b29884498ae2a34b272a72067ee44a8075a594"
+  },
+  "kit/fonts/LXGWMarkerGothic-sub.woff2": {
+    "bytes": 13888,
+    "sha256": "bbdaa854769ec9e94a32ae91f8c457b48a1d68790213823759db3789b22ff348"
+  },
+  "kit/fonts/NotoSansSC-700-sub.woff2": {
+    "bytes": 23512,
+    "sha256": "73509ec61121b287280d4635eea9088f131dee95cebbc232b859ab6e59819910"
+  },
+  "kit/fonts/OFL-NotoSansSC.txt": {
+    "bytes": 4388,
+    "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+  },
+  "kit/fonts/IBMPlexMono-Medium.ttf": {
+    "bytes": 136704,
+    "sha256": "a9b4c49bb299e05b5f6c481e7fb5e78943d2793249a0c8874ab574a2d1ea6755"
+  },
+  "kit/fonts/OFL-Archivo.txt": {
+    "bytes": 4388,
+    "sha256": "108b4e57c9c796d3d38d0428ca7ee39de47ad93187302718d9b2d8864b9b716b"
+  },
+  "kit/fonts/OFL-LXGWMarkerGothic.txt": {
+    "bytes": 4401,
+    "sha256": "58e494ff4a5177d593a97ffc482f4069f59f54a0d4049fd29e531d3b1009e8b4"
+  },
+  "kit/fonts/NotoSansSC-500-sub.woff2": {
+    "bytes": 23220,
+    "sha256": "f0eb468864b9b01b34867a1db0268d2bf44a23240575a163dddf93a919e47652"
+  },
+  "kit/fonts/Archivo-VF.ttf": {
+    "bytes": 658596,
+    "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053"
+  },
+  "kit/fonts/IBMPlexMono-SemiBold.ttf": {
+    "bytes": 140216,
+    "sha256": "d3c38e55c78f5b0f28009fddba4834ec503278936a5986032424c9bd2d23aa46"
+  },
+  "kit/fonts/NotoSansSC-900-sub.woff2": {
+    "bytes": 23396,
+    "sha256": "6e56c443be547f3005f6964563f1c1f470384d5552a388c7a217d9023dd41135"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_ready": true,
+  "status": "source-ready-for-independent-review",
+  "title": "The Fields Under the Forest",
+  "duration": 40,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frame_count": 960,
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080,
+    "supersampling": 2
+  },
+  "matched_brief_sha256": "2f55490e45ec8f95b09f9b5cc3fce2f2bce18f2e8f371b3f0c1f0a1d4c4c7290",
+  "original_reference_sha256": "078d2ca0065febc50a495cf1e078bfdc1508ca489fb7174bfda9cd236c582863",
+  "uses_upstream_scene_code": false,
+  "shared_components": [
+    {
+      "path": "styles/lidar-survey/demo/film.js",
+      "purpose": "Generic point, terrain and photo shader primitives only, adapted into shaders.js; no original scene, camera, state, overlay or film runtime imported."
+    }
+  ],
+  "reference_data": "Exact restored original point/ground/canopy/NAIP data, wall interpretation and profile; camera numeric table applied by independent spline.",
+  "independent_scene_files": [
+    "survey.js",
+    "motion.js",
+    "hud.js",
+    "film.js"
+  ],
+  "review_times": [
+    1.5,
+    3.8,
+    4.5,
+    5.5,
+    6.875,
+    8.5,
+    9.9,
+    10.5,
+    10.7,
+    11.4,
+    12,
+    12.6,
+    13.125,
+    13.5,
+    14.4,
+    14.9,
+    15.5,
+    16,
+    17.5,
+    19.9,
+    20.625,
+    21.5,
+    24.4,
+    25.1,
+    25.8,
+    26.5,
+    28.7,
+    29.4,
+    30.5,
+    32.7,
+    33.9,
+    34.5,
+    35.9,
+    38.5,
+    39.7
+  ],
+  "review_notes": "REVIEW.md",
+  "review_status": "Worker full sequence/event still review complete; parent full-film/audio review pending.",
+  "audio": "Fresh eleven exact bm_george inputs; new 175-note 96 BPM D-minor-to-F-major score and 60 effects with both reference breaths."
+}

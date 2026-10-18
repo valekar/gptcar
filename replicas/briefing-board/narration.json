@@ -1,0 +1,89 @@
+{
+  "duration": 40,
+  "language": "en-us",
+  "voice": "af_heart",
+  "direction": "Calm confident briefing-room narrator; exact nine published lines and original per-line speeds.",
+  "lines": [
+    {
+      "id": "L1",
+      "text": "This river is a thousand meters wide.",
+      "start": 0.45,
+      "duration": 2.593,
+      "voice": "af_heart",
+      "speed": 1.06,
+      "language": "en-us"
+    },
+    {
+      "id": "L2",
+      "text": "First instinct: piers all the way across. A beam bridge.",
+      "start": 3.08,
+      "duration": 3.9080000000000004,
+      "voice": "af_heart",
+      "speed": 1.1,
+      "language": "en-us"
+    },
+    {
+      "id": "L3",
+      "text": "But the river isn't the problem. The ship is.",
+      "start": 8.3,
+      "duration": 3.0859999999999985,
+      "voice": "af_heart",
+      "speed": 1.02,
+      "language": "en-us"
+    },
+    {
+      "id": "L4",
+      "text": "New rule: no piers in the channel. One span.",
+      "start": 11.42,
+      "duration": 3.3369999999999997,
+      "voice": "af_heart",
+      "speed": 1.08,
+      "language": "en-us"
+    },
+    {
+      "id": "L5",
+      "text": "Beam: three hundred and thirty. Not close.",
+      "start": 15.9,
+      "duration": 2.8710000000000004,
+      "voice": "af_heart",
+      "speed": 1.08,
+      "language": "en-us"
+    },
+    {
+      "id": "L6",
+      "text": "Arch: six hundred. Still short.",
+      "start": 19.9,
+      "duration": 2.5420000000000016,
+      "voice": "af_heart",
+      "speed": 1.08,
+      "language": "en-us"
+    },
+    {
+      "id": "L7",
+      "text": "Cable-stayed: twelve hundred and eight. Just enough.",
+      "start": 24,
+      "duration": 3.597999999999999,
+      "voice": "af_heart",
+      "speed": 1.08,
+      "language": "en-us"
+    },
+    {
+      "id": "L8",
+      "text": "Suspension: over two thousand.",
+      "start": 29.875,
+      "duration": 2.463000000000001,
+      "voice": "af_heart",
+      "speed": 1.08,
+      "language": "en-us"
+    },
+    {
+      "id": "L9",
+      "text": "The river sets the question. The ship sets the span.",
+      "start": 32.375,
+      "duration": 3.469999999999999,
+      "voice": "af_heart",
+      "speed": 1.04,
+      "language": "en-us"
+    }
+  ]
+}

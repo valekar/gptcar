@@ -1,0 +1,13 @@
+{
+  "returns": 4789797,
+  "provider_class_2_stored_as_0": 1319669,
+  "ground_share_percent": 27.6,
+  "point_buffer_bytes": 47897974,
+  "expected_point_buffer_bytes": 47897974,
+  "wall_segments": 22,
+  "wall_total_m": 3425.5,
+  "profile_samples": 1451,
+  "profile_height_m": 0.56,
+  "profile_halfheight_width_m": 2.5,
+  "depth_note": "Requested max depth 14, original selected nodes stop at 10."
+}

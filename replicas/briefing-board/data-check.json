@@ -1,0 +1,29 @@
+{
+  "hypothetical_river_m": 1000,
+  "pixels_per_m": 1.24,
+  "bridge_spans": [
+    {
+      "id": "beam",
+      "board_span_px": 409.20441100000005,
+      "span_m_at_1_24": 330.0035572580646
+    },
+    {
+      "id": "arch",
+      "board_span_px": 743.9930150000001,
+      "span_m_at_1_24": 599.994366935484
+    },
+    {
+      "id": "cable",
+      "board_span_px": 1497.9366080000002,
+      "span_m_at_1_24": 1208.0133935483873
+    },
+    {
+      "id": "suspension",
+      "board_span_px": 2508.493412,
+      "span_m_at_1_24": 2022.978558064516
+    }
+  ],
+  "pier_magnets": 7,
+  "element_count": 82,
+  "source_mask_variance": "Original source acquisitions and build procedure retained; regenerated matte edges may differ at individual pixels."
+}

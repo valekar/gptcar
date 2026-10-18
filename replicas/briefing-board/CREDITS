@@ -1,0 +1,9 @@
+The Ship Decides — independent GPT-6.1 Sol High recreation.
+
+New scene.js assembles every board element, bridge comparison, moving ship, measurement, prop and final poster from the published reference specification. Numeric camera, motion-blur, cloud-shadow, subtitle and judgement timing tables are retained as reference data. No original film.json, _gen_film.py or original film runtime is imported/executed.
+
+Shared generic engine: kit/board.js, copied from styles/briefing-board/demo/kit/board.js, LemoLab MIT. It implements enamel, lighting, parallax/shadow, beta-eased camera, material primitives, ink lettering, motion blur and subtitles; TOOLKIT_LICENSE.txt retained. Font fetch helper is attributed to the same toolkit.
+
+Real licensed photographs and derived cutouts were restored from the original sources. Detailed exact photo authors, licenses and source URLs are in ORIGINAL_PHOTO_CREDITS.txt and photo-sources.json. Those original credits describe original production; new narration, score and foley are freshly generated, without original audio reuse. All fonts OFL, license texts in kit/fonts.
+
+Audio: fresh Kokoro af_heart nine exact lines; new 120 BPM 190-note score, 228 sampled drum/percussion hits and 105 material effects. VSCO/VCSL/Freepats sample licenses inherited from root audio asset ledger.

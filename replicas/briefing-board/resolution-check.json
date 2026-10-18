@@ -1,0 +1,92 @@
+{
+  "min": {
+    "t": 28.75,
+    "id": "suspension",
+    "ratio": 1.028286087890963,
+    "note": "stretched span in frame"
+  },
+  "fail_count": 0,
+  "subtitles": [
+    {
+      "i": 0,
+      "zh": "这条河宽 1,000 米。",
+      "en": "This river is a thousand meters wide.",
+      "wz": 379,
+      "we": 472,
+      "safe": 1500,
+      "ok": true
+    },
+    {
+      "i": 1,
+      "zh": "第一反应：一路立桥墩，修座梁桥。",
+      "en": "First instinct: piers all the way across. A beam bridge.",
+      "wz": 672,
+      "we": 687,
+      "safe": 1500,
+      "ok": true
+    },
+    {
+      "i": 2,
+      "zh": "可麻烦不在河，在船。",
+      "en": "But the river isn't the problem. The ship is.",
+      "wz": 420,
+      "we": 541,
+      "safe": 1500,
+      "ok": true
+    },
+    {
+      "i": 3,
+      "zh": "新规矩：航道里不能有桥墩，一跨过去。",
+      "en": "New rule: no piers in the channel. One span.",
+      "wz": 756,
+      "we": 569,
+      "safe": 1500,
+      "ok": true
+    },
+    {
+      "i": 4,
+      "zh": "梁桥：330 米，差得远。",
+      "en": "Beam: 330. Not close.",
+      "wz": 459,
+      "we": 288,
+      "safe": 1500,
+      "ok": true
+    },
+    {
+      "i": 5,
+      "zh": "拱桥：600 米，还差。",
+      "en": "Arch: 600. Still short.",
+      "wz": 417,
+      "we": 272,
+      "safe": 1500,
+      "ok": true
+    },
+    {
+      "i": 6,
+      "zh": "斜拉桥：1,208 米，刚好够。",
+      "en": "Cable-stayed: 1,208. Just enough.",
+      "wz": 538,
+      "we": 448,
+      "safe": 1500,
+      "ok": true
+    },
+    {
+      "i": 7,
+      "zh": "悬索桥：2,000 米以上。",
+      "en": "Suspension: over 2,000.",
+      "wz": 454,
+      "we": 318,
+      "safe": 1500,
+      "ok": true
+    },
+    {
+      "i": 8,
+      "zh": "河宽只是出题，船决定跨度。",
+      "en": "The river sets the question. The ship sets the span.",
+      "wz": 546,
+      "we": 657,
+      "safe": 1500,
+      "ok": true
+    }
+  ]
+}

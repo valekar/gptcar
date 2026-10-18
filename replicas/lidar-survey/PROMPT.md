@@ -1,0 +1,5 @@
+# The Fields Under the Forest — reconstructed replication prompt
+
+Recreate the complete forty-second published film at 1280 × 720, 24 fps, using a 1920 × 1080 production canvas. This is reconstructed from the published style, timeline, source measurements and all four original contact sheets; the private conversational prompt is unavailable.
+
+Use the exact restored Ashford survey: 4,789,797 returns, 1,319,669 ground returns, the original 2016 NAIP image, 0.5 m terrain, 22 interpreted wall traces totalling 3,425.5 m and wall C's 1,451 real section samples. Preserve the original continuous nadir-to-oblique-to-section-to-crane camera. Show the luminous photo-to-points scan, six descending canopy steps, ground-only silence, bright condensation front, sequential amber walls, 3.4 km readout, 0.56 m × 2.5 m section, 1870/2006 historical bars, ghost canopy and complete bilingual title. Freshly recreate all eleven English lines and the 96 BPM D-minor-to-F-major score. Use the complete matched brief for every screen inscription and visual event. Identify GPT authorship in the final signature.

@@ -1,0 +1,107 @@
+{
+  "duration": 40,
+  "language": "en-gb",
+  "voice": "bm_george",
+  "direction": "Calm plain British museum narrator; retain all eleven exact published lines, including original measured number pronunciation.",
+  "lines": [
+    {
+      "id": "l1",
+      "text": "From the air, it's only forest.",
+      "start": 0.45,
+      "duration": 3.38,
+      "voice": "bm_george",
+      "speed": 1,
+      "language": "en-gb"
+    },
+    {
+      "id": "l2",
+      "text": "But laser light slips between the leaves,",
+      "start": 3.95,
+      "duration": 3.1799999999999997,
+      "voice": "bm_george",
+      "speed": 1,
+      "language": "en-gb"
+    },
+    {
+      "id": "l3",
+      "text": "and some of it reaches the ground.",
+      "start": 7.25,
+      "duration": 2.880000000000001,
+      "voice": "bm_george",
+      "speed": 1,
+      "language": "en-gb"
+    },
+    {
+      "id": "l4",
+      "text": "Remove every return that hit a tree.",
+      "start": 10.25,
+      "duration": 4.1800000000000015,
+      "voice": "bm_george",
+      "speed": 1,
+      "language": "en-gb"
+    },
+    {
+      "id": "l5",
+      "text": "And the ground remembers.",
+      "start": 14.55,
+      "duration": 2.3299999999999983,
+      "voice": "bm_george",
+      "speed": 1,
+      "language": "en-gb"
+    },
+    {
+      "id": "l6",
+      "text": "Stone walls. Old fields, under the trees.",
+      "start": 17,
+      "duration": 3.7799999999999976,
+      "voice": "bm_george",
+      "speed": 1,
+      "language": "en-gb"
+    },
+    {
+      "id": "l7",
+      "text": "We traced three point four kilometres of wall.",
+      "start": 20.9,
+      "duration": 3.879999999999999,
+      "voice": "bm_george",
+      "speed": 1,
+      "language": "en-gb"
+    },
+    {
+      "id": "l8",
+      "text": "Just over half a metre high.",
+      "start": 24.9,
+      "duration": 3.879999999999999,
+      "voice": "bm_george",
+      "speed": 1,
+      "language": "en-gb"
+    },
+    {
+      "id": "l9",
+      "text": "In eighteen seventy, two thirds of Ashford was farmland.",
+      "start": 28.9,
+      "duration": 4.180000000000007,
+      "voice": "bm_george",
+      "speed": 1,
+      "language": "en-gb"
+    },
+    {
+      "id": "l10",
+      "text": "By two thousand and six, four fifths was forest.",
+      "start": 33.2,
+      "duration": 3.979999999999997,
+      "voice": "bm_george",
+      "speed": 1,
+      "language": "en-gb"
+    },
+    {
+      "id": "l11",
+      "text": "The forest kept the map.",
+      "start": 37.3,
+      "duration": 2.6000000000000014,
+      "voice": "bm_george",
+      "speed": 1,
+      "language": "en-gb"
+    }
+  ]
+}

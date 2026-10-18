@@ -1,0 +1,70 @@
+{
+  "assets/build/naip.jpg": {
+    "bytes": 968532,
+    "sha256": "66b88ae72c992c211b0685de813014b77dd6a186c2351fe14f903e156372289b"
+  },
+  "assets/build/ground.bin": {
+    "bytes": 26815429,
+    "sha256": "48049efa628bb1ec98d6251759761e6abc5d23a5b380fd7dbb33886dbb620a05"
+  },
+  "assets/build/points.bin": {
+    "bytes": 47897974,
+    "sha256": "8f08f150474c810e4ec8212a4a472ecacfd7fa90a8f53c4fecbff32acd40932d"
+  },
+  "assets/build/canopy.bin": {
+    "bytes": 1491518,
+    "sha256": "7cd1451efb08aa01d2c087e67c0e31218fc654acc236c29366adc839f5076292"
+  },
+  "data/walls_traced.json": {
+    "bytes": 2069,
+    "sha256": "a8467bcab27782e84630bd668942429ef753f20732f4eec9916119aac88dacf6"
+  },
+  "data/profile_C.json": {
+    "bytes": 14705,
+    "sha256": "da1e0622c34149e746ea45d550b45be930b21717bc0928c8db9e2b1f93c16cbd"
+  },
+  "data/facts.json": {
+    "bytes": 2113,
+    "sha256": "58a0212bba151e9d60c08881e909b98335252e127a5014a8fd824950d4ff21a2"
+  },
+  "data/walls.json": {
+    "bytes": 32093,
+    "sha256": "d2078ff7f16fe97d19c00e48c0448f6fb4db756ecdfe1a6d053dde3ec90c71b9"
+  },
+  "fonts/OFL-ibmplexmono.txt": {
+    "bytes": 4456,
+    "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+  },
+  "fonts/NotoSansSC-sub.woff2": {
+    "bytes": 81080,
+    "sha256": "0f2c5c8aacb6298faa5bb4f1fd211cad3b5180b48430a45a2c8f4320f447f806"
+  },
+  "fonts/OFL-notosanssc.txt": {
+    "bytes": 4388,
+    "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+  },
+  "fonts/BarlowCondensed-Light.ttf": {
+    "bytes": 101996,
+    "sha256": "2c37e1e6b5feb71d38a42e6180d2e2f4ca1aad22cfecbd017430f3863deba67d"
+  },
+  "fonts/IBMPlexMono-Medium.ttf": {
+    "bytes": 136704,
+    "sha256": "a9b4c49bb299e05b5f6c481e7fb5e78943d2793249a0c8874ab574a2d1ea6755"
+  },
+  "fonts/BarlowCondensed-Medium.ttf": {
+    "bytes": 103360,
+    "sha256": "262bd143292ce479ee0cd09a42b47ab173fca8e9c6eb5ed0b5c8a845bc371d17"
+  },
+  "fonts/IBMPlexMono-Regular.ttf": {
+    "bytes": 135580,
+    "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+  },
+  "fonts/BarlowCondensed-Regular.ttf": {
+    "bytes": 102480,
+    "sha256": "583cec5da3b84bc4dc7c9c72e2a565c94d34e431518b19d7e250b7830ad5f996"
+  },
+  "fonts/OFL-barlow.txt": {
+    "bytes": 4377,
+    "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+  }
+}
