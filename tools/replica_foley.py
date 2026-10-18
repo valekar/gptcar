@@ -79,6 +79,48 @@ def effect(kind,duration,seed=6103,**p):
   a=bp(noise,800,12000)*np.exp(-((u-.2)/.12)**2)+(.25*np.sin(2*np.pi*1380*t)+.1*np.sin(2*np.pi*3110*t))*np.exp(-u*9)
  elif kind=='paper_scroll':
   a=(bp(noise,200,4200)*(.6+.4*np.sin(2*np.pi*19*t))+.08*np.sin(2*np.pi*(160*t+40*t*t)))*env
+ elif kind=='metal_tick':
+  a=sum(g*np.sin(2*np.pi*f*t)*np.exp(-t*k) for f,g,k in [(3100,.45,60),(4870,.3,80),(7190,.18,105)])+bp(noise,3200,8500)*np.exp(-t*170)*.25
+  a*=np.minimum(t/.0008,1)
+ elif kind=='acrylic_tok':
+  a=sum(g*np.sin(2*np.pi*f*t)*np.exp(-t*k) for f,g,k in [(1060,.5,70),(1720,.25,110),(2670,.12,160)])+bp(noise,600,3100)*np.exp(-t*190)*.18
+  a*=np.minimum(t/.001,1)
+ elif kind=='bow_rosin':
+  a=(bp(noise,900,6500)*.6+np.sin(2*np.pi*230*t)*.1)*env*(.7+.3*np.sin(2*np.pi*37*t))
+ elif kind=='wet_steps':
+  a=np.zeros(len(t))
+  for onset in np.arange(0,d,float(p.get('interval',.55))):
+   q=t-onset;valid=q>=0;a[valid]+=(lp(noise,1400)[valid]*.7+np.sin(2*np.pi*95*q[valid])*.3)*np.exp(-q[valid]*25)*np.minimum(q[valid]/.005,1)
+ elif kind=='nylon':
+  a=bp(noise,650,8000)*env*(.5+.5*np.maximum(np.sin(2*np.pi*27*t),0))
+ elif kind=='rib_click':
+  a=(bp(noise,1500,9500)*.4+np.sin(2*np.pi*2150*t)*.3+np.sin(2*np.pi*3670*t)*.16)*np.exp(-u*22)*np.minimum(t/.001,1)
+ elif kind=='umbrella_fwump':
+  a=(lp(noise,1100)*.6+np.sin(2*np.pi*(130*t-50*t*t/max(d,.01)))*.35)*np.exp(-((u-.25)/.23)**2)
+ elif kind=='paint_dab':
+  a=(bp(noise,300,4500)*.4+np.sin(2*np.pi*(420*t-220*t*t/max(d,.01)))*.3)*np.exp(-u*10)*np.minimum(t/.003,1)
+ elif kind=='knife_scrape':
+  a=(bp(noise,1700,10500)*.6+.12*np.sin(2*np.pi*3200*t))*env*(.6+.4*np.sin(2*np.pi*42*t))
+ elif kind=='shaker':
+  a=bp(noise,2500,11000)*np.exp(-u*6)*np.minimum(t/.005,1)
+ elif kind=='pen_scratch':
+  speed=np.clip(float(p.get('speed',1)),.05,4);a=bp(noise,700, min(16000,4200+speed*1800))*env*(.65+.35*np.sin(2*np.pi*(17+speed*19)*t))
+ elif kind=='pen_tap':
+  a=(bp(noise,1000,8500)*.4+np.sin(2*np.pi*1720*t)*.3+np.sin(2*np.pi*2850*t)*.12)*np.exp(-u*28)*np.minimum(t/.001,1)
+ elif kind=='ink_bloom':
+  f=650-380*np.minimum(u*3,1);phase=2*np.pi*np.cumsum(f)/SR;a=(np.sin(phase)*.3+lp(noise,1100)*.35)*np.exp(-u*7)*np.minimum(t/.008,1)
+ elif kind=='handoff_rub':
+  a=bp(noise,240,3500)*env*(.75+.25*np.sin(2*np.pi*13*t))
+ elif kind=='turret_click':
+  a=(bp(noise,1000,9000)*.4+np.sin(2*np.pi*1850*t)*.25+np.sin(2*np.pi*4120*t)*.15)*np.exp(-u*23)*np.minimum(t/.001,1)
+ elif kind=='focus_servo':
+  f=float(p.get('frequency',135))*(1+.3*np.sin(np.pi*u));phase=2*np.pi*np.cumsum(f)/SR;a=(np.sin(phase)*.3+np.sin(phase*3)*.1+bp(noise,350,1600)*.2)*env
+ elif kind=='glass_pen':
+  a=bp(noise,1900,10500)*env*(.6+.4*np.sin(2*np.pi*51*t))
+ elif kind=='scan_noise':
+  a=bp(noise,1100,6800)*env*(.4+.6*np.sin(2*np.pi*float(p.get('rate',7))*t)**2)
+ elif kind=='lab_room':
+  a=(lp(noise,800)*.5+np.sin(2*np.pi*60*t)*.08+np.sin(2*np.pi*120*t)*.03)*np.minimum(t/.2,1)*np.minimum((d-t)/.2,1)
  else:raise ValueError('Unsupported material cue: '+kind)
  return np.asarray(a,dtype=np.float32)
 

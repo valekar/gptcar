@@ -1,0 +1,54 @@
+[
+  {
+    "path": "styles/ink-wash/demo/ink.js",
+    "sha256": "dbe6474ab0a0798193a7b49be9a8166511bc67ced90594e4390bdb2b70eef399",
+    "purpose": "Generic loaded/dry brush primitives"
+  },
+  {
+    "path": "styles/ink-wash/demo/comp.js",
+    "sha256": "063b2d9fa079772de016acc99f19aabddd6dbeaa2445119d01ccac5053a281af",
+    "purpose": "Generic rice-paper wet-bleed compositor"
+  },
+  {
+    "path": "styles/ink-wash/demo/land.js",
+    "sha256": "687c1cc1a848e30cc7e8b2e73984f49925506f20a8500b64aac88059a02b50bb",
+    "purpose": "Generic detailed mountain, cun, cliff, pine, reed and ripple geometry"
+  },
+  {
+    "path": "styles/ink-wash/demo/hero.js",
+    "sha256": "bea1cb4f77efc89f68cbdd52cccc7c63b340ad9aa905d58453f857b3b553a798",
+    "purpose": "Shared articulated swordsman model and poses"
+  },
+  {
+    "path": "styles/ink-wash/demo/face.js",
+    "sha256": "86377f07cd19f02fb1fe295c755a8f76d3692b8d404b10ce112466fcba9ea38e",
+    "purpose": "Shared face/hat geometry model"
+  },
+  {
+    "path": "styles/ink-wash/demo/wave.js",
+    "sha256": "408faca9dfc67c8fd077b1c25a447d7b49d56319976151457ec1c10e91716397",
+    "purpose": "Shared generic gestural wave model"
+  },
+  {
+    "path": "styles/ink-wash/demo/glyph.js",
+    "sha256": "3397fa07bcf2c4ede5412cc83e8f775aec3ac4d94801b5adbd223fcde8fce47c",
+    "purpose": "Shared water-calligraphy stroke geometry and generic cut stroke tool"
+  },
+  {
+    "path": "styles/ink-wash/demo/seal.js",
+    "sha256": "d4f66f324895975a28a02ccad18c93a021d216b0b9365ef306adb7072a1ece98",
+    "purpose": "Shared generic vermilion seal renderer"
+  },
+  {
+    "path": "styles/ink-wash/demo/lines.json",
+    "purpose": "Exact published spoken script, intentionally retained for same-script recreation"
+  },
+  {
+    "path": "styles/ink-wash/demo/story.js",
+    "purpose": "Published subtitle words and canonical cue times used as reconstruction requirements; executable story/scene modules not imported"
+  },
+  {
+    "path": "replicas/ink-wash/fonts",
+    "purpose": "Newly fetched SIL OFL fonts and adjacent licence files"
+  }
+]

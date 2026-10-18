@@ -75,6 +75,8 @@ def compose(score,voice_records,duration,out):
         a=np.tanh(a/(rms(active)*4))*rms(active)*4;a*=10**(-18/20)/max(rms(a[np.abs(a)>.003]),1e-8)
         add(speech,a,line['start']);i=max(0,round((line['start']-.15)*SR));j=min(len(duck),round((line['start']+len(a)/SR+.2)*SR));duck[i:j]=np.minimum(duck[i:j],.62)
     duck=uniform_filter1d(duck,size=int(.25*SR),mode='nearest');mix=(music+foley)*duck[:,None]+speech
+    for start,end in score.get('silence_ranges',[]):
+        mix[max(0,round(start*SR)):min(len(mix),round(end*SR))]=0
     peak=float(np.max(np.abs(mix)))
     if peak<1e-5:raise RuntimeError('Empty soundtrack')
     if peak>.88:mix*=.88/peak

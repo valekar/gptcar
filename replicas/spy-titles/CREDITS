@@ -1,0 +1,8 @@
+The Velvet Cipher — independently staged GPT reference recreation
+Model: GPT-6.1 Sol, high reasoning. Scene code replica.js newly authored for this version.
+Reference story/specification and generic paper.js, glyph.js, chars.js helpers: LemoLab, lemo-opuscar; MIT, original commit ded40b25679fe5d5dcfc07a282a25da1ceee3be1. Reused helpers supply scissor-cut paths, texture, cut type extraction and generic puppet rigs. Original scenes.js, film.js, title.js and rendered frames/audio are not imported.
+Original published timing values independently transcribed to timing.json, retained for reference matching.
+League Gothic / League Spartan: The League of Moveable Type, SIL Open Font License1.1; local Google Fonts variable distributions stand in for unpublished original static binaries. Licence texts in fonts/. OpenType.js: Frederik De Bleser et al., MIT, generic font parser.
+Recreated voice: Kokoro bm_george (British male); root synthesis. Newly authored132BPM minor spy score, sampled electric guitar/jazz bass/brass/woodwinds/drums. No original master reused.
+Root sampler assets: VSCO2 CE (CC0), Karoryfer/Sneakybass (CC0), FreePats electric guitar (GPL3+sample exception), MuldjordKit Lars Muldjord (CC BY4.0); see core/audio/INSTRUMENTS.md and core/audio/sampler.py for sources/licences.
+Historical fictional A LEMOLAB PICTURE retained as narrative set; final authored model credit truthfully identifies this recreation.

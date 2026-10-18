@@ -1,0 +1,19 @@
+The Little Sprite’s Adventure — independent GPT recreation
+Authored with GPT-6.1 Sol, high reasoning effort.
+Reference film and original style/library: Lemomo / LemoLab, lemo-opuscar, MIT.
+Published original: https://lemomo-ai.github.io/lemo-opuscar/films/paper-popup.mp4
+
+Attributed generic toolkit (MIT): styles/paper-popup/demo/book.js (hinged book and curled sheet geometry only; original coverCanvases is not called), cutmesh.js (alpha-tested card depth and paper backs), paper.js (canvas grain, cut borders and shape utilities), post.js (physical depth of field/bloom), their transitive generic lib.js, and core/lib.js (deterministic math/interpolation). Original art.js, actors.js, sets.js, story.js, hud.js and main.js are not runtime dependencies. Published camera key coordinates are reference data, independently evaluated with generic interpolation. All new drawings, character assembly, sets, acting, scene control, overlays and score are in this replica directory.
+
+Poly Haven photographic room, texture maps and 3D props: CC0.
+https://polyhaven.com/a/lythwood_lounge
+https://polyhaven.com/a/walnut
+https://polyhaven.com/a/tea_set_01
+https://polyhaven.com/a/desk_lamp_arm_01
+https://polyhaven.com/a/alarm_clock_01
+https://polyhaven.com/a/potted_plant_04
+Exact locally reused asset paths are itemized in generation.json.
+
+New sampled score uses VSCO 2 Community Edition (CC0) strings, flute, clarinet and VCSL (CC0) harp, glockenspiel; piano uses Salamander Grand Piano, Alexander Holm, CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/). Full sample-pack manifests and attribution: core/audio/INSTRUMENTS.md and core/audio/instruments. Deterministic foley is newly synthesized. Fresh narration: Kokoro af_bella. Original Kevin MacLeod tracks and original narration recording are not reused.
+Fonts: Fredoka, Lilita One, IM Fell English, ZCOOL KuaiLe — SIL Open Font License, bundled in core/fonts.
+Three.js — MIT.

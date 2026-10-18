@@ -24,6 +24,8 @@ def build(out,preview=False):
    if r.get('verdict')!='accepted-for-gallery' or r.get('reviewed_source_sha256')!=d['source_sha256'] or r.get('audio_review')!='passed':problems.append('independent scene/audio review incomplete')
    errors.extend(slug+': '+x for x in problems);ok=not problems;accepted+=int(ok)
    s.update(run_version=2,status='verified' if ok else 'rendered',gpt_duration=d['duration'],gpt_fps=d['fps'],gpt_title=d['title'],comparison_notes=r.get('comparison_notes',g.get('comparison_notes','Full reference script and scene structure recreated from the published film/specification; newly generated scene assembly, speech and score. Shared generic engine/data components are credited in source. Original conversation prompt was not published.')),model=d['model'],reasoning_effort=d['reasoning_effort'],video_sha256=d['video_sha256'],source_url='https://github.com/valekar/gptcar/tree/main/replicas/'+slug)
+   if 'stale film source' in problems or 'stale matched brief' in problems:
+    s['status']='revision-in-progress';s['comparison_notes']='Previous full-length render shown while scene corrections are being rendered and reviewed. '+s['comparison_notes']
    s['opus_poster']='reference-posters/'+slug+'.jpg'
    paths=[(v,out/'films'/(slug+'.mp4')),(poster,out/'posters'/(slug+'.jpg')),(original_poster,out/'reference-posters'/(slug+'.jpg'))]
   else:

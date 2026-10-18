@@ -1,0 +1,89 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_ready": true,
+  "status": "source-ready-for-independent-review",
+  "title": "Two Spirals / 两条螺旋",
+  "duration": 39.375,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frame_count": 945,
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080,
+    "supersampling": 2,
+    "ambient_occlusion": "GTAO",
+    "antialiasing": "scene-only FXAA after physical post"
+  },
+  "matched_brief_sha256": "e8a64f933da19c9777c66baad3bedbca8891de266668b0ae16321ef748f9bd63",
+  "original_reference_sha256": "105cfdd6cbc140dffc71aae36c8f40c7fde324dfcdef362339e5b0a0d9e1dabd",
+  "uses_upstream_scene_code": false,
+  "shared_components": [
+    {
+      "path": "core/three/post.js",
+      "purpose": "Generic GTAO, physical depth of field, bloom and grade."
+    },
+    {
+      "path": "core/lib.js",
+      "purpose": "Deterministic math and interpolation."
+    },
+    {
+      "path": "core/assets/polyhaven/photo_studio_loft_hall_2k.hdr",
+      "purpose": "Exact licensed CC0 reflection environment or walnut texture."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_diff.jpg",
+      "purpose": "Exact licensed CC0 reflection environment or walnut texture."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_nor.jpg",
+      "purpose": "Exact licensed CC0 reflection environment or walnut texture."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_rough.jpg",
+      "purpose": "Exact licensed CC0 reflection environment or walnut texture."
+    }
+  ],
+  "review_times": [
+    0.5,
+    3.5,
+    5.5,
+    7.5,
+    8.5,
+    10.5,
+    12.5,
+    16.5,
+    18.85,
+    19.5,
+    21.875,
+    22.5,
+    24.5,
+    25.625,
+    26.5,
+    28.6,
+    29.2325,
+    29.5,
+    31.5,
+    33.9,
+    34.375,
+    34.5,
+    37.8
+  ],
+  "review_status": "Worker complete original-sequence and independent still review finished; parent full scene/audio review pending.",
+  "review_notes": "REVIEW.md",
+  "independent_scene_files": [
+    "sculpture.js",
+    "film.js",
+    "hud.js"
+  ],
+  "evidence": {
+    "original_archived_data": true,
+    "window": "World2014–2025",
+    "plates": 1935,
+    "feed_2025": 52,
+    "last_feed_landing": 29.2325,
+    "facts": "FACTS.md"
+  },
+  "audio": "Seven fresh exact narration lines;522-note new96BPM sampled/synth score and1945 material/impact cues tied to actual physical landing schedule."
+}

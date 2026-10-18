@@ -1,0 +1,1174 @@
+{
+  "duration": 48,
+  "bpm": 90,
+  "sections": [
+    {
+      "start": 0,
+      "end": 5.6,
+      "intent": "Free ink-drop creation"
+    },
+    {
+      "start": 5.6,
+      "end": 13.8,
+      "intent": "60 BPM spacious F-gong landscape phrases"
+    },
+    {
+      "start": 13.8,
+      "end": 15.3,
+      "intent": "Leap breath"
+    },
+    {
+      "start": 15.3,
+      "end": 21.3,
+      "intent": "90 BPM nine light plucks/steps"
+    },
+    {
+      "start": 21.3,
+      "end": 26.8,
+      "intent": "Increasing wave/drum pressure"
+    },
+    {
+      "start": 26.8,
+      "end": 28.5,
+      "intent": "Hat and drip: music silent"
+    },
+    {
+      "start": 28.5,
+      "end": 30.5,
+      "intent": "Three isolated glassy harmonics"
+    },
+    {
+      "start": 30.5,
+      "end": 32.4,
+      "intent": "Absolute silence before cut"
+    },
+    {
+      "start": 32.4,
+      "end": 35.8,
+      "intent": "Seven-string cut sweep and river release"
+    },
+    {
+      "start": 35.8,
+      "end": 42.6,
+      "intent": "Quiet philosophical return theme"
+    },
+    {
+      "start": 42.6,
+      "end": 48,
+      "intent": "Scroll settles, seal is final note"
+    }
+  ],
+  "notes": [
+    {
+      "t": 0.9,
+      "midi": 41,
+      "duration": 2.6,
+      "gain": 0.24,
+      "instrument": "guqin",
+      "pan": -0.15,
+      "bend": [
+        [
+          0,
+          0
+        ],
+        [
+          1.8199999999999998,
+          0.15
+        ],
+        [
+          2.6,
+          0
+        ]
+      ]
+    },
+    {
+      "t": 2.5,
+      "midi": 53,
+      "duration": 1.8,
+      "gain": 0.24,
+      "instrument": "guqin",
+      "pan": -0.15,
+      "bend": [
+        [
+          0,
+          0
+        ],
+        [
+          1.26,
+          0.15
+        ],
+        [
+          1.8,
+          0
+        ]
+      ]
+    },
+    {
+      "t": 4.2,
+      "midi": 60,
+      "duration": 1.4,
+      "gain": 0.24,
+      "instrument": "guqin",
+      "pan": -0.15,
+      "bend": [
+        [
+          0,
+          0
+        ],
+        [
+          0.9799999999999999,
+          0.15
+        ],
+        [
+          1.4,
+          0
+        ]
+      ]
+    },
+    {
+      "t": 5.6,
+      "midi": 57,
+      "duration": 2.0,
+      "gain": 0.24,
+      "instrument": "guqin",
+      "pan": -0.15,
+      "bend": [
+        [
+          0,
+          0
+        ],
+        [
+          1.4,
+          0.15
+        ],
+        [
+          2.0,
+          0
+        ]
+      ]
+    },
+    {
+      "t": 7.1,
+      "midi": 55,
+      "duration": 1.7,
+      "gain": 0.24,
+      "instrument": "guqin",
+      "pan": -0.15,
+      "bend": [
+        [
+          0,
+          0
+        ],
+        [
+          1.19,
+          0.15
+        ],
+        [
+          1.7,
+          0
+        ]
+      ]
+    },
+    {
+      "t": 8.8,
+      "midi": 53,
+      "duration": 1.2,
+      "gain": 0.24,
+      "instrument": "guqin",
+      "pan": -0.15,
+      "bend": [
+        [
+          0,
+          0
+        ],
+        [
+          0.84,
+          0.15
+        ],
+        [
+          1.2,
+          0
+        ]
+      ]
+    },
+    {
+      "t": 9.4,
+      "midi": 60,
+      "duration": 0.7,
+      "gain": 0.24,
+      "instrument": "guqin",
+      "pan": -0.15,
+      "bend": [
+        [
+          0,
+          0
+        ],
+        [
+          0.48999999999999994,
+          0.15
+        ],
+        [
+          0.7,
+          0
+        ]
+      ]
+    },
+    {
+      "t": 10,
+      "midi": 62,
+      "duration": 1.0,
+      "gain": 0.24,
+      "instrument": "guqin",
+      "pan": -0.15,
+      "bend": [
+        [
+          0,
+          0
+        ],
+        [
+          0.7,
+          0.15
+        ],
+        [
+          1.0,
+          0
+        ]
+      ]
+    },
+    {
+      "t": 10.8,
+      "midi": 57,
+      "duration": 2.2,
+      "gain": 0.24,
+      "instrument": "guqin",
+      "pan": -0.15,
+      "bend": [
+        [
+          0,
+          0
+        ],
+        [
+          1.54,
+          0.15
+        ],
+        [
+          2.2,
+          0
+        ]
+      ]
+    },
+    {
+      "t": 12.5,
+      "midi": 55,
+      "duration": 1.1,
+      "gain": 0.24,
+      "instrument": "guqin",
+      "pan": -0.15,
+      "bend": [
+        [
+          0,
+          0
+        ],
+        [
+          0.77,
+          0.15
+        ],
+        [
+          1.1,
+          0
+        ]
+      ]
+    },
+    {
+      "t": 13.8,
+      "midi": 53,
+      "duration": 0.5,
+      "gain": 0.24,
+      "instrument": "guqin",
+      "pan": -0.15,
+      "bend": [
+        [
+          0,
+          0
+        ],
+        [
+          0.35,
+          0.15
+        ],
+        [
+          0.5,
+          0
+        ]
+      ]
+    },
+    {
+      "t": 6.2,
+      "midi": 77,
+      "duration": 2,
+      "gain": 0.12,
+      "instrument": "flute",
+      "pan": 0.1
+    },
+    {
+      "t": 10.7,
+      "midi": 72,
+      "duration": 2,
+      "gain": 0.12,
+      "instrument": "flute",
+      "pan": 0.1
+    },
+    {
+      "t": 12.7,
+      "midi": 69,
+      "duration": 1.2,
+      "gain": 0.12,
+      "instrument": "flute",
+      "pan": 0.1
+    },
+    {
+      "t": 15.3333,
+      "midi": 53,
+      "duration": 0.5,
+      "gain": 0.22,
+      "instrument": "guqin",
+      "pan": -0.2
+    },
+    {
+      "t": 16.0,
+      "midi": 57,
+      "duration": 0.5,
+      "gain": 0.22,
+      "instrument": "guqin",
+      "pan": -0.15000000000000002
+    },
+    {
+      "t": 16.6666,
+      "midi": 60,
+      "duration": 0.5,
+      "gain": 0.22,
+      "instrument": "guqin",
+      "pan": -0.1
+    },
+    {
+      "t": 17.3333,
+      "midi": 62,
+      "duration": 0.5,
+      "gain": 0.22,
+      "instrument": "guqin",
+      "pan": -0.04999999999999999
+    },
+    {
+      "t": 18.0,
+      "midi": 65,
+      "duration": 0.5,
+      "gain": 0.22,
+      "instrument": "guqin",
+      "pan": 0.0
+    },
+    {
+      "t": 18.6667,
+      "midi": 62,
+      "duration": 0.5,
+      "gain": 0.22,
+      "instrument": "guqin",
+      "pan": 0.04999999999999999
+    },
+    {
+      "t": 19.3333,
+      "midi": 60,
+      "duration": 0.5,
+      "gain": 0.22,
+      "instrument": "guqin",
+      "pan": 0.10000000000000003
+    },
+    {
+      "t": 20.0,
+      "midi": 57,
+      "duration": 0.5,
+      "gain": 0.22,
+      "instrument": "guqin",
+      "pan": 0.15000000000000002
+    },
+    {
+      "t": 20.6667,
+      "midi": 55,
+      "duration": 0.5,
+      "gain": 0.22,
+      "instrument": "guqin",
+      "pan": 0.2
+    },
+    {
+      "t": 16,
+      "midi": 77,
+      "duration": 1.1,
+      "gain": 0.14,
+      "instrument": "flute",
+      "pan": 0.15
+    },
+    {
+      "t": 17.333,
+      "midi": 81,
+      "duration": 1.1,
+      "gain": 0.14,
+      "instrument": "flute",
+      "pan": 0.15
+    },
+    {
+      "t": 18.667,
+      "midi": 79,
+      "duration": 1.4,
+      "gain": 0.14,
+      "instrument": "flute",
+      "pan": 0.15
+    },
+    {
+      "t": 20,
+      "midi": 77,
+      "duration": 1.2,
+      "gain": 0.14,
+      "instrument": "flute",
+      "pan": 0.15
+    },
+    {
+      "t": 21.3,
+      "midi": 41,
+      "duration": 1.3,
+      "gain": 0.2,
+      "instrument": "guqin",
+      "pan": -0.1
+    },
+    {
+      "t": 22.5,
+      "midi": 48,
+      "duration": 1.3,
+      "gain": 0.2,
+      "instrument": "guqin",
+      "pan": -0.1
+    },
+    {
+      "t": 23.8,
+      "midi": 53,
+      "duration": 1.3,
+      "gain": 0.2,
+      "instrument": "guqin",
+      "pan": -0.1
+    },
+    {
+      "t": 25,
+      "midi": 55,
+      "duration": 1.3,
+      "gain": 0.2,
+      "instrument": "guqin",
+      "pan": -0.1
+    },
+    {
+      "t": 21.5,
+      "midi": 41,
+      "duration": 2.1,
+      "gain": 0.13,
+      "instrument": "contrabass",
+      "pan": 0.1
+    },
+    {
+      "t": 23.5,
+      "midi": 36,
+      "duration": 2.4,
+      "gain": 0.13,
+      "instrument": "contrabass",
+      "pan": 0.1
+    },
+    {
+      "t": 25.4,
+      "midi": 41,
+      "duration": 1.2,
+      "gain": 0.13,
+      "instrument": "contrabass",
+      "pan": 0.1
+    },
+    {
+      "t": 28.5,
+      "midi": 77,
+      "duration": 0.38,
+      "gain": 0.22,
+      "instrument": "guqin",
+      "pan": -0.1,
+      "harmonic": true
+    },
+    {
+      "t": 29.2,
+      "midi": 81,
+      "duration": 0.38,
+      "gain": 0.22,
+      "instrument": "guqin",
+      "pan": -0.1,
+      "harmonic": true
+    },
+    {
+      "t": 29.95,
+      "midi": 84,
+      "duration": 0.38,
+      "gain": 0.22,
+      "instrument": "guqin",
+      "pan": -0.1,
+      "harmonic": true
+    },
+    {
+      "t": 32.4,
+      "midi": 41,
+      "duration": 0.85,
+      "gain": 0.19,
+      "instrument": "guqin",
+      "pan": -0.3
+    },
+    {
+      "t": 32.416,
+      "midi": 48,
+      "duration": 0.85,
+      "gain": 0.19,
+      "instrument": "guqin",
+      "pan": -0.19999999999999998
+    },
+    {
+      "t": 32.432,
+      "midi": 53,
+      "duration": 0.85,
+      "gain": 0.19,
+      "instrument": "guqin",
+      "pan": -0.09999999999999998
+    },
+    {
+      "t": 32.448,
+      "midi": 55,
+      "duration": 0.85,
+      "gain": 0.19,
+      "instrument": "guqin",
+      "pan": 5.551115123125783e-17
+    },
+    {
+      "t": 32.464,
+      "midi": 57,
+      "duration": 0.85,
+      "gain": 0.19,
+      "instrument": "guqin",
+      "pan": 0.10000000000000003
+    },
+    {
+      "t": 32.48,
+      "midi": 60,
+      "duration": 0.85,
+      "gain": 0.19,
+      "instrument": "guqin",
+      "pan": 0.2
+    },
+    {
+      "t": 32.496,
+      "midi": 62,
+      "duration": 0.85,
+      "gain": 0.19,
+      "instrument": "guqin",
+      "pan": 0.3000000000000001
+    },
+    {
+      "t": 35.2,
+      "midi": 53,
+      "duration": 1.6,
+      "gain": 0.2,
+      "instrument": "guqin",
+      "pan": -0.12
+    },
+    {
+      "t": 36.6,
+      "midi": 57,
+      "duration": 1.1,
+      "gain": 0.2,
+      "instrument": "guqin",
+      "pan": -0.12
+    },
+    {
+      "t": 37.5,
+      "midi": 60,
+      "duration": 1.4,
+      "gain": 0.2,
+      "instrument": "guqin",
+      "pan": -0.12
+    },
+    {
+      "t": 39.1,
+      "midi": 55,
+      "duration": 1.0,
+      "gain": 0.2,
+      "instrument": "guqin",
+      "pan": -0.12
+    },
+    {
+      "t": 40.4,
+      "midi": 53,
+      "duration": 2.0,
+      "gain": 0.2,
+      "instrument": "guqin",
+      "pan": -0.12
+    },
+    {
+      "t": 42.6,
+      "midi": 48,
+      "duration": 2.5,
+      "gain": 0.2,
+      "instrument": "guqin",
+      "pan": -0.12
+    },
+    {
+      "t": 44.6,
+      "midi": 41,
+      "duration": 2.8,
+      "gain": 0.2,
+      "instrument": "guqin",
+      "pan": -0.12
+    },
+    {
+      "t": 35.8,
+      "midi": 77,
+      "duration": 2,
+      "gain": 0.11,
+      "instrument": "flute",
+      "pan": 0.13
+    },
+    {
+      "t": 38.2,
+      "midi": 74,
+      "duration": 1.5,
+      "gain": 0.11,
+      "instrument": "flute",
+      "pan": 0.13
+    },
+    {
+      "t": 40.5,
+      "midi": 72,
+      "duration": 2.2,
+      "gain": 0.11,
+      "instrument": "flute",
+      "pan": 0.13
+    },
+    {
+      "t": 43.5,
+      "midi": 69,
+      "duration": 1.6,
+      "gain": 0.11,
+      "instrument": "flute",
+      "pan": 0.13
+    },
+    {
+      "t": 23.1,
+      "midi": 41,
+      "duration": 0.6,
+      "gain": 0.12,
+      "instrument": "timpani"
+    },
+    {
+      "t": 24.2,
+      "midi": 48,
+      "duration": 0.6,
+      "gain": 0.12,
+      "instrument": "timpani"
+    },
+    {
+      "t": 25.4,
+      "midi": 41,
+      "duration": 0.6,
+      "gain": 0.12,
+      "instrument": "timpani"
+    }
+  ],
+  "effects": [
+    {
+      "t": 22.0,
+      "kind": "thump",
+      "duration": 0.22,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 22.36,
+      "kind": "thump",
+      "duration": 0.22,
+      "gain": 0.041,
+      "pan": 0
+    },
+    {
+      "t": 22.72,
+      "kind": "thump",
+      "duration": 0.22,
+      "gain": 0.047,
+      "pan": 0
+    },
+    {
+      "t": 23.08,
+      "kind": "thump",
+      "duration": 0.22,
+      "gain": 0.053000000000000005,
+      "pan": 0
+    },
+    {
+      "t": 23.44,
+      "kind": "thump",
+      "duration": 0.22,
+      "gain": 0.059000000000000004,
+      "pan": 0
+    },
+    {
+      "t": 23.8,
+      "kind": "thump",
+      "duration": 0.22,
+      "gain": 0.065,
+      "pan": 0
+    },
+    {
+      "t": 24.16,
+      "kind": "thump",
+      "duration": 0.22,
+      "gain": 0.07100000000000001,
+      "pan": 0
+    },
+    {
+      "t": 24.52,
+      "kind": "thump",
+      "duration": 0.22,
+      "gain": 0.07700000000000001,
+      "pan": 0
+    },
+    {
+      "t": 24.88,
+      "kind": "thump",
+      "duration": 0.22,
+      "gain": 0.083,
+      "pan": 0
+    },
+    {
+      "t": 25.24,
+      "kind": "thump",
+      "duration": 0.22,
+      "gain": 0.089,
+      "pan": 0
+    },
+    {
+      "t": 25.6,
+      "kind": "thump",
+      "duration": 0.22,
+      "gain": 0.095,
+      "pan": 0
+    },
+    {
+      "t": 25.96,
+      "kind": "thump",
+      "duration": 0.22,
+      "gain": 0.101,
+      "pan": 0
+    },
+    {
+      "t": 25.65,
+      "kind": "bell",
+      "duration": 0.8,
+      "gain": 0.065,
+      "pan": -0.1,
+      "midi": 41
+    },
+    {
+      "t": 0,
+      "kind": "wind",
+      "duration": 26.8,
+      "gain": 0.012,
+      "pan": -0.5
+    },
+    {
+      "t": 0.9,
+      "kind": "raindrop",
+      "duration": 0.6,
+      "gain": 0.13,
+      "pan": 0
+    },
+    {
+      "t": 8.8,
+      "kind": "brush",
+      "duration": 0.45,
+      "gain": 0.075,
+      "pan": -0.3
+    },
+    {
+      "t": 9.4,
+      "kind": "brush",
+      "duration": 0.45,
+      "gain": 0.075,
+      "pan": -0.3
+    },
+    {
+      "t": 10,
+      "kind": "brush",
+      "duration": 0.45,
+      "gain": 0.075,
+      "pan": -0.3
+    },
+    {
+      "t": 14.15,
+      "kind": "whoosh",
+      "duration": 0.5,
+      "gain": 0.08,
+      "pan": -0.2
+    },
+    {
+      "t": 15.3333,
+      "kind": "splash",
+      "duration": 0.26,
+      "gain": 0.065,
+      "pan": 0.2
+    },
+    {
+      "t": 15.4333,
+      "kind": "whoosh",
+      "duration": 0.3,
+      "gain": 0.035,
+      "pan": 0.2
+    },
+    {
+      "t": 15.99997,
+      "kind": "splash",
+      "duration": 0.26,
+      "gain": 0.065,
+      "pan": 0.2
+    },
+    {
+      "t": 16.09997,
+      "kind": "whoosh",
+      "duration": 0.3,
+      "gain": 0.035,
+      "pan": 0.2
+    },
+    {
+      "t": 16.66664,
+      "kind": "splash",
+      "duration": 0.26,
+      "gain": 0.065,
+      "pan": 0.2
+    },
+    {
+      "t": 16.76664,
+      "kind": "whoosh",
+      "duration": 0.3,
+      "gain": 0.035,
+      "pan": 0.2
+    },
+    {
+      "t": 17.33331,
+      "kind": "splash",
+      "duration": 0.26,
+      "gain": 0.065,
+      "pan": 0.2
+    },
+    {
+      "t": 17.43331,
+      "kind": "whoosh",
+      "duration": 0.3,
+      "gain": 0.035,
+      "pan": 0.2
+    },
+    {
+      "t": 17.99998,
+      "kind": "splash",
+      "duration": 0.26,
+      "gain": 0.065,
+      "pan": 0.2
+    },
+    {
+      "t": 18.09998,
+      "kind": "whoosh",
+      "duration": 0.3,
+      "gain": 0.035,
+      "pan": 0.2
+    },
+    {
+      "t": 18.66665,
+      "kind": "splash",
+      "duration": 0.26,
+      "gain": 0.065,
+      "pan": 0.2
+    },
+    {
+      "t": 18.76665,
+      "kind": "whoosh",
+      "duration": 0.3,
+      "gain": 0.035,
+      "pan": 0.2
+    },
+    {
+      "t": 19.33332,
+      "kind": "splash",
+      "duration": 0.26,
+      "gain": 0.065,
+      "pan": 0.2
+    },
+    {
+      "t": 19.43332,
+      "kind": "whoosh",
+      "duration": 0.3,
+      "gain": 0.035,
+      "pan": 0.2
+    },
+    {
+      "t": 19.99999,
+      "kind": "splash",
+      "duration": 0.26,
+      "gain": 0.065,
+      "pan": 0.2
+    },
+    {
+      "t": 20.09999,
+      "kind": "whoosh",
+      "duration": 0.3,
+      "gain": 0.035,
+      "pan": 0.2
+    },
+    {
+      "t": 20.66666,
+      "kind": "splash",
+      "duration": 0.26,
+      "gain": 0.065,
+      "pan": 0.2
+    },
+    {
+      "t": 20.766659999999998,
+      "kind": "whoosh",
+      "duration": 0.3,
+      "gain": 0.035,
+      "pan": 0.2
+    },
+    {
+      "t": 14.45,
+      "kind": "water",
+      "duration": 12.35,
+      "gain": 0.018,
+      "pan": 0.3
+    },
+    {
+      "t": 19.9,
+      "kind": "water_roar",
+      "duration": 6.9,
+      "gain": 0.06,
+      "pan": -0.3
+    },
+    {
+      "t": 21.3,
+      "kind": "splash",
+      "duration": 0.6,
+      "gain": 0.1,
+      "pan": 0.3
+    },
+    {
+      "t": 21.55,
+      "kind": "brush",
+      "duration": 0.65,
+      "gain": 0.075,
+      "pan": 0.3
+    },
+    {
+      "t": 27.6,
+      "kind": "raindrop",
+      "duration": 0.5,
+      "gain": 0.14,
+      "pan": 0
+    },
+    {
+      "t": 28,
+      "kind": "sword_draw",
+      "duration": 0.48,
+      "gain": 0.17,
+      "pan": -0.4
+    },
+    {
+      "t": 28.5,
+      "kind": "brush",
+      "duration": 0.5,
+      "gain": 0.14,
+      "pan": -0.25
+    },
+    {
+      "t": 29.2,
+      "kind": "brush",
+      "duration": 0.55,
+      "gain": 0.14,
+      "pan": -0.25
+    },
+    {
+      "t": 29.95,
+      "kind": "brush",
+      "duration": 0.4,
+      "gain": 0.14,
+      "pan": -0.25
+    },
+    {
+      "t": 32.4,
+      "kind": "sword_cut",
+      "duration": 0.24,
+      "gain": 0.25,
+      "pan": 0.2
+    },
+    {
+      "t": 32.4,
+      "kind": "thump",
+      "duration": 0.5,
+      "gain": 0.14,
+      "pan": 0
+    },
+    {
+      "t": 32.45,
+      "kind": "splash",
+      "duration": 0.6,
+      "gain": 0.18,
+      "pan": 0.4
+    },
+    {
+      "t": 32.7,
+      "kind": "water_roar",
+      "duration": 2.7,
+      "gain": 0.14,
+      "pan": 0.4
+    },
+    {
+      "t": 35,
+      "kind": "water",
+      "duration": 13,
+      "gain": 0.018,
+      "pan": 0.2
+    },
+    {
+      "t": 38.6,
+      "kind": "splash",
+      "duration": 1.1,
+      "gain": 0.065,
+      "pan": 0.25
+    },
+    {
+      "t": 40.9,
+      "kind": "cloth",
+      "duration": 0.6,
+      "gain": 0.05,
+      "pan": -0.2
+    },
+    {
+      "t": 42.6,
+      "kind": "paper_scroll",
+      "duration": 2.4,
+      "gain": 0.075,
+      "pan": -0.2
+    },
+    {
+      "t": 44.6,
+      "kind": "stamp",
+      "duration": 0.25,
+      "gain": 0.14,
+      "pan": -0.7
+    }
+  ],
+  "music_rms_db": -25,
+  "room": 0.15,
+  "silence_music_ranges": [
+    [
+      26.8,
+      28.5
+    ],
+    [
+      30.5,
+      32.4
+    ]
+  ],
+  "original_audio_reused": false,
+  "hits": [
+    {
+      "t": 21.3,
+      "instrument": "gong",
+      "duration": 1.7,
+      "gain": 0.08
+    },
+    {
+      "t": 25.65,
+      "instrument": "gong",
+      "duration": 0.9,
+      "gain": 0.07
+    },
+    {
+      "t": 32.4,
+      "instrument": "bass_drum",
+      "duration": 0.8,
+      "gain": 0.18
+    },
+    {
+      "t": 22.0,
+      "instrument": "frame_drum",
+      "duration": 0.22,
+      "gain": 0.035
+    },
+    {
+      "t": 22.36,
+      "instrument": "frame_drum",
+      "duration": 0.22,
+      "gain": 0.04
+    },
+    {
+      "t": 22.72,
+      "instrument": "frame_drum",
+      "duration": 0.22,
+      "gain": 0.045000000000000005
+    },
+    {
+      "t": 23.08,
+      "instrument": "frame_drum",
+      "duration": 0.22,
+      "gain": 0.05
+    },
+    {
+      "t": 23.44,
+      "instrument": "frame_drum",
+      "duration": 0.22,
+      "gain": 0.05500000000000001
+    },
+    {
+      "t": 23.8,
+      "instrument": "frame_drum",
+      "duration": 0.22,
+      "gain": 0.060000000000000005
+    },
+    {
+      "t": 24.16,
+      "instrument": "frame_drum",
+      "duration": 0.22,
+      "gain": 0.065
+    },
+    {
+      "t": 24.52,
+      "instrument": "frame_drum",
+      "duration": 0.22,
+      "gain": 0.07
+    },
+    {
+      "t": 24.88,
+      "instrument": "frame_drum",
+      "duration": 0.22,
+      "gain": 0.07500000000000001
+    },
+    {
+      "t": 25.24,
+      "instrument": "frame_drum",
+      "duration": 0.22,
+      "gain": 0.08
+    },
+    {
+      "t": 25.6,
+      "instrument": "frame_drum",
+      "duration": 0.22,
+      "gain": 0.085
+    },
+    {
+      "t": 25.96,
+      "instrument": "frame_drum",
+      "duration": 0.22,
+      "gain": 0.09
+    }
+  ]
+}

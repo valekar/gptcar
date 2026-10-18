@@ -1,0 +1,134 @@
+{
+  "slug": "paper-popup",
+  "status": "rendered",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "title": "The Little Sprite's Adventure",
+  "source_sha256": "a661497727d6d0abc8d2ab8635871f239490cbec73b5593d5c4a366022fb0dc3",
+  "matched_brief_sha256": "2778f0e0906c00520dd7d92d2b1b93cf9277f187bb5476cd441a560dfd23c77b",
+  "reference_video_sha256": "15cb823cbf2ee1a877de52a477a0d2f4edde062d31ae30ca5c48e9ffa1caed0e",
+  "video_sha256": "8afe4b19d57c760c85ae2134143909a0d6d33d96e59ee83e8d5e002fa7edc69f",
+  "poster_sha256": "3f49317676f561c1030bf175ed31aec8887f91b7788b08ca763773d61513ae57",
+  "reference_poster_sha256": "5fbd52424248ea72caa59ca352a25b147b3e7b1c1048847057a40b35ebc2c873",
+  "poster_time": 73.2,
+  "bytes": 53407447,
+  "width": 1280,
+  "height": 720,
+  "fps": 60.0,
+  "frames": 7980,
+  "duration": 133.0,
+  "audio_codec": "aac",
+  "audio_levels": {
+    "integrated_lufs": -14.9,
+    "true_peak_dbtp": -1.3,
+    "peak_gain_adjustment_db": -0.8
+  },
+  "review_times": [
+    2.5,
+    11.5,
+    17.5,
+    20.5,
+    21.4,
+    24.5,
+    28.5,
+    32.5,
+    40.5,
+    46.5,
+    50.2,
+    53.5,
+    58.5,
+    61.55,
+    62.2,
+    65.5,
+    67.0,
+    68.8,
+    73.2,
+    76.5,
+    79.5,
+    82.5,
+    84.5,
+    88.2,
+    91.5,
+    95.5,
+    98.5,
+    102.5,
+    104.3,
+    104.5,
+    106.5,
+    108.5,
+    111.5,
+    116.5,
+    121.5,
+    125.5,
+    130.0
+  ],
+  "shared_components": [
+    {
+      "path": "styles/paper-popup/demo/paper.js",
+      "purpose": "Generic fibre grain, cut border and shape utilities."
+    },
+    {
+      "path": "styles/paper-popup/demo/lib.js",
+      "purpose": "Transitive generic math for book/paper helpers."
+    },
+    {
+      "path": "styles/paper-popup/demo/book.js",
+      "purpose": "Generic physical hinged book and curled sheet engine; original cover drawing is not called."
+    },
+    {
+      "path": "styles/paper-popup/demo/cutmesh.js",
+      "purpose": "Generic alpha-tested card front/back/depth and particle engine."
+    },
+    {
+      "path": "styles/paper-popup/demo/post.js",
+      "purpose": "Generic metre-scale physical depth of field, bloom and output."
+    },
+    {
+      "path": "core/lib.js",
+      "purpose": "Generic deterministic math and interpolation."
+    },
+    {
+      "path": "core/fonts",
+      "purpose": "Bundled OFL fonts."
+    },
+    {
+      "path": "core/assets/polyhaven/lythwood_lounge_2k.hdr",
+      "purpose": "Exact used licensed CC0 photographic environment/texture/mesh."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_diff.jpg",
+      "purpose": "Exact used licensed CC0 photographic environment/texture/mesh."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_nor.jpg",
+      "purpose": "Exact used licensed CC0 photographic environment/texture/mesh."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_rough.jpg",
+      "purpose": "Exact used licensed CC0 photographic environment/texture/mesh."
+    },
+    {
+      "path": "core/assets/polyhaven/tea_set_01",
+      "purpose": "Exact used licensed CC0 photographic environment/texture/mesh."
+    },
+    {
+      "path": "core/assets/polyhaven/desk_lamp_arm_01",
+      "purpose": "Exact used licensed CC0 photographic environment/texture/mesh."
+    },
+    {
+      "path": "core/assets/polyhaven/alarm_clock_01",
+      "purpose": "Exact used licensed CC0 photographic environment/texture/mesh."
+    },
+    {
+      "path": "core/assets/polyhaven/potted_plant_04",
+      "purpose": "Exact used licensed CC0 photographic environment/texture/mesh."
+    }
+  ],
+  "qa": {
+    "technical_render": "passed",
+    "scene_fidelity": "passed",
+    "audio_review": "passed",
+    "black_intervals_detected": false
+  },
+  "updated_at": "2026-10-18T04:56:38Z"
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "data-physical",
+  "status": "rendered",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "title": "Two Spirals / \u4e24\u6761\u87ba\u65cb",
+  "source_sha256": "285e5bdb2612a17d6997127c8adbb20b96006537d7ea27e93f9a89cce5832fa1",
+  "matched_brief_sha256": "e8a64f933da19c9777c66baad3bedbca8891de266668b0ae16321ef748f9bd63",
+  "reference_video_sha256": "105cfdd6cbc140dffc71aae36c8f40c7fde324dfcdef362339e5b0a0d9e1dabd",
+  "video_sha256": "0c1556adb52c35532da9d1fa46b6207fc6a9eab62ca73c527f314d9b6d3d2e78",
+  "poster_sha256": "331d46a8ad7ce6ac861c4af8f32dad0cc8897852749357a3a59f451395ccebda",
+  "reference_poster_sha256": "eb1e1c764fbe52e1060ceb55230779e7b000fc8e7a95ac80dcba3691cad8bd11",
+  "poster_time": 22.5,
+  "bytes": 27539715,
+  "width": 1280,
+  "height": 720,
+  "fps": 24.0,
+  "frames": 945,
+  "duration": 39.375,
+  "audio_codec": "aac",
+  "audio_levels": {
+    "integrated_lufs": -14.0,
+    "true_peak_dbtp": -1.2,
+    "peak_gain_adjustment_db": 0
+  },
+  "review_times": [
+    0.5,
+    3.5,
+    5.5,
+    7.5,
+    8.5,
+    10.5,
+    12.5,
+    16.5,
+    18.85,
+    19.5,
+    21.875,
+    22.5,
+    24.5,
+    25.625,
+    26.5,
+    28.6,
+    29.2325,
+    29.5,
+    31.5,
+    33.9,
+    34.375,
+    34.5,
+    37.8
+  ],
+  "shared_components": [
+    {
+      "path": "core/three/post.js",
+      "purpose": "Generic GTAO, physical depth of field, bloom and grade."
+    },
+    {
+      "path": "core/lib.js",
+      "purpose": "Deterministic math and interpolation."
+    },
+    {
+      "path": "core/assets/polyhaven/photo_studio_loft_hall_2k.hdr",
+      "purpose": "Exact licensed CC0 reflection environment or walnut texture."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_diff.jpg",
+      "purpose": "Exact licensed CC0 reflection environment or walnut texture."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_nor.jpg",
+      "purpose": "Exact licensed CC0 reflection environment or walnut texture."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_rough.jpg",
+      "purpose": "Exact licensed CC0 reflection environment or walnut texture."
+    }
+  ],
+  "qa": {
+    "technical_render": "passed",
+    "scene_fidelity": "passed",
+    "audio_review": "passed",
+    "black_intervals_detected": false
+  },
+  "updated_at": "2026-10-18T05:07:10Z"
+}

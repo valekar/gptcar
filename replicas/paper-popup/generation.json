@@ -1,0 +1,131 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready-for-independent-review",
+  "title": "The Little Sprite's Adventure",
+  "duration": 133,
+  "fps": 60,
+  "width": 1280,
+  "height": 720,
+  "frame_count": 7980,
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "matched_brief_sha256": "2778f0e0906c00520dd7d92d2b1b93cf9277f187bb5476cd441a560dfd23c77b",
+  "original_reference_sha256": "15cb823cbf2ee1a877de52a477a0d2f4edde062d31ae30ca5c48e9ffa1caed0e",
+  "uses_upstream_scene_code": false,
+  "shared_components": [
+    {
+      "path": "styles/paper-popup/demo/paper.js",
+      "purpose": "Generic fibre grain, cut border and shape utilities."
+    },
+    {
+      "path": "styles/paper-popup/demo/lib.js",
+      "purpose": "Transitive generic math for book/paper helpers."
+    },
+    {
+      "path": "styles/paper-popup/demo/book.js",
+      "purpose": "Generic physical hinged book and curled sheet engine; original cover drawing is not called."
+    },
+    {
+      "path": "styles/paper-popup/demo/cutmesh.js",
+      "purpose": "Generic alpha-tested card front/back/depth and particle engine."
+    },
+    {
+      "path": "styles/paper-popup/demo/post.js",
+      "purpose": "Generic metre-scale physical depth of field, bloom and output."
+    },
+    {
+      "path": "core/lib.js",
+      "purpose": "Generic deterministic math and interpolation."
+    },
+    {
+      "path": "core/fonts",
+      "purpose": "Bundled OFL fonts."
+    },
+    {
+      "path": "core/assets/polyhaven/lythwood_lounge_2k.hdr",
+      "purpose": "Exact used licensed CC0 photographic environment/texture/mesh."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_diff.jpg",
+      "purpose": "Exact used licensed CC0 photographic environment/texture/mesh."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_nor.jpg",
+      "purpose": "Exact used licensed CC0 photographic environment/texture/mesh."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_rough.jpg",
+      "purpose": "Exact used licensed CC0 photographic environment/texture/mesh."
+    },
+    {
+      "path": "core/assets/polyhaven/tea_set_01",
+      "purpose": "Exact used licensed CC0 photographic environment/texture/mesh."
+    },
+    {
+      "path": "core/assets/polyhaven/desk_lamp_arm_01",
+      "purpose": "Exact used licensed CC0 photographic environment/texture/mesh."
+    },
+    {
+      "path": "core/assets/polyhaven/alarm_clock_01",
+      "purpose": "Exact used licensed CC0 photographic environment/texture/mesh."
+    },
+    {
+      "path": "core/assets/polyhaven/potted_plant_04",
+      "purpose": "Exact used licensed CC0 photographic environment/texture/mesh."
+    }
+  ],
+  "review_times": [
+    2.5,
+    11.5,
+    17.5,
+    20.5,
+    21.4,
+    24.5,
+    28.5,
+    32.5,
+    40.5,
+    46.5,
+    50.2,
+    53.5,
+    58.5,
+    61.55,
+    62.2,
+    65.5,
+    67,
+    68.8,
+    73.2,
+    76.5,
+    79.5,
+    82.5,
+    84.5,
+    88.2,
+    91.5,
+    95.5,
+    98.5,
+    102.5,
+    104.3,
+    104.5,
+    106.5,
+    108.5,
+    111.5,
+    116.5,
+    121.5,
+    125.5,
+    130
+  ],
+  "review_status": "Worker revised all five parent scene/UI fidelity findings; exact-time stills re-inspected. Parent final comparison pending.",
+  "review_notes": "REVIEW.md; parent correction stills in root-fixes, final isotropic scalloped foam in foam-final.",
+  "independent_scene_files": [
+    "art.js",
+    "world.js",
+    "sets.js",
+    "actors.js",
+    "film.js",
+    "hud.js"
+  ],
+  "audio": "Fresh fifteen-line narration and 676-note sectional sampled score with 247 synchronized foley cues.",
+  "source_ready": true
+}

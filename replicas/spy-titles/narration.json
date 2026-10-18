@@ -1,0 +1,60 @@
+{
+  "language": "en-gb",
+  "voice": "bm_george",
+  "lines": [
+    {
+      "id": "l1",
+      "text": "Your target carries a key.",
+      "voice": "bm_george",
+      "speed": 0.97,
+      "start": 0.12,
+      "duration": 2.5,
+      "language": "en-gb"
+    },
+    {
+      "id": "l2",
+      "text": "Nobody knows what it opens.",
+      "voice": "bm_george",
+      "speed": 0.92,
+      "start": 3.35,
+      "duration": 3.2,
+      "language": "en-gb"
+    },
+    {
+      "id": "l3",
+      "text": "He travels light.",
+      "voice": "bm_george",
+      "speed": 0.9,
+      "start": 11.75,
+      "duration": 2.5,
+      "language": "en-gb"
+    },
+    {
+      "id": "l4",
+      "text": "He never looks back.",
+      "voice": "bm_george",
+      "speed": 0.92,
+      "start": 17.45,
+      "duration": 3.3,
+      "language": "en-gb"
+    },
+    {
+      "id": "l5",
+      "text": "Tonight, he runs out of roof.",
+      "voice": "bm_george",
+      "speed": 0.92,
+      "start": 26.15,
+      "duration": 3.2,
+      "language": "en-gb"
+    },
+    {
+      "id": "l6",
+      "text": "Now you know what it opens.",
+      "voice": "bm_george",
+      "speed": 0.9,
+      "start": 37.95,
+      "duration": 3,
+      "language": "en-gb"
+    }
+  ]
+}

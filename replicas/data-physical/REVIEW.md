@@ -1,0 +1,11 @@
+# Full sequence and data review
+
+All four original reference sheets and supplemental shot/event frames were inspected during the matched-brief audit. The independent scene was rendered at fifteen full-story times and eight supplemental rule/crossover/feed/puck events. The entire contact sequence was visually inspected, with full-resolution counter and final dial refinement views.
+
+Verified the same twelve archived CSV rows for both series, 1935 total physical plates, every tenth brass marker, 2014 paired 349.5/178.8 readings and 1.95 verdict, unit/brass brackets, sequential 2015–2020 pairs, held 2020/2021 four readings and crossover, fast 2022–2025 travel, actual 52-plate feed, final 2396.7 value, full dial reveal, puck and 1.86 ending. Seven complete original narration inputs retain exact wording and onsets. The bilingual subtitle order and exact narrative words, inlaid years, source line and all Chinese labels follow the original.
+
+Corrected the counter's leader to the rightmost actual plate corner to prevent text overlap during the feed, fixed the inlaid-year orientation, and matched the thin0.985 plate thickness / acrylic attenuation. Per-piece micro-jitter/shading differs as independently authored. Plate landings are direct time functions; landing-events.json records the exact sound schedule and the counter derives from those same events. Source-independent score uses96 BPM and explicit crossover/puck silences.
+
+Shared runtime dependencies are only generic math/post helpers and the exact licensed HDRI/walnut files. No original scene builder or film/timeline module is imported. Parent independent full-video/voice/music review remains required before publication.
+
+Final image refinement: added a scene-only Three.js FXAA pass, reduced independent per-piece jitter to a one-millimetre range, and retained full physical geometry rather than a bar proxy. The final distant plate faces can retain fine sampling texture; the close unit/feed views and all exact piece counts remain intact. Enlarged the physical puck engraving and restored its two concentric rings/120 ticks. Final full-resolution material/counter/puck stills at3.5,28.6,37.8 were inspected. Fresh score contains522 notes and1945 effects, including1935 exact per-plate material landings.

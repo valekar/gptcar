@@ -1,0 +1,143 @@
+{
+  "duration": 133,
+  "language": "en-us",
+  "voice": "af_bella",
+  "direction": "Gentle female storybook storyteller. Preserve every original word and all fifteen original onsets; fresh takes. Calm curiosity, friendly comic timing, hesitant page edge, warm resolution.",
+  "lines": [
+    {
+      "id": "v01",
+      "text": "On a quiet desk, in a quiet room, sat a book that nobody had opened in a very long time.",
+      "start": 1.6,
+      "duration": 5.91,
+      "voice": "af_bella",
+      "speed": 0.9,
+      "language": "en-us"
+    },
+    {
+      "id": "v02",
+      "text": "Until one evening... somebody did.",
+      "start": 8.3,
+      "duration": 2.18,
+      "voice": "af_bella",
+      "speed": 0.9,
+      "language": "en-us"
+    },
+    {
+      "id": "v03",
+      "text": "Inside, in a land made entirely of paper, lived a little sprite named Pip.",
+      "start": 17,
+      "duration": 5.09,
+      "voice": "af_bella",
+      "speed": 0.9,
+      "language": "en-us"
+    },
+    {
+      "id": "v04",
+      "text": "Pip loved Papervale. The cardboard hills. The paper sun on its wooden stick. And the river, that went swish... swish... swish.",
+      "start": 25.8,
+      "duration": 8.81,
+      "voice": "af_bella",
+      "speed": 0.9,
+      "language": "en-us"
+    },
+    {
+      "id": "v05",
+      "text": "But every evening, when the sun went down, another light came on. A big, warm light, from somewhere beyond the edge of the page.",
+      "start": 36.5,
+      "duration": 8.37,
+      "voice": "af_bella",
+      "speed": 0.9,
+      "language": "en-us"
+    },
+    {
+      "id": "v06",
+      "text": "So Pip set off, through the Whispering Woods,",
+      "start": 52.2,
+      "duration": 2.45,
+      "voice": "af_bella",
+      "speed": 0.9,
+      "language": "en-us"
+    },
+    {
+      "id": "v07",
+      "text": "where Pip learned that a grumpy crumple... just needs someone to smooth things out.",
+      "start": 63.4,
+      "duration": 4.67,
+      "voice": "af_bella",
+      "speed": 0.9,
+      "language": "en-us"
+    },
+    {
+      "id": "v08",
+      "text": "Together, they sailed the Swish Swash Sea,",
+      "start": 75.2,
+      "duration": 2.34,
+      "voice": "af_bella",
+      "speed": 0.9,
+      "language": "en-us"
+    },
+    {
+      "id": "v09",
+      "text": "on through the night, beneath the stars on their strings,",
+      "start": 83.2,
+      "duration": 3.18,
+      "voice": "af_bella",
+      "speed": 0.9,
+      "language": "en-us"
+    },
+    {
+      "id": "v10",
+      "text": "until they reached the very last page. Nothing else was drawn there. Just two words. The End.",
+      "start": 90.2,
+      "duration": 6.0,
+      "voice": "af_bella",
+      "speed": 0.9,
+      "language": "en-us"
+    },
+    {
+      "id": "v11",
+      "text": "Pip had never been off the page before. It was a little bit scary.",
+      "start": 97,
+      "duration": 3.87,
+      "voice": "af_bella",
+      "speed": 0.9,
+      "language": "en-us"
+    },
+    {
+      "id": "v12",
+      "text": "But the best adventures always are.",
+      "start": 103.3,
+      "duration": 2.0,
+      "voice": "af_bella",
+      "speed": 0.9,
+      "language": "en-us"
+    },
+    {
+      "id": "v13",
+      "text": "And that is how Pip found out where the big, warm light came from.",
+      "start": 113.2,
+      "duration": 3.71,
+      "voice": "af_bella",
+      "speed": 0.9,
+      "language": "en-us"
+    },
+    {
+      "id": "v14",
+      "text": "A reading lamp... and someone, reading along.",
+      "start": 117.3,
+      "duration": 2.7,
+      "voice": "af_bella",
+      "speed": 0.9,
+      "language": "en-us"
+    },
+    {
+      "id": "v15",
+      "text": "The end? Or maybe... just the beginning.",
+      "start": 124.5,
+      "duration": 2.54,
+      "voice": "af_bella",
+      "speed": 0.9,
+      "language": "en-us"
+    }
+  ]
+}

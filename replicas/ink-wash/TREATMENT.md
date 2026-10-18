@@ -1,0 +1,5 @@
+# The Swordsman and the River · GPT reference recreation
+
+Recreate the complete48-second published story and five exact voice lines. The twelve audited prompts govern every screen, short action and transition. A drop creates a layered landscape; pan to a tiny painted swordsman beside a crooked pine; crouch/leap and nine water contacts; river becomes a towering loaded-brush wave; the only hard close-up hides eyes under hat; sword writes three strokes of 水; total silence, then a four-frame flying-white cut; wave splits into rising/falling ribbons; river flows on as he reaches the bank, bows and becomes a tiny mark in a mounted handscroll.
+
+Use attributed generic ink/material/landscape/character/glyph/seal helpers. Independently assemble all landscape populations, camera/acting, water and split-wave choreography, scene transitions, subtitles and scroll mount. Do not import original world/cross/climax/passage/frames/shots/main renderers. Preserve source-derived words, timings and canonical shot geometry. Recreate F-gong guqin/xiao musical arc and named effects; fresh British bm_george speech. No original audio or frames are used as output.

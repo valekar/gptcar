@@ -1,0 +1,189 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "title": "The Swordsman and the River",
+  "slug": "ink-wash",
+  "source_ready": true,
+  "status": "source-ready-for-independent-review",
+  "uses_upstream_scene_code": false,
+  "matched_brief_sha256": "497a58e831481488bc92240ec4729df6929f3d828f60e162988c607b5452b953",
+  "delivery": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frame_count": 1152,
+    "duration": 48
+  },
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080,
+    "world_width": 5600
+  },
+  "duration": 48,
+  "review_times": [
+    0.5,
+    0.9,
+    0.916667,
+    1.05,
+    1.2,
+    1.5,
+    4.5,
+    6.5,
+    8.5,
+    9.1,
+    9.7,
+    10.5,
+    12.5,
+    13.95,
+    14.5,
+    15.5,
+    16.5,
+    17.33,
+    19.5,
+    20.5,
+    21.5,
+    22.5,
+    24.5,
+    26.5,
+    27.5,
+    27.6,
+    28.7,
+    29.5,
+    30.15,
+    31.5,
+    32.42,
+    32.52,
+    33.1,
+    33.5,
+    34.5,
+    35.5,
+    37.5,
+    39.5,
+    40.5,
+    41.5,
+    43.5,
+    44.6,
+    45.5,
+    47.5
+  ],
+  "shared_components": [
+    {
+      "path": "styles/ink-wash/demo/ink.js",
+      "sha256": "dbe6474ab0a0798193a7b49be9a8166511bc67ced90594e4390bdb2b70eef399",
+      "purpose": "Generic loaded/dry brush primitives"
+    },
+    {
+      "path": "styles/ink-wash/demo/comp.js",
+      "sha256": "063b2d9fa079772de016acc99f19aabddd6dbeaa2445119d01ccac5053a281af",
+      "purpose": "Generic rice-paper wet-bleed compositor"
+    },
+    {
+      "path": "styles/ink-wash/demo/land.js",
+      "sha256": "687c1cc1a848e30cc7e8b2e73984f49925506f20a8500b64aac88059a02b50bb",
+      "purpose": "Generic detailed mountain, cun, cliff, pine, reed and ripple geometry"
+    },
+    {
+      "path": "styles/ink-wash/demo/hero.js",
+      "sha256": "bea1cb4f77efc89f68cbdd52cccc7c63b340ad9aa905d58453f857b3b553a798",
+      "purpose": "Shared articulated swordsman model and poses"
+    },
+    {
+      "path": "styles/ink-wash/demo/face.js",
+      "sha256": "86377f07cd19f02fb1fe295c755a8f76d3692b8d404b10ce112466fcba9ea38e",
+      "purpose": "Shared face/hat geometry model"
+    },
+    {
+      "path": "styles/ink-wash/demo/wave.js",
+      "sha256": "408faca9dfc67c8fd077b1c25a447d7b49d56319976151457ec1c10e91716397",
+      "purpose": "Shared generic gestural wave model"
+    },
+    {
+      "path": "styles/ink-wash/demo/glyph.js",
+      "sha256": "3397fa07bcf2c4ede5412cc83e8f775aec3ac4d94801b5adbd223fcde8fce47c",
+      "purpose": "Shared water-calligraphy stroke geometry and generic cut stroke tool"
+    },
+    {
+      "path": "styles/ink-wash/demo/seal.js",
+      "sha256": "d4f66f324895975a28a02ccad18c93a021d216b0b9365ef306adb7072a1ece98",
+      "purpose": "Shared generic vermilion seal renderer"
+    },
+    {
+      "path": "styles/ink-wash/demo/lines.json",
+      "purpose": "Exact published spoken script, intentionally retained for same-script recreation"
+    },
+    {
+      "path": "styles/ink-wash/demo/story.js",
+      "purpose": "Published subtitle words and canonical cue times used as reconstruction requirements; executable story/scene modules not imported"
+    },
+    {
+      "path": "replicas/ink-wash/fonts",
+      "purpose": "Newly fetched SIL OFL fonts and adjacent licence files"
+    }
+  ],
+  "audio": {
+    "speech": "Fresh five exact bm_george takes by root",
+    "music": "New58note/15samplehit/55foley score and original silence windows",
+    "original_master_reused": false
+  },
+  "visual_review": "REVIEW.json; full48s and exact cut reviewed; independent parent acceptance outstanding",
+  "source_hashes": {
+    "CREDITS": "fadc9be620e829b32147b8d8f70ba505fa87c27bb86b2c60240604c53d4291de",
+    "FACTS.md": "7cd9546df8a6a530a83cef80de0d44af4bc7955fd8f9082ebd1302cbe80b7d82",
+    "LICENSE": "14c9ff6f14bfb2391e74fedb01c256891d2a3bba1c2acf5789901bdf77e54e33",
+    "PROMPT.md": "691315a02687920601cc280c00db5bd071f2b9034b0aa28a878795ffeec7739d",
+    "REVIEW.json": "c1e340cbe754909d78a9754dc9dbed697e33818a8e4b0cfb87450bc182f2b3bd",
+    "REVIEW.md": "6b2755f5920bcba7292ec5cc6876b05b425d184b319cd0d8334ec3130a3aaedb",
+    "TREATMENT.md": "0c3d6c40496a8c471e09ba9952e6f9d41db5f82844e0d5994a59494e57183466",
+    "comp.js": "063b2d9fa079772de016acc99f19aabddd6dbeaa2445119d01ccac5053a281af",
+    "face.js": "86377f07cd19f02fb1fe295c755a8f76d3692b8d404b10ce112466fcba9ea38e",
+    "film.js": "95123fa87194ca61fec2d93b1cd8c0c4b67c0a5ca716dc8af7de0611915a2209",
+    "fonts/Cormorant-Italic.ttf": "0f48ea6abb2084537854f7174c470991a463b13036309e3b50a81511611c530d",
+    "fonts/Cormorant.ttf": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+    "fonts/CormorantSC.ttf": "648cd1c932871e4e8e1d147b593315409e8ea82282f88e9397e2cceae83d065b",
+    "fonts/MaShanZheng.ttf": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb",
+    "fonts/OFL-Cormorant.txt": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+    "fonts/OFL-MaShanZheng.txt": "d7bdb1cee215b689e23c2f95672a6084c790542170648267a55114103d756a08",
+    "fonts/OFL-ZhiMangXing.txt": "10947328199e369a3e6b4a67e8e5507ed99d5bbb264a1f156415aa9b665e4d15",
+    "fonts/fonts.css": "c963ddb92bd1657a5a70bf61f37b8af988d1c650fd4e05a20ec76cfdc2085bf2",
+    "glyph.js": "3397fa07bcf2c4ede5412cc83e8f775aec3ac4d94801b5adbd223fcde8fce47c",
+    "hero.js": "bea1cb4f77efc89f68cbdd52cccc7c63b340ad9aa905d58453f857b3b553a798",
+    "index.html": "65b78cf9eee7c8cefc905819886c28bc2530f20d0938ab3a90b8d66cb59f46ab",
+    "ink.js": "dbe6474ab0a0798193a7b49be9a8166511bc67ced90594e4390bdb2b70eef399",
+    "land.js": "687c1cc1a848e30cc7e8b2e73984f49925506f20a8500b64aac88059a02b50bb",
+    "narration.json": "7c87e4435daa3c584dd3f7e8ace827e822b9b629f395f1699d4d9ae4715c82dd",
+    "score.json": "f9b76999fc8ac83232b7d2e5797686d9ab3990cc65cef96dc023ffbf2082369d",
+    "seal.js": "d4f66f324895975a28a02ccad18c93a021d216b0b9365ef306adb7072a1ece98",
+    "shared-components.json": "7fdbfc037c8ce8cd86420fc09244cd992372d5dfcda93dad0969eadaf7a1dfe4",
+    "wave.js": "408faca9dfc67c8fd077b1c25a447d7b49d56319976151457ec1c10e91716397"
+  },
+  "source_sha256": {
+    "CREDITS": "fadc9be620e829b32147b8d8f70ba505fa87c27bb86b2c60240604c53d4291de",
+    "FACTS.md": "7cd9546df8a6a530a83cef80de0d44af4bc7955fd8f9082ebd1302cbe80b7d82",
+    "LICENSE": "14c9ff6f14bfb2391e74fedb01c256891d2a3bba1c2acf5789901bdf77e54e33",
+    "PROMPT.md": "691315a02687920601cc280c00db5bd071f2b9034b0aa28a878795ffeec7739d",
+    "REVIEW.json": "c1e340cbe754909d78a9754dc9dbed697e33818a8e4b0cfb87450bc182f2b3bd",
+    "REVIEW.md": "7fcad85df49940e8977f81029a04fbe03aec30e0cae7dc64d4db75a508614389",
+    "TREATMENT.md": "0c3d6c40496a8c471e09ba9952e6f9d41db5f82844e0d5994a59494e57183466",
+    "comp.js": "063b2d9fa079772de016acc99f19aabddd6dbeaa2445119d01ccac5053a281af",
+    "face.js": "86377f07cd19f02fb1fe295c755a8f76d3692b8d404b10ce112466fcba9ea38e",
+    "film.js": "4f2c75a43930eba28a38f49dfe0981a10e806a23379f2068db271fc447bb1280",
+    "fonts/Cormorant-Italic.ttf": "0f48ea6abb2084537854f7174c470991a463b13036309e3b50a81511611c530d",
+    "fonts/Cormorant.ttf": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+    "fonts/CormorantSC.ttf": "648cd1c932871e4e8e1d147b593315409e8ea82282f88e9397e2cceae83d065b",
+    "fonts/MaShanZheng.ttf": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb",
+    "fonts/OFL-Cormorant.txt": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+    "fonts/OFL-MaShanZheng.txt": "d7bdb1cee215b689e23c2f95672a6084c790542170648267a55114103d756a08",
+    "fonts/OFL-ZhiMangXing.txt": "10947328199e369a3e6b4a67e8e5507ed99d5bbb264a1f156415aa9b665e4d15",
+    "fonts/fonts.css": "c963ddb92bd1657a5a70bf61f37b8af988d1c650fd4e05a20ec76cfdc2085bf2",
+    "glyph.js": "3397fa07bcf2c4ede5412cc83e8f775aec3ac4d94801b5adbd223fcde8fce47c",
+    "hero.js": "bea1cb4f77efc89f68cbdd52cccc7c63b340ad9aa905d58453f857b3b553a798",
+    "index.html": "65b78cf9eee7c8cefc905819886c28bc2530f20d0938ab3a90b8d66cb59f46ab",
+    "ink.js": "dbe6474ab0a0798193a7b49be9a8166511bc67ced90594e4390bdb2b70eef399",
+    "land.js": "687c1cc1a848e30cc7e8b2e73984f49925506f20a8500b64aac88059a02b50bb",
+    "narration.json": "7c87e4435daa3c584dd3f7e8ace827e822b9b629f395f1699d4d9ae4715c82dd",
+    "score.json": "f9b76999fc8ac83232b7d2e5797686d9ab3990cc65cef96dc023ffbf2082369d",
+    "seal.js": "d4f66f324895975a28a02ccad18c93a021d216b0b9365ef306adb7072a1ece98",
+    "shared-components.json": "7fdbfc037c8ce8cd86420fc09244cd992372d5dfcda93dad0969eadaf7a1dfe4",
+    "wave.js": "408faca9dfc67c8fd077b1c25a447d7b49d56319976151457ec1c10e91716397"
+  }
+}

@@ -1,0 +1,19 @@
+Two Spirals / 两条螺旋 — independently reconstructed physical sculpture film.
+Authored with GPT-6.1 Sol, high reasoning effort.
+Original reference/style: Lemomo / LemoLab, lemo-opuscar, MIT. https://lemomo-ai.github.io/lemo-opuscar/films/data-physical.mp4
+
+Statistics: IRENA (2026), processed by Our World in Data, CC BY 4.0.
+https://ourworldindata.org/grapher/installed-solar-pv-capacity
+https://ourworldindata.org/grapher/cumulative-installed-wind-energy-capacity-gigawatts
+Original archived World 2014–2025 CSVs and metadata preserved in data/, hashes and calculations in FACTS.md. Every plate, including brass, uses 10 GW; brass marks every tenth 100-GW ruler interval. No substituted window or revised live dataset.
+
+Scene geometry, instancing, light assembly, inlay texture, puck engraving, per-piece state, camera application, reading/leader/subtitle overlay and new score are independently authored here. Original set.js, film.js, timeline.js and data.js are not runtime imports. Geometry dimensions, material/light reference measurements and the camera coordinate table are reconstructed reference data. Attributed generic core/three/post.js (GTAO/DOF/bloom/grade) and core/lib.js (deterministic math), MIT.
+
+Exact reused CC0 Poly Haven assets: photo_studio_loft_hall_2k.hdr and walnut_diff.jpg / walnut_nor.jpg / walnut_rough.jpg.
+https://polyhaven.com/a/photo_studio_loft_hall
+https://polyhaven.com/a/walnut
+
+Local font subsets: Noto Sans SC, Noto Serif SC, Inter, JetBrains Mono, SIL OFL 1.1. Downloaded through Google Fonts CSS 2; exact OFL texts in fonts/. The acquisition helper is new; it downloads font binaries and does not execute the original scene.
+
+New score: VSCO 2 Community Edition / VCSL, CC 0 sampled harp, bowed/struck vibraphone, marimba, glockenspiel, horns, trombone, timpani and tubular bells. Synthesised glass voice, pad and bass; newly synthesized material landing effects. Full sample-pack licences/registry at core/audio/INSTRUMENTS.md. Fresh Kokoro af_heart narration. No original master audio/frames reused.
+Three.js — MIT.

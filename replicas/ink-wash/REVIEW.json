@@ -1,0 +1,112 @@
+{
+  "original_coverage": "All4 full-sequence1fps reference sheets and7 exact short-action frames, full published source cues; not every encoded frame.",
+  "generated_coverage": "48 one-second stills in4 sheets,20 initial event captures,6 refined writing/cut states and2 softened river states.",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 5.6,
+      "name": "One ink drop makes a landscape",
+      "reviewed": true
+    },
+    {
+      "start": 5.6,
+      "end": 13.8,
+      "name": "Find the tiny swordsman",
+      "reviewed": true
+    },
+    {
+      "start": 13.8,
+      "end": 15.3,
+      "name": "Crouch and leap",
+      "reviewed": true
+    },
+    {
+      "start": 15.3,
+      "end": 21.3,
+      "name": "Nine light steps on water",
+      "reviewed": true
+    },
+    {
+      "start": 21.3,
+      "end": 26.8,
+      "name": "The river rises",
+      "reviewed": true
+    },
+    {
+      "start": 26.8,
+      "end": 27.9,
+      "name": "Hat and a falling drop",
+      "reviewed": true
+    },
+    {
+      "start": 27.9,
+      "end": 30.5,
+      "name": "Sword writes water",
+      "reviewed": true
+    },
+    {
+      "start": 30.5,
+      "end": 32.57,
+      "name": "Silence then one dry cut",
+      "reviewed": true
+    },
+    {
+      "start": 32.57,
+      "end": 35.8,
+      "name": "Wave unravels",
+      "reviewed": true
+    },
+    {
+      "start": 35.8,
+      "end": 40.4,
+      "name": "The current flows on",
+      "reviewed": true
+    },
+    {
+      "start": 40.4,
+      "end": 43.8,
+      "name": "Bow to the river",
+      "reviewed": true
+    },
+    {
+      "start": 43.8,
+      "end": 48,
+      "name": "Mounted handscroll",
+      "reviewed": true
+    }
+  ],
+  "deterministic_seek_checks": [
+    {
+      "time": 10.5,
+      "same_after_other_seeks": true,
+      "sha256": "028f3ae4a510f42db15bdc17464fbec7ef33b7e997c7c6ee079751638d03967e"
+    },
+    {
+      "time": 17.33,
+      "same_after_other_seeks": true,
+      "sha256": "90a6ea0c059dcbd9a7477a397995a9273d5285ce02a89956e5fa51a52dd5f8c4"
+    },
+    {
+      "time": 32.42,
+      "same_after_other_seeks": true,
+      "sha256": "446e83b16451f44e518761998169c652dcdbb6fcc8a4f2e2f6d70cfa37418410"
+    },
+    {
+      "time": 33.5,
+      "same_after_other_seeks": true,
+      "sha256": "7690828f0e739934e4621cbcef2d3927570fe05cd8171b810897ef36daeb9b90"
+    },
+    {
+      "time": 37.5,
+      "same_after_other_seeks": true,
+      "sha256": "2cfef26c26deaddf22d11f5b52b908f25900bde07cbf77a388297679dba9e5b7"
+    },
+    {
+      "time": 47.5,
+      "same_after_other_seeks": true,
+      "sha256": "d48bffd23e20d39b0437c2b88bb02ee8413a36e947ce6ffc7269c35e2cec2c7c"
+    }
+  ],
+  "status": "source-ready; parent independent matched-shot acceptance pending",
+  "remaining_differences": "Shared expressive models explicitly credited; fresh mountain/ripple/splatter/split/mount details and new score differ individually."
+}

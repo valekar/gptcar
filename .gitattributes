@@ -4,3 +4,6 @@ comparisons/teardown/assets/LICENSE* -whitespace
 replicas/**/fonts/* -whitespace
 replicas/**/assets/OFL.txt -whitespace
 replicas/watercolor/OFL-1.1.md -whitespace
+# Frozen source-derived prompts retain their recorded input formatting.
+replicas/**/PROMPT.md -whitespace
+replicas/**/TREATMENT.md whitespace=-blank-at-eof

@@ -1,0 +1,71 @@
+{
+  "duration": 39.375,
+  "voice": "af_heart",
+  "language": "en-us",
+  "direction": "Calm precise female voice, exact seven original lines and onsets.",
+  "lines": [
+    {
+      "id": "l1",
+      "text": "In twenty fourteen, the world had almost twice as much wind power as solar.",
+      "start": 1.25,
+      "duration": 4.669,
+      "voice": "af_heart",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "l2",
+      "text": "Every plate is ten gigawatts. Every brass plate, one hundred.",
+      "start": 7.5,
+      "duration": 3.768,
+      "voice": "af_heart",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "l3",
+      "text": "Wind kept growing. Solar grew faster.",
+      "start": 11.875,
+      "duration": 2.568,
+      "voice": "af_heart",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "l4",
+      "text": "In twenty twenty-one, solar passed wind.",
+      "start": 21.875,
+      "duration": 2.386,
+      "voice": "af_heart",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "l5",
+      "text": "In twenty twenty-five alone, solar added more than five hundred gigawatts.",
+      "start": 25.625,
+      "duration": 4.349,
+      "voice": "af_heart",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "l6",
+      "text": "Step back, and twelve years become one dial.",
+      "start": 30.625,
+      "duration": 2.6,
+      "voice": "af_heart",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "l7",
+      "text": "Now it is the other way round.",
+      "start": 35,
+      "duration": 1.76,
+      "voice": "af_heart",
+      "speed": 0.95,
+      "language": "en-us"
+    }
+  ]
+}

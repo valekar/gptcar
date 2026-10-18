@@ -1,0 +1,56 @@
+{
+  "language": "en-gb",
+  "voice": "bm_george",
+  "lines": [
+    {
+      "id": "L1",
+      "text": "The river keeps no name. It waits for no one.",
+      "voice": "bm_george",
+      "speed": 0.86,
+      "lang": "en-gb",
+      "start": 10.6,
+      "duration": 3.456,
+      "language": "en-gb"
+    },
+    {
+      "id": "L2",
+      "text": "He crossed it the only way he knew... lightly.",
+      "voice": "bm_george",
+      "speed": 0.86,
+      "lang": "en-gb",
+      "start": 15.6,
+      "duration": 3.183,
+      "language": "en-gb"
+    },
+    {
+      "id": "L3",
+      "text": "Halfway over, the river rose to meet him.",
+      "voice": "bm_george",
+      "speed": 0.86,
+      "lang": "en-gb",
+      "start": 22.5,
+      "duration": 3.237,
+      "language": "en-gb"
+    },
+    {
+      "id": "L4",
+      "text": "Draw a sword to cut the water...",
+      "voice": "bm_george",
+      "speed": 0.84,
+      "lang": "en-gb",
+      "start": 35.9,
+      "duration": 2.623,
+      "language": "en-gb"
+    },
+    {
+      "id": "L5",
+      "text": "and the water only flows on.",
+      "voice": "bm_george",
+      "speed": 0.82,
+      "lang": "en-gb",
+      "start": 39.6,
+      "duration": 2.728,
+      "language": "en-gb"
+    }
+  ]
+}

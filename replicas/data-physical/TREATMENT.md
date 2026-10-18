@@ -1,0 +1,9 @@
+# Treatment before scene assembly
+
+Independently build a studio physical data sculpture. A real walnut dial of radius 3.35 and thickness 0.11 carries two spiral paths and inlaid years 2014–2025. Aluminium solar plates and transmissive teal acrylic wind plates use the same 0.50 ×0.42 ×0.0125 unit, representing 10 GW per piece; every tenth is brass. Read the preserved original World CSV rows and keep exact numerical labels distinct from rounded piece counts.
+
+Preserve the continuous nine-beat camera take: first 2014 pair assembly and held 349.5/178.8 readings, 1.95 verdict, macro unit/brass rule, six 2015–2020 paired cascades, held 2020/2021 four readings and crossover, quick 2022–2025 travel, 1883.2 to 2396.7 feed with 52 actual landing pieces, crane to full dial, and the final engraved 1.86 brass puck. Keep all seven English narration lines, Chinese-first bilingual subtitles, Chinese labels and serif title. Change only the authorship credit to disclose this recreation.
+
+Use independent Three.js geometry/instances, lighting, inlay texture, landing schedule, camera evaluation and HUD. Generic core postprocessor and math are attributed. Same licensed original studio HDRI and walnut textures provide reflections/material detail. No original set.js/film.js/timeline.js runtime is imported. The source geometry dimensions and camera coordinate table are reference measurements, not an executable upstream scene.
+
+Fresh af_heart narration follows every original cue. New 96 BPM D-major sampled harp/glass, marimba, vibraphone, pulse bass and restrained horns mirror the original sections. Landings trigger metal/acrylic ticks, each brass ruler plate triggers pitched mallets, and the crossover/puck get designed low impacts separated by brief silence. Counter values depend on landed plates and reach the original CSV value on the last landing. No original master audio is reused.

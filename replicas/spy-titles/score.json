@@ -1,0 +1,4396 @@
+{
+  "duration": 44.083333333333336,
+  "bpm": 132,
+  "music_rms_db": -23,
+  "room": 0.04,
+  "notes": [
+    {
+      "t": 2.727273,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 2.727273,
+      "duration": 0.32,
+      "midi": 43,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 3.181818,
+      "duration": 0.34545454545454546,
+      "midi": 39,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 3.636364,
+      "duration": 0.34545454545454546,
+      "midi": 40,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 3.636364,
+      "duration": 0.32,
+      "midi": 40,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 4.090909,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 4.545455,
+      "duration": 0.34545454545454546,
+      "midi": 43,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 4.545455,
+      "duration": 0.32,
+      "midi": 52,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 5.0,
+      "duration": 0.34545454545454546,
+      "midi": 46,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 5.454545,
+      "duration": 0.34545454545454546,
+      "midi": 45,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 5.454545,
+      "duration": 0.32,
+      "midi": 55,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 5.909091,
+      "duration": 0.34545454545454546,
+      "midi": 42,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 6.363636,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 6.363636,
+      "duration": 0.32,
+      "midi": 54,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 6.818182,
+      "duration": 0.34545454545454546,
+      "midi": 39,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 7.272727,
+      "duration": 0.34545454545454546,
+      "midi": 40,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 7.272727,
+      "duration": 0.32,
+      "midi": 47,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 7.727273,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 8.181818,
+      "duration": 0.34545454545454546,
+      "midi": 43,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 8.181818,
+      "duration": 0.32,
+      "midi": 46,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 8.636364,
+      "duration": 0.34545454545454546,
+      "midi": 46,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 9.090909,
+      "duration": 0.34545454545454546,
+      "midi": 45,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 9.090909,
+      "duration": 0.32,
+      "midi": 45,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 9.545455,
+      "duration": 0.34545454545454546,
+      "midi": 42,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 10.0,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 10.0,
+      "duration": 0.32,
+      "midi": 43,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 10.454545,
+      "duration": 0.34545454545454546,
+      "midi": 39,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 10.909091,
+      "duration": 0.34545454545454546,
+      "midi": 40,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 10.909091,
+      "duration": 0.32,
+      "midi": 40,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 11.363636,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 11.818182,
+      "duration": 0.34545454545454546,
+      "midi": 43,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 11.818182,
+      "duration": 0.32,
+      "midi": 52,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 12.272727,
+      "duration": 0.34545454545454546,
+      "midi": 46,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 12.727273,
+      "duration": 0.34545454545454546,
+      "midi": 45,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 12.727273,
+      "duration": 0.32,
+      "midi": 55,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 13.181818,
+      "duration": 0.34545454545454546,
+      "midi": 42,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 13.636364,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 13.636364,
+      "duration": 0.32,
+      "midi": 54,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 14.090909,
+      "duration": 0.34545454545454546,
+      "midi": 39,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 14.545455,
+      "duration": 0.34545454545454546,
+      "midi": 40,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 14.545455,
+      "duration": 0.32,
+      "midi": 47,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 15.0,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 15.454545,
+      "duration": 0.34545454545454546,
+      "midi": 43,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 15.454545,
+      "duration": 0.32,
+      "midi": 46,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 15.909091,
+      "duration": 0.34545454545454546,
+      "midi": 46,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 16.363636,
+      "duration": 0.34545454545454546,
+      "midi": 45,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 16.363636,
+      "duration": 0.32,
+      "midi": 45,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 16.818182,
+      "duration": 0.34545454545454546,
+      "midi": 42,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 17.272727,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 17.272727,
+      "duration": 0.32,
+      "midi": 43,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 17.727273,
+      "duration": 0.34545454545454546,
+      "midi": 39,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 18.181818,
+      "duration": 0.34545454545454546,
+      "midi": 40,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 18.181818,
+      "duration": 0.32,
+      "midi": 40,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 18.636364,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 19.090909,
+      "duration": 0.34545454545454546,
+      "midi": 43,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 19.090909,
+      "duration": 0.32,
+      "midi": 52,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 19.545455,
+      "duration": 0.34545454545454546,
+      "midi": 46,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 20.0,
+      "duration": 0.34545454545454546,
+      "midi": 45,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 20.0,
+      "duration": 0.32,
+      "midi": 55,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 21.818182,
+      "duration": 0.34545454545454546,
+      "midi": 40,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 21.818182,
+      "duration": 0.32,
+      "midi": 47,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 22.272727,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 22.727273,
+      "duration": 0.34545454545454546,
+      "midi": 43,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 22.727273,
+      "duration": 0.32,
+      "midi": 46,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 23.181818,
+      "duration": 0.34545454545454546,
+      "midi": 46,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 23.636364,
+      "duration": 0.34545454545454546,
+      "midi": 45,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 23.636364,
+      "duration": 0.32,
+      "midi": 45,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 24.090909,
+      "duration": 0.34545454545454546,
+      "midi": 42,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 24.545455,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 24.545455,
+      "duration": 0.32,
+      "midi": 43,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 25.0,
+      "duration": 0.34545454545454546,
+      "midi": 39,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 25.454545,
+      "duration": 0.34545454545454546,
+      "midi": 40,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 25.454545,
+      "duration": 0.32,
+      "midi": 40,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 25.909091,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 26.363636,
+      "duration": 0.34545454545454546,
+      "midi": 43,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 26.363636,
+      "duration": 0.32,
+      "midi": 52,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 26.363636,
+      "duration": 0.16,
+      "midi": 71,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 26.515152,
+      "duration": 0.16,
+      "midi": 70,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 26.666667,
+      "duration": 0.16,
+      "midi": 69,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 26.818182,
+      "duration": 0.16,
+      "midi": 67,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 26.969697,
+      "duration": 0.16,
+      "midi": 64,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 26.818182,
+      "duration": 0.34545454545454546,
+      "midi": 46,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 27.272727,
+      "duration": 0.34545454545454546,
+      "midi": 45,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 27.272727,
+      "duration": 0.32,
+      "midi": 55,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 27.272727,
+      "duration": 0.16,
+      "midi": 71,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 27.424242,
+      "duration": 0.16,
+      "midi": 70,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 27.575758,
+      "duration": 0.16,
+      "midi": 69,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 27.727273,
+      "duration": 0.16,
+      "midi": 67,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 27.878788,
+      "duration": 0.16,
+      "midi": 64,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 27.727273,
+      "duration": 0.34545454545454546,
+      "midi": 42,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 28.181818,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 28.181818,
+      "duration": 0.32,
+      "midi": 54,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 28.181818,
+      "duration": 0.16,
+      "midi": 71,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 28.333333,
+      "duration": 0.16,
+      "midi": 70,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 28.484848,
+      "duration": 0.16,
+      "midi": 69,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 28.636364,
+      "duration": 0.16,
+      "midi": 67,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 28.787879,
+      "duration": 0.16,
+      "midi": 64,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 28.636364,
+      "duration": 0.34545454545454546,
+      "midi": 39,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 29.090909,
+      "duration": 0.34545454545454546,
+      "midi": 40,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 29.090909,
+      "duration": 0.32,
+      "midi": 47,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 29.090909,
+      "duration": 0.16,
+      "midi": 71,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 29.242424,
+      "duration": 0.16,
+      "midi": 70,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 29.393939,
+      "duration": 0.16,
+      "midi": 69,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 29.545455,
+      "duration": 0.16,
+      "midi": 67,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 29.69697,
+      "duration": 0.16,
+      "midi": 64,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 29.545455,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 30.0,
+      "duration": 0.34545454545454546,
+      "midi": 43,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 30.0,
+      "duration": 0.32,
+      "midi": 46,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 30.0,
+      "duration": 0.16,
+      "midi": 71,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 30.151515,
+      "duration": 0.16,
+      "midi": 70,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 30.30303,
+      "duration": 0.16,
+      "midi": 69,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 30.454545,
+      "duration": 0.16,
+      "midi": 67,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 30.606061,
+      "duration": 0.16,
+      "midi": 64,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 30.454545,
+      "duration": 0.34545454545454546,
+      "midi": 46,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 30.909091,
+      "duration": 0.34545454545454546,
+      "midi": 45,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 30.909091,
+      "duration": 0.32,
+      "midi": 45,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 30.909091,
+      "duration": 0.16,
+      "midi": 71,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 31.060606,
+      "duration": 0.16,
+      "midi": 70,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 31.212121,
+      "duration": 0.16,
+      "midi": 69,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 31.363636,
+      "duration": 0.16,
+      "midi": 67,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 31.515152,
+      "duration": 0.16,
+      "midi": 64,
+      "gain": 0.07,
+      "instrument": "clarinet",
+      "pan": -0.3,
+      "velocity": 0.75
+    },
+    {
+      "t": 31.363636,
+      "duration": 0.34545454545454546,
+      "midi": 42,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 31.818182,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 31.818182,
+      "duration": 0.32,
+      "midi": 43,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 32.272727,
+      "duration": 0.34545454545454546,
+      "midi": 39,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 32.727273,
+      "duration": 0.34545454545454546,
+      "midi": 40,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 32.727273,
+      "duration": 0.32,
+      "midi": 40,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.181818,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.636364,
+      "duration": 0.34545454545454546,
+      "midi": 43,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.636364,
+      "duration": 0.32,
+      "midi": 52,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 34.090909,
+      "duration": 0.34545454545454546,
+      "midi": 46,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 34.545455,
+      "duration": 0.34545454545454546,
+      "midi": 45,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 34.545455,
+      "duration": 0.32,
+      "midi": 55,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 35.0,
+      "duration": 0.34545454545454546,
+      "midi": 42,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 35.454545,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 35.454545,
+      "duration": 0.32,
+      "midi": 54,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 35.909091,
+      "duration": 0.34545454545454546,
+      "midi": 39,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 36.363636,
+      "duration": 0.34545454545454546,
+      "midi": 40,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 36.363636,
+      "duration": 0.32,
+      "midi": 47,
+      "gain": 0.17,
+      "instrument": "electric_guitar",
+      "pan": 0.18,
+      "velocity": 0.75
+    },
+    {
+      "t": 36.818182,
+      "duration": 0.34545454545454546,
+      "midi": 47,
+      "gain": 0.13,
+      "instrument": "jazz_bass",
+      "pan": -0.2,
+      "velocity": 0.75
+    },
+    {
+      "t": 2.719273,
+      "duration": 0.24,
+      "midi": 52,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 2.719273,
+      "duration": 0.22,
+      "midi": 40,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 2.719273,
+      "duration": 0.24,
+      "midi": 59,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 2.719273,
+      "duration": 0.22,
+      "midi": 47,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 2.719273,
+      "duration": 0.24,
+      "midi": 64,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 2.719273,
+      "duration": 0.22,
+      "midi": 52,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 2.719273,
+      "duration": 0.24,
+      "midi": 67,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 2.719273,
+      "duration": 0.22,
+      "midi": 55,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 2.719273,
+      "duration": 0.24,
+      "midi": 71,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 2.719273,
+      "duration": 0.22,
+      "midi": 59,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 6.810182,
+      "duration": 0.24,
+      "midi": 52,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 6.810182,
+      "duration": 0.22,
+      "midi": 40,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 6.810182,
+      "duration": 0.24,
+      "midi": 59,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 6.810182,
+      "duration": 0.22,
+      "midi": 47,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 6.810182,
+      "duration": 0.24,
+      "midi": 64,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 6.810182,
+      "duration": 0.22,
+      "midi": 52,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 6.810182,
+      "duration": 0.24,
+      "midi": 67,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 6.810182,
+      "duration": 0.22,
+      "midi": 55,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 6.810182,
+      "duration": 0.24,
+      "midi": 71,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 6.810182,
+      "duration": 0.22,
+      "midi": 59,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 9.537455,
+      "duration": 0.24,
+      "midi": 52,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 9.537455,
+      "duration": 0.22,
+      "midi": 40,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 9.537455,
+      "duration": 0.24,
+      "midi": 59,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 9.537455,
+      "duration": 0.22,
+      "midi": 47,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 9.537455,
+      "duration": 0.24,
+      "midi": 64,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 9.537455,
+      "duration": 0.22,
+      "midi": 52,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 9.537455,
+      "duration": 0.24,
+      "midi": 67,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 9.537455,
+      "duration": 0.22,
+      "midi": 55,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 9.537455,
+      "duration": 0.24,
+      "midi": 71,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 9.537455,
+      "duration": 0.22,
+      "midi": 59,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 16.810182,
+      "duration": 0.24,
+      "midi": 52,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 16.810182,
+      "duration": 0.22,
+      "midi": 40,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 16.810182,
+      "duration": 0.24,
+      "midi": 59,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 16.810182,
+      "duration": 0.22,
+      "midi": 47,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 16.810182,
+      "duration": 0.24,
+      "midi": 64,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 16.810182,
+      "duration": 0.22,
+      "midi": 52,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 16.810182,
+      "duration": 0.24,
+      "midi": 67,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 16.810182,
+      "duration": 0.22,
+      "midi": 55,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 16.810182,
+      "duration": 0.24,
+      "midi": 71,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 16.810182,
+      "duration": 0.22,
+      "midi": 59,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 22.264727,
+      "duration": 0.24,
+      "midi": 52,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 22.264727,
+      "duration": 0.22,
+      "midi": 40,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 22.264727,
+      "duration": 0.24,
+      "midi": 59,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 22.264727,
+      "duration": 0.22,
+      "midi": 47,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 22.264727,
+      "duration": 0.24,
+      "midi": 64,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 22.264727,
+      "duration": 0.22,
+      "midi": 52,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 22.264727,
+      "duration": 0.24,
+      "midi": 67,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 22.264727,
+      "duration": 0.22,
+      "midi": 55,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 22.264727,
+      "duration": 0.24,
+      "midi": 71,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 22.264727,
+      "duration": 0.22,
+      "midi": 59,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 24.992,
+      "duration": 0.24,
+      "midi": 52,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 24.992,
+      "duration": 0.22,
+      "midi": 40,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 24.992,
+      "duration": 0.24,
+      "midi": 59,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 24.992,
+      "duration": 0.22,
+      "midi": 47,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 24.992,
+      "duration": 0.24,
+      "midi": 64,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 24.992,
+      "duration": 0.22,
+      "midi": 52,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 24.992,
+      "duration": 0.24,
+      "midi": 67,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 24.992,
+      "duration": 0.22,
+      "midi": 55,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 24.992,
+      "duration": 0.24,
+      "midi": 71,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 24.992,
+      "duration": 0.22,
+      "midi": 59,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 25.901091,
+      "duration": 0.24,
+      "midi": 52,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 25.901091,
+      "duration": 0.22,
+      "midi": 40,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 25.901091,
+      "duration": 0.24,
+      "midi": 59,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 25.901091,
+      "duration": 0.22,
+      "midi": 47,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 25.901091,
+      "duration": 0.24,
+      "midi": 64,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 25.901091,
+      "duration": 0.22,
+      "midi": 52,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 25.901091,
+      "duration": 0.24,
+      "midi": 67,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 25.901091,
+      "duration": 0.22,
+      "midi": 55,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 25.901091,
+      "duration": 0.24,
+      "midi": 71,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 25.901091,
+      "duration": 0.22,
+      "midi": 59,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 31.355636,
+      "duration": 0.24,
+      "midi": 52,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 31.355636,
+      "duration": 0.22,
+      "midi": 40,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 31.355636,
+      "duration": 0.24,
+      "midi": 59,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 31.355636,
+      "duration": 0.22,
+      "midi": 47,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 31.355636,
+      "duration": 0.24,
+      "midi": 64,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 31.355636,
+      "duration": 0.22,
+      "midi": 52,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 31.355636,
+      "duration": 0.24,
+      "midi": 67,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 31.355636,
+      "duration": 0.22,
+      "midi": 55,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 31.355636,
+      "duration": 0.24,
+      "midi": 71,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 31.355636,
+      "duration": 0.22,
+      "midi": 59,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.173818,
+      "duration": 0.24,
+      "midi": 52,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.173818,
+      "duration": 0.22,
+      "midi": 40,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.173818,
+      "duration": 0.24,
+      "midi": 59,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.173818,
+      "duration": 0.22,
+      "midi": 47,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.173818,
+      "duration": 0.24,
+      "midi": 64,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.173818,
+      "duration": 0.22,
+      "midi": 52,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.173818,
+      "duration": 0.24,
+      "midi": 67,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.173818,
+      "duration": 0.22,
+      "midi": 55,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.173818,
+      "duration": 0.24,
+      "midi": 71,
+      "gain": 0.12,
+      "instrument": "trumpet_stac",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.173818,
+      "duration": 0.22,
+      "midi": 59,
+      "gain": 0.09,
+      "instrument": "trombone_stac",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 9.545455,
+      "duration": 0.25,
+      "midi": 71,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 9.886364,
+      "duration": 0.25,
+      "midi": 70,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 10.227273,
+      "duration": 0.25,
+      "midi": 69,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 10.681819,
+      "duration": 0.25,
+      "midi": 67,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 10.909091,
+      "duration": 0.25,
+      "midi": 64,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 12.272727,
+      "duration": 0.25,
+      "midi": 71,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 12.613636,
+      "duration": 0.25,
+      "midi": 70,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 12.954545,
+      "duration": 0.25,
+      "midi": 69,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 13.409091,
+      "duration": 0.25,
+      "midi": 67,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 13.636363,
+      "duration": 0.25,
+      "midi": 64,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 25.909091,
+      "duration": 0.25,
+      "midi": 71,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 26.25,
+      "duration": 0.25,
+      "midi": 70,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 26.590909,
+      "duration": 0.25,
+      "midi": 69,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 27.045455,
+      "duration": 0.25,
+      "midi": 67,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 27.272727,
+      "duration": 0.25,
+      "midi": 64,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 28.636364,
+      "duration": 0.25,
+      "midi": 71,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 28.977273,
+      "duration": 0.25,
+      "midi": 70,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 29.318182,
+      "duration": 0.25,
+      "midi": 69,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 29.772728,
+      "duration": 0.25,
+      "midi": 67,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 30.0,
+      "duration": 0.25,
+      "midi": 64,
+      "gain": 0.1,
+      "instrument": "trumpet_mute",
+      "pan": 0.15,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.181818,
+      "duration": 1.4,
+      "midi": 40,
+      "gain": 0.12,
+      "instrument": "trumpet",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.181818,
+      "duration": 1.2,
+      "midi": 28,
+      "gain": 0.06,
+      "instrument": "trombone",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.181818,
+      "duration": 1.4,
+      "midi": 47,
+      "gain": 0.12,
+      "instrument": "trumpet",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.181818,
+      "duration": 1.2,
+      "midi": 35,
+      "gain": 0.06,
+      "instrument": "trombone",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.181818,
+      "duration": 1.4,
+      "midi": 54,
+      "gain": 0.12,
+      "instrument": "trumpet",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.181818,
+      "duration": 1.2,
+      "midi": 42,
+      "gain": 0.06,
+      "instrument": "trombone",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.181818,
+      "duration": 1.4,
+      "midi": 55,
+      "gain": 0.12,
+      "instrument": "trumpet",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.181818,
+      "duration": 1.2,
+      "midi": 43,
+      "gain": 0.06,
+      "instrument": "trombone",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.181818,
+      "duration": 1.4,
+      "midi": 59,
+      "gain": 0.12,
+      "instrument": "trumpet",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.181818,
+      "duration": 1.2,
+      "midi": 47,
+      "gain": 0.06,
+      "instrument": "trombone",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.181818,
+      "duration": 1.4,
+      "midi": 64,
+      "gain": 0.12,
+      "instrument": "trumpet",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.181818,
+      "duration": 1.2,
+      "midi": 52,
+      "gain": 0.06,
+      "instrument": "trombone",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.181818,
+      "duration": 1.4,
+      "midi": 66,
+      "gain": 0.12,
+      "instrument": "trumpet",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.181818,
+      "duration": 1.2,
+      "midi": 54,
+      "gain": 0.06,
+      "instrument": "trombone",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.181818,
+      "duration": 1.4,
+      "midi": 71,
+      "gain": 0.12,
+      "instrument": "trumpet",
+      "pan": -0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 33.181818,
+      "duration": 1.2,
+      "midi": 59,
+      "gain": 0.06,
+      "instrument": "trombone",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 36.818,
+      "duration": 0.4,
+      "midi": 40,
+      "gain": 0.065,
+      "instrument": "electric_guitar",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 36.818,
+      "duration": 0.4,
+      "midi": 47,
+      "gain": 0.065,
+      "instrument": "electric_guitar",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 36.818,
+      "duration": 0.4,
+      "midi": 54,
+      "gain": 0.065,
+      "instrument": "electric_guitar",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 36.818,
+      "duration": 0.4,
+      "midi": 55,
+      "gain": 0.065,
+      "instrument": "electric_guitar",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 36.818,
+      "duration": 0.4,
+      "midi": 59,
+      "gain": 0.065,
+      "instrument": "electric_guitar",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 36.818,
+      "duration": 0.4,
+      "midi": 64,
+      "gain": 0.065,
+      "instrument": "electric_guitar",
+      "pan": 0.1,
+      "velocity": 0.75
+    },
+    {
+      "t": 36.818,
+      "duration": 0.4,
+      "midi": 66,
+      "gain": 0.065,
+      "instrument": "electric_guitar",
+      "pan": 0.1,
+      "velocity": 0.75
+    }
+  ],
+  "hits": [
+    {
+      "t": 2.727273,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 3.181818,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 3.181818,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 3.636364,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 3.636364,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 4.090909,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 4.090909,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 4.545455,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 5.0,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 5.0,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 5.454545,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 5.454545,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 5.909091,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 5.909091,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 6.363636,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 6.818182,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 6.818182,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 7.272727,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 7.272727,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 7.727273,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 7.727273,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 8.181818,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 8.636364,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 8.636364,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 9.090909,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 9.090909,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 9.545455,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 9.545455,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 10.0,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 10.454545,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 10.454545,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 10.909091,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 10.909091,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 11.363636,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 11.363636,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 11.818182,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 12.272727,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 12.272727,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 12.727273,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 12.727273,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 13.181818,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 13.181818,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 13.636364,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 14.090909,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 14.090909,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 14.545455,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 14.545455,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 15.0,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 15.0,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 15.454545,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 15.909091,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 15.909091,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 16.363636,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 16.363636,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 16.818182,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 16.818182,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.095
+    },
+    {
+      "t": 16.931818,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 17.045455,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 17.159091,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 17.272727,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 17.386364,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 17.5,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 17.613636,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 17.727273,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 17.727273,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.095
+    },
+    {
+      "t": 17.840909,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 17.954545,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 18.068182,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 18.181818,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 18.181818,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 18.295455,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 18.409091,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 18.522727,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 18.636364,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 18.636364,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.095
+    },
+    {
+      "t": 18.75,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 18.863636,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 18.977273,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 19.090909,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 19.204545,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 19.318182,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 19.431818,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 19.545455,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 19.545455,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.095
+    },
+    {
+      "t": 19.659091,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 19.772727,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 19.886364,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 20.0,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 20.0,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 20.113636,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 20.227273,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 20.340909,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 21.818182,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 21.818182,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 21.931818,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 22.045455,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 22.159091,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 22.272727,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 22.272727,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.095
+    },
+    {
+      "t": 22.386364,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 22.5,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 22.613636,
+      "duration": 0.07,
+      "instrument": "drum_kit",
+      "variant": "snare_2",
+      "velocity": 0.65,
+      "gain": 0.022
+    },
+    {
+      "t": 22.727273,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 23.181818,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 23.181818,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 23.636364,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 23.636364,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 24.090909,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 24.090909,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 24.545455,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 25.0,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 25.0,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 25.454545,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 25.454545,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 25.909091,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 25.909091,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.095
+    },
+    {
+      "t": 26.363636,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 26.818182,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 26.818182,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.095
+    },
+    {
+      "t": 27.272727,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 27.272727,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 27.727273,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 27.727273,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.095
+    },
+    {
+      "t": 28.181818,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 28.636364,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 28.636364,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.095
+    },
+    {
+      "t": 29.090909,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 29.090909,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 29.545455,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 29.545455,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.095
+    },
+    {
+      "t": 30.0,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 30.454545,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 30.454545,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.095
+    },
+    {
+      "t": 30.909091,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 30.909091,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 31.363636,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 31.363636,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.095
+    },
+    {
+      "t": 31.818182,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 32.272727,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 32.272727,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 32.727273,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 32.727273,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 33.181818,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 33.181818,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 33.636364,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 34.090909,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 34.090909,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 34.545455,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 34.545455,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 35.0,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 35.0,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 35.454545,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 35.909091,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 35.909091,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 36.363636,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 36.363636,
+      "duration": 0.2,
+      "instrument": "drum_kit",
+      "variant": "kick_drum_left",
+      "velocity": 0.65,
+      "gain": 0.1
+    },
+    {
+      "t": 36.818182,
+      "duration": 0.08,
+      "instrument": "drum_kit",
+      "variant": "hi_hat_closed",
+      "velocity": 0.65,
+      "gain": 0.035
+    },
+    {
+      "t": 36.818182,
+      "duration": 0.16,
+      "instrument": "drum_kit",
+      "variant": "snare_1",
+      "velocity": 0.65,
+      "gain": 0.055
+    },
+    {
+      "t": 2.727273,
+      "duration": 0.4,
+      "instrument": "drum_kit",
+      "variant": "crash_left",
+      "velocity": 0.65,
+      "gain": 0.08
+    },
+    {
+      "t": 6.818182,
+      "duration": 0.4,
+      "instrument": "drum_kit",
+      "variant": "crash_left",
+      "velocity": 0.65,
+      "gain": 0.08
+    },
+    {
+      "t": 9.545455,
+      "duration": 0.4,
+      "instrument": "drum_kit",
+      "variant": "crash_left",
+      "velocity": 0.65,
+      "gain": 0.08
+    },
+    {
+      "t": 16.818182,
+      "duration": 0.4,
+      "instrument": "drum_kit",
+      "variant": "crash_left",
+      "velocity": 0.65,
+      "gain": 0.08
+    },
+    {
+      "t": 22.272727,
+      "duration": 0.4,
+      "instrument": "drum_kit",
+      "variant": "crash_left",
+      "velocity": 0.65,
+      "gain": 0.08
+    },
+    {
+      "t": 25,
+      "duration": 0.4,
+      "instrument": "drum_kit",
+      "variant": "crash_left",
+      "velocity": 0.65,
+      "gain": 0.08
+    },
+    {
+      "t": 25.909091,
+      "duration": 0.4,
+      "instrument": "drum_kit",
+      "variant": "crash_left",
+      "velocity": 0.65,
+      "gain": 0.08
+    },
+    {
+      "t": 31.363636,
+      "duration": 0.4,
+      "instrument": "drum_kit",
+      "variant": "crash_left",
+      "velocity": 0.65,
+      "gain": 0.08
+    },
+    {
+      "t": 33.181818,
+      "duration": 0.4,
+      "instrument": "drum_kit",
+      "variant": "crash_left",
+      "velocity": 0.65,
+      "gain": 0.08
+    },
+    {
+      "t": 1.590909,
+      "duration": 0.19,
+      "instrument": "conga",
+      "variant": "quinto",
+      "velocity": 0.65,
+      "gain": 0.17
+    },
+    {
+      "t": 1.818182,
+      "duration": 0.19,
+      "instrument": "conga",
+      "variant": "quinto",
+      "velocity": 0.65,
+      "gain": 0.17
+    },
+    {
+      "t": 37.727273,
+      "duration": 0.19,
+      "instrument": "conga",
+      "variant": "quinto",
+      "velocity": 0.65,
+      "gain": 0.17
+    },
+    {
+      "t": 22.272727,
+      "duration": 0.18,
+      "instrument": "conga",
+      "variant": "quinto",
+      "velocity": 0.65,
+      "gain": 0.09
+    },
+    {
+      "t": 22.727273,
+      "duration": 0.18,
+      "instrument": "conga",
+      "variant": "conga",
+      "velocity": 0.65,
+      "gain": 0.09
+    },
+    {
+      "t": 23.181818,
+      "duration": 0.18,
+      "instrument": "conga",
+      "variant": "quinto",
+      "velocity": 0.65,
+      "gain": 0.09
+    },
+    {
+      "t": 23.636364,
+      "duration": 0.18,
+      "instrument": "conga",
+      "variant": "conga",
+      "velocity": 0.65,
+      "gain": 0.09
+    },
+    {
+      "t": 24.090909,
+      "duration": 0.18,
+      "instrument": "conga",
+      "variant": "quinto",
+      "velocity": 0.65,
+      "gain": 0.09
+    },
+    {
+      "t": 24.545455,
+      "duration": 0.18,
+      "instrument": "conga",
+      "variant": "conga",
+      "velocity": 0.65,
+      "gain": 0.09
+    }
+  ],
+  "effects": [
+    {
+      "t": 0.04,
+      "duration": 0.08,
+      "gain": 0.12,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "dry tape transport click"
+    },
+    {
+      "t": 2.727273,
+      "duration": 0.12,
+      "gain": 0.15,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "cut credit card slap"
+    },
+    {
+      "t": 3.181818,
+      "duration": 0.12,
+      "gain": 0.15,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "cut credit card slap"
+    },
+    {
+      "t": 3.636364,
+      "duration": 0.12,
+      "gain": 0.15,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "cut credit card slap"
+    },
+    {
+      "t": 5,
+      "duration": 0.09,
+      "gain": 0.07,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "key chain and tray contact"
+    },
+    {
+      "t": 5.8,
+      "duration": 0.09,
+      "gain": 0.07,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "key chain and tray contact"
+    },
+    {
+      "t": 6.1,
+      "duration": 0.09,
+      "gain": 0.07,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "key chain and tray contact"
+    },
+    {
+      "t": 6.818182,
+      "duration": 0.35,
+      "gain": 0.16,
+      "pan": 0,
+      "kind": "paper"
+    },
+    {
+      "t": 8.181818,
+      "duration": 0.28,
+      "gain": 0.12,
+      "pan": 0,
+      "kind": "scratch",
+      "intended_material": "paper silhouette skid"
+    },
+    {
+      "t": 11.363636,
+      "duration": 0.12,
+      "gain": 0.06,
+      "pan": 0,
+      "kind": "paper"
+    },
+    {
+      "t": 15,
+      "duration": 1.6,
+      "gain": 0.16,
+      "pan": -0.65,
+      "kind": "whoosh",
+      "intended_material": "jet pass left to right"
+    },
+    {
+      "t": 18.636,
+      "duration": 0.07,
+      "gain": 0.08,
+      "pan": 0,
+      "kind": "hit",
+      "intended_material": "paper shoe landing on train letter"
+    },
+    {
+      "t": 19.545,
+      "duration": 0.07,
+      "gain": 0.08,
+      "pan": 0,
+      "kind": "hit",
+      "intended_material": "paper shoe landing on train letter"
+    },
+    {
+      "t": 20.227,
+      "duration": 0.07,
+      "gain": 0.08,
+      "pan": 0,
+      "kind": "hit",
+      "intended_material": "paper shoe landing on train letter"
+    },
+    {
+      "t": 21.591,
+      "duration": 0.07,
+      "gain": 0.08,
+      "pan": 0,
+      "kind": "hit",
+      "intended_material": "paper shoe landing on train letter"
+    },
+    {
+      "t": 22.5,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 22.512282,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 22.539905,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 22.579503,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 22.629653,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 22.689465,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 22.758307,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 22.835696,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 22.921242,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 23.014625,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 23.115572,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 23.223847,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 23.339242,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 23.461574,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 23.590678,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 23.726406,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 23.86862,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 24.017198,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 24.172023,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 24.33299,
+      "duration": 0.035,
+      "gain": 0.035,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "roulette ball click slows through changing interval"
+    },
+    {
+      "t": 23.3,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": 0,
+      "kind": "paper"
+    },
+    {
+      "t": 24.25,
+      "duration": 0.1,
+      "gain": 0.09,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "gold key set on bet"
+    },
+    {
+      "t": 25.909,
+      "duration": 5.4,
+      "gain": 0.045,
+      "pan": 0,
+      "kind": "wind"
+    },
+    {
+      "t": 29.545,
+      "duration": 0.25,
+      "gain": 0.08,
+      "pan": 0,
+      "kind": "whoosh"
+    },
+    {
+      "t": 30.455,
+      "duration": 0.12,
+      "gain": 0.1,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "hand catches key chain"
+    },
+    {
+      "t": 31.364,
+      "duration": 0.65,
+      "gain": 0.22,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "paper tears on diagonal grid"
+    },
+    {
+      "t": 31.9,
+      "duration": 0.07,
+      "gain": 0.045,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "title glyph lands"
+    },
+    {
+      "t": 32.013636,
+      "duration": 0.07,
+      "gain": 0.045,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "title glyph lands"
+    },
+    {
+      "t": 32.127273,
+      "duration": 0.07,
+      "gain": 0.045,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "title glyph lands"
+    },
+    {
+      "t": 32.240909,
+      "duration": 0.07,
+      "gain": 0.045,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "title glyph lands"
+    },
+    {
+      "t": 32.354545,
+      "duration": 0.07,
+      "gain": 0.045,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "title glyph lands"
+    },
+    {
+      "t": 32.468182,
+      "duration": 0.07,
+      "gain": 0.045,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "title glyph lands"
+    },
+    {
+      "t": 32.581818,
+      "duration": 0.07,
+      "gain": 0.045,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "title glyph lands"
+    },
+    {
+      "t": 32.695455,
+      "duration": 0.07,
+      "gain": 0.045,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "title glyph lands"
+    },
+    {
+      "t": 32.809091,
+      "duration": 0.07,
+      "gain": 0.045,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "title glyph lands"
+    },
+    {
+      "t": 32.922727,
+      "duration": 0.07,
+      "gain": 0.045,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "title glyph lands"
+    },
+    {
+      "t": 33.036364,
+      "duration": 0.07,
+      "gain": 0.045,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "title glyph lands"
+    },
+    {
+      "t": 33.15,
+      "duration": 0.07,
+      "gain": 0.045,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "title glyph lands"
+    },
+    {
+      "t": 33.263636,
+      "duration": 0.07,
+      "gain": 0.045,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "title glyph lands"
+    },
+    {
+      "t": 33.377273,
+      "duration": 0.07,
+      "gain": 0.045,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "title glyph lands"
+    },
+    {
+      "t": 33.490909,
+      "duration": 0.07,
+      "gain": 0.045,
+      "pan": 0,
+      "kind": "paper",
+      "intended_material": "title glyph lands"
+    },
+    {
+      "t": 35.91,
+      "duration": 0.5,
+      "gain": 0.07,
+      "pan": 0,
+      "kind": "scratch",
+      "intended_material": "brass key slides into lock"
+    },
+    {
+      "t": 36.818,
+      "duration": 0.13,
+      "gain": 0.18,
+      "pan": 0,
+      "kind": "click",
+      "intended_material": "mechanical lock click"
+    }
+  ],
+  "silence_music_ranges": [
+    [
+      0,
+      1.590909
+    ],
+    [
+      20.454545,
+      21.363636
+    ],
+    [
+      37.272727,
+      37.72727
+    ],
+    [
+      37.96,
+      44.083333
+    ]
+  ],
+  "sections": [
+    {
+      "start": 0,
+      "end": 2.727273,
+      "intent": "Dry tape click; two dry bongos precede the first brass/grid burst."
+    },
+    {
+      "start": 2.727273,
+      "end": 9.545455,
+      "intent": "Minor spy brass punctuation, low spring-twang guitar, walking bass and light brushes; theft and silhouette entrance."
+    },
+    {
+      "start": 9.545455,
+      "end": 16.818182,
+      "intent": "Agent/courier airport credit colonnade: chromatic descent motif, spare jazz bass, jet rises across stereo."
+    },
+    {
+      "start": 16.818182,
+      "end": 22.272727,
+      "intent": "Sticks and sixteenth rail snare; interrupted dead for two beats at20.454545, resumes at21.363636."
+    },
+    {
+      "start": 22.272727,
+      "end": 25.909091,
+      "intent": "Casino bongos and slowing roulette ticks; round brass match-cut punctuation."
+    },
+    {
+      "start": 25.909091,
+      "end": 31.363636,
+      "intent": "Rooftop chase intensifies with triplet brass, surf-guitar fragments and high woodwinds; winds under throw/catch."
+    },
+    {
+      "start": 31.363636,
+      "end": 37.272727,
+      "intent": "Paper-tear shatter, sixteenth title landings, big Em6/9 title chord, suspenseful key insertion and dry lock click."
+    },
+    {
+      "start": 37.272727,
+      "end": 44.083333333333336,
+      "intent": "One beat digital silence, one dry bongo at37.727273. Deadpan final voice over faint tape hiss; no bed returns."
+    }
+  ]
+}
