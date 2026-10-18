@@ -32,10 +32,10 @@ def check(slugs,voice_root,out,model_name='base.en'):
             kw=dict(initial_prompt='以下是普通话的句子。') if language=='zh' else {}
             segments,_=models[name].transcribe(np.concatenate([pad,y,pad]).astype(np.float32),beam_size=5,language=language,word_timestamps=True,**kw)
             tail=(len(y)+len(pad))/16000-.5;segments=[s for s in segments if not(s.no_speech_prob>.5 and s.start>tail)]
-            got=' '.join(s.text.strip() for s in segments);ok,similarity=compare(line['text'],got,language)
+            got=' '.join(s.text.strip() for s in segments);spoken=line.get('spoken_text',line['text']);ok,similarity=compare(spoken,got,language)
             if language=='zh':ok=norm_zh(line['text'])==norm_zh(got)
             item=dict(id=line['id'],text=line['text'],transcript=got,normalized_exact=ok,similarity=similarity,language=language,asr_model=name,take_sha256=sha(path),start=line['start'],duration=duration,pitch_semitones=line.get('pitch_semitones',0),tempo_factor=line.get('tempo_factor',1),filter=line.get('filter'))
-            for field in ['pitch_mode','intentional_cut_seconds','uncut_duration','cut_fade']:
+            for field in ['pitch_mode','intentional_cut_seconds','uncut_duration','cut_fade','spoken_text','trim_word','trim_evidence','engine','rate','gain','pan']:
                 if field in line:item[field]=line[field]
             evidence.append(item)
             print(slug,line['id'],'exact' if ok else 'REVIEW',repr(got),flush=True)

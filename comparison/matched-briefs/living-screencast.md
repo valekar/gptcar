@@ -53,7 +53,7 @@ Salmon mosaic 03 Review every change; chat Plan approved.Building it now... then
 
 ### 30.50000–32.80000s · Comment a line
 
-Click line 6 of theme diff, inline comment input opens. Type Use the system theme when no saved choice. Cm d Return send note. Pet walks selected code row; comment is genuine story cause.
+Click line 6 of theme diff, inline comment input opens. Type Use the system theme when nothing is saved. Cm d Return send note. Pet walks selected code row; comment is genuine story cause.
 
 ### 32.80000–36.00000s · Revision
 

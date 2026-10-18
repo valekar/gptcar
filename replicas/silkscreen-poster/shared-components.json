@@ -1,0 +1,36 @@
+[
+  {
+    "path": "styles/silkscreen-poster/demo/engine/silk.js",
+    "sha256": "9d73e4bcb9f400264daf638f99a3cc82b351197acda448573000c63843a2e7be",
+    "purpose": "MIT reusable opaque ink, mesh/squeegee/frame/paper material primitives; local attributed copy, no upstream film assembly."
+  },
+  {
+    "path": "styles/silkscreen-poster/demo/engine/poster.js",
+    "sha256": "33a12e1cc180b721f5918e40ee2fd62635fb624dc73f477a7fe66a5a4eb836ef",
+    "purpose": "MIT reusable poster/banner typography, stats template and print-reveal engine; local attributed copy, no upstream film assembly."
+  },
+  {
+    "path": "styles/silkscreen-poster/demo/engine/scenes.js",
+    "sha256": "8f46fde92d9c8a08178cf1b03c1d3237ebb551d059cc040abac6d7312facd4fc",
+    "purpose": "MIT reusable complete reusable lake/waterfall/ridge landscape plane artwork and route geometry; local attributed copy, no upstream film assembly."
+  },
+  {
+    "path": "styles/silkscreen-poster/demo/content.json",
+    "sha256": "26bdcbdeb37d4adff485ccbfe3d8349c4638a745bf1776f7e51a0c3cc221b32a",
+    "purpose": "Read-only original published text, cue times and numeric camera calibration. Original film source never imported or executed; all scene assembly newly authored."
+  },
+  {
+    "path": "styles/silkscreen-poster/demo/events.json",
+    "sha256": "b67f1dd79309039e50cb29b7291d364adff4157fa5f8288b399d2c48e037ea69",
+    "purpose": "Read-only original published text, cue times and numeric camera calibration. Original film source never imported or executed; all scene assembly newly authored."
+  },
+  {
+    "path": "styles/silkscreen-poster/demo/film.js",
+    "sha256": "6d431fcf25c91ed9d3b7878ccd538fd4253a03258ae76a97ce237cf586144a35",
+    "purpose": "Read-only original published text, cue times and numeric camera calibration. Original film source never imported or executed; all scene assembly newly authored."
+  },
+  {
+    "path": "replicas/silkscreen-poster/fonts",
+    "purpose": "Local Big Shoulders variable display and Outfit variable TTFs from Google Fonts, SIL OFL with bundled license notices."
+  }
+]

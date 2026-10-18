@@ -1,0 +1,14 @@
+The Bell Founder — GPTcar source-informed reconstruction
+
+New scene assembly and performance: GPT-6.1 Sol, High reasoning effort. This reconstruction was informed by the complete published movie, guides and source. It is not a blind same-prompt benchmark. All scene/camera/performance orchestration in film.js, sets.js, prints.js and closeups.js was newly authored. No original movie frames, soundtrack or full original scene renderer are used at runtime.
+
+Attributed generic toolkit: Lemo-Opuscar / LemoLab × Claude Opus 5.5, MIT (TOOLKIT_LICENSE.txt). Copied generic woodcut engine, articulated characters/rig/views, sculpted hand maquettes, atomic bell/compass/gift/villager factories and generic page curl. terrain-props.js extracts atomic peak/house/pine/arch models; heat-props.js extracts crucible/stream/sparks/steam primitives; rope-prop.js extracts only the articulated rope-fist model. Original world, workshop and shot assembly functions are not imported. Published timeline is retained as documentary timing-data.json. See asset-manifest.json for local file hashes and boundaries.
+
+Fresh narration: Kokoro-82M, am_onyx at speed 0.88, Apache-2.0, hexgrad/Kokoro-82M. Exact four published story lines retained; newly synthesized takes are mixed by the root production pipeline.
+Fresh score: newly authored arrangement using VS Chamber Orchestra Community Edition and Versilian Community Sample Library, Versilian Studios, CC0. All material effects, anvil and foundry bell are newly synthesized deterministically. No original master audio reused.
+
+Fonts: IM Fell English, IM Fell English SC and IM Fell English Italic, Igino Marini, SIL Open Font License 1.1; actual font files and license under fonts/.
+Table image: core/assets/polyhaven/walnut_diff.jpg, American Walnut Veneer, Poly Haven, CC0. The only raster image used in the film. https://polyhaven.com/a/american_walnut_veneer
+TOOLKIT_CREDITS.txt preserves the historical upstream notices. Its filter-test portrait is not included or used here.
+
+Original film: The Bell Founder, Lemo-Opuscar, https://lemomo-ai.github.io/lemo-opuscar/films/woodcut.mp4 . Analytical reference only. Original model sign-off is replaced with honest GPTcar authorship.

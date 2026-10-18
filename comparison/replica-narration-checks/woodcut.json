@@ -1,0 +1,80 @@
+{
+  "slug": "woodcut",
+  "method": "Independent Whisper transcription of the actual newly synthesized/pitched/tempo-fitted voice takes. No expected-text initial prompt. Music and radio filtering are separately mixed.",
+  "narration_sha256": "678ecc664a615adec091036bcd1dc66b787bf1a3d2a9eed3f16cba620898fa77",
+  "timing_sha256": "bf1ff71ac2473eede5f725fb5c39e13bed8fda2f2fff8481bac73cd3e0ff3db9",
+  "checked_at": "2026-10-18T08:20:23.763350+00:00",
+  "line_count": 4,
+  "normalized_exact_count": 4,
+  "lines": [
+    {
+      "id": "L1",
+      "text": "That winter, the snow closed every road, and the tower had no bell.",
+      "transcript": "That winter the snow closed every road and the tower had no bell.",
+      "normalized_exact": true,
+      "similarity": 1.0,
+      "language": "en",
+      "asr_model": "base.en",
+      "take_sha256": "d327c3b83ce46e6adeb83a3e5b18b7553630f45648c2320c5ae0bb8baa4f78a8",
+      "start": 11.1,
+      "duration": 3.846375,
+      "pitch_semitones": 0.0,
+      "tempo_factor": 1,
+      "filter": null
+    },
+    {
+      "id": "L2",
+      "text": "So every house gave what metal it had.",
+      "transcript": "So every house gave what metal it had.",
+      "normalized_exact": true,
+      "similarity": 1.0,
+      "language": "en",
+      "asr_model": "base.en",
+      "take_sha256": "62e7861abf3b76ae361831d08f97f8a92767a33fd68ad383e3c8488fe97d0281",
+      "start": 19.2,
+      "duration": 2.464,
+      "pitch_semitones": 0.0,
+      "tempo_factor": 1,
+      "filter": null
+    },
+    {
+      "id": "L3",
+      "text": "The boy gave his compass, the one thing that always guided him home.",
+      "transcript": "The boy gave his compass the one thing that always guided him home.",
+      "normalized_exact": true,
+      "similarity": 1.0,
+      "language": "en",
+      "asr_model": "base.en",
+      "take_sha256": "e788806764376169ea40619348fd3b221d3ea1b920b960d50b2bd07cefc5890c",
+      "start": 32.6,
+      "duration": 4.01825,
+      "pitch_semitones": 0.0,
+      "tempo_factor": 1,
+      "filter": null
+    },
+    {
+      "id": "L4",
+      "text": "When it rang, the snow stopped to listen.",
+      "transcript": "When it rang, the snow stopped to listen.",
+      "normalized_exact": true,
+      "similarity": 1.0,
+      "language": "en",
+      "asr_model": "base.en",
+      "take_sha256": "401abc513ac6d9e68fc1d76e585ff6267d0c3a00bf914e11c60dc29782d04c7f",
+      "start": 51.8,
+      "duration": 2.4235416666666665,
+      "pitch_semitones": 0.0,
+      "tempo_factor": 1,
+      "filter": null
+    }
+  ],
+  "root_pcm_review": {
+    "range": [
+      44.4,
+      47.25
+    ],
+    "sample_rate": 48000,
+    "frames": 136800,
+    "peak": 0.0
+  }
+}

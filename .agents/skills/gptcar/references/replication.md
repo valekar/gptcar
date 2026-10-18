@@ -31,3 +31,7 @@ For long paper-theatre narratives, verify every camera crop and object action ag
 For UI films, match each menu hold, row count, progressive activity list, exact typed/comment text and reveal phase. A correct final UI state does not compensate for arriving early. Inspect partially expanded circular theme reveals and transitional camera crops at exact frame times, and preserve the original hold before a chapter wipe.
 
 For paper-cut theatre, match exposure and translucency as part of the artwork: dark opaque scenery cannot substitute for a faint silhouette inside an illuminated moon. Measure repeated moon, character, train-window and handwritten-note scale against reference frames. Build city detail on real layered paper planes, with the observed window density and warm light spill.
+
+
+### Recreate published voice direction
+When exact published system voices are installed, synthesize fresh takes using those voices, rates and pitch ratios before recasting. Never reuse the original voice recordings. Preserve explicit crowd-layer gain, pan and overlap. Cache repeated synthesis inputs without collapsing distinct timed events. For a published first-word command trim, synthesize the full original phrase, locate the actual fresh word boundary independently, retain the full input and trim provenance, and verify the audible intended prefix separately.

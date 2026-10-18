@@ -1,0 +1,8224 @@
+{
+  "duration": 59.4,
+  "bpm": 100,
+  "room": 0.1,
+  "music_rms_db": -23,
+  "music_filter_ranges": [
+    {
+      "start": 40.24,
+      "end": 54.04,
+      "low": 70,
+      "high": 1800
+    }
+  ],
+  "sections": [
+    {
+      "start": 0,
+      "end": 8.4,
+      "intent": "Terminal ticks, pixel birth; no band before title landing"
+    },
+    {
+      "start": 8.4,
+      "end": 19.2,
+      "intent": "Bright piano/upright/glock swing and answering square mascot"
+    },
+    {
+      "start": 19.2,
+      "end": 27,
+      "intent": "Plan chapter then spotlight breath"
+    },
+    {
+      "start": 27,
+      "end": 35.4,
+      "intent": "Review dialogue, typing and resolved phrase"
+    },
+    {
+      "start": 35.4,
+      "end": 40.24,
+      "intent": "Drums fall away for preview suspense"
+    },
+    {
+      "start": 40.24,
+      "end": 44.9,
+      "intent": "Low-pass night band"
+    },
+    {
+      "start": 44.9,
+      "end": 50.25,
+      "intent": "Piano left, square right duet; reunion"
+    },
+    {
+      "start": 50.25,
+      "end": 59.4,
+      "intent": "Four exact slogan pitches, day-opening Cmaj9 and quiet hold"
+    }
+  ],
+  "notes": [
+    {
+      "t": 8.4,
+      "duration": 0.43,
+      "midi": 55,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 8.4,
+      "duration": 0.43,
+      "midi": 59,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 8.4,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 8.4,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 8.4,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 8.4,
+      "duration": 0.44,
+      "midi": 31,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 8.68,
+      "duration": 0.22,
+      "midi": 74,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 8.55,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 9.3,
+      "duration": 0.19,
+      "midi": 50,
+      "gain": 0.055,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 9.6,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 9.6,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 9.6,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 9.6,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 9.6,
+      "duration": 0.43,
+      "midi": 74,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 9.6,
+      "duration": 0.44,
+      "midi": 36,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 9.88,
+      "duration": 0.22,
+      "midi": 83,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 10.8,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 10.8,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 10.8,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 10.8,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 10.8,
+      "duration": 0.43,
+      "midi": 74,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 10.8,
+      "duration": 0.44,
+      "midi": 36,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 11.08,
+      "duration": 0.22,
+      "midi": 86,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 10.95,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 11.7,
+      "duration": 0.19,
+      "midi": 55,
+      "gain": 0.055,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 12.0,
+      "duration": 0.43,
+      "midi": 57,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 12.0,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 12.0,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 12.0,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 12.0,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 12.0,
+      "duration": 0.44,
+      "midi": 33,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 12.28,
+      "duration": 0.22,
+      "midi": 69,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 13.2,
+      "duration": 0.43,
+      "midi": 57,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 13.2,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 13.2,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 13.2,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 13.2,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 13.2,
+      "duration": 0.44,
+      "midi": 33,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 13.48,
+      "duration": 0.22,
+      "midi": 72,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 13.35,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 14.1,
+      "duration": 0.19,
+      "midi": 52,
+      "gain": 0.055,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 14.4,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 14.4,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 14.4,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 14.4,
+      "duration": 0.43,
+      "midi": 72,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 14.4,
+      "duration": 0.43,
+      "midi": 76,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 14.4,
+      "duration": 0.44,
+      "midi": 38,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 14.68,
+      "duration": 0.22,
+      "midi": 81,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 15.6,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 15.6,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 15.6,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 15.6,
+      "duration": 0.43,
+      "midi": 72,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 15.6,
+      "duration": 0.43,
+      "midi": 76,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 15.6,
+      "duration": 0.44,
+      "midi": 38,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 15.88,
+      "duration": 0.22,
+      "midi": 84,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 15.75,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 16.5,
+      "duration": 0.19,
+      "midi": 57,
+      "gain": 0.055,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 16.8,
+      "duration": 0.43,
+      "midi": 55,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 16.8,
+      "duration": 0.43,
+      "midi": 59,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 16.8,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 16.8,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 16.8,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 16.8,
+      "duration": 0.44,
+      "midi": 31,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 17.08,
+      "duration": 0.22,
+      "midi": 81,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 18.0,
+      "duration": 0.43,
+      "midi": 55,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 18.0,
+      "duration": 0.43,
+      "midi": 59,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 18.0,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 18.0,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 18.0,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 18.0,
+      "duration": 0.44,
+      "midi": 31,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 18.28,
+      "duration": 0.22,
+      "midi": 67,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 18.15,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 18.9,
+      "duration": 0.19,
+      "midi": 50,
+      "gain": 0.055,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 19.2,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 19.2,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 19.2,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 19.2,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 19.2,
+      "duration": 0.43,
+      "midi": 74,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 19.2,
+      "duration": 0.44,
+      "midi": 36,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 19.48,
+      "duration": 0.22,
+      "midi": 76,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 20.4,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 20.4,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 20.4,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 20.4,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 20.4,
+      "duration": 0.43,
+      "midi": 74,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 20.4,
+      "duration": 0.44,
+      "midi": 36,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 20.68,
+      "duration": 0.22,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 20.55,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 21.3,
+      "duration": 0.19,
+      "midi": 55,
+      "gain": 0.055,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 21.6,
+      "duration": 0.43,
+      "midi": 57,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 21.6,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 21.6,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 21.6,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 21.6,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 21.6,
+      "duration": 0.44,
+      "midi": 33,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 21.88,
+      "duration": 0.22,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 22.8,
+      "duration": 0.43,
+      "midi": 57,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 22.8,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 22.8,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 22.8,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 22.8,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 22.8,
+      "duration": 0.44,
+      "midi": 33,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 23.08,
+      "duration": 0.22,
+      "midi": 83,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 22.95,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 23.7,
+      "duration": 0.19,
+      "midi": 52,
+      "gain": 0.055,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 24.0,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 24.0,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 24.0,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 24.0,
+      "duration": 0.43,
+      "midi": 72,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 24.0,
+      "duration": 0.43,
+      "midi": 76,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 24.0,
+      "duration": 0.44,
+      "midi": 38,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 24.28,
+      "duration": 0.22,
+      "midi": 74,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 26.1,
+      "duration": 0.19,
+      "midi": 57,
+      "gain": 0.055,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 26.4,
+      "duration": 0.43,
+      "midi": 55,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 26.4,
+      "duration": 0.43,
+      "midi": 59,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 26.4,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 26.4,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 26.4,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 26.4,
+      "duration": 0.44,
+      "midi": 31,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 26.68,
+      "duration": 0.22,
+      "midi": 74,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 27.6,
+      "duration": 0.43,
+      "midi": 55,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 27.6,
+      "duration": 0.43,
+      "midi": 59,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 27.6,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 27.6,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 27.6,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 27.6,
+      "duration": 0.44,
+      "midi": 31,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 27.88,
+      "duration": 0.22,
+      "midi": 77,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 27.75,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 28.5,
+      "duration": 0.19,
+      "midi": 50,
+      "gain": 0.055,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 28.8,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 28.8,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 28.8,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 28.8,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 28.8,
+      "duration": 0.43,
+      "midi": 74,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 28.8,
+      "duration": 0.44,
+      "midi": 36,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 29.08,
+      "duration": 0.22,
+      "midi": 86,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 30.0,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 30.0,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 30.0,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 30.0,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 30.0,
+      "duration": 0.43,
+      "midi": 74,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 30.0,
+      "duration": 0.44,
+      "midi": 36,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 30.28,
+      "duration": 0.22,
+      "midi": 72,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 30.15,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 30.9,
+      "duration": 0.19,
+      "midi": 55,
+      "gain": 0.055,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 31.2,
+      "duration": 0.43,
+      "midi": 57,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 31.2,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 31.2,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 31.2,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 31.2,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 31.2,
+      "duration": 0.44,
+      "midi": 33,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 31.48,
+      "duration": 0.22,
+      "midi": 72,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 32.4,
+      "duration": 0.43,
+      "midi": 57,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 32.4,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 32.4,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 32.4,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 32.4,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 32.4,
+      "duration": 0.44,
+      "midi": 33,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 32.68,
+      "duration": 0.22,
+      "midi": 76,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 32.55,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 33.3,
+      "duration": 0.19,
+      "midi": 52,
+      "gain": 0.055,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 33.6,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 33.6,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 33.6,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 33.6,
+      "duration": 0.43,
+      "midi": 72,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 33.6,
+      "duration": 0.43,
+      "midi": 76,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 33.6,
+      "duration": 0.44,
+      "midi": 38,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 33.88,
+      "duration": 0.22,
+      "midi": 84,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 34.8,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 34.8,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 34.8,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 34.8,
+      "duration": 0.43,
+      "midi": 72,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 34.8,
+      "duration": 0.43,
+      "midi": 76,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 34.8,
+      "duration": 0.44,
+      "midi": 38,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 35.08,
+      "duration": 0.22,
+      "midi": 88,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 34.95,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 37.2,
+      "duration": 0.43,
+      "midi": 55,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 37.2,
+      "duration": 0.43,
+      "midi": 59,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 37.2,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 37.2,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 37.2,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 37.2,
+      "duration": 0.44,
+      "midi": 31,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 37.48,
+      "duration": 0.22,
+      "midi": 71,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 37.35,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 38.1,
+      "duration": 0.19,
+      "midi": 50,
+      "gain": 0.055,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 38.4,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 38.4,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 38.4,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 38.4,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 38.4,
+      "duration": 0.43,
+      "midi": 74,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 38.4,
+      "duration": 0.44,
+      "midi": 36,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 38.68,
+      "duration": 0.22,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 39.6,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 39.6,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 39.6,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 39.6,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 39.6,
+      "duration": 0.43,
+      "midi": 74,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 39.6,
+      "duration": 0.44,
+      "midi": 36,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 39.88,
+      "duration": 0.22,
+      "midi": 83,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 39.75,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 40.5,
+      "duration": 0.19,
+      "midi": 55,
+      "gain": 0.055,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 40.8,
+      "duration": 0.43,
+      "midi": 57,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 40.8,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 40.8,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 40.8,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 40.8,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 40.8,
+      "duration": 0.44,
+      "midi": 33,
+      "gain": 0.0532,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 41.08,
+      "duration": 0.22,
+      "midi": 83,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 42.0,
+      "duration": 0.43,
+      "midi": 57,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 42.0,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 42.0,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 42.0,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 42.0,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 42.0,
+      "duration": 0.44,
+      "midi": 33,
+      "gain": 0.0532,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 42.28,
+      "duration": 0.22,
+      "midi": 69,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 42.15,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 42.9,
+      "duration": 0.19,
+      "midi": 52,
+      "gain": 0.038,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 43.2,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 43.2,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 43.2,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 43.2,
+      "duration": 0.43,
+      "midi": 72,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 43.2,
+      "duration": 0.43,
+      "midi": 76,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 43.2,
+      "duration": 0.44,
+      "midi": 38,
+      "gain": 0.0532,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 43.48,
+      "duration": 0.22,
+      "midi": 77,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 44.4,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 44.4,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 44.4,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 44.4,
+      "duration": 0.43,
+      "midi": 72,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 44.4,
+      "duration": 0.43,
+      "midi": 76,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 44.4,
+      "duration": 0.44,
+      "midi": 38,
+      "gain": 0.0532,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 44.68,
+      "duration": 0.22,
+      "midi": 81,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 44.55,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 45.3,
+      "duration": 0.19,
+      "midi": 57,
+      "gain": 0.038,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 45.6,
+      "duration": 0.43,
+      "midi": 55,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 45.6,
+      "duration": 0.43,
+      "midi": 59,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 45.6,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 45.6,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 45.6,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 45.6,
+      "duration": 0.44,
+      "midi": 31,
+      "gain": 0.0532,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 45.88,
+      "duration": 0.22,
+      "midi": 77,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 46.8,
+      "duration": 0.43,
+      "midi": 55,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 46.8,
+      "duration": 0.43,
+      "midi": 59,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 46.8,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 46.8,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 46.8,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 46.8,
+      "duration": 0.44,
+      "midi": 31,
+      "gain": 0.0532,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 47.08,
+      "duration": 0.22,
+      "midi": 81,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 46.95,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.6
+    },
+    {
+      "t": 47.7,
+      "duration": 0.19,
+      "midi": 50,
+      "gain": 0.038,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 48.0,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 48.0,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 48.0,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 48.0,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 48.0,
+      "duration": 0.43,
+      "midi": 74,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 48.0,
+      "duration": 0.44,
+      "midi": 36,
+      "gain": 0.0532,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 48.28,
+      "duration": 0.22,
+      "midi": 72,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 49.2,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 49.2,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 49.2,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 49.2,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 49.2,
+      "duration": 0.43,
+      "midi": 74,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.55,
+      "filter_hz": 1700
+    },
+    {
+      "t": 49.2,
+      "duration": 0.44,
+      "midi": 36,
+      "gain": 0.0532,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 49.48,
+      "duration": 0.22,
+      "midi": 76,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 49.35,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.6
+    },
+    {
+      "t": 50.4,
+      "duration": 0.43,
+      "midi": 57,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 50.4,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 50.4,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 50.4,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 50.4,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 50.4,
+      "duration": 0.44,
+      "midi": 33,
+      "gain": 0.0532,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 50.68,
+      "duration": 0.22,
+      "midi": 76,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 51.6,
+      "duration": 0.43,
+      "midi": 57,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 51.6,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 51.6,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 51.6,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 51.6,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 51.6,
+      "duration": 0.44,
+      "midi": 33,
+      "gain": 0.0532,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 51.88,
+      "duration": 0.22,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 51.75,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 52.5,
+      "duration": 0.19,
+      "midi": 52,
+      "gain": 0.038,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 52.8,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 52.8,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 52.8,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 52.8,
+      "duration": 0.43,
+      "midi": 72,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 52.8,
+      "duration": 0.43,
+      "midi": 76,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 52.8,
+      "duration": 0.44,
+      "midi": 38,
+      "gain": 0.0532,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 53.08,
+      "duration": 0.22,
+      "midi": 88,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 54.0,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 54.0,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 54.0,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 54.0,
+      "duration": 0.43,
+      "midi": 72,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 54.0,
+      "duration": 0.43,
+      "midi": 76,
+      "gain": 0.022039999999999997,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 1700
+    },
+    {
+      "t": 54.0,
+      "duration": 0.44,
+      "midi": 38,
+      "gain": 0.0532,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 54.28,
+      "duration": 0.22,
+      "midi": 74,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 54.15,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 54.9,
+      "duration": 0.19,
+      "midi": 57,
+      "gain": 0.055,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 55.2,
+      "duration": 0.43,
+      "midi": 55,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 55.2,
+      "duration": 0.43,
+      "midi": 59,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 55.2,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 55.2,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 55.2,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 55.2,
+      "duration": 0.44,
+      "midi": 31,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 55.48,
+      "duration": 0.22,
+      "midi": 71,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 56.4,
+      "duration": 0.43,
+      "midi": 55,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 56.4,
+      "duration": 0.43,
+      "midi": 59,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 56.4,
+      "duration": 0.43,
+      "midi": 62,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 56.4,
+      "duration": 0.43,
+      "midi": 65,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 56.4,
+      "duration": 0.43,
+      "midi": 69,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 56.4,
+      "duration": 0.44,
+      "midi": 31,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 56.68,
+      "duration": 0.22,
+      "midi": 74,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 56.55,
+      "duration": 0.12,
+      "midi": 79,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0.15
+    },
+    {
+      "t": 57.3,
+      "duration": 0.19,
+      "midi": 50,
+      "gain": 0.055,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 57.6,
+      "duration": 0.43,
+      "midi": 60,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 57.6,
+      "duration": 0.43,
+      "midi": 64,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 57.6,
+      "duration": 0.43,
+      "midi": 67,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 57.6,
+      "duration": 0.43,
+      "midi": 71,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 57.6,
+      "duration": 0.43,
+      "midi": 74,
+      "gain": 0.0319,
+      "instrument": "piano",
+      "pan": -0.15,
+      "filter_hz": 12000
+    },
+    {
+      "t": 57.6,
+      "duration": 0.44,
+      "midi": 36,
+      "gain": 0.077,
+      "instrument": "upright",
+      "pan": -0.1
+    },
+    {
+      "t": 57.88,
+      "duration": 0.22,
+      "midi": 83,
+      "gain": 0.024,
+      "instrument": "glockenspiel",
+      "pan": 0.35
+    },
+    {
+      "t": 8.4,
+      "duration": 1.5,
+      "midi": 48,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": -0.3
+    },
+    {
+      "t": 8.4,
+      "duration": 1.5,
+      "midi": 60,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": -0.3
+    },
+    {
+      "t": 8.4,
+      "duration": 1.5,
+      "midi": 64,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": -0.3
+    },
+    {
+      "t": 8.4,
+      "duration": 1.5,
+      "midi": 67,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": 0.3
+    },
+    {
+      "t": 8.4,
+      "duration": 1.5,
+      "midi": 71,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": 0.3
+    },
+    {
+      "t": 8.4,
+      "duration": 1.5,
+      "midi": 74,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": 0.3
+    },
+    {
+      "t": 8.4,
+      "duration": 1.5,
+      "midi": 79,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": 0.3
+    },
+    {
+      "t": 8.4,
+      "duration": 1.1,
+      "midi": 36,
+      "gain": 0.09,
+      "instrument": "upright",
+      "pan": 0
+    },
+    {
+      "t": 54.04,
+      "duration": 1.5,
+      "midi": 48,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": -0.3
+    },
+    {
+      "t": 54.04,
+      "duration": 1.5,
+      "midi": 60,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": -0.3
+    },
+    {
+      "t": 54.04,
+      "duration": 1.5,
+      "midi": 64,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": -0.3
+    },
+    {
+      "t": 54.04,
+      "duration": 1.5,
+      "midi": 67,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": 0.3
+    },
+    {
+      "t": 54.04,
+      "duration": 1.5,
+      "midi": 71,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": 0.3
+    },
+    {
+      "t": 54.04,
+      "duration": 1.5,
+      "midi": 74,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": 0.3
+    },
+    {
+      "t": 54.04,
+      "duration": 1.5,
+      "midi": 79,
+      "gain": 0.065,
+      "instrument": "piano",
+      "pan": 0.3
+    },
+    {
+      "t": 54.04,
+      "duration": 1.1,
+      "midi": 36,
+      "gain": 0.09,
+      "instrument": "upright",
+      "pan": 0
+    },
+    {
+      "t": 1.55,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 1.7,
+      "duration": 0.08,
+      "midi": 74,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 1.85,
+      "duration": 0.08,
+      "midi": 76,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 2.63,
+      "duration": 0.025,
+      "midi": 96,
+      "gain": 0.012,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 5.64,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 5.88,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 7.6,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 8.4,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 14.72,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 14.74,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 15.08,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 15.539,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 15.559,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 15.839,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 16.789,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 17.229,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 17.239,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 17.269,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 17.549,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 17.559,
+      "duration": 0.08,
+      "midi": 74,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 17.589,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 17.869,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 17.879,
+      "duration": 0.08,
+      "midi": 76,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 17.909,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 18.189,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 18.199,
+      "duration": 0.08,
+      "midi": 78,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 18.229,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 18.509,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 18.519,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 18.549,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 18.829,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 18.839,
+      "duration": 0.08,
+      "midi": 74,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 21.32,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 21.42,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 21.6,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 21.75,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 21.77,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 22.29,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 22.59,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 22.83,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 22.95,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 23.03,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 23.14,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 23.25,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 23.36,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 23.37,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 23.38,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 23.44,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 23.55,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 23.66,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 23.77,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 23.78,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 23.79,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 23.85,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 23.96,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 24.07,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 24.18,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 24.19,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 24.22,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 24.28,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 24.39,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 24.5,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 24.61,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 24.62,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 24.92,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 25.72,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 26.36,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 26.47,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 26.58,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 26.69,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 28.2,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 28.63,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 28.99,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 29.12,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 29.64,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 29.64,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 29.69,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 30.34,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 30.81,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 30.9,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 31.18,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 31.5,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 33.06,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 33.33,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 34.13,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 35.08,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 36.68,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 37.15,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 37.7,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 38.6,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 38.71,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 38.82,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 38.93,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 39.04,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 39.15,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 39.26,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 39.37,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 39.48,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 39.59,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 39.7,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 39.88,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 40.2,
+      "duration": 0.04,
+      "midi": 48,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 40.2,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 40.24,
+      "duration": 0.4,
+      "midi": 36,
+      "gain": 0.08,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 43.13,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 43.7,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 43.95,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 45.21,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 45.21,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 45.32,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 45.32,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 45.43,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 45.43,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 45.54,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 45.54,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 45.65,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 45.65,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 45.76,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 45.76,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.02,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 45.9,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 46.2,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 46.5,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 46.8,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 47.1,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 47.4,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 47.7,
+      "duration": 0.08,
+      "midi": 72,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 49.38,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 49.38,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 50.23,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 50.25,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 50.25,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 50.95,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 52.1,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 52.44,
+      "duration": 0.2,
+      "midi": 72,
+      "gain": 0.075,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 52.44,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 52.48,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 53.1,
+      "duration": 0.2,
+      "midi": 76,
+      "gain": 0.075,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 53.1,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 53.14,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 53.48,
+      "duration": 0.2,
+      "midi": 79,
+      "gain": 0.075,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 53.48,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.024,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 53.52,
+      "duration": 0.09,
+      "midi": 76,
+      "gain": 0.035,
+      "instrument": "chip",
+      "pan": 0.05
+    },
+    {
+      "t": 54,
+      "duration": 0.2,
+      "midi": 84,
+      "gain": 0.075,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 54,
+      "duration": 0.04,
+      "midi": 60,
+      "gain": 0.04,
+      "instrument": "chip",
+      "pan": 0
+    },
+    {
+      "t": 54.04,
+      "duration": 0.4,
+      "midi": 36,
+      "gain": 0.08,
+      "instrument": "bass",
+      "pan": 0
+    },
+    {
+      "t": 55.2,
+      "duration": 0.35,
+      "midi": 84,
+      "gain": 0.05,
+      "instrument": "glockenspiel",
+      "pan": 0
+    },
+    {
+      "t": 24.95,
+      "duration": 0.65,
+      "midi": 60,
+      "gain": 0.018,
+      "instrument": "vibraphone_bowed",
+      "pan": -0.2
+    },
+    {
+      "t": 24.95,
+      "duration": 0.65,
+      "midi": 64,
+      "gain": 0.018,
+      "instrument": "vibraphone_bowed",
+      "pan": -0.2
+    },
+    {
+      "t": 24.95,
+      "duration": 0.65,
+      "midi": 71,
+      "gain": 0.018,
+      "instrument": "vibraphone_bowed",
+      "pan": -0.2
+    }
+  ],
+  "effects": [
+    {
+      "t": 8.4,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 8.700000000000001,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 9.0,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 9.3,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 9.6,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 9.9,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 10.2,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 10.5,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 10.799999999999999,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 11.1,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 11.4,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 11.700000000000001,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 12.0,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 12.3,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 12.6,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 12.9,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 13.2,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 13.5,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 13.799999999999999,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 14.1,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 14.399999999999999,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 14.7,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 15.0,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 15.3,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 15.6,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 15.9,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 16.2,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 16.5,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 16.8,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 17.1,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 17.4,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 17.7,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 18.0,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 18.3,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 18.599999999999998,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 18.9,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 19.2,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 19.5,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 19.8,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 20.1,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 20.4,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 20.7,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 21.0,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 21.3,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 21.599999999999998,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 21.9,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 22.2,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 22.5,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 22.8,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 23.1,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 23.4,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 23.7,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 24.0,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 24.3,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 24.599999999999998,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 24.9,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 25.8,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 26.1,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 26.4,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 26.7,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 27.0,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 27.3,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 27.599999999999998,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 27.9,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 28.2,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 28.5,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 28.799999999999997,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 29.099999999999998,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 29.4,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 29.7,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 30.0,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 30.3,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 30.599999999999998,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 30.9,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 31.2,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 31.5,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 31.799999999999997,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 32.099999999999994,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 32.4,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 32.699999999999996,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 33.0,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 33.3,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 33.6,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 33.9,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 34.199999999999996,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 34.49999999999999,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 34.8,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 35.099999999999994,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 40.8,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 41.099999999999994,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 41.4,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 41.699999999999996,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 42.0,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 42.3,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 42.6,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 42.9,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 43.199999999999996,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 43.49999999999999,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 43.8,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 44.099999999999994,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 44.4,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 44.699999999999996,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 45.0,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 45.3,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 45.6,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 45.9,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 46.199999999999996,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 46.49999999999999,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 46.8,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 47.099999999999994,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 47.4,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 47.699999999999996,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 48.0,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 48.3,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 48.6,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 48.9,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 49.199999999999996,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 49.49999999999999,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 50.4,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 50.699999999999996,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 51.0,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 51.3,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 51.6,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 51.9,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 52.199999999999996,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 52.49999999999999,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 52.8,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 53.099999999999994,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 53.4,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 53.699999999999996,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 54.0,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 54.3,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 54.6,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 54.9,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 55.199999999999996,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 55.49999999999999,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 55.8,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 56.099999999999994,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 56.4,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 56.699999999999996,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 57.0,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 57.3,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 57.599999999999994,
+      "kind": "drum_kit",
+      "duration": 0.16,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "kick"
+    },
+    {
+      "t": 57.89999999999999,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 58.199999999999996,
+      "kind": "drum_kit",
+      "duration": 0.13,
+      "gain": 0.03,
+      "pan": 0,
+      "variant": "snare"
+    },
+    {
+      "t": 58.49999999999999,
+      "kind": "drum_kit",
+      "duration": 0.07,
+      "gain": 0.018,
+      "pan": 0.22,
+      "variant": "hat"
+    },
+    {
+      "t": 10.2,
+      "kind": "drum_kit",
+      "duration": 0.12,
+      "gain": 0.05,
+      "pan": -0.35,
+      "variant": "snare"
+    },
+    {
+      "t": 10.29,
+      "kind": "drum_kit",
+      "duration": 0.12,
+      "gain": 0.05,
+      "pan": -0.11666666666666667,
+      "variant": "snare"
+    },
+    {
+      "t": 10.379999999999999,
+      "kind": "drum_kit",
+      "duration": 0.12,
+      "gain": 0.05,
+      "pan": 0.11666666666666663,
+      "variant": "snare"
+    },
+    {
+      "t": 10.469999999999999,
+      "kind": "drum_kit",
+      "duration": 0.12,
+      "gain": 0.05,
+      "pan": 0.35,
+      "variant": "crash"
+    },
+    {
+      "t": 19.2,
+      "kind": "drum_kit",
+      "duration": 0.12,
+      "gain": 0.05,
+      "pan": -0.35,
+      "variant": "snare"
+    },
+    {
+      "t": 19.29,
+      "kind": "drum_kit",
+      "duration": 0.12,
+      "gain": 0.05,
+      "pan": -0.11666666666666667,
+      "variant": "snare"
+    },
+    {
+      "t": 19.38,
+      "kind": "drum_kit",
+      "duration": 0.12,
+      "gain": 0.05,
+      "pan": 0.11666666666666663,
+      "variant": "snare"
+    },
+    {
+      "t": 19.47,
+      "kind": "drum_kit",
+      "duration": 0.12,
+      "gain": 0.05,
+      "pan": 0.35,
+      "variant": "crash"
+    },
+    {
+      "t": 27.0,
+      "kind": "drum_kit",
+      "duration": 0.12,
+      "gain": 0.05,
+      "pan": -0.35,
+      "variant": "snare"
+    },
+    {
+      "t": 27.09,
+      "kind": "drum_kit",
+      "duration": 0.12,
+      "gain": 0.05,
+      "pan": -0.11666666666666667,
+      "variant": "snare"
+    },
+    {
+      "t": 27.18,
+      "kind": "drum_kit",
+      "duration": 0.12,
+      "gain": 0.05,
+      "pan": 0.11666666666666663,
+      "variant": "snare"
+    },
+    {
+      "t": 27.27,
+      "kind": "drum_kit",
+      "duration": 0.12,
+      "gain": 0.05,
+      "pan": 0.35,
+      "variant": "crash"
+    },
+    {
+      "t": 35.4,
+      "kind": "drum_kit",
+      "duration": 0.12,
+      "gain": 0.05,
+      "pan": -0.35,
+      "variant": "snare"
+    },
+    {
+      "t": 35.49,
+      "kind": "drum_kit",
+      "duration": 0.12,
+      "gain": 0.05,
+      "pan": -0.11666666666666667,
+      "variant": "snare"
+    },
+    {
+      "t": 35.58,
+      "kind": "drum_kit",
+      "duration": 0.12,
+      "gain": 0.05,
+      "pan": 0.11666666666666663,
+      "variant": "snare"
+    },
+    {
+      "t": 35.67,
+      "kind": "drum_kit",
+      "duration": 0.12,
+      "gain": 0.05,
+      "pan": 0.35,
+      "variant": "crash"
+    },
+    {
+      "t": 8.4,
+      "kind": "drum_kit",
+      "duration": 0.8,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "crash"
+    },
+    {
+      "t": 54.04,
+      "kind": "drum_kit",
+      "duration": 0.8,
+      "gain": 0.05,
+      "pan": 0,
+      "variant": "crash"
+    },
+    {
+      "t": 0.706,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.022507589730703333,
+      "pan": -0.18
+    },
+    {
+      "t": 0.711,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01980667896301893,
+      "pan": 0
+    },
+    {
+      "t": 0.787,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.01698940744263382,
+      "pan": -0.18
+    },
+    {
+      "t": 0.792,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01495067854951776,
+      "pan": 0
+    },
+    {
+      "t": 0.923,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.022517591765572435,
+      "pan": -0.18
+    },
+    {
+      "t": 0.928,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01981548075370374,
+      "pan": 0
+    },
+    {
+      "t": 1.077,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.02420154541880038,
+      "pan": -0.18
+    },
+    {
+      "t": 1.0819999999999999,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.021297359968544333,
+      "pan": 0
+    },
+    {
+      "t": 1.151,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.016279384564859358,
+      "pan": -0.18
+    },
+    {
+      "t": 1.156,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.014325858417076233,
+      "pan": 0
+    },
+    {
+      "t": 1.256,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.019483076536198497,
+      "pan": -0.18
+    },
+    {
+      "t": 1.261,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.017145107351854677,
+      "pan": 0
+    },
+    {
+      "t": 1.35,
+      "kind": "buckling_key",
+      "duration": 0.12,
+      "gain": 0.055,
+      "pan": 0,
+      "variant": "enter"
+    },
+    {
+      "t": 1.55,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 1.7,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 1.85,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 5.11,
+      "kind": "sine_glide",
+      "duration": 0.35,
+      "gain": 0.04,
+      "pan": 0,
+      "freq_start": 220,
+      "freq_end": 1320
+    },
+    {
+      "t": 5.11,
+      "kind": "paper",
+      "duration": 0.25,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 5.64,
+      "kind": "sine_glide",
+      "duration": 0.21999999999999975,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 5.88,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 7.12,
+      "kind": "whoosh",
+      "duration": 0.25,
+      "gain": 0.035,
+      "pan": 0.0
+    },
+    {
+      "t": 7.6,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 8.4,
+      "kind": "hit",
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0
+    },
+    {
+      "t": 8.4,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 10.2,
+      "kind": "whoosh",
+      "duration": 0.45,
+      "gain": 0.035,
+      "pan": 0.0
+    },
+    {
+      "t": 11.25,
+      "kind": "click",
+      "duration": 0.055,
+      "gain": 0.065,
+      "pan": 0
+    },
+    {
+      "t": 11.624,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.017806346792785917,
+      "pan": 0.1
+    },
+    {
+      "t": 11.629000000000001,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.015669585177651605,
+      "pan": 0
+    },
+    {
+      "t": 11.7,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.021655884458232324,
+      "pan": 0.1
+    },
+    {
+      "t": 11.705,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.019057178323244443,
+      "pan": 0
+    },
+    {
+      "t": 11.768,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.020182578346430093,
+      "pan": 0.1
+    },
+    {
+      "t": 11.773000000000001,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01776066894485848,
+      "pan": 0
+    },
+    {
+      "t": 11.843,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.016459795310984193,
+      "pan": 0.1
+    },
+    {
+      "t": 11.848,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.014484619873666086,
+      "pan": 0
+    },
+    {
+      "t": 11.938,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.02471416624779522,
+      "pan": 0.1
+    },
+    {
+      "t": 11.943000000000001,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.021748466298059793,
+      "pan": 0
+    },
+    {
+      "t": 12.026,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.01857508093205979,
+      "pan": 0.1
+    },
+    {
+      "t": 12.031,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.016346071220212616,
+      "pan": 0
+    },
+    {
+      "t": 12.113,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.023353869032562216,
+      "pan": 0.1
+    },
+    {
+      "t": 12.118,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.020551404748654748,
+      "pan": 0
+    },
+    {
+      "t": 12.208,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.024627868963216316,
+      "pan": 0.1
+    },
+    {
+      "t": 12.213000000000001,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.021672524687630357,
+      "pan": 0
+    },
+    {
+      "t": 12.253,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.016456541897205173,
+      "pan": 0.1
+    },
+    {
+      "t": 12.258000000000001,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.014481756869540549,
+      "pan": 0
+    },
+    {
+      "t": 12.343,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.023971115330623433,
+      "pan": 0.1
+    },
+    {
+      "t": 12.348,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.02109458149094862,
+      "pan": 0
+    },
+    {
+      "t": 12.419,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.016452925559133292,
+      "pan": 0.1
+    },
+    {
+      "t": 12.424000000000001,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.014478574492037296,
+      "pan": 0
+    },
+    {
+      "t": 12.506,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.02340247872522014,
+      "pan": 0.1
+    },
+    {
+      "t": 12.511000000000001,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.020594181278193718,
+      "pan": 0
+    },
+    {
+      "t": 12.597,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.024121468641824323,
+      "pan": 0.1
+    },
+    {
+      "t": 12.602,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.0212268924048054,
+      "pan": 0
+    },
+    {
+      "t": 12.69,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.0242584616332897,
+      "pan": 0.1
+    },
+    {
+      "t": 12.695,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.021347446237294933,
+      "pan": 0
+    },
+    {
+      "t": 12.754,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.019625587252558037,
+      "pan": 0.1
+    },
+    {
+      "t": 12.759,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01727051678225107,
+      "pan": 0
+    },
+    {
+      "t": 12.851,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.019978853911488844,
+      "pan": 0.1
+    },
+    {
+      "t": 12.856000000000002,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01758139144211018,
+      "pan": 0
+    },
+    {
+      "t": 12.924,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.021120636142586593,
+      "pan": 0.1
+    },
+    {
+      "t": 12.929,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.018586159805476198,
+      "pan": 0
+    },
+    {
+      "t": 12.966,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.015945129716383236,
+      "pan": 0.1
+    },
+    {
+      "t": 12.971,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.014031714150417247,
+      "pan": 0
+    },
+    {
+      "t": 13.022,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.018117268548230644,
+      "pan": 0.1
+    },
+    {
+      "t": 13.027000000000001,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.015943196322442964,
+      "pan": 0
+    },
+    {
+      "t": 13.083,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.01911798570479732,
+      "pan": 0.1
+    },
+    {
+      "t": 13.088000000000001,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01682382742022164,
+      "pan": 0
+    },
+    {
+      "t": 13.172,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.023755450202115752,
+      "pan": 0.1
+    },
+    {
+      "t": 13.177000000000001,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.02090479617786186,
+      "pan": 0
+    },
+    {
+      "t": 13.212,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.015546228078637795,
+      "pan": 0.1
+    },
+    {
+      "t": 13.217,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.013680680709201257,
+      "pan": 0
+    },
+    {
+      "t": 13.305,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.01932827806173009,
+      "pan": 0.1
+    },
+    {
+      "t": 13.31,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.017008884694322476,
+      "pan": 0
+    },
+    {
+      "t": 13.401,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.024993562446798026,
+      "pan": 0.1
+    },
+    {
+      "t": 13.406,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.02199433495318226,
+      "pan": 0
+    },
+    {
+      "t": 13.467,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.01974557712695969,
+      "pan": 0.1
+    },
+    {
+      "t": 13.472000000000001,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.017376107871724524,
+      "pan": 0
+    },
+    {
+      "t": 13.574,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.021826880561129657,
+      "pan": 0.1
+    },
+    {
+      "t": 13.579,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.019207654893794095,
+      "pan": 0
+    },
+    {
+      "t": 14.66,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.025,
+      "pan": 0.1
+    },
+    {
+      "t": 14.665000000000001,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 14.72,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 14.74,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 15.08,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 15.085,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.02415065063229122,
+      "pan": 0.1
+    },
+    {
+      "t": 15.090000000000002,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.02125257255641627,
+      "pan": 0
+    },
+    {
+      "t": 15.166,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.018765856234440437,
+      "pan": 0.1
+    },
+    {
+      "t": 15.171000000000001,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.016513953486307582,
+      "pan": 0
+    },
+    {
+      "t": 15.219,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.015372711540549061,
+      "pan": 0.1
+    },
+    {
+      "t": 15.224,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.013527986155683173,
+      "pan": 0
+    },
+    {
+      "t": 15.539,
+      "kind": "buckling_key",
+      "duration": 0.12,
+      "gain": 0.055,
+      "pan": 0,
+      "variant": "enter"
+    },
+    {
+      "t": 15.539,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 15.559,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 15.839,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 16.159,
+      "kind": "click",
+      "duration": 0.055,
+      "gain": 0.065,
+      "pan": 0
+    },
+    {
+      "t": 16.179,
+      "kind": "whoosh",
+      "duration": 0.25,
+      "gain": 0.035,
+      "pan": 0.0
+    },
+    {
+      "t": 16.609,
+      "kind": "whoosh",
+      "duration": 0.25,
+      "gain": 0.035,
+      "pan": 0.4
+    },
+    {
+      "t": 16.709,
+      "kind": "whoosh",
+      "duration": 0.25,
+      "gain": 0.035,
+      "pan": 0.0
+    },
+    {
+      "t": 16.789,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 17.229,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 17.239,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 17.269,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 17.549,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 17.559,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 17.589,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 17.869,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 17.879,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 17.909,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 18.189,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 18.199,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 18.229,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 18.509,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 18.519,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 18.549,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 18.829,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 18.839,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 19.2,
+      "kind": "whoosh",
+      "duration": 0.45,
+      "gain": 0.035,
+      "pan": 0.0
+    },
+    {
+      "t": 21.27,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.025,
+      "pan": 0.1
+    },
+    {
+      "t": 21.275,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 21.32,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 21.42,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 21.6,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 21.75,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 21.77,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 22.11,
+      "kind": "buckling_key",
+      "duration": 0.12,
+      "gain": 0.055,
+      "pan": 0,
+      "variant": "enter"
+    },
+    {
+      "t": 22.29,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 22.59,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 22.67,
+      "kind": "whoosh",
+      "duration": 0.25,
+      "gain": 0.035,
+      "pan": 0.4
+    },
+    {
+      "t": 22.75,
+      "kind": "whoosh",
+      "duration": 0.25,
+      "gain": 0.035,
+      "pan": 0.0
+    },
+    {
+      "t": 22.83,
+      "kind": "sine_glide",
+      "duration": 0.09999999999999787,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 22.95,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 22.97,
+      "kind": "scratch",
+      "duration": 0.33,
+      "gain": 0.03,
+      "pan": 0
+    },
+    {
+      "t": 23.03,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 23.14,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 23.25,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 23.36,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 23.37,
+      "kind": "sine_glide",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 23.38,
+      "kind": "scratch",
+      "duration": 0.33,
+      "gain": 0.03,
+      "pan": 0
+    },
+    {
+      "t": 23.38,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 23.44,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 23.55,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 23.66,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 23.77,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 23.78,
+      "kind": "sine_glide",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 23.79,
+      "kind": "scratch",
+      "duration": 0.33,
+      "gain": 0.03,
+      "pan": 0
+    },
+    {
+      "t": 23.79,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 23.85,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 23.96,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 24.07,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 24.18,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 24.19,
+      "kind": "sine_glide",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 24.22,
+      "kind": "scratch",
+      "duration": 0.33,
+      "gain": 0.03,
+      "pan": 0
+    },
+    {
+      "t": 24.22,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 24.28,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 24.39,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 24.5,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 24.61,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 24.62,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 24.92,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 25.7,
+      "kind": "click",
+      "duration": 0.055,
+      "gain": 0.065,
+      "pan": 0
+    },
+    {
+      "t": 25.72,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 25.89,
+      "kind": "whoosh",
+      "duration": 0.25,
+      "gain": 0.035,
+      "pan": -0.4
+    },
+    {
+      "t": 26.2,
+      "kind": "click",
+      "duration": 0.055,
+      "gain": 0.065,
+      "pan": 0
+    },
+    {
+      "t": 26.22,
+      "kind": "buckling_key",
+      "duration": 0.12,
+      "gain": 0.055,
+      "pan": 0,
+      "variant": "enter"
+    },
+    {
+      "t": 26.3,
+      "kind": "whoosh",
+      "duration": 0.2,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 26.36,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 26.47,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 26.58,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 26.69,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 27,
+      "kind": "whoosh",
+      "duration": 0.45,
+      "gain": 0.035,
+      "pan": 0.0
+    },
+    {
+      "t": 28.2,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 28.63,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 28.99,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 29.12,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 29.64,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 29.64,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 29.69,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 30.19,
+      "kind": "click",
+      "duration": 0.055,
+      "gain": 0.065,
+      "pan": 0
+    },
+    {
+      "t": 30.26,
+      "kind": "whoosh",
+      "duration": 0.25,
+      "gain": 0.035,
+      "pan": 0.4
+    },
+    {
+      "t": 30.31,
+      "kind": "whoosh",
+      "duration": 0.25,
+      "gain": 0.035,
+      "pan": 0.0
+    },
+    {
+      "t": 30.34,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 30.78,
+      "kind": "click",
+      "duration": 0.055,
+      "gain": 0.065,
+      "pan": 0
+    },
+    {
+      "t": 30.81,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 30.9,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 31.18,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 31.477,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.024572895039091238,
+      "pan": 0.1
+    },
+    {
+      "t": 31.482,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.021624147634400286,
+      "pan": 0
+    },
+    {
+      "t": 31.5,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 31.514,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.02130645598666888,
+      "pan": 0.1
+    },
+    {
+      "t": 31.519,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.018749681268268613,
+      "pan": 0
+    },
+    {
+      "t": 31.541,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.01774894172227505,
+      "pan": 0.1
+    },
+    {
+      "t": 31.546,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.015619068715602043,
+      "pan": 0
+    },
+    {
+      "t": 31.601,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.018814331660032622,
+      "pan": 0.1
+    },
+    {
+      "t": 31.605999999999998,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.016556611860828706,
+      "pan": 0
+    },
+    {
+      "t": 31.636,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.020575745231981274,
+      "pan": 0.1
+    },
+    {
+      "t": 31.641,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01810665580414352,
+      "pan": 0
+    },
+    {
+      "t": 31.665,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.018781516513190585,
+      "pan": 0.1
+    },
+    {
+      "t": 31.669999999999998,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01652773453160771,
+      "pan": 0
+    },
+    {
+      "t": 31.709,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.023513263435088447,
+      "pan": 0.1
+    },
+    {
+      "t": 31.714,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.020691671822877834,
+      "pan": 0
+    },
+    {
+      "t": 31.782,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.02307906173875381,
+      "pan": 0.1
+    },
+    {
+      "t": 31.787,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.02030957433010335,
+      "pan": 0
+    },
+    {
+      "t": 31.809,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.017852892028058703,
+      "pan": 0.1
+    },
+    {
+      "t": 31.814,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.015710544984691658,
+      "pan": 0
+    },
+    {
+      "t": 31.842,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.020130879529824598,
+      "pan": 0.1
+    },
+    {
+      "t": 31.846999999999998,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.017715173986245645,
+      "pan": 0
+    },
+    {
+      "t": 31.877,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.020549540678366614,
+      "pan": 0.1
+    },
+    {
+      "t": 31.881999999999998,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01808359579696262,
+      "pan": 0
+    },
+    {
+      "t": 31.918,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.022258781206292044,
+      "pan": 0.1
+    },
+    {
+      "t": 31.923,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.019587727461536995,
+      "pan": 0
+    },
+    {
+      "t": 31.948,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.019126413698249963,
+      "pan": 0.1
+    },
+    {
+      "t": 31.953,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.016831244054459966,
+      "pan": 0
+    },
+    {
+      "t": 31.967,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.015242589903682527,
+      "pan": 0.1
+    },
+    {
+      "t": 31.971999999999998,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.013413479115240623,
+      "pan": 0
+    },
+    {
+      "t": 32.03,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.01978633916409308,
+      "pan": 0.1
+    },
+    {
+      "t": 32.035000000000004,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.017411978464401907,
+      "pan": 0
+    },
+    {
+      "t": 32.063,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.01995644958857156,
+      "pan": 0.1
+    },
+    {
+      "t": 32.068000000000005,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01756167563794297,
+      "pan": 0
+    },
+    {
+      "t": 32.096,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.019902215212423472,
+      "pan": 0.1
+    },
+    {
+      "t": 32.101,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.017513949386932653,
+      "pan": 0
+    },
+    {
+      "t": 32.126,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.018747806104838675,
+      "pan": 0.1
+    },
+    {
+      "t": 32.131,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01649806937225803,
+      "pan": 0
+    },
+    {
+      "t": 32.162,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.021075743103720016,
+      "pan": 0.1
+    },
+    {
+      "t": 32.167,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.018546653931273614,
+      "pan": 0
+    },
+    {
+      "t": 32.189,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.017726569455735443,
+      "pan": 0.1
+    },
+    {
+      "t": 32.194,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01559938112104719,
+      "pan": 0
+    },
+    {
+      "t": 32.246,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.018013312456423593,
+      "pan": 0.1
+    },
+    {
+      "t": 32.251000000000005,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01585171496165276,
+      "pan": 0
+    },
+    {
+      "t": 32.279,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.01993956319194695,
+      "pan": 0.1
+    },
+    {
+      "t": 32.284000000000006,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.017546815608913312,
+      "pan": 0
+    },
+    {
+      "t": 32.32,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.022332892527883813,
+      "pan": 0.1
+    },
+    {
+      "t": 32.325,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.019652945424537754,
+      "pan": 0
+    },
+    {
+      "t": 32.344,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.017042894360747598,
+      "pan": 0.1
+    },
+    {
+      "t": 32.349000000000004,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.014997747037457883,
+      "pan": 0
+    },
+    {
+      "t": 32.387,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.023007540707840238,
+      "pan": 0.1
+    },
+    {
+      "t": 32.392,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.020246635822899407,
+      "pan": 0
+    },
+    {
+      "t": 32.443,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.017721682792816867,
+      "pan": 0.1
+    },
+    {
+      "t": 32.448,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01559508085767884,
+      "pan": 0
+    },
+    {
+      "t": 32.464,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.015917547448407277,
+      "pan": 0.1
+    },
+    {
+      "t": 32.469,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.014007441754598402,
+      "pan": 0
+    },
+    {
+      "t": 32.485,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.015749029653525214,
+      "pan": 0.1
+    },
+    {
+      "t": 32.49,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.013859146095102186,
+      "pan": 0
+    },
+    {
+      "t": 32.513,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.018240437835502235,
+      "pan": 0.1
+    },
+    {
+      "t": 32.518,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.016051585295241966,
+      "pan": 0
+    },
+    {
+      "t": 32.532,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.015369417817601061,
+      "pan": 0.1
+    },
+    {
+      "t": 32.537,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.013525087679488932,
+      "pan": 0
+    },
+    {
+      "t": 32.574,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.022649963048606878,
+      "pan": 0.1
+    },
+    {
+      "t": 32.579,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01993196748277405,
+      "pan": 0
+    },
+    {
+      "t": 32.603,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.0185467516783865,
+      "pan": 0.1
+    },
+    {
+      "t": 32.608000000000004,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01632114147698012,
+      "pan": 0
+    },
+    {
+      "t": 32.626,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.016810934326604184,
+      "pan": 0.1
+    },
+    {
+      "t": 32.631,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01479362220741168,
+      "pan": 0
+    },
+    {
+      "t": 32.681,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.017221204337329255,
+      "pan": 0.1
+    },
+    {
+      "t": 32.686,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.015154659816849743,
+      "pan": 0
+    },
+    {
+      "t": 32.725,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.023571001751151927,
+      "pan": 0.1
+    },
+    {
+      "t": 32.730000000000004,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.020742481541013696,
+      "pan": 0
+    },
+    {
+      "t": 32.766,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.02236295990405779,
+      "pan": 0.1
+    },
+    {
+      "t": 32.771,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.019679404715570854,
+      "pan": 0
+    },
+    {
+      "t": 32.835,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.022008368063688978,
+      "pan": 0.1
+    },
+    {
+      "t": 32.84,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.019367363896046298,
+      "pan": 0
+    },
+    {
+      "t": 32.864,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.018478661609269694,
+      "pan": 0.1
+    },
+    {
+      "t": 32.869,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.016261222216157327,
+      "pan": 0
+    },
+    {
+      "t": 32.912,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.024881867345466165,
+      "pan": 0.1
+    },
+    {
+      "t": 32.917,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.021896043264010224,
+      "pan": 0
+    },
+    {
+      "t": 32.941,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.018603098795065307,
+      "pan": 0.1
+    },
+    {
+      "t": 32.946000000000005,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.01637072693965747,
+      "pan": 0
+    },
+    {
+      "t": 32.97,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.018632095275024768,
+      "pan": 0.1
+    },
+    {
+      "t": 32.975,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.016396243842021794,
+      "pan": 0
+    },
+    {
+      "t": 32.998,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.017985460679337848,
+      "pan": 0.1
+    },
+    {
+      "t": 33.003,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.015827205397817304,
+      "pan": 0
+    },
+    {
+      "t": 33.024,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.01765580195300572,
+      "pan": 0.1
+    },
+    {
+      "t": 33.029,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.015537105718645033,
+      "pan": 0
+    },
+    {
+      "t": 33.06,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 33.204,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.025,
+      "pan": 0.1
+    },
+    {
+      "t": 33.209,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 33.234,
+      "kind": "whoosh",
+      "duration": 0.25,
+      "gain": 0.035,
+      "pan": 0.0
+    },
+    {
+      "t": 33.33,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.008749999999999999,
+      "pan": 0.1
+    },
+    {
+      "t": 33.335,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.007699999999999999,
+      "pan": 0
+    },
+    {
+      "t": 33.33,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 33.375,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.008749999999999999,
+      "pan": 0.1
+    },
+    {
+      "t": 33.38,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.007699999999999999,
+      "pan": 0
+    },
+    {
+      "t": 33.42,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.008749999999999999,
+      "pan": 0.1
+    },
+    {
+      "t": 33.425000000000004,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.007699999999999999,
+      "pan": 0
+    },
+    {
+      "t": 33.465,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.008749999999999999,
+      "pan": 0.1
+    },
+    {
+      "t": 33.470000000000006,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.007699999999999999,
+      "pan": 0
+    },
+    {
+      "t": 33.51,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.008749999999999999,
+      "pan": 0.1
+    },
+    {
+      "t": 33.515,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.007699999999999999,
+      "pan": 0
+    },
+    {
+      "t": 33.555,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.008749999999999999,
+      "pan": 0.1
+    },
+    {
+      "t": 33.56,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.007699999999999999,
+      "pan": 0
+    },
+    {
+      "t": 33.6,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.008749999999999999,
+      "pan": 0.1
+    },
+    {
+      "t": 33.605000000000004,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.007699999999999999,
+      "pan": 0
+    },
+    {
+      "t": 33.645,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.008749999999999999,
+      "pan": 0.1
+    },
+    {
+      "t": 33.650000000000006,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.007699999999999999,
+      "pan": 0
+    },
+    {
+      "t": 33.69,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.008749999999999999,
+      "pan": 0.1
+    },
+    {
+      "t": 33.695,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.007699999999999999,
+      "pan": 0
+    },
+    {
+      "t": 33.735,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.008749999999999999,
+      "pan": 0.1
+    },
+    {
+      "t": 33.74,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.007699999999999999,
+      "pan": 0
+    },
+    {
+      "t": 33.78,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.008749999999999999,
+      "pan": 0.1
+    },
+    {
+      "t": 33.785000000000004,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.007699999999999999,
+      "pan": 0
+    },
+    {
+      "t": 33.825,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.008749999999999999,
+      "pan": 0.1
+    },
+    {
+      "t": 33.830000000000005,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.007699999999999999,
+      "pan": 0
+    },
+    {
+      "t": 33.87,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.008749999999999999,
+      "pan": 0.1
+    },
+    {
+      "t": 33.875,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.007699999999999999,
+      "pan": 0
+    },
+    {
+      "t": 33.915,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.008749999999999999,
+      "pan": 0.1
+    },
+    {
+      "t": 33.92,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.007699999999999999,
+      "pan": 0
+    },
+    {
+      "t": 33.96,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.008749999999999999,
+      "pan": 0.1
+    },
+    {
+      "t": 33.965,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.007699999999999999,
+      "pan": 0
+    },
+    {
+      "t": 34.005,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.008749999999999999,
+      "pan": 0.1
+    },
+    {
+      "t": 34.010000000000005,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.007699999999999999,
+      "pan": 0
+    },
+    {
+      "t": 34.05,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.008749999999999999,
+      "pan": 0.1
+    },
+    {
+      "t": 34.055,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.007699999999999999,
+      "pan": 0
+    },
+    {
+      "t": 34.13,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 35.03,
+      "kind": "click",
+      "duration": 0.055,
+      "gain": 0.065,
+      "pan": 0
+    },
+    {
+      "t": 35.08,
+      "kind": "sine_glide",
+      "duration": 0.15,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 35.4,
+      "kind": "whoosh",
+      "duration": 0.45,
+      "gain": 0.035,
+      "pan": 0.0
+    },
+    {
+      "t": 36.4,
+      "kind": "whoosh",
+      "duration": 0.25,
+      "gain": 0.035,
+      "pan": 0.0
+    },
+    {
+      "t": 36.68,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 37.15,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 37.7,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 38.6,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 38.71,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 38.82,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 38.93,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 39.04,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 39.15,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 39.26,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 39.37,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 39.48,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 39.59,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 39.7,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 39.88,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 40.2,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 40.2,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 40.24,
+      "kind": "whoosh",
+      "duration": 0.4,
+      "gain": 0.05,
+      "pan": 0
+    },
+    {
+      "t": 41.5,
+      "kind": "click",
+      "duration": 0.12,
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 41.535,
+      "kind": "paper",
+      "duration": 0.15,
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 43.13,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 43.2,
+      "kind": "whoosh",
+      "duration": 0.25,
+      "gain": 0.035,
+      "pan": -0.4
+    },
+    {
+      "t": 43.7,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 43.9,
+      "kind": "keycap_clack",
+      "duration": 0.045,
+      "gain": 0.025,
+      "pan": 0.1
+    },
+    {
+      "t": 43.905,
+      "kind": "switch_thock",
+      "duration": 0.07,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 43.95,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 44.75,
+      "kind": "click",
+      "duration": 0.055,
+      "gain": 0.065,
+      "pan": 0
+    },
+    {
+      "t": 44.9,
+      "kind": "sine_glide",
+      "duration": 0.35,
+      "gain": 0.04,
+      "pan": 0,
+      "freq_start": 220,
+      "freq_end": 1320
+    },
+    {
+      "t": 44.9,
+      "kind": "paper",
+      "duration": 0.25,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 45.15,
+      "kind": "sine_glide",
+      "duration": 0.35,
+      "gain": 0.04,
+      "pan": 0,
+      "freq_start": 220,
+      "freq_end": 1320
+    },
+    {
+      "t": 45.15,
+      "kind": "paper",
+      "duration": 0.25,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 45.21,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 45.21,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 45.32,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 45.32,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 45.43,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 45.43,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 45.54,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 45.54,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 45.65,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 45.65,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 45.76,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 45.76,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.0125,
+      "pan": 0
+    },
+    {
+      "t": 45.9,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 46.2,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 46.5,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 46.8,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 47.1,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 47.4,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 47.7,
+      "kind": "click",
+      "duration": 0.04,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 48.3,
+      "kind": "sine_glide",
+      "duration": 0.35,
+      "gain": 0.04,
+      "pan": 0,
+      "freq_start": 220,
+      "freq_end": 1320
+    },
+    {
+      "t": 48.3,
+      "kind": "paper",
+      "duration": 0.25,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 49.3,
+      "kind": "whoosh",
+      "duration": 0.25,
+      "gain": 0.035,
+      "pan": 0.0
+    },
+    {
+      "t": 49.38,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 49.38,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 50.23,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 50.25,
+      "kind": "sine_glide",
+      "duration": 0.35,
+      "gain": 0.04,
+      "pan": 0,
+      "freq_start": 220,
+      "freq_end": 1320
+    },
+    {
+      "t": 50.25,
+      "kind": "paper",
+      "duration": 0.25,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 50.25,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 50.25,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 50.95,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 52.1,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 52.44,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 52.48,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 53.1,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 53.14,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 53.48,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 53.52,
+      "kind": "sine_glide",
+      "duration": 0.25,
+      "gain": 0.025,
+      "pan": 0,
+      "freq_start": 350,
+      "freq_end": 950
+    },
+    {
+      "t": 54,
+      "kind": "board_tap",
+      "duration": 0.06,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 54.04,
+      "kind": "whoosh",
+      "duration": 0.4,
+      "gain": 0.05,
+      "pan": 0
+    },
+    {
+      "t": 0,
+      "kind": "room_hvac",
+      "duration": 59.4,
+      "gain": 0.004,
+      "pan": 0
+    }
+  ]
+}

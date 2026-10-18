@@ -1,0 +1,42 @@
+{
+  "voice": "am_onyx",
+  "language": "en-us",
+  "lines": [
+    {
+      "id": "L1",
+      "text": "That winter, the snow closed every road, and the tower had no bell.",
+      "start": 11.1,
+      "duration": 3.817,
+      "voice": "am_onyx",
+      "speed": 0.88,
+      "language": "en-us"
+    },
+    {
+      "id": "L2",
+      "text": "So every house gave what metal it had.",
+      "start": 19.2,
+      "duration": 2.431,
+      "voice": "am_onyx",
+      "speed": 0.88,
+      "language": "en-us"
+    },
+    {
+      "id": "L3",
+      "text": "The boy gave his compass, the one thing that always guided him home.",
+      "start": 32.6,
+      "duration": 3.975,
+      "voice": "am_onyx",
+      "speed": 0.88,
+      "language": "en-us"
+    },
+    {
+      "id": "L4",
+      "text": "When it rang, the snow stopped to listen.",
+      "start": 51.8,
+      "duration": 2.361,
+      "voice": "am_onyx",
+      "speed": 0.88,
+      "language": "en-us"
+    }
+  ]
+}

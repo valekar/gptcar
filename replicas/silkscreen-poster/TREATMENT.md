@@ -1,0 +1,5 @@
+# Full timed treatment
+
+0–1.0: follow split-fountain pull with −1.7° roll; start part printed. 1–1.65: fast pullback, screen hinges away; title1.2–1.5, footer1.35–1.6. Hold through4.8. 4.8–5.4: tilt down to full first sheet. Four0.45s pulls at5.4,6.0,6.6,7.2; lift7.8, camera pushes7.8–9.0; band8.4, title9, stats9.6/9.9/10.2. Pine wipe centered13.2; second sheet reveals sky12.9, far13.5, mid13.8, near14.1 in0.26s pulls. Camera moves from waterfall detail to band14.4–15.12; band14.7, name15, stats15.3/.6/.9, hold through19.2. Music off18–19.2, waterfall tail only.
+
+19.2–23.4: one-take paper-layer ascent from valley to summit; part-passes19.704/20.46/21.3/22.14; diagonal full-sheet palette re-inks20.6–20.95 and22–22.35. Wind only23.4–24.0. Clamp24, tilt to band24–24.9; band24.6, name24.9, four stats25.2/.5/.8/26.1. Hold to29.4. Log pullback29.4–30.6 to full series wall; readable lockup through34.8. Last mini-poster art pull34.8–35.35 then info/credits pull35.3–35.6, hold to final frame38.375. Fresh100BPM D-major folk guitar/slide/harmonica/bass/brush/cajon score and explicit mesh/wet-ink/hinge/clamp/paper/landscape Foley, recreated rather than reused.

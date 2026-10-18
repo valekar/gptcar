@@ -1,0 +1,147 @@
+{
+  "description": "Generic helper reuse and exact runtime asset, not original scene replay.",
+  "local_files": [
+    {
+      "path": "CREDITS",
+      "sha256": "dc13d9ec0c9c2cd0bf9ea26c0c0d55a07fd28e5dd812a5927a0bff1c3fc8e1e7"
+    },
+    {
+      "path": "PROMPT.md",
+      "sha256": "ce2b46deae506c956ab2d14a61898fea8e049a16b1af037b2de9749be3f9fc64"
+    },
+    {
+      "path": "REVIEW.md",
+      "sha256": "6a20c76412f1d532e853f8190022ad6bedc6ec56b938d07b4388354534d29020"
+    },
+    {
+      "path": "TOOLKIT_CREDITS.txt",
+      "sha256": "5c8c0c437af4fd5a73ee4664fae3b88a25a7cd7c81e6ec38aa92c7e881b20382"
+    },
+    {
+      "path": "TOOLKIT_LICENSE.txt",
+      "sha256": "14c9ff6f14bfb2391e74fedb01c256891d2a3bba1c2acf5789901bdf77e54e33"
+    },
+    {
+      "path": "TREATMENT.md",
+      "sha256": "7bbd6f8f0e4e49b8e445366cce6579f8578abe70fea66a1fc0ae39b49c773ba8"
+    },
+    {
+      "path": "chars.js",
+      "sha256": "5f9486c9f95c4c1210776c56bb8a38e2dfed587e5efa7d72f8839f140abb463f"
+    },
+    {
+      "path": "closeups.js",
+      "sha256": "4c0f7b16af69206ab368d49647c3c0c7a1dd050471954cc5b13e2057d19c3f5a"
+    },
+    {
+      "path": "engine/filter.js",
+      "sha256": "c2761bad11f3163ffbe4ed19ab9b02c9da96e9089602c764da986bb12392b807"
+    },
+    {
+      "path": "engine/hatch.js",
+      "sha256": "4327d8b90fa799edd92961f7764bf47790aa2d346b1995e5fbf6a6d1a935e862"
+    },
+    {
+      "path": "engine/index.js",
+      "sha256": "c153e7c96c79d920b360242d6eccc8b64046066389e2c90a29030d2f22114b97"
+    },
+    {
+      "path": "engine/knife.js",
+      "sha256": "4e5a29c14cf564625d5d3cad29966c289eee0aad4701cdc3f5728a960d91b431"
+    },
+    {
+      "path": "engine/print.js",
+      "sha256": "7a1314ee1de99b330c463e543b0eb7b1b9dcd59d232fabe184d49ff9c4ee26e3"
+    },
+    {
+      "path": "film.js",
+      "sha256": "d01ea0fb761389c9679503d2f1853ba2501a4774ce007114b16cf103be5d5737"
+    },
+    {
+      "path": "fonts/IMFellEnglish-Italic.ttf",
+      "sha256": "47cd75dce54b1f2e0831359d22d5e688f519d68ae45706b664fd310fd0e3ccf7"
+    },
+    {
+      "path": "fonts/IMFellEnglish.ttf",
+      "sha256": "fe9705bbde51af802719246d4608d08d37bde956ab99d9a590da996a5221a24c"
+    },
+    {
+      "path": "fonts/IMFellEnglishSC.ttf",
+      "sha256": "102324fb5434bb5da7963533426b0ad44c85bbc9e7755067535c9d11464a176b"
+    },
+    {
+      "path": "fonts/OFL-IMFell.txt",
+      "sha256": "2a3ca501fc4d5efcad9798531e3e06962b1e20c60e464f6cbd6c17630112c773"
+    },
+    {
+      "path": "fonts/fonts.css",
+      "sha256": "776820ec7bdb90d0bf8b15a9ff59bd54f0db38428a2f4fccc4741fb62d8df9ae"
+    },
+    {
+      "path": "fx.js",
+      "sha256": "85097955c303babb24ee9ae5f256c543bc2eb89dc6cd51d5edf0aab34524e7ed"
+    },
+    {
+      "path": "hands.js",
+      "sha256": "e6197af8732ee0be907ba3dfaa0e01189a037d61e824197aea82ae9e63dad689"
+    },
+    {
+      "path": "heat-props.js",
+      "sha256": "9c43dda5b9dfb7a83d3d37da30c886b2426a99e84ad6255b19b457918b152f90"
+    },
+    {
+      "path": "index.html",
+      "sha256": "bcc6f5b65c72cad25799de508f8243dd325a474af60c7fe52c73656371b54193"
+    },
+    {
+      "path": "narration.json",
+      "sha256": "678ecc664a615adec091036bcd1dc66b787bf1a3d2a9eed3f16cba620898fa77"
+    },
+    {
+      "path": "prints.js",
+      "sha256": "b3475f0d6e5523d1e7d2492f9243354cc4b1169628c5c3fc423e313e83151a63"
+    },
+    {
+      "path": "rig.js",
+      "sha256": "cfa120eef688ea7ff893a7a3a8891e539a1139fbe4af822cd7dcdd91be397874"
+    },
+    {
+      "path": "rope-prop.js",
+      "sha256": "3aa47b551e831ec75f3f6ddf455cef98b542023be6a165b489c59b9219c623e1"
+    },
+    {
+      "path": "score.json",
+      "sha256": "ab67e3577105c0391cd98a05161b26f441c04df91a951db539aef688f887fbfc"
+    },
+    {
+      "path": "sets.js",
+      "sha256": "0d22b581d15f69e2c6ca801a6c8f563e8056ed915e70c3d89ae11309fda31cf4"
+    },
+    {
+      "path": "terrain-props.js",
+      "sha256": "b812b893a7f7d1088de5232e657c88c7d847a73f5fd4f14ff5a94525a189fbd8"
+    },
+    {
+      "path": "timing-data.json",
+      "sha256": "6e88cb0e4b7e666686209703f88cba157ad8a4ca963e25aba0af6e7228bccef0"
+    },
+    {
+      "path": "trans.js",
+      "sha256": "549ab76f129cd0b71a1ed40e67a29f6a9c568de677355e7060cbbf876ced9346"
+    },
+    {
+      "path": "views.js",
+      "sha256": "4a5c551ae6ed77e2d9677ec495fb8f7f35244ecdabba58f33ea19eb707cb6563"
+    }
+  ],
+  "shared_assets": [
+    {
+      "path": "core/lib.js",
+      "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907"
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_diff.jpg",
+      "sha256": "278ed3382b3a28a95861a84ccf4f3b591abf96a203698152064d65fcc6425271"
+    }
+  ]
+}

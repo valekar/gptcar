@@ -1,0 +1,4444 @@
+{
+  "duration": 40,
+  "bpm": 96,
+  "key": "D major",
+  "sections": [
+    {
+      "start": 0,
+      "end": 2.5,
+      "name": "Burin and lifted silence"
+    },
+    {
+      "start": 2.5,
+      "end": 25,
+      "name": "Dry harpsichord and pizzicato cutting"
+    },
+    {
+      "start": 25,
+      "end": 26.25,
+      "name": "True silence"
+    },
+    {
+      "start": 26.25,
+      "end": 35.625,
+      "name": "First bowed strings: hand colour and cadence"
+    },
+    {
+      "start": 35.625,
+      "end": 40,
+      "name": "Tissue guard and final quiet"
+    }
+  ],
+  "notes": [
+    {
+      "t": 1.875,
+      "midi": 69,
+      "duration": 0.1,
+      "gain": 0.16,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 2.1875,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 2.5,
+      "midi": 86,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 2.535,
+      "midi": 62,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 2.5,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 2.65625,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 2.8125,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 2.8475,
+      "midi": 66,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 2.96875,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 3.125,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 3.16,
+      "midi": 69,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 3.125,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 3.28125,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 3.4375,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 3.4725,
+      "midi": 62,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 3.59375,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 3.75,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 3.785,
+      "midi": 66,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 3.75,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 3.90625,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 4.0625,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 4.0975,
+      "midi": 69,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 4.21875,
+      "midi": 86,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 4.375,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 4.41,
+      "midi": 62,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 4.375,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 4.53125,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 4.6875,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 4.7225,
+      "midi": 66,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 4.84375,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 5.0,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 5.035,
+      "midi": 69,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 5.0,
+      "midi": 37,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 5.07,
+      "midi": 81,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 5.15625,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 5.22625,
+      "midi": 81,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 5.3125,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 5.3475,
+      "midi": 61,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 5.3825,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 5.46875,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 5.53875,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 5.625,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 5.66,
+      "midi": 64,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 5.625,
+      "midi": 37,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 5.695,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 5.78125,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 5.85125,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 5.9375,
+      "midi": 88,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 5.9725,
+      "midi": 69,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 6.0075,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 6.09375,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 6.16375,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 6.25,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 6.285,
+      "midi": 61,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 6.25,
+      "midi": 37,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 6.32,
+      "midi": 81,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 6.40625,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 6.47625,
+      "midi": 81,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 6.5625,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 6.5975,
+      "midi": 64,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 6.6325,
+      "midi": 81,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 6.71875,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 6.78875,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 6.875,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 6.91,
+      "midi": 69,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 6.875,
+      "midi": 37,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 6.945,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 7.03125,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 7.10125,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 7.1875,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 7.2225,
+      "midi": 61,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 7.2575,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 7.34375,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 7.41375,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 7.5,
+      "midi": 71,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 7.535,
+      "midi": 62,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 7.5,
+      "midi": 35,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 7.57,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 7.65625,
+      "midi": 90,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 7.72625,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 7.8125,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 7.8475,
+      "midi": 66,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 7.8825,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 7.96875,
+      "midi": 71,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 8.03875,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 8.125,
+      "midi": 71,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 8.16,
+      "midi": 59,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 8.125,
+      "midi": 35,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 8.195,
+      "midi": 71,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 8.28125,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 8.35125,
+      "midi": 71,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 8.4375,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 8.4725,
+      "midi": 62,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 8.5075,
+      "midi": 71,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 8.59375,
+      "midi": 71,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 8.66375,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 8.75,
+      "midi": 71,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 8.785,
+      "midi": 66,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 8.75,
+      "midi": 35,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 8.82,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 8.90625,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 8.97625,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 9.0625,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 9.0975,
+      "midi": 59,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 9.1325,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 9.21875,
+      "midi": 71,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 9.28875,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 9.375,
+      "midi": 83,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 9.41,
+      "midi": 62,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 9.375,
+      "midi": 35,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 9.445,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 9.53125,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 9.60125,
+      "midi": 71,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 9.6875,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 9.7225,
+      "midi": 66,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 9.7575,
+      "midi": 71,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 9.84375,
+      "midi": 71,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 9.91375,
+      "midi": 71,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 10.0,
+      "midi": 67,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 10.035,
+      "midi": 55,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 10.0,
+      "midi": 31,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 10.07,
+      "midi": 71,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 10.15625,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 10.22625,
+      "midi": 71,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 10.3125,
+      "midi": 71,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 10.3475,
+      "midi": 59,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 10.3825,
+      "midi": 71,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 10.46875,
+      "midi": 67,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 10.53875,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 10.625,
+      "midi": 67,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 10.66,
+      "midi": 62,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 10.625,
+      "midi": 31,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 10.695,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 10.78125,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 10.85125,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 10.9375,
+      "midi": 71,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 10.9725,
+      "midi": 55,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 11.0075,
+      "midi": 67,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 11.09375,
+      "midi": 79,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 11.16375,
+      "midi": 67,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 11.25,
+      "midi": 67,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 11.285,
+      "midi": 59,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 11.25,
+      "midi": 31,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 11.32,
+      "midi": 67,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 11.40625,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 11.47625,
+      "midi": 71,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 11.5625,
+      "midi": 71,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 11.5975,
+      "midi": 62,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 11.6325,
+      "midi": 71,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 11.71875,
+      "midi": 67,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 11.78875,
+      "midi": 71,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 11.875,
+      "midi": 67,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 11.91,
+      "midi": 55,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 11.875,
+      "midi": 31,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 11.945,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 12.03125,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 12.10125,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 12.1875,
+      "midi": 71,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 12.2225,
+      "midi": 59,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 12.2575,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 12.34375,
+      "midi": 67,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 12.41375,
+      "midi": 67,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 12.5,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 12.535,
+      "midi": 64,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 12.5,
+      "midi": 33,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 12.57,
+      "midi": 69,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 12.65625,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 12.72625,
+      "midi": 69,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 12.8125,
+      "midi": 85,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 12.8475,
+      "midi": 57,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 12.8825,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 12.96875,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 13.03875,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 13.125,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 13.16,
+      "midi": 61,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 13.125,
+      "midi": 33,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 13.195,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 13.28125,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 13.35125,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 13.4375,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 13.4725,
+      "midi": 64,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 13.5075,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 13.59375,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 13.66375,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 13.75,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 13.785,
+      "midi": 57,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 13.75,
+      "midi": 33,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 13.82,
+      "midi": 69,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 13.90625,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 13.97625,
+      "midi": 69,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 14.0625,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 14.0975,
+      "midi": 61,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 14.1325,
+      "midi": 69,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 14.21875,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 14.28875,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 14.375,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 14.41,
+      "midi": 64,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 14.375,
+      "midi": 33,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 14.445,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 14.53125,
+      "midi": 88,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 14.60125,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 14.6875,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 14.7225,
+      "midi": 57,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 14.7575,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 14.84375,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 14.91375,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 15.0,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 15.035,
+      "midi": 66,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 15.0,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 15.07,
+      "midi": 81,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 15.15625,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 15.22625,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 15.3125,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 15.3475,
+      "midi": 69,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 15.3825,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 15.46875,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 15.53875,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 15.625,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 15.66,
+      "midi": 62,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 15.625,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 15.695,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 15.78125,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 15.85125,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 15.9375,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 15.9725,
+      "midi": 66,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 16.0075,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 16.09375,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 16.16375,
+      "midi": 81,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 16.25,
+      "midi": 86,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 16.285,
+      "midi": 69,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 16.25,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 16.32,
+      "midi": 81,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 16.40625,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 16.47625,
+      "midi": 81,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 16.5625,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 16.5975,
+      "midi": 62,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 16.6325,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 16.71875,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 16.78875,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 16.875,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 16.91,
+      "midi": 66,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 16.875,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 16.945,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 17.03125,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 17.10125,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 17.1875,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 17.2225,
+      "midi": 69,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 17.2575,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 17.34375,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 17.41375,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 17.5,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 17.535,
+      "midi": 64,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 17.5,
+      "midi": 40,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 17.57,
+      "midi": 83,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 17.65625,
+      "midi": 83,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 17.72625,
+      "midi": 83,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 17.8125,
+      "midi": 79,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 17.8475,
+      "midi": 67,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 17.8825,
+      "midi": 83,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 17.96875,
+      "midi": 88,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 18.03875,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 18.125,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 18.16,
+      "midi": 71,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 18.125,
+      "midi": 40,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 18.195,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 18.28125,
+      "midi": 83,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 18.35125,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 18.4375,
+      "midi": 79,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 18.4725,
+      "midi": 64,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 18.5075,
+      "midi": 79,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 18.59375,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 18.66375,
+      "midi": 79,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 18.75,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 18.785,
+      "midi": 67,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 18.75,
+      "midi": 40,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 18.82,
+      "midi": 79,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 18.90625,
+      "midi": 83,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 18.97625,
+      "midi": 83,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 19.0625,
+      "midi": 79,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 19.0975,
+      "midi": 71,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 19.1325,
+      "midi": 83,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 19.21875,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 19.28875,
+      "midi": 83,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 19.375,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 19.41,
+      "midi": 64,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 19.375,
+      "midi": 40,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 19.445,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 19.53125,
+      "midi": 83,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 19.60125,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 19.6875,
+      "midi": 91,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 19.7225,
+      "midi": 67,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 19.7575,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 19.84375,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 19.91375,
+      "midi": 79,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 20.0,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 20.035,
+      "midi": 64,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 20.0,
+      "midi": 33,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 20.07,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 20.15625,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 20.22625,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 20.3125,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 20.3475,
+      "midi": 57,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 20.3825,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 20.46875,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 20.53875,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 20.625,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 20.66,
+      "midi": 61,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 20.625,
+      "midi": 33,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 20.695,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 20.78125,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 20.85125,
+      "midi": 69,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 20.9375,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 20.9725,
+      "midi": 64,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 21.0075,
+      "midi": 69,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 21.09375,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 21.16375,
+      "midi": 69,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 21.25,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 21.285,
+      "midi": 57,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 21.25,
+      "midi": 33,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 21.32,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 21.40625,
+      "midi": 88,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 21.47625,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 21.5625,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 21.5975,
+      "midi": 61,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 21.6325,
+      "midi": 73,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 21.71875,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 21.78875,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 21.875,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 21.91,
+      "midi": 64,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 21.875,
+      "midi": 33,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 21.945,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 22.03125,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 22.10125,
+      "midi": 76,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 22.1875,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 22.2225,
+      "midi": 57,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 22.2575,
+      "midi": 69,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 22.34375,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 22.41375,
+      "midi": 69,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 22.5,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 22.535,
+      "midi": 66,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 22.5,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 22.57,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 22.65625,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 22.72625,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 22.8125,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 22.8475,
+      "midi": 69,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 22.8825,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 22.96875,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 23.03875,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 23.125,
+      "midi": 86,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 23.16,
+      "midi": 62,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 23.125,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 23.195,
+      "midi": 81,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 23.28125,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 23.35125,
+      "midi": 81,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 23.4375,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 23.4725,
+      "midi": 66,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 23.5075,
+      "midi": 81,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 23.59375,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 23.66375,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 23.75,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 23.785,
+      "midi": 69,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 23.75,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 23.82,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 23.90625,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 23.97625,
+      "midi": 74,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 24.0625,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 24.0975,
+      "midi": 62,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 24.1325,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 24.21875,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 24.28875,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 24.375,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.215,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 24.41,
+      "midi": 66,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 24.375,
+      "midi": 38,
+      "duration": 0.28,
+      "gain": 0.25,
+      "instrument": "cellos_pizz",
+      "pan": -0.3
+    },
+    {
+      "t": 24.445,
+      "midi": 78,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 24.53125,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 24.60125,
+      "midi": 81,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 24.6875,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 24.7225,
+      "midi": 69,
+      "duration": 0.13,
+      "gain": 0.17,
+      "instrument": "violas_pizz",
+      "pan": 0.25
+    },
+    {
+      "t": 24.7575,
+      "midi": 81,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 24.84375,
+      "midi": 86,
+      "duration": 0.12,
+      "gain": 0.18,
+      "instrument": "harpsichord",
+      "pan": -0.15
+    },
+    {
+      "t": 24.91375,
+      "midi": 81,
+      "duration": 0.1,
+      "gain": 0.1,
+      "instrument": "violins_pizz",
+      "pan": 0.3
+    },
+    {
+      "t": 11.275,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 11.275,
+      "midi": 81,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 11.4625,
+      "midi": 71,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 11.4625,
+      "midi": 83,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 11.65,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 11.65,
+      "midi": 85,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 11.8375,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 11.8375,
+      "midi": 86,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 12.025,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 12.025,
+      "midi": 88,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 12.2125,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 12.2125,
+      "midi": 90,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 12.4,
+      "midi": 80,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 12.4,
+      "midi": 92,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 12.5875,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 12.5875,
+      "midi": 93,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 15.8,
+      "midi": 71,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 15.8,
+      "midi": 83,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 15.925,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 15.925,
+      "midi": 85,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 16.05,
+      "midi": 75,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 16.05,
+      "midi": 87,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 16.175,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 16.175,
+      "midi": 88,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 16.3,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 16.3,
+      "midi": 90,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 16.425,
+      "midi": 80,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 16.425,
+      "midi": 92,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 16.55,
+      "midi": 82,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 16.55,
+      "midi": 94,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 16.675,
+      "midi": 83,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 16.675,
+      "midi": 95,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 20.275,
+      "midi": 69,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 20.275,
+      "midi": 81,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 20.425,
+      "midi": 71,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 20.425,
+      "midi": 83,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 20.575,
+      "midi": 73,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 20.575,
+      "midi": 85,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 20.725,
+      "midi": 74,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 20.725,
+      "midi": 86,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 20.875,
+      "midi": 76,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 20.875,
+      "midi": 88,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 21.025,
+      "midi": 78,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 21.025,
+      "midi": 90,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 21.175,
+      "midi": 80,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 21.175,
+      "midi": 92,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 21.325,
+      "midi": 81,
+      "duration": 0.12,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": -0.1
+    },
+    {
+      "t": 21.325,
+      "midi": 93,
+      "duration": 0.1,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0.22
+    },
+    {
+      "t": 10.425,
+      "midi": 93,
+      "duration": 0.28,
+      "gain": 0.23,
+      "instrument": "violin_pizz",
+      "pan": 0
+    },
+    {
+      "t": 10.425,
+      "midi": 81,
+      "duration": 0.3,
+      "gain": 0.2,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 15.5,
+      "midi": 95,
+      "duration": 0.28,
+      "gain": 0.23,
+      "instrument": "violin_pizz",
+      "pan": 0
+    },
+    {
+      "t": 15.5,
+      "midi": 83,
+      "duration": 0.3,
+      "gain": 0.2,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 19.875,
+      "midi": 93,
+      "duration": 0.28,
+      "gain": 0.23,
+      "instrument": "violin_pizz",
+      "pan": 0
+    },
+    {
+      "t": 19.875,
+      "midi": 81,
+      "duration": 0.3,
+      "gain": 0.2,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 2.5,
+      "midi": 38,
+      "duration": 0.65,
+      "gain": 0.45,
+      "instrument": "cellos_pizz",
+      "pan": -0.18
+    },
+    {
+      "t": 2.5,
+      "midi": 50,
+      "duration": 0.35,
+      "gain": 0.28,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 12.775,
+      "midi": 38,
+      "duration": 0.65,
+      "gain": 0.45,
+      "instrument": "cellos_pizz",
+      "pan": -0.18
+    },
+    {
+      "t": 12.775,
+      "midi": 50,
+      "duration": 0.35,
+      "gain": 0.28,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 16.8,
+      "midi": 38,
+      "duration": 0.65,
+      "gain": 0.45,
+      "instrument": "cellos_pizz",
+      "pan": -0.18
+    },
+    {
+      "t": 16.8,
+      "midi": 50,
+      "duration": 0.35,
+      "gain": 0.28,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 21.475,
+      "midi": 43,
+      "duration": 0.65,
+      "gain": 0.45,
+      "instrument": "cellos_pizz",
+      "pan": -0.18
+    },
+    {
+      "t": 21.475,
+      "midi": 55,
+      "duration": 0.35,
+      "gain": 0.28,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 31.25,
+      "midi": 38,
+      "duration": 0.65,
+      "gain": 0.45,
+      "instrument": "cellos_pizz",
+      "pan": -0.18
+    },
+    {
+      "t": 31.25,
+      "midi": 50,
+      "duration": 0.35,
+      "gain": 0.28,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 23.75,
+      "midi": 81,
+      "duration": 0.09,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 23.88,
+      "midi": 79,
+      "duration": 0.09,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 24.01,
+      "midi": 78,
+      "duration": 0.09,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 24.14,
+      "midi": 76,
+      "duration": 0.09,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 24.27,
+      "midi": 74,
+      "duration": 0.09,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 24.4,
+      "midi": 73,
+      "duration": 0.09,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 24.53,
+      "midi": 71,
+      "duration": 0.09,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 24.66,
+      "midi": 69,
+      "duration": 0.09,
+      "gain": 0.23,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 26.25,
+      "midi": 38,
+      "duration": 1.15,
+      "gain": 0.22,
+      "instrument": "cellos",
+      "pan": -0.3
+    },
+    {
+      "t": 26.25,
+      "midi": 66,
+      "duration": 1.15,
+      "gain": 0.13,
+      "instrument": "violas",
+      "pan": 0.1
+    },
+    {
+      "t": 26.25,
+      "midi": 81,
+      "duration": 1.15,
+      "gain": 0.13,
+      "instrument": "violins",
+      "pan": 0.3
+    },
+    {
+      "t": 26.25,
+      "midi": 74,
+      "duration": 0.5,
+      "gain": 0.14,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 26.4,
+      "midi": 78,
+      "duration": 0.5,
+      "gain": 0.14,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 26.55,
+      "midi": 81,
+      "duration": 0.5,
+      "gain": 0.14,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 27.083333,
+      "midi": 35,
+      "duration": 1.15,
+      "gain": 0.22,
+      "instrument": "cellos",
+      "pan": -0.3
+    },
+    {
+      "t": 27.083333,
+      "midi": 62,
+      "duration": 1.15,
+      "gain": 0.13,
+      "instrument": "violas",
+      "pan": 0.1
+    },
+    {
+      "t": 27.083333,
+      "midi": 78,
+      "duration": 1.15,
+      "gain": 0.13,
+      "instrument": "violins",
+      "pan": 0.3
+    },
+    {
+      "t": 27.916666,
+      "midi": 31,
+      "duration": 1.15,
+      "gain": 0.22,
+      "instrument": "cellos",
+      "pan": -0.3
+    },
+    {
+      "t": 27.916666,
+      "midi": 59,
+      "duration": 1.15,
+      "gain": 0.13,
+      "instrument": "violas",
+      "pan": 0.1
+    },
+    {
+      "t": 27.916666,
+      "midi": 74,
+      "duration": 1.15,
+      "gain": 0.13,
+      "instrument": "violins",
+      "pan": 0.3
+    },
+    {
+      "t": 27.916666,
+      "midi": 67,
+      "duration": 0.5,
+      "gain": 0.14,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 28.066666,
+      "midi": 71,
+      "duration": 0.5,
+      "gain": 0.14,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 28.216666,
+      "midi": 74,
+      "duration": 0.5,
+      "gain": 0.14,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 28.749999,
+      "midi": 40,
+      "duration": 1.15,
+      "gain": 0.22,
+      "instrument": "cellos",
+      "pan": -0.3
+    },
+    {
+      "t": 28.749999,
+      "midi": 67,
+      "duration": 1.15,
+      "gain": 0.13,
+      "instrument": "violas",
+      "pan": 0.1
+    },
+    {
+      "t": 28.749999,
+      "midi": 83,
+      "duration": 1.15,
+      "gain": 0.13,
+      "instrument": "violins",
+      "pan": 0.3
+    },
+    {
+      "t": 29.583332,
+      "midi": 33,
+      "duration": 1.15,
+      "gain": 0.22,
+      "instrument": "cellos",
+      "pan": -0.3
+    },
+    {
+      "t": 29.583332,
+      "midi": 61,
+      "duration": 1.15,
+      "gain": 0.13,
+      "instrument": "violas",
+      "pan": 0.1
+    },
+    {
+      "t": 29.583332,
+      "midi": 79,
+      "duration": 1.15,
+      "gain": 0.13,
+      "instrument": "violins",
+      "pan": 0.3
+    },
+    {
+      "t": 29.583332,
+      "midi": 69,
+      "duration": 0.5,
+      "gain": 0.14,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 29.733332,
+      "midi": 73,
+      "duration": 0.5,
+      "gain": 0.14,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 29.883332,
+      "midi": 79,
+      "duration": 0.5,
+      "gain": 0.14,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 30.416665,
+      "midi": 38,
+      "duration": 1.15,
+      "gain": 0.22,
+      "instrument": "cellos",
+      "pan": -0.3
+    },
+    {
+      "t": 30.416665,
+      "midi": 66,
+      "duration": 1.15,
+      "gain": 0.13,
+      "instrument": "violas",
+      "pan": 0.1
+    },
+    {
+      "t": 30.416665,
+      "midi": 81,
+      "duration": 1.15,
+      "gain": 0.13,
+      "instrument": "violins",
+      "pan": 0.3
+    },
+    {
+      "t": 26.4,
+      "midi": 81,
+      "duration": 0.65,
+      "gain": 0.15,
+      "instrument": "violin",
+      "pan": 0.18
+    },
+    {
+      "t": 27.2,
+      "midi": 83,
+      "duration": 0.65,
+      "gain": 0.15,
+      "instrument": "violin",
+      "pan": 0.18
+    },
+    {
+      "t": 28.0,
+      "midi": 86,
+      "duration": 0.65,
+      "gain": 0.15,
+      "instrument": "violin",
+      "pan": 0.18
+    },
+    {
+      "t": 28.8,
+      "midi": 85,
+      "duration": 0.65,
+      "gain": 0.15,
+      "instrument": "violin",
+      "pan": 0.18
+    },
+    {
+      "t": 29.6,
+      "midi": 86,
+      "duration": 0.65,
+      "gain": 0.15,
+      "instrument": "violin",
+      "pan": 0.18
+    },
+    {
+      "t": 31.3,
+      "midi": 50,
+      "duration": 0.9,
+      "gain": 0.24,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 31.25,
+      "midi": 54,
+      "duration": 0.9,
+      "gain": 0.24,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 31.25,
+      "midi": 57,
+      "duration": 0.9,
+      "gain": 0.24,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 31.3,
+      "midi": 62,
+      "duration": 0.9,
+      "gain": 0.24,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 31.25,
+      "midi": 66,
+      "duration": 0.9,
+      "gain": 0.24,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 31.25,
+      "midi": 69,
+      "duration": 0.9,
+      "gain": 0.24,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 33.75,
+      "midi": 86,
+      "duration": 0.25,
+      "gain": 0.14,
+      "instrument": "violin_pizz",
+      "pan": 0
+    },
+    {
+      "t": 35.625,
+      "midi": 62,
+      "duration": 0.8,
+      "gain": 0.12,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 35.685,
+      "midi": 69,
+      "duration": 0.8,
+      "gain": 0.12,
+      "instrument": "harpsichord",
+      "pan": 0
+    },
+    {
+      "t": 35.745,
+      "midi": 74,
+      "duration": 0.8,
+      "gain": 0.12,
+      "instrument": "harpsichord",
+      "pan": 0
+    }
+  ],
+  "hits": [],
+  "effects": [
+    {
+      "t": 0,
+      "kind": "workshop_clock",
+      "duration": 2,
+      "gain": 0.014,
+      "interval": 0.5
+    },
+    {
+      "t": 0,
+      "kind": "burin_scrape",
+      "duration": 2,
+      "gain": 0.21
+    },
+    {
+      "t": 0.18,
+      "kind": "swarf_ping",
+      "duration": 0.09,
+      "gain": 0.035
+    },
+    {
+      "t": 0.47,
+      "kind": "swarf_ping",
+      "duration": 0.09,
+      "gain": 0.035
+    },
+    {
+      "t": 0.89,
+      "kind": "swarf_ping",
+      "duration": 0.09,
+      "gain": 0.035
+    },
+    {
+      "t": 1.25,
+      "kind": "swarf_ping",
+      "duration": 0.09,
+      "gain": 0.035
+    },
+    {
+      "t": 1.62,
+      "kind": "swarf_ping",
+      "duration": 0.09,
+      "gain": 0.035
+    },
+    {
+      "t": 2,
+      "kind": "burin_lift",
+      "duration": 0.08,
+      "gain": 0.1
+    },
+    {
+      "t": 2.5,
+      "kind": "press_thump",
+      "duration": 0.3,
+      "gain": 0.27
+    },
+    {
+      "t": 2.15,
+      "kind": "press_roller",
+      "duration": 0.6,
+      "gain": 0.16
+    },
+    {
+      "t": 2.5,
+      "kind": "proof_peel",
+      "duration": 0.7,
+      "gain": 0.26
+    },
+    {
+      "t": 2.6,
+      "kind": "hatch_scratch",
+      "duration": 2,
+      "gain": 0.1,
+      "density": 0.6
+    },
+    {
+      "t": 3.3,
+      "kind": "hatch_scratch",
+      "duration": 2.2,
+      "gain": 0.1,
+      "density": 1
+    },
+    {
+      "t": 4.4,
+      "kind": "hatch_scratch",
+      "duration": 1.8,
+      "gain": 0.1,
+      "density": 1.5
+    },
+    {
+      "t": 5,
+      "kind": "hatch_scratch",
+      "duration": 1.9,
+      "gain": 0.1,
+      "density": 2
+    },
+    {
+      "t": 10.425,
+      "kind": "circular_scribe",
+      "duration": 0.4,
+      "gain": 0.12
+    },
+    {
+      "t": 10.475000000000001,
+      "kind": "burnish_rub",
+      "duration": 0.3,
+      "gain": 0.09
+    },
+    {
+      "t": 10.725,
+      "kind": "hatch_scratch",
+      "duration": 2.1500000000000004,
+      "gain": 0.14,
+      "density": 1.5
+    },
+    {
+      "t": 11.275,
+      "kind": "whoosh",
+      "duration": 1.5,
+      "gain": 0.07
+    },
+    {
+      "t": 12.775,
+      "kind": "paper_tap",
+      "duration": 0.09,
+      "gain": 0.14
+    },
+    {
+      "t": 12.675,
+      "kind": "pen_tap",
+      "duration": 0.12,
+      "gain": 0.07
+    },
+    {
+      "t": 13.275,
+      "kind": "pen_scratch",
+      "duration": 1.1,
+      "gain": 0.075
+    },
+    {
+      "t": 15.5,
+      "kind": "circular_scribe",
+      "duration": 0.4,
+      "gain": 0.12
+    },
+    {
+      "t": 15.55,
+      "kind": "burnish_rub",
+      "duration": 0.3,
+      "gain": 0.09
+    },
+    {
+      "t": 15.7,
+      "kind": "hatch_scratch",
+      "duration": 1.5,
+      "gain": 0.14,
+      "density": 1.5
+    },
+    {
+      "t": 15.8,
+      "kind": "whoosh",
+      "duration": 1.0,
+      "gain": 0.07
+    },
+    {
+      "t": 16.8,
+      "kind": "paper_tap",
+      "duration": 0.09,
+      "gain": 0.14
+    },
+    {
+      "t": 16.9,
+      "kind": "pen_tap",
+      "duration": 0.12,
+      "gain": 0.07
+    },
+    {
+      "t": 17.4,
+      "kind": "pen_scratch",
+      "duration": 1.1,
+      "gain": 0.075
+    },
+    {
+      "t": 19.875,
+      "kind": "circular_scribe",
+      "duration": 0.4,
+      "gain": 0.12
+    },
+    {
+      "t": 19.925,
+      "kind": "burnish_rub",
+      "duration": 0.3,
+      "gain": 0.09
+    },
+    {
+      "t": 20.075,
+      "kind": "hatch_scratch",
+      "duration": 1.5,
+      "gain": 0.14,
+      "density": 1.5
+    },
+    {
+      "t": 20.275,
+      "kind": "whoosh",
+      "duration": 1.2000000000000028,
+      "gain": 0.07
+    },
+    {
+      "t": 21.475,
+      "kind": "paper_tap",
+      "duration": 0.09,
+      "gain": 0.14
+    },
+    {
+      "t": 21.375,
+      "kind": "pen_tap",
+      "duration": 0.12,
+      "gain": 0.07
+    },
+    {
+      "t": 21.875,
+      "kind": "pen_scratch",
+      "duration": 1.1,
+      "gain": 0.075
+    },
+    {
+      "t": 6.25,
+      "kind": "pen_tap",
+      "duration": 0.035,
+      "gain": 0.04
+    },
+    {
+      "t": 6.319230769230769,
+      "kind": "pen_tap",
+      "duration": 0.035,
+      "gain": 0.04
+    },
+    {
+      "t": 6.388461538461539,
+      "kind": "pen_tap",
+      "duration": 0.035,
+      "gain": 0.04
+    },
+    {
+      "t": 6.457692307692308,
+      "kind": "pen_tap",
+      "duration": 0.035,
+      "gain": 0.04
+    },
+    {
+      "t": 6.526923076923077,
+      "kind": "pen_tap",
+      "duration": 0.035,
+      "gain": 0.04
+    },
+    {
+      "t": 6.596153846153846,
+      "kind": "pen_tap",
+      "duration": 0.035,
+      "gain": 0.04
+    },
+    {
+      "t": 6.665384615384616,
+      "kind": "pen_tap",
+      "duration": 0.035,
+      "gain": 0.04
+    },
+    {
+      "t": 6.734615384615385,
+      "kind": "pen_tap",
+      "duration": 0.035,
+      "gain": 0.04
+    },
+    {
+      "t": 6.803846153846154,
+      "kind": "pen_tap",
+      "duration": 0.035,
+      "gain": 0.04
+    },
+    {
+      "t": 6.873076923076923,
+      "kind": "pen_tap",
+      "duration": 0.035,
+      "gain": 0.04
+    },
+    {
+      "t": 6.9423076923076925,
+      "kind": "pen_tap",
+      "duration": 0.035,
+      "gain": 0.04
+    },
+    {
+      "t": 7.0115384615384615,
+      "kind": "pen_tap",
+      "duration": 0.035,
+      "gain": 0.04
+    },
+    {
+      "t": 7.0807692307692305,
+      "kind": "pen_tap",
+      "duration": 0.035,
+      "gain": 0.04
+    },
+    {
+      "t": 26.35,
+      "kind": "water_plip",
+      "duration": 0.15,
+      "gain": 0.11
+    },
+    {
+      "t": 26.43,
+      "kind": "wet_brush",
+      "duration": 0.6,
+      "gain": 0.12
+    },
+    {
+      "t": 26.770000000000003,
+      "kind": "water_plip",
+      "duration": 0.15,
+      "gain": 0.11
+    },
+    {
+      "t": 26.85,
+      "kind": "wet_brush",
+      "duration": 0.6,
+      "gain": 0.12
+    },
+    {
+      "t": 27.19,
+      "kind": "water_plip",
+      "duration": 0.15,
+      "gain": 0.11
+    },
+    {
+      "t": 27.27,
+      "kind": "wet_brush",
+      "duration": 0.6,
+      "gain": 0.12
+    },
+    {
+      "t": 27.610000000000003,
+      "kind": "water_plip",
+      "duration": 0.15,
+      "gain": 0.11
+    },
+    {
+      "t": 27.69,
+      "kind": "wet_brush",
+      "duration": 0.6,
+      "gain": 0.12
+    },
+    {
+      "t": 28.03,
+      "kind": "water_plip",
+      "duration": 0.15,
+      "gain": 0.11
+    },
+    {
+      "t": 28.11,
+      "kind": "wet_brush",
+      "duration": 0.6,
+      "gain": 0.12
+    },
+    {
+      "t": 28.450000000000003,
+      "kind": "water_plip",
+      "duration": 0.15,
+      "gain": 0.11
+    },
+    {
+      "t": 28.53,
+      "kind": "wet_brush",
+      "duration": 0.6,
+      "gain": 0.12
+    },
+    {
+      "t": 28.87,
+      "kind": "water_plip",
+      "duration": 0.15,
+      "gain": 0.11
+    },
+    {
+      "t": 28.95,
+      "kind": "wet_brush",
+      "duration": 0.6,
+      "gain": 0.12
+    },
+    {
+      "t": 31.25,
+      "kind": "paper_tap",
+      "duration": 0.12,
+      "gain": 0.14
+    },
+    {
+      "t": 31.3,
+      "kind": "pen_scratch",
+      "duration": 0.75,
+      "gain": 0.06
+    },
+    {
+      "t": 35.425,
+      "kind": "tissue_rustle",
+      "duration": 0.9,
+      "gain": 0.16
+    }
+  ],
+  "silence_music_ranges": [
+    [
+      0,
+      1.875
+    ],
+    [
+      2,
+      2.5
+    ],
+    [
+      25,
+      26.25
+    ],
+    [
+      39,
+      40
+    ]
+  ],
+  "silence_ranges": [
+    [
+      2,
+      2.5
+    ],
+    [
+      25,
+      26.25
+    ],
+    [
+      39,
+      40
+    ]
+  ],
+  "music_rms_db": -26,
+  "duck_db": 6,
+  "room": 0.17
+}

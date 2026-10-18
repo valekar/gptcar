@@ -1,0 +1,9 @@
+Three Trails — Silkscreen Travel Poster full-film recreation
+Model: GPT-6.1 Sol, high reasoning.
+Independent scene/camera/timeline assembly, workbench, wall placement, printing choreography, foreground transitions, layered ascent staging and end-card assembly in src/film.js.
+MIT generic components shared from Lemo-Opuscar: silk.js print/material primitives; poster.js reusable poster/banner/stat template; scenes.js complete landscape plane assets and dashed-route geometry. These are substantial disclosed reusable components, not claimed as independently redrawn assets.
+Original content.json and cue/camera tables are analytical references. No upstream scene/master renderer, source video frame or original audio track imported.
+All park names, trail names, distances, duration and climb values retained exactly as published fictional narrative data.
+Fonts: Big Shoulders and Outfit, Google Fonts, SIL OFL; local font files and original library notices included.
+New100BPM D-major acoustic folk score: guitar_nylon/nylon physical slide, harmonica, jazz bass, cajon and shaker; VSCO2 CE/VCSL/Karoryfer CC0 samples and code physical synthesis. Explicit recreated material/nature Foley produced by root, not reused soundtrack. No narration.
+Original authorship replaced truthfully by GPT replication credit.

@@ -1,0 +1,13 @@
+# Source review — The Bell Founder
+
+The complete five original contact sheets and published script/cue tables were examined before assembly. The delivered target is 1,404 frames at 24 fps, 1280 × 720; art is generated at 1920 × 1080. The private original conversation prompt is unavailable. This is an explicitly source-informed reconstruction with reused generic character, prop and print factories, not a blind benchmark.
+
+Visual checks covered 100 newly rendered stills across the full 58.5 seconds, 27 matched original/new time pairs, and 12 additional paper/peel repair stills. Coverage includes the knife's traced horizon, successive relief carving, mirrored title, brayer/paper/baren, village/belfry push, sculpted strickle hands, all six offering inserts and clutch, both furnace/casting/reveal sequences, failed wall crack, doorway pause, open/half/shut compass, hand release and overhead drop, second radial cuts, installed tower, rope hands, clapper hold, bell pullback, snow freeze/erasure and final peel/rule/card. Reference pair times use decoded CFR frame boundaries for fast transitions.
+
+The rubbed paper back now develops a local soft show-through impression rather than uniform opacity. The second peel's rolled face follows the actual published picture. The baren is cached as a deterministic rasterized code widget to remove browser path tessellation variance. Ten seek-away-and-back checks at 3.5, 8.45, 15.5, 22.33, 29.5, 32.15, 39.5, 43.5, 45.85 and 54.8 seconds produce identical screenshots. READY and the 1920 × 1080 canvas were verified without page errors.
+
+The new audio ledger has 148 notes, 70 sampled percussion hits and 115 material effects. Every material effect was smoke checked for finite, nonzero, exact-duration output; sample instrument/variant loads passed. All four original narration inputs are retained. Music-only silence is specified for 28⅓–32⅓; faint wind alone occupies 29⅔–32⅓. Full-mix digital silence is specified for 44⅓–47⅓. The first foundry bell is at 47⅓, with two echoes; strings enter at 48⅓. Root production will verify actual synthesized takes, final PCM silence and decoded final-movie pairs independently.
+
+Remaining differences: independently staged microgeometry, finger/face contours, snow/debris phase, carved grain and line sampling, tiny registration/peel filtering and end-card authorship. Numeric landmarks and generic prop proportions were measured from published source to preserve the same subject and composition. Fresh music/foley follow the published structure but are not waveform copies.
+
+Private analytical artifacts: work/gptcar/woodcut-v2/final-stills, final-paper and matched-pair sheets in the workspace. No analytical reference frames ship as generated artwork.

@@ -1,0 +1,56 @@
+[
+  {
+    "path": "styles/engraving/demo/engine/burin.js",
+    "sha256": "0c96d24e39b5ed275816fbaa8de993bc9a2a658d067e680728171150e5352242",
+    "purpose": "Attributed reusable swelling burin line/material/printmaking primitive engine; copied locally without original scene assembly."
+  },
+  {
+    "path": "styles/engraving/demo/engine/plate.js",
+    "sha256": "279b7547dd6cac5edaeb2f93b02c03ec2ae05da38d7df79f6cacdb832b51511b",
+    "purpose": "Attributed reusable swelling burin line/material/printmaking primitive engine; copied locally without original scene assembly."
+  },
+  {
+    "path": "styles/engraving/demo/engine/wash.js",
+    "sha256": "04893b86658947fb0312cd46df7f7863c214d05c3cf99ef7dcf3e473736a1001",
+    "purpose": "Attributed reusable swelling burin line/material/printmaking primitive engine; copied locally without original scene assembly."
+  },
+  {
+    "path": "styles/engraving/demo/engine/copper.js",
+    "sha256": "e7771b4ceb045df0c6ccecf9fc8c40974ebbf8ce2a9281a28b9dc554b147585d",
+    "purpose": "Attributed reusable swelling burin line/material/printmaking primitive engine; copied locally without original scene assembly."
+  },
+  {
+    "path": "styles/engraving/demo/subjects/bee.js",
+    "sha256": "42995d407d3c1c5fd9c23754bae11a5f01a3604bd80eb2e1290f64ba18dd6bcf",
+    "purpose": "Attributed reusable complete reusable anatomical honeybee specimen/detail drawings; copied locally without original scene assembly."
+  },
+  {
+    "path": "styles/engraving/demo/subjects/details.js",
+    "sha256": "aad1b78da841975eba844acb770255a9a27bb6c99c27df5e34a4a843c9b0abd5",
+    "purpose": "Attributed reusable complete reusable anatomical honeybee specimen/detail drawings; copied locally without original scene assembly."
+  },
+  {
+    "path": "styles/engraving/demo/content.json",
+    "sha256": "dc06966364f258420a072e03031949018018222cd32e8c14914e30c4461281c0",
+    "purpose": "Read-only published exact text, event and numeric camera calibration reference; no original film scene functions imported, copied or executed."
+  },
+  {
+    "path": "styles/engraving/demo/lines.json",
+    "sha256": "184a84822d6fb752ba6e37390163aca1a2f7a4bc6bb4aa3a1c84ccdc1d0ac1c6",
+    "purpose": "Read-only published exact text, event and numeric camera calibration reference; no original film scene functions imported, copied or executed."
+  },
+  {
+    "path": "styles/engraving/demo/events.json",
+    "sha256": "b2d58e35a007bace9ac1ffaf75a5c1cc5d9a9269f5158cb5fbbd2275bc7993d7",
+    "purpose": "Read-only published exact text, event and numeric camera calibration reference; no original film scene functions imported, copied or executed."
+  },
+  {
+    "path": "styles/engraving/demo/film.js",
+    "sha256": "2584571f559ff168001d0e647bab568182964db7c1b6fdae98d03fc397841002",
+    "purpose": "Read-only published exact text, event and numeric camera calibration reference; no original film scene functions imported, copied or executed."
+  },
+  {
+    "path": "replicas/engraving/fonts",
+    "purpose": "Bodoni Moda roman/italic and Pinyon Script, Google Fonts, SIL OFL; local TTF and license files."
+  }
+]

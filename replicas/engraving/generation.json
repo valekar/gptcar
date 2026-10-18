@@ -1,0 +1,192 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "slug": "engraving",
+  "title": "The Honeybee, Plate VII",
+  "uses_upstream_scene_code": false,
+  "source_ready": true,
+  "status": "source-ready-for-independent-review",
+  "matched_brief_sha256": "cb24238de73a4bca6f2fca985a923ec0a058c4229d598ba22002ca994905c04d",
+  "delivery": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frame_count": 960,
+    "duration": 40
+  },
+  "duration": 40,
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "review_times": [
+    0.5,
+    1.5,
+    2,
+    2.25,
+    2.5,
+    2.9167,
+    3.2,
+    3.5,
+    4.5,
+    5.5,
+    6.25,
+    6.5,
+    7.5,
+    8.5,
+    9.375,
+    9.5,
+    10.425,
+    10.5,
+    10.75,
+    11.275,
+    11.5,
+    12.5,
+    12.775,
+    13.5,
+    14.5,
+    15.5,
+    15.8,
+    16.5,
+    16.8,
+    17.5,
+    18.5,
+    19.5,
+    19.875,
+    20.275,
+    20.5,
+    21.475,
+    21.5,
+    22.5,
+    23.5,
+    23.75,
+    24.5,
+    25,
+    25.5,
+    26.25,
+    26.4,
+    26.5,
+    27.5,
+    28.5,
+    29.5,
+    30.5,
+    31.25,
+    31.5,
+    32.5,
+    33.5,
+    34.5,
+    35.5,
+    35.625,
+    35.9,
+    36.2,
+    36.5,
+    37.5,
+    38.5,
+    39.5
+  ],
+  "shared_components": [
+    {
+      "path": "styles/engraving/demo/engine/burin.js",
+      "sha256": "0c96d24e39b5ed275816fbaa8de993bc9a2a658d067e680728171150e5352242",
+      "purpose": "Attributed reusable swelling burin line/material/printmaking primitive engine; copied locally without original scene assembly."
+    },
+    {
+      "path": "styles/engraving/demo/engine/plate.js",
+      "sha256": "279b7547dd6cac5edaeb2f93b02c03ec2ae05da38d7df79f6cacdb832b51511b",
+      "purpose": "Attributed reusable swelling burin line/material/printmaking primitive engine; copied locally without original scene assembly."
+    },
+    {
+      "path": "styles/engraving/demo/engine/wash.js",
+      "sha256": "04893b86658947fb0312cd46df7f7863c214d05c3cf99ef7dcf3e473736a1001",
+      "purpose": "Attributed reusable swelling burin line/material/printmaking primitive engine; copied locally without original scene assembly."
+    },
+    {
+      "path": "styles/engraving/demo/engine/copper.js",
+      "sha256": "e7771b4ceb045df0c6ccecf9fc8c40974ebbf8ce2a9281a28b9dc554b147585d",
+      "purpose": "Attributed reusable swelling burin line/material/printmaking primitive engine; copied locally without original scene assembly."
+    },
+    {
+      "path": "styles/engraving/demo/subjects/bee.js",
+      "sha256": "42995d407d3c1c5fd9c23754bae11a5f01a3604bd80eb2e1290f64ba18dd6bcf",
+      "purpose": "Attributed reusable complete reusable anatomical honeybee specimen/detail drawings; copied locally without original scene assembly."
+    },
+    {
+      "path": "styles/engraving/demo/subjects/details.js",
+      "sha256": "aad1b78da841975eba844acb770255a9a27bb6c99c27df5e34a4a843c9b0abd5",
+      "purpose": "Attributed reusable complete reusable anatomical honeybee specimen/detail drawings; copied locally without original scene assembly."
+    },
+    {
+      "path": "styles/engraving/demo/content.json",
+      "sha256": "dc06966364f258420a072e03031949018018222cd32e8c14914e30c4461281c0",
+      "purpose": "Read-only published exact text, event and numeric camera calibration reference; no original film scene functions imported, copied or executed."
+    },
+    {
+      "path": "styles/engraving/demo/lines.json",
+      "sha256": "184a84822d6fb752ba6e37390163aca1a2f7a4bc6bb4aa3a1c84ccdc1d0ac1c6",
+      "purpose": "Read-only published exact text, event and numeric camera calibration reference; no original film scene functions imported, copied or executed."
+    },
+    {
+      "path": "styles/engraving/demo/events.json",
+      "sha256": "b2d58e35a007bace9ac1ffaf75a5c1cc5d9a9269f5158cb5fbbd2275bc7993d7",
+      "purpose": "Read-only published exact text, event and numeric camera calibration reference; no original film scene functions imported, copied or executed."
+    },
+    {
+      "path": "styles/engraving/demo/film.js",
+      "sha256": "2584571f559ff168001d0e647bab568182964db7c1b6fdae98d03fc397841002",
+      "purpose": "Read-only published exact text, event and numeric camera calibration reference; no original film scene functions imported, copied or executed."
+    },
+    {
+      "path": "replicas/engraving/fonts",
+      "purpose": "Bodoni Moda roman/italic and Pinyon Script, Google Fonts, SIL OFL; local TTF and license files."
+    }
+  ],
+  "source_sha256": {
+    "CREDITS": "4f6f6bb3f0276d1830a23d515173942c6fce9bd7791b7082ef33fb7d999c046d",
+    "FACTS.md": "c1fc640c2954a05231f64f5fa0cd3d70e1d9010d99207bd8590b84961bb6ee1f",
+    "LICENSE": "14c9ff6f14bfb2391e74fedb01c256891d2a3bba1c2acf5789901bdf77e54e33",
+    "PROMPT.md": "b33dff077a1d329d05475f184d03fb4ddafabe26165c2fe74c2d0d7b04f855f4",
+    "REVIEW.md": "b83a94566c78d629ede7375dddfaa5cd4a2d514134ad675190ecc4dc65ea5b38",
+    "TREATMENT.md": "db765175bc5ae38bfaf44356ff5783bcaf129f47f57de18f5aca54ec7a8c8a55",
+    "fonts/BodoniModa-Italic-VF.ttf": "dfff1619f8f6871c6372f8855b67211f9a73b4e93d45aca868cd8f46a48622de",
+    "fonts/BodoniModa-VF.ttf": "550f5e34ee0a828d7941b1fe9bc58b34e5260d3f33a61532e6d0a0114e79a5cf",
+    "fonts/OFL.txt": "61d07cb0eaa943943648df2b11d0c2210e772053c192871e13f680b53fe0b77e",
+    "fonts/Pinyon-OFL.txt": "61d07cb0eaa943943648df2b11d0c2210e772053c192871e13f680b53fe0b77e",
+    "fonts/PinyonScript-Regular.ttf": "4aab130a6ed27f8b8117738c84a5602edf9300cdcc0651a9a65bf96f451ac29a",
+    "fonts/fonts.css": "069583a9ccbfc267cc74298d4077af8a882c5ef6f87c1b15524032e71d1660b8",
+    "index.html": "21fc710b1caa166db8e9b0c682ac802dd56bac7faea25c5651b861559519a511",
+    "narration.json": "cbd9b4f55572e6a8d69c37370bc1e5ef0ed4ffbf664ebdc41345a1914a1d916c",
+    "score.json": "cf0c2f5e18fba4062bcb2d1828b8cd653fcb837acdcc1ecaa15177919bd52b30",
+    "shared-components.json": "220085c54ec65ce4601797ed62d7934e49c8197cffc2a477aee32ce5b5b069ab",
+    "src/engine/burin.js": "0c96d24e39b5ed275816fbaa8de993bc9a2a658d067e680728171150e5352242",
+    "src/engine/copper.js": "e7771b4ceb045df0c6ccecf9fc8c40974ebbf8ce2a9281a28b9dc554b147585d",
+    "src/engine/plate.js": "279b7547dd6cac5edaeb2f93b02c03ec2ae05da38d7df79f6cacdb832b51511b",
+    "src/engine/wash.js": "04893b86658947fb0312cd46df7f7863c214d05c3cf99ef7dcf3e473736a1001",
+    "src/film.js": "e158cdc032549c9da185fdd3a9584b818b69d603c248b60adef2cbe57ab61ca0",
+    "src/subjects/bee.js": "42995d407d3c1c5fd9c23754bae11a5f01a3604bd80eb2e1290f64ba18dd6bcf",
+    "src/subjects/details.js": "aad1b78da841975eba844acb770255a9a27bb6c99c27df5e34a4a843c9b0abd5"
+  },
+  "determinism": {
+    "times": [
+      39.5,
+      12.5,
+      2.9167,
+      29.5,
+      0.5,
+      21.5,
+      10.75,
+      36.2,
+      5.5,
+      26.5,
+      16.5
+    ],
+    "all_equal": true,
+    "method": "Eleven final canvas data URL pairs after scrambled seeks"
+  },
+  "reconstruction_variance": [
+    "Fine leader routing and camera interpolation",
+    "Proof-peel curvature",
+    "Swarf phase and pigment density",
+    "New music and synthesized Foley performances",
+    "Truthful GPT authorship replaces original attribution lettering"
+  ]
+}

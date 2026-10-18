@@ -108,7 +108,7 @@ def compose(score,voice_records,duration,out):
         if not len(active):raise RuntimeError(line['id']+' is silent')
         # Bound Kokoro transient peaks before matching speech level.
         a=np.tanh(a/(rms(active)*4))*rms(active)*4;a*=10**(-18/20)/max(rms(a[np.abs(a)>.003]),1e-8)
-        add(speech,a,line['start']);i=max(0,round((line['start']-.15)*SR));j=min(len(duck),round((line['start']+len(a)/SR+.2)*SR));duck[i:j]=np.minimum(duck[i:j],.62)
+        add(speech,a,line['start'],line.get('gain',1),np.clip(line.get('pan',0),-1,1));i=max(0,round((line['start']-.15)*SR));j=min(len(duck),round((line['start']+len(a)/SR+.2)*SR));duck[i:j]=np.minimum(duck[i:j],.62)
     duck=uniform_filter1d(duck,size=int(.25*SR),mode='nearest');mix=(music+foley)*duck[:,None]+speech
     if score.get('master_filter')=='optical':
         # Recreate the narrow optical track with subtle deterministic wow/flutter.
