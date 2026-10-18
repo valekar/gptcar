@@ -1,0 +1,2685 @@
+{
+  "duration": 113.6,
+  "bpm": 103.4,
+  "composition": "Fresh GPT composition following reference acoustic documentary direction; no original recording or melody reused.",
+  "sections": [
+    {
+      "start": 0,
+      "end": 10.9,
+      "intent": "Paper, sun, title: sparse open piano intervals and breathy flute; a curious first phrase."
+    },
+    {
+      "start": 10.9,
+      "end": 23,
+      "intent": "Desert: fingerpicked acoustic guitar enters, lightly syncopated; broad space around narration."
+    },
+    {
+      "start": 23,
+      "end": 34,
+      "intent": "Mulga water: plucked upper piano answering the14drop plinks and buoyant budgie woodwind."
+    },
+    {
+      "start": 34,
+      "end": 41.6,
+      "intent": "Gum woodland: open warm strings and clear rising flute, more generous harmony."
+    },
+    {
+      "start": 41.6,
+      "end": 47.2,
+      "intent": "Fire: low cello suspense, piano withheld for the short spoken sentence; crackle is foreground matter."
+    },
+    {
+      "start": 47.2,
+      "end": 52,
+      "intent": "Recovery: green new-note motif in harp and glock, warm harmonic release."
+    },
+    {
+      "start": 52,
+      "end": 61.2,
+      "intent": "Tall wet forest: sustained upward strings and slow harp scale for the980px tree tilt; air at crown."
+    },
+    {
+      "start": 61.2,
+      "end": 70.3,
+      "intent": "Rainforest: richest layered acoustic texture, rising flute and high string counterline, rain/whipbird."
+    },
+    {
+      "start": 70.3,
+      "end": 79.4,
+      "intent": "Mist then map: soften to piano/harp, a new turn of harmony as coastline is drawn."
+    },
+    {
+      "start": 79.4,
+      "end": 86.2,
+      "intent": "Deep-time rewind: suspended green chord and a long breath of solo flute."
+    },
+    {
+      "start": 86.2,
+      "end": 95,
+      "intent": "Drift and dry: cello movement, gently ascending piano, slight tension then resolution."
+    },
+    {
+      "start": 95,
+      "end": 101.4,
+      "intent": "Dry heart/green edge: resolve the melodic thought with intimate piano and woodwind."
+    },
+    {
+      "start": 101.4,
+      "end": 113.6,
+      "intent": "Title and credits: answer the opening piano phrase with warm acoustic guitar, slow tonic resolution and long fade."
+    }
+  ],
+  "notes": [
+    {
+      "t": 0.35,
+      "duration": 2.5007,
+      "midi": 62,
+      "gain": 0.035750000000000004,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 0.46,
+      "duration": 2.3483,
+      "midi": 69,
+      "gain": 0.035750000000000004,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 0.57,
+      "duration": 1.7136,
+      "midi": 74,
+      "gain": 0.035750000000000004,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 3.8316,
+      "duration": 2.4347,
+      "midi": 62,
+      "gain": 0.035750000000000004,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 3.9416,
+      "duration": 2.5583,
+      "midi": 69,
+      "gain": 0.035750000000000004,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 4.0516,
+      "duration": 1.9498,
+      "midi": 74,
+      "gain": 0.035750000000000004,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 7.3132,
+      "duration": 2.5813,
+      "midi": 62,
+      "gain": 0.035750000000000004,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 7.4232,
+      "duration": 1.7273,
+      "midi": 69,
+      "gain": 0.035750000000000004,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 7.5332,
+      "duration": 1.6308,
+      "midi": 74,
+      "gain": 0.035750000000000004,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 0.9,
+      "duration": 1.3926,
+      "midi": 62,
+      "gain": 0.029249999999999998,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 2.0605,
+      "duration": 0.7544,
+      "midi": 66,
+      "gain": 0.029249999999999998,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 3.2211,
+      "duration": 0.7544,
+      "midi": 69,
+      "gain": 0.029249999999999998,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 4.3816,
+      "duration": 1.3926,
+      "midi": 74,
+      "gain": 0.029249999999999998,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 5.5422,
+      "duration": 0.7544,
+      "midi": 78,
+      "gain": 0.029249999999999998,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 6.7027,
+      "duration": 0.7544,
+      "midi": 74,
+      "gain": 0.029249999999999998,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 7.8632,
+      "duration": 1.3926,
+      "midi": 69,
+      "gain": 0.029249999999999998,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 9.0238,
+      "duration": 0.7544,
+      "midi": 66,
+      "gain": 0.029249999999999998,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 11.25,
+      "duration": 1.7799,
+      "midi": 62,
+      "gain": 0.044000000000000004,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 11.36,
+      "duration": 2.4948,
+      "midi": 65,
+      "gain": 0.044000000000000004,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 11.47,
+      "duration": 1.6221,
+      "midi": 69,
+      "gain": 0.044000000000000004,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 15.8922,
+      "duration": 2.1312,
+      "midi": 62,
+      "gain": 0.044000000000000004,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 16.0022,
+      "duration": 2.2188,
+      "midi": 65,
+      "gain": 0.044000000000000004,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 16.1122,
+      "duration": 1.6366,
+      "midi": 69,
+      "gain": 0.044000000000000004,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 20.5343,
+      "duration": 1.7039,
+      "midi": 62,
+      "gain": 0.044000000000000004,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 20.6443,
+      "duration": 2.4182,
+      "midi": 65,
+      "gain": 0.044000000000000004,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 20.7543,
+      "duration": 1.6798,
+      "midi": 69,
+      "gain": 0.044000000000000004,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 11.1,
+      "duration": 1.4507,
+      "midi": 53,
+      "gain": 0.052000000000000005,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 12.2605,
+      "duration": 1.4507,
+      "midi": 50,
+      "gain": 0.052000000000000005,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 13.4211,
+      "duration": 1.4507,
+      "midi": 57,
+      "gain": 0.052000000000000005,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 14.5816,
+      "duration": 1.4507,
+      "midi": 65,
+      "gain": 0.052000000000000005,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 15.7422,
+      "duration": 1.4507,
+      "midi": 50,
+      "gain": 0.052000000000000005,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 16.9027,
+      "duration": 1.4507,
+      "midi": 57,
+      "gain": 0.052000000000000005,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 19.2238,
+      "duration": 1.4507,
+      "midi": 62,
+      "gain": 0.052000000000000005,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 20.3843,
+      "duration": 1.4507,
+      "midi": 57,
+      "gain": 0.052000000000000005,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 21.5449,
+      "duration": 1.4507,
+      "midi": 53,
+      "gain": 0.052000000000000005,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 12.2,
+      "duration": 1.3926,
+      "midi": 69,
+      "gain": 0.036,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 13.3605,
+      "duration": 0.7544,
+      "midi": 74,
+      "gain": 0.036,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 14.5211,
+      "duration": 0.7544,
+      "midi": 78,
+      "gain": 0.036,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 15.6816,
+      "duration": 1.3926,
+      "midi": 81,
+      "gain": 0.036,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 16.8422,
+      "duration": 0.7544,
+      "midi": 74,
+      "gain": 0.036,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 18.0027,
+      "duration": 0.7544,
+      "midi": 69,
+      "gain": 0.036,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 19.1632,
+      "duration": 1.3926,
+      "midi": 66,
+      "gain": 0.036,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 20.3238,
+      "duration": 0.7544,
+      "midi": 62,
+      "gain": 0.036,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 23.15,
+      "duration": 5.5,
+      "midi": 48,
+      "gain": 0.051,
+      "pan": -0.3,
+      "instrument": "cellos"
+    },
+    {
+      "t": 23.22,
+      "duration": 5.5,
+      "midi": 52,
+      "gain": 0.051,
+      "pan": 0.15,
+      "instrument": "violins"
+    },
+    {
+      "t": 23.29,
+      "duration": 5.5,
+      "midi": 55,
+      "gain": 0.051,
+      "pan": 0.4,
+      "instrument": "violins"
+    },
+    {
+      "t": 23.35,
+      "duration": 2.0271,
+      "midi": 60,
+      "gain": 0.04675,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 23.46,
+      "duration": 1.8316,
+      "midi": 64,
+      "gain": 0.04675,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 23.57,
+      "duration": 2.3091,
+      "midi": 67,
+      "gain": 0.04675,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 27.9922,
+      "duration": 2.0335,
+      "midi": 60,
+      "gain": 0.04675,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 28.1022,
+      "duration": 2.1593,
+      "midi": 64,
+      "gain": 0.04675,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 28.2122,
+      "duration": 2.0346,
+      "midi": 67,
+      "gain": 0.04675,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 32.6343,
+      "duration": 1.8922,
+      "midi": 60,
+      "gain": 0.04675,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 32.7443,
+      "duration": 2.4036,
+      "midi": 64,
+      "gain": 0.04675,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 32.8543,
+      "duration": 2.3084,
+      "midi": 67,
+      "gain": 0.04675,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 23.2,
+      "duration": 1.4507,
+      "midi": 55,
+      "gain": 0.05525,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 24.3605,
+      "duration": 1.4507,
+      "midi": 52,
+      "gain": 0.05525,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 25.5211,
+      "duration": 1.4507,
+      "midi": 48,
+      "gain": 0.05525,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 26.6816,
+      "duration": 1.4507,
+      "midi": 67,
+      "gain": 0.05525,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 27.8422,
+      "duration": 1.4507,
+      "midi": 52,
+      "gain": 0.05525,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 29.0027,
+      "duration": 1.4507,
+      "midi": 48,
+      "gain": 0.05525,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 31.3238,
+      "duration": 1.4507,
+      "midi": 64,
+      "gain": 0.05525,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 32.4843,
+      "duration": 1.4507,
+      "midi": 48,
+      "gain": 0.05525,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 23.9,
+      "duration": 1.3926,
+      "midi": 74,
+      "gain": 0.03825,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 25.0605,
+      "duration": 0.7544,
+      "midi": 69,
+      "gain": 0.03825,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 26.2211,
+      "duration": 0.7544,
+      "midi": 66,
+      "gain": 0.03825,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 27.3816,
+      "duration": 1.3926,
+      "midi": 62,
+      "gain": 0.03825,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 28.5422,
+      "duration": 0.7544,
+      "midi": 66,
+      "gain": 0.03825,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 29.7027,
+      "duration": 0.7544,
+      "midi": 69,
+      "gain": 0.03825,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 30.8632,
+      "duration": 1.3926,
+      "midi": 74,
+      "gain": 0.03825,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 32.0238,
+      "duration": 0.7544,
+      "midi": 78,
+      "gain": 0.03825,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 34.15,
+      "duration": 5.5,
+      "midi": 53,
+      "gain": 0.054,
+      "pan": -0.3,
+      "instrument": "cellos"
+    },
+    {
+      "t": 34.22,
+      "duration": 5.5,
+      "midi": 57,
+      "gain": 0.054,
+      "pan": 0.15,
+      "instrument": "violins"
+    },
+    {
+      "t": 34.29,
+      "duration": 5.5,
+      "midi": 60,
+      "gain": 0.054,
+      "pan": 0.4,
+      "instrument": "violins"
+    },
+    {
+      "t": 34.35,
+      "duration": 2.0512,
+      "midi": 65,
+      "gain": 0.0495,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 34.46,
+      "duration": 2.5982,
+      "midi": 69,
+      "gain": 0.0495,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 34.57,
+      "duration": 1.9663,
+      "midi": 72,
+      "gain": 0.0495,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 38.9922,
+      "duration": 1.9536,
+      "midi": 65,
+      "gain": 0.0495,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 39.1022,
+      "duration": 1.886,
+      "midi": 69,
+      "gain": 0.0495,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 39.2122,
+      "duration": 1.6822,
+      "midi": 72,
+      "gain": 0.0495,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 34.2,
+      "duration": 1.4507,
+      "midi": 53,
+      "gain": 0.0585,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 35.3605,
+      "duration": 1.4507,
+      "midi": 60,
+      "gain": 0.0585,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 36.5211,
+      "duration": 1.4507,
+      "midi": 57,
+      "gain": 0.0585,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 37.6816,
+      "duration": 1.4507,
+      "midi": 65,
+      "gain": 0.0585,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 38.8422,
+      "duration": 1.4507,
+      "midi": 60,
+      "gain": 0.0585,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 40.0027,
+      "duration": 1.4507,
+      "midi": 57,
+      "gain": 0.0585,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 35.3,
+      "duration": 1.3926,
+      "midi": 62,
+      "gain": 0.0405,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 36.4605,
+      "duration": 0.7544,
+      "midi": 66,
+      "gain": 0.0405,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 37.6211,
+      "duration": 0.7544,
+      "midi": 69,
+      "gain": 0.0405,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 38.7816,
+      "duration": 1.3926,
+      "midi": 74,
+      "gain": 0.0405,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 39.9422,
+      "duration": 0.7544,
+      "midi": 78,
+      "gain": 0.0405,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 41.6,
+      "duration": 4.7,
+      "midi": 46,
+      "gain": 0.07,
+      "pan": -0.25,
+      "instrument": "cellos"
+    },
+    {
+      "t": 43.4,
+      "duration": 2.9,
+      "midi": 53,
+      "gain": 0.035,
+      "pan": 0.25,
+      "instrument": "violins"
+    },
+    {
+      "t": 47.35,
+      "duration": 4.2,
+      "midi": 55,
+      "gain": 0.048,
+      "pan": -0.3,
+      "instrument": "cellos"
+    },
+    {
+      "t": 47.42,
+      "duration": 4.2,
+      "midi": 59,
+      "gain": 0.048,
+      "pan": 0.15,
+      "instrument": "violins"
+    },
+    {
+      "t": 47.49,
+      "duration": 4.2,
+      "midi": 62,
+      "gain": 0.048,
+      "pan": 0.4,
+      "instrument": "violins"
+    },
+    {
+      "t": 47.55,
+      "duration": 1.6871,
+      "midi": 67,
+      "gain": 0.044000000000000004,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 47.66,
+      "duration": 1.6459,
+      "midi": 71,
+      "gain": 0.044000000000000004,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 47.77,
+      "duration": 2.5724,
+      "midi": 74,
+      "gain": 0.044000000000000004,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 48.5,
+      "duration": 1.3926,
+      "midi": 74,
+      "gain": 0.036,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 49.6605,
+      "duration": 0.7544,
+      "midi": 69,
+      "gain": 0.036,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 50.8211,
+      "duration": 0.7544,
+      "midi": 66,
+      "gain": 0.036,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 47.5,
+      "duration": 1.4,
+      "midi": 79,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 48.2,
+      "duration": 1.4,
+      "midi": 83,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 48.9,
+      "duration": 1.4,
+      "midi": 86,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 49.6,
+      "duration": 1.4,
+      "midi": 79,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 50.3,
+      "duration": 1.4,
+      "midi": 83,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 51.0,
+      "duration": 1.4,
+      "midi": 86,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 47.6,
+      "duration": 1.7,
+      "midi": 79,
+      "gain": 0.025,
+      "pan": 0.35,
+      "instrument": "glockenspiel"
+    },
+    {
+      "t": 48.4,
+      "duration": 1.7,
+      "midi": 81,
+      "gain": 0.025,
+      "pan": 0.35,
+      "instrument": "glockenspiel"
+    },
+    {
+      "t": 49.2,
+      "duration": 1.7,
+      "midi": 86,
+      "gain": 0.025,
+      "pan": 0.35,
+      "instrument": "glockenspiel"
+    },
+    {
+      "t": 50.0,
+      "duration": 1.7,
+      "midi": 88,
+      "gain": 0.025,
+      "pan": 0.35,
+      "instrument": "glockenspiel"
+    },
+    {
+      "t": 52.15,
+      "duration": 5.5,
+      "midi": 53,
+      "gain": 0.051,
+      "pan": -0.3,
+      "instrument": "cellos"
+    },
+    {
+      "t": 52.22,
+      "duration": 5.5,
+      "midi": 57,
+      "gain": 0.051,
+      "pan": 0.15,
+      "instrument": "violins"
+    },
+    {
+      "t": 52.29,
+      "duration": 5.5,
+      "midi": 62,
+      "gain": 0.051,
+      "pan": 0.4,
+      "instrument": "violins"
+    },
+    {
+      "t": 52.35,
+      "duration": 1.8341,
+      "midi": 65,
+      "gain": 0.04675,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 52.46,
+      "duration": 1.954,
+      "midi": 69,
+      "gain": 0.04675,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 52.57,
+      "duration": 1.7829,
+      "midi": 74,
+      "gain": 0.04675,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 56.9922,
+      "duration": 2.3273,
+      "midi": 65,
+      "gain": 0.04675,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 57.1022,
+      "duration": 2.1556,
+      "midi": 69,
+      "gain": 0.04675,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 57.2122,
+      "duration": 2.1631,
+      "midi": 74,
+      "gain": 0.04675,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 52.9,
+      "duration": 1.3926,
+      "midi": 62,
+      "gain": 0.03825,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 54.0605,
+      "duration": 0.7544,
+      "midi": 66,
+      "gain": 0.03825,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 55.2211,
+      "duration": 0.7544,
+      "midi": 69,
+      "gain": 0.03825,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 56.3816,
+      "duration": 1.3926,
+      "midi": 74,
+      "gain": 0.03825,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 57.5422,
+      "duration": 0.7544,
+      "midi": 78,
+      "gain": 0.03825,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 58.7027,
+      "duration": 0.7544,
+      "midi": 74,
+      "gain": 0.03825,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 59.8632,
+      "duration": 1.3926,
+      "midi": 69,
+      "gain": 0.03825,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 52.3,
+      "duration": 1.4,
+      "midi": 77,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 53.0,
+      "duration": 1.4,
+      "midi": 81,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 53.7,
+      "duration": 1.4,
+      "midi": 86,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 54.4,
+      "duration": 1.4,
+      "midi": 77,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 55.1,
+      "duration": 1.4,
+      "midi": 81,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 55.8,
+      "duration": 1.4,
+      "midi": 86,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 56.5,
+      "duration": 1.4,
+      "midi": 77,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 57.2,
+      "duration": 1.4,
+      "midi": 81,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 57.9,
+      "duration": 1.4,
+      "midi": 86,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 58.6,
+      "duration": 1.4,
+      "midi": 77,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 61.35,
+      "duration": 5.5,
+      "midi": 50,
+      "gain": 0.06,
+      "pan": -0.3,
+      "instrument": "cellos"
+    },
+    {
+      "t": 61.42,
+      "duration": 5.5,
+      "midi": 54,
+      "gain": 0.06,
+      "pan": 0.15,
+      "instrument": "violins"
+    },
+    {
+      "t": 61.49,
+      "duration": 5.5,
+      "midi": 57,
+      "gain": 0.06,
+      "pan": 0.4,
+      "instrument": "violins"
+    },
+    {
+      "t": 61.55,
+      "duration": 1.6795,
+      "midi": 62,
+      "gain": 0.055,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 61.66,
+      "duration": 2.0758,
+      "midi": 66,
+      "gain": 0.055,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 61.77,
+      "duration": 1.6787,
+      "midi": 69,
+      "gain": 0.055,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 61.88,
+      "duration": 1.9832,
+      "midi": 73,
+      "gain": 0.055,
+      "pan": 0.14,
+      "instrument": "piano"
+    },
+    {
+      "t": 66.1922,
+      "duration": 2.1504,
+      "midi": 62,
+      "gain": 0.055,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 66.3022,
+      "duration": 1.7195,
+      "midi": 66,
+      "gain": 0.055,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 66.4122,
+      "duration": 2.4558,
+      "midi": 69,
+      "gain": 0.055,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 66.5222,
+      "duration": 1.9511,
+      "midi": 73,
+      "gain": 0.055,
+      "pan": 0.14,
+      "instrument": "piano"
+    },
+    {
+      "t": 61.4,
+      "duration": 1.4507,
+      "midi": 61,
+      "gain": 0.065,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 62.5605,
+      "duration": 1.4507,
+      "midi": 54,
+      "gain": 0.065,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 63.7211,
+      "duration": 1.4507,
+      "midi": 61,
+      "gain": 0.065,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 64.8816,
+      "duration": 1.4507,
+      "midi": 66,
+      "gain": 0.065,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 66.0422,
+      "duration": 1.4507,
+      "midi": 61,
+      "gain": 0.065,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 67.2027,
+      "duration": 1.4507,
+      "midi": 54,
+      "gain": 0.065,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 62.5,
+      "duration": 1.3926,
+      "midi": 69,
+      "gain": 0.045,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 63.3704,
+      "duration": 0.7544,
+      "midi": 74,
+      "gain": 0.045,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 64.2408,
+      "duration": 0.7544,
+      "midi": 78,
+      "gain": 0.045,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 65.1112,
+      "duration": 1.3926,
+      "midi": 81,
+      "gain": 0.045,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 65.9816,
+      "duration": 0.7544,
+      "midi": 74,
+      "gain": 0.045,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 66.852,
+      "duration": 0.7544,
+      "midi": 69,
+      "gain": 0.045,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 67.7224,
+      "duration": 1.3926,
+      "midi": 66,
+      "gain": 0.045,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 68.5928,
+      "duration": 0.7544,
+      "midi": 62,
+      "gain": 0.045,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 70.65,
+      "duration": 2.1507,
+      "midi": 60,
+      "gain": 0.030250000000000003,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 70.76,
+      "duration": 2.4162,
+      "midi": 64,
+      "gain": 0.030250000000000003,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 70.87,
+      "duration": 1.8751,
+      "midi": 69,
+      "gain": 0.030250000000000003,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 74.1316,
+      "duration": 2.4431,
+      "midi": 60,
+      "gain": 0.030250000000000003,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 74.2416,
+      "duration": 1.9865,
+      "midi": 64,
+      "gain": 0.030250000000000003,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 74.3516,
+      "duration": 2.5731,
+      "midi": 69,
+      "gain": 0.030250000000000003,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 77.6132,
+      "duration": 1.9577,
+      "midi": 60,
+      "gain": 0.030250000000000003,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 77.7232,
+      "duration": 1.7576,
+      "midi": 64,
+      "gain": 0.030250000000000003,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 77.8332,
+      "duration": 2.5188,
+      "midi": 69,
+      "gain": 0.030250000000000003,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 71.2,
+      "duration": 1.3926,
+      "midi": 74,
+      "gain": 0.02475,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 72.3605,
+      "duration": 0.7544,
+      "midi": 69,
+      "gain": 0.02475,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 73.5211,
+      "duration": 0.7544,
+      "midi": 66,
+      "gain": 0.02475,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 74.6816,
+      "duration": 1.3926,
+      "midi": 62,
+      "gain": 0.02475,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 75.8422,
+      "duration": 0.7544,
+      "midi": 66,
+      "gain": 0.02475,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 77.0027,
+      "duration": 0.7544,
+      "midi": 69,
+      "gain": 0.02475,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 78.1632,
+      "duration": 1.3926,
+      "midi": 74,
+      "gain": 0.02475,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 70.6,
+      "duration": 1.4,
+      "midi": 72,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 71.3,
+      "duration": 1.4,
+      "midi": 76,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 72.0,
+      "duration": 1.4,
+      "midi": 81,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 72.7,
+      "duration": 1.4,
+      "midi": 72,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 73.4,
+      "duration": 1.4,
+      "midi": 76,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 74.1,
+      "duration": 1.4,
+      "midi": 81,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 74.8,
+      "duration": 1.4,
+      "midi": 72,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 75.5,
+      "duration": 1.4,
+      "midi": 76,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 76.2,
+      "duration": 1.4,
+      "midi": 81,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 76.9,
+      "duration": 1.4,
+      "midi": 72,
+      "gain": 0.035,
+      "pan": -0.15,
+      "instrument": "harp"
+    },
+    {
+      "t": 79.55,
+      "duration": 5.5,
+      "midi": 53,
+      "gain": 0.039,
+      "pan": -0.3,
+      "instrument": "cellos"
+    },
+    {
+      "t": 79.62,
+      "duration": 5.5,
+      "midi": 57,
+      "gain": 0.039,
+      "pan": 0.15,
+      "instrument": "violins"
+    },
+    {
+      "t": 79.69,
+      "duration": 5.5,
+      "midi": 60,
+      "gain": 0.039,
+      "pan": 0.4,
+      "instrument": "violins"
+    },
+    {
+      "t": 79.75,
+      "duration": 1.7579,
+      "midi": 65,
+      "gain": 0.035750000000000004,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 79.86,
+      "duration": 2.1532,
+      "midi": 69,
+      "gain": 0.035750000000000004,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 79.97,
+      "duration": 2.3441,
+      "midi": 72,
+      "gain": 0.035750000000000004,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 80.08,
+      "duration": 2.0478,
+      "midi": 76,
+      "gain": 0.035750000000000004,
+      "pan": 0.14,
+      "instrument": "piano"
+    },
+    {
+      "t": 83.2316,
+      "duration": 2.1752,
+      "midi": 65,
+      "gain": 0.035750000000000004,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 83.3416,
+      "duration": 2.1681,
+      "midi": 69,
+      "gain": 0.035750000000000004,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 83.4516,
+      "duration": 1.7673,
+      "midi": 72,
+      "gain": 0.035750000000000004,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 83.5616,
+      "duration": 2.5783,
+      "midi": 76,
+      "gain": 0.035750000000000004,
+      "pan": 0.14,
+      "instrument": "piano"
+    },
+    {
+      "t": 80.7,
+      "duration": 1.3926,
+      "midi": 62,
+      "gain": 0.029249999999999998,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 81.8605,
+      "duration": 0.7544,
+      "midi": 66,
+      "gain": 0.029249999999999998,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 83.0211,
+      "duration": 0.7544,
+      "midi": 69,
+      "gain": 0.029249999999999998,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 84.1816,
+      "duration": 1.3926,
+      "midi": 74,
+      "gain": 0.029249999999999998,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 86.35,
+      "duration": 5.5,
+      "midi": 46,
+      "gain": 0.045,
+      "pan": -0.3,
+      "instrument": "cellos"
+    },
+    {
+      "t": 86.42,
+      "duration": 5.5,
+      "midi": 50,
+      "gain": 0.045,
+      "pan": 0.15,
+      "instrument": "violins"
+    },
+    {
+      "t": 86.49,
+      "duration": 5.5,
+      "midi": 55,
+      "gain": 0.045,
+      "pan": 0.4,
+      "instrument": "violins"
+    },
+    {
+      "t": 86.55,
+      "duration": 2.1417,
+      "midi": 58,
+      "gain": 0.04125,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 86.66,
+      "duration": 2.4956,
+      "midi": 62,
+      "gain": 0.04125,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 86.77,
+      "duration": 1.7213,
+      "midi": 67,
+      "gain": 0.04125,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 91.1922,
+      "duration": 1.9824,
+      "midi": 58,
+      "gain": 0.04125,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 91.3022,
+      "duration": 1.8014,
+      "midi": 62,
+      "gain": 0.04125,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 91.4122,
+      "duration": 2.3061,
+      "midi": 67,
+      "gain": 0.04125,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 87.1,
+      "duration": 1.3926,
+      "midi": 69,
+      "gain": 0.03375,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 87.9704,
+      "duration": 0.7544,
+      "midi": 74,
+      "gain": 0.03375,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 88.8408,
+      "duration": 0.7544,
+      "midi": 78,
+      "gain": 0.03375,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 89.7112,
+      "duration": 1.3926,
+      "midi": 81,
+      "gain": 0.03375,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 90.5816,
+      "duration": 0.7544,
+      "midi": 74,
+      "gain": 0.03375,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 91.452,
+      "duration": 0.7544,
+      "midi": 69,
+      "gain": 0.03375,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 92.3224,
+      "duration": 1.3926,
+      "midi": 66,
+      "gain": 0.03375,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 93.1928,
+      "duration": 0.7544,
+      "midi": 62,
+      "gain": 0.03375,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 95.15,
+      "duration": 5.5,
+      "midi": 50,
+      "gain": 0.039,
+      "pan": -0.3,
+      "instrument": "cellos"
+    },
+    {
+      "t": 95.22,
+      "duration": 5.5,
+      "midi": 54,
+      "gain": 0.039,
+      "pan": 0.15,
+      "instrument": "violins"
+    },
+    {
+      "t": 95.29,
+      "duration": 5.5,
+      "midi": 57,
+      "gain": 0.039,
+      "pan": 0.4,
+      "instrument": "violins"
+    },
+    {
+      "t": 95.35,
+      "duration": 2.1968,
+      "midi": 62,
+      "gain": 0.035750000000000004,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 95.46,
+      "duration": 2.3171,
+      "midi": 66,
+      "gain": 0.035750000000000004,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 95.57,
+      "duration": 1.6086,
+      "midi": 69,
+      "gain": 0.035750000000000004,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 99.9922,
+      "duration": 2.48,
+      "midi": 62,
+      "gain": 0.035750000000000004,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 100.1022,
+      "duration": 2.3321,
+      "midi": 66,
+      "gain": 0.035750000000000004,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 100.2122,
+      "duration": 1.7298,
+      "midi": 69,
+      "gain": 0.035750000000000004,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 96.3,
+      "duration": 1.3926,
+      "midi": 74,
+      "gain": 0.029249999999999998,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 97.4605,
+      "duration": 0.7544,
+      "midi": 69,
+      "gain": 0.029249999999999998,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 98.6211,
+      "duration": 0.7544,
+      "midi": 66,
+      "gain": 0.029249999999999998,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 99.7816,
+      "duration": 1.3926,
+      "midi": 62,
+      "gain": 0.029249999999999998,
+      "pan": 0.25,
+      "instrument": "flute"
+    },
+    {
+      "t": 101.75,
+      "duration": 2.0043,
+      "midi": 62,
+      "gain": 0.02475,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 101.86,
+      "duration": 2.0097,
+      "midi": 66,
+      "gain": 0.02475,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 101.97,
+      "duration": 1.9499,
+      "midi": 69,
+      "gain": 0.02475,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 102.08,
+      "duration": 2.0738,
+      "midi": 74,
+      "gain": 0.02475,
+      "pan": 0.14,
+      "instrument": "piano"
+    },
+    {
+      "t": 105.2316,
+      "duration": 2.1406,
+      "midi": 62,
+      "gain": 0.02475,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 105.3416,
+      "duration": 2.1354,
+      "midi": 66,
+      "gain": 0.02475,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 105.4516,
+      "duration": 1.7244,
+      "midi": 69,
+      "gain": 0.02475,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 105.5616,
+      "duration": 1.9926,
+      "midi": 74,
+      "gain": 0.02475,
+      "pan": 0.14,
+      "instrument": "piano"
+    },
+    {
+      "t": 108.7132,
+      "duration": 2.2775,
+      "midi": 62,
+      "gain": 0.02475,
+      "pan": -0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 108.8232,
+      "duration": 2.0659,
+      "midi": 66,
+      "gain": 0.02475,
+      "pan": -0.12,
+      "instrument": "piano"
+    },
+    {
+      "t": 108.9332,
+      "duration": 2.0653,
+      "midi": 69,
+      "gain": 0.02475,
+      "pan": 0.010000000000000009,
+      "instrument": "piano"
+    },
+    {
+      "t": 109.0432,
+      "duration": 1.922,
+      "midi": 74,
+      "gain": 0.02475,
+      "pan": 0.14,
+      "instrument": "piano"
+    },
+    {
+      "t": 101.6,
+      "duration": 1.4507,
+      "midi": 50,
+      "gain": 0.02925,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 102.7605,
+      "duration": 1.4507,
+      "midi": 57,
+      "gain": 0.02925,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 103.9211,
+      "duration": 1.4507,
+      "midi": 50,
+      "gain": 0.02925,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 105.0816,
+      "duration": 1.4507,
+      "midi": 69,
+      "gain": 0.02925,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 106.2422,
+      "duration": 1.4507,
+      "midi": 50,
+      "gain": 0.02925,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 107.4027,
+      "duration": 1.4507,
+      "midi": 57,
+      "gain": 0.02925,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 109.7238,
+      "duration": 1.4507,
+      "midi": 69,
+      "gain": 0.02925,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 110.8843,
+      "duration": 1.4507,
+      "midi": 50,
+      "gain": 0.02925,
+      "pan": -0.35,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 102.3,
+      "duration": 1.3926,
+      "midi": 62,
+      "gain": 0.02025,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 103.4605,
+      "duration": 0.7544,
+      "midi": 66,
+      "gain": 0.02025,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 104.6211,
+      "duration": 0.7544,
+      "midi": 69,
+      "gain": 0.02025,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 105.7816,
+      "duration": 1.3926,
+      "midi": 74,
+      "gain": 0.02025,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 106.9422,
+      "duration": 0.7544,
+      "midi": 78,
+      "gain": 0.02025,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 108.1027,
+      "duration": 0.7544,
+      "midi": 74,
+      "gain": 0.02025,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 109.2632,
+      "duration": 1.3926,
+      "midi": 69,
+      "gain": 0.02025,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 110.4238,
+      "duration": 0.7544,
+      "midi": 66,
+      "gain": 0.02025,
+      "pan": 0.25,
+      "instrument": "piano"
+    },
+    {
+      "t": 105.2,
+      "duration": 3.2,
+      "midi": 74,
+      "gain": 0.045,
+      "pan": 0.1,
+      "instrument": "piano"
+    },
+    {
+      "t": 106.4,
+      "duration": 3.2,
+      "midi": 69,
+      "gain": 0.045,
+      "pan": 0.1,
+      "instrument": "piano"
+    },
+    {
+      "t": 107.5,
+      "duration": 3.2,
+      "midi": 66,
+      "gain": 0.045,
+      "pan": 0.1,
+      "instrument": "piano"
+    },
+    {
+      "t": 109.0,
+      "duration": 3.2,
+      "midi": 62,
+      "gain": 0.045,
+      "pan": 0.1,
+      "instrument": "piano"
+    },
+    {
+      "t": 108.7,
+      "duration": 3.6,
+      "midi": 38,
+      "gain": 0.022,
+      "pan": -0.3,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 108.7,
+      "duration": 3.6,
+      "midi": 57,
+      "gain": 0.022,
+      "pan": -0.3,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 108.7,
+      "duration": 3.6,
+      "midi": 62,
+      "gain": 0.022,
+      "pan": -0.3,
+      "instrument": "acoustic_guitar"
+    },
+    {
+      "t": 108.7,
+      "duration": 3.6,
+      "midi": 66,
+      "gain": 0.022,
+      "pan": -0.3,
+      "instrument": "acoustic_guitar"
+    }
+  ],
+  "effects": [
+    {
+      "t": 0.25,
+      "duration": 1.1,
+      "kind": "paper",
+      "gain": 0.06,
+      "pan": -0.5
+    },
+    {
+      "t": 1.6,
+      "duration": 0.25,
+      "kind": "stamp",
+      "gain": 0.1,
+      "pan": 0.52
+    },
+    {
+      "t": 10.2,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": -0.3
+    },
+    {
+      "t": 13.4,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": -0.3
+    },
+    {
+      "t": 17.8,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": -0.3
+    },
+    {
+      "t": 23,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": -0.3
+    },
+    {
+      "t": 27.4,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": -0.3
+    },
+    {
+      "t": 34,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": 0.4
+    },
+    {
+      "t": 41.6,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": -0.3
+    },
+    {
+      "t": 47.4,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": -0.3
+    },
+    {
+      "t": 52,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": 0.4
+    },
+    {
+      "t": 55.2,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": -0.3
+    },
+    {
+      "t": 61.2,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": -0.3
+    },
+    {
+      "t": 70.3,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": -0.3
+    },
+    {
+      "t": 73.3,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": -0.3
+    },
+    {
+      "t": 75.6,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": -0.3
+    },
+    {
+      "t": 79.4,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": -0.3
+    },
+    {
+      "t": 86.2,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": -0.3
+    },
+    {
+      "t": 97.4,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": -0.3
+    },
+    {
+      "t": 101.5,
+      "duration": 0.65,
+      "kind": "brush",
+      "gain": 0.045,
+      "pan": -0.3
+    },
+    {
+      "t": 26.4,
+      "duration": 0.12,
+      "kind": "raindrop",
+      "gain": 0.065,
+      "pan": 0.22
+    },
+    {
+      "t": 26.759999999999998,
+      "duration": 0.12,
+      "kind": "raindrop",
+      "gain": 0.065,
+      "pan": -0.22
+    },
+    {
+      "t": 27.119999999999997,
+      "duration": 0.12,
+      "kind": "raindrop",
+      "gain": 0.065,
+      "pan": 0.22
+    },
+    {
+      "t": 27.479999999999997,
+      "duration": 0.12,
+      "kind": "raindrop",
+      "gain": 0.065,
+      "pan": -0.22
+    },
+    {
+      "t": 27.84,
+      "duration": 0.12,
+      "kind": "raindrop",
+      "gain": 0.065,
+      "pan": 0.22
+    },
+    {
+      "t": 28.2,
+      "duration": 0.12,
+      "kind": "raindrop",
+      "gain": 0.065,
+      "pan": -0.22
+    },
+    {
+      "t": 28.56,
+      "duration": 0.12,
+      "kind": "raindrop",
+      "gain": 0.065,
+      "pan": 0.22
+    },
+    {
+      "t": 28.919999999999998,
+      "duration": 0.12,
+      "kind": "raindrop",
+      "gain": 0.065,
+      "pan": -0.22
+    },
+    {
+      "t": 29.279999999999998,
+      "duration": 0.12,
+      "kind": "raindrop",
+      "gain": 0.065,
+      "pan": 0.22
+    },
+    {
+      "t": 29.639999999999997,
+      "duration": 0.12,
+      "kind": "raindrop",
+      "gain": 0.065,
+      "pan": -0.22
+    },
+    {
+      "t": 30.0,
+      "duration": 0.12,
+      "kind": "raindrop",
+      "gain": 0.065,
+      "pan": 0.22
+    },
+    {
+      "t": 30.36,
+      "duration": 0.12,
+      "kind": "raindrop",
+      "gain": 0.065,
+      "pan": -0.22
+    },
+    {
+      "t": 30.72,
+      "duration": 0.12,
+      "kind": "raindrop",
+      "gain": 0.065,
+      "pan": 0.22
+    },
+    {
+      "t": 31.08,
+      "duration": 0.12,
+      "kind": "raindrop",
+      "gain": 0.065,
+      "pan": -0.22
+    },
+    {
+      "t": 11.5,
+      "duration": 12,
+      "kind": "wind",
+      "gain": 0.025,
+      "pan": -0.1
+    },
+    {
+      "t": 25.6,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": 0.39605644946302765
+    },
+    {
+      "t": 25.790000000000003,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": -0.4384851436698611
+    },
+    {
+      "t": 25.98,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": 0.611218789338829
+    },
+    {
+      "t": 26.17,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": -0.2430594119881504
+    },
+    {
+      "t": 26.360000000000003,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": 0.14997894642105813
+    },
+    {
+      "t": 26.55,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": 0.5697879007665589
+    },
+    {
+      "t": 26.740000000000002,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": -0.34992146883587083
+    },
+    {
+      "t": 26.93,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": 0.5219469556509149
+    },
+    {
+      "t": 27.12,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": -0.3249076347894706
+    },
+    {
+      "t": 27.310000000000002,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": 0.5406373645189158
+    },
+    {
+      "t": 27.5,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": -0.023171322090469126
+    },
+    {
+      "t": 27.69,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": 0.39130310837003424
+    },
+    {
+      "t": 27.880000000000003,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": -0.6822889961079885
+    },
+    {
+      "t": 28.07,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": 0.4560327231164123
+    },
+    {
+      "t": 28.26,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": -0.1692558597279623
+    },
+    {
+      "t": 28.450000000000003,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": 0.07336696296407097
+    },
+    {
+      "t": 28.64,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": 0.07727892919257917
+    },
+    {
+      "t": 28.830000000000002,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": 0.5025656760720909
+    },
+    {
+      "t": 29.020000000000003,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": 0.5920928738499063
+    },
+    {
+      "t": 29.21,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": -0.5482642474919635
+    },
+    {
+      "t": 29.400000000000002,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": 0.16633450113595516
+    },
+    {
+      "t": 29.590000000000003,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": -0.05167146573248749
+    },
+    {
+      "t": 29.78,
+      "duration": 0.11,
+      "kind": "bird",
+      "gain": 0.022,
+      "pan": 0.5861322201065804
+    },
+    {
+      "t": 41.6,
+      "duration": 5.7,
+      "kind": "fire",
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 61.2,
+      "duration": 10,
+      "kind": "rain",
+      "gain": 0.045,
+      "pan": 0
+    },
+    {
+      "t": 65.8,
+      "duration": 0.7,
+      "kind": "whipbird",
+      "gain": 0.07,
+      "pan": -0.5
+    },
+    {
+      "t": 68.6,
+      "duration": 0.7,
+      "kind": "whipbird",
+      "gain": 0.06,
+      "pan": 0.4
+    },
+    {
+      "t": 70.3,
+      "duration": 3,
+      "kind": "mist",
+      "gain": 0.05,
+      "pan": 0
+    },
+    {
+      "t": 89.4,
+      "duration": 5.2,
+      "kind": "fire",
+      "gain": 0.024,
+      "pan": 0
+    }
+  ],
+  "mix_direction": "Warm acoustic recording character, speech forward;4dB smooth duck under spokenlines; soft reverb, fade final4s, integrated-14LUFS. Need scene-matter effects: stamp, brush, rain drops, wind,bird,fire,rain,whipbird,mist. Do not silently drop unknown effect kinds; map or synthesize them."
+}

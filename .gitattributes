@@ -3,3 +3,4 @@ comparisons/**/fonts/* -whitespace
 comparisons/teardown/assets/LICENSE* -whitespace
 replicas/**/fonts/* -whitespace
 replicas/**/assets/OFL.txt -whitespace
+replicas/watercolor/OFL-1.1.md -whitespace

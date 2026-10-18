@@ -14,4 +14,6 @@ Recreate voice/music when requested. Preserve narration text and cue timing, and
 
 Review original and generated frames at matching times for every scene. Check story coverage, subject/shape accuracy, material detail, density/depth, typography, camera, motion continuity and audio cues. Repair visible omissions and weak substitutes before final rendering. A render, black-frame scan or contact-sheet existence is not evidence of artistic fidelity. Record remaining differences honestly; never claim equivalence from technical checks.
 
+For final acceptance, decode both completed movies at the same frame timestamps (for example `tools/compare_replicas.py <slug>`). A decoder may select the next frame after a fractional timestamp, while a source `render(t)` still evaluates the preceding shot. Do not retime a correct cut because that mixed sampling method creates a one-frame mismatch. Use matching timestamps for preview posters too. Material and staging differences that persist between cuts still require repair.
+
 For the GPTcar comparison project, canonical briefs live in `comparison/matched-briefs/`; style-specific improvements are in `styles/<slug>/GPT_REPLICATION.md` when present. The run contract is `comparison/REPLICATION.md`. The gallery stays one page with original and generated films side by side.

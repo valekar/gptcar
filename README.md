@@ -2,7 +2,7 @@
 
 > **Comparison status:** the first 51 short studies were rejected in review because they changed the original scripts and simplified the artwork. Full scene-by-scene descriptions and scripts are now available for all 51 films; reference-matched regeneration and review are in progress. The Pages gallery has not been deployed yet.
 
-**[Open the Opus ↔ GPT comparison gallery](https://valekar.github.io/gptcar/)** — one page, all 51 styles side by side. Original Opus films on the left; independently coded GPT-6.1 Sol High studies on the right. [Production conditions](comparison/PROTOCOL.md) · [Run report](comparison/REPORT.md).
+**[Open the Opus ↔ GPT comparison gallery](https://valekar.github.io/gptcar/)** — one page, all 51 styles side by side. Original Opus films on the left; independently coded GPT-6.1 Sol High studies on the right. [Production conditions](comparison/REPLICATION.md) · [Current run report](comparison/REPLICATION_REPORT.md).
 
 **[Read all 51 scene scripts and reconstruction prompts](comparison/matched-briefs/README.md)** · [Full replication protocol](comparison/REPLICATION.md). The original conversation prompts were not published; the reconstruction briefs distinguish verbatim published instructions from shot descriptions derived by inspecting the finished films. New films retain the full story, scene timing and narration text, with freshly recreated speech and music.
 

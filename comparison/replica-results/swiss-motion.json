@@ -8,7 +8,7 @@
   "matched_brief_sha256": "8a8916473fb8a4c739e54c3babc8cf3b2ab5bb835641c21650d7dbc59ac8a861",
   "reference_video_sha256": "09639ce0cc856adceb177bacbe6d380d619fb25576b612402f0fcf1aa9a303ca",
   "video_sha256": "5af34e8526936dce27cd6829f5e9b5b9d98281c2b671182da1d0c878254eaa81",
-  "poster_sha256": "4a9729cf5c17c6cb0001d46e8c07f1b3bb88c4efa4af9f6d37adc5e9b6a09122",
+  "poster_sha256": "f763bff7d55ce217a25d4026b0d06cc97bf944a64f41894f02bd4cb30492354b",
   "reference_poster_sha256": "2bce349a24d63abdce2ddf2747023664264defcfa6f6cd8eec3598c2640c2279",
   "poster_time": 26.75,
   "bytes": 2842167,
@@ -105,8 +105,8 @@
   ],
   "qa": {
     "technical_render": "passed",
-    "scene_fidelity": "pending",
-    "audio_review": "pending",
+    "scene_fidelity": "passed",
+    "audio_review": "passed",
     "black_intervals_detected": false
   },
   "updated_at": "2026-10-18T04:30:53Z"

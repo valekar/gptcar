@@ -56,6 +56,29 @@ def effect(kind,duration,seed=6103,**p):
    a[valid]+=(np.sin(2*np.pi*f*local[valid])+.3*noise[valid])*np.exp(-local[valid]*130)
  elif kind=='page_turn':
   a=bp(noise,350,6500)*(np.exp(-((u-.2)/.12)**2)+.65*np.exp(-((u-.73)/.2)**2))*(.7+.3*np.sin(2*np.pi*23*t))
+ elif kind=='duck_quack':
+  f=float(p.get('frequency',280))*(1-.22*u+.04*np.sin(2*np.pi*32*t));phase=2*np.pi*np.cumsum(f)/SR
+  voice=sum(np.sin(phase*k)/k for k in range(1,16));a=(bp(voice,450,2200)*1.6+bp(noise,800,2200)*.08)*np.exp(-u*4)*np.minimum(t/.025,1)
+ elif kind in ('engine_idle','engine_rev'):
+  f=float(p.get('frequency',42))*(1+(.08*np.sin(2*np.pi*3*t) if kind=='engine_idle' else 3*np.sin(np.pi*u)**2));phase=2*np.pi*np.cumsum(f)/SR
+  a=(np.sin(phase)+.4*np.sin(2*phase)+.2*np.sin(4*phase)+lp(noise,1000)*.35)*np.minimum(t/.08,1)*np.minimum((d-t)/.15,1)
+ elif kind=='rail_clack':
+  a=np.zeros(len(t));interval=float(p.get('interval',.45))
+  for onset in np.arange(0,d,interval):
+   for offset in [0,.065]:
+    q=t-onset-offset;valid=(q>=0)&(q<.15);a[valid]+=(np.sin(2*np.pi*165*q[valid])+.3*np.sin(2*np.pi*680*q[valid])+noise[valid]*.3)*np.exp(-q[valid]*45)
+ elif kind in ('water','water_roar'):
+  a=(bp(noise,250,4500)*.35+lp(noise,650)*(.7 if kind=='water_roar' else .25))*(.65+.2*np.sin(2*np.pi*.8*t)+.15*np.sin(2*np.pi*2.3*t))*np.minimum(t/.1,1)*np.minimum((d-t)/.2,1)
+ elif kind=='splash':
+  a=bp(noise,250,7500)*np.exp(-u*7)*np.minimum(t/.005,1)
+  for onset in rng.uniform(.015,max(.016,d*.7),8):
+   q=np.maximum(t-onset,0);a+=.12*np.sin(2*np.pi*(1300*q-700*q*q/max(d,.05)))*np.exp(-q*30)*(t>=onset)
+ elif kind=='sword_draw':
+  a=(bp(noise,2200,11000)*.35+sum(np.sin(2*np.pi*f*t)*g for f,g in [(1100,.3),(2840,.2),(5360,.1)]))*env+np.sin(2*np.pi*1760*t)*np.exp(-u*4)*.2
+ elif kind=='sword_cut':
+  a=bp(noise,800,12000)*np.exp(-((u-.2)/.12)**2)+(.25*np.sin(2*np.pi*1380*t)+.1*np.sin(2*np.pi*3110*t))*np.exp(-u*9)
+ elif kind=='paper_scroll':
+  a=(bp(noise,200,4200)*(.6+.4*np.sin(2*np.pi*19*t))+.08*np.sin(2*np.pi*(160*t+40*t*t)))*env
  else:raise ValueError('Unsupported material cue: '+kind)
  return np.asarray(a,dtype=np.float32)
 

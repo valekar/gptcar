@@ -1,0 +1,10 @@
+Follow the Rain · GPT reference-matched recreation
+New scene assembly, botanical world arrangement, animal rigs, map painter, camera, annotations and musical composition: GPT-6.1 Sol, high reasoning effort, in Codex. No invented generation ID.
+Original film/published style prompt/script/production guide: Lemomo/LemoLab using Claude Opus5.5; source https://github.com/lemomo-ai/lemo-opuscar baseline ded40b25679fe5d5dcfc07a282a25da1ceee3be1. Original authorship is retained; the original recording/scene renderer is not relabeled as GPT output.
+
+Shared generic style code: engine.js (seeded brush ribbons/bristles/easing/sprites), plants.js (botanical generators), paper.py (new local procedural-paper render). Copyright(c)2026LemoLab, MIT; full license in LICENSE. Exact paths/hashes and narrow purpose in shared-components.json.
+Coastline: Natural Earth public domain via world-atlas2.0.2(MikeBostock,ISC), decoded with topojson-client3.1.0(ISC). Vendor license texts preserved in vendor/. Rainfall station input values shared from original main.js STN only, approximate manually typed long-term schematic values. New interpolation/map animation, no historical climate reconstruction.
+Fonts: Cormorant Garamond(ChristianThalmann/CatharsisFonts), Caveat(ImpallariType), IBMPlexMono(IBM/MikeAbbink/BoldMonday), NotoSerifSC(Google/Adobe), SIL OpenFontLicense1.1; freshly downloaded with fetch_fonts.mjs.
+Voice: fresh Kokoro82M/onnx af_heart speed0.93,en-us, exact original script. Model Apache2.0; kokoro-onnxMIT. Root owns new synthesis/timingcheck/mix.
+Music: new103.4BPM acoustic composition from score.json, sampled instruments mixed by root; sample library attribution must accompany rendered root audio. No original master or Wildflowers recording reused. Original reference track: Wildflowers by ScottBuckley(CCBY4.0), https://www.scottbuckley.com.au/library/ ; referenced only for musical direction.
+Foley: newly synthesized scene-specific brush/paper/stamp/rain drops/wind/bird/fire/rain/whipbird/mist cues. No original audio samples.

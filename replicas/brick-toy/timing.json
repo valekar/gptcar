@@ -1,0 +1,244 @@
+{
+  "shots": [
+    [
+      0,
+      3.4,
+      "macro"
+    ],
+    [
+      3.4,
+      5.671833095329316,
+      "place"
+    ],
+    [
+      5.671833095329316,
+      7.343666190658633,
+      "mA"
+    ],
+    [
+      7.343666190658633,
+      9.015499285987948,
+      "mB"
+    ],
+    [
+      9.015499285987948,
+      10.687332381317265,
+      "mC"
+    ],
+    [
+      10.687332381317265,
+      12.35916547664658,
+      "mD"
+    ],
+    [
+      12.35916547664658,
+      14.030998571975896,
+      "mE"
+    ],
+    [
+      14.030998571975896,
+      16.9,
+      "proud"
+    ],
+    [
+      16.9,
+      20.5,
+      "collapse"
+    ],
+    [
+      20.5,
+      25,
+      "alone"
+    ],
+    [
+      25,
+      26.3,
+      "pickup"
+    ],
+    [
+      26.3,
+      29.8,
+      "rummage"
+    ],
+    [
+      29.8,
+      32.5,
+      "rebuild"
+    ],
+    [
+      32.5,
+      34.2,
+      "visor"
+    ],
+    [
+      34.2,
+      35.4,
+      "fins"
+    ],
+    [
+      35.4,
+      36.5,
+      "pad"
+    ],
+    [
+      36.5,
+      40,
+      "liftoff"
+    ],
+    [
+      40,
+      42.5,
+      "cruise"
+    ],
+    [
+      42.5,
+      48,
+      "moon"
+    ],
+    [
+      48,
+      51.71,
+      "reveal"
+    ],
+    [
+      51.71,
+      54,
+      "endcard"
+    ]
+  ],
+  "narration": [
+    {
+      "id": "v1",
+      "t0": 0.8,
+      "duration_s_original_voice": 2.462,
+      "tts_text_verbatim": "Every rocket starts with one brick.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 0.9,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v1",
+        "text": "Every rocket starts with one brick.",
+        "voice": "bm_george",
+        "speed": 0.9,
+        "lang": "en-gb"
+      }
+    },
+    {
+      "id": "v2",
+      "t0": 6,
+      "duration_s_original_voice": 1.865,
+      "tts_text_verbatim": "Then another. And another.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v2",
+        "text": "Then another. And another.",
+        "voice": "bm_george",
+        "speed": 0.95,
+        "lang": "en-gb"
+      }
+    },
+    {
+      "id": "v3",
+      "t0": 22.6,
+      "duration_s_original_voice": 2.176,
+      "tts_text_verbatim": "The first one fell apart.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 0.85,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v3",
+        "text": "The first one fell apart.",
+        "voice": "bm_george",
+        "speed": 0.85,
+        "lang": "en-gb"
+      }
+    },
+    {
+      "id": "v4",
+      "t0": 25.6,
+      "duration_s_original_voice": 2.697,
+      "tts_text_verbatim": "That's okay. Now we have spare parts.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 0.9,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v4",
+        "text": "That's okay. Now we have spare parts.",
+        "voice": "bm_george",
+        "speed": 0.9,
+        "lang": "en-gb"
+      }
+    },
+    {
+      "id": "c3",
+      "t0": 33.3,
+      "duration_s_original_voice": 0.643,
+      "tts_text_verbatim": "Three.",
+      "speaker": null,
+      "voice": "am_adam",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "c3",
+        "text": "Three.",
+        "voice": "am_adam",
+        "speed": 0.95
+      }
+    },
+    {
+      "id": "c2",
+      "t0": 34.3,
+      "duration_s_original_voice": 0.594,
+      "tts_text_verbatim": "Two.",
+      "speaker": null,
+      "voice": "am_adam",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "c2",
+        "text": "Two.",
+        "voice": "am_adam",
+        "speed": 0.95
+      }
+    },
+    {
+      "id": "c1",
+      "t0": 35.3,
+      "duration_s_original_voice": 0.573,
+      "tts_text_verbatim": "One.",
+      "speaker": null,
+      "voice": "am_adam",
+      "tts_speed": 0.95,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "c1",
+        "text": "One.",
+        "voice": "am_adam",
+        "speed": 0.95
+      }
+    },
+    {
+      "id": "v5",
+      "t0": 45.2,
+      "duration_s_original_voice": 3.143,
+      "tts_text_verbatim": "And every moon base... starts with one brick.",
+      "speaker": null,
+      "voice": "bm_george",
+      "tts_speed": 0.88,
+      "subtitle_text_if_distinct": null,
+      "original_record": {
+        "id": "v5",
+        "text": "And every moon base... starts with one brick.",
+        "voice": "bm_george",
+        "speed": 0.88,
+        "lang": "en-gb"
+      }
+    }
+  ]
+}

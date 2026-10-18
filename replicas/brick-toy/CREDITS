@@ -1,0 +1,9 @@
+Rocket from Spare Parts · independently assembled reference recreation
+New scene assembly, articulated robot, rocket models, fixed-step rigid fall, staging, camera, score and audio plan: GPT-6.1 Sol, high effort, via Codex.
+Historical reference: Lemomo/LemoLab with Claude Opus5.5, https://lemomo-ai.github.io/lemo-opuscar/films/brick-toy.mp4. Full published story, script, timing and scene observations form the reconstructed brief; original input chat is unavailable.
+Shared generic utilities (MIT, original library authors): styles/brick-toy/demo/bricks.js for bevelled stud/plate/round/cone/slope geometry and plastic roughness/clearcoat; core/three/post.js for GTAO/depth-of-field/bloom/output; core/lib.js for deterministic math. No original actors.js, rockets.js, set.js, main.js or story.js is imported.
+Three.js r170, including GLTF/RGBE loaders, RectAreaLight and shared helper dependencies — MIT.
+Poly Haven CC0 source assets: american_walnut_veneer (walnut diffuse/normal/roughness), https://polyhaven.com/a/american_walnut_veneer; photo_studio_loft_hall HDRI, https://polyhaven.com/a/photo_studio_loft_hall; tea_set_01, https://polyhaven.com/a/tea_set_01; desk_lamp_arm_01, https://polyhaven.com/a/desk_lamp_arm_01. New placements and code-built books/pencil/moon.
+Fredoka font — Google Fonts / Milena Brandão and contributors, SIL Open Font License1.1; via core/fonts assets and OFL.md.
+Fresh narration direction: Kokoro bm_george and am_adam, Apache2.0, runtime MIT; root pipeline synthesizes new takes. No original voice recordings reused.
+Fresh score: new playful/recovery/heroic composition via real sample instruments. Source palette and arrangement are inspired by the reference structure, but no MacLeod recording or original master is reused. Root sample licensing is in the installed core/audio/instruments libraries (CC0, with any instrument-specific credit preserved in root audio pipeline).

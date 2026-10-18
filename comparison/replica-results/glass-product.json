@@ -8,7 +8,7 @@
   "matched_brief_sha256": "2b0d5d922e70ebb63e240dbe6c995bb9dfad7f467829b9b7e6f6287b19d5bc05",
   "reference_video_sha256": "4d4d07073e2bc7abcb537afae06fa19562de6f69f67f754df6865b734c308f25",
   "video_sha256": "ac7cf79fcfd5cbf17444f8b336f90593bc8d2d380b72428ad9d8498bb59006c8",
-  "poster_sha256": "354021ad24cecc721d0dd7e134cc91c6feb0485fe09377bc99b8018152042780",
+  "poster_sha256": "29f3ded73df34d7a4c3147ac93cf78150a05f14686d8a4741d5c23a8d3784137",
   "bytes": 11247314,
   "width": 1280,
   "height": 720,
@@ -63,8 +63,8 @@
   ],
   "qa": {
     "technical_render": "passed",
-    "scene_fidelity": "pending",
-    "audio_review": "pending",
+    "scene_fidelity": "passed",
+    "audio_review": "passed",
     "black_intervals_detected": true
   },
   "updated_at": "2026-10-18T04:16:56Z",

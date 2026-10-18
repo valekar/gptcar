@@ -22,21 +22,27 @@ def compose(score,voice_records,duration,out):
         a=signal[:n]*float(gain)
         if a.ndim==1:dst[i:i+n,0]+=a*np.sqrt((1-float(pan))/2);dst[i:i+n,1]+=a*np.sqrt((1+float(pan))/2)
         else:dst[i:i+n]+=a
-    synth=[]
+    synth={'music':[],'foley':[]}
     for note in score.get('notes',[]):
         name=note.get('instrument','piano')
+        channel=note.get('channel','music')
+        if channel not in synth:raise ValueError('Unknown note channel: '+channel)
+        dst=music if channel=='music' else foley
         if name in S.REG or name in S.ALIASES:
             signal=S.note(name,note.get('midi',60),float(note['duration']),vel=float(note.get('velocity',.65)))
-            add(music,signal,note['t'],note.get('gain',.15),np.clip(note.get('pan',0),-1,1))
+            add(dst,signal,note['t'],note.get('gain',.15),np.clip(note.get('pan',0),-1,1))
         elif name in P.PRESETS:
             signal=P.pluck(name,note.get('midi',60),float(note['duration']),vel=float(note.get('velocity',.65)),**{k:note[k] for k in ['bend','vib','glide','harmonic','trem'] if k in note})
-            add(music,signal,note['t'],note.get('gain',.1),note.get('pan',0))
-        elif name in ['saw','fm_glass','sub808','toy_piano']:add(music,synth_note(name,note.get('midi',60),float(note['duration'])),note['t'],note.get('gain',.1),note.get('pan',0))
-        else:synth.append(note)
+            add(dst,signal,note['t'],note.get('gain',.1),note.get('pan',0))
+        elif name in ['saw','fm_glass','sub808','toy_piano']:add(dst,synth_note(name,note.get('midi',60),float(note['duration'])),note['t'],note.get('gain',.1),note.get('pan',0))
+        else:synth[channel].append(note)
     for hit in score.get('hits',[]):
-        a=S.hit(hit['instrument'],hit.get('variant'),vel=float(hit.get('velocity',.7)),dur=float(hit.get('duration',.4)));add(music,a,hit['t'],hit.get('gain',.15),np.clip(hit.get('pan',0),-1,1))
+        channel=hit.get('channel','music')
+        if channel not in synth:raise ValueError('Unknown hit channel: '+channel)
+        a=S.hit(hit['instrument'],hit.get('variant'),vel=float(hit.get('velocity',.7)),dur=float(hit.get('duration',.4)));add(music if channel=='music' else foley,a,hit['t'],hit.get('gain',.15),np.clip(hit.get('pan',0),-1,1))
     # Explicit synth voices and seeded material foley from the original root synthesizer.
-    if synth:add(music,synth_score({'notes':synth,'effects':[]},duration),0,1)
+    for channel,notes in synth.items():
+        if notes:add(music if channel=='music' else foley,synth_score({'notes':notes,'effects':[]},duration),0,1)
     for i,cue in enumerate(score.get('effects',[])):
         params={k:v for k,v in cue.items() if k not in ['kind','duration','t','gain','pan']}
         add(foley,make_effect(cue['kind'],cue.get('duration',.25),seed=6103+i,**params),cue['t'],cue.get('gain',.1),cue.get('pan',0))

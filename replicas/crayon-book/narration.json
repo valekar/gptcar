@@ -1,0 +1,70 @@
+{
+  "language": "en-us",
+  "voice": "af_heart",
+  "lines": [
+    {
+      "id": "n1",
+      "text": "The moon could not sleep.",
+      "voice": "af_heart",
+      "speed": 0.86,
+      "start": 5.5,
+      "duration": 1.446,
+      "language": "en-us"
+    },
+    {
+      "id": "n2",
+      "text": "It tossed, and it turned, and it counted sheep.",
+      "voice": "af_heart",
+      "speed": 0.9,
+      "start": 8.05,
+      "duration": 2.648,
+      "language": "en-us"
+    },
+    {
+      "id": "n3",
+      "text": "Down below, someone else was awake, too.",
+      "voice": "af_heart",
+      "speed": 0.89,
+      "start": 15.3,
+      "duration": 2.35,
+      "language": "en-us"
+    },
+    {
+      "id": "n4",
+      "text": "So she climbed up, up, up, onto the roof,",
+      "voice": "af_heart",
+      "speed": 0.9,
+      "start": 20.4,
+      "duration": 2.441,
+      "language": "en-us"
+    },
+    {
+      "id": "n5",
+      "text": "and sang, the softest song she knew.",
+      "asr": "and sang the softest song she knew.",
+      "voice": "af_heart",
+      "speed": 0.86,
+      "start": 24.8,
+      "duration": 2.22,
+      "language": "en-us"
+    },
+    {
+      "id": "n6",
+      "text": "And at last, the moon fell asleep.",
+      "voice": "af_heart",
+      "speed": 0.88,
+      "start": 40.2,
+      "duration": 2.027,
+      "language": "en-us"
+    },
+    {
+      "id": "n7",
+      "text": "Night, night.",
+      "voice": "af_heart",
+      "speed": 0.8,
+      "start": 49.2,
+      "duration": 1.072,
+      "language": "en-us"
+    }
+  ]
+}

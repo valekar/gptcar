@@ -1,0 +1,117 @@
+{
+  "slug": "watercolor",
+  "status": "rendered",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "title": "Follow the Rain",
+  "source_sha256": "ab2bd59e12de408843162438c2f01590842bcdc5dd9f8fdf969b71d02e4f4623",
+  "matched_brief_sha256": "fdfad78503a9721fdf98cce200793c53b55c7a450461d60e758b95c4953bc5ac",
+  "reference_video_sha256": "a222efe90cdbc0c2283d531757373f83c2b7dc0811212f4db4c032249884ead2",
+  "video_sha256": "a1b278da39030ddddacb343d023dcab9626f1945c1e3163da9aa224fc33e1681",
+  "poster_sha256": "845c0dd11a016fb157aedf8af7f178e21172731d7d10f5acd34776d8087c619b",
+  "reference_poster_sha256": "9f13666ee00244d8627ead587ad12d275caaa02204c67874a09a8c26211a8178",
+  "poster_time": 57.5,
+  "bytes": 39119886,
+  "width": 1280,
+  "height": 720,
+  "fps": 60.0,
+  "frames": 6816,
+  "duration": 113.6,
+  "audio_codec": "aac",
+  "review_times": [
+    0.5,
+    1.7,
+    3.8,
+    10.8,
+    12.5,
+    14.5,
+    18.5,
+    22.5,
+    24.5,
+    26.9,
+    27.35,
+    28.4,
+    31.2,
+    33.5,
+    37.5,
+    41.8,
+    43.5,
+    46.5,
+    48.7,
+    50.5,
+    53.5,
+    55.5,
+    57.5,
+    58.5,
+    60.5,
+    61.8,
+    63.5,
+    66.9,
+    69.5,
+    71.5,
+    73.25,
+    74.5,
+    76.5,
+    78.85,
+    80.5,
+    83.5,
+    87.1,
+    90.5,
+    94.5,
+    98.5,
+    99.6,
+    102.5,
+    106.5,
+    111.5,
+    113.4
+  ],
+  "shared_components": [
+    {
+      "path": "styles/watercolor/demo/engine.js",
+      "sha256": "32ee3ae212d8f3196142f9423e795c16b09c98234fd9b6b50c852417415e3333",
+      "purpose": "Generic seeded watercolour ribbon/bristle stroke primitives, colour/easing and sprite cache"
+    },
+    {
+      "path": "styles/watercolor/demo/plants.js",
+      "sha256": "1c65b5df4462837b6b94493a5b84dca51b033a8e342eb758e71e4a03d624b39f",
+      "purpose": "Generic detailed botanical specimen generators"
+    },
+    {
+      "path": "styles/watercolor/demo/aus.js",
+      "sha256": "7ffe7e04f47e703e19720a471eeca314a1875be2d16c23a8c51a6625d261012f",
+      "purpose": "Natural Earth coastline data, via world-atlas and topojson ISC"
+    },
+    {
+      "path": "styles/watercolor/demo/paper.py",
+      "sha256": "0c3fcc29f5e1b4176840892ff8ffe840e31c95aaa75af76ab7eca6b9ad4c51a7",
+      "purpose": "Procedural cotton-paper generator; new paper.jpg rendered locally"
+    },
+    {
+      "path": "styles/watercolor/demo/main.js",
+      "purpose": "Shared original schematic rainfall input values only; original scene/map renderer NOT imported",
+      "local_asset": "rain-stations.js",
+      "sha256": "51c6e2666188a3ca2b8b0b916e7598959681d8265263a20e5dc68d34bef5432e",
+      "symbol": "STN"
+    },
+    {
+      "path": "styles/watercolor/demo/tts/lines.json",
+      "purpose": "Exact published spoken script and bilingual subtitle strings; intentional user-requested same-script reuse"
+    },
+    {
+      "path": "styles/watercolor/demo/scene.js",
+      "purpose": "Exact published spoken script and bilingual subtitle strings; intentional user-requested same-script reuse",
+      "symbol": "VO"
+    },
+    {
+      "path": "replicas/watercolor/fonts/",
+      "purpose": "Freshly fetched Cormorant Garamond,Caveat,IBM Plex Mono,Noto Serif SC font files; SIL OFL1.1"
+    }
+  ],
+  "qa": {
+    "technical_render": "passed",
+    "scene_fidelity": "passed",
+    "audio_review": "passed",
+    "black_intervals_detected": false
+  },
+  "updated_at": "2026-10-18T04:32:32Z"
+}

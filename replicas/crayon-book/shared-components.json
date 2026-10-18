@@ -1,0 +1,40 @@
+[
+  {
+    "path": "styles/crayon-book/demo/gl.js",
+    "sha256": "4ae0f6e2f72dad3554b856b59441d441683328e9711f83b4162c534758f95b0d",
+    "purpose": "Generic WebGL paper/wax/resist compositor"
+  },
+  {
+    "path": "styles/crayon-book/demo/crayon.js",
+    "sha256": "a756b3f06a6f850785b888e3871170a5c50877bc881816a4209126d6978d5f00",
+    "purpose": "Generic line, hatch and hand-text primitives"
+  },
+  {
+    "path": "styles/crayon-book/demo/rig.js",
+    "sha256": "24bdb3768c5babbef1841fb9e4ccc43379ea6d0329f04336d1e85579a14a14e9",
+    "purpose": "Generic part occlusion and articulated tubes"
+  },
+  {
+    "path": "styles/crayon-book/demo/chars.js",
+    "sha256": "ab262e5e172bc29e1b597bdc8fa2ad8cb1bb81e9ecf5f3a8bb744169fe62bc1d",
+    "purpose": "Shared girl, moon and sheep model anatomy/expressions/costume; not newly claimed geometry"
+  },
+  {
+    "path": "styles/crayon-book/demo/pal.js",
+    "sha256": "436fb5fdaf6eb52dd6293419975da48e681fccec7ba3c354ec647e7252446eb4",
+    "purpose": "Published limited crayon/wash palette"
+  },
+  {
+    "path": "styles/crayon-book/demo/lines.json",
+    "purpose": "Exact published narration, requested same-script recreation"
+  },
+  {
+    "path": "styles/crayon-book/demo/film.js",
+    "symbol": "LINES and camera landmarks",
+    "purpose": "Published subtitle wording and canonical shot timing/camera data used as reconstruction requirements; executable film code not imported"
+  },
+  {
+    "path": "replicas/crayon-book/fonts",
+    "purpose": "Newly fetched SIL OFL fonts; licence files adjacent"
+  }
+]

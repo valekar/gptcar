@@ -1,0 +1,137 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "title": "The Moon Can't Sleep",
+  "slug": "crayon-book",
+  "source_ready": true,
+  "status": "source-ready-parent-visual-accepted",
+  "uses_upstream_scene_code": false,
+  "matched_brief_sha256": "0a6c3b4a1d0683f5510ddd50f4421f819fb8e5b89d9c8bc0f61af3583cab5fd0",
+  "delivery": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frame_count": 1248,
+    "duration": 52
+  },
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080,
+    "world_width": 3200,
+    "world_height": 1800
+  },
+  "duration": 52,
+  "review_times": [
+    0.5,
+    1.5,
+    2.5,
+    3.5,
+    4.5,
+    5.5,
+    7.5,
+    9.5,
+    10.75,
+    11.5,
+    12.5,
+    13.5,
+    14.5,
+    18.4,
+    19.95,
+    20.5,
+    21.7,
+    22.5,
+    23.5,
+    24.5,
+    26.5,
+    28.5,
+    29.5,
+    31.5,
+    33.5,
+    35.5,
+    38.35,
+    40.5,
+    41.75,
+    43.6,
+    44.5,
+    46.5,
+    47.5,
+    47.95,
+    48.5,
+    49.5,
+    51.5
+  ],
+  "shared_components": [
+    {
+      "path": "styles/crayon-book/demo/gl.js",
+      "sha256": "4ae0f6e2f72dad3554b856b59441d441683328e9711f83b4162c534758f95b0d",
+      "purpose": "Generic WebGL paper/wax/resist compositor"
+    },
+    {
+      "path": "styles/crayon-book/demo/crayon.js",
+      "sha256": "a756b3f06a6f850785b888e3871170a5c50877bc881816a4209126d6978d5f00",
+      "purpose": "Generic line, hatch and hand-text primitives"
+    },
+    {
+      "path": "styles/crayon-book/demo/rig.js",
+      "sha256": "24bdb3768c5babbef1841fb9e4ccc43379ea6d0329f04336d1e85579a14a14e9",
+      "purpose": "Generic part occlusion and articulated tubes"
+    },
+    {
+      "path": "styles/crayon-book/demo/chars.js",
+      "sha256": "ab262e5e172bc29e1b597bdc8fa2ad8cb1bb81e9ecf5f3a8bb744169fe62bc1d",
+      "purpose": "Shared girl, moon and sheep model anatomy/expressions/costume; not newly claimed geometry"
+    },
+    {
+      "path": "styles/crayon-book/demo/pal.js",
+      "sha256": "436fb5fdaf6eb52dd6293419975da48e681fccec7ba3c354ec647e7252446eb4",
+      "purpose": "Published limited crayon/wash palette"
+    },
+    {
+      "path": "styles/crayon-book/demo/lines.json",
+      "purpose": "Exact published narration, requested same-script recreation"
+    },
+    {
+      "path": "styles/crayon-book/demo/film.js",
+      "symbol": "LINES and camera landmarks",
+      "purpose": "Published subtitle wording and canonical shot timing/camera data used as reconstruction requirements; executable film code not imported"
+    },
+    {
+      "path": "replicas/crayon-book/fonts",
+      "purpose": "Newly fetched SIL OFL fonts; licence files adjacent"
+    }
+  ],
+  "audio": {
+    "speech": "Fresh exact7line af_heart synthesis by root",
+    "music": "New163note score and65 material/character cues",
+    "original_master_reused": false
+  },
+  "visual_review": "REVIEW.json; full story/material/acting accepted by parent; tail refinements accepted with disclosed placement/geometry variations.",
+  "source_hashes": {
+    "CREDITS": "55d5aeb071115a30fcc91c897a3e703b15d256c79f2ae03bb33feab6fcecddd7",
+    "FACTS.md": "c4fb61d40fd4c80360bb057ae221dc06e9825396d1c1e62d78f376f97bc22768",
+    "LICENSE": "14c9ff6f14bfb2391e74fedb01c256891d2a3bba1c2acf5789901bdf77e54e33",
+    "PROMPT.md": "7f7338e4226fc98393c56e2ba36982486a28c7105b9aa36f778bedb42a3da435",
+    "REVIEW.json": "c60b94cadc33822beaeb121016d9ec2dde19c94b81763fb4ad7535ad37c06605",
+    "REVIEW.md": "198855b653ebf624e1c3ca605ca3e7079f6fb5ad01a67abb28370ffac5884dcd",
+    "TREATMENT.md": "7b61418f1cb577dc57d6efcda5b73ba232af94e218c53b480b2d173d73d1efc1",
+    "captions.json": "13770c58d72fab5977d8a3918b0dcffda3aad56b713b9ff75971a5d3104833a9",
+    "chars.js": "ab262e5e172bc29e1b597bdc8fa2ad8cb1bb81e9ecf5f3a8bb744169fe62bc1d",
+    "crayon.js": "a756b3f06a6f850785b888e3871170a5c50877bc881816a4209126d6978d5f00",
+    "film.js": "4e0f13df5f40f02cd594fb1df6cdf4f937e050e8a2e3225ef1a110588ac6e718",
+    "fonts/Gaegu-Bold.ttf": "cc38a4af9506a45254d1ce07c589ec473d9e5f0be319e5a77b17c214903f8c1c",
+    "fonts/Gaegu-Regular.ttf": "aa52c98336f7c62e2896fc8b12b56a75d5b476d88a2f104b0980f4f7ce0adfc3",
+    "fonts/PatrickHand-Regular.ttf": "0f173b3e6cb6d1af25babf7f0057c5ac4ee11f9992b0469bb817e967ef4ad0fc",
+    "fonts/fonts.css": "c2d20f737fe2635e0fd506d20501e3d2cdc8b017547313afe52eedd74f5ad3a4",
+    "fonts/gaegu_OFL.txt": "53a9ce47085d9fef613c7ecb3730dc80d25962510bbea231b89564f58240f251",
+    "fonts/patrickhand_OFL.txt": "377f4f9c19e935228552478eb68cc2ed82910988a60ba60e2ac73b09f32d02d1",
+    "gl.js": "4ae0f6e2f72dad3554b856b59441d441683328e9711f83b4162c534758f95b0d",
+    "index.html": "80f1af3fc4b67bf8b36c342d22988d407679c47165ee8a3680b980945047aa50",
+    "narration.json": "11d004af9dd0449ad016362ea563d0e6b4c62d1463bcc55097816fa403c5af56",
+    "page-art.js": "05423038fd7e624c31c6f06dd732fb00073741cc39a34d5a8dfc9c010cac857a",
+    "pal.js": "436fb5fdaf6eb52dd6293419975da48e681fccec7ba3c354ec647e7252446eb4",
+    "physical-book.js": "a932413226fd9aecee264b3e5d0b261eabfc74ba9da0a0768e8e598d44c0dd0c",
+    "rig.js": "24bdb3768c5babbef1841fb9e4ccc43379ea6d0329f04336d1e85579a14a14e9",
+    "score.json": "ef5eae3ad390cb3c63d4e36733acd349e68282ae1f534778bcc44f4c336f9adb",
+    "shared-components.json": "75015fc2482f8089cf6f5679a3a19a8c2a2fc6136b59031054eefccab6eee300"
+  }
+}

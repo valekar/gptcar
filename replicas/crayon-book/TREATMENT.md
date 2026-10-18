@@ -1,0 +1,7 @@
+# The Moon Can't Sleep · reference-matched crayon edition
+
+Recreate the full published 52-second bedtime story on one 3200×1800 page, delivered at the original measured resolution/frame rate/frame count. Follow all twelve canonical shot prompts in comparison/matched-briefs/crayon-book.json: the live drawing, five failed sheep, girl's discovery and waving, eight growing ladder rungs, rooftop lullaby, three ultramarine washes uncovering 250 white-wax stars, moon's nightcap/yawn/patchwork quilt, girl's sleep, physical book/desk reveal and curling page turn to The End.
+
+Use the library's attributed generic wax/WebGL compositor, crayon strokes and articulated character models to retain material quality and the original character identities. Independently assemble the house/landscape, star field, wash painter, camera and acting states, music-note choreography, book mechanics, subtitles and main renderer. Do not import upstream film/world/end/main modules. Exact narration, canonical geometry landmarks and camera targets are reference requirements rather than new story claims.
+
+Recreate all seven spoken lines in warm af_heart at their published starts and speeds. New 72 BPM 3/4 music-box/toy-piano score, flute lullaby and clarinet; star glockenspiel and narrative foley, with the failed-count silence and breath before song. The original master and score are not reused. Review all beats plus short exact action frames before source freeze.

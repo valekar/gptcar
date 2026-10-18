@@ -1,0 +1,157 @@
+{
+  "original_coverage": "All10 original reference contact sheets inspected, approx0.5s then1fps across full113.6s; original source tables read for cue boundaries. Not every encodedframe.",
+  "generated_coverage": "Full114one-frame-per-second captures reviewed as10sheets;17initial event stills;9 revised material stills;11targeted final checks including0.5,27.35,28.4,37.5,48.7,57.5,66.9,73.25,78.85,87.1,99.6. Final114frames rerendered after small sun/depth/2pointstroke repairs. Parent independently reviewed 45 paired exact-time shots. Subsequent repairs inspected at 3.8, 12.5, 57.5, 78.85, 87.1, 90.5, 94.5, 102.5, 103.5 and 106.5 seconds. Six final event captures inspected at0.5,10.8,12.5,90.5,94.5,113.4; fires visible at both requested map times and no final text at113.4.",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 10.9,
+      "name": "Paper, horizon, seal and title",
+      "coverage": "source and reference checked; generated still reviewed"
+    },
+    {
+      "start": 10.3,
+      "end": 17.2,
+      "name": "Red centre and desert oaks",
+      "coverage": "source and reference checked; generated still reviewed"
+    },
+    {
+      "start": 17.2,
+      "end": 23.0,
+      "name": "Spinifex specimen",
+      "coverage": "source and reference checked; generated still reviewed"
+    },
+    {
+      "start": 23.0,
+      "end": 33.8,
+      "name": "Mulga catches rain",
+      "coverage": "source and reference checked; generated still reviewed"
+    },
+    {
+      "start": 34.0,
+      "end": 41.6,
+      "name": "Gum woodland and koala",
+      "coverage": "source and reference checked; generated still reviewed"
+    },
+    {
+      "start": 41.6,
+      "end": 47.2,
+      "name": "Fire front",
+      "coverage": "source and reference checked; generated still reviewed"
+    },
+    {
+      "start": 47.2,
+      "end": 52.0,
+      "name": "Epicormic recovery",
+      "coverage": "source and reference checked; generated still reviewed"
+    },
+    {
+      "start": 52.0,
+      "end": 54.2,
+      "name": "Wet forest arrives",
+      "coverage": "source and reference checked; generated still reviewed"
+    },
+    {
+      "start": 54.2,
+      "end": 58.4,
+      "name": "Measure the tallest flowering tree",
+      "coverage": "source and reference checked; generated still reviewed"
+    },
+    {
+      "start": 58.4,
+      "end": 61.2,
+      "name": "Return to forest floor",
+      "coverage": "source and reference checked; generated still reviewed"
+    },
+    {
+      "start": 61.2,
+      "end": 70.3,
+      "name": "Rainforest layers",
+      "coverage": "source and reference checked; generated still reviewed"
+    },
+    {
+      "start": 70.3,
+      "end": 73.6,
+      "name": "Paper-coloured mist erases",
+      "coverage": "source and reference checked; generated still reviewed"
+    },
+    {
+      "start": 73.3,
+      "end": 79.4,
+      "name": "Paint the continent and route",
+      "coverage": "source and reference checked; generated still reviewed"
+    },
+    {
+      "start": 79.4,
+      "end": 86.2,
+      "name": "Rewind to fifty million years",
+      "coverage": "source and reference checked; generated still reviewed"
+    },
+    {
+      "start": 86.2,
+      "end": 95.0,
+      "name": "Drift north and dry",
+      "coverage": "source and reference checked; generated still reviewed"
+    },
+    {
+      "start": 95.0,
+      "end": 101.4,
+      "name": "Dry heart, green edge",
+      "coverage": "source and reference checked; generated still reviewed"
+    },
+    {
+      "start": 101.0,
+      "end": 113.6,
+      "name": "Return title and credits",
+      "coverage": "source and reference checked; generated still reviewed"
+    }
+  ],
+  "repairs": [
+    "Sun changed from collapsed dab to circular pigment stamp with fine dry bands",
+    "Restored dark ink for biome and legend type after brush calls",
+    "Ground now fades to cotton paper; added distant ridge depth",
+    "Mountainash note shifted clear of rainfall gauge",
+    "Map hash changed to independent2Dcoordinate inputs to remove diagonal pattern",
+    "Zone lookup clamped beyond worldextent to avoid NaN/diagonal terrain closing edges during tilt",
+    "Sun painted before plants/notes so it cannot cover specimen text",
+    "2pointpaintmarks resampled for readable raindrops,animalears/eyes and character details",
+    "Horizon now brushes across during first1.5s instead of appearing complete",
+    "Matched 10.2\u201313.4 second reveal endpoint to preserve right-side paper at 12.5 seconds.",
+    "Replaced overlapping six-pixel wash rectangles with a continuous three-pixel pigment field, coherent multiscale pools, sediment and a soft paint layer; no rectangle seams.",
+    "Added delicate final ink contour above all migrating pigment and through the closing fade.",
+    "Closing title begins painting at 101.9 seconds with measured text width and smooth reveal; secondary lines enter independently.",
+    "Moved the 100 m dimension label to the long stem midpoint.",
+    "Final parent event review: explicit26 fire tongues selected from480\u2013950mm input band with original89.4\u201395.5 phased envelope.",
+    "Separated linear10.2\u201313.2 ground-strip reveal from cubic10.2\u201313.4 plant reveal; left wash visible10.8.",
+    "Horizon starts0.5 and brushes through2.8; closing title/credits fade completely by113.4."
+  ],
+  "remaining_differences": [
+    "World plant population and animal drawing differ in individual geometry/placement because they are freshly assembled, while exact biomes/heroevents/camera route are retained.",
+    "Map rainfall station inputs and categorical legend are retained; pigment mottling and interpolated boundary pooling are independently generated, so individual wash patches differ from the original.",
+    "Fresh score follows original musical direction and narrative sections but is a new composition; fidelity to finished audio awaits root mix/listening.",
+    "New honest GPTcredit replaces original LemoLab/Claudeauthorship signature; licensedasset disclosures retained.",
+    "Parent accepts disclosed individual vegetation placement, independent pigment patches and sun phase differences; fire positions are freshly selected within the same schematic band."
+  ],
+  "status": "Source ready for independent parent matched-shot review; no assertion of identical artistic quality or publication acceptance.",
+  "deterministic_seek_checks": [
+    {
+      "time": 12.5,
+      "same_after_other_seeks": true,
+      "sha256": "da0e27036de71ae61df1ed60635940e114350dfe23d4761b58b544f1fab4556c"
+    },
+    {
+      "time": 57.5,
+      "same_after_other_seeks": true,
+      "sha256": "fa48227d21da2d4beb37221b51f6e473719fa408c994d6bff587e3e0dc3c56f8"
+    },
+    {
+      "time": 82.5,
+      "same_after_other_seeks": true,
+      "sha256": "e3aceafefb671530342b734bb59b4c8ad60e4dd60058bd9e7a37088ecc2e9505"
+    },
+    {
+      "time": 102.5,
+      "same_after_other_seeks": true,
+      "sha256": "c31f4d57509553f773ebc1f9504d190cd161fc2950f53254b78f9f4da19e9a34"
+    }
+  ]
+}

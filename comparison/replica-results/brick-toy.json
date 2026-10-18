@@ -1,0 +1,99 @@
+{
+  "slug": "brick-toy",
+  "status": "rendered",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "title": "Rocket from Spare Parts",
+  "source_sha256": "70dce7c835d37e2ef0731ad16d24963ae06f03a89375a2807c8b83557b2d351b",
+  "matched_brief_sha256": "5f8645900f41fddfdbce6a4b7d315c586d23345b45257618f77b4d67af2226ae",
+  "reference_video_sha256": "1d74377276a890a3094601f939786b29a70bbde495ee40a75b43ddadd6337936",
+  "video_sha256": "4a78c8de58d72d9243d6658a9ea68362f3d71279ce489400030f0dcfa65dabc2",
+  "poster_sha256": "868e13cd36c05ad77661c3f7d8b520617a4bb3b92b574ce4f4848c2fe1d9cc0a",
+  "reference_poster_sha256": "6189f8b4d859b62d7d2c9626474bd5c39ec256d39f85e99cb2d95dda83b2682d",
+  "poster_time": 31.5,
+  "bytes": 14490400,
+  "width": 1280,
+  "height": 720,
+  "fps": 24.0,
+  "frames": 1296,
+  "duration": 54.0,
+  "audio_codec": "aac",
+  "review_times": [
+    1.5,
+    4.5,
+    6.5,
+    8.5,
+    10.0,
+    11.5,
+    13.0,
+    15.5,
+    17.37,
+    17.65,
+    18.0,
+    22.5,
+    25.5,
+    28.5,
+    29.2,
+    31.5,
+    32.5,
+    33.5,
+    34.5,
+    36.0,
+    36.5,
+    37.0,
+    38.5,
+    41.5,
+    43.5,
+    44.2,
+    45.5,
+    46.6,
+    47.5,
+    49.5,
+    52.5
+  ],
+  "shared_components": [
+    {
+      "path": "styles/brick-toy/demo/bricks.js",
+      "purpose": "Generic bevelled stud/plate/round/cone/slope geometry and plastic roughness/clearcoat materials."
+    },
+    {
+      "path": "core/three/post.js",
+      "purpose": "Generic GTAO/depth-of-field/bloom/output."
+    },
+    {
+      "path": "core/lib.js",
+      "purpose": "Deterministic math."
+    },
+    {
+      "path": "core/assets/polyhaven/photo_studio_loft_hall_2k.hdr",
+      "purpose": "Exact used licensed CC0 asset; excludes unrelated mutable assets."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_diff.jpg",
+      "purpose": "Exact used licensed CC0 asset; excludes unrelated mutable assets."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_nor.jpg",
+      "purpose": "Exact used licensed CC0 asset; excludes unrelated mutable assets."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_rough.jpg",
+      "purpose": "Exact used licensed CC0 asset; excludes unrelated mutable assets."
+    },
+    {
+      "path": "core/assets/polyhaven/tea_set_01",
+      "purpose": "Exact used licensed CC0 asset; excludes unrelated mutable assets."
+    },
+    {
+      "path": "core/assets/polyhaven/desk_lamp_arm_01",
+      "purpose": "Exact used licensed CC0 asset; excludes unrelated mutable assets."
+    }
+  ],
+  "qa": {
+    "technical_render": "passed",
+    "scene_fidelity": "passed",
+    "audio_review": "passed",
+    "black_intervals_detected": false
+  },
+  "updated_at": "2026-10-18T04:30:52Z"
+}

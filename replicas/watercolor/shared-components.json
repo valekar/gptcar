@@ -1,0 +1,42 @@
+[
+  {
+    "path": "styles/watercolor/demo/engine.js",
+    "sha256": "32ee3ae212d8f3196142f9423e795c16b09c98234fd9b6b50c852417415e3333",
+    "purpose": "Generic seeded watercolour ribbon/bristle stroke primitives, colour/easing and sprite cache"
+  },
+  {
+    "path": "styles/watercolor/demo/plants.js",
+    "sha256": "1c65b5df4462837b6b94493a5b84dca51b033a8e342eb758e71e4a03d624b39f",
+    "purpose": "Generic detailed botanical specimen generators"
+  },
+  {
+    "path": "styles/watercolor/demo/aus.js",
+    "sha256": "7ffe7e04f47e703e19720a471eeca314a1875be2d16c23a8c51a6625d261012f",
+    "purpose": "Natural Earth coastline data, via world-atlas and topojson ISC"
+  },
+  {
+    "path": "styles/watercolor/demo/paper.py",
+    "sha256": "0c3fcc29f5e1b4176840892ff8ffe840e31c95aaa75af76ab7eca6b9ad4c51a7",
+    "purpose": "Procedural cotton-paper generator; new paper.jpg rendered locally"
+  },
+  {
+    "path": "styles/watercolor/demo/main.js",
+    "purpose": "Shared original schematic rainfall input values only; original scene/map renderer NOT imported",
+    "local_asset": "rain-stations.js",
+    "sha256": "51c6e2666188a3ca2b8b0b916e7598959681d8265263a20e5dc68d34bef5432e",
+    "symbol": "STN"
+  },
+  {
+    "path": "styles/watercolor/demo/tts/lines.json",
+    "purpose": "Exact published spoken script and bilingual subtitle strings; intentional user-requested same-script reuse"
+  },
+  {
+    "path": "styles/watercolor/demo/scene.js",
+    "purpose": "Exact published spoken script and bilingual subtitle strings; intentional user-requested same-script reuse",
+    "symbol": "VO"
+  },
+  {
+    "path": "replicas/watercolor/fonts/",
+    "purpose": "Freshly fetched Cormorant Garamond,Caveat,IBM Plex Mono,Noto Serif SC font files; SIL OFL1.1"
+  }
+]

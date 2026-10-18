@@ -1,0 +1,101 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "status": "source-ready",
+  "title": "Rocket from Spare Parts",
+  "duration": 54,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frame_count": 1296,
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080,
+    "supersampling": 2,
+    "ambient_occlusion": "GTAO"
+  },
+  "matched_brief_sha256": "5f8645900f41fddfdbce6a4b7d315c586d23345b45257618f77b4d67af2226ae",
+  "original_reference_sha256": "1d74377276a890a3094601f939786b29a70bbde495ee40a75b43ddadd6337936",
+  "uses_upstream_scene_code": false,
+  "shared_components": [
+    {
+      "path": "styles/brick-toy/demo/bricks.js",
+      "purpose": "Generic bevelled stud/plate/round/cone/slope geometry and plastic roughness/clearcoat materials."
+    },
+    {
+      "path": "core/three/post.js",
+      "purpose": "Generic GTAO/depth-of-field/bloom/output."
+    },
+    {
+      "path": "core/lib.js",
+      "purpose": "Deterministic math."
+    },
+    {
+      "path": "core/assets/polyhaven/photo_studio_loft_hall_2k.hdr",
+      "purpose": "Exact used licensed CC0 asset; excludes unrelated mutable assets."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_diff.jpg",
+      "purpose": "Exact used licensed CC0 asset; excludes unrelated mutable assets."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_nor.jpg",
+      "purpose": "Exact used licensed CC0 asset; excludes unrelated mutable assets."
+    },
+    {
+      "path": "core/assets/polyhaven/walnut_rough.jpg",
+      "purpose": "Exact used licensed CC0 asset; excludes unrelated mutable assets."
+    },
+    {
+      "path": "core/assets/polyhaven/tea_set_01",
+      "purpose": "Exact used licensed CC0 asset; excludes unrelated mutable assets."
+    },
+    {
+      "path": "core/assets/polyhaven/desk_lamp_arm_01",
+      "purpose": "Exact used licensed CC0 asset; excludes unrelated mutable assets."
+    }
+  ],
+  "review_times": [
+    1.5,
+    4.5,
+    6.5,
+    8.5,
+    10,
+    11.5,
+    13,
+    15.5,
+    17.37,
+    17.65,
+    18,
+    22.5,
+    25.5,
+    28.5,
+    29.2,
+    31.5,
+    32.5,
+    33.5,
+    34.5,
+    36,
+    36.5,
+    37,
+    38.5,
+    41.5,
+    43.5,
+    44.2,
+    45.5,
+    46.6,
+    47.5,
+    49.5,
+    52.5
+  ],
+  "review_status": "Worker review complete. Root accepted full story/materials; requested recovery acting and prop-path corrections applied and re-inspected at 28.5/29.2.",
+  "review_notes": "REVIEW.md",
+  "independent_scene_files": [
+    "film.js",
+    "world.js",
+    "robot.js",
+    "vehicles.js",
+    "physics.js"
+  ],
+  "audio": "Fresh complete narration/radio countdown and newly composed sampled playful/heroic score; no original master reused."
+}

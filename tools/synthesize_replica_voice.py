@@ -20,14 +20,19 @@ def synthesize(spec,out):
                 if not len(a) or np.max(np.abs(a))<1e-4:raise RuntimeError(ident+' is silent')
                 sf.write(path,a,sr,subtype='PCM_24')
             cache.write_text(json.dumps(dict(input_sha256=digest,text=text,voice=voice,speed=speed,language=language),ensure_ascii=False,indent=2)+'\n')
-        audio,sr=sf.read(path);actual=len(audio)/sr;start=float(line['start']);window=float(line.get('duration',actual));next_start=float(lines[n+1]['start']) if n+1<len(lines) else float(spec.get('duration',start+window+.5));available=min(window+.4,next_start-start-.1)
+        audio,sr=sf.read(path);synthesized_duration=len(audio)/sr;pitch=float(line.get('pitch_semitones',line.get('pitch',0)))
+        if pitch:
+            # Match the original character direction: varispeed pitch-up also shortens the take.
+            import soxr
+            audio=soxr.resample(audio,sr*2**(pitch/12),sr);path=out/(ident+'-pitched.wav');sf.write(path,audio,sr,subtype='PCM_24')
+        actual=len(audio)/sr;start=float(line['start']);window=float(line.get('duration',actual));next_start=float(lines[n+1]['start']) if n+1<len(lines) else float(spec.get('duration',start+window+.5));available=min(window+.4,next_start-start-.1)
         # Fresh takes may vary slightly; preserve all words and cue onset with a bounded pitch-preserving fit.
         fitted=path
         factor=actual/max(available,.1)
         if factor>1.001:
             if factor>1.25:raise RuntimeError(f'{ident}: {actual:.3f}s speech will not fit {available:.3f}s; adjust delivery speed without changing text')
             fitted=out/(ident+'-timed.wav');subprocess.run(['ffmpeg','-y','-v','error','-i',str(path),'-af',f'atempo={factor:.8f}',str(fitted)],check=True)
-        records.append(dict(id=ident,text=text,voice=voice,language=language,start=start,planned_duration=window,raw_duration=actual,file=str(fitted.resolve()),tempo_factor=max(1,factor),filter=line.get('filter')))
+        records.append(dict(id=ident,text=text,voice=voice,language=language,start=start,planned_duration=window,synthesized_duration=synthesized_duration,raw_duration=actual,pitch_semitones=pitch,file=str(fitted.resolve()),tempo_factor=max(1,factor),filter=line.get('filter')))
         print(ident,round(actual,3),voice,flush=True)
     (out/'timing.json').write_text(json.dumps(records,ensure_ascii=False,indent=2)+'\n');return records
 if __name__=='__main__':

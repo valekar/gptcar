@@ -1,0 +1,123 @@
+{
+  "language": "en-us",
+  "voice": "af_heart",
+  "lines": [
+    {
+      "id": "v01",
+      "start": 3.8,
+      "duration": 5.9,
+      "text": "Australia is the driest inhabited continent. To understand its plants, follow the rain.",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "language": "en-us"
+    },
+    {
+      "id": "v02",
+      "start": 11.8,
+      "duration": 4.25,
+      "text": "At the red centre, less than two hundred and fifty millimetres falls in a year.",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "language": "en-us"
+    },
+    {
+      "id": "v03",
+      "start": 17.2,
+      "duration": 4.46,
+      "text": "Spinifex curls into spiky hummocks. They cover about a fifth of the land.",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "language": "en-us"
+    },
+    {
+      "id": "v04",
+      "start": 23.6,
+      "duration": 7.42,
+      "text": "A little more rain, and the acacias arrive. Mulga tilts its branches upward, funnelling every drop down to its roots.",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "language": "en-us"
+    },
+    {
+      "id": "v05",
+      "start": 34.3,
+      "duration": 6.26,
+      "text": "Then come the eucalypts. More than eight hundred species, making up three quarters of Australia's forests.",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "language": "en-us"
+    },
+    {
+      "id": "v06",
+      "start": 41.8,
+      "duration": 1.71,
+      "text": "Fire is part of the rhythm here.",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "language": "en-us"
+    },
+    {
+      "id": "v07",
+      "start": 47.2,
+      "duration": 4.55,
+      "text": "Within weeks, blackened trunks sprout again, from buds hidden deep beneath the bark.",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "language": "en-us"
+    },
+    {
+      "id": "v08",
+      "start": 53.4,
+      "duration": 6.2,
+      "text": "In the wet mountains, mountain ash, the tallest flowering plant on Earth, reaches for a hundred metres.",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "language": "en-us"
+    },
+    {
+      "id": "v09",
+      "start": 61.5,
+      "duration": 6.26,
+      "text": "And where the rain barely stops: rainforest. Layer upon layer, on less than one percent of the land.",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "language": "en-us"
+    },
+    {
+      "id": "v10",
+      "start": 75.0,
+      "duration": 4.5,
+      "text": "But this walk, from desert to rainforest, is also a walk back in time.",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "language": "en-us"
+    },
+    {
+      "id": "v11",
+      "start": 80.8,
+      "duration": 4.06,
+      "text": "Fifty million years ago, rainforest spread across much of Australia.",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "language": "en-us"
+    },
+    {
+      "id": "v12",
+      "start": 86.4,
+      "duration": 7.3,
+      "text": "As the continent drifted north and dried, the green retreated to the edges, and tough, fire-ready bush claimed the heart.",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "language": "en-us"
+    },
+    {
+      "id": "v13",
+      "start": 97.3,
+      "duration": 3.39,
+      "text": "Dry at the heart. Green at the edge. And still changing.",
+      "voice": "af_heart",
+      "speed": 0.93,
+      "language": "en-us"
+    }
+  ]
+}

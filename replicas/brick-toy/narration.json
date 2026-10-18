@@ -1,0 +1,86 @@
+{
+  "duration": 54,
+  "language": "en-gb",
+  "voice": "bm_george",
+  "direction": "Warm British storyteller, restrained and kindly. Three countdown lines use new am_adam takes through a radio filter. All original words and cue onsets retained.",
+  "lines": [
+    {
+      "id": "v1",
+      "text": "Every rocket starts with one brick.",
+      "voice": "bm_george",
+      "speed": 0.9,
+      "start": 0.8,
+      "duration": 3.0,
+      "language": "en-gb"
+    },
+    {
+      "id": "v2",
+      "text": "Then another. And another.",
+      "voice": "bm_george",
+      "speed": 0.95,
+      "start": 6,
+      "duration": 2.3,
+      "language": "en-gb"
+    },
+    {
+      "id": "v3",
+      "text": "The first one fell apart.",
+      "voice": "bm_george",
+      "speed": 0.85,
+      "start": 22.6,
+      "duration": 2.7,
+      "language": "en-gb"
+    },
+    {
+      "id": "v4",
+      "text": "That's okay. Now we have spare parts.",
+      "voice": "bm_george",
+      "speed": 0.9,
+      "start": 25.6,
+      "duration": 3.1,
+      "language": "en-gb"
+    },
+    {
+      "id": "c3",
+      "text": "Three.",
+      "voice": "am_adam",
+      "speed": 0.95,
+      "start": 33.3,
+      "duration": 0.8,
+      "language": "en-us",
+      "filter": "radio",
+      "filter_direction": "Band-pass380\u20132800Hz with soft saturation; mission control."
+    },
+    {
+      "id": "c2",
+      "text": "Two.",
+      "voice": "am_adam",
+      "speed": 0.95,
+      "start": 34.3,
+      "duration": 0.8,
+      "language": "en-us",
+      "filter": "radio",
+      "filter_direction": "Band-pass380\u20132800Hz with soft saturation; mission control."
+    },
+    {
+      "id": "c1",
+      "text": "One.",
+      "voice": "am_adam",
+      "speed": 0.95,
+      "start": 35.3,
+      "duration": 0.9,
+      "language": "en-us",
+      "filter": "radio",
+      "filter_direction": "Band-pass380\u20132800Hz with soft saturation; mission control."
+    },
+    {
+      "id": "v5",
+      "text": "And every moon base... starts with one brick.",
+      "voice": "bm_george",
+      "speed": 0.88,
+      "start": 45.2,
+      "duration": 3.8,
+      "language": "en-gb"
+    }
+  ]
+}
