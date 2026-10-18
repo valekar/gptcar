@@ -34,7 +34,7 @@ def compose(score,voice_records,duration,out):
         elif name in P.PRESETS:
             signal=P.pluck(name,note.get('midi',60),float(note['duration']),vel=float(note.get('velocity',.65)),**{k:note[k] for k in ['bend','vib','glide','harmonic','trem'] if k in note})
             add(dst,signal,note['t'],note.get('gain',.1),note.get('pan',0))
-        elif name in ['saw','fm_glass','sub808','toy_piano','analog_saw_pad','analog_square_seq']:add(dst,synth_note(name,note.get('midi',60),float(note['duration'])),note['t'],note.get('gain',.1),note.get('pan',0))
+        elif name in ['saw','fm_glass','sub808','toy_piano','analog_saw_pad','analog_square_seq','lpg_plonk']:add(dst,synth_note(name,note.get('midi',60),float(note['duration']),**{k:note[k] for k in ['value','fm_index'] if k in note}),note['t'],note.get('gain',.1),note.get('pan',0))
         else:synth[channel].append(note)
     for hit in score.get('hits',[]):
         channel=hit.get('channel','music')
@@ -64,8 +64,9 @@ def compose(score,voice_records,duration,out):
         a,sr=sf.read(line['file'],dtype='float32');a=a.mean(axis=1) if a.ndim==2 else a
         if sr!=SR:
             ratio=Fraction(SR,sr);a=resample_poly(a,ratio.numerator,ratio.denominator)
-        if line.get('filter')=='radio':
-            a=sosfilt(butter(4,[380,2800],btype='bandpass',fs=SR,output='sos'),a)
+        if line.get('filter') in ('radio','radio1930'):
+            band=[260,4600] if line['filter']=='radio1930' else [380,2800]
+            a=sosfilt(butter(4,band,btype='bandpass',fs=SR,output='sos'),a)
             a=np.tanh(a*3)/3
         elif line.get('filter')=='machine':
             clock=np.arange(len(a))/SR
@@ -82,6 +83,16 @@ def compose(score,voice_records,duration,out):
         a=np.tanh(a/(rms(active)*4))*rms(active)*4;a*=10**(-18/20)/max(rms(a[np.abs(a)>.003]),1e-8)
         add(speech,a,line['start']);i=max(0,round((line['start']-.15)*SR));j=min(len(duck),round((line['start']+len(a)/SR+.2)*SR));duck[i:j]=np.minimum(duck[i:j],.62)
     duck=uniform_filter1d(duck,size=int(.25*SR),mode='nearest');mix=(music+foley)*duck[:,None]+speech
+    if score.get('master_filter')=='optical':
+        # Recreate the narrow optical track with subtle deterministic wow/flutter.
+        clock=np.arange(len(mix))/SR
+        offset=(.00035*np.sin(2*np.pi*.7*clock)+.00006*np.sin(2*np.pi*8.3*clock))*SR
+        sample=np.clip(np.arange(len(mix))+offset,0,len(mix)-1)
+        for ch in range(2):mix[:,ch]=np.interp(sample,np.arange(len(mix)),mix[:,ch])
+        mix=sosfilt(butter(3,[110,6200],btype='bandpass',fs=SR,output='sos'),mix,axis=0)
+        mix=np.tanh(mix*1.15)/1.15
+    elif score.get('master_filter'):
+        raise ValueError('Unsupported master filter: '+str(score['master_filter']))
     for start,end in score.get('silence_ranges',[]):
         mix[max(0,round(start*SR)):min(len(mix),round(end*SR))]=0
     peak=float(np.max(np.abs(mix)))

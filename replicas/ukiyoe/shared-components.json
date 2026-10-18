@@ -1,0 +1,31 @@
+[
+  {
+    "path": "styles/ukiyoe/demo/print.js",
+    "sha256": "735a23892ced5c61a5ac3378e4930a6c0b2fb21c40d79f6d1978a791d016ed68",
+    "purpose": "Generic washi/fibres, block woodgrain/baren/goma-zuri, bokashi, reveal masks, carved lines, cartouche and seal renderer"
+  },
+  {
+    "path": "styles/ukiyoe/demo/nature.js",
+    "sha256": "b125645340718af6ea90c6fcd4e9d4ae67f256596fa6b9d59bc4e4f36c8849bb",
+    "purpose": "Reusable mountain/snow/pine/rock/rain/goose/claw model primitives; independently assembled five landscapes"
+  },
+  {
+    "path": "styles/ukiyoe/demo/wave.js",
+    "sha256": "c8a6ae78b453204dab924cff08656ba5be491330b1d260f0317b34e64fc01e0a",
+    "purpose": "Shared banded water, wave silhouette and recursive carved-claw geometry; own time schedule, cameras, border escape and foreground foam assembly"
+  },
+  {
+    "path": "styles/ukiyoe/demo/traveler.js",
+    "sha256": "c0ea305fb49fa935f5d2adad5a7291c77ddcc98187fdc538112f6854238a32a6",
+    "purpose": "Shared flat traveller, clothing, kasa and anatomical pose rig; independently scheduled/performed all walk, drink, stand, back and hat-off actions"
+  },
+  {
+    "path": "core/lib.js",
+    "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+    "purpose": "Deterministic math and seeded random generator"
+  },
+  {
+    "path": "replicas/ukiyoe/fonts",
+    "purpose": "Fresh Google Fonts OFL Yuji Syuku/Shippori Mincho/Cormorant Garamond with license notices"
+  }
+]

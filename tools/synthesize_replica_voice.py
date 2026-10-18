@@ -8,6 +8,13 @@ def synthesize(spec,out):
     out.mkdir(parents=True,exist_ok=True);lines=spec.get('lines',[]);records=[];engine=None
     for n,line in enumerate(lines):
         text=line['text'];voice=line.get('voice',spec.get('voice','af_heart'));speed=float(line.get('speed',spec.get('speed',.93)));language=line.get('language',spec.get('language','en-us'));ident=line.get('id',f'v{n+1:02d}');path=out/(ident+'.wav');segments=line.get('delivery_segments');pause=float(line.get('segment_pause',.09));key=[text,voice,speed,language]
+        neural='Neural' in voice
+        rate=line.get('rate',spec.get('rate'))
+        neural_pitch=line.get('pitch_hz',line.get('pitch',spec.get('pitch_hz',spec.get('pitch','+0Hz')))) if neural else None
+        say=line.get('say',text)
+        if neural:
+            if not isinstance(neural_pitch,str) or not re.fullmatch(r'[+-]\d+Hz',neural_pitch):raise ValueError(ident+': neural pitch must use signed Hz')
+            key.extend([rate,neural_pitch,say])
         if segments:
             words=lambda value: re.findall(r"[\w']+",value.casefold())
             if not isinstance(segments,list) or not all(isinstance(s,str) and s.strip() for s in segments) or words(' '.join(segments))!=words(text):raise ValueError(ident+': delivery segments must retain the exact original words in order')
@@ -16,8 +23,10 @@ def synthesize(spec,out):
             key.extend([segments,pause])
         digest=hashlib.sha256(json.dumps(key,ensure_ascii=False).encode()).hexdigest();cache=out/(ident+'.json')
         if not path.exists() or not cache.exists() or json.loads(cache.read_text()).get('input_sha256')!=digest:
-            if 'Neural' in voice:
-                request=out/(ident+'-request.json');request.write_text(json.dumps([dict(id=ident,text=text,voice=voice,speed=speed)],ensure_ascii=False));subprocess.run([sys.executable,str(ROOT/'core/tts/tts_zh.py'),str(request),str(out)],check=True)
+            if neural:
+                request=out/(ident+'-request.json');req=dict(id=ident,text=text,say=say,voice=voice,speed=speed,pitch=neural_pitch)
+                if rate is not None:req['rate']=rate
+                request.write_text(json.dumps([req],ensure_ascii=False));subprocess.run([sys.executable,str(ROOT/'core/tts/tts_zh.py'),str(request),str(out)],check=True)
             else:
                 if engine is None:
                     from kokoro_onnx import Kokoro
@@ -32,7 +41,7 @@ def synthesize(spec,out):
                 if not len(a) or np.max(np.abs(a))<1e-4:raise RuntimeError(ident+' is silent')
                 sf.write(path,a,sr,subtype='PCM_24')
             cache.write_text(json.dumps(dict(input_sha256=digest,text=text,voice=voice,speed=speed,language=language),ensure_ascii=False,indent=2)+'\n')
-        audio,sr=sf.read(path);synthesized_duration=len(audio)/sr;pitch=float(line.get('pitch_semitones',line.get('pitch',0)))
+        audio,sr=sf.read(path);synthesized_duration=len(audio)/sr;pitch=float(line.get('pitch_semitones',0 if neural else line.get('pitch',0)))
         if pitch:
             # Match the original character direction: varispeed pitch-up also shortens the take.
             import soxr

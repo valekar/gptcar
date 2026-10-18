@@ -1,0 +1,9 @@
+# Pre-freeze review
+
+Inspected all four original one-second sheets covering the complete44s and exact source29.875/30.125 foam,16.875/22.625 scroll transitions. Inspected all44 new half-second-offset one-second frames,22 exact event samples,7 transition/foam repairs and6 final foam targets. Covers four opening passes, all five prints/captions/cartouches, each scroll, teahouse drinking and steam/hat/chime/leaf, wave rise/held crest/fall/foreground foam/crash, blank ma, four final reprints, hat-off, final mount/credits.
+
+Refined distant geese scale, pale rainy mountain, teahouse window mountain/hat/chime/plaster, final continuous green ridge and mist. Kept incoming middle prints complete behind the scroll reveal; camera now tracks the falling lip and foreground recursive foam fills the lens before paper. Ten scrambled repeated seeks checked on final source.
+
+Remaining differences: new rice-field layout, willow/bridge and interior prop geometry, ridge/rock/branch/leaf placement, snow profile, exact traveller performance phases and foam/camera paths. Reused generic model/render material is expressly attributed. Original and new films are not pixel-identical. Independent parent final movie/frame and fresh-audio review is still required.
+
+Parent reviewed67 decoded original/new movie pairs. Repaired five findings: each print now renders into its own reset canvas including wave overflow; final mountain broader/shorter with restored ground contour/green overlap; snow/mist moved to the third physical plate (blue-only33.25, snow33.5); bridge raised30productionpixels with broad gray rainy mountain and straight sparse willow strands; black round kettle body/spout; larger, fewer paddy bands and a straighter pine. Inspected10 fresh matching-time repair stills and re-ran10 scrambled repeated seeks. Original five exact ASR takes were already independently verified by parent.

@@ -1,0 +1,18 @@
+Full79-shot /70-action worker scene audit
+Read full STYLE.md and DEMO.md, inspected all14 original reference sheets plus ten exact swim/racket fast-card frames before coding. Rendered193 initial full-sequence stills and examined all10QA sheets, then checked36 exact-time side-by-side pairs across intro, athletics, ballgames, power, Asia and finale. Expanded final review to260 timestamps with one rig key action per sport, rendered and examined all13 finalQA sheets. Eight full-size corrected stills additionally checked artistic swimming, track, panel/title framing, full-sun identity and final wall. This covers every scene/action, not every9816encoded frame.
+
+Retained all79 original EDL shots and70 sport cards, full bilingual English/Japanese names,43/469/16 count-ups, seven chapters, every action/equipment class,14 athletics stations, fast swim/racket/cycle runs, all43 unique finale sport icons plus2026/sun, identity/slogan/end card and2s black audio tail. No narration in original or recreation.
+
+Generic MIT rig/prop actions and pattern/type/joint primitives are explicitly upstream assets. Independent new scene staging, track camera, masked figure layer assembly, timing/card selection, HUD, UI-independent grid transitions, ring/sun identity geometry, finale wall and whole-film assembly. Original scenes.js not loaded/read/imported. No official images, original frames, master film or original soundtrack reused.
+
+Repairs from matched-time inspection: correct1490-ish curved track station placement rather than accumulated drift; sun clipped separately from below-ground equipment; full throwing/landing/waterpit props; artistic swimming B layout and Teqball A; C-layout outline count; correct foreground height for A/C/B; exact198 intermediate count at14.5; ring hue order, full closed rings and larger end sun, whole-wall0.9 shrink and correctly sized individual icons. Native transitions have5subframe shutter averaging only in moving windows.
+
+Fresh score:559notes/1843percussion/material cues,150BPM Dm/miyako-bushi, physically modeled shamisen/koto with bends, synthesized distinct odaiko/nagado/shime/ka and electronic kit, chapter onset accents, ready/set half-beat digital cut, stripped ticking collapse bar and2s ringout. Root confirmed support. New truthful GPT credit.
+
+Disclosed residual differences: procedural motif seed/arrangement, tiny card text metrics, independently authored transition phases, track camera interpolation, wall pose sizes/stagger, and small ring animation phases. Event identity attribution/rights separate fromMIT; archived reference claims are not represented as newly verified current programme. Root independent completed-movie/audio review still required.
+
+
+## Independent movie repair pass
+Root reviewed 92 matched movie frames spanning all79 shots; no action/title/icon-wall omissions were reported. Dense original counter decode frames864–882 establish the continuous half-second cubic ease-out (0,45,88,127,164,198,229,258,284,308,…), not an intermediate pinned value. All three counters now use that curve. Six opening bands enter over cream in staggered alternating directions; the central ink panel expands after the first rows. All seven chapter strips and typography groups move to the original upper-middle framing. Intro/outro arcs ease from tiny dashes and use distinct starting angles. Eighteen new repair stills were rendered and key counter, band, chapter, opening and closing dash stills visually inspected. Final MP4 acceptance remains root-owned.
+
+Final intro repair: counter retains original falling entry offset while counting; label reveal now completes promptly enough to read EVENTS at14.5. Settled15.5 layout unchanged.

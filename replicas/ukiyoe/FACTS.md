@@ -1,0 +1,3 @@
+# Fictional journey and provenance
+
+This is a fictional five-view journey, not a map of a named mountain or a reproduction of a historical print. Measured delivery is1056frames/24fps=44s at1280×720; production artwork is1920×1080. The public MP4 container duration44.01 includes mux rounding. Exact five poem lines and view names are published. The original initial chat prompt is unavailable. Original movie frames and master audio are analytical references only. The generic library traveller/wave/nature assets are shared and attributed; landscape sets, assembly, performance, cameras and score are newly authored.

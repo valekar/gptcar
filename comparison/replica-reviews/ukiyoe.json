@@ -1,0 +1,30 @@
+{
+  "slug": "ukiyoe",
+  "verdict": "accepted-for-gallery",
+  "reviewer": "root independent scene review",
+  "reviewed_source_sha256": "b9ec8388a8387079a75508f684d48f656d8ee4ce0da67bc3d58caffe13971888",
+  "reviewed_video_sha256": "be58b18179ce3cf4f47c039705addfb502603d028505c1fcb7522420674e59be",
+  "scene_review": "passed",
+  "audio_review": "passed",
+  "review_times": [
+    0.7083333333333334,
+    2.5,
+    6.5,
+    11.5,
+    13.5,
+    17.5,
+    19.5,
+    26.5,
+    29.875,
+    32.5,
+    33.25,
+    33.5,
+    35.5,
+    39.916666666666664,
+    41.5
+  ],
+  "method": "Reviewed all 67 paired decoded frames across all five prints and full 44-second movie, followed by 15 final repair targets covering fields, bridge/rain, kettle, wave, staged snow plate and scroll overview. New panel draws are isolated; no original scene assembly replayed.",
+  "audio_evidence": "Five fresh am_adam narration takes normalized exact in independent ASR. Fresh score has 91 notes, 82 hits and 105 material cues. Verified exact PCM zero over both full-mix pauses, 28.42\u201328.5 and 30.4\u201332.2. Final audio -13.9 LUFS / -1.1 dBTP.",
+  "comparison_notes": "Full five-print journey, carving/colour passes, drinking, wave overflow and foam crash, paper pause, final mountain and hat-off follow the reference. Rice-field layout, tree/bridge/prop geometry, snow contour, foam trajectory and fine performance phases remain distinct. Generic print/nature/wave/traveller tools are credited.",
+  "reviewed_at": "2026-10-18T06:38:27.359775+00:00"
+}

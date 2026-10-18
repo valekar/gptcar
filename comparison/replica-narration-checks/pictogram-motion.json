@@ -1,0 +1,10 @@
+{
+  "slug": "pictogram-motion",
+  "method": "Independent Whisper transcription of the actual newly synthesized/pitched/tempo-fitted voice takes. No expected-text initial prompt. Music and radio filtering are separately mixed.",
+  "narration_sha256": "165c75777fda410363486fc95f8ea30da14c48d921dda863eed01bbfc1a6d0fb",
+  "timing_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "checked_at": "2026-10-18T06:05:40.514516+00:00",
+  "line_count": 0,
+  "normalized_exact_count": 0,
+  "lines": []
+}

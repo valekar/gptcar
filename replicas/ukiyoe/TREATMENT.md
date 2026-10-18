@@ -1,0 +1,7 @@
+# Toward the Mountain · 山へ五景
+
+Build all five complete framed woodblock prints on one mounted handscroll, with actual washi fibres, per-colour woodgrain/baren/goma-zuri and fixed registration. Print rice-field dawn key/blue/green/red in four source-timed impressions; tiny snow mountain and blue traveller beneath bold pine, title withdraws for first exact poem line. Slide1.0s to arched bridge/rain/willow/pale mountain; slide.9s to teahouse circular mountain window, red bench, kettle/steam, straw hat, tea lantern, maple branch and seated drinking action. Slide.6s to the cliff/leaning pine and sea.
+
+At25.4 the sea rises, hangs27.3–28.5 with a held crest outside both sheet and border, then falls and crashes to foam30.4. Preserve absolute ma blank/silence30.4–32.2. Reprint the now-dominant mountain in four strokes32.2/32.7/33.2/33.7; final line, traveller hat-off37.1–37.8, view cartouche. Pull38.9–40.9 to all five prints reversed on mounting scroll, near-black surrounding room, title/style/honest recreation signature.
+
+Use attributed generic print/nature/traveller/wave primitives as shared assets. Independently assemble all five sets, blocks, layer choices, camera/scroll/printing schedules, performances and subtitle/title assembly. No original views.js/main.js/story.js imports. Preserve all five exact voice lines, full44s1056frames, original musical arc and material cues; freshly recreate soundtrack. Full scene and exact wave-phase review before freeze.

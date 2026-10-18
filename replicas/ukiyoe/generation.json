@@ -1,0 +1,199 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "slug": "ukiyoe",
+  "title": "Toward the Mountain \u00b7 \u5c71\u3078\u4e94\u666f",
+  "source_ready": true,
+  "status": "source-ready-for-independent-review",
+  "uses_upstream_scene_code": false,
+  "matched_brief_sha256": "bbb87a904916447ea530b65dc006686e70c56813c33f3b604537d3e131637ceb",
+  "delivery": {
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frame_count": 1056,
+    "duration": 44
+  },
+  "duration": 44,
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "review_times": [
+    0.5,
+    0.7,
+    1.2,
+    1.5,
+    1.9,
+    2.5,
+    2.6,
+    3.5,
+    4.5,
+    5.5,
+    6.5,
+    7.5,
+    8.5,
+    9.5,
+    10.5,
+    10.958333,
+    11.5,
+    12.5,
+    13.5,
+    14.5,
+    15.5,
+    16.5,
+    16.875,
+    17.5,
+    18.5,
+    19.5,
+    20.5,
+    21.5,
+    22.5,
+    22.625,
+    23.5,
+    24.5,
+    25.5,
+    26.5,
+    27.3,
+    27.5,
+    28.416667,
+    28.5,
+    29.5,
+    29.7,
+    29.875,
+    30.125,
+    30.25,
+    30.375,
+    30.416667,
+    30.5,
+    31.5,
+    32.25,
+    32.5,
+    32.75,
+    33.25,
+    33.5,
+    33.75,
+    34.5,
+    35.5,
+    36.5,
+    37.125,
+    37.5,
+    37.75,
+    38.5,
+    39.5,
+    39.9,
+    39.916667,
+    40.5,
+    41.5,
+    42.5,
+    43.5,
+    43.958333
+  ],
+  "shared_components": [
+    {
+      "path": "styles/ukiyoe/demo/print.js",
+      "sha256": "735a23892ced5c61a5ac3378e4930a6c0b2fb21c40d79f6d1978a791d016ed68",
+      "purpose": "Generic washi/fibres, block woodgrain/baren/goma-zuri, bokashi, reveal masks, carved lines, cartouche and seal renderer"
+    },
+    {
+      "path": "styles/ukiyoe/demo/nature.js",
+      "sha256": "b125645340718af6ea90c6fcd4e9d4ae67f256596fa6b9d59bc4e4f36c8849bb",
+      "purpose": "Reusable mountain/snow/pine/rock/rain/goose/claw model primitives; independently assembled five landscapes"
+    },
+    {
+      "path": "styles/ukiyoe/demo/wave.js",
+      "sha256": "c8a6ae78b453204dab924cff08656ba5be491330b1d260f0317b34e64fc01e0a",
+      "purpose": "Shared banded water, wave silhouette and recursive carved-claw geometry; own time schedule, cameras, border escape and foreground foam assembly"
+    },
+    {
+      "path": "styles/ukiyoe/demo/traveler.js",
+      "sha256": "c0ea305fb49fa935f5d2adad5a7291c77ddcc98187fdc538112f6854238a32a6",
+      "purpose": "Shared flat traveller, clothing, kasa and anatomical pose rig; independently scheduled/performed all walk, drink, stand, back and hat-off actions"
+    },
+    {
+      "path": "core/lib.js",
+      "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+      "purpose": "Deterministic math and seeded random generator"
+    },
+    {
+      "path": "replicas/ukiyoe/fonts",
+      "purpose": "Fresh Google Fonts OFL Yuji Syuku/Shippori Mincho/Cormorant Garamond with license notices"
+    }
+  ],
+  "determinism": [
+    {
+      "t": 3.5,
+      "equal": true,
+      "sha256": "e5c02b07f6f1159042c544933a9abe89ae3424768f902d47f4407de1a96efea5"
+    },
+    {
+      "t": 12.5,
+      "equal": true,
+      "sha256": "bf12d613ff237f168c8147eee6749f5e8b6782ce456cdf5681a488a0b6b71c7b"
+    },
+    {
+      "t": 18.5,
+      "equal": true,
+      "sha256": "69ccb810f2b278e957c81efa290103056cef3719226a7fdf2d8181d0d1550b80"
+    },
+    {
+      "t": 27.3,
+      "equal": true,
+      "sha256": "5695b742438817626394625d6f1bda5d9f54166ecd631033c8636332b503ad5a"
+    },
+    {
+      "t": 29.875,
+      "equal": true,
+      "sha256": "a124a9757e68706773ad53b7241a6d631eff91bad3e5d602c9c5afbc4a3fd714"
+    },
+    {
+      "t": 32.5,
+      "equal": true,
+      "sha256": "38132c207cb063b26f56429f51193a881c114550fb6504fc86105bac60f4158b"
+    },
+    {
+      "t": 33.25,
+      "equal": true,
+      "sha256": "97b5779e35406508f51a3df0ecaf175b0c38201ac2decdb3d45c7dda97b9fec0"
+    },
+    {
+      "t": 33.5,
+      "equal": true,
+      "sha256": "9dc75b3ba4c0d04d9cf017672f8a89b09559723aec9f013893583c453c64c771"
+    },
+    {
+      "t": 38.5,
+      "equal": true,
+      "sha256": "4df94092cfef77fc6ec5633a36754881cc6475947797bc045ccfc207b8372ae4"
+    },
+    {
+      "t": 39.916667,
+      "equal": true,
+      "sha256": "28cd6287890d4ecb058c7d8e4cee2cf9228b6f1e1d65d9103621d549d7b03a94"
+    }
+  ],
+  "source_sha256": {
+    "CREDITS": "45d888f796c71d12f9230d033cb1397c853c2f9a689b719be90b0499557979f1",
+    "FACTS.md": "f83140210cd38902839abb3e9ff8e0c82fcc038d5b4f5fd5e331b1d907efe089",
+    "LICENSE": "14c9ff6f14bfb2391e74fedb01c256891d2a3bba1c2acf5789901bdf77e54e33",
+    "PROMPT.md": "84ea04714611efc8d73ec1365054f980e5bc156f39f1b0035f1007288ed4cf3e",
+    "REVIEW.md": "11a15250a90db8aaec995df60f2947efb327bbd987e33a5979ce22e07974d58c",
+    "TREATMENT.md": "36e1521fb6f34cad7e1e31246e4133dcbb08d610117d0b2ba792ec0208a45975",
+    "film.js": "b9caaa9e42f43f6939bfd72092e0fb8b2fbd4fee8a5deec7d57c41c7f49c0bd3",
+    "fonts/CormorantGaramond.ttf": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+    "fonts/OFL-CormorantGaramond.txt": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+    "fonts/OFL-ShipporiMincho.txt": "41fba056279be5f45ff9a99e44b7b53897b42732f5806d8e666e0ab49ac6bd38",
+    "fonts/OFL-YujiSyuku.txt": "ef7c85c72ae94381c8bc4832ae4e6fbabdeafa2bb8a31313cd75dce95a690256",
+    "fonts/ShipporiMincho-Medium.ttf": "700e505afc4cded2338eba29478a041e04c1c2ea5114fbb3e0b04e76c302c5d8",
+    "fonts/YujiSyuku-Regular.ttf": "82728ebafc8c97391e2dab633414a806f344b8e4e2227d307179f07b548fca61",
+    "index.html": "da5dcfcb6c2f52c494ce3835acc8855b96544b83b4cc6fb99d8d5f72061f1487",
+    "narration.json": "b35bb70e1cab2069bf12262fae0930d8145bbfceb13bb3571a1904482df6eaea",
+    "nature.js": "b125645340718af6ea90c6fcd4e9d4ae67f256596fa6b9d59bc4e4f36c8849bb",
+    "print.js": "735a23892ced5c61a5ac3378e4930a6c0b2fb21c40d79f6d1978a791d016ed68",
+    "prints.js": "413f321cdceba129649635a415e6bb162a5a3ef30847c357395de16db603a07c",
+    "score.json": "1291d5400957f3b9948ed3643de442da98515aa6802fa26c81ce12f334a0bc5c",
+    "shared-components.json": "9c0777ba0e98b99e32f8b1f1b3554f1279b8d42f9f30b5b6a0d23fc8f07116bb",
+    "traveler.js": "c0ea305fb49fa935f5d2adad5a7291c77ddcc98187fdc538112f6854238a32a6",
+    "wave.js": "c8a6ae78b453204dab924cff08656ba5be491330b1d260f0317b34e64fc01e0a"
+  }
+}

@@ -7,7 +7,39 @@ def effect(kind,duration,seed=6103,**p):
  d=float(duration);t=np.arange(max(1,round(d*SR)))/SR;u=t/max(d,.001);rng=np.random.default_rng(seed);noise=rng.normal(size=len(t));env=np.sin(np.pi*np.clip(u,0,1))**2
  def bp(a,lo,hi):return sosfilt(butter(2,[lo,hi],btype='bandpass',fs=SR,output='sos'),a)
  def lp(a,hz):return sosfilt(butter(2,hz,fs=SR,output='sos'),a)
- if kind in ('paper','brush','scratch'):
+ if kind=='projector_clatter':
+  rate=float(p.get('rate',24));pulse=np.maximum(np.sin(2*np.pi*rate*t),0)**20
+  a=(bp(noise,500,6200)*(.08+.65*pulse)+np.sin(2*np.pi*96*t)*.035)*np.minimum(t/.2,1)*np.minimum((d-t)/.2,1)
+ elif kind=='porcelain_clink':
+  f=float(p.get('frequency',2600));a=sum(g*np.sin(2*np.pi*f*r*t)*np.exp(-t*k) for r,g,k in [(1,.7,14),(1.72,.3,25),(2.31,.15,35)])*np.minimum(t/.001,1)
+ elif kind in ('sugar_step','sugar_crunch'):
+  clicks=rng.random(len(t))<.008;a=bp(noise,1100,9000)*clicks*4*np.exp(-u*7)+bp(noise,600,4400)*.1*np.exp(-u*6)
+ elif kind in ('rubber_creak','rubber_boing'):
+  f=(180+140*np.sin(np.pi*u)+22*np.sin(2*np.pi*19*t)) if kind=='rubber_creak' else (95+240*np.exp(-t*8))
+  ph=2*np.pi*np.cumsum(f)/SR;a=(np.sin(ph)+.3*np.sin(3*ph))*np.exp(-u*4)*np.minimum(t/.004,1)
+ elif kind in ('drain_slurp','water_gurgle'):
+  f=170+150*np.sin(2*np.pi*8*t)+70*np.sin(2*np.pi*17*t);ph=2*np.pi*np.cumsum(f)/SR
+  a=(np.sin(ph)*.5+bp(noise,250,2200)*.35)*env*(.4+.6*np.maximum(np.sin(2*np.pi*11*t),0))
+ elif kind=='alarm_ring':
+  a=(np.sin(2*np.pi*1800*t)+.4*np.sin(2*np.pi*2930*t))*(.25+.75*np.maximum(np.sin(2*np.pi*18*t),0))*np.minimum(t/.003,1)*np.minimum((d-t)/.05,1)
+ elif kind=='light_switch':
+  a=(bp(noise,1500,7500)*.7+np.sin(2*np.pi*950*t)*.2)*np.exp(-u*45)*np.minimum(t/.0005,1)
+ elif kind=='wood_mould':
+  a=(np.sin(2*np.pi*155*t)*.6+np.sin(2*np.pi*410*t)*.17+bp(noise,350,3200)*.35)*np.exp(-u*19)*np.minimum(t/.001,1)
+ elif kind=='train_rail':
+  interval=float(p.get('interval',.42));pulse=np.maximum(np.sin(2*np.pi*t/interval),0)**30
+  a=(lp(noise,430)*.35+bp(noise,500,3400)*pulse*.45+np.sin(2*np.pi*58*t)*.1)*np.minimum(t/.4,1)*np.minimum((d-t)/.4,1)
+ elif kind=='box_lid':
+  a=(bp(noise,200,2400)*.5+np.sin(2*np.pi*165*t)*.25)*np.exp(-u*12)*np.minimum(t/.002,1)
+ elif kind=='pastry_bite':
+  a=bp(noise,500,6500)*np.exp(-u*7)*(.3+.7*(rng.random(len(t))<.08))*np.minimum(t/.003,1)
+ elif kind=='handwriting':
+  a=bp(noise,1200,6900)*(.25+.75*np.maximum(np.sin(2*np.pi*float(p.get('speed',6))*t),0)**2)*env
+ elif kind=='kettle_steam':
+  a=(bp(noise,2000,9500)*.45+np.sin(2*np.pi*(2300*t+25*t*t))*.04)*np.minimum(t/.6,1)*np.minimum((d-t)/.3,1)
+ elif kind=='cicadas':
+  rate=float(p.get('rate',38));a=bp(noise,3400,8600)*(.3+.7*np.maximum(np.sin(2*np.pi*rate*t),0)**2)*(.7+.3*np.sin(2*np.pi*.8*t))*np.minimum(t/.4,1)*np.minimum((d-t)/.4,1)
+ elif kind in ('paper','brush','scratch'):
   a=bp(noise,500,7200)*(.6+.4*np.sin(2*np.pi*(9 if kind=='brush' else 31)*t));a*=env if kind=='brush' else np.exp(-u*4)
  elif kind in ('stamp','hit','thump'):
   a=(np.sin(2*np.pi*(90*t-28*t*t/max(d,.01)))+bp(noise,100,1600)*.25)*np.exp(-u*11)
@@ -333,10 +365,14 @@ def saw(midi,duration):
  t=np.arange(max(1,round(duration*SR)))/SR;f=440*2**((float(midi)-69)/12);a=sum(np.sin(2*np.pi*f*k*t)/k*np.exp(-k/7) for k in range(1,min(24,int(18000/f))+1));edge=np.minimum(t/.008,1)*np.minimum((duration-t)/.04,1);return np.asarray(a*edge*.6,dtype=np.float32)
 
 
-def synth_note(kind,midi,duration):
+def synth_note(kind,midi,duration,**p):
  if kind=='saw':return saw(midi,duration)
  t=np.arange(max(1,round(duration*SR)))/SR;f=440*2**((float(midi)-69)/12);edge=np.minimum(t/.003,1)*np.minimum((duration-t)/.025,1)
- if kind=='fm_glass':
+ if kind=='lpg_plonk':
+  value=float(p.get('value',0));index=float(p.get('fm_index',.3+2.4*np.clip((value+.4)/1.8,0,1)))
+  mod=np.sin(2*np.pi*f*2.713*t)*index*np.exp(-t*5)
+  a=(np.sin(2*np.pi*f*t+mod)+.12*np.sin(2*np.pi*f*4.12*t)*np.exp(-t*12))*np.exp(-t*(7-2*np.clip(value,0,1)))
+ elif kind=='fm_glass':
   a=np.sin(2*np.pi*f*t+2.6*np.sin(2*np.pi*f*2.414*t)*np.exp(-t*4))*np.exp(-t*3/max(duration,.2));a+=.13*np.sin(2*np.pi*f*4.173*t)*np.exp(-t*8)
  elif kind=='sub808':
   phase=2*np.pi*np.cumsum(f*(1+.75*np.exp(-t*45)))/SR;a=np.tanh(1.4*(np.sin(phase)+.08*np.sin(2*phase)))*np.exp(-t*2.2/max(duration,.1))

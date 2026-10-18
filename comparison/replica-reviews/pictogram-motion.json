@@ -1,0 +1,23 @@
+{
+  "slug": "pictogram-motion",
+  "verdict": "accepted-for-gallery",
+  "reviewer": "root independent scene review",
+  "reviewed_source_sha256": "9d02d1e639347e7c659efdfcae2fdd6025399c2619f4d22a27d263363abd8eed",
+  "reviewed_video_sha256": "b30646768f6e23d919d5667fd6996790153312a82f45baac6a5d7bcb8ddd9856",
+  "scene_review": "passed",
+  "audio_review": "passed",
+  "review_times": [
+    3.5,
+    6.5,
+    14.5,
+    15.5,
+    20.983333333333334,
+    129.78333333333333,
+    148.5,
+    150.5
+  ],
+  "method": "Reviewed 92 paired decoded frames covering all 79 shots, 70 actions, seven chapters and final 43-sport wall; then 16 repair targets and eight final paired targets for continuous counters, entering bands, title placement and ring dashes. Full 9816-frame movie at60fps.",
+  "audio_evidence": "No narration in the original or recreation. Fresh 150BPM D minor sampled/plucked score: 559 notes and 1843 material effects. Fullmovie loudness -14.0 LUFS / -1.0 dBTP. Intentional final black hold follows the original.",
+  "comparison_notes": "All 43 sports, action order, seven chapter cards, 14-station strip, event/day counters and multicolour finale follow the reference. Generic geometric sport rigs are credited. Motif arrangement, fine action phases and small typography/transition details remain distinct.",
+  "reviewed_at": "2026-10-18T06:40:18.953417+00:00"
+}
