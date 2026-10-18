@@ -1,0 +1,80 @@
+{
+  "duration": 40,
+  "voice": "bm_george",
+  "language": "en-gb",
+  "direction": "Calm declarative male voice; exact original eight lines with published per-line speed.",
+  "lines": [
+    {
+      "id": "l1",
+      "text": "Light everything built before nineteen forty.",
+      "start": 2.5,
+      "duration": 3.56,
+      "voice": "bm_george",
+      "speed": 1.08,
+      "language": "en-gb"
+    },
+    {
+      "id": "l2",
+      "text": "May fourteenth, nineteen forty.",
+      "start": 6.15,
+      "duration": 2.96,
+      "voice": "bm_george",
+      "speed": 1,
+      "language": "en-gb"
+    },
+    {
+      "id": "l3",
+      "text": "Bombs and fire took much of the centre.",
+      "start": 9.2,
+      "duration": 3.16,
+      "voice": "bm_george",
+      "speed": 1.05,
+      "language": "en-gb"
+    },
+    {
+      "id": "l4",
+      "text": "Then, layer by layer, it grew back.",
+      "start": 12.45,
+      "duration": 2.96,
+      "voice": "bm_george",
+      "speed": 1.08,
+      "language": "en-gb"
+    },
+    {
+      "id": "l5",
+      "text": "After nineteen ninety, it crossed the river, and climbed.",
+      "start": 15.5,
+      "duration": 3.987,
+      "voice": "bm_george",
+      "speed": 1.08,
+      "language": "en-gb"
+    },
+    {
+      "id": "l7",
+      "text": "At midwinter noon, the sun stays below fifteen degrees.",
+      "start": 22.98,
+      "duration": 4.26,
+      "voice": "bm_george",
+      "speed": 1.08,
+      "language": "en-gb"
+    },
+    {
+      "id": "l8",
+      "text": "The tallest tower's shadow runs nearly eight hundred metres,",
+      "start": 27.33,
+      "duration": 4.28,
+      "voice": "bm_george",
+      "speed": 1.08,
+      "language": "en-gb"
+    },
+    {
+      "id": "l9",
+      "text": "across sixteen roofs. Nine were there before the war.",
+      "start": 31.7,
+      "duration": 3.96,
+      "voice": "bm_george",
+      "speed": 1,
+      "language": "en-gb"
+    }
+  ]
+}

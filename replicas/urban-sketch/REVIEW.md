@@ -1,0 +1,5 @@
+# Pre-freeze visual review
+
+Inspected all3 original full-film sheets, full STYLE/DEMO and canonical11-shot prompt. Supplemented original exact2.5/20.5 for opening composition and apex tower. Inspected46 generated still times across the complete film, including every half-second-offset one-second sample plus6/8.5/8.95/11.55/20.4/21.55/21.6/23.55/24/24.04/24.35/25.65/26.3/32.3333. Added seven fresh final targets after refining the canopy, lamp-jump framing, tower/skyline, opening size/note, stage scaling, paper tooth and prone-to-stand turn. Eight scrambled seek frames match.
+
+All chase/lunge/leap/three-canopy-bursts/city/apex/fall/dive/catch/stand/wave/title events are present with full duration. New park layout, individual tower/tree arrangement, exact figure poses and camera path differ from source; shared generic character look/pose/rig/material assets are fully disclosed. Handwritten authorship lines truthfully identify the replica. Root independent same-frame final-movie/audio review remains required.

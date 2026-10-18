@@ -1,0 +1,3 @@
+import{room}from'./room.js';import{assembly}from'./assembly.js';import{motion}from'./motion.js';import{hud}from'./hud.js';
+let read=async p=>(await fetch(p)).json(),[D,timing,cues]=await Promise.all(['data/pcb.json','timing.json','subtitles.json'].map(read));await document.fonts.ready;await Promise.all(['500 30px NotoSC','400 20px NotoSC','300 36px Inter','400 29px Inter','400 20px JBMono'].map(s=>document.fonts.load(s,'二十一键RP2040')));let S=await room(),model=await assembly(S.scene,D),mov=motion(model,S,timing),draw=hud(document.querySelector('#overlay'),S.camera,model,mov,cues,timing);
+function render(t){mov.update(t);S.post.composer.render();draw(t)}window.render=render;window.DUR=38.75;render(0);window.READY=true;

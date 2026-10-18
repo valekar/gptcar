@@ -1,7 +1,7 @@
 {
   "schema_version": "matched-original-brief-v2-audit-1",
   "slug": "teardown",
-  "status": "reference-audited-asset-rebuild-required",
+  "status": "reference-audited-pinned-original-assets-restored",
   "original_title": "21 Keys, Opened",
   "original_title_aliases_from_demo": [
     "Demo: *21 Keys, Opened* 《二十一键》 (38.75 s) · `teardown.mp4` · source in [`demo/`](demo/)",
@@ -903,7 +903,6 @@
     ]
   },
   "matching_blockers": [
-    "The complete original PCB extraction is present. The pinned STEP-derived case.bin is absent; rebuild it and verify the original dimensions and four-hole transform.",
     "The original conversation prompt is not published. Use the complete published specification and audited reconstruction; do not claim the recovered text is a verbatim original chat prompt."
   ],
   "visual_audit": {
@@ -932,5 +931,10 @@
       "The dark-studio product is the exact left Corne half:21 sculpted blank keycaps, ivory alphas, grey modifiers and one coral thumb key. Lift caps to reveal white switches with red cross stems, then separate six labelled editorial layers. Preserve real plate holes, PCB routing/components, four brass spacers and the triangulated case. Macro travel under the PCB reveals the RP2040,16MB flash,23 reverse LEDs and hot-swap sockets. Reassemble all layers, dimension the actual138.4×97.6mm case and19.05mm pitch, demonstrate the4mm key stroke, then hold the complete product beside the title. Use exact source CAD and actual package placements."
     ],
     "note": "All regular reference sheets were inspected across the complete film. Named supplementary frames cover important short actions and transitions. This is scene coverage, not a claim that every encoded frame was inspected."
+  },
+  "asset_restoration": {
+    "status": "complete",
+    "source_commit": "63366fb7f51cf2a796462fdd90527e99dd126055",
+    "details": "Original PCB snapshot retained byte-for-byte. Pinned STEP-derived case restored; dimensions and four-hole transform independently checked in replica data-check.json."
   }
 }

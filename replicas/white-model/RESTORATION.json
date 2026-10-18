@@ -1,0 +1,9 @@
+{
+  "building_model": "Unchanged original published model.json and stats.json; no current3DBAG refetch",
+  "buildings": 3887,
+  "parts": 8860,
+  "decks": 108,
+  "water_source": "https://api.pdok.nl/lv/bgt/ogc/v1/collections/waterdeel/items?bbox=91500,435200,94300,438000&bbox-crs=http://www.opengis.net/def/crs/EPSG/0/28992&crs=http://www.opengis.net/def/crs/EPSG/0/28992&limit=1000&f=json",
+  "water_features": 487,
+  "mask_note": "Water regenerated from current BGT; shadow raster regenerated from preserved quantized model and published sun. Pixel boundaries can differ from original missing masks."
+}

@@ -1,0 +1,15 @@
+{
+  "origin": "Same original Corne pinned PCB extraction and restored STEP-derived case, commit63366fb7f51cf2a796462fdd90527e99dd126055.",
+  "assets": [
+    {
+      "path": "data/case.bin",
+      "sha256": "dee23fbdc837e0a0851e1718fd65661e225c533c744c337e298a5e9020df6f46",
+      "bytes": 1483928
+    },
+    {
+      "path": "data/pcb.json",
+      "sha256": "13b2ba5274cd6b10b9f3f3ca88a82fa7561e18ca1c094f561e114853b797e838",
+      "bytes": 660897
+    }
+  ]
+}

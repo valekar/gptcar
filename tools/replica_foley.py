@@ -156,6 +156,40 @@ def effect(kind,duration,seed=6103,**p):
   a=(bp(noise,1400,8500)*.6+np.sin(2*np.pi*2400*t)*.2)*np.exp(-u*32)*np.minimum(t/.0007,1)
  elif kind=='light_wash':
   a=(bp(noise,1200,7500)*.35+np.sin(2*np.pi*np.cumsum(900+850*u)/SR)*.08)*env
+ elif kind=='degauss':
+  phase=2*np.pi*np.cumsum(65-40*u)/SR;a=(np.sin(phase)+.2*np.sin(phase*3)+lp(noise,500)*.3)*np.exp(-u*7)*np.minimum(t/.004,1)
+ elif kind=='buckling_key':
+  body=155 if p.get('variant') in ('space','enter') else 235
+  a=(bp(noise,1200,10000)*.5+np.sin(2*np.pi*body*t)*.35)*np.exp(-t*80)+np.sin(2*np.pi*3400*t)*np.exp(-t*38)*.12
+  q=t-.025;valid=q>=0;a[valid]+=bp(noise,600,5000)[valid]*np.exp(-q[valid]*110)*.25
+ elif kind in ('modem_handshake','modem_upload'):
+  bits=rng.integers(0,2,max(2,int(d*300)+2));index=np.minimum((t*300).astype(int),len(bits)-1);f=np.where(bits[index],2400,1200)
+  if kind=='modem_handshake':
+   f=np.where(u<.22,2100,f);a=np.sin(2*np.pi*np.cumsum(f)/SR)*.45
+   middle=(u>=.22)&(u<.42);a[middle]=.3*(np.sin(2*np.pi*1650*t[middle])+np.sin(2*np.pi*1850*t[middle]))
+   a+=bp(noise,700,3100)*np.clip((u-.7)/.3,0,1)*.3
+  else:a=np.sin(2*np.pi*np.cumsum(f)/SR)*.35+bp(noise,600,3200)*.25
+  a=bp(a,300,3400)*np.minimum(t/.008,1)*np.minimum((d-t)/.02,1)
+ elif kind in ('error_beep','bel'):
+  f=1000 if kind=='bel' else float(p.get('frequency',640));phase=2*np.pi*f*t
+  a=sum(np.sin(phase*k)/k for k in range(1,min(21,int(15000/f))+1,2))*np.minimum(t/.003,1)*np.minimum((d-t)/.008,1)
+ elif kind=='terminal_fan':
+  a=(lp(noise,950)*.4+np.sin(2*np.pi*120*t)*.15+np.sin(2*np.pi*15700*t)*.015)*np.minimum(t/.2,1)*np.minimum((d-t)/.2,1)
+ elif kind=='bike_bell':
+  a=sum(g*np.sin(2*np.pi*f*t)*np.exp(-t*k) for f,g,k in [(1600,.5,4),(2388,.25,6),(4080,.13,9)])*np.minimum(t/.001,1)
+ elif kind=='grass_slide':
+  a=bp(noise,250,4200)*env*(.6+.4*np.sin(2*np.pi*29*t)**2)
+ elif kind=='catch_slap':
+  a=(bp(noise,400,6500)*.5+np.sin(2*np.pi*180*t)*.3)*np.exp(-u*16)*np.minimum(t/.001,1)
+ elif kind=='water_plop':
+  f=460-330*np.minimum(u*3,1);a=np.sin(2*np.pi*np.cumsum(f)/SR)*np.exp(-u*8)*np.minimum(t/.004,1)+bp(noise,600,4500)*np.exp(-u*15)*.15
+ elif kind in ('keycap_clack','switch_thock','board_tap','case_thud'):
+  f,lo,hi,decay={'keycap_clack':(1700,1000,8500,28),'switch_thock':(230,300,5000,16),'board_tap':(640,500,6500,23),'case_thud':(95,80,1600,11)}[kind]
+  a=(np.sin(2*np.pi*f*t)*.4+bp(noise,lo,hi)*.4)*np.exp(-u*decay)*np.minimum(t/.001,1)
+ elif kind=='steps':
+  a=np.zeros(len(t))
+  for onset in np.arange(0,d,float(p.get('interval',.5))):
+   q=t-onset;valid=q>=0;a[valid]+=(bp(noise,180,2200)[valid]*.5+np.sin(2*np.pi*115*q[valid])*.3)*np.exp(-q[valid]*35)*np.minimum(q[valid]/.003,1)
  else:raise ValueError('Unsupported material cue: '+kind)
  return np.asarray(a,dtype=np.float32)
 

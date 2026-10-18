@@ -1,0 +1,111 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_ready": true,
+  "status": "source-ready-for-independent-review",
+  "title": "21 Keys, Opened",
+  "duration": 38.75,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frame_count": 930,
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080,
+    "supersampling": 2,
+    "ambient_occlusion": "GTAO"
+  },
+  "matched_brief_sha256": "6e542a7d9ee713048ea3b536f518b5099eee42ac62702d172cbc47f7f2e6ad55",
+  "original_reference_sha256": "a5e2a47c1ccf9233ed2c314edb999f5cb743352b9558bd7b8ea6830700c2b30c",
+  "uses_upstream_scene_code": false,
+  "shared_components": [
+    {
+      "path": "styles/teardown/demo/src/parts.js",
+      "purpose": "Generic lofted cap/switch/extrusion/spacer/screw geometries only."
+    },
+    {
+      "path": "styles/teardown/demo/src/pcbtex.js",
+      "purpose": "Generic actual KiCad-layout-to-PBR-map painter."
+    },
+    {
+      "path": "styles/teardown/demo/src/comps.js",
+      "purpose": "Generic footprint-package geometry renderer; exact positions come from the preserved original PCB data."
+    },
+    {
+      "path": "styles/teardown/demo/src/overlay.js",
+      "purpose": "Generic label and dimension primitives adapted into local marks.js only; original drawOverlay story/end card not called."
+    },
+    {
+      "path": "core/three/post.js",
+      "purpose": "Generic supersampling, GTAO, physical DOF, bloom and vignette."
+    },
+    {
+      "path": "core/lib.js",
+      "purpose": "Generic deterministic easing and interpolation."
+    },
+    {
+      "path": "core/assets/polyhaven/photo_studio_loft_hall_2k.hdr",
+      "purpose": "Exact CC0 studio reflection environment."
+    }
+  ],
+  "licensed_assets": "Pinned original PCB/case data frozen in asset-manifest.json. Exact data counts, bounding size and four-hole alignment in data-check.json.",
+  "independent_scene_files": [
+    "assembly.js",
+    "materials.js",
+    "room.js",
+    "motion.js",
+    "hud.js",
+    "film.js"
+  ],
+  "reference_timing": "timing.json contains published timeline/camera data, independently applied.",
+  "review_times": [
+    0.8,
+    2.5,
+    3.13,
+    3.2,
+    3.21,
+    3.42,
+    4.7,
+    5.1,
+    5.7,
+    6.5,
+    7,
+    8,
+    9.75,
+    10.4,
+    11.3,
+    12.9,
+    13.65,
+    14.2,
+    15,
+    15.5,
+    17.5,
+    18.43,
+    18.9,
+    20.5,
+    21.3,
+    21.7,
+    22.3,
+    22.6,
+    24.5,
+    24.75,
+    25.4,
+    25.85,
+    26.63,
+    26.8,
+    27.3,
+    27.5,
+    27.58,
+    28.2,
+    28.5,
+    30.5,
+    32.5,
+    33.8,
+    34.8,
+    36.5,
+    38.3
+  ],
+  "review_status": "Worker full sequence and short-action still review complete; parent full-film/audio review pending.",
+  "review_notes": "REVIEW.md",
+  "audio": "Fresh nine exact am_michael inputs; new 310-note 96 BPM score, 218 sampled percussion hits and 134 effects. Exact cap lift/landing schedule in cap-events.json."
+}

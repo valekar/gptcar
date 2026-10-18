@@ -1,0 +1,25 @@
+{
+  "origin": "Preserved original 3DBAG model/statistics; restored BGT water and tower-shadow masks. See RESTORATION.json for raster-boundary variance.",
+  "assets": [
+    {
+      "path": "data/model.json",
+      "sha256": "d79bfa7649c7a9b70caac08a4034a3aaf3c5d72781ddc472c2d293eb89de3d67",
+      "bytes": 2318411
+    },
+    {
+      "path": "data/stats.json",
+      "sha256": "eea18c8be111c7f788a9e188a786e2a1b6e4ca4d203be629d369aede30aa5afc",
+      "bytes": 8522
+    },
+    {
+      "path": "data/water.png",
+      "sha256": "bb28a58adf62a7d8da2c96627edbece715c05e5817d9a5d9df9652dd8ceaf2e0",
+      "bytes": 264474
+    },
+    {
+      "path": "data/zshadow.png",
+      "sha256": "d090e6335fc0f3fa3599466ced24d0337a5329636de993f1e442734e036e4445",
+      "bytes": 4831
+    }
+  ]
+}

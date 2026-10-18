@@ -1,0 +1,89 @@
+{
+  "duration": 38.75,
+  "voice": "am_michael",
+  "language": "en-us",
+  "direction": "Calm close male narration, unhurried and exact; source abbreviations spoken as published.",
+  "lines": [
+    {
+      "id": "v1",
+      "text": "Twenty-one keys. Half a keyboard.",
+      "start": 0.55,
+      "duration": 3.23,
+      "voice": "am_michael",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "v2",
+      "text": "Take it apart: six layers.",
+      "start": 5.35,
+      "duration": 2.71,
+      "voice": "am_michael",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "v3",
+      "text": "Every one of them is drawn in open files.",
+      "start": 8.15,
+      "duration": 3.681,
+      "voice": "am_michael",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "v4",
+      "text": "One R P twenty forty chip runs it all.",
+      "start": 14.9,
+      "duration": 3.56,
+      "voice": "am_michael",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "v5",
+      "text": "Twenty-three lights, mounted upside down.",
+      "start": 18.55,
+      "duration": 3.399,
+      "voice": "am_michael",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "v6",
+      "text": "Hot-swappable. No soldering.",
+      "start": 22.35,
+      "duration": 2.716,
+      "voice": "am_michael",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "v7",
+      "text": "Put it back together.",
+      "start": 25.55,
+      "duration": 2,
+      "voice": "am_michael",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "v8",
+      "text": "Nineteen point oh five millimetres apart.",
+      "start": 27.8,
+      "duration": 3.21,
+      "voice": "am_michael",
+      "speed": 0.95,
+      "language": "en-us"
+    },
+    {
+      "id": "v9",
+      "text": "Every number is public.",
+      "start": 31.1,
+      "duration": 2.266,
+      "voice": "am_michael",
+      "speed": 0.95,
+      "language": "en-us"
+    }
+  ]
+}

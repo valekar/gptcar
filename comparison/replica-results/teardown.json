@@ -1,0 +1,110 @@
+{
+  "slug": "teardown",
+  "status": "rendered",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "title": "21 Keys, Opened",
+  "source_sha256": "501f73dd6e36c3b1604481355adcb396878976cb1cfc2db83a064e50b1880aff",
+  "matched_brief_sha256": "6e542a7d9ee713048ea3b536f518b5099eee42ac62702d172cbc47f7f2e6ad55",
+  "reference_video_sha256": "a5e2a47c1ccf9233ed2c314edb999f5cb743352b9558bd7b8ea6830700c2b30c",
+  "video_sha256": "457f2d7ab3501c2752eb6dd508d512215897644b46696ffe85d28d8b08ea888d",
+  "poster_sha256": "a1cf12c6c7fd8893fec4b1e834f44661c2fa13a423fa2ae18f22d753c85be6f1",
+  "reference_poster_sha256": "9f4eb7011ce87455bd14e197c47e43423e6e44431b526b625771e1ff1aa7d312",
+  "poster_time": 18.9,
+  "bytes": 12733730,
+  "width": 1280,
+  "height": 720,
+  "fps": 24.0,
+  "frames": 930,
+  "duration": 38.75,
+  "audio_codec": "aac",
+  "audio_levels": {
+    "integrated_lufs": -14.0,
+    "true_peak_dbtp": -1.1,
+    "peak_gain_adjustment_db": 0
+  },
+  "review_times": [
+    0.8,
+    2.5,
+    3.13,
+    3.2,
+    3.21,
+    3.42,
+    4.7,
+    5.1,
+    5.7,
+    6.5,
+    7.0,
+    8.0,
+    9.75,
+    10.4,
+    11.3,
+    12.9,
+    13.65,
+    14.2,
+    15.0,
+    15.5,
+    17.5,
+    18.43,
+    18.9,
+    20.5,
+    21.3,
+    21.7,
+    22.3,
+    22.6,
+    24.5,
+    24.75,
+    25.4,
+    25.85,
+    26.63,
+    26.8,
+    27.3,
+    27.5,
+    27.58,
+    28.2,
+    28.5,
+    30.5,
+    32.5,
+    33.8,
+    34.8,
+    36.5,
+    38.3
+  ],
+  "shared_components": [
+    {
+      "path": "styles/teardown/demo/src/parts.js",
+      "purpose": "Generic lofted cap/switch/extrusion/spacer/screw geometries only."
+    },
+    {
+      "path": "styles/teardown/demo/src/pcbtex.js",
+      "purpose": "Generic actual KiCad-layout-to-PBR-map painter."
+    },
+    {
+      "path": "styles/teardown/demo/src/comps.js",
+      "purpose": "Generic footprint-package geometry renderer; exact positions come from the preserved original PCB data."
+    },
+    {
+      "path": "styles/teardown/demo/src/overlay.js",
+      "purpose": "Generic label and dimension primitives adapted into local marks.js only; original drawOverlay story/end card not called."
+    },
+    {
+      "path": "core/three/post.js",
+      "purpose": "Generic supersampling, GTAO, physical DOF, bloom and vignette."
+    },
+    {
+      "path": "core/lib.js",
+      "purpose": "Generic deterministic easing and interpolation."
+    },
+    {
+      "path": "core/assets/polyhaven/photo_studio_loft_hall_2k.hdr",
+      "purpose": "Exact CC0 studio reflection environment."
+    }
+  ],
+  "qa": {
+    "technical_render": "passed",
+    "scene_fidelity": "passed",
+    "audio_review": "passed",
+    "black_intervals_detected": false
+  },
+  "updated_at": "2026-10-18T05:41:51Z"
+}

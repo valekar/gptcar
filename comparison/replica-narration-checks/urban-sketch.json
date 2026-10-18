@@ -1,0 +1,10 @@
+{
+  "slug": "urban-sketch",
+  "method": "Independent Whisper transcription of the actual newly synthesized/pitched/tempo-fitted voice takes. No expected-text initial prompt. Music and radio filtering are separately mixed.",
+  "narration_sha256": "edee6639a30cc44dec8a4269ed00ad63ef68550a678172b5a0de99fc8d7700e9",
+  "timing_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "checked_at": "2026-10-18T05:40:30.485912+00:00",
+  "line_count": 0,
+  "normalized_exact_count": 0,
+  "lines": []
+}

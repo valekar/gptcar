@@ -6,7 +6,7 @@ All51 published originals now have complete scene/script briefs in [the reconstr
 
 The new run preserves each original title/topic, narrative, exact narration text, on-screen copy, scene sequence and actual published delivery format. Voice, music and foley are freshly performed/generated. New scene code may use credited generic style engines and original licensed data. Original scene replay and original movie frames are not classified as new GPT artwork. The original private conversation prompts were not published.
 
-Current accepted reconstructions: **16 of 51** — Swiss Motion Graphics, Glass Product Render, Watercolor Brush, Brick Toy, Crayon Picture Book, Ink Wash, Paper Pop-up, Spy Titles, Data Physicalization, Art Deco, Blueprint, Impasto, Tilt-Shift, One-line Drawing, Microscope and Archive Lighttable. Further styles are being rendered and reviewed. No final Pages deployment has been made.
+Current accepted reconstructions: **20 of 51** — Swiss Motion Graphics, Glass Product Render, Watercolor Brush, Brick Toy, Crayon Picture Book, Ink Wash, Paper Pop-up, Spy Titles, Data Physicalization, Art Deco, Blueprint, Impasto, Tilt-Shift, One-line Drawing, Microscope, Archive Lighttable, White Model, Teardown, Urban Sketch and Stained Glass. Further styles are being rendered and reviewed. No final Pages deployment has been made.
 
 Each accepted film has a source-bound record in `replica-reviews/`, a technical render record in `replica-results/`, and a prompt/treatment/credits bundle in `../replicas/`. Acceptance checks full scene fidelity, narration/timing and audio, delivery frame count, resolution/fps, media hashes, and deterministic seeking. Remaining small visual differences are disclosed beside each pair; acceptance does not mean pixel identity.
 

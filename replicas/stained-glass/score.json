@@ -1,0 +1,1880 @@
+{
+  "duration": 56.5,
+  "bpm": 80,
+  "mode": "D Dorian",
+  "room": 0.3,
+  "music_rms_db": -24,
+  "silence_music_ranges": [
+    [
+      31.8,
+      33.8
+    ],
+    [
+      44.6,
+      47.2
+    ]
+  ],
+  "sections": [
+    {
+      "start": 0,
+      "end": 9.6,
+      "intent": "Free recorder incipit over D pedal; glass note dawn/title"
+    },
+    {
+      "start": 9.6,
+      "end": 15.6,
+      "intent": "80 BPM Dm\u2013G Dorian harp/sword lift"
+    },
+    {
+      "start": 15.6,
+      "end": 17.2,
+      "intent": "Water-glass light glide"
+    },
+    {
+      "start": 17.2,
+      "end": 22.6,
+      "intent": "Noon octave recorder/harp/chimes/bell"
+    },
+    {
+      "start": 22.6,
+      "end": 31.8,
+      "intent": "Full organ eighth ostinato Dm\u2013C\u2013Bb\u2013C, three clash/timpani hits"
+    },
+    {
+      "start": 31.8,
+      "end": 33.8,
+      "intent": "Hard cut all music/reverb; only shatter tail and wing friction"
+    },
+    {
+      "start": 33.8,
+      "end": 44.6,
+      "intent": "Warm soft organ, sparse chimes, rising one-note welds"
+    },
+    {
+      "start": 44.6,
+      "end": 47.2,
+      "intent": "Single tubular D bell, room tail"
+    },
+    {
+      "start": 47.2,
+      "end": 56.5,
+      "intent": "Nocturne reprise, harp harmonics, open D\u2013A, dawn glass rhyme"
+    }
+  ],
+  "notes": [
+    {
+      "t": 0.5,
+      "duration": 8.8,
+      "midi": 38,
+      "instrument": "organ_pedal",
+      "gain": 0.065,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 0.5,
+      "duration": 8.8,
+      "midi": 50,
+      "instrument": "organ_soft",
+      "gain": 0.035,
+      "pan": -0.25,
+      "velocity": 0.72
+    },
+    {
+      "t": 0.5,
+      "duration": 8.8,
+      "midi": 57,
+      "instrument": "organ_soft",
+      "gain": 0.035,
+      "pan": 0.25,
+      "velocity": 0.72
+    },
+    {
+      "t": 9.6,
+      "duration": 5.700000000000001,
+      "midi": 38,
+      "instrument": "organ_pedal",
+      "gain": 0.065,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 9.6,
+      "duration": 5.700000000000001,
+      "midi": 50,
+      "instrument": "organ_soft",
+      "gain": 0.035,
+      "pan": -0.25,
+      "velocity": 0.72
+    },
+    {
+      "t": 9.6,
+      "duration": 5.700000000000001,
+      "midi": 57,
+      "instrument": "organ_soft",
+      "gain": 0.035,
+      "pan": 0.25,
+      "velocity": 0.72
+    },
+    {
+      "t": 17.2,
+      "duration": 5.300000000000001,
+      "midi": 38,
+      "instrument": "organ_pedal",
+      "gain": 0.065,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 17.2,
+      "duration": 5.300000000000001,
+      "midi": 50,
+      "instrument": "organ_soft",
+      "gain": 0.035,
+      "pan": -0.25,
+      "velocity": 0.72
+    },
+    {
+      "t": 17.2,
+      "duration": 5.300000000000001,
+      "midi": 57,
+      "instrument": "organ_soft",
+      "gain": 0.035,
+      "pan": 0.25,
+      "velocity": 0.72
+    },
+    {
+      "t": 0.8,
+      "duration": 1.8,
+      "midi": 62,
+      "instrument": "recorder",
+      "gain": 0.1,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 2.9,
+      "duration": 1.1,
+      "midi": 65,
+      "instrument": "recorder",
+      "gain": 0.1,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 4.3,
+      "duration": 1.6,
+      "midi": 64,
+      "instrument": "recorder",
+      "gain": 0.1,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 6.1,
+      "duration": 2.1,
+      "midi": 62,
+      "instrument": "recorder",
+      "gain": 0.1,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 8.3,
+      "duration": 0.8,
+      "midi": 69,
+      "instrument": "recorder",
+      "gain": 0.1,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 9.6,
+      "duration": 0.75,
+      "midi": 62,
+      "instrument": "recorder",
+      "gain": 0.1,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 10.35,
+      "duration": 0.75,
+      "midi": 65,
+      "instrument": "recorder",
+      "gain": 0.1,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 11.1,
+      "duration": 1.4,
+      "midi": 69,
+      "instrument": "recorder",
+      "gain": 0.1,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 12.6,
+      "duration": 0.75,
+      "midi": 67,
+      "instrument": "recorder",
+      "gain": 0.1,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 13.35,
+      "duration": 0.75,
+      "midi": 65,
+      "instrument": "recorder",
+      "gain": 0.1,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 14.1,
+      "duration": 1.1,
+      "midi": 64,
+      "instrument": "recorder",
+      "gain": 0.1,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 17.2,
+      "duration": 0.75,
+      "midi": 74,
+      "instrument": "recorder",
+      "gain": 0.085,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 17.95,
+      "duration": 0.75,
+      "midi": 77,
+      "instrument": "recorder",
+      "gain": 0.085,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 18.7,
+      "duration": 1.4,
+      "midi": 76,
+      "instrument": "recorder",
+      "gain": 0.085,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 20.2,
+      "duration": 0.75,
+      "midi": 74,
+      "instrument": "recorder",
+      "gain": 0.085,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 20.95,
+      "duration": 0.75,
+      "midi": 71,
+      "instrument": "recorder",
+      "gain": 0.085,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 21.7,
+      "duration": 0.65,
+      "midi": 69,
+      "instrument": "recorder",
+      "gain": 0.085,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 9.6,
+      "duration": 0.65,
+      "midi": 50,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 9.975,
+      "duration": 0.65,
+      "midi": 57,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 10.35,
+      "duration": 0.65,
+      "midi": 62,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 10.725,
+      "duration": 0.65,
+      "midi": 65,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 11.1,
+      "duration": 0.65,
+      "midi": 62,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 11.475,
+      "duration": 0.65,
+      "midi": 69,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 11.85,
+      "duration": 0.65,
+      "midi": 74,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 12.225,
+      "duration": 0.65,
+      "midi": 77,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 9.6,
+      "duration": 2.6,
+      "midi": 57,
+      "instrument": "organ_soft",
+      "gain": 0.04,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 9.6,
+      "duration": 2.6,
+      "midi": 62,
+      "instrument": "organ_soft",
+      "gain": 0.04,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 9.6,
+      "duration": 2.6,
+      "midi": 65,
+      "instrument": "organ_soft",
+      "gain": 0.04,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 12.6,
+      "duration": 0.65,
+      "midi": 43,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 12.975,
+      "duration": 0.65,
+      "midi": 55,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 13.35,
+      "duration": 0.65,
+      "midi": 59,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 13.725,
+      "duration": 0.65,
+      "midi": 62,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 14.1,
+      "duration": 0.65,
+      "midi": 55,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 14.475,
+      "duration": 0.65,
+      "midi": 67,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 14.85,
+      "duration": 0.65,
+      "midi": 71,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 15.225,
+      "duration": 0.65,
+      "midi": 74,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 12.6,
+      "duration": 2.6,
+      "midi": 55,
+      "instrument": "organ_soft",
+      "gain": 0.04,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 12.6,
+      "duration": 2.6,
+      "midi": 59,
+      "instrument": "organ_soft",
+      "gain": 0.04,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 12.6,
+      "duration": 2.6,
+      "midi": 62,
+      "instrument": "organ_soft",
+      "gain": 0.04,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 17.2,
+      "duration": 0.65,
+      "midi": 50,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 17.575,
+      "duration": 0.65,
+      "midi": 57,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 17.95,
+      "duration": 0.65,
+      "midi": 62,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 18.325,
+      "duration": 0.65,
+      "midi": 65,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 18.7,
+      "duration": 0.65,
+      "midi": 62,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 19.075,
+      "duration": 0.65,
+      "midi": 69,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 19.45,
+      "duration": 0.65,
+      "midi": 74,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 19.825,
+      "duration": 0.65,
+      "midi": 77,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 17.2,
+      "duration": 2.6,
+      "midi": 57,
+      "instrument": "organ_soft",
+      "gain": 0.04,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 17.2,
+      "duration": 2.6,
+      "midi": 62,
+      "instrument": "organ_soft",
+      "gain": 0.04,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 17.2,
+      "duration": 2.6,
+      "midi": 65,
+      "instrument": "organ_soft",
+      "gain": 0.04,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 20.2,
+      "duration": 0.65,
+      "midi": 43,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 20.575,
+      "duration": 0.65,
+      "midi": 55,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 20.95,
+      "duration": 0.65,
+      "midi": 59,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 21.325,
+      "duration": 0.65,
+      "midi": 62,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 21.7,
+      "duration": 0.65,
+      "midi": 55,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 22.075,
+      "duration": 0.65,
+      "midi": 67,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 22.45,
+      "duration": 0.65,
+      "midi": 71,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 22.825,
+      "duration": 0.65,
+      "midi": 74,
+      "instrument": "harp",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 20.2,
+      "duration": 2.6,
+      "midi": 55,
+      "instrument": "organ_soft",
+      "gain": 0.04,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 20.2,
+      "duration": 2.6,
+      "midi": 59,
+      "instrument": "organ_soft",
+      "gain": 0.04,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 20.2,
+      "duration": 2.6,
+      "midi": 62,
+      "instrument": "organ_soft",
+      "gain": 0.04,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 0.5,
+      "duration": 1.6,
+      "midi": 86,
+      "instrument": "glass",
+      "gain": 0.12,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 5.4,
+      "duration": 1.6,
+      "midi": 86,
+      "instrument": "glass",
+      "gain": 0.12,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 11.1,
+      "duration": 1.6,
+      "midi": 81,
+      "instrument": "hand_chimes",
+      "gain": 0.12,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 17.2,
+      "duration": 1.6,
+      "midi": 86,
+      "instrument": "hand_chimes",
+      "gain": 0.12,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 19.45,
+      "duration": 1.6,
+      "midi": 89,
+      "instrument": "hand_chimes",
+      "gain": 0.12,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 20.95,
+      "duration": 1.6,
+      "midi": 88,
+      "instrument": "hand_chimes",
+      "gain": 0.12,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 17.2,
+      "duration": 2,
+      "midi": 62,
+      "instrument": "tubular_bells",
+      "gain": 0.08,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 22.6,
+      "duration": 0.32,
+      "midi": 50,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 22.6,
+      "duration": 0.32,
+      "midi": 38,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 22.975,
+      "duration": 0.32,
+      "midi": 57,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 22.975,
+      "duration": 0.32,
+      "midi": 38,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 23.35,
+      "duration": 0.32,
+      "midi": 62,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 23.35,
+      "duration": 0.32,
+      "midi": 38,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 23.725,
+      "duration": 0.32,
+      "midi": 65,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 23.725,
+      "duration": 0.32,
+      "midi": 38,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 24.1,
+      "duration": 0.32,
+      "midi": 62,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 24.1,
+      "duration": 0.32,
+      "midi": 38,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 24.475,
+      "duration": 0.32,
+      "midi": 57,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 24.475,
+      "duration": 0.32,
+      "midi": 38,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 24.85,
+      "duration": 0.32,
+      "midi": 48,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 24.85,
+      "duration": 0.32,
+      "midi": 36,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 25.225,
+      "duration": 0.32,
+      "midi": 55,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 25.225,
+      "duration": 0.32,
+      "midi": 36,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 25.6,
+      "duration": 0.32,
+      "midi": 60,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 25.6,
+      "duration": 0.32,
+      "midi": 36,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 25.975,
+      "duration": 0.32,
+      "midi": 63,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 25.975,
+      "duration": 0.32,
+      "midi": 36,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 26.35,
+      "duration": 0.32,
+      "midi": 60,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 26.35,
+      "duration": 0.32,
+      "midi": 36,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 26.725,
+      "duration": 0.32,
+      "midi": 55,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 26.725,
+      "duration": 0.32,
+      "midi": 36,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 27.1,
+      "duration": 0.32,
+      "midi": 46,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 27.1,
+      "duration": 0.32,
+      "midi": 34,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 27.475,
+      "duration": 0.32,
+      "midi": 53,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 27.475,
+      "duration": 0.32,
+      "midi": 34,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 27.85,
+      "duration": 0.32,
+      "midi": 58,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 27.85,
+      "duration": 0.32,
+      "midi": 34,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 28.225,
+      "duration": 0.32,
+      "midi": 61,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 28.225,
+      "duration": 0.32,
+      "midi": 34,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 28.6,
+      "duration": 0.32,
+      "midi": 58,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 28.6,
+      "duration": 0.32,
+      "midi": 34,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 28.975,
+      "duration": 0.32,
+      "midi": 53,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 28.975,
+      "duration": 0.32,
+      "midi": 34,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 29.35,
+      "duration": 0.32,
+      "midi": 48,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 29.35,
+      "duration": 0.32,
+      "midi": 36,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 29.725,
+      "duration": 0.32,
+      "midi": 55,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 29.725,
+      "duration": 0.32,
+      "midi": 36,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 30.1,
+      "duration": 0.32,
+      "midi": 60,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 30.1,
+      "duration": 0.32,
+      "midi": 36,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 30.475,
+      "duration": 0.32,
+      "midi": 63,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 30.475,
+      "duration": 0.32,
+      "midi": 36,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 30.85,
+      "duration": 0.32,
+      "midi": 60,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 30.85,
+      "duration": 0.32,
+      "midi": 36,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 31.225,
+      "duration": 0.32,
+      "midi": 55,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 31.225,
+      "duration": 0.32,
+      "midi": 36,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 31.6,
+      "duration": 0.32,
+      "midi": 50,
+      "instrument": "organ",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 31.6,
+      "duration": 0.32,
+      "midi": 38,
+      "instrument": "organ_pedal",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 24.75,
+      "duration": 0.55,
+      "midi": 38,
+      "instrument": "timpani",
+      "gain": 0.13,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 26.25,
+      "duration": 0.55,
+      "midi": 38,
+      "instrument": "timpani",
+      "gain": 0.13,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 27.75,
+      "duration": 0.55,
+      "midi": 38,
+      "instrument": "timpani",
+      "gain": 0.13,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 30.0,
+      "duration": 0.15,
+      "midi": 38,
+      "instrument": "timpani",
+      "gain": 0.025,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 30.15,
+      "duration": 0.15,
+      "midi": 38,
+      "instrument": "timpani",
+      "gain": 0.031,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 30.3,
+      "duration": 0.15,
+      "midi": 38,
+      "instrument": "timpani",
+      "gain": 0.037000000000000005,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 30.45,
+      "duration": 0.15,
+      "midi": 38,
+      "instrument": "timpani",
+      "gain": 0.043000000000000003,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 30.6,
+      "duration": 0.15,
+      "midi": 38,
+      "instrument": "timpani",
+      "gain": 0.049,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 30.75,
+      "duration": 0.15,
+      "midi": 38,
+      "instrument": "timpani",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 30.9,
+      "duration": 0.15,
+      "midi": 38,
+      "instrument": "timpani",
+      "gain": 0.061000000000000006,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 31.05,
+      "duration": 0.15,
+      "midi": 38,
+      "instrument": "timpani",
+      "gain": 0.067,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 31.2,
+      "duration": 0.15,
+      "midi": 38,
+      "instrument": "timpani",
+      "gain": 0.07300000000000001,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 31.35,
+      "duration": 0.15,
+      "midi": 38,
+      "instrument": "timpani",
+      "gain": 0.079,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 31.5,
+      "duration": 0.15,
+      "midi": 38,
+      "instrument": "timpani",
+      "gain": 0.08499999999999999,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 31.65,
+      "duration": 0.15,
+      "midi": 38,
+      "instrument": "timpani",
+      "gain": 0.091,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 33.8,
+      "duration": 3.6,
+      "midi": 50,
+      "instrument": "organ_soft",
+      "gain": 0.055,
+      "pan": -0.25,
+      "velocity": 0.72
+    },
+    {
+      "t": 33.8,
+      "duration": 3.6,
+      "midi": 57,
+      "instrument": "organ_soft",
+      "gain": 0.055,
+      "pan": 0.0,
+      "velocity": 0.72
+    },
+    {
+      "t": 33.8,
+      "duration": 3.6,
+      "midi": 62,
+      "instrument": "organ_soft",
+      "gain": 0.055,
+      "pan": 0.25,
+      "velocity": 0.72
+    },
+    {
+      "t": 38,
+      "duration": 3.1,
+      "midi": 43,
+      "instrument": "organ_soft",
+      "gain": 0.055,
+      "pan": -0.25,
+      "velocity": 0.72
+    },
+    {
+      "t": 38,
+      "duration": 3.1,
+      "midi": 55,
+      "instrument": "organ_soft",
+      "gain": 0.055,
+      "pan": -0.08333333333333334,
+      "velocity": 0.72
+    },
+    {
+      "t": 38,
+      "duration": 3.1,
+      "midi": 59,
+      "instrument": "organ_soft",
+      "gain": 0.055,
+      "pan": 0.08333333333333331,
+      "velocity": 0.72
+    },
+    {
+      "t": 38,
+      "duration": 3.1,
+      "midi": 62,
+      "instrument": "organ_soft",
+      "gain": 0.055,
+      "pan": 0.25,
+      "velocity": 0.72
+    },
+    {
+      "t": 41.3,
+      "duration": 3.1,
+      "midi": 50,
+      "instrument": "organ_soft",
+      "gain": 0.055,
+      "pan": -0.25,
+      "velocity": 0.72
+    },
+    {
+      "t": 41.3,
+      "duration": 3.1,
+      "midi": 57,
+      "instrument": "organ_soft",
+      "gain": 0.055,
+      "pan": -0.08333333333333334,
+      "velocity": 0.72
+    },
+    {
+      "t": 41.3,
+      "duration": 3.1,
+      "midi": 62,
+      "instrument": "organ_soft",
+      "gain": 0.055,
+      "pan": 0.08333333333333331,
+      "velocity": 0.72
+    },
+    {
+      "t": 41.3,
+      "duration": 3.1,
+      "midi": 65,
+      "instrument": "organ_soft",
+      "gain": 0.055,
+      "pan": 0.25,
+      "velocity": 0.72
+    },
+    {
+      "t": 34.2,
+      "duration": 1.8,
+      "midi": 86,
+      "instrument": "hand_chimes",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 34.5,
+      "duration": 1,
+      "midi": 74,
+      "instrument": "harp",
+      "gain": 0.04,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 37.3,
+      "duration": 1.8,
+      "midi": 81,
+      "instrument": "hand_chimes",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 37.6,
+      "duration": 1,
+      "midi": 69,
+      "instrument": "harp",
+      "gain": 0.04,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 40,
+      "duration": 1.8,
+      "midi": 88,
+      "instrument": "hand_chimes",
+      "gain": 0.055,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 40.3,
+      "duration": 1,
+      "midi": 76,
+      "instrument": "harp",
+      "gain": 0.04,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 41.3,
+      "duration": 0.65,
+      "midi": 62,
+      "instrument": "hand_chimes",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 42.05,
+      "duration": 0.65,
+      "midi": 64,
+      "instrument": "hand_chimes",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 42.8,
+      "duration": 0.65,
+      "midi": 65,
+      "instrument": "hand_chimes",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 43.55,
+      "duration": 0.65,
+      "midi": 67,
+      "instrument": "hand_chimes",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 44.3,
+      "duration": 0.65,
+      "midi": 69,
+      "instrument": "hand_chimes",
+      "gain": 0.09,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 44.6,
+      "duration": 3.0,
+      "midi": 62,
+      "instrument": "tubular_bells",
+      "gain": 0.18,
+      "pan": 0,
+      "velocity": 0.72,
+      "channel": "foley"
+    },
+    {
+      "t": 47.2,
+      "duration": 8.2,
+      "midi": 38,
+      "instrument": "organ_pedal",
+      "gain": 0.04,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 47.2,
+      "duration": 8.2,
+      "midi": 50,
+      "instrument": "organ_soft",
+      "gain": 0.035,
+      "pan": -0.25,
+      "velocity": 0.72
+    },
+    {
+      "t": 47.2,
+      "duration": 8.2,
+      "midi": 57,
+      "instrument": "organ_soft",
+      "gain": 0.035,
+      "pan": 0.0,
+      "velocity": 0.72
+    },
+    {
+      "t": 47.2,
+      "duration": 8.2,
+      "midi": 62,
+      "instrument": "organ_soft",
+      "gain": 0.035,
+      "pan": 0.25,
+      "velocity": 0.72
+    },
+    {
+      "t": 47.4,
+      "duration": 1.8,
+      "midi": 62,
+      "instrument": "recorder",
+      "gain": 0.065,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 49.4,
+      "duration": 1.1,
+      "midi": 65,
+      "instrument": "recorder",
+      "gain": 0.065,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 50.6,
+      "duration": 1.4,
+      "midi": 64,
+      "instrument": "recorder",
+      "gain": 0.065,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 52.2,
+      "duration": 1.7,
+      "midi": 62,
+      "instrument": "recorder",
+      "gain": 0.065,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 54.1,
+      "duration": 1.2,
+      "midi": 69,
+      "instrument": "recorder",
+      "gain": 0.065,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 47.2,
+      "duration": 1.8,
+      "midi": 74,
+      "instrument": "harp",
+      "gain": 0.08,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 49.4,
+      "duration": 1.8,
+      "midi": 81,
+      "instrument": "harp",
+      "gain": 0.08,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 51.8,
+      "duration": 1.8,
+      "midi": 74,
+      "instrument": "harp",
+      "gain": 0.08,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 53.5,
+      "duration": 1.8,
+      "midi": 81,
+      "instrument": "harp",
+      "gain": 0.08,
+      "pan": 0,
+      "velocity": 0.72
+    },
+    {
+      "t": 55.2,
+      "duration": 1.8,
+      "midi": 86,
+      "instrument": "glass",
+      "gain": 0.08,
+      "pan": 0,
+      "velocity": 0.72
+    }
+  ],
+  "effects": [
+    {
+      "t": 0.5,
+      "duration": 1.2,
+      "kind": "wind",
+      "gain": 0.05,
+      "pan": 0
+    },
+    {
+      "t": 15.6,
+      "duration": 1.6,
+      "kind": "sine_glide",
+      "gain": 0.018,
+      "pan": 0,
+      "freq_start": 587.33,
+      "freq_end": 1174.66
+    },
+    {
+      "t": 15.6,
+      "duration": 1.6,
+      "kind": "wind",
+      "gain": 0.03,
+      "pan": 0
+    },
+    {
+      "t": 20.4,
+      "duration": 0.6,
+      "kind": "wing_flutter",
+      "gain": 0.06,
+      "pan": 0
+    },
+    {
+      "t": 24.75,
+      "duration": 0.35,
+      "kind": "sword_cut",
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 24.75,
+      "duration": 1,
+      "kind": "glass_shimmer",
+      "gain": 0.06,
+      "pan": 0,
+      "frequency": 1180
+    },
+    {
+      "t": 26.25,
+      "duration": 0.35,
+      "kind": "sword_cut",
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 26.25,
+      "duration": 1,
+      "kind": "glass_shimmer",
+      "gain": 0.06,
+      "pan": 0,
+      "frequency": 1180
+    },
+    {
+      "t": 27.75,
+      "duration": 0.35,
+      "kind": "sword_cut",
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 27.75,
+      "duration": 1,
+      "kind": "glass_shimmer",
+      "gain": 0.06,
+      "pan": 0,
+      "frequency": 1180
+    },
+    {
+      "t": 31.8,
+      "duration": 2.0,
+      "kind": "glass_shatter",
+      "gain": 0.18,
+      "pan": 0
+    },
+    {
+      "t": 33,
+      "duration": 0.8,
+      "kind": "lead_creak",
+      "gain": 0.045,
+      "pan": 0
+    },
+    {
+      "t": 33,
+      "duration": 0.65,
+      "kind": "glass_pen",
+      "gain": 0.03,
+      "pan": 0
+    },
+    {
+      "t": 41.3,
+      "duration": 0.45,
+      "kind": "lead_creak",
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 41.3,
+      "duration": 0.3,
+      "kind": "glass_shimmer",
+      "gain": 0.035,
+      "pan": 0,
+      "frequency": 587.3295358348151
+    },
+    {
+      "t": 42.05,
+      "duration": 0.45,
+      "kind": "lead_creak",
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 42.05,
+      "duration": 0.3,
+      "kind": "glass_shimmer",
+      "gain": 0.035,
+      "pan": 0,
+      "frequency": 659.2551138257398
+    },
+    {
+      "t": 42.8,
+      "duration": 0.45,
+      "kind": "lead_creak",
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 42.8,
+      "duration": 0.3,
+      "kind": "glass_shimmer",
+      "gain": 0.035,
+      "pan": 0,
+      "frequency": 698.4564628660078
+    },
+    {
+      "t": 43.55,
+      "duration": 0.45,
+      "kind": "lead_creak",
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 43.55,
+      "duration": 0.3,
+      "kind": "glass_shimmer",
+      "gain": 0.035,
+      "pan": 0,
+      "frequency": 783.9908719634985
+    },
+    {
+      "t": 44.3,
+      "duration": 0.45,
+      "kind": "lead_creak",
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 44.3,
+      "duration": 0.3,
+      "kind": "glass_shimmer",
+      "gain": 0.035,
+      "pan": 0,
+      "frequency": 880.0
+    },
+    {
+      "t": 33.8,
+      "duration": 13.4,
+      "kind": "crackle",
+      "gain": 0.008,
+      "pan": 0
+    },
+    {
+      "t": 3.1,
+      "duration": 0.45,
+      "kind": "bird",
+      "gain": 0.008,
+      "pan": 0
+    },
+    {
+      "t": 8.2,
+      "duration": 0.45,
+      "kind": "bird",
+      "gain": 0.008,
+      "pan": 0
+    },
+    {
+      "t": 18.1,
+      "duration": 0.45,
+      "kind": "bird",
+      "gain": 0.008,
+      "pan": 0
+    }
+  ],
+  "hits": []
+}

@@ -1,0 +1,1 @@
+Fictional secular parable. No external factual data claim. Published original title, full story, narration and event timing preserved. Exact original chat prompt is not published. Production1920×1080; measured delivery1280×720,24fps,1356frames=56.5s. Container duration56.512 includes audio padding.

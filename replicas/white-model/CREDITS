@@ -1,0 +1,16 @@
+How a Flattened City Grew Back — GPT-6.1 Sol High recreation
+
+DATA
+3DBAG LOD1.3 by 3DGI and the 3D geoinformation research group, TU Delft, https://3dbag.nl , CC BY 4.0. Building footprints, identifiers and roof heights b3_h_70p minus b3_h_maaiveld. BAG original construction years, Kadaster, CC0 1.0. BGT water/bridge data via PDOK https://api.pdok.nl/lv/bgt/ogc/v1 , CC0 1.0.
+The original 3,887-building, 8,860-part and 108-deck model/statistics are unchanged. Cropped to RD x 91700–94000, y 435300–437900 and extruded at 1:1000. New independent geometry assembly triangulates roofs and removes shared-wall overlap. Parent restored the water raster from current BGT and the shadow mask from preserved geometry; exact pixel-boundary differences are disclosed in FACTS.md/RESTORATION.json. Frozen asset bytes: asset-manifest.json. Solar positions and source measurements follow the published NOAA/Meeus preparation.
+Historical claims: Stadsarchief Rotterdam, Rotterdam in oorlog and Het stadhuis tijdens het bombardement; source quotations/URLs and all measurement methods in FACTS.md.
+
+SHARED SOFTWARE AND INDEPENDENT ASSEMBLY
+The generic projection uniforms, projection GLSL and projMaterial helper were adapted from styles/white-model/demo/studio.js into projection.js. This reuse covers material behaviour only; no original makeStudio/build/buildCity or main/story renderer is called. Generic text/readout/pin/rangeLine/subtitle/scrim primitives from styles/white-model/demo/overlay.js are reused; its original endCard is not called. Core math and core/three/post.js supply generic deterministic interpolation, GTAO, physical DOF, bloom and vignette. Shared toolkit copyright 2026 LemoLab, MIT; full notice in TOOLKIT_LICENSE.txt.
+New files geometry.js, room.js, light.js, hud.js and film.js independently assemble the model, room, native Three.js lights/camera, all layer timing, world-anchored scene annotations and recreated end card. Camera.json stores measured reference compositions as data. Three.js including RoomEnvironment is MIT. No original movie frames, generated imagery or original audio are production assets.
+
+FONTS
+Noto Sans SC (Google/Adobe), Inter Tight (Inter Project Authors), IBM Plex Mono (IBM), SIL Open Font License 1.1. Local font files and licence texts supplied; acquisition in fetch_fonts.py.
+
+VOICE AND MUSIC
+Eight freshly synthesized original narration lines, Kokoro-82M bm_george with original per-line speeds, root-managed. Kokoro Apache-2.0, kokoro-onnx MIT. New 100 BPM score and instrument/room effects. Mallets, bowed vibraphone, glass, hand chimes, tubular bells, strings, low brass, organ, timpani, gran cassa, bass drum, gong and cymbal through VSCO-2 CE, VCSL and FreePats CC0 packs via core/audio/sampler.py. New deterministic projector fan, relays, lamp strike, light washes, tick/punch effects via root foley renderer. No original score audio reused.

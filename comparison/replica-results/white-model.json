@@ -1,0 +1,95 @@
+{
+  "slug": "white-model",
+  "status": "rendered",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "title": "How a Flattened City Grew Back",
+  "source_sha256": "02a2bc31fa0c534c2c5ac3e3e64d064bcf909a2bdfacc5ae4a75d6128f5c11b2",
+  "matched_brief_sha256": "1ec2a940b523f1140aea834cb0281ef9d7a79c0ef7fa2049d926aea98dab3b1d",
+  "reference_video_sha256": "6c8453ed8be6bc16380af3f5599cf91b79d8f0ce7e5d3dffb4b8c9ec74eb93a0",
+  "video_sha256": "dd6be98bf3a04ac09b5900f2909e7855858ec2c01a0b1ff07f0e478671a11599",
+  "poster_sha256": "953b82c612e5ba5a78f607d986ff1fdc9aa2234edf8efbdd6d64650297b28931",
+  "reference_poster_sha256": "aed306e72e298ebb9338d91ee07314a2c4886ca341190cb75bb48f6038c4a09a",
+  "poster_time": 18.5,
+  "bytes": 38051028,
+  "width": 1280,
+  "height": 720,
+  "fps": 24.0,
+  "frames": 960,
+  "duration": 40.0,
+  "audio_codec": "aac",
+  "audio_levels": {
+    "integrated_lufs": -14.0,
+    "true_peak_dbtp": -1.2,
+    "peak_gain_adjustment_db": 0
+  },
+  "review_times": [
+    0.25,
+    0.8,
+    1.9,
+    2.05,
+    2.42,
+    2.5,
+    3.5,
+    4.8,
+    5.5,
+    6.08,
+    6.5,
+    7.95,
+    8.5,
+    10.5,
+    12.5,
+    13.25,
+    13.8,
+    14.55,
+    15.5,
+    15.75,
+    16.8,
+    18.5,
+    20.0,
+    20.9,
+    21.3,
+    22.1,
+    22.85,
+    23.5,
+    25.8,
+    27.05,
+    27.5,
+    28.8,
+    29.45,
+    29.7,
+    30.4,
+    31.2,
+    31.5,
+    33.5,
+    35.6,
+    35.85,
+    37.5,
+    39.5
+  ],
+  "shared_components": [
+    {
+      "path": "styles/white-model/demo/studio.js",
+      "purpose": "Generic projection uniforms, GLSL and projMaterial adapted in local projection.js only. No original makeStudio/build/buildCity calls."
+    },
+    {
+      "path": "styles/white-model/demo/overlay.js",
+      "purpose": "Generic text/readout/pin/rangeLine/subtitle/scrim functions. Original endCard is not called."
+    },
+    {
+      "path": "core/three/post.js",
+      "purpose": "Generic supersampling, GTAO, physical DOF, bloom and vignette."
+    },
+    {
+      "path": "core/lib.js",
+      "purpose": "Generic deterministic easing, interpolation and tracks."
+    }
+  ],
+  "qa": {
+    "technical_render": "passed",
+    "scene_fidelity": "passed",
+    "audio_review": "passed",
+    "black_intervals_detected": false
+  },
+  "updated_at": "2026-10-18T05:32:53Z"
+}

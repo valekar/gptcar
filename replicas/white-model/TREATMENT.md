@@ -1,0 +1,7 @@
+# How a Flattened City Grew Back — recreation treatment
+
+Recreate the complete ten-part, 40-second continuous take around the original Rotterdam 1:1000 maquette. Begin among the real white roof parts with shallow focus. The house lights cut, the projector strikes and an amber wash isolates the original pre-1940 set. Keep the empty centre, 23 percent reading, bombing date and surviving city-hall pin.
+
+Four post-war cohorts switch on independently as the camera orbits across the river. A broad level climbs the actual facades, bringing the height palette and Zalmhaven's 203-metre roof into view. The projector goes dark before the warm, astronomically positioned winter sun arrives. A restored shadow mask traces the tallest tower's actual model shadow, a calibrated 777-metre range line grows, and sixteen original affected roofs light up, nine in pre-war amber. House lights return on the same white object; retain the full title.
+
+Independently assemble the real geometry, room, plinth, lighting and timeline. Reuse only attributed generic projection-material GLSL from the style engine and generic core postprocessing/math. No original scene builder, camera/story application or overlay runs. Preserve measured reference compositions as data. Fresh narration retains all eight lines; a new 100 BPM material-led mallet, glass, bass and low-brass score follows the complete arc and impact hierarchy.

@@ -1,0 +1,18 @@
+21 Keys, Opened — GPT-6.1 Sol High recreation
+
+HARDWARE DATA
+Corne keyboard by foostan and contributors, https://github.com/foostan/crkbd , pinned commit 63366fb7f51cf2a796462fdd90527e99dd126055, CC BY 4.0 / MIT (LICENSE_CC / LICENSE_MIT in the hardware repository). Left-half v4.1.0 KiCad board, matching 3x6 plate, STEP case, BOM and build guide. Exact source URLs and component datasheets are in FACTS.md. Parent restored the case using occt-import-js 0.0.23 (LGPL-2.1), with the original measured coordinate transform. Case/PCB checks and image-free data hashes are local.
+Modifications: use plate outline inset 0.4 mm for the board, omit logo footprint, independent PBR assembly and animated separation. Keycaps, switches and package exterior heights follow generic modelling choices in the style engine; labelled dimensions/counts are from the source files. No original video frames, generated images or original master audio are used.
+
+SHARED STYLE HELPERS
+MIT toolkit copyright 2026 LemoLab; full notice in TOOLKIT_LICENSE.txt. Reused generic parts.js lofted-cap/switch/extrusion/spacer/screw geometries; pcbtex.js KiCad-layout-to-PBR-map painter; comps.js footprint-to-package geometry renderer. Generic label/dimension primitives from overlay.js are adapted in local marks.js. No original main.js, drawOverlay story or original end card runs. Published timeline/camera measurements are retained as data in timing.json, independently applied.
+New assembly.js, materials.js, room.js, motion.js, hud.js and film.js create the product assembly, room, native Three.js lights/camera, layer and key choreography, all scene-specific annotations and new end-card authorship. Core post.js/math supply generic supersampling/GTAO/physical DOF/bloom/easing. Three.js including area-light support is MIT.
+
+STUDIO ENVIRONMENT
+Photo Studio Loft Hall by Poly Haven, CC0, core/assets/polyhaven/photo_studio_loft_hall_2k.hdr. https://polyhaven.com/a/photo_studio_loft_hall . No broad mutable asset-directory dependency is used.
+
+FONTS
+Noto Sans SC (Google/Adobe), Inter (Inter Project Authors), JetBrains Mono (JetBrains), SIL Open Font License 1.1; local licence texts and frozen font faces supplied. Acquisition in fetch_fonts.py.
+
+VOICE AND AUDIO
+Fresh Kokoro-82M am_michael at 0.95, all nine exact original lines retained, root-managed synthesis/ASR. Kokoro Apache-2.0; kokoro-onnx MIT. New 96 BPM D-minor-to-D-major mallet/bass/glass score; CC0 VCSL/VSCO-2 CE/FreePats samples for marimba, bowed vibraphone, glass, glockenspiel, electric bass, claves and hi-hat. New deterministic keycap, switch, board, metal, case, pen, room and motion cues via root foley. No original soundtrack reused.

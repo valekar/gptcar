@@ -1,0 +1,95 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "source_ready": true,
+  "status": "source-ready-for-independent-review",
+  "title": "How a Flattened City Grew Back",
+  "duration": 40,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "frame_count": 960,
+  "production_canvas": {
+    "width": 1920,
+    "height": 1080,
+    "supersampling": 2,
+    "ambient_occlusion": "GTAO close opening only"
+  },
+  "matched_brief_sha256": "1ec2a940b523f1140aea834cb0281ef9d7a79c0ef7fa2049d926aea98dab3b1d",
+  "original_reference_sha256": "6c8453ed8be6bc16380af3f5599cf91b79d8f0ce7e5d3dffb4b8c9ec74eb93a0",
+  "uses_upstream_scene_code": false,
+  "shared_components": [
+    {
+      "path": "styles/white-model/demo/studio.js",
+      "purpose": "Generic projection uniforms, GLSL and projMaterial adapted in local projection.js only. No original makeStudio/build/buildCity calls."
+    },
+    {
+      "path": "styles/white-model/demo/overlay.js",
+      "purpose": "Generic text/readout/pin/rangeLine/subtitle/scrim functions. Original endCard is not called."
+    },
+    {
+      "path": "core/three/post.js",
+      "purpose": "Generic supersampling, GTAO, physical DOF, bloom and vignette."
+    },
+    {
+      "path": "core/lib.js",
+      "purpose": "Generic deterministic easing, interpolation and tracks."
+    }
+  ],
+  "licensed_assets": "Exact original model/statistics, restored masks, frozen hashes in asset-manifest.json. Current BGT/raster-boundary variance disclosed in FACTS.md and RESTORATION.json.",
+  "independent_scene_files": [
+    "geometry.js",
+    "room.js",
+    "light.js",
+    "hud.js",
+    "film.js",
+    "camera.json"
+  ],
+  "review_times": [
+    0.25,
+    0.8,
+    1.9,
+    2.05,
+    2.42,
+    2.5,
+    3.5,
+    4.8,
+    5.5,
+    6.08,
+    6.5,
+    7.95,
+    8.5,
+    10.5,
+    12.5,
+    13.25,
+    13.8,
+    14.55,
+    15.5,
+    15.75,
+    16.8,
+    18.5,
+    20,
+    20.9,
+    21.3,
+    22.1,
+    22.85,
+    23.5,
+    25.8,
+    27.05,
+    27.5,
+    28.8,
+    29.45,
+    29.7,
+    30.4,
+    31.2,
+    31.5,
+    33.5,
+    35.6,
+    35.85,
+    37.5,
+    39.5
+  ],
+  "review_status": "Worker full sequence and short-event still review complete; parent decoded-video/audio review pending.",
+  "review_notes": "REVIEW.md",
+  "audio": "Fresh eight exact bm_george inputs, new 200-note 100 BPM score and 114 effects following cohort and shadow-roof schedule."
+}

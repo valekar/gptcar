@@ -1,0 +1,16 @@
+[
+  {
+    "path": "styles/urban-sketch/demo/engine.js",
+    "sha256": "fa08381391f449027789407be588a26fb944177673589c514317ffa66a782b41",
+    "purpose": "Unchanged generic fineliner, transparent wash, arrival shader, leaf material, articulated figure, hat and bicycle toolkit"
+  },
+  {
+    "path": "styles/urban-sketch/demo/poses.js",
+    "sha256": "b1ce4b5a04cd69c816a08d12230fae286713347687aa2ea820a9c59fdb87af17",
+    "purpose": "Unchanged generic park character appearance/pose library; own scene performances and staging"
+  },
+  {
+    "path": "replicas/urban-sketch/fonts",
+    "purpose": "Fresh OFL Caveat (from previous fresh replica download) and Reenie Beanie; published OFL notices"
+  }
+]

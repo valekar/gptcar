@@ -1,7 +1,7 @@
 {
   "schema_version": "matched-original-brief-v2-audit-1",
   "slug": "white-model",
-  "status": "reference-audited-asset-rebuild-required",
+  "status": "reference-audited-original-model-preserved-masks-restored",
   "original_title": "How a Flattened City Grew Back",
   "original_title_aliases_from_demo": [
     "Demo: *How a Flattened City Grew Back* 《被炸平的城市怎样长回来》 (40.0 s) · `white-model.mp4` · source in [`demo/`](demo/)",
@@ -873,7 +873,6 @@
     ]
   },
   "matching_blockers": [
-    "Preserve the complete original model.json and stats.json. Water/shadow masks are absent; restore them against this snapshot. A live WFS refetch may alter the model and must not silently replace it.",
     "The original conversation prompt is not published. Use the complete published specification and audited reconstruction; do not claim the recovered text is a verbatim original chat prompt."
   ],
   "visual_audit": {
@@ -902,5 +901,10 @@
       "Begin at eye level among dense matte-white Rotterdam roof shapes, then dim the room and project amber only onto buildings dating before1940. The23% statistic, city-hall label and bombing date refer to the exact model. Later cohorts illuminate violet/blue/cyan as years advance; development crosses the river and the tall buildings receive a height gradient. Return to neutral plastic under the low winter sun: show14.6°, the actual Zalmhaven shadow with777m leader, and16 affected roofs including9 prewar. Final pullback reveals the full maquette and title. Keep thousands of real roof parts, river banks and bridges; generic block skylines omit the evidence."
     ],
     "note": "All regular reference sheets were inspected across the complete film. Named supplementary frames cover important short actions and transitions. This is scene coverage, not a claim that every encoded frame was inspected."
+  },
+  "asset_restoration": {
+    "status": "complete-with-disclosed-raster-variance",
+    "model": "Unchanged original 3887 buildings / 8860 parts / 108 decks and statistics, verified byte-for-byte.",
+    "masks": "Water regenerated from current BGT, shadow from original quantized geometry and published sun. Pixel boundaries can differ; see replica RESTORATION.json."
   }
 }

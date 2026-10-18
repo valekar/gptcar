@@ -1,0 +1,5260 @@
+{
+  "duration": 38.75,
+  "bpm": 96,
+  "key": "Dm9 – B-flat maj7 – F – C/E, D major on card",
+  "direction": "New dry mallet/electric-bass groove outside, sustained airy glass inside. Both original music rests are explicit. Twenty-one cap lifts and twenty-one individual landings follow the exact geometric rank and closing schedule; case landing at26.63 is the heaviest material accent.",
+  "silence_music_ranges": [
+    [
+      4.4,
+      5
+    ],
+    [
+      24.6,
+      25
+    ]
+  ],
+  "sections": [
+    {
+      "start": 0,
+      "end": 4.4,
+      "intent": "Touch: soft marimba eighths, bowed vibraphone and real key stroke"
+    },
+    {
+      "start": 4.4,
+      "end": 5,
+      "intent": "Room-only suck-out"
+    },
+    {
+      "start": 5,
+      "end": 12.5,
+      "intent": "Opening: marimba sixteenths, bass/kick/claves/closed hat, wave and layer foley"
+    },
+    {
+      "start": 12.5,
+      "end": 24.6,
+      "intent": "Inside: held bowed chords, glass motif, pedal hats and three macro stop pings"
+    },
+    {
+      "start": 24.6,
+      "end": 25,
+      "intent": "Room-only silence"
+    },
+    {
+      "start": 25,
+      "end": 33.75,
+      "intent": "Closing: full groove/four-on-floor, bottom-first landing and dimension hiss"
+    },
+    {
+      "start": 33.75,
+      "end": 38.75,
+      "intent": "D-major marimba roll, bowed D/F-sharp/A, bass D and glock answers"
+    }
+  ],
+  "notes": [
+    {
+      "t": 0.0,
+      "midi": 62,
+      "duration": 2.2,
+      "gain": 0.04,
+      "pan": -0.4,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 0.0,
+      "midi": 69,
+      "duration": 2.2,
+      "gain": 0.04,
+      "pan": -0.13,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 0.0,
+      "midi": 72,
+      "duration": 2.2,
+      "gain": 0.04,
+      "pan": 0.14,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 0.0,
+      "midi": 76,
+      "duration": 2.2,
+      "gain": 0.04,
+      "pan": 0.41000000000000003,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 0.0,
+      "midi": 74,
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 0.3125,
+      "midi": 88,
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0.33724536489601753,
+      "instrument": "marimba"
+    },
+    {
+      "t": 0.625,
+      "midi": 84,
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0.18042548013751245,
+      "instrument": "marimba"
+    },
+    {
+      "t": 0.9375,
+      "midi": 81,
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": -0.24071815571439092,
+      "instrument": "marimba"
+    },
+    {
+      "t": 1.25,
+      "midi": 74,
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": -0.3092091295020536,
+      "instrument": "marimba"
+    },
+    {
+      "t": 1.5625,
+      "midi": 88,
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0.07529199583073543,
+      "instrument": "marimba"
+    },
+    {
+      "t": 1.875,
+      "midi": 84,
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0.34949017088111173,
+      "instrument": "marimba"
+    },
+    {
+      "t": 2.1875,
+      "midi": 81,
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0.11168442682227324,
+      "instrument": "marimba"
+    },
+    {
+      "t": 2.5,
+      "midi": 58,
+      "duration": 2.2,
+      "gain": 0.04,
+      "pan": -0.4,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 2.5,
+      "midi": 65,
+      "duration": 2.2,
+      "gain": 0.04,
+      "pan": -0.13,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 2.5,
+      "midi": 69,
+      "duration": 2.2,
+      "gain": 0.04,
+      "pan": 0.14,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 2.5,
+      "midi": 74,
+      "duration": 2.2,
+      "gain": 0.04,
+      "pan": 0.41000000000000003,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 2.5,
+      "midi": 77,
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 2.8125,
+      "midi": 70,
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0.33724536489601753,
+      "instrument": "marimba"
+    },
+    {
+      "t": 3.125,
+      "midi": 86,
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0.18042548013751245,
+      "instrument": "marimba"
+    },
+    {
+      "t": 3.4375,
+      "midi": 81,
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": -0.24071815571439092,
+      "instrument": "marimba"
+    },
+    {
+      "t": 3.75,
+      "midi": 77,
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": -0.3092091295020536,
+      "instrument": "marimba"
+    },
+    {
+      "t": 4.0625,
+      "midi": 70,
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0.07529199583073543,
+      "instrument": "marimba"
+    },
+    {
+      "t": 4.375,
+      "midi": 86,
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0.34949017088111173,
+      "instrument": "marimba"
+    },
+    {
+      "t": 4.6875,
+      "midi": 81,
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0.11168442682227324,
+      "instrument": "marimba"
+    },
+    {
+      "t": 5.0,
+      "midi": 53,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.4,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 5.0,
+      "midi": 60,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.13,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 5.0,
+      "midi": 65,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.14,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 5.0,
+      "midi": 69,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.41000000000000003,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 5.0,
+      "midi": 77,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 5.0,
+      "midi": 29,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 5,
+      "midi": 38,
+      "duration": 0.8,
+      "gain": 0.12,
+      "pan": 0,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 5,
+      "midi": 86,
+      "duration": 1.2,
+      "gain": 0.08399999999999999,
+      "pan": 0.2,
+      "instrument": "glockenspiel"
+    },
+    {
+      "t": 5.15625,
+      "midi": 72,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.33724536489601753,
+      "instrument": "marimba"
+    },
+    {
+      "t": 5.3125,
+      "midi": 65,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.18042548013751245,
+      "instrument": "marimba"
+    },
+    {
+      "t": 5.46875,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.24071815571439092,
+      "instrument": "marimba"
+    },
+    {
+      "t": 5.625,
+      "midi": 77,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.3092091295020536,
+      "instrument": "marimba"
+    },
+    {
+      "t": 5.625,
+      "midi": 29,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 5.78125,
+      "midi": 72,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.07529199583073543,
+      "instrument": "marimba"
+    },
+    {
+      "t": 5.9375,
+      "midi": 65,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.34949017088111173,
+      "instrument": "marimba"
+    },
+    {
+      "t": 6.09375,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.11168442682227324,
+      "instrument": "marimba"
+    },
+    {
+      "t": 6.25,
+      "midi": 77,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2897392641799788,
+      "instrument": "marimba"
+    },
+    {
+      "t": 6.25,
+      "midi": 29,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 6.40625,
+      "midi": 72,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2666942543716612,
+      "instrument": "marimba"
+    },
+    {
+      "t": 6.5625,
+      "midi": 65,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.1470584628893243,
+      "instrument": "marimba"
+    },
+    {
+      "t": 6.71875,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.34537018749611464,
+      "instrument": "marimba"
+    },
+    {
+      "t": 6.875,
+      "midi": 77,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.0377137783048048,
+      "instrument": "marimba"
+    },
+    {
+      "t": 6.875,
+      "midi": 29,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 7.03125,
+      "midi": 72,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.3251934044570294,
+      "instrument": "marimba"
+    },
+    {
+      "t": 7.1875,
+      "midi": 65,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.21169148784219943,
+      "instrument": "marimba"
+    },
+    {
+      "t": 7.34375,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.21193895440186036,
+      "instrument": "marimba"
+    },
+    {
+      "t": 7.5,
+      "midi": 52,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.4,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 7.5,
+      "midi": 60,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.13,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 7.5,
+      "midi": 67,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.14,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 7.5,
+      "midi": 72,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.41000000000000003,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 7.5,
+      "midi": 84,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 7.5,
+      "midi": 28,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 7.65625,
+      "midi": 79,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.33724536489601753,
+      "instrument": "marimba"
+    },
+    {
+      "t": 7.8125,
+      "midi": 72,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.18042548013751245,
+      "instrument": "marimba"
+    },
+    {
+      "t": 7.96875,
+      "midi": 64,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.24071815571439092,
+      "instrument": "marimba"
+    },
+    {
+      "t": 8.125,
+      "midi": 84,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.3092091295020536,
+      "instrument": "marimba"
+    },
+    {
+      "t": 8.125,
+      "midi": 28,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 8.28125,
+      "midi": 79,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.07529199583073543,
+      "instrument": "marimba"
+    },
+    {
+      "t": 8.4375,
+      "midi": 72,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.34949017088111173,
+      "instrument": "marimba"
+    },
+    {
+      "t": 8.59375,
+      "midi": 64,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.11168442682227324,
+      "instrument": "marimba"
+    },
+    {
+      "t": 8.75,
+      "midi": 84,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2897392641799788,
+      "instrument": "marimba"
+    },
+    {
+      "t": 8.75,
+      "midi": 28,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 8.90625,
+      "midi": 79,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2666942543716612,
+      "instrument": "marimba"
+    },
+    {
+      "t": 9.0625,
+      "midi": 72,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.1470584628893243,
+      "instrument": "marimba"
+    },
+    {
+      "t": 9.21875,
+      "midi": 64,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.34537018749611464,
+      "instrument": "marimba"
+    },
+    {
+      "t": 9.375,
+      "midi": 84,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.0377137783048048,
+      "instrument": "marimba"
+    },
+    {
+      "t": 9.375,
+      "midi": 28,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 9.53125,
+      "midi": 79,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.3251934044570294,
+      "instrument": "marimba"
+    },
+    {
+      "t": 9.6875,
+      "midi": 72,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.21169148784219943,
+      "instrument": "marimba"
+    },
+    {
+      "t": 9.84375,
+      "midi": 64,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.21193895440186036,
+      "instrument": "marimba"
+    },
+    {
+      "t": 10.0,
+      "midi": 62,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.4,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 10.0,
+      "midi": 69,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.13,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 10.0,
+      "midi": 72,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.14,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 10.0,
+      "midi": 76,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.41000000000000003,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 10.0,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 10.0,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 10.15625,
+      "midi": 88,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.33724536489601753,
+      "instrument": "marimba"
+    },
+    {
+      "t": 10.3125,
+      "midi": 84,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.18042548013751245,
+      "instrument": "marimba"
+    },
+    {
+      "t": 10.46875,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.24071815571439092,
+      "instrument": "marimba"
+    },
+    {
+      "t": 10.625,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.3092091295020536,
+      "instrument": "marimba"
+    },
+    {
+      "t": 10.625,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 10.78125,
+      "midi": 88,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.07529199583073543,
+      "instrument": "marimba"
+    },
+    {
+      "t": 10.9375,
+      "midi": 84,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.34949017088111173,
+      "instrument": "marimba"
+    },
+    {
+      "t": 11.09375,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.11168442682227324,
+      "instrument": "marimba"
+    },
+    {
+      "t": 11.25,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2897392641799788,
+      "instrument": "marimba"
+    },
+    {
+      "t": 11.25,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 11.40625,
+      "midi": 88,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2666942543716612,
+      "instrument": "marimba"
+    },
+    {
+      "t": 11.5625,
+      "midi": 84,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.1470584628893243,
+      "instrument": "marimba"
+    },
+    {
+      "t": 11.71875,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.34537018749611464,
+      "instrument": "marimba"
+    },
+    {
+      "t": 11.875,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.0377137783048048,
+      "instrument": "marimba"
+    },
+    {
+      "t": 11.875,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 12.03125,
+      "midi": 88,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.3251934044570294,
+      "instrument": "marimba"
+    },
+    {
+      "t": 12.1875,
+      "midi": 84,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.21169148784219943,
+      "instrument": "marimba"
+    },
+    {
+      "t": 12.34375,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.21193895440186036,
+      "instrument": "marimba"
+    },
+    {
+      "t": 12.5,
+      "midi": 58,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.4,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 12.5,
+      "midi": 65,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.13,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 12.5,
+      "midi": 69,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.14,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 12.5,
+      "midi": 74,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.41000000000000003,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 12.5,
+      "midi": 74,
+      "duration": 0.95,
+      "gain": 0.065,
+      "pan": 0.0,
+      "instrument": "glass"
+    },
+    {
+      "t": 13.4375,
+      "midi": 76,
+      "duration": 0.95,
+      "gain": 0.065,
+      "pan": 0.049392002820953525,
+      "instrument": "glass"
+    },
+    {
+      "t": 14.375,
+      "midi": 81,
+      "duration": 0.95,
+      "gain": 0.065,
+      "pan": -0.09779542436962405,
+      "instrument": "glass"
+    },
+    {
+      "t": 15.0,
+      "midi": 53,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.4,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 15.0,
+      "midi": 60,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.13,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 15.0,
+      "midi": 65,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.14,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 15.0,
+      "midi": 69,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.41000000000000003,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 15.0,
+      "midi": 81,
+      "duration": 0.95,
+      "gain": 0.065,
+      "pan": 0.0,
+      "instrument": "glass"
+    },
+    {
+      "t": 15,
+      "midi": 81,
+      "duration": 1.15,
+      "gain": 0.105,
+      "pan": 0.2,
+      "instrument": "glockenspiel"
+    },
+    {
+      "t": 15.9375,
+      "midi": 69,
+      "duration": 0.95,
+      "gain": 0.065,
+      "pan": 0.049392002820953525,
+      "instrument": "glass"
+    },
+    {
+      "t": 16.875,
+      "midi": 78,
+      "duration": 0.95,
+      "gain": 0.065,
+      "pan": -0.09779542436962405,
+      "instrument": "glass"
+    },
+    {
+      "t": 17.5,
+      "midi": 52,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.4,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 17.5,
+      "midi": 60,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.13,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 17.5,
+      "midi": 67,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.14,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 17.5,
+      "midi": 72,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.41000000000000003,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 17.5,
+      "midi": 78,
+      "duration": 0.95,
+      "gain": 0.065,
+      "pan": 0.0,
+      "instrument": "glass"
+    },
+    {
+      "t": 18.125,
+      "midi": 86,
+      "duration": 1.15,
+      "gain": 0.105,
+      "pan": 0.2,
+      "instrument": "glockenspiel"
+    },
+    {
+      "t": 18.425,
+      "midi": 74,
+      "duration": 0.45,
+      "gain": 0.065,
+      "pan": -0.4,
+      "instrument": "glass"
+    },
+    {
+      "t": 18.4375,
+      "midi": 74,
+      "duration": 0.95,
+      "gain": 0.065,
+      "pan": 0.049392002820953525,
+      "instrument": "glass"
+    },
+    {
+      "t": 18.58125,
+      "midi": 78,
+      "duration": 0.45,
+      "gain": 0.065,
+      "pan": -0.25,
+      "instrument": "glass"
+    },
+    {
+      "t": 18.7375,
+      "midi": 81,
+      "duration": 0.45,
+      "gain": 0.065,
+      "pan": -0.10000000000000003,
+      "instrument": "glass"
+    },
+    {
+      "t": 18.89375,
+      "midi": 86,
+      "duration": 0.45,
+      "gain": 0.065,
+      "pan": 0.04999999999999993,
+      "instrument": "glass"
+    },
+    {
+      "t": 19.05,
+      "midi": 90,
+      "duration": 0.45,
+      "gain": 0.065,
+      "pan": 0.19999999999999996,
+      "instrument": "glass"
+    },
+    {
+      "t": 19.20625,
+      "midi": 93,
+      "duration": 0.45,
+      "gain": 0.065,
+      "pan": 0.35,
+      "instrument": "glass"
+    },
+    {
+      "t": 19.375,
+      "midi": 76,
+      "duration": 0.95,
+      "gain": 0.065,
+      "pan": -0.09779542436962405,
+      "instrument": "glass"
+    },
+    {
+      "t": 20.0,
+      "midi": 62,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.4,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 20.0,
+      "midi": 69,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.13,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 20.0,
+      "midi": 72,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.14,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 20.0,
+      "midi": 76,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.41000000000000003,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 20.0,
+      "midi": 76,
+      "duration": 0.95,
+      "gain": 0.065,
+      "pan": 0.0,
+      "instrument": "glass"
+    },
+    {
+      "t": 20.9375,
+      "midi": 81,
+      "duration": 0.95,
+      "gain": 0.065,
+      "pan": 0.049392002820953525,
+      "instrument": "glass"
+    },
+    {
+      "t": 21.875,
+      "midi": 69,
+      "duration": 0.95,
+      "gain": 0.065,
+      "pan": -0.09779542436962405,
+      "instrument": "glass"
+    },
+    {
+      "t": 22.1875,
+      "midi": 88,
+      "duration": 1.15,
+      "gain": 0.105,
+      "pan": 0.2,
+      "instrument": "glockenspiel"
+    },
+    {
+      "t": 22.5,
+      "midi": 58,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.4,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 22.5,
+      "midi": 65,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.13,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 22.5,
+      "midi": 69,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.14,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 22.5,
+      "midi": 74,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.41000000000000003,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 22.5,
+      "midi": 69,
+      "duration": 0.95,
+      "gain": 0.065,
+      "pan": 0.0,
+      "instrument": "glass"
+    },
+    {
+      "t": 23.4375,
+      "midi": 78,
+      "duration": 0.95,
+      "gain": 0.065,
+      "pan": 0.049392002820953525,
+      "instrument": "glass"
+    },
+    {
+      "t": 24.375,
+      "midi": 74,
+      "duration": 0.95,
+      "gain": 0.065,
+      "pan": -0.09779542436962405,
+      "instrument": "glass"
+    },
+    {
+      "t": 25.0,
+      "midi": 53,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.4,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 25.0,
+      "midi": 60,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.13,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 25.0,
+      "midi": 65,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.14,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 25.0,
+      "midi": 69,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.41000000000000003,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 25.0,
+      "midi": 77,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 25.0,
+      "midi": 29,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 25,
+      "midi": 38,
+      "duration": 0.8,
+      "gain": 0.14,
+      "pan": 0,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 25,
+      "midi": 86,
+      "duration": 1.2,
+      "gain": 0.098,
+      "pan": 0.2,
+      "instrument": "glockenspiel"
+    },
+    {
+      "t": 25.15625,
+      "midi": 72,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.33724536489601753,
+      "instrument": "marimba"
+    },
+    {
+      "t": 25.3125,
+      "midi": 65,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.18042548013751245,
+      "instrument": "marimba"
+    },
+    {
+      "t": 25.46875,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.24071815571439092,
+      "instrument": "marimba"
+    },
+    {
+      "t": 25.625,
+      "midi": 77,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.3092091295020536,
+      "instrument": "marimba"
+    },
+    {
+      "t": 25.625,
+      "midi": 29,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 25.78125,
+      "midi": 72,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.07529199583073543,
+      "instrument": "marimba"
+    },
+    {
+      "t": 25.9375,
+      "midi": 65,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.34949017088111173,
+      "instrument": "marimba"
+    },
+    {
+      "t": 26.09375,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.11168442682227324,
+      "instrument": "marimba"
+    },
+    {
+      "t": 26.25,
+      "midi": 77,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2897392641799788,
+      "instrument": "marimba"
+    },
+    {
+      "t": 26.25,
+      "midi": 29,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 26.40625,
+      "midi": 72,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2666942543716612,
+      "instrument": "marimba"
+    },
+    {
+      "t": 26.5625,
+      "midi": 65,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.1470584628893243,
+      "instrument": "marimba"
+    },
+    {
+      "t": 26.63,
+      "midi": 38,
+      "duration": 0.8,
+      "gain": 0.2,
+      "pan": 0,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 26.63,
+      "midi": 86,
+      "duration": 1.2,
+      "gain": 0.13999999999999999,
+      "pan": 0.2,
+      "instrument": "glockenspiel"
+    },
+    {
+      "t": 26.71875,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.34537018749611464,
+      "instrument": "marimba"
+    },
+    {
+      "t": 26.875,
+      "midi": 77,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.0377137783048048,
+      "instrument": "marimba"
+    },
+    {
+      "t": 26.875,
+      "midi": 29,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 27.03125,
+      "midi": 72,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.3251934044570294,
+      "instrument": "marimba"
+    },
+    {
+      "t": 27.1875,
+      "midi": 65,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.21169148784219943,
+      "instrument": "marimba"
+    },
+    {
+      "t": 27.34375,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.21193895440186036,
+      "instrument": "marimba"
+    },
+    {
+      "t": 27.5,
+      "midi": 52,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.4,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 27.5,
+      "midi": 60,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.13,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 27.5,
+      "midi": 67,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.14,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 27.5,
+      "midi": 72,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.41000000000000003,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 27.5,
+      "midi": 84,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 27.5,
+      "midi": 28,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 27.65625,
+      "midi": 79,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.33724536489601753,
+      "instrument": "marimba"
+    },
+    {
+      "t": 27.8125,
+      "midi": 72,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.18042548013751245,
+      "instrument": "marimba"
+    },
+    {
+      "t": 27.96875,
+      "midi": 64,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.24071815571439092,
+      "instrument": "marimba"
+    },
+    {
+      "t": 28.125,
+      "midi": 84,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.3092091295020536,
+      "instrument": "marimba"
+    },
+    {
+      "t": 28.125,
+      "midi": 28,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 28.28125,
+      "midi": 79,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.07529199583073543,
+      "instrument": "marimba"
+    },
+    {
+      "t": 28.4375,
+      "midi": 72,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.34949017088111173,
+      "instrument": "marimba"
+    },
+    {
+      "t": 28.59375,
+      "midi": 64,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.11168442682227324,
+      "instrument": "marimba"
+    },
+    {
+      "t": 28.75,
+      "midi": 84,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2897392641799788,
+      "instrument": "marimba"
+    },
+    {
+      "t": 28.75,
+      "midi": 28,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 28.90625,
+      "midi": 79,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2666942543716612,
+      "instrument": "marimba"
+    },
+    {
+      "t": 29.0625,
+      "midi": 72,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.1470584628893243,
+      "instrument": "marimba"
+    },
+    {
+      "t": 29.21875,
+      "midi": 64,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.34537018749611464,
+      "instrument": "marimba"
+    },
+    {
+      "t": 29.375,
+      "midi": 84,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.0377137783048048,
+      "instrument": "marimba"
+    },
+    {
+      "t": 29.375,
+      "midi": 28,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 29.53125,
+      "midi": 79,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.3251934044570294,
+      "instrument": "marimba"
+    },
+    {
+      "t": 29.6875,
+      "midi": 72,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.21169148784219943,
+      "instrument": "marimba"
+    },
+    {
+      "t": 29.84375,
+      "midi": 64,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.21193895440186036,
+      "instrument": "marimba"
+    },
+    {
+      "t": 30.0,
+      "midi": 62,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.4,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 30.0,
+      "midi": 69,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.13,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 30.0,
+      "midi": 72,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.14,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 30.0,
+      "midi": 76,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.41000000000000003,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 30.0,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 30.0,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 30.15625,
+      "midi": 88,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.33724536489601753,
+      "instrument": "marimba"
+    },
+    {
+      "t": 30.3125,
+      "midi": 84,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.18042548013751245,
+      "instrument": "marimba"
+    },
+    {
+      "t": 30.46875,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.24071815571439092,
+      "instrument": "marimba"
+    },
+    {
+      "t": 30.625,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.3092091295020536,
+      "instrument": "marimba"
+    },
+    {
+      "t": 30.625,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 30.78125,
+      "midi": 88,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.07529199583073543,
+      "instrument": "marimba"
+    },
+    {
+      "t": 30.9375,
+      "midi": 84,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.34949017088111173,
+      "instrument": "marimba"
+    },
+    {
+      "t": 31.09375,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.11168442682227324,
+      "instrument": "marimba"
+    },
+    {
+      "t": 31.25,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2897392641799788,
+      "instrument": "marimba"
+    },
+    {
+      "t": 31.25,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 31.40625,
+      "midi": 88,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2666942543716612,
+      "instrument": "marimba"
+    },
+    {
+      "t": 31.5625,
+      "midi": 84,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.1470584628893243,
+      "instrument": "marimba"
+    },
+    {
+      "t": 31.71875,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.34537018749611464,
+      "instrument": "marimba"
+    },
+    {
+      "t": 31.875,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.0377137783048048,
+      "instrument": "marimba"
+    },
+    {
+      "t": 31.875,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 32.03125,
+      "midi": 88,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.3251934044570294,
+      "instrument": "marimba"
+    },
+    {
+      "t": 32.1875,
+      "midi": 84,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.21169148784219943,
+      "instrument": "marimba"
+    },
+    {
+      "t": 32.34375,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.21193895440186036,
+      "instrument": "marimba"
+    },
+    {
+      "t": 32.5,
+      "midi": 58,
+      "duration": 1.25,
+      "gain": 0.06,
+      "pan": -0.4,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 32.5,
+      "midi": 65,
+      "duration": 1.25,
+      "gain": 0.06,
+      "pan": -0.13,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 32.5,
+      "midi": 69,
+      "duration": 1.25,
+      "gain": 0.06,
+      "pan": 0.14,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 32.5,
+      "midi": 74,
+      "duration": 1.25,
+      "gain": 0.06,
+      "pan": 0.41000000000000003,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 32.5,
+      "midi": 77,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 32.5,
+      "midi": 34,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 32.65625,
+      "midi": 70,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.33724536489601753,
+      "instrument": "marimba"
+    },
+    {
+      "t": 32.8125,
+      "midi": 86,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.18042548013751245,
+      "instrument": "marimba"
+    },
+    {
+      "t": 32.96875,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.24071815571439092,
+      "instrument": "marimba"
+    },
+    {
+      "t": 33.125,
+      "midi": 77,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.3092091295020536,
+      "instrument": "marimba"
+    },
+    {
+      "t": 33.125,
+      "midi": 34,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 33.28125,
+      "midi": 70,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.07529199583073543,
+      "instrument": "marimba"
+    },
+    {
+      "t": 33.4375,
+      "midi": 86,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.34949017088111173,
+      "instrument": "marimba"
+    },
+    {
+      "t": 33.59375,
+      "midi": 81,
+      "duration": 0.15625,
+      "gain": 0.07,
+      "pan": 0.11168442682227324,
+      "instrument": "marimba"
+    },
+    {
+      "t": 33.75,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2897392641799788,
+      "instrument": "marimba"
+    },
+    {
+      "t": 33.75,
+      "midi": 34,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 33.75,
+      "midi": 38,
+      "duration": 0.8,
+      "gain": 0.17,
+      "pan": 0,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 33.75,
+      "midi": 86,
+      "duration": 1.2,
+      "gain": 0.119,
+      "pan": 0.2,
+      "instrument": "glockenspiel"
+    },
+    {
+      "t": 33.75,
+      "midi": 62,
+      "duration": 2.35,
+      "gain": 0.075,
+      "pan": -0.3,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 33.75,
+      "midi": 66,
+      "duration": 2.35,
+      "gain": 0.075,
+      "pan": -0.09999999999999998,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 33.75,
+      "midi": 69,
+      "duration": 2.35,
+      "gain": 0.075,
+      "pan": 0.04999999999999999,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 33.75,
+      "midi": 74,
+      "duration": 2.35,
+      "gain": 0.075,
+      "pan": 0.3,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 33.75,
+      "midi": 74,
+      "duration": 0.19,
+      "gain": 0.065,
+      "pan": -0.25,
+      "instrument": "marimba"
+    },
+    {
+      "t": 33.85417,
+      "midi": 78,
+      "duration": 0.19,
+      "gain": 0.065,
+      "pan": -0.20500000000000002,
+      "instrument": "marimba"
+    },
+    {
+      "t": 33.90625,
+      "midi": 78,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2666942543716612,
+      "instrument": "marimba"
+    },
+    {
+      "t": 33.95833,
+      "midi": 81,
+      "duration": 0.19,
+      "gain": 0.065,
+      "pan": -0.16,
+      "instrument": "marimba"
+    },
+    {
+      "t": 34.0625,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.1470584628893243,
+      "instrument": "marimba"
+    },
+    {
+      "t": 34.0625,
+      "midi": 86,
+      "duration": 0.19,
+      "gain": 0.065,
+      "pan": -0.11499999999999999,
+      "instrument": "marimba"
+    },
+    {
+      "t": 34.16667,
+      "midi": 74,
+      "duration": 0.19,
+      "gain": 0.065,
+      "pan": -0.07,
+      "instrument": "marimba"
+    },
+    {
+      "t": 34.21875,
+      "midi": 86,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.34537018749611464,
+      "instrument": "marimba"
+    },
+    {
+      "t": 34.27083,
+      "midi": 78,
+      "duration": 0.19,
+      "gain": 0.065,
+      "pan": -0.025000000000000022,
+      "instrument": "marimba"
+    },
+    {
+      "t": 34.375,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.0377137783048048,
+      "instrument": "marimba"
+    },
+    {
+      "t": 34.375,
+      "midi": 34,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 34.375,
+      "midi": 81,
+      "duration": 0.19,
+      "gain": 0.065,
+      "pan": 0.020000000000000018,
+      "instrument": "marimba"
+    },
+    {
+      "t": 34.47917,
+      "midi": 86,
+      "duration": 0.19,
+      "gain": 0.065,
+      "pan": 0.065,
+      "instrument": "marimba"
+    },
+    {
+      "t": 34.53125,
+      "midi": 78,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.3251934044570294,
+      "instrument": "marimba"
+    },
+    {
+      "t": 34.58333,
+      "midi": 74,
+      "duration": 0.19,
+      "gain": 0.065,
+      "pan": 0.10999999999999999,
+      "instrument": "marimba"
+    },
+    {
+      "t": 34.6875,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.21169148784219943,
+      "instrument": "marimba"
+    },
+    {
+      "t": 34.6875,
+      "midi": 78,
+      "duration": 0.19,
+      "gain": 0.065,
+      "pan": 0.15499999999999997,
+      "instrument": "marimba"
+    },
+    {
+      "t": 34.79167,
+      "midi": 81,
+      "duration": 0.19,
+      "gain": 0.065,
+      "pan": 0.19999999999999996,
+      "instrument": "marimba"
+    },
+    {
+      "t": 34.84375,
+      "midi": 86,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.21193895440186036,
+      "instrument": "marimba"
+    },
+    {
+      "t": 34.89583,
+      "midi": 86,
+      "duration": 0.19,
+      "gain": 0.065,
+      "pan": 0.245,
+      "instrument": "marimba"
+    },
+    {
+      "t": 35.0,
+      "midi": 62,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.4,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 35.0,
+      "midi": 69,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": -0.13,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 35.0,
+      "midi": 74,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.14,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 35.0,
+      "midi": 78,
+      "duration": 2.2,
+      "gain": 0.06,
+      "pan": 0.41000000000000003,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 35.0,
+      "midi": 86,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 35.0,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 35.10417,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.33724536489601753,
+      "instrument": "marimba"
+    },
+    {
+      "t": 35.20833,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.18042548013751245,
+      "instrument": "marimba"
+    },
+    {
+      "t": 35.3125,
+      "midi": 90,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.24071815571439092,
+      "instrument": "marimba"
+    },
+    {
+      "t": 35.41667,
+      "midi": 86,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.3092091295020536,
+      "instrument": "marimba"
+    },
+    {
+      "t": 35.52083,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.07529199583073543,
+      "instrument": "marimba"
+    },
+    {
+      "t": 35.625,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.34949017088111173,
+      "instrument": "marimba"
+    },
+    {
+      "t": 35.625,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 35.72917,
+      "midi": 90,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.11168442682227324,
+      "instrument": "marimba"
+    },
+    {
+      "t": 35.83333,
+      "midi": 86,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2897392641799788,
+      "instrument": "marimba"
+    },
+    {
+      "t": 35.9375,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2666942543716612,
+      "instrument": "marimba"
+    },
+    {
+      "t": 36.04167,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.1470584628893243,
+      "instrument": "marimba"
+    },
+    {
+      "t": 36.14583,
+      "midi": 90,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.34537018749611464,
+      "instrument": "marimba"
+    },
+    {
+      "t": 36.25,
+      "midi": 86,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.0377137783048048,
+      "instrument": "marimba"
+    },
+    {
+      "t": 36.25,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 36.35417,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.3251934044570294,
+      "instrument": "marimba"
+    },
+    {
+      "t": 36.45833,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.21169148784219943,
+      "instrument": "marimba"
+    },
+    {
+      "t": 36.5625,
+      "midi": 90,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.21193895440186036,
+      "instrument": "marimba"
+    },
+    {
+      "t": 36.66667,
+      "midi": 86,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.3250783319270341,
+      "instrument": "marimba"
+    },
+    {
+      "t": 36.77083,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.038022808398427914,
+      "instrument": "marimba"
+    },
+    {
+      "t": 36.875,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.34542044534222727,
+      "instrument": "marimba"
+    },
+    {
+      "t": 36.875,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 36.97917,
+      "midi": 90,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.14677632062563095,
+      "instrument": "marimba"
+    },
+    {
+      "t": 37.08333,
+      "midi": 86,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.26689545766786094,
+      "instrument": "marimba"
+    },
+    {
+      "t": 37.1875,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.2895647652083825,
+      "instrument": "marimba"
+    },
+    {
+      "t": 37.29167,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.11197898665946933,
+      "instrument": "marimba"
+    },
+    {
+      "t": 37.39583,
+      "midi": 90,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.34947326073233503,
+      "instrument": "marimba"
+    },
+    {
+      "t": 37.5,
+      "midi": 62,
+      "duration": 1.25,
+      "gain": 0.06,
+      "pan": -0.4,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 37.5,
+      "midi": 69,
+      "duration": 1.25,
+      "gain": 0.06,
+      "pan": -0.13,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 37.5,
+      "midi": 74,
+      "duration": 1.25,
+      "gain": 0.06,
+      "pan": 0.14,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 37.5,
+      "midi": 78,
+      "duration": 1.25,
+      "gain": 0.06,
+      "pan": 0.41000000000000003,
+      "instrument": "vibraphone_bowed"
+    },
+    {
+      "t": 37.5,
+      "midi": 90,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.0,
+      "instrument": "marimba"
+    },
+    {
+      "t": 37.5,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 37.60417,
+      "midi": 86,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.33724536489601753,
+      "instrument": "marimba"
+    },
+    {
+      "t": 37.70833,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.18042548013751245,
+      "instrument": "marimba"
+    },
+    {
+      "t": 37.8125,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.24071815571439092,
+      "instrument": "marimba"
+    },
+    {
+      "t": 37.91667,
+      "midi": 90,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.3092091295020536,
+      "instrument": "marimba"
+    },
+    {
+      "t": 38.02083,
+      "midi": 86,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.07529199583073543,
+      "instrument": "marimba"
+    },
+    {
+      "t": 38.125,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.34949017088111173,
+      "instrument": "marimba"
+    },
+    {
+      "t": 38.125,
+      "midi": 38,
+      "duration": 0.4,
+      "gain": 0.09,
+      "pan": -0.1,
+      "instrument": "electric_bass"
+    },
+    {
+      "t": 38.22917,
+      "midi": 74,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.11168442682227324,
+      "instrument": "marimba"
+    },
+    {
+      "t": 38.33333,
+      "midi": 90,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2897392641799788,
+      "instrument": "marimba"
+    },
+    {
+      "t": 38.4375,
+      "midi": 86,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": -0.2666942543716612,
+      "instrument": "marimba"
+    },
+    {
+      "t": 38.54167,
+      "midi": 81,
+      "duration": 0.2,
+      "gain": 0.07,
+      "pan": 0.1470584628893243,
+      "instrument": "marimba"
+    },
+    {
+      "t": 38.64583,
+      "midi": 74,
+      "duration": 0.1041666666666643,
+      "gain": 0.07,
+      "pan": 0.34537018749611464,
+      "instrument": "marimba"
+    }
+  ],
+  "hits": [
+    {
+      "t": 5.0,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 5.15625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 5.3125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 5.46875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 5.625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 5.625,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 5.78125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 5.9375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 6.09375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 6.25,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 6.40625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 6.5625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 6.71875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 6.875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 6.875,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 7.03125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 7.1875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 7.34375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 7.5,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 7.65625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 7.8125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 7.96875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 8.125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 8.125,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 8.28125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 8.4375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 8.59375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 8.75,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 8.90625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 9.0625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 9.21875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 9.375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 9.375,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 9.53125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 9.6875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 9.84375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 10.0,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 10.15625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 10.3125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 10.46875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 10.625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 10.625,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 10.78125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 10.9375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 11.09375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 11.25,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 11.40625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 11.5625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 11.71875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 11.875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 11.875,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 12.03125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 12.1875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 12.34375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 12.5,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 12.8125,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 13.125,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 13.4375,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 13.75,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 14.0625,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 14.375,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 14.6875,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 15.0,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 15.3125,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 15.625,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 15.9375,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 16.25,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 16.5625,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 16.875,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 17.1875,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 17.5,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 17.8125,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 18.125,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 18.4375,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 18.75,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 19.0625,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 19.375,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 19.6875,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 20.0,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 20.3125,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 20.625,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 20.9375,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 21.25,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 21.5625,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 21.875,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 22.1875,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 22.5,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 22.8125,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 23.125,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 23.4375,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 23.75,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 24.0625,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 24.375,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 24.6875,
+      "instrument": "hihat",
+      "gain": 0.012,
+      "variant": "pedal",
+      "pan": 0,
+      "duration": 0.25
+    },
+    {
+      "t": 25.0,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 25.15625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 25.3125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 25.46875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 25.625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 25.625,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 25.78125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 25.9375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 26.09375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 26.25,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 26.40625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 26.5625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 26.71875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 26.875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 26.875,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 27.03125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 27.1875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 27.34375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 27.5,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 27.65625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 27.8125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 27.96875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 28.125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 28.125,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 28.28125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 28.4375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 28.59375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 28.75,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 28.90625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 29.0625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 29.21875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 29.375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 29.375,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 29.53125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 29.6875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 29.84375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 30.0,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 30.15625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 30.3125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 30.46875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 30.625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 30.625,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 30.78125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 30.9375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 31.09375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 31.25,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 31.40625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 31.5625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 31.71875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 31.875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 31.875,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 32.03125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 32.1875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 32.34375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 32.5,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 32.65625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 32.8125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 32.96875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 33.125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 33.125,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 33.28125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 33.4375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 33.59375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 33.75,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 33.90625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 34.0625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 34.21875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 34.375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 34.375,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 34.53125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 34.6875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 34.84375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 35.0,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 35.10417,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 35.20833,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 35.3125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 35.41667,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 35.52083,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 35.625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 35.625,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 35.72917,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 35.83333,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 35.9375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 36.04167,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 36.14583,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 36.25,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 36.35417,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 36.45833,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 36.5625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 36.66667,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 36.77083,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 36.875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 36.875,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 36.97917,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 37.08333,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 37.1875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 37.29167,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 37.39583,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 37.5,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 37.60417,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 37.70833,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 37.8125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 37.91667,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 38.02083,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 38.125,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 38.125,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 38.22917,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 38.33333,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 38.4375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 38.54167,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 38.64583,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 38.75,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 38.85417,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 38.95833,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 39.0625,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 39.16667,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 39.27083,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 39.375,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 39.375,
+      "instrument": "claves",
+      "gain": 0.035,
+      "variant": null,
+      "pan": 0,
+      "duration": 0.18
+    },
+    {
+      "t": 39.47917,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 39.58333,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 39.6875,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 39.79167,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    },
+    {
+      "t": 39.89583,
+      "instrument": "hihat",
+      "gain": 0.018,
+      "variant": "closed",
+      "pan": 0.3,
+      "duration": 0.12
+    }
+  ],
+  "effects": [
+    {
+      "t": 0,
+      "kind": "lab_room",
+      "duration": 38.75,
+      "gain": 0.006,
+      "pan": 0
+    },
+    {
+      "t": 3.125,
+      "kind": "switch_thock",
+      "duration": 0.2,
+      "gain": 0.13,
+      "pan": 0.6
+    },
+    {
+      "t": 3.325,
+      "kind": "keycap_clack",
+      "duration": 0.12,
+      "gain": 0.09,
+      "pan": 0.6
+    },
+    {
+      "t": 4.4,
+      "kind": "whoosh",
+      "duration": 0.6,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 5.0,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 5,
+      "kind": "kick808",
+      "duration": 0.45,
+      "gain": 0.08399999999999999,
+      "pan": 0,
+      "frequency": 60
+    },
+    {
+      "t": 5.01023,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": -0.71438125
+    },
+    {
+      "t": 5.069,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": -0.4762437500000001
+    },
+    {
+      "t": 5.07847,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": -0.71438125
+    },
+    {
+      "t": 5.10399,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": -0.4762437500000001
+    },
+    {
+      "t": 5.13665,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": -0.23811874999999993
+    },
+    {
+      "t": 5.1467,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": -0.71438125
+    },
+    {
+      "t": 5.14965,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": -0.23811874999999993
+    },
+    {
+      "t": 5.1618,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": -0.4762437500000001
+    },
+    {
+      "t": 5.18824,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": -0.23811874999999993
+    },
+    {
+      "t": 5.20528,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": -6.250000000029843e-06
+    },
+    {
+      "t": 5.21143,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": -6.250000000029843e-06
+    },
+    {
+      "t": 5.23785,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": -6.250000000029843e-06
+    },
+    {
+      "t": 5.27303,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": 0.23811875000000002
+    },
+    {
+      "t": 5.27977,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": 0.23811875000000002
+    },
+    {
+      "t": 5.30217,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": 0.23811875000000002
+    },
+    {
+      "t": 5.31,
+      "kind": "whoosh",
+      "duration": 0.7,
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 5.31566,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": 0.11905625000000004
+    },
+    {
+      "t": 5.34119,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": 0.47625624999999994
+    },
+    {
+      "t": 5.34828,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": 0.47625624999999994
+    },
+    {
+      "t": 5.3681,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": 0.47625624999999994
+    },
+    {
+      "t": 5.3796,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": 0.37924375
+    },
+    {
+      "t": 5.45,
+      "kind": "keycap_clack",
+      "duration": 0.14,
+      "gain": 0.055,
+      "pan": 0.65226875
+    },
+    {
+      "t": 5.47,
+      "kind": "whoosh",
+      "duration": 0.7,
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 5.63,
+      "kind": "whoosh",
+      "duration": 0.7,
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 5.78,
+      "kind": "whoosh",
+      "duration": 0.7,
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 5.94,
+      "kind": "whoosh",
+      "duration": 0.7,
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 6.25,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 6.875,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.025,
+      "pan": 0.3
+    },
+    {
+      "t": 7.035,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.025,
+      "pan": 0.3
+    },
+    {
+      "t": 7.195,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.025,
+      "pan": 0.3
+    },
+    {
+      "t": 7.355,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.025,
+      "pan": 0.3
+    },
+    {
+      "t": 7.5,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 7.515,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.025,
+      "pan": 0.3
+    },
+    {
+      "t": 7.675,
+      "kind": "click",
+      "duration": 0.045,
+      "gain": 0.025,
+      "pan": 0.3
+    },
+    {
+      "t": 8.75,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 10.0,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 10,
+      "kind": "whoosh",
+      "duration": 2.5,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 11.25,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 12.15,
+      "kind": "whoosh",
+      "duration": 0.8,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 12.5,
+      "kind": "kick808",
+      "duration": 0.25,
+      "gain": 0.02,
+      "pan": 0,
+      "frequency": 52
+    },
+    {
+      "t": 14.375,
+      "kind": "click",
+      "duration": 0.06,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 14.6875,
+      "kind": "click",
+      "duration": 0.06,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 15.0,
+      "kind": "kick808",
+      "duration": 0.25,
+      "gain": 0.02,
+      "pan": 0,
+      "frequency": 52
+    },
+    {
+      "t": 17.5,
+      "kind": "kick808",
+      "duration": 0.25,
+      "gain": 0.02,
+      "pan": 0,
+      "frequency": 52
+    },
+    {
+      "t": 18.125,
+      "kind": "click",
+      "duration": 0.06,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 20.0,
+      "kind": "kick808",
+      "duration": 0.25,
+      "gain": 0.02,
+      "pan": 0,
+      "frequency": 52
+    },
+    {
+      "t": 21.25,
+      "kind": "whoosh",
+      "duration": 0.8,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 22,
+      "kind": "click",
+      "duration": 0.06,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 22.5,
+      "kind": "kick808",
+      "duration": 0.25,
+      "gain": 0.02,
+      "pan": 0,
+      "frequency": 52
+    },
+    {
+      "t": 25.0,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 25,
+      "kind": "kick808",
+      "duration": 0.45,
+      "gain": 0.098,
+      "pan": 0,
+      "frequency": 60
+    },
+    {
+      "t": 25,
+      "kind": "whoosh",
+      "duration": 0.8,
+      "gain": 0.06,
+      "pan": 0
+    },
+    {
+      "t": 25.625,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 26.25,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 26.63,
+      "kind": "kick808",
+      "duration": 0.45,
+      "gain": 0.13999999999999999,
+      "pan": 0,
+      "frequency": 60
+    },
+    {
+      "t": 26.63,
+      "kind": "case_thud",
+      "duration": 0.5,
+      "gain": 0.18,
+      "pan": 0
+    },
+    {
+      "t": 26.74,
+      "kind": "metal_tick",
+      "duration": 0.18,
+      "gain": 0.06,
+      "pan": 0
+    },
+    {
+      "t": 26.85,
+      "kind": "board_tap",
+      "duration": 0.16,
+      "gain": 0.075,
+      "pan": 0
+    },
+    {
+      "t": 26.875,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 26.98,
+      "kind": "board_tap",
+      "duration": 0.16,
+      "gain": 0.075,
+      "pan": 0
+    },
+    {
+      "t": 27.1,
+      "kind": "switch_thock",
+      "duration": 0.17,
+      "gain": 0.07,
+      "pan": 0
+    },
+    {
+      "t": 27.25818,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": -0.71438125
+    },
+    {
+      "t": 27.27318,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": -0.71438125
+    },
+    {
+      "t": 27.3052,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": -0.4762437500000001
+    },
+    {
+      "t": 27.31277,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": -0.71438125
+    },
+    {
+      "t": 27.3202,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": -0.4762437500000001
+    },
+    {
+      "t": 27.32777,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": -0.71438125
+    },
+    {
+      "t": 27.33319,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": -0.4762437500000001
+    },
+    {
+      "t": 27.34819,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": -0.4762437500000001
+    },
+    {
+      "t": 27.35932,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": -0.23811874999999993
+    },
+    {
+      "t": 27.36736,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": -0.71438125
+    },
+    {
+      "t": 27.36972,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": -0.23811874999999993
+    },
+    {
+      "t": 27.37432,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": -0.23811874999999993
+    },
+    {
+      "t": 27.37944,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": -0.4762437500000001
+    },
+    {
+      "t": 27.38236,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": -0.71438125
+    },
+    {
+      "t": 27.38472,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": -0.23811874999999993
+    },
+    {
+      "t": 27.39444,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": -0.4762437500000001
+    },
+    {
+      "t": 27.40059,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": -0.23811874999999993
+    },
+    {
+      "t": 27.41423,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": -6.250000000029843e-06
+    },
+    {
+      "t": 27.41559,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": -0.23811874999999993
+    },
+    {
+      "t": 27.41914,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": -6.250000000029843e-06
+    },
+    {
+      "t": 27.42923,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": -6.250000000029843e-06
+    },
+    {
+      "t": 27.43414,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": -6.250000000029843e-06
+    },
+    {
+      "t": 27.44028,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": -6.250000000029843e-06
+    },
+    {
+      "t": 27.45528,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": -6.250000000029843e-06
+    },
+    {
+      "t": 27.46842,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": 0.23811875000000002
+    },
+    {
+      "t": 27.47381,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": 0.23811875000000002
+    },
+    {
+      "t": 27.48342,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": 0.23811875000000002
+    },
+    {
+      "t": 27.48881,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": 0.23811875000000002
+    },
+    {
+      "t": 27.49173,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": 0.23811875000000002
+    },
+    {
+      "t": 27.5,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 27.5,
+      "kind": "glass_pen",
+      "duration": 0.48,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 27.50253,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": 0.11905625000000004
+    },
+    {
+      "t": 27.50673,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": 0.23811875000000002
+    },
+    {
+      "t": 27.51753,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": 0.11905625000000004
+    },
+    {
+      "t": 27.52295,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": 0.47625624999999994
+    },
+    {
+      "t": 27.52862,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": 0.47625624999999994
+    },
+    {
+      "t": 27.53795,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": 0.47625624999999994
+    },
+    {
+      "t": 27.54362,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": 0.47625624999999994
+    },
+    {
+      "t": 27.54448,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": 0.47625624999999994
+    },
+    {
+      "t": 27.55368,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": 0.37924375
+    },
+    {
+      "t": 27.55948,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": 0.47625624999999994
+    },
+    {
+      "t": 27.56868,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": 0.37924375
+    },
+    {
+      "t": 27.61,
+      "kind": "keycap_clack",
+      "duration": 0.17,
+      "gain": 0.075,
+      "pan": 0.65226875
+    },
+    {
+      "t": 27.625,
+      "kind": "switch_thock",
+      "duration": 0.16,
+      "gain": 0.045,
+      "pan": 0.65226875
+    },
+    {
+      "t": 28.125,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 28.125,
+      "kind": "glass_pen",
+      "duration": 0.48,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 28.75,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 28.75,
+      "kind": "glass_pen",
+      "duration": 0.48,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 29.375,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 29.375,
+      "kind": "glass_pen",
+      "duration": 0.48,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 30.0,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 30.625,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 31.25,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 31.875,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 32.5,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 33.125,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 33.75,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 33.75,
+      "kind": "kick808",
+      "duration": 0.45,
+      "gain": 0.119,
+      "pan": 0,
+      "frequency": 60
+    },
+    {
+      "t": 34.375,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 35.0,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 35.625,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 36.25,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 36.875,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 37.5,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 38.125,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 38.75,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    },
+    {
+      "t": 39.375,
+      "kind": "kick808",
+      "duration": 0.3,
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 58
+    }
+  ]
+}

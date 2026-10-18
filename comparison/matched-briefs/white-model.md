@@ -1,6 +1,6 @@
 # How a Flattened City Grew Back — matched recreation brief
 
-Status: original scene sequence audited. Exact original evidence assets still require restoration.
+Status: original scene sequence audited. Original geometry and statistics are preserved; absent masks are restored with disclosed pixel-boundary variance.
 
 Measured delivery: **1280×720, 24fps, 960frames, 40s**. Production canvas:1920×1080.
 
@@ -187,7 +187,7 @@ Mix (`demo/mix.py`): music balanced to sit 10 dB under the voice while it speaks
 
 ## Asset requirements and unresolved gaps
 
-- Preserve the complete original model.json and stats.json. Water/shadow masks are absent; restore them against this snapshot. A live WFS refetch may alter the model and must not silently replace it.
+- The complete original model.json and stats.json are preserved unchanged. Water/shadow masks are restored against this snapshot. Current BGT water and regenerated shadow edge pixels can differ from the missing original masks; this is disclosed in FACTS.md and RESTORATION.json. No live building replacement is used.
 - The original conversation prompt is not published. Use the complete published specification and audited reconstruction; do not claim the recovered text is a verbatim original chat prompt.
 
 The preserved original3DBAG/BGT Rotterdam model and statistical snapshot.

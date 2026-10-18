@@ -1,0 +1,6 @@
+Where the Wind Went — full reference-matched recreation
+New park page, trees/building/bridge/lamp assemblies, camera, hat path, character staging/performance, pigment sources, paper tooth and jazz score: GPT-6.1 Sol, high reasoning.
+Published STYLE.md/DEMO.md and complete original movie are analytical references. Original conversation/input prompt is unavailable; PROMPT.md is a source-informed reconstruction.
+Shared MIT library components: engine.js and poses.js copied unchanged from styles/urban-sketch/demo. The pose library also contains the shared character appearance presets; these are disclosed reusable assets. All new scene assembly is in page.js and film.js. No original world.js, film.js or main.js is imported/executed. SHA-256 list in shared-components.json.
+Caveat by Impallari Type; Reenie Beanie by James Grieshaber; SIL OFL notices in fonts/. Fresh files from https://github.com/google/fonts/tree/main/ofl/caveat and https://github.com/google/fonts/tree/main/ofl/reeniebeanie (ReenieBeanie.ttf). No generated bitmap assets.
+No narration, matching original. Fresh150BPM F jazz waltz, Dbmaj7#11 apex and silence, clarinet fall, catch tutti. Samples via root: VSCO 2 CE, VCSL and Karoryfer Sneakybass, recorded CC0 licenses. Newly recreated pen/brush/wind/bike/steps/grass/catch/water Foley. No original master soundtrack reused.

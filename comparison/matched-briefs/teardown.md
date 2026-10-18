@@ -1,6 +1,6 @@
 # 21 Keys, Opened — matched recreation brief
 
-Status: original scene sequence audited. Exact original evidence assets still require restoration.
+Status: original scene sequence audited. The pinned original PCB and STEP-derived case are restored.
 
 Measured delivery: **1280×720, 24fps, 930frames, 38.75s**. Production canvas:1920×1080.
 
@@ -218,7 +218,7 @@ Mix (`demo/mix.py`): voice compressed and about 8–10 dB over the music while i
 
 ## Asset requirements and unresolved gaps
 
-- The complete original PCB extraction is present. The pinned STEP-derived case.bin is absent; rebuild it and verify the original dimensions and four-hole transform.
+- The complete original PCB extraction and pinned STEP-derived case.bin are restored. Original dimensions and the four-hole transform are independently verified in the replica data-check.json.
 - The original conversation prompt is not published. Use the complete published specification and audited reconstruction; do not claim the recovered text is a verbatim original chat prompt.
 
 Corne v4.1.0 by foostan, pinned commit63366fb7f51cf2a796462fdd90527e99dd126055; original PCB, plate, STEP case and BOM.

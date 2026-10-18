@@ -10,6 +10,8 @@ Distinguish three things in provenance: the published style prompt, a genuinely 
 
 The library's generic rendering utilities and reusable style engines are valid production tools. Attribute reused components. New scene assembly, staging and animation must be generated for this version; do not relabel the original scene code, exported frames or master movie as new GPT output. Shared source photographs, datasets, fonts and general style-engine primitives must be identified explicitly. If exact Evidence assets are unavailable, mark the gap rather than substituting a different subject while claiming a match.
 
+Preserve the published caption cue table and clause breaks separately from narration takes. A voice file may contain a full sentence while the screen shows timed clauses. Keep handwritten labels tied to the physical pen and keep closing credits clear of the subtitle/title area.
+
 Recreate voice/music when requested. Preserve narration text and cue timing, and musical direction/tempo/major sound cues. Record any shared or newly composed audio. Avoid generic repeating accompaniment when the original has a narrative score.
 
 Review original and generated frames at matching times for every scene. Check story coverage, subject/shape accuracy, material detail, density/depth, typography, camera, motion continuity and audio cues. Repair visible omissions and weak substitutes before final rendering. A render, black-frame scan or contact-sheet existence is not evidence of artistic fidelity. Record remaining differences honestly; never claim equivalence from technical checks.

@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
 """Recreate exact timed narration with the local Kokoro engine; retain every line."""
-import argparse,hashlib,json,sys,subprocess,os
+import argparse,hashlib,json,sys,subprocess,os,re
 from pathlib import Path
 import numpy as np,soundfile as sf
 ROOT=Path(__file__).resolve().parents[1]
 def synthesize(spec,out):
     out.mkdir(parents=True,exist_ok=True);lines=spec.get('lines',[]);records=[];engine=None
     for n,line in enumerate(lines):
-        text=line['text'];voice=line.get('voice',spec.get('voice','af_heart'));speed=float(line.get('speed',spec.get('speed',.93)));language=line.get('language',spec.get('language','en-us'));ident=line.get('id',f'v{n+1:02d}');path=out/(ident+'.wav');digest=hashlib.sha256(json.dumps([text,voice,speed,language],ensure_ascii=False).encode()).hexdigest();cache=out/(ident+'.json')
+        text=line['text'];voice=line.get('voice',spec.get('voice','af_heart'));speed=float(line.get('speed',spec.get('speed',.93)));language=line.get('language',spec.get('language','en-us'));ident=line.get('id',f'v{n+1:02d}');path=out/(ident+'.wav');segments=line.get('delivery_segments');pause=float(line.get('segment_pause',.09));key=[text,voice,speed,language]
+        if segments:
+            words=lambda value: re.findall(r"[\w']+",value.casefold())
+            if not isinstance(segments,list) or not all(isinstance(s,str) and s.strip() for s in segments) or words(' '.join(segments))!=words(text):raise ValueError(ident+': delivery segments must retain the exact original words in order')
+            if not 0<=pause<=.5:raise ValueError(ident+': segment pause must be between 0 and .5 seconds')
+            if 'Neural' in voice:raise ValueError('Segmented delivery currently requires the local voice engine')
+            key.extend([segments,pause])
+        digest=hashlib.sha256(json.dumps(key,ensure_ascii=False).encode()).hexdigest();cache=out/(ident+'.json')
         if not path.exists() or not cache.exists() or json.loads(cache.read_text()).get('input_sha256')!=digest:
             if 'Neural' in voice:
                 request=out/(ident+'-request.json');request.write_text(json.dumps([dict(id=ident,text=text,voice=voice,speed=speed)],ensure_ascii=False));subprocess.run([sys.executable,str(ROOT/'core/tts/tts_zh.py'),str(request),str(out)],check=True)
@@ -15,8 +22,13 @@ def synthesize(spec,out):
                 if engine is None:
                     from kokoro_onnx import Kokoro
                     engine=Kokoro(str(ROOT/'core/tts/kokoro-v1.0.onnx'),str(ROOT/'core/tts/voices-v1.0.bin'))
-                a,sr=engine.create(text,voice=voice,speed=speed,lang=language);nz=np.flatnonzero(np.abs(a)>max(float(np.max(np.abs(a))),1e-9)*.01)
-                if len(nz):a=a[max(0,nz[0]-int(.015*sr)):min(len(a),nz[-1]+int(.1*sr))]
+                parts=[]
+                for clause in segments or [text]:
+                    a,sr=engine.create(clause,voice=voice,speed=speed,lang=language);nz=np.flatnonzero(np.abs(a)>max(float(np.max(np.abs(a))),1e-9)*.01)
+                    if len(nz):a=a[max(0,nz[0]-int(.015*sr)):min(len(a),nz[-1]+int(.1*sr))]
+                    if parts:parts.append(np.zeros(int(pause*sr),dtype=a.dtype))
+                    parts.append(a)
+                a=np.concatenate(parts)
                 if not len(a) or np.max(np.abs(a))<1e-4:raise RuntimeError(ident+' is silent')
                 sf.write(path,a,sr,subtype='PCM_24')
             cache.write_text(json.dumps(dict(input_sha256=digest,text=text,voice=voice,speed=speed,language=language),ensure_ascii=False,indent=2)+'\n')
