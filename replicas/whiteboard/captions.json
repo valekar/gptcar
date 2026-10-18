@@ -1,0 +1,127 @@
+[
+  {
+    "start": 0.85,
+    "end": 4.79,
+    "text": "Right now, your phone knows where you are, to within a few metres."
+  },
+  {
+    "start": 5.65,
+    "end": 7.67,
+    "text": "It works it out by listening"
+  },
+  {
+    "start": 7.95,
+    "end": 9.43,
+    "text": "to ticking clocks."
+  },
+  {
+    "start": 14.149999999999999,
+    "end": 18.97,
+    "text": "About thirty satellites circle twenty thousand kilometres above us."
+  },
+  {
+    "start": 19.05,
+    "end": 20.954109589041096,
+    "text": "Each one carries an atomic clock,"
+  },
+  {
+    "start": 20.994109589041095,
+    "end": 24.090000000000003,
+    "text": "and broadcasts the time, over and over."
+  },
+  {
+    "start": 24.55,
+    "end": 27.00909090909091,
+    "text": "The signal travels at the speed of light,"
+  },
+  {
+    "start": 27.04909090909091,
+    "end": 29.290000000000003,
+    "text": "but it still arrives a little late."
+  },
+  {
+    "start": 30.25,
+    "end": 32.53,
+    "text": "And that delay is a distance."
+  },
+  {
+    "start": 34.85,
+    "end": 37.81,
+    "text": "One satellite puts you somewhere on a circle."
+  },
+  {
+    "start": 38.050000000000004,
+    "end": 39.970000000000006,
+    "text": "Two, at one of two points."
+  },
+  {
+    "start": 40.25,
+    "end": 41.59,
+    "text": "Three."
+  },
+  {
+    "start": 41.63,
+    "end": 43.03,
+    "text": "Right here."
+  },
+  {
+    "start": 44.35,
+    "end": 45.91,
+    "text": "But, there's a catch."
+  },
+  {
+    "start": 46.550000000000004,
+    "end": 49.99,
+    "text": "Up there, time itself runs at a different speed."
+  },
+  {
+    "start": 56.25,
+    "end": 58.61010101010101,
+    "text": "Moving fast slows the orbiting clock,"
+  },
+  {
+    "start": 58.65010101010101,
+    "end": 61.41,
+    "text": "by seven microseconds a day."
+  },
+  {
+    "start": 61.650000000000006,
+    "end": 64.81,
+    "text": "Weaker gravity speeds it up, by forty-five."
+  },
+  {
+    "start": 65.25,
+    "end": 69.66999999999999,
+    "text": "Together, thirty-eight microseconds fast. Every single day."
+  },
+  {
+    "start": 69.95,
+    "end": 73.61904761904762,
+    "text": "Sounds tiny. But in thirty-eight microseconds,"
+  },
+  {
+    "start": 73.65904761904763,
+    "end": 75.92999999999999,
+    "text": "light travels over eleven kilometres."
+  },
+  {
+    "start": 76.45,
+    "end": 80.47,
+    "text": "Left alone, your map pin would drift that far, every day."
+  },
+  {
+    "start": 80.85000000000001,
+    "end": 83.75,
+    "text": "By next week, you'd be somewhere out at sea."
+  },
+  {
+    "start": 88.85000000000001,
+    "end": 94.05,
+    "text": "So before launch, engineers tune the satellite clocks to tick slightly slow."
+  },
+  {
+    "start": 95.95,
+    "end": 99.91,
+    "text": "Einstein's relativity, quietly at work in your pocket."
+  }
+]

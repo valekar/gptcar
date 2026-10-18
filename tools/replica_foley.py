@@ -23,6 +23,77 @@ def effect(kind,duration,seed=6103,**p):
   clicks=np.zeros(len(t));positions=rng.integers(0,len(t),max(1,int(d*45)));clicks[positions]=rng.uniform(.2,1.2,len(positions));clicks=lp(clicks,6000);a=(lp(noise,500)*.4+bp(noise,1600,9500)*.15+clicks*4)*np.minimum(t/.3,1)*np.minimum((d-t)/.5,1)
  elif kind=='rain':
   a=bp(noise,900,10000)*(.3+.05*np.sin(2*np.pi*.8*t))*np.minimum(t/.2,1)*np.minimum((d-t)/.25,1)
+ elif kind=='match_strike':
+  a=bp(noise,1700,10500)*np.exp(-u*7)*np.minimum(t/.003,1)+lp(noise,1300)*np.exp(-((u-.48)/.27)**2)*.4
+ elif kind=='lamp_ignite':
+  a=(lp(noise,650)*.65+bp(noise,1300,7000)*.2)*np.exp(-u*3)*np.minimum(t/.025,1)
+ elif kind=='lamp_snuff':
+  a=(bp(noise,400,4700)*.6+lp(noise,450)*.3)*np.exp(-u*6)*np.minimum(t/.008,1)
+ elif kind=='rod_tap':
+  a=(np.sin(2*np.pi*750*t)*.55+np.sin(2*np.pi*1930*t)*.2+bp(noise,1400,7000)*.25)*np.exp(-u*25)*np.minimum(t/.0008,1)
+ elif kind in ('leather_flap','wing_flap'):
+  rate=float(p.get('rate',4 if kind=='wing_flap' else 2.5));pulse=np.maximum(np.sin(2*np.pi*rate*t),0)**3
+  a=(bp(noise,200,2300)*.8+np.sin(2*np.pi*95*t)*.12)*pulse*env
+ elif kind=='leather_step':
+  a=(lp(noise,1100)*.55+np.sin(2*np.pi*(120*t-38*t*t/max(d,.01)))*.4+bp(noise,1500,5000)*.12)*np.exp(-u*17)*np.minimum(t/.002,1)
+ elif kind=='bow_creak':
+  f=230+100*u+15*np.sin(2*np.pi*27*t);phase=2*np.pi*np.cumsum(f)/SR
+  a=(np.sin(phase)+.4*np.sin(phase*3)+bp(noise,500,3600)*.3)*env*(.6+.4*np.sin(2*np.pi*41*t))
+ elif kind=='bow_twang':
+  f=float(p.get('frequency',170))*(1+.12*np.exp(-t*45));phase=2*np.pi*np.cumsum(f)/SR
+  a=sum(np.sin(phase*k)*np.exp(-t*(7+k*2))/k for k in range(1,9))*np.exp(-u*4)*np.minimum(t/.001,1)
+ elif kind=='arrow_whoosh':
+  a=bp(noise,1100,11000)*np.exp(-((u-.43)/.22)**2)*(.7+.3*np.sin(2*np.pi*73*t))
+ elif kind=='leather_thwack':
+  a=(lp(noise,1600)*.65+bp(noise,1800,6500)*.22+np.sin(2*np.pi*135*t)*.3)*np.exp(-u*20)*np.minimum(t/.001,1)
+ elif kind=='clapper':
+  a=(np.sin(2*np.pi*1100*t)*.3+np.sin(2*np.pi*2280*t)*.18+bp(noise,1700,10000)*.6)*np.exp(-u*32)*np.minimum(t/.0008,1)
+ elif kind=='theatre_room':
+  a=(lp(noise,650)*.6+bp(noise,1000,3400)*.05+np.sin(2*np.pi*50*t)*.035)*np.minimum(t/.25,1)*np.minimum((d-t)/.35,1)
+ elif kind=='breath':
+  a=bp(noise,450,4000)*env*(.65+.35*np.sin(np.pi*u))
+ elif kind=='taiko':
+  variant=p.get('variant','nagado')
+  if variant not in ('odaiko','nagado','shime','ka'):raise ValueError('Unknown taiko '+str(variant))
+  if variant=='ka':
+   a=sum(g*np.sin(2*np.pi*f*t)*np.exp(-t*k) for f,g,k in [(980,.5,38),(2320,.3,65),(4180,.14,95)])+bp(noise,1700,10500)*np.exp(-t*160)*.5
+  else:
+   f,decay={'odaiko':(57,2.1),'nagado':(103,4.2),'shime':(220,9)}[variant];f*=float(p.get('tuning',1));phase=2*np.pi*np.cumsum(f*(1+.12*np.exp(-t*35)))/SR
+   a=sum(g*np.sin(phase*r)*np.exp(-t*decay*(1+i*.35)) for i,(r,g) in enumerate([(1,1),(1.594,.55),(2.136,.33),(2.296,.2),(2.653,.14),(2.918,.08)]))
+   a+=bp(noise,800,7000)*np.exp(-t*(65 if variant=='odaiko' else 110))*.4
+  a*=np.minimum(t/.001,1)*np.minimum((d-t)/.025,1)
+ elif kind=='drum_kit':
+  variant=p.get('variant','kick')
+  if variant=='kick':
+   phase=2*np.pi*np.cumsum(48+125*np.exp(-t*38))/SR;a=np.sin(phase)*np.exp(-t*13)+bp(noise,2500,9000)*np.exp(-t*150)*.15
+  elif variant=='snare':
+   a=(np.sin(2*np.pi*185*t)*.45+np.sin(2*np.pi*330*t)*.2)*np.exp(-t*24)+bp(noise,1700,12500)*np.exp(-t*17)*.7
+  elif variant=='clap':
+   a=np.zeros(len(t))
+   for onset in [0,.012,.027,.047]:
+    q=t-onset;valid=q>=0;a[valid]+=bp(noise,800,6500)[valid]*np.exp(-q[valid]*(90 if onset<.047 else 25))*.5
+  elif variant in ('hat','crash'):
+   metal=sum(np.sin(2*np.pi*f*t) for f in [3517,4873,6121,7933,10103,12479])/6
+   a=bp(noise*.7+metal*.5,4000,18000)*np.exp(-t*(70 if variant=='hat' else 3.5))
+  else:raise ValueError('Unknown drum kit '+str(variant))
+  a*=np.minimum(t/.0005,1)*np.minimum((d-t)/.015,1)
+ elif kind=='ship_horn':
+  f=float(p.get('frequency',95));phase=2*np.pi*f*t;a=sum(np.sin(phase*k)/k**1.3 for k in range(1,14))+.45*sum(np.sin(phase*1.498*k)/k**1.5 for k in range(1,8))
+  a=lp(a,750 if p.get('far') else 2100)*np.minimum(t/.22,1)*np.minimum((d-t)/.4,1)
+ elif kind=='marker_squeak':
+  f=1350+270*np.sin(2*np.pi*5*t)+100*np.sin(2*np.pi*23*t);a=(np.sin(2*np.pi*np.cumsum(f)/SR)*.3+bp(noise,600,4400)*.55)*env
+ elif kind=='magnet_clack':
+  a=(np.sin(2*np.pi*470*t)*.35+np.sin(2*np.pi*2010*t)*.15+bp(noise,1500,10000)*.5)*np.exp(-u*25)*np.minimum(t/.001,1)
+ elif kind=='suction_pop':
+  f=310-190*np.minimum(u*5,1);a=np.sin(2*np.pi*np.cumsum(f)/SR)*np.exp(-u*16)*.6+bp(noise,400,7000)*np.exp(-u*35)*.3
+ elif kind=='ruler_ring':
+  a=sum(g*np.sin(2*np.pi*f*t)*np.exp(-t*k) for f,g,k in [(440,.5,3),(1220,.3,5),(2370,.15,9),(3920,.08,12)])*np.minimum(t/.001,1)
+ elif kind=='eraser_felt':
+  a=bp(noise,150,2700)*env*(.55+.45*np.sin(2*np.pi*7*t)**2)
+ elif kind=='rubber_stamp':
+  a=(lp(noise,1800)*.55+np.sin(2*np.pi*125*t)*.4+bp(noise,2100,6500)*.15)*np.exp(-u*17)*np.minimum(t/.001,1)
+ elif kind=='room_hvac':
+  a=(lp(noise,550)*.6+np.sin(2*np.pi*60*t)*.055+np.sin(2*np.pi*120*t)*.02)*np.minimum(t/.25,1)*np.minimum((d-t)/.3,1)
  elif kind=='sine_glide':
   f0=float(p.get('freq_start',440));f1=float(p.get('freq_end',880));f=f0*(f1/f0)**u;a=np.sin(2*np.pi*np.cumsum(f)/SR)*np.minimum(t/.01,1)*np.minimum((d-t)/.02,1)
  elif kind=='glass_shimmer':

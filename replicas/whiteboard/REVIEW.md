@@ -1,0 +1,7 @@
+# Source review before freeze
+
+Inspected all 10 original one-second contact sheets across the full 111-second film, published style/demo and canonical shot script; added exact-time checks for opening pin, catch, clock stamps, erased route and final board/title. Rendered and visually inspected all 111 generated half-second-offset one-second frames in full-review and final-review, plus exact refinements at 2.5, 8.5, 28.5, 33.5, 54.5, 68.5, 75.5, 80.5, 86.5 and 106.5. Corrected board edges appearing during phone/sea shots, overlapping satellite/ruler, arithmetic clipping, equation/route collision, final credit layout and alpha accumulation in camera blur. Eight scrambled repeated-seek frames match.
+
+All narration/numerical words and lesson events are retained. Newly authored stroke topology, actual letter placement, camera interpolation, satellite geometry and exact diagram layout vary; subtitle wrapping/timing is reconstructed from exact published lines, not original ASR-word assets. Credits truthfully identify the new model/assets instead of copying original authorship claims. Independent decoded-final-movie and audio acceptance remains with root.
+
+Independent root37-pair feedback repaired: exact25 public clause-timed caption cues replace sentence segmentation; balanced linebreaks and fade; central satellite zoom reduced1.45→1.05 and20,000km annotation cleared from close crop; closing credits moved down with visible gap under tagline, wider end framing to retain title. Targeted20.5/23.5/106.5/109.5 reviewed,11 scrambled seeks pass.

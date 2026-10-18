@@ -1,0 +1,10 @@
+Einstein in Your Pocket — reference-matched GPTcar recreation
+New diagram geometry, staging, writing schedule, camera keys, physical-pin states, captions and score: GPT-6.1 Sol, high reasoning.
+Reference: published GPTcar Whiteboard STYLE.md / DEMO.md and complete original film, analyzed privately. Original conversation prompt is not published. PROMPT.md is a source-informed reconstruction, not a recovered verbatim chat prompt.
+Generic toolkit: styles/whiteboard/demo/engine/wb.js copied unchanged, MIT library license (LICENSE); no upstream film.js or main.js imported or executed. Shared math core/lib.js. Itemized SHA-256 in shared-components.json.
+EMS Tech single-stroke lettering: Sheldon B. Michaels, SVG conversion Windell H. Oskay, derivative of Architects Daughter by Kimberly Geswein; SIL OFL declared in JSON metadata, accompanying base-font OFL notice. Architects Daughter: Kimberly Geswein, SIL OFL; freshly retrieved from https://github.com/google/fonts/tree/main/ofl/architectsdaughter .
+Narration: 21 exact published English entries; fresh Kokoro bm_george at speed 1.0 (v08: 0.96 for clear articulation), synthesized by root. No original speech/audio file reused.
+New score: 120 BPM clockwork marimba, cello/contrabass pizzicato, glockenspiel, harp and tuba/bassoon march; root sampler assets VSCO 2 CE/VCSL/FreePats under their recorded licenses. Material effects recreated by root. No master soundtrack reused.
+No original rendered frame, original scene renderer, generative image or video model enters the render path.
+
+Caption data: captions.json preserves the25 published clause cues, derived from public narration text and voices/words.json timing metadata with original chunk rule; no original speech or scene renderer executes.

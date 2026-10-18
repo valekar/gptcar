@@ -1,0 +1,107 @@
+{
+  "remote_question": [
+    {
+      "t": 17.8,
+      "type": "remote",
+      "ch": "I"
+    },
+    {
+      "t": 17.9148,
+      "type": "remote",
+      "ch": "S"
+    },
+    {
+      "t": 18.046,
+      "type": "remote",
+      "ch": " "
+    },
+    {
+      "t": 18.3084,
+      "type": "remote",
+      "ch": "A"
+    },
+    {
+      "t": 18.4068,
+      "type": "remote",
+      "ch": "N"
+    },
+    {
+      "t": 18.5052,
+      "type": "remote",
+      "ch": "Y"
+    },
+    {
+      "t": 18.6364,
+      "type": "remote",
+      "ch": "O"
+    },
+    {
+      "t": 18.7184,
+      "type": "remote",
+      "ch": "N"
+    },
+    {
+      "t": 18.8168,
+      "type": "remote",
+      "ch": "E"
+    },
+    {
+      "t": 18.9152,
+      "type": "remote",
+      "ch": " "
+    },
+    {
+      "t": 19.0464,
+      "type": "remote",
+      "ch": "T"
+    },
+    {
+      "t": 19.1284,
+      "type": "remote",
+      "ch": "H"
+    },
+    {
+      "t": 19.2268,
+      "type": "remote",
+      "ch": "E"
+    },
+    {
+      "t": 19.3252,
+      "type": "remote",
+      "ch": "R"
+    },
+    {
+      "t": 19.4236,
+      "type": "remote",
+      "ch": "E"
+    },
+    {
+      "t": 19.686,
+      "type": "remote",
+      "ch": "?"
+    }
+  ],
+  "voice_times": {
+    "l1": 11.6,
+    "l2": 21.4,
+    "l3": 26.6,
+    "l4": 42.2,
+    "l5": 52.4
+  },
+  "title_start": 3,
+  "title_step": 0.15,
+  "reply_start": 30.2,
+  "reply_step": 0.12,
+  "boot_times": [
+    8.2,
+    8.45,
+    9.05,
+    9.3,
+    9.5,
+    9.7,
+    9.9,
+    10.1,
+    10.3,
+    10.5
+  ]
+}

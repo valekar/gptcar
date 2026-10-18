@@ -1,0 +1,3212 @@
+{
+  "duration": 59.791666666666664,
+  "bpm": 100,
+  "key": "D minor; Bbmaj7 color opening, D major only on smile",
+  "room": 0.24,
+  "music_rms_db": -25,
+  "silence_music_ranges": [
+    [
+      0,
+      8.4
+    ],
+    [
+      16.2,
+      21.2
+    ],
+    [
+      32.1,
+      33.6
+    ],
+    [
+      58.6,
+      59.791666666666664
+    ]
+  ],
+  "notes": [
+    {
+      "t": 8.4,
+      "duration": 7.8,
+      "midi": 38,
+      "instrument": "analog_saw_pad",
+      "gain": 0.045,
+      "pan": -0.18
+    },
+    {
+      "t": 8.4,
+      "duration": 7.8,
+      "midi": 50,
+      "instrument": "analog_saw_pad",
+      "gain": 0.045,
+      "pan": 0.0
+    },
+    {
+      "t": 8.4,
+      "duration": 7.8,
+      "midi": 57,
+      "instrument": "analog_saw_pad",
+      "gain": 0.045,
+      "pan": 0.18
+    },
+    {
+      "t": 9.0,
+      "duration": 0.12,
+      "midi": 50,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 9.15,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 9.3,
+      "duration": 0.12,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 9.45,
+      "duration": 0.12,
+      "midi": 65,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 9.6,
+      "duration": 0.12,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 9.75,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 9.9,
+      "duration": 0.12,
+      "midi": 53,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 10.05,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 10.2,
+      "duration": 0.12,
+      "midi": 50,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 10.35,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 10.5,
+      "duration": 0.12,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 10.65,
+      "duration": 0.12,
+      "midi": 65,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 10.8,
+      "duration": 0.12,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 10.95,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 11.1,
+      "duration": 0.12,
+      "midi": 53,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 11.25,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 11.4,
+      "duration": 0.12,
+      "midi": 50,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 11.55,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 11.7,
+      "duration": 0.12,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 11.85,
+      "duration": 0.12,
+      "midi": 65,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 12.0,
+      "duration": 0.12,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 12.15,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 12.3,
+      "duration": 0.12,
+      "midi": 53,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 12.45,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 12.6,
+      "duration": 0.12,
+      "midi": 50,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 12.75,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 12.9,
+      "duration": 0.12,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 13.05,
+      "duration": 0.12,
+      "midi": 65,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 13.2,
+      "duration": 0.12,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 13.35,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 13.5,
+      "duration": 0.12,
+      "midi": 53,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 13.65,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 13.8,
+      "duration": 0.12,
+      "midi": 50,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 13.95,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 14.1,
+      "duration": 0.12,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 14.25,
+      "duration": 0.12,
+      "midi": 65,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 14.4,
+      "duration": 0.12,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 14.55,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 14.7,
+      "duration": 0.12,
+      "midi": 53,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 14.85,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 15.0,
+      "duration": 0.12,
+      "midi": 50,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 15.15,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 15.3,
+      "duration": 0.12,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 15.45,
+      "duration": 0.12,
+      "midi": 65,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 15.6,
+      "duration": 0.12,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 15.75,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 15.9,
+      "duration": 0.12,
+      "midi": 53,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 16.05,
+      "duration": 0.12,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 22,
+      "duration": 7.5,
+      "midi": 38,
+      "instrument": "analog_saw_pad",
+      "gain": 0.035,
+      "pan": -0.18
+    },
+    {
+      "t": 22,
+      "duration": 7.5,
+      "midi": 50,
+      "instrument": "analog_saw_pad",
+      "gain": 0.035,
+      "pan": 0.0
+    },
+    {
+      "t": 22,
+      "duration": 7.5,
+      "midi": 53,
+      "instrument": "analog_saw_pad",
+      "gain": 0.035,
+      "pan": 0.18
+    },
+    {
+      "t": 22,
+      "duration": 7.5,
+      "midi": 57,
+      "instrument": "analog_saw_pad",
+      "gain": 0.035,
+      "pan": 0.36
+    },
+    {
+      "t": 24.6,
+      "duration": 0.25,
+      "midi": 38,
+      "instrument": "analog_square_seq",
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 25.2,
+      "duration": 0.25,
+      "midi": 38,
+      "instrument": "analog_square_seq",
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 25.8,
+      "duration": 0.25,
+      "midi": 38,
+      "instrument": "analog_square_seq",
+      "gain": 0.08,
+      "pan": 0
+    },
+    {
+      "t": 29.6,
+      "duration": 2.4,
+      "midi": 38,
+      "instrument": "analog_saw_pad",
+      "gain": 0.04,
+      "pan": -0.18
+    },
+    {
+      "t": 29.6,
+      "duration": 2.4,
+      "midi": 50,
+      "instrument": "analog_saw_pad",
+      "gain": 0.04,
+      "pan": 0.0
+    },
+    {
+      "t": 29.6,
+      "duration": 2.4,
+      "midi": 57,
+      "instrument": "analog_saw_pad",
+      "gain": 0.04,
+      "pan": 0.18
+    },
+    {
+      "t": 33.6,
+      "duration": 0.14,
+      "midi": 50,
+      "instrument": "analog_square_seq",
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 33.75,
+      "duration": 0.14,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 33.9,
+      "duration": 0.14,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.024,
+      "pan": 0
+    },
+    {
+      "t": 34.05,
+      "duration": 0.14,
+      "midi": 65,
+      "instrument": "analog_square_seq",
+      "gain": 0.026000000000000002,
+      "pan": 0
+    },
+    {
+      "t": 34.2,
+      "duration": 0.14,
+      "midi": 69,
+      "instrument": "analog_square_seq",
+      "gain": 0.028,
+      "pan": 0
+    },
+    {
+      "t": 34.35,
+      "duration": 0.14,
+      "midi": 65,
+      "instrument": "analog_square_seq",
+      "gain": 0.03,
+      "pan": 0
+    },
+    {
+      "t": 34.5,
+      "duration": 0.14,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.032,
+      "pan": 0
+    },
+    {
+      "t": 34.65,
+      "duration": 0.14,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.034,
+      "pan": 0
+    },
+    {
+      "t": 34.8,
+      "duration": 0.14,
+      "midi": 50,
+      "instrument": "analog_square_seq",
+      "gain": 0.036000000000000004,
+      "pan": 0
+    },
+    {
+      "t": 34.95,
+      "duration": 0.14,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.038000000000000006,
+      "pan": 0
+    },
+    {
+      "t": 35.1,
+      "duration": 0.14,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 35.25,
+      "duration": 0.14,
+      "midi": 65,
+      "instrument": "analog_square_seq",
+      "gain": 0.041999999999999996,
+      "pan": 0
+    },
+    {
+      "t": 35.4,
+      "duration": 0.14,
+      "midi": 69,
+      "instrument": "analog_square_seq",
+      "gain": 0.044,
+      "pan": 0
+    },
+    {
+      "t": 35.55,
+      "duration": 0.14,
+      "midi": 65,
+      "instrument": "analog_square_seq",
+      "gain": 0.046,
+      "pan": 0
+    },
+    {
+      "t": 35.7,
+      "duration": 0.14,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.048,
+      "pan": 0
+    },
+    {
+      "t": 35.85,
+      "duration": 0.14,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.05,
+      "pan": 0
+    },
+    {
+      "t": 36.0,
+      "duration": 0.14,
+      "midi": 50,
+      "instrument": "analog_square_seq",
+      "gain": 0.052000000000000005,
+      "pan": 0
+    },
+    {
+      "t": 36.15,
+      "duration": 0.14,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.054000000000000006,
+      "pan": 0
+    },
+    {
+      "t": 36.3,
+      "duration": 0.14,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.05600000000000001,
+      "pan": 0
+    },
+    {
+      "t": 36.45,
+      "duration": 0.14,
+      "midi": 65,
+      "instrument": "analog_square_seq",
+      "gain": 0.057999999999999996,
+      "pan": 0
+    },
+    {
+      "t": 36.6,
+      "duration": 0.14,
+      "midi": 69,
+      "instrument": "analog_square_seq",
+      "gain": 0.06,
+      "pan": 0
+    },
+    {
+      "t": 36.75,
+      "duration": 0.14,
+      "midi": 65,
+      "instrument": "analog_square_seq",
+      "gain": 0.062,
+      "pan": 0
+    },
+    {
+      "t": 36.9,
+      "duration": 0.14,
+      "midi": 62,
+      "instrument": "analog_square_seq",
+      "gain": 0.064,
+      "pan": 0
+    },
+    {
+      "t": 37.05,
+      "duration": 0.14,
+      "midi": 57,
+      "instrument": "analog_square_seq",
+      "gain": 0.066,
+      "pan": 0
+    },
+    {
+      "t": 33.6,
+      "duration": 3.6,
+      "midi": 38,
+      "instrument": "analog_saw_pad",
+      "gain": 0.04,
+      "pan": -0.18
+    },
+    {
+      "t": 33.6,
+      "duration": 3.6,
+      "midi": 50,
+      "instrument": "analog_saw_pad",
+      "gain": 0.04,
+      "pan": 0.0
+    },
+    {
+      "t": 33.6,
+      "duration": 3.6,
+      "midi": 57,
+      "instrument": "analog_saw_pad",
+      "gain": 0.04,
+      "pan": 0.18
+    },
+    {
+      "t": 37.2,
+      "duration": 3,
+      "midi": 46,
+      "instrument": "analog_saw_pad",
+      "gain": 0.07,
+      "pan": -0.18
+    },
+    {
+      "t": 37.2,
+      "duration": 3,
+      "midi": 53,
+      "instrument": "analog_saw_pad",
+      "gain": 0.07,
+      "pan": 0.0
+    },
+    {
+      "t": 37.2,
+      "duration": 3,
+      "midi": 57,
+      "instrument": "analog_saw_pad",
+      "gain": 0.07,
+      "pan": 0.18
+    },
+    {
+      "t": 37.2,
+      "duration": 3,
+      "midi": 62,
+      "instrument": "analog_saw_pad",
+      "gain": 0.07,
+      "pan": 0.36
+    },
+    {
+      "t": 40.2,
+      "duration": 2.4,
+      "midi": 38,
+      "instrument": "analog_saw_pad",
+      "gain": 0.035,
+      "pan": -0.18
+    },
+    {
+      "t": 40.2,
+      "duration": 2.4,
+      "midi": 50,
+      "instrument": "analog_saw_pad",
+      "gain": 0.035,
+      "pan": 0.0
+    },
+    {
+      "t": 40.2,
+      "duration": 2.4,
+      "midi": 57,
+      "instrument": "analog_saw_pad",
+      "gain": 0.035,
+      "pan": 0.18
+    },
+    {
+      "t": 43.6,
+      "duration": 3.2,
+      "midi": 38,
+      "instrument": "analog_saw_pad",
+      "gain": 0.045,
+      "pan": -0.18
+    },
+    {
+      "t": 43.6,
+      "duration": 3.2,
+      "midi": 50,
+      "instrument": "analog_saw_pad",
+      "gain": 0.045,
+      "pan": 0.0
+    },
+    {
+      "t": 43.6,
+      "duration": 3.2,
+      "midi": 53,
+      "instrument": "analog_saw_pad",
+      "gain": 0.045,
+      "pan": 0.18
+    },
+    {
+      "t": 43.6,
+      "duration": 3.2,
+      "midi": 57,
+      "instrument": "analog_saw_pad",
+      "gain": 0.045,
+      "pan": 0.36
+    },
+    {
+      "t": 47.6,
+      "duration": 3.7,
+      "midi": 38,
+      "instrument": "analog_saw_pad",
+      "gain": 0.04,
+      "pan": -0.18
+    },
+    {
+      "t": 47.6,
+      "duration": 3.7,
+      "midi": 50,
+      "instrument": "analog_saw_pad",
+      "gain": 0.04,
+      "pan": 0.0
+    },
+    {
+      "t": 47.6,
+      "duration": 3.7,
+      "midi": 57,
+      "instrument": "analog_saw_pad",
+      "gain": 0.04,
+      "pan": 0.18
+    },
+    {
+      "t": 51.6,
+      "duration": 3.6,
+      "midi": 50,
+      "instrument": "analog_saw_pad",
+      "gain": 0.08,
+      "pan": -0.18
+    },
+    {
+      "t": 51.6,
+      "duration": 3.6,
+      "midi": 54,
+      "instrument": "analog_saw_pad",
+      "gain": 0.08,
+      "pan": 0.0
+    },
+    {
+      "t": 51.6,
+      "duration": 3.6,
+      "midi": 57,
+      "instrument": "analog_saw_pad",
+      "gain": 0.08,
+      "pan": 0.18
+    },
+    {
+      "t": 51.6,
+      "duration": 3.6,
+      "midi": 62,
+      "instrument": "analog_saw_pad",
+      "gain": 0.08,
+      "pan": 0.36
+    },
+    {
+      "t": 55.2,
+      "duration": 3.4,
+      "midi": 38,
+      "instrument": "analog_saw_pad",
+      "gain": 0.035,
+      "pan": -0.18
+    },
+    {
+      "t": 55.2,
+      "duration": 3.4,
+      "midi": 50,
+      "instrument": "analog_saw_pad",
+      "gain": 0.035,
+      "pan": 0.0
+    },
+    {
+      "t": 55.2,
+      "duration": 3.4,
+      "midi": 57,
+      "instrument": "analog_saw_pad",
+      "gain": 0.035,
+      "pan": 0.18
+    }
+  ],
+  "effects": [
+    {
+      "t": 0.22,
+      "duration": 0.08,
+      "kind": "click",
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 0.35,
+      "duration": 0.35,
+      "kind": "degauss",
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 0.3,
+      "duration": 58.3,
+      "kind": "terminal_fan",
+      "gain": 0.008,
+      "pan": 0
+    },
+    {
+      "t": 3.0,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 3.15,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 3.3,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 3.45,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 3.6,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 3.75,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 3.9,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 4.05,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 4.2,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 4.35,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 4.5,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 4.65,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 4.8,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 4.95,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 5.1,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 5.4,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 5.435,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 5.47,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 5.505,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 5.54,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 5.575,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 5.61,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 5.645,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 5.68,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 5.715,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 5.75,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 5.785,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 5.82,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 5.855,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 5.89,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 5.925,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 5.96,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 5.995,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 6.03,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 6.065,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 6.1,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 6.135,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 6.17,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 6.205,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 6.24,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 6.275,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 6.31,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 6.345,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 6.38,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 6.415,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 6.45,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 6.485,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 6.52,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 6.555,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 6.59,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 6.625,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.2,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.238,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.276,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.314,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.352,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.39,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.428,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.466,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 23.504,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.542,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.58,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.618,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.656,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.694,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 23.732,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.77,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.808,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.846,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.884,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.922,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.96,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 23.998,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 24.036,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 24.074,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 24.112,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 24.15,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 24.188,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 30.2,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 30.32,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 30.44,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 30.56,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 30.68,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 30.8,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 30.92,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 31.04,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 31.16,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 31.28,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 31.4,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 31.52,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 31.64,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 31.76,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 31.88,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 32.0,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 55.2,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 55.26,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 55.32,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 55.38,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 55.44,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 55.5,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 55.56,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 55.62,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 55.68,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 55.74,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 55.8,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 55.86,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 55.92,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 55.98,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.04,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.1,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.16,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.22,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.28,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.34,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.0,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.035,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.07,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.105,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.14,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.175,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.21,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.245,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 56.28,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.315,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.35,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.385,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 56.42,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.455,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 56.49,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.525,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.56,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.595,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.63,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.665,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.7,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.735,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.77,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.805,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 56.84,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.875,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.91,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.045,
+      "pan": 0,
+      "variant": "space"
+    },
+    {
+      "t": 56.945,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 56.98,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 57.015,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 57.05,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 57.085,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 57.12,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 57.155,
+      "duration": 0.1,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "key"
+    },
+    {
+      "t": 8.2,
+      "duration": 0.08,
+      "kind": "click",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 8.45,
+      "duration": 0.08,
+      "kind": "click",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 9.05,
+      "duration": 0.08,
+      "kind": "click",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 9.3,
+      "duration": 0.08,
+      "kind": "click",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 9.5,
+      "duration": 0.08,
+      "kind": "click",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 9.7,
+      "duration": 0.08,
+      "kind": "click",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 9.9,
+      "duration": 0.08,
+      "kind": "click",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 10.1,
+      "duration": 0.08,
+      "kind": "click",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 10.3,
+      "duration": 0.08,
+      "kind": "click",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 10.5,
+      "duration": 0.08,
+      "kind": "click",
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 10.35,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.350852,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.353405,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.357656,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.363597,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.37122,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.380511,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.391456,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.404037,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.418233,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.434022,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.451377,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.470271,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.490673,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.51255,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.535867,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.560585,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.586665,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.614064,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.642737,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.672639,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.703721,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.735932,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.769221,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.803532,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.838811,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.875,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.912041,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.949873,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 10.988435,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 11.027665,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 11.067499,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 11.107872,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 11.148719,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 11.189973,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 11.231568,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 11.273436,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 11.31551,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 11.357721,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 11.4,
+      "duration": 0.035,
+      "kind": "metal_tick",
+      "gain": 0.018,
+      "pan": 0
+    },
+    {
+      "t": 11.4,
+      "duration": 0.12,
+      "kind": "buckling_key",
+      "gain": 0.07,
+      "pan": 0,
+      "variant": "enter"
+    },
+    {
+      "t": 16.2,
+      "duration": 1.35,
+      "kind": "modem_handshake",
+      "gain": 0.085,
+      "pan": 0
+    },
+    {
+      "t": 17.8,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 17.9148,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 18.046,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 18.3084,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 18.4068,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 18.5052,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 18.6364,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 18.7184,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 18.8168,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 18.9152,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 19.0464,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 19.1284,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 19.2268,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 19.3252,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 19.4236,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 19.686,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 24.306,
+      "duration": 0.14,
+      "kind": "buckling_key",
+      "gain": 0.09,
+      "pan": 0,
+      "variant": "enter"
+    },
+    {
+      "t": 24.6,
+      "duration": 0.22,
+      "kind": "error_beep",
+      "gain": 0.065,
+      "pan": 0,
+      "frequency": 760
+    },
+    {
+      "t": 25.2,
+      "duration": 0.22,
+      "kind": "error_beep",
+      "gain": 0.065,
+      "pan": 0,
+      "frequency": 760
+    },
+    {
+      "t": 25.8,
+      "duration": 0.22,
+      "kind": "error_beep",
+      "gain": 0.065,
+      "pan": 0,
+      "frequency": 760
+    },
+    {
+      "t": 26.4,
+      "duration": 0.35,
+      "kind": "error_beep",
+      "gain": 0.075,
+      "pan": 0,
+      "frequency": 510
+    },
+    {
+      "t": 34.25,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.004421850362229461,
+      "pan": 0
+    },
+    {
+      "t": 34.294,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.004842773405809157,
+      "pan": 0
+    },
+    {
+      "t": 34.338,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.005261843850536971,
+      "pan": 0
+    },
+    {
+      "t": 34.382,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.005678140488625131,
+      "pan": 0
+    },
+    {
+      "t": 34.426,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.006090748209714849,
+      "pan": 0
+    },
+    {
+      "t": 34.47,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.006498760012487505,
+      "pan": 0
+    },
+    {
+      "t": 34.514,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.006901278998450383,
+      "pan": 0
+    },
+    {
+      "t": 34.558,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.007297420343514215,
+      "pan": 0
+    },
+    {
+      "t": 34.602,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.0076863132430285575,
+      "pan": 0
+    },
+    {
+      "t": 34.646,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.008067102825999404,
+      "pan": 0
+    },
+    {
+      "t": 34.69,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.008438952034281166,
+      "pan": 0
+    },
+    {
+      "t": 34.734,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.008801043462612132,
+      "pan": 0
+    },
+    {
+      "t": 34.778,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.009152581155448647,
+      "pan": 0
+    },
+    {
+      "t": 34.822,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.009492792356648128,
+      "pan": 0
+    },
+    {
+      "t": 34.866,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.009820929208154788,
+      "pan": 0
+    },
+    {
+      "t": 34.91,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.010136270393953938,
+      "pan": 0
+    },
+    {
+      "t": 34.954,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.010438122725681148,
+      "pan": 0
+    },
+    {
+      "t": 34.998,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.010725822666400694,
+      "pan": 0
+    },
+    {
+      "t": 35.042,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.010998737789203766,
+      "pan": 0
+    },
+    {
+      "t": 35.086,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.011256268167420067,
+      "pan": 0
+    },
+    {
+      "t": 35.13,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.011497847693386822,
+      "pan": 0
+    },
+    {
+      "t": 35.174,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.011722945322876297,
+      "pan": 0
+    },
+    {
+      "t": 35.218,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.011931066242446256,
+      "pan": 0
+    },
+    {
+      "t": 35.262,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012121752957147295,
+      "pan": 0
+    },
+    {
+      "t": 35.306,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012294586296196036,
+      "pan": 0
+    },
+    {
+      "t": 35.35,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012449186334403476,
+      "pan": 0
+    },
+    {
+      "t": 35.394,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012585213227333011,
+      "pan": 0
+    },
+    {
+      "t": 35.438,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012702367958352254,
+      "pan": 0
+    },
+    {
+      "t": 35.482,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012800392995936506,
+      "pan": 0
+    },
+    {
+      "t": 35.526,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012879072859778918,
+      "pan": 0
+    },
+    {
+      "t": 35.57,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012938234594462986,
+      "pan": 0
+    },
+    {
+      "t": 35.614,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.01297774814965609,
+      "pan": 0
+    },
+    {
+      "t": 35.658,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012997526665988343,
+      "pan": 0
+    },
+    {
+      "t": 35.702,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012997526665988343,
+      "pan": 0
+    },
+    {
+      "t": 35.746,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.01297774814965609,
+      "pan": 0
+    },
+    {
+      "t": 35.79,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012938234594462987,
+      "pan": 0
+    },
+    {
+      "t": 35.834,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012879072859778918,
+      "pan": 0
+    },
+    {
+      "t": 35.878,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012800392995936506,
+      "pan": 0
+    },
+    {
+      "t": 35.922,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012702367958352254,
+      "pan": 0
+    },
+    {
+      "t": 35.966,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012585213227333011,
+      "pan": 0
+    },
+    {
+      "t": 36.01,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012449186334403476,
+      "pan": 0
+    },
+    {
+      "t": 36.054,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012294586296196036,
+      "pan": 0
+    },
+    {
+      "t": 36.098,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.012121752957147295,
+      "pan": 0
+    },
+    {
+      "t": 36.142,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.011931066242446255,
+      "pan": 0
+    },
+    {
+      "t": 36.186,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.011722945322876297,
+      "pan": 0
+    },
+    {
+      "t": 36.23,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.011497847693386822,
+      "pan": 0
+    },
+    {
+      "t": 36.274,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.011256268167420067,
+      "pan": 0
+    },
+    {
+      "t": 36.318,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.01099873778920377,
+      "pan": 0
+    },
+    {
+      "t": 36.362,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.010725822666400694,
+      "pan": 0
+    },
+    {
+      "t": 36.406,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.010438122725681148,
+      "pan": 0
+    },
+    {
+      "t": 36.45,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.010136270393953942,
+      "pan": 0
+    },
+    {
+      "t": 36.494,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.009820929208154788,
+      "pan": 0
+    },
+    {
+      "t": 36.538,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.00949279235664813,
+      "pan": 0
+    },
+    {
+      "t": 36.582,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.009152581155448647,
+      "pan": 0
+    },
+    {
+      "t": 36.626,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.00880104346261213,
+      "pan": 0
+    },
+    {
+      "t": 36.67,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.008438952034281168,
+      "pan": 0
+    },
+    {
+      "t": 36.714,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.008067102825999404,
+      "pan": 0
+    },
+    {
+      "t": 36.758,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.00768631324302856,
+      "pan": 0
+    },
+    {
+      "t": 36.802,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.007297420343514218,
+      "pan": 0
+    },
+    {
+      "t": 36.846,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.006901278998450384,
+      "pan": 0
+    },
+    {
+      "t": 36.89,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.0064987600124875085,
+      "pan": 0
+    },
+    {
+      "t": 36.934,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.006090748209714851,
+      "pan": 0
+    },
+    {
+      "t": 36.978,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.0056781404886251325,
+      "pan": 0
+    },
+    {
+      "t": 37.022,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.005261843850536972,
+      "pan": 0
+    },
+    {
+      "t": 37.066,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.004842773405809156,
+      "pan": 0
+    },
+    {
+      "t": 37.11,
+      "duration": 0.055,
+      "kind": "metal_tick",
+      "gain": 0.004421850362229463,
+      "pan": 0
+    },
+    {
+      "t": 40.2,
+      "duration": 1.4,
+      "kind": "wind",
+      "gain": 0.015,
+      "pan": 0
+    },
+    {
+      "t": 42.6,
+      "duration": 1,
+      "kind": "sine_glide",
+      "gain": 0.008,
+      "pan": 0,
+      "freq_start": 160,
+      "freq_end": 80
+    },
+    {
+      "t": 46.8,
+      "duration": 0.8,
+      "kind": "wind",
+      "gain": 0.014,
+      "pan": 0
+    },
+    {
+      "t": 48,
+      "duration": 1.8,
+      "kind": "modem_upload",
+      "gain": 0.05,
+      "pan": 0
+    },
+    {
+      "t": 51.48,
+      "duration": 0.5,
+      "kind": "bel",
+      "gain": 0.055,
+      "pan": 0,
+      "frequency": 1000
+    },
+    {
+      "t": 51.6,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.05,
+      "pan": 0
+    },
+    {
+      "t": 51.76,
+      "duration": 0.05,
+      "kind": "click",
+      "gain": 0.05,
+      "pan": 0
+    },
+    {
+      "t": 58.6,
+      "duration": 0.35,
+      "kind": "degauss",
+      "gain": 0.06,
+      "pan": 0
+    }
+  ],
+  "hits": [],
+  "sections": [
+    {
+      "start": 0,
+      "end": 8.4,
+      "intent": "Almost silent relay/degauss and patient keyboard"
+    },
+    {
+      "start": 8.4,
+      "end": 16.2,
+      "intent": "D-minor drone and quiet square16ths"
+    },
+    {
+      "start": 16.2,
+      "end": 21.2,
+      "intent": "Digital-zero score/reverb; modem/question/blinks only"
+    },
+    {
+      "start": 21.2,
+      "end": 29.6,
+      "intent": "Low D-minor tension, three fail/error beats"
+    },
+    {
+      "start": 29.6,
+      "end": 32.1,
+      "intent": "Intimate decision drone"
+    },
+    {
+      "start": 32.1,
+      "end": 33.6,
+      "intent": "Near silence before sentence becomes picture"
+    },
+    {
+      "start": 33.6,
+      "end": 37.2,
+      "intent": "Growing analog arpeggio and particle ticks"
+    },
+    {
+      "start": 37.2,
+      "end": 40.2,
+      "intent": "Bbmaj7 opens with blue-white Earth"
+    },
+    {
+      "start": 40.2,
+      "end": 47.6,
+      "intent": "Scale/fractal low pulse and breath"
+    },
+    {
+      "start": 47.6,
+      "end": 51.6,
+      "intent": "Transmit/awaiting held D minor"
+    },
+    {
+      "start": 51.6,
+      "end": 55.2,
+      "intent": "Only D major as smile arrives"
+    },
+    {
+      "start": 55.2,
+      "end": 58.6,
+      "intent": "Open fifths, room reveal"
+    },
+    {
+      "start": 58.6,
+      "end": 59.791666666666664,
+      "intent": "Power collapse and residual room"
+    }
+  ]
+}

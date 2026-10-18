@@ -1,0 +1,26 @@
+[
+  {
+    "path": "styles/whiteboard/demo/engine/wb.js",
+    "sha256": "b3b0e4bb8e139aef98b5628012dfe71469474e6a59ed1e1955bcd745fbcf5aad",
+    "purpose": "Generic glossy board, marker stroke/lettering/timeline, magnet, eraser and camera toolkit; copied unchanged"
+  },
+  {
+    "path": "styles/whiteboard/demo/fonts/EMSTech.json",
+    "sha256": "33f85da146a78017a2305776d2a5fd6fc2fd13373f852d24dad4fa4ced5b016d",
+    "purpose": "OFL single-stroke EMS Tech lettering asset"
+  },
+  {
+    "path": "core/lib.js",
+    "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+    "purpose": "Deterministic geometry, interpolation and noise math"
+  },
+  {
+    "path": "replicas/whiteboard/fonts",
+    "purpose": "EMS Tech/OFL and fresh Architects Daughter subtitle font and notices; URLs in CREDITS"
+  },
+  {
+    "path": "styles/whiteboard/demo/voices/words.json",
+    "sha256": "9f7274cd40c3f440ed2c14698e98267d0b25d754650293c65bc617c5f7204e59",
+    "purpose": "Published transcript word-time data used only to reconstruct exact25 caption cues; no source audio/rendering reused"
+  }
+]

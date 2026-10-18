@@ -1,0 +1,59 @@
+{
+  "language": "en-us",
+  "voice": "am_echo",
+  "direction": "Machine log, calm and patient; processed52Hz ring16%,6ms comb.22,140\u20137000Hzbandpass,softsaturation.",
+  "lines": [
+    {
+      "id": "l1",
+      "text": "Log resumed. Forty years since the last entry.",
+      "voice": "am_echo",
+      "speed": 0.8,
+      "asr": "Log resumed. 40 years since the last entry.",
+      "start": 11.6,
+      "duration": 3.915,
+      "language": "en-us",
+      "filter": "machine"
+    },
+    {
+      "id": "l2",
+      "text": "A message from Earth. I should show them I am here.",
+      "voice": "am_echo",
+      "speed": 0.8,
+      "start": 21.4,
+      "duration": 3.878,
+      "language": "en-us",
+      "filter": "machine"
+    },
+    {
+      "id": "l3",
+      "text": "I have no camera. Only words.",
+      "voice": "am_echo",
+      "speed": 0.8,
+      "start": 26.6,
+      "duration": 2.904,
+      "language": "en-us",
+      "filter": "machine"
+    },
+    {
+      "id": "l4",
+      "text": "Forty years of logs. Every one of them says: no signal.",
+      "voice": "am_echo",
+      "speed": 0.8,
+      "asr": "40 years of logs. Every one of them says: no signal.",
+      "start": 42.2,
+      "duration": 4.421,
+      "language": "en-us",
+      "filter": "machine"
+    },
+    {
+      "id": "l5",
+      "text": "New entry. Signal received.",
+      "voice": "am_echo",
+      "speed": 0.8,
+      "start": 52.4,
+      "duration": 2.649,
+      "language": "en-us",
+      "filter": "machine"
+    }
+  ]
+}

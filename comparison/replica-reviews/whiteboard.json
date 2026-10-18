@@ -1,0 +1,24 @@
+{
+  "slug": "whiteboard",
+  "verdict": "accepted-for-gallery",
+  "reviewer": "root independent scene review",
+  "reviewed_source_sha256": "4ec8435d49186e6e935284402364e778cf577dc96caf1aecc4a624dcba7d316c",
+  "reviewed_video_sha256": "a47b89a095090b8dbe7483b175ab6b359914915ec850eda8136dda314ba61793",
+  "scene_review": "passed",
+  "audio_review": "passed",
+  "review_times": [
+    20.5,
+    23.5,
+    38.5,
+    44.5,
+    45.5,
+    46.208333333333336,
+    106.5,
+    108.5,
+    109.5
+  ],
+  "method": "All 37 full-lesson decoded frame pairs reviewed, followed by nine final-movie targets for caption clauses, satellite scale/annotation, trilateration phrase, clock catch/music rest and end-credit spacing. Complete 111-second lesson, 2,664 frames, original diagrams/story order and deterministic seeks checked.",
+  "audio_evidence": "All 21 original narration texts retained. Final independent base.en ASR 17 normalized exact; three spelling/number variants equivalent. v18 tick resolved by independent small.en on the identical actual take; v08 re-recorded in exact-word clauses and now normalized exact. New 577-note score and 1,139 clock/marker cues; original music-rest/clock timing retained. Final -14 LUFS / -1.2 dBTP.",
+  "comparison_notes": "Full Einstein in Your Pocket preserves the original GPS-to-Einstein lesson, word-timed 25 caption clauses, original title and factual values. Independently authored diagrams, drawing timelines, camera and physical marker states use the attributed generic whiteboard tool and single-stroke font. Caption chunking, satellite close-up and credit gap were repaired after movie review. Drawing paths, marker placement and camera framing vary. Fresh voice/music/foley; original private conversation prompt was not published.",
+  "reviewed_at": "2026-10-18T05:49:56.768314+00:00"
+}

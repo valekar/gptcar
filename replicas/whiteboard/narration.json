@@ -1,0 +1,201 @@
+{
+  "language": "en-gb",
+  "voice": "bm_george",
+  "lines": [
+    {
+      "id": "v01",
+      "text": "Right now, your phone knows where you are, to within a few metres.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 0.9,
+      "duration": 3.86,
+      "language": "en-gb"
+    },
+    {
+      "id": "v02a",
+      "text": "It works it out by listening",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 5.7,
+      "duration": 1.951,
+      "language": "en-gb"
+    },
+    {
+      "id": "v02b",
+      "text": "to ticking clocks.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 8,
+      "duration": 1.324,
+      "language": "en-gb"
+    },
+    {
+      "id": "v03",
+      "text": "About thirty satellites circle twenty thousand kilometres above us.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 14.2,
+      "duration": 4.503,
+      "language": "en-gb"
+    },
+    {
+      "id": "v04",
+      "text": "Each one carries an atomic clock, and broadcasts the time, over and over.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 19.1,
+      "duration": 4.799,
+      "language": "en-gb"
+    },
+    {
+      "id": "v05",
+      "text": "The signal travels at the speed of light, but it still arrives a little late.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 24.6,
+      "duration": 4.479,
+      "language": "en-gb"
+    },
+    {
+      "id": "v06",
+      "text": "And that delay is a distance.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 30.3,
+      "duration": 2.149,
+      "language": "en-gb"
+    },
+    {
+      "id": "v07",
+      "text": "One satellite puts you somewhere on a circle.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 34.9,
+      "duration": 2.8,
+      "language": "en-gb"
+    },
+    {
+      "id": "v08",
+      "text": "Two, at one of two points.",
+      "voice": "bm_george",
+      "speed": 0.96,
+      "start": 38.1,
+      "duration": 1.722,
+      "language": "en-gb",
+      "delivery_note": "Articulate AT distinctly after the opening Two; keep the exact words and existing cue window.",
+      "delivery_segments": [
+        "Two,",
+        "at one of two points."
+      ],
+      "segment_pause": 0.06
+    },
+    {
+      "id": "v09a",
+      "text": "Three.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 40.3,
+      "duration": 0.728,
+      "language": "en-gb"
+    },
+    {
+      "id": "v09b",
+      "text": "Right here.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 41.68,
+      "duration": 0.985,
+      "language": "en-gb"
+    },
+    {
+      "id": "v10",
+      "text": "But, there's a catch.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 44.4,
+      "duration": 1.366,
+      "language": "en-gb"
+    },
+    {
+      "id": "v11",
+      "text": "Up there, time itself runs at a different speed.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 46.6,
+      "duration": 3.174,
+      "language": "en-gb"
+    },
+    {
+      "id": "v12",
+      "text": "Moving fast slows the orbiting clock, by seven microseconds a day.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 56.3,
+      "duration": 4.881,
+      "language": "en-gb"
+    },
+    {
+      "id": "v13",
+      "text": "Weaker gravity speeds it up, by forty-five.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 61.7,
+      "duration": 3.166,
+      "language": "en-gb"
+    },
+    {
+      "id": "v14",
+      "text": "Together, thirty-eight microseconds fast. Every single day.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 65.3,
+      "duration": 4.192,
+      "language": "en-gb"
+    },
+    {
+      "id": "v15",
+      "text": "Sounds tiny. But in thirty-eight microseconds, light travels over eleven kilometres.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 70,
+      "duration": 6.043,
+      "language": "en-gb"
+    },
+    {
+      "id": "v16",
+      "text": "Left alone, your map pin would drift that far, every day.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 76.5,
+      "duration": 3.766,
+      "language": "en-gb"
+    },
+    {
+      "id": "v17",
+      "text": "By next week, you'd be somewhere out at sea.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 80.9,
+      "duration": 2.73,
+      "language": "en-gb"
+    },
+    {
+      "id": "v18",
+      "text": "So before launch, engineers tune the satellite clocks to tick slightly slow.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 88.9,
+      "duration": 4.98,
+      "language": "en-gb"
+    },
+    {
+      "id": "v19",
+      "text": "Einstein's relativity, quietly at work in your pocket.",
+      "voice": "bm_george",
+      "speed": 1.0,
+      "start": 96,
+      "duration": 3.764,
+      "language": "en-gb"
+    }
+  ]
+}
