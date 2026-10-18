@@ -1,0 +1,117 @@
+{
+  "duration": 59.666666666666664,
+  "language": "en-us",
+  "voice": "af_bella",
+  "direction": "Fresh calm PA and quiet close operator. Ten exact full published inputs, original timing and speeds. LatePA drifts slightly flat after tape tear.",
+  "lines": [
+    {
+      "id": "p0",
+      "voice": "af_bella",
+      "speed": 0.84,
+      "text": "Good evening, and welcome to the night shift.",
+      "start": 2.7,
+      "duration": 2.683,
+      "language": "en-us",
+      "filter": "pa"
+    },
+    {
+      "id": "w1",
+      "voice": "am_michael",
+      "speed": 0.9,
+      "text": "Okay. First night.",
+      "start": 5.55,
+      "duration": 1.346,
+      "language": "en-us",
+      "filter": "quiet_operator"
+    },
+    {
+      "id": "p1",
+      "voice": "af_bella",
+      "speed": 0.84,
+      "text": "Rule one. The humming of the lights is normal.",
+      "asr": "Rule 1. The humming of the lights is normal.",
+      "start": 8.399999999999999,
+      "duration": 2.995,
+      "language": "en-us",
+      "filter": "pa"
+    },
+    {
+      "id": "p2",
+      "voice": "af_bella",
+      "speed": 0.84,
+      "text": "Rule two. You are the only employee on this floor.",
+      "asr": "Rule 2. You are the only employee on this floor.",
+      "start": 13.499999999999998,
+      "duration": 3.408,
+      "language": "en-us",
+      "filter": "pa"
+    },
+    {
+      "id": "p3",
+      "voice": "af_bella",
+      "speed": 0.84,
+      "text": "Rule three. If the lights flicker three times, do not look at the ceiling.",
+      "asr": "Rule 3. If the lights flicker three times, do not look at the ceiling.",
+      "start": 22.099999999999994,
+      "duration": 4.747,
+      "language": "en-us",
+      "filter": "pa"
+    },
+    {
+      "id": "w2",
+      "voice": "am_michael",
+      "speed": 0.88,
+      "text": "Hello?",
+      "start": 33.74999999999999,
+      "duration": 0.789,
+      "language": "en-us",
+      "filter": "quiet_operator"
+    },
+    {
+      "id": "w3",
+      "voice": "am_michael",
+      "speed": 0.9,
+      "text": "It was midnight a second ago.",
+      "start": 37.4,
+      "duration": 1.905,
+      "language": "en-us",
+      "filter": "quiet_operator"
+    },
+    {
+      "id": "p4",
+      "voice": "af_bella",
+      "speed": 0.82,
+      "text": "Rule four. There are no exits on this floor. If you see an exit sign, do not follow it.",
+      "asr": "Rule 4. There are no exits on this floor. If you see an exit sign, do not follow it.",
+      "start": 40.4,
+      "duration": 6.227,
+      "language": "en-us",
+      "filter": "pa",
+      "pitch_mode": "preserve_duration",
+      "pitch_semitones": -0.55
+    },
+    {
+      "id": "w4",
+      "voice": "am_michael",
+      "speed": 0.88,
+      "text": "That's an exit.",
+      "start": 47.949999999999996,
+      "duration": 1.145,
+      "language": "en-us",
+      "filter": "quiet_operator"
+    },
+    {
+      "id": "p6",
+      "voice": "af_bella",
+      "speed": 0.78,
+      "text": "Rule six.",
+      "asr": "Rule 6.",
+      "start": 53.050000000000004,
+      "duration": 1.131,
+      "language": "en-us",
+      "filter": "pa",
+      "pitch_mode": "preserve_duration",
+      "pitch_semitones": -0.55
+    }
+  ]
+}

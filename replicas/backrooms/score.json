@@ -1,0 +1,2693 @@
+{
+  "duration": 59.666666666666664,
+  "bpm": 88,
+  "key": "F major in-world hold loop; tape transport drifts flat",
+  "direction": "No non-diegetic score. Fresh sampled Hold Music No.9 reconstruction follows original eight-bar voicings/melody, begins mid-loop at original transport offset8s, filtered through walls and slowed by original tape-speed/wow curve. PAchimes E5/C5, latechime-.55semitone. Only diegetic camera/room/voice matter. Program stops afterREC-off; a faint source-like blank-tape hiss remains.",
+  "sections": [
+    {
+      "start": 0,
+      "end": 0.55,
+      "intent": "recOn/roll-in"
+    },
+    {
+      "start": 0.55,
+      "end": 27.15,
+      "intent": "normal fluorescent room and distant loop"
+    },
+    {
+      "start": 27.15,
+      "end": 30.8,
+      "intent": "three blackouts and overhead drag"
+    },
+    {
+      "start": 30.8,
+      "end": 36.05,
+      "intent": "focus hunt and empty lock"
+    },
+    {
+      "start": 36.05,
+      "end": 46.75,
+      "intent": "tracking/time loss, lower slower loop and pressure"
+    },
+    {
+      "start": 46.75,
+      "end": 47.75,
+      "intent": "one second full digital zero"
+    },
+    {
+      "start": 47.75,
+      "end": 56.4,
+      "intent": "soft restart, door, final rule"
+    },
+    {
+      "start": 56.4,
+      "end": 59.666666666666664,
+      "intent": "REC off to blank tape"
+    }
+  ],
+  "notes": [
+    {
+      "t": 0.182734,
+      "midi": 36.01502,
+      "duration": 1.227061,
+      "gain": 0.04,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 1.546581,
+      "midi": 42.96896,
+      "duration": 1.092753,
+      "gain": 0.033,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 0.863652,
+      "midi": 51.98768,
+      "duration": 0.375271,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 0.875647,
+      "midi": 57.98625,
+      "duration": 0.3753,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 0.887642,
+      "midi": 59.98481,
+      "duration": 0.37533,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 0.899638,
+      "midi": 63.98337,
+      "duration": 0.37536,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 2.230161,
+      "midi": 51.99725,
+      "duration": 0.37509,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 2.242173,
+      "midi": 57.99797,
+      "duration": 0.375075,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 2.254184,
+      "midi": 59.99865,
+      "duration": 0.375061,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 2.266195,
+      "midi": 63.99929,
+      "duration": 0.375048,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 0.182734,
+      "midi": 75.97533,
+      "duration": 1.945021,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 2.912076,
+      "midi": 44.92099,
+      "duration": 1.2318,
+      "gain": 0.04,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 4.280711,
+      "midi": 39.97818,
+      "duration": 1.093273,
+      "gain": 0.033,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 3.595807,
+      "midi": 54.91153,
+      "duration": 0.376878,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 3.607865,
+      "midi": 59.91163,
+      "duration": 0.376876,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 3.619924,
+      "midi": 63.91179,
+      "duration": 0.376872,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 3.631983,
+      "midi": 68.91199,
+      "duration": 0.376868,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 4.963698,
+      "midi": 54.95278,
+      "duration": 0.376048,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 4.975718,
+      "midi": 59.95132,
+      "duration": 0.376078,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 4.987739,
+      "midi": 63.94983,
+      "duration": 0.376109,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 4.999761,
+      "midi": 68.94831,
+      "duration": 0.376141,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 2.912076,
+      "midi": 75.91849,
+      "duration": 1.300232,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 4.280711,
+      "midi": 71.97528,
+      "duration": 0.648842,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 4.963698,
+      "midi": 68.93495,
+      "duration": 0.650193,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 5.648194,
+      "midi": 37.90367,
+      "duration": 1.233601,
+      "gain": 0.04,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 7.018528,
+      "midi": 44.88573,
+      "duration": 1.097771,
+      "gain": 0.033,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 6.334391,
+      "midi": 53.93259,
+      "duration": 0.37648,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 6.346452,
+      "midi": 59.93385,
+      "duration": 0.376454,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 6.358512,
+      "midi": 61.93509,
+      "duration": 0.376429,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 6.370572,
+      "midi": 68.9363,
+      "duration": 0.376404,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 7.703767,
+      "midi": 53.85306,
+      "duration": 0.378148,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 7.715859,
+      "midi": 59.8525,
+      "duration": 0.378159,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 7.727952,
+      "midi": 61.852,
+      "duration": 0.37817,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 7.740046,
+      "midi": 68.85156,
+      "duration": 0.378179,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 5.648194,
+      "midi": 65.90739,
+      "duration": 1.301964,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 7.018528,
+      "midi": 68.91777,
+      "duration": 0.650892,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 7.703767,
+      "midi": 71.85014,
+      "duration": 0.653105,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 8.391214,
+      "midi": 42.92943,
+      "duration": 1.233843,
+      "gain": 0.04,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 9.762551,
+      "midi": 37.82545,
+      "duration": 1.100966,
+      "gain": 0.033,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 9.076573,
+      "midi": 52.91682,
+      "duration": 0.376849,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 9.088622,
+      "midi": 57.91562,
+      "duration": 0.376874,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 9.100672,
+      "midi": 61.91438,
+      "duration": 0.3769,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 9.112723,
+      "midi": 66.91308,
+      "duration": 0.376927,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 10.451194,
+      "midi": 52.86157,
+      "duration": 0.378009,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 10.463307,
+      "midi": 57.86317,
+      "duration": 0.377975,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 10.475418,
+      "midi": 61.86478,
+      "duration": 0.377942,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 10.487528,
+      "midi": 66.86637,
+      "duration": 0.377909,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 8.391214,
+      "midi": 69.91313,
+      "duration": 0.651128,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 9.076573,
+      "midi": 68.90066,
+      "duration": 0.65159,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 9.762551,
+      "midi": 66.83425,
+      "duration": 1.306727,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 11.137838,
+      "midi": 35.83844,
+      "duration": 1.238531,
+      "gain": 0.04,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 12.51435,
+      "midi": 42.87016,
+      "duration": 1.100101,
+      "gain": 0.033,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 11.824566,
+      "midi": 52.80241,
+      "duration": 0.37926,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 11.836687,
+      "midi": 57.80116,
+      "duration": 0.379286,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 11.848809,
+      "midi": 59.79995,
+      "duration": 0.379311,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 11.860932,
+      "midi": 66.7988,
+      "duration": 0.379335,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 13.20233,
+      "midi": 52.87634,
+      "duration": 0.377746,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 13.214414,
+      "midi": 57.87564,
+      "duration": 0.377761,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 13.226498,
+      "midi": 59.87489,
+      "duration": 0.377776,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 13.238582,
+      "midi": 66.87407,
+      "duration": 0.377794,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 11.137838,
+      "midi": 66.8329,
+      "duration": 1.307532,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 12.51435,
+      "midi": 63.87711,
+      "duration": 1.306569,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 13.889833,
+      "midi": 40.761,
+      "duration": 1.242633,
+      "gain": 0.04,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 15.270056,
+      "midi": 47.8154,
+      "duration": 1.103169,
+      "gain": 0.033,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 14.580699,
+      "midi": 56.78755,
+      "duration": 0.379606,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 14.592862,
+      "midi": 59.78924,
+      "duration": 0.379571,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 14.605025,
+      "midi": 63.79096,
+      "duration": 0.379535,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 14.617186,
+      "midi": 64.7927,
+      "duration": 0.379499,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 15.95837,
+      "midi": 56.75854,
+      "duration": 0.380235,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 15.970516,
+      "midi": 59.75666,
+      "duration": 0.380274,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 15.982664,
+      "midi": 63.75482,
+      "duration": 0.380312,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 15.994813,
+      "midi": 64.75302,
+      "duration": 0.38035,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 13.889833,
+      "midi": 71.76314,
+      "duration": 1.31144,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 15.270056,
+      "midi": 68.8454,
+      "duration": 0.653816,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 15.95837,
+      "midi": 71.73989,
+      "duration": 0.657268,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 16.650264,
+      "midi": 37.81363,
+      "duration": 1.24187,
+      "gain": 0.04,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 18.030192,
+      "midi": 44.69681,
+      "duration": 1.108678,
+      "gain": 0.033,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 17.341024,
+      "midi": 52.82954,
+      "duration": 0.378776,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 17.353148,
+      "midi": 56.8295,
+      "duration": 0.378777,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 17.365272,
+      "midi": 59.82939,
+      "duration": 0.37878,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 17.377395,
+      "midi": 61.8292,
+      "duration": 0.378784,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 18.723066,
+      "midi": 52.71368,
+      "duration": 0.381207,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 18.735277,
+      "midi": 56.71522,
+      "duration": 0.381175,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 18.747488,
+      "midi": 59.71681,
+      "duration": 0.381142,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 18.759699,
+      "midi": 61.71845,
+      "duration": 0.381108,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 16.650264,
+      "midi": 76.8174,
+      "duration": 1.310874,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 18.030192,
+      "midi": 75.71643,
+      "duration": 0.658181,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 18.723066,
+      "midi": 73.73359,
+      "duration": 0.657666,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 19.415244,
+      "midi": 42.76853,
+      "duration": 1.244901,
+      "gain": 0.04,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 20.799186,
+      "midi": 37.73053,
+      "duration": 1.108361,
+      "gain": 0.033,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 20.105314,
+      "midi": 52.71824,
+      "duration": 0.381139,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 20.117485,
+      "midi": 57.71585,
+      "duration": 0.381189,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 20.129658,
+      "midi": 61.71348,
+      "duration": 0.381238,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 20.141832,
+      "midi": 66.71114,
+      "duration": 0.381288,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 21.492937,
+      "midi": 52.77084,
+      "duration": 0.380064,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 21.505109,
+      "midi": 57.77145,
+      "duration": 0.380052,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 21.51728,
+      "midi": 61.77199,
+      "duration": 0.380041,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 21.52945,
+      "midi": 66.77245,
+      "duration": 0.380031,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 19.415244,
+      "midi": 73.69834,
+      "duration": 1.9739,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 21.492937,
+      "midi": 69.77309,
+      "duration": 0.65664,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 22.184194,
+      "midi": 35.6269,
+      "duration": 1.251748,
+      "gain": 0.04,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 23.574686,
+      "midi": 42.72754,
+      "duration": 1.109657,
+      "gain": 0.033,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 22.879249,
+      "midi": 51.63227,
+      "duration": 0.382984,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 22.891512,
+      "midi": 57.63343,
+      "duration": 0.38296,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 22.903775,
+      "midi": 59.63466,
+      "duration": 0.382935,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 22.916038,
+      "midi": 63.63595,
+      "duration": 0.382908,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 24.267212,
+      "midi": 51.66693,
+      "duration": 0.38229,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 24.279419,
+      "midi": 57.66425,
+      "duration": 0.382346,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 24.291626,
+      "midi": 59.66157,
+      "duration": 0.382403,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 24.303836,
+      "midi": 63.6589,
+      "duration": 0.382459,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 22.184194,
+      "midi": 71.62538,
+      "duration": 1.321144,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 23.574686,
+      "midi": 66.71205,
+      "duration": 1.318932,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 24.963436,
+      "midi": 44.65901,
+      "duration": 1.251927,
+      "gain": 0.04,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 26.354113,
+      "midi": 39.55258,
+      "duration": 1.117724,
+      "gain": 0.033,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 25.660576,
+      "midi": 54.70501,
+      "duration": 0.381511,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 25.672803,
+      "midi": 59.70652,
+      "duration": 0.38148,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 25.685029,
+      "midi": 63.70795,
+      "duration": 0.38145,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 25.697254,
+      "midi": 68.7093,
+      "duration": 0.381423,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 27.051697,
+      "midi": 54.53175,
+      "duration": 0.385174,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 27.064025,
+      "midi": 59.53263,
+      "duration": 0.385156,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 27.076354,
+      "midi": 63.53362,
+      "duration": 0.385135,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 27.088683,
+      "midi": 68.53473,
+      "duration": 0.385111,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 24.963436,
+      "midi": 68.60449,
+      "duration": 0.662392,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 25.660576,
+      "midi": 71.71708,
+      "duration": 0.658833,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 26.354113,
+      "midi": 75.53713,
+      "duration": 1.327162,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 27.75094,
+      "midi": 37.68877,
+      "duration": 1.252713,
+      "gain": 0.04,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 29.144067,
+      "midi": 44.54936,
+      "duration": 1.118784,
+      "gain": 0.033,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 28.445232,
+      "midi": 53.62285,
+      "duration": 0.383301,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 28.45746,
+      "midi": 59.61892,
+      "duration": 0.383384,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 28.46969,
+      "midi": 61.61495,
+      "duration": 0.383468,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 28.481922,
+      "midi": 68.61095,
+      "duration": 0.383552,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 29.845485,
+      "midi": 53.65396,
+      "duration": 0.382656,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 29.857767,
+      "midi": 59.65702,
+      "duration": 0.382593,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 29.870046,
+      "midi": 61.65998,
+      "duration": 0.382531,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 29.882321,
+      "midi": 68.66282,
+      "duration": 0.382472,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 27.75094,
+      "midi": 73.68241,
+      "duration": 1.322892,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 29.144067,
+      "midi": 71.49023,
+      "duration": 0.666512,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 29.845485,
+      "midi": 68.68181,
+      "duration": 0.660364,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 30.540601,
+      "midi": 42.4455,
+      "duration": 1.263477,
+      "gain": 0.04,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 31.944229,
+      "midi": 37.67585,
+      "duration": 1.115199,
+      "gain": 0.033,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 31.240589,
+      "midi": 52.41493,
+      "duration": 0.387726,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 31.252991,
+      "midi": 57.41544,
+      "duration": 0.387714,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 31.265395,
+      "midi": 61.41614,
+      "duration": 0.387699,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 31.2778,
+      "midi": 66.41702,
+      "duration": 0.387681,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 32.640234,
+      "midi": 52.58903,
+      "duration": 0.384093,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 32.652477,
+      "midi": 57.58391,
+      "duration": 0.384201,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 32.664723,
+      "midi": 61.57869,
+      "duration": 0.384312,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 32.676971,
+      "midi": 66.5734,
+      "duration": 0.384423,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 30.540601,
+      "midi": 66.43712,
+      "duration": 1.333608,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 31.944229,
+      "midi": 69.66115,
+      "duration": 0.661233,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 32.640234,
+      "midi": 68.52644,
+      "duration": 0.665751,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 33.341307,
+      "midi": 35.47434,
+      "duration": 1.263729,
+      "gain": 0.04,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 34.744142,
+      "midi": 42.38629,
+      "duration": 1.127818,
+      "gain": 0.033,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 34.047192,
+      "midi": 52.59289,
+      "duration": 0.384017,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 34.059536,
+      "midi": 57.59767,
+      "duration": 0.383917,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 34.071875,
+      "midi": 59.60233,
+      "duration": 0.38382,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 34.08421,
+      "midi": 66.60686,
+      "duration": 0.383725,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 35.446262,
+      "midi": 52.29957,
+      "duration": 0.390261,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 35.458735,
+      "midi": 57.29941,
+      "duration": 0.390264,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 35.471211,
+      "midi": 59.29951,
+      "duration": 0.390262,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 35.483689,
+      "midi": 66.29984,
+      "duration": 0.390255,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 33.341307,
+      "midi": 64.65613,
+      "duration": 2.672137,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 36.154927,
+      "midi": 39.44741,
+      "duration": 1.332076,
+      "gain": 0.04,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 37.639358,
+      "midi": 46.18353,
+      "duration": 1.210511,
+      "gain": 0.033,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 36.88452,
+      "midi": 55.33746,
+      "duration": 0.412922,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 36.897661,
+      "midi": 58.3301,
+      "duration": 0.413088,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 36.910805,
+      "midi": 62.32263,
+      "duration": 0.413257,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 36.923953,
+      "midi": 63.31504,
+      "duration": 0.413428,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 38.399932,
+      "midi": 55.35802,
+      "duration": 0.412528,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 38.413192,
+      "midi": 58.36219,
+      "duration": 0.412436,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 38.426447,
+      "midi": 62.36612,
+      "duration": 0.412349,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 38.439697,
+      "midi": 63.3698,
+      "duration": 0.412267,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 36.154927,
+      "midi": 67.43773,
+      "duration": 1.408192,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 37.639358,
+      "midi": 70.07185,
+      "duration": 0.722874,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 38.399932,
+      "midi": 74.38996,
+      "duration": 0.712241,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 39.149765,
+      "midi": 35.94871,
+      "duration": 1.372584,
+      "gain": 0.04,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 40.673429,
+      "midi": 43.22131,
+      "duration": 1.212958,
+      "gain": 0.033,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 39.911303,
+      "midi": 50.97916,
+      "duration": 0.421171,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 39.924817,
+      "midi": 54.98392,
+      "duration": 0.421063,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 39.938331,
+      "midi": 57.98894,
+      "duration": 0.42095,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 39.951845,
+      "midi": 59.99419,
+      "duration": 0.420831,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 41.426872,
+      "midi": 50.99228,
+      "duration": 0.420981,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 41.440243,
+      "midi": 54.98398,
+      "duration": 0.421171,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 41.453622,
+      "midi": 57.97583,
+      "duration": 0.421357,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 41.467007,
+      "midi": 59.96784,
+      "duration": 0.42154,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 39.149765,
+      "midi": 72.02473,
+      "duration": 2.163415,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 41.426872,
+      "midi": 69.90837,
+      "duration": 0.72962,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 42.195055,
+      "midi": 41.21724,
+      "duration": 1.368228,
+      "gain": 0.04,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 43.716427,
+      "midi": 35.78151,
+      "duration": 1.233372,
+      "gain": 0.033,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 42.957703,
+      "midi": 51.24081,
+      "duration": 0.415429,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 42.970987,
+      "midi": 56.23815,
+      "duration": 0.415491,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 42.984269,
+      "midi": 60.23516,
+      "duration": 0.415559,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 42.99755,
+      "midi": 65.23184,
+      "duration": 0.415635,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 44.490332,
+      "midi": 50.97878,
+      "duration": 0.421449,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 44.503916,
+      "midi": 55.98745,
+      "duration": 0.421252,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 44.517494,
+      "midi": 59.99609,
+      "duration": 0.421056,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 44.531066,
+      "midi": 65.00466,
+      "duration": 0.420861,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 42.195055,
+      "midi": 68.22893,
+      "duration": 1.444681,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 43.716427,
+      "midi": 71.76317,
+      "duration": 0.735283,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 44.490332,
+      "midi": 75.07173,
+      "duration": 0.724862,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 45.253072,
+      "midi": 33.7815,
+      "duration": 1.389005,
+      "gain": 0.04,
+      "instrument": "electric_bass",
+      "pan": 0
+    },
+    {
+      "t": 46.018949,
+      "midi": 49.66581,
+      "duration": 0.428739,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 46.032626,
+      "midi": 55.66415,
+      "duration": 0.428778,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 46.046308,
+      "midi": 57.66288,
+      "duration": 0.428807,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 46.059995,
+      "midi": 61.66201,
+      "duration": 0.428828,
+      "gain": 0.019,
+      "instrument": "electric_guitar",
+      "pan": 0.35
+    },
+    {
+      "t": 45.253072,
+      "midi": 73.74943,
+      "duration": 1.496928,
+      "gain": 0.04,
+      "instrument": "vibraphone",
+      "pan": -0.25
+    },
+    {
+      "t": 1.9,
+      "midi": 76,
+      "duration": 1.3,
+      "gain": 0.19,
+      "instrument": "vibraphone",
+      "pan": 0
+    },
+    {
+      "t": 2.32,
+      "midi": 72,
+      "duration": 1.3,
+      "gain": 0.17,
+      "instrument": "vibraphone",
+      "pan": 0
+    },
+    {
+      "t": 7.6,
+      "midi": 76,
+      "duration": 1.3,
+      "gain": 0.19,
+      "instrument": "vibraphone",
+      "pan": 0
+    },
+    {
+      "t": 8.02,
+      "midi": 72,
+      "duration": 1.3,
+      "gain": 0.17,
+      "instrument": "vibraphone",
+      "pan": 0
+    },
+    {
+      "t": 12.7,
+      "midi": 76,
+      "duration": 1.3,
+      "gain": 0.19,
+      "instrument": "vibraphone",
+      "pan": 0
+    },
+    {
+      "t": 13.12,
+      "midi": 72,
+      "duration": 1.3,
+      "gain": 0.17,
+      "instrument": "vibraphone",
+      "pan": 0
+    },
+    {
+      "t": 21.3,
+      "midi": 76,
+      "duration": 1.3,
+      "gain": 0.19,
+      "instrument": "vibraphone",
+      "pan": 0
+    },
+    {
+      "t": 21.72,
+      "midi": 72,
+      "duration": 1.3,
+      "gain": 0.17,
+      "instrument": "vibraphone",
+      "pan": 0
+    },
+    {
+      "t": 39.6,
+      "midi": 75.45,
+      "duration": 1.3,
+      "gain": 0.19,
+      "instrument": "vibraphone",
+      "pan": 0
+    },
+    {
+      "t": 40.02,
+      "midi": 71.45,
+      "duration": 1.3,
+      "gain": 0.17,
+      "instrument": "vibraphone",
+      "pan": 0
+    }
+  ],
+  "hits": [],
+  "effects": [
+    {
+      "t": 0.3,
+      "kind": "click",
+      "duration": 0.08,
+      "gain": 0.13,
+      "pan": 0
+    },
+    {
+      "t": 0.35,
+      "kind": "camcorder_motor",
+      "duration": 0.9,
+      "gain": 0.045,
+      "pan": 0,
+      "frequency": 130
+    },
+    {
+      "t": 0.8,
+      "kind": "af_motor",
+      "duration": 0.4,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 6,
+      "kind": "cloth",
+      "duration": 0.45,
+      "gain": 0.017499999999999998,
+      "pan": -0.15019744935433524
+    },
+    {
+      "t": 7.975,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.06116831608308357,
+      "pan": -0.028477024266846424
+    },
+    {
+      "t": 8.591667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08098604740241096,
+      "pan": 0.030913875283574324
+    },
+    {
+      "t": 9.1,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": -0.05012972193565611
+    },
+    {
+      "t": 9.55,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": -0.117763836031782
+    },
+    {
+      "t": 9.966667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": 0.03802234417607522
+    },
+    {
+      "t": 10.375,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": 0.10273131332017614
+    },
+    {
+      "t": 10.766667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": -0.09741315695220773
+    },
+    {
+      "t": 11,
+      "kind": "cloth",
+      "duration": 0.45,
+      "gain": 0.015,
+      "pan": 0.19998237202145344
+    },
+    {
+      "t": 11.158333,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": -0.026135225706884854
+    },
+    {
+      "t": 11.55,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": 0.11796331773818636
+    },
+    {
+      "t": 11.966667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": -0.03701342555114121
+    },
+    {
+      "t": 12.391667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": -0.11268570405874805
+    },
+    {
+      "t": 12.8,
+      "kind": "cloth",
+      "duration": 0.45,
+      "gain": 0.0125,
+      "pan": 0.1289793465889724
+    },
+    {
+      "t": 12.858333,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": -0.008392813102132789
+    },
+    {
+      "t": 13.283333,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": 0.11993620767793833
+    },
+    {
+      "t": 13.691667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": -0.022440784619111625
+    },
+    {
+      "t": 14.141667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": -0.11985303294332153
+    },
+    {
+      "t": 14.3,
+      "kind": "cloth",
+      "duration": 0.45,
+      "gain": 0.015,
+      "pan": -0.17660763820108444
+    },
+    {
+      "t": 14.666667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08397674560547058,
+      "pan": -0.10759608497800029
+    },
+    {
+      "t": 15.241667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.06434161846455676,
+      "pan": -0.10972311413127248
+    },
+    {
+      "t": 16.0,
+      "kind": "af_motor",
+      "duration": 0.4,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 16.2,
+      "kind": "cloth",
+      "duration": 0.45,
+      "gain": 0.020000000000000004,
+      "pan": -0.19910412329570282
+    },
+    {
+      "t": 20.9,
+      "kind": "cloth",
+      "duration": 0.45,
+      "gain": 0.017499999999999998,
+      "pan": -0.02629427087471078
+    },
+    {
+      "t": 21.033333,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.038155971429153494,
+      "pan": -0.10754724780377055
+    },
+    {
+      "t": 21.575,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": -0.11891211870959832
+    },
+    {
+      "t": 22.175,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.07122000669819602,
+      "pan": -0.10797160584457374
+    },
+    {
+      "t": 22.733333,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08652105086887493,
+      "pan": -0.1142781720330666
+    },
+    {
+      "t": 23.216667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": -0.09505834419222865
+    },
+    {
+      "t": 23.675,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": 0.03856603300521855
+    },
+    {
+      "t": 24.133333,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": 0.11999973855617026
+    },
+    {
+      "t": 24.608333,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": 0.05907268761407237
+    },
+    {
+      "t": 25.125,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.07813282502005466,
+      "pan": -0.010206077216334845
+    },
+    {
+      "t": 25.783333,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.05451847956734267,
+      "pan": 0.09197646991858463
+    },
+    {
+      "t": 28.25,
+      "kind": "cloth",
+      "duration": 0.45,
+      "gain": 0.025,
+      "pan": 0.014587364728960665
+    },
+    {
+      "t": 29.2,
+      "kind": "overhead_drag",
+      "duration": 1.4,
+      "gain": 0.04,
+      "pan": 0
+    },
+    {
+      "t": 30.8,
+      "kind": "cloth",
+      "duration": 0.45,
+      "gain": 0.015,
+      "pan": -0.19237695026511095
+    },
+    {
+      "t": 31.9,
+      "kind": "zoom_servo",
+      "duration": 1.2,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 31.95,
+      "kind": "af_motor",
+      "duration": 0.4,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 33.65,
+      "kind": "af_motor",
+      "duration": 0.4,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 34.1,
+      "kind": "af_motor",
+      "duration": 0.4,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 36.05,
+      "kind": "tape_tracking",
+      "duration": 0.65,
+      "gain": 0.12,
+      "pan": 0
+    },
+    {
+      "t": 36.05,
+      "kind": "low_drone",
+      "duration": 0.65,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 39.3,
+      "kind": "zoom_servo",
+      "duration": 0.5,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 40.716667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.06522584572795956,
+      "pan": 0.11745349072135791
+    },
+    {
+      "t": 41.216667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": 0.10058511046679103
+    },
+    {
+      "t": 41.616667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": -0.09318770955432072
+    },
+    {
+      "t": 42.075,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.0777454865286248,
+      "pan": -0.1016759415385818
+    },
+    {
+      "t": 42.1,
+      "kind": "cloth",
+      "duration": 0.45,
+      "gain": 0.020000000000000004,
+      "pan": 0.11884373294603573
+    },
+    {
+      "t": 43.008333,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.04982738005804995,
+      "pan": 0.11526102153565797
+    },
+    {
+      "t": 43.841667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.04670011080234779,
+      "pan": -0.11996584076064876
+    },
+    {
+      "t": 44.816667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.0486669295873412,
+      "pan": 0.02930617021642695
+    },
+    {
+      "t": 45.825,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.03438978928791451,
+      "pan": 0.11864137212408653
+    },
+    {
+      "t": 48.05,
+      "kind": "cloth",
+      "duration": 0.45,
+      "gain": 0.0125,
+      "pan": -0.07106506199387629
+    },
+    {
+      "t": 49.616667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.07266704852746496,
+      "pan": -0.09045303389158378
+    },
+    {
+      "t": 50.108333,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": -0.11850821671812535
+    },
+    {
+      "t": 50.13125,
+      "kind": "door_latch",
+      "duration": 0.1,
+      "gain": 0.1,
+      "pan": 0
+    },
+    {
+      "t": 50.18125,
+      "kind": "door_hinge",
+      "duration": 1.510417,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 50.28125,
+      "kind": "wind",
+      "duration": 1.510417,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 50.491667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": 0.07296259994320807
+    },
+    {
+      "t": 50.833333,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": -0.00441808194058578
+    },
+    {
+      "t": 51.158333,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": -0.04635211039141607
+    },
+    {
+      "t": 51.491667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": 0.09559242932794243
+    },
+    {
+      "t": 51.758333,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": -0.07852868180244234
+    },
+    {
+      "t": 51.991667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": 0.016563395731389954
+    },
+    {
+      "t": 52.23125,
+      "kind": "af_motor",
+      "duration": 0.4,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 52.241667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": 0.030051354974236312
+    },
+    {
+      "t": 52.566667,
+      "kind": "wet_steps",
+      "duration": 0.2,
+      "gain": 0.08800000000000001,
+      "pan": 0.021517203985146803
+    },
+    {
+      "t": 56.4,
+      "kind": "click",
+      "duration": 0.08,
+      "gain": 0.15,
+      "pan": 0
+    },
+    {
+      "t": 56.43,
+      "kind": "camcorder_motor",
+      "duration": 0.22,
+      "gain": 0.05,
+      "pan": 0,
+      "frequency": 100
+    },
+    {
+      "t": 27.12,
+      "kind": "ballast_arc",
+      "duration": 0.12,
+      "gain": 0.0375,
+      "pan": 0
+    },
+    {
+      "t": 27.25,
+      "kind": "ballast_arc",
+      "duration": 0.12,
+      "gain": 0.06,
+      "pan": 0
+    },
+    {
+      "t": 27.62,
+      "kind": "ballast_arc",
+      "duration": 0.12,
+      "gain": 0.0375,
+      "pan": 0
+    },
+    {
+      "t": 27.77,
+      "kind": "ballast_arc",
+      "duration": 0.12,
+      "gain": 0.06,
+      "pan": 0
+    },
+    {
+      "t": 28.12,
+      "kind": "ballast_arc",
+      "duration": 0.12,
+      "gain": 0.0375,
+      "pan": 0
+    },
+    {
+      "t": 28.29,
+      "kind": "ballast_arc",
+      "duration": 0.12,
+      "gain": 0.06,
+      "pan": 0
+    },
+    {
+      "t": 0.55,
+      "kind": "fluorescent_bed",
+      "duration": 26.57,
+      "gain": 0.027,
+      "pan": 0
+    },
+    {
+      "t": 27.12,
+      "kind": "fluorescent_bed",
+      "duration": 0.13,
+      "gain": 0.000675,
+      "pan": 0
+    },
+    {
+      "t": 27.25,
+      "kind": "fluorescent_bed",
+      "duration": 0.1,
+      "gain": 0.02025,
+      "pan": 0
+    },
+    {
+      "t": 27.35,
+      "kind": "fluorescent_bed",
+      "duration": 0.27,
+      "gain": 0.027,
+      "pan": 0
+    },
+    {
+      "t": 27.62,
+      "kind": "fluorescent_bed",
+      "duration": 0.15,
+      "gain": 0.000675,
+      "pan": 0
+    },
+    {
+      "t": 27.77,
+      "kind": "fluorescent_bed",
+      "duration": 0.08,
+      "gain": 0.02025,
+      "pan": 0
+    },
+    {
+      "t": 27.85,
+      "kind": "fluorescent_bed",
+      "duration": 0.27,
+      "gain": 0.027,
+      "pan": 0
+    },
+    {
+      "t": 28.12,
+      "kind": "fluorescent_bed",
+      "duration": 0.17,
+      "gain": 0.000675,
+      "pan": 0
+    },
+    {
+      "t": 28.29,
+      "kind": "fluorescent_bed",
+      "duration": 0.06,
+      "gain": 0.02025,
+      "pan": 0
+    },
+    {
+      "t": 28.35,
+      "kind": "fluorescent_bed",
+      "duration": 28.05,
+      "gain": 0.027,
+      "pan": 0
+    },
+    {
+      "t": 0.55,
+      "kind": "tape_hiss",
+      "duration": 55.85,
+      "gain": 0.006,
+      "pan": 0
+    },
+    {
+      "t": 56.65,
+      "kind": "tape_hiss",
+      "duration": 3.016667,
+      "gain": 0.0025,
+      "pan": 0
+    },
+    {
+      "t": 34.55,
+      "kind": "low_drone",
+      "duration": 1.5,
+      "gain": 0.008,
+      "pan": 0
+    },
+    {
+      "t": 36.05,
+      "kind": "low_drone",
+      "duration": 3.95,
+      "gain": 0.016,
+      "pan": 0
+    },
+    {
+      "t": 40,
+      "kind": "low_drone",
+      "duration": 4,
+      "gain": 0.025,
+      "pan": 0
+    },
+    {
+      "t": 44,
+      "kind": "low_drone",
+      "duration": 2.75,
+      "gain": 0.035,
+      "pan": 0
+    },
+    {
+      "t": 1.2,
+      "kind": "breath",
+      "duration": 2.584,
+      "gain": 0.012,
+      "pan": 0
+    },
+    {
+      "t": 4.828572,
+      "kind": "breath",
+      "duration": 2.584,
+      "gain": 0.012,
+      "pan": 0
+    },
+    {
+      "t": 8.345428,
+      "kind": "breath",
+      "duration": 2.584,
+      "gain": 0.012,
+      "pan": 0
+    },
+    {
+      "t": 11.849195,
+      "kind": "breath",
+      "duration": 2.584,
+      "gain": 0.012,
+      "pan": 0
+    },
+    {
+      "t": 15.443059,
+      "kind": "breath",
+      "duration": 2.584,
+      "gain": 0.012,
+      "pan": 0
+    },
+    {
+      "t": 19.198823,
+      "kind": "breath",
+      "duration": 2.584,
+      "gain": 0.012,
+      "pan": 0
+    },
+    {
+      "t": 23.131894,
+      "kind": "breath",
+      "duration": 2.584,
+      "gain": 0.012,
+      "pan": 0
+    },
+    {
+      "t": 27.195922,
+      "kind": "breath",
+      "duration": 1.156,
+      "gain": 0.028,
+      "pan": 0
+    },
+    {
+      "t": 29.031481,
+      "kind": "breath",
+      "duration": 1.156,
+      "gain": 0.028,
+      "pan": 0
+    },
+    {
+      "t": 30.837264,
+      "kind": "breath",
+      "duration": 1.156,
+      "gain": 0.028,
+      "pan": 0
+    },
+    {
+      "t": 32.576423,
+      "kind": "breath",
+      "duration": 1.632,
+      "gain": 0.02,
+      "pan": 0
+    },
+    {
+      "t": 39.099622,
+      "kind": "breath",
+      "duration": 1.428,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 41.054975,
+      "kind": "breath",
+      "duration": 1.428,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 43.083706,
+      "kind": "breath",
+      "duration": 1.428,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 45.21064,
+      "kind": "breath",
+      "duration": 1.428,
+      "gain": 0.022,
+      "pan": 0
+    },
+    {
+      "t": 48.1,
+      "kind": "breath",
+      "duration": 1.53,
+      "gain": 0.03,
+      "pan": 0
+    },
+    {
+      "t": 50.0,
+      "kind": "breath",
+      "duration": 1.292,
+      "gain": 0.024,
+      "pan": 0
+    },
+    {
+      "t": 52.048611,
+      "kind": "breath",
+      "duration": 1.292,
+      "gain": 0.024,
+      "pan": 0
+    },
+    {
+      "t": 54.089338,
+      "kind": "breath",
+      "duration": 1.292,
+      "gain": 0.024,
+      "pan": 0
+    },
+    {
+      "t": 47.75,
+      "kind": "ballast_arc",
+      "duration": 0.5,
+      "gain": 0.11,
+      "pan": 0
+    },
+    {
+      "t": 47.75,
+      "kind": "thump",
+      "duration": 0.5,
+      "gain": 0.09,
+      "pan": 0
+    }
+  ],
+  "music_filter_ranges": [
+    {
+      "start": 0,
+      "end": 46.75,
+      "low": 350,
+      "high": 2400
+    }
+  ],
+  "music_gain_points": [
+    [
+      0,
+      0
+    ],
+    [
+      0.55,
+      0
+    ],
+    [
+      1.2,
+      0.6
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      27.118999999999993,
+      1
+    ],
+    [
+      27.11999999999999,
+      0
+    ],
+    [
+      27.249999999999993,
+      0
+    ],
+    [
+      27.34999999999999,
+      1
+    ],
+    [
+      27.618999999999993,
+      1
+    ],
+    [
+      27.61999999999999,
+      0
+    ],
+    [
+      27.769999999999992,
+      0
+    ],
+    [
+      27.84999999999999,
+      1
+    ],
+    [
+      28.118999999999993,
+      1
+    ],
+    [
+      28.11999999999999,
+      0
+    ],
+    [
+      28.289999999999992,
+      0
+    ],
+    [
+      28.34999999999999,
+      1
+    ],
+    [
+      46.74,
+      1
+    ],
+    [
+      46.75,
+      0
+    ],
+    [
+      59.666666666666664,
+      0
+    ]
+  ],
+  "silence_ranges": [
+    [
+      0,
+      0.3
+    ],
+    [
+      46.75,
+      47.75
+    ]
+  ],
+  "room": 0.5,
+  "music_rms_db": -31
+}

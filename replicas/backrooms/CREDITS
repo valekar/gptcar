@@ -1,0 +1,15 @@
+Night Shift Orientation — GPT recreation
+
+This is a source-informed reconstruction of the complete published film using attributed generic texture, material-lighting, figure, VHS and bitmap drawing factories. It is not a blind same-prompt benchmark. The replication prompt was reconstructed from published STYLE/DEMO, exact numerical timing/script data and all original movie sheets; the unpublished conversation prompt is unavailable.
+
+Independent complete office geometry and narrative prop assembly, area-emitter field generation/state, camera path interpolation and distance-driven gait, media/focus/light/tape choreography, caption/end-card layout and new audio cue arrangement: GPT-6.1 Sol, high reasoning, in this task. The original full story, cast/prop design, paper text, script and timings are deliberately matched at the user's request.
+
+LemoLab GPTcar toolkit, MIT, with original notices preserved in TOOLKIT_LICENSE.txt and TOOLKIT_CREDITS.txt: tex.js (generic procedural wallpaper, carpet, ceiling, troffer, cork, notice, EXIT and outlet texture factories); thing 2 d.js (organic silhouette drawing rig); figures.js (isolated parametric shoes and billboard figure, with imports redirected to new material engine); vhs.js (generic VHS camcorder ShaderPass); osd.js (generic 5×7 bitmap font and OSD primitives). materials.js extracts only the generic light-field/fog/material shaders and paint/silhouette factories from demo/world.js. It excludes all original layout, light-grid generation, complete world and prop builders. core/three/post.js supplies generic physical DOF, GTAO, bloom and output. No original world.js, main.js, story.js or subs.js is imported at runtime. Published numeric keyframe/event/caption values are documentary input data, not a reused story renderer.
+
+Fonts: IBM Plex Sans, IBM Plex Sans Condensed and IBM Plex Mono, © IBM Corp., SIL Open Font License 1.1, via Google Fonts. Seven local font files and license records are listed in asset-manifest.json.
+
+Fresh voices: local Kokoro af_bella and am_michael, Apache-2.0, exact ten original text inputs at original onsets/speeds. PA has a newly processed ceiling-speaker sound; operator uses quiet close proximity. Late PA is shifted−0.55 semitone while preserving duration. No original recorded speech or master mix is reused.
+
+Diegetic music: a newly performed version of the published original Hold Music No.9 composition,88 BPM Fmajor. Published harmony/melody/transport offset are deliberately reconstructed with fresh vibraphone, clean electric guitar and finger bass samples, filtered and reverberant as music through walls. Root sample-pack license records cover VCSL/FreePats CC 0 material. All fluorescent/camera/tape/body/door sound is freshly synthesized by the root renderer; no original sound recording is reused. No non-diegetic score is added.
+
+No generative image, video or model service was used. All image artwork is real geometry, deterministic procedural texture and code-drawn graphics.

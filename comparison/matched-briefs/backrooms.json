@@ -78,13 +78,13 @@
       "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/backrooms/sheets/sheet-04.jpg",
       "/Users/valekar/Documents/Codex/2026-10-18/https-github-com-valekar-roast-room/work/gptcar/reference/backrooms/sheets/sheet-05.jpg"
     ],
-    "sampling": "All1fps decoded samples reviewed across whole film, plus published source timing for short transitions. Exact shot-boundary decoding required before film timing acceptance; approximate sheet labels are not frame-accurate.",
+    "sampling": "All60 regular decoded original samples across five sheets inspected by this worker, supplemented by seven exact-time original movie pairs and a full-detail33.1-second presence comparison. Replica still review covers94 frames, including subsecond autofocus/flicker/tear/door/hush/REC events. No claim to inspect every encoded frame.",
     "every_encoded_frame_claimed": false
   },
-  "materials_characters_typography": "Found-footage 1996 camcorder,4:3 active frame with black pillar boxes, real 3 D repetitive yellow office corridors. Wallpaper vertical double lines/alternating diamond motif, stained short pile mustard carpet, mineral ceiling tiles/Tbars, recessed fluorescent troffers with lattice/insects.25 nearest lights local illumination+fog, distant corners dark; no expensive horror spotlights. Organic 2.4 m very thin figure at 33 m, subtle jointed posture. OSD white block REC/battery/date unaffected by VHS except tracking tear, operator only shoe toes.",
+  "materials_characters_typography": "True Three.js repetitive office geometry, .16-meter partitions on a2.4-meter grid,2.7-meter ceiling, nearest25 panel lighting from a128×128 float field, local illumination-dependent fog and GTAO seams. Mustard double-stripe/diamond wallpaper, mottled damp carpet, drop ceiling/prismatic troffers, restrained stains and decay. Procedural leather shoe toes; far organic waving silhouette. Active720×5404:3 raster through VHS luma/chroma/jitter/tears/AE/AWB into1920×1080 production. OSD bitmap is not barrel-distorted; it still shares tape tracking. Closed captions in42px IBM Plex Mono sit on individual black rows outside the VHS pass. Printed pages use IBM Plex Sans/Condensed, actual readable rules and revision.",
   "audio_recreation": {
     "original_master_audio_reused": false,
-    "direction": "Die get ic 88 BPM F major original hold mu zak, no non die get ic horror score; full bed fluorescent 120 Hz harmonic buzz, carpet footfalls, autofocus servos, PAc hime and cone voice. Wow playback slows 1→.97→.89; true silence 47.35–48.35 warped time. PAaf_bella filtered 310–3500 Hz,.84/.82/.78, operator am_michael quiet whisper.",
+    "direction": "No non-diegetic score. Newly performed88BPM F-major Hold Music No.9 uses original published eight-bar voicings/melody, original8-second transport offset and slowing/wow curve; filtered350–2400Hz and reverberant through walls. PA two-note E5/C5 chimes drift flat after tear. Fresh af_bella and am_michael retain all ten exact inputs and source speeds, with ceiling-speaker and quiet proximity filters. Fluorescent120Hz harmonics/whine, tape hiss, surface steps, camera clack/motor/zoom/AF, ballast arcs, overhead drag, door material and close breathing follow picture. Exact digital-zero46.75–47.75; after REC-off only faint blank-tape hiss remains. No original master recording reused.",
     "narration_published_verbatim": [
       {
         "id": "p0",
@@ -178,91 +178,91 @@
       "start": 0,
       "end": 2.7,
       "title": "Tape roll-in",
-      "prompt": "Black then VHS rollin.55, autofocus soft until 1.55 on wood/cork bulletin board on patterned yellow wall. Zoom orientation page. OSDREC red circle, battery 3 bars, PM 11:58/SEP.27.1996; title NIGHT SHIFT ORIENTATION 1.1–4.6. Caption[FLUORESCENT LIGHTS HUMMING]."
+      "prompt": "Begin on black. At 0.55 the tape rolls in with tracking damage and a brief cool white balance. Autofocus finds a cork bulletin board on striped mustard wallpaper at 1.55. Show a wood frame, yellowed pinned orientation notice, blank old memo and red tacks. Bitmap REC dot, three battery bars, PM 11:58 and SEP.27.1996 are diegetic. Type NIGHT SHIFT / ORIENTATION from 1.1 to 4.6. Keep the separate closed caption [FLUORESCENT LIGHTS HUMMING]."
     },
     {
       "start": 2.7,
       "end": 6,
       "title": "Welcome",
-      "prompt": "PA Good evening, and welcome to the night shift. Board notice says FLOOR STAFF—PLEASEREAD /FORMNS-01(REV.9) /NIGHTSHIFTORIENTATION /Read before beginning your rounds. White copy paper pinned with red tacks, small sticky aside. Operator Okay.First night 5.55."
+      "prompt": "Hold on the board. Exact PA welcome at 2.7; quiet operator Okay. First night. at 5.55. The notice reads FLOOR STAFF — PLEASE READ, FORM NS-01 (REV. 9), NIGHT SHIFT ORIENTATION and Read before beginning your rounds. The picture is a real 3D 720×540 office through a VHS pass, pillarboxed to 4:3 within the 1920×1080 production canvas."
     },
     {
       "start": 6,
-      "end": 11.3,
-      "title": "Normal corridor",
-      "prompt": "Slow unsteady camcorder pan to right through door reveals long straight many columns corridor at vanishing point, overhead repeated rectangular lamps. Chime, p 1 at 8.4 Rule one.The humming of the lights is normal. Ordinary pace, breathed silence, not constant jump scares."
+      "end": 11,
+      "title": "Routine corridor",
+      "prompt": "Pan right from the notice into an empty corridor, finishing the turn around 7.2. Repeating partitions, gaps, square pillars, drop-ceiling tiles and fluorescent panels recede into local dark fog. Walk forward with .72 m stride, small head bob, sway, breathing and fear-driven tremor. PA rule one begins 8.4. No new score or monster event."
     },
     {
-      "start": 11.3,
-      "end": 13.4,
-      "title": "Check shoes",
-      "prompt": "POV tips down until only two leather shoe toes and carpet visible, stops, rises. OSD stay screen aligned; operator body never appears. Footsteps soft muffled."
+      "start": 11,
+      "end": 13.1,
+      "title": "First shoe glance",
+      "prompt": "Look down from 11.0 until only damp short-pile carpet and one or two leather shoe toes are visible; never show legs. The shoes have actual beveled uppers, soles, tongues, laces and seams. Reach the camera forward .22 m while looking down, then raise it. OSD remains screen aligned."
     },
     {
-      "start": 13.4,
-      "end": 16.2,
+      "start": 13.1,
+      "end": 15.9,
       "title": "Only employee",
-      "prompt": "Forward camera approach second notice on left wall. PA 13.5 You are the only employee on this floor. Build doubt through still distance and die get ic room tone."
+      "prompt": "Approach the second copy of the same notice on the west wall at z−12.62. Rule two starts 13.5: You are the only employee on this floor. The repeated prop and distant room tone establish doubt. A brief autofocus search accompanies approach."
     },
     {
-      "start": 16.2,
-      "end": 21.2,
-      "title": "Read rules1–5",
-      "prompt": "Push page into legible close up, taped upper corners. Exact 1 The humming of the lights is normal.2 You are the only employee on this floor.3 If the lights flicker three times, do not look at the ceiling.4 There are no exit son this floor.If you see an EXIT sign, do not follow it.5 If a coworker waves at you, wave back. Footer Thankyou for your cooperation.Management. Contradiction between 2 and 5 must remain."
+      "start": 15.9,
+      "end": 20.9,
+      "title": "Read the contradiction",
+      "prompt": "Crouch and move close so the lens is approximately parallel to the taped page. Hold the full numbered rules uncovered and legible. Exact rules:1. The humming of the lights is normal.2. You are the only employee on this floor.3. If the lights flicker three times, do not look at the ceiling.4. There are no exits on this floor. If you see an EXIT sign, do not follow it.5. If a coworker waves at you, wave back. Footer:Thank you for your cooperation. / Management. Four short tape strips secure the corners. The contradiction between rules 2 and 5 is the story. Clock changes to PM 11:59 at 19.2."
     },
     {
-      "start": 21.2,
+      "start": 20.9,
       "end": 27.15,
-      "title": "Rule three walk",
-      "prompt": "Pan back to main corridor, clock 11:59, PA 22.1 Rule three...exact full line. Walk forward many seconds, framing becomes more cautious, ceiling fluorescent local bright not full ambient."
+      "title": "Rule-three walk",
+      "prompt": "Pan back into the main corridor, walking to z−19.2 and stopping. Exact rule-three announcement begins 22.1. Hold several seconds of repetitive empty space. Local panel colors vary slightly; floor dampness, wallpaper seams, rare tide marks, missing/yellow ceiling tiles and insect shadows remain restrained."
     },
     {
       "start": 27.15,
       "end": 30.8,
-      "title": "Three flickers do notlook",
-      "prompt": "Original times 27.45/27.95/28.45 mapped through WARP(see embedded T) =27.15/27.65/28.15. Lights gate exactly 3 times. Operator obeys, drops look to shoes 28.25–30.8, holds fear. Caption[LIGHTSFLICKER], no added music sting."
+      "title": "Obey the flickers",
+      "prompt": "Three fluorescent blackouts occur at 27.15,27.65 and 28.15, each followed by exposure-lag recovery and ballast ticks. Caption [LIGHTS FLICKER]. Operator obeys by looking down at 28.25–30.8. An extremely faint overhead drag and travelling panel occlusion change the carpet illumination without showing a ceiling creature. Breathing grows quicker."
     },
     {
       "start": 30.8,
       "end": 33.65,
-      "title": "Rise and autofocus",
-      "prompt": "Rise 30.8–32.0, zoom 31.9–33.1 toward organically thin silhouette~33 m away. Figure visible only during A Flock 32.85–33.35 then empty hall focus. No monster close up, no human waving stick rig. Operator Hello?33.75."
+      "title": "Focus on the presence",
+      "prompt": "Raise the camera 30.8–32.0 and zoom horizontal FOV 52° to 27° during 31.9–33.1. A distant 2.4 m organic silhouette at z−52.4, about 33 m away, stands in a dead-light zone. Small tilted head, long neck, narrow high shoulders and an arm to the knee; one arm waves slowly on a 3.6 s cycle. Near/far autofocus briefly locks at 32.85–33.35. The figure must be discernible without a close-up or countable fingers. Exclude its billboard from AO so no rectangular shadow frame appears."
     },
     {
       "start": 33.65,
       "end": 37.4,
-      "title": "Tape loses three hours",
-      "prompt": "Empty corridor only, focus locks far 34.85. Tracking tear 36.05–36.7 wipes image horizontally, room/music wows down; clock jumps to AM 2:59 and battery 1 bar. Operator tremor It was midnight a second ago 37.4."
+      "title": "Empty lock and missing time",
+      "prompt": "The figure disappears; focus locks on the empty corridor at 34.85. Quiet Hello? begins 33.75. Tracking tear 36.05–36.7 cuts the tape horizontally while preserving the physical camera framing. Clock jumps toAM 2:59, battery drops to one blinking bar and one overhead light stays dead. Tape sound breaks up and the distant hold loop drifts slower and flatter."
     },
     {
       "start": 37.4,
-      "end": 44.5,
+      "end": 43.9,
       "title": "No exits",
-      "prompt": "Camera un zooms, PA 40.4 Rule four full warning. Right turn through corridor sees red illuminated EXIT above grey flush door under ceiling blank panels. Turn and movement should obey warped story timing rather than direct un warped values."
+      "prompt": "Operator says It was midnight a second ago. at 37.4. Unzoom 39.3–39.8. PA rule four begins 40.4 and retains its full warning. Turn right during 42.1–43.9 into a narrow side corridor with two dead ceiling panels, a gray flush door with panic bar and kick plate, and one saturated red EXIT sign. No jump cut."
     },
     {
-      "start": 44.5,
-      "end": 48.35,
+      "start": 43.9,
+      "end": 47.75,
       "title": "The forbidden sign",
-      "prompt": "Slow approach door, no hand seen. One full second digital zero at warped hush 46.75–47.75(not original un warped 47.35). Strong held frame, no drift. Operator That’san exit 47.95. Return ballast softly."
+      "prompt": "Approach slowly. At 46.75 all audio including tails goes to digital zero for exactly one second, caption [SILENCE]. Camera movement holds its breath. The red EXIT is the only saturated/bloomed color; ordinary sickly room light remains. Keep the full warning caption until the hush."
     },
     {
-      "start": 48.35,
-      "end": 52.6,
+      "start": 47.75,
+      "end": 53,
       "title": "Door opens itself",
-      "prompt": "Grey door panic bar opens without operator hand around 50.4–51.7, reveals another patterned wall and notice. Camera enters slowly, not jump cut. OSDAM 3:00/SEP.27.1996 battery 1 bar."
+      "prompt": "Return sound with a restrained low ballast thunk, then a long exhale. Quiet That’s an exit. begins 47.95. Resume the careful push; clock becomes AM 3:00 at 49.32708. The door starts opening 50.18125 and completes 51.29167 without a hand touching it. Follow through the doorway into a small lit room; the new notice appears ahead on its east wall. Preserve latch, stick-slip hinge and displaced-air sounds."
     },
     {
-      "start": 52.6,
-      "end": 55.8,
-      "title": "Rule six addresses tape",
-      "prompt": "Push final notice, taped corners, header NIGHT SHIFT ORIENTATION/(continued). Exact 6.Do not rewind this tape. PA 53.05 only Rule six. then never reads rest. Viewer reads the command, threat directed at recording. REC dot dies, tracking noise interrupts."
+      "start": 53,
+      "end": 56.4,
+      "title": "Rule six addresses the recording",
+      "prompt": "Autofocus locks on the final taped notice around 52.82917. Keep the full header NIGHT SHIFT ORIENTATION, (continued), exact 6. Do not rewind this tape. and footer Your orientation is complete. The PA only says Rule six. at 53.05; it does not speak the remaining printed command. Hold the text unobscured for the viewer. Battery blinks at one bar."
     },
     {
-      "start": 55.8,
-      "end": 59.666667,
+      "start": 56.4,
+      "end": 59.666666666666664,
       "title": "End tape",
-      "prompt": "Black with NIGHT SHIFT ORIENTATION /LIMINALFOUND FOOTAGE /original credit for remaining seconds. End actual 1432 frames 24 fps, source 59.7 rounded. No unexpected monster button."
+      "prompt": "REC dot turns off 56.4. Freeze the view at 56.42, apply the short tracking failure and cut picture to black after 56.62. At 56.8 fade a black end card with bitmap NIGHT SHIFT ORIENTATION and LIMINAL FOUND FOOTAGE; replace the original author signature honestly with GPT. All program sound stops after 56.65, leaving only a faint blank-tape hiss as in the source. End on the 1432 nd delivery frame,24 fps; no new monster button."
     }
   ],
   "published_timing_tables": {
@@ -956,7 +956,7 @@
   "engine_reuse_recommendation": "world lighting, texture generators, vhs/osd/subtitle and organic figure primitives attributed reuse permitted; new corridor route/camera/staging/story assembly.",
   "rights_or_evidence_notes": "Original codeMIT; reuse only explicitly attributed general helpers/fonts/assets with supplied licences. New scene staging and animation must be authored independently. Original model end credits recorded as historical reference, replaced honestly in recreation.",
   "v1_quality_deficits": "V 1 reduced 3 D local-lit corridor/PA orientation/tape hours jump to generic yellow hallway cards, missing notice contradictions, shoe hesitation, half second AF figure and Rule 6 tape address.",
-  "recreation_status": "brief-audited; newfilmnotyetgenerated",
+  "recreation_status": "Source-informed reconstruction with attributed general texture, lighting-material, figure, VHS and bitmap primitives; independent complete office, light grid, camera, timeline and media choreography. This is not a blind same-prompt benchmark.",
   "published_asset_manifest": [
     {
       "path": "styles/backrooms/demo/fonts/fonts.css",
